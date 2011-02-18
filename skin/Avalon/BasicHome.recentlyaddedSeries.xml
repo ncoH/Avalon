@@ -208,7 +208,7 @@
         <posY>335</posY>
         <width>184</width>
         <height>262</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png">#avalon.recentlyAdded.series2.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.series2.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
@@ -259,7 +259,7 @@
         <posY>335</posY>
         <width>184</width>
         <height>262</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png">#avalon.recentlyAdded.series3.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.series3.thumb</texture>
       </control>
     </control>
 	
