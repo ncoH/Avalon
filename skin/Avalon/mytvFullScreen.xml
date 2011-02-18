@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>602</id>
+<defaultcontrol>995</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<define>#percentage:#TV.View.Percentage</define>
+<define>#currentplaytime:#TV.View.start</define>
+<define>#currentremaining:#TV.View.stop</define>
+<define>#duration:#TV.View.stop</define>
+<controls>
+	
+	<control>
+        <description>dummy to fix images disappearing (MP BUG)</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>2000</posX>
+        <posY>2000</posY>
+        <width>10</width>
+        <height>10</height>
+        <texture>-</texture>
+        <visible>player.forwarding|player.rewinding|player.paused</visible>
+    </control>	
+	
+	<control>
+		<description>Description bg</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>646</posY>
+		<width>1920</width>
+		<height>434</height>
+		<texture>osd_bg.png</texture>
+		<visible>player.paused|player.forwarding|player.rewinding</visible>
+	</control>
+	
+	<control>
+		<type>label</type>
+		<id>1</id>
+		<description>Clock</description>
+		<posX>280</posX>
+		<posY>958</posY>
+		<width>144</width>
+		<font>AvalonLight14</font>
+		<align>center</align>
+		<label>#time</label>
+		<textcolor>ff85cffe</textcolor>
+		<visible>player.paused|player.rewinding|player.forwarding|Control.IsVisible(10)|player.seeking</visible>
+	</control>
+	
+	<control>
+		<description>clock bg</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>257</posX>
+		<posY>928</posY>
+		<width>187</width>
+		<height>51</height>
+		<texture>osd_clock_pause_bg.png</texture>
+		<visible>player.paused|player.forwarding|player.rewinding</visible>
+	</control>
+	
+	<control>
+		<description>pause button</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>1481</posX>
+		<posY>930</posY>
+		<width>187</width>
+		<height>51</height>
+		<texture>osd_pause_button.png</texture>
+		<visible>player.paused</visible>
+	</control>
+	
+	<control>
+		<description>row 1 label</description>
+		<type>label</type>
+		<id>10</id>
+		<posX>610</posX>
+		<posY>700</posY>
+		<height>30</height>
+		<width>144</width>
+		<font>font14</font>
+		<align>center</align>
+		<label>-</label>
+		<visible>Control.IsVisible(10)</visible>
+	</control>
+
+	<control>
+		<description>row 2 label</description>
+		<type>label</type>
+		<id>11</id>
+		<posX>610</posX>
+		<posY>700</posY>
+		<height>30</height>
+		<width>144</width>
+		<font>font14</font>
+		<align>center</align>
+		<label>-</label>
+	</control>
+
+	<control>
+		<description>row 3 label</description>
+		<type>label</type>
+		<id>12</id>
+		<posX>610</posX>
+		<posY>700</posY>
+		<height>30</height>
+		<width>144</width>
+		<font>font14</font>
+		<align>center</align>
+		<label>-</label>
+	</control>
+
+	<control>
+		<description>channelname</description>
+		<type>label</type>
+		<id>14</id>
+		<posX>1225</posX>
+		<posY>31</posY>
+		<label>-</label>
+		<font>mediastream12tcb</font>
+		<visible>no</visible>
+		<align>right</align>
+	</control>
+
+	<control>
+		<description>skip steps</description>
+		<type>label</type>
+		<id>15</id>
+		<posX>611</posX>
+		<posY>663</posY>
+		<height>30</height>
+		<width>144</width>
+		<font>font14</font>
+		<align>center</align>
+		<label>-</label>
+		<visible>no</visible>
+	</control>
+
+	<control>
+		<description>pause image</description>
+		<type>image</type>
+		<id>16</id>
+		<posX>1157</posX>
+		<posY>18</posY>
+		<width>48</width>
+		<height>48</height>
+		<visible>no</visible>
+		<texture>osdpausenf.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>2x image</description>
+		<type>image</type>
+		<id>17</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video+2x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>4x image</description>
+		<type>image</type>
+		<id>18</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video+4x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>8x image</description>
+		<type>image</type>
+		<id>19</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video+8x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>16x image</description>
+		<type>image</type>
+		<id>20</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video+16x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>32x image</description>
+		<type>image</type>
+		<id>21</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video+32x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>- 2x image</description>
+		<type>image</type>
+		<id>23</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video-2x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>- 4x image</description>
+		<type>image</type>
+		<id>24</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video-4x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>- 8x image</description>
+		<type>image</type>
+		<id>25</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video-8x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>- 16x image</description>
+		<type>image</type>
+		<id>26</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video-16x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>- 32x image</description>
+		<type>image</type>
+		<id>27</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video-32x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>rec logo</description>
+		<type>image</type>
+		<id>39</id>
+		<posX>1204</posX>
+		<posY>18</posY>
+		<width>48</width>
+		<height>48</height>
+		<texture>osdrecordnf.png</texture>
+	</control>
+
+	<control>
+		<description>MSGBox</description>
+		<type>button</type>
+		<id>2</id>
+		<posX>0</posX>
+		<posY>493</posY>
+		<width>1366</width>
+		<height>240</height>
+		<label>-</label>
+		<textureFocus>bar_hor.png</textureFocus>
+		<textureNoFocus>bar_hor.png</textureNoFocus>
+	</control>
+
+	<control>
+		<description>MSGBox label 1</description>
+		<type>label</type>
+		<id>3</id>
+		<posX>94</posX>
+		<posY>506</posY>
+		<width>866</width>
+		<label>-</label>
+		<align>left</align>
+		<font>dingbats</font>
+		<textcolor>FFFFFFFF</textcolor>
+		<visible>yes</visible>
+	</control>
+
+	<control>
+		<description>MSGBox label 2</description>
+		<type>label</type>
+		<id>4</id>
+		<posX>94</posX>
+		<posY>560</posY>
+		<width>866</width>
+		<label>-</label>
+		<align>left</align>
+		<font>dingbats</font>
+		<textcolor>FFFFFFFF</textcolor>
+		<visible>yes</visible>
+	</control>
+
+	<control>
+		<description>MSGBox label 3</description>
+		<type>label</type>
+		<id>5</id>
+		<posX>94</posX>
+		<posY>613</posY>
+		<width>866</width>
+		<label>-</label>
+		<align>left</align>
+		<font>dingbats</font>
+		<textcolor>FFFFFFFF</textcolor>
+		<visible>yes</visible>
+	</control>
+
+	<control>
+		<description>MSGBox label 2</description>
+		<type>label</type>
+		<id>6</id>
+		<posX>94</posX>
+		<posY>666</posY>
+		<width>866</width>
+		<label>-</label>
+		<align>left</align>
+		<font>dingbats</font>
+		<textcolor>FFFFFFFF</textcolor>
+		<visible>yes</visible>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>500</id>
+		<posX>667</posX>
+		<posY>18</posY>
+		<width>32</width>
+		<height>32</height>
+		<texture>osdaudiomutenf.png</texture>
+		<colordiffuse>White</colordiffuse>
+		<visible>no</visible>
+	</control>
+
+	<control>
+		<type>volumebar</type>
+		<id>501</id>
+		<posX>755</posX>
+		<posY>60</posY>
+		<align>right</align>
+		<height>13</height>
+		<imageHeight>3</imageHeight>
+		<texture>volume.states.png</texture>
+		<colordiffuse>White</colordiffuse>
+		<visible>no</visible>
+	</control>
+	<import>common.progressbar.tv.xml</import>
+	
+</controls>
+</window>

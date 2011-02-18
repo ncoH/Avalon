@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<!--
+		The purpose of TVSeries.SkinSettings.xml is to allow the skinner to control the presentation of the TVSeries plugin to the user
+		Advanced users may disable this by removing the file or by setting the import attribute  to false in the relevant XML element.
+		
+		The TVSeries plugin reads this file on load and will import settings into its database.
+		IMPORTANT: Ensure that all settings are wrapped in a CDATA type otherwise this docment will not get parsed as proper XML.
+		
+		If Import is enabled then any changes for these settings in  the configuration dialog will be overridden with settings below		
+	-->
+	
+	<!-- version may be useful for logging purposes and/or future upgrades -->
+	<version>1.3.0.0</version>
+
+	<!-- Skin Defines -->
+	<defines>		
+        <property key="blah">false</property>	
+    </defines>
+	
+	<!-- 
+		Possible Layout Types supported by the plugin, the defined layout will be what is loaded by default for the corresponding view:	
+		
+		AppendImageToList attribute is a setting that the plugin reads to determine if Episode/Season/Series images should be added to the List control
+		Enabling this will take a hit in performance, enable it only if your skin specifically requires it.
+		
+			Groups:
+				layout="List"
+				layout="SmallIcons"
+			Series:
+				layout="ListPosters"
+				layout="ListBanners" 
+				layout="Filmstrip"
+				layout="WideBanners"
+			Season:
+				layout="List"
+				layout="Filmstrip" 
+			Episode:
+				layout="List"
+	
+	-->
+	
+	<!-- Position of 'NEW' stamp in thumb views -->
+	<!-- Draws 'tvseries_newlabel.png' on thumbnail -->
+	<thumbstamp>
+		<widebanners>
+			<posx>0</posx>
+			<posy>-5</posy>
+		</widebanners>
+		<posters>
+			<posx>0</posx>
+			<posy>-5</posy>
+		</posters>
+	</thumbstamp>
+	
+	<!-- Define the images loaded in video OSD -->
+	<!-- Note: You can reorder the items to set priority -->
+	<!-- Values of custom tag is a path to custom image, where you could use:
+			thumbs\ relative path - <![CDATA[thumbs\Media\custom.png]]>,
+			skin\ relative path - <![CDATA[skin\*SKIN NAME*\Media\custom.png]]>,
+			absolute path - <![CDATA[C:\Media\custom.png]]>
+			with any of episode/season/series database fields (<Series.ID> for example)
+	-->
+	<videoosdimages import="true">
+		<episode use="true" />
+		<series use="true" />		
+		<season use="true" />		
+		<!--<custom use="false"><![CDATA[skin\Maya\Media\custom.png]]></custom>-->
+	</videoosdimages>
+	
+	<!-- Define the images loaded in properties during play -->	
+	<videoplayimages import="true">
+		<property>
+			<name>TVSeries.Play.ClearArt</name>
+			<value><![CDATA[thumbs\ClearArt\<Series.ID>.png]]></value>
+		</property>
+		<!-- You can define multiple properties -->
+	</videoplayimages>
+	
+	
+	<layouts>
+		<group List="true" SmallIcons="true" />
+		<series ListPosters="true" ListBanners="false" Filmstrip="true" WideBanners="true" />
+		<season List="true" Filmstrip="true" />
+		<episode List="true" />
+	</layouts>
+	
+	<views import="true" AppendlmageToList="false">		
+		<group layout="SmallIcons"></group>
+		<series layout="WideBanners">
+			<item1><![CDATA[SeriesWatchedAndUnWatched]]></item1>
+			<item2><![CDATA[<Series.Pretty_Name>]]></item2>
+			<item3><![CDATA[SMALLSPACE]]></item3>
+		</series>
+		<season layout="List">	
+			<item1><![CDATA[SeasonWatchedAndUnWatched]]></item1>
+			<item2><![CDATA[Season <Season.SeasonIndex>]]></item2>
+			<item3><![CDATA[]]></item3>
+		</season>
+		<episode>	
+			<item1><![CDATA[<Episode.FirstAired>]]></item1>
+			<item2><![CDATA[<Episode.EpisodeIndex>. <Episode.LocalEpisodeName>]]></item2>
+			<item3><![CDATA[SMALLSPACE]]></item3>
+		</episode>
+	</views>
+	<formatting import="true">
+		<![CDATA[<Enabled>1<Format><Episode.RatingPath><FormatAs>TVSeries\starEval(10*Round(<Episode.Rating>*2)/2).png
+<Enabled>1<Format><Episode.InfoPanelLine1Key><FormatAs>
+<Enabled>1<Format><Episode.InfoPanelLine1Value><FormatAs>Eval(Round(<Episode.Rating>*10)/10)
+<Enabled>1<Format><Episode.InfoPanelLine2Key><FormatAs>FILE SIZE
+<Enabled>1<Format><Episode.InfoPanelLine2Value><FormatAs><Episode.FileSize>
+<Enabled>1<Format><Episode.InfoPanelLine3Key><FormatAs>video INFO
+<Enabled>1<Format><Episode.InfoPanelLine3Value><FormatAs><Episode.VideoWidth>x<Episode.VideoHeight> (Eval(Round(<Episode.VideoAspectRatio>*100)/100)) Eval(Round(<Episode.videoFrameRate>*1000)/1000)fps
+<Enabled>1<Format><Episode.InfoPanelLine4Key><FormatAs>DIRECTOR
+<Enabled>1<Format><Episode.InfoPanelLine4Value><FormatAs><Episode.Director>
+<Enabled>1<Format><Episode.InfoPanelLine5Key><FormatAs>WRITER
+<Enabled>1<Format><Episode.InfoPanelLine5Value><FormatAs><Episode.Writer>
+<Enabled>1<Format><Episode.InfoPanelLine6Key><FormatAs>GUEST STARS
+<Enabled>1<Format><Episode.InfoPanelLine6Value><FormatAs><Episode.GuestStars>
+<Enabled>1<Format><Episode.SeasonLabel><FormatAs>Season <Episode.SeasonIndex>
+<Enabled>1<Format><Episode.Aired><FormatAs><Episode.FirstAired>
+<Enabled>1<Format><Season.SeasonLabel><FormatAs>Season <Season.SeasonIndex>
+<Enabled>1<Format><Series.InfoPanelLine1Key><FormatAs>RATING
+<Enabled>1<Format><Series.InfoPanelLine1Value><FormatAs>(Trans(MyRating): <Series.myRating>)
+<Enabled>1<Format><Series.InfoPanelLine2Key><FormatAs>Eval(PrettyNumber100(<Series.EpisodesUnWatched>))
+<Enabled>1<Format><Series.InfoPanelLine2Value><FormatAs><Series.FirstAired>
+<Enabled>1<Format><Series.InfoPanelLine3Key><FormatAs><Series.EpisodesWatched>
+<Enabled>1<Format><Series.InfoPanelLine3Value><FormatAs><Series.Genre>
+<Enabled>1<Format><Series.InfoPanelLine4Key><FormatAs>RUNTIME
+<Enabled>1<Format><Series.InfoPanelLine4Value><FormatAs><Series.Runtime> min
+<Enabled>1<Format><Series.InfoPanelLine5Key><FormatAs>NETWORK
+<Enabled>1<Format><Series.InfoPanelLine5Value><FormatAs><Series.Network>
+<Enabled>1<Format><Series.InfoPanelLine6Key><FormatAs>ACTORS
+<Enabled>1<Format><Series.InfoPanelLine6Value><FormatAs><Series.Actors>
+<Enabled>1<Format><Series.EpisodesWatched><FormatAs>Eval(PrettyNumber100(<Series.EpisodeCount>-<Series.EpisodesUnWatched>))
+
+<Enabled>1<Format><Season.InfoPanelLine2Key><FormatAs>Eval(PrettyNumber100(<Season.EpisodesUnWatched>))
+<Enabled>1<Format><Season.InfoPanelLine3Key><FormatAs><Season.EpisodesWatched>
+
+<Enabled>1<Format><Season.EpisodesWatched><FormatAs>Eval(PrettyNumber100(<Season.EpisodeCount>-<Season.EpisodesUnWatched>))
+<Enabled>1<Format>x () fps<FormatAs>N / A
+<Enabled>1<Format>0 bytes<FormatAs>N / A
+<Enabled>1<Format>(Trans(MyRating): )<FormatAs> 
+<Enabled>1<Format>2channels <FormatAs>2.0 
+<Enabled>1<Format>6channels <FormatAs>5.1 
+<Enabled>1<Format>V_MPEG4/ISO/AVC<FormatAs>H264
+<Enabled>1<Format>MPA1L3<FormatAs>MP3
+<Enabled>1<Format>MPA2L3<FormatAs>MP3
+<Enabled>1<Format>V_MPEG2<FormatAs>MPEG2
+<Enabled>1<Format>MPEG-2V<FormatAs>MPEG2
+<Enabled>1<Format>DIV3<FormatAs>DIVX
+<Enabled>1<Format>DX50<FormatAs>DIVX
+<Enabled>1<Format>A_FLAC<FormatAs>FLAC
+<Enabled>1<Format>A_AAC/MPEG4/LC/SBR<FormatAs>AAC
+<Enabled>1<Format>A_AAC<FormatAs>AAC
+<Enabled>1<Format>A_AC3<FormatAs>AC3
+<Enabled>1<Format><Series.RatingPath><FormatAs>TVSeries\starEval(10*Round(<Series.Rating>*2)/2).png
+<Enabled>1<Format><Series.LogoPath><FormatAs><Series.ID>.png
+<Enabled>1<Format>SeriesEpisodeCount<FormatAs><Series.EpisodeCount> Episodes
+<Enabled>1<Format>SeasonEpisodeCount<FormatAs><Season.EpisodeCount> Episodes
+<Enabled>1<Format>SeriesWatchedAndUnWatched<FormatAs>Eval(PrettyNumber100(<Series.EpisodesUnWatched>))        Eval(PrettyNumber100(<Series.EpisodeCount>-<Series.EpisodesUnWatched>))
+<Enabled>1<Format>SeasonWatchedAndUnWatched<FormatAs>Eval(PrettyNumber10(<Season.EpisodesUnWatched>))          Eval(PrettyNumber10(<Season.EpisodeCount>-<Season.EpisodesUnWatched>))
+<Enabled>1<Format>SMALLSPACE<FormatAs> ]]>
+	</formatting>
+	<logos import="true">
+		<![CDATA[skin\Maya\Media\Logos\source\DVD.png;-;<Episode.EpisodeFilename>;-;contains;-;DVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HDDVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HD-DVD;-;<Restrict:Episode>
+skin\Maya\Media\Logos\source\HDTV.png;-;<Episode.EpisodeFilename>;-;contains;-;HDTV;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\source\HDDVD.png;-;<Episode.EpisodeFilename>;-;contains;-;HDDVD;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;HD-DVD;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\source\bluray.png;-;<Episode.EpisodeFilename>;-;contains;-;BLURAY;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;BLU-RAY;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\source\blurayrip.png;-;<Episode.EpisodeFilename>;-;contains;-;BDRip;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\source\hdtv.png;-;<Episode.EpisodeFilename>;-;contains;-;hdtv;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\source\sdtv.png;-;<Episode.EpisodeFilename>;-;contains;-;sdtv;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\video\h264.png;-;<Episode.VideoFormat>;-;=;-;AVC;-;OR;-;<Episode.VideoCodec>;-;contains;-;AVC;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\video\MP2V.png;-;<Episode.VideoFormat>;-;=;-;MPEG video;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPEG2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\video\MP1V.png;-;<Episode.VideoFormat>;-;=;-;MPEG video;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPEG1;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\video\DIVX.png;-;<Episode.VideoCodec>;-;contains;-;DIVX;-;OR;-;<Episode.VideoCodec>;-;contains;-;DX50;-;OR;-;<Episode.VideoCodec>;-;contains;-;DIV3;-;<Restrict:Episode>
+skin\Maya\Media\Logos\video\XVID.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPG4;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\video\wvc1.png;-;<Episode.VideoFormat>;-;contains;-;VC-1;-;OR;-;<Episode.VideoCodec>;-;contains;-;VC1;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\video\wmv.png;-;<Episode.VideoCodec>;-;contains;-;WMV;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\video\vp6f.png;-;<Episode.VideoFormat>;-;=;-;VP6;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\audio\dd20.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\audio\dd51.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\audio\dts51.png;-;<Episode.AudioCodec>;-;=;-;DTS;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;<Restrict:Episode>
+skin\Maya\Media\Logos\audio\dts71.png;-;<Episode.AudioCodec>;-;=;-;DTS;-;AND;-;<Episode.AudioChannels>;-;=;-;7;-;<Restrict:Episode>
+skin\Maya\Media\Logos\audio\mp3_20.png;-;<Episode.AudioCodec>;-;contains;-;MPA1L3;-;OR;-;<Episode.AudioCodec>;-;contains;-;MPA2L3;-;OR;-;<Episode.AudioFormat>;-;=;-;MPEG Audio;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;<Restrict:Episode>
+skin\Maya\Media\Logos\audio\aac51.png;-;<Episode.AudioCodec>;-;=;-;AAC;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\TVSeries\Logos\resolution\480.png;-;<Episode.videoWidth>;-;<;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\TVSeries\Logos\resolution\540.png;-;<Episode.videoWidth>;-;=;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\TVSeries\Logos\resolution\720.png;-;<Episode.videoWidth>;-;=;-;1280;-;OR;-;<Episode.videoHeight>;-;=;-;720;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\TVSeries\Logos\resolution\1080.png;-;<Episode.videoWidth>;-;=;-;1920;-;OR;-;<Episode.videoHeight>;-;=;-;1080;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\TVSeries\Logos\aspectratio\1.33.png;-;<Episode.VideoAspectRatio>;-;<;-;1.4;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\TVSeries\Logos\aspectratio\1.85.png;-;<Episode.VideoAspectRatio>;-;<;-;1.9;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.79;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\TVSeries\Logos\aspectratio\1.78.png;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;1.79;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\TVSeries\logos\subtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;1;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;subbed.;-;AND;-;;-;=;-;;-;
+skin\Maya\Media\TVSeries\logos\nosubtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;0;-;AND;-;;-;=;-;;-;
+]]>
+	</logos>	
+	<!-- Only used for Thumbnail view creation e.g. Filmstrip and WideBanners. Episode Thumbs are the exception -->
+	<!-- #TVSeries.SeriesBanner and #TVSeries.SeasonBanner properties dont use the values below, those images will be presented as they are but will be using a delay of 250ms to present image -->
+	<!-- Note: Choosing higher quality settings will result in a drop in performance -->
+	<graphicsquality import="true">
+		<seriesbanners>65</seriesbanners>
+		<seriesposters>50</seriesposters>
+		<seasonbanners>75</seasonbanners>
+		<episodethumbs>80</episodethumbs>
+	</graphicsquality>
+</settings>

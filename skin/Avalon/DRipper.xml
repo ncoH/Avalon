@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>2209</id>
+    <defaultcontrol>50</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <define>#header.label:DRipper</define>
+    <autohidetopbar>yes</autohidetopbar>
+    <controls>
+        <import>common.window.xml</import>
+        <import>common.window.title.xml</import>
+        <import>common.time.xml</import>
+        <control>
+            <id>1</id>
+            <description>listcontrol background</description>
+            <type>image</type>
+            <posX>524</posX>
+            <posY>153</posY>
+            <width>725</width>
+            <height>482</height>
+            <texture>listcontrol_bg.png</texture>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>1</id>
+            <description>listcontrol background info</description>
+            <type>image</type>
+            <posX>524</posX>
+            <posY>678</posY>
+            <width>725</width>
+            <height>51</height>
+            <texture>listcontrol_bg_info.png</texture>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>1</id>
+            <description>left menu</description>
+            <type>image</type>
+            <visible>Control.HasFocus(50)+Control.HasFocus(60)</visible>
+            <posX>0</posX>
+            <posY>325</posY>
+            <texture>hiddenmenu_tab.png</texture>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>60</id>
+            <description>wholeprograms</description>
+            <type>listcontrol</type>
+            <onleft>50</onleft>
+            <onright>60</onright>
+            <onup>60</onup>
+            <ondown>60</ondown>
+            <posX>945</posX>
+            <posY>177</posY>
+            <width>304</width>
+            <height>502</height>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+            <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+            <scrollOffset>1</scrollOffset>
+            <spinPosY>690</spinPosY>
+            <spinPosX>600</spinPosX>
+        </control>
+        <control>
+            <id>50</id>
+            <description>subprograms</description>
+            <type>listcontrol</type>
+            <onleft>2</onleft>
+            <onright>60</onright>
+            <onup>50</onup>
+            <ondown>50</ondown>
+            <visible>true</visible>
+            <posX>555</posX>
+            <posY>183</posY>
+            <width>299</width>
+            <height>452</height>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <spinAlign>right</spinAlign>
+            <spinPosX>840</spinPosX>
+            <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+            <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+            <scrollOffset>1</scrollOffset>
+            <spinPosY>600</spinPosY>
+            <spinPosX>600</spinPosX>
+        </control>
+        <control>
+            <description>no image thumb</description>
+            <type>image</type>
+            <posX>86</posX>
+            <posY>207</posY>
+            <texture>defaultPictureBig.png</texture>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>6</id>
+            <description>tv thumb</description>
+            <type>image</type>
+            <posX>86</posX>
+            <posY>207</posY>
+            <width>309</width>
+            <height>205</height>
+            <texture>-</texture>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>1</id>
+            <description>black border</description>
+            <type>image</type>
+            <posX>44</posX>
+            <posY>161</posY>
+            <width>390</width>
+            <height>299</height>
+            <texture>blackborders_recordings.png</texture>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>10</id>
+            <description>program name</description>
+            <type>label</type>
+            <visible/>
+            <posX>-2000</posX>
+            <posY>250</posY>
+            <width>410</width>
+            <label>DRipper</label>
+        </control>
+        <control>
+            <id>11</id>
+            <description>video title label</description>
+            <type>label</type>
+            <visible/>
+            <posX>80</posX>
+            <posY>430</posY>
+            <width>320</width>
+            <textcolor>ff6aa5cb</textcolor>
+            <label/>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>12</id>
+            <description>Selected item Label</description>
+            <type>label</type>
+            <posX>-2000</posX>
+            <posY>110</posY>
+            <width>700</width>
+            <font>Segoe Light22</font>
+            <label/>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>21</id>
+            <description>Description field</description>
+            <type>textboxscrollup</type>
+            <onleft>2</onleft>
+            <onright>60</onright>
+            <visible>true</visible>
+            <posX>80</posX>
+            <posY>460</posY>
+            <width>321</width>
+            <height>90</height>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <text>desc</text>
+            <spinPosX>75</spinPosX>
+            <spinPosY>650</spinPosY>
+        </control>
+        <control>
+            <id>1</id>
+            <type>image</type>
+            <visible>Control.HasFocus(50) | Control.HasFocus(60)</visible>
+            <posX>0</posX>
+            <posY>325</posY>
+            <texture>hiddenmenu_tab.png</texture>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <description>action menu</description>
+            <type>actiongroup</type>
+            <dimColor>00ffffff</dimColor>
+            <width>342</width>
+            <height>640</height>
+            <buttonX>0</buttonX>
+            <buttonY>0</buttonY>
+            <buttonwidth>0</buttonwidth>
+            <buttonheight>0</buttonheight>
+            <onexit>50</onexit>
+            <defaultcontrol>2</defaultcontrol>
+            <animation effect="Fade" time="250">Visible</animation>
+            <animation center="683,384" delay="100" effect="Zoom" end="100,100" start="95,95" time="550" tween="Elastic">Visible</animation>
+            <animation effect="Fade" time="200">Hidden</animation>
+            <animation center="683,384" effect="Zoom" end="200,200" start="100,100" time="200">Hidden</animation>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <control>
+                <id>1</id>
+                <type>image</type>
+                <visible>!Control.HasFocus(50)+!Control.HasFocus(60)</visible>
+                <posX>512</posX>
+                <posY>64</posY>
+                <width>342</width>
+                <height>640</height>
+                <texture>menu_bg.png</texture>
+            </control>
+            <control>
+                <id>1</id>
+                <description>Heading text label</description>
+                <type>label</type>
+                <posX>567</posX>
+                <posY>110</posY>
+                <font>Segoe Light18</font>
+                <textcolor>ff85cffe</textcolor>
+                <label>924</label>
+            </control>
+            <control>
+                <description>button group</description>
+                <type>group</type>
+                <posX>543</posX>
+                <posY>175</posY>
+                <layout>StackLayout(1)</layout>
+                <control>
+                    <id>2</id>
+                    <description>DR1-Live</description>
+                    <type>button</type>
+                    <onleft>50</onleft>
+                    <onright>60</onright>
+                    <onup>3</onup>
+                    <ondown>3</ondown>
+                    <width>279</width>
+                    <height>49</height>
+                    <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                    <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                    <label>DR1-Live</label>
+                    <textXOff>25</textXOff>
+                    <textYOff>12</textYOff>
+                </control>
+                <control>
+                    <id>3</id>
+                    <description>DR2-Live</description>
+                    <type>button</type>
+                    <onleft>50</onleft>
+                    <onright>60</onright>
+                    <onup>2</onup>
+                    <ondown>2</ondown>
+                    <width>279</width>
+                    <height>49</height>
+                    <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                    <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                    <label>DR2-Live</label>
+                    <textXOff>25</textXOff>
+                    <textYOff>12</textYOff>
+                </control>
+            </control>
+        </control>
+        <import>common.overlay.xml</import>
+    </controls>
+</window>

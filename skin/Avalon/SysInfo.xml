@@ -1,0 +1,295 @@
+<window>
+<id>1009</id>
+<defaultcontrol>41</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<define>#header.label:913</define>
+<define>#header.image:-</define>
+<define>#header.hover:-</define>
+<define>#selecteditem:-</define>
+<controls>
+	<import>common.window.xml</import>
+	<control>
+		<description>Heading</description>
+		<type>label</type>
+		<id>2</id>
+		<posX>1240</posX>
+		<posY>660</posY>
+		<font>font14</font>
+		<label>2</label>
+		<align>right</align>
+		<visible>no</visible>
+	</control>
+
+	<control>
+		<type>group</type>
+		<description>group element</description>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="150" start="-300,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="0,-300">WindowClose</animation>
+		<layout>StackLayout</layout>
+		<posX>71</posX>
+		<posY>121</posY>
+		<control>
+			<description>Select_drive</description>
+			<type>button</type>
+			<id>41</id>
+			<label>Drive</label>
+			<onleft>41</onleft>
+			<onright>41</onright>
+			<onup>17</onup>
+			<ondown>42</ondown>
+		</control>
+
+		<control>
+			<description>About</description>
+			<type>button</type>
+			<id>42</id>
+			<label>About</label>
+			<onleft>42</onleft>
+			<onright>42</onright>
+			<onup>41</onup>
+			<ondown>42</ondown>
+		</control>
+
+	</control>
+
+	<control>
+		<description>Gauge#1_label</description>
+		<type>label</type>
+		<id>20</id>
+		<posX>375</posX>
+		<posY>140</posY>
+		<label>CPU load</label>
+	</control>
+
+	<control>
+		<description>Gauge#1_background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>350</posX>
+		<posY>80</posY>
+		<width>260</width>
+		<height>400</height>
+		<texture>dialog_background.png</texture>
+	</control>
+
+	<control>
+		<description>CPU_gauge#1</description>
+		<type>image</type>
+		<id>101</id>
+		<posX>405</posX>
+		<posY>200</posY>
+		<width>150</width>
+		<height>150</height>
+		<texturebg>-</texturebg>
+		<texture>-</texture>
+	</control>
+
+	<control>
+		<description>CPU_gauge#2</description>
+		<type>image</type>
+		<id>102</id>
+		<posX>405</posX>
+		<posY>200</posY>
+		<width>150</width>
+		<height>150</height>
+		<texturebg>-</texturebg>
+		<texture>-</texture>
+	</control>
+
+	<control>
+		<description>Gauge#1_details</description>
+		<type>textbox</type>
+		<id>22</id>
+		<posX>375</posX>
+		<posY>355</posY>
+		<width>210</width>
+		<height>90</height>
+		<label>CPU details</label>
+	</control>
+
+	<control>
+		<description>Gauge#2_label</description>
+		<type>label</type>
+		<id>20</id>
+		<posX>665</posX>
+		<posY>140</posY>
+		<label>Memory utilization</label>
+	</control>
+
+	<control>
+		<description>Gauge#2_background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>640</posX>
+		<posY>80</posY>
+		<width>260</width>
+		<height>400</height>
+		<texture>dialog_background.png</texture>
+	</control>
+
+	<control>
+		<description>MEM_gauge#1</description>
+		<type>image</type>
+		<id>103</id>
+		<posX>695</posX>
+		<posY>200</posY>
+		<width>150</width>
+		<height>150</height>
+		<texturebg>-</texturebg>
+		<texture>-</texture>
+	</control>
+
+	<control>
+		<description>MEM_gauge#2</description>
+		<type>image</type>
+		<id>104</id>
+		<posX>695</posX>
+		<posY>200</posY>
+		<width>150</width>
+		<height>150</height>
+		<texturebg>-</texturebg>
+		<texture>-</texture>
+	</control>
+
+	<control>
+		<description>Gauge#2_details</description>
+		<type>textbox</type>
+		<id>23</id>
+		<posX>665</posX>
+		<posY>355</posY>
+		<width>210</width>
+		<height>90</height>
+		<label>MEM details</label>
+	</control>
+
+	<control>
+		<description>Gauge#3_label</description>
+		<type>label</type>
+		<id>20</id>
+		<posX>955</posX>
+		<posY>140</posY>
+		<label>Drive utilization</label>
+	</control>
+
+	<control>
+		<description>Gauge#3_background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>930</posX>
+		<posY>80</posY>
+		<width>260</width>
+		<height>400</height>
+		<texture>dialog_background.png</texture>
+	</control>
+
+	<control>
+		<description>Drive_gauge#1</description>
+		<type>image</type>
+		<id>105</id>
+		<posX>985</posX>
+		<posY>200</posY>
+		<width>150</width>
+		<height>150</height>
+		<texturebg>-</texturebg>
+		<texture>-</texture>
+	</control>
+
+	<control>
+		<description>Drive_gauge#2</description>
+		<type>image</type>
+		<id>106</id>
+		<posX>985</posX>
+		<posY>200</posY>
+		<width>150</width>
+		<height>150</height>
+		<texturebg>-</texturebg>
+		<texture>-</texture>
+	</control>
+
+	<control>
+		<description>Gauge#3_details</description>
+		<type>textbox</type>
+		<id>24</id>
+		<posX>955</posX>
+		<posY>355</posY>
+		<width>210</width>
+		<height>90</height>
+		<label>Drive details</label>
+	</control>
+
+	<control>
+		<description>Status_background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>340</posX>
+		<posY>470</posY>
+		<width>870</width>
+		<height>240</height>
+		<texture>dialog_background.png</texture>
+	</control>
+
+	<control>
+		<description>Status_label</description>
+		<type>label</type>
+		<id>20</id>
+		<posX>400</posX>
+		<posY>500</posY>
+		<label>Status</label>
+	</control>
+
+	<control>
+		<description>Network_Status</description>
+		<type>image</type>
+		<id>107</id>
+		<posX>400</posX>
+		<posY>557</posY>
+		<width>20</width>
+		<height>20</height>
+		<texturebg>-</texturebg>
+		<texture>Sysinfo_Black.png</texture>
+	</control>
+
+	<control>
+		<description>Network_label</description>
+		<type>label</type>
+		<id>20</id>
+		<posX>440</posX>
+		<posY>550</posY>
+		<label>Network</label>
+	</control>
+
+	<control>
+		<description>TvServer_Status</description>
+		<type>image</type>
+		<id>108</id>
+		<posX>400</posX>
+		<posY>587</posY>
+		<width>20</width>
+		<height>20</height>
+		<texturebg>-</texturebg>
+		<texture>Sysinfo_Black.png</texture>
+	</control>
+
+	<control>
+		<description>Status_label</description>
+		<type>label</type>
+		<id>20</id>
+		<posX>440</posX>
+		<posY>580</posY>
+		<label>TvServer</label>
+	</control>
+
+	<control>
+		<description>SpeedFan</description>
+		<type>textbox</type>
+		<id>25</id>
+		<posX>560</posX>
+		<posY>550</posY>
+		<width>570</width>
+		<height>150</height>
+	</control>
+
+</controls>
+</window>

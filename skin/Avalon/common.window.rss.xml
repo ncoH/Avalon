@@ -1,0 +1,73 @@
+<?xml version="1.0" standalone="yes"?>
+<window>
+<id>35</id>
+<allowoverlay>yes</allowoverlay>
+	<disabletopbar>no</disabletopbar>
+<controls>
+
+	<control>
+		<description>Weather image</description>
+		<type>image</type>
+		<id>89561</id>
+		<posX>830</posX>
+		<posY>690</posY>
+		<width>64</width>
+		<height>64</height>
+		<texture>#weatherimg</texture>
+		<align>left</align>
+		<visible>Plugin.IsEnabled(MP-RSSTicker)</visible>
+	</control>
+
+	<control>
+		<description>Location</description>
+		<type>label</type>
+		<id>89562</id>
+		<posX>910</posX>
+		<posY>690</posY>
+		<width>750</width>
+		<align>left</align>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>
+		<label>#location</label>
+		<visible>Plugin.IsEnabled(MP-RSSTicker)</visible>
+	</control>
+
+	<control>
+		<description>Temperature</description>
+		<type>label</type>
+		<id>89563</id>
+		<posX>910</posX>
+		<posY>710</posY>
+		<width>750</width>
+		<align>left</align>
+		<font>font14</font>
+		<label>#temp   #condition</label>
+		<visible>Plugin.IsEnabled(MP-RSSTicker)</visible>
+	</control>
+
+	<control>
+		<description>RSS items</description>
+		<type>fadelabel</type>
+		<id>89564</id>
+		<posX>25</posX>
+		<posY>520</posY>
+		<width>690</width>
+		<font>font18</font>
+		<label>#rssfeed</label>
+		<visible>Plugin.IsEnabled(MP-RSSTicker)</visible>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>43</posX>
+		<posY>41</posY>
+		<width>286</width>
+		<height>53</height>
+		<texture>MP_logo.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+</controls>
+</window>

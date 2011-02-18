@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin translation file -->
+<!-- Spanish (es) -->
+<!-- Last Updated: 22 August 2010 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+
+<strings>
+	<!-- # -->
+
+	<!-- A -->
+
+	<!-- B -->
+
+	<!-- C -->
+
+	<!-- D -->
+
+	<!-- E -->
+
+	<!-- F -->
+	<string Field="format">Formato:</string>
+	
+	<!-- G -->
+	<string Field="global.search.musicsearch">Buscar Música</string>
+        <string Field="global.search.lastplayed">Última Reproducción</string>
+        <string Field="global.search.Searchphrase">Buscar Frase</string>
+        <string Field="global.search.Searchhistory">Historial Búsqueda</string>
+        <string Field="global.search.Searchfields">Buscar Campos</string>
+        <string Field="global.search.Casesensitive">Precisión</string>
+        <string Field="global.search.Searchtype">Tipo Búsqueda</string>
+
+	<!-- H -->
+
+	<!-- I -->
+
+	<!-- L -->
+	<string Field="lyrics">Letras</string>
+        <string Field="Latest.movies">Últimas Películas</string>
+        <string Field="Latest.episodes">Últimos Episodios</string>
+	
+	<!-- M -->
+	<string Field="mylyrics">Letras</string>
+	<string Field="music.songs">Canciones:</string>
+	
+	<!-- N -->
+
+	<!-- O -->
+
+	<!-- P -->
+	<string Field="weather.toggleday">Presionar OK para cambiar de día</string>
+	
+	<!-- R -->
+        <string Field="recentlyAdded.Season">Temporada</string>
+        <string Field="recentlyAdded.Episode">Episodio</string>
+
+	<!-- S -->
+
+	<!-- T -->
+        <string Field="lyrics.tag">Etiqueta</string>
+
+	<!-- U -->
+
+	<!-- V -->
+	<string Field="video.settings">Configuración Vídeo</string>
+
+	<!-- W -->
+
+	<!-- Y -->
+
+</strings>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>704</id>
+<defaultcontrol>10007</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<controls>
+<import>common.window.xml</import>
+<import>settings.menu.xml</import>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>434</posX>
+		<posY>60</posY>
+		<width>820</width>
+		<height>640</height>
+		<texture>settings_main_panel.png</texture>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>504</posX>
+		<posY>125</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>446</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<description>buttons</description>
+		<type>group</type>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<posX>490</posX>
+		<posY>260</posY>
+		<layout>GridLayout(2, 7, 42, 0, 1)</layout>
+		<control>
+			<description>DVD Navigators</description>
+			<type>button</type>
+			<id>21</id>
+			<label>1198</label>
+			<onup>17</onup>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+		</control>
+
+		<control>
+			<description>Video Codecs</description>
+			<type>button</type>
+			<id>24</id>
+			<label>6000</label>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+		</control>
+
+		<control>
+			<description>Audio Codecs</description>
+			<type>button</type>
+			<id>25</id>
+			<label>6001</label>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+		</control>
+
+		<control>
+			<description>Audio Renderer</description>
+			<type>button</type>
+			<id>27</id>
+			<label>6002</label>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+		</control>
+
+		<control>
+			<description>Apect Ratio</description>
+			<type>button</type>
+			<id>28</id>
+			<label>6004</label>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+		</control>
+
+		<control>
+			<description>Enable Subtitles</description>
+			<type>togglebutton</type>
+			<id>22</id>
+			<label>1196</label>
+			<width>334</width>
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+		</control>
+
+		<control>
+			<description>Subtitle Language</description>
+			<type>button</type>
+			<id>29</id>
+			<label>1029</label>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+		</control>
+
+		<control>
+			<description>Audio Language</description>
+			<type>button</type>
+			<id>30</id>
+			<label>492</label>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+		</control>
+
+		<control>
+			<description>Turn Off DXVA</description>
+			<type>togglebutton</type>
+			<id>23</id>
+			<label>1197</label>
+			<width>334</width>
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<ondown>99</ondown>
+		</control>
+
+	</control>
+
+</controls>
+</window>

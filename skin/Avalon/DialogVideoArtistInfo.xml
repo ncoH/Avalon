@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>614</id>
+<defaultcontrol>3</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<controls>
+
+	<control>
+		<description>background image</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+	</control>
+	
+<import>common.time.xml</import>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>info</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<description>Actor Name value</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>142</posY>
+		<width>700</width>
+		<font>Segoe Light22</font>
+		<label>#Actor.Name</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Born</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>177</posX>
+		<posY>150</posY>
+		<label>686</label>
+		<font>font13</font>
+		<textcolor>FFB2D4F5</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Date of Birth</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>391</posX>
+		<posY>150</posY>
+		<width>711</width>
+		<label>#Actor.DateOfBirth #Actor.PlaceOfBirth</label>
+		<font>font13</font>
+		<textcolor>FFFFFFFF</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<type>group</type>
+		<layout>StackLayout(4)</layout>
+		<description>group element</description>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<posX>200</posX>
+		<posY>180</posY>
+		
+		<control>
+		<description>Biography</description>
+		<type>togglebutton</type>
+		<id>3</id>
+		<label>1011</label>
+		<onleft>22</onleft>
+		<onright>22</onright>
+		<onup>2</onup>
+		<ondown>4</ondown>
+		<textalign>right</textalign>
+	</control>
+
+	<control>
+		<description>Movies</description>
+		<type>togglebutton</type>
+		<id>4</id>
+		<label>342</label>
+		<onleft>22</onleft>
+		<onright>22</onright>
+		<onup>3</onup>
+		<ondown>5</ondown>
+		<textalign>right</textalign>
+		<AltTextureFocus>togglebutton-off-focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton-off-nofocus.png</AltTextureNoFocus>
+			<textureFocus>togglebutton-on-focus.png</textureFocus>
+			<textureNoFocus>togglebutton-on-nofocus.png</textureNoFocus>
+	</control>
+	
+</control>
+
+	<control>
+		<description>Biography value</description>
+		<type>textboxscrollup</type>
+		<id>20</id>
+		<posX>555</posX>
+		<posY>180</posY>
+		<width>750</width>
+		<height>500</height>
+		<label>#Actor.Biography</label>
+		<font>font13</font>
+		<textcolor>FFFFFFFF</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Image logo</description>
+		<type>image</type>
+		<id>21</id>
+		<posX>177</posX>
+		<posY>187</posY>
+		<width>177</width>
+		<height>125</height>
+		<texture>#thumb</texture>
+		<colorkey>FFFF00FF</colorkey>
+		<colordiffuse>FFFFFFFF</colordiffuse>
+		<keepaspectratio>yes</keepaspectratio>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>textarea</description>
+		<type>textbox</type>
+		<id>22</id>
+		<posX>555</posX>
+		<posY>180</posY>
+		<width>750</width>
+		<height>500</height>
+		<onleft>4</onleft>
+		<onright>4</onright>
+		<onup>4</onup>
+		<ondown>4</ondown>
+		<label>#Actor.Movies</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<spinPosX>550</spinPosX>
+		<spinPosY>718</spinPosY>
+	</control>
+
+	
+	
+<import>common.overlay.xml</import>
+
+</controls>
+</window>

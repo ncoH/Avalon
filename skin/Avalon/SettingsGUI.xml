@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>31</id>
+<defaultcontrol>10004</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<controls>
+<import>common.window.xml</import>
+<import>settings.menu.xml</import>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>434</posX>
+		<posY>60</posY>
+		<width>820</width>
+		<height>640</height>
+		<texture>settings_main_panel.png</texture>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>504</posX>
+		<posY>125</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>605</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<description>group element</description>
+		<type>group</type>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>484</posX>
+		<posY>265</posY>
+		<texture>settings_setupguide_wide.png</texture>
+		<width>595</width>
+		<height>36</height>
+	</control>
+		
+		
+		<control>
+			<description>Horizontal Speed label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>510</posX>
+			<posY>270</posY>
+			<label>1442</label>
+		</control>
+
+		<control>
+			<description>Horizontal Speed select</description>
+			<type>spincontrol</type>
+			<id>2</id>
+			<posX>1075</posX>
+			<posY>267</posY>
+			<align>right</align>
+			<onup>17</onup>
+			<ondown>4</ondown>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<width>37</width>
+		<height>37</height>
+		<reverse>yes</reverse>
+		</control>
+		
+		<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>484</posX>
+		<posY>303</posY>
+		<texture>settings_setupguide_wide.png</texture>
+		<width>595</width>
+		<height>36</height>
+	</control>
+
+		<control>
+			<description>Vertical Speed label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>510</posX>
+			<posY>308</posY>
+			<label>1443</label>
+		</control>
+
+		<control>
+			<description>Vertical Speed select</description>
+			<type>spincontrol</type>
+			<id>4</id>
+			<posX>1075</posX>
+			<posY>308</posY>
+			<align>right</align>
+			<onup>2</onup>
+			<ondown>3</ondown>
+			<onleft>4</onleft>
+			<onright>4</onright>
+			<width>37</width>
+		<height>37</height>
+		<reverse>yes</reverse>
+		</control>
+		
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>484</posX>
+		<posY>341</posY>
+		<texture>settings_setupguide_wide.png</texture>
+		<width>595</width>
+		<height>36</height>
+	</control>
+
+		<control>
+			<description>FPS label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>510</posX>
+			<posY>346</posY>
+			<label>973</label>
+		</control>
+
+		<control>
+			<description>FPS select</description>
+			<type>spincontrol</type>
+			<id>3</id>
+			<posX>1075</posX>
+			<posY>346</posY>
+			<align>right</align>
+			<onup>4</onup>
+			<ondown>99</ondown>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<width>37</width>
+		<height>37</height>
+		<reverse>yes</reverse>
+		</control>
+
+		<control>
+			<description>currentFPS count</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1070</posX>
+			<posY>430</posY>
+			<align>right</align>
+			<label>#fps</label>
+		</control>
+
+		<control>
+			<description>Example label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>510</posX>
+			<posY>430</posY>
+			<width>711</width>
+			<label>675</label>
+			<textcolor>ff85cffe</textcolor>
+		</control>
+
+		<control>
+			<description>TagLine value</description>
+			<type>fadelabel</type>
+			<id>25</id>
+			<posX>510</posX>
+			<posY>465</posY>
+			<width>560</width>
+			<label>-</label>
+			<textcolor>ff85cffe</textcolor>
+		</control>
+
+		<control>
+			<description>Description1</description>
+			<type>textboxscrollup</type>
+			<id>26</id>
+			<posX>510</posX>
+			<posY>500</posY>
+			<width>560</width>
+			<height>130</height>
+			<label>-</label>
+			<textcolor>ff85cffe</textcolor>
+		</control>
+
+	</control>
+
+</controls>
+</window>

@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>49848</id>
+	<defaultcontrol>10</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:646</define>
+	<define>#header.background:hover_my tv.png</define>
+  <controls>
+  
+        <import>common.window.background.xml</import>		
+        <import>common.time.xml</import>	
+	
+	<control>
+		<description>Header Label</description>		
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>550</width>
+		<height>100</height>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight40</font>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>173</posY>
+		<width>725</width>
+		<height>561</height>
+		<texture>listcontrol_bg_recordings.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
+    <control>
+		<type>label</type>
+		<description>Number of Files Label</description>
+		<id>12</id>
+		<posX>1216</posX>
+		<posY>690</posY>
+		<align>right</align>
+		<label>#itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>Control.IsVisible(10)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+    </control>
+	
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1366</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+				
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>semi_trans_back_general_menu.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+		</control>
+		
+		<control>
+		<type>group</type>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+		<animation effect="fade" time="200" reversible="false">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
+		
+		<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>512</posX>
+		<posY>64</posY>
+		<width>342</width>
+		<height>640</height>
+		<texture>menu_bg.png</texture>
+		<visible>!Control.HasFocus(50)</visible>
+		</control>
+		
+				<control>
+				<description>Heading text label</description>
+				<type>label</type>
+				<id>1</id>
+				<posX>567</posX>
+				<posY>110</posY>
+				<label>924</label>
+				<font>AvalonLight18</font>
+				<textcolor>85cffe</textcolor>
+				</control>
+		
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>543</posX>
+				<posY>175</posY>
+				<layout>StackLayout(1)</layout>
+				
+        <control>
+            <type>button</type>
+            <description>Program type button</description>
+            <id>2</id>			
+            <onleft>10</onleft>
+            <onright>10</onright>
+			<onup>5</onup>
+			<ondown>5</ondown>			
+            <label>Type:</label>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>			
+        </control>
+		  
+		<control>
+			<type>button</type>
+			<description>tvguide button</description>
+			<id>5</id>
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<onup>2</onup>
+			<ondown>2</ondown>
+			<label>600</label>					
+			<hyperlink>600</hyperlink>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
+		</control>			
+
+		</control>
+	</control>
+</control>		
+
+	<control>
+		<type>group</type>
+		<description>group element</description>
+		<id>0</id>
+		<posX>455</posX>
+		<posY>116</posY>
+		<width>778</width>
+		<dimColor>ffffffff</dimColor>
+		<height>583</height>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		
+      <control>
+        <description>upcoming episodes listcontrol</description>
+				<type>listcontrol</type>
+				<id>10</id>
+				<posY>427</posY>
+				<height>300</height>
+				<posX>524</posX>
+				<width>724</width>
+				<onleft>2</onleft>
+				<onright>2</onright>
+				<scrollOffset>1</scrollOffset>
+				<PinIconHeight>53</PinIconHeight>
+				<PinIconWidth>34</PinIconWidth>
+				<PinIconXOff>0</PinIconXOff>
+				<PinIconYOff>6</PinIconYOff>
+				<itemWidth>32</itemWidth>
+				<itemHeight>32</itemHeight>
+				<IconXOff>30</IconXOff>
+				<IconYOff>9</IconYOff>					
+				<spinPosX>560</spinPosX>
+				<spinPosY>688</spinPosY>
+				<textXOff>40</textXOff>
+				<spinAlign>left</spinAlign>				
+				<keepaspectratio>yes</keepaspectratio>
+				<spinCanFocus>no</spinCanFocus>
+				<dimColor>ffffffff</dimColor>
+       </control>
+
+		<control>
+			<description>Current program channel</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>555</posX>
+			<posY>180</posY>
+			<font>AvalonLight18</font>
+            <textcolor>6aa5cb</textcolor>			
+			<label>#TV.Upcoming.Genre</label>
+			<visible>control.hasfocus(10)</visible>	
+		</control>
+		
+		<control>
+			<description>Current program title</description>
+			<type>fadelabel</type>
+			<id>13</id>
+			<posX>555</posX>
+			<posY>130</posY>
+			<width>663</width>
+			<font>AvalonLight22</font>
+			<label>#TV.Upcoming.Title</label>
+			<visible>control.hasfocus(10)</visible>		
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+			
+        <control>
+			<type>label</type>
+			<description>Current program time</description>
+			<id>0</id>
+			<posX>555</posX>
+			<posY>215</posY>
+            <textcolor>6aa5cb</textcolor>
+			<font>AvalonLight18</font>
+            <label>#TV.Upcoming.Time</label>
+            <visible>control.hasfocus(10)</visible>
+        </control>
+		
+        <control>
+			<type>textboxscrollup</type>
+			<description>Description1</description>
+			<id>0</id>
+			<posX>556</posX>
+			<posY>281</posY>
+			<width>680</width>
+			<height>110</height>
+			<font>font12</font>
+            <label>#TV.Upcoming.Description</label>
+        </control>
+		
+	</control>
+	
+    <control>
+        <id>0</id>
+        <type>image</type>
+        <posX>91</posX>
+        <posY>207</posY>
+        <width>365</width>
+        <height>203</height>
+        <texture>defaultTVBig.png</texture>
+        <visible>!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
+        <animation effect="fade" time="100">WindowOpen</animation>
+        <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+    
+    <control>
+        <id>500</id>
+        <type>image</type>
+        <posX>91</posX>
+        <posY>207</posY>
+        <width>365</width>
+        <height>203</height>
+        <texture>#selectedthumb</texture>
+        <visible>!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
+        <animation effect="fade" time="100">WindowOpen</animation>
+        <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+    
+      <control>
+        <type>image</type>
+        <id>1</id>
+        <posX>44</posX>
+        <posY>161</posY>
+        <width>457</width>
+        <height>295</height>
+        <texture>blackborders_recordings.png</texture>
+        <animation effect="fade" time="100">WindowOpen</animation>
+        <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+		
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>325</posY>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>Control.HasFocus(10)</visible>
+	</control>
+
+	<import>common.overlay.xml</import>
+	
+</controls>
+</window>

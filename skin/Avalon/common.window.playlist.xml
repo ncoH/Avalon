@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>680</posX>
+		<posY>910</posY>
+		<width>1175</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light22</font>
+		<visible>[facadeview.list | facadeview.album | facadeview.playlist | facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1860</posX>
+		<posY>1000</posY>
+		<label>#currentmodule: #itemcount</label>
+		<textcolor>85cffe</textcolor>
+		<font>Segoe Light12</font>
+		<align>right</align>
+		<visible>[facadeview.list | facadeview.album | facadeview.playlist | facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+</controls>
+</window>

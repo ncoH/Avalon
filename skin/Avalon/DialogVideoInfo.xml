@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>2003</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<controls>
+
+	<control>
+		<description>background image</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+	</control>
+	
+<import>common.time.xml</import>
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>3</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+	</control>
+	
+	
+	<control>
+		<description>Play Button</description>
+		<type>button</type>
+		<id>2</id>
+		<posX>524</posX>
+		<posY>187</posY>
+		<label>208</label>
+		<onleft>22</onleft>
+		<onright>22</onright>
+		<onup>7</onup>
+		<ondown>3</ondown>
+		<textalign>right</textalign>
+	</control>
+
+	<control>
+		<description>Plot</description>
+		<type>togglebutton</type>
+		<id>3</id>
+		<posX>524</posX>
+		<posY>238</posY>
+		<label>207</label>
+		<onleft>22</onleft>
+		<onright>22</onright>
+		<onup>2</onup>
+		<ondown>4</ondown>
+		<textalign>right</textalign>
+	</control>
+
+	<control>
+		<description>Cast</description>
+		<type>togglebutton</type>
+		<id>4</id>
+		<posX>524</posX>
+		<posY>289</posY>
+		<label>206</label>
+		<onleft>22</onleft>
+		<onright>22</onright>
+		<onup>3</onup>
+		<ondown>5</ondown>
+		<textalign>right</textalign>
+	</control>
+
+	<control>
+		<description>Refresh</description>
+		<type>button</type>
+		<id>5</id>
+		<posX>524</posX>
+		<posY>340</posY>
+		<label>184</label>
+		<onleft>22</onleft>
+		<onright>22</onright>
+		<onup>4</onup>
+		<ondown>6</ondown>
+		<textalign>right</textalign>
+	</control>
+
+	<control>
+		<description>Watched</description>
+		<type>togglebutton</type>
+		<id>6</id>
+		<posX>524</posX>
+		<posY>391</posY>
+		<label>1010</label>
+		<onleft>22</onleft>
+		<onright>22</onright>
+		<onup>5</onup>
+		<ondown>10</ondown>
+		<textalign>right</textalign>
+	</control>
+
+
+	<control>
+		<description>spin control background 1</description>
+		<type>image</type>
+		<id>117</id>
+		<posX>524</posX>
+		<posY>442</posY>
+		<texture>-</texture>
+		<visible>!Control.HasFocus(10)</visible>
+	</control>
+	
+	<control>
+		<description>spin control background 2</description>
+		<type>image</type>
+		<id>117</id>
+		<posX>524</posX>
+		<posY>442</posY>
+		<width>239</width>
+		<height>36</height>
+		<texture>settings_button_medium_focus.png</texture>
+		<visible>Control.HasFocus(10)</visible>
+	</control>
+	
+	<control>
+		<description>spin control background 3</description>
+		<type>image</type>
+		<id>117</id>
+		<posX>524</posX>
+		<posY>493</posY>
+		<texture>-</texture>
+		<visible>!Control.HasFocus(11)</visible>
+	</control>
+	
+	<control>
+		<description>spin control background 4</description>
+		<type>image</type>
+		<id>117</id>
+		<posX>524</posX>
+		<posY>493</posY>
+		<width>239</width>
+		<height>36</height>
+		<texture>settings_button_medium_focus.png</texture>
+		<visible>Control.HasFocus(11)</visible>
+	</control>
+	
+	<control>
+		<description>image title:</description>
+		<type>label</type>
+		<id>30</id>
+		<posX>540</posX>
+		<posY>448</posY>
+		<label>734</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<textalign>right</textalign>
+	</control>
+
+	<control>
+		<description>spin control</description>
+		<type>spincontrol</type>
+		<id>10</id>
+		<posX>645</posX>
+		<posY>446</posY>
+		<onup>6</onup>
+		<ondown>11</ondown>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>disc:</description>
+		<type>label</type>
+		<id>100</id>
+		<posX>540</posX>
+		<posY>503</posY>
+		<label>427</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	    <textalign>right</textalign>
+	</control>
+
+	<control>
+		<description>disc select</description>
+		<type>spincontrol</type>
+		<id>11</id>
+		<posX>652</posX>
+		<posY>500</posY>
+		<onup>10</onup>
+		<ondown>2</ondown>
+		<onleft>5</onleft>
+		<onright>5</onright>
+		<textcolor>FFFFFFFF</textcolor>
+		<buddycontrolid>100</buddycontrolid>
+		<showrange>no</showrange>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Movie Title value</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>110</posY>
+		<width>700</width>
+		<label>#title</label>
+		<font>Segoe Light22</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Year value</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>924</posX>
+		<posY>195</posY>
+		<width>400</width>
+		<label>#year</label>
+		<textcolor>85cffe</textcolor>
+		<font>Segoe Light18</font>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Runtime value</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>924</posX>
+		<posY>230</posY>
+		<width>400</width>
+		<label>#runtime min</label>
+		<textcolor>85cffe</textcolor>
+		<font>Segoe Light18</font>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Genre value</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>924</posX>
+		<posY>265</posY>
+		<width>400</width>
+		<label>#genre</label>
+		<textcolor>85cffe</textcolor>
+		<font>Segoe Light18</font>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Plot value</description>
+		<type>textboxscrollup</type>
+		<id>20</id>
+		<posX>924</posX>
+		<posY>330</posY>
+		<width>400</width>
+		<height>224</height>
+		<onleft>2</onleft>
+		<onright>2</onright>
+		<onup>2</onup>
+		<ondown>2</ondown>
+		<font>font12</font>
+		<label>#plot</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>textarea</description>
+		<type>textbox</type>
+		<id>22</id>
+		<posX>924</posX>
+		<posY>330</posY>
+		<width>400</width>
+		<height>224</height>
+		<onleft>2</onleft>
+		<onright>2</onright>
+		<onup>2</onup>
+		<ondown>2</ondown>
+		<font>font12</font>
+		<label>#cast</label>
+		<spinPosX>555</spinPosX>
+		<spinPosY>500</spinPosY>
+		<spinWidth>28</spinWidth>
+		<spinHeight>28</spinHeight>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Director value</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>924</posX>
+		<posY>595</posY>
+		<width>365</width>
+		<label>#director</label>
+		<font>font11</font>
+		<textcolor>85cffe</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<type>imagelist</type>
+		<id>1</id>
+		<posX>924</posX>
+		<posY>625</posY>
+		<width>120</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<percentage>#rating</percentage>
+		<imagesToDraw>5</imagesToDraw>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<id>21</id>
+		<type>image</type>
+		<posX>133</posX>
+		<posY>208</posY>
+		<width>266</width>
+		<height>380</height>
+		<texture>#thumb</texture>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>87</posX>
+		<posY>161</posY>
+		<width>357</width>
+		<height>472</height>
+		<texture>blackborders_video.png</texture>
+	</control>
+
+<import>common.overlay.xml</import>
+</controls>
+</window>

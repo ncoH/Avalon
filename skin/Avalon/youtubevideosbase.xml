@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>29050</id>
+    <defaultcontrol>50</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <import>common.window.youtube.xml</import>
+        <import>common.time.xml</import>
+        <control>
+            <id>1</id>
+            <type>label</type>
+            <visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>youtube.fm</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+
+        <control>
+            <id>1</id>
+            <type>label</type>
+            <visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
+            <posX>433</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <align>CENTER</align>
+            <label>youtube.fm</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+
+        <control>
+            <id>0</id>
+            <type>image</type>
+            <visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
+            <posX>91</posX>
+            <posY>207</posY>
+            <width>365</width>
+            <height>203</height>
+            <texture>defaultTVBig.png</texture>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+
+        <control>
+            <id>500</id>
+            <type>image</type>
+            <visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)</visible>
+            <posX>91</posX>
+            <posY>207</posY>
+            <width>365</width>
+            <height>203</height>
+            <texture>#selectedthumb</texture>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+
+        <control>
+            <id>1</id>
+            <type>image</type>
+            <visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)</visible>
+            <posX>44</posX>
+            <posY>161</posY>
+            <width>457</width>
+            <height>295</height>
+            <texture>blackborders_recordings.png</texture>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+
+        <control>
+            <id>1</id>
+            <type>imagelist</type>
+            <visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)</visible>
+            <posX>75</posX>
+            <posY>445</posY>
+            <width>185</width>
+            <height>21</height>
+            <textureHeight>19</textureHeight>
+            <textureWidth>23</textureWidth>
+	    <percentage>#Youtube.fm.Curent.Video.Rating</percentage>
+            <imagesToDraw>5</imagesToDraw>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+            <subitems>
+                <subitem>starblue.png</subitem>
+                <subitem>starwhite.png</subitem>
+            </subitems>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+
+	<control>
+		<description>title2</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>75</posX>
+		<posY>475</posY>
+		<width>350</width>
+		<font>font11</font>
+		<label>Loved by #Youtube.fm.Curent.Video.FavoriteCount Users</label>
+            	<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)</visible>
+            	<animation effect="Fade" time="100">WindowOpen</animation>
+            	<animation effect="Fade" time="100">WindowClose</animation>
+		<wrapString> : : </wrapString>
+	</control>
+	<control>
+		<description>title2</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>75</posX>
+		<posY>505</posY>
+		<width>350</width>
+		<font>font11</font>
+		<label>Viewed by #Youtube.fm.Curent.Video.ViewCount Users</label>
+            	<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)</visible>
+            	<animation effect="Fade" time="100">WindowOpen</animation>
+            	<animation effect="Fade" time="100">WindowClose</animation>
+		<wrapString> : : </wrapString>
+	</control>
+
+        <control>
+            <description>action menu</description>
+            <type>actiongroup</type>
+            <dimColor>00ffffff</dimColor>
+            <width>1366</width>
+            <height>768</height>
+            <buttonX>0</buttonX>
+            <buttonY>0</buttonY>
+            <buttonwidth>0</buttonwidth>
+            <buttonheight>0</buttonheight>
+            <onexit>50</onexit>
+            <defaultcontrol>2</defaultcontrol>
+            <control>
+                <id>0</id>
+                <type>image</type>
+                <colordiffuse>90ffffff</colordiffuse>
+                <width>1366</width>
+                <height>768</height>
+                <texture>semi_trans_back_general_menu.png</texture>
+                <animation effect="Fade" time="200">WindowOpen</animation>
+                <animation effect="Fade" time="400">WindowClose</animation>
+            </control>
+		<control>
+		<type>group</type>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+			<animation effect="fade" time="200" reversible="false">Hidden</animation>
+			<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
+                <control>
+                    <id>1</id>
+                    <type>image</type>
+                    <visible>!Control.HasFocus(50)</visible>
+                    <posX>512</posX>
+                    <posY>64</posY>
+                    <width>342</width>
+                    <height>640</height>
+                    <texture>menu_bg.png</texture>
+                </control>
+                <control>
+                    <id>1</id>
+                    <description>Heading text label</description>
+                    <type>label</type>
+                    <posX>567</posX>
+                    <posY>110</posY>
+                    <font>Segoe Light18</font>
+                    <textcolor>ff85cffe</textcolor>
+                    <label>924</label>
+                </control>
+                <control>
+                    <description>button group</description>
+                    <type>group</type>
+                    <posX>543</posX>
+                    <posY>175</posY>
+                    <layout>StackLayout(1)</layout>
+                    <control>
+                        <id>5</id>
+                        <description>Search Button</description>
+                        <type>button</type>
+                        <onleft>50</onleft>
+                        <onright>50</onright>
+                        <onup>106</onup>
+                        <ondown>6</ondown>
+                        <width>279</width>
+                        <height>49</height>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label>Search</label>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>
+                    <control>
+                        <id>6</id>
+                        <description>Search History</description>
+                        <type>button</type>
+                        <onleft>50</onleft>
+                        <onright>50</onright>
+                        <onup>5</onup>
+                        <ondown>3</ondown>
+                        <width>279</width>
+                        <height>49</height>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label>Search History</label>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>
+                    <control>
+                        <id>3</id>
+                        <description>Swich view</description>
+                        <type>button</type>
+                        <onleft>50</onleft>
+                        <onright>50</onright>
+                        <onup>6</onup>
+                        <ondown>2</ondown>
+                        <width>279</width>
+                        <height>49</height>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label/>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>
+                    <control>
+                        <id>2</id>
+                        <description>Home</description>
+                        <type>button</type>
+                        <onleft>50</onleft>
+                        <onright>50</onright>
+                        <onup>3</onup>
+                        <ondown>7</ondown>
+                        <width>279</width>
+                        <height>49</height>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label>Views</label>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>
+                    <control>
+                        <id>7</id>
+                        <description>Playlist</description>
+                        <type>button</type>
+                        <onleft>50</onleft>
+                        <onright>50</onright>
+                        <onup>2</onup>
+                        <ondown>8</ondown>
+                        <width>279</width>
+                        <height>49</height>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label>Playlist</label>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>
+                    <control>
+                        <id>8</id>
+                        <description>Now playing</description>
+                        <type>button</type>
+                        <onleft>50</onleft>
+                        <onright>50</onright>
+                        <onup>7</onup>
+                        <ondown>106</ondown>
+                        <width>279</width>
+                        <height>49</height>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label>Now playing</label>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>
+                    <control>
+                        <id>106</id>
+                        <description>Lastfmbutton</description>
+                        <type>button</type>
+                        <onleft>50</onleft>
+                        <onright>50</onright>
+                        <onup>8</onup>
+                        <ondown>5</ondown>
+                        <width>279</width>
+                        <height>49</height>
+                        <hyperlink>7890</hyperlink>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label>Last.FM</label>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>
+                </control>
+            </control>
+        </control>
+        <import>common.facade.music.xml</import>
+        <control>
+            <id>1</id>
+            <type>image</type>
+            <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.album]+Control.HasFocus(50)</visible>
+            <posX>0</posX>
+            <posY>325</posY>
+            <texture>hiddenmenu_tab.png</texture>
+        </control>
+        <control>
+            <id>1</id>
+            <type>image</type>
+            <visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+            <posX>624</posX>
+            <posY>0</posY>
+            <texture>hiddenmenu_tab_up.png</texture>
+        </control>
+        <import>common.overlay.xml</import>
+    </controls>
+</window>

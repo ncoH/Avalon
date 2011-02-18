@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>
+
+	<control>
+		<description>group element</description>
+		<type>group</type>
+		<control>
+			<animation effect="fade" time="200">WindowOpen</animation>
+	
+			<animation effect="fade" time="200">WindowClose</animation>
+	
+			<description>composite control consisting of a list control and a thumbnail panel</description>
+			<type>facadeview</type>
+			<id>50</id>
+			<control>
+				<description>listcontrol</description>
+				<type>listcontrol</type>
+				<id>50</id>
+				<onleft>2</onleft>
+				<onright>50</onright>
+				<scrollOffset>1</scrollOffset>
+				<posY>427</posY>
+				<height>300</height>
+				<posX>524</posX>
+				<width>724</width>
+				<spinPosX>560</spinPosX>
+				<spinPosY>692</spinPosY>
+				<spinAlign>left</spinAlign>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>
+				<textXOff>22</textXOff>
+				<spinCanFocus>no</spinCanFocus>
+			</control>
+
+			<control>
+				<description>Thumbnail Panel</description>
+				<type>thumbnailpanel</type>
+				<id>50</id>
+				<posX>516</posX>
+				<posY>239</posY>
+				<width>794</width>
+				<height>300</height>
+				<scrollOffset>0</scrollOffset>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>
+				<onleft>2</onleft>
+				<onright>50</onright>
+				<itemWidth>198</itemWidth>
+				<itemHeight>109</itemHeight>
+				<textureWidth>198</textureWidth>
+				<textureHeight>109</textureHeight>
+				<thumbWidth>198</thumbWidth>
+				<thumbHeight>109</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidthBig>198</itemWidthBig>
+				<itemHeightBig>109</itemHeightBig>
+				<thumbWidthBig>198</thumbWidthBig>
+				<thumbHeightBig>109</thumbHeightBig>
+				<textureWidthBig>198</textureWidthBig>
+				<textureHeightBig>109</textureHeightBig>
+				<keepaspectratio>no</keepaspectratio>
+				<zoomXPixels>0</zoomXPixels>
+				<zoomYPixels>0</zoomYPixels>
+				<hideUnfocusTexture>no</hideUnfocusTexture>
+				<renderFocusText>no</renderFocusText>
+				<renderUnfocusText>no</renderUnfocusText>
+				<frame>-</frame>
+				<frameFocus>thumb_focus_wide.png</frameFocus>
+				<thumbZoom>no</thumbZoom>
+				<spinPosX>1190</spinPosX>
+			</control>
+
+		</control>
+
+	</control>
+
+</controls>
+</window>

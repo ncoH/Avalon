@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>7987</id>
+  <defaultcontrol>101</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#currentmodule:Movies</define>
+  <define>#itemcount:-</define>
+  <controls>
+   <control>
+      <description>movies background image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1366</width>
+      <height>768</height>
+      <texture>background.png</texture>
+    </control>
+    <control>
+      <description>fanart</description>
+      <type>image</type>
+      <id>1000</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <texture>#Fanart</texture>
+      <width>1366</width>
+      <height>768</height>
+      <animation effect="fade" time="400">WindowClose</animation>
+      <animation effect="fade" time="400">WindowOpen</animation>
+    </control>
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <posX>70</posX>
+      <posY>220</posY>
+      <width>230</width>
+      <height>600</height>
+      <layout>StackLayout</layout>
+	  <visible>!Control.HasFocus(101)</visible>
+
+      <control>
+        <type>button</type>
+        <description>Play</description>
+        <id>101</id>
+		<width>279</width>
+	    <height>49</height>
+		<textXOff>25</textXOff>
+		<textYOff>12</textYOff>
+		<ondown>101</ondown>
+		<onleft>101</onleft>
+		<onright>101</onright>
+        <label>208</label>
+        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+      </control>
+	</control>
+  
+	<!-- Details Box -->
+
+		<control>
+		<description>Vignette background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>822</posX>
+		<posY>0</posY>
+		<width>544</width>
+		<height>768</height>
+		<texture>moving_pictures_detail_vignette.png</texture>
+		<visible>!Control.IsVisible(1026)</visible>
+	</control>
+	<control>
+		<description>Movie Title</description>
+		<type>fadelabel</type>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>180</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<label>#Title</label>
+		<visible>!Control.IsVisible(1026)</visible>
+	</control>
+	
+	<control>
+		<description>year</description>
+		<type>label</type>
+		<label>#year</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>215</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(1026)</visible>
+	</control>
+	
+	<control>
+		<description>runtime</description>
+		<type>label</type>
+		<label>#length</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>250</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(1026)</visible>
+	</control>
+
+	<control>
+		<description>genre below the movie title</description>
+		<type>fadelabel</type>
+		<label>#genre</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>285</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(1026)</visible>
+	</control>
+
+	<control>
+		<description>Summary</description>
+		<type>textboxscrollup</type>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>350</posY>
+		<width>365</width>
+		<height>200</height>
+		<textcolor>ffFFFFFF</textcolor>
+		<seperator>-----------------------------------------------------------------------------------</seperator>
+		<label>#description</label>
+		<visible>!Control.IsVisible(1026)</visible>
+	</control>
+	
+	<control>
+		<description>actors</description>
+		<type>fadelabel</type>
+		<label>#actors</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>593</posY>
+		<width>365</width>
+		<font>font11</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(1026)</visible>
+	</control>
+
+	<control>
+		<description>director</description>
+		<type>label</type>
+		<label>director</label>
+		<id>0</id>
+		<posX>363</posX>
+		<posY>-50</posY>
+		<width>840</width>
+		<font>font11</font>
+		<textcolor>ff909090</textcolor>
+		<visible>!Control.IsVisible(1026)</visible>
+	</control>
+
+	<control>
+		<description>director</description>
+		<type>label</type>
+		<label>#directors</label>
+		<id>0</id>
+		<posX>463</posX>
+		<posY>-50</posY>
+		<width>840</width>
+		<font>font11</font>
+		<textcolor>ffFFFFFF</textcolor>
+		<visible>!Control.IsVisible(1026)</visible>
+	</control>	
+	<control>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>903</posX>
+		<posY>667</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>stargrey.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#rating</percentage>
+		<visible>!Control.IsVisible(1026)</visible>
+	</control>
+    <import>common.overlay.xml</import>
+  </controls>
+</window>

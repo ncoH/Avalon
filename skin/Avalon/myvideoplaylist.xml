@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>28</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<controls>
+
+	<import>common.window.playlist.xml</import>
+
+	<control>
+		<description>Alternate BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>background_thumbs.png</texture>
+		<visible>facadeview.smallicons | facadeview.largeicons</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>playlist</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>
+		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
+	</control>
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>433</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>playlist</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
+		<align>center</align>
+		<valign>middle</valign>
+	</control>
+	
+<import>common.time.xml</import>
+	
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1366</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>semi_trans_back_general_menu.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+		</control>
+		
+		<control>
+		<type>group</type>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+		<animation effect="fade" time="200" reversible="false">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
+		
+		<control>
+			<id>1</id>
+			<type>image</type>
+			<posX>512</posX>
+			<posY>64</posY>
+			<width>342</width>
+			<height>640</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
+		</control>
+		
+		<control>
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>567</posX>
+			<posY>110</posY>
+			<label>924</label>
+			<font>Segoe Light18</font>
+			<textcolor>85cffe</textcolor>
+		</control>
+		
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>543</posX>
+				<posY>175</posY>
+				<layout>StackLayout(1)</layout>
+				<control>
+					<description>View-As button</description>
+					<type>button</type>
+					<id>2</id>
+					<label>100</label>
+					<onright>50</onright>
+					<onup>17</onup>
+					<ondown>20</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+
+				<control>
+					<description>Shuffle button</description>
+					<type>button</type>
+					<id>20</id>
+					<label>191</label>
+					<onright>50</onright>
+					<onup>2</onup>
+					<ondown>30</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+
+				<control>
+					<description>Repeat on/off button</description>
+					<type>togglebutton</type>
+					<id>30</id>
+					<label>486</label>
+					<onright>50</onright>
+					<onup>20</onup>
+					<ondown>21</ondown>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+					<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+					<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+				</control>
+
+				<control>
+					<description>Save button</description>
+					<type>button</type>
+					<id>21</id>
+					<label>190</label>
+					<onright>50</onright>
+					<onup>30</onup>
+					<ondown>9</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+				
+				<control>
+					<description>My Playlists</description>
+					<type>button</type>
+					<id>9</id>
+					<label>983</label>
+					<onright>50</onright>
+					<ondown>22</ondown>
+					<onup>21</onup>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+
+				<control>
+					<description>Clear button</description>
+					<type>button</type>
+					<id>22</id>
+					<label>192</label>
+					<onright>50</onright>
+					<onup>9</onup>
+					<ondown>23</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+
+				<control>
+					<description>Play button</description>
+					<type>button</type>
+					<id>23</id>
+					<label>208</label>
+					<onright>50</onright>
+					<onup>22</onup>
+					<ondown>24</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+
+				<control>
+					<description>Next button</description>
+					<type>button</type>
+					<id>24</id>
+					<label>209</label>
+					<onright>50</onright>
+					<onup>23</onup>
+					<ondown>25</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+
+				<control>
+					<description>Previous button</description>
+					<type>button</type>
+					<id>25</id>
+					<label>210</label>
+					<onright>50</onright>
+					<onup>24</onup>
+					<ondown>2</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+
+			</control>
+			
+		</control>
+		
+	</control>
+
+
+		
+
+	<import>common.facade.video.xml</import>
+	
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>325</posY>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>facadeview.playlist+Control.HasFocus(50)</visible>
+	</control>
+	
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>624</posX>
+		<posY>0</posY>
+		<texture>hiddenmenu_tab_up.png</texture>
+		<visible>facadeview.album+Control.HasFocus(50)</visible>
+	</control>
+	
+	<control>
+		<id>500</id>
+		<type>image</type>
+		<posX>133</posX>
+		<posY>208</posY>
+		<width>266</width>
+		<height>380</height>
+		<texture>#selectedthumb</texture>
+		<visible>facadeview.playlist|facadeview.album</visible>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>87</posX>
+		<posY>161</posY>
+		<width>357</width>
+		<height>472</height>
+		<texture>blackborders_video.png</texture>
+		<visible>facadeview.playlist|facadeview.album</visible>
+	</control>
+
+<import>common.overlay.xml</import>
+	
+</controls>
+</window>

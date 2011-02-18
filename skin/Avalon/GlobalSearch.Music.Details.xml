@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>510</id>
+    <defaultcontrol>11</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <control>
+            <id>555</id>
+            <description>background image</description>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <texture>background.png</texture>
+        </control>
+        <control>
+            <id>555</id>
+            <description>listcontrol background</description>
+            <type>image</type>
+            <posX>524</posX>
+            <posY>169</posY>
+            <width>725</width>
+            <height>571</height>
+            <texture>music_search_bg.png</texture>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>11</id>
+            <description>Play now</description>
+            <type>button</type>
+            <onleft>1001</onleft>
+            <onright>11</onright>
+            <onup>15</onup>
+            <ondown>12</ondown>
+            <posX>524</posX>
+            <posY>433</posY>
+            <width>724</width>
+            <height>52</height>
+            <textureFocus>listcontrol_item_selected.png</textureFocus>
+            <textureNoFocus>listcontrol_item.png</textureNoFocus>
+            <label>4552</label>
+            <textXOff>32</textXOff>
+            <textYOff>12</textYOff>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>12</id>
+            <description>Play next</description>
+            <type>button</type>
+            <onleft>1001</onleft>
+            <onright>12</onright>
+            <onup>11</onup>
+            <ondown>13</ondown>
+            <posX>524</posX>
+            <posY>484</posY>
+            <width>724</width>
+            <height>52</height>
+            <textureFocus>listcontrol_item_selected.png</textureFocus>
+            <textureNoFocus>listcontrol_item.png</textureNoFocus>
+            <label>4551</label>
+            <textXOff>32</textXOff>
+            <textYOff>12</textYOff>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>13</id>
+            <description>Add to playlist</description>
+            <type>button</type>
+            <onleft>1001</onleft>
+            <onright>13</onright>
+            <onup>12</onup>
+            <ondown>14</ondown>
+            <posX>524</posX>
+            <posY>535</posY>
+            <width>724</width>
+            <height>52</height>
+            <textureFocus>listcontrol_item_selected.png</textureFocus>
+            <textureNoFocus>listcontrol_item.png</textureNoFocus>
+            <label>926</label>
+            <textXOff>32</textXOff>
+            <textYOff>12</textYOff>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>14</id>
+            <description>Add album to playlist</description>
+            <type>button</type>
+            <onleft>1001</onleft>
+            <onright>14</onright>
+            <onup>13</onup>
+            <ondown>15</ondown>
+            <posX>524</posX>
+            <posY>586</posY>
+            <width>724</width>
+            <height>52</height>
+            <textureFocus>listcontrol_item_selected.png</textureFocus>
+            <textureNoFocus>listcontrol_item.png</textureNoFocus>
+            <label>33041</label>
+            <textXOff>32</textXOff>
+            <textYOff>12</textYOff>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>15</id>
+            <description>Add to favorites</description>
+            <type>button</type>
+            <onleft>1001</onleft>
+            <onright>15</onright>
+            <onup>14</onup>
+            <ondown>11</ondown>
+            <posX>524</posX>
+            <posY>637</posY>
+            <width>724</width>
+            <height>52</height>
+            <textureFocus>listcontrol_item_selected.png</textureFocus>
+            <textureNoFocus>listcontrol_item.png</textureNoFocus>
+            <label>930</label>
+            <textXOff>32</textXOff>
+            <textYOff>12</textYOff>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>555</id>
+            <description>information label</description>
+            <type>fadelabel</type>
+            <posX>555</posX>
+            <posY>136</posY>
+            <width>700</width>
+            <font>Segoe Light22</font>
+            <label>1020</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+            <valign>middle</valign>
+        </control>
+        <control>
+            <id>555</id>
+            <description>default tumb</description>
+            <type>image</type>
+            <visible>!control.hasthumb(7)</visible>
+            <posX>131</posX>
+            <posY>191</posY>
+            <width>265</width>
+            <height>261</height>
+            <texture>DefaultMyradioBig.png</texture>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>7</id>
+            <description>album art image</description>
+            <type>image</type>
+            <posX>131</posX>
+            <posY>190</posY>
+            <width>265</width>
+            <height>263</height>
+            <texture/>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>555</id>
+            <description>overlay</description>
+            <type>image</type>
+            <posX>88</posX>
+            <posY>146</posY>
+            <width>350</width>
+            <height>350</height>
+            <texture>blackborders_music.png</texture>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>25</id>
+            <description>Artist label</description>
+            <type>label</type>
+            <posX>555</posX>
+            <posY>176</posY>
+            <font>Segoe Light16</font>
+            <textcolor>ff85cfff</textcolor>
+            <label>484</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>1</id>
+            <description>Artist</description>
+            <type>fadelabel</type>
+            <posX>704</posX>
+            <posY>176</posY>
+            <width>546</width>
+            <font>Segoe Light16</font>
+            <textcolor>ffffffff</textcolor>
+            <label>#artist</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+            <disabledcolor>ff808080</disabledcolor>
+        </control>
+        <control>
+            <id>26</id>
+            <description>album label</description>
+            <type>label</type>
+            <posX>555</posX>
+            <posY>208</posY>
+            <font>Segoe Light16</font>
+            <textcolor>ff85cfff</textcolor>
+            <label>483</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>2</id>
+            <description>album</description>
+            <type>fadelabel</type>
+            <posX>704</posX>
+            <posY>208</posY>
+            <width>545</width>
+            <font>Segoe Light16</font>
+            <label>#album</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>27</id>
+            <description>track label</description>
+            <type>label</type>
+            <posX>555</posX>
+            <posY>240</posY>
+            <width>700</width>
+            <font>Segoe Light16</font>
+            <textcolor>ff85cfff</textcolor>
+            <label>435</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>3</id>
+            <description>track</description>
+            <type>fadelabel</type>
+            <posX>704</posX>
+            <posY>240</posY>
+            <width>545</width>
+            <font>Segoe Light16</font>
+            <label>#track</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>28</id>
+            <description>genre label</description>
+            <type>label</type>
+            <posX>555</posX>
+            <posY>272</posY>
+            <font>Segoe Light12</font>
+            <textcolor>ff85cfff</textcolor>
+            <label>135</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>4</id>
+            <description>genre</description>
+            <type>fadelabel</type>
+            <posX>704</posX>
+            <posY>272</posY>
+            <font>Segoe Light12</font>
+            <textcolor>ffffffff</textcolor>
+            <label>#genre</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+            <disabledcolor>ff808080</disabledcolor>
+        </control>
+        <control>
+            <id>29</id>
+            <description>year label</description>
+            <type>label</type>
+            <posX>555</posX>
+            <posY>297</posY>
+            <font>Segoe Light12</font>
+            <textcolor>ff85cfff</textcolor>
+            <label>345</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>5</id>
+            <description>year</description>
+            <type>fadelabel</type>
+            <posX>704</posX>
+            <posY>297</posY>
+            <font>Segoe Light12</font>
+            <textcolor>ffffffff</textcolor>
+            <label>#year</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+            <disabledcolor>ff808080</disabledcolor>
+        </control>
+        <control>
+            <id>35</id>
+            <description>play count label</description>
+            <type>label</type>
+            <posX>555</posX>
+            <posY>349</posY>
+            <font>Segoe Light12</font>
+            <textcolor>ff85cfff</textcolor>
+            <label>#SkinTranslation.Translations.global.search.playcount.Label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+            <disabledcolor>ff808080</disabledcolor>
+        </control>
+        <control>
+            <id>8</id>
+            <description>play count</description>
+            <type>fadelabel</type>
+            <posX>704</posX>
+            <posY>349</posY>
+            <font>Segoe Light12</font>
+            <label>#tp</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>37</id>
+            <description>last played label</description>
+            <type>label</type>
+            <posX>555</posX>
+            <posY>323</posY>
+            <font>Segoe Light12</font>
+            <textcolor>ff85cfff</textcolor>
+            <label>#SkinTranslation.Translations.global.search.lastplayed.Label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>10</id>
+            <description>last played</description>
+            <type>fadelabel</type>
+            <posX>704</posX>
+            <posY>323</posY>
+            <font>Segoe Light12</font>
+            <textcolor>ffffffff</textcolor>
+            <label>#last_played</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+            <disabledcolor>ff808080</disabledcolor>
+        </control>
+        <control>
+            <id>30</id>
+            <description>Filename label</description>
+            <type>label</type>
+            <posX>555</posX>
+            <posY>376</posY>
+            <font>Segoe Light12</font>
+            <textcolor>ff85cfff</textcolor>
+            <label>#SkinTranslation.Translations.global.search.filename.Label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>6</id>
+            <description>filename</description>
+            <type>fadelabel</type>
+            <posX>704</posX>
+            <posY>376</posY>
+            <font>Segoe Light12</font>
+            <textcolor>ffffffff</textcolor>
+            <label>#filename</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+            <disabledcolor>ff808080</disabledcolor>
+        </control>
+        <control>
+            <id>31</id>
+            <description>rating label</description>
+            <type>label</type>
+            <posX>555</posX>
+            <posY>403</posY>
+            <font>Segoe Light12</font>
+            <textcolor>ff85cfff</textcolor>
+            <label>931</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>1337</id>
+            <description>rating</description>
+            <type>imagelist</type>
+            <posX>704</posX>
+            <posY>404</posY>
+            <width>185</width>
+            <height>21</height>
+            <textureHeight>19</textureHeight>
+            <textureWidth>23</textureWidth>
+            <percentage>#SongDetails.Rating</percentage>
+            <imagesToDraw>5</imagesToDraw>
+            <orientation>HORIZONTAL</orientation>
+            <subitems>
+                <subitem>starblue.png</subitem>
+                <subitem>starwhite.png</subitem>
+            </subitems>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>9</id>
+            <type>fadelabel</type>
+            <posX>-2000</posX>
+            <posY>340</posY>
+            <label>#duration</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>555</id>
+            <description>left menu</description>
+            <type>image</type>
+            <visible>Control.HasFocus(11)|Control.HasFocus(12)|Control.HasFocus(13)|Control.HasFocus(14)|Control.HasFocus(15)</visible>
+            <posX>0</posX>
+            <posY>325</posY>
+            <texture>hiddenmenu_tab.png</texture>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <description>action menu</description>
+            <type>actiongroup</type>
+            <dimColor>00ffffff</dimColor>
+            <width>1366</width>
+            <height>768</height>
+            <buttonX>0</buttonX>
+            <buttonY>0</buttonY>
+            <buttonwidth>0</buttonwidth>
+            <buttonheight>0</buttonheight>
+            <onexit>50</onexit>
+            <defaultcontrol>2</defaultcontrol>
+            <control>
+                <id>555</id>
+                <type>image</type>
+                <colordiffuse>90ffffff</colordiffuse>
+                <posX>0</posX>
+                <posY>0</posY>
+                <width>1366</width>
+                <height>768</height>
+                <texture>semi_trans_back_general_menu.png</texture>
+                <animation effect="Fade" time="200">WindowOpen</animation>
+                <animation effect="Fade" time="400">WindowClose</animation>
+            </control>
+            <control>
+                <type>group</type>
+                <animation effect="Fade" time="250">Visible</animation>
+                <animation center="683,384" delay="100" effect="Zoom" end="100,100" start="95,95" time="550" tween="Elastic">Visible</animation>
+                <animation effect="Fade" reversible="FALSE" time="200">Hidden</animation>
+                <animation center="683,384" effect="Zoom" end="200,200" reversible="FALSE" start="100,100" time="200">Hidden</animation>
+                <control>
+                    <id>555</id>
+                    <type>image</type>
+                    <visible>!Control.HasFocus(50)</visible>
+                    <posX>512</posX>
+                    <posY>64</posY>
+                    <width>342</width>
+                    <height>640</height>
+                    <texture>menu_bg.png</texture>
+                </control>
+                <control>
+                    <id>555</id>
+                    <description>Heading text label</description>
+                    <type>label</type>
+                    <posX>567</posX>
+                    <posY>110</posY>
+                    <font>Segoe Light18</font>
+                    <textcolor>ff85cffe</textcolor>
+                    <label>924</label>
+                </control>
+                <control>
+                    <description>button group</description>
+                    <type>group</type>
+                    <posX>543</posX>
+                    <posY>175</posY>
+                    <layout>StackLayout(1)</layout>
+                    <control>
+                        <id>1001</id>
+                        <description>Play CD</description>
+                        <type>button</type>
+                        <onleft>11</onleft>
+                        <onright>11</onright>
+                        <onup>1006</onup>
+                        <ondown>1002</ondown>
+                        <width>279</width>
+                        <height>49</height>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label>890</label>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>
+                    <control>
+                        <id>1002</id>
+                        <description>Now playing</description>
+                        <type>button</type>
+                        <onleft>11</onleft>
+                        <onright>11</onright>
+                        <onup>1001</onup>
+                        <ondown>1003</ondown>
+                        <width>279</width>
+                        <height>49</height>
+                        <hyperlink>510</hyperlink>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label>4540</label>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>
+                    <control>
+                        <id>1003</id>
+                        <description>Current Playlist</description>
+                        <type>button</type>
+                        <onleft>11</onleft>
+                        <onright>11</onright>
+                        <onup>1002</onup>
+                        <ondown>1004</ondown>
+                        <width>279</width>
+                        <height>49</height>
+                        <action>33</action>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label>4555</label>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>
+                    <control>
+                        <id>1004</id>
+                        <description>My Playlists</description>
+                        <type>button</type>
+                        <onleft>11</onleft>
+                        <onright>11</onright>
+                        <onup>1003</onup>
+                        <ondown>1005</ondown>
+                        <width>279</width>
+                        <height>49</height>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label>983</label>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>
+                    <control>
+                        <id>1005</id>
+                        <description>Jump to (my) music</description>
+                        <type>button</type>
+                        <onleft>11</onleft>
+                        <onright>11</onright>
+                        <onup>1004</onup>
+                        <ondown>1006</ondown>
+                        <visible/>
+                        <width>279</width>
+                        <height>49</height>
+                        <hyperlink>501</hyperlink>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label>2</label>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>
+                    <control>
+                        <id>1006</id>
+                        <description>Lyrics</description>
+                        <type>button</type>
+                        <onleft>11</onleft>
+                        <onright>11</onright>
+                        <onup>1005</onup>
+                        <ondown>1001</ondown>
+                        <visible>plugin.isenabled(My Lyrics)</visible>
+                        <width>279</width>
+                        <height>49</height>
+                        <hyperlink>90478</hyperlink>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label>#SkinTranslation.Translations.mylyrics.Label</label>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

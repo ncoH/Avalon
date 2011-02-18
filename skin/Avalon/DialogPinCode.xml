@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>9915</id>
+    <defaultcontrol>10</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <controls>
+        <import>common.dialog.xml</import>
+        <control>
+            <id>1</id>
+            <description>Lock</description>
+            <type>image</type>
+            <posX>850</posX>
+            <posY>266</posY>
+            <width>48</width>
+            <height>48</height>
+            <texture>lock.png</texture>
+        </control>
+        <control>
+            <id>1</id>
+            <description>PinCode Item 1</description>
+            <type>image</type>
+            <onup>101</onup>
+            <posX>580</posX>
+            <posY>382</posY>
+            <width>23</width>
+            <height>19</height>
+            <texture>stargrey.png</texture>
+        </control>
+        <control>
+            <id>100</id>
+            <description>PinCode Item 1</description>
+            <type>image</type>
+            <onup>101</onup>
+            <posX>580</posX>
+            <posY>382</posY>
+            <width>23</width>
+            <height>19</height>
+            <texture>starwhite.png</texture>
+        </control>
+        <control>
+            <id>1</id>
+            <description>PinCode Item 2</description>
+            <type>image</type>
+            <onup>101</onup>
+            <posX>620</posX>
+            <posY>382</posY>
+            <width>23</width>
+            <height>19</height>
+            <texture>stargrey.png</texture>
+        </control>
+        <control>
+            <id>101</id>
+            <description>PinCode Item 2</description>
+            <type>image</type>
+            <onup>102</onup>
+            <posX>620</posX>
+            <posY>382</posY>
+            <width>23</width>
+            <height>19</height>
+            <texture>starwhite.png</texture>
+        </control>
+        <control>
+            <id>1</id>
+            <description>PinCode Item 3</description>
+            <type>image</type>
+            <onup>101</onup>
+            <posX>660</posX>
+            <posY>382</posY>
+            <width>23</width>
+            <height>19</height>
+            <texture>stargrey.png</texture>
+        </control>
+        <control>
+            <id>102</id>
+            <description>PinCode Item 3</description>
+            <type>image</type>
+            <onup>103</onup>
+            <posX>660</posX>
+            <posY>382</posY>
+            <width>23</width>
+            <height>19</height>
+            <texture>starwhite.png</texture>
+        </control>
+        <control>
+            <id>1</id>
+            <description>PinCode Item 4</description>
+            <type>image</type>
+            <onup>101</onup>
+            <posX>700</posX>
+            <posY>382</posY>
+            <width>23</width>
+            <height>19</height>
+            <texture>stargrey.png</texture>
+        </control>
+        <control>
+            <id>103</id>
+            <description>PinCode Item 4</description>
+            <type>image</type>
+            <onup>104</onup>
+            <posX>700</posX>
+            <posY>382</posY>
+            <width>23</width>
+            <height>19</height>
+            <texture>starwhite.png</texture>
+        </control>
+        <control>
+            <id>6</id>
+            <description>Feedback</description>
+            <type>label</type>
+            <posX>470</posX>
+            <posY>440</posY>
+            <width>200</width>
+        </control>
+    </controls>
+</window>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>34</id>
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<disabletopbar>no</disabletopbar>
+<controls>
+
+	<control>
+		<description>background image</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+	
+<import>common.time.xml</import>
+
+	<control>
+		<description>Menu</description>
+		<type>menu</type>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="550">WindowClose</animation>
+		<id>50</id>
+		<posX>480</posX>
+		<posY>130</posY>
+		<width>630</width>
+		<textcolor>ffffffff</textcolor>
+		<textColorNoFocus>50ffffff</textColorNoFocus>
+		<buttonTextXOff>77</buttonTextXOff>
+		<buttonTextYOff>0</buttonTextYOff>
+		<buttonOffset>25</buttonOffset>
+		<buttonFont>Segoe Light26</buttonFont>
+		<buttonHeight>70</buttonHeight>
+		<spaceBetweenButtons>8</spaceBetweenButtons>
+		<numberOfButtons>5</numberOfButtons>
+		<hoverX>520</hoverX>
+		<hoverY>352</hoverY>
+		<hoverWidth>285</hoverWidth>
+		<hoverHeight>180</hoverHeight>
+		<hoverKeepAspectratio>yes</hoverKeepAspectratio>
+		<scrollTime>140</scrollTime>
+		<scrollTimeMin>60</scrollTimeMin>
+		<onright>4</onright>
+		<onleft>2</onleft>
+	</control>
+
+	<!-- Date and Time -->
+	<control>
+		<description>Date label</description>
+		<type>label</type>
+		<posX>706</posX>
+		<posY>700</posY>
+		<width>500</width>
+		<label>#date</label>
+		<font>Segoe Light12</font>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Time</description>
+		<type>label</type>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="500">WindowClose</animation>
+		<id>201</id>
+		<posX>803</posX>
+		<posY>768</posY>
+		<label>#time</label>
+		<align>left</align>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>
+	</control>
+
+	
+	<!-- TOPBAR Buttons -->
+<control>
+		<type>actiongroup</type>
+		<description>action menu</description><defaultcontrol>3</defaultcontrol>
+		<onexit>0</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>106</buttonwidth>
+		<buttonheight>720</buttonheight>
+		<width>200</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+		
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
+			<animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
+			<visible>!Control.HasFocus(50)</visible>
+			
+			<control>
+				<description>group element</description>
+				<type>group</type>
+				<animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
+				<posX>71</posX>
+				<posY>150</posY>
+				<visible>!Control.HasFocus(50)</visible>
+				
+				<control>
+					<description>Exit Button</description>
+					<type>button</type>
+					<id>2</id>
+					<posX>15</posX>
+					<posY>250</posY>
+					<onleft>3</onleft>
+					<width>93</width>
+					<height>96</height>
+					<textureNoFocus>exit_button_nofocus.png</textureNoFocus>
+					<textureFocus>exit_button_focus.png</textureFocus>
+					<action>97</action>
+					<onright>50</onright>
+					<onup>5</onup>
+					<ondown>3</ondown>
+					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
+				</control>
+
+				<control>
+					<description>Shutdown Button</description>
+					<type>button</type>
+					<id>3</id>
+					<posX>15</posX>
+					<posY>350</posY>
+					<width>93</width>
+					<height>96</height>
+					<textureNoFocus>shutdown_button_nofocus.png</textureNoFocus>
+					<textureFocus>shutdown_button_focus.png</textureFocus>
+					<action>99</action>
+					<onright>50</onright>
+					<onup>2</onup>
+					<ondown>4</ondown>
+					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
+				</control>
+
+				<control>
+					<description>Restart Button</description>
+					<type>button</type>
+					<id>4</id>
+					<posX>15</posX>
+					<posY>450</posY>
+					<width>93</width>
+					<height>96</height>
+					<textureNoFocus>restart_button_nofocus.png</textureNoFocus>
+					<textureFocus>restart_button_focus.png</textureFocus>
+					<action>98</action>
+					<onright>50</onright>
+					<onup>3</onup>
+					<ondown>5</ondown>
+					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
+				</control>
+				
+				<control>
+					<description>Sleepcontrol Button</description>
+					<type>button</type>
+					<id>5</id>
+					<posX>15</posX>
+					<posY>550</posY>
+					<width>93</width>
+					<height>96</height>
+					<textureNoFocus>timer_button_unfocus.png</textureNoFocus>
+					<textureFocus>timer_button_focus.png</textureFocus>
+					<hyperlink>7969</hyperlink>
+					<onright>901</onright>
+					<visible>!string.equals(#SleepControl.Text,)+plugin.isenabled(Sleep Control)</visible>
+					<onup>4</onup>
+					<ondown>2</ondown>
+					<label>#SkinTranslation.Translations.SleepControl.Label</label>
+					<textXOff>-2000</textXOff>
+					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
+				</control>
+			</control>
+
+		</control>
+
+	</control>
+	
+	<!--Weather-->
+
+	<control>
+		<description>Weather image</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>605</posX>
+		<posY>650</posY>
+		<height>90</height>
+		<width>90</width>
+		<texture>weather/#infoservice.weather.today.img.small.filenamewithext</texture>
+		<visible>plugin.isenabled(InfoService)+string.contains(#maya.weather.visible,yes)</visible>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Temp label</description>
+		<type>label</type>
+		<posX>705</posX>
+		<posY>655</posY>
+		<width>500</width>
+		<label>#infoservice.weather.today.temp</label>
+		<font>Segoe Light22</font>
+		<visible>plugin.isenabled(InfoService)+string.contains(#maya.weather.visible,yes)</visible>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+	</control>
+	
+<!--RSS-->
+
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>738</posY>
+		<width>1366</width>
+		<height>30</height>
+		<texture>rss_bg.png</texture>
+		<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
+		<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
+		<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>RSS image</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>625</posY>
+		<width>140</width>
+		<height>35</height>
+		<keepaspectratio>no</keepaspectratio>
+		<texture>#rssimg</texture>
+		<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
+		<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
+		<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>RSS items</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>15</posX>
+		<posY>743</posY>
+		<width>1336</width>
+		<height>30</height>
+		<font>font10</font>
+		<textcolor>6aa5cb</textcolor>
+		<label>#infoservice.feed.titles</label>
+		<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
+		<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
+		<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
+	</control>
+
+<import>common.home.overlay.xml</import>
+</controls>
+</window>

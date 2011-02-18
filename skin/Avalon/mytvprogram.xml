@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>748</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<define>#selecteditem:</define>
+<controls>
+
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>background_list.png</texture>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>28</posY>
+		<width>800</width>
+		<label>100748</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light24</font>
+	</control>
+	
+	<control>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>908</posX>
+        <posY>192</posY>
+		<width>958</width>
+		<height>699</height>
+		<texture>tv_info_bg.png</texture>
+	</control>
+	
+	<import>common.time.xml</import>
+	
+	<control>
+		<type>group</type>
+		<description>group element</description>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		
+		<control>
+			<description>Record</description>
+			<type>button</type>
+			<id>2</id>
+			<posX>1042</posX>
+			<posY>680</posY>
+			<onup>8</onup>
+			<ondown>4</ondown>
+			<onright>3</onright>
+			<onleft>10</onleft>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		</control>
+
+		<control>
+			<description>Advanced Record</description>
+			<type>button</type>
+			<id>3</id>
+			<posX>1431</posX>
+			<posY>680</posY>
+			<label>1038</label>
+			<onup>9</onup>
+			<ondown>5</ondown>
+			<onright>10</onright>
+			<onleft>2</onleft>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		</control>
+
+		<control>
+			<description>Keep</description>
+			<type>button</type>
+			<id>4</id>
+			<posX>1042</posX>
+			<posY>744</posY>
+			<label>1042</label>
+			<onup>2</onup>
+			<ondown>8</ondown>
+			<onright>5</onright>
+			<onleft>10</onleft>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		</control>
+
+		<control>
+			<description>Notify</description>
+			<type>togglebutton</type>
+			<id>5</id>
+			<posX>1431</posX>
+			<posY>744</posY>
+			<label>1040</label>
+			<textcolor>White</textcolor>
+			<colordiffuse>White</colordiffuse>
+			<disabledcolor>60ffffff</disabledcolor>
+			<onup>3</onup>
+			<ondown>9</ondown>
+			<onright>10</onright>
+			<onleft>4</onleft>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		</control>
+
+		<control>
+			<description>Quality</description>
+			<type>button</type>
+			<id>6</id>
+			<label>882</label>
+			<onup>5</onup>
+			<ondown>7</ondown>
+			<onright>10</onright>
+			<textalign>right</textalign>
+			<visible>false</visible>
+		</control>
+
+		<control>
+			<description>Episodes</description>
+			<type>button</type>
+			<id>7</id>
+			<label>888</label>
+			<onup>6</onup>
+			<ondown>8</ondown>
+			<onright>10</onright>
+			<textalign>right</textalign>
+			<visible>false</visible>
+		</control>
+
+		<control>
+			<description>PreRecord</description>
+			<type>button</type>
+			<id>8</id>
+			<posX>1042</posX>
+			<posY>808</posY>
+			<label>1444</label>
+			<onup>4</onup>
+			<ondown>2</ondown>
+			<onright>9</onright>
+			<onleft>10</onleft>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		</control>
+
+		<control>
+			<description>PostRecord</description>
+			<type>button</type>
+			<id>9</id>
+			<posX>1431</posX>
+			<posY>808</posY>
+			<label>1445</label>
+			<onup>5</onup>
+			<ondown>3</ondown>
+			<onright>10</onright>
+			<onleft>8</onleft>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		</control>
+
+	</control>
+
+	<control>
+		<description>Current program title</description>
+		<type>fadelabel</type>
+		<id>13</id>
+		<posX>154</posX>
+		<posY>910</posY>
+		<width>1705</width>
+		<font>Segoe Light22</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+		
+		<control>
+			<description>Current program channel</description>
+			<type>fadelabel</type>
+			<id>16</id>
+			<posX>1238</posX>
+			<posY>242</posY>
+			<font>Segoe Light14</font>
+			<textcolor>85cffe</textcolor>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control>
+			<type>label</type>
+			<description>Current program time</description>
+			<id>14</id>
+			<posX>1238</posX>
+			<posY>287</posY>
+			<textcolor>85cffe</textcolor>
+			<font>Segoe Light14</font>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<type>textboxscrollup</type>
+			<description>Description1</description>
+			<id>15</id>
+			<posX>1042</posX>
+			<posY>350</posY>
+			<width>775</width>
+			<height>270</height>
+			<label>#TV.RecordedTV.Description</label>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+	<control>
+		<description>upcoming episodes label</description>
+		<type>label</type>
+		<id>11</id>
+		<posX>144</posX>
+		<posY>242</posY>
+		<width>680</width>
+		<label>1041</label>
+		<textcolor>85cffe</textcolor>
+		<font>Segoe Light14</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+			<control>
+				<description>listcontrol</description>
+				<type>listcontrol</type>
+				<id>10</id>
+				<posX>0</posX>
+				<posY>350</posY>
+				<height>650</height>
+				<width>992</width>
+				<onleft>3</onleft>
+				<onright>2</onright>
+				<scrollOffset>5</scrollOffset>
+				<PinIconHeight>59</PinIconHeight>
+				<PinIconWidth>59</PinIconWidth>
+				<PinIconXOff>76</PinIconXOff>
+				<PinIconYOff>0</PinIconYOff>
+				<itemWidth>64</itemWidth>
+				<itemHeight>53</itemHeight>
+				<IconXOff>-2000</IconXOff>
+				<IconYOff>0</IconYOff>
+				<spinPosX>958</spinPosX>
+				<spinPosY>1011</spinPosY>
+				<spinAlign>left</spinAlign>
+				<textXOff>66</textXOff>
+				<keepaspectratio>yes</keepaspectratio>
+				<spinCanFocus>no</spinCanFocus>
+				<dimColor>ffffffff</dimColor>
+			</control>
+
+	<control>
+		<description>genre</description>
+		<type>label</type>
+		<id>17</id>
+		<posX>-2000</posX>
+	</control>
+	
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1860</posX>
+		<posY>1010</posY>
+		<label>#currentmodule: #itemcount</label>
+		<textcolor>85cffe</textcolor>
+		<font>Segoe Light12</font>
+		<align>right</align>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>1030</posX>
+		<posY>228</posY>
+		<width>194</width>
+		<height>122</height>
+		<texture>tv_logo_bg.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>1092</posX>
+		<posY>254</posY>
+		<width>60</width>
+		<height>60</height>
+		<texture>#selectedthumb</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Info Arrow</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>154</posX>
+		<posY>882</posY>
+		<width>34</width>
+		<height>34</height>
+		<texture>info_arrow_tv.png</texture>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>Info Separator</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>154</posX>
+		<posY>988</posY>
+		<width>1706</width>
+		<height>1</height>
+		<texture>info_separator_large.png</texture>
+	</control>
+	
+<import>common.overlay.xml</import>
+</controls>
+</window>

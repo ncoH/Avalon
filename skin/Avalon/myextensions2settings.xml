@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>803</id>
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:14001</define>
+	<controls>
+	
+        <control>
+            <description>Background</description>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>
+        </control>
+        <control>
+            <id>1</id>
+            <type>label</type>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+		
+        <import>common.time.xml</import>
+
+	<control>
+		<description>group element</description>
+		<type>group</type>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="1000">WindowClose</animation>
+		<control>
+			<description>composite control consisting of a list control and a thumbnail panel</description>
+			<type>facadeview</type>
+			<id>50</id>
+			<control>
+				<description>listcontrol</description>
+				<type>listcontrol</type>
+				<id>50</id>
+				<onleft>2</onleft>
+				<onright>50</onright>
+				<scrollOffset>1</scrollOffset>
+				<posX>524</posX>
+				<posY>187</posY>
+				<height>458</height>
+				<spinPosX>560</spinPosX>
+				<spinPosY>688</spinPosY>
+				<spinAlign>left</spinAlign>
+				<textXOff>22</textXOff>
+				<dimColor>ffffffff</dimColor>
+			</control>
+		</control>
+
+	</control>
+	
+	<control>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(50) + !Control.IsVisible(51)</visible>
+	</control>
+		
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1366</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+	<control>
+		<type>image</type>
+		<id>0</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>semi_trans_back_general_menu.png</texture>
+		<colordiffuse>90ffffff</colordiffuse>
+		<animation effect="fade" time="200">windowopen</animation>
+		<animation effect="fade" time="400">windowclose</animation>
+	</control>
+		
+	<control>
+		<type>group</type>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+			<animation effect="fade" time="200">Hidden</animation>
+			<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">Hidden</animation>
+		
+		<control>
+			<id>1</id>
+			<type>image</type>
+			<posX>512</posX>
+			<posY>64</posY>
+			<width>342</width>
+			<height>640</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
+		</control>
+		
+		<control>
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>567</posX>
+			<posY>110</posY>
+			<label>924</label>
+			<font>Segoe Light18</font>
+			<textcolor>85cffe</textcolor>
+		</control>
+		
+		<control>
+			<description>button group</description>
+			<type>group</type>
+			<posX>543</posX>
+			<posY>175</posY>
+			<layout>StackLayout(1)</layout>
+
+                    <control>
+					<description>Sections</description>
+					<type>button</type>
+					<id>2</id>
+					<onright>50</onright>
+					<onup>17</onup>
+                    <width>279</width>
+                    <height>49</height>
+					<label>#MPEI.Translation.Sections.Label</label>
+                    <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                    <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                    <textXOff>25</textXOff>
+                    <textYOff>12</textYOff>
+                   </control>
+                </control>
+            </control>
+        </control>
+		
+	</controls>
+</window>

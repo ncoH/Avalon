@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>29052</id>
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:4540</define>
+<controls>
+
+        <control>
+            <description>Background</description>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>
+        </control>
+        <control>
+            <id>1</id>
+            <type>label</type>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>	
+
+	<control>
+		<description>Fan Art</description>
+		<type>image</type>
+		<id>95</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1366</width>
+		<height>768</height>
+		<texture>#Youtube.fm.NowPlaying.Video.FanArt</texture>
+	</control>
+	
+<import>common.time.xml</import>
+	
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>101</id>
+		<posX>-2000</posX>
+		<posY>470</posY>
+		<width>711</width>
+		<label>#selecteditem</label>
+		<font>font14</font>
+		<align>right</align>
+		<textcolor>White</textcolor>
+	</control>
+	
+	<control>
+		<type>imagelist</type>
+		<id>1</id>
+		<posX>630</posX>
+		<posY>145</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#Youtube.fm.NowPlaying.Video.Rating</percentage>
+	</control>
+
+	<control>
+		<description>TV background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>450</posX>
+		<posY>170</posY>
+	    <width>455</width>
+	    <height>295</height>
+		<texture>blackborders_recordings.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>video window</description>
+		<type>videowindow</type>
+		<id>99</id>
+		<posX>495</posX>
+		<posY>215</posY>
+        <width>368</width>
+	    <height>205</height>
+		<onleft>2</onleft>
+		<onright>2</onright>
+		<action>18</action>
+		<textureFocus>tv_green_border.png</textureFocus>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>meta label</description>
+		<type>label</type>
+		<id>47</id>
+		<width>1366</width>
+		<posX>0</posX>
+		<posY>180</posY>
+		<label>#Youtube.fm.NowPlaying.Video.Title - #Youtube.fm.NowPlaying.Artist.Name</label>
+		<font>font12</font>
+		<align>center</align>
+	</control>
+	
+	<control>
+		<description>similar videos</description>
+		<type>thumbnailpanel</type>
+		<id>50</id>
+		<posX>45</posX>
+		<posY>530</posY>
+		<width>1300</width>
+		<height>250</height>
+		<spinWidth>24</spinWidth>
+		<spinHeight>24</spinHeight>
+		<spinPosX>60</spinPosX>
+		<spinPosY>687</spinPosY>
+		<spinAlign>Right</spinAlign>
+		<scrollOffset>0</scrollOffset>
+		<onright>50</onright>
+		<unfocusedAlpha>120</unfocusedAlpha>
+		<imageFolderFocus>thumbborder.png</imageFolderFocus><!-- smallicons -->
+		<itemWidth>185</itemWidth>
+		<itemHeight>200</itemHeight>
+		<textureWidth>170</textureWidth>
+		<textureHeight>170</textureHeight>
+		<thumbWidth>156</thumbWidth>
+		<thumbHeight>156</thumbHeight>
+		<thumbPosX>7</thumbPosX>
+		<thumbPosY>7</thumbPosY><!-- largeicons -->
+		<itemWidthBig>185</itemWidthBig>
+		<itemHeightBig>200</itemHeightBig>
+		<textureWidthBig>170</textureWidthBig>
+		<textureHeightBig>170</textureHeightBig>
+		<thumbWidthBig>156</thumbWidthBig>
+		<thumbHeightBig>156</thumbHeightBig>
+		<thumbPosXBig>7</thumbPosXBig>
+		<thumbPosYBig>7</thumbPosYBig>
+				<thumbPosXBig>0</thumbPosXBig>
+				<thumbPosYBig>0</thumbPosYBig>
+				<zoomXPixels>50</zoomXPixels>
+				<zoomYPixels>79</zoomYPixels>
+				<hideUnfocusTexture>yes</hideUnfocusTexture>
+				<renderFocusText>no</renderFocusText>
+				<renderUnfocusText>no</renderUnfocusText>
+		<enableFocusZoom>no</enableFocusZoom>
+		<onleft>50</onleft>
+		<textureUp>page_up_nofocus.png</textureUp>
+		<textureDown>page_down_nofocus.png</textureDown>
+		<textureUpFocus>page_up_focus.png</textureUpFocus>
+		<textureDownFocus>page_down_focus.png</textureDownFocus>
+
+	</control>
+</controls>
+</window>

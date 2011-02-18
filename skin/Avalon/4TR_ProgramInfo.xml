@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>748</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:1037</define>
+	<define>#header.background:hover_my tv.png</define>
+<controls>
+
+	<import>common.window.background.xml</import>
+	<import>common.time.xml</import>
+	
+	<control>
+		<description>Header Label</description>		
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>550</width>
+		<height>100</height>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight40</font>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>173</posY>
+		<width>725</width>
+		<height>561</height>
+		<texture>listcontrol_bg_recordings.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
+		<type>group</type>
+		<layout>StackLayout</layout>
+		<description>group element</description>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<posX>150</posX>
+		<posY>190</posY>
+		
+		<control>
+			<description>Record</description>
+			<type>button</type>
+			<id>2</id>
+			<onup>17</onup>
+			<ondown>3</ondown>
+			<onright>10</onright>
+			<textalign>right</textalign>
+		</control>
+		
+		<control>
+			<description>Priority</description>
+			<type>button</type>
+			<id>3</id>
+			<label>991</label>
+			<onup>2</onup>
+			<ondown>4</ondown>
+			<onright>10</onright>
+			<textalign>right</textalign>
+		</control>
+		
+		<control>
+			<description>Keep</description>
+			<type>button</type>
+			<id>4</id>
+			<label>1042</label>
+			<onup>3</onup>
+			<ondown>5</ondown>
+			<onright>10</onright>
+			<textalign>right</textalign>
+		</control>
+		
+		<control>
+			<description>Only new episodes</description>
+			<type>togglebutton</type>
+			<id>5</id>
+			<label>Only new Episodes</label>
+			<onup>4</onup>
+			<ondown>8</ondown>
+			<onright>10</onright>
+			<textalign>right</textalign>
+		</control>
+		
+		<control>
+			<description>PreRecord</description>
+			<type>button</type>
+			<id>8</id>
+			<label>1444</label>
+			<onup>5</onup>
+			<ondown>9</ondown>
+			<onright>10</onright>
+			<textalign>right</textalign>
+		</control>
+		
+		<control>
+			<description>PostRecord</description>
+			<type>button</type>
+			<id>9</id>
+			<label>1445</label>
+			<onup>8</onup>
+			<ondown>99</ondown>
+			<onright>10</onright>
+			<textalign>right</textalign>
+		</control>
+		
+	</control>
+
+	<control>
+			<description>Current program title</description>
+			<type>fadelabel</type>
+			<id>13</id>
+			<posX>555</posX>
+			<posY>130</posY>
+			<width>663</width>
+			<font>AvalonLight22</font>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+		
+		<control>
+			<description>Current program channel</description>
+			<type>label</type>
+			<id>16</id>
+			<posX>-2000</posX>
+			<posY>180</posY>
+			<font>AvalonLight18</font>
+            <textcolor>6aa5cb</textcolor>	
+		</control>
+
+	<control>
+		<description>genre</description>
+		<type>label</type>
+		<id>17</id>
+		<posX>555</posX>
+		<posY>180</posY>
+		<font>AvalonLight18</font>
+		<textcolor>6aa5cb</textcolor>
+	</control>
+	
+		<control>
+			<type>label</type>
+			<description>Current program time</description>
+			<id>14</id>
+			<posX>555</posX>
+			<posY>215</posY>
+            <textcolor>6aa5cb</textcolor>
+			<font>AvalonLight18</font>
+		</control>
+
+		<control>
+			<type>textboxscrollup</type>
+			<description>Description1</description>
+			<id>15</id>
+			<posX>556</posX>
+			<posY>281</posY>
+			<width>680</width>
+			<height>110</height>
+			<font>font12</font>
+			<label>#TV.RecordedTV.Description</label>
+		</control>
+		
+		<control>
+			<description>upcoming episodes label</description>
+			<type>label</type>
+			<id>11</id>
+			<posX>555</posX>
+			<posY>390</posY>
+			<width>680</width>
+			<label>1041</label>
+            <textcolor>6aa5cb</textcolor>
+			<font>AvalonLight18</font>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+			<control>
+				<type>listcontrol</type>
+				<id>10</id>
+				<posY>427</posY>
+				<height>300</height>
+				<posX>524</posX>
+				<width>724</width>
+				<onleft>2</onleft>
+				<onright>2</onright>
+				<scrollOffset>1</scrollOffset>
+				<PinIconHeight>53</PinIconHeight>
+				<PinIconWidth>34</PinIconWidth>
+				<PinIconXOff>0</PinIconXOff>
+				<PinIconYOff>6</PinIconYOff>
+				<itemWidth>32</itemWidth>
+				<itemHeight>32</itemHeight>
+				<IconXOff>30</IconXOff>
+				<IconYOff>9</IconYOff>					
+				<spinPosX>560</spinPosX>
+				<spinPosY>688</spinPosY>
+				<textXOff>40</textXOff>
+				<spinAlign>left</spinAlign>				
+				<keepaspectratio>yes</keepaspectratio>
+				<spinCanFocus>no</spinCanFocus>
+				<dimColor>ffffffff</dimColor>
+			</control>
+				
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1216</posX>
+		<posY>690</posY>
+		<align>right</align>
+		<label>#itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+<import>common.overlay.xml</import>
+</controls>
+</window>

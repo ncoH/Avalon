@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>567834</id>
+    <defaultcontrol>2</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <define>#header.label:Mastermind</define>
+    <controls>
+        <control>
+            <description>Background</description>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>
+        </control>
+        <control>
+            <id>1</id>
+            <type>label</type>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <import>common.time.xml</import>
+        <control>
+            <type>group</type>
+            <visible>![control.hasfocus(2)|control.hasfocus(8)|control.hasfocus(3)|control.hasfocus(4)|control.hasfocus(5)|control.hasfocus(6)|control.hasfocus(7)]</visible>
+            <dimColor>ffffffff</dimColor>
+            <animation effect="Fade" time="250">VisibleChange</animation>
+            <animation delay="200" effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="250">WindowClose</animation>
+            <control>
+                <id>95</id>
+                <description>BW Label</description>
+                <type>label</type>
+                <posX>71</posX>
+                <posY>395</posY>
+                <width>380</width>
+                <font>font13</font>
+                <label>Correct computer</label>
+            </control>
+            <control>
+                <id>96</id>
+                <description>Black Comp</description>
+                <type>selectbutton</type>
+                <onleft>5</onleft>
+                <onup>5</onup>
+                <ondown>97</ondown>
+                <posX>71</posX>
+                <posY>450</posY>
+                <width>380</width>
+                <font>font16</font>
+                <textureFocus>-</textureFocus>
+                <textureNoFocus>-</textureNoFocus>
+                <label>Black: 0</label>
+                <textYOff>11</textYOff>
+                <textYOff2>11</textYOff2>
+                <texturebg>-</texturebg>
+                <subitems>
+					</subitems>
+            </control>
+            <control>
+                <id>97</id>
+                <description>White Comp</description>
+                <type>selectbutton</type>
+                <onleft>5</onleft>
+                <onup>96</onup>
+                <ondown>98</ondown>
+                <posX>72</posX>
+                <posY>520</posY>
+                <width>380</width>
+                <font>font16</font>
+                <textureFocus>-</textureFocus>
+                <textureNoFocus>-</textureNoFocus>
+                <label>White: 0</label>
+                <textYOff>11</textYOff>
+                <textYOff2>11</textYOff2>
+                <texturebg>-</texturebg>
+                <subitems>
+					</subitems>
+            </control>
+            <control>
+                <id>98</id>
+                <description>Ok Comp</description>
+                <type>button</type>
+                <onleft>5</onleft>
+                <onright>98</onright>
+                <onup>97</onup>
+                <ondown>5</ondown>
+                <posX>71</posX>
+                <posY>660</posY>
+                <width>380</width>
+                <font>font16</font>
+                <textureFocus>-</textureFocus>
+                <textureNoFocus>-</textureNoFocus>
+                <label>Correct</label>
+                <textYOff>11</textYOff>
+            </control>
+        </control>
+        <control>
+            <type>group</type>
+            <dimColor>ffffffff</dimColor>
+            <animation effect="Slide" reversible="FALSE" start="900,0" time="200" tween="Circle">WindowOpen</animation>
+            <animation effect="Slide" end="900,0" reversible="FALSE" time="200" tween="Circle">WindowClose</animation>
+            <control>
+                <id>20</id>
+                <description>Playground Human</description>
+                <type>image</type>
+                <visible>no</visible>
+                <posX>510</posX>
+                <posY>130</posY>
+                <texture>Mastermind_Back.png</texture>
+                <animation effect="Fade" time="250">VisibleChange</animation>
+            </control>
+            <control>
+                <id>21</id>
+                <description>Playground Computer</description>
+                <type>image</type>
+                <visible>no</visible>
+                <posX>900</posX>
+                <posY>130</posY>
+                <texture>Mastermind_Back.png</texture>
+                <animation effect="Fade" time="250">VisibleChange</animation>
+            </control>
+        </control>
+        <control>
+            <description>button group</description>
+            <type>group</type>
+            <posX>71</posX>
+            <posY>121</posY>
+            <layout>StackLayout</layout>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="250">WindowClose</animation>
+            <control>
+                <id>2</id>
+                <description>New Game</description>
+                <type>button</type>
+                <onright>96</onright>
+                <onup>17</onup>
+                <ondown>8</ondown>
+                <label>19002</label>
+                <textalign>RIGHT</textalign>
+            </control>
+            <control>
+                <id>8</id>
+                <description>GameType</description>
+                <type>selectbutton</type>
+                <onleft>8</onleft>
+                <onup>2</onup>
+                <ondown>3</ondown>
+                <label>Game: Standard</label>
+                <textalign>RIGHT</textalign>
+                <subitems>
+						</subitems>
+            </control>
+            <control>
+                <id>3</id>
+                <description>Level</description>
+                <type>selectbutton</type>
+                <onleft>3</onleft>
+                <onup>8</onup>
+                <ondown>4</ondown>
+                <label>Level: Amateur</label>
+                <textalign>RIGHT</textalign>
+                <subitems>
+						</subitems>
+            </control>
+            <control>
+                <id>4</id>
+                <description>CheckRow</description>
+                <type>button</type>
+                <onleft>4</onleft>
+                <onright>96</onright>
+                <onup>3</onup>
+                <ondown>5</ondown>
+                <label>Check row</label>
+                <textalign>RIGHT</textalign>
+            </control>
+            <control>
+                <id>5</id>
+                <description>Surrender</description>
+                <type>button</type>
+                <onleft>5</onleft>
+                <onright>96</onright>
+                <onup>4</onup>
+                <ondown>6</ondown>
+                <label>I Surrender</label>
+                <textalign>RIGHT</textalign>
+            </control>
+            <control>
+                <id>6</id>
+                <description>Zoom level</description>
+                <type>selectbutton</type>
+                <onleft>6</onleft>
+                <onup>5</onup>
+                <ondown>7</ondown>
+                <label>Zoom: 100%</label>
+                <textalign>RIGHT</textalign>
+                <subitems>
+						</subitems>
+            </control>
+            <control>
+                <id>7</id>
+                <description>Whatsthis</description>
+                <type>button</type>
+                <onleft>7</onleft>
+                <onright>96</onright>
+                <onup>6</onup>
+                <ondown>2</ondown>
+                <label>What's Mastermind?</label>
+                <textalign>RIGHT</textalign>
+            </control>
+        </control>
+        <control>
+            <id>50</id>
+            <description>Dummy button for hidden menu</description>
+            <type>button</type>
+            <onup>50</onup>
+            <ondown>50</ondown>
+            <visible>!Control.HasFocus(50)+[!Control.HasFocus(96)+!Control.HasFocus(97)+!Control.HasFocus(98)]+[Control.HasFocus(2)|Control.HasFocus(3)|Control.HasFocus(4)|Control.HasFocus(5)|Control.HasFocus(6)|Control.HasFocus(7)|Control.HasFocus(8)]</visible>
+            <posX>220</posX>
+            <posY>0</posY>
+            <width>1</width>
+            <height>720</height>
+            <textureFocus>-</textureFocus>
+            <textureNoFocus>-</textureNoFocus>
+            <label/>
+            <scrollWrapString/>
+        </control>
+    </controls>
+</window>

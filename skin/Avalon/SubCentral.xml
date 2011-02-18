@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>84623</id>
+    <defaultcontrol>202</defaultcontrol>
+    <allowoverlay>player.hasmedia+!control.isvisible(103)</allowoverlay>
+    <animation effect="Fade" time="250">WindowOpen</animation>
+    <animation effect="Fade" time="250">WindowClose</animation>
+    <define>#header.label:#SubCentral.Header.Label</define>
+    <define>#header.background.custom:bg.jpg</define>
+    <controls>
+        <control>
+            <id>1</id>
+            <description>BG</description>
+            <type>image</type>
+            <width>1366</width>
+            <height>768</height>
+        </control>
+        <control>
+            <id>101</id>
+            <description>Visible when in the main view mode.</description>
+            <type>label</type>
+            <posX>-50</posX>
+            <posY>-50</posY>
+            <width>1</width>
+        </control>
+        <control>
+            <id>102</id>
+            <description>Visible when in the file view mode.</description>
+            <type>label</type>
+            <posX>-50</posX>
+            <posY>-50</posY>
+            <width>1</width>
+        </control>
+        <control>
+            <id>103</id>
+            <description>Visible when in the manual search mode.</description>
+            <type>label</type>
+            <posX>-50</posX>
+            <posY>-50</posY>
+            <width>1</width>
+        </control>
+        <control>
+            <id>1</id>
+            <description>settings navigation panel</description>
+            <type>image</type>
+            <posX>127</posX>
+            <posY>60</posY>
+            <width>360</width>
+            <height>640</height>
+            <texture>settings_navigation_panel.png</texture>
+        </control>
+        <control>
+            <id>1</id>
+            <description>settings label</description>
+            <type>label</type>
+            <posX>175</posX>
+            <posY>168</posY>
+            <font>Segoe Light18</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <align>LEFT</align>
+            <label>924</label>
+        </control>
+        <control>
+            <id>1</id>
+            <description>settings main</description>
+            <type>image</type>
+            <posX>434</posX>
+            <posY>60</posY>
+            <width>820</width>
+            <height>640</height>
+            <texture>settings_main_panel.png</texture>
+        </control>
+        <import>SubCentral.Main.xml</import>
+        <import>SubCentral.ModifySearch.xml</import>
+        <import>SubCentral.Search.xml</import>
+        <import>common.time.xml</import>
+        <control>
+            <id>1</id>
+            <type>label</type>
+            <posX>504</posX>
+            <posY>150</posY>
+            <width>500</width>
+            <height>62</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>subcentral</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+            <valign>middle</valign>
+        </control>
+        <control>
+            <description>action menu</description>
+            <type>actiongroup</type>
+            <posX>175</posX>
+            <posY>260</posY>
+            <control>
+                <type>group</type>
+                <posX>175</posX>
+                <posY>260</posY>
+                <layout>StackLayout</layout>
+                <control>
+                    <id>202</id>
+                    <description>Cancel Button</description>
+                    <type>button</type>
+                    <onleft>202</onleft>
+                    <onright>912</onright>
+                    <onup>206</onup>
+                    <ondown>204</ondown>
+                    <posX>150</posX>
+                    <posY>237</posY>
+                    <width>259</width>
+                    <textureFocus>settings_button_focus.png</textureFocus>
+                    <textureNoFocus/>
+                    <label>Cancel</label>
+                </control>
+                <control>
+                    <id>204</id>
+                    <description>Modify Search Button</description>
+                    <type>button</type>
+                    <onleft>204</onleft>
+                    <onright>912</onright>
+                    <onup>202</onup>
+                    <ondown>203</ondown>
+                    <visible/>
+                    <width>259</width>
+                    <textureFocus>settings_button_focus.png</textureFocus>
+                    <textureNoFocus/>
+                    <label>Modify search</label>
+                </control>
+                <control>
+                    <id>203</id>
+                    <description>Languages Button</description>
+                    <type>button</type>
+                    <onleft>203</onleft>
+                    <onright>912</onright>
+                    <onup>204</onup>
+                    <ondown>205</ondown>
+                    <visible/>
+                    <posX>651</posX>
+                    <posY>274</posY>
+                    <width>259</width>
+                    <textureFocus>settings_button_focus.png</textureFocus>
+                    <textureNoFocus/>
+                    <label>Languages</label>
+                </control>
+                <control>
+                    <id>205</id>
+                    <description>Sort</description>
+                    <type>sortbutton</type>
+                    <onleft>205</onleft>
+                    <onright>912</onright>
+                    <onup>203</onup>
+                    <ondown>206</ondown>
+                    <visible/>
+                    <posX>650</posX>
+                    <posY>236</posY>
+                    <width>259</width>
+                    <textureFocus>settings_button_focus.png</textureFocus>
+                    <textureNoFocus/>
+                    <label>Sort</label>
+                </control>
+                <control>
+                    <id>206</id>
+                    <description>Delete Subtitles Button</description>
+                    <type>button</type>
+                    <onleft>206</onleft>
+                    <onright>912</onright>
+                    <onup>205</onup>
+                    <ondown>202</ondown>
+                    <visible/>
+                    <width>259</width>
+                    <textureFocus>settings_button_focus.png</textureFocus>
+                    <textureNoFocus/>
+                    <label>Delete subtitles</label>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>

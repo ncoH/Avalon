@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>603</id>
+<defaultcontrol>11</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<controls>
+	<import>common.window.recordings.xml</import>
+	<import>common.time.xml</import>
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>28</posY>
+		<width>500</width>
+		<label>604</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light24</font>
+		<visible>facadeview.list</visible>
+	</control>
+
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1294</width>
+		<height>1080</height>
+		<dimColor>00ffffff</dimColor>
+		<animation effect="fade" time="250">WindowClose</animation>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1294</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+		</control>
+		
+		<control>
+		<type>group</type>
+			<control>
+				<description>Heading text label</description>
+				<type>label</type>
+				<id>1</id>
+				<posX>192</posX>
+				<posY>88</posY>
+				<label>924</label>
+				<font>Segoe Light22</font>
+				<textcolor>ffffff</textcolor>
+			</control>
+		
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>135</posX>
+				<posY>188</posY>
+				<layout>StackLayout(1)</layout>
+				
+		<control>
+			<type>button</type>
+			<description>View-As button</description>
+			<id>2</id>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>7</onup>
+			<ondown>3</ondown>
+			<label>100</label>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<width>400</width>
+			<height>71</height>
+			<textXOff>50</textXOff>
+			<textYOff>17</textYOff>
+		</control>
+
+		<control>
+			<type>sortbutton</type>
+			<id>3</id>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>2</onup>
+			<ondown>5</ondown>
+			<label>620</label>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<width>400</width>
+			<height>71</height>
+			<textXOff>50</textXOff>
+			<textYOff>17</textYOff>
+			<offsetSortButtonX>260</offsetSortButtonX>
+			<offsetSortButtonY>27</offsetSortButtonY>
+		</control>
+
+		<control>
+			<type>button</type>
+			<description>All,Genre,Channel button</description>
+			<id>5</id>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>3</onup>
+			<ondown>6</ondown>
+			<label>457</label>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<width>400</width>
+			<height>71</height>
+			<textXOff>50</textXOff>
+			<textYOff>17</textYOff>
+		</control>
+
+		<control>
+			<type>button</type>
+			<description>cleanup button</description>
+			<id>6</id>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>5</onup>
+			<ondown>9</ondown>
+			<label>624</label>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<width>400</width>
+			<height>71</height>
+			<textXOff>50</textXOff>
+			<textYOff>17</textYOff>
+		</control>
+<!--
+		<control>
+			<type>button</type>
+			<description>compress button</description>
+			<id>7</id>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>6</onup>
+			<ondown>2</ondown>
+			<hyperlink>609</hyperlink>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
+			<label>896</label>
+		</control>
+-->
+		<control>
+			<description>Empty button</description>
+			<type>button</type>
+			<id>0</id>
+			<width>279</width>
+			<height>49</height>
+			<label>-</label>
+			<visible>false</visible>
+		 </control>
+		 <control>
+			<type>button</type>
+			<description>scheduled button</description>
+			<id>9</id>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>6</onup>
+			<ondown>10</ondown>
+			<hyperlink>601</hyperlink>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<width>400</width>
+			<height>71</height>
+			<textXOff>50</textXOff>
+			<textYOff>17</textYOff>
+			<label>603</label>
+		 </control>
+		 <control>
+			<type>button</type>
+			<description>tvguide button</description>
+			<id>10</id>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>9</onup>
+			<ondown>21</ondown>
+			<hyperlink>600</hyperlink>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<width>400</width>
+			<height>71</height>
+			<textXOff>50</textXOff>
+			<textYOff>17</textYOff>
+			<label>600</label>
+		 </control>
+		 <control>
+			<type>button</type>
+			<description>button</description>
+			<id>21</id>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>10</onup>
+			<ondown>2</ondown>
+			<hyperlink>604</hyperlink>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<width>400</width>
+			<height>71</height>
+			<textXOff>50</textXOff>
+			<textYOff>17</textYOff>
+			<label>137</label>
+		</control>
+	</control>
+
+	</control>
+	
+</control>
+
+	<control>
+		<type>group</type>
+		<description>group element</description>
+		<id>0</id>
+		<posX>455</posX>
+		<posY>116</posY>
+		<width>778</width>
+		<dimColor>ffffffff</dimColor>
+		<height>583</height>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+
+		<!-- List -->
+		
+		<control>
+			<id>0</id>
+			<type>image</type>
+			<posX>1042</posX>
+			<posY>250</posY>
+			<width>418</width>
+			<height>238</height>
+			<texture flipY="true" diffuse="Thumb_Mask.png">defaultTVBig.png</texture>
+			<visible>facadeview.list+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]+!string.equals(#selecteditem,..)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		
+		<control>
+			<id>500</id>
+			<type>image</type>
+			<posX>1042</posX>
+			<posY>250</posY>
+			<width>418</width>
+			<height>238</height>
+			<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
+			<visible>facadeview.list+!string.equals(#selectedthumb,defaultFolderBig.png)+!string.equals(#selecteditem,..)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		
+		<control>
+			<id>0</id>
+			<type>image</type>
+			<posX>1488</posX>
+			<posY>242</posY>
+			<width>194</width>
+			<height>122</height>
+			<texture>tv_logo_bg.png</texture>
+			<visible>facadeview.list+!string.equals(#selecteditem,..)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		
+		<control>
+			<id>0</id>
+			<type>image</type>
+			<posX>1548</posX>
+			<posY>268</posY>
+			<width>60</width>
+			<height>60</height>
+			<texture>#TV.RecordedTV.thumb</texture>
+			<visible>facadeview.list</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		
+		<control>
+			<description>Current program channel</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1488</posX>
+			<posY>372</posY>
+			<label>#TV.RecordedTV.Channel</label>
+			<font>Segoe Light14</font>
+			<textcolor>85cffe</textcolor>
+			<visible>facadeview.list</visible>
+		</control>
+		
+		<control>
+			<type>label</type>
+			<description>Current program time</description>
+			<id>0</id>
+			<posX>1488</posX>
+			<posY>414</posY>
+			<font>Segoe Light14</font>
+			<textcolor>85cffe</textcolor>
+			<label>#TV.RecordedTV.Time</label>
+			<visible>facadeview.list</visible>
+		</control>
+		
+		<control>
+			<type>textboxscrollup</type>
+			<description>Description1</description>
+			<id>0</id>
+			<posX>1042</posX>
+			<posY>566</posY>
+			<width>778</width>
+			<height>280</height>
+			<label>#TV.RecordedTV.Description</label>
+			<visible>facadeview.list</visible>
+		</control>
+		
+		<!-- Thumb -->
+		
+		<control>
+			<description>Current program channel</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>515</posX>
+			<posY>610</posY>
+			<label>#TV.RecordedTV.Channel</label>
+			<font>Segoe Light18</font>
+			<textcolor>6aa5cb</textcolor>
+			<align>right</align>
+			<visible>facadeview.smallicons|facadeview.largeicons</visible>
+		</control>
+		
+		<control>
+			<type>label</type>
+			<description>Current program genre</description>
+			<id>0</id>
+			<posX>515</posX>
+			<posY>643</posY>
+			<textcolor>6aa5cb</textcolor>
+			<font>Segoe Light18</font>
+			<label>#TV.RecordedTV.Genre</label>
+			<align>right</align>
+			<visible>facadeview.smallicons|facadeview.largeicons</visible>
+		</control>
+			
+		<control>
+			<type>label</type>
+			<description>Current program time</description>
+			<id>0</id>
+			<posX>515</posX>
+			<posY>682</posY>
+			<textcolor>6aa5cb</textcolor>
+			<font>Segoe Light18</font>
+			<label>#TV.RecordedTV.Time</label>
+			<align>right</align>
+			<visible>facadeview.smallicons|facadeview.largeicons</visible>
+		</control>
+		
+		<control>
+			<type>textboxscrollup</type>
+			<description>Description1</description>
+			<id>0</id>
+			<posX>555</posX>
+			<posY>614</posY>
+			<width>741</width>
+			<height>134</height>
+			<label>#TV.RecordedTV.Description</label>
+			<visible>facadeview.smallicons|facadeview.largeicons</visible>
+		</control>
+		
+			<!-- Filmstrip -->
+			
+		<control>
+			<type>label</type>
+			<description>Current program time</description>
+			<id>0</id>
+			<posX>515</posX>
+			<posY>682</posY>
+			<textcolor>6aa5cb</textcolor>
+			<font>Segoe Light18</font>
+			<label>#selecteditem2</label>
+			<visible>facadeview.filmstrip</visible>
+		</control>
+
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Info Arrow</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>154</posX>
+		<posY>882</posY>
+		<width>34</width>
+		<height>34</height>
+		<texture>info_arrow_tv.png</texture>
+		<visible>facadeview.list|facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Info Separator</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>154</posX>
+		<posY>988</posY>
+		<width>1706</width>
+		<height>1</height>
+		<texture>info_separator_large.png</texture>
+		<visible>facadeview.list|facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons</visible>
+	</control>
+	
+	<import>common.facade.recordings.xml</import>
+</controls>
+</window>

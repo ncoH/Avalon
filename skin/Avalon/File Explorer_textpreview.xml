@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>557312</id>
+    <defaultcontrol>2</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <import>common.window.xml</import>
+        <control>
+            <id>2</id>
+            <type>textbox</type>
+            <posX>70</posX>
+            <posY>30</posY>
+            <width>1226</width>
+            <height>660</height>
+            <textcolor>ffffffff</textcolor>
+            <spinPosX>1180</spinPosX>
+            <spinPosY>690</spinPosY>
+            <font>font12</font>
+        </control>
+    </controls>
+</window>

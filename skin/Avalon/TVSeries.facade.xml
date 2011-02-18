@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window> 
+<controls>
+    <control>
+		<type>group</type>
+		<description>group element</description>
+		<id>28</id>
+		<layout>StackLayout</layout>
+    <control>
+        <description>composite control consisting of a list control and a thumbnail panel</description>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+        <type>facadeview</type>
+        <id>50</id>
+        <control>
+			<description>graphical list (series and seasons if set)</description>
+			<type>listcontrol</type>
+			<subtype>album</subtype>
+			<id>50</id>
+			<onleft>2</onleft>
+			<onright>50</onright>		
+        </control>
+    <control>
+		<description>graphical thumbpanel (series and/or seasons if set)</description>
+        <type>thumbnailpanel</type>
+		<dimColor>90ffffff</dimColor>
+        <id>50</id>
+        <posX>72</posX>
+		<posY>192</posY>
+        <width>500</width>
+        <height>500</height>
+        <!-- up/down buttons & page # -->     
+		<onleft>2</onleft>
+        <onright>50</onright>		  
+		<spinColor>FFFFFFFF</spinColor>
+		<spinPosX>555</spinPosX>
+		<spinPosY>705</spinPosY>
+		<spinAlign>left</spinAlign>
+        <spinColor>ffffffff</spinColor>
+        <!-- Textures -->
+        <imageFolder>-</imageFolder> 			
+        <!-- Text -->
+        <font>font13</font>
+        <selectedColor>00ffffff</selectedColor>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>          
+        <suffix>|</suffix>
+        <itemWidthBig>393</itemWidthBig>
+        <itemHeightBig>94</itemHeightBig>
+        <!-- boxes -->
+        <textureWidthBig>389</textureWidthBig>
+        <textureHeightBig>90</textureHeightBig>
+        <!-- banners -->
+        <thumbWidthBig>370</thumbWidthBig>
+        <thumbHeightBig>73</thumbHeightBig>
+        <thumbPosXBig>10</thumbPosXBig>
+        <thumbPosYBig>10</thumbPosYBig>
+		<zoomXPixels>0</zoomXPixels>
+		<zoomYPixels>0</zoomYPixels>
+        <thumbZoom>no</thumbZoom>
+        <!-- text (No banner) -->
+        <textXOff>0</textXOff>
+        <textYOff>0</textYOff>
+        <frame>-</frame>
+        <frameFocus>tvseries_banner_focus.png</frameFocus>
+        <keepaspectratio>no</keepaspectratio>
+        <enableFocusZoom>no</enableFocusZoom>
+        <scrollOffset>1</scrollOffset>
+        <unfocusedAlpha>50</unfocusedAlpha>   
+		<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,550" time="400">focus</thumbAnimation>
+		<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
+    </control>
+		
+		<control>
+			<description>Filmstrip view</description>
+			<type>filmstrip</type>
+			<dimColor>90ffffff</dimColor>
+			<id>50</id>
+				<scrollOffset>3</scrollOffset>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>
+				<posX>178</posX>
+				<posY>545</posY>
+				<width>1566</width>
+				<height>768</height>
+				<onup>2</onup>
+				<ondown>2</ondown>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<thumbWidth>214</thumbWidth>
+				<thumbHeight>302</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidth>214</itemWidth>
+				<itemHeight>302</itemHeight>
+				<textureWidth>214</textureWidth>
+				<textureHeight>302</textureHeight>
+				<textYOff>-2000</textYOff>
+				<spinCanFocus>no</spinCanFocus>
+				<imageFolderFocus>-</imageFolderFocus>
+				<frame>-</frame>
+				<frameFocus>-</frameFocus>
+				<background>-</background>
+				<thumbs flipY="true" diffuse="Thumb_Mask.png"></thumbs>
+				<showFrame>yes</showFrame>
+				<showFolder>no</showFolder>
+				<showBackGround>no</showBackGround>
+				<showInfoImage>no</showInfoImage>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,820" time="400">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,820" time="100">unfocus</thumbAnimation>
+		</control>
+		
+    <control>
+		<description>Text List</description>
+		<type>listcontrol</type>
+		<id>50</id>
+		<onleft>2</onleft>
+		<onright>80</onright>
+		<scrollOffset>1</scrollOffset>
+		<posX>1166</posX>
+		<posY>236</posY>
+		<height>700</height>
+		<width>684</width>
+		<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+		<textXOff>78</textXOff>
+		<textYOff>8</textYOff>
+		<textXOff2>580</textXOff2>
+		<textYOff2>8</textYOff2>
+		<textXOff3>-2000</textXOff3>
+		<textYOff3>6</textYOff3>
+		<IconXOff>330</IconXOff>
+		<IconYOff>7</IconYOff>
+		<spinPosX>1667</spinPosX>
+		<spinPosY>1010</spinPosY>
+		<spinAlign>right</spinAlign>
+		<textureHeight>55</textureHeight>
+		<dimColor>ffffffff</dimColor>
+        </control>
+      </control>
+    </control>
+</controls>
+</window>

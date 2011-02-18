@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>8080</id>
+  <defaultcontrol>1</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+      <control>
+        <description>hidden</description>
+        <type>button</type>
+        <visible>false</visible>
+        <id>1</id>
+      </control>
+  </controls>
+</window>

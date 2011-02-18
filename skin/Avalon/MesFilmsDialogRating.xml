@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>7988</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <controls>
+  
+    <control>
+		<description>Overlay</description>
+		<type>image</type>
+		<id>0</id>
+		<width>1280</width>
+		<height>720</height>
+		<texture>black.bmp</texture>
+		<colordiffuse>60ffffff</colordiffuse>
+    </control>
+	
+    <control>
+		<description>Dialog background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>353</posX>
+		<posY>220</posY>
+		<width>574</width>
+		<height>280</height>
+		<texture>streamed_dialog_background.png</texture>
+    </control>
+	
+    <control>
+		<description>Dialog Heading</description>
+		<type>label</type>
+		<id>2</id>
+		<posX>360</posX>
+		<posY>245</posY>
+		<width>560</width>
+		<label>934</label>
+		<font>mediastream14tcb</font>
+		<align>center</align>
+    </control>
+	
+    <control>
+      <description>Rating label</description>
+      <type>label</type>
+      <id>3</id>
+      <posX>390</posX>
+      <posY>293</posY>
+      <label>204</label>
+      <font>mediastream10</font>
+    </control>
+	
+    <control>
+      <description>Rating value</description>
+      <type>label</type>
+      <id>4</id>
+      <posX>500</posX>
+      <posY>293</posY>
+      <label>#rating</label>
+      <font>mediastream10</font>
+    </control>
+	
+    <control>
+      <description>right button</description>
+      <type>button</type>
+      <id>10</id>
+      <posX>850</posX>
+      <posY>380</posY>
+      <width>37</width>
+      <height>37</height>
+      <textureFocus>arrow_round_right_focus.png</textureFocus>
+      <textureNoFocus>arrow_round_right_nofocus.png</textureNoFocus>
+      <label />
+      <onleft>11</onleft>
+      <onright>10</onright>
+      <onup>13</onup>
+      <ondown>13</ondown>
+    </control>
+	
+    <control>
+      <description>left button</description>
+      <type>button</type>
+      <id>11</id>
+      <posX>400</posX>
+      <posY>380</posY>
+      <width>37</width>
+      <height>37</height>
+      <textureFocus>arrow_round_left_focus.png</textureFocus>
+      <textureNoFocus>arrow_round_left_nofocus.png</textureNoFocus>
+      <label />
+      <onleft>11</onleft>
+      <onright>10</onright>
+      <onup>13</onup>
+      <ondown>13</ondown>
+    </control>
+	
+    <control>
+      <description>OK button</description>
+      <type>button</type>
+      <id>12</id>
+        <posX>860</posX>
+        <posY>235</posY>
+      <width>43</width>
+      <height>17</height>
+      <textureFocus>dialogue_shutdown_focus.png</textureFocus>
+      <textureNoFocus>dialogue_shutdown_nofocus.png</textureNoFocus>
+      <label>-</label>
+      <onleft>13</onleft>
+      <onright>10</onright>
+      <onup>10</onup>
+      <ondown>10</ondown>
+    </control>
+	
+    <control>
+      <type>imagelist</type>
+      <id>100</id>
+      <posX>520</posX>
+      <posY>385</posY>
+      <width>185</width>
+      <height>21</height>
+      <textureWidth>18</textureWidth>
+      <textureHeight>18</textureHeight>
+      <subitems>
+        <subitem>greystar.png</subitem>
+        <subitem>star.png</subitem>
+      </subitems>
+      <orientation>horizontal</orientation>
+      <percentage>#rating</percentage>
+      <imagesToDraw>10</imagesToDraw>
+    </control>
+  </controls>
+</window>

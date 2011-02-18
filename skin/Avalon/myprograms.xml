@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>3</id>
+<defaultcontrol>6</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<define>#header.label:#curheader</define>
+<controls>
+
+	<control>
+		<description>programs background image</description>
+		<animation effect="fade" start="100" end="0" time="250">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1280</width>
+		<height>720</height>
+		<texture>programs_bg.png</texture>
+	</control>
+
+	<control>
+		<description>plugins overlay image2</description>
+		<animation effect="fade" start="100" end="0" time="250">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1280</width>
+		<height>720</height>
+		<texture>streamed_overlay.png</texture>
+	</control>
+
+	<import>common.window.xml</import>
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>31</posX>
+		<posY>272</posY>
+		<width>231</width>
+		<height>231</height>
+		<texture>album_preview_thumb_background.png</texture>
+		<visible>facadeview.list</visible>
+	</control>
+
+	<control>
+		<description>Screenshot</description>
+		<type>image</type>
+		<id>6</id>
+		<posX>115</posX>
+		<posY>285</posY>
+		<width>256</width>
+		<height>256</height>
+		<texture/>
+		<align>center</align>
+		<keepaspectratio>yes</keepaspectratio>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>690</posX>
+		<posY>60</posY>
+		<width>580</width>
+		<height>70</height>
+		<texture>dialogprogressbg.png</texture>
+		<align>right</align>
+		<visible>Control.HasFocus(50)</visible>
+		<animation effect="slide" time="500" tween="quadratic" easing="out" reversible="false" start="697,0" end="0,0">visible</animation>
+		<animation effect="slide" time="500" tween="quadratic" easing="out" reversible="false" end="697,0">hidden</animation>
+	</control>
+
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>730</posX>
+		<posY>80</posY>
+		<align>left</align>
+		<label>#selecteditem</label>
+		<font>mediastream16tcb</font>
+		<visible>Control.HasFocus(50)</visible>
+		<animation effect="slide" time="500" tween="quadratic" easing="out" reversible="false" start="697,0" end="0,0">visible</animation>
+		<animation effect="slide" time="500" tween="quadratic" easing="out" reversible="false" end="697,0">hidden</animation>
+	</control>
+
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description><defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>-210</buttonX>
+		<buttonY>64</buttonY>
+		<buttonwidth>385</buttonwidth>
+		<buttonheight>515</buttonheight>
+		<textureFocus>-</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>100</width>
+		<height>568</height>
+		<dimColor>00ffffff</dimColor>
+		<control>
+			<id>1</id>
+			<type>image</type>
+			<posX>1012</posX>
+			<posY>0</posY>
+			<width>268</width>
+			<height>720</height>
+			<texture>streamed_right_menu.png</texture>
+			<colorDiffuse>fffffffff</colorDiffuse>
+			<visible>!Control.HasFocus(50)</visible>
+			<animation effect="slide" time="500" tween="quadratic" easing="out" reversible="false" start="268,0" end="0,0">visible</animation>
+			<animation effect="slide" time="500" tween="quadratic" easing="out" reversible="false" end="268,0">hidden</animation>
+		</control>
+
+		<control>
+			<description>View options txt</description>
+			<type>label</type>
+			<label>499</label>
+			<id>1</id>
+			<posX>1040</posX>
+			<posY>16</posY>
+			<width>200</width>
+			<font>mediastream12tcb</font>
+			<visible>!Control.HasFocus(50)</visible>
+			<animation effect="slide" time="500" tween="quadratic" easing="out" reversible="false" start="268,0" end="0,0">visible</animation>
+			<animation effect="slide" time="500" tween="quadratic" easing="out" reversible="false" end="268,0">hidden</animation>
+		</control>
+
+		<control>
+			<type>group</type>
+			<description>group element</description>
+			<posX>1040</posX>
+			<posY>220</posY>
+			<width>200</width>
+			<visible>!Control.HasFocus(50)</visible>
+			<animation effect="slide" time="500" tween="quadratic" easing="out" reversible="false" start="135,0" end="0,0">visible</animation>
+			<animation effect="slide" time="500" tween="quadratic" easing="out" reversible="false" end="135,0">hidden</animation>
+			<height>500</height>
+			<layout>StackLayout</layout>
+			<control>
+				<description>View-As</description>
+				<type>button</type>
+				<id>2</id>
+				<label>100</label>
+				<onright>50</onright>
+				<onup>17</onup>
+			</control>
+
+			<control>
+				<description>Switch View</description>
+				<type>button</type>
+				<id>4</id>
+				<label>457</label>
+				<onright>50</onright>
+				<ondown>3</ondown>
+			</control>
+
+			<control>
+				<description>Refresh</description>
+				<type>button</type>
+				<id>3</id>
+				<label>184</label>
+				<onright>50</onright>
+				<ondown>99</ondown>
+			</control>
+
+		</control>
+
+	</control>
+
+	<import>common.facade.xml</import>
+	<import>common.overlay.xml</import>
+</controls>
+</window>

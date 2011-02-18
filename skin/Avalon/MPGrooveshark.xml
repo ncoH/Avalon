@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>730718</id>
+    <defaultcontrol>5101</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <disabletopbar>yes</disabletopbar>
+    <define>#usePlayFanart:Yes</define>
+    <controls>
+        <control>
+            <id>100</id>
+            <description>DUMMY CONTROLL FOR IS PLAYING CONDITION</description>
+            <type>label</type>
+            <visible>no</visible>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1</width>
+        </control>
+        <control>
+            <id>91919295</id>
+            <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+            <type>label</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1</width>
+        </control>
+        <control>
+            <id>91919296</id>
+            <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+            <type>label</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1</width>
+        </control>
+        <control>
+            <id>91919294</id>
+            <description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
+            <type>label</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1</width>
+        </control>
+        <control>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>0</posY>
+        </control>
+        <control>
+            <id>0</id>
+            <description>music background image</description>
+            <type>multiimage</type>
+            <visible>!control.isvisible(91919294)</visible>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="850">Visible</animation>
+            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="700">Hidden</animation>
+            <animation center="640,360" delay="80" effect="Zoom" end="103,103" reversible="FALSE" start="100,100" time="850" tween="Back">Visible</animation>
+            <animation center="640,360" effect="Zoom" end="100,100" reversible="FALSE" start="103,103" time="700">Hidden</animation>
+            <imagepath>music</imagepath>
+            <timeperimage>30000</timeperimage>
+            <fadetime>800</fadetime>
+            <loop>yes</loop>
+            <randomize>True</randomize>
+        </control>
+        <control>
+            <id>897686</id>
+            <description>FANART BACKGROUND 1</description>
+            <type>image</type>
+            <visible>control.isvisible(91919295)+control.isvisible(91919294)</visible>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>#fanarthandler.music.backdrop1.play</texture>
+            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="450">Visible</animation>
+            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="300">Hidden</animation>
+            <keepaspectratio>no</keepaspectratio>
+            <centered>yes</centered>
+            <zoom>yes</zoom>
+        </control>
+        <control>
+            <id>897687</id>
+            <description>FANART BACKGROUND 2</description>
+            <type>image</type>
+            <visible>control.isvisible(91919296)+control.isvisible(91919294)</visible>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>#fanarthandler.music.backdrop2.play</texture>
+            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="450">Visible</animation>
+            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="300">Hidden</animation>
+            <keepaspectratio>no</keepaspectratio>
+            <centered>yes</centered>
+            <zoom>yes</zoom>
+        </control>
+        <control>
+            <id>0</id>
+            <description>Overlay</description>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>music_now_playing_overlay.png</texture>
+        </control>
+        <control>
+            <description>panel</description>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>449</posY>
+            <texture>now_playing_fanart_bg.png</texture>
+            <animation effect="Fade" time="300">WindowClose</animation>
+            <animation effect="Fade" time="400">WindowOpen</animation>
+        </control>
+		<control>
+			<description>listcontrol background</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>350</posX>
+			<posY>104</posY>
+			<height>344</height>
+			<width>633</width>
+			<texture>listcontrol_bg.png</texture>
+			<visible>control.isvisible(50)</visible>
+			<animation effect="fade" time="400">WindowOpen</animation>
+			<animation effect="fade" time="300">WindowClose</animation>
+		</control>
+        <control>
+            <id>0</id>
+            <description>artist label</description>
+            <type>fadelabel</type>
+            <visible>Control.HasFocus(5101)</visible>
+            <posX>480</posX>
+            <posY>533</posY>
+            <width>300</width>
+            <height>23</height>
+            <font>Segoe Light14</font>
+            <textcolor>ffffffff</textcolor>
+            <label>#mpgrooveshark.current.artist</label>
+        </control>
+        <control>
+            <id>0</id>
+            <description>album label</description>
+            <type>fadelabel</type>
+            <visible>Control.HasFocus(5101)</visible>
+            <posX>480</posX>
+            <posY>563</posY>
+            <width>445</width>
+            <height>23</height>
+            <font>Segoe Light14</font>
+            <textcolor>ffffffff</textcolor>
+            <label>#mpgrooveshark.current.album</label>
+        </control>
+        <control>
+            <id>0</id>
+            <description>track label</description>
+            <type>fadelabel</type>
+            <visible>Control.HasFocus(5101)</visible>
+            <posX>480</posX>
+            <posY>497</posY>
+            <width>445</width>
+            <height>29</height>
+            <font>Segoe Light18</font>
+            <textcolor>ffffffff</textcolor>
+            <label>#mpgrooveshark.current.title</label>
+        </control>
+        <control>
+            <id>0</id>
+            <description>playtime label</description>
+            <type>fadelabel</type>
+            <visible>Control.HasFocus(5101)+player.hasmedia</visible>
+            <posX>350</posX>
+            <posY>636</posY>
+            <width>445</width>
+            <height>23</height>
+            <font>Segoe Light14</font>
+            <textcolor>ffffffff</textcolor>
+            <label>#currentplaytime / #duration</label>
+        </control>
+        <control>
+            <id>0</id>
+            <description>title label</description>
+            <type>fadelabel</type>
+            <visible>Control.HasFocus(5101)</visible>
+            <posX>350</posX>
+            <posY>497</posY>
+            <width>550</width>
+            <font>Segoe Light18</font>
+            <textcolor>ff85cffe</textcolor>
+            <label>435</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <description>artist label</description>
+            <type>fadelabel</type>
+            <visible>Control.HasFocus(5101)</visible>
+            <posX>350</posX>
+            <posY>533</posY>
+            <width>550</width>
+            <font>Segoe Light14</font>
+            <textcolor>ff85cffe</textcolor>
+            <label>484</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <description>album label</description>
+            <type>fadelabel</type>
+            <visible>Control.HasFocus(5101)</visible>
+            <posX>350</posX>
+            <posY>563</posY>
+            <width>550</width>
+            <font>Segoe Light14</font>
+            <textcolor>ff85cffe</textcolor>
+            <label>483</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>1</id>
+            <description>No media playing</description>
+            <type>fadelabel</type>
+            <visible>[Control.HasFocus(5101)]+!player.hasmedia</visible>
+            <posX>480</posX>
+            <posY>496</posY>
+            <width>350</width>
+            <font>Segoe Light18</font>
+            <label>no media playing</label>
+        </control>
+        <control>
+            <id>0</id>
+            <description>playlist label</description>
+            <type>label</type>
+            <visible>Control.HasFocus(5102)|Control.HasFocus(5103)|Control.HasFocus(51)|control.hasfocus(50)</visible>
+            <posX>350</posX>
+            <posY>496</posY>
+            <width>512</width>
+            <font>Segoe Light14</font>
+            <textcolor>ff99cccc</textcolor>
+            <label>136</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <type>image</type>
+            <visible/>
+            <posX>115</posX>
+            <posY>513</posY>
+            <width>188</width>
+            <height>188</height>
+            <texture>DefaultMyradioBig.png</texture>
+            <animation effect="Fade" time="1600">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <description>album art overlay</description>
+            <type>image</type>
+            <visible/>
+            <posX>104</posX>
+            <posY>502</posY>
+            <width>210</width>
+            <height>210</height>
+            <texture>blackborders_music_nowplaying_small.png</texture>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>112</id>
+            <description>album art image</description>
+            <type>image</type>
+            <visible/>
+            <posX>115</posX>
+            <posY>513</posY>
+            <width>188</width>
+            <height>188</height>
+            <texture>#mpgrooveshark.current.thumb</texture>
+            <animation effect="Fade" reversible="FALSE" time="450">Visible</animation>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>1</id>
+            <description>Now playing</description>
+            <type>fadelabel</type>
+            <visible>[Control.HasFocus(5103)|Control.HasFocus(5102)|Control.HasFocus(51)|control.hasfocus(50)]+player.hasmedia</visible>
+            <posX>460</posX>
+            <posY>700</posY>
+            <width>445</width>
+            <font>font11</font>
+            <align>CENTER</align>
+            <label>#mpgrooveshark.current.title - #mpgrooveshark.current.artist - #currentplaytime</label>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+        </control>
+        <control>
+            <description>Panel menu</description>
+            <type>group</type>
+            <posX>1018</posX>
+            <posY>526</posY>
+            <layout>Stacklayout</layout>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+            <control>
+                <id>5101</id>
+                <description>Now Playing button</description>
+                <type>button</type>
+                <onleft>5101</onleft>
+                <onright>5101</onright>
+                <onup>5101</onup>
+                <ondown>5102</ondown>
+                <width>276</width>
+                <height>38</height>
+                <textureFocus>now_playing_menuitem_selected.png</textureFocus>
+                <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
+                <label>4540</label>
+                <textYOff>6</textYOff>
+            </control>
+            <control>
+                <id>5102</id>
+                <description>Current Playlist button</description>
+                <type>button</type>
+                <onleft>51</onleft>
+                <onright>5102</onright>
+                <onup>5101</onup>
+                <ondown>5103</ondown>
+                <posX>650</posX>
+                <posY>235</posY>
+                <width>276</width>
+                <height>38</height>
+                <action>51</action>
+                <textureFocus>now_playing_menuitem_selected.png</textureFocus>
+                <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
+                <label>4553</label>
+                <textYOff>6</textYOff>
+            </control>
+            <control>
+                <id>5103</id>
+                <description>Search Term</description>
+                <type>button</type>
+                <onleft>50</onleft>
+                <onright>50</onright>
+                <onup>5102</onup>
+                <ondown>5103</ondown>
+                <posX>1022</posX>
+                <posY>634</posY>
+                <width>276</width>
+                <height>38</height>
+                <arguments/>
+                <textureFocus>now_playing_menuitem_selected.png</textureFocus>
+                <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
+                <label>#SkinTranslation.Translations.grooveshark.Search.Label</label>
+                <textYOff>6</textYOff>
+            </control>
+        </control>
+        <control>
+            <id>0</id>
+            <description>Menu label</description>
+            <type>label</type>
+            <posX>1032</posX>
+            <posY>480</posY>
+            <font>Segoe Light18</font>
+            <textcolor>ff85cfff</textcolor>
+            <label>924</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <import>MPGrooveshark.facade.xml</import>
+        <import>common.time.xml</import>
+        <control>
+            <id>99</id>
+            <description>dummy video preview window required for the plugin</description>
+            <type>videowindow</type>
+            <posX>10</posX>
+            <posY>10</posY>
+            <width>2</width>
+            <height>2</height>
+            <textureFocus>-</textureFocus>
+            <keepaspectratio>no</keepaspectratio>
+            <centered>yes</centered>
+        </control>
+    </controls>
+</window>

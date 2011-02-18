@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>25</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<controls>
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+	</control>
+	
+	<control>
+		<description>Alternate BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>background_thumbs.png</texture>
+		<visible>facadeview.smallicons|facadeview.largeicons</visible>
+	</control>
+	
+	<control>
+		<description>Alternate BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>background_filmstrip.png</texture>
+		<visible>facadeview.filmstrip</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>3</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<visible>facadeview.list</visible>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>433</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>3</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
+		<align>center</align>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>554</posX>
+		<posY>142</posY>
+		<width>700</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light22</font>
+		<visible>facadeview.list+control.isvisible(50)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>860</posX>
+		<posY>690</posY>
+		<align>right</align>
+		<label>#itemtype: #itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>[facadeview.list | facadeview.album | facadeview.playlist]+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>178</posY>
+		<width>1366</width>
+		<align>center</align>
+		<label>#itemtype: #itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>142</posY>
+		<width>1366</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light22</font>
+		<align>center</align>
+		<visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
+	</control>
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>3</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<visible>facadeview.list</visible>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>359</width>
+		<height>482</height>
+		<texture>listcontrol_bg_small.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>359</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info_small.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1366</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+		<animation effect="fade" time="200" reversible="false">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
+		
+		<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>512</posX>
+		<posY>64</posY>
+		<width>342</width>
+		<height>640</height>
+		<texture>menu_bg.png</texture>
+		<visible>!Control.HasFocus(50)</visible>
+		</control>
+		
+				<control>
+				<description>Heading text label</description>
+				<type>label</type>
+				<id>1</id>
+				<posX>567</posX>
+				<posY>110</posY>
+				<label>924</label>
+				<font>Segoe Light18</font>
+				<textcolor>85cffe</textcolor>
+				</control>
+		
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>543</posX>
+				<posY>175</posY>
+				<layout>StackLayout(1)</layout>
+				
+				<control>
+					<description>View-As</description>
+					<type>button</type>
+					<id>2</id>
+					<label>100</label>
+					<onright>50</onright>
+					<onup>17</onup>
+					<ondown>3</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+
+				<control>
+					<description>Sort</description>
+					<type>sortbutton</type>
+					<id>3</id>
+					<label>103</label>
+					<onright>50</onright>
+					<onup>2</onup>
+					<ondown>5</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+
+				<control>
+					<description>Switch View</description>
+					<type>button</type>
+					<id>5</id>
+					<label>457</label>
+					<onright>50</onright>
+					<onup>3</onup>
+					<ondown>6</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+
+				<control>
+					<description>Play DVD</description>
+					<type>button</type>
+					<id>6</id>
+					<label>341</label>
+					<onright>50</onright>
+					<onup>5</onup>
+					<ondown>20</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+
+	
+<!--
+			<control>
+					<description>Eject Disc</description>
+					<type>button</type>
+					<id>7</id>
+					<label>654</label>
+					<action>100</action>
+					<onright>50</onright>
+				</control>
+
+	-->
+				<control>
+					<description>Current Playlist</description>
+					<type>button</type>
+					<id>20</id>
+					<label>4555</label>
+					<action>33</action>
+					<onright>50</onright>
+					<onup>6</onup>
+					<ondown>9</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+
+				<control>
+					<description>My Playlists</description>
+					<type>button</type>
+					<id>9</id>
+					<label>983</label>
+					<onright>50</onright>
+					<ondown>10</ondown>
+					<onup>20</onup>
+					<ondown>10</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+
+				<control>
+					<description>TV Shows</description>
+					<type>button</type>
+					<id>10</id>
+					<hyperlink>9811</hyperlink>
+					<label>1300</label>
+					<onright>50</onright>
+					<ondown>99</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<visible>plugin.isenabled(MP-TV Series)</visible>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+				</control>
+
+			</control>
+
+		</control>
+
+
+	<import>common.facade.video.title.xml</import>
+	
+	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>325</posY>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+	</control>
+
+	<control>
+		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+		<id>1</id>
+		<type>image</type>
+		<posX>624</posX>
+		<posY>0</posY>
+		<texture>hiddenmenu_tab_up.png</texture>
+		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+	</control>
+	
+	<!-- info visible when in list view for titles -->
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<id>500</id>
+		<type>image</type>
+		<posX>133</posX>
+		<posY>208</posY>
+		<width>266</width>
+		<height>380</height>
+		<texture>#selectedthumb</texture>
+		<visible>facadeview.list</visible>
+	</control>
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>1</id>
+		<posX>87</posX>
+		<posY>161</posY>
+		<width>357</width>
+		<height>472</height>
+		<texture>blackborders_video.png</texture>
+		<visible>facadeview.list|facadeview.album</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>Year below the movie title</description>
+		<type>label</type>
+		<label>#year</label>
+		<id>0</id>
+		<posX>924</posX>
+		<posY>195</posY>
+		<width>400</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>facadeview.list</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>runtime</description>
+		<type>label</type>
+		<label>#runtime min</label>
+		<id>0</id>
+		<posX>924</posX>
+		<posY>230</posY>
+		<width>400</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>facadeview.list</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>genre</description>
+		<type>label</type>
+		<label>#genre</label>
+		<id>0</id>
+		<posX>924</posX>
+		<posY>265</posY>
+		<width>400</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>facadeview.list</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>textboxscrollup</type>
+		<description>Summary (list)</description>
+		<id>1025</id>
+		<posX>924</posX>
+		<posY>330</posY>
+		<width>400</width>
+		<height>224</height>
+		<label>#plot</label>
+		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
+		<visible>facadeview.list</visible>
+	</control>
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>Directors value</description>
+		<type>label</type>
+		<label>#director</label>
+		<id>0</id>
+		<posX>924</posX>
+		<posY>595</posY>
+		<width>365</width>
+		<font>font11</font>
+		<textcolor>85cffe</textcolor>
+		<visible>facadeview.list</visible>
+	</control>
+	
+<import>common.overlay.xml</import>
+	
+</controls>
+</window>

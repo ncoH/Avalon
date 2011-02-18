@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>
+
+	<control>
+		<description>group element</description>
+		<type>group</type>
+		<control>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<description>composite control consisting of a list control and a thumbnail panel</description>
+			<type>facadeview</type>
+			<id>50</id>
+			<control>
+				<description>listcontrol</description>
+				<type>listcontrol</type>
+				<id>50</id>
+				<onleft>2</onleft>
+				<onright>50</onright>
+				<scrollOffset>1</scrollOffset>
+				<posX>594</posX>
+				<posY>236</posY>
+				<height>650</height>
+				<spinPosX>682</spinPosX>
+				<spinPosY>1011</spinPosY>
+				<spinAlign>left</spinAlign>
+				<textXOff>78</textXOff>
+			</control>
+
+			<control>
+				<description>Thumbnail Panel</description>
+				<type>thumbnailpanel</type>
+				<dimColor>90ffffff</dimColor>
+				<id>50</id>
+				<posX>163</posX>
+				<posY>242</posY>
+				<width>1040</width>
+				<height>500</height>
+				<scrollOffset>1</scrollOffset>
+				<onleft>2</onleft>
+				<onright>50</onright>
+                <itemWidth>150</itemWidth>
+                <itemHeight>150</itemHeight>
+                <textureWidth>151</textureWidth>
+                <textureHeight>150</textureHeight>
+                <thumbWidth>140</thumbWidth>
+                <thumbHeight>140</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidthBig>244</itemWidthBig>
+				<itemHeightBig>247</itemHeightBig>
+				<thumbWidthBig>247</thumbWidthBig>
+				<thumbHeightBig>197</thumbHeightBig>
+				<textureWidthBig>259</textureWidthBig>
+				<textureHeightBig>217</textureHeightBig>
+				<thumbPosXBig>0</thumbPosXBig>
+				<thumbPosYBig>0</thumbPosYBig>
+				<zoomXPixels>44</zoomXPixels>
+				<zoomYPixels>30</zoomYPixels>
+				<thumbZoom>yes</thumbZoom>
+				<hideUnfocusTexture>no</hideUnfocusTexture>
+				<renderFocusText>no</renderFocusText>
+				<renderUnfocusText>no</renderUnfocusText>
+				<spinCanFocus>no</spinCanFocus>
+				<frame>-</frame>
+				<frameFocus>-</frameFocus>
+				<shadowAngle>90</shadowAngle>
+    			<shadowDistance>50</shadowDistance>
+				<thumbZoom>no</thumbZoom>
+				<spinPosX>1190</spinPosX>
+			</control>
+				
+			<control>
+				<description>Filmstrip view</description>
+				<type>filmstrip</type>
+				<dimColor>90ffffff</dimColor>
+				<id>50</id>
+				<scrollOffset>2</scrollOffset>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>
+				<posX>164</posX>
+				<posY>539</posY>
+				<width>1036</width>
+				<height>768</height>
+				<onup>2</onup>
+				<onleft>50</onleft>
+				<thumbWidth>207</thumbWidth>
+				<thumbHeight>138</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidth>207</itemWidth>
+				<itemHeight>138</itemHeight>
+				<textureWidth>207</textureWidth>
+				<textureHeight>138</textureHeight>
+				<textYOff>-2000</textYOff>
+				<imageFolder>-</imageFolder>
+				<imageFolderFocus>-</imageFolderFocus>
+				<frame>-</frame>
+				<frameFocus>-</frameFocus>
+				<background>-</background>
+				<thumbs flipY="true" diffuse="Thumb_Mask.png"></thumbs>
+				<showFrame>yes</showFrame>
+				<showFolder>no</showFolder>
+				<showBackGround>no</showBackGround>
+				<showInfoImage>no</showInfoImage>
+
+			</control>
+
+
+		</control>
+
+	</control>
+
+</controls>
+</window>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+	<control>
+		<type>image</type>
+		<id>123</id>
+		<posX>-2000</posX>
+		<posY>-2000</posY>
+		<texture>-</texture>
+	</control>
+
+	<control>
+        <description>DUMMY</description>
+        <type>button</type>
+        <id>71717772</id>
+        <posX>-2000</posX>
+        <posY>-2000</posY>
+        <textureFocus>-</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>1001</onleft>
+        <onright>91919994</onright>
+    </control>	
+
+      <control>
+        <description>play</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1214</posX>
+        <posY>635</posY>
+        <width>48</width>
+        <height>48</height>
+        <texture>basichome_play.png</texture>
+		<visible>control.isvisible(123) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5) + [control.hasfocus(91919994) | control.hasfocus(91919995) | control.hasfocus(91919996)]</visible>
+		<animation effect="fade" start="0" end="100" time="400" delay="450">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+	
+    <!--            :: SERIES 1 ::            -->
+	
+      <control>
+        <description>Series 1 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1266</posX>
+        <posY>634</posY>
+        <width>500</width>
+        <label>#avalon.recentlyAdded.series1.title</label>
+        <font>Segoe Light14</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>control.hasfocus(91919994)</visible>
+		<animation effect="fade" start="0" end="100" time="400" delay="450">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+	  
+      <control>
+        <description>Series 1 Episode</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1266</posX>
+        <posY>675</posY>
+        <width>500</width>
+        <label>#avalon.RecentlyAddedSE.1 - #avalon.recentlyAdded.series1.episodetitle</label>
+        <font>Segoe Light14</font>
+        <textcolor>85cffe</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>control.hasfocus(91919994)</visible>
+		<animation effect="fade" start="0" end="100" time="400" delay="450">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+	
+    <!--            :: SERIES 2 ::            -->
+	
+      <control>
+        <description>Series 2 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1266</posX>
+        <posY>634</posY>
+        <width>500</width>
+        <label>#avalon.recentlyAdded.series2.title</label>
+        <font>Segoe Light14</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>control.hasfocus(91919995)</visible>
+		<animation effect="fade" start="0" end="100" time="400" delay="450">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+	  
+      <control>
+        <description>Series 2 Episode</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1266</posX>
+        <posY>675</posY>
+        <width>500</width>
+        <label>#avalon.RecentlyAddedSE.2 - #avalon.recentlyAdded.series2.episodetitle</label>
+        <font>Segoe Light14</font>
+        <textcolor>85cffe</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>control.hasfocus(91919995)</visible>
+		<animation effect="fade" start="0" end="100" time="400" delay="450">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+	
+    <!--            :: SERIES 3 ::            -->
+	
+      <control>
+        <description>Series 3 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1266</posX>
+        <posY>634</posY>
+        <width>500</width>
+        <label>#avalon.recentlyAdded.series3.title</label>
+        <font>Segoe Light14</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>control.hasfocus(91919996)</visible>
+		<animation effect="fade" start="0" end="100" time="400" delay="450">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+	  
+      <control>
+        <description>Series 3 Episode</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1266</posX>
+        <posY>675</posY>
+        <width>500</width>
+        <label>#avalon.RecentlyAddedSE.3 - #avalon.recentlyAdded.series3.episodetitle</label>
+        <font>Segoe Light14</font>
+        <textcolor>85cffe</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>control.hasfocus(91919996)</visible>
+		<animation effect="fade" start="0" end="100" time="400" delay="450">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+	
+    <control>
+      <description>GROUP: RecentlyAdded Series</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>control.isvisible(123) + ![control.isvisible(601) | control.isvisible(501)]  + ![string.starts(#avalon.recentlyAdded.series1.fanart,#)|string.starts(#avalon.recentlyAdded.series1.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <animation effect="slide" end="360,0" time="500" acceleration="-0.1" reversible="false">Hidden</animation>
+      <animation effect="slide" start="360,0" end="0,0" time="600" delay="0" acceleration="-0.1" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="450">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <control>
+        <description>Header label</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1218</posX>
+        <posY>256</posY>
+        <width>590</width>
+        <label>#SkinTranslation.Translations.Latest.episodes.Label</label>
+        <font>Segoe Light20</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+      <control>
+        <description>Series 1 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1218</posX>
+        <posY>335</posY>
+        <width>184</width>
+        <height>262</height>
+        <texture flipY="true" diffuse="Thumb_Mask.png">#avalon.recentlyAdded.series1.thumb</texture>
+      </control>
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>91919994</id>
+        <posX>1200</posX>
+        <posY>317</posY>
+        <width>219</width>
+        <height>296</height>
+        <textureFocus>basichome_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>901</onleft>
+        <onright>91919995</onright>
+        <font>font12</font>
+    </control>
+    </control>
+    <control>
+      <description>GROUP: RecentlyAdded Series</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>control.isvisible(123) + ![control.isvisible(601) | control.isvisible(501)] + ![string.starts(#avalon.recentlyAdded.series2.fanart,#)|string.starts(#avalon.recentlyAdded.series2.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <animation effect="slide" end="360,0" time="500" acceleration="-0.1" reversible="false">Hidden</animation>
+      <animation effect="slide" start="360,0" end="0,0" time="600" delay="0" acceleration="-0.1" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="450">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <control>
+        <description>Series 2 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1418</posX>
+        <posY>335</posY>
+        <width>184</width>
+        <height>262</height>
+        <texture flipY="true" diffuse="Thumb_Mask.png">#avalon.recentlyAdded.series2.thumb</texture>
+      </control>
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>91919995</id>
+        <posX>1400</posX>
+        <posY>317</posY>
+        <width>219</width>
+        <height>296</height>
+        <textureFocus>basichome_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>91919994</onleft>
+        <onright>91919996</onright>
+        <font>font12</font>
+    </control>
+	  
+    </control>
+    <control>
+      <description>GROUP: RecentlyAdded Series</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>control.isvisible(123) + ![control.isvisible(601) | control.isvisible(501)]+ ![string.starts(#avalon.recentlyAdded.series3.fanart,#)|string.starts(#avalon.recentlyAdded.series3.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <animation effect="slide" end="360,0" time="500" acceleration="-0.1" reversible="false">Hidden</animation>
+      <animation effect="slide" start="360,0" end="0,0" time="600" delay="0" acceleration="-0.1" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="450">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>91919996</id>
+        <posX>1601</posX>
+        <posY>317</posY>
+        <width>219</width>
+        <height>296</height>
+        <textureFocus>basichome_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>91919995</onleft>
+        <onright>91919994</onright>
+        <font>font12</font>
+    </control>
+      <control>
+        <description>Series 3 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1620</posX>
+        <posY>335</posY>
+        <width>184</width>
+        <height>262</height>
+        <texture flipY="true" diffuse="Thumb_Mask.png">#avalon.recentlyAdded.series3.thumb</texture>
+      </control>
+    </control>
+	
+    <!--            :: RIGHT ::            -->
+	
+    <control>
+        <description>Series 1 thumb/fanart</description>
+        <type>image</type>
+        <id>444</id>
+        <posX>1702</posX>
+        <posY>335</posY>
+        <width>184</width>
+        <height>262</height>
+        <texture flipY="true" diffuse="Thumb_Mask.png">#avalon.recentlyAdded.series1.thumb</texture>
+		<visible>control.isvisible(123) + [control.isvisible(601) | control.isvisible(501)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="350" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="450">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+		
+	<control>
+        <description>Sub Separator</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1653</posX>
+        <posY>270</posY>
+        <width>1</width>
+        <height>468</height>
+        <texture>basichome_sub_separator.png</texture>
+		<visible>control.isvisible(123) + control.hasthumb(444) + [control.isvisible(601) | control.isvisible(501)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="350" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="450">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+		
+	<control>
+		<description>RIGHT OVERLAY</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>1738</posX>
+		<posY>192</posY>
+		<width>182</width>
+		<height>588</height>
+		<texture>basichome_right_overlay.png</texture> 
+		<visible>control.isvisible(123) + control.hasthumb(444) + [control.isvisible(601) | control.isvisible(501)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+	</control>
+  </controls>
+</window>

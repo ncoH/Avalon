@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+        <control>
+            <id>912</id>
+            <type>textboxscrollup</type>
+            <onleft>202</onleft>
+            <onright>50</onright>
+            <onup>912</onup>
+            <ondown>912</ondown>
+            <visible>Control.IsVisible(101)</visible>
+            <posX>509</posX>
+            <posY>264</posY>
+            <width>652</width>
+            <height>337</height>
+            <animation effect="Fade" time="250">VisibleChange</animation>
+            <textcolor>90ffffff</textcolor>
+            <spinPosX>1075</spinPosX>
+            <spinPosY>570</spinPosY>
+            <spinHeight>30</spinHeight>
+            <spinWidth>30</spinWidth>
+            <font>font12</font>
+            <label>#SubCentral.About</label>
+            <spinAlign>right</spinAlign>
+            <spinCanFocus>yes</spinCanFocus>
+        </control>
+    </controls>
+</window>

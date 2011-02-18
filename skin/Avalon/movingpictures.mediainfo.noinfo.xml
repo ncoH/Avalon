@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<controls>
+	<control>
+		<type>label</type>
+		<id>81</id>
+		<posX>-2000</posX>
+		<posY>-2000</posY>
+		<label>-</label>
+		<visible>no</visible>
+	</control>
+	</controls>
+</window>

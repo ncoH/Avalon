@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>9814</id>
+    <defaultcontrol>10</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <controls>
+        <import>common.dialog.xml</import>
+        <control>
+            <id>100</id>
+            <description>1 Star</description>
+            <type>togglebutton</type>
+            <posX>500</posX>
+            <posY>395</posY>
+            <width>23</width>
+            <height>19</height>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
+        </control>
+        <control>
+            <id>101</id>
+            <description>2 Star</description>
+            <type>togglebutton</type>
+            <posX>538</posX>
+            <posY>395</posY>
+            <width>23</width>
+            <height>19</height>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
+        </control>
+        <control>
+            <id>102</id>
+            <description>3 Star</description>
+            <type>togglebutton</type>
+            <posX>576</posX>
+            <posY>395</posY>
+            <width>23</width>
+            <height>19</height>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
+        </control>
+        <control>
+            <id>103</id>
+            <description>4 Star</description>
+            <type>togglebutton</type>
+            <posX>614</posX>
+            <posY>395</posY>
+            <width>23</width>
+            <height>19</height>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
+        </control>
+        <control>
+            <id>104</id>
+            <description>5 Star</description>
+            <type>togglebutton</type>
+            <posX>652</posX>
+            <posY>395</posY>
+            <width>23</width>
+            <height>19</height>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
+        </control>
+        <control>
+            <id>105</id>
+            <description>6 Star</description>
+            <type>togglebutton</type>
+            <posX>690</posX>
+            <posY>395</posY>
+            <width>23</width>
+            <height>19</height>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
+        </control>
+        <control>
+            <id>106</id>
+            <description>7 Star</description>
+            <type>togglebutton</type>
+            <posX>728</posX>
+            <posY>395</posY>
+            <width>23</width>
+            <height>19</height>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
+        </control>
+        <control>
+            <id>107</id>
+            <description>8 Star</description>
+            <type>togglebutton</type>
+            <posX>766</posX>
+            <posY>395</posY>
+            <width>23</width>
+            <height>19</height>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
+        </control>
+        <control>
+            <id>108</id>
+            <description>9 Star</description>
+            <type>togglebutton</type>
+            <posX>804</posX>
+            <posY>395</posY>
+            <width>23</width>
+            <height>19</height>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
+        </control>
+        <control>
+            <id>109</id>
+            <description>10 Star</description>
+            <type>togglebutton</type>
+            <posX>842</posX>
+            <posY>395</posY>
+            <width>23</width>
+            <height>19</height>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
+        </control>
+        <control>
+            <id>7</id>
+            <description>Selected Rating</description>
+            <type>label</type>
+            <posX>825</posX>
+            <posY>420</posY>
+            <width>200</width>
+            <align>RIGHT</align>
+        </control>
+    </controls>
+</window>

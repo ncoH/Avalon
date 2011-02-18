@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <id>155101</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+    <import>common.settings.xml</import>
+    <import>common.time.xml</import>
+	
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>321</posX>
+		<posY>388</posY>
+		<width>500</width>
+		<label>MovingPictures ListView</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light14</font>
+	</control>
+	
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <animation effect="fade" time="200" delay="200">windowopen</animation>
+      <posX>321</posX>
+      <posY>459</posY>
+      <width>595</width>
+      <height>500</height>
+      <layout>StackLayout</layout>
+      <control>
+        <description>MovingPictures Default/Fanart Style</description>
+        <type>togglebutton</type>
+        <id>2</id>
+		<label>Enable Infos on bottom</label>
+        <onleft>2</onleft>
+        <onright>2</onright>
+        <onup>2</onup>
+        <ondown>3</ondown>
+      </control>
+    </control>
+  </controls>
+</window>

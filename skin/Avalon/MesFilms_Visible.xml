@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+// controls used for conditionnal visibility
+	<control>
+		<type>label</type>
+         	<description>Label Rating 0. Visible when Rating GT 0</description>
+         	<id>24</id>
+         	<posX>0</posX>
+         	<posY>0</posY>
+         	<visible>no</visible>
+		<focusable>no</focusable>
+	</control>
+	<control>
+		<type>label</type>
+         	<description>Label Rating 1. Visible when Rating GT 1</description>
+         	<id>25</id>
+         	<posX>0</posX>
+         	<posY>0</posY>
+         	<visible>no</visible>
+		<focusable>no</focusable>
+	</control>
+	<control>
+		<type>label</type>
+         	<description>Label Rating 2. Visible when Rating GT 2</description>
+         	<id>26</id>
+         	<posX>0</posX>
+         	<posY>0</posY>
+         	<visible>no</visible>
+		<focusable>no</focusable>
+	</control>
+	<control>
+		<type>label</type>
+         	<description>Label Rating 3. Visible when Rating GT 3</description>
+         	<id>27</id>
+         	<posX>0</posX>
+         	<posY>0</posY>
+         	<visible>no</visible>
+		<focusable>no</focusable>
+	</control>
+	<control>
+		<type>label</type>
+         	<description>Label Rating 4. Visible when Rating GT 4</description>
+         	<id>28</id>
+         	<posX>0</posX>
+         	<posY>0</posY>
+         	<visible>no</visible>
+		<focusable>no</focusable>
+	</control>
+	<control>
+		<type>label</type>
+         	<description>Label Rating 5. Visible when Rating GT 5</description>
+         	<id>29</id>
+         	<posX>0</posX>
+         	<posY>0</posY>
+         	<visible>no</visible>
+		<focusable>no</focusable>
+	</control>
+	<control>
+		<type>label</type>
+         	<description>Label Rating 6. Visible when Rating GT 6</description>
+         	<id>30</id>
+         	<posX>0</posX>
+         	<posY>0</posY>
+         	<visible>no</visible>
+		<focusable>no</focusable>
+	</control>
+	<control>
+		<type>label</type>
+         	<description>Label Rating 7. Visible when Rating GT 7</description>
+         	<id>31</id>
+         	<posX>0</posX>
+         	<posY>0</posY>
+         	<visible>no</visible>
+		<focusable>no</focusable>
+	</control>
+	<control>
+		<type>label</type>
+         	<description>Label Rating 8. Visible when Rating GT 8</description>
+         	<id>32</id>
+         	<posX>0</posX>
+         	<posY>0</posY>
+         	<visible>no</visible>
+		<focusable>no</focusable>
+	</control>
+	<control>
+		<type>label</type>
+         	<description>Label Rating 9. Visible when Rating GT 9</description>
+         	<id>33</id>
+         	<posX>0</posX>
+         	<posY>0</posY>
+         	<visible>no</visible>
+		<focusable>no</focusable>
+	</control>
+	<control>
+		<type>label</type>
+         	<description>Label Folder Visible when Folder or selection</description>
+         	<id>34</id>
+         	<posX>0</posX>
+         	<posY>0</posY>
+         	<visible>no</visible>
+		<focusable>no</focusable>
+	</control>
+  </controls>
+</window>
+

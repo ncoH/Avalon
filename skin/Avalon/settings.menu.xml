@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>127</posX>
+		<posY>60</posY>
+		<width>360</width>
+		<height>640</height>
+		<texture>settings_navigation_panel.png</texture>
+	</control>
+	
+	<control>
+		<type>label</type>
+		<description>Settings label</description>
+		<id>121</id>
+		<posX>192</posX>
+		<posY>164</posY>
+		<width>380</width>
+		<label>897</label>
+		<font>Segoe Light18</font>
+		<textcolor>6aa5cb</textcolor>
+	</control>
+
+	<control>
+		<description>buttons</description>
+		<type>group</type>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<posX>175</posX>
+		<posY>260</posY>
+		<layout>StackLayout</layout>
+		
+		<control>
+			<description>Wizard</description>
+			<type>button</type>
+			<id>10001</id>
+			<label>1200</label>
+			<hyperlink>615</hyperlink>
+			<onup>10010</onup>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+		</control>
+
+		<control>
+			<description>General</description>
+			<type>button</type>
+			<id>10002</id>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+			<label>128</label>
+			<hyperlink>705</hyperlink>
+		</control>
+
+		<control>
+			<description>Screen</description>
+			<type>button</type>
+			<id>10003</id>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+			<label>6023</label>
+			<hyperlink>9</hyperlink>
+		</control>
+
+		<control>
+			<description>TV</description>
+			<type>button</type>
+			<id>10004</id>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+			<label>605</label>
+			<hyperlink>700</hyperlink>
+		</control>
+
+		<control>
+			<description>My Pictures</description>
+			<type>button</type>
+			<id>10005</id>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+			<label>1</label>
+			<hyperlink>12</hyperlink>
+		</control>
+
+		<control>
+			<description>Movies</description>
+			<type>button</type>
+			<id>10006</id>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+			<label>3</label>
+			<hyperlink>703</hyperlink>
+		</control>
+
+		<control>
+			<description>My DVD</description>
+			<type>button</type>
+			<id>10007</id>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+			<label>1027</label>
+			<hyperlink>704</hyperlink>
+		</control>
+
+		<control>
+			<description>My Music</description>
+			<type>button</type>
+			<id>10008</id>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+			<label>2</label>
+			<hyperlink>14</hyperlink>
+		</control>
+
+		<control>
+			<description>MiniDisplay</description>
+			<type>button</type>
+			<id>10009</id>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+			<label>9100</label>
+			<hyperlink>9000</hyperlink>
+			<ondown>10010</ondown>
+		</control>
+		
+				<control>
+			<description>I.F.C</description>
+			<type>button</type>
+			<id>10010</id>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+			<label>I.F.C.</label>
+			<hyperlink>240782</hyperlink>
+			<ondown>10011</ondown>
+		</control>
+				<control>
+			<description>I.F.C</description>
+			<type>button</type>
+			<id>10011</id>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+			<label>Skin Settings</label>
+			<hyperlink>155101</hyperlink>
+			<ondown>10001</ondown>
+		</control>
+		
+</control>
+	
+</controls>
+</window>

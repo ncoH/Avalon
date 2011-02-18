@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>4711</id>
+<defaultcontrol>10</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<controls>
+
+	
+	<control>
+		<description>Alternate BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>background_thumbs.png</texture>
+	</control>
+	
+<import>common.time.xml</import>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>433</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>wikipedia</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<align>center</align>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>10</defaultcontrol>
+		<onexit>20</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1366</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+		<animation effect="fade" time="200" reversible="false">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
+		
+		<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>512</posX>
+		<posY>64</posY>
+		<width>342</width>
+		<height>640</height>
+		<texture>menu_bg.png</texture>
+		</control>
+		
+				<control>
+				<description>Heading text label</description>
+				<type>label</type>
+				<id>1</id>
+				<posX>567</posX>
+				<posY>110</posY>
+				<label>924</label>
+				<font>Segoe Light18</font>
+				<textcolor>85cffe</textcolor>
+				</control>
+		
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>543</posX>
+				<posY>175</posY>
+				<layout>StackLayout(1)</layout>
+				
+				<control>
+			<description>Search Button</description>
+			<type>button</type>
+			<id>10</id>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+			<onup>13</onup>
+			<onleft>20</onleft>
+			<onright>20</onright>
+			<label>137</label>
+		</control>
+
+		<control>
+			<description>Select local Wikipedia Button</description>
+			<type>button</type>
+			<id>11</id>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<onleft>20</onleft>
+			<onright>20</onright>
+			<label>200025</label>
+		</control>
+
+		<control>
+			<description>Back to the text (when viewing an image)</description>
+			<type>button</type>
+			<id>14</id>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<onleft>20</onleft>
+			<onright>20</onright>
+			<label>2514</label>
+			<visible>no</visible>
+		</control>
+
+		<control>
+			<description>Links Button</description>
+			<type>button</type>
+			<id>12</id>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<onleft>20</onleft>
+			<onright>20</onright>
+			<label>2511</label>
+		</control>
+
+		<control>
+			<description>Images Button</description>
+			<type>button</type>
+			<id>13</id>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+			<ondown>10</ondown>
+			<onleft>20</onleft>
+			<onright>20</onright>
+			<label>2515</label>
+		</control>
+
+	</control>
+	
+</control>
+
+	<control>
+		<description>Selected item Label</description>
+		<type>label</type>
+		<id>4</id>
+		<posX>0</posX>
+		<posY>142</posY>
+		<width>1366</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light22</font>
+		<align>center</align>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
+	</control>
+
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<description>Image description</description>
+		<type>label</type>
+		<id>5</id>
+		<posX>469</posX>
+		<posY>87</posY>
+		<visible>no</visible>
+		<label>Image description</label>
+		<font>font16</font>
+		<align>left</align>
+	</control>
+
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<description>Here is the article text displayed</description>
+		<type>textbox</type>
+		<id>20</id>
+		<posX>265</posX>
+		<posY>225</posY>
+		<visible>no</visible>
+		<width>755</width>
+		<height>400</height>
+		<spinPosX>645</spinPosX>
+		<spinPosY>720</spinPosY>
+		<spinWidth>33</spinWidth>
+		<spinHeight>33</spinHeight>
+		<onleft>10</onleft>
+		<onright>10</onright>
+		<visible aloowhiddenfocus="true"></visible>
+	</control>
+
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<description>Article Image</description>
+		<type>image</type>
+		<id>25</id>
+		<posX>469</posX>
+		<posY>90</posY>
+		<visible>no</visible>
+		<width>782</width>
+		<height>582</height>
+		<texture/>
+		<colorkey>0</colorkey>
+		<colordiffuse>White</colordiffuse>
+		<centered>yes</centered>
+		<keepaspectratio>yes</keepaspectratio>
+	</control>
+
+</controls>
+</window>

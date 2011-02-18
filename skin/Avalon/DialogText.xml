@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>7900</id>
+<defaultcontrol>3</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<controls>
+
+	<control>
+		<type>image</type>
+		<id>0</id>
+		<posX>183</posX>
+		<posY>34</posY>
+		<width>1000</width>
+		<height>700</height>
+		<texture>dialog_background_big.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Heading text label</description>
+		<type>label</type>
+		<id>4</id>
+		<posX>251</posX>
+		<posY>76</posY>
+		<label>181</label>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>textarea</description>
+		<type>textbox</type>
+		<id>3</id>
+		<posX>251</posX>
+		<posY>180</posY>
+		<width>800</width>
+		<height>475</height>
+		<onleft>2</onleft>
+		<onright>2</onright>
+		<onup>2</onup>
+		<ondown>2</ondown>
+		<spinPosX>970</spinPosX>
+		<spinPosY>600</spinPosY>
+		<spinColor>FFB2D4F5</spinColor>
+		<spinWidth>39</spinWidth>
+		<spinHeight>27</spinHeight>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+</controls>
+</window>

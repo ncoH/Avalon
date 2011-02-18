@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>4</id>
+<defaultcontrol>10001</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<controls>
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+<import>settings.menu.xml</import>
+</controls>
+</window>

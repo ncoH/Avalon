@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>747</id>
+	<defaultcontrol>7</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:6035</define>	
+	<define>#header.background:hover_my tv.png</define>
+<controls>
+
+        <import>common.window.background.xml</import>		
+        <import>common.time.xml</import>		
+		
+        <control>
+            <id>1</id>
+            <type>label</type>
+			<description>Header label</description>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+
+	<control>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>142</posY>
+		<width>663</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light22</font>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
+		<visible>string.equals(#TV.Scheduled.Title,)</visible>
+	</control>
+	
+	<control>
+		<description>status</description>
+		<type>label</type>
+		<id>2</id>
+		<posX>-2000</posX>
+		<posY>87</posY>
+		<label>6035</label>
+		<font>font16</font>
+		<align>right</align>
+		<textcolor>ffffffff</textcolor>
+	</control>
+
+	<control>
+		<type>group</type>
+		<description>group element</description>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		
+	<control>
+		<description>listcontrol</description>
+		<type>listcontrol</type>
+		<id>50</id>
+		<posX>524</posX>
+		<posY>187</posY>
+		<height>458</height>
+		<onleft>7</onleft>
+		<onright>7</onright>
+		<onup>7</onup>
+		<ondown>7</ondown>
+		<scrollOffset>1</scrollOffset>
+		<PinIconHeight>51</PinIconHeight>
+		<PinIconWidth>43</PinIconWidth>
+		<PinIconXOff>0</PinIconXOff>
+		<PinIconYOff>1</PinIconYOff>
+		<itemWidth>32</itemWidth>
+		<itemHeight>32</itemHeight>
+		<IconXOff>40</IconXOff>
+		<IconYOff>9</IconYOff>
+		<textXOff>40</textXOff>
+		<spinPosX>560</spinPosX>
+		<spinPosY>688</spinPosY>
+		<spinAlign>left</spinAlign>
+		<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
+		<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
+		<keepaspectratio>yes</keepaspectratio>
+		<spinCanFocus>no</spinCanFocus>
+		<dimColor>ffffffff</dimColor>		
+	</control>
+
+</control>
+
+	<control>
+		<type>group</type>
+		<layout>StackLayout</layout>
+		<description>group element</description>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<posX>71</posX>
+		<posY>121</posY>
+			<control>
+				<description>Search Title</description>
+				<type>button</type>
+				<id>7</id>
+				<label>6032</label>
+				<onup>17</onup>
+				<ondown>8</ondown>
+				<onright>50</onright>
+			</control>
+			<control>
+				<description>Search by keyword</description>
+				<type>button</type>
+				<id>8</id>
+				<label>6033</label>
+				<onup>7</onup>
+				<ondown>9</ondown>
+				<onright>50</onright>
+			</control>
+			<control>
+				<description>Search by genre</description>
+				<type>button</type>
+				<id>9</id>
+				<label>6034</label>
+				<onup>8</onup>
+				<ondown>10</ondown>
+				<onright>50</onright>
+			</control>
+		</control>
+	
+</controls>
+</window>

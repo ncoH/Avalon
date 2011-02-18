@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>36453969</id>
+    <defaultcontrol>2</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <define>#header.label:Chess</define>
+    <controls>
+        <control>
+            <description>Background</description>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>
+        </control>
+        <control>
+            <id>1</id>
+            <type>label</type>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <import>common.time.xml</import>
+        <control>
+            <type>group</type>
+            <visible>![control.hasfocus(2)|control.hasfocus(3)|control.hasfocus(15)|control.hasfocus(16)|control.hasfocus(6)|control.hasfocus(4)|control.hasfocus(8)]</visible>
+            <dimColor>ffffffff</dimColor>
+            <animation effect="Fade" time="250">VisibleChange</animation>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="250">WindowClose</animation>
+            <control>
+                <id>5</id>
+                <description>level label</description>
+                <type>label</type>
+                <posX>75</posX>
+                <posY>390</posY>
+                <font>font16</font>
+                <label>#level</label>
+            </control>
+            <control>
+                <id>21</id>
+                <description>text label</description>
+                <type>label</type>
+                <posX>73</posX>
+                <posY>440</posY>
+                <font>font13</font>
+                <textcolor>90ffffff</textcolor>
+                <label>#m1</label>
+            </control>
+            <control>
+                <id>22</id>
+                <description>text label</description>
+                <type>label</type>
+                <posX>73</posX>
+                <posY>470</posY>
+                <font>font13</font>
+                <textcolor>90ffffff</textcolor>
+                <label>#m2</label>
+            </control>
+            <control>
+                <id>23</id>
+                <description>text label</description>
+                <type>label</type>
+                <posX>73</posX>
+                <posY>500</posY>
+                <font>font13</font>
+                <textcolor>90ffffff</textcolor>
+                <label>#m3</label>
+            </control>
+            <control>
+                <id>24</id>
+                <description>text label</description>
+                <type>label</type>
+                <posX>73</posX>
+                <posY>530</posY>
+                <font>font13</font>
+                <textcolor>90ffffff</textcolor>
+                <label>#m4</label>
+            </control>
+            <control>
+                <id>7</id>
+                <description>text label</description>
+                <type>label</type>
+                <posX>74</posX>
+                <posY>570</posY>
+                <font>font16</font>
+                <label>#Player</label>
+            </control>
+            <control>
+                <id>9</id>
+                <description>time label</description>
+                <type>label</type>
+                <posX>73</posX>
+                <posY>610</posY>
+                <font>font16</font>
+                <label>#chess_time</label>
+            </control>
+            <control>
+                <id>10</id>
+                <description>time label</description>
+                <type>label</type>
+                <posX>73</posX>
+                <posY>650</posY>
+                <label>#chess_move</label>
+            </control>
+            <control>
+                <id>25</id>
+                <type>image</type>
+                <posX>73</posX>
+                <posY>690</posY>
+                <width>90</width>
+                <height>40</height>
+                <texture>#engine</texture>
+            </control>
+        </control>
+        <control>
+            <type>group</type>
+            <dimColor>ffffffff</dimColor>
+            <animation effect="Slide" reversible="FALSE" start="900,0" time="200" tween="Circle">WindowOpen</animation>
+            <animation effect="Slide" end="900,0" reversible="FALSE" time="200" tween="Circle">WindowClose</animation>
+            <control>
+                <id>1200</id>
+                <description>background</description>
+                <type>image</type>
+                <posX>573</posX>
+                <posY>130</posY>
+                <width>600</width>
+                <height>600</height>
+                <texture>#board</texture>
+            </control>
+        </control>
+        <control>
+            <description>button group</description>
+            <type>group</type>
+            <posX>71</posX>
+            <posY>121</posY>
+            <layout>StackLayout</layout>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="250">WindowClose</animation>
+            <control>
+                <id>2</id>
+                <description>Start</description>
+                <type>button</type>
+                <onleft>2</onleft>
+                <onright>500</onright>
+                <onup>8</onup>
+                <ondown>3</ondown>
+                <label>Start</label>
+                <textalign>RIGHT</textalign>
+            </control>
+            <control>
+                <id>3</id>
+                <description>Undo</description>
+                <type>button</type>
+                <onleft>3</onleft>
+                <onright>500</onright>
+                <onup>2</onup>
+                <ondown>15</ondown>
+                <label>Undo</label>
+                <textalign>RIGHT</textalign>
+            </control>
+            <control>
+                <id>15</id>
+                <description>Undo</description>
+                <type>button</type>
+                <onleft>3</onleft>
+                <onright>500</onright>
+                <onup>3</onup>
+                <ondown>16</ondown>
+                <label>Load</label>
+                <textalign>RIGHT</textalign>
+            </control>
+            <control>
+                <id>16</id>
+                <description>Undo</description>
+                <type>button</type>
+                <onleft>3</onleft>
+                <onright>500</onright>
+                <onup>15</onup>
+                <ondown>6</ondown>
+                <label>Save</label>
+                <textalign>RIGHT</textalign>
+            </control>
+            <control>
+                <id>6</id>
+                <description>first</description>
+                <type>button</type>
+                <onleft>6</onleft>
+                <onright>500</onright>
+                <onup>16</onup>
+                <ondown>4</ondown>
+                <label>Decrease Depth Level</label>
+                <textalign>RIGHT</textalign>
+            </control>
+            <control>
+                <id>4</id>
+                <description>last</description>
+                <type>button</type>
+                <onleft>6</onleft>
+                <onright>500</onright>
+                <onup>6</onup>
+                <ondown>8</ondown>
+                <label>Increase Depth Level</label>
+                <textalign>RIGHT</textalign>
+            </control>
+            <control>
+                <id>8</id>
+                <description>Whatsthis</description>
+                <type>button</type>
+                <onleft>8</onleft>
+                <onright>500</onright>
+                <onup>4</onup>
+                <ondown>2</ondown>
+                <posX>40</posX>
+                <posY>560</posY>
+                <label>What's this?</label>
+                <textalign>RIGHT</textalign>
+            </control>
+        </control>
+    </controls>
+</window>

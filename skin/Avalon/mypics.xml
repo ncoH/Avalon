@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>2</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<controls>
+
+	<import>common.window.pictures.xml</import>
+	
+	<control>
+		<description>Background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+        <posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>background_list.png</texture>
+		<visible>facadeview.list | facadeview.smallicons | facadeview.largeicons</visible>
+	</control>
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>28</posY>
+		<width>500</width>
+		<label>1</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light24</font>
+		<visible>facadeview.list | facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
+	</control>
+	
+	<import>common.time.xml</import>
+	
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1294</width>
+		<height>1080</height>
+		<dimColor>00ffffff</dimColor>
+		<animation effect="Fade" time="100">WindowClose</animation>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1294</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+		</control>
+		
+		<control>
+		<type>group</type>
+			<control>
+				<description>Heading text label</description>
+				<type>label</type>
+				<id>1</id>
+				<posX>192</posX>
+				<posY>88</posY>
+				<label>924</label>
+				<font>Segoe Light22</font>
+				<textcolor>ffffff</textcolor>
+			</control>
+		
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>135</posX>
+				<posY>188</posY>>
+				<layout>StackLayout(1)</layout>
+				
+				<control>
+					<description>View-As</description>
+					<type>button</type>
+					<id>2</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<width>400</width>
+					<height>71</height>
+					<textXOff>50</textXOff>
+					<textYOff>17</textYOff>
+					<label>100</label>
+					<onright>50</onright>
+					<onup>7</onup>
+					<ondown>3</ondown>
+				</control>
+
+				<control>
+					<description>Sort</description>
+					<type>sortbutton</type>
+					<id>3</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<width>400</width>
+					<height>71</height>
+					<textXOff>50</textXOff>
+					<textYOff>17</textYOff>
+					<label>103</label>
+					<offsetSortButtonX>260</offsetSortButtonX>
+					<offsetSortButtonY>27</offsetSortButtonY>
+					<onright>50</onright>
+					<ondown>4</ondown>
+					<onup>2</onup>
+				</control>
+
+				<control>
+					<description>Switch View</description>
+					<type>button</type>
+					<id>4</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<width>400</width>
+					<height>71</height>
+					<textXOff>50</textXOff>
+					<textYOff>17</textYOff>
+					<label>457</label>
+					<onright>50</onright>
+					<ondown>6</ondown>
+					<onup>3</onup>
+				</control>
+
+				<control>
+					<description>SlideShow button</description>
+					<type>button</type>
+					<id>6</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<width>400</width>
+					<height>71</height>
+					<textXOff>50</textXOff>
+					<textYOff>17</textYOff>
+					<label>108</label>
+					<onright>50</onright>
+					<ondown>7</ondown>
+					<onup>4</onup>
+				</control>
+
+				<control>
+					<description>Recursive Slideshow</description>
+					<type>button</type>
+					<id>7</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<width>400</width>
+					<height>71</height>
+					<textXOff>50</textXOff>
+					<textYOff>17</textYOff>
+					<label>361</label>
+					<onright>50</onright>
+					<ondown>99</ondown>
+					<onup>6</onup>
+					<ondown>2</ondown>
+				</control>
+
+			</control>
+
+		</control>
+	</control>
+	
+	<import>common.facade.pictures.xml</import>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>Poster shadow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>111</posX>
+		<posY>136</posY>
+		<width>530</width>
+		<height>496</height>
+		<texture>poster_shadow_big.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>156</posX>
+		<posY>170</posY>
+		<width>439</width>
+		<height>432</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">defaultPictureBig.png</texture>
+		<visible>[facadeview.list|facadeview.album]+!control.hasthumb(500)+!string.equals(#selectedthumb)</visible>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
+	<control>
+		<id>500</id>
+		<type>image</type>
+		<posX>156</posX>
+		<posY>170</posY>
+		<width>439</width>
+		<height>432</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
+		<visible>[facadeview.list|facadeview.album]+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Info Arrow</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>678</posX>
+		<posY>882</posY>
+		<width>34</width>
+		<height>34</height>
+		<texture>info_arrow.png</texture>
+		<visible>[facadeview.list|facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>Info Separator</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>678</posX>
+		<posY>988</posY>
+		<width>1181</width>
+		<height>1</height>
+		<texture>info_separator.png</texture>
+		<visible>[facadeview.list|facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>325</posY>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+	</control>
+	
+	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+		<id>1</id>
+		<type>image</type>
+		<posX>624</posX>
+		<posY>0</posY>
+		<texture>hiddenmenu_tab_up.png</texture>
+		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+	</control>
+	
+	<import>common.overlay.xml</import>
+</controls>
+</window>

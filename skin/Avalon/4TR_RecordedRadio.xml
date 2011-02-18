@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>49852</id>
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:604</define>
+	<define>#header.background:hover_my radio.png</define>	 
+<controls>
+  
+	<import>common.window.recordings.xml</import>
+	<import>common.time.xml</import>
+			
+	<control>
+		<description>Header label</description>		
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight40</font>
+		<visible>facadeview.list</visible>		
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<description>listcontrol background</description>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>173</posY>
+		<width>725</width>
+		<height>561</height>
+		<texture>listcontrol_bg_recordings.png</texture>
+		<visible>facadeview.list</visible>
+	</control>
+
+	<control>
+		<description>Header label</description>		
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>433</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight40</font>
+		<visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip</visible>
+		<align>center</align>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<id>0</id>
+		<type>image</type>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
+		<texture>DefaultMyradioBig.png</texture>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<id>500</id>
+		<type>image</type>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<visible>[facadeview.list|facadeview.album]+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
+		<texture>#selectedthumb</texture>
+	</control>
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>1</id>
+		<posX>92</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture>blackborders_music.png</texture>
+		<visible>facadeview.list|facadeview.album</visible>
+	</control>
+	
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1366</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+				
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>semi_trans_back_general_menu.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+		</control>
+		
+		<control>
+		<type>group</type>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+		<animation effect="fade" time="200" reversible="false">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
+		
+		<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>512</posX>
+		<posY>64</posY>
+		<width>342</width>
+		<height>640</height>
+		<texture>menu_bg.png</texture>
+		<visible>!Control.HasFocus(50)</visible>
+		</control>
+		
+				<control>
+				<description>Heading text label</description>
+				<type>label</type>
+				<id>1</id>
+				<posX>567</posX>
+				<posY>110</posY>
+				<label>924</label>
+				<font>AvalonLight18</font>
+				<textcolor>85cffe</textcolor>
+				</control>
+		
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>543</posX>
+				<posY>175</posY>
+				<layout>StackLayout(1)</layout>
+				
+            <control>
+				<type>button</type>
+				<description>View-As button</description>
+				<id>2</id>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>5</onup>
+				<ondown>3</ondown>
+				<label>100</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
+			</control>
+			
+			<control>
+				<type>button</type>
+				<id>3</id>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>2</onup>
+				<ondown>4</ondown>
+				<label>457</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
+			</control>
+			
+			<control>
+				<type>sortbutton</type>
+				<id>4</id>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>3</onup>
+				<ondown>5</ondown>
+				<label>620</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
+				<offsetSortButtonX>240</offsetSortButtonX>
+				<offsetSortButtonY>14</offsetSortButtonY>
+      </control>
+
+		<control>
+			<description>Radio Guide</description>
+			<type>button</type>
+			<id>5</id>
+			<label>533</label>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<ondown>2</ondown>
+			<onup>4</onup>
+			<hyperlink>762</hyperlink>
+		</control>	
+		
+		</control>
+	</control>	
+</control>
+
+	<control>
+		<type>group</type>
+		<description>group element</description>
+		<id>0</id>
+		<posX>455</posX>
+		<posY>116</posY>
+		<width>778</width>
+		<dimColor>ffffffff</dimColor>
+		<height>583</height>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+
+		<!-- List -->
+	  
+      <control>
+        <type>fadelabel</type>
+        <description>Current program title</description>
+        <id>13</id>
+        <posX>310</posX>
+        <posY>590</posY>
+        <width>600</width>
+        <font>font13</font>
+        <label>#Radio.RecordedTV.Title</label>
+        <disabledcolor>fffffff</disabledcolor>
+      </control>
+	  
+      <control>
+        <type>label</type>
+        <description>Current program time</description>
+        <id>14</id>
+        <posX>310</posX>
+        <posY>620</posY>
+        <label>#Radio.RecordedTV.Time</label>
+        <font>font13</font>
+        <textcolor>ffa9d0f7</textcolor>
+      </control>
+	  
+      <control>
+        <type>textboxscrollup</type>
+        <description>Description1</description>
+        <id>15</id>
+        <posX>310</posX>
+        <posY>650</posY>
+        <width>650</width>
+        <height>94</height>
+        <font>font12</font>
+        <label>#Radio.RecordedTV.Description</label>
+        <textcolor>ffffffff</textcolor>
+      </control>
+
+		<!-- Thumb -->
+		
+		<control>
+			<description>Current program channel</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>515</posX>
+			<posY>610</posY>
+			<label>#Radio.RecordedTV.Title</label>
+			<font>AvalonLight18</font>
+			<textcolor>6aa5cb</textcolor>
+			<align>right</align>
+			<visible>facadeview.smallicons|facadeview.largeicons</visible>
+		</control>
+		
+<!-- 		<control>
+			<type>label</type>
+			<description>Current program genre</description>
+			<id>0</id>
+			<posX>515</posX>
+			<posY>643</posY>
+			<textcolor>6aa5cb</textcolor>
+			<font>AvalonLight18</font>
+			<label>#Radio.Recorded.Genre</label>
+			<align>right</align>
+			<visible>facadeview.smallicons|facadeview.largeicons</visible>
+		</control> -->
+			
+		<control>
+			<type>label</type>
+			<description>Current program time</description>
+			<id>0</id>
+			<posX>515</posX>
+			<posY>682</posY>
+			<textcolor>6aa5cb</textcolor>
+			<font>AvalonLight18</font>
+			<label>#Radio.RecordedTV.Time</label>
+			<align>right</align>
+			<visible>facadeview.smallicons|facadeview.largeicons</visible>
+		</control>
+		
+		<control>
+			<type>textboxscrollup</type>
+			<description>Description1</description>
+			<id>0</id>
+			<posX>555</posX>
+			<posY>614</posY>
+			<width>741</width>
+			<height>134</height>
+			<label>#Radio.RecordedTV.Description</label>
+			<visible>facadeview.smallicons|facadeview.largeicons</visible>
+		</control>
+	  
+			<!-- Filmstrip -->
+			
+		<control>
+			<type>label</type>
+			<description>Current program time</description>
+			<id>0</id>
+			<posX>515</posX>
+			<posY>682</posY>
+			<textcolor>6aa5cb</textcolor>
+			<font>AvalonLight18</font>
+			<label>#selecteditem2</label>
+			<visible>facadeview.filmstrip</visible>
+		</control>
+	</control>		  
+
+	<import>common.facade.recordings.xml</import>
+	<import>common.overlay.xml</import>
+	
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>325</posY>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+	</control>
+	
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>624</posX>
+		<posY>0</posY>
+		<texture>hiddenmenu_tab_up.png</texture>
+		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+	</control>
+	
+
+</controls>
+</window>

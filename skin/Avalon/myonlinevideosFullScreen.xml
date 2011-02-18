@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>2005</id>
+<defaultcontrol>990</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<controls>
+	<import>common.progressbar.tv.xml</import>
+
+	<control>
+        <description>dummy to fix images disappearing (MP BUG)</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>2000</posX>
+        <posY>2000</posY>
+        <width>10</width>
+        <height>10</height>
+        <texture>-</texture>
+        <visible>player.forwarding|player.rewinding|player.paused</visible>
+    </control>	
+	
+	<control>
+		<description>row 1 label</description>
+		<type>label</type>
+		<id>10</id>
+		<posX>477</posX>
+		<posY>700</posY>
+		<height>30</height>
+		<width>400</width>
+		<font>font14</font>
+		<align>center</align>
+		<label>-</label>
+		<visible>Control.IsVisible(10)</visible>
+	</control>
+
+	<control>
+		<description>row 2 label</description>
+		<type>label</type>
+		<id>11</id>
+		<posX>477</posX>
+		<posY>700</posY>
+		<height>30</height>
+		<width>144</width>
+		<font>font18</font>
+		<align>center</align>
+		<label>-</label>
+	</control>
+
+	<control>
+		<description>row 3 label</description>
+		<type>label</type>
+		<id>12</id>
+		<posX>477</posX>
+		<posY>700</posY>
+		<height>30</height>
+		<width>144</width>
+		<font>font18</font>
+		<align>center</align>
+		<label>-</label>
+	</control>
+	
+	<control>
+		<description>pause image</description>
+		<type>image</type>
+		<id>16</id>
+		<posX>1157</posX>
+		<posY>18</posY>
+		<width>48</width>
+		<height>48</height>
+		<visible>no</visible>
+		<texture>osdpausenf.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>2x image</description>
+		<type>image</type>
+		<id>17</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video+2x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>4x image</description>
+		<type>image</type>
+		<id>18</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video+4x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>8x image</description>
+		<type>image</type>
+		<id>19</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video+8x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>16x image</description>
+		<type>image</type>
+		<id>20</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video+16x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>32x image</description>
+		<type>image</type>
+		<id>21</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video+32x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>- 2x image</description>
+		<type>image</type>
+		<id>23</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video-2x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>- 4x image</description>
+		<type>image</type>
+		<id>24</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video-4x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>- 8x image</description>
+		<type>image</type>
+		<id>25</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video-8x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>- 16x image</description>
+		<type>image</type>
+		<id>26</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video-16x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<description>- 32x image</description>
+		<type>image</type>
+		<id>27</id>
+		<posX>1150</posX>
+		<posY>20</posY>
+		<width>134</width>
+		<height>71</height>
+		<visible>no</visible>
+		<texture>video-32x.png</texture>
+		<colordiffuse>White</colordiffuse>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>500</id>
+		<posX>667</posX>
+		<posY>18</posY>
+		<width>32</width>
+		<height>32</height>
+		<texture>osdaudiomutenf.png</texture>
+		<colordiffuse>White</colordiffuse>
+		<visible>no</visible>
+	</control>
+
+	<control>
+		<type>volumebar</type>
+		<id>501</id>
+		<posX>755</posX>
+		<posY>60</posY>
+		<align>right</align>
+		<height>13</height>
+		<imageHeight>3</imageHeight>
+		<texture>volume.states.png</texture>
+		<colordiffuse>White</colordiffuse>
+		<visible>no</visible>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>502</id>
+		<posX>1110</posX>
+		<posY>18</posY>
+		<width>48</width>
+		<height>48</height>
+		<texture>video.action.forbidden.png</texture>
+		<colordiffuse>White</colordiffuse>
+		<visible>no</visible>
+	</control>
+	
+	<control>
+		<description>Trigger button</description>
+		<posY>584</posY>
+		<type>button</type>
+		<id>990</id>
+		<label>-</label>
+		<textureFocus>-</textureFocus>
+		<onup>991</onup>
+		<ondown>990</ondown>
+		<onright>990</onright>
+		<onleft>990</onleft>
+	</control>
+	
+	<control>
+		<description>Fake trigger button expand</description>
+		<posX>657</posX>
+		<posY>559</posY>
+		<width>53</width>
+		<height>20</height>
+		<type>image</type>
+		<id>999</id>
+		<texture>osd_expand_icon.png</texture>
+		<visible>Control.HasFocus(990) + window.isosdvisible</visible>
+	</control>
+	
+	<control>
+		<description>Fake trigger button collapse</description>
+		<posX>657</posX>
+		<posY>559</posY>
+		<width>53</width>
+		<height>20</height>
+		<type>image</type>
+		<id>999</id>
+		<texture>osd_collapse_icon.png</texture>
+		<visible>!Control.HasFocus(990) + window.isosdvisible</visible>
+	</control>
+</controls>
+</window>

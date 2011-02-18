@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>2017</id>
+<defaultcontrol>11</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<controls>
+
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>semi_trans_back_general_menu.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+			<visible>!window.isvisible(602)+!window.isvisible(2005)</visible>
+		</control>
+
+            <control>
+                <id>0</id>
+                <type>image</type>
+                <posX>409</posX>
+                <posY>164</posY>
+                <width>548</width>
+                <height>440</height>
+                <texture>context_background.png</texture>
+            </control>
+
+            <control>
+                <id>4</id>
+                <description>Heading text label</description>
+                <type>label</type>
+                <posX>470</posX>
+                <posY>212</posY>
+				<width>426</width>
+                <font>Segoe Light18</font>
+                <textcolor>ff85cffe</textcolor>
+            </control>
+
+            <control>
+                <id>3</id>
+                <description>options listcontrol</description>
+                <type>listcontrol</type>
+                <onleft>3</onleft>
+                <onright>3</onright>
+				<ondown>11</ondown>
+                <posX>376</posX>
+                <posY>277</posY>
+                <width>548</width>
+                <height>300</height>
+                <textXOff2>525</textXOff2>
+                <textYOff2>8</textYOff2>
+				<textYOff3>10</textYOff3>
+				<textXOff3>-2000</textXOff3>
+                <spinPosX>902</spinPosX>
+                <spinPosY>535</spinPosY>
+                <textXOff>84</textXOff>
+                <textYOff>8</textYOff>
+                <textureFocus>context_item_selected.png</textureFocus>
+                <textureNoFocus>context_item.png</textureNoFocus>
+                <textureHeight>49</textureHeight>
+                <spaceBetweenItems>1</spaceBetweenItems>
+				<PinIconWidth>15</PinIconWidth>
+				<PinIconHeight>15</PinIconHeight>
+                <PinIconXOff>2000</PinIconXOff>
+                <PinIconYOff>15</PinIconYOff>
+            </control>
+
+	<control>
+		<description>Skip new Recording</description>
+		<type>button</type>
+		<id>11</id>
+		<posX>500</posX>
+		<posY>400</posY>
+		<label>1110</label>
+		<onup>3</onup>
+		<ondown>12</ondown>
+	</control>
+
+	<control>
+		<description>Skip conflicting Recording</description>
+		<type>button</type>
+		<id>12</id>
+		<posX>500</posX>
+		<posY>450</posY>
+		<label>1111</label>
+		<onup>11</onup>
+		<ondown>13</ondown>
+	</control>
+
+	<control>
+		<description>Keep Conflict</description>
+		<type>button</type>
+		<id>13</id>
+		<posX>500</posX>
+		<posY>500</posY>
+		<label>1112</label>
+		<onup>12</onup>
+		<ondown>14</ondown>
+	</control>
+
+	<control>
+		<description>Skip conflicting Episode</description>
+		<type>button</type>
+		<id>14</id>
+		<posX>500</posX>
+		<posY>550</posY>
+		<label>1113</label>
+		<onup>13</onup>
+		<ondown>3</ondown>
+	</control>
+
+</controls>
+</window>

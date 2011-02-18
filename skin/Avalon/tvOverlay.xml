@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>3002</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<controls>
+
+	<control>
+		<description>rec logo</description>
+		<type>image</type>
+		<id>4</id>
+		<posX>140</posX>
+		<posY>0</posY>
+		<texture>basichome_isrecording.png</texture>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
+	</control>
+
+</controls>
+</window>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>701</id>
+<defaultcontrol>4</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<controls>
+	<import>common.window.xml</import>
+	<import>settings.menu.xml</import>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>434</posX>
+		<posY>60</posY>
+		<width>820</width>
+		<height>640</height>
+		<texture>settings_main_panel.png</texture>
+	</control>
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>504</posX>
+		<posY>125</posY>
+		<width>660</width>
+		<height>100</height>
+		<label>6007</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>	
+
+		<control>
+			<type>label</type>
+			<id>26</id>
+			<posX>488</posX>
+			<posY>265</posY>
+			<label>1444</label>
+			<onup>5</onup>
+			<ondown>27</ondown>
+		</control>
+
+		<control>
+			<type>spincontrol</type>
+			<id>27</id>
+			<posX>715</posX>
+			<posY>262</posY>
+			<spintype>int</spintype>
+			<showrange>no</showrange>
+			<onup>26</onup>
+			<ondown>30</ondown>
+			<align>right</align>
+		</control>
+
+		<control>
+			<type>label</type>
+			<id>28</id>
+			<posX>781</posX>
+			<posY>265</posY>
+			<label>6018</label>
+		</control>
+
+		<control>
+			<type>label</type>
+			<id>29</id>
+			<posX>488</posX>
+			<posY>310</posY>
+			<label>1445</label>
+		</control>
+
+		<control>
+			<type>spincontrol</type>
+			<id>30</id>
+			<posX>715</posX>
+			<posY>309</posY>
+			<spintype>int</spintype>
+			<showrange>no</showrange>
+			<onup>27</onup>
+			<ondown>4</ondown>
+			<align>right</align>
+		</control>
+
+		<control>
+			<type>label</type>
+			<id>31</id>
+			<posX>781</posX>
+			<posY>310</posY>
+			<label>6019</label>
+		</control>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>488</posX>
+		<posY>402</posY>
+		<width>679</width>
+		<height>37</height>
+		<textcolor>ff85cffe</textcolor>
+		<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(4)</visible>
+	</control>
+
+		<control>
+			<description>Automatically delete recordings after watching them database</description>
+			<type>checkmark</type>
+			<id>4</id>
+			<posX>1110</posX>
+			<posY>408</posY>
+			<label>-</label>
+			<onup>30</onup>
+			<ondown>5</ondown>
+			<onleft>10008</onleft>
+			<onright>10008</onright>
+		</control>
+		
+		<control>
+			<description>Automatically delete recordings after watching them label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>507</posX>
+			<posY>406</posY>
+			<textcolor>ff85cffe</textcolor>
+			<label>6016</label>
+		</control>
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>488</posX>
+		<posY>438</posY>
+		<width>679</width>
+		<height>37</height>
+		<textcolor>ff85cffe</textcolor>
+		<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(5)</visible>
+	</control>
+
+		<control>
+			<description>Add recordings to movie database</description>
+			<type>checkmark</type>
+			<id>5</id>
+			<posX>1110</posX>
+			<posY>444</posY>
+			<label>-</label>
+			<onup>4</onup>
+			<ondown>26</ondown>
+			<onleft>10008</onleft>
+			<onright>10008</onright>
+		</control>
+		
+		<control>
+			<description>Add recordings to movie database label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>507</posX>
+			<posY>442</posY>
+			<textcolor>ff85cffe</textcolor>
+			<label>6017</label>
+		</control>
+	
+</controls>
+</window>

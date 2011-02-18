@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>
+
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>680</posX>
+		<posY>910</posY>
+		<width>1175</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light22</font>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<id>1</id>
+		<posX>1860</posX>
+		<posY>1000</posY>
+		<label>#currentmodule: #itemcount</label>
+		<textcolor>85cffe</textcolor>
+		<font>Segoe Light12</font>
+		<align>right</align>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+	
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>178</posY>
+		<width>1366</width>
+		<align>center</align>
+		<label>#currentmodule: #itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+	
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>142</posY>
+		<width>1366</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light22</font>
+		<align>center</align>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
+	</control>
+
+</controls>
+</window>

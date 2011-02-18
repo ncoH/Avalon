@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin translation file -->
+<!-- German -->
+<!-- Last Updated: 20th Jun 2010 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+
+<strings>
+	<!-- # -->
+
+	<!-- A -->
+
+	<!-- B -->
+
+	<!-- C -->
+	<string Field="check.subtitles">Überprüfe auf Untertitel</string>
+	
+	<!-- D -->
+
+	<!-- E -->
+
+	<!-- F -->
+	<string Field="format">Format:</string>
+	
+	<!-- G -->
+	<string Field="global.search.musicsearch">Musik Suche</string>
+	<string Field="global.search.lastplayed">Zuletzt gespielt</string>
+	<string Field="global.search.filename">Dateiname</string>
+	<string Field="global.search.playcount">Abspielzähler</string>	
+	<string Field="global.search.Searchphrase">Suchphrase</string>
+	<string Field="global.search.Searchhistory">Suchverlauf</string>
+	<string Field="global.search.Searchfields">Suchfeld</string>
+	<string Field="global.search.Casesensitive">Groß-Kleinschreibung</string>
+	<string Field="global.search.Searchtype">Suchart</string>
+	<string Field="grooveshark.Searchterm">Suchbegriff</string>
+	<string Field="grooveshark.Search">Suchbegriff</string>
+	<!-- H -->
+
+	<!-- I -->
+
+	<!-- L -->
+	<string Field="lyrics">Liedtext</string>
+	<string Field="lyrics.tag">Anhang</string>
+	<string Field="Latest.movies">Neueste Filme</string>
+	<string Field="Latest.episodes">Neueste Episoden</string>
+	
+	<!-- M -->
+	<string Field="mylyrics">Liedtext</string>
+	<string Field="music.songs">Lieder:</string>
+	<string Field="movingpictures.runtime">Laufzeit</string>
+	<string Field="movingpictures.release">Veröffentlicht</string>
+	<string Field="movingpictures.minutes">minuten</string>
+	
+	<!-- N -->
+
+	<!-- O -->
+
+	<!-- P -->
+	<string Field="weather.toggleday">OK dr&#252;cken um Tag zu &#228;ndern</string>
+	
+	<!-- R -->
+	<string Field="recentlyAdded.Season">Staffel</string>
+	<string Field="recentlyAdded.Episode">Folge</string>
+
+	<!-- S -->
+	<string Field="site">Seite:</string>
+
+	<!-- T -->
+	<string Field="tv.recordings">Aufnahmen</string>
+	<!-- U -->
+
+	<!-- V -->
+	<string Field="video.settings">Video Einstellungen</string>
+	
+	<!-- W -->
+
+	<!-- Y -->
+
+</strings>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>2016</id>
+    <defaultcontrol>4</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <control>
+            <description>group element</description>
+            <type>group</type>
+            <dimColor>ffffffff</dimColor>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+			<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+            <control>
+                <id>0</id>
+                <type>image</type>
+                <posX>409</posX>
+                <posY>500</posY>
+                <width>548</width>
+                <height>262</height>
+                <texture>dialog_notify.png</texture>
+            </control>
+            <control>
+                <id>3</id>
+                <description>Heading text label</description>
+                <type>label</type>
+                <posX>470</posX>
+                <posY>530</posY>
+                <width>425</width>
+                <font>Segoe Light18</font>
+                <textcolor>ff85cffe</textcolor>
+                <label>181</label>
+            </control>
+            <control>
+                <id>0</id>
+                <description>logo</description>
+                <type>image</type>
+                <visible>window.isvisible(602)+!string.contains(#thumb,MySleepTimer)</visible>
+                <posX>818</posX>
+                <posY>534</posY>
+                <width>80</width>
+                <height>40</height>
+                <texture>dialog_tv_is_recording.png</texture>
+            </control>
+            <control>
+                <id>4</id>
+                <description>OK button</description>
+                <type>button</type>
+                <onleft>4</onleft>
+                <onright>4</onright>
+                <onup>4</onup>
+                <ondown>4</ondown>
+                <posX>-2000</posX>
+            </control>
+            <control>
+                <id>5</id>
+                <description>logo</description>
+                <type>image</type>
+                <posX>470</posX>
+                <posY>600</posY>
+                <width>60</width>
+                <height>60</height>
+                <texture>#thumb</texture>
+                <keepaspectratio>yes</keepaspectratio>
+            </control>
+            <control>
+                <id>6</id>
+                <description>textarea</description>
+                <type>textbox</type>
+                <onleft>4</onleft>
+                <onright>4</onright>
+                <onup>4</onup>
+                <ondown>4</ondown>
+                <posX>555</posX>
+                <posY>590</posY>
+                <width>340</width>
+                <height>77</height>
+                <textcolor>ffffffff</textcolor>
+                <spinPosX>1031</spinPosX>
+                <spinPosY>-2000</spinPosY>
+                <font>font12</font>
+                <label>-</label>
+            </control>
+        </control>
+    </controls>
+</window>

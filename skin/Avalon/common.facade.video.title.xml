@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>
+
+	<control>
+		<description>group element</description>
+		<type>group</type>
+		<control>
+			<animation effect="fade" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<description>composite control consisting of a list control and a thumbnail panel</description>
+			<type>facadeview</type>
+			<id>50</id>
+			<control>
+				<description>listcontrol</description>
+				<type>listcontrol</type>
+				<id>50</id>
+				<onleft>2</onleft>
+				<onright>50</onright>
+				<posX>524</posX>
+				<posY>187</posY>
+				<height>458</height>
+				<width>358</width>
+				<spinPosX>560</spinPosX>
+				<spinPosY>688</spinPosY>
+				<spinAlign>left</spinAlign>
+				<textXOff>22</textXOff>
+				<scrollOffset>1</scrollOffset>
+				<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+				<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+				<dimColor>ffffffff</dimColor>
+		</control>
+
+			<control>
+				<description>Thumbnail Panel</description>
+				<type>thumbnailpanel</type>
+				<id>50</id>
+				<posX>516</posX>
+				<posY>255</posY>
+				<width>790</width>
+				<height>500</height>
+				<scrollOffset>0</scrollOffset>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>
+				<onleft>2</onleft>
+				<onright>50</onright>
+				<itemWidth>103</itemWidth>
+				<itemHeight>140</itemHeight>
+				<textureWidth>103</textureWidth>
+				<textureHeight>140</textureHeight>
+				<thumbWidth>103</thumbWidth>
+				<thumbHeight>140</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidthBig>138</itemWidthBig>
+				<itemHeightBig>196</itemHeightBig>
+				<thumbWidthBig>138</thumbWidthBig>
+				<thumbHeightBig>196</thumbHeightBig>
+				<textureWidthBig>138</textureWidthBig>
+				<textureHeightBig>196</textureHeightBig>
+				<keepaspectratio>no</keepaspectratio>
+				<thumbPosXBig>0</thumbPosXBig>
+				<thumbPosYBig>0</thumbPosYBig>
+				<zoomXPixels>0</zoomXPixels>
+				<zoomYPixels>0</zoomYPixels>
+				<hideUnfocusTexture>no</hideUnfocusTexture>
+				<renderFocusText>no</renderFocusText>
+				<renderUnfocusText>no</renderUnfocusText>
+				<frame>-</frame>
+				<frameFocus>thumb_focus.png</frameFocus>
+				<shadowAngle>90</shadowAngle>
+    			<shadowDistance>50</shadowDistance>
+				<thumbZoom>no</thumbZoom>
+				<spinPosX>1190</spinPosX>
+			</control>
+
+					<control>
+			<description>Filmstrip view</description>
+			<type>filmstrip</type>
+			<dimColor>90ffffff</dimColor>
+			<id>50</id>
+				<scrollOffset>2</scrollOffset>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>
+				<posX>150</posX>
+				<posY>355</posY>
+				<width>1166</width>
+				<height>768</height>
+				<onup>2</onup>
+				<ondown>2</ondown>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<thumbWidth>214</thumbWidth>
+				<thumbHeight>302</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidth>214</itemWidth>
+				<itemHeight>302</itemHeight>
+				<textureWidth>214</textureWidth>
+				<textureHeight>302</textureHeight>
+				<textYOff>-2000</textYOff>
+				<spinCanFocus>no</spinCanFocus>
+				<imageFolderFocus>-</imageFolderFocus>
+				<frame>-</frame>
+				<frameFocus>thumbnail_frame_shine.png</frameFocus>
+				<background>-</background>
+				<thumbs flipY="true" diffuse="Thumb_Mask.png"></thumbs>
+				<showFrame>yes</showFrame>
+				<showFolder>no</showFolder>
+				<showBackGround>no</showBackGround>
+				<showInfoImage>no</showInfoImage>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,570" time="400">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,570" time="100">unfocus</thumbAnimation>
+		</control>
+
+			<control>
+				<description>playlist listcontrol</description>
+				<type>playlistcontrol</type>
+				<id>50</id>
+				<onleft>2</onleft>
+				<onright>50</onright>
+				<scrollOffset>1</scrollOffset>
+				<posY>183</posY>
+				<height>450</height>
+			</control>
+
+		</control>
+
+	</control>
+
+</controls>
+</window>

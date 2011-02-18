@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin translation file -->
+<!-- English (US) -->
+<!-- Last Updated: 22th Aug 2010 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+
+<strings>
+	<!-- # -->
+
+	<!-- A -->
+
+	<!-- B -->
+
+	<!-- C -->
+	<string Field="check.subtitles">Check for subtitles</string>
+
+	<!-- D -->
+
+	<!-- E -->
+
+	<!-- F -->
+	<string Field="format">Format:</string>
+	
+	<!-- G -->
+	<string Field="global.search.musicsearch">music search</string>
+	<string Field="global.search.lastplayed">Last played</string>
+	<string Field="global.search.filename">Filename</string>
+	<string Field="global.search.playcount">Playcount</string>
+	<string Field="global.search.Searchphrase">Searchphrase</string>
+	<string Field="global.search.Searchhistory">Search history</string>
+	<string Field="global.search.Searchfields">Search fields</string>
+	<string Field="global.search.Casesensitive">Case sensitive</string>
+	<string Field="global.search.Searchtype">Searchtype</string>
+	<string Field="grooveshark.Searchterm">Search Term</string>
+	<string Field="grooveshark.Search">Search</string>
+	<!-- H -->
+
+	<!-- I -->
+
+	<!-- L -->
+	<string Field="lyrics">Lyrics</string>
+	<string Field="lyrics.tag">Tag</string>
+	<string Field="Latest.movies">Latest movies</string>
+	<string Field="Latest.episodes">Latest episodes</string>
+	
+	<!-- M -->
+	<string Field="mylyrics">My Lyrics</string>
+	<string Field="music.songs">Songs:</string>
+	<string Field="movingpictures.runtime">Runtime</string>
+	<string Field="movingpictures.release">Release date</string>
+	<string Field="movingpictures.minutes">minutes</string>
+	
+	<!-- N -->
+
+	<!-- O -->
+
+	<!-- P -->
+	
+	<!-- R -->
+	<string Field="recentlyAdded.Season">Season</string>
+	<string Field="recentlyAdded.Episode">Episode</string>
+
+	<!-- S -->
+	<string Field="site">Page:</string>
+	
+	<!-- T -->
+
+	<!-- U -->
+
+	<!-- V -->
+	<string Field="video.settings">Video Settings</string>
+
+	<!-- W -->
+	<string Field="weather.toggleday">Press OK to toggle day</string>
+	
+	<!-- Y -->
+
+</strings>
