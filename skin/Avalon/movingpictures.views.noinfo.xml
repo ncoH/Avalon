@@ -10,7 +10,7 @@
 		<id>1</id>
 		<posX>1856</posX>
 		<posY>945</posY>
-		<width>1184</width>
+		<width>1170</width>
 		<label>#MovingPictures.SelectedMovie.title</label>
 		<font>fontB20</font>
 		<align>right</align>
@@ -96,7 +96,7 @@
 		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.list|facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)+!Control.HasFocus(80)</visible>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)+!Control.HasFocus(80)</visible>
 	</control>
 	
 	<control>
@@ -107,8 +107,9 @@
 		<type>label</type>
 		<label>Press left to return to movie list</label>
 		<id>0</id>
-		<posX>678</posX>
-		<posY>1000</posY>
+		<posX>1856</posX>
+		<posY>1006</posY>
+		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
 		<visible>facadeview.list+Control.HasFocus(80)</visible>
@@ -134,7 +135,7 @@
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
-		<visible>[facadeview.list|facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
 	</control>
 	
     <!--            :: Page label ::           
@@ -163,7 +164,7 @@
 		<width>64</width>
 		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50)</visible>
 	</control>
 	
 	<!--            :: FILMSTRIP VIEW ::            -->
@@ -172,9 +173,10 @@
 		<description>Movie Title Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>680</posX>
-		<posY>945</posY>
-		<width>1160</width>
+		<posX>0</posX>
+		<posY>975</posY>
+		<width>1920</width>
+		<align>center</align>
 		<label>#MovingPictures.SelectedMovie.title</label>
 		<font>fontB20</font>
 		<visible>facadeview.filmstrip+Control.IsVisible(50)</visible>
@@ -184,13 +186,30 @@
 	</control>
 	
 	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
+		<description>Year / Runtime / Genre</description>
+		<type>fadelabel</type>
+		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime.totalminutes #SkinTranslation.Translations.movingpictures.minutes.Label - #MovingPictures.SelectedMovie.genres</label>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>1024</posY>
+		<width>1920</width>
+		<align>center</align>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.HasFocus(80)</visible>
+	</control>
+	
+	<control>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
 		<type>imagelist</type>
 		<id>101</id>
-		<posX>1830</posX>
-		<posY>942</posY>
+		<posX>882</posX>
+		<posY>900</posY>
 		<width>185</width>
 		<height>29</height>
 		<textureWidth>28</textureWidth>
@@ -200,7 +219,7 @@
 		<subitem>starwhite.png</subitem>
 		</subitems>
 		<orientation>horizontal</orientation>
-		<align>right</align>
+		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
 		<visible>facadeview.filmstrip+Control.IsVisible(50)</visible>
@@ -211,7 +230,7 @@
 		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
-		<posX>1000</posX>
+		<posX>858</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
 		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>

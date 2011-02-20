@@ -256,7 +256,7 @@
 		<width>64</width>
 		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50)</visible>
 	</control>
 </controls>
 </window>

@@ -8,7 +8,7 @@
             <posX>55</posX>
             <posY>43</posY>
             <texture>mp_logo.png</texture>
-			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)]</visible>
+			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)]</visible>
         </control>
         <control>
             <id>0</id>
@@ -17,7 +17,7 @@
             <posX>160</posX>
             <posY>45</posY>
             <texture>top_separator.png</texture>
-			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)]</visible>
+			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)]</visible>
         </control>
         <control>
             <id>0</id>
@@ -29,7 +29,7 @@
             <textcolor>6aa5cb</textcolor>
             <label>#time</label>
 			<align>right</align>
-			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)]</visible>
+			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)]</visible>
         </control>
         <control>
             <id>0</id>
@@ -41,7 +41,7 @@
             <textcolor>ffffff</textcolor>
             <label>#date | #infoservice.weather.today.temp</label>
 			<align>right</align>
-			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)]</visible>
+			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)]</visible>
         </control>
 <!--Weather-->
 
@@ -55,7 +55,7 @@
 			<width>100</width>
 			<texture>weather/#infoservice.weather.today.img.small.filenamewithext</texture>
 			<visible>plugin.isenabled(InfoService)</visible>
-			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)]</visible>
+			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)]</visible>
 		</control>
     </controls>
 </window>

@@ -230,8 +230,8 @@
         <id>1021</id>
         <posX>1218</posX>
         <posY>335</posY>
-        <width>184</width>
-        <height>262</height>
+        <width>183</width>
+        <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie1.thumb</texture>
       </control>
 	<control>
@@ -239,9 +239,9 @@
         <type>button</type>
         <id>221</id>
         <posX>1200</posX>
-        <posY>317</posY>
-        <width>219</width>
-        <height>296</height>
+        <posY>316</posY>
+        <width>217</width>
+        <height>294</height>
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
@@ -265,8 +265,8 @@
         <id>0</id>
         <posX>1418</posX>
         <posY>335</posY>
-        <width>184</width>
-        <height>262</height>
+        <width>183</width>
+        <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie2.thumb</texture>
       </control>
 	<control>
@@ -274,9 +274,9 @@
         <type>button</type>
         <id>222</id>
         <posX>1400</posX>
-        <posY>317</posY>
-        <width>219</width>
-        <height>296</height>
+        <posY>316</posY>
+        <width>217</width>
+        <height>294</height>
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
@@ -300,18 +300,18 @@
         <id>0</id>
         <posX>1620</posX>
         <posY>335</posY>
-        <width>184</width>
-        <height>262</height>
+        <width>183</width>
+        <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie3.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
         <type>button</type>
         <id>223</id>
-        <posX>1601</posX>
-        <posY>317</posY>
-        <width>219</width>
-        <height>296</height>
+        <posX>1602</posX>
+        <posY>316</posY>
+        <width>217</width>
+        <height>294</height>
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
@@ -327,8 +327,8 @@
         <id>444</id>
         <posX>1702</posX>
         <posY>335</posY>
-        <width>184</width>
-        <height>262</height>
+        <width>183</width>
+        <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie1.thumb</texture>
 		<visible>control.isvisible(119) + [control.isvisible(601) | control.isvisible(501)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>

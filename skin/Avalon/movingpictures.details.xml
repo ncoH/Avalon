@@ -11,26 +11,11 @@ This file should contain the details view
 		<description>Vignette background</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>341</posX>
-		<posY>153</posY>
-		<width>1242</width>
-		<height>775</height>
+		<posX>321</posX>
+		<posY>235</posY>
+		<width>1278</width>
+		<height>816</height>
 		<texture>movingpictures_details_background.png</texture>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
-	</control>
-
-	<control>
-		<description>Vignette background glow</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>302</posX>
-		<posY>114</posY>
-		<width>1318</width>
-		<height>851</height>
-		<texture>movingpictures_details_background_glow.png</texture>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -42,17 +27,17 @@ This file should contain the details view
 	<control>
 		<description>PLAY Button</description>
 		<type>button</type>
-		<posX>372</posX>
-		<posY>154</posY>
+		<posX>433</posX>
+		<posY>315</posY>
 		<id>6</id>
 		<label>-</label>
 		<onup>6</onup>
 		<ondown>6</ondown>
 		<onleft>6</onleft>
 		<onright>6</onright>
-		<width>105</width>
-		<height>104</height>
-		<textureFocus>movingpictures_details_play.gif</textureFocus>
+		<width>58</width>
+		<height>59</height>
+		<textureFocus>movingpictures_details_play.png</textureFocus>
 		<textureNoFocus>-</textureNoFocus>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -64,8 +49,8 @@ This file should contain the details view
 		<description>Movie Title</description>
 		<type>fadelabel</type>
 		<id>0</id>
-		<posX>474</posX>
-		<posY>168</posY>
+		<posX>526</posX>
+		<posY>314</posY>
 		<width>1036</width>
 		<font>fontB20</font>
 		<label>#MovingPictures.SelectedMovie.title</label>
@@ -80,8 +65,8 @@ This file should contain the details view
 		<type>label</type>
 		<label>#SkinTranslation.Translations.movingpictures.release.Label</label>
 		<id>0</id>
-		<posX>398</posX>
-		<posY>290</posY>
+		<posX>439</posX>
+		<posY>414</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -97,8 +82,8 @@ This file should contain the details view
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.year</label>
 		<id>0</id>
-		<posX>652</posX>
-		<posY>290</posY>
+		<posX>694</posX>
+		<posY>414</posY>
 		<width>200</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -113,8 +98,8 @@ This file should contain the details view
 		<type>label</type>
 		<label>#SkinTranslation.Translations.movingpictures.runtime.Label</label>
 		<id>0</id>
-		<posX>398</posX>
-		<posY>332</posY>
+		<posX>439</posX>
+		<posY>457</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -130,8 +115,8 @@ This file should contain the details view
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.runtime.totalminutes min</label>
 		<id>0</id>
-		<posX>652</posX>
-		<posY>332</posY>
+		<posX>694</posX>
+		<posY>457</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -147,8 +132,8 @@ This file should contain the details view
 		<type>label</type>
 		<label>#MovingPictures.Translation.Genre.Label</label>
 		<id>0</id>
-		<posX>398</posX>
-		<posY>374</posY>
+		<posX>439</posX>
+		<posY>496</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -164,8 +149,8 @@ This file should contain the details view
 		<type>fadelabel</type>
 		<label>#MovingPictures.SelectedMovie.genres</label>
 		<id>0</id>
-		<posX>652</posX>
-		<posY>374</posY>
+		<posX>694</posX>
+		<posY>496</posY>
 		<width>700</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -181,8 +166,8 @@ This file should contain the details view
 		<type>label</type>
 		<label>#MovingPictures.Translation.Director.Label</label>
 		<id>0</id>
-		<posX>398</posX>
-		<posY>416</posY>
+		<posX>439</posX>
+		<posY>538</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -198,8 +183,8 @@ This file should contain the details view
 		<type>fadelabel</type>
 		<label>#MovingPictures.SelectedMovie.directors</label>
 		<id>0</id>
-		<posX>652</posX>
-		<posY>416</posY>
+		<posX>694</posX>
+		<posY>538</posY>
 		<width>700</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -214,10 +199,10 @@ This file should contain the details view
 		<type>textboxscrollup</type>
 		<description>Summary (list)</description>
 		<id>1025</id>
-		<posX>398</posX>
-		<posY>486</posY>
+		<posX>439</posX>
+		<posY>608</posY>
 		<width>1120</width>
-		<height>300</height>
+		<height>230</height>
 		<label>#MovingPictures.SelectedMovie.summary</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
@@ -235,8 +220,8 @@ This file should contain the details view
 		<type>fadelabel</type>
 		<label>#MovingPictures.Translation.Actor.Label: #MovingPictures.SelectedMovie.extra.actors.1, #MovingPictures.SelectedMovie.extra.actors.2, #MovingPictures.SelectedMovie.extra.actors.3</label>
 		<id>0</id>
-		<posX>398</posX>
-		<posY>842</posY>
+		<posX>439</posX>
+		<posY>892</posY>
 		<width>900</width>
 		<align>left</align>
 		<font>font12</font>
@@ -250,8 +235,8 @@ This file should contain the details view
 	<control>
 		<type>imagelist</type>
 		<id>101</id>
-		<posX>1337</posX>
-		<posY>298</posY>
+		<posX>1312</posX>
+		<posY>414</posY>
 		<width>185</width>
 		<height>29</height>
 		<textureWidth>28</textureWidth>

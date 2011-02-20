@@ -2,6 +2,8 @@
 <window>
 <controls>
 	<!--            :: HIDDEN MENU ::            -->
+	
+	
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
@@ -12,6 +14,18 @@
 		<buttonY>0</buttonY>
 		<buttonwidth>521</buttonwidth>
 		<buttonheight>1080</buttonheight>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+		</control>
+	
+	<control>
+		<type>group</type>
 		<animation effect="fade" time="200">windowopen</animation>
 		<animation effect="fade" time="400">windowclose</animation>
 		<animation effect="slide" time="100" start="-600,0">visible</animation>
@@ -19,9 +33,11 @@
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<width>632</width>
-			<height>1080</height>
-			<texture>semi_trans_back_hidden_menu.png</texture>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
 		</control>
 	
@@ -29,8 +45,8 @@
 			<description>Heading text label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>185</posX>
-			<posY>130</posY>
+			<posX>136</posX>
+			<posY>128</posY>
 			<label>924</label>
 			<font>font22</font>
 			<textcolor>ffffff</textcolor>
@@ -41,11 +57,11 @@
 				<id>2</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>0</posX>
-				<posY>235</posY>
-				<width>521</width>
+				<posX>69</posX>
+				<posY>215</posY>
+				<width>459</width>
 				<height>70</height>
-				<textXOff>80</textXOff>
+				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
 				<label>#MovingPictures.Translation.CycleView.Label</label>
 				<onleft>50</onleft>
@@ -60,11 +76,11 @@
 				<id>3</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>0</posX>
-				<posY>305</posY>
-				<width>521</width>
+				<posX>69</posX>
+				<posY>285</posY>
+				<width>459</width>
 				<height>70</height>
-				<textXOff>80</textXOff>
+				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
 				<label>#MovingPictures.Translation.ChangeView.Label</label>
 				<onleft>50</onleft>
@@ -80,11 +96,11 @@
 				<label>495</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>0</posX>
-				<posY>375</posY>
-				<width>521</width>
+				<posX>69</posX>
+				<posY>355</posY>
+				<width>459</width>
 				<height>70</height>
-				<textXOff>80</textXOff>
+				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
 				<onright>50</onright>
 				<onup>3</onup>
@@ -97,11 +113,11 @@
 				<id>15</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>0</posX>
-				<posY>445</posY>
-				<width>521</width>
+				<posX>69</posX>
+				<posY>425</posY>
+				<width>459</width>
 				<height>70</height>
-				<textXOff>80</textXOff>
+				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
 				<label>#MovingPictures.Translation.ToggleParentalLock.Label</label>
 				<onleft>50</onleft>
@@ -116,11 +132,11 @@
 				<id>66612</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>0</posX>
-				<posY>515</posY>
-				<width>521</width>
+				<posX>69</posX>
+				<posY>495</posY>
+				<width>459</width>
 				<height>70</height>
-				<textXOff>80</textXOff>
+				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
 				<label>Skin Settings</label>
 				<hyperlink>155101</hyperlink>
@@ -136,11 +152,11 @@
 				<id>66610</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>0</posX>
-				<posY>585</posY>
-				<width>521</width>
+				<posX>69</posX>
+				<posY>565</posY>
+				<width>459</width>
 				<height>70</height>
-				<textXOff>80</textXOff>
+				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
 				<label>#SkinTranslation.Translations.Video.settings.Label</label>
 				<hyperlink>703</hyperlink>
@@ -154,11 +170,11 @@
 				<description>SubCentral</description>
 				<id>66611</id>
 				<type>button</type>
-				<posX>0</posX>
-				<posY>655</posY>
-				<width>521</width>
+				<posX>69</posX>
+				<posY>635</posY>
+				<width>459</width>
 				<height>70</height>
-				<textXOff>80</textXOff>
+				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
@@ -170,6 +186,7 @@
 				<onup>66610</onup>
 				<ondown>2</ondown>    
 			</control>	
+		</control>
 </control>
 </controls>
 </window>

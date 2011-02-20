@@ -65,35 +65,39 @@ This file should contain the facade view
 				<scrollOffset>3</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<posX>178</posX>
-				<posY>545</posY>
-				<width>1566</width>
+				<posX>114</posX>
+				<posY>520</posY>
+				<width>1920</width>
 				<height>768</height>
 				<onup>2</onup>
 				<ondown>2</ondown>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<thumbWidth>214</thumbWidth>
-				<thumbHeight>302</thumbHeight>
+				<thumbWidth>230</thumbWidth>
+				<thumbHeight>327</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
-				<itemWidth>214</itemWidth>
-				<itemHeight>302</itemHeight>
-				<textureWidth>214</textureWidth>
-				<textureHeight>302</textureHeight>
+				<itemWidth>248</itemWidth>
+				<itemHeight>345</itemHeight>
+				<textureWidth>230</textureWidth>
+				<textureHeight>327</textureHeight>
 				<textYOff>-2000</textYOff>
+				<spinPosX>312</spinPosX>
+				<spinPosY>104</spinPosY>
+				<spinAlign>right</spinAlign>
+				<spinColor>ffffffff</spinColor>
 				<spinCanFocus>no</spinCanFocus>
 				<imageFolderFocus>-</imageFolderFocus>
 				<frame>-</frame>
 				<frameFocus>-</frameFocus>
 				<background>-</background>
-				<thumbs flipY="true" diffuse="Thumb_Mask.png"></thumbs>
+				<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_mask.png"></thumbs>
 				<showFrame>yes</showFrame>
 				<showFolder>no</showFolder>
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
-				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,820" time="400">focus</thumbAnimation>
-				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,820" time="100">unfocus</thumbAnimation>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,780" time="400">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,780" time="100">unfocus</thumbAnimation>
 		</control>
 
 			<control>
@@ -117,12 +121,12 @@ This file should contain the facade view
 				<thumbHeight>174</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
-				<itemWidthBig>199</itemWidthBig>
-				<itemHeightBig>299</itemHeightBig>
-				<thumbWidthBig>215</thumbWidthBig>
-				<thumbHeightBig>299</thumbHeightBig>
-				<textureWidthBig>215</textureWidthBig>
-				<textureHeightBig>299</textureHeightBig>
+				<itemWidthBig>224</itemWidthBig>
+				<itemHeightBig>305</itemHeightBig>
+				<thumbWidthBig>224</thumbWidthBig>
+				<thumbHeightBig>305</thumbHeightBig>
+				<textureWidthBig>224</textureWidthBig>
+				<textureHeightBig>305</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
 				<zoomXPixels>0</zoomXPixels>
@@ -132,14 +136,16 @@ This file should contain the facade view
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>
 				<showFrame>true</showFrame>
-				<frameNoFocus>thumb_nofocus.png</frameNoFocus>
-				<frameFocus>thumb_focus.png</frameFocus>
+				<frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
+				<frameFocus>video_thumb_focus.png</frameFocus>
+				<textureMask>video_thumb_mask.png</textureMask>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>no</thumbZoom>
-				<spinPosX>1667</spinPosX>
-				<spinPosY>1010</spinPosY>
+				<spinPosX>312</spinPosX>
+				<spinPosY>104</spinPosY>
 				<spinAlign>right</spinAlign>
+				<spinColor>ffffffff</spinColor>
 			</control>
 	</control>
 </controls>

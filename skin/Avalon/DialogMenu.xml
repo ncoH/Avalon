@@ -22,25 +22,14 @@
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 			<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="840,400" time="550">WindowOpen</animation> 
-
-			<control>
-                <id>0</id>
-                <type>image</type>
-                <posX>582</posX>
-                <posY>204</posY>
-                <width>752</width>
-                <height>613</height>
-                <texture>context_background_glow.png</texture>
-				<animation effect="fade" delay="450" time="350">WindowOpen</animation> 
-            </control>
 	
             <control>
                 <id>0</id>
                 <type>image</type>
-                <posX>582</posX>
-                <posY>204</posY>
-                <width>752</width>
-                <height>613</height>
+                <posX>575</posX>
+                <posY>395</posY>
+                <width>768</width>
+                <height>651</height>
                 <texture>context_background.png</texture>
             </control>
 			
@@ -48,11 +37,11 @@
                 <id>4</id>
                 <description>Heading text label</description>
                 <type>label</type>
-                <posX>682</posX>
-                <posY>282</posY>
+                <posX>679</posX>
+                <posY>472</posY>
 				<width>426</width>
-                <font>Segoe Light18</font>
-                <textcolor>ff85cffe</textcolor>
+                <font>AvalonLight22</font>
+                <textcolor>ffffffff</textcolor>
                 <label>181</label>
             </control>
 			
@@ -62,15 +51,15 @@
                 <type>listcontrol</type>
                 <onleft>3</onleft>
                 <onright>3</onright>
-                <posX>622</posX>
-                <posY>360</posY>
-                <width>675</width>
+                <posX>620</posX>
+                <posY>560</posY>
+                <width>669</width>
                 <height>450</height>
                 <textXOff2>525</textXOff2>
                 <textYOff2>8</textYOff2>
-                <spinPosX>690</spinPosX>
-                <spinPosY>726</spinPosY>
-                <textXOff>56</textXOff>
+                <spinPosX>679</spinPosX>
+                <spinPosY>924</spinPosY>
+                <textXOff>50</textXOff>
                 <textYOff>16</textYOff>
                 <textureFocus>context_item_selected.png</textureFocus>
                 <textureNoFocus>-</textureNoFocus>
