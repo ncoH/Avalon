@@ -89,28 +89,11 @@
 		</control>
 
 		<control>
-			<description>Notify</description>
-			<type>togglebutton</type>
-			<id>5</id>
-			<posX>1431</posX>
-			<posY>744</posY>
-			<label>1040</label>
-			<textcolor>White</textcolor>
-			<colordiffuse>White</colordiffuse>
-			<disabledcolor>60ffffff</disabledcolor>
-			<onup>3</onup>
-			<ondown>9</ondown>
-			<onright>10</onright>
-			<onleft>4</onleft>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-		</control>
-
-		<control>
 			<description>Quality</description>
 			<type>button</type>
 			<id>6</id>
 			<label>882</label>
-			<onup>5</onup>
+			<onup>4</onup>
 			<ondown>7</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
