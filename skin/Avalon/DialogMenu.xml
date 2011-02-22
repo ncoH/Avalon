@@ -39,7 +39,7 @@
                 <type>label</type>
                 <posX>679</posX>
                 <posY>472</posY>
-				<width>426</width>
+				<width>580</width>
                 <font>AvalonLight22</font>
                 <textcolor>ffffffff</textcolor>
                 <label>181</label>
@@ -69,6 +69,7 @@
 				<PinIconHeight>15</PinIconHeight>
                 <PinIconXOff>2000</PinIconXOff>
                 <PinIconYOff>15</PinIconYOff>
+				<unfocusedAlpha>255</unfocusedAlpha>
             </control>
         </control>
     </controls>

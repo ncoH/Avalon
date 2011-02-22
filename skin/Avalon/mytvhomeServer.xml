@@ -69,7 +69,7 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
+			<textYOff>28</textYOff>
 			<font>AvalonLight14</font>
 			<textalign>left</textalign>
 		</control>
@@ -90,7 +90,7 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
+			<textYOff>28</textYOff>
 			<font>AvalonLight14</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
@@ -125,7 +125,7 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
+			<textYOff>28</textYOff>
 			<font>AvalonLight14</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
@@ -147,7 +147,7 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
+			<textYOff>28</textYOff>
 			<font>AvalonLight14</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
@@ -169,7 +169,7 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
+			<textYOff>28</textYOff>
 			<font>AvalonLight14</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
@@ -187,7 +187,7 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
+			<textYOff>28</textYOff>
 			<font>AvalonLight14</font>
 			<textcolorNoFocus>ff6aa5cb</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
@@ -210,7 +210,7 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
+			<textYOff>28</textYOff>
 			<font>AvalonLight14</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
@@ -233,7 +233,7 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
+			<textYOff>28</textYOff>
 			<font>AvalonLight14</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
@@ -255,7 +255,7 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
+			<textYOff>28</textYOff>
 			<font>AvalonLight14</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
@@ -278,7 +278,7 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
+			<textYOff>28</textYOff>
 			<font>AvalonLight14</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
@@ -301,7 +301,7 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
+			<textYOff>28</textYOff>
 			<font>AvalonLight14</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
@@ -364,24 +364,11 @@
 	</control>
 
 	<control>
-		<description>Info Separator</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>678</posX>
-		<posY>875</posY>
-		<width>1181</width>
-		<height>1</height>
-		<texture>info_separator.png</texture>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
-	
-	<control>
 		<description>Play info label</description>
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>681</posX>
-		<posY>885</posY>
+		<posY>875</posY>
 		<width>850</width>
 		<label>#TV.View.start - #TV.View.stop #TV.View.channel #TV.Guide.Genre</label>
 		<font>AvalonLight14</font>
@@ -395,10 +382,10 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>681</posX>
-		<posY>811</posY>
+		<posY>808</posY>
 		<width>1175</width>
 		<label>#TV.View.title</label>
-		<font>AvalonLight18</font>
+		<font>fontB20</font>
 		<textcolor>ffffff</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -409,9 +396,9 @@
 		<type>textboxscrollup</type>
 		<id>15</id>
 		<posX>681</posX>
-		<posY>934</posY>
+		<posY>914</posY>
 		<width>1185</width>
-		<height>110</height>
+		<height>150</height>
 		<font>font11</font>
 		<seperator>----------------------------------------------------------------------------------------------</seperator>
 		<label>#TV.View.description</label>

@@ -24,15 +24,6 @@
 	<end>1536</end>
 </font>
 
-
-<font>
-	<name>font14</name>
-	<filename>AvalonType</filename>
-	<height>14</height>
-	<start>0</start>
-	<end>1536</end>
-</font>
-
 <font>
 	<name>font16</name>
 	<filename>AvalonType</filename>
@@ -53,6 +44,15 @@
 	<name>fontB14</name>
 	<filename>AvalonType Bold</filename>
 	<height>14</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>yes</bold>
+</font>
+
+<font>
+	<name>fontB16</name>
+	<filename>AvalonType Bold</filename>
+	<height>16</height>
 	<start>0</start>
 	<end>1536</end>
 	<bold>yes</bold>

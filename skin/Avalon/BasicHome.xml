@@ -223,7 +223,7 @@
 	<posX>0</posX>
 	<posY>164</posY>
 	<width>1893</width>
-	<height>645</height>
+	<height>644</height>
 	<texture>basichome_viewport.png</texture>
 	<shouldCache>true</shouldCache>
     <animation effect="fade" time="250">WindowOpen</animation>

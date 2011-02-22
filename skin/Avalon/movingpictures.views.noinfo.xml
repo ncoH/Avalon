@@ -2,7 +2,7 @@
 <window>
 <controls>
 
-	<!--            :: LIST / THUMBVIEW ::            -->
+	<!--            :: LIST ::            -->
 	
 	<control>
 		<description>Selected item Label</description>
@@ -65,20 +65,6 @@
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="0">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<description>Bottom Overlay</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>762</posX>
-		<posY>890</posY>
-		<width>339</width>
-		<height>58</height>
-		<texture>bottom_overlay.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
-	</control>
-	
 
 	<!--            :: Info Labels ::            -->
 	
@@ -92,7 +78,7 @@
 		<id>0</id>
 		<posX>1856</posX>
 		<posY>1006</posY>
-		<width>1184</width>
+		<width>455</width>
 		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
@@ -135,7 +121,7 @@
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
-		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 	
     <!--            :: Page label ::           
@@ -166,6 +152,32 @@
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50)</visible>
 	</control>
+	
+	<!--            :: THUMBVIEW ::            -->
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>1254</posX>
+		<posY>1008</posY>
+		<width>185</width>
+		<height>29</height>
+		<textureWidth>28</textureWidth>
+		<textureHeight>27</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+	</control>
+	
 	
 	<!--            :: FILMSTRIP VIEW ::            -->
 	

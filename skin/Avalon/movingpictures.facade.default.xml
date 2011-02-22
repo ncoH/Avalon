@@ -41,7 +41,7 @@ This file should contain the facade view
 			<type>listcontrol</type>
 			<id>50</id>
 			<onleft>2</onleft>
-			<onright>80</onright>
+			<onright>2</onright>
 			<scrollOffset>1</scrollOffset>
 			<posX>1166</posX>
 			<posY>236</posY>
