@@ -29,9 +29,24 @@
 		<id>1</id>
 		<posX>695</posX>
 		<posY>182</posY>
-		<width>463</width>
-		<height>602</height>
-		<texture>poster_shadow_big.png</texture>
+		<width>466</width>
+		<height>606</height>
+		<texture>list_poster_shadow.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<description>Poster shadow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>695</posX>
+		<posY>182</posY>
+		<width>466</width>
+		<height>606</height>
+		<texture>list_poster_glow.png</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 	
@@ -44,9 +59,9 @@
 		<id>0</id>
 		<posX>762</posX>
 		<posY>250</posY>
-		<width>328</width>
-		<height>466</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">defaultdvdcover.png</texture>
+		<width>330</width>
+		<height>470</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">defaultdvdcover.png</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 
@@ -59,9 +74,9 @@
 		<id>60</id>
 		<posX>762</posX>
 		<posY>250</posY>
-		<width>328</width>
-		<height>466</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#MovingPictures.Coverart</texture>
+		<width>330</width>
+		<height>470</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#MovingPictures.Coverart</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 	

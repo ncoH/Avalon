@@ -42,7 +42,7 @@
 				<textureNoFocus></textureNoFocus>
 				<font>font12</font>
 			</control>
-			
+			<!--
 			<control>
 				<animation effect="fade" time="250">WindowClose</animation>
 				<animation effect="slide" time="250" start="1200,0">visible</animation>
@@ -57,7 +57,7 @@
 				<texture>info.png</texture>
 				<visible>Control.HasFocus(80)</visible>
 			</control>
-
+-->
 			<control>
 				<description>Season Watched Icon</description>
 				<animation effect="fade" time="250">WindowOpen</animation>
@@ -186,7 +186,7 @@
 				<label>#TVSeries.Season.InfoPanelLine2Key</label>
 				<visible>facadeview.list+[Control.IsVisible(1238)]+Control.HasFocus(80)</visible>
 			</control>
-			
+						
 			<control>
 				<animation effect="fade" time="250">WindowOpen</animation>
 				<animation effect="fade" time="250">WindowClose</animation>
@@ -196,12 +196,12 @@
 				<type>label</type>
 				<label>#TVSeries.Translation.FirstAired.Label</label>
 				<id>0</id>
-				<posX>805</posX>
-				<posY>238</posY>
+				<posX>745</posX>
+				<posY>594</posY>
 				<width>240</width>
 				<align>left</align>
-				<font>Segoe Light14</font>
-				<textcolor>85cffe</textcolor>
+				<font>AvalonLight14</font>
+				<textcolor>6aa5cb</textcolor>
 				<visible>facadeview.list+[Control.IsVisible(1238)|Control.IsVisible(1237)]+Control.HasFocus(80)</visible>
 			</control>
 
@@ -215,11 +215,11 @@
 				<label>#TVSeries.Series.InfoPanelLine2Value</label>
 				<id>0</id>
 				<posX>1058</posX>
-				<posY>238</posY>
+				<posY>594</posY>
 				<width>240</width>
 				<align>left</align>
-				<font>Segoe Light14</font>
-				<textcolor>85cffe</textcolor>
+				<font>AvalonLight14</font>
+				<textcolor>ffffff</textcolor>
 				<visible>facadeview.list+[Control.IsVisible(1238)|Control.IsVisible(1237)]+Control.HasFocus(80)</visible>
 			</control>
 			
@@ -232,15 +232,65 @@
 				<type>label</type>
 				<label>#TVSeries.Translation.FirstAired.Label</label>
 				<id>0</id>
-				<posX>805</posX>
-				<posY>238</posY>
+				<posX>745</posX>
+				<posY>594</posY>
 				<width>240</width>
 				<align>left</align>
-				<font>Segoe Light14</font>
-				<textcolor>85cffe</textcolor>
+				<font>AvalonLight14</font>
+				<textcolor>6aa5cb</textcolor>
 				<visible>facadeview.list+Control.IsVisible(1239)+Control.HasFocus(80)</visible>
 			</control>
 
+			<control>
+				<description>Big Episode Thumb</description>
+				<animation effect="fade" time="250">WindowOpen</animation>
+				<animation effect="fade" time="250">WindowClose</animation>
+				<animation effect="slide" time="250" start="1200,0">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<type>image</type>
+				<id>67</id>
+				<posX>745</posX>
+				<posY>244</posY>
+				<width>382</width>
+				<height>215</height>
+				<texture  flipY="true" diffuse="Thumb_Mask.png">#TVSeries.EpisodeImage</texture>
+				<visible>facadeview.list+Control.IsVisible(1239)+Control.HasFocus(80)</visible>
+			</control>
+			
+			  <control>      
+				<type>image</type>
+				<animation effect="fade" time="250">WindowOpen</animation>
+				<animation effect="fade" time="250">WindowClose</animation>
+				<animation effect="slide" time="250" start="1200,0">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<id>1</id>
+				<posX>1190</posX>
+				<posY>262</posY>
+				<width>222</width>
+				<height>19</height>
+				<align>left</align>
+				<texture>#TVSeries.Episode.RatingPath</texture>
+				<visible>facadeview.list+Control.IsVisible(1239)+Control.HasFocus(80)</visible>
+			</control>
+			
+			<control>
+				<type>image</type>
+				<animation effect="fade" time="250">WindowOpen</animation>
+				<animation effect="fade" time="250">WindowClose</animation>
+				<animation effect="slide" time="250" start="1200,0">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<id>1</id>
+				<description>Logos</description>
+				<id>66</id>
+				<posX>1190</posX>
+				<posY>318</posY>
+				<width>650</width>
+				<height>54</height>
+				<texture>#TVSeries.Logos</texture>
+				<keepaspectratio>yes</keepaspectratio>
+				<visible>facadeview.list+Control.IsVisible(1239)+Control.HasFocus(80)</visible>
+			</control>
+			
 			<control>
 				<animation effect="fade" time="250">WindowOpen</animation>
 				<animation effect="fade" time="250">WindowClose</animation>
@@ -251,48 +301,12 @@
 				<label>#TVSeries.Episode.Aired</label>
 				<id>0</id>
 				<posX>1058</posX>
-				<posY>238</posY>
+				<posY>594</posY>
 				<width>240</width>
 				<align>left</align>
-				<font>Segoe Light14</font>
-				<textcolor>85cffe</textcolor>
+				<font>AvalonLight14</font>
+				<textcolor>ffffff</textcolor>
 				<visible>facadeview.list+Control.IsVisible(1239)+Control.HasFocus(80)</visible>
-			</control>
-
-			<control>
-				<animation effect="fade" time="250">WindowOpen</animation>
-				<animation effect="fade" time="250">WindowClose</animation>
-				<animation effect="slide" time="250" start="1200,0">visible</animation>
-				<animation effect="slide" time="0" end="1500,0">hidden</animation>
-				<description>Runtime Label</description>
-				<type>label</type>
-				<label>#TVSeries.Translation.Runtime.Label</label>
-				<id>0</id>
-				<posX>805</posX>
-				<posY>280</posY>
-				<width>240</width>
-				<align>left</align>
-				<font>Segoe Light14</font>
-				<textcolor>85cffe</textcolor>
-				<visible>facadeview.list+[Control.IsVisible(1239)|Control.IsVisible(1238)|Control.IsVisible(1237)]+Control.HasFocus(80)</visible>
-			</control>
-			
-			<control>
-				<animation effect="fade" time="250">WindowOpen</animation>
-				<animation effect="fade" time="250">WindowClose</animation>
-				<animation effect="slide" time="250" start="1200,0">visible</animation>
-				<animation effect="slide" time="0" end="1500,0">hidden</animation>
-				<description>Runtime</description>
-				<type>label</type>
-				<label>#TVSeries.Series.InfoPanelLine4Value</label>
-				<id>0</id>
-				<posX>1058</posX>
-				<posY>280</posY>
-				<width>240</width>
-				<align>left</align>
-				<font>Segoe Light14</font>
-				<textcolor>85cffe</textcolor>
-				<visible>facadeview.list+[Control.IsVisible(1239)|Control.IsVisible(1238)|Control.IsVisible(1237)]+Control.HasFocus(80)</visible>
 			</control>
 			
 			<control>
@@ -304,12 +318,12 @@
 				<type>label</type>
 				<label>#TVSeries.Translation.Genre.Label</label>
 				<id>0</id>
-				<posX>805</posX>
-				<posY>320</posY>
+				<posX>1230</posX>
+				<posY>594</posY>
 				<width>240</width>
 				<align>left</align>
-				<font>Segoe Light14</font>
-				<textcolor>85cffe</textcolor>
+				<font>AvalonLight14</font>
+				<textcolor>6aa5cb</textcolor>
 				<visible>facadeview.list+[Control.IsVisible(1239)|Control.IsVisible(1238)|Control.IsVisible(1237)]+Control.HasFocus(80)</visible>
 			</control>
 			
@@ -322,12 +336,12 @@
 				<type>fadelabel</type>
 				<label>#TVSeries.Series.InfoPanelLine3Value</label>
 				<id>0</id>
-				<posX>1058</posX>
-				<posY>320</posY>
+				<posX>1380</posX>
+				<posY>594</posY>
 				<width>700</width>
 				<align>left</align>
-				<font>Segoe Light14</font>
-				<textcolor>85cffe</textcolor>
+				<font>AvalonLight14</font>
+				<textcolor>ffffff</textcolor>
 				<visible>facadeview.list+[Control.IsVisible(1239)|Control.IsVisible(1238)|Control.IsVisible(1237)]+Control.HasFocus(80)</visible>
 			</control>
 			
@@ -340,12 +354,12 @@
 				<type>label</type>
 				<label>#TVSeries.Translation.Director.Label</label>
 				<id>0</id>
-				<posX>805</posX>
-				<posY>360</posY>
+				<posX>1230</posX>
+				<posY>635</posY>
 				<width>240</width>
 				<align>left</align>
-				<font>Segoe Light14</font>
-				<textcolor>85cffe</textcolor>
+				<font>AvalonLight14</font>
+				<textcolor>6aa5cb</textcolor>
 				<visible>facadeview.list+Control.IsVisible(1239)+Control.HasFocus(80)</visible>
 			</control>
 			
@@ -358,29 +372,11 @@
 				<type>fadelabel</type>
 				<label>#TVSeries.Episode.InfoPanelLine4Value</label>
 				<id>0</id>
-				<posX>1058</posX>
-				<posY>360</posY>
+				<posX>1380</posX>
+				<posY>635</posY>
 				<width>700</width>
 				<align>left</align>
-				<font>Segoe Light14</font>
-				<textcolor>85cffe</textcolor>
-				<visible>facadeview.list+Control.IsVisible(1239)+Control.HasFocus(80)</visible>
-			</control>
-			
-			<control>
-				<animation effect="fade" time="250">WindowOpen</animation>
-				<animation effect="fade" time="250">WindowClose</animation>
-				<animation effect="slide" time="250" start="1200,0">visible</animation>
-				<animation effect="slide" time="0" end="1500,0">hidden</animation>
-				<description>Actors</description>
-				<type>fadelabel</type>
-				<label>#TVSeries.Translation.Actors.Label: #TVSeries.Series.InfoPanelLine6Value</label>
-				<id>0</id>
-				<posX>805</posX>
-				<posY>750</posY>
-				<width>950</width>
-				<align>left</align>
-				<font>font12</font>
+				<font>AvalonLight14</font>
 				<textcolor>ffffff</textcolor>
 				<visible>facadeview.list+Control.IsVisible(1239)+Control.HasFocus(80)</visible>
 			</control>
@@ -393,10 +389,10 @@
 				<type>textboxscrollup</type>
 				<description>Summary (list)</description>
 				<id>631</id>
-				<posX>805</posX>
-				<posY>435</posY>
+				<posX>745</posX>
+				<posY>679</posY>
 				<width>1040</width>
-				<height>300</height>
+				<height>150</height>
 				<label>#TVSeries.Description</label>
 				<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 				<onleft>1026</onleft>
@@ -415,7 +411,7 @@
 				<type>fadelabel</type>
 				<label>#TVSeries.Translation.Actors.Label: #TVSeries.Series.InfoPanelLine6Value</label>
 				<id>0</id>
-				<posX>805</posX>
+				<posX>745</posX>
 				<posY>750</posY>
 				<width>950</width>
 				<align>left</align>

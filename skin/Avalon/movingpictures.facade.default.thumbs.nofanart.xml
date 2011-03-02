@@ -104,7 +104,7 @@ This file should contain the facade view
 				<description>Thumbnail Panel</description>
 				<type>thumbnailpanel</type>
 				<id>50</id>
-				<posX>710</posX>
+				<posX>655</posX>
 				<posY>232</posY>
 				<width>1250</width>
 				<height>600</height>
@@ -113,20 +113,20 @@ This file should contain the facade view
 				<folderSuffix></folderSuffix>
 				<onleft>2</onleft>
 				<onright>2</onright>
-				<itemWidth>126</itemWidth>
-				<itemHeight>174</itemHeight>
-				<textureWidth>121</textureWidth>
-				<textureHeight>169</textureHeight>
-				<thumbWidth>121</thumbWidth>
-				<thumbHeight>169</thumbHeight>
+				<itemWidth>128</itemWidth>
+				<itemHeight>177</itemHeight>
+				<textureWidth>123</textureWidth>
+				<textureHeight>172</textureHeight>
+				<thumbWidth>123</thumbWidth>
+				<thumbHeight>172</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
-				<itemWidthBig>189</itemWidthBig>
-				<itemHeightBig>257</itemHeightBig>
-				<thumbWidthBig>179</thumbWidthBig>
-				<thumbHeightBig>247</thumbHeightBig>
-				<textureWidthBig>179</textureWidthBig>
-				<textureHeightBig>247</textureHeightBig>
+				<itemWidthBig>179</itemWidthBig>
+				<itemHeightBig>247</itemHeightBig>
+				<thumbWidthBig>169</thumbWidthBig>
+				<thumbHeightBig>237</thumbHeightBig>
+				<textureWidthBig>169</textureWidthBig>
+				<textureHeightBig>237</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
 				<zoomXPixels>0</zoomXPixels>
@@ -139,8 +139,8 @@ This file should contain the facade view
 				<frameFocus>video_thumb_focus.png</frameFocus>
 				<textureMask>video_thumb_mask.png</textureMask>
 				<shadowAngle>90</shadowAngle>
-    			<shadowDistance>50</shadowDistance>
 				<unfocusedAlpha>150</unfocusedAlpha>
+    			<shadowDistance>50</shadowDistance>
 				<thumbZoom>no</thumbZoom>
 				<spinPosX>312</spinPosX>
 				<spinPosY>102</spinPosY>

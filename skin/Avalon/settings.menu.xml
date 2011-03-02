@@ -145,14 +145,14 @@
 			<ondown>10011</ondown>
 		</control>
 				<control>
-			<description>I.F.C</description>
+			<description>Skin Settings</description>
 			<type>button</type>
 			<id>10011</id>
 			<width>259</width>
 	<textureFocus>settings_button_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 			<label>Skin Settings</label>
-			<hyperlink>155101</hyperlink>
+			<hyperlink>155100</hyperlink>
 			<ondown>10001</ondown>
 		</control>
 		

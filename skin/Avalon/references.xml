@@ -179,7 +179,7 @@
 		<downloadColor>ff04db4c</downloadColor>
 		<playedColor>ffa0d0ff</playedColor>
 		<spaceBetweenItems>1</spaceBetweenItems>
-		<unfocusedAlpha>100</unfocusedAlpha>
+		<unfocusedAlpha>150</unfocusedAlpha>
 		<textXOff>78</textXOff>
 		<textYOff>8</textYOff>
 		<textXOff2>930</textXOff2>
@@ -435,8 +435,8 @@
 		<textYOff>0</textYOff>
 		<folderPrefix></folderPrefix>
 		<folderSuffix></folderSuffix>
-		<spinWidth>16</spinWidth>
-		<spinHeight>16</spinHeight>
+		<spinWidth>36</spinWidth>
+		<spinHeight>33</spinHeight>
 		<spinPosX>1667</spinPosX>
 		<spinPosY>1010</spinPosY>
 		<spinAlign>left</spinAlign>

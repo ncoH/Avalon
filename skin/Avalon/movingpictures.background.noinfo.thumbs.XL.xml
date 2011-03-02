@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
   <controls>
-    <!--            :: BACKGROUNDS ::           	 -->
+    <!--            :: BACKGROUNDS ::      -->      
 	<control>
 		<description>background listview</description>
 		<type>image</type>
@@ -10,19 +10,19 @@
         <posY>0</posY>
 		<width>1920</width>
 		<height>1080</height>
-		<texture>overlay.png</texture>
+		<texture>overlay_long.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>
 		<description>background listview</description>
 		<type>image</type>
-		<id>0</id>
+		<id>2020</id>
 		<posX>1</posX>
 		<posY>164</posY>
 		<width>1893</width>
-		<height>646</height>
-		<texture>viewport_short.png</texture>
+		<height>755</height>
+		<texture>viewport_long.png</texture>
 		<visible>facadeview.list + Control.IsVisible(50)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -33,12 +33,12 @@
 	<control>
 		<description>background listview</description>
 		<type>image</type>
-		<id>0</id>
-		<posX>1</posX>
-		<posY>164</posY>
-		<width>1893</width>
-		<height>646</height>
-		<texture>viewport_thumbs_short.png</texture>
+		<id>2021</id>
+		<posX>0</posX>
+		<posY>150</posY>
+		<width>1920</width>
+		<height>819</height>
+		<texture>viewport_thumbsXL.png</texture>
 		<visible>[facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -54,9 +54,9 @@
         <posY>0</posY>
 		<width>1920</width>
 		<height>1080</height>
-		<texture>filmstrip_default_overlay.png</texture>
+		<texture>filmstrip_fanart_overlay.png</texture>
 		<visible>facadeview.filmstrip + Control.IsVisible(50)</visible>
-		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
+
   </controls>
 </window>

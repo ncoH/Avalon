@@ -15,7 +15,7 @@
 	</control>
 	
 	<control>
-		<description>background listview</description>
+		<description>viewport list</description>
 		<type>image</type>
 		<id>2020</id>
 		<posX>1</posX>
@@ -31,7 +31,7 @@
 	</control>
 	
 	<control>
-		<description>background listview</description>
+		<description>viewport thumbs</description>
 		<type>image</type>
 		<id>2021</id>
 		<posX>1</posX>

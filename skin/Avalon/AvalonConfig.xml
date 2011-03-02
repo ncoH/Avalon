@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <window>
-  <id>155101</id>
-  <defaultcontrol>2</defaultcontrol>
+  <id>155100</id>
+  <defaultcontrol>50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
     <import>common.settings.xml</import>
@@ -15,7 +15,7 @@
 		<posX>321</posX>
 		<posY>388</posY>
 		<width>500</width>
-		<label>MovingPictures ListView</label>
+		<label>Avalon Skin Settings</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>AvalonLight14</font>
 	</control>
@@ -30,23 +30,24 @@
       <height>500</height>
       <layout>StackLayout</layout>
       <control>
-        <description>MovingPictures Default/Fanart Style</description>
-        <type>togglebutton</type>
-        <id>2</id>
-		<label>Enable Infos on bottom</label>
-        <onleft>2</onleft>
-        <onright>2</onright>
-        <onup>2</onup>
-        <ondown>3</ondown>
+        <description>MovingPictures Settings</description>
+        <type>button</type>
+        <id>50</id>
+	    <label>-</label>
+        <onleft>50</onleft>
+        <onright>50</onright>
+        <onup>51</onup>
+        <ondown>51</ondown>
       </control>
       <control>
-        <description>MovingPictures Thumbnail Mod</description>
+        <description>TV Settings</description>
         <type>button</type>
-        <id>3</id>
-        <onleft>3</onleft>
-        <onright>3</onright>
-        <onup>2</onup>
-        <ondown>2</ondown>
+        <id>51</id>
+	    <label>-</label>
+        <onleft>51</onleft>
+        <onright>51</onright>
+        <onup>50</onup>
+        <ondown>50</ondown>
       </control>
     </control>
   </controls>

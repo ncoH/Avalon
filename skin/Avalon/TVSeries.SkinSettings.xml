@@ -78,31 +78,31 @@
 	</videoplayimages>
 	
 	
-	<layouts>
-		<group List="true" SmallIcons="true" />
-		<series ListPosters="true" ListBanners="false" Filmstrip="true" WideBanners="true" />
-		<season List="true" Filmstrip="true" />
-		<episode List="true" />
-	</layouts>
-	
-	<views import="true" AppendlmageToList="false">		
-		<group layout="SmallIcons"></group>
-		<series layout="WideBanners">
-			<item1><![CDATA[SeriesWatchedAndUnWatched]]></item1>
-			<item2><![CDATA[<Series.Pretty_Name>]]></item2>
-			<item3><![CDATA[SMALLSPACE]]></item3>
-		</series>
-		<season layout="List">	
-			<item1><![CDATA[SeasonWatchedAndUnWatched]]></item1>
-			<item2><![CDATA[Season <Season.SeasonIndex>]]></item2>
-			<item3><![CDATA[]]></item3>
-		</season>
-		<episode>	
-			<item1><![CDATA[<Episode.FirstAired>]]></item1>
-			<item2><![CDATA[<Episode.EpisodeIndex>. <Episode.LocalEpisodeName>]]></item2>
-			<item3><![CDATA[SMALLSPACE]]></item3>
-		</episode>
-	</views>
+  <layouts>
+    <group List="true" SmallIcons="false" />
+    <series ListPosters="true" ListBanners="true" Filmstrip="true" WideBanners="true" />
+    <season List="true" Filmstrip="true" />
+    <episode List="true" />
+  </layouts>
+  <views import="true" AppendlmageToList="false">
+    <group layout="List">
+    </group>
+    <series layout="ListPosters">
+      <item1>SeriesWatchedAndUnWatched</item1>
+      <item2><![CDATA[<Series.Pretty_Name>]]></item2>
+      <item3>SMALLSPACE</item3>
+    </series>
+    <season layout="List">
+      <item1>SeasonWatchedAndUnWatched</item1>
+      <item2><![CDATA[Season <Season.SeasonIndex>]]></item2>
+      <item3>SMALLSPACE</item3>
+    </season>
+    <episode>
+      <item1><![CDATA[<Episode.FirstAired>]]></item1>
+      <item2><![CDATA[<Episode.EpisodeIndex>. <Episode.LocalEpisodeName>]]></item2>
+      <item3>SMALLSPACE</item3>
+    </episode>
+  </views>
 	<formatting import="true">
 		<![CDATA[<Enabled>1<Format><Episode.RatingPath><FormatAs>TVSeries\starEval(10*Round(<Episode.Rating>*2)/2).png
 <Enabled>1<Format><Episode.InfoPanelLine1Key><FormatAs>

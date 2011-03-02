@@ -78,11 +78,11 @@
 		<type>label</type>
 		<label>| #TVSeries.Translation.Series_Plural.Label: #TVSeries.SeriesCount</label>
 		<id>0</id>
-		<posX>1675</posX>
-		<posY>1006</posY>
-		<align>left</align>
-		<font>AvalonLight12</font>
-		<textcolor>6aa5cb</textcolor>
+		  <posX>321</posX>
+		  <posY>98</posY>
+		  <align>left</align>
+		  <font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
 		<visible>[facadeview.list|facadeview.filmstrip]+Control.IsVisible(1237)</visible>
     </control>
 	
@@ -92,31 +92,15 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>label</type>
-		<label>#TVSeries.Translation.Episodes.Label: #TVSeries.FilteredEpisodeCount</label>
+		<label>| #TVSeries.Translation.Episodes.Label: #TVSeries.FilteredEpisodeCount</label>
 		<id>0</id>
-		<posX>1860</posX>
-		<posY>1000</posY>
-		<align>right</align>
-		<font>AvalonLight12</font>
-		<textcolor>85cffe</textcolor>
+		  <posX>321</posX>
+		  <posY>98</posY>
+		  <align>left</align>
+		  <font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
 		<visible>[facadeview.list|facadeview.filmstrip]+Control.IsVisible(1239)</visible>
     </control>
-
-<!--	
-	<control>
-		<type>image</type>
-		<description>series logo</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<id>0</id>
-		<posX>150</posX>
-		<posY>630</posY>
-		<width>194</width>
-		<height>75</height>
-		<texture>TVSeries\showLogos\#TVSeries.Series.LogoPath</texture>
-		<visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)</visible>
-    </control>
--->	
 
 	
     <import tag="Views">TVSeries.views.noinfo.xml</import>

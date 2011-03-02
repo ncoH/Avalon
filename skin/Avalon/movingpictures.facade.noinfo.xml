@@ -73,13 +73,13 @@ This file should contain the facade view
 				<ondown>2</ondown>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<thumbWidth>230</thumbWidth>
+				<thumbWidth>231</thumbWidth>
 				<thumbHeight>327</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
 				<itemWidth>248</itemWidth>
 				<itemHeight>345</itemHeight>
-				<textureWidth>230</textureWidth>
+				<textureWidth>231</textureWidth>
 				<textureHeight>327</textureHeight>
 				<textYOff>-2000</textYOff>
 				<spinPosX>312</spinPosX>
@@ -91,7 +91,7 @@ This file should contain the facade view
 				<frame>-</frame>
 				<frameFocus>-</frameFocus>
 				<background>-</background>
-				<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_mask.png"></thumbs>
+				<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_fanart_mask.png"></thumbs>
 				<showFrame>yes</showFrame>
 				<showFolder>no</showFolder>
 				<showBackGround>no</showBackGround>
@@ -104,7 +104,7 @@ This file should contain the facade view
 				<description>Thumbnail Panel</description>
 				<type>thumbnailpanel</type>
 				<id>50</id>
-				<posX>728</posX>
+				<posX>723</posX>
 				<posY>232</posY>
 				<width>1120</width>
 				<height>800</height>
@@ -113,20 +113,20 @@ This file should contain the facade view
 				<folderSuffix></folderSuffix>
 				<onleft>2</onleft>
 				<onright>2</onright>
-				<itemWidth>161</itemWidth>
-				<itemHeight>212</itemHeight>
-				<textureWidth>162</textureWidth>
-				<textureHeight>213</textureHeight>
-				<thumbWidth>128</thumbWidth>
-				<thumbHeight>174</thumbHeight>
+				<itemWidth>156</itemWidth>
+				<itemHeight>214</itemHeight>
+				<textureWidth>156</textureWidth>
+				<textureHeight>214</textureHeight>
+				<thumbWidth>156</thumbWidth>
+				<thumbHeight>214</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
-				<itemWidthBig>224</itemWidthBig>
-				<itemHeightBig>305</itemHeightBig>
-				<thumbWidthBig>224</thumbWidthBig>
-				<thumbHeightBig>305</thumbHeightBig>
-				<textureWidthBig>224</textureWidthBig>
-				<textureHeightBig>305</textureHeightBig>
+				<itemWidthBig>223</itemWidthBig>
+				<itemHeightBig>306</itemHeightBig>
+				<thumbWidthBig>223</thumbWidthBig>
+				<thumbHeightBig>306</thumbHeightBig>
+				<textureWidthBig>223</textureWidthBig>
+				<textureHeightBig>306</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
 				<zoomXPixels>0</zoomXPixels>
@@ -139,6 +139,7 @@ This file should contain the facade view
 				<frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
 				<frameFocus>video_thumb_focus.png</frameFocus>
 				<textureMask>video_thumb_mask.png</textureMask>
+				<unfocusedAlpha>150</unfocusedAlpha>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>no</thumbZoom>
