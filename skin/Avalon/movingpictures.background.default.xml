@@ -31,7 +31,7 @@
 	</control>
 	
 	<control>
-		<description>background listview</description>
+		<description>background thumbs</description>
 		<type>image</type>
 		<id>0</id>
 		<posX>1</posX>

@@ -31,6 +31,22 @@
 	</control>
 	
 	<control>
+		<description>background thumbs</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>164</posY>
+		<width>1893</width>
+		<height>646</height>
+		<texture>viewport_thumbs_short2.png</texture>
+		<visible>[facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+	
+	<control>
 		<description>filmstrip overlay</description>
 		<type>image</type>
 		<id>1</id>
