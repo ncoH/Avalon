@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <window>
-  <id>155101</id>
+  <id>155103</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
@@ -15,7 +15,7 @@
 		<posX>321</posX>
 		<posY>388</posY>
 		<width>500</width>
-		<label>MovingPictures View Options</label>
+		<label>TVSeries View Options</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>AvalonLight14</font>
 	</control>
@@ -30,7 +30,7 @@
       <height>500</height>
       <layout>StackLayout</layout>
       <control>
-        <description>MovingPictures Default/Fanart Style</description>
+        <description>TVSeries Default/NoInfo Style</description>
         <type>togglebutton</type>
         <id>2</id>
 		<label>Enable Infos on bottom</label>
@@ -38,15 +38,6 @@
         <onright>2</onright>
         <onup>2</onup>
         <ondown>3</ondown>
-      </control>
-      <control>
-        <description>MovingPictures Thumbnail Mod</description>
-        <type>button</type>
-        <id>3</id>
-        <onleft>3</onleft>
-        <onright>3</onright>
-        <onup>2</onup>
-        <ondown>2</ondown>
       </control>
     </control>
   </controls>

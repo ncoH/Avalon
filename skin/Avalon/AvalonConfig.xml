@@ -47,6 +47,16 @@
         <onleft>51</onleft>
         <onright>51</onright>
         <onup>50</onup>
+        <ondown>52</ondown>
+      </control>
+      <control>
+        <description>TVSeries Settings</description>
+        <type>button</type>
+        <id>52</id>
+	    <label>-</label>
+        <onleft>52</onleft>
+        <onright>52</onright>
+        <onup>51</onup>
         <ondown>50</ondown>
       </control>
     </control>

@@ -121,7 +121,7 @@
 <Enabled>1<Format><Episode.Aired><FormatAs><Episode.FirstAired>
 <Enabled>1<Format><Season.SeasonLabel><FormatAs>Season <Season.SeasonIndex>
 <Enabled>1<Format><Series.InfoPanelLine1Key><FormatAs>RATING
-<Enabled>1<Format><Series.InfoPanelLine1Value><FormatAs>(Trans(MyRating): <Series.myRating>)
+<Enabled>1<Format><Series.InfoPanelLine1Value><FormatAs><FormatAs>Eval(Round(<Series.Rating>*10)/10)
 <Enabled>1<Format><Series.InfoPanelLine2Key><FormatAs>Eval(PrettyNumber100(<Series.EpisodesUnWatched>))
 <Enabled>1<Format><Series.InfoPanelLine2Value><FormatAs><Series.FirstAired>
 <Enabled>1<Format><Series.InfoPanelLine3Key><FormatAs><Series.EpisodesWatched>
@@ -132,6 +132,7 @@
 <Enabled>1<Format><Series.InfoPanelLine5Value><FormatAs><Series.Network>
 <Enabled>1<Format><Series.InfoPanelLine6Key><FormatAs>ACTORS
 <Enabled>1<Format><Series.InfoPanelLine6Value><FormatAs><Series.Actors>
+<Enabled>1<Format><Series.InfoPanelLine7Value><FormatAs><Series.Director>
 <Enabled>1<Format><Series.EpisodesWatched><FormatAs>Eval(PrettyNumber100(<Series.EpisodeCount>-<Series.EpisodesUnWatched>))
 
 <Enabled>1<Format><Season.InfoPanelLine2Key><FormatAs>Eval(PrettyNumber100(<Season.EpisodesUnWatched>))
