@@ -8,92 +8,102 @@
 	<control>
 		<type>image</type>
 		<id>0</id>
-		<posX>409</posX>
-		<posY>188</posY>
-		<width>548</width>
-		<height>392</height>
-		<texture>dialog_yesno_background.png</texture>
+		<posX>575</posX>
+		<posY>495</posY>
+		<width>768</width>
+		<height>549</height>
+		<texture>dialog_background.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
-	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<description>Heading text label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>470</posX>
-		<posY>236</posY>
-		<width>420</width>
+		<posX>678</posX>
+		<posY>598</posY>
+		<width>560</width>
 		<label>181</label>
-		<font>Segoe Light18</font>
-		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
+		<textcolor>ffffff</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
-	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<description>dialog line 1</description>
 		<type>fadelabel</type>
 		<id>2</id>
-		<posX>470</posX>
-		<posY>310</posY>
+		<posX>678</posX>
+		<posY>676</posY>
 		<label>-</label>
-		<width>420</width>
-		<font>font12</font>
+		<width>560</width>
+		<font>AvalonLight14</font>
+		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
-	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<description>dialog line 2</description>
 		<type>fadelabel</type>
 		<id>3</id>
-		<posX>470</posX>
-		<posY>340</posY>
+		<posX>678</posX>
+		<posY>721</posY>
 		<label>-</label>
-		<width>420</width>
-		<font>font12</font>
+		<width>560</width>
+		<font>AvalonLight14</font>
+		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<description>dialog line 3</description>
 		<type>fadelabel</type>
 		<id>4</id>
-		<posX>470</posX>
-		<posY>370</posY>
+		<posX>678</posX>
+		<posY>766</posY>
 		<label>-</label>
-		<width>420</width>
-		<font>font12</font>
+		<width>560</width>
+		<font>AvalonLight14</font>
+		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
-	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<description>dialog line 4</description>
 		<type>fadelabel</type>
 		<id>4</id>
-		<posX>470</posX>
-		<posY>406</posY>
+		<posX>678</posX>
+		<posY>811</posY>
 		<label>-</label>
-		<width>420</width>
-		<font>font12</font>
+		<width>560</width>
+		<font>AvalonLight14</font>
+		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
-	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<description>Yes</description>
 		<type>button</type>
 		<id>11</id>
-		<posX>409</posX>
-		<posY>401</posY>
+		<posX>620</posX>
+		<posY>807</posY>
 		<textXOff>70</textXOff>
 		<textYOff>0</textYOff>
-		<width>548</width>
-		<height>49</height>
-		<font>font12</font>
+		<width>676</width>
+		<height>68</height>
+		<font>AvalonLight14</font>
 		<textalign>center</textalign>
 		<textureFocus>dialog_yesno_red_button_focus.png</textureFocus>
 		<textureNoFocus>-</textureNoFocus>
@@ -103,20 +113,21 @@
 		<onup>10</onup>
 		<ondown>10</ondown>
 		<animation effect="fade" time="250">WindowOpen</animation>
-	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<description>No</description>
 		<type>button</type>
 		<id>10</id>
-		<posX>409</posX>
-		<posY>451</posY>
+		<posX>620</posX>
+		<posY>876</posY>
 		<textXOff>70</textXOff>
 		<textYOff>0</textYOff>
-		<width>548</width>
-		<height>49</height>
-		<font>font12</font>
+		<width>676</width>
+		<height>68</height>
+		<font>AvalonLight14</font>
 		<textalign>center</textalign>
 		<textureFocus>dialog_yesno_black_button_focus.png</textureFocus>
 		<textureNoFocus>-</textureNoFocus>
@@ -126,7 +137,8 @@
 		<onup>11</onup>
 		<ondown>11</ondown>
 		<animation effect="fade" time="250">WindowOpen</animation>
-	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 </controls>

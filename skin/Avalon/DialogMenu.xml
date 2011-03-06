@@ -69,7 +69,7 @@
 				<PinIconHeight>15</PinIconHeight>
                 <PinIconXOff>2000</PinIconXOff>
                 <PinIconYOff>15</PinIconYOff>
-				<unfocusedAlpha>255</unfocusedAlpha>
+				<unfocusedAlpha>150</unfocusedAlpha>
             </control>
         </control>
     </controls>

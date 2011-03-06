@@ -5,13 +5,13 @@
 	<control>
 		<type>image</type>
 		<id>0</id>
-		<posX>409</posX>
-		<posY>213</posY>
-		<width>548</width>
-		<height>342</height>
+		<posX>575</posX>
+		<posY>495</posY>
+		<width>768</width>
+		<height>549</height>
 		<texture>dialog_background.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
 	</control>
 
@@ -19,71 +19,75 @@
 		<description>Heading text label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>470</posX>
-		<posY>261</posY>
-		<width>426</width>
+		<posX>678</posX>
+		<posY>598</posY>
+		<width>560</width>
 		<label>181</label>
-		<font>Segoe Light18</font>
-		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
+		<textcolor>ffffff</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<description>dialog line 1</description>
 		<type>fadelabel</type>
 		<id>2</id>
-		<posX>470</posX>
-		<posY>335</posY>
+		<posX>678</posX>
+		<posY>676</posY>
 		<label>-</label>
-		<width>426</width>
-		<font>font12</font>
+		<width>560</width>
+		<font>AvalonLight14</font>
+		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<description>dialog line 2</description>
-		<type>label</type>
+		<type>fadelabel</type>
 		<id>3</id>
-		<posX>470</posX>
-		<posY>367</posY>
+		<posX>678</posX>
+		<posY>721</posY>
 		<label>-</label>
-		<width>426</width>
-		<font>font12</font>
+		<width>560</width>
+		<font>AvalonLight14</font>
+		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<description>dialog line 3</description>
-		<type>label</type>
+		<type>fadelabel</type>
 		<id>4</id>
-		<posX>470</posX>
-		<posY>399</posY>
+		<posX>678</posX>
+		<posY>766</posY>
 		<label>-</label>
-		<width>426</width>
-		<font>font12</font>
+		<width>560</width>
+		<font>AvalonLight14</font>
+		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<description>dialog line 4</description>
-		<type>label</type>
-		<id>5</id>
-		<posX>470</posX>
-		<posY>431</posY>
+		<type>fadelabel</type>
+		<id>4</id>
+		<posX>670</posX>
+		<posY>811</posY>
 		<label>-</label>
-		<width>426</width>
-		<font>font12</font>
+		<width>560</width>
+		<font>AvalonLight14</font>
+		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 </controls>
