@@ -451,7 +451,7 @@
 				<posY>244</posY>
 				<width>382</width>
 				<height>215</height>
-				<texture  flipY="true" diffuse="Thumb_Mask.png">#TVSeries.EpisodeImage</texture>
+				<texture flipY="true" diffuse="Thumb_Mask.png">#TVSeries.EpisodeImage</texture>
 				<visible>facadeview.list+Control.IsVisible(1239)+Control.HasFocus(80)</visible>
 			</control>
 			
@@ -495,7 +495,7 @@
 				<animation effect="fade" time="250">WindowClose</animation>
 				<animation effect="slide" time="250" start="1200,0">visible</animation>
 				<animation effect="slide" time="0" end="1500,0">hidden</animation>
-				<label>#TVSeries.Episode.EpisodeIndex. #TVSeries.Episode.LocalEpisodeName</label>
+				<label>#TVSeries.Translation.Episode.Label #TVSeries.Episode.EpisodeIndex: #TVSeries.Episode.LocalEpisodeName</label>
 				<id>0</id>
 				<posX>745</posX>
 				<posY>528</posY>

@@ -14,7 +14,7 @@
 	</control>
 	
 	<control>
-		<description>Viewport List</description>
+		<description>Viewport List (Series/Season)</description>
 		<type>image</type>
 		<id>1</id>
 		<posX>1</posX>
@@ -30,14 +30,14 @@
 	</control>
 	
 	<control>
-		<description>Viewport List</description>
+		<description>Viewport List (Episodes)</description>
 		<type>image</type>
 		<id>1</id>
 		<posX>1</posX>
 		<posY>164</posY>
 		<width>1893</width>
-		<height>755</height>
-		<texture>viewport_categories.png</texture>
+		<height>646</height>
+		<texture>viewport_small.png</texture>
 		<visible>control.isvisible(1239)+facadeview.list</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
