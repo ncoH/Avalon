@@ -80,35 +80,39 @@
 				<scrollOffset>3</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<posX>178</posX>
-				<posY>545</posY>
-				<width>1566</width>
+				<posX>70</posX>
+				<posY>250</posY>
+				<width>1920</width>
 				<height>768</height>
 				<onup>2</onup>
 				<ondown>2</ondown>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<thumbWidth>214</thumbWidth>
-				<thumbHeight>302</thumbHeight>
+				<thumbWidth>327</thumbWidth>
+				<thumbHeight>463</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
-				<itemWidth>214</itemWidth>
-				<itemHeight>302</itemHeight>
-				<textureWidth>214</textureWidth>
-				<textureHeight>302</textureHeight>
+				<itemWidth>355</itemWidth>
+				<itemHeight>463</itemHeight>
+				<textureWidth>327</textureWidth>
+				<textureHeight>463</textureHeight>
 				<textYOff>-2000</textYOff>
+				<spinPosX>312</spinPosX>
+				<spinPosY>102</spinPosY>
+				<spinAlign>right</spinAlign>
 				<spinCanFocus>no</spinCanFocus>
+				<spinColor>FFFFFFFF</spinColor>
 				<imageFolderFocus>-</imageFolderFocus>
 				<frame>-</frame>
 				<frameFocus>-</frameFocus>
 				<background>-</background>
-				<thumbs flipY="true" diffuse="Thumb_Mask.png"></thumbs>
+				<thumbs flipY="true" diffuse="Thumb_Mask_test.png" mask="video_filmstrip_mask.png"></thumbs>
 				<showFrame>yes</showFrame>
 				<showFolder>no</showFolder>
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
-				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,820" time="400">focus</thumbAnimation>
-				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,820" time="100">unfocus</thumbAnimation>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="108,108" center="0,500" time="400">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="108,108" reversible="false" end="100,100" center="0,500" time="100">unfocus</thumbAnimation>
 		</control>
 		
     <control>
