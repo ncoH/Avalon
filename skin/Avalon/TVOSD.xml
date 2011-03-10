@@ -34,18 +34,6 @@
 	</control>
 
 	<control>
-		<description>Description bg</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>0</posX>
-		<posY>646</posY>
-		<width>1920</width>
-		<height>434</height>
-		<texture>osd_bg.png</texture>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
-	</control>
-	
-	<control>
 		<description>thumb bg</description>
 		<type>image</type>
 		<id>0</id>

@@ -15,13 +15,25 @@
 	</control>
 	
 	<control>
+		<description>Description bg</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>646</posY>
+		<width>1920</width>
+		<height>434</height>
+		<texture>osd_bg.png</texture>
+		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
+	</control>
+	
+	<control>
 		<description>TV Progress Bar</description>
 		<type>tvprogress</type>
-		<id>993</id>
-		<posX>342</posX>
-		<posY>682</posY>
-		<width>694</width>
-		<height>10</height>
+		<id>1001</id>
+		<posX>590</posX>
+		<posY>948</posY>
+		<width>758</width>
+		<height>15</height>
 		<toptexture>-</toptexture>
 		<TextureOffsetY>0</TextureOffsetY>
 		<bottomtexture>-</bottomtexture>
@@ -36,7 +48,7 @@
 		<filltexture1>osd_progress_mid.png</filltexture1>
 		<filltexture2>osd_progress_mid.png</filltexture2>
 		<filltexture3>osd_progress_mid_orange.png</filltexture3>
-		<fillheight>10</fillheight>
+		<fillheight>15</fillheight>
 		<label>#TV.Record.percent1</label>
 		<label1>#TV.Record.percent2</label1>
 		<label2>#TV.Record.percent3</label2>
