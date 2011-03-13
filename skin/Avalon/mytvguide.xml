@@ -36,11 +36,11 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>185</posX>
-		<posY>28</posY>
+		<posY>38</posY>
 		<width>500</width>
 		<label>600</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Avalon Light24</font>
+		<font>font22</font>
 	</control>
 	
     <control>
@@ -200,19 +200,6 @@
     </control>
 	
 	<control>
-		<description>Info Separator</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>678</posX>
-		<posY>875</posY>
-		<width>1181</width>
-		<height>1</height>
-		<texture>info_separator.png</texture>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
-	
-	<control>
 		<description>Current program title</description>
 		<type>fadelabel</type>
 		<id>13</id>
@@ -220,7 +207,7 @@
 		<posY>811</posY>
 		<width>1175</width>
 		<label>#TV.Guide.CompositeTitle</label>
-		<font>Avalon Light18</font>
+		<font>fontB20</font>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -233,7 +220,7 @@
 		<posY>885</posY>
 		<width>850</width>
 		<label>#TV.Guide.Time #TV.Guide.ChannelName - #TV.Guide.DurationMins #TV.Guide.Genre</label>
-		<font>Avalon Light14</font>
+		<font>AvalonLight14</font>
 		<textcolor>85cfff</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -259,7 +246,7 @@
       <visible>no</visible>
       <id>26</id>
       <label>-</label>
-      <font>font12tvg</font>
+      <font>font12</font>
       <textcolor>FFFFFFF0</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -271,7 +258,7 @@
 		<id>24</id>
 		<visible>no</visible>
 		<label>-</label>
-		<font>font12tvg</font>
+		<font>font12</font>
 		<textcolor>99CCFF</textcolor>
 		<posX>10</posX>
 		<posY>6</posY>
@@ -346,8 +333,8 @@
       <type>button</type>
       <id>100</id>
       <posX>38</posX>
-      <posY>268</posY>
-      <width>40</width>
+      <posY>328</posY>
+      <width>50</width>
       <height>336</height>
       <textureFocus>tvgroup_button_selected.png</textureFocus>
       <textureNoFocus>blue.png</textureNoFocus>
@@ -362,13 +349,14 @@
       <description>TvGroup button label</description>
       <type>label</type>
       <id>0</id>
-      <posX>38</posX>
-      <posY>568</posY>
+      <posX>65</posX>
+      <posY>628</posY>
 	  <valign>middle</valign>
       <label>#TV.Guide.ChangeGroup</label>
-      <font>Avalon Light16</font>
+      <font>AvalonLight16</font>
 		<textcolor>6aa5cb</textcolor>
       <animation effect="rotate" end="90" time="0">WindowOpen</animation>
+	  <animation effect="rotate" end="90" time="0">WindowClose</animation>
       </control>
 	  
 <import>common.time.xml</import>

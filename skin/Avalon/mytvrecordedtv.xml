@@ -12,11 +12,11 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>185</posX>
-		<posY>28</posY>
-		<width>500</width>
+		<posY>38</posY>
+		<width>800</width>
 		<label>604</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light24</font>
+		<font>font22</font>
 		<visible>facadeview.list</visible>
 	</control>
 
@@ -234,11 +234,11 @@
 		<control>
 			<id>0</id>
 			<type>image</type>
-			<posX>1042</posX>
-			<posY>250</posY>
-			<width>418</width>
+			<posX>74</posX>
+			<posY>245</posY>
+			<width>421</width>
 			<height>238</height>
-			<texture flipY="true" diffuse="Thumb_Mask.png">defaultTVBig.png</texture>
+			<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">defaultTVBig.png</texture>
 			<visible>facadeview.list+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]+!string.equals(#selecteditem,..)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -247,11 +247,11 @@
 		<control>
 			<id>500</id>
 			<type>image</type>
-			<posX>1042</posX>
-			<posY>250</posY>
-			<width>418</width>
+			<posX>74</posX>
+			<posY>245</posY>
+			<width>421</width>
 			<height>238</height>
-			<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
+			<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#selectedthumb</texture>
 			<visible>facadeview.list+!string.equals(#selectedthumb,defaultFolderBig.png)+!string.equals(#selecteditem,..)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -260,10 +260,23 @@
 		<control>
 			<id>0</id>
 			<type>image</type>
-			<posX>1488</posX>
-			<posY>242</posY>
-			<width>194</width>
-			<height>122</height>
+			<posX>7</posX>
+			<posY>177</posY>
+			<width>556</width>
+			<height>373</height>
+			<texture>recordings_thumb_shadow.png</texture>
+			<visible>facadeview.list</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		
+		<control>
+			<id>0</id>
+			<type>image</type>
+			<posX>536</posX>
+			<posY>364</posY>
+			<width>187</width>
+			<height>119</height>
 			<texture>tv_logo_bg.png</texture>
 			<visible>facadeview.list+!string.equals(#selecteditem,..)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -273,16 +286,16 @@
 		<control>
 			<id>0</id>
 			<type>image</type>
-			<posX>1548</posX>
-			<posY>268</posY>
-			<width>60</width>
-			<height>60</height>
+			<posX>585</posX>
+			<posY>378</posY>
+			<width>90</width>
+			<height>90</height>
 			<texture>#TV.RecordedTV.thumb</texture>
 			<visible>facadeview.list</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
-		
+<!--		
 		<control>
 			<description>Current program channel</description>
 			<type>label</type>
@@ -294,15 +307,17 @@
 			<textcolor>85cffe</textcolor>
 			<visible>facadeview.list</visible>
 		</control>
-		
+-->		
 		<control>
 			<type>label</type>
 			<description>Current program time</description>
 			<id>0</id>
-			<posX>1488</posX>
-			<posY>414</posY>
-			<font>Segoe Light14</font>
-			<textcolor>85cffe</textcolor>
+			<posX>74</posX>
+			<posY>578</posY>
+			<textcolor>6aa5cb</textcolor>
+			<font>AvalonLight14</font>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 			<label>#TV.RecordedTV.Time</label>
 			<visible>facadeview.list</visible>
 		</control>
@@ -311,10 +326,10 @@
 			<type>textboxscrollup</type>
 			<description>Description1</description>
 			<id>0</id>
-			<posX>1042</posX>
-			<posY>566</posY>
-			<width>778</width>
-			<height>280</height>
+			<posX>74</posX>
+			<posY>630</posY>
+			<width>780</width>
+			<height>230</height>
 			<label>#TV.RecordedTV.Description</label>
 			<visible>facadeview.list</visible>
 		</control>
@@ -386,36 +401,7 @@
 			<visible>facadeview.filmstrip</visible>
 		</control>
 
-	</control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<description>Info Arrow</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>154</posX>
-		<posY>882</posY>
-		<width>34</width>
-		<height>34</height>
-		<texture>info_arrow_tv.png</texture>
-		<visible>facadeview.list|facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<description>Info Separator</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>154</posX>
-		<posY>988</posY>
-		<width>1706</width>
-		<height>1</height>
-		<texture>info_separator_large.png</texture>
-		<visible>facadeview.list|facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons</visible>
-	</control>
-	
+	</control>	
 	<import>common.facade.recordings.xml</import>
 </controls>
 </window>
