@@ -173,7 +173,7 @@
         <posX>920</posX>
         <posY>996</posY>
 		<align>left</align>
-        <label>#infoservice.weather.forecast1.maxtemp /</label>
+        <label>#infoservice.weather.today.temp</label>
         <font>fontB14</font>
         <textcolor>ffffff</textcolor>
 		<visible>plugin.isenabled(InfoService)</visible>
@@ -188,7 +188,7 @@
         <posX>1005</posX>
         <posY>996</posY>
 		<align>left</align>
-        <label>#infoservice.weather.forecast1.mintemp</label>
+        <label>/ #infoservice.weather.forecast1.mintemp</label>
         <font>fontB14</font>
         <textcolor>6aa5cb</textcolor>
 		<visible>plugin.isenabled(InfoService)</visible>
