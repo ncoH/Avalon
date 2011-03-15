@@ -76,20 +76,20 @@
 		<height>52</height>
 		<textXOff>17</textXOff>
 		<textYOff>6</textYOff>
-		<upBtnWidth>44</upBtnWidth>
-		<downBtnWidth>44</downBtnWidth>
-		<deleteBtnWidth>49</deleteBtnWidth>
-		<upBtnHeight>40</upBtnHeight>
-		<downBtnHeight>40</downBtnHeight>
-		<deleteBtnHeight>40</deleteBtnHeight>
+		<upBtnWidth>35</upBtnWidth>
+		<downBtnWidth>35</downBtnWidth>
+		<deleteBtnWidth>35</deleteBtnWidth>
+		<upBtnHeight>34</upBtnHeight>
+		<downBtnHeight>34</downBtnHeight>
+		<deleteBtnHeight>34</deleteBtnHeight>
 		<upBtnXOffset>613</upBtnXOffset>
 		<downBtnXOffset>659</downBtnXOffset>
 		<deleteBtnXOffset>705</deleteBtnXOffset>
 		<upBtnYOffset>0</upBtnYOffset>
 		<downBtnYOffset>0</downBtnYOffset>
 		<deleteBtnYOffset>0</deleteBtnYOffset>
-		<textureFocus>listcontrol_item_selected.png</textureFocus>
-		<textureNoFocus>listcontrol_item.png</textureNoFocus>
+		<textureFocus>-</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
 		<textureMoveUp>playlist_item_up_nofocus.png</textureMoveUp>
 		<textureMoveUpFocused>playlist_item_up_focus.png</textureMoveUpFocused>
 		<textureMoveDown>playlist_item_down_nofocus.png</textureMoveDown>
@@ -285,17 +285,17 @@
 		<description>default playlist item listcontrol</description>
 		<type>playlistcontrol</type>
 		<id>10</id>
-		<posX>594</posX>
+		<posX>905</posX>
 		<posY>236</posY>
-		<width>1270</width>
-		<height>650</height>
+		<width>924</width>
+		<height>700</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>1245</spinPosX>
-		<spinPosY>718</spinPosY>
-		<spinAlign>left</spinAlign>
-		<spinColor>FF85cffe</spinColor>
-		<textureHeight>54</textureHeight>
+		<spinPosX>312</spinPosX>
+		<spinPosY>104</spinPosY>
+		<spinAlign>right</spinAlign>
+		<spinColor>FFFFFFFF</spinColor>
+		<textureHeight>55</textureHeight>
 		<image>-</image>
 		<font>font12</font>
 		<shadedColor>ffffffff</shadedColor>
@@ -307,9 +307,9 @@
 		<remoteColor>ffFFA075</remoteColor>
 		<downloadColor>ff80ff80</downloadColor>
 		<spaceBetweenItems>0</spaceBetweenItems>
-		<textXOff>78</textXOff>
+		<textXOff>80</textXOff>
 		<textYOff>8</textYOff>
-		<textXOff2>930</textXOff2>
+		<textXOff2>790</textXOff2>
 		<textYOff2>8</textYOff2>
 		<itemWidth>0</itemWidth>
 		<itemHeight>0</itemHeight>
@@ -317,18 +317,18 @@
 		<IconYOff>1000</IconYOff>
 		<suffix>|</suffix>
 		<suffix>|</suffix>
-		<upBtnWidth>49</upBtnWidth>
-		<downBtnWidth>37</downBtnWidth>
-		<deleteBtnWidth>36</deleteBtnWidth>
-		<upBtnHeight>49</upBtnHeight>
-		<downBtnHeight>37</downBtnHeight>
-		<deleteBtnHeight>37</deleteBtnHeight>
-		<upBtnXOffset>1118</upBtnXOffset>
-		<downBtnXOffset>1164</downBtnXOffset>
-		<deleteBtnXOffset>1204</deleteBtnXOffset>
-		<upBtnYOffset>2</upBtnYOffset>
-		<downBtnYOffset>9</downBtnYOffset>
-		<deleteBtnYOffset>8</deleteBtnYOffset>
+		<upBtnWidth>35</upBtnWidth>
+		<downBtnWidth>35</downBtnWidth>
+		<deleteBtnWidth>35</deleteBtnWidth>
+		<upBtnHeight>34</upBtnHeight>
+		<downBtnHeight>34</downBtnHeight>
+		<deleteBtnHeight>34</deleteBtnHeight>
+		<upBtnXOffset>819</upBtnXOffset>
+		<downBtnXOffset>844</downBtnXOffset>
+		<deleteBtnXOffset>871</deleteBtnXOffset>
+		<upBtnYOffset>10</upBtnYOffset>
+		<downBtnYOffset>10</downBtnYOffset>
+		<deleteBtnYOffset>10</deleteBtnYOffset>
 		<textureFocus>playlist_sub_focus.png</textureFocus>
 		<textureNoFocus>playlist_sub_nofocus.png</textureNoFocus>
 		<textureMoveUp>playlist_item_up_nofocus.png</textureMoveUp>
@@ -337,6 +337,8 @@
 		<textureMoveDownFocused>playlist_item_down_focus.png</textureMoveDownFocused>
 		<textureDelete>playlist_item_delete_nofocus.png</textureDelete>
 		<textureDeleteFocused>playlist_item_delete_focus.png</textureDeleteFocused>
+		<spaceBetweenItems>1</spaceBetweenItems>
+		<unfocusedAlpha>150</unfocusedAlpha>
 	</control>
 
 	<control>
@@ -378,10 +380,10 @@
 		<folderSuffix></folderSuffix>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>1667</spinPosX>
-		<spinPosY>1010</spinPosY>
-		<spinAlign>left</spinAlign>
-		<spinColor>FF6aa5cb</spinColor>
+		<spinPosX>312</spinPosX>
+		<spinPosY>104</spinPosY>
+		<spinAlign>right</spinAlign>
+		<spinColor>FFFFFFFF</spinColor>
 		<spinCanFocus>no</spinCanFocus>
 	</control>
 
@@ -435,12 +437,12 @@
 		<textYOff>0</textYOff>
 		<folderPrefix></folderPrefix>
 		<folderSuffix></folderSuffix>
-		<spinWidth>36</spinWidth>
+		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>1667</spinPosX>
-		<spinPosY>1010</spinPosY>
-		<spinAlign>left</spinAlign>
-		<spinColor>FF6aa5cb</spinColor>
+		<spinPosX>312</spinPosX>
+		<spinPosY>104</spinPosY>
+		<spinAlign>right</spinAlign>
+		<spinColor>FFFFFFFF</spinColor>
 		<spinCanFocus>no</spinCanFocus>
 	</control>
 

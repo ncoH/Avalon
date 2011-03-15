@@ -147,6 +147,7 @@ This file should contain the facade view
 				<spinPosY>104</spinPosY>
 				<spinAlign>right</spinAlign>
 				<spinColor>ffffffff</spinColor>
+				<keepaspectratio>no</keepaspectratio>
 			</control>
 	</control>
 </controls>

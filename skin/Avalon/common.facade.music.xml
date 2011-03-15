@@ -18,14 +18,17 @@
 				<onleft>2</onleft>
 				<onright>50</onright>
 				<scrollOffset>1</scrollOffset>
-				<posX>594</posX>
+				<posX>904</posX>
 				<posY>236</posY>
-				<height>650</height>
-				<spinPosX>682</spinPosX>
-				<spinPosY>1001</spinPosY>
-				<spinAlign>left</spinAlign>
-				<textXOff>78</textXOff>
+				<width>924</width>
+				<height>700</height>
+				<spinPosX>312</spinPosX>
+				<spinPosY>104</spinPosY>
+				<spinAlign>right</spinAlign>
+				<textXOff>50</textXOff>
 				<dimColor>ffffffff</dimColor>
+				<textureFocus>listcontrol_item_selected_large.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
 			</control>
 
             <control>
@@ -33,30 +36,31 @@
                 <type>listcontrol</type>
                 <subtype>album</subtype>
                 <id>50</id>
-				<posX>594</posX>
-				<posY>244</posY>
+				<posX>905</posX>
+				<posY>236</posY>
 				<height>710</height>
+				<width>939</width>
 				<textXOff>246</textXOff>
-				<textYOff>30</textYOff>
+				<textYOff>35</textYOff>
 				<textXOff2>930</textXOff2>
-				<textYOff2>30</textYOff2>
-				<font>Segoe Light20</font>
-				<font2>Segoe Light20</font2>
+				<textYOff2>35</textYOff2>
+				<font>AvalonLight16</font>
+				<font2>AvalonLight16</font2>
 				<textcolor>ffffffff</textcolor>
-				<textcolor2>ffffffff</textcolor2>
-                <itemHeight>128</itemHeight>
+				<textcolor2>ff6aa5cb</textcolor2>
+                <itemHeight>129</itemHeight>
                 <IconXOff>88</IconXOff>
                 <IconYOff>0</IconYOff>
                 <PinIconWidth>20</PinIconWidth>
                 <PinIconHeight>20</PinIconHeight>
                 <PinIconXOff>72</PinIconXOff>
                 <PinIconYOff>22</PinIconYOff>
-                <spaceBetweenItems>30</spaceBetweenItems>
-                <textureHeight>128</textureHeight>
+                <spaceBetweenItems>28</spaceBetweenItems>
+                <textureHeight>129</textureHeight>
                 <scrollOffset>1</scrollOffset>
-				<spinPosX>682</spinPosX>
-				<spinPosY>1001</spinPosY>
-				<spinAlign>left</spinAlign>
+				<spinPosX>-2000</spinPosX>
+				<spinPosY>104</spinPosY>
+				<spinAlign>right</spinAlign>
 				<spinCanFocus>no</spinCanFocus>
 				<textureFocus>listcontrol_item_selected_big.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
@@ -69,11 +73,10 @@
 				<description>Thumbnail Panel</description>
 				<type>thumbnailpanel</type>
 				<id>50</id>
-				<posX>160</posX>
-				<posY>260</posY>
-				<width>1620</width>
-				<height>700</height>
-				<spinColor>FF85cffe</spinColor>
+				<posX>723</posX>
+				<posY>232</posY>
+				<width>1120</width>
+				<height>800</height>
 				<textureUp>page_up_nofocus.png</textureUp>
 				<textureDown>page_down_nofocus.png</textureDown>
 				<textureUpFocus>page_up_focus.png</textureUpFocus>
@@ -81,25 +84,25 @@
 				<scrollOffset>1</scrollOffset>
 				<onleft>2</onleft>
 				<onright>50</onright>
-				<itemWidth>132</itemWidth>
-				<itemHeight>134</itemHeight>
-				<textureWidth>134</textureWidth>
-				<textureHeight>134</textureHeight>
-				<thumbWidth>103</thumbWidth>
-				<thumbHeight>103</thumbHeight>
-				<thumbPosX>14</thumbPosX>
-				<thumbPosY>16</thumbPosY>
+				<itemWidth>155</itemWidth>
+				<itemHeight>155</itemHeight>
+				<textureWidth>155</textureWidth>
+				<textureHeight>155</textureHeight>
+				<thumbWidth>155</thumbWidth>
+				<thumbHeight>155</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
 				<imageFolder>-</imageFolder>
     			<imageFolderFocus>-</imageFolderFocus>
 				<suffix>|</suffix>
-				<itemWidthBig>266</itemWidthBig>
-				<itemHeightBig>268</itemHeightBig>
-				<textureWidthBig>268</textureWidthBig>
-				<textureHeightBig>268</textureHeightBig>
-				<thumbWidthBig>206</thumbWidthBig>
-				<thumbHeightBig>206</thumbHeightBig>
-				<thumbPosXBig>31</thumbPosXBig>
-				<thumbPosYBig>31</thumbPosYBig>
+				<itemWidthBig>208</itemWidthBig>
+				<itemHeightBig>208</itemHeightBig>
+				<textureWidthBig>208</textureWidthBig>
+				<textureHeightBig>208</textureHeightBig>
+				<thumbWidthBig>208</thumbWidthBig>
+				<thumbHeightBig>208</thumbHeightBig>
+				<thumbPosXBig>0</thumbPosXBig>
+				<thumbPosYBig>0</thumbPosYBig>
 				<thumbZoom>no</thumbZoom>
 				<enableFocusZoom>no</enableFocusZoom>
 				<zoomXPixels>0</zoomXPixels>
@@ -114,11 +117,10 @@
 				<textureDown>-</textureDown>
 				<textureUpFocus>-</textureUpFocus>
 				<textureDownFocus>-</textureDownFocus>
-				<frameNoFocus>thumb_nofocus_music.png</frameNoFocus>
-				<frameFocus>thumb_focus_music.png</frameFocus>
-				<spinPosX>682</spinPosX>
-				<spinPosY>1001</spinPosY>
-				<spinAlign>left</spinAlign>
+				<frameNoFocus>music_thumb_nofocus.png</frameNoFocus>
+				<frameFocus>music_thumb_focus.png</frameFocus>
+				<textureMask>music_thumb_mask.png</textureMask>
+				<keepaspectratio>no</keepaspectratio>
 			</control>
 
 			<control>
@@ -129,27 +131,28 @@
 				<scrollOffset>3</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<posX>160</posX>
-				<posY>634</posY>
-				<width>1598</width>
+				<posX>118</posX>
+				<posY>618</posY>
+				<width>1690</width>
 				<height>768</height>
 				<onup>2</onup>
 				<onleft>50</onleft>
-				<thumbWidth>226</thumbWidth>
-				<thumbHeight>226</thumbHeight>
+				<thumbWidth>230</thumbWidth>
+				<thumbHeight>229</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
-				<itemWidth>226</itemWidth>
-				<itemHeight>226</itemHeight>
-				<textureWidth>226</textureWidth>
-				<textureHeight>226</textureHeight>
-				<thumbs flipY="true" diffuse="Thumb_Mask.png"></thumbs>
+				<itemWidth>240</itemWidth>
+				<itemHeight>239</itemHeight>
+				<textureWidth>230</textureWidth>
+				<textureHeight>229</textureHeight>
+				<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="music_filmstrip_fanart_mask.png">></thumbs>
 				<InfoImage flipY="true" diffuse="Thumb_Mask.png"></InfoImage>
 				<showFrame>yes</showFrame>
 				<textYOff>-2000</textYOff>
 				<showFolder>no</showFolder>
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
+				<keepaspectratio>no</keepaspectratio>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,820" time="400">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,820" time="100">unfocus</thumbAnimation>
 			</control>
@@ -163,9 +166,6 @@
 				<scrollOffset>1</scrollOffset>
 				<spinCanFocus>no</spinCanFocus>
 				<dimColor>ffffffff</dimColor>
-				<spinPosX>682</spinPosX>
-				<spinPosY>1001</spinPosY>
-				<spinAlign>left</spinAlign>
 			</control>
 
 		</control>

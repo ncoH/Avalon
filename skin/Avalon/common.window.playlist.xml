@@ -2,32 +2,140 @@
 <window>
 <controls>
 	<control>
+		<description>default background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+        <posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>background.png</texture>
+	</control>
+
+	<!--            :: Fanart ::            -->	
+	
+		<control>
+			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+			<type>label</type>
+			<id>91919291</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+		</control>
+
+		<control>
+			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+			<type>label</type>
+			<id>91919292</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+		</control>
+
+		<control>
+			<description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
+			<type>label</type>
+			<id>91919293</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+			<visible>no</visible>
+		</control>		   	   
+
+		<control>
+			<description>FANART BACKGROUND 1</description>
+			<id>897686</id>
+			<type>image</type>
+			<posX>0</posX>
+			<posY>180</posY>
+			<width>1273</width>
+			<height>720</height>
+			<keepaspectratio>no</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>yes</zoom>
+			<texture>#fanarthandler.music.backdrop1.selected</texture>  
+			<visible>[facadeview.list | facadeview.album | facadeview.playlist]+control.isvisible(91919291)+control.isvisible(91919293)</visible>	
+		  <animation effect="fade" time="300">visible</animation>
+		  <animation effect="fade" time="300" delay="300">hidden</animation>
+		  <animation effect="fade" time="0">WindowClose</animation>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		</control>
+
+		<control>
+			<description>FANART BACKGROUND 2</description>
+			<id>897687</id>
+			<type>image</type>
+			<posX>0</posX>
+			<posY>180</posY>
+			<width>1273</width>
+			<height>720</height>
+			<keepaspectratio>no</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>yes</zoom>
+			<texture>#fanarthandler.music.backdrop2.selected</texture>  
+			<visible>[facadeview.list | facadeview.album | facadeview.playlist]+control.isvisible(91919292)+control.isvisible(91919293)</visible>
+		  <animation effect="fade" time="300">visible</animation>
+		  <animation effect="fade" time="300" delay="300">hidden</animation>
+		  <animation effect="fade" time="0">WindowClose</animation>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		</control>	
+	
+	<control>
+		<description>Fanart Overlay</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+        <posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>overlay_long.png</texture>
+		<visible>[facadeview.list | facadeview.album | facadeview.playlist]+[control.isvisible(897687)|control.isvisible(897686)]</visible>
+	</control>
+	
+	<control>
+		<description>viewport list</description>
+		<type>image</type>
+		<id>2020</id>
+		<posX>1</posX>
+		<posY>164</posY>
+		<width>1893</width>
+		<height>755</height>
+		<texture>viewport_music_list.png</texture>
+		<visible>[facadeview.list | facadeview.album | facadeview.playlist] + Control.IsVisible(50)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+	
+	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>680</posX>
-		<posY>910</posY>
-		<width>1175</width>
+		<posX>1856</posX>
+		<posY>945</posY>
+		<width>1170</width>
 		<label>#selecteditem</label>
-		<font>Segoe Light22</font>
+		<font>fontB20</font>
+		<align>right</align>
 		<visible>[facadeview.list | facadeview.album | facadeview.playlist | facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>1860</posX>
-		<posY>1000</posY>
-		<label>#currentmodule: #itemcount</label>
-		<textcolor>85cffe</textcolor>
-		<font>Segoe Light12</font>
-		<align>right</align>
+		<posX>321</posX>
+		<posY>98</posY>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
+		<label>| #currentmodule: #itemcount</label>
 		<visible>[facadeview.list | facadeview.album | facadeview.playlist | facadeview.smallicons | facadeview.largeicons]+Control.IsVisible(50)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 </controls>
 </window>

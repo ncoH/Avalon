@@ -13,8 +13,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>Control.IsVisible(1201) + string.contains(#bgimage1,series) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#fanarthandler.tvseries.backdrop1.any</texture>
@@ -29,8 +29,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>Control.IsVisible(1202) + string.contains(#bgimage2,series) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#fanarthandler.tvseries.backdrop2.any</texture>
@@ -47,8 +47,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>Control.IsVisible(1201) + string.contains(#bgimage1,movies) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#fanarthandler.movingpicture.backdrop1.any</texture>
@@ -63,8 +63,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>Control.IsVisible(1202) + string.contains(#bgimage2,movies) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#fanarthandler.movingpicture.backdrop2.any</texture>
@@ -81,8 +81,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>Control.IsVisible(1201) + string.contains(#bgimage1,music) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#fanarthandler.music.scraper.backdrop1.any</texture>
@@ -97,8 +97,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>Control.IsVisible(1202) + string.contains(#bgimage2,music) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#fanarthandler.music.scraper.backdrop2.any</texture>
@@ -115,8 +115,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>Control.IsVisible(1201) + string.contains(#bgimage1,tv) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#fanarthandler.tv.userdef.backdrop1.any</texture>
@@ -131,8 +131,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>Control.IsVisible(1202) + string.contains(#bgimage2,tv) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#fanarthandler.tv.userdef.backdrop2.any</texture>
@@ -149,8 +149,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>Control.IsVisible(1201) + string.contains(#bgimage1,pictures) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#fanarthandler.picture.userdef.backdrop1.any</texture>
@@ -165,8 +165,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>Control.IsVisible(1202) + string.contains(#bgimage2,pictures) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#fanarthandler.picture.userdef.backdrop2.any</texture>
@@ -183,8 +183,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>Control.IsVisible(1201) + string.contains(#bgimage1,plugins) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#fanarthandler.plugins.userdef.backdrop1.any</texture>
@@ -199,8 +199,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>Control.IsVisible(1202) + string.contains(#bgimage2,plugins) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#fanarthandler.plugins.userdef.backdrop2.any</texture>

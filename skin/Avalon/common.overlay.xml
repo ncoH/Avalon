@@ -87,7 +87,7 @@
 		<width>140</width>
 		<height>50</height>
 		<label>#currentplaytime / #duration</label>
-		<font>AvalonLight12</font>
+		<font>AvalonLight11</font>
 		<textcolor>ffffff</textcolor>
 		<visible>player.hasvideo+!control.isvisible(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -238,7 +238,7 @@
 		<width>140</width>
 		<height>50</height>
 		<label>#currentplaytime / #duration</label>
-		<font>AvalonLight12</font>
+		<font>AvalonLight11</font>
 		<textcolor>ffffff</textcolor>
 		<visible>player.hasaudio+control.hastext(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>

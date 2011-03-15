@@ -8,105 +8,17 @@
 
 <import>common.window.playlist.xml</import>
 	
-	<!--            :: Fanart ::            -->	
-	
-		<control>
-			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
-			<type>label</type>
-			<id>91919291</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1</width>	
-		</control>
-
-		<control>
-			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
-			<type>label</type>
-			<id>91919292</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1</width>	
-		</control>
-
-		<control>
-			<description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
-			<type>label</type>
-			<id>91919293</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1</width>	
-			<visible>no</visible>
-		</control>		   	   
-
-		<control>
-			<description>FANART BACKGROUND 1</description>
-			<id>897686</id>
-			<type>image</type>
-			<posX>0</posX>
-			<posY>192</posY>
-			<width>1920</width>
-			<height>700</height>
-			<keepaspectratio>no</keepaspectratio>
-			<centered>yes</centered>
-			<zoom>yes</zoom>
-			<texture>#fanarthandler.music.backdrop1.selected</texture>  
-			<visible>[facadeview.list | facadeview.album | facadeview.playlist]+control.isvisible(91919291)+control.isvisible(91919293)</visible>	
-			<animation effect="fade" time="450">visible</animation>
-			<animation effect="fade" time="450" delay="300">hidden</animation>
-		</control>
-
-		<control>
-			<description>FANART BACKGROUND 2</description>
-			<id>897687</id>
-			<type>image</type>
-			<posX>0</posX>
-			<posY>192</posY>
-			<width>1920</width>
-			<height>700</height>
-			<keepaspectratio>no</keepaspectratio>
-			<centered>yes</centered>
-			<zoom>yes</zoom>
-			<texture>#fanarthandler.music.backdrop2.selected</texture>  
-			<visible>[facadeview.list | facadeview.album | facadeview.playlist]+control.isvisible(91919292)+control.isvisible(91919293)</visible>
-			<animation effect="fade" time="450">visible</animation>
-			<animation effect="fade" time="450" delay="300">hidden</animation>
-		</control>	
-
-	<control>
-		<description>Fanart Overlay</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>0</posX>
-        <posY>0</posY>
-		<width>1920</width>
-		<height>1080</height>
-		<texture>music_listview_fanart_overlay.png</texture>
-		<visible>[facadeview.list | facadeview.album | facadeview.playlist]+[control.isvisible(897687)|control.isvisible(897686)]</visible>
-	</control>
-	
-	<control>
-		<description>Background</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>0</posX>
-        <posY>0</posY>
-		<width>1920</width>
-		<height>1080</height>
-		<texture>background_list.png</texture>
-		<visible>[facadeview.list | facadeview.album | facadeview.playlist]+!control.isvisible(897687)+!control.isvisible(897686)</visible>
-	</control>
-
 	<control>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>185</posX>
-		<posY>28</posY>
-		<width>500</width>
+		  <posX>185</posX>
+		  <posY>38</posY>
+		  <width>500</width>
 		<label>136</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light24</font>
+		<font>font22</font>
 		<visible>facadeview.list | facadeview.album | facadeview.playlist | facadeview.smallicons | facadeview.largeicons</visible>
 	</control>
 	
@@ -119,44 +31,48 @@
 		<description>action menu</description>
 		<defaultcontrol>2</defaultcontrol>
 		<onexit>50</onexit>
+		<dimColor>00ffffff</dimColor>
 		<buttonX>0</buttonX>
 		<buttonY>0</buttonY>
-		<buttonwidth>0</buttonwidth>
-		<buttonheight>0</buttonheight>
-		<width>1294</width>
-		<height>1080</height>
-		<dimColor>00ffffff</dimColor>
-		<animation effect="Fade" time="100">WindowClose</animation>
+		<buttonwidth>521</buttonwidth>
+		<buttonheight>1080</buttonheight>
+		
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<width>1294</width>
+			<width>1920</width>
 			<height>1080</height>
 			<texture>semi_trans_back_hidden_menu.png</texture>
-			<animation effect="fade" time="250">WindowOpen</animation>
-			<animation effect="fade" time="400">windowclose</animation>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
 		</control>
-		
-		<control>
+	
+	<control>
 		<type>group</type>
-		
+		<animation effect="fade" time="200">windowopen</animation>
+		<animation effect="fade" time="400">windowclose</animation>
+		<animation effect="slide" time="100" start="-600,0">visible</animation>
+		<animation effect="slide" time="0" end="-600,0">hidden</animation>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+		</control>
+	
 		<control>
 			<description>Heading text label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>192</posX>
-			<posY>88</posY>
+			<posX>136</posX>
+			<posY>128</posY>
 			<label>924</label>
-			<font>Segoe Light22</font>
+			<font>font22</font>
 			<textcolor>ffffff</textcolor>
 		</control>
-
-		<control>
-			<description>button group</description>
-			<type>group</type>
-			<posX>135</posX>
-			<posY>188</posY>
-			<layout>StackLayout(1)</layout>
 			
 				<control>
 					<description>View-As button</description>
@@ -169,9 +85,11 @@
 					<ondown>20</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
+					<posX>69</posX>
+					<posY>215</posY>
+					<width>459</width>
+					<height>70</height>
+					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>
 				</control>
 
@@ -186,9 +104,11 @@
 					<ondown>30</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
+					<posX>69</posX>
+					<posY>285</posY>
+					<width>459</width>
+					<height>70</height>
+					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>
 				</control>
 
@@ -201,9 +121,11 @@
 					<onleft>50</onleft>
 					<onup>20</onup>
 					<ondown>10</ondown>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
+					<posX>69</posX>
+					<posY>355</posY>
+					<width>459</width>
+					<height>70</height>
+					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>
 				</control>
 
@@ -218,9 +140,11 @@
 					<ondown>21</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
+					<posX>69</posX>
+					<posY>425</posY>
+					<width>459</width>
+					<height>70</height>
+					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>
 				</control>
 
@@ -235,9 +159,11 @@
 					<ondown>22</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
+					<posX>69</posX>
+					<posY>495</posY>
+					<width>459</width>
+					<height>70</height>
+					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>
 				</control>
 
@@ -252,9 +178,11 @@
 					<ondown>26</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
+					<posX>69</posX>
+					<posY>565</posY>
+					<width>459</width>
+					<height>70</height>
+					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>
 				</control>
 				
@@ -268,9 +196,11 @@
 					<onleft>50</onleft>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
+					<posX>69</posX>
+					<posY>635</posY>
+					<width>459</width>
+					<height>70</height>
+					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>
 				</control>
 
@@ -284,9 +214,11 @@
 					<onleft>50</onleft>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
+					<posX>69</posX>
+					<posY>705</posY>
+					<width>459</width>
+					<height>70</height>
+					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>
 					<visible>plugin.isenabled(My Lyrics)</visible>
 				</control>
@@ -299,9 +231,11 @@
 					<onright>50</onright>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
+					<posX>69</posX>
+					<posY>775</posY>
+					<width>459</width>
+					<height>70</height>
+					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>
 					<visible>plugin.isenabled(Audioscrobbler)</visible>
 				</control>
@@ -312,9 +246,11 @@
 					<id>27</id>
 					<label>33000</label>
 					<onright>50</onright>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
+					<posX>69</posX>
+					<posY>845</posY>
+					<width>459</width>
+					<height>70</height>
+					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>
 					<visible>plugin.isenabled(Audioscrobbler)</visible>
 				</control>
@@ -329,18 +265,17 @@
 					<ondown>2</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
+					<posX>69</posX>
+					<posY>915</posY>
+					<width>459</width>
+					<height>70</height>
+					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>
 					<visible>plugin.isenabled(Audioscrobbler)</visible>
 				</control>
 
 			</control>
 			
-		</control>
-
-
 	</control>
 
 	<import>common.facade.music.xml</import>
@@ -357,83 +292,59 @@
 	</control>
 	
 	<control>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<description>Poster shadow</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>111</posX>
-		<posY>136</posY>
-		<width>530</width>
-		<height>496</height>
-		<texture>poster_shadow_big.png</texture>
+		<posX>423</posX>
+		<posY>168</posY>
+		<width>486</width>
+		<height>487</height>
+		<texture>list_music_shadow.png</texture>
 		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
 	</control>
 	
 	<control>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Poster glow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>423</posX>
+		<posY>168</posY>
+		<width>486</width>
+		<height>487</height>
+		<texture>list_music_glow.png</texture>
+		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<id>0</id>
 		<type>image</type>
-		<posX>156</posX>
-		<posY>170</posY>
-		<width>439</width>
-		<height>432</height>
+		<posX>490</posX>
+		<posY>236</posY>
+		<width>350</width>
+		<height>350</height>
 		<visible>[facadeview.list | facadeview.album | facadeview.playlist]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
-		<texture>DefaultMyradioBig.png</texture>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
 	</control>
-	
+		
 	<control>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<id>600</id>
-		<type>image</type>
-		<posX>156</posX>
-		<posY>170</posY>
-		<width>439</width>
-		<height>432</height>
-		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
-		<texture>#Play.Current.Thumb</texture>
-	</control>
-	
-	<control>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<id>500</id>
 		<type>image</type>
-		<posX>156</posX>
-		<posY>170</posY>
-		<width>439</width>
-		<height>432</height>
+		<posX>490</posX>
+		<posY>236</posY>
+		<width>350</width>
+		<height>350</height>
 		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
-		<texture>#selectedthumb</texture>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#selectedthumb</texture>
 	</control>
 	
-	<control>
-		<description>Info Arrow</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>678</posX>
-		<posY>882</posY>
-		<width>34</width>
-		<height>34</height>
-		<texture>info_arrow.png</texture>
-		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<description>Info Separator</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>678</posX>
-		<posY>988</posY>
-		<width>1181</width>
-		<height>1</height>
-		<texture>info_separator.png</texture>
-		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
-	</control>
 
 <import>common.overlay.xml</import>
 </controls>

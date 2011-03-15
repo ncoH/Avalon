@@ -91,8 +91,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>Control.IsVisible(1201)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#bgimage1</texture>
@@ -107,8 +107,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>Control.IsVisible(1202)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#bgimage2</texture>
@@ -123,8 +123,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(231)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#avalon.recentlyAdded.series1.fanart</texture>
@@ -140,8 +140,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(232)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#avalon.recentlyAdded.series2.fanart</texture>
@@ -157,8 +157,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(233)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#avalon.recentlyAdded.series3.fanart</texture>
@@ -174,8 +174,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(221)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#avalon.recentlyAdded.movie1.fanart</texture>
@@ -191,8 +191,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(222)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#avalon.recentlyAdded.movie2.fanart</texture>
@@ -208,8 +208,8 @@
     <width>1045</width>
     <height>588</height>
     <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(223)</visible>
-	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
-	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+    <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
+    <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#avalon.recentlyAdded.movie3.fanart</texture>
