@@ -16,11 +16,11 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>185</posX>
-		<posY>28</posY>
+		<posY>38</posY>
 		<width>500</width>
 		<label>3</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light24</font>
+		<font>font22</font>
 		<visible>facadeview.list | facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
 	</control>
 	
@@ -245,14 +245,30 @@
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<description>Poster shadow</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>110</posX>
-		<posY>124</posY>
-		<width>528</width>
-		<height>720</height>
-		<texture>poster_shadow_big.png</texture>
+		<posX>695</posX>
+		<posY>182</posY>
+		<width>466</width>
+		<height>606</height>
+		<texture>list_poster_shadow.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<description>Poster shadow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>695</posX>
+		<posY>182</posY>
+		<width>466</width>
+		<height>606</height>
+		<texture>list_poster_glow.png</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 	
@@ -261,11 +277,11 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<id>0</id>
 		<type>image</type>
-		<posX>155</posX>
-		<posY>169</posY>
-		<width>438</width>
-		<height>630</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">defaultVideoBig.png</texture>
+		<posX>762</posX>
+		<posY>250</posY>
+		<width>330</width>
+		<height>470</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">defaultVideoBig.png</texture>
 		<visible>facadeview.list+!control.hasthumb(500)</visible>
 	</control>
 
@@ -274,86 +290,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<id>500</id>
 		<type>image</type>
-		<posX>155</posX>
-		<posY>169</posY>
-		<width>438</width>
-		<height>630</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
+		<posX>762</posX>
+		<posY>250</posY>
+		<width>330</width>
+		<height>470</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#selectedthumb</texture>
 		<visible>facadeview.list</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="0">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<description>Bottom Overlay</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>154</posX>
-		<posY>893</posY>
-		<width>453</width>
-		<height>185</height>
-		<texture>bottom_overlay.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<description>Info Arrow</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>678</posX>
-		<posY>882</posY>
-		<width>34</width>
-		<height>34</height>
-		<texture>info_arrow.png</texture>
-		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<description>Info Separator</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>678</posX>
-		<posY>988</posY>
-		<width>1181</width>
-		<height>1</height>
-		<texture>info_separator.png</texture>
-		<visible>[facadeview.list|facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
-	</control>
-
-
-	<!--            :: THUMB VIEW ::            -->
-
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<description>thumbs background shadow</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>119</posX>
-        <posY>218</posY>
-		<width>1677</width>
-		<height>670</height>
-		<texture>thumbs_bg.png</texture>
-		<visible>facadeview.largeicons + Control.IsVisible(50)</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<description>thumbs background shadow</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>119</posX>
-        <posY>217</posY>
-		<width>1670</width>
-		<height>698</height>
-		<texture>thumbs_bg_small.png</texture>
-		<visible>facadeview.smallicons + Control.IsVisible(50)</visible>
 	</control>
 	
 <import>common.facade.video.xml</import>
