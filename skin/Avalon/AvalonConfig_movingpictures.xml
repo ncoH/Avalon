@@ -4,50 +4,83 @@
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
-    <import>common.settings.xml</import>
-    <import>common.time.xml</import>
+<import>settings.menu.xml</import>
 	
 	<control>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>321</posX>
-		<posY>388</posY>
+		<posX>766</posX>
+		<posY>264</posY>
 		<width>500</width>
-		<label>MovingPictures View Options</label>
+		<label>Moving Pictures</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>AvalonLight14</font>
+		<font>fontB22</font>
 	</control>
 	
-    <control>
-      <type>group</type>
-      <description>group element</description>
-      <animation effect="fade" time="200" delay="200">windowopen</animation>
-      <posX>321</posX>
-      <posY>459</posY>
-      <width>595</width>
-      <height>500</height>
-      <layout>StackLayout</layout>
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>766</posX>
+		<posY>375</posY>
+		<width>500</width>
+		<label>Movie information layout</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>fontB14</font>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>766</posX>
+		<posY>488</posY>
+		<width>500</width>
+		<label>Thumbview layout</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>fontB14</font>
+	</control>
+	
       <control>
-        <description>MovingPictures Default/Fanart Style</description>
+        <description>MovingPictures Default/NoInfo Style</description>
         <type>togglebutton</type>
         <id>2</id>
-		<label>Enable Infos on bottom</label>
-        <onleft>2</onleft>
+		<label>Enable movie info at bottom of screen</label>
+		<posX>736</posX>
+		<posY>430</posY>
+        <onleft>10011</onleft>
         <onright>2</onright>
         <onup>2</onup>
         <ondown>3</ondown>
+		<width>956</width>
+		<height>52</height>
+		<textXOff>30</textXOff>
+		<textYOff>10</textYOff>
+		<textureFocus>settings_button_large_focus_toggleon.png</textureFocus>
+		<textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
+		<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
+		<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
       </control>
       <control>
         <description>MovingPictures Thumbnail Mod</description>
         <type>button</type>
         <id>3</id>
-        <onleft>3</onleft>
+		<posX>736</posX>
+		<posY>540</posY>
+        <onleft>10011</onleft>
         <onright>3</onright>
         <onup>2</onup>
         <ondown>2</ondown>
+		<width>956</width>
+		<height>52</height>
+		<textXOff>30</textXOff>
+		<textYOff>10</textYOff>
+		<textureFocus>settings_button_large_focus.png</textureFocus>
+		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
       </control>
-    </control>
   </controls>
 </window>

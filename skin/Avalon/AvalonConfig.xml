@@ -4,30 +4,42 @@
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
-    <import>common.settings.xml</import>
-    <import>common.time.xml</import>
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+	<control>
+		<description>viewport list</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>164</posY>
+		<width>1893</width>
+		<height>755</height>
+		<texture>viewport_settings.png</texture>
+	</control>
 	
 	<control>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
 		<type>label</type>
-		<id>1</id>
-		<posX>321</posX>
-		<posY>388</posY>
+		<description>Settings label</description>
+		<id>121</id>
+		<posX>185</posX>
+		<posY>38</posY>
 		<width>500</width>
-		<label>Avalon Skin Settings</label>
+		<label>Skin Settings</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>AvalonLight14</font>
+		<font>font22</font>
 	</control>
 	
     <control>
       <type>group</type>
       <description>group element</description>
       <animation effect="fade" time="200" delay="200">windowopen</animation>
-      <posX>321</posX>
-      <posY>459</posY>
-      <width>595</width>
-      <height>500</height>
+	  <posX>130</posX>
+	  <posY>262</posY>
       <layout>StackLayout</layout>
       <control>
         <description>MovingPictures Settings</description>
@@ -60,5 +72,6 @@
         <ondown>50</ondown>
       </control>
     </control>
+    <import>common.time.xml</import>
   </controls>
 </window>
