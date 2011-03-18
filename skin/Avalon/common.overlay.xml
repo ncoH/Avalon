@@ -85,9 +85,8 @@
 		<posX>376</posX>
 		<posY>1039</posY>
 		<width>140</width>
-		<height>50</height>
 		<label>#currentplaytime / #duration</label>
-		<font>AvalonLight11</font>
+		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
 		<visible>player.hasvideo+!control.isvisible(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -99,7 +98,7 @@
 		<description>scrolling info label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<width>1000</width>
+		<width>330</width>
 		<posX>326</posX>
 		<posY>996</posY>
 		<font>fontB14</font>
@@ -233,12 +232,12 @@
 		<description>nowplaying text</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>255</posX>
-		<posY>1015</posY>
-		<width>140</width>
+		<posX>260</posX>
+		<posY>1020</posY>
+		<width>180</width>
 		<height>50</height>
 		<label>#currentplaytime / #duration</label>
-		<font>AvalonLight11</font>
+		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
 		<visible>player.hasaudio+control.hastext(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>

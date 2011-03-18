@@ -8,28 +8,16 @@
 	<import>common.window.pictures.xml</import>
 	
 	<control>
-		<description>Background</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>0</posX>
-        <posY>0</posY>
-		<width>1920</width>
-		<height>1080</height>
-		<texture>background_list.png</texture>
-		<visible>facadeview.list | facadeview.smallicons | facadeview.largeicons</visible>
-	</control>
-
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
 		<posX>185</posX>
-		<posY>28</posY>
+		<posY>38</posY>
 		<width>500</width>
 		<label>1</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light24</font>
+		<font>font22</font>
 		<visible>facadeview.list | facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
 	</control>
 	
@@ -168,70 +156,6 @@
 	</control>
 	
 	<import>common.facade.pictures.xml</import>
-	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<description>Poster shadow</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>111</posX>
-		<posY>136</posY>
-		<width>530</width>
-		<height>496</height>
-		<texture>poster_shadow_big.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
-	</control>
-	
-	<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>156</posX>
-		<posY>170</posY>
-		<width>439</width>
-		<height>432</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">defaultPictureBig.png</texture>
-		<visible>[facadeview.list|facadeview.album]+!control.hasthumb(500)+!string.equals(#selectedthumb)</visible>
-		<animation effect="fade" time="100">WindowClose</animation>
-	</control>
-
-	<control>
-		<id>500</id>
-		<type>image</type>
-		<posX>156</posX>
-		<posY>170</posY>
-		<width>439</width>
-		<height>432</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
-		<visible>[facadeview.list|facadeview.album]+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
-		<animation effect="fade" time="100">WindowClose</animation>
-	</control>
-
-	<control>
-		<description>Info Arrow</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>678</posX>
-		<posY>882</posY>
-		<width>34</width>
-		<height>34</height>
-		<texture>info_arrow.png</texture>
-		<visible>[facadeview.list|facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<description>Info Separator</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>678</posX>
-		<posY>988</posY>
-		<width>1181</width>
-		<height>1</height>
-		<texture>info_separator.png</texture>
-		<visible>[facadeview.list|facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
-	</control>
 	
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
