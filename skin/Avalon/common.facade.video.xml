@@ -8,7 +8,6 @@
 		<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 			<description>composite control consisting of a list control and a thumbnail panel</description>
 			<type>facadeview</type>
 			<id>50</id>

@@ -22,11 +22,23 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>0</posX>
-		<posY>746</posY>
+		<posY>796</posY>
 		<width>1920</width>
 		<height>434</height>
 		<texture>osd_bg.png</texture>
-		<visible>player.paused|player.forwarding|player.rewinding</visible>
+		<visible>[player.paused|player.forwarding|player.rewinding]+!window.isosdvisible</visible>
+	</control>
+	
+	<control>
+		<description>Description bg</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>796</posY>
+		<width>1920</width>
+		<height>434</height>
+		<texture>osd_bg.png</texture>
+		<visible>[control.isvisible(10)|control.isvisible(11)|control.isvisible(12)]</visible>
 	</control>
 	
 	<control>
@@ -40,7 +52,7 @@
 		<align>center</align>
 		<label>#time</label>
 		<textcolor>ff85cffe</textcolor>
-		<visible>player.paused|player.rewinding|player.forwarding|Control.IsVisible(10)|player.seeking</visible>
+		<visible>player.paused + ![control.isvisible(10)|control.isvisible(11)|control.isvisible(12)]</visible>
 	</control>
 	
 	<control>
@@ -52,7 +64,7 @@
 		<width>187</width>
 		<height>51</height>
 		<texture>osd_clock_pause_bg.png</texture>
-		<visible>player.paused|player.forwarding|player.rewinding</visible>
+		<visible>player.paused|player.forwarding|player.rewinding|player.seeking|control.isvisible(10)|control.isvisible(11)|control.isvisible(12)</visible>
 	</control>
 	
 	<control>
@@ -71,12 +83,12 @@
 		<description>row 1 label</description>
 		<type>label</type>
 		<id>10</id>
-		<posX>477</posX>
-		<posY>700</posY>
-		<height>30</height>
-		<width>400</width>
-		<font>font14</font>
+		<posX>280</posX>
+		<posY>958</posY>
+		<width>144</width>
+		<font>AvalonLight14</font>
 		<align>center</align>
+		<textcolor>ff85cffe</textcolor>
 		<label>-</label>
 		<visible>Control.IsVisible(10)</visible>
 	</control>
@@ -85,12 +97,12 @@
 		<description>row 2 label</description>
 		<type>label</type>
 		<id>11</id>
-		<posX>477</posX>
-		<posY>700</posY>
-		<height>30</height>
+		<posX>280</posX>
+		<posY>958</posY>
 		<width>144</width>
-		<font>font18</font>
+		<font>AvalonLight14</font>
 		<align>center</align>
+		<textcolor>ff85cffe</textcolor>
 		<label>-</label>
 	</control>
 
@@ -98,12 +110,12 @@
 		<description>row 3 label</description>
 		<type>label</type>
 		<id>12</id>
-		<posX>477</posX>
-		<posY>700</posY>
-		<height>30</height>
+		<posX>280</posX>
+		<posY>958</posY>
 		<width>144</width>
-		<font>font18</font>
+		<font>AvalonLight14</font>
 		<align>center</align>
+		<textcolor>ff85cffe</textcolor>
 		<label>-</label>
 	</control>
 

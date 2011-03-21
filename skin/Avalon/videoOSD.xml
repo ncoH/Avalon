@@ -28,7 +28,17 @@
 		<texture>-</texture>
 		<visible>no</visible>
 	</control>
-
+	
+	<control>
+		<description>Description bg</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>746</posY>
+		<width>1920</width>
+		<height>434</height>
+		<texture>osd_bg.png</texture>
+	</control>
 	
 	<control>
 		<description>thumb bg</description>

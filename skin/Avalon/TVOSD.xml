@@ -32,7 +32,7 @@
 		<texture>-</texture>
 		<visible>no</visible>
 	</control>
-
+	
 	<control>
 		<description>thumb bg</description>
 		<type>image</type>
@@ -200,6 +200,20 @@
 		<font>fontB20</font>
 		<label>#TV.View.title</label>
 		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
+	</control>
+	
+	<control>
+		<description>On tv NOW (OSD Info)</description>
+		<id>0</id>
+		<type>fadelabel</type>
+		<width>1295</width>
+		<height>24</height>
+		<posX>325</posX>
+		<posY>200</posY>
+		<font>fontB22</font>
+		<textcolor>6aa5cb</textcolor>
+		<label>#TV.View.title</label>
+		<visible>Control.IsVisible(2111) + Control.HasFocus(995)</visible>
 	</control>
 	
 
