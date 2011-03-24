@@ -1048,6 +1048,23 @@
 	</control>	
 </control>
 
+    <control>
+      <description>Update Icon</description>
+      <type>image</type>
+      <id>0</id>
+      <width>200</width>
+      <height>200</height>
+      <posX>635</posX>
+      <posY>150</posY>
+      <align>center</align>
+      <texture>skinupdate.png</texture>
+      <visible>string.equals(#Avalon.UpdateAvailable,true)</visible>
+      <animation effect="fade" delay="4000" start="100" end="0" time="3000">WindowOpen</animation>
+      <animation effect="zoom" start="105,105" end="110,110" time="1500" tween="cubic" easing="inout" pulse="true" reversible="false" condition="true">Conditional</animation>
+      <animation effect="fade" start="100" end="0" time="10000">Visible</animation>
+      <animation effect="fade" delay="100" start="0" end="0" time="100">WindowClose</animation>
+    </control>
+
 <import>BasicHome.weather.xml</import>  
 <import>common.overlay.xml</import>
 <import>BasicHome.recentlyaddedSeries.xml</import>

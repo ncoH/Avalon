@@ -69,6 +69,16 @@
         <onleft>52</onleft>
         <onright>52</onright>
         <onup>51</onup>
+        <ondown>53</ondown>
+      </control>
+      <control>
+        <description>Skin Update</description>
+        <type>button</type>
+        <id>53</id>
+	    <label>-</label>
+        <onleft>53</onleft>
+        <onright>53</onright>
+        <onup>52</onup>
         <ondown>50</ondown>
       </control>
     </control>

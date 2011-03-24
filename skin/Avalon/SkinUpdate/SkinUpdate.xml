@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Avalon>
+  <patch>
+	<!-- Rollup of patches: r2009-2543 -->
+    <version>1.0.0.0</version>
+    <minversion>1.0.0.0</minversion>
+    <url>http://192.168.50.192/test/SkinUpdate.zip</url>
+    <changelog>http://192.168.50.192/test/ChangeLog.rtf</changelog>
+  </patch>
+</Avalon>

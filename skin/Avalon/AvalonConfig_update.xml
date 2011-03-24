@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <id>155104</id>
+  <defaultcontrol>3</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+   <import>settings.menu.xml</import>
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>645</posX>
+		<posY>250</posY>
+		<width>500</width>
+		<label>#Avalon.Revisions</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>fontB22</font>
+		<visible>control.isvisible(3)</visible>
+	</control>
+    <control>
+		<description>textarea</description>
+		<type>textbox</type>
+		<id>2</id>
+		<posY>320</posY>
+		<posX>645</posX>
+		<width>1100</width>
+		<height>470</height>
+		<onup>3</onup>
+		<ondown>3</ondown>
+		<onleft>3</onleft>
+		<font>font10</font>
+		<onright>2</onright>
+		<spinWidth>46</spinWidth>
+		<spinHeight>33</spinHeight>
+		<spinPosX>1684</spinPosX>
+		<spinPosY>790</spinPosY>
+		<spinAlign>right</spinAlign>
+		<textureFocus>settings_button_large_focus_toggleon.png</textureFocus>
+		<textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
+		<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
+		<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
+      <animation effect="fade" time="200" delay="200">windowopen</animation>
+    </control>
+    <control>
+		<description>Do Update and Install</description>
+		<type>button</type>
+		<id>3</id>
+		<label>-</label>
+		<posX>645</posX>
+		<posY>780</posY>
+		<width>956</width>
+		<height>52</height>
+		<onup>2</onup>
+		<onright>2</onright>
+		<ondown>2</ondown>
+		<onleft>10011</onleft>
+		<textalign>center</textalign>
+		<textYOff>0</textYOff>
+		<textXOff>0</textXOff>
+		<textcolor>ffffffff</textcolor>
+		<textcolorNoFocus>bfffffff</textcolorNoFocus>
+		<textureFocus>settings_button_large_focus.png</textureFocus>
+		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+      <animation effect="fade" time="200" delay="200">windowopen</animation>
+    </control>
+  </controls>
+</window>
