@@ -139,22 +139,6 @@
 		<visible>facadeview.list+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
-    <!--            :: Page label ::           
-    <control>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-      <type>label</type>
-      <id>1</id>
-      <posX>1620</posX>
-      <posY>1006</posY>
-      <width>200</width>
-      <label>Page:</label>
-      <align>right</align>
-      <font>AvalonLight12</font>
-      <textcolor>6aa5cb</textcolor>
-      <visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]</visible>
-    </control>
- -->	
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>

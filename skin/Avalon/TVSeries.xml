@@ -69,8 +69,8 @@
       <type>label</type>
       <label>| #TVSeries.Translation.Series_Plural.Label: #TVSeries.SeriesCount</label>
       <id>0</id>
-      <posX>321</posX>
-      <posY>98</posY>
+      <posX>242</posX>
+      <posY>99</posY>
       <align>left</align>
       <font>AvalonLight12</font>
       <textcolor>ffffff</textcolor>

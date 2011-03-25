@@ -157,12 +157,6 @@
 		<posY>236</posY>
 		<width>1270</width>
 		<height>650</height>
-		<spinWidth>46</spinWidth>
-		<spinHeight>33</spinHeight>
-		<spinPosX>1245</spinPosX>
-		<spinPosY>718</spinPosY>
-		<spinAlign>left</spinAlign>
-		<spinColor>FFFFFFFF</spinColor>
 		<textureFocus>listcontrol_item_selected.png</textureFocus>
 		<textureNoFocus>-</textureNoFocus>
 		<textureHeight>55</textureHeight>
@@ -192,6 +186,12 @@
 		<folderPrefix></folderPrefix>
 		<folderSuffix></folderSuffix>
 		<spinCanFocus>no</spinCanFocus>
+		<spinWidth>46</spinWidth>
+		<spinHeight>33</spinHeight>
+		<spinPosX>233</spinPosX>
+		<spinPosY>104</spinPosY>
+		<spinAlign>right</spinAlign>
+		<spinColor>FFFFFFFF</spinColor>
 	</control>
 
 	<control>
@@ -378,15 +378,14 @@
 		<textYOff>0</textYOff>
 		<folderPrefix></folderPrefix>
 		<folderSuffix></folderSuffix>
+		<spinColor>FFFFFFFF</spinColor>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>312</spinPosX>
+		<spinPosX>233</spinPosX>
 		<spinPosY>104</spinPosY>
 		<spinAlign>right</spinAlign>
-		<spinColor>FFFFFFFF</spinColor>
 		<spinCanFocus>no</spinCanFocus>
-		<spinWidth>46</spinWidth>
-		<spinHeight>33</spinHeight>
+		<unfocusedAlpha>150</unfocusedAlpha>
 	</control>
 
 	<control>
@@ -441,7 +440,7 @@
 		<folderSuffix></folderSuffix>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>312</spinPosX>
+		<spinPosX>233</spinPosX>
 		<spinPosY>104</spinPosY>
 		<spinAlign>right</spinAlign>
 		<spinColor>FFFFFFFF</spinColor>

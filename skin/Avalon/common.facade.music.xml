@@ -22,9 +22,6 @@
 				<posY>236</posY>
 				<width>924</width>
 				<height>700</height>
-				<spinPosX>312</spinPosX>
-				<spinPosY>104</spinPosY>
-				<spinAlign>right</spinAlign>
 				<textXOff>50</textXOff>
 				<dimColor>ffffffff</dimColor>
 				<textureFocus>listcontrol_item_selected_large.png</textureFocus>
@@ -58,10 +55,6 @@
                 <spaceBetweenItems>28</spaceBetweenItems>
                 <textureHeight>129</textureHeight>
                 <scrollOffset>1</scrollOffset>
-				<spinPosX>-2000</spinPosX>
-				<spinPosY>104</spinPosY>
-				<spinAlign>right</spinAlign>
-				<spinCanFocus>no</spinCanFocus>
 				<textureFocus>listcontrol_item_selected_big.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
                 <onleft>2</onleft>

@@ -92,7 +92,7 @@
 		<width>1920</width>
 		<height>1080</height>
 		<texture>overlay_long.png</texture>
-		<visible>[facadeview.list | facadeview.album | facadeview.smallicons | facadeview.largeicons]</visible>
+		<visible>[facadeview.list | facadeview.album | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>
@@ -104,7 +104,7 @@
 		<width>1893</width>
 		<height>755</height>
 		<texture>viewport_long.png</texture>
-		<visible>[facadeview.list | facadeview.album]</visible>
+		<visible>[facadeview.list | facadeview.album] + Control.IsVisible(50)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
@@ -174,8 +174,8 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>321</posX>
-		<posY>98</posY>
+		<posX>242</posX>
+		<posY>99</posY>
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>

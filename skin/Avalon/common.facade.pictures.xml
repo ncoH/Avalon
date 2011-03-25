@@ -22,9 +22,6 @@
 				<posY>236</posY>
 				<width>924</width>
 				<height>700</height>
-				<spinPosX>312</spinPosX>
-				<spinPosY>104</spinPosY>
-				<spinAlign>right</spinAlign>
 				<textXOff>50</textXOff>
 				<dimColor>ffffffff</dimColor>
 				<textureFocus>listcontrol_item_selected_large.png</textureFocus>
@@ -72,12 +69,7 @@
 				<textureMask>pictures_thumb_mask.png</textureMask>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
-				<spinPosX>312</spinPosX>
-				<spinPosY>104</spinPosY>
-				<spinAlign>right</spinAlign>
-				<spinColor>ffffffff</spinColor>
 				<keepaspectratio>no</keepaspectratio>
-				<unfocusedAlpha>150</unfocusedAlpha>
 			</control>
 				
 		<control>
@@ -105,11 +97,6 @@
 				<textureWidth>523</textureWidth>
 				<textureHeight>350</textureHeight>
 				<textYOff>-2000</textYOff>
-				<spinPosX>312</spinPosX>
-				<spinPosY>104</spinPosY>
-				<spinAlign>right</spinAlign>
-				<spinColor>ffffffff</spinColor>
-				<spinCanFocus>no</spinCanFocus>
 				<imageFolderFocus>-</imageFolderFocus>
 				<frame>-</frame>
 				<frameFocus>-</frameFocus>

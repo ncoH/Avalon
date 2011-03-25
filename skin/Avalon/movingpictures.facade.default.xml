@@ -82,11 +82,6 @@ This file should contain the facade view
 				<textureWidth>327</textureWidth>
 				<textureHeight>463</textureHeight>
 				<textYOff>-2000</textYOff>
-				<spinPosX>312</spinPosX>
-				<spinPosY>102</spinPosY>
-				<spinAlign>right</spinAlign>
-				<spinCanFocus>no</spinCanFocus>
-				<spinColor>FFFFFFFF</spinColor>
 				<imageFolderFocus>-</imageFolderFocus>
 				<frame>-</frame>
 				<frameFocus>-</frameFocus>
@@ -140,12 +135,7 @@ This file should contain the facade view
 				<textureMask>video_thumb_mask.png</textureMask>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
-				<unfocusedAlpha>150</unfocusedAlpha>
 				<thumbZoom>no</thumbZoom>
-				<spinPosX>312</spinPosX>
-				<spinPosY>102</spinPosY>
-				<spinAlign>right</spinAlign>
-				<spinColor>FFFFFFFF</spinColor>
 			</control>
 
 	</control>

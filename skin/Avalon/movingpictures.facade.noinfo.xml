@@ -47,7 +47,7 @@ This file should contain the facade view
 			<posY>236</posY>
 			<height>700</height>
 			<width>684</width>
-			<spinPosX>312</spinPosX>
+			<spinPosX>233</spinPosX>
 			<spinPosY>104</spinPosY>
 			<spinAlign>right</spinAlign>
 			<textXOff>50</textXOff>
@@ -82,11 +82,6 @@ This file should contain the facade view
 				<textureWidth>231</textureWidth>
 				<textureHeight>327</textureHeight>
 				<textYOff>-2000</textYOff>
-				<spinPosX>312</spinPosX>
-				<spinPosY>104</spinPosY>
-				<spinAlign>right</spinAlign>
-				<spinColor>ffffffff</spinColor>
-				<spinCanFocus>no</spinCanFocus>
 				<imageFolderFocus>-</imageFolderFocus>
 				<frame>-</frame>
 				<frameFocus>-</frameFocus>
@@ -139,14 +134,9 @@ This file should contain the facade view
 				<frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
 				<frameFocus>video_thumb_focus.png</frameFocus>
 				<textureMask>video_thumb_mask.png</textureMask>
-				<unfocusedAlpha>150</unfocusedAlpha>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>no</thumbZoom>
-				<spinPosX>312</spinPosX>
-				<spinPosY>104</spinPosY>
-				<spinAlign>right</spinAlign>
-				<spinColor>ffffffff</spinColor>
 				<keepaspectratio>no</keepaspectratio>
 			</control>
 	</control>
