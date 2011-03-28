@@ -6,43 +6,23 @@
 		<description>BG</description>
 		<type>image</type>
 		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
+		<width>1920</width>
+		<height>1080</height>
 	</control>
 	
-	<control>
-		<description>Alternate BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background_thumbs.png</texture>
-		<visible>facadeview.smallicons|facadeview.largeicons</visible>
-	</control>
-	
-	<control>
-		<description>Alternate BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background_filmstrip.png</texture>
-		<visible>facadeview.filmstrip</visible>
-	</control>
-
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>554</posX>
-		<posY>142</posY>
-		<width>700</width>
+		<posX>1856</posX>
+		<posY>945</posY>
+		<width>1170</width>
 		<label>#selecteditem</label>
-		<font>Segoe Light22</font>
-		<visible>facadeview.list+control.isvisible(50)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<valign>middle</valign>
+		<font>fontB20</font>
+		<align>right</align>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+control.isvisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 	
 	<control>
@@ -63,31 +43,15 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>0</posX>
-		<posY>178</posY>
-		<width>1366</width>
-		<align>center</align>
-		<label>#itemtype: #itemcount</label>
-		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-
-	<control>
-		<description>Selected item Label</description>
-		<type>fadelabel</type>
-		<id>1</id>
-		<posX>0</posX>
-		<posY>142</posY>
-		<width>1366</width>
-		<label>#selecteditem</label>
-		<font>Segoe Light22</font>
-		<align>center</align>
-		<visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<valign>middle</valign>
+		<posX>242</posX>
+		<posY>99</posY>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
+		<label>| #currentmodule: #itemcount</label>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 </controls>

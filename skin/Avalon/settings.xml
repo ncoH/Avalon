@@ -168,5 +168,6 @@
 		
 </control>
 <import>common.time.xml</import>
+<import>avalon.version.xml</import>
 </controls>
 </window>

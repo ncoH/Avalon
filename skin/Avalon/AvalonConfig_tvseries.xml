@@ -10,6 +10,21 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
+		<description>Settings label</description>
+		<id>0</id>
+		<posX>189</posX>
+		<posY>99</posY>
+		<width>500</width>
+		<label>Skin Settings | TV Series</label>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
 		<posY>264</posY>
@@ -33,6 +48,8 @@
 	</control>
 	
       <control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
         <description>TV Series Default/NoInfo Style</description>
         <type>togglebutton</type>
         <id>2</id>
@@ -46,11 +63,13 @@
 		<width>956</width>
 		<height>52</height>
 		<textXOff>30</textXOff>
-		<textYOff>10</textYOff>
+		<textYOff>8</textYOff>
 		<textureFocus>settings_button_large_focus_toggleon.png</textureFocus>
 		<textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
 		<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
 		<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
       </control>
+<import>common.time.xml</import>
+<import>avalon.version.xml</import>
   </controls>
 </window>

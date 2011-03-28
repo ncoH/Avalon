@@ -151,8 +151,8 @@ multiple view modes.
       <type>label</type>
       <label>| #MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount</label>
       <id>0</id>
-	  <posX>242</posX>
-	  <posY>99</posY>
+      <posX>242</posX>
+      <posY>99</posY>
       <align>left</align>
       <font>AvalonLight12</font>
       <textcolor>ffffff</textcolor>

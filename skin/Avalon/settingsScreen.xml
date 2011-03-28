@@ -1,87 +1,103 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>9</id>
-<defaultcontrol>10003</defaultcontrol>
+<defaultcontrol>2</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
+<define>#defaultcontrol.onleft:10002</define>
 <controls>
-<import>common.window.xml</import>
-<import>settings.menu.xml</import>
-
+	<import>settings.menu.xml</import>
+	
 	<control>
-		<type>image</type>
-		<id>1</id>
-		<posX>434</posX>
-		<posY>60</posY>
-		<width>820</width>
-		<height>640</height>
-		<texture>settings_main_panel.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>label</type>
+		<description>Settings label</description>
+		<id>0</id>
+		<posX>189</posX>
+		<posY>99</posY>
+		<width>500</width>
+		<label>6023</label>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
 	</control>
 	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>fadelabel</type>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>label</type>
 		<id>1</id>
-		<posX>504</posX>
-		<posY>125</posY>
-		<width>660</width>
-		<height>100</height>
+		<posX>766</posX>
+		<posY>264</posY>
+		<width>1000</width>
 		<label>6023</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<valign>middle</valign>
+		<font>fontB22</font>
 	</control>
 	
 	<control>
 		<description>buttons</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>490</posX>
-		<posY>260</posY>
-		<layout>GridLayout(2, 7, 120, 0, 1)</layout>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<posX>736</posX>
+		<posY>360</posY>
+		<layout>StackLayout</layout>
 		<control>
 			<description>UI Calibration button</description>
 			<type>button</type>
 			<id>2</id>
-			<width>289</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 			<label>213</label>
 			<hyperlink>10</hyperlink>
-			<onup>17</onup>
+			<onup>4</onup>
+			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
 		<control>
 			<description>Screen Calibration button</description>
 			<type>button</type>
 			<id>3</id>
-			<width>289</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 			<label>214</label>
 			<hyperlink>11</hyperlink>
+			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
 		<control>
 			<description>Scroll speed button</description>
 			<type>button</type>
 			<id>4</id>
-			<width>289</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 			<label>673</label>
 			<hyperlink>31</hyperlink>
-			<ondown>99</ondown>
+			<ondown>2</ondown>
+			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
 	</control>
-
+<import>common.time.xml</import>
+<import>avalon.version.xml</import>
 </controls>
 </window>

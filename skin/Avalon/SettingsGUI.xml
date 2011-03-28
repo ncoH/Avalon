@@ -1,60 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>31</id>
-<defaultcontrol>10004</defaultcontrol>
+<defaultcontrol>2</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
+<define>#defaultcontrol.onleft:10002</define>
 <controls>
-<import>common.window.xml</import>
-<import>settings.menu.xml</import>
-
+	<import>settings.menu.xml</import>
+	
 	<control>
-		<type>image</type>
-		<id>1</id>
-		<posX>434</posX>
-		<posY>60</posY>
-		<width>820</width>
-		<height>640</height>
-		<texture>settings_main_panel.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>label</type>
+		<description>Settings label</description>
+		<id>0</id>
+		<posX>189</posX>
+		<posY>99</posY>
+		<width>500</width>
+		<label>673</label>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
 	</control>
 	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>504</posX>
-		<posY>125</posY>
-		<width>500</width>
-		<height>100</height>
-		<label>605</label>
+		<posX>766</posX>
+		<posY>264</posY>
+		<width>1000</width>
+		<label>673</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<valign>middle</valign>
+		<font>fontB22</font>
 	</control>
 	
 	<control>
 		<description>group element</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		
-	<control>
-		<type>image</type>
-		<id>1</id>
-		<posX>484</posX>
-		<posY>265</posY>
-		<texture>settings_setupguide_wide.png</texture>
-		<width>595</width>
-		<height>36</height>
-	</control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		
 		
 		<control>
 			<description>Horizontal Speed label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>510</posX>
-			<posY>270</posY>
+			<posX>736</posX>
+			<posY>360</posY>
 			<label>1442</label>
 		</control>
 
@@ -63,7 +56,7 @@
 			<type>spincontrol</type>
 			<id>2</id>
 			<posX>1075</posX>
-			<posY>267</posY>
+			<posY>367</posY>
 			<align>right</align>
 			<onup>17</onup>
 			<ondown>4</ondown>
@@ -74,22 +67,13 @@
 		<reverse>yes</reverse>
 		</control>
 		
-		<control>
-		<type>image</type>
-		<id>1</id>
-		<posX>484</posX>
-		<posY>303</posY>
-		<texture>settings_setupguide_wide.png</texture>
-		<width>595</width>
-		<height>36</height>
-	</control>
 
 		<control>
 			<description>Vertical Speed label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>510</posX>
-			<posY>308</posY>
+			<posX>736</posX>
+			<posY>412</posY>
 			<label>1443</label>
 		</control>
 
@@ -98,7 +82,7 @@
 			<type>spincontrol</type>
 			<id>4</id>
 			<posX>1075</posX>
-			<posY>308</posY>
+			<posY>419</posY>
 			<align>right</align>
 			<onup>2</onup>
 			<ondown>3</ondown>
@@ -110,22 +94,13 @@
 		</control>
 		
 		
-	<control>
-		<type>image</type>
-		<id>1</id>
-		<posX>484</posX>
-		<posY>341</posY>
-		<texture>settings_setupguide_wide.png</texture>
-		<width>595</width>
-		<height>36</height>
-	</control>
 
 		<control>
 			<description>FPS label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>510</posX>
-			<posY>346</posY>
+			<posX>736</posX>
+			<posY>464</posY>
 			<label>973</label>
 		</control>
 
@@ -134,7 +109,7 @@
 			<type>spincontrol</type>
 			<id>3</id>
 			<posX>1075</posX>
-			<posY>346</posY>
+			<posY>473</posY>
 			<align>right</align>
 			<onup>4</onup>
 			<ondown>99</ondown>
@@ -150,7 +125,7 @@
 			<type>label</type>
 			<id>1</id>
 			<posX>1070</posX>
-			<posY>430</posY>
+			<posY>565</posY>
 			<align>right</align>
 			<label>#fps</label>
 		</control>
@@ -159,37 +134,38 @@
 			<description>Example label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>510</posX>
-			<posY>430</posY>
+			<posX>736</posX>
+			<posY>565</posY>
 			<width>711</width>
 			<label>675</label>
-			<textcolor>ff85cffe</textcolor>
+			<textcolor>ffffffff</textcolor>
 		</control>
 
 		<control>
 			<description>TagLine value</description>
 			<type>fadelabel</type>
 			<id>25</id>
-			<posX>510</posX>
-			<posY>465</posY>
+			<posX>736</posX>
+			<posY>565</posY>
 			<width>560</width>
 			<label>-</label>
-			<textcolor>ff85cffe</textcolor>
+			<textcolor>ffffffff</textcolor>
 		</control>
 
 		<control>
 			<description>Description1</description>
 			<type>textboxscrollup</type>
 			<id>26</id>
-			<posX>510</posX>
-			<posY>500</posY>
-			<width>560</width>
-			<height>130</height>
+			<posX>736</posX>
+			<posY>618</posY>
+			<width>805</width>
+			<height>200</height>
 			<label>-</label>
-			<textcolor>ff85cffe</textcolor>
+			<textcolor>ffffffff</textcolor>
 		</control>
 
 	</control>
-
+<import>common.time.xml</import>
+<import>avalon.version.xml</import>
 </controls>
 </window>

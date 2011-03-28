@@ -4,41 +4,43 @@
 <defaultcontrol>19</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <controls>
-<import>common.window.xml</import>
 <import>settings.menu.xml</import>
 
 	<control>
-		<type>image</type>
-		<id>1</id>
-		<posX>434</posX>
-		<posY>60</posY>
-		<width>820</width>
-		<height>640</height>
-		<texture>settings_main_panel.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>label</type>
+		<description>Settings label</description>
+		<id>0</id>
+		<posX>189</posX>
+		<posY>99</posY>
+		<width>500</width>
+		<label>100708</label>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
 	</control>
 	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>504</posX>
-		<posY>125</posY>
-		<width>650</width>
-		<height>100</height>
+		<posX>766</posX>
+		<posY>264</posY>
+		<width>1000</width>
 		<label>100708</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<valign>middle</valign>
+		<font>fontB22</font>
 	</control>
 	
 	<control>
 		<description>buttons</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>943</posX>
-		<posY>477</posY>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<posX>1270</posX>
+		<posY>650</posY>
 		<layout>StackLayout</layout>
 		<control>
 			<description>add button</description>
@@ -47,11 +49,14 @@
 			<label>200039</label>
 			<onup>17</onup>
 			<onright>2</onright>
-			<width>259</width>
-			<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 		</control>
 
 		<control>
@@ -60,11 +65,14 @@
 			<id>20</id>
 			<label>200040</label>
 			<onright>3</onright>
-			<width>259</width>
-			<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 		</control>
 
 		<control>
@@ -74,11 +82,14 @@
 			<label>886</label>
 			<ondown>99</ondown>
 			<onright>5</onright>
-			<width>259</width>
-			<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 		</control>
 
 	</control>
@@ -86,10 +97,10 @@
 	<control>
 		<description>skip steps seconds</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>490</posX>
-		<posY>295</posY>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<posX>736</posX>
+		<posY>365</posY>
 		<layout>StackLayout(0)</layout>
 		
 		<control>
@@ -130,17 +141,17 @@
 	<control>
 		<description>skip steps seconds</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>490</posX>
-		<posY>263</posY>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<posX>736</posX>
+		<posY>333</posY>
 		<layout>StackLayout(36)</layout>
 		<control>
 			<type>label</type>
 			<description>skip steps seconds</description>
 			<id>1</id>
 			<label>9997</label>
-			<font>font13</font>
+			<font>font12</font>
 		</control>
 
 		<control>
@@ -196,10 +207,10 @@
 	<control>
 		<description>skip steps seconds</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>768</posX>
-		<posY>295</posY>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<posX>1014</posX>
+		<posY>365</posY>
 		<layout>StackLayout(0)</layout>
 		
 		<control>
@@ -272,10 +283,10 @@
 	<control>
 		<description>skip steps minutes</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>768</posX>
-		<posY>263</posY>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<posX>1014</posX>
+		<posY>333</posY>
 		<layout>StackLayout(36)</layout>
 		<control>
 			<description>skip steps minutes</description>
@@ -385,10 +396,10 @@
 	<control>
 		<description>skip steps seconds</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>1024</posX>
-		<posY>295</posY>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<posX>1270</posX>
+		<posY>365</posY>
 		<layout>StackLayout(0)</layout>
 		
 		<control>
@@ -428,10 +439,10 @@
 	<control>
 		<description>skip steps hours</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>1024</posX>
-		<posY>263</posY>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<posX>1270</posX>
+		<posY>333</posY>
 		<layout>StackLayout(36)</layout>
 		<control>
 			<description>skip steps hours</description>
@@ -493,15 +504,15 @@
 	<control>
 		<description>skip steps labels</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<dimColor>0xFFFFFFFF</dimColor>
 		<control>
 			<description>Current config static</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>490</posX>
-			<posY>590</posY>
+			<posX>736</posX>
+			<posY>650</posY>
 			<label>6028</label>
 		</control>
 
@@ -509,12 +520,13 @@
 			<description>Current config dynamic</description>
 			<type>label</type>
 			<id>21</id>
-			<posX>490</posX>
-			<posY>620</posY>
+			<posX>736</posX>
+			<posY>690</posY>
 			<label>15,30,60,300</label>
 		</control>
 
 	</control>
-
+<import>common.time.xml</import>
+<import>avalon.version.xml</import>
 </controls>
 </window>

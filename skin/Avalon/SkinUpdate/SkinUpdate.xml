@@ -3,7 +3,7 @@
   <patch>
     <version>1.0.0.32</version>
     <minversion>1.0.0.0</minversion>
-    <url>http://192.168.50.192/test/AvalonPatch.exe</url>
-    <changelog>http://192.168.50.192/test/ChangeLog.rtf</changelog>
+    <url>http://nco.dnsalias.org/test/AvalonPatch.exe</url>
+    <changelog>http://nco.dnsalias.org/test/ChangeLog.rtf</changelog>
   </patch>
 </Avalon>

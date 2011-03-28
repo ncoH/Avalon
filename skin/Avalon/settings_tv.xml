@@ -1,142 +1,168 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>700</id>
-<defaultcontrol>10004</defaultcontrol>
+<defaultcontrol>24</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <controls>
-<import>common.window.xml</import>
-<import>settings.menu.xml</import>
-
+	<import>settings.menu.xml</import>
+	
 	<control>
-		<type>image</type>
-		<id>1</id>
-		<posX>434</posX>
-		<posY>60</posY>
-		<width>820</width>
-		<height>640</height>
-		<texture>settings_main_panel.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>label</type>
+		<description>Settings label</description>
+		<id>0</id>
+		<posX>189</posX>
+		<posY>99</posY>
+		<width>500</width>
+		<label>605</label>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
 	</control>
 	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>504</posX>
-		<posY>125</posY>
+		<posX>766</posX>
+		<posY>264</posY>
 		<width>500</width>
-		<height>100</height>
 		<label>605</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<valign>middle</valign>
+		<font>fontB22</font>
 	</control>
 
 	<control>
 		<description>buttons</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>490</posX>
-		<posY>260</posY>
-		<layout>GridLayout(2, 7, 42, 0, 1)</layout>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<posX>736</posX>
+		<posY>360</posY>
+		<layout>GridLayout(2, 0, 1, 0, 1)</layout>
 		
 		<control>
 			<description>MPEG-2 Video Codecs</description>
 			<type>button</type>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>24</id>
 			<label>6000</label>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 			<onup>37</onup>
 		</control>
 
 		<control>
 			<description>H.264 Video Codecs</description>
 			<type>button</type>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>35</id>
 			<label>6036</label>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 		</control>
 
 		<control>
 			<description>Audio Codecs</description>
 			<type>button</type>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>25</id>
 			<label>6001</label>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 		</control>
 
 		<control>
 			<description>LATM AAC Audio Codecs</description>
 			<type>button</type>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>36</id>
 			<label>6039</label>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 		</control>
 
 		<control>
 			<description>Audio Renderer</description>
 			<type>button</type>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>33</id>
 			<label>6002</label>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 		</control>
 
 		<control>
 			<description>De-interlacing</description>
 			<type>button</type>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>27</id>
 			<label>6003</label>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 		</control>
 
 		<control>
 			<description>Aspect Ratio</description>
 			<type>button</type>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>28</id>
 			<label>6004</label>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 			<ondown>31</ondown>
 		</control>
 
 		<control>
 			<description>Recording options</description>
 			<type>button</type>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>31</id>
 			<label>6007</label>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 			<hyperlink>701</hyperlink>
 			<onup>28</onup>
 		</control>
@@ -144,63 +170,79 @@
 		<control>
 			<description>Automatically turn TV on</description>
 			<type>button</type>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>30</id>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 			<label>6006</label>
 		</control>
 
 		<control>
 			<description>Timeshift usage mode</description>
 			<type>button</type>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>26</id>
 			<label>777</label>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 		</control>
 
 		<control>
 			<description>Timeshift Buffer</description>
 			<type>button</type>
 			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>29</id>
 			<label>6005</label>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 		</control>
 
 		<control>
 			<description>Channelsorting</description>
 			<type>button</type>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>32</id>
 			<label>6008</label>
 			<hyperlink>702</hyperlink>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 		</control>
 
 		<control>
 			<description>DVB Guide</description>
 			<type>button</type>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>34</id>
 			<label>6009</label>
 			<ondown>37</ondown>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 			<hyperlink>706</hyperlink>
 		</control>
 
@@ -208,18 +250,22 @@
 		<control>
 			<description>XMLTV EPG Grabber</description>
 			<type>button</type>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>37</id>
 			<label>6010</label>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 			<hyperlink>707</hyperlink>
 			<ondown>24</ondown>
 		</control>
 
 	</control>
-
+<import>common.time.xml</import>
+<import>avalon.version.xml</import>
 </controls>
 </window>

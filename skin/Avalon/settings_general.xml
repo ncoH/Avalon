@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>705</id><defaultcontrol>10002</defaultcontrol>
+	<id>705</id>
+	<defaultcontrol>10</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<define>#defaultcontrol.onleft:10001</define>
 <controls>
-	<import>common.window.xml</import>
 	<import>settings.menu.xml</import>
+	
 	<control>
-		<type>image</type>
-		<id>1</id>
-		<posX>434</posX>
-		<posY>60</posY>
-		<width>820</width>
-		<height>640</height>
-		<texture>settings_main_panel.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>label</type>
+		<description>Settings label</description>
+		<id>0</id>
+		<posX>189</posX>
+		<posY>99</posY>
+		<width>500</width>
+		<label>128</label>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
 	</control>
 	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>504</posX>
-		<posY>125</posY>
+		<posX>766</posX>
+		<posY>264</posY>
 		<width>500</width>
-		<height>100</height>
 		<label>128</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<valign>middle</valign>
+		<font>fontB22</font>
 	</control>
 	
 	<control>
 		<description>buttons</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>489</posX>
-		<posY>260</posY>
-		<layout>GridLayout(2, 7, 120, 0, 1)</layout>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<posX>736</posX>
+		<posY>360</posY>
+		<layout>StackLayout</layout>
 		
 		<control>
 			<description>Skin</description>
@@ -46,9 +51,14 @@
 			<label>166</label>
 			<onup>17</onup>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-			<textcolor>ff85cffe</textcolor>
-			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
-			<width>334</width>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
+			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
 		
 		<control>
@@ -56,15 +66,19 @@
 			<type>selectbutton</type>
 			<id>11</id>
 			<label>248</label>
-			<width>334</width>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
 			<texturebg>settings_button_medium_focus.png</texturebg>
 			<textXOff>9</textXOff>
 			<textYOff>5</textYOff>
 			<textYOff2>5</textYOff2>
 			<textXOff2>25</textXOff2>
-			<textcolor>ff85cffe</textcolor>
-			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
 		
 		<control>
@@ -72,13 +86,17 @@
 			<type>togglebutton</type>
 			<id>12</id>
 			<label>1047</label>
-			<width>334</width>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
 			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
 			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
 			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
-			<textcolor>ff85cffe</textcolor>
-			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
 		
 		<control>
@@ -86,13 +104,17 @@
 			<type>togglebutton</type>
 			<id>13</id>
 			<label>360</label>
-			<width>334</width>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
 			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
 			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
 			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
-			<textcolor>ff85cffe</textcolor>
-			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
 		
 		<control>
@@ -100,12 +122,16 @@
 			<type>button</type>
 			<id>21</id>
 			<label>6024</label>
-			<width>334</width>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
 			<hyperlink>708</hyperlink>
 			<ondown>99</ondown>
-			<textcolor>ff85cffe</textcolor>
-			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
 		
 	</control>
@@ -118,15 +144,18 @@
 	</control>
 	
 	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<description>Skin preview image</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>869</posX>
-		<posY>273</posY>
+		<posX>1278</posX>
+		<posY>370</posY>
 		<width>311</width>
 		<height>175</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">settings_preview.png</texture>
 	</control>
-	
+<import>common.time.xml</import>
+<import>avalon.version.xml</import>
 </controls>
 </window>

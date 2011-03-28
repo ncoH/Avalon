@@ -533,8 +533,8 @@
 		<id>2</id>
 		<posX>586</posX>
 		<posY>157</posY>
-		<width>33</width>
-		<height>33</height>
+		<width>35</width>
+		<height>34</height>
 		<textureUp>page_up_nofocus.png</textureUp>
 		<textureDown>page_down_nofocus.png</textureDown>
 		<textureUpFocus>page_up_focus.png</textureUpFocus>

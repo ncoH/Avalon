@@ -23,21 +23,39 @@
 	</control>
 	
 	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
 		<description>Settings label</description>
 		<id>121</id>
 		<posX>185</posX>
 		<posY>38</posY>
 		<width>500</width>
-		<label>Skin Settings</label>
+		<label>897</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>font22</font>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>label</type>
+		<description>Settings label</description>
+		<id>0</id>
+		<posX>189</posX>
+		<posY>99</posY>
+		<width>500</width>
+		<label>Skin Settings</label>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
 	</control>
 	
     <control>
       <type>group</type>
       <description>group element</description>
-      <animation effect="fade" time="200" delay="200">windowopen</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	  <posX>130</posX>
 	  <posY>262</posY>
       <layout>StackLayout</layout>
@@ -83,5 +101,6 @@
       </control>
     </control>
     <import>common.time.xml</import>
+	<import>avalon.version.xml</import>
   </controls>
 </window>
