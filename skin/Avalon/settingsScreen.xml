@@ -47,14 +47,14 @@
 			<description>UI Calibration button</description>
 			<type>button</type>
 			<id>2</id>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<width>956</width>
+			<height>52</height>
+			<textXOff>30</textXOff>
+			<textYOff>8</textYOff>
+			<textureFocus>settings_button_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
 			<textcolor>ffffffff</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-			<width>471</width>
-			<height>52</height>
-			<textXOff>28</textXOff>
-			<textYOff>8</textYOff>
 			<label>213</label>
 			<hyperlink>10</hyperlink>
 			<onup>4</onup>
@@ -65,14 +65,14 @@
 			<description>Screen Calibration button</description>
 			<type>button</type>
 			<id>3</id>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<width>956</width>
+			<height>52</height>
+			<textXOff>30</textXOff>
+			<textYOff>8</textYOff>
+			<textureFocus>settings_button_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
 			<textcolor>ffffffff</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-			<width>471</width>
-			<height>52</height>
-			<textXOff>28</textXOff>
-			<textYOff>8</textYOff>
 			<label>214</label>
 			<hyperlink>11</hyperlink>
 			<onleft>#defaultcontrol.onleft</onleft>
@@ -82,14 +82,14 @@
 			<description>Scroll speed button</description>
 			<type>button</type>
 			<id>4</id>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<width>956</width>
+			<height>52</height>
+			<textXOff>30</textXOff>
+			<textYOff>8</textYOff>
+			<textureFocus>settings_button_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
 			<textcolor>ffffffff</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-			<width>471</width>
-			<height>52</height>
-			<textXOff>28</textXOff>
-			<textYOff>8</textYOff>
 			<label>673</label>
 			<hyperlink>31</hyperlink>
 			<ondown>2</ondown>

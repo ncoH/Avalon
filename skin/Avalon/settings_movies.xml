@@ -1,55 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>703</id>
-<defaultcontrol>10006</defaultcontrol>
+<defaultcontrol>24</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <controls>
-<import>common.window.xml</import>
-<import>settings.menu.xml</import>
-
+	<import>settings.menu.xml</import>
+	
 	<control>
-		<type>image</type>
-		<id>1</id>
-		<posX>434</posX>
-		<posY>60</posY>
-		<width>820</width>
-		<height>640</height>
-		<texture>settings_main_panel.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>label</type>
+		<description>Settings label</description>
+		<id>0</id>
+		<posX>189</posX>
+		<posY>99</posY>
+		<width>500</width>
+		<label>3</label>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
 	</control>
 	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>504</posX>
-		<posY>125</posY>
+		<posX>766</posX>
+		<posY>264</posY>
 		<width>500</width>
-		<height>100</height>
 		<label>3</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<valign>middle</valign>
+		<font>fontB22</font>
 	</control>
 	
 	<control>
 		<description>buttons</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>490</posX>
-		<posY>260</posY>
-		<layout>GridLayout(2, 7, 42, 0, 1)</layout>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<posX>736</posX>
+		<posY>360</posY>
+		<layout>GridLayout(1, 0, 1, 0, 1)</layout>
 		<control>
 			<description>MPEG-2 Video Codecs</description>
 			<type>button</type>
 			<id>24</id>
 			<label>6000</label>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<width>956</width>
+			<height>52</height>
+			<textXOff>30</textXOff>
+			<textYOff>8</textYOff>
+			<textureFocus>settings_button_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<onup>17</onup>
 		</control>
 
@@ -58,11 +63,14 @@
 			<type>button</type>
 			<id>29</id>
 			<label>6036</label>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<width>956</width>
+			<height>52</height>
+			<textXOff>30</textXOff>
+			<textYOff>8</textYOff>
+			<textureFocus>settings_button_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 		</control>
 
 		<control>
@@ -71,10 +79,14 @@
 			<id>25</id>
 			<label>6001</label>
 			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<width>956</width>
+			<height>52</height>
+			<textXOff>30</textXOff>
+			<textYOff>8</textYOff>
+			<textureFocus>settings_button_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 		</control>
 
 		<control>
@@ -82,27 +94,34 @@
 			<type>button</type>
 			<id>27</id>
 			<label>6002</label>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<width>956</width>
+			<height>52</height>
+			<textXOff>30</textXOff>
+			<textYOff>8</textYOff>
+			<textureFocus>settings_button_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 		</control>
 
 		<control>
-			<description>Apect Ratio</description>
+			<description>Aspect Ratio</description>
 			<type>button</type>
 			<id>28</id>
 			<label>6004</label>
-			<width>334</width>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<width>956</width>
+			<height>52</height>
+			<textXOff>30</textXOff>
+			<textYOff>8</textYOff>
+			<textureFocus>settings_button_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<ondown>99</ondown>
 		</control>
 
 	</control>
-
+<import>common.time.xml</import>
+<import>avalon.version.xml</import>
 </controls>
 </window>

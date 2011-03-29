@@ -542,7 +542,7 @@
 		<align>left</align>
 		<font>font12</font>
 		<reverse>yes</reverse>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>ffffff</textcolor>
 		<disabledcolor>60ffffff</disabledcolor>
 		<spintype>text</spintype>
 	</control>

@@ -35,135 +35,225 @@
 		<font>fontB22</font>
 	</control>
 	
+	<!--            :: Horizontal Speed ::            -->
+		
 	<control>
-		<description>group element</description>
-		<type>group</type>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		
-		
-		<control>
-			<description>Horizontal Speed label</description>
-			<type>label</type>
-			<id>1</id>
-			<posX>736</posX>
-			<posY>360</posY>
-			<label>1442</label>
-		</control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>360</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(2)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>360</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(2)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Horizontal Speed label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>766</posX>
+		<posY>368</posY>
+		<label>1442</label>
+	</control>
 
-		<control>
-			<description>Horizontal Speed select</description>
-			<type>spincontrol</type>
-			<id>2</id>
-			<posX>1075</posX>
-			<posY>367</posY>
-			<align>right</align>
-			<onup>17</onup>
-			<ondown>4</ondown>
-			<onleft>2</onleft>
-			<onright>2</onright>
-			<width>37</width>
-		<height>37</height>
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Horizontal Speed select</description>
+		<type>spincontrol</type>
+		<id>2</id>
+		<posX>1590</posX>
+		<posY>367</posY>
+		<align>right</align>
+		<onup>17</onup>
+		<ondown>4</ondown>
+		<onleft>#defaultcontrol.onleft</onleft>
+		<onright>2</onright>
 		<reverse>yes</reverse>
-		</control>
+		<textXOff>54</textXOff>
+		<textYOff>5</textYOff>
+	</control>
 		
+	<!--            :: Vertical Speed ::            -->
+		
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>412</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(4)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>412</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(4)</visible>
+	</control>
+		
+	<control>
+		<description>Vertical Speed label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>766</posX>
+		<posY>420</posY>
+		<label>1443</label>
+	</control>
 
-		<control>
-			<description>Vertical Speed label</description>
-			<type>label</type>
-			<id>1</id>
-			<posX>736</posX>
-			<posY>412</posY>
-			<label>1443</label>
-		</control>
-
-		<control>
-			<description>Vertical Speed select</description>
-			<type>spincontrol</type>
-			<id>4</id>
-			<posX>1075</posX>
-			<posY>419</posY>
-			<align>right</align>
-			<onup>2</onup>
-			<ondown>3</ondown>
-			<onleft>4</onleft>
-			<onright>4</onright>
-			<width>37</width>
-		<height>37</height>
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Vertical Speed select</description>
+		<type>spincontrol</type>
+		<id>4</id>
+		<posX>1590</posX>
+		<posY>419</posY>
+		<align>right</align>
+		<onup>2</onup>
+		<ondown>3</ondown>
+		<onleft>#defaultcontrol.onleft</onleft>
+		<onright>4</onright>
+		<textXOff>54</textXOff>
+		<textYOff>5</textYOff>
 		<reverse>yes</reverse>
-		</control>
+	</control>
 		
+	<!--            :: FPS ::            -->
 		
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>464</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(3)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>464</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(3)</visible>
+	</control>
 
-		<control>
-			<description>FPS label</description>
-			<type>label</type>
-			<id>1</id>
-			<posX>736</posX>
-			<posY>464</posY>
-			<label>973</label>
-		</control>
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>FPS label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>766</posX>
+		<posY>472</posY>
+		<label>973</label>
+	</control>
 
-		<control>
-			<description>FPS select</description>
-			<type>spincontrol</type>
-			<id>3</id>
-			<posX>1075</posX>
-			<posY>473</posY>
-			<align>right</align>
-			<onup>4</onup>
-			<ondown>99</ondown>
-			<onleft>3</onleft>
-			<onright>3</onright>
-			<width>37</width>
-		<height>37</height>
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>FPS select</description>
+		<type>spincontrol</type>
+		<id>3</id>
+		<posX>1590</posX>
+		<posY>471</posY>
+		<align>right</align>
+		<onup>4</onup>
+		<ondown>99</ondown>
+		<onleft>#defaultcontrol.onleft</onleft>
+		<onright>3</onright>
+		<textXOff>54</textXOff>
+		<textYOff>5</textYOff>
 		<reverse>yes</reverse>
-		</control>
+	</control>
 
-		<control>
-			<description>currentFPS count</description>
-			<type>label</type>
-			<id>1</id>
-			<posX>1070</posX>
-			<posY>565</posY>
-			<align>right</align>
-			<label>#fps</label>
-		</control>
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>currentFPS count</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1070</posX>
+		<posY>565</posY>
+		<align>right</align>
+		<label>#fps</label>
+	</control>
 
-		<control>
-			<description>Example label</description>
-			<type>label</type>
-			<id>1</id>
-			<posX>736</posX>
-			<posY>565</posY>
-			<width>711</width>
-			<label>675</label>
-			<textcolor>ffffffff</textcolor>
-		</control>
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Example label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>565</posY>
+		<width>711</width>
+		<label>675</label>
+		<textcolor>ffffffff</textcolor>
+	</control>
 
-		<control>
-			<description>TagLine value</description>
-			<type>fadelabel</type>
-			<id>25</id>
-			<posX>736</posX>
-			<posY>565</posY>
-			<width>560</width>
-			<label>-</label>
-			<textcolor>ffffffff</textcolor>
-		</control>
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>TagLine value</description>
+		<type>fadelabel</type>
+		<id>25</id>
+		<posX>736</posX>
+		<posY>565</posY>
+		<width>560</width>
+		<label>-</label>
+		<textcolor>ffffffff</textcolor>
+	</control>
 
-		<control>
-			<description>Description1</description>
-			<type>textboxscrollup</type>
-			<id>26</id>
-			<posX>736</posX>
-			<posY>618</posY>
-			<width>805</width>
-			<height>200</height>
-			<label>-</label>
-			<textcolor>ffffffff</textcolor>
-		</control>
-
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Description1</description>
+		<type>textboxscrollup</type>
+		<id>26</id>
+		<posX>736</posX>
+		<posY>618</posY>
+		<width>805</width>
+		<height>200</height>
+		<label>-</label>
+		<textcolor>ffffffff</textcolor>
 	</control>
 <import>common.time.xml</import>
 <import>avalon.version.xml</import>
