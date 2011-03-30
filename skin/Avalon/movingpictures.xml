@@ -159,11 +159,11 @@ multiple view modes.
       <visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]</visible>
     </control>
     <!--            :: IMPORT ::            -->
-    <import tag="Background">movingpictures.background.noinfo.thumbs.XL.xml</import>
+    <import tag="Background">movingpictures.background.noinfo.xml</import>
     <import>common.time.xml</import>
     <import>movingpictures.hiddenmenu.xml</import>
     <import tag="Views">movingpictures.views.noinfo.xml</import>
-    <import tag="Facade">movingpictures.facade.noinfo.thumbs.XL.xml</import>
+    <import tag="Facade">movingpictures.facade.noinfo.xml</import>
     <import>movingpictures.Info.xml</import>
     <import tag="Mediainfo">movingpictures.mediainfo.noinfo.xml</import>
     <import>movingpictures.details.xml</import>

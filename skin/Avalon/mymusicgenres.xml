@@ -7,7 +7,7 @@
 <define>#useSelectedFanart:Yes</define>
 <controls>
 
-	<import>common.window.music.xml</import>
+	<import>common.window.music.genres.xml</import>
 	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -26,258 +26,65 @@
 <import>common.time.xml</import>
 	
 	<control>
-		<type>actiongroup</type>
-		<description>action menu</description>
-		<defaultcontrol>2</defaultcontrol>
-		<onexit>50</onexit>
-		<buttonX>0</buttonX>
-		<buttonY>0</buttonY>
-		<buttonwidth>0</buttonwidth>
-		<buttonheight>0</buttonheight>
-		<width>1294</width>
-		<height>1080</height>
-		<dimColor>00ffffff</dimColor>
-		<animation effect="Fade" time="100">WindowClose</animation>
-		
-		<control>
-			<type>image</type>
-			<id>0</id>
-			<width>1294</width>
-			<height>1080</height>
-			<texture>semi_trans_back_hidden_menu.png</texture>
-			<animation effect="fade" time="200">windowopen</animation>
-			<animation effect="fade" time="400">windowclose</animation>
-		</control>
-		
-		<control>
-		<type>group</type>
-			<control>
-				<description>Heading text label</description>
-				<type>label</type>
-				<id>1</id>
-				<posX>192</posX>
-				<posY>88</posY>
-				<label>924</label>
-				<font>Segoe Light22</font>
-				<textcolor>ffffff</textcolor>
-			</control>
-		
-			<control>
-				<description>button group</description>
-				<type>group</type>
-				<posX>135</posX>
-				<posY>188</posY>>
-				<layout>StackLayout(1)</layout>
-				
-				<control>
-					<description>View-As</description>
-					<type>button</type>
-					<id>2</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>-</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
-					<textYOff>17</textYOff>
-					<label>100</label>
-					<onright>50</onright>
-					<onleft>50</onleft>
-					<onup>15</onup>
-					<ondown>6</ondown>
-				</control>
-
-				<control>
-					<description>Switch View</description>
-					<type>button</type>
-					<id>6</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>-</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
-					<textYOff>17</textYOff>
-					<label>457</label>
-					<onright>50</onright>
-					<onleft>50</onleft>
-					<onup>2</onup>
-					<ondown>3</ondown>
-				</control>
-
-				<control>
-					<description>Sort</description>
-					<type>sortbutton</type>
-					<id>3</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>-</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
-					<textYOff>17</textYOff>
-					<label>103</label>
-					<offsetSortButtonX>260</offsetSortButtonX>
-					<offsetSortButtonY>27</offsetSortButtonY>
-					<onright>50</onright>
-					<onleft>50</onleft>
-					<onup>6</onup>
-					<ondown>12</ondown>
-				</control>
-
-				<control>
-					<description>Play CD</description>
-					<type>button</type>
-					<id>12</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>-</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
-					<textYOff>17</textYOff>
-					<label>890</label>
-					<onright>50</onright>
-					<onleft>50</onleft>
-					<onup>3</onup>
-					<ondown>11</ondown>
-				</control>
-<!--
-			<control>
-					<description>Eject Disc</description>
-					<type>button</type>
-					<id>13</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>50</textXOff>
-					<textYOff>17</textYOff>
-					<label>654</label>
-					<action>100</action>
-					<onright>50</onright>
-					<onleft>50</onleft>
-				</control>
-				-->
-
-				<control>
-					<description>Now playing</description>
-					<type>button</type>
-					<id>11</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>-</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
-					<textYOff>17</textYOff>
-					<label>4540</label>
-					<hyperlink>510</hyperlink>
-					<onright>50</onright>
-					<onleft>50</onleft>
-					<onup>12</onup>
-					<ondown>9</ondown>
-				</control>
-
-				<control>
-					<description>Current Playlist</description>
-					<type>button</type>
-					<id>9</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>-</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
-					<textYOff>17</textYOff>
-					<label>4555</label>
-					<action>33</action>
-					<onright>50</onright>
-					<onleft>50</onleft>
-					<onup>11</onup>
-					<ondown>10</ondown>
-				</control>
-
-				<control>
-					<description>My Playlists</description>
-					<type>button</type>
-					<id>10</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>-</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
-					<textYOff>17</textYOff>
-					<label>983</label>
-					<onright>50</onright>
-					<onleft>50</onleft>
-					<onup>9</onup>
-					<ondown>200</ondown>
-				</control>
-
-				<control>
-					<description>Search</description>
-					<type>button</type>
-					<id>200</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>-</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
-					<textYOff>17</textYOff>
-					<label>137</label>
-					<hyperlink>30885</hyperlink>
-					<onright>50</onright>
-					<onleft>50</onleft>
-					<onup>10</onup>
-					<ondown>15</ondown>
-					<visible>plugin.isenabled(Search music)</visible>
-				</control>
-
-
-				<control>
-					<description>Lyrics</description>
-					<type>button</type>
-					<id>15</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>-</textureNoFocus>
-					<width>400</width>
-					<height>71</height>
-					<textXOff>50</textXOff>
-					<textYOff>17</textYOff>
-					<label>#SkinTranslation.Translations.mylyrics.Label</label>
-					<hyperlink>90478</hyperlink>
-					<onright>50</onright>
-					<onleft>50</onleft>
-					<onup>200</onup>
-					<ondown>2</ondown>
-                    <visible>plugin.isenabled(My Lyrics)</visible>
-				</control>	
-
-				<!--
-				<control>
-					<description>Lastfmbutton</description>
-					<type>button</type>
-					<id>106</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>50</textXOff>
-					<textYOff>17</textYOff>
-					<label>34000</label>
-					<hyperlink>7890</hyperlink>
-					<onright>50</onright>
-					<onleft>50</onleft>
-					<onup>10</onup>
-					<onleft>105</onleft>
-					<ondown>99</ondown>
-				</control>
-				-->
-
-
-			</control>
-			
-		</control>
-
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<description>Poster shadow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>423</posX>
+		<posY>168</posY>
+		<width>486</width>
+		<height>487</height>
+		<texture>list_music_shadow.png</texture>
+		<visible>[[facadeview.list|facadeview.album] + control.hasthumb(500)] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
-
-
-	<import>common.facade.music.xml</import>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<description>Poster glow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>423</posX>
+		<posY>168</posY>
+		<width>486</width>
+		<height>487</height>
+		<texture>list_music_glow.png</texture>
+		<visible>[[facadeview.list|facadeview.album] + control.hasthumb(500)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<id>0</id>
+		<posX>490</posX>
+		<posY>236</posY>
+		<width>350</width>
+		<height>350</height>
+		<visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<type>image</type>
+		<id>500</id>
+		<posX>490</posX>
+		<posY>236</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#selectedthumb</texture>
+		<visible>[facadeview.list|facadeview.album] + !string.equals(#Avalon.hidePoster,yes)</visible>
+	</control>
 	
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
@@ -300,60 +107,8 @@
 		<texture>hiddenmenu_tab_up.png</texture>
 		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
 	</control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<description>Poster shadow</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>423</posX>
-		<posY>168</posY>
-		<width>486</width>
-		<height>487</height>
-		<texture>list_music_shadow.png</texture>
-		<visible>facadeview.list|facadeview.album</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<description>Poster glow</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>423</posX>
-		<posY>168</posY>
-		<width>486</width>
-		<height>487</height>
-		<texture>list_music_glow.png</texture>
-		<visible>facadeview.list|facadeview.album</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<id>0</id>
-		<posX>490</posX>
-		<posY>236</posY>
-		<width>350</width>
-		<height>350</height>
-		<visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
-		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
-	</control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<type>image</type>
-		<id>500</id>
-		<posX>490</posX>
-		<posY>236</posY>
-		<width>350</width>
-		<height>350</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#selectedthumb</texture>
-		<visible>[facadeview.list|facadeview.album]</visible>
-	</control>
-	
+<import>mymusicgenres.hiddenmenu.xml</import>
+<import>common.facade.music.xml</import>	
 <import>common.overlay.xml</import>
 </controls>
 </window>

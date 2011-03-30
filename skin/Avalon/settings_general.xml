@@ -63,7 +63,7 @@
 		
 		<control>
 			<description>Language</description>
-			<type>selectbutton</type>
+			<type>button</type>
 			<id>11</id>
 			<label>248</label>
 			<width>471</width>
@@ -71,11 +71,7 @@
 			<textXOff>28</textXOff>
 			<textYOff>8</textYOff>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-			<texturebg>settings_button_medium_focus.png</texturebg>
-			<textXOff>9</textXOff>
-			<textYOff>5</textYOff>
-			<textYOff2>5</textYOff2>
-			<textXOff2>25</textXOff2>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
 			<textcolor>ffffffff</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<onleft>#defaultcontrol.onleft</onleft>

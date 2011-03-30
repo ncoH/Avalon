@@ -25,9 +25,13 @@
 	
 <import>common.time.xml</import>
 
+		<!--            :: Overlays ::            -->	
+
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<description>Poster shadow</description>
 		<type>image</type>
 		<id>1</id>
@@ -36,12 +40,14 @@
 		<width>486</width>
 		<height>487</height>
 		<texture>list_music_shadow.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list+Control.IsVisible(50)] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<description>Poster glow</description>
 		<type>image</type>
 		<id>1</id>
@@ -50,25 +56,29 @@
 		<width>486</width>
 		<height>487</height>
 		<texture>list_music_glow.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list+Control.IsVisible(50)] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<id>0</id>
 		<type>image</type>
 		<posX>490</posX>
 		<posY>236</posY>
 		<width>350</width>
 		<height>350</height>
-		<visible>facadeview.list+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
+		<visible>[facadeview.list+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]] + !string.equals(#Avalon.hidePoster,yes)</visible>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
 	</control>
 	
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<description>Cover Art</description>
 		<type>image</type>
 		<id>500</id>
@@ -77,12 +87,32 @@
 		<width>350</width>
 		<height>350</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#selectedthumb</texture>
-		<visible>facadeview.list+Control.IsVisible(50)+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
+		<visible>[facadeview.list+Control.IsVisible(50)+!string.equals(#selectedthumb,defaultFolderBig.png)] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
-		<!--            :: Thumb View ::            -->	
-
+	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>440</posY>
+		<width>64</width>
+		<height>199</height>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50)</visible>
+	</control>
 	
+	<control>
+		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+		<id>1</id>
+		<type>image</type>
+		<posX>858</posX>
+		<posY>0</posY>
+		<texture>hiddenmenu_tab_up.png</texture>
+		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+	</control>	
 	
 <import>mymusic.hiddenmenu.xml</import>	
 <import>common.facade.music.xml</import>	

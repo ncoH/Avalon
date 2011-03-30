@@ -68,7 +68,7 @@
         <enableFocusZoom>no</enableFocusZoom>
         <scrollOffset>1</scrollOffset>
         <unfocusedAlpha>50</unfocusedAlpha>   
-		<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,550" time="400">focus</thumbAnimation>
+		<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,550" time="200">focus</thumbAnimation>
 		<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
     </control>
 		

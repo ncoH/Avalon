@@ -294,6 +294,8 @@
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<description>Poster shadow</description>
 		<type>image</type>
 		<id>1</id>
@@ -302,12 +304,14 @@
 		<width>486</width>
 		<height>487</height>
 		<texture>list_music_shadow.png</texture>
-		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
+		<visible>[facadeview.list | facadeview.album | facadeview.playlist] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<description>Poster glow</description>
 		<type>image</type>
 		<id>1</id>
@@ -316,32 +320,36 @@
 		<width>486</width>
 		<height>487</height>
 		<texture>list_music_glow.png</texture>
-		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
+		<visible>[facadeview.list | facadeview.album | facadeview.playlist] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<id>0</id>
 		<type>image</type>
 		<posX>490</posX>
 		<posY>236</posY>
 		<width>350</width>
 		<height>350</height>
-		<visible>[facadeview.list | facadeview.album | facadeview.playlist]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
+		<visible>[[facadeview.list | facadeview.album | facadeview.playlist]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]] + !string.equals(#Avalon.hidePoster,yes)</visible>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
 	</control>
 		
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<id>500</id>
 		<type>image</type>
 		<posX>490</posX>
 		<posY>236</posY>
 		<width>350</width>
 		<height>350</height>
-		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
+		<visible>[facadeview.list | facadeview.album | facadeview.playlist] + !string.equals(#Avalon.hidePoster,yes)</visible>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#selectedthumb</texture>
 	</control>
 	
