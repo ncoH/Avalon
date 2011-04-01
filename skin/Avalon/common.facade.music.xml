@@ -100,7 +100,6 @@
 				<enableFocusZoom>no</enableFocusZoom>
 				<zoomXPixels>0</zoomXPixels>
 				<zoomYPixels>0</zoomYPixels>
-				<keepaspectratio>no</keepaspectratio>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>

@@ -10,6 +10,52 @@
 		<height>1080</height>
 	</control>
 	
+		<!--            :: Overlays ::            -->	
+		
+	<control>
+		<description>background listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+        <posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>overlay_long.png</texture>
+		<visible>[facadeview.list | facadeview.album | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<description>viewport list</description>
+		<type>image</type>
+		<id>2020</id>
+		<posX>1</posX>
+		<posY>164</posY>
+		<width>1893</width>
+		<height>755</height>
+		<texture>viewport_long.png</texture>
+		<visible>[facadeview.list | facadeview.album] + Control.IsVisible(50)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>viewport thumbs</description>
+		<type>image</type>
+		<id>2021</id>
+		<posX>1</posX>
+		<posY>164</posY>
+		<width>1893</width>
+		<height>755</height>
+		<texture>viewport_thumbs.png</texture>
+		<visible>[facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>	
+	
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
@@ -25,20 +71,6 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 	
-	<control>
-		<description>Number of Files Label</description>
-		<type>label</type>
-		<id>1</id>
-		<posX>1216</posX>
-		<posY>690</posY>
-		<align>right</align>
-		<label>#itemtype: #itemcount</label>
-		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.list | facadeview.album | facadeview.playlist]+Control.IsVisible(50)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-
 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>

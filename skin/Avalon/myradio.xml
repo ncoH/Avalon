@@ -9,64 +9,17 @@
 	<import>common.time.xml</import>
 	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>552</posX>
-		<posY>30</posY>
+		<posX>185</posX>
+		<posY>38</posY>
 		<width>500</width>
-		<height>100</height>
-		<label>radio</label>
+		<label>665</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<visible>facadeview.list</visible>
-		<valign>middle</valign>
-	</control>
-	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
-		<id>1</id>
-		<posX>433</posX>
-		<posY>30</posY>
-		<width>500</width>
-		<height>100</height>
-		<label>radio</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
-		<align>center</align>
-		<valign>middle</valign>
-	</control>
-	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<description>listcontrol background</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>524</posX>
-        <posY>153</posY>
-		<width>725</width>
-		<height>482</height>
-		<texture>listcontrol_bg.png</texture>
-		<visible>facadeview.list</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<description>listcontrol background info</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>524</posX>
-        <posY>678</posY>
-		<width>725</width>
-		<height>51</height>
-		<texture>listcontrol_bg_info.png</texture>
-		<visible>facadeview.list</visible>
+		<font>font22</font>
+		<visible>facadeview.list | facadeview.smallicons | facadeview.largeicons</visible>
 	</control>
 	
 	
@@ -224,7 +177,7 @@
 
 	</control>
 
-	<import>common.facade.music.xml</import>
+	<import>common.facade.xml</import>
 
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
@@ -249,42 +202,58 @@
 	</control>
 	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<id>0</id>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Poster shadow</description>
 		<type>image</type>
-		<posX>134</posX>
-		<posY>213</posY>
-		<width>265</width>
-		<height>265</height>
-		<visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
-		<texture>DefaultMyradioBig.png</texture>
+		<id>1</id>
+		<posX>695</posX>
+		<posY>182</posY>
+		<width>486</width>
+		<height>487</height>
+		<texture>list_music_shadow.png</texture>
+		<visible>[facadeview.list+Control.IsVisible(50)]</visible>
 	</control>
 	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<id>500</id>
-		<type>image</type>
-		<posX>134</posX>
-		<posY>213</posY>
-		<width>265</width>
-		<height>265</height>
-		<visible>[facadeview.list|facadeview.album]+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
-		<texture>#selectedthumb</texture>
-	</control>
-
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Poster glow</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>92</posX>
-		<posY>169</posY>
+		<posX>695</posX>
+		<posY>182</posY>
+		<width>486</width>
+		<height>487</height>
+		<texture>list_music_glow.png</texture>
+		<visible>[facadeview.list+Control.IsVisible(50)]</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<id>0</id>
+		<type>image</type>
+		<posX>762</posX>
+		<posY>250</posY>
 		<width>350</width>
 		<height>350</height>
-		<texture>blackborders_music.png</texture>
-		<visible>facadeview.list|facadeview.album</visible>
+		<visible>facadeview.list+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Cover Art</description>
+		<type>image</type>
+		<id>500</id>
+		<posX>762</posX>
+		<posY>250</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#selectedthumb</texture>
+		<visible>[facadeview.list+Control.IsVisible(50)+!string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
 	</control>
 
 <import>common.overlay.xml</import>

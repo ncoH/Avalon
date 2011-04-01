@@ -5,9 +5,8 @@
 	<control>
 		<description>group element</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="1000">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<control>
 			<description>composite control consisting of a list control and a thumbnail panel</description>
 			<type>facadeview</type>
@@ -19,16 +18,6 @@
 				<id>50</id>
 				<onleft>2</onleft>
 				<onright>50</onright>
-				<scrollOffset>1</scrollOffset>
-				<posX>524</posX>
-				<posY>187</posY>
-				<height>458</height>
-				<spinPosX>560</spinPosX>
-				<spinPosY>688</spinPosY>
-				<spinAlign>left</spinAlign>
-				<folderPrefix></folderPrefix>
-				<folderSuffix></folderSuffix>
-				<textXOff>22</textXOff>
 				<dimColor>ffffffff</dimColor>
 			</control>
 
