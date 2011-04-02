@@ -27,7 +27,7 @@
 	    <onup>10</onup>
 	    <ondown>10</ondown>
 		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
