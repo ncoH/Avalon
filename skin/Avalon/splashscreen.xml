@@ -6,7 +6,7 @@
 		<description>splashscreen background</description>
 		<type>image</type>
 		<id>1</id>
-		<texture>splashscreen.jpg</texture>
+		<texture>splashscreen.png</texture>
 	</control>
 
 	<control>
@@ -14,7 +14,7 @@
 		<type>label</type>
 		<id>2</id>
 		<textsize>26</textsize>
-		<textcolor>#6aa5cb</textcolor>
+		<textcolor>#ffffff</textcolor>
 	</control>
 
 </controls>

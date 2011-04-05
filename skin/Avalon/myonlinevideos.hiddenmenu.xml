@@ -1,0 +1,176 @@
+<window>
+  <controls>
+
+    <control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<onexit>50</onexit>
+		<defaultcontrol>2</defaultcontrol>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<visible>!Control.HasFocus(50)+!control.isvisible(51)</visible>
+		<dimColor>00ffffff</dimColor>
+    <control>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<visible>!Control.HasFocus(50)+!control.isvisible(51)</visible>
+		</control>
+        <type>image</type>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)+!control.isvisible(51)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+			<animation effect="fade" time="250">visible</animation>
+			<animation effect="fade" time="0">hidden</animation>
+      </control>
+      <control>
+        <description>button group</description>
+        <type>group</type>        
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
+		<posX>69</posX>
+		<posY>215</posY>
+        <layout>StackLayout</layout>
+        <visible>!Control.HasFocus(50)+!control.isvisible(51)</visible>
+        <control>
+          <description>View-As</description>
+          <type>button</type>
+          <id>2</id>
+          <label>#OnlineVideos.Translation.LayoutList.Label</label>          
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <onup>13</onup>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+          <visible>no</visible>
+        </control>
+        <control>
+          <type>button</type>
+          <description>Search</description>
+          <id>10</id>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <label>#OnlineVideos.Translation.Search.Label</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+          <visible>no</visible>
+        </control>
+        <control>
+          <description>select category</description>
+          <type>selectbutton</type>
+          <id>9</id>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <label>#OnlineVideos.Translation.Category.Label</label>
+          <font>font11</font>
+          <height>37</height>
+          <textYOff>3</textYOff>
+          <visible>no</visible>
+        </control>        
+        <control>
+          <type>selectbutton</type>
+          <description>Max Results</description>
+          <id>5</id>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <label>#OnlineVideos.Translation.MaxResults.Label</label>
+          <font>font11</font>
+          <height>37</height>
+          <textYOff>3</textYOff>
+          <visible>no</visible>
+        </control>
+        <control>
+          <type>selectbutton</type>
+          <description>Order By</description>
+          <id>6</id>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <label>#OnlineVideos.Translation.SortOptions.Label</label>
+          <font>font11</font>
+          <height>37</height>
+          <textYOff>3</textYOff>
+          <visible>no</visible>
+        </control>
+        <control>
+          <type>selectbutton</type>
+          <description>TimeFrame button</description>
+          <id>7</id>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <label>#OnlineVideos.Translation.Timeframe.Label</label>
+          <font>font11</font>
+          <height>37</height>
+          <textYOff>3</textYOff>
+          <visible>no</visible>
+        </control>
+        <control>
+          <type>button</type>
+          <description>Update button</description>
+          <id>8</id>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <label>#OnlineVideos.Translation.Refresh.Label</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+          <visible>no</visible>
+        </control>
+        <control>
+          <type>button</type>
+          <description>Do Age Check</description>
+          <id>12</id>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <label>#OnlineVideos.Translation.EnterPin.Label</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+          <visible>no</visible>
+        </control>        
+        <control>
+          <type>button</type>
+          <description>Update Sites</description>
+          <id>13</id>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <ondown>2</ondown>
+          <label>#OnlineVideos.Translation.ManageSites.Label</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+          <hyperlink>4757</hyperlink>
+          <visible>no</visible>
+        </control>        
+      </control>
+    </control> 
+</controls>
+</window>

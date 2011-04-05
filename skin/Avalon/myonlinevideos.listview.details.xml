@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    		<control>
+			<type>actiongroup</type>
+			<description>action menu</description>
+			<defaultcontrol>80</defaultcontrol>
+			<onexit>50</onexit>
+			<buttonX>0</buttonX>
+			<buttonY>0</buttonY>
+			<buttonwidth>0</buttonwidth>
+			<buttonheight>0</buttonheight>
+			<textureFocus></textureFocus>
+			<textureNoFocus></textureNoFocus>
+			<width>1920</width>
+			<height>1080</height>
+			<dimColor>00ffffff</dimColor>
+			<control>
+				<type>image</type>
+				<posX>680</posX>
+				<posY>192</posY>
+				<width>1186</width>
+				<height>699</height>
+				<texture>info_bg.png</texture>
+				<visible>!Control.HasFocus(50)</visible>
+				<animation effect="slide" time="250" start="1200,0">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+			</control>
+			<control>
+				<description>default button</description>
+				<type>button</type>
+				<id>80</id>
+				<posX>1200</posX>
+				<posY>335</posY>
+				<width>38</width>
+				<height>39</height>
+				<onright>50</onright>
+				<onleft>50</onleft>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<textureFocus></textureFocus>
+				<textureNoFocus></textureNoFocus>
+				<font>font12</font>
+			</control>
+			
+			<control>
+				<animation effect="fade" time="250">WindowClose</animation>
+				<animation effect="slide" time="250" start="1200,0">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>info gfx</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>744</posX>
+				<posY>235</posY>
+				<width>58</width>
+				<height>59</height>
+				<texture>info.png</texture>
+				<visible>Control.HasFocus(80) + !string.contains(#selecteditem, ..)</visible>
+			</control>
+			
+			<control>
+				<animation effect="fade" time="250">WindowClose</animation>
+				<animation effect="slide" time="250" start="1200,0">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>Selected item Label</description>
+				<type>fadelabel</type>
+				<id>1</id>
+				<posX>838</posX>
+				<posY>235</posY>
+				<width>1000</width>
+				<label>#selecteditem</label>
+				<font>fontB20</font>
+				<visible>!Control.IsVisible(51) + !string.contains(#selecteditem, ..) + Control.HasFocus(80)</visible>
+			</control>    
+			
+			<control>
+				<animation effect="fade" time="250">WindowClose</animation>
+				<animation effect="slide" time="250" start="1200,0">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+			    <description>Description</description>
+				<type>textboxscrollup</type>
+				<id>0</id>
+				<posX>744</posX>
+				<posY>520</posY>
+				<width>1060</width>
+				<height>270</height>
+				<label>#OnlineVideos.desc</label>
+				<visible>Control.HasFocus(80)</visible>
+			</control>
+			
+			<control>
+				<animation effect="fade" time="250">WindowClose</animation>
+				<animation effect="slide" time="250" start="1200,0">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>Length Label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>744</posX>
+				<posY>328</posY>
+				<width>240</width>
+				<align>left</align>
+				<font>AvalonLight12</font>
+				<textcolor>6aa5cb</textcolor>
+				<label>#OnlineVideos.Translation.Runtime.Label:</label>
+				<visible>string.equals(#OnlineVideos.state, videos)+control.hastext(502) + !string.contains(#selecteditem, ..) + Control.HasFocus(80)</visible>
+			</control>  
+			
+			<control>
+				<animation effect="fade" time="250">WindowClose</animation>
+				<animation effect="slide" time="250" start="1200,0">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>Language Label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>744</posX>
+				<posY>368</posY>
+				<width>240</width>
+				<align>left</align>
+				<font>AvalonLight12</font>
+				<textcolor>6aa5cb</textcolor>
+				<label>248</label>
+				<visible>string.equals(#OnlineVideos.state, sites)+control.hastext(502) + !string.contains(#selecteditem, ..) + Control.HasFocus(80)</visible>
+			</control>
+			
+			<control>
+				<animation effect="fade" time="250">WindowClose</animation>
+				<animation effect="slide" time="250" start="1200,0">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>Videos Label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>744</posX>
+				<posY>328</posY>
+				<width>240</width>
+				<align>left</align>
+				<font>AvalonLight12</font>
+				<textcolor>6aa5cb</textcolor>
+				<label>#OnlineVideos.Translation.Videos.Label:</label>
+				<visible>string.equals(#OnlineVideos.state, categories)+control.hastext(502) + !string.contains(#selecteditem, ..) + Control.HasFocus(80)</visible>
+			</control>   
+			
+			<control>
+				<animation effect="fade" time="250">WindowClose</animation>
+				<animation effect="slide" time="250" start="1200,0">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>Sites Label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>744</posX>
+				<posY>328</posY>
+				<width>240</width>
+				<align>left</align>
+				<font>AvalonLight12</font>
+				<textcolor>6aa5cb</textcolor>
+				<label>#OnlineVideos.Translation.Sites.Label:</label>
+				<visible>string.equals(#OnlineVideos.state, groups)+control.hastext(502) + !string.contains(#selecteditem, ..) + Control.HasFocus(80)</visible>
+			</control>  
+			
+			<control>
+				<animation effect="fade" time="250">WindowClose</animation>
+				<animation effect="slide" time="250" start="1200,0">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>language of site | number of sites in group | number of videos in category | length of video</description>
+				<type>fadelabel</type>
+				<id>502</id>
+				<posX>858</posX>
+				<posY>328</posY>
+				<width>500</width>
+				<align>left</align>
+				<font>AvalonLight12</font>
+				<textcolor>ffffff</textcolor>
+				<label>#selecteditem2</label>
+				<visible>!string.equals(#OnlineVideos.state, details) + Control.HasFocus(80)</visible>
+			</control>
+		</control>
+  </controls>
+</window>

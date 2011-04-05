@@ -1,123 +1,217 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <controls>    
-	<control>
-		<id>23</id>
+  
+     <!--            :: BACKGROUNDS ::           	 -->
+  
+ 	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Poster shadow</description>
 		<type>image</type>
-		<posX>133</posX>
-		<posY>208</posY>
-		<width>266</width>
-		<height>380</height>
-		<texture>#OnlineVideos.movieposter</texture>
-		<visible>no</visible>
-	</control>
-	
-	<control>
-		<type>image</type>
-		<id>24</id>
-		<posX>87</posX>
-		<posY>161</posY>
-		<width>357</width>
-		<height>472</height>
-		<texture>blackborders_video.png</texture>
-		<visible>no</visible>
-	</control>
-	
-	
-	<control>
-		<description>Selected item Label</description>
-		<type>fadelabel</type>
 		<id>1</id>
-		<posX>555</posX>
-		<posY>142</posY>
-		<width>700</width>
-		<label>#header.Extension.label</label>
-		<font>Segoe Light22</font>
-		<visible>control.isvisible(53)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<valign>middle</valign>
+		<posX>109</posX>
+		<posY>182</posY>
+		<width>466</width>
+		<height>606</height>
+		<texture>list_poster_shadow.png</texture>
+		<visible>string.equals(#OnlineVideos.state, details)</visible>
 	</control>
 	
-	
 	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Poster shadow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>109</posX>
+		<posY>182</posY>
+		<width>466</width>
+		<height>606</height>
+		<texture>list_poster_glow.png</texture>
+		<visible>string.equals(#OnlineVideos.state, details)</visible>
+	</control>
+  
+    <control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>image</type>
+		<description>movie poster</description>
+		<id>24</id>
+		<posX>176</posX>
+		<posY>250</posY>
+		<width>330</width>
+		<height>470</height>
+		<visible>string.equals(#OnlineVideos.state, details)</visible>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#OnlineVideos.Details.Poster</texture>
+    </control>
+	
+    <!--            :: LIST ::           	 -->
+    
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<description>listcontrol</description>
 		<type>listcontrol</type>
 		<id>51</id>
-		<onleft>51</onleft>
+		<onleft>2</onleft>
 		<onright>51</onright>
-			<posX>979</posX>
-			<posY>183</posY>
-			<height>490</height>
-			<width>299</width>
-			<textXOff>14</textXOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-		<visible>no</visible>
+		<scrollOffset>1</scrollOffset>
+		<posX>1398</posX>
+		<posY>314</posY>
+		<width>385</width>
+		<height>256</height>
+		<textXOff>50</textXOff>
+		<textXOff2>700</textXOff2>
+		<textureHeight>64</textureHeight>
+		<textureFocus>settings_button_focus.png</textureFocus>
+		<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+		<dimColor>ffffffff</dimColor>
+		<visible>string.equals(#OnlineVideos.state, details)</visible>
+    </control>
+	
+    <!--            :: INFOS ::           	 -->
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Title</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>745</posX>
+		<posY>234</posY>
+		<width>1170</width>
+		<label>#OnlineVideos.Details.Title</label>
+		<font>fontB20</font>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
 	</control>
 	
-<control>
-         <type>label</type>
-         <description>Runtime txt</description>
-         <id>54</id>
-         <posX>-2000</posX>
-         <posY>230</posY>
-         <label>172</label>
-         <visible>no</visible>
-         <textcolor>ffb2d4f5</textcolor>
-    </control>
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Actors</description>
+		<type>fadelabel</type>
+		<label>#OnlineVideos.Translation.Actors.Label: #OnlineVideos.Details.Actors</label>
+		<id>0</id>
+		<posX>744</posX>
+		<posY>805</posY>
+		<width>900</width>
+		<align>left</align>
+		<font>font12</font>
+		<textcolor>ffffff</textcolor>
+      <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+	</control>
+	
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Director Label</description>
+		<type>label</type>
+		<label>#OnlineVideos.Translation.Directors.Label</label>
+		<id>0</id>
+		<posX>744</posX>
+		<posY>408</posY>
+		<width>240</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+      <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+	</control>
+			
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Director</description>
+		<type>fadelabel</type>
+		<label>#OnlineVideos.Details.Directors</label>
+		<id>0</id>
+		<posX>1058</posX>
+		<posY>408</posY>
+		<width>700</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Release Date Label</description>
+		<type>label</type>
+		<label>#OnlineVideos.Translation.DateOfRelease.Label</label>
+		<id>0</id>
+		<posX>744</posX>
+		<posY>328</posY>
+		<width>240</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+	</control>
 
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Release Date Value</description>
+		<type>label</type>
+		<label>#OnlineVideos.Details.ReleaseDate</label>
+		<id>0</id>
+		<posX>1058</posX>
+		<posY>328</posY>
+		<width>240</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Genre Label</description>
+		<type>label</type>
+		<label>#OnlineVideos.Translation.Genre.Label</label>
+		<id>0</id>
+		<posX>744</posX>
+		<posY>368</posY>
+		<width>240</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Genre</description>
+		<type>fadelabel</type>
+		<label>#OnlineVideos.Details.Genres</label>
+		<id>0</id>
+		<posX>1058</posX>
+		<posY>368</posY>
+		<width>330</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+	</control>
+			
     <control>
-      <type>label</type>
-      <description>year value</description>
-      <id>55</id>
-		<posX>555</posX>
-		<posY>195</posY>
-		<width>400</width>
-		<font>Segoe Light18</font>
-		<textcolor>85cffe</textcolor>
-      <label>#OnlineVideos.releasedate</label>
-      <visible>no</visible>
-    </control>
-
-    <control>
-      <type>fadelabel</type>
-      <description>genre value</description>
-      <id>57</id>
-		<posX>555</posX>
-		<posY>230</posY>
-		<width>400</width>
-		<font>Segoe Light18</font>
-		<textcolor>85cffe</textcolor>
-      <label>#OnlineVideos.genre</label>
-      <visible>no</visible>
-    </control>    
-
-    <control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
       <type>textboxscrollup</type>
       <description>Plot value</description>
-      <id>59</id>
-		<posX>555</posX>
-		<posY>330</posY>
-		<width>400</width>
-		<height>224</height>
-      <visible>no</visible>
-		<seperator>-----------------------------------------------------------------------------------</seperator>
-      <label>#OnlineVideos.trailerdesc</label>
+      <id>61</id>
+      <posX>745</posX>
+      <posY>520</posY>
+      <width>1040</width>
+      <height>240</height>
+      <colordiffuse>ffffffff</colordiffuse>
+      <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+      <label>#OnlineVideos.Details.Synopsis</label>
     </control>    
-	
-    <control>
-      <type>textbox</type>
-      <description>cast value</description>
-      <id>53</id>
-		<posX>555</posX>
-		<posY>565</posY>
-		<width>365</width>
-		<font>font11</font>
-		<textcolor>85cffe</textcolor>
-      <label>#OnlineVideos.cast</label>
-      <visible>no</visible>
-    </control>
-	
   </controls>
 </window>
