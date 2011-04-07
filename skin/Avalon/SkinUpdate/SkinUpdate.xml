@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Avalon>
   <patch>
-    <version>1.0.0.36</version>
+    <version>1.0.0.46</version>
     <minversion>1.0.0.0</minversion>
     <url>http://nco.dnsalias.org/test/AvalonPatch.exe</url>
     <changelog>http://nco.dnsalias.org/test/ChangeLog.rtf</changelog>
