@@ -41,18 +41,6 @@
 	</control>
 	
 	<control>
-		<description>thumb bg</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>257</posX>
-		<posY>837</posY>
-		<width>187</width>
-		<height>144</height>
-		<texture>osd_thumb_bg.png</texture>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
-	</control>
-	
-	<control>
 		<description>settings button bg</description>
 		<type>image</type>
 		<id>0</id>
@@ -102,6 +90,8 @@
 		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
 	
+	<include>videoOSD.mediainfo.xml</include>
+	
 	<control>
 		<type>label</type>
 		<id>1</id>
@@ -139,52 +129,18 @@
 		<texture>osd_pause_button.png</texture>
 		<visible>window.isosdvisible + player.paused</visible>
 	</control>
-<!--	
-	<control>
-		<description>Videocodecs</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>825</posX>
-		<posY>608</posY>
-		<width>66</width>
-		<height>45</height>
-		<texture>logos\video\#Play.Current.VideoCodec.Texture.png</texture>
-	</control>
-
-
-	<control>
-		<description>Audiocodecs</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>890</posX>
-		<posY>608</posY>
-		<width>66</width>
-		<height>45</height>
-		<texture>logos\audio\#Play.Current.AudioCodec.Texture.png</texture>
-	</control>
 	
-	<control>
-		<description>Videoresolution</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>945</posX>
-		<posY>608</posY>
-		<width>66</width>
-		<height>45</height>
-		<texture>logos\resolution\#Play.Current.VideoResolution.png</texture>
-	</control>
--->
 	<control>
 		<description>Video Logo</description>
 		<type>image</type>
 		<id>999</id>
 		<posX>275</posX>
-		<posY>850</posY>
-		<width>150</width>
-		<height>120</height>
+		<posY>805</posY>
+		<width>166</width>
+		<height>240</height>
 		<align>center</align>
      	<centered>yes</centered>
-		<texture>#Play.Current.Thumb</texture>
+		<texture mask="poster_mask.png">#Play.Current.Thumb</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>

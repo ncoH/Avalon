@@ -141,7 +141,7 @@ multiple view modes.
       <label>#MovingPictures.Translation.Movies.Label</label>
       <textcolor>6aa5cb</textcolor>
       <font>font22</font>
-      <visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]</visible>
+      <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
     </control>
     <control>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -156,16 +156,16 @@ multiple view modes.
       <align>left</align>
       <font>AvalonLight12</font>
       <textcolor>ffffff</textcolor>
-      <visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]</visible>
+      <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
     </control>
     <!--            :: IMPORT ::            -->
-    <import tag="Background">movingpictures.background.noinfo.xml</import>
+    <import tag="Background">movingpictures.background.default.xml</import>
     <import>common.time.xml</import>
     <import>movingpictures.hiddenmenu.xml</import>
-    <import tag="Views">movingpictures.views.noinfo.xml</import>
-    <import tag="Facade">movingpictures.facade.noinfo.xml</import>
+    <import tag="Views">movingpictures.views.default.xml</import>
+    <import tag="Facade">movingpictures.facade.default.xml</import>
     <import>movingpictures.Info.xml</import>
-    <import tag="Mediainfo">movingpictures.mediainfo.noinfo.xml</import>
+    <import tag="Mediainfo">movingpictures.mediainfo.default.xml</import>
     <import>movingpictures.details.xml</import>
     <import>movingpictures.mediainfo.details.xml</import>
     <import>common.overlay.xml</import>

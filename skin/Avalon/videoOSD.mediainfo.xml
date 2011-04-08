@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<controls>
+
+	<!-- Videocodec -->
+	<control>
+		<description>1080p / H.264 / Widescreen</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>484</posX>
+		<posY>1005</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\video\1080_h264_235.png</texture>
+		<visible>string.contains(#Play.Current.VideoResolution,1080p)+string.contains(#Play.Current.VideoCodec.Texture,AVC)]+string.contains(#Play.Current.AspectRatio,widescreen)]</visible>
+	</control>
+	
+	<control>
+		<description>720p / H.264 / Widescreen</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>484</posX>
+		<posY>1005</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\video\720_h264_235.png</texture>
+		<visible>string.contains(#Play.Current.VideoResolution,720p) + [string.contains(#Play.Current.VideoCodec.Texture,h264) | string.contains(#Play.Current.VideoCodec.Texture,AVC)] + string.contains(#Play.Current.AspectRatio,widescreen)</visible>
+	</control>
+	
+	<control>
+		<description>SD / Xvid / Widescreen</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>484</posX>
+		<posY>1005</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\video\480_xvid_235.png</texture>
+		<visible>string.contains(#Play.Current.VideoResolution, SD)+string.contains(#Play.Current.VideoCodec.Texture, XVID)+string.contains(#Play.Current.AspectRatio, widescreen)</visible>
+	</control>
+	
+	<control>
+		<description>SD / Xvid / Fullscreen</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>484</posX>
+		<posY>1005</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\video\480_xvid_133.png</texture>
+		<visible>[string.contains(#Play.Current.VideoResolution,SD)+string.contains(#Play.Current.VideoCodec.Texture,XVID)+string.contains(#Play.Current.AspectRatio,fullscreen)]</visible>
+	</control>
+	
+	<control>
+		<description>SD / DivX / Widescreen</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>484</posX>
+		<posY>1005</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\video\480_divx_235.png</texture>
+		<visible>[string.contains(#Play.Current.VideoResolution,SD)+string.contains(#Play.Current.VideoCodec.Texture,DIVX)+string.contains(#Play.Current.AspectRatio,widescreen)]</visible>
+	</control>
+	
+	<control>
+		<description>SD / DivX / Fullscreen</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>484</posX>
+		<posY>1005</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\video\480_divx_133.png</texture>
+		<visible>string.contains(#Play.Current.VideoResolution,SD)+string.contains(#Play.Current.VideoCodec.Texture,DIVX)+string.contains(#Play.Current.AspectRatio,fullscreen)]</visible>
+	</control>
+	
+	<!-- Audiocodec -->
+	<control>
+		<description>AC3 / 5.1</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>669</posX>
+		<posY>1005</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\audio\ac3_51.png</texture>
+		<visible>[string.contains(#Play.Current.AudioCodec.Texture,AC-3)+string.contains(#Play.Current.AudioChannels.Texture,5)]</visible>
+	</control>
+	
+	<control>
+		<description>DTS / 5.1</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>669</posX>
+		<posY>1005</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\audio\dts_51.png</texture>
+		<visible>string.contains(#Play.Current.AudioCodec.Texture,dts)+string.contains(#Play.Current.AudioChannels.Texture,5)</visible>
+	</control>
+	
+	<control>
+		<description>DTS / 7.1</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>669</posX>
+		<posY>1005</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\audio\dts_71.png</texture>
+		<visible>string.contains(#Play.Current.AudioCodec.Texture,dts)+[string.contains(#Play.Current.AudioChannels.Texture,7)|string.contains(#Play.Current.AudioChannels.Texture,8)]</visible>
+	</control>
+	
+	<control>
+		<description>AC3 / 2.0</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>669</posX>
+		<posY>1005</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\audio\ac3_20.png</texture>
+		<visible>string.contains(#Play.Current.AudioCodec.Texture,ac-3)+string.contains(#Play.Current.AudioChannels.Texture,stereo)</visible>
+	</control>
+	
+	<control>
+		<description>mp3 / 2.0</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>669</posX>
+		<posY>1005</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\audio\mp3_20.png</texture>
+		<visible>[string.contains(#Play.Current.AudioCodec.Texture, LAYER 3)+string.contains(#Play.Current.AudioChannels.Texture,stereo)]</visible>
+	</control>
+	
+	<!-- Source -->
+	<control>
+		<description>BluRay</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>784</posX>
+		<posY>1005</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\source\bluray.png</texture>
+		<visible>[string.contains(#Play.Current.VideoResolution,720p)|string.contains(#Play.Current.VideoResolution,1080p)]</visible>
+	</control>
+	
+	<control>
+		<description>DVD</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>784</posX>
+		<posY>1005</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\source\dvd.png</texture>
+		<visible>[string.contains(#Play.Current.VideoResolution,SD)]</visible>
+	</control>
+
+	</controls>
+</window>

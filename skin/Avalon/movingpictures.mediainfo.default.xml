@@ -5,8 +5,9 @@
 	<!-- Videocodec -->
 	<control>
 		<description>1080p / H.264 / Widescreen</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1500</posX>
@@ -19,8 +20,9 @@
 	
 	<control>
 		<description>720p / H.264 / Widescreen</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1500</posX>
@@ -33,8 +35,9 @@
 	
 	<control>
 		<description>SD / Xvid / Widescreen</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1500</posX>
@@ -47,8 +50,9 @@
 	
 	<control>
 		<description>SD / Xvid / Fullscreen</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1500</posX>
@@ -61,8 +65,9 @@
 	
 	<control>
 		<description>SD / DivX / Widescreen</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1500</posX>
@@ -75,8 +80,9 @@
 	
 	<control>
 		<description>SD / DivX / Fullscreen</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1500</posX>
@@ -90,8 +96,9 @@
 	<!-- Audiocodec -->
 	<control>
 		<description>AC3 / 5.1</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1685</posX>
@@ -104,8 +111,9 @@
 	
 	<control>
 		<description>DTS / 5.1</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1685</posX>
@@ -118,8 +126,9 @@
 	
 	<control>
 		<description>DTS / 7.1</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1685</posX>
@@ -132,8 +141,9 @@
 	
 	<control>
 		<description>AC3 / 2.0</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1685</posX>
@@ -146,8 +156,9 @@
 	
 	<control>
 		<description>mp3 / 2.0</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1685</posX>
@@ -161,8 +172,9 @@
 	<!-- Source -->
 	<control>
 		<description>BluRay</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1800</posX>
@@ -175,8 +187,9 @@
 	
 	<control>
 		<description>DVD</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1800</posX>

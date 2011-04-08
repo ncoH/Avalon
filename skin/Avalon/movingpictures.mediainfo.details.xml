@@ -5,9 +5,9 @@
 	<!-- Videocodec -->
 	<control>
 		<description>1080p / H.264 / Widescreen</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1109</posX>
@@ -19,10 +19,9 @@
 	</control>
 	
 	<control>
-		<description>720p / H.264 / Widescreen</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1109</posX>
@@ -35,9 +34,9 @@
 	
 	<control>
 		<description>SD / Xvid / Widescreen</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1109</posX>
@@ -50,9 +49,9 @@
 	
 	<control>
 		<description>SD / Xvid / Fullscreen</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1109</posX>
@@ -65,9 +64,9 @@
 	
 	<control>
 		<description>SD / DivX / Widescreen</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1109</posX>
@@ -80,9 +79,9 @@
 	
 	<control>
 		<description>SD / DivX / Fullscreen</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1109</posX>
@@ -96,9 +95,9 @@
 	<!-- Audiocodec -->
 	<control>
 		<description>AC3 / 5.1</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1294</posX>
@@ -111,9 +110,9 @@
 	
 	<control>
 		<description>DTS / 5.1</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1294</posX>
@@ -126,9 +125,9 @@
 	
 	<control>
 		<description>DTS / 7.1</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1294</posX>
@@ -141,9 +140,9 @@
 	
 	<control>
 		<description>AC3 / 2.0</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1294</posX>
@@ -156,9 +155,9 @@
 	
 	<control>
 		<description>mp3 / 2.0</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1294</posX>
@@ -172,9 +171,9 @@
 	<!-- Source -->
 	<control>
 		<description>BluRay</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1409</posX>
@@ -187,9 +186,9 @@
 	
 	<control>
 		<description>DVD</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1409</posX>
