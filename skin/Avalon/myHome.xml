@@ -6,73 +6,77 @@
 	<disabletopbar>no</disabletopbar>
 <controls>
 
-	<control>
-		<description>background image</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1920</width>
-		<height>1080</height>
-	</control>
+<control>
+	<description>DEFAULT BACKGROUND</description>
+	<type>image</type>
+	<id>0</id>
+	<posX>0</posX>
+	<posY>0</posY>
+	<width>1920</width>
+	<height>1080</height>
+	<texture>background.png</texture>
+	<shouldCache>true</shouldCache>
+</control>
+
+    <control>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <type>label</type>
+      <id>1</id>
+      <posX>185</posX>
+      <posY>38</posY>
+      <width>500</width>
+      <label>Home</label>
+      <textcolor>6aa5cb</textcolor>
+      <font>font22</font>
+    </control>
+
 	
 <import>common.time.xml</import>
 
 	<control>
 		<description>Menu</description>
 		<type>menu</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="550">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<id>50</id>
-		<posX>480</posX>
-		<posY>130</posY>
-		<width>630</width>
+		<posX>930</posX>
+		<posY>215</posY>
+		<width>800</width>
 		<textcolor>ffffffff</textcolor>
-		<textColorNoFocus>50ffffff</textColorNoFocus>
-		<buttonTextXOff>77</buttonTextXOff>
+		<textColorNoFocus>ff6aa5cb</textColorNoFocus>
+		<buttonTextXOff>10</buttonTextXOff>
 		<buttonTextYOff>0</buttonTextYOff>
+		<buttonHeight>95</buttonHeight>
 		<buttonOffset>25</buttonOffset>
-		<buttonFont>Segoe Light26</buttonFont>
-		<buttonHeight>70</buttonHeight>
-		<spaceBetweenButtons>8</spaceBetweenButtons>
+		<buttonFont>AvalonLight32</buttonFont>
+		<spaceBetweenButtons>0</spaceBetweenButtons>
 		<numberOfButtons>5</numberOfButtons>
-		<hoverX>520</hoverX>
-		<hoverY>352</hoverY>
-		<hoverWidth>285</hoverWidth>
-		<hoverHeight>180</hoverHeight>
-		<hoverKeepAspectratio>yes</hoverKeepAspectratio>
-		<scrollTime>140</scrollTime>
-		<scrollTimeMin>60</scrollTimeMin>
+		<hoverX>0</hoverX>
+		<hoverY>188</hoverY>
+		<hoverWidth>1059</hoverWidth>
+		<hoverHeight>596</hoverHeight>
+		<hoverKeepAspectratio>no</hoverKeepAspectratio>
+		<scrollTime>160</scrollTime>
+		<scrollTimeMin>100</scrollTimeMin>
 		<onright>4</onright>
 		<onleft>2</onleft>
 	</control>
 
-
-	<!-- Date and Time -->
 	<control>
-		<description>Date label</description>
-		<type>label</type>
-		<posX>706</posX>
-		<posY>700</posY>
-		<width>500</width>
-		<label>#date</label>
-		<font>Segoe Light12</font>
-		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
-	</control>
-
-
-	<control>
-		<description>Time</description>
-		<type>label</type>
+		<description>VIEWPORT</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>164</posY>
+		<width>1893</width>
+		<height>644</height>
+		<texture>viewport_music_list_fanart.png</texture>
+		<shouldCache>true</shouldCache>
 		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="500">WindowClose</animation>
-		<id>201</id>
-		<posX>803</posX>
-		<posY>768</posY>
-		<label>#time</label>
-		<align>left</align>
-		<font>font12</font>
-		<textcolor>6aa5cb</textcolor>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
 	</control>
 
 	<!-- TOPBAR Buttons -->
@@ -184,83 +188,7 @@
 		</control>
 
 	</control>
-	
-	<!--Weather-->
-
-	<control>
-		<description>Weather image</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>605</posX>
-		<posY>650</posY>
-		<height>90</height>
-		<width>90</width>
-		<texture>weather/#infoservice.weather.today.img.small.filenamewithext</texture>
-		<visible>plugin.isenabled(InfoService)+string.contains(#maya.weather.visible,yes)</visible>
-		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
-	</control>
-
-	<control>
-		<description>Temp label</description>
-		<type>label</type>
-		<posX>705</posX>
-		<posY>655</posY>
-		<width>500</width>
-		<label>#infoservice.weather.today.temp</label>
-		<font>Segoe Light22</font>
-		<visible>plugin.isenabled(InfoService)+string.contains(#maya.weather.visible,yes)</visible>
-		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
-	</control>
-	
-<!--RSS-->
-
-<control>
-	<description>RSS background</description>
-	<type>image</type>
-	<id>1</id>
-	<posX>0</posX>
-	<posY>738</posY>
-	<width>1366</width>
-	<height>30</height>
-	<texture>rss_bg.png</texture>
-	<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
-	<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
-	<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
-</control>
-
-<control>
-	<description>RSS image</description>
-	<type>image</type>
-	<id>1</id>
-	<posX>0</posX>
-	<posY>625</posY>
-	<width>140</width>
-	<height>35</height>
-	<keepaspectratio>no</keepaspectratio>
-	<texture>#rssimg</texture>
-	<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
-	<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
-	<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
-</control>
-
-<control>
-	<description>RSS items</description>
-	<type>fadelabel</type>
-	<id>1</id>
-	<posX>15</posX>
-	<posY>743</posY>
-	<width>1336</width>
-	<height>30</height>
-	<font>font10</font>
-	<textcolor>6aa5cb</textcolor>
-	<label>#infoservice.feed.titles</label>
-	<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
-	<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
-	<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
-</control>
-
-<import>common.home.overlay.xml</import>
+<import>BasicHome.weather.xml</import>  
+<import>common.overlay.xml</import>
 </controls>
 </window>
