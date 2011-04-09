@@ -38,7 +38,7 @@
 		<posX>185</posX>
 		<posY>38</posY>
 		<width>500</width>
-		<label>4</label>
+		<label>600</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>font22</font>
 	</control>
@@ -63,7 +63,7 @@
 		<id>32</id>
 		<posX>436</posX>
 		<posY>120</posY>
-		<font>font16</font>
+		<font>AvalonLight16</font>
 		<align>left</align>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -76,12 +76,11 @@
 		<id>33</id>
 		<posX>350</posX>
 		<posY>117</posY>
-		<width>53</width>
-		<height>37</height>
+		<width>48</width>
+		<height>48</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<zoom>no</zoom>
-		<centered>yes</centered>
-		<texture>defaultVideo.png</texture>
+		<texture>defaultVideoBig.png</texture>
 	</control>
 	
     <!-- Timeheader background must be dedfined before Timeheader label template -->
@@ -106,7 +105,7 @@
 		<id>40</id>
 		<posX>463</posX>
 		<posY>222</posY>
-		<font>font12</font>
+		<font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -126,7 +125,7 @@
 		<align>center</align>
 		<onleft>6</onleft>
 		<onright>8</onright>
-		<font>font12</font>
+		<font>AvalonLight12</font>
 		<textureUp>arrow_round_right_nofocus.png</textureUp>
 		<textureDown>arrow_round_left_nofocus.png</textureDown>
 		<textureUpFocus>arrow_round_right_focus.png</textureUpFocus>
@@ -173,13 +172,13 @@
 		<type>image</type>
 		<id>7</id>
 		<posX>15</posX>
-		<posY>8</posY>
-		<width>44</width>
-		<height>44</height>
-		<keepaspectratio>yes</keepaspectratio>
-		<zoom>no</zoom>
+		<posY>7</posY>
+		<width>48</width>
+		<height>48</height>
 		<centered>yes</centered>
-		<texture>defaultVideo.png</texture>
+		<zoom>no</zoom>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>defaultVideoBig.png</texture>
     </control>
 	
     <control>
@@ -190,7 +189,7 @@
 		<posY>13</posY>
 		<width>86</width>
 		<height>20</height>
-		<font>font12</font>
+		<font>AvalonLight12</font>
 		<textcolor>FFFFFFFF</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -201,7 +200,7 @@
 		<type>fadelabel</type>
 		<id>13</id>
 		<posX>681</posX>
-		<posY>811</posY>
+		<posY>820</posY>
 		<width>1175</width>
 		<label>#TV.Guide.CompositeTitle</label>
 		<font>fontB20</font>
@@ -211,11 +210,11 @@
 	
 	<control>
 		<description>Current program time</description>
-		<type>label</type>
+		<type>fadelabel</type>
 		<id>14</id>
 		<posX>681</posX>
-		<posY>885</posY>
-		<width>850</width>
+		<posY>880</posY>
+		<width>1175</width>
 		<label>#TV.Guide.Time #TV.Guide.ChannelName - #TV.Guide.DurationMins #TV.Guide.Genre</label>
 		<font>AvalonLight14</font>
 		<textcolor>85cfff</textcolor>
@@ -228,10 +227,10 @@
 		<type>textboxscrollup</type>
 		<id>15</id>
 		<posX>681</posX>
-		<posY>934</posY>
+		<posY>922</posY>
 		<width>1185</width>
-		<height>110</height>
-		<font>font11</font>
+		<height>140</height>
+		<font>AvalonLight11</font>
 		<label>#TV.Guide.Description</label>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -244,9 +243,9 @@
 		<id>26</id>
 		<label>-</label>
 		<font>AvalonLight12</font>
-		<textcolor>FFFFFFF0</textcolor>
-		<posX>15</posX>
-		<posY>12</posY>	  
+		<posX>25</posX>
+		<posY>12</posY>
+		<textcolor>FFFFFFFF</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     </control>
@@ -258,8 +257,8 @@
 		<visible>no</visible>
 		<label>-</label>
 		<font>AvalonLight12</font>
-		<textcolor>99CCFF</textcolor>
-		<posX>15</posX>
+		<textcolor>FF85CFFE</textcolor>
+		<posX>25</posX>
 		<posY>12</posY>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -322,26 +321,26 @@
 		<fixedheight>yes</fixedheight>
 		<height>39</height>
 		<texture>#maya.tvguide.recpin</texture>
-		<keepaspectratio>yes</keepaspectratio>
+		<keepaspectratio>no</keepaspectratio>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 	
      <control>
-      <description>TvGroup button</description>
-      <type>button</type>
-      <id>100</id>
-      <posX>38</posX>
-      <posY>328</posY>
-      <width>50</width>
-      <height>336</height>
-      <textureFocus>tvgroup_button_selected.png</textureFocus>
-      <textureNoFocus>blue.png</textureNoFocus>
-      <label></label>
-      <onleft>60</onleft>
-      <onright>6</onright>
-      <onup>6</onup>
-      <ondown>6</ondown>
+		<description>TvGroup button</description>
+		<type>button</type>
+		<id>100</id>
+		<posX>38</posX>
+		<posY>328</posY>
+		<width>50</width>
+		<height>336</height>
+		<textureFocus>tvgroup_button_selected.png</textureFocus>
+		<textureNoFocus>blue.png</textureNoFocus>
+		<label></label>
+		<onleft>60</onleft>
+		<onright>6</onright>
+		<onup>6</onup>
+		<ondown>6</ondown>
     </control>
 	
     <control>
@@ -356,10 +355,9 @@
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="rotate" end="90" time="0">WindowOpen</animation>
 		<animation effect="rotate" end="90" time="0">WindowClose</animation>
-    </control>
+      </control>
 	  
-	<import>common.time.xml</import>
-	<import>common.overlay.xml</import>
-
+<import>common.time.xml</import>
+<import>common.overlay.xml</import>
   </controls>
 </window>

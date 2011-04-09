@@ -63,7 +63,7 @@
 		<id>32</id>
 		<posX>436</posX>
 		<posY>120</posY>
-		<font>font16</font>
+		<font>AvalonLight16</font>
 		<align>left</align>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -77,8 +77,8 @@
 		<posX>350</posX>
 		<posY>117</posY>
 		<width>48</width>
-      <height>48</height>
-		<keepaspectratio>no</keepaspectratio>
+		<height>48</height>
+		<keepaspectratio>yes</keepaspectratio>
 		<zoom>no</zoom>
 		<texture>defaultVideoBig.png</texture>
 	</control>
@@ -177,7 +177,7 @@
 		<height>48</height>
 		<centered>yes</centered>
 		<zoom>no</zoom>
-		<keepaspectratio>no</keepaspectratio>
+		<keepaspectratio>yes</keepaspectratio>
 		<texture>defaultVideoBig.png</texture>
     </control>
 	
