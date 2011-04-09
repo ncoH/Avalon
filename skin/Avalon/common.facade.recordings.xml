@@ -32,9 +32,6 @@
 				<textureNoFocus>-</textureNoFocus>
 				<IconXOff>45</IconXOff>
 				<IconYOff>0</IconYOff>
-				<spinPosX>312</spinPosX>
-				<spinPosY>104</spinPosY>
-				<spinAlign>right</spinAlign>
 				<textXOff>40</textXOff>
 				<keepaspectratio>yes</keepaspectratio>
 				<spinCanFocus>no</spinCanFocus>

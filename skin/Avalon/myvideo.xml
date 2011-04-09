@@ -65,8 +65,21 @@
 		<posY>250</posY>
 		<width>330</width>
 		<height>470</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">defaultVideoBig.png</texture>
-		<visible>facadeview.list+!control.hasthumb(500)</visible>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">defaultFolderBig.png</texture>
+		<visible>facadeview.list+!control.hasthumb(500)+!string.contains(#selecteditem, ..)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<id>0</id>
+		<type>image</type>
+		<posX>762</posX>
+		<posY>250</posY>
+		<width>330</width>
+		<height>470</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">DefaultFolderBackBig.png</texture>
+		<visible>facadeview.list+string.contains(#selecteditem, ..)</visible>
 	</control>
 
 	<control>

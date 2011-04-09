@@ -493,7 +493,7 @@
 	<control>
 	    <description>default textboxscrollup</description>
 	    <type>textboxscrollup</type>
-		<font>font12</font>
+		<font>AvalonLight12</font>
 	    <colordiffuse>ffffffff</colordiffuse>
 	</control>
 

@@ -368,7 +368,7 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>681</posX>
-		<posY>875</posY>
+		<posY>880</posY>
 		<width>850</width>
 		<label>#TV.View.start - #TV.View.stop #TV.View.channel #TV.Guide.Genre</label>
 		<font>AvalonLight14</font>
@@ -382,7 +382,7 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>681</posX>
-		<posY>808</posY>
+		<posY>820</posY>
 		<width>1175</width>
 		<label>#TV.View.title</label>
 		<font>fontB20</font>
@@ -396,10 +396,10 @@
 		<type>textboxscrollup</type>
 		<id>15</id>
 		<posX>681</posX>
-		<posY>914</posY>
+		<posY>922</posY>
 		<width>1185</width>
-		<height>150</height>
-		<font>font11</font>
+		<height>140</height>
+		<font>AvalonLight11</font>
 		<seperator>----------------------------------------------------------------------------------------------</seperator>
 		<label>#TV.View.description</label>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>

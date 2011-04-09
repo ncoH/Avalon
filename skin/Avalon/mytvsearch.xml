@@ -60,8 +60,8 @@
 		<type>label</type>
 		<id>1</id>
 		<label>| #currentmodule: #itemcount</label>
-		<posX>321</posX>
-		<posY>98</posY>
+		<posX>242</posX>
+		<posY>99</posY>
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
@@ -235,9 +235,6 @@
 				<textureNoFocus>-</textureNoFocus>
 				<IconXOff>-2000</IconXOff>
 				<IconYOff>0</IconYOff>
-				<spinPosX>312</spinPosX>
-				<spinPosY>104</spinPosY>
-				<spinAlign>right</spinAlign>
 				<textXOff>40</textXOff>
 				<keepaspectratio>yes</keepaspectratio>
 				<spinCanFocus>no</spinCanFocus>
@@ -265,9 +262,6 @@
 				<textureNoFocus>-</textureNoFocus>
 				<IconXOff>-2000</IconXOff>
 				<IconYOff>0</IconYOff>
-				<spinPosX>312</spinPosX>
-				<spinPosY>104</spinPosY>
-				<spinAlign>right</spinAlign>
 				<textXOff>40</textXOff>
 				<keepaspectratio>yes</keepaspectratio>
 				<spinCanFocus>no</spinCanFocus>

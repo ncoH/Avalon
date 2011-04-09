@@ -228,7 +228,7 @@
 		<width>725</width>
 		<height>180</height>
 		<label>#MovingPictures.SelectedMovie.summary</label>
-		<font>font11</font>
+		<font>AvalonLight11</font>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
 		<onright>1026</onright>

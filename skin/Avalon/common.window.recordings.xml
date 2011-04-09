@@ -37,7 +37,7 @@
 		<id>1</id>
 		<posX>74</posX>
 		<posY>514</posY>
-		<width>1705</width>
+		<width>800</width>
 		<label>#selecteditem</label>
 		<font>fontB20</font>
 		<visible>[facadeview.list | facadeview.album | facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons | facadeview.playlist]+Control.IsVisible(50)</visible>
@@ -50,8 +50,8 @@
 		<type>label</type>
 		<id>1</id>
 		<label>| #currentmodule: #itemcount</label>
-		<posX>321</posX>
-		<posY>98</posY>
+		<posX>242</posX>
+		<posY>99</posY>
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>

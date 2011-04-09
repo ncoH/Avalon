@@ -131,7 +131,7 @@
 		<width>400</width>
 		<height>215</height>
 		<seperator>---------------------------------------------------------------------------------------------------------------------</seperator>
-		<font>font11</font>
+		<font>AvalonLight11</font>
 		<visible>facadeview.list+Control.IsVisible(1240)+!Control.IsVisible(632)</visible>
 		<label>#TVSeries.Description</label>
     </control>
@@ -315,7 +315,7 @@
 		<width>725</width>
 		<height>180</height>
 		<label>#TVSeries.Description</label>
-		<font>font11</font>
+		<font>AvalonLight11</font>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
 		<onright>1026</onright>
@@ -650,7 +650,7 @@
 		<posY>884</posY>
 		<width>725</width>
 		<height>180</height>
-		<font>font11</font>
+		<font>AvalonLight11</font>
 		<label>#TVSeries.Description</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
