@@ -398,6 +398,7 @@
 		</control>
 
 	</control>	
+	<import>mytvrecordedtv.hiddenmenu.xml</import>
 	<import>common.facade.recordings.xml</import>
 </controls>
 </window>
