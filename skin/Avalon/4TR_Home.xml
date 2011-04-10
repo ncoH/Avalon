@@ -27,8 +27,7 @@
 	<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
 	<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
 </control>
-	
-	
+		
 	<control>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -50,6 +49,7 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 
+<!-- left Buttons		 -->		
 		<control>
 			<description>TV On/Off button</description>
 			<type>togglebutton</type>
@@ -116,7 +116,45 @@
 			<textureFocus>tvhome_item_selected.png</textureFocus>
 			<textureNoFocus>tvhome_item.png</textureNoFocus>
 		</control>
-		
+
+		<control>
+			<description>Teletext</description>
+			<type>button</type>
+			<id>9</id>
+			<posX>160</posX>
+			<posY>536</posY>
+			<label>1441</label>
+			<onup>5</onup>
+			<ondown>6</ondown>
+			<onright>99</onright>
+			<onleft>99</onleft>
+			<textalign>left</textalign>
+			<width>375</width>
+			<textXOff>36</textXOff>
+			<height>100</height>
+			<textYOff>24</textYOff>
+			<font>AvalonLight14</font>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<textureFocus>tvhome_item_selected.png</textureFocus>
+			<textureNoFocus>tvhome_item.png</textureNoFocus>
+		</control>
+
+		<control>
+			<description>empty button</description>
+			<type>button</type>
+			<posX>160</posX>
+			<posY>635</posY>
+			<textalign>left</textalign>
+			<width>375</width>
+			<textXOff>36</textXOff>
+			<height>100</height>
+			<textYOff>24</textYOff>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<textureFocus>tvhome_item_selected.png</textureFocus>
+			<textureNoFocus>tvhome_item.png</textureNoFocus>
+		</control>
+
+<!-- right Buttons		 -->		
 		<control>
 			<description>Recordings</description>
 			<type>button</type>
@@ -163,7 +201,7 @@
 		</control>
 		
 		<control>
-			<description>Scheduler</description>
+			<description>Upcoming Programms</description>
 			<type>button</type>
 			<id>7</id>
 			<posX>1398</posX>
@@ -205,30 +243,21 @@
 			<textureFocus>tvhome_item_selected.png</textureFocus>
 			<textureNoFocus>tvhome_item.png</textureNoFocus>
 		</control>
-	  
-	  
+	 
 		<control>
-			<description>Teletext</description>
+			<description>empty button</description>
 			<type>button</type>
-			<id>9</id>
-			<posX>160</posX>
-			<posY>536</posY>
-			<label>1441</label>
-			<onup>5</onup>
-			<ondown>6</ondown>
-			<onright>99</onright>
-			<onleft>99</onleft>
+			<posX>1398</posX>
+			<posY>635</posY>
 			<textalign>left</textalign>
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
 			<textYOff>24</textYOff>
-			<font>AvalonLight14</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
 			<textureNoFocus>tvhome_item.png</textureNoFocus>
 		</control>
-
 	</control>
 	
 	<control>

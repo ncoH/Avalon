@@ -4,7 +4,6 @@
 <defaultcontrol>10</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <define>#header.label:Active Recordings</define>
-<define>#useSelectedFanart:Yes</define>
 <controls>
 
 	<control>

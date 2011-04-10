@@ -5,7 +5,7 @@
 <allowoverlay>yes</allowoverlay>
 <controls>
 
-	<import>common.window.recordings.xml</import>
+	<import>common.window.4tr_recordings.xml</import>
 	<import>common.time.xml</import>
 	
 	<control>

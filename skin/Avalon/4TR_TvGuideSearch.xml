@@ -1,189 +1,248 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-  <id>49850</id>
-	<defaultcontrol>2</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<define>#header.label:724</define> 
-	<define>#header.background:hover_my tv.png</define>	
-	<controls>
-  
-		<import>common.window.background.xml</import>		
-        <import>common.time.xml</import>
-	
-	<control>
-		<description>Header Label</description>		
-		<type>fadelabel</type>
-		<id>1</id>
-		<posX>552</posX>
-		<posY>30</posY>
-		<width>500</width>
-		<height>100</height>
-		<label>#header.label</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>AvalonLight40</font>
-		<valign>middle</valign>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>		
-	</control>
+<id>49850</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<define>#header.label:724</define> 
+<controls>
 
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<description>listcontrol background</description>
+		<description>default background</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>524</posX>
-        <posY>173</posY>
-		<width>725</width>
-		<height>561</height>
-		<texture>listcontrol_bg_recordings.png</texture>
+		<posX>0</posX>
+        <posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>background.png</texture>
+	</control>
+	
+		<!--            :: Overlays ::            -->	
+
+
+	<control>
+		<description>Viewport listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>164</posY>
+		<width>1893</width>
+		<height>755</height>
+		<texture>viewport_tv_recordings.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
 	</control>
 
-    <control>
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
 		<type>label</type>
-		<description>Number of Files Label</description>
-		<id>12</id>
-		<posX>1216</posX>
-		<posY>690</posY>
-		<align>right</align>
-		<label>#itemcount</label>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>800</width>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-    </control>
+		<font>font22</font>
+	</control>
+	
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>12</id>
+		<posX>-2000</posX>
+		<label>#itemcount</label>
+	</control>
+	
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<label>| #itemcount</label>
+		<posX>242</posX>
+		<posY>99</posY>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
 	
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>555</posX>
-		<posY>142</posY>
-		<width>663</width>
+		<posX>270</posX>
+		<posY>514</posY>
+		<width>580</width>
 		<label>#selecteditem</label>
-		<font>AvalonLight22</font>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<valign>middle</valign>
+		<font>fontB20</font>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 	
+<import>common.time.xml</import>
+	
+
 	<control>
 		<type>group</type>
 		<description>group element</description>
-		<posX>150</posX>
-		<posY>190</posY>
-		<layout>StackLayout</layout>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+
+<!-- left Buttons	 -->	
       <control>
         <type>button</type>
         <description>Search by title</description>
         <id>2</id>
+		<posX>72</posX>
+		<posY>228</posY>	
+        <label>6032</label>			
         <onleft>10</onleft>
         <onright>10</onright>
-        <onup>17</onup>
+        <onup>4</onup>
         <ondown>3</ondown>
-        <label>6032</label>
-		<textalign>right</textalign>		
+		<textalign>left</textalign>	
+		<textcolorNoFocus>ffffffff</textcolorNoFocus>		
       </control>
 	  
       <control>
         <type>button</type>
         <id>3</id>
+		<posX>72</posX>
+		<posY>292</posY>	
+        <label>192</label>		
         <onleft>10</onleft>
         <onright>10</onright>
         <onup>2</onup>
         <ondown>4</ondown>
-        <label>192</label>
-		<textalign>right</textalign>
+		<textalign>left</textalign>
+		<textcolorNoFocus>ffffffff</textcolorNoFocus>		
       </control>
 	  
       <control>
         <type>sortbutton</type>
         <id>4</id>
+		<posX>72</posX>
+		<posY>356</posY>	
+        <label>620</label>		
         <onleft>10</onleft>
         <onright>10</onright>
         <onup>3</onup>
-        <ondown>99</ondown>
-        <label>620</label>
-		<textalign>right</textalign>
-		<offsetSortButtonX>21</offsetSortButtonX>		
-      </control>	  
-    </control>
-	
-	<control>
-		<type>group</type>
-		<description>group element</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="1000">WindowClose</animation>
-			<control>
-				<description>listcontrol</description>
-				<type>listcontrol</type>
-				<id>10</id>
-				<posY>427</posY>
-				<height>300</height>
-				<posX>524</posX>
-				<onleft>2</onleft>
-				<onright>2</onright>
-				<scrollOffset>1</scrollOffset>
-				<PinIconHeight>53</PinIconHeight>
-				<PinIconWidth>34</PinIconWidth>
-				<PinIconXOff>0</PinIconXOff>
-				<PinIconYOff>0</PinIconYOff>
-				<itemWidth>32</itemWidth>
-				<itemHeight>32</itemHeight>
-				<IconXOff>60</IconXOff>
-				<IconYOff>9</IconYOff>
-				<textXOff>70</textXOff>
-				<textXOff3>2000</textXOff3>
-				<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
-				<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
-				<keepaspectratio>yes</keepaspectratio>
-				<spinCanFocus>no</spinCanFocus>
-				<dimColor>ffffffff</dimColor>
-				<spinPosX>560</spinPosX>
-				<spinPosY>688</spinPosY>
-				<spinAlign>left</spinAlign>				
-			</control>
-	</control>			
+        <ondown>2</ondown>
+		<textalign>left</textalign>
+		<offsetSortButtonX>260</offsetSortButtonX>
+      </control>	
+
+<!-- right Buttons	   -->
+      <control>
+        <type>button</type>
+        <description>empty button</description>
+		<posX>462</posX>
+		<posY>228</posY>		
+		<textalign>left</textalign>		
+      </control>
 	  
+      <control>
+        <type>button</type>
+        <description>empty button</description>
+		<posX>462</posX>
+		<posY>292</posY>		
+		<textalign>left</textalign>		
+      </control>
+
+      <control>
+        <type>button</type>
+        <description>empty button</description>
+		<posX>462</posX>
+		<posY>356</posY>		
+		<textalign>left</textalign>		
+      </control>
+	  
+    </control>
+		
+	<control>
+		<description>listcontrol</description>
+		<type>listcontrol</type>
+		<id>10</id>
+		<posX>918</posX>
+		<posY>236</posY>
+		<height>700</height>
+		<width>919</width>
+		<onleft>2</onleft>
+		<onright>2</onright>
+		<scrollOffset>1</scrollOffset>
+		<PinIconHeight>53</PinIconHeight>
+		<PinIconWidth>34</PinIconWidth>
+		<PinIconXOff>0</PinIconXOff>
+		<PinIconYOff>0</PinIconYOff>
+		<itemWidth>64</itemWidth>
+		<itemHeight>53</itemHeight>
+		<textureFocus>listcontrol_item_selected_tv.png</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+		<IconXOff>-2000</IconXOff>
+		<IconYOff>0</IconYOff>
+		<spinPosX>193</spinPosX>
+		<spinPosY>102</spinPosY>
+		<spinAlign>left</spinAlign>				
+		<textXOff>40</textXOff>
+		<textXOff3>-2000</textXOff3>		
+		<keepaspectratio>yes</keepaspectratio>
+		<spinCanFocus>no</spinCanFocus>
+		<dimColor>ffffffff</dimColor>
+	</control>	
+	  
+	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>70</posX>
+		<posY>500</posY>
+		<width>187</width>
+		<height>119</height>
+		<texture>tv_logo_bg.png</texture>
+		<visible>Control.HasThumb(60)+!string.equals(#selecteditem,..)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
 	<control>
 		<description>Current program title</description>
 		<type>fadelabel</type>
 		<id>13</id>
-		<posX>555</posX>
-		<posY>180</posY>
-		<width>663</width>
+		<posX>-2000</posX>
+		<posY>545</posY>
+		<width>424</width>
 		<label>#TV.Search.Title</label>
-		<font>AvalonLight18</font>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<font>font13</font>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
-
-<!-- 	<control>
+	
+	<control>
 		<description>Current channel</description>
 		<type>label</type>
 		<id>16</id>
-		<posX>555</posX>
-		<posY>180</posY>
+		<posX>-2000</posX>
+		<posY>540</posY>
 		<label>#TV.Search.Channel</label>
-		<font>AvalonLight18</font>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<textcolor>85cffe</textcolor>
-	</control> -->
+		<font>AvalonLight12</font>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<textcolor>6aa5cb</textcolor>
+	</control>
 
 	<control>
 		<description>Current program time</description>
 		<type>label</type>
 		<id>14</id>
-		<posX>555</posX>
-		<posY>215</posY>
-		<textcolor>85cffe</textcolor>
-		<font>AvalonLight18</font>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<posX>270</posX>
+		<posY>570</posY>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight12</font>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<label>#TV.Search.Time</label>
 	</control>
 
@@ -191,12 +250,12 @@
 		<description>Description1</description>
 		<type>textboxscrollup</type>
 		<id>15</id>
-		<posX>556</posX>
-		<posY>281</posY>
-		<width>680</width>
-		<height>110</height>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<posX>74</posX>
+		<posY>634</posY>
+		<width>780</width>
+		<height>230</height>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<label>#TV.Search.Description</label>
 	</control>
 
@@ -210,11 +269,21 @@
 		<align>right</align>
 		<font>font13</font>
 		<textcolor>FFB2D4F5</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
-<import>common.overlay.xml</import>
+	<control>
+		<id>60</id>
+		<type>image</type>
+		<posX>121</posX>
+		<posY>514</posY>
+		<width>90</width>
+		<height>90</height>
+		<texture>#TV.Search.thumb</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>	
 
 </controls>
 </window>
