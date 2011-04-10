@@ -24,6 +24,7 @@
 				<textXOff>50</textXOff>
 				<textXOff2>1155</textXOff2>
 				<textureHeight>55</textureHeight>
+				<spinCanFocus>no</spinCanFocus>
 				<textureFocus>listcontrol_item_selected_large.png</textureFocus>
 				<dimColor>ffffffff</dimColor>
 			</control>

@@ -695,7 +695,9 @@
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
-		<posY>358</posY>
+		<posY>440</posY>
+		<width>64</width>
+		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
 	</control>

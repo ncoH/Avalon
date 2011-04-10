@@ -97,11 +97,6 @@
 				<textureWidth>231</textureWidth>
 				<textureHeight>327</textureHeight>
 				<textYOff>-2000</textYOff>
-				<spinPosX>312</spinPosX>
-				<spinPosY>104</spinPosY>
-				<spinAlign>right</spinAlign>
-				<spinColor>ffffffff</spinColor>
-				<spinCanFocus>no</spinCanFocus>
 				<imageFolderFocus>-</imageFolderFocus>
 				<frame>-</frame>
 				<frameFocus>-</frameFocus>

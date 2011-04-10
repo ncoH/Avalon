@@ -131,9 +131,6 @@
 		<textYOff3>8</textYOff3>
 		<IconXOff>-2000</IconXOff>
 		<IconYOff>19</IconYOff>
-		<spinPosX>1667</spinPosX>
-		<spinPosY>1010</spinPosY>
-		<spinAlign>right</spinAlign>
 		<textureHeight>55</textureHeight>
 		<dimColor>ffffffff</dimColor>
         </control>

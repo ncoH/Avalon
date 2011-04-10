@@ -236,8 +236,8 @@
 		<posX>678</posX>
 		<posY>922</posY>
 		<width>1060</width>
-		<height>150</height>
-		<font>font11</font>
+		<height>180</height>
+		<font>AvalonLight11</font>
 		<label>#OnlineVideos.desc</label>
 		<visible>[facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>
@@ -347,10 +347,9 @@
 		<visible>[facadeview.smallicons|facadeview.largeicons] + !string.contains(#selecteditem, ..) + string.equals(#OnlineVideos.state, videos)</visible>
 		<texture mask="onlinevideos_station_mask.png">Onlinevideos\logos\#OnlineVideos.selectedSite.png</texture>
 	</control>
-	
-	<import>myonlinevideos.listview.details.xml</import>
 	<import>myonlinevideos.hiddenmenu.xml</import>
     <import>myonlinevideos.details.xml</import>
-    <import>myonlinevideos.facade.xml</import>  	
+    <import>myonlinevideos.facade.xml</import>  
+	<import>myonlinevideos.listview.details.xml</import>	
   </controls>
 </window>
