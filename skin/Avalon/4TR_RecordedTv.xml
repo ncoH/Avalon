@@ -105,7 +105,7 @@
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<posX>69</posX>
-				<posY>355</posY>
+				<posY>285</posY>
 				<width>459</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
@@ -123,7 +123,7 @@
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<posX>69</posX>
-				<posY>285</posY>
+				<posY>355</posY>
 				<width>459</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
