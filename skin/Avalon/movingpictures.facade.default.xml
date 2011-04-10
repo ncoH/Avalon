@@ -47,9 +47,6 @@ This file should contain the facade view
 			<posY>236</posY>
 			<height>550</height>
 			<width>684</width>
-			<spinPosX>-2000</spinPosX>
-			<spinPosY>-2000</spinPosY>
-			<spinAlign>right</spinAlign>
 			<textXOff>50</textXOff>
 			<textureHeight>55</textureHeight>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>

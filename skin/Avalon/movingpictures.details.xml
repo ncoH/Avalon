@@ -51,7 +51,7 @@ This file should contain the details view
 		<id>0</id>
 		<posX>526</posX>
 		<posY>314</posY>
-		<width>1036</width>
+		<width>1005</width>
 		<font>fontB20</font>
 		<label>#MovingPictures.SelectedMovie.title</label>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
