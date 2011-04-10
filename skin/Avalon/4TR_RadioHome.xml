@@ -229,8 +229,7 @@
 		</control>
 
 	</control>
-		
-		
+				
 	<control>
 		<description>video window</description>
 		<type>videowindow</type>

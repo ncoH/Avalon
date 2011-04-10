@@ -2,30 +2,36 @@
 <window>
 <id>7700</id>
 <defaultcontrol>502</defaultcontrol>
-<allowoverlay>no</allowoverlay>
+<allowoverlay>yes</allowoverlay>
+<define>#header.label:1441</define>
+<define>#useSelectedFanart:Yes</define>
 <controls>
 
 	<control>
-		<description>BG</description>
+		<description>default background</description>
 		<type>image</type>
 		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
+		<posX>0</posX>
+        <posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>background.png</texture>
 	</control>
-
+	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>552</posX>
-		<posY>30</posY>
+		<posX>185</posX>
+		<posY>38</posY>
 		<width>500</width>
-		<height>100</height>
-		<label>television</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
+		<font>font22</font>
 	</control>
+	
+<import>common.time.xml</import>
 	
 	<control>
 		<description>tele-text rendering image</description>
@@ -204,6 +210,7 @@
 		</control>
 
 	</control>
+	
 <import>common.overlay.xml</import>
 
 </controls>

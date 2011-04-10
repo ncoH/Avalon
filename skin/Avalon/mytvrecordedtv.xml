@@ -4,8 +4,10 @@
 <defaultcontrol>11</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <controls>
+
 	<import>common.window.recordings.xml</import>
 	<import>common.time.xml</import>
+	
 	<control>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -25,44 +27,51 @@
 		<description>action menu</description>
 		<defaultcontrol>2</defaultcontrol>
 		<onexit>50</onexit>
+		<dimColor>00ffffff</dimColor>
 		<buttonX>0</buttonX>
 		<buttonY>0</buttonY>
-		<buttonwidth>0</buttonwidth>
-		<buttonheight>0</buttonheight>
-		<width>1294</width>
-		<height>1080</height>
-		<dimColor>00ffffff</dimColor>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<buttonwidth>521</buttonwidth>
+		<buttonheight>1080</buttonheight>
 		
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<width>1294</width>
+			<width>1920</width>
 			<height>1080</height>
 			<texture>semi_trans_back_hidden_menu.png</texture>
-			<animation effect="fade" time="200">windowopen</animation>
-			<animation effect="fade" time="400">windowclose</animation>
+			<visible>!Control.HasFocus(50)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="400">hidden</animation>
 		</control>
 		
-		<control>
+	<control>
 		<type>group</type>
-			<control>
-				<description>Heading text label</description>
-				<type>label</type>
-				<id>1</id>
-				<posX>192</posX>
-				<posY>88</posY>
-				<label>924</label>
-				<font>Segoe Light22</font>
-				<textcolor>ffffff</textcolor>
-			</control>
-		
-			<control>
-				<description>button group</description>
-				<type>group</type>
-				<posX>135</posX>
-				<posY>188</posY>
-				<layout>StackLayout(1)</layout>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
+		</control>
+	
+		<control>
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>136</posX>
+			<posY>128</posY>
+			<label>924</label>
+			<font>font22</font>
+			<textcolor>ffffff</textcolor>
+		</control>	
 				
 		<control>
 			<type>button</type>
@@ -70,14 +79,16 @@
 			<id>2</id>
 			<onleft>50</onleft>
 			<onright>50</onright>
-			<onup>7</onup>
+			<onup>5</onup>
 			<ondown>3</ondown>
 			<label>100</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<width>400</width>
-			<height>71</height>
-			<textXOff>50</textXOff>
+			<posX>69</posX>
+			<posY>215</posY>
+			<width>459</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
 			<textYOff>17</textYOff>
 		</control>
 
@@ -91,9 +102,11 @@
 			<label>620</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<width>400</width>
-			<height>71</height>
-			<textXOff>50</textXOff>
+			<posX>69</posX>
+			<posY>285</posY>
+			<width>459</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
 			<textYOff>17</textYOff>
 			<offsetSortButtonX>260</offsetSortButtonX>
 			<offsetSortButtonY>27</offsetSortButtonY>
@@ -110,9 +123,11 @@
 			<label>457</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<width>400</width>
-			<height>71</height>
-			<textXOff>50</textXOff>
+			<posX>69</posX>
+			<posY>355</posY>
+			<width>459</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
 			<textYOff>17</textYOff>
 		</control>
 
@@ -127,39 +142,14 @@
 			<label>624</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<width>400</width>
-			<height>71</height>
-			<textXOff>50</textXOff>
+			<posX>69</posX>
+			<posY>425</posY>
+			<width>459</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
 			<textYOff>17</textYOff>
 		</control>
-<!--
-		<control>
-			<type>button</type>
-			<description>compress button</description>
-			<id>7</id>
-			<onleft>50</onleft>
-			<onright>50</onright>
-			<onup>6</onup>
-			<ondown>2</ondown>
-			<hyperlink>609</hyperlink>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<width>279</width>
-			<height>49</height>
-			<textXOff>25</textXOff>
-			<textYOff>12</textYOff>
-			<label>896</label>
-		</control>
--->
-		<control>
-			<description>Empty button</description>
-			<type>button</type>
-			<id>0</id>
-			<width>279</width>
-			<height>49</height>
-			<label>-</label>
-			<visible>false</visible>
-		 </control>
+		 
 		 <control>
 			<type>button</type>
 			<description>scheduled button</description>
@@ -169,14 +159,17 @@
 			<onup>6</onup>
 			<ondown>10</ondown>
 			<hyperlink>601</hyperlink>
+			<label>603</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<width>400</width>
-			<height>71</height>
-			<textXOff>50</textXOff>
-			<textYOff>17</textYOff>
-			<label>603</label>
+			<posX>69</posX>
+			<posY>495</posY>
+			<width>459</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>			
 		 </control>
+		 
 		 <control>
 			<type>button</type>
 			<description>tvguide button</description>
@@ -186,14 +179,17 @@
 			<onup>9</onup>
 			<ondown>21</ondown>
 			<hyperlink>600</hyperlink>
+			<label>600</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<width>400</width>
-			<height>71</height>
-			<textXOff>50</textXOff>
-			<textYOff>17</textYOff>
-			<label>600</label>
+			<posX>69</posX>
+			<posY>565</posY>
+			<width>459</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>			
 		 </control>
+		 
 		 <control>
 			<type>button</type>
 			<description>button</description>
@@ -203,18 +199,18 @@
 			<onup>10</onup>
 			<ondown>2</ondown>
 			<hyperlink>604</hyperlink>
+			<label>137</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<width>400</width>
-			<height>71</height>
-			<textXOff>50</textXOff>
-			<textYOff>17</textYOff>
-			<label>137</label>
+			<posX>69</posX>
+			<posY>635</posY>
+			<width>459</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>			
 		</control>
+		
 	</control>
-
-	</control>
-	
 </control>
 
 	<control>
