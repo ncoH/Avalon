@@ -347,6 +347,17 @@
 		<visible>[facadeview.smallicons|facadeview.largeicons] + !string.contains(#selecteditem, ..) + string.equals(#OnlineVideos.state, videos)</visible>
 		<texture mask="onlinevideos_station_mask.png">Onlinevideos\logos\#OnlineVideos.selectedSite.png</texture>
 	</control>
+	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+		<id>1</id>
+		<type>image</type>
+		<posY>440</posY>
+		<width>64</width>
+		<height>199</height>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+	</control>
 	<import>myonlinevideos.hiddenmenu.xml</import>
     <import>myonlinevideos.details.xml</import>
     <import>myonlinevideos.facade.xml</import>  

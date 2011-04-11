@@ -55,7 +55,7 @@
     <posX>-2000</posX>
     <posY>200</posY>
     <label>#visbgimage1</label>
-    <visible>Control.HasText(1201) + ![control.hasfocus(221) | control.hasfocus(222) | control.hasfocus(223) | control.hasfocus(231) | control.hasfocus(232) | control.hasfocus(233)]</visible>
+    <visible>Control.HasText(1201) + ![control.hasfocus(221) | control.hasfocus(222) | control.hasfocus(223) | control.hasfocus(231) | Control.HasFocus(232) | Control.HasFocus(233)] | Control.HasFocus(99999)]</visible>
 </control>
 
 <control>
@@ -65,7 +65,7 @@
     <posX>-2000</posX>
     <posY>200</posY>
     <label>#visbgimage2</label>
-    <visible>Control.HasText(1202) + ![control.hasfocus(221) | control.hasfocus(222) | control.hasfocus(223) | control.hasfocus(231) | control.hasfocus(232) | control.hasfocus(233)]</visible>
+    <visible>Control.HasText(1202) + ![control.hasfocus(221) | control.hasfocus(222) | control.hasfocus(223) | control.hasfocus(231) | Control.HasFocus(232) | Control.HasFocus(233)] | Control.HasFocus(99999)</visible>
 </control>
 
 <control>
@@ -283,7 +283,7 @@
 					<textureFocus>exit_button_focus.png</textureFocus>
 					<action>97</action>
 					<onright>901</onright>
-					<onup>5</onup>
+					<onup>99999</onup>
 					<ondown>3</ondown>
 					<label>Exit</label>
 					<textXOff>-2000</textXOff>
@@ -431,7 +431,7 @@
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" start="100" end="0" time="0" reversible="false">Visible</animation>
-		<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,-90" time="250" acceleration="-0.4" reversible="false">Visible</animation>
 	</control>
 	
@@ -444,7 +444,7 @@
 		<align>left</align>
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 	<animation effect="slide" start="0,0" end="0,-90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -457,7 +457,7 @@
 		<align>left</align>
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,-90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -475,9 +475,9 @@
 		<textureNoFocus>-</textureNoFocus>
 		<onup>902</onup>
 		<ondown>802</ondown>
-		<onleft>2</onleft>
+		<onleft>99999</onleft>
 		<onright>601</onright>
-		<visible allowhiddenfocus="true">[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible allowhiddenfocus="true">[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
 	<animation effect="slide" start="0,0" end="0,-90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
@@ -491,7 +491,7 @@
 		<align>left</align>
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,-90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -504,7 +504,7 @@
 		<align>left</align>
 		<font>AvalonLight32</font>
 		<animation effect="fade" start="0" end="100" time="50" delay="100" reversible="false">visible</animation>
-		<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,-90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 		<textcolor>6aa5cb</textcolor>
 	</control>
@@ -531,7 +531,7 @@
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" start="100" end="0" time="0" reversible="false">Visible</animation>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,-90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -544,7 +544,7 @@
 		<align>left</align>
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,-90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -557,7 +557,7 @@
 		<align>left</align>
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,-90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -575,9 +575,9 @@
 		<textureNoFocus>-</textureNoFocus>
 		<onup>901</onup>
 		<ondown>801</ondown>
-		<onleft>2</onleft>
+		<onleft>99999</onleft>
 		<onright>501</onright>
-		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
 	<animation effect="slide" start="0,0" end="0,-90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
@@ -591,7 +591,7 @@
 		<align>left</align>
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,-90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -604,7 +604,7 @@
 		<align>left</align>
 		<font>AvalonLight32</font>
 		<animation effect="fade" start="0" end="100" time="50" delay="100" reversible="false">Visible</animation>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,-90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 		<textcolor>6aa5cb</textcolor>
 	</control>
@@ -632,7 +632,7 @@
 		<align>left</align>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" start="0" end="100" time="50" delay="100" reversible="false">Visible</animation>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -645,7 +645,7 @@
 		<align>left</align>
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -664,9 +664,9 @@
 		<textureNoFocus>-</textureNoFocus>
 		<onup>902</onup>
 		<ondown>802</ondown>
-		<onleft>2</onleft>
+		<onleft>99999</onleft>
 		<onright>601</onright>
-		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
 	<animation effect="slide" start="0,0" end="0,90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
@@ -680,7 +680,7 @@
 		<align>left</align>
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -693,7 +693,7 @@
 		<align>left</align>
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -707,7 +707,7 @@
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" start="100" end="0" time="0" reversible="false">Visible</animation>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -733,7 +733,7 @@
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" start="0" end="100" time="50" delay="100" reversible="false">Visible</animation>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -746,7 +746,7 @@
 		<align>left</align>
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -764,9 +764,9 @@
 		<textureNoFocus>-</textureNoFocus>
 		<onup>901</onup>
 		<ondown>801</ondown>
-		<onleft>2</onleft>
+		<onleft>99999</onleft>
 		<onright>501</onright>
-		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
 	<animation effect="slide" start="0,0" end="0,90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
@@ -780,7 +780,7 @@
 		<align>left</align>
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -793,7 +793,7 @@
 		<align>left</align>
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -807,7 +807,7 @@
 		<font>AvalonLight32</font>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" start="100" end="0" time="0" reversible="false">Visible</animation>
-		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233)]</visible>
+		<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) ]</visible>
 		<animation effect="slide" start="0,0" end="0,90" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
@@ -1045,26 +1045,60 @@
 		<ondown>605</ondown>
 		<onleft>1002</onleft>
 		<visible>!string.equals(#subitem5,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
-	</control>	
+	</control>
+	
 </control>
 
-    <control>
-      <description>Update Icon</description>
-      <type>image</type>
-      <id>0</id>
-      <width>200</width>
-      <height>200</height>
-      <posX>635</posX>
-      <posY>150</posY>
-      <align>center</align>
-      <texture>skinupdate.png</texture>
-      <visible>string.equals(#Avalon.UpdateAvailable,true)</visible>
-      <animation effect="fade" delay="4000" start="100" end="0" time="3000">WindowOpen</animation>
-      <animation effect="zoom" start="105,105" end="110,110" time="1500" tween="cubic" easing="inout" pulse="true" reversible="false" condition="true">Conditional</animation>
-      <animation effect="fade" start="100" end="0" time="10000">Visible</animation>
-      <animation effect="fade" delay="100" start="0" end="0" time="100">WindowClose</animation>
+      <control>
+        <description>Update Indicator</description>
+        <type>button</type>
+        <id>99999</id>
+		<label>-</label>
+		<textureFocus>update_notification_focus.png</textureFocus>
+		<textureNoFocus>update_notification_nofocus.png</textureNoFocus>
+		<posX>164</posX>
+		<posY>84</posY>
+		<width>64</width>
+		<height>64</height>
+		<hyperlink>155104</hyperlink>
+		<onright>1001</onright>
+		<onleft>2</onleft>
+		<onup>1001</onup>
+		<ondown>1001</ondown>
+      <visible>string.equals(#Avalon.ShowUpdateInd,true)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      </control>
+    
+	<control>
+      <type>label</type>
+      <id>4201</id>
+      <posX>225</posX>
+      <posY>97</posY>
+      <width>500</width>
+      <label>Update available</label>
+      <textcolor>ffffff</textcolor>
+      <font>AvalonLight12</font>
+      <visible>string.equals(#Avalon.ShowUpdateInd,true) + string.equals(#uplabel1,yes)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="600">visiblechange</animation>
     </control>
-
+	
+	<control>
+      <type>label</type>
+      <id>4202</id>
+      <posX>225</posX>
+      <posY>97</posY>
+      <width>500</width>
+      <label>Press left and push the button to install</label>
+      <textcolor>ffffff</textcolor>
+      <font>AvalonLight12</font>
+      <visible>string.equals(#Avalon.ShowUpdateInd,true) + string.equals(#uplabel2,yes)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="600">visiblechange</animation>
+    </control>
 <import>BasicHome.weather.xml</import>  
 <import>common.overlay.xml</import>
 <import>BasicHome.recentlyaddedSeries.xml</import>

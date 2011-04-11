@@ -11,34 +11,22 @@
 	-->
 	
 	<!-- version may be useful for logging purposes and/or future upgrades -->
-	<version>1.3.0.0</version>
+	<version>1.5.0.0</version>
 
 	<!-- Skin Defines -->
 	<defines>		
         <property key="blah">false</property>	
     </defines>
-	
-	<!-- 
-		Possible Layout Types supported by the plugin, the defined layout will be what is loaded by default for the corresponding view:	
-		
-		AppendImageToList attribute is a setting that the plugin reads to determine if Episode/Season/Series images should be added to the List control
-		Enabling this will take a hit in performance, enable it only if your skin specifically requires it.
-		
-			Groups:
-				layout="List"
-				layout="SmallIcons"
-			Series:
-				layout="ListPosters"
-				layout="ListBanners" 
-				layout="Filmstrip"
-				layout="WideBanners"
-			Season:
-				layout="List"
-				layout="Filmstrip" 
-			Episode:
-				layout="List"
-	
-	-->
+	<defines>
+ 	    <!-- fanart can be disabled per layout and/or per view by setting to false -->
+ 	    <property key="fanart.seriesview">true</property>
+ 	    <property key="fanart.seasonview">true</property>
+ 	    <property key="fanart.episodeview">true</property>
+ 	    <property key="fanart.listlayout">true</property>
+ 	    <property key="fanart.iconslayout">true</property>
+ 	    <property key="fanart.filmstriplayout">true</property>
+ 	    <property key="fanart.coverflowlayout">true</property>
+ 	  </defines>
 	
 	<!-- Position of 'NEW' stamp in thumb views -->
 	<!-- Draws 'tvseries_newlabel.png' on thumbnail -->
@@ -196,6 +184,29 @@ skin\Maya\Media\TVSeries\logos\subtitles.png;-;<Episode.AvailableSubtitles>;-;=;
 skin\Maya\Media\TVSeries\logos\nosubtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;0;-;AND;-;;-;=;-;;-;
 ]]>
 	</logos>	
+	
+	<!-- 
+		Possible Layout Types supported by the plugin, the defined layout will be what is loaded by default for the corresponding view:	
+		
+		AppendImageToList attribute is a setting that the plugin reads to determine if Episode/Season/Series images should be added to the List control
+		Enabling this will take a hit in performance, enable it only if your skin specifically requires it.
+		
+			Groups:
+				layout="List"
+				layout="SmallIcons"
+			Series:
+				layout="ListPosters"
+				layout="ListBanners" 
+				layout="Filmstrip"
+				layout="WideBanners"
+			Season:
+				layout="List"
+				layout="Filmstrip" 
+			Episode:
+				layout="List"
+	
+	-->
+	
 	<!-- Only used for Thumbnail view creation e.g. Filmstrip and WideBanners. Episode Thumbs are the exception -->
 	<!-- #TVSeries.SeriesBanner and #TVSeries.SeasonBanner properties dont use the values below, those images will be presented as they are but will be using a delay of 250ms to present image -->
 	<!-- Note: Choosing higher quality settings will result in a drop in performance -->
