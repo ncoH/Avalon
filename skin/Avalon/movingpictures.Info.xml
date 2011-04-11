@@ -260,7 +260,7 @@
 	<control>
 		<type>imagelist</type>
 		<id>101</id>
-		<posX>1628</posX>
+		<posX>1582</posX>
 		<posY>328</posY>
 		<width>185</width>
 		<height>29</height>
@@ -274,6 +274,24 @@
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
+		<visible>Control.HasFocus(80)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="1200,0">visible</animation>
+		<animation effect="slide" time="0" end="1500,0">hidden</animation>
+	</control>
+	
+	<control>
+		<description>Score</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.score.localized</label>
+		<id>0</id>
+		<posX>1770</posX>
+		<posY>328</posY>
+		<width>185</width>
+		<align>right</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
 		<visible>Control.HasFocus(80)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>

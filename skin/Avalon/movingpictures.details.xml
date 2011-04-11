@@ -235,7 +235,7 @@ This file should contain the details view
 	<control>
 		<type>imagelist</type>
 		<id>101</id>
-		<posX>1312</posX>
+		<posX>1290</posX>
 		<posY>414</posY>
 		<width>185</width>
 		<height>29</height>
@@ -249,6 +249,23 @@ This file should contain the details view
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+	</control>
+	
+	<control>
+		<description>Score</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.score.localized</label>
+		<id>0</id>
+		<posX>1478</posX>
+		<posY>414</posY>
+		<width>185</width>
+		<align>right</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
