@@ -40,14 +40,14 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<id>50</id>
-		<posX>930</posX>
-		<posY>215</posY>
+		<posX>920</posX>
+		<posY>226</posY>
 		<width>800</width>
 		<textcolor>ffffffff</textcolor>
 		<textColorNoFocus>ff6aa5cb</textColorNoFocus>
 		<buttonTextXOff>10</buttonTextXOff>
 		<buttonTextYOff>0</buttonTextYOff>
-		<buttonHeight>95</buttonHeight>
+		<buttonHeight>92</buttonHeight>
 		<buttonOffset>25</buttonOffset>
 		<buttonFont>AvalonLight32</buttonFont>
 		<spaceBetweenButtons>0</spaceBetweenButtons>
