@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>
+<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>3</defaultcontrol>
+		<onexit>0</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>106</buttonwidth>
+		<buttonheight>720</buttonheight>
+		<width>200</width>
+		<height>1080</height>
+		<dimColor>00ffffff</dimColor>
+		<visible>Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+		
+			<control>
+				<type>image</type>
+				<id>0</id>
+				<width>1920</width>
+				<height>1080</height>
+				<texture>semi_trans_back_hidden_menu.png</texture>
+				<animation effect="fade" time="450">visible</animation>
+				<animation effect="fade" time="400">hidden</animation>
+			</control>
+		
+			<control>
+				<animation effect="fade" time="250">WindowOpen</animation>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+				<animation effect="fade" time="250">visible</animation>
+				<animation effect="fade" time="0">hidden</animation>
+				<type>group</type>
+				
+				<control>
+					<type>image</type>
+					<id>0</id>
+					<posY>288</posY>
+					<posX>0</posX>
+					<width>280</width>
+					<height>493</height>
+					<texture>exitmenu_bg.png</texture>
+				</control>
+				
+				<control>
+					<description>Shutdown Button</description>
+					<type>button</type>
+					<id>3</id>
+					<posX>105</posX>
+					<posY>422</posY>
+					<width>78</width>
+					<height>78</height>
+					<textureNoFocus>shutdown_button_nofocus.png</textureNoFocus>
+					<textureFocus>shutdown_button_focus.png</textureFocus>
+					<action>99</action>
+					<onright>901</onright>
+					<onup>2</onup>
+					<ondown>4</ondown>
+					<label>1030</label>
+					<textXOff>-2000</textXOff>
+				</control>
+
+				<control>
+					<description>Restart Button</description>
+					<type>button</type>
+					<id>4</id>
+					<posX>105</posX>
+					<posY>500</posY>
+					<width>78</width>
+					<height>78</height>
+					<textureNoFocus>restart_button_nofocus.png</textureNoFocus>
+					<textureFocus>restart_button_focus.png</textureFocus>
+					<action>98</action>
+					<onright>901</onright>
+					<onup>3</onup>
+					<ondown>2</ondown>
+					<label>1031</label>
+					<textXOff>-2000</textXOff>
+				</control>
+				
+				<control>
+					<description>Exit Button</description>
+					<type>button</type>
+					<id>2</id>
+					<posX>105</posX>
+					<posY>574</posY>
+					<onleft>3</onleft>
+					<width>78</width>
+					<height>78</height>
+					<textureNoFocus>exit_button_nofocus.png</textureNoFocus>
+					<textureFocus>exit_button_focus.png</textureFocus>
+					<action>97</action>
+					<onright>901</onright>
+					<onup>4</onup>
+					<ondown>3</ondown>
+					<label>Exit</label>
+					<textXOff>-2000</textXOff>
+				</control>
+<!--				
+				<control>
+					<description>Sleepcontrol Button</description>
+					<type>button</type>
+					<id>5</id>
+					<posX>15</posX>
+					<posY>550</posY>
+					<width>93</width>
+					<height>96</height>
+					<textureNoFocus>timer_button_unfocus.png</textureNoFocus>
+					<textureFocus>timer_button_focus.png</textureFocus>
+					<hyperlink>7969</hyperlink>
+					<onright>901</onright>
+					<visible>!string.equals(#SleepControl.Text,)+plugin.isenabled(Sleep Control)</visible>
+					<onup>4</onup>
+					<ondown>2</ondown>
+					<label>#SkinTranslation.Translations.SleepControl.Label</label>
+					<textXOff>-2000</textXOff>
+					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
+				</control>
+-->
+			</control>
+		</control>
+</controls>
+</window>

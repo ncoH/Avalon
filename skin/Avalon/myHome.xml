@@ -59,8 +59,8 @@
 		<hoverKeepAspectratio>no</hoverKeepAspectratio>
 		<scrollTime>160</scrollTime>
 		<scrollTimeMin>100</scrollTimeMin>
-		<onright>4</onright>
-		<onleft>2</onleft>
+		<onright>3</onright>
+		<onleft>3</onleft>
 	</control>
 
 	<control>
@@ -78,116 +78,21 @@
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
 		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
 	</control>
-
-	<!-- TOPBAR Buttons -->
-<control>
-		<type>actiongroup</type>
-		<description>action menu</description><defaultcontrol>3</defaultcontrol>
-		<onexit>0</onexit>
-		<buttonX>0</buttonX>
-		<buttonY>0</buttonY>
-		<buttonwidth>106</buttonwidth>
-		<buttonheight>720</buttonheight>
-		<width>200</width>
-		<height>768</height>
-		<dimColor>00ffffff</dimColor>
-		
-		<control>
-			<description>group element</description>
-			<type>group</type>
-			<animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
-			<animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
-			<visible>!Control.HasFocus(50)</visible>
-			
-			<control>
-				<description>group element</description>
-				<type>group</type>
-				<animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
-				<animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
-				<posX>71</posX>
-				<posY>150</posY>
-				<visible>!Control.HasFocus(50)</visible>
-				
-				<control>
-					<description>Exit Button</description>
-					<type>button</type>
-					<id>2</id>
-					<posX>15</posX>
-					<posY>250</posY>
-					<onleft>3</onleft>
-					<width>93</width>
-					<height>96</height>
-					<textureNoFocus>exit_button_nofocus.png</textureNoFocus>
-					<textureFocus>exit_button_focus.png</textureFocus>
-					<action>97</action>
-					<onright>50</onright>
-					<onup>5</onup>
-					<ondown>3</ondown>
-					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
-					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
-				</control>
-
-				<control>
-					<description>Shutdown Button</description>
-					<type>button</type>
-					<id>3</id>
-					<posX>15</posX>
-					<posY>350</posY>
-					<width>93</width>
-					<height>96</height>
-					<textureNoFocus>shutdown_button_nofocus.png</textureNoFocus>
-					<textureFocus>shutdown_button_focus.png</textureFocus>
-					<action>99</action>
-					<onright>50</onright>
-					<onup>2</onup>
-					<ondown>4</ondown>
-					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
-					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
-				</control>
-
-				<control>
-					<description>Restart Button</description>
-					<type>button</type>
-					<id>4</id>
-					<posX>15</posX>
-					<posY>450</posY>
-					<width>93</width>
-					<height>96</height>
-					<textureNoFocus>restart_button_nofocus.png</textureNoFocus>
-					<textureFocus>restart_button_focus.png</textureFocus>
-					<action>98</action>
-					<onright>50</onright>
-					<onup>3</onup>
-					<ondown>5</ondown>
-					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
-					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
-				</control>
-				
-				<control>
-					<description>Sleepcontrol Button</description>
-					<type>button</type>
-					<id>5</id>
-					<posX>15</posX>
-					<posY>550</posY>
-					<width>93</width>
-					<height>96</height>
-					<textureNoFocus>timer_button_unfocus.png</textureNoFocus>
-					<textureFocus>timer_button_focus.png</textureFocus>
-					<hyperlink>7969</hyperlink>
-					<onright>901</onright>
-					<visible>!string.equals(#SleepControl.Text,)+plugin.isenabled(Sleep Control)</visible>
-					<onup>4</onup>
-					<ondown>2</ondown>
-					<label>#SkinTranslation.Translations.SleepControl.Label</label>
-					<textXOff>-2000</textXOff>
-					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
-					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
-				</control>
-			</control>
-
-		</control>
-
+	
+	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>440</posY>
+		<width>64</width>
+		<height>199</height>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>![Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)]</visible>
 	</control>
+
+<import>myHome.exitmenu.xml</import>
 <import>BasicHome.weather.xml</import>  
 <import>common.overlay.xml</import>
 </controls>

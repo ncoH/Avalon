@@ -31,7 +31,7 @@
         <width>48</width>
         <height>48</height>
         <texture>basichome_play.png</texture>
-		<visible>control.isvisible(123) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5) + [control.hasfocus(231) | control.hasfocus(232) | control.hasfocus(233)] + Control.IsVisible(10)</visible>
+		<visible>control.isvisible(123) + [control.hasfocus(231) | control.hasfocus(232) | control.hasfocus(233)] + Control.IsVisible(10)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -149,7 +149,7 @@
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>control.isvisible(123) + ![control.isvisible(601) | control.isvisible(501)]  + ![string.starts(#avalon.recentlyAdded.series1.fanart,#)|string.starts(#avalon.recentlyAdded.series1.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <visible>control.isvisible(123) + ![control.isvisible(601) | control.isvisible(501)]  + ![string.starts(#avalon.recentlyAdded.series1.fanart,#)|string.starts(#avalon.recentlyAdded.series1.thumb,#)]</visible>
       <animation effect="slide" end="360,0" time="300" acceleration="-0.1" reversible="false">Hidden</animation>
       <animation effect="slide" start="360,0" end="0,0" time="400" delay="500" acceleration="-0.1" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -195,7 +195,7 @@
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>control.isvisible(123) + ![control.isvisible(601) | control.isvisible(501)] + ![string.starts(#avalon.recentlyAdded.series2.fanart,#)|string.starts(#avalon.recentlyAdded.series2.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <visible>control.isvisible(123) + ![control.isvisible(601) | control.isvisible(501)] + ![string.starts(#avalon.recentlyAdded.series2.fanart,#)|string.starts(#avalon.recentlyAdded.series2.thumb,#)]</visible>
       <animation effect="slide" end="360,0" time="300" acceleration="-0.1" reversible="false">Hidden</animation>
       <animation effect="slide" start="360,0" end="0,0" time="400" delay="500" acceleration="-0.1" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -231,7 +231,7 @@
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>control.isvisible(123) + ![control.isvisible(601) | control.isvisible(501)]+ ![string.starts(#avalon.recentlyAdded.series3.fanart,#)|string.starts(#avalon.recentlyAdded.series3.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <visible>control.isvisible(123) + ![control.isvisible(601) | control.isvisible(501)]+ ![string.starts(#avalon.recentlyAdded.series3.fanart,#)|string.starts(#avalon.recentlyAdded.series3.thumb,#)]</visible>
       <animation effect="slide" end="360,0" time="300" acceleration="-0.1" reversible="false">Hidden</animation>
       <animation effect="slide" start="360,0" end="0,0" time="400" delay="500" acceleration="-0.1" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -274,7 +274,7 @@
         <width>183</width>
         <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.series1.thumb</texture>
-		<visible>control.isvisible(123) + [control.isvisible(601) | control.isvisible(501)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+		<visible>control.isvisible(123) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="350" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -290,7 +290,7 @@
         <width>1</width>
         <height>468</height>
         <texture>basichome_sub_separator.png</texture>
-		<visible>control.isvisible(123) + control.hasthumb(444) + [control.isvisible(601) | control.isvisible(501)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+		<visible>control.isvisible(123) + control.hasthumb(444) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="350" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -306,7 +306,7 @@
 		<width>182</width>
 		<height>588</height>
 		<texture>basichome_right_overlay.png</texture> 
-		<visible>control.isvisible(123) + control.hasthumb(444) + [control.isvisible(601) | control.isvisible(501)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+		<visible>control.isvisible(123) + control.hasthumb(444) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
