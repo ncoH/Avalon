@@ -218,24 +218,20 @@
 				<height>550</height>
 				<width>919</width>
 				<onleft>2</onleft>
-				<onright>5</onright>
+				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
-				<PinIconHeight>53</PinIconHeight>
-				<PinIconWidth>34</PinIconWidth>
-				<PinIconXOff>0</PinIconXOff>
-				<PinIconYOff>0</PinIconYOff>
+				<PinIconHeight>46</PinIconHeight>
+				<PinIconWidth>45</PinIconWidth>
+				<PinIconXOff>40</PinIconXOff>
+				<PinIconYOff>6</PinIconYOff>
 				<itemWidth>64</itemWidth>
 				<itemHeight>53</itemHeight>
 				<textureFocus>listcontrol_item_selected_tv.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<IconXOff>-2000</IconXOff>
 				<IconYOff>0</IconYOff>
-				<spinPosX>312</spinPosX>
-				<spinPosY>104</spinPosY>
-				<spinAlign>right</spinAlign>
 				<textXOff>40</textXOff>
 				<keepaspectratio>yes</keepaspectratio>
-				<spinCanFocus>no</spinCanFocus>
 				<dimColor>ffffffff</dimColor>
 			</control>
 
