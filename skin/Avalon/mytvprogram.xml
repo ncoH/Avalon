@@ -215,7 +215,7 @@
 				<id>10</id>
 				<posX>918</posX>
 				<posY>350</posY>
-				<height>700</height>
+				<height>550</height>
 				<width>919</width>
 				<onleft>2</onleft>
 				<onright>5</onright>
@@ -253,8 +253,8 @@
 		<posX>1860</posX>
 		<posY>1010</posY>
 		<label>| #currentmodule: #itemcount</label>
-		<posX>321</posX>
-		<posY>98</posY>
+		<posX>242</posX>
+		<posY>99</posY>
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
