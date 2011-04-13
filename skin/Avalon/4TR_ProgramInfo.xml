@@ -73,8 +73,8 @@
 			<label>991</label>
 			<onup>9</onup>
 			<ondown>5</ondown>
-			<onright>10</onright>
 			<onleft>2</onleft>
+			<textalign>left</textalign>			
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 		</control>
 
@@ -96,14 +96,15 @@
 			<description>Only new episodes</description>
 			<type>togglebutton</type>
 			<id>5</id>
-			<label>Only new episodes</label>	
 			<posX>462</posX>
-			<posY>292</posY>			
+			<posY>292</posY>	
+			<label>Only new episodes</label>				
+			<colordiffuse>ffffffff</colordiffuse>			
 			<onup>3</onup>
 			<ondown>9</ondown>
 			<onright>10</onright>
 			<onleft>4</onleft>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<textalign>left</textalign>
 		</control>
 
 		<control>
@@ -129,8 +130,8 @@
 			<label>1445</label>
 			<onup>5</onup>
 			<ondown>3</ondown>
-			<onright>10</onright>
 			<onleft>8</onleft>
+			<textalign>left</textalign>			
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 		</control>
 
@@ -211,10 +212,10 @@
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
-				<PinIconHeight>53</PinIconHeight>
-				<PinIconWidth>34</PinIconWidth>
-				<PinIconXOff>0</PinIconXOff>
-				<PinIconYOff>0</PinIconYOff>
+				<PinIconHeight>46</PinIconHeight>
+				<PinIconWidth>45</PinIconWidth>
+				<PinIconXOff>40</PinIconXOff>
+				<PinIconYOff>6</PinIconYOff>
 				<itemWidth>64</itemWidth>
 				<itemHeight>53</itemHeight>
 				<textureFocus>listcontrol_item_selected_tv.png</textureFocus>
@@ -244,8 +245,8 @@
 		<posX>1860</posX>
 		<posY>1010</posY>
 		<label>| #itemcount</label>
-		<posX>321</posX>
-		<posY>98</posY>
+		<posX>242</posX>
+		<posY>99</posY>
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>

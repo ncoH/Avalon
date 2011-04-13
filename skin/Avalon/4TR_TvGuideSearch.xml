@@ -3,7 +3,6 @@
 <id>49850</id>
 <defaultcontrol>2</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
-<define>#header.label:724</define> 
 <controls>
 
 	<control>
@@ -43,7 +42,7 @@
 		<posX>185</posX>
 		<posY>38</posY>
 		<width>800</width>
-		<label>#header.label</label>
+		<label>724</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>font22</font>
 	</control>

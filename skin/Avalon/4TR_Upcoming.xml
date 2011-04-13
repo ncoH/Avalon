@@ -82,8 +82,8 @@
 		<type>label</type>
 		<id>1</id>
 		<label>| #itemcount</label>
-		<posX>321</posX>
-		<posY>98</posY>
+		<posX>242</posX>
+		<posY>99</posY>
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
@@ -95,35 +95,29 @@
 	<control>
 		<type>group</type>
 		<description>group element</description>
-		<id>0</id>
-		<posX>455</posX>
-		<posY>116</posY>
-		<width>778</width>
-		<dimColor>ffffffff</dimColor>
-		<height>583</height>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		
-      <control>
-        <description>upcoming episodes listcontrol</description>
+			<control>
+				<description>listcontrol</description>
 				<type>listcontrol</type>
 				<id>10</id>
 				<posX>918</posX>
-				<posY>236</posY>
-				<height>700</height>
+				<posY>350</posY>
+				<height>550</height>
 				<width>919</width>
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
-				<PinIconHeight>53</PinIconHeight>
-				<PinIconWidth>34</PinIconWidth>
-				<PinIconXOff>0</PinIconXOff>
-				<PinIconYOff>0</PinIconYOff>
+				<PinIconHeight>46</PinIconHeight>
+				<PinIconWidth>45</PinIconWidth>
+				<PinIconXOff>40</PinIconXOff>
+				<PinIconYOff>6</PinIconYOff>
 				<itemWidth>64</itemWidth>
 				<itemHeight>53</itemHeight>
 				<textureFocus>listcontrol_item_selected_tv.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<IconXOff>45</IconXOff>
+				<IconXOff>-2000</IconXOff>
 				<IconYOff>0</IconYOff>
 				<spinPosX>312</spinPosX>
 				<spinPosY>104</spinPosY>
@@ -132,7 +126,23 @@
 				<keepaspectratio>yes</keepaspectratio>
 				<spinCanFocus>no</spinCanFocus>
 				<dimColor>ffffffff</dimColor>
-       </control>
+			</control>
+	   
+</control>
+
+		<control>
+			<description>scheduled recordings label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1030</posX>
+			<posY>240</posY>
+			<width>800</width>
+			<label>Scheduled recordings</label>
+			<textcolor>85cffe</textcolor>
+			<font>AvalonLight16</font>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
 		
 		<control>
 			<id>0</id>
@@ -224,7 +234,6 @@
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
       </control>
-    </control>
 	
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
