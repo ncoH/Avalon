@@ -85,7 +85,7 @@
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\ac3_51.png</texture>
-		<visible>[string.contains(#Play.Current.AudioCodec.Texture,AC-3)+string.contains(#Play.Current.AudioChannels.Texture,5)]</visible>
+		<visible>[string.contains(#Play.Current.AudioCodec.Texture,AC-3)+string.contains(#Play.Current.AudioChannels.Texture,5.1)]</visible>
 	</control>
 	
 	<control>
@@ -97,7 +97,7 @@
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dts_51.png</texture>
-		<visible>string.contains(#Play.Current.AudioCodec.Texture,dts)+string.contains(#Play.Current.AudioChannels.Texture,5)</visible>
+		<visible>string.contains(#Play.Current.AudioCodec.Texture,dts)+string.contains(#Play.Current.AudioChannels.Texture,5.1)</visible>
 	</control>
 	
 	<control>
@@ -109,7 +109,7 @@
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dts_71.png</texture>
-		<visible>string.contains(#Play.Current.AudioCodec.Texture,dts)+[string.contains(#Play.Current.AudioChannels.Texture,7)|string.contains(#Play.Current.AudioChannels.Texture,8)]</visible>
+		<visible>string.contains(#Play.Current.AudioCodec.Texture,dts)+[string.contains(#Play.Current.AudioChannels.Texture,7)|string.contains(#Play.Current.AudioChannels.Texture,7.1)]</visible>
 	</control>
 	
 	<control>
