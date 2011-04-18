@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file should contain the facade view
+-->
+<window>
+<controls>
+
+<control>		
+      <type>facadeview</type>
+      <id>51</id>
+	  	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <control>
+        <description>Categories List</description>
+        <type>listcontrol</type>
+        <id>51</id>
+        <onleft>51</onleft>
+        <onright>51</onright>
+		<scrollOffset>1</scrollOffset>
+		<posX>1166</posX>
+		<posY>236</posY>
+		<height>700</height>
+		<width>684</width>
+		<spinPosX>1667</spinPosX>
+		<spinPosY>1010</spinPosY>
+		<spinAlign>right</spinAlign>
+		<textXOff>50</textXOff>
+		<textureHeight>55</textureHeight>		
+		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+      </control>
+    </control>
+
+	<control>
+		<type>facadeview</type>
+		<id>50</id>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<control>
+			<description>Movie List</description>
+			<type>listcontrol</type>
+			<id>50</id>
+			<onleft>2</onleft>
+			<onright>80</onright>
+			<scrollOffset>1</scrollOffset>
+			<posX>1166</posX>
+			<posY>236</posY>
+			<height>700</height>
+			<width>684</width>
+			<textXOff>50</textXOff>
+			<textureHeight>55</textureHeight>
+			<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<dimColor>ffffffff</dimColor>
+		</control>
+
+		<control>
+			<description>Filmstrip view</description>
+			<type>filmstrip</type>
+			<dimColor>90ffffff</dimColor>
+			<id>50</id>
+				<scrollOffset>3</scrollOffset>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>
+				<posX>114</posX>
+				<posY>520</posY>
+				<width>1920</width>
+				<height>768</height>
+				<onup>2</onup>
+				<ondown>2</ondown>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<thumbWidth>230</thumbWidth>
+				<thumbHeight>327</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidth>248</itemWidth>
+				<itemHeight>345</itemHeight>
+				<textureWidth>230</textureWidth>
+				<textureHeight>327</textureHeight>
+				<textYOff>-2000</textYOff>
+				<imageFolderFocus>-</imageFolderFocus>
+				<frame>-</frame>
+				<frameFocus>-</frameFocus>
+				<background>-</background>
+				<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_mask.png"></thumbs>
+				<showFrame>yes</showFrame>
+				<showFolder>no</showFolder>
+				<showBackGround>no</showBackGround>
+				<showInfoImage>no</showInfoImage>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,780" time="200">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,780" time="100">unfocus</thumbAnimation>
+		</control>
+
+			<control>
+				<description>Thumbnail Panel</description>
+				<type>thumbnailpanel</type>
+				<id>50</id>
+				<posX>55</posX>
+				<posY>206</posY>
+				<width>1920</width>
+				<height>800</height>
+				<scrollOffset>1</scrollOffset>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>
+				<onleft>2</onleft>
+				<onright>2</onright>
+				<itemWidth>184</itemWidth>
+				<itemHeight>239</itemHeight>
+				<textureWidth>167</textureWidth>
+				<textureHeight>232</textureHeight>
+				<thumbWidth>167</thumbWidth>
+				<thumbHeight>232</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidthBig>263</itemWidthBig>
+				<itemHeightBig>360</itemHeightBig>
+				<thumbWidthBig>248</thumbWidthBig>
+				<thumbHeightBig>345</thumbHeightBig>
+				<textureWidthBig>248</textureWidthBig>
+				<textureHeightBig>345</textureHeightBig>
+				<thumbPosXBig>0</thumbPosXBig>
+				<thumbPosYBig>0</thumbPosYBig>
+				<zoomXPixels>0</zoomXPixels>
+				<zoomYPixels>0</zoomYPixels>
+				<hideUnfocusTexture>no</hideUnfocusTexture>
+				<keepaspectratio>no</keepaspectratio>
+				<renderFocusText>no</renderFocusText>
+				<renderUnfocusText>no</renderUnfocusText>
+				<showFrame>true</showFrame>
+				<frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
+				<frameFocus>video_thumb_focus.png</frameFocus>
+				<textureMask>video_thumb_mask.png</textureMask>
+				<shadowAngle>90</shadowAngle>
+    			<shadowDistance>50</shadowDistance>
+				<thumbZoom>no</thumbZoom>
+			</control>
+	</control>
+</controls>
+</window>

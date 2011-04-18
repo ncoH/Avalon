@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>7988</id>
+	<defaultcontrol>10</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+	
+        <control>
+            <description>group element</description>
+            <type>group</type>
+            <animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+	
+	
+        <control>
+            <id>0</id>
+            <type>image</type>
+            <posX>409</posX>
+			<posY>213</posY>
+			<width>548</width>
+			<height>342</height>
+			<texture>dialog_background.png</texture>
+        </control>
+		
+        <control>
+            <id>2</id>
+            <description>dialog Heading</description>
+            <type>label</type>
+            <posX>470</posX>
+            <posY>261</posY>
+            <font>Segoe Light18</font>
+            <textcolor>ff85cffe</textcolor>
+			<width>420</width>
+            <label>934</label>
+        </control>
+
+
+		<!-- 		<control> 
+			<description>Rating label</description>
+			<type>label</type>
+			<id>3</id>
+			<posX>320</posX>
+			<posY>285</posY>
+			<label>204</label>
+			<font>font12</font>
+			<textcolor>ffffffff</textcolor>
+		</control> -->
+
+		<control>
+			<description>Rating value</description>
+			<type>label</type>
+			<id>4</id>
+			<posX>673</posX>
+			<posY>380</posY>
+			<label>#myfilms.rating</label>
+			<font>font16</font>
+			<align>center</align>
+			<colordiffuse>ffffffff</colordiffuse>
+			<textcolor>ffff8000</textcolor>
+		</control>
+		
+        <control>
+            <id>11</id>
+            <description>left button</description>
+            <type>button</type>
+            <onleft>11</onleft>
+            <onright>10</onright>
+            <onup>12</onup>
+            <ondown>12</ondown>
+            <posX>470</posX>
+            <posY>368</posY>
+            <width>21</width>
+            <height>21</height>
+            <textureFocus>arrow_round_left_focus.png</textureFocus>
+            <textureNoFocus>arrow_round_left_nofocus.png</textureNoFocus>
+        </control>
+		
+        <control>
+            <id>10</id>
+            <description>right button</description>
+            <type>button</type>
+            <onleft>11</onleft>
+            <onright>10</onright>
+            <onup>12</onup>
+            <ondown>12</ondown>
+            <posX>875</posX>
+            <posY>368</posY>
+            <width>21</width>
+            <height>21</height>
+            <textureFocus>arrow_round_right_focus.png</textureFocus>
+            <textureNoFocus>arrow_round_right_nofocus.png</textureNoFocus>
+        </control>
+		
+		<control>
+			<type>imagelist</type>
+			<id>100</id>
+			<posX>440</posX>
+			<posY>386</posY>
+			<width>520</width>
+			<height>72</height>
+			<textureWidth>60</textureWidth>
+			<textureHeight>60</textureHeight>
+			<subitems>
+				<subitem>UserRatingStarOff.png</subitem>
+				<subitem>stargood.png</subitem>
+			</subitems>
+			<orientation>horizontal</orientation>
+			<percentage>#myfilms.rating</percentage>
+			<imagesToDraw>10</imagesToDraw>
+		</control>
+		
+        <control>
+            <id>12</id>
+            <description>OK button</description>
+            <type>button</type>
+			<onleft>11</onleft>
+			<onright>10</onright>
+			<onup>10</onup>
+			<ondown>12</ondown>
+            <posX>570</posX>
+            <posY>480</posY>
+            <width>210</width>
+            <textureFocus>button-small-focus.png</textureFocus>
+            <label>186</label>
+			<textalign>center</textalign>
+            <textYOff>0</textYOff>
+        </control>
+	</control>	
+	
+	</controls>
+</window>
