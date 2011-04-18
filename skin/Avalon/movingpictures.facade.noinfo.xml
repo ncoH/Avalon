@@ -47,8 +47,6 @@ This file should contain the facade view
 			<posY>236</posY>
 			<height>700</height>
 			<width>684</width>
-			<spinPosX>233</spinPosX>
-			<spinPosY>104</spinPosY>
 			<spinAlign>right</spinAlign>
 			<textXOff>50</textXOff>
 			<textureHeight>55</textureHeight>

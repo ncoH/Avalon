@@ -82,22 +82,6 @@
 	</control>
 	
 	<control>
-		<description>background thumbview</description>
-		<type>image</type>
-		<id>2021</id>
-		<posX>0</posX>
-		<posY>164</posY>
-		<width>1893</width>
-		<height>755</height>
-		<texture>viewport_thumbs2.png</texture>
-		<visible>[facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
-	</control>
-	
-	<control>
 		<description>viewport thumbs</description>
 		<type>image</type>
 		<id>2021</id>
