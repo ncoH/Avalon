@@ -12,31 +12,33 @@
 		<description>Description bg</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>0</posX>
-		<posY>796</posY>
-		<width>1920</width>
-		<height>434</height>
-		<texture>osd_bg.png</texture>
-		<visible>[player.paused|player.forwarding|player.rewinding] + !window.isosdvisible</visible>
+		<posX>180</posX>
+		<posY>875</posY>
+		<width>1560</width>
+		<height>204</height>
+		<texture>osd_pause_bg.png</texture>
+		<visible>[player.paused|player.forwarding|player.rewinding|control.isvisible(10)|control.isvisible(11)|control.isvisible(12)]+!window.isosdvisible</visible>
 	</control>
+  
+     <!--            :: Play ::            -->
   
     <control>
 		<description>progress bar background</description>
 		<type>image</type>
 		<posX>588</posX>
-		<posY>947</posY>
+		<posY>904</posY>
 		<width>737</width>
 		<height>18</height>
 		<texture>osd_progress_bg.png</texture>
-		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(10)|player.seeking</visible>
+		<visible>window.isosdvisible</visible>
     </control>
 	
 		<control>
 		<type>label</type>
 		<id>1</id>
 		<description>Clock</description>
-		<posX>280</posX>
-		<posY>958</posY>
+		<posX>278</posX>
+		<posY>973</posY>
 		<width>144</width>
 		<font>AvalonLight14</font>
 		<align>center</align>
@@ -50,9 +52,9 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>257</posX>
-		<posY>928</posY>
-		<width>187</width>
-		<height>51</height>
+		<posY>945</posY>
+		<width>184</width>
+		<height>49</height>
 		<texture>osd_clock_pause_bg.png</texture>
 		<visible>player.paused|player.forwarding|player.rewinding|player.seeking|control.isvisible(10)|control.isvisible(11)|control.isvisible(12)</visible>
 	</control>
@@ -62,7 +64,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>1481</posX>
-		<posY>930</posY>
+		<posY>945</posY>
 		<width>187</width>
 		<height>51</height>
 		<texture>osd_pause_button.png</texture>
@@ -74,7 +76,7 @@
 		<type>progress</type>
 		<id>1</id>
 		<posX>578</posX>
-		<posY>949</posY>
+		<posY>906</posY>
 		<width>758</width>
 		<height>15</height>
 		<label>#play.progressbar.percentage</label>
@@ -82,28 +84,83 @@
 		<lefttexture>-</lefttexture>
 		<midtexture>-</midtexture>
 		<righttexture>-</righttexture>
-		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(105)|Control.IsVisible(10)|player.seeking</visible>
+		<visible>window.isosdvisible</visible>
     </control>
     <control>
 		<description>Start Time Info</description>
 		<type>label</type>
 		<label>#play.progressbar.currentplaytime</label>
-		<posX>484</posX>
-		<posY>940</posY>
+		<posX>487</posX>
+		<posY>895</posY>
 		<align>left</align>
 		<font>font11</font>
-		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|control.isvisible(10)|player.seeking</visible>
+		<visible>window.isosdvisible</visible>
     </control>
     <control>
 		<description>End Time Info</description>
 		<type>label</type>
 		<label>#play.progressbar.currentremaining</label>
 		<posX>1415</posX>
-		<posY>940</posY>
+		<posY>895</posY>
 		<align>right</align>
 		<font>font11</font>
-		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|control.isvisible(10)|player.seeking</visible>
+		<visible>window.isosdvisible</visible>
     </control>
+
+    <!--            :: Pause ::            -->
+	
+	<control>
+		<description>progressbar bg</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>588</posX>
+		<posY>964</posY>
+		<width>737</width>
+		<height>18</height>
+		<texture>osd_progress_bg.png</texture>
+		<visible>[player.paused|player.forwarding|player.rewinding|control.isvisible(10)|control.isvisible(11)|control.isvisible(12)]+!window.isosdvisible</visible>
+	</control>
+	
+	<control>
+		<type>progress</type>
+		<description>Track Progress</description>
+		<id>996</id>
+		<posX>578</posX>
+		<posY>966</posY>
+		<width>758</width>
+		<height>15</height>
+		<label>#percentage</label>
+		<texturebg>-</texturebg>
+		<lefttexture>osd_progress_left.png</lefttexture>
+		<midtexture>osd_progress_mid.png</midtexture>
+		<righttexture>osd_progress_right.png</righttexture>
+		<visible>[player.paused|player.forwarding|player.rewinding|control.isvisible(10)|control.isvisible(11)|control.isvisible(12)]+!window.isosdvisible</visible>>
+	</control>
+	
+	<control>
+		<description>Start Time Info</description>
+		<type>label</type>
+		<id>997</id>
+		<posX>484</posX>
+		<posY>955</posY>
+		<label>#currentplaytime</label>
+		<align>left</align>
+		<font>font11</font>
+		<visible>[player.paused|player.forwarding|player.rewinding|control.isvisible(10)|control.isvisible(11)|control.isvisible(12)]+!window.isosdvisible</visible>
+	</control>
+	
+	<control>
+		<description>End Time Info</description>
+		<type>label</type>
+		<id>998</id>
+		<posX>1415</posX>
+		<posY>955</posY>
+		<label>#currentremaining</label>
+		<align>right</align>
+		<font>font11</font>
+		<visible>[player.paused|player.forwarding|player.rewinding|control.isvisible(10)|control.isvisible(11)|control.isvisible(12)]+!window.isosdvisible</visible>
+	</control>	
+
     <control>
 		<description>2x image</description>
 		<type>image</type>
@@ -235,7 +292,7 @@
 		<type>tvprogress</type>
 		<id>101</id>
 		<posX>590</posX>
-		<posY>949</posY>
+		<posY>906</posY>
 		<width>758</width>
 		<height>15</height>
 		<toptexture>-</toptexture>
@@ -258,7 +315,38 @@
 		<label2>#TV.Record.percent3</label2>
 		<font>font10</font>
 		<textcolor>FF000000</textcolor>
-		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(105)|Control.IsVisible(10)|player.seeking</visible>
+		<visible>window.isosdvisible</visible>
+    </control>
+	
+	<control>
+		<description>TV Progress Bar</description>
+		<type>tvprogress</type>
+		<id>101</id>
+		<posX>590</posX>
+		<posY>966</posY>
+		<width>758</width>
+		<height>15</height>
+		<toptexture>-</toptexture>
+		<TextureOffsetY>24</TextureOffsetY>
+		<bottomtexture>-</bottomtexture>
+		<texturetick>-</texturetick>
+		<lefttexture>osd_progress_left.png</lefttexture>
+		<midtexture>-</midtexture>
+		<righttexture>-</righttexture>
+		<logotexture>-</logotexture>
+		<fillbackgroundtexture>-</fillbackgroundtexture>
+		<fillbgxoff>-3</fillbgxoff>
+		<fillbgyoff>0</fillbgyoff>
+		<filltexture1>osd_progress_mid.png</filltexture1>
+		<filltexture2>osd_progress_mid.png</filltexture2>
+		<filltexture3>osd_progress_mid_orange.png</filltexture3>
+		<fillheight>15</fillheight>
+		<label>#percentage</label><!-- #TV.Record.percent1 -->
+		<label1>#percentage</label1><!-- #TV.Record.percent2 -->
+		<label2>#TV.Record.percent3</label2>
+		<font>font10</font>
+		<textcolor>FF000000</textcolor>
+		<visible>[player.paused|player.forwarding|player.rewinding|control.isvisible(10)|control.isvisible(11)|control.isvisible(12)]+!window.isosdvisible</visible>
     </control>
 	
     <control>

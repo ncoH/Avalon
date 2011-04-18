@@ -15,27 +15,16 @@
 		<texture>-</texture>
 		<visible>no</visible>
 	</control>
-	
-	<control>
-		<description>Dummy for settings visible</description>
-		<type>image</type>
-		<id>1112</id>
-		<posX>-2000</posX>
-		<posY>-2000</posY>
-		<width>20</width>
-		<height>20</height>
-		<texture>-</texture>
-		<visible>no</visible>
-	</control>
 
 	<control>
 		<description>Description bg</description>
 		<type>image</type>
 		<id>0</id>
 		<posX>0</posX>
-		<posY>746</posY>
-		<width>1920</width>
-		<height>434</height>
+		<posX>180</posX>
+		<posY>702</posY>
+		<width>1560</width>
+		<height>376</height>
 		<texture>osd_bg.png</texture>
 	</control>	
 
@@ -43,10 +32,10 @@
 		<description>settings button bg</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1430</posX>
-		<posY>837</posY>
-		<width>41</width>
-		<height>81</height>
+		<posX>1484</posX>
+		<posY>962</posY>
+		<width>184</width>
+		<height>50</height>
 		<texture>osd_settings_button_bg.png</texture>
 		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
@@ -55,10 +44,10 @@
 		<description>clock bg</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1483</posX>
-		<posY>837</posY>
+		<posX>1484</posX>
+		<posY>776</posY>
 		<width>187</width>
-		<height>80</height>
+		<height>88</height>
 		<texture>osd_clock_bg.png</texture>
 		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
@@ -70,7 +59,7 @@
 		<width>925</width>
 		<height>24</height>
 		<posX>484</posX>
-		<posY>830</posY>
+		<posY>774</posY>
 		<font>fontB20</font>
 		<label>#Play.Current.Title</label>
 		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
@@ -82,7 +71,7 @@
 		<type>fadelabel</type>
 		<width>940</width>
 		<posX>484</posX>
-		<posY>885</posY>
+		<posY>838</posY>
 		<font>AvalonLight14</font>
 		<textcolor>ff85cffe</textcolor>
 		<label>#Play.Current.Genre - #Play.Current.Year</label>
@@ -94,7 +83,7 @@
 		<id>1</id>
 		<description>Clock</description>
 		<posX>1500</posX>
-		<posY>880</posY>
+		<posY>825</posY>
 		<width>144</width>
 		<font>AvalonLight14</font>
 		<align>center</align>
@@ -108,7 +97,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>1481</posX>
-		<posY>930</posY>
+		<posY>888</posY>
 		<width>187</width>
 		<height>51</height>
 		<texture>osd_play_button.png</texture>
@@ -132,9 +121,9 @@
 		<type>image</type>
 		<id>999</id>
 		<posX>275</posX>
-		<posY>805</posY>
+		<posY>765</posY>
 		<width>166</width>
-		<height>240</height>
+		<height>242</height>
 		<align>center</align>
      	<centered>yes</centered>
 		<texture mask="poster_mask.png">#Play.Current.Thumb</texture>
@@ -149,7 +138,7 @@
 		<width>1295</width>
 		<height>24</height>
 		<posX>325</posX>
-		<posY>200</posY>
+		<posY>154</posY>
 		<font>fontB22</font>
 		<textcolor>6aa5cb</textcolor>
 		<label>#Play.Current.Title</label>
@@ -161,7 +150,7 @@
 		<type>textboxscrollup</type>
 		<id>0</id>
 		<posX>325</posX>
-		<posY>310</posY>
+		<posY>264</posY>
 		<width>1295</width>
 		<height>320</height>
 	<visible>Control.IsVisible(1111) + Control.HasFocus(995)</visible>	<seperator>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</seperator>
@@ -175,24 +164,12 @@
 		<description>Adjustment bg</description>
 		<type>image</type>
 		<id>992</id>
-		<posX>240</posX>
-		<posY>112</posY>
-		<width>1502</width>
-		<height>740</height>
+		<posX>180</posX>
+		<posY>35</posY>
+		<width>1560</width>
+		<height>734</height>
 		<texture>osd_top_bg.png</texture>
 		<visible>[Control.IsVisible(1111) + Control.HasFocus(995)] | [Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)]</visible>
-	</control>
-	
-	<control>
-		<description>settings bg</description>
-		<type>image</type>
-		<id>993</id>
-		<posX>1195</posX>
-		<posY>583</posY>
-		<width>519</width>
-		<height>251</height>
-		<texture>osd_settings_bg.png</texture>
-		<visible>[Control.IsVisible(1112) + Control.HasFocus(990)] | [Control.HasFocus(220) | Control.HasFocus(221) | Control.HasFocus(218) | Control.HasFocus(219)]</visible>
 	</control>
 	
    <control>
@@ -239,146 +216,83 @@
 		<description>Subtitles Menu</description>
 		<type>togglebutton</type>
 		<id>218</id>
-		<posX>1342</posX>
-		<posY>658</posY>
-		<width>77</width>
-		<height>77</height>
-		<AltTextureFocus>osd_settings_subs_focus.png</AltTextureFocus>
-		<AltTextureNoFocus>osd_settings_subs_nofocus.png</AltTextureNoFocus>
-		<textureFocus>osd_settings_subs_focus.png</textureFocus>
-		<textureNoFocus>osd_settings_subs_focus.png</textureNoFocus>
+		<posY>963</posY>
+		<posX>1531</posX>
+		<width>51</width>
+		<height>51</height>
+		<AltTextureFocus>osd_sub_button_focus.png</AltTextureFocus>
+		<AltTextureNoFocus>osd_sub_button_nofocus.png</AltTextureNoFocus>
+		<textureFocus>osd_sub_button_focus.png</textureFocus>
+		<textureNoFocus>osd_sub_button_focus.png</textureNoFocus>
 		<label>-</label>
 		<font>-</font>
-		<onleft>220</onleft>
+		<onleft>995</onleft>
 		<onright>221</onright>
 		<onup>218</onup>
-		<ondown>990</ondown>
-		<visible allowhiddenfocus="true">Control.IsVisible(1112) + !Control.HasFocus(995) + ![Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)]</visible>
+		<ondown>218</ondown>
+		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
     </control>
 	
 	<control>
 		<description>Audio Menu</description>
 		<type>togglebutton</type>
 		<id>221</id>
-		<posX>1419</posX>
-		<posY>658</posY>
-		<width>77</width>
-		<height>77</height>
+		<posY>963</posY>
+		<posX>1578</posX>
+		<width>51</width>
+		<height>51</height>
 		<onleft>218</onleft>
 		<onright>220</onright>
-		<ondown>990</ondown>
+		<ondown>221</ondown>
 		<onup>221</onup>
-		<AltTextureFocus>osd_settings_audio_focus.png</AltTextureFocus>
-		<AltTextureNoFocus>osd_settings_audio_nofocus.png</AltTextureNoFocus>
-		<textureFocus>osd_settings_audio_focus.png</textureFocus>
-		<textureNoFocus>osd_settings_audio_focus.png</textureNoFocus>
+		<AltTextureFocus>osd_audio_button_focus.png</AltTextureFocus>
+		<AltTextureNoFocus>osd_audio_button_nofocus.png</AltTextureNoFocus>
+		<textureFocus>osd_audio_button_focus.png</textureFocus>
+		<textureNoFocus>osd_audio_button_focus.png</textureNoFocus>
 		<label>-</label>
 		<font>-</font>
-		<visible allowhiddenfocus="true">Control.IsVisible(1112) + !Control.HasFocus(995) + ![Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)]</visible>
+		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
    </control>
    
 	<control>
         <description>Video Menu</description>
         <type>togglebutton</type>
         <id>220</id>
-        <posX>1490</posX>
-        <posY>658</posY>
-        <width>77</width>
-		<height>77</height>
-        <AltTextureFocus>osd_settings_video_focus.png</AltTextureFocus>
-        <AltTextureNoFocus>osd_settings_video_nofocus.png</AltTextureNoFocus>
-        <textureFocus>osd_settings_video_focus.png</textureFocus>
-        <textureNoFocus>osd_settings_video_focus.png</textureNoFocus>
+		<posY>963</posY>
+		<posX>1620</posX>
+		<width>51</width>
+		<height>51</height>
+        <AltTextureFocus>osd_video_button_focus.png</AltTextureFocus>
+        <AltTextureNoFocus>osd_video_button_nofocus.png</AltTextureNoFocus>
+        <textureFocus>osd_video_button_focus.png</textureFocus>
+        <textureNoFocus>osd_video_button_focus.png</textureNoFocus>
         <label>-</label>
         <font>-</font>
         <onleft>221</onleft>
-        <onright>218</onright>
+        <onright>995</onright>
         <onup>220</onup>
-        <ondown>990</ondown>
-		<visible allowhiddenfocus="true">Control.IsVisible(1112) + !Control.HasFocus(995) + ![Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)]</visible>
-	</control>
-	
-<!--	
-    <control>
-		<description>Info Menu focus</description>
-		<type>button</type>
-		<id>991</id>
-		<posX>995</posX>
-		<posY>454</posY>
-		<width>120</width>
-		<height>106</height>
-		<textureFocus>osd_settings_info_focus.png</textureFocus>
-		<textureNoFocus>osd_settings_info_nofocus.png</textureNoFocus>
-		<label>-</label>
-		<font>-</font>
-		<onleft>991</onleft>
-		<onright>991</onright>
-		<onup>220</onup>
-		<ondown>990</ondown>
-		<visible allowhiddenfocus="true">Control.HasFocus(991) | Control.HasFocus(218) | Control.HasFocus(219) | Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(220) | Control.HasFocus(221) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)</visible>
-    </control>
--->	
-	
-	<control>
-		<description>Trigger button</description>
-		<posY>878</posY>
-		<posX>1431</posX>
-		<type>button</type>
-		<id>990</id>
-		<label>-</label>
-		<textureFocus>osd_settings_button_focus.png</textureFocus>
-		<textureNoFocus>osd_settings_button_nofocus.png</textureNoFocus>
-		<onup>995</onup>
-		<ondown>990</ondown>
-		<onright>218</onright>
-		<onleft>220</onleft>
-		<width>41</width>
-		<height>41</height>
+        <ondown>220</ondown>
 		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
 	
 	<control>
-		<description>Trigger button</description>
-		<posY>839</posY>
-		<posX>1431</posX>
+		<description>Info button</description>
+		<posY>963</posY>
+		<posX>1484</posX>
 		<type>button</type>
 		<id>995</id>
 		<label>-</label>
 		<textureFocus>osd_info_button_focus.png</textureFocus>
 		<textureNoFocus>osd_info_button_nofocus.png</textureNoFocus>
 		<onup>995</onup>
-		<ondown>990</ondown>
-		<onright>995</onright>
-		<onleft>995</onleft>
-		<width>41</width>
-		<height>41</height>
+		<ondown>995</ondown>
+		<onright>218</onright>
+		<onleft>220</onleft>
+		<width>51</width>
+		<height>51</height>
 		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
-<!--	
-	<control>
-		<description>Fake trigger button expand</description>
-		<posX>657</posX>
-		<posY>559</posY>
-		<width>53</width>
-		<height>20</height>
-		<type>image</type>
-		<id>999</id>
-		<texture>osd_expand_icon.png</texture>
-		<visible>Control.HasFocus(990) + window.isosdvisible</visible>
-	</control>
 	
-	<control>
-		<description>Fake trigger button collapse</description>
-		<posX>657</posX>
-		<posY>559</posY>
-		<width>53</width>
-		<height>20</height>
-		<type>image</type>
-		<id>999</id>
-		<texture>osd_collapse_icon.png</texture>
-		<visible>!Control.HasFocus(990) + window.isosdvisible</visible>
-	</control>
--->
     <control>
       <description>Sub Menu Background (subtitles)</description>
       <type>image</type>
