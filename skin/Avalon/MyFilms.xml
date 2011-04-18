@@ -88,7 +88,7 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
       <description>Moviecount</description>
       <type>label</type>
-      <label>| #itemtype: #myfilms.nbobjects.value</label>
+      <label>| #currentmodule: #itemcount</label>
       <id>2073</id>
       <posX>242</posX>
       <posY>99</posY>
@@ -97,22 +97,7 @@
       <textcolor>ffffff</textcolor>
       <visible>Control.IsVisible(50)</visible>
     </control>
-
-    <control>
-      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-      <description>Number of Files Label</description>
-      <type>label</type>
-      <label>#selectedindex/#itemcount</label>
-      <id>2073</id>
-      <posX>233</posX>
-      <posY>99</posY>
-      <align>right</align>
-      <font>AvalonLight12</font>
-      <textcolor>ffffff</textcolor>
-      <visible>Control.IsVisible(50)</visible>
-    </control>
+	
 	
 	<control>
 		<description>Selection display</description>
@@ -149,25 +134,6 @@
 		<ondown>1026</ondown>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
-
-		
-	<!--            :: FILMSTRIP VIEW ::            -->
-			
-<!-- 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>		
-		<type>image</type>
-		<description>thumb Logos ID 2012 (Filmstrip)</description>
-		<id>1</id>
-		<posX>800</posX>
-		<posY>705</posY>
-		<width>750</width>
-		<height>36</height>
-		<texture>#myfilms.logos_id2012</texture>
-		<keepaspectratio>yes</keepaspectratio>
-		<spaceBetweenItems>0</spaceBetweenItems>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+Control.IsVisible(50)</visible>
-	</control> -->
 
 
 <!-- Fanrt/Movie Available Info -->

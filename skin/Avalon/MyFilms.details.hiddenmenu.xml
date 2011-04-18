@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+<controls>
+	<!--            :: HIDDEN MENU ::            -->
+	
+	
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<dimColor>00ffffff</dimColor>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>521</buttonwidth>
+		<buttonheight>1080</buttonheight>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="400">hidden</animation>
+		</control>
+	
+	<control>
+		<type>group</type>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
+		</control>
+	
+		<control>
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>136</posX>
+			<posY>128</posY>
+			<label>924</label>
+			<font>font22</font>
+			<textcolor>ffffff</textcolor>
+		</control>	
+
+			<control>
+				<type>button</type>
+				<description>Play Trailer</description>
+				<id>109</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>215</posY>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>				
+				<onup>10014</onup>
+				<ondown>107</ondown>
+				<onright>10000</onright>
+				<label>Play Trailer</label>				
+			</control>
+				
+			<control>
+				<type>sortbutton</type>
+				<description>Update</description>				
+				<id>107</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>285</posY>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>				
+				<onup>109</onup>
+				<ondown>104</ondown>
+				<onright>10000</onright>
+				<label>496</label>				
+			</control>
+				
+			<control>
+				<type>button</type>
+				<description>Prior</description>
+				<id>104</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>355</posY>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>				
+				<onright>10000</onright>
+				<ondown>103</ondown>
+				<onup>107</onup>
+				<label>210</label>				
+			</control>
+				
+			<control>
+				<type>button</type>
+				<description>Next</description>
+				<id>103</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>425</posY>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>				
+				<onright>10000</onright>
+				<ondown>106</ondown>
+				<onup>104</onup>
+				<label>209</label>					
+			</control>
+				
+			<control>
+				<type>button</type>
+				<description>First</description>
+				<id>106</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>495</posY>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>				
+				<onright>10000</onright>
+				<ondown>105</ondown>
+				<onup>103</onup>				
+			</control>
+				
+			<control>
+				<type>button</type>
+				<description>Last</description>
+				<id>105</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>565</posY>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>				
+				<onright>10000</onright>
+				<ondown>10012</ondown>
+				<onup>106</onup>
+			</control>
+
+			<control>
+				<description>Trailer</description>
+				<type>button</type>
+				<id>10012</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>635</posY>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>				
+				<hyperlink>5900</hyperlink>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>105</onup>
+				<ondown>10013</ondown>					
+				<label>Trailer</label>
+				<visible>plugin.isenabled(My Trailers)</visible>
+			</control>
+				
+			<control>
+				<description>Onlinevideos</description>
+				<type>button</type>
+				<id>10013</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>705</posY>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>				
+				<hyperlink>4755</hyperlink>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>10012</onup>
+				<ondown>10014</ondown>					
+				<label>Online Videos</label>
+			</control>
+				
+			<control>
+				<description>TV-Series</description>
+				<type>button</type>
+				<id>10014</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>775</posY>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>				
+				<hyperlink>9811</hyperlink>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>10013</onup>
+				<ondown>109</ondown>					
+				<label>TV-Serien</label>
+			</control>
+			
+		</control>
+</control>
+</controls>
+</window>

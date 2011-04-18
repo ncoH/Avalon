@@ -3,321 +3,101 @@
 	<id>7987</id>
 	<defaultcontrol>10000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<define>#header.label:My Films</define>
-	<define>#header.background:hover_MyFilms.png</define>
 	<controls>
 	
-		<import>common.window.background.xml</import>
+    <control>
+        <type>label</type>
+        <description>(Fanart) - Visible when Fanart found</description>
+        <id>35</id>
+        <posX>0</posX>
+        <posY>0</posY>
+        <visible>yes</visible>
+        <focusable>no</focusable>
+    </control>
 
-        <control>
-            <type>label</type>
-            <description>(Fanart) - Visible when Fanart found</description>
-            <id>35</id>
-            <posX>0</posX>
-            <posY>0</posY>
-            <visible>yes</visible>
-            <focusable>no</focusable>
-       	</control>
-			
-		<control>
-			<description>fanart</description>
-			<type>image</type>
-			<id>1000</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1366</width>
-			<height>768</height>
-			<texture>#myfilms.fanart</texture>
-			<keepaspectratio>yes</keepaspectratio>
-			<centered>yes</centered>
-			<zoom>yes</zoom>
-			<visible>no</visible>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="fade" time="100">WindowClose</animation>
-		</control>
+    <!--            :: MOVIE BACKDROP ::            -->
+    <control>
+      <description>DEFAULT BACKGROUND</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+      <shouldCache>true</shouldCache>
+    </control>
+	
+    <control>
+		<description>Movie Backdrop</description>
+		<type>image</type>
+		<id>1000</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>#myfilms.fanart</texture>
+		<keepaspectratio>no</keepaspectratio>		
+		<animation effect="fade" time="300">visible</animation>
+		<animation effect="fade" time="300" delay="300">hidden</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    </control>
+	
+    <control>
+		<description>Alternate Movie Backdrop</description>
+		<type>multiimage</type>
+		<id>1001</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<timeperimage>6000</timeperimage>
+		<fadetime>1500</fadetime>
+		<loop>yes</loop>		  
+		<randomize>true</randomize>
+		<keepaspectratio>no</keepaspectratio>	  
+		<animation effect="fade" time="300">visible</animation>
+		<animation effect="fade" time="300" delay="300">hidden</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	</control>
 
-		<control>
-			<description>fanart</description>
-			<type>multiimage</type>
-			<id>1001</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1366</width>
-			<height>768</height>
-      		<imagepath></imagepath>
-      		<timeperimage>6000</timeperimage>
-      		<fadetime>1500</fadetime>
-      		<loop>yes</loop>			
-			<keepaspectratio>no</keepaspectratio>
-			<centered>yes</centered>
-			<zoom>yes</zoom>
-      		<randomize>true</randomize>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="fade" time="100">WindowClose</animation>
-		</control>
-		
-
+	<!--            :: MAIN DETAILS ::            -->
+	
 	<control>
-		<description>Fanart Overlay</description>
+		<description>Vignette background</description>
 		<type>image</type>
 		<id>0</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>fanart_overlay.png</texture>
-		<visible>!Control.HasFocus(10099)</visible>
+		<posX>321</posX>
+		<posY>235</posY>
+		<width>1278</width>
+		<height>816</height>
+		<texture>movingpictures_details_background.png</texture>
+		<visible>!control.hasfocus(10099)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
-		
+	
+	
+    <!--            :: HEADER ::            -->
+    <control>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <type>label</type>
+      <id>1</id>
+      <posX>185</posX>
+      <posY>38</posY>
+      <width>500</width>
+      <label>My Films</label>
+      <textcolor>6aa5cb</textcolor>
+      <font>font22</font>
+      <visible>!control.hasfocus(10099)</visible>
+    </control>			
 			
 		<import>common.time.xml</import>
-
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
-		<id>1</id>
-		<posX>552</posX>
-		<posY>30</posY>
-		<width>500</width>
-		<height>100</height>
-		<label>#header.label</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<valign>middle</valign>
-		<visible>!Control.HasFocus(10099)</visible>		
-	</control>
-		
-	<!--            :: HIDDEN MENU ::            -->
-	<control>
-		<type>actiongroup</type>
-		<description>action menu</description>
-		<defaultcontrol>2</defaultcontrol>
-		<onexit>50</onexit>
-		<buttonX>0</buttonX>
-		<buttonY>0</buttonY>
-		<buttonwidth>0</buttonwidth>
-		<buttonheight>0</buttonheight>
-		<width>1366</width>
-		<height>768</height>
-		<dimColor>00ffffff</dimColor>
-		<animation effect="Fade" time="100">WindowClose</animation>
-		<control>
-			<type>image</type>
-			<id>0</id>
-			<width>1366</width>
-			<height>768</height>
-			<texture>semi_trans_back_general_menu.png</texture>
-			<colordiffuse>90ffffff</colordiffuse>
-			<animation effect="fade" time="200">windowopen</animation>
-			<animation effect="fade" time="400">windowclose</animation>
-		</control>
-		
-	<control>
-		<type>group</type>		
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
-		<animation effect="fade" time="200" reversible="false">Hidden</animation>
-		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
-		
-		<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>512</posX>
-		<posY>64</posY>
-		<width>342</width>
-		<height>640</height>
-		<texture>menu_bg.png</texture>
-		<visible>!control.hasfocus(10000)+!control.hasfocus(10099)</visible>
-		</control>
-		
-			<control>
-				<description>Heading text label</description>
-				<type>label</type>
-				<id>1</id>
-				<posX>567</posX>
-				<posY>110</posY>
-				<label>924</label>
-				<font>Segoe Light18</font>
-				<textcolor>85cffe</textcolor>
-			</control>
-		
-				<control>
-					<description>button group</description>
-					<type>group</type>
-					<posX>543</posX>
-					<posY>175</posY>
-					<layout>StackLayout(0, Vertical, true)</layout>
-					<visible>Control.IsVisible(10000)</visible>
-
-<!-- 				<control>
-					<type>button</type>
-					<description>Back</description>
-					<id>108</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>						
-					<onup>10014</onup>
-					<ondown>109</ondown>
-					<onright>10000</onright>
-					<label>Personen Infos</label>
-				</control> -->
-				
-				<control>
-					<type>button</type>
-					<description>Play Trailer</description>
-					<id>109</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>						
-					<onup>10014</onup>
-					<ondown>107</ondown>
-					<onright>10000</onright>
-					<label>Play Trailer</label>
-				</control>
-				
-				<control>
-					<type>button</type>
-					<description>Update</description>
-					<id>107</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>						
-					<onup>109</onup>
-					<ondown>104</ondown>
-					<onright>10000</onright>
-					<label>496</label>
-				</control>
-				
-				<control>
-					<type>button</type>
-					<description>prior</description>
-					<id>104</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>						
-					<onright>10000</onright>
-					<ondown>103</ondown>
-					<onup>107</onup>
-					<label>210</label>
-				</control>
-				
-				<control>
-					<type>button</type>
-					<description>next</description>
-					<id>103</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>						
-					<onright>10000</onright>
-					<ondown>106</ondown>
-					<onup>104</onup>
-					<label>209</label>
-				</control>
-				
-				<control>
-					<type>button</type>
-					<description>First</description>
-					<id>106</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>						
-					<onright>10000</onright>
-					<ondown>105</ondown>
-					<onup>103</onup>
-				</control>
-				
-				<control>
-					<type>button</type>
-					<description>Last</description>
-					<id>105</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>						
-					<onright>10000</onright>
-					<ondown>10012</ondown>
-					<onup>106</onup>
-				</control>
-
-				<control>
-					<description>Trailer</description>
-					<type>button</type>
-					<id>10012</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>					
-					<hyperlink>5900</hyperlink>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>105</onup>
-					<ondown>10013</ondown>					
-					<label>Trailer</label>
-					<visible>plugin.isenabled(My Trailers)</visible>
-				</control>
-				
-				<control>
-					<description>Onlinevideos</description>
-					<type>button</type>
-					<id>10013</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>					
-					<hyperlink>4755</hyperlink>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>10012</onup>
-					<ondown>10014</ondown>					
-					<label>Online Videos</label>
-					<ondown>10014</ondown>
-				</control>
-				
-				<control>
-					<description>TV-Series</description>
-					<type>button</type>
-					<id>10014</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>					
-					<hyperlink>9811</hyperlink>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>10013</onup>
-					<ondown>109</ondown>					
-					<label>TV-Serien</label>
-				</control>
-
-		</control>
-	</control>	
-</control>		
-
+		<import>MyFilms.details.hiddenmenu.xml</import>	
 
 <!-- Mouse Buttons -->
 
@@ -451,7 +231,7 @@
 
 <!-- Mouse Buttons LED`s	 -->
 
-		<control>
+<!-- 		<control>
 			<type>image</type>
 			<id>1</id>
 			<posX>120</posX>
@@ -470,8 +250,7 @@
 			<posY>624</posY>
 			<width>32</width>
 			<height>32</height>
-			<texture>led_off.png</texture>
-<!-- 			<colordiffuse>30ffffff</colordiffuse> -->			
+			<texture>led_off.png</texture>	
 			<visible>!Control.HasFocus(10000)+!Control.HasFocus(10099)</visible>
 			<animation effect="fade" start="100" end="0" time="500">Hidden</animation>
 		</control>	
@@ -495,8 +274,7 @@
 			<posY>649</posY>
 			<width>32</width>
 			<height>32</height>
-			<texture>led_off.png</texture>
-<!-- 			<colordiffuse>30ffffff</colordiffuse> -->			
+			<texture>led_off.png</texture>		
 			<visible>!Control.HasFocus(10001)+!Control.HasFocus(10099)</visible>
 			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
 		</control>	
@@ -520,8 +298,7 @@
 			<posY>674</posY>
 			<width>32</width>
 			<height>32</height>
-			<texture>led_off.png</texture>
-<!-- 			<colordiffuse>30ffffff</colordiffuse> -->			
+			<texture>led_off.png</texture>		
 			<visible>!Control.HasFocus(10002)+!Control.HasFocus(10099)</visible>
 			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
 		</control>	
@@ -545,7 +322,6 @@
 			<posY>699</posY>
 			<width>32</width>
 			<height>32</height>
-<!-- 			<colordiffuse>30ffffff</colordiffuse> -->
 			<texture>led_off.png</texture>
 			<visible>!Control.HasFocus(10003)+!Control.HasFocus(10099)</visible>
 			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
@@ -570,31 +346,51 @@
 			<posY>724</posY>
 			<width>32</width>
 			<height>32</height>
-<!-- 			<colordiffuse>30ffffff</colordiffuse> -->
 			<texture>led_off.png</texture>
 			<visible>!Control.HasFocus(10004)+!Control.HasFocus(10099)</visible>
 			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
-		</control>
-
-		
-		<control>
-			<description>Selected item Label</description>
-			<type>fadelabel</type>
-			<id>2025</id>
-			<posX>554</posX>
-			<posY>142</posY>
-			<width>700</width>
-			<label>#myfilms.user.mastertitle.value</label>
-			<font>Segoe Light22</font>
-			<visible>!Control.HasFocus(10099)</visible>
-			<animation effect="fade" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
-			<valign>middle</valign>
-		</control>
+		</control> -->
 
 		
 <!-- Description and MoviePlay -->
-		
+
+	<control>
+		<description>PLAY Button</description>
+		<type>button</type>
+		<posX>433</posX>
+		<posY>315</posY>
+		<id>6</id>
+		<label>-</label>
+		<onup>6</onup>
+		<ondown>6</ondown>
+		<onleft>6</onleft>
+		<onright>6</onright>
+		<width>58</width>
+		<height>59</height>
+		<textureFocus>movingpictures_details_play.png</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+		<visible>!Control.HasFocus(10099)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+	</control>
+	
+	<control>
+		<description>Movie Title</description>
+		<type>fadelabel</type>
+		<id>0</id>
+		<posX>526</posX>
+		<posY>314</posY>
+		<width>1005</width>
+		<font>fontB20</font>
+		<label>#myfilms.user.mastertitle.value</label>
+		<visible>!Control.HasFocus(10099)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+	</control>
+
+	
 		<control>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>
@@ -1556,7 +1352,7 @@
 			<description>Fanart Overlay</description>
 			<type>image</type>
 			<id>0</id>
-			<width>1366</width>
+			<width>1920</width>
 			<height>160</height>
 			<posX>0</posX>		
 			<posY>610</posY>		
@@ -1570,7 +1366,7 @@
 			<id>1</id>
 			<posX>0</posX>
 			<posY>630</posY>
-			<width>1366</width>
+			<width>1920</width>
 			<align>center</align>
 			<font>Segoe Light22</font>
 			<textcolor>6aa5cb</textcolor>			
@@ -1588,7 +1384,7 @@
 			<id>1</id>
 			<posX>0</posX>
 			<posY>670</posY>
-			<width>1366</width>
+			<width>1920</width>
 			<align>center</align>
 			<font>font13</font>
 			<textcolor>6aa5cb</textcolor>
@@ -1674,7 +1470,7 @@
 		
 <!-- Fanart/Movie Available Info -->
 
-		<control>
+<!-- 		<control>
 			<description>Movie available Info Label</description>
 			<type>fadelabel</type>
 			<id>1</id>
@@ -1713,11 +1509,11 @@
 			<keepaspectratio>yes</keepaspectratio>
 			<centered>yes</centered>
 			<visible>string.equals(#myfilms.user.source.value)+!Control.HasFocus(10099)</visible>
-		</control>
+		</control> -->
 
 <!-- Trailer Available Info -->
 
-		<control>
+<!-- 		<control>
 			<description>Trailer available Info Label</description>
 			<type>fadelabel</type>
 			<id>1</id>
@@ -1769,7 +1565,7 @@
 			<keepaspectratio>yes</keepaspectratio>
 			<centered>yes</centered>
 			<visible>string.equals(#myfilms.user.sourcetrailer.value)+!Control.HasFocus(10099)</visible>
-		</control>
+		</control> -->
 
 	<control>
 		<type>animation</type>
