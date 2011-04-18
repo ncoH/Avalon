@@ -8,7 +8,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>484</posX>
-		<posY>1005</posY>
+		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\1080_h264_235.png</texture>
@@ -20,7 +20,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>484</posX>
-		<posY>1005</posY>
+		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\720_h264_235.png</texture>
@@ -32,7 +32,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>484</posX>
-		<posY>1005</posY>
+		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_xvid_235.png</texture>
@@ -44,7 +44,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>484</posX>
-		<posY>1005</posY>
+		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_xvid_133.png</texture>
@@ -56,7 +56,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>484</posX>
-		<posY>1005</posY>
+		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_divx_235.png</texture>
@@ -68,7 +68,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>484</posX>
-		<posY>1005</posY>
+		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_divx_133.png</texture>
@@ -81,7 +81,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>669</posX>
-		<posY>1005</posY>
+		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\ac3_51.png</texture>
@@ -93,7 +93,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>669</posX>
-		<posY>1005</posY>
+		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dts_51.png</texture>
@@ -105,7 +105,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>669</posX>
-		<posY>1005</posY>
+		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dts_71.png</texture>
@@ -117,11 +117,11 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>669</posX>
-		<posY>1005</posY>
+		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\ac3_20.png</texture>
-		<visible>string.contains(#Play.Current.AudioCodec.Texture,ac-3)+string.contains(#Play.Current.AudioChannels.Texture,stereo)</visible>
+		<visible>string.contains(#Play.Current.AudioCodec.Texture,ac-3)+string.contains(#Play.Current.AudioChannels.Texture,stereo.png)</visible>
 	</control>
 	
 	<control>
@@ -129,7 +129,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>669</posX>
-		<posY>1005</posY>
+		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\mp3_20.png</texture>
@@ -142,7 +142,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>784</posX>
-		<posY>1005</posY>
+		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\bluray.png</texture>
@@ -154,7 +154,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>784</posX>
-		<posY>1005</posY>
+		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\dvd.png</texture>

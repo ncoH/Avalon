@@ -13,21 +13,10 @@
 		<type>image</type>
 		<id>0</id>
 		<texture>tv_miniguide_bg.png</texture>
-		<width>1920</width>
-		<height>434</height>
-		<posX>0</posX>
-		<posY>646</posY>
-	</control>
-	
-	<control>
-		<description>background image</description>
-		<type>image</type>
-		<id>0</id>
-		<texture>tv_miniguide.png</texture>
-		<width>1412</width>
-		<height>252</height>
-		<posX>255</posX>
-		<posY>714</posY>
+		<width>1560</width>
+		<height>504</height>
+		<posX>180</posX>
+		<posY>572</posY>
 	</control>
 
 	<control>
@@ -74,15 +63,15 @@
 		<IconYOff>10</IconYOff>
 		<PinIconWidth>-</PinIconWidth>
 		<PinIconHeight>-</PinIconHeight>
-		<spinPosY>614</spinPosY>
-		<spinPosX>998</spinPosX>
+		<spinPosY>980</spinPosY>
+		<spinPosX>405</spinPosX>
 		<spinColor>FFFFFFFF</spinColor>
 		<spinWidth>39</spinWidth>
 		<spinHeight>27</spinHeight>
 		<itemWidth>75</itemWidth>
 		<itemHeight>60</itemHeight>
 		<spaceBetweenItems>0</spaceBetweenItems>
-		<textureHeight>92</textureHeight>
+		<textureHeight>86</textureHeight>
 		<keepaspectratio>yes</keepaspectratio>
 		<font>font12</font>
 		<font2>font12</font2>
@@ -114,10 +103,10 @@
 		<IconXOff>-90</IconXOff>
 		<IconYOff>10</IconYOff>
 		<PinIconXOff>1228</PinIconXOff>
-		<PinIconYOff>17</PinIconYOff>
+		<PinIconYOff>18</PinIconYOff>
 		<PinIconWidth>45</PinIconWidth>
 		<PinIconHeight>46</PinIconHeight>
-		<spinPosY>986</spinPosY>
+		<spinPosY>980</spinPosY>
 		<spinPosX>405</spinPosX>
 		<spinColor>FFFFFFFF</spinColor>
 		<spinWidth>39</spinWidth>
@@ -125,7 +114,7 @@
 		<itemWidth>75</itemWidth>
 		<itemHeight>60</itemHeight>
 		<spaceBetweenItems>0</spaceBetweenItems>
-		<textureHeight>85</textureHeight>
+		<textureHeight>86</textureHeight>
 		<keepaspectratio>yes</keepaspectratio>
 		<font>font11</font>
 		<font2>font11</font2>
@@ -144,7 +133,7 @@
 		<type>spincontrol</type>
 		<id>36</id>
 		<posX>1335</posX>
-		<posY>986</posY>
+		<posY>980</posY>
 		<showrange>no</showrange>
 		<orientation>horizontal</orientation>
 		<font>font12</font>

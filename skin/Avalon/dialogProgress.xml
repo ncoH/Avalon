@@ -10,9 +10,11 @@
 	<control>
 		<type>image</type>
 		<id>100</id>
-		<posX>675</posX>
+		<posX>676</posX>
 		<posY>902</posY>
-		<texture>progress_background.png</texture>
+		<width>568</width>
+		<height>18</height>
+		<texture>common_osd_progress_bg.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
@@ -22,10 +24,10 @@
 		<description>progress control</description>
 		<type>progress</type>
 		<id>20</id>
-		<posX>675</posX>
-		<posY>902</posY>
+		<posX>666</posX>
+		<posY>903</posY>
 		<width>482</width>
-		<height>12</height>
+		<height>18</height>
 		<texturebg>-</texturebg>
 		<lefttexture>osd_progress_left.png</lefttexture>
 		<midtexture>osd_progress_mid.png</midtexture>

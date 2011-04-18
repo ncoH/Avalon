@@ -8,26 +8,29 @@
 	<control>
 		<type>image</type>
 		<id>0</id>
-		<posX>183</posX>
-		<posY>34</posY>
-		<width>1000</width>
-		<height>700</height>
-		<texture>dialog_background_big.png</texture>
+		<posX>575</posX>
+		<posY>495</posY>
+		<width>768</width>
+		<height>549</height>
+		<texture>dialog_background.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 	</control>
 
 	<control>
 		<description>Heading text label</description>
 		<type>label</type>
-		<id>4</id>
-		<posX>251</posX>
-		<posY>76</posY>
+		<id>1</id>
+		<posX>678</posX>
+		<posY>598</posY>
+		<width>560</width>
 		<label>181</label>
-		<font>Segoe Light18</font>
-		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
+		<textcolor>ffffff</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 	<control>

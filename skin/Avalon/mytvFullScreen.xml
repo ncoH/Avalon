@@ -25,11 +25,11 @@
 		<description>Description bg</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>0</posX>
-		<posY>746</posY>
-		<width>1920</width>
-		<height>434</height>
-		<texture>osd_bg.png</texture>
+		<posX>180</posX>
+		<posY>875</posY>
+		<width>1560</width>
+		<height>204</height>
+		<texture>osd_pause_bg.png</texture>
 		<visible>!window.isosdvisible+[control.isvisible(10)|player.paused|player.forwarding|player.rewinding|player.seeking]</visible>
 	</control>
 	
@@ -37,8 +37,8 @@
 		<type>label</type>
 		<id>1</id>
 		<description>Clock</description>
-		<posX>280</posX>
-		<posY>958</posY>
+		<posX>278</posX>
+		<posY>973</posY>
 		<width>144</width>
 		<font>AvalonLight14</font>
 		<align>center</align>
@@ -52,9 +52,9 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>257</posX>
-		<posY>928</posY>
-		<width>187</width>
-		<height>51</height>
+		<posY>945</posY>
+		<width>184</width>
+		<height>49</height>
 		<texture>osd_clock_pause_bg.png</texture>
 		<visible>player.paused|player.forwarding|player.rewinding|player.seeking|control.isvisible(10)|control.isvisible(11)|control.isvisible(12)</visible>
 	</control>
@@ -64,7 +64,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>1481</posX>
-		<posY>930</posY>
+		<posY>945</posY>
 		<width>187</width>
 		<height>51</height>
 		<texture>osd_pause_button.png</texture>
@@ -75,8 +75,8 @@
 		<description>row 1 label</description>
 		<type>label</type>
 		<id>10</id>
-		<posX>280</posX>
-		<posY>958</posY>
+		<posX>278</posX>
+		<posY>973</posY>
 		<width>144</width>
 		<font>AvalonLight14</font>
 		<align>center</align>
@@ -89,8 +89,8 @@
 		<description>row 2 label</description>
 		<type>label</type>
 		<id>11</id>
-		<posX>280</posX>
-		<posY>958</posY>
+		<posX>278</posX>
+		<posY>973</posY>
 		<width>144</width>
 		<font>AvalonLight14</font>
 		<align>center</align>
@@ -102,8 +102,8 @@
 		<description>row 3 label</description>
 		<type>label</type>
 		<id>12</id>
-		<posX>280</posX>
-		<posY>958</posY>
+		<posX>278</posX>
+		<posY>973</posY>
 		<width>144</width>
 		<font>AvalonLight14</font>
 		<align>center</align>
