@@ -4,37 +4,39 @@
 	<defaultcontrol>1</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-	  <!--control>
-      <type>image</type>
-      <id>0</id>
-      <width>1366</width>
-      <height>768</height>
-      <texture>black.bmp</texture>
-      <colordiffuse>80ffffff</colordiffuse>
-    </control-->
     <control>
       <type>image</type>
       <id>0</id>
-      <posX>430</posX>
-      <posY>192</posY>
-      <width>657</width>
-      <height>335</height>
-      <texture>dialog-invite.png</texture>
+      <posX>209</posX>
+      <posY>262</posY>
+      <width>1500</width>
+      <height>786</height>
+      <texture>keyboard_bg.png</texture>
+    </control>
+	
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>356</posX>
+      <posY>367</posY>
+      <width>55</width>
+      <height>55</height>
+      <texture>keyboard_search.png</texture>
     </control>
 		<!-- DEFAULT KEYBOARD -->
 		<control>
 			<description>standard keyboard</description>
 			<type>standardKeyboard</type>
 			<id>1</id>
-			<keyboardPosX>450</keyboardPosX>
-			<keyboardPosY>250</keyboardPosY>
-			<keyWidth>50</keyWidth>
-			<keyHeight>50</keyHeight>
-			<keyHSpacing>0</keyHSpacing>
+			<keyboardPosX>455</keyboardPosX>
+			<keyboardPosY>475</keyboardPosY>
+			<keyWidth>81</keyWidth>
+			<keyHeight>81</keyHeight>
+			<keyHSpacing>2</keyHSpacing>
 			<keyVSpacing>0</keyVSpacing>
-			<modeKeySpacing>0</modeKeySpacing>
-			<modeKeyWidth>100</modeKeyWidth>
-			<searchModeKeyWidth>130</searchModeKeyWidth>
+			<modeKeySpacing>2</modeKeySpacing>
+			<modeKeyWidth>185</modeKeyWidth>
+			<searchModeKeyWidth>165</searchModeKeyWidth>
 			<label></label>
 			<labelAlign>center</labelAlign>
 			<labelOffX>0</labelOffX>
@@ -50,30 +52,30 @@
 			<labelBoxHeight>30</labelBoxHeight>
 			<labelBoxTexture>-</labelBoxTexture>
 			<showLabelAsInitialText>no</showLabelAsInitialText>
-			<inputTextBoxPosX>451</inputTextBoxPosX>
-			<inputTextBoxPosY>210</inputTextBoxPosY>
-			<inputTextBoxWidth>-1</inputTextBoxWidth>
-			<inputTextBoxHeight>40</inputTextBoxHeight>
+			<inputTextBoxPosX>435</inputTextBoxPosX>
+			<inputTextBoxPosY>354</inputTextBoxPosY>
+			<inputTextBoxWidth>1047</inputTextBoxWidth>
+			<inputTextBoxHeight>83</inputTextBoxHeight>
 			<inputTextAlign>left</inputTextAlign>
-			<inputTextOffX>18</inputTextOffX>
-			<inputTextOffY>2</inputTextOffY>
-			<inputTextFont>font16</inputTextFont>
-			<inputTextBoxTexture>button-nofocus.png</inputTextBoxTexture>
+			<inputTextOffX>22</inputTextOffX>
+			<inputTextOffY>15</inputTextOffY>
+			<inputTextFont>fontB16</inputTextFont>
+			<inputTextBoxTexture>keyboard_search_bg.png</inputTextBoxTexture>
 			<inputTextColor>FF000000</inputTextColor>
 			<inputTextShadowAngle>0</inputTextShadowAngle>
 			<inputTextShadowDistance>0</inputTextShadowDistance>
 			<inputTextShadowColor>FF000000</inputTextShadowColor>
-			<charKeyFont>font14</charKeyFont>
-			<namedKeyFont>font10</namedKeyFont>
+			<charKeyFont>fontB14</charKeyFont>
+			<namedKeyFont>fontB14</namedKeyFont>
 			<keyTextShadowAngle>0</keyTextShadowAngle>
 			<keyTextShadowDistance>0</keyTextShadowDistance>
 			<keyTextShadowColor>FF000000</keyTextShadowColor>
-			<keyTextureFocus>keyNF.png</keyTextureFocus>
-			<keyTextureNoFocus>key.png</keyTextureNoFocus>
+			<keyTextureFocus>keyboardF.png</keyTextureFocus>
+			<keyTextureNoFocus>keyboardNF.png</keyTextureNoFocus>
 			<keyHighlightColor>ffffffff</keyHighlightColor>
 			<keyPressedColor>ffffffff</keyPressedColor>
-			<keyDisabledColor>FFFFFFFF</keyDisabledColor>
-			<keyFontColor>ff87cefa</keyFontColor>
+			<keyDisabledColor>ff485866</keyDisabledColor>
+			<keyFontColor>ff485866</keyFontColor>
 			<keySelFontColor>FFffffff</keySelFontColor>
 			<keyDisabledFontColor>FF808080</keyDisabledFontColor>
 		</control>
