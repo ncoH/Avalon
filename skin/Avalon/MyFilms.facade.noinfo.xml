@@ -15,7 +15,7 @@
 			<type>listcontrol</type>
 			<id>50</id>
 			<onleft>2</onleft>
-			<onright>10099</onright>
+			<onright>80</onright>
 			<scrollOffset>1</scrollOffset>
 			<posX>1166</posX>
 			<posY>236</posY>

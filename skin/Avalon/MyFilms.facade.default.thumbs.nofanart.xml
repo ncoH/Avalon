@@ -6,25 +6,25 @@ This file should contain the facade view
 <controls>
 
 	<control>
-		<type>facadeview</type>
-		<id>50</id>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+			<type>facadeview</type>
+			<id>50</id>
+			
 			<control>
 				<description>Movie List</description>
 				<type>listcontrol</type>
 				<id>50</id>
 				<onleft>2</onleft>
-				<onright>80</onright>
+				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
 				<posX>1166</posX>
 				<posY>236</posY>
-				<height>700</height>
+				<height>550</height>
 				<width>684</width>
 				<textXOff>50</textXOff>
 				<textureHeight>55</textureHeight>
-				<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
+				<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<dimColor>ffffffff</dimColor>
 			</control>
@@ -37,35 +37,35 @@ This file should contain the facade view
 				<scrollOffset>3</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<posX>114</posX>
-				<posY>520</posY>
+				<posX>70</posX>
+				<posY>250</posY>
 				<width>1920</width>
 				<height>768</height>
 				<onup>2</onup>
 				<ondown>2</ondown>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<thumbWidth>230</thumbWidth>
-				<thumbHeight>327</thumbHeight>
+				<thumbWidth>327</thumbWidth>
+				<thumbHeight>463</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
-				<itemWidth>248</itemWidth>
-				<itemHeight>345</itemHeight>
-				<textureWidth>230</textureWidth>
-				<textureHeight>327</textureHeight>
+				<itemWidth>355</itemWidth>
+				<itemHeight>463</itemHeight>
+				<textureWidth>327</textureWidth>
+				<textureHeight>463</textureHeight>
 				<textYOff>-2000</textYOff>
 				<imageFolderFocus>-</imageFolderFocus>
 				<frame>-</frame>
 				<frameFocus>-</frameFocus>
 				<background>-</background>
-				<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_mask.png"></thumbs>
+				<thumbs flipY="true" diffuse="Thumb_Mask_test.png" mask="video_filmstrip_mask.png"></thumbs>
 				<showFrame>yes</showFrame>
 				<showFolder>no</showFolder>
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
-				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,780" time="200">focus</thumbAnimation>
-				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,780" time="100">unfocus</thumbAnimation>
-		</control>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="108,108" center="0,500" time="200">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="108,108" reversible="false" end="100,100" center="0,500" time="100">unfocus</thumbAnimation>
+			</control>
 
 			<control>
 				<description>Thumbnail Panel</description>
@@ -74,26 +74,26 @@ This file should contain the facade view
 				<posX>144</posX>
 				<posY>232</posY>
 				<width>1650</width>
-				<height>800</height>
+				<height>600</height>
 				<scrollOffset>1</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<onleft>2</onleft>
 				<onright>2</onright>
-				<itemWidth>157</itemWidth>
-				<itemHeight>215</itemHeight>
-				<textureWidth>157</textureWidth>
-				<textureHeight>215</textureHeight>
-				<thumbWidth>157</thumbWidth>
-				<thumbHeight>215</thumbHeight>
+				<itemWidth>133</itemWidth>
+				<itemHeight>180</itemHeight>
+				<textureWidth>128</textureWidth>
+				<textureHeight>175</textureHeight>
+				<thumbWidth>128</thumbWidth>
+				<thumbHeight>175</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
-				<itemWidthBig>234</itemWidthBig>
-				<itemHeightBig>320</itemHeightBig>
-				<thumbWidthBig>234</thumbWidthBig>
-				<thumbHeightBig>320</thumbHeightBig>
-				<textureWidthBig>234</textureWidthBig>
-				<textureHeightBig>320</textureHeightBig>
+				<itemWidthBig>200</itemWidthBig>
+				<itemHeightBig>270</itemHeightBig>
+				<thumbWidthBig>190</thumbWidthBig>
+				<thumbHeightBig>260</thumbHeightBig>
+				<textureWidthBig>190</textureWidthBig>
+				<textureHeightBig>260</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
 				<zoomXPixels>0</zoomXPixels>
@@ -102,14 +102,15 @@ This file should contain the facade view
 				<keepaspectratio>no</keepaspectratio>
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>
-				<showFrame>true</showFrame>
 				<frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
 				<frameFocus>video_thumb_focus.png</frameFocus>
 				<textureMask>video_thumb_mask.png</textureMask>
 				<shadowAngle>90</shadowAngle>
+				<unfocusedAlpha>150</unfocusedAlpha>
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>no</thumbZoom>
 			</control>
+
 	</control>
 </controls>
 </window>

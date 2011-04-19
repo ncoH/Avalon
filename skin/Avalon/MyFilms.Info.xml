@@ -28,7 +28,7 @@
 			<control>
 				<description>default button</description>
 				<type>button</type>
-				<id>10099</id>
+				<id>80</id>
 				<posX>1200</posX>
 				<posY>335</posY>
 				<width>38</width>
@@ -54,7 +54,7 @@
 				<width>58</width>
 				<height>59</height>
 				<texture>info.png</texture>
-				<visible>Control.HasFocus(10099)</visible>
+				<visible>Control.HasFocus(80)</visible>
 			</control>
 			
 			<control>
@@ -66,7 +66,7 @@
 				<width>1160</width>
 				<label>#myfilms.user.mastertitle.value</label>
 				<font>fontB20</font>
-				<visible>Control.HasFocus(10099)</visible>
+				<visible>Control.HasFocus(80)</visible>
 				<animation effect="fade" time="250">WindowOpen</animation>
 				<animation effect="fade" time="250">WindowClose</animation>
 				<animation effect="slide" time="250" start="1200,0">visible</animation>
@@ -88,7 +88,7 @@
 				<align>left</align>
 				<font>AvalonLight12</font>
 				<textcolor>6aa5cb</textcolor>
-				<visible>Control.HasFocus(10099)</visible>
+				<visible>Control.HasFocus(80)</visible>
 			</control>
 
 			<control>
@@ -106,7 +106,7 @@
 				<align>left</align>
 				<font>AvalonLight12</font>
 				<textcolor>ffffff</textcolor>
-				<visible>Control.HasFocus(10099)</visible>
+				<visible>Control.HasFocus(80)</visible>
 			</control>
 
 			<control>
@@ -124,7 +124,7 @@
 				<align>left</align>
 				<font>AvalonLight12</font>
 				<textcolor>6aa5cb</textcolor>
-				<visible>Control.HasFocus(10099)</visible>
+				<visible>Control.HasFocus(80)</visible>
 			</control>
 			
 			<control>
@@ -142,7 +142,7 @@
 				<align>left</align>
 				<font>AvalonLight12</font>
 				<textcolor>ffffff</textcolor>
-				<visible>Control.HasFocus(10099)</visible>
+				<visible>Control.HasFocus(80)</visible>
 			</control>
 			
 			<control>
@@ -160,7 +160,7 @@
 				<align>left</align>
 				<font>AvalonLight12</font>
 				<textcolor>6aa5cb</textcolor>
-				<visible>Control.HasFocus(10099)</visible>
+				<visible>Control.HasFocus(80)</visible>
 			</control>
 			
 			<control>
@@ -178,7 +178,7 @@
 				<align>left</align>
 				<font>AvalonLight12</font>
 				<textcolor>ffffff</textcolor>
-				<visible>Control.HasFocus(10099)</visible>
+				<visible>Control.HasFocus(80)</visible>
 			</control>
 			
 			<control>
@@ -196,7 +196,7 @@
 				<align>left</align>
 				<font>AvalonLight12</font>
 				<textcolor>6aa5cb</textcolor>
-				<visible>Control.HasFocus(10099)</visible>
+				<visible>Control.HasFocus(80)</visible>
 			</control>
 			
 			<control>
@@ -214,7 +214,7 @@
 				<align>left</align>
 				<font>AvalonLight12</font>
 				<textcolor>ffffff</textcolor>
-				<visible>Control.HasFocus(10099)</visible>
+				<visible>Control.HasFocus(80)</visible>
 			</control>
 			
 			<control>
@@ -235,7 +235,7 @@
 				<onright>1026</onright>
 				<onup>1026</onup>
 				<ondown>1026</ondown>
-				<visible>Control.HasFocus(10099)</visible>
+				<visible>Control.HasFocus(80)</visible>
 			</control>
 			
 			<control>
@@ -253,7 +253,7 @@
 				<align>left</align>
 				<font>font12</font>
 				<textcolor>ffffff</textcolor>
-				<visible>Control.HasFocus(10099)</visible>
+				<visible>Control.HasFocus(80)</visible>
 			</control>
 			
 			
@@ -274,7 +274,7 @@
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#myfilms.db.rating.value</percentage>
-		<visible>Control.HasFocus(10099)</visible>
+		<visible>Control.HasFocus(80)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
@@ -292,7 +292,7 @@
 		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
-		<visible>Control.HasFocus(10099)</visible>
+		<visible>Control.HasFocus(80)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
