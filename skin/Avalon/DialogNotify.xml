@@ -14,9 +14,9 @@
             <control>
                 <id>0</id>
                 <type>image</type>
-                <posX>213</posX>
+                <posX>367</posX>
                 <posY>662</posY>
-                <width>1500</width>
+                <width>1190</width>
                 <height>389</height>
                 <texture>dialog_notify.png</texture>
             </control>
@@ -25,8 +25,8 @@
 				<id>3</id>
 				<description>Heading text label</description>
 				<type>label</type>
-				<posX>524</posX>
-				<posY>728</posY>
+				<posX>455</posX>
+				<posY>726</posY>
 				<width>960</width>
 				<font>AvalonLight20</font>
 				<textcolor>ffffff</textcolor>
@@ -41,18 +41,32 @@
                 <description>logo</description>
                 <type>image</type>
                 <visible>window.isvisible(602)+!string.contains(#thumb,MySleepTimer)</visible>
-                <posX>370</posX>
+                <posX>1288</posX>
                 <posY>732</posY>
 				<width>44</width>
 				<height>45</height>
                 <texture>tvguide_record_button.png</texture>
             </control>
+			
+			<control>
+				<description>rec</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1350</posX>
+				<posY>738</posY>
+				<width>200</width>
+				<font>font12</font>
+				<label>Recording</label>
+				<textcolor>ffbf0101</textcolor>
+                <visible>window.isvisible(602)+!string.contains(#thumb,MySleepTimer)</visible>
+			</control>
+			
             <control>
                 <id>0</id>
                 <description>logo</description>
                 <type>image</type>
                 <visible>window.isvisible(602)+!string.contains(#thumb,MySleepTimer)</visible>
-				<posX>295</posX>
+				<posX>455</posX>
 				<posY>799</posY>
 				<width>187</width>
 				<height>154</height>
@@ -72,7 +86,7 @@
                 <id>5</id>
                 <description>logo</description>
                 <type>image</type>
-				<posX>315</posX>
+				<posX>475</posX>
 				<posY>815</posY>
 				<width>150</width>
 				<height>120</height>
@@ -88,8 +102,8 @@
                 <onright>4</onright>
                 <onup>4</onup>
                 <ondown>4</ondown>
-                <posX>524</posX>
-                <posY>832</posY>
+                <posX>680</posX>
+                <posY>825</posY>
                 <width>960</width>
                 <height>110</height>
                 <textcolor>ffffffff</textcolor>

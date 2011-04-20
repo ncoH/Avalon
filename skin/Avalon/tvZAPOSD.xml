@@ -9,10 +9,10 @@
 		<description>background</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>180</posX>
-		<posY>583</posY>
-		<width>566</width>
-		<height>177</height>
+		<posX>366</posX>
+		<posY>704</posY>
+		<width>1190</width>
+		<height>376</height>
 		<texture>tv_zaposd_bg.png</texture>
 	</control>
 
@@ -20,10 +20,10 @@
 		<description>TV Logo</description>
 		<type>image</type>
 		<id>10</id>
-		<posX>201</posX>
-		<posY>614</posY>
-		<width>70</width>
-		<height>70</height>
+		<posX>477</posX>
+		<posY>800</posY>
+		<width>150</width>
+		<height>120</height>
 		<texture>#TV.View.thumb</texture>
 		<keepaspectratio>yes</keepaspectratio>
 	</control>
@@ -32,31 +32,32 @@
       <description>Programme</description>
       <type>textbox</type>
       <id>36</id>
-      <posX>302</posX>
-	  <width>420</width>
-	  <height>30</height>
-      <posY>605</posY>
+      <posX>668</posX>
+	  <width>782</width>
+	  <height>50</height>
+      <posY>774</posY>
       <label>-</label>
-      <font>Segoe Light18</font>
+      <font>fontB20</font>
     </control>
 	
 	<control>
 		<description>Channel</description>
 		<type>label</type>
 		<id>35</id>
-		<posX>302</posX>
-		<posY>648</posY>
-		<width>354</width>
+		<posX>668</posX>
+		<posY>840</posY>
+		<width>782</width>
 		<label>-</label>
-		<font>Segoe Light14</font>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
 	</control>
 	
     <control>
       <description>Start Time Info</description>
       <type>label</type>
       <id>101</id>
-		<posX>214</posX>
-		<posY>711</posY>
+		<posX>668</posX>
+		<posY>897</posY>
       <label>#TV.View.start</label>
       <align>left</align>
      <font>font12</font>
@@ -67,37 +68,63 @@
       <description>End Time Info</description>
       <type>label</type>
       <id>102</id>
-      <posX>716</posX>
-      <posY>711</posY>
+      <posX>1483</posX>
+      <posY>897</posY>
       <label>#TV.View.stop</label>
       <align>right</align>
       <font>font12</font>
     </control>
 	
+	<control>
+		<description>progressbar bg</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>774</posX>
+		<posY>903</posY>
+		<width>595</width>
+		<height>18</height>
+		<texture>osd_progress_bg.png</texture>
+	</control>
+	
     <control>
-      <description>Progress Bar</description>
-      <type>progress</type>
-      <id>1</id>
-		<posX>266</posX>
-		<posY>718</posY>
-      <width>388</width>
-      <height>10</height>
-      <texturebg>-</texturebg>
-	  <lefttexture>osd_progress_left.png</lefttexture>
+		<description>Progress Bar</description>
+		<type>progress</type>
+		<id>1</id>
+		<posX>764</posX>
+		<posY>905</posY>
+		<width>595</width>
+		<height>15</height>
+		<texturebg>-</texturebg>
+		<lefttexture>osd_progress_left.png</lefttexture>
 		<midtexture>osd_progress_mid.png</midtexture>
 		<righttexture>osd_progress_right.png</righttexture>
-      <visible>yes</visible>
-      <label>#TV.View.Percentage</label>
+		<visible>yes</visible>
+		<label>#TV.View.Percentage</label>
     </control>
 	
     <control>
-      <description>rec logo</description>
-      <type>image</type>
-      <id>39</id>
-      <posX>418</posX>
-      <posY>699</posY>
-      <texture>tv_zaposd_rec.png</texture>
+		<description>rec logo</description>
+		<type>image</type>
+		<id>39</id>
+		<posX>442</posX>
+		<posY>966</posY>
+		<width>44</width>
+		<height>45</height>
+		<texture>osd_is_recording.png</texture>
     </control>
+	
+	<control>
+		<description>rec</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>507</posX>
+		<posY>972</posY>
+		<width>200</width>
+		<font>font12</font>
+		<label>Recording</label>
+		<textcolor>ffbf0101</textcolor>
+		<visible>Control.IsVisible(39)</visible>
+	</control>
 	
     <control>
       <description>On tv NEXT</description>

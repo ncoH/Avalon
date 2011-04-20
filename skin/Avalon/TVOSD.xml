@@ -210,7 +210,7 @@
 		<width>1295</width>
 		<height>24</height>
 		<posX>325</posX>
-		<posY>200</posY>
+		<posY>154</posY>
 		<font>fontB22</font>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.View.title</label>
@@ -223,7 +223,7 @@
 		<type>textboxscrollup</type>
 		<id>38</id>
 		<posX>325</posX>
-		<posY>310</posY>
+		<posY>264</posY>
 		<width>1295</width>
 		<height>320</height>
 	<visible>Control.IsVisible(2111) + Control.HasFocus(995)</visible>	<seperator>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</seperator>
