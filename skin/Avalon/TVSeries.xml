@@ -31,7 +31,6 @@
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<visible>[facadeview.filmstrip] + Control.IsVisible(50)</visible>
     </control>
     <control>
       <description>Fanart Background #2</description>
@@ -42,35 +41,6 @@
       <width>1920</width>
       <height>1080</height>
       <texture>#TVSeries.Fanart.2</texture>
-      <animation effect="fade" time="300">visible</animation>
-      <animation effect="fade" time="300" delay="300">hidden</animation>
-      <animation effect="fade" time="0">WindowClose</animation>
-      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<visible>[facadeview.filmstrip] + Control.IsVisible(50)</visible>
-    </control>
-    <control>
-      <description>Fanart Background #3</description>
-      <type>image</type>
-      <id>624</id>
-      <posY>0</posY>
-		<posY>180</posY>
-		<width>1273</width>
-		<height>720</height>
-      <texture>#TVSeries.Fanart.3</texture>
-      <animation effect="fade" time="300">visible</animation>
-      <animation effect="fade" time="300" delay="300">hidden</animation>
-      <animation effect="fade" time="0">WindowClose</animation>
-      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    </control>
-    <control>
-      <description>Fanart Background #4</description>
-      <type>image</type>
-      <id>625</id>
-      <posY>0</posY>
-		<posY>180</posY>
-		<width>1273</width>
-		<height>720</height>
-      <texture>#TVSeries.Fanart.4</texture>
       <animation effect="fade" time="300">visible</animation>
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
