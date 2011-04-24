@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>604</id>
-<defaultcontrol>5</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
-<controls>
-
+	<id>8900</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+  <controls>
+  
 	<control>
 		<description>default background</description>
 		<type>image</type>
@@ -42,7 +42,7 @@
 		<posX>185</posX>
 		<posY>38</posY>
 		<width>800</width>
-		<label>724</label>
+		<label>Radio Search</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>font22</font>
 	</control>
@@ -59,7 +59,7 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<label>| #currentmodule: #itemcount</label>
+		<label>| #itemtype: #itemcount</label>
 		<posX>242</posX>
 		<posY>99</posY>
 		<align>left</align>
@@ -84,133 +84,110 @@
 	
 <import>common.time.xml</import>
 	
-
 	<control>
 		<type>group</type>
 		<description>group element</description>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		
-		<control>
-			<type>sortbutton</type>
-			<id>2</id>
-			<posX>462</posX>
-			<posY>228</posY>
-			<label>620</label>
-			<onup>9</onup>
-			<ondown>7</ondown>
-			<onleft>19</onleft>
-			<onright>11</onright>
-			<textalign>left</textalign>
-			<offsetSortButtonX>260</offsetSortButtonX>
-		</control>
+<!-- 		Left Buttons -->
 
 		<control>
-			<description>Search by Genres</description>
+			<description>Search</description>
+			<type>button</type>
+			<id>19</id>
+			<posX>72</posX>
+			<posY>228</posY>
+			<label>2051</label>
+			<onup>5</onup>
+			<ondown>4</ondown>
+			<onleft>11</onleft>
+			<onright>2</onright>
+			<textalign>left</textalign>
+		</control>
+		
+		<control>
+			<description>View by Title</description>
 			<type>togglebutton</type>
 			<id>4</id>
-			<posX>72</posX>
-			<posY>356</posY>
-			<colordiffuse>ffffffff</colordiffuse>
-			<label>725</label>
-			<onup>5</onup>
-			<ondown>6</ondown>
-			<onleft>10</onleft>
-			<onright>11</onright>
-			<textalign>left</textalign>
-		</control>
-
-		<control>
-			<description>Search by Title</description>
-			<type>togglebutton</type>
-			<id>5</id>
+			<width>385</width>
+			<height>64</height>
 			<posX>72</posX>
 			<posY>292</posY>
-			<colordiffuse>ffffffff</colordiffuse>
-			<label>726</label>
+			<colordiffuse>ffffffff</colordiffuse>			
+			<label>725</label>
 			<onup>19</onup>
-			<ondown>4</ondown>
+			<ondown>5</ondown>
 			<onleft>10</onleft>
 			<onright>11</onright>
 			<textalign>left</textalign>
 		</control>
 
 		<control>
-			<description>Search by Description</description>
+			<description>View by Genre</description>
 			<type>togglebutton</type>
-			<id>6</id>
+			<id>5</id>
+			<width>385</width>
+			<height>64</height>
 			<posX>72</posX>
-			<posY>420</posY>
-			<label>922</label>
-			<colordiffuse>ffffffff</colordiffuse>
+			<posY>356</posY>
+			<colordiffuse>ffffffff</colordiffuse>			
+			<label>726</label>
 			<onup>4</onup>
 			<ondown>19</ondown>
 			<onleft>10</onleft>
 			<onright>11</onright>
 			<textalign>left</textalign>
 		</control>
+		
+		
+<!-- 		Right Buttons -->
 
 		<control>
-			<description>Letter button</description>
+          <description>Sort by Name/Date/Channel</description>		
+			<type>sortbutton</type>
+			<id>2</id>
+			<posX>462</posX>
+			<posY>228</posY>
+			<label>620</label>
+			<onup>21</onup>
+			<ondown>7</ondown>
+			<onleft>19</onleft>
+			<onright>11</onright>
+			<textalign>left</textalign>
+			<offsetSortButtonX>260</offsetSortButtonX>
+		</control>
+		
+		<control>
+			<description>Starts with</description>
 			<type>selectbutton</type>
 			<id>7</id>
 			<posX>462</posX>
 			<posY>292</posY>
 			<label>872</label>
 			<onup>2</onup>
-			<ondown>8</ondown>
-			<onleft>10</onleft>
+			<ondown>21</ondown>
+			<onleft>4</onleft>
 			<onright>11</onright>
 			<textalign>left</textalign>
 		</control>
 
 		<control>
-			<description>sms input</description>
+			<description>Search Description</description>
 			<type>button</type>
-			<id>19</id>
-			<width>385</width>
-			<height>64</height>
-			<posX>72</posX>
-			<posY>228</posY>
-			<label>137</label>
-			<onup>6</onup>
-			<ondown>5</ondown>
-			<onleft>11</onleft>
-			<onright>2</onright>
-			<textalign>left</textalign>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-		</control>
-
-		<control>
-			<description>Title button</description>
-			<type>selectbutton</type>
-			<id>8</id>
+			<id>21</id>
 			<posX>462</posX>
 			<posY>356</posY>
-			<label>873</label>
+			<label>1523</label>
 			<onup>7</onup>
-			<ondown>9</ondown>
-			<onleft>10</onleft>
-			<onright>11</onright>
-			<textalign>left</textalign>
-		</control>
-
-		<control>
-			<description>Episode button</description>
-			<type>selectbutton</type>
-			<id>9</id>
-			<posX>462</posX>
-			<posY>420</posY>
-			<label>874</label>
-			<onup>8</onup>
 			<ondown>2</ondown>
-			<onleft>10</onleft>
+			<onleft>5</onleft>
 			<onright>11</onright>
 			<textalign>left</textalign>
 		</control>
-
-	</control>
-
+		
+    </control>
+	
 			<control>
 				<description>listcontrol</description>
 				<type>listcontrol</type>
@@ -290,7 +267,7 @@
 		<posX>-2000</posX>
 		<posY>545</posY>
 		<width>424</width>
-		<label>#TV.Search.Title</label>
+		<label>#Radio.Search.Title</label>
 		<font>font13</font>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -302,7 +279,7 @@
 		<id>16</id>
 		<posX>-2000</posX>
 		<posY>540</posY>
-		<label>#TV.Search.Channel</label>
+		<label>#Radio.Search.Channel</label>
 		<font>AvalonLight12</font>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -319,7 +296,7 @@
 		<font>AvalonLight12</font>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<label>#TV.Search.Time</label>
+		<label>#Radio.Search.Time</label>
 	</control>
 
 	<control>
@@ -332,7 +309,7 @@
 		<height>230</height>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<label>#TV.Search.Description</label>
+		<label>#Radio.Search.Description</label>
 	</control>
 
 	<control>
@@ -341,7 +318,7 @@
 		<id>17</id>
 		<posX>-2000</posX>
 		<posY>520</posY>
-		<label>#TV.Search.Genre</label>
+		<label>#Radio.Search.Genre</label>
 		<align>right</align>
 		<font>font13</font>
 		<textcolor>FFB2D4F5</textcolor>
@@ -356,7 +333,7 @@
 		<posY>514</posY>
 		<width>90</width>
 		<height>90</height>
-		<texture>#TV.Search.thumb</texture>
+		<texture>#Radio.Search.thumb</texture>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>	

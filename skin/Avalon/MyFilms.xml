@@ -114,7 +114,7 @@
 	</control>
 		
 
-	<!--            :: LIST VIEW ::            -->
+	<!--            :: LIST VIEW Dummy ::            -->
 
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -301,11 +301,11 @@
 		
 			
     <!--            :: IMPORT ::            -->
-    <import tag="Background">MyFilms.background.noinfo.xml</import>	
+    <import tag="Background">MyFilms.background.default.xml</import>	
 	<import>common.time.xml</import>	
     <import>MyFilms.hiddenmenu.xml</import>		
-    <import tag="Views">MyFilms.views.noinfo.xml</import>	
-    <import tag="Facade">MyFilms.facade.noinfo.xml</import> 	
+    <import tag="Views">MyFilms.views.default.xml</import>	
+    <import tag="Facade">MyFilms.facade.default.xml</import> 	
     <import>MyFilms.Info.xml</import>	
 	<import>common.overlay.xml</import>	
 	
