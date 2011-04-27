@@ -49,8 +49,8 @@
 				<description>info gfx</description>
 				<type>image</type>
 				<id>0</id>
-				<posX>744</posX>
-				<posY>235</posY>
+				<posX>741</posX>
+				<posY>223</posY>
 				<width>58</width>
 				<height>59</height>
 				<texture>info.png</texture>
@@ -62,7 +62,7 @@
 				<type>fadelabel</type>
 				<id>1</id>
 				<posX>838</posX>
-				<posY>235</posY>
+				<posY>225</posY>
 				<width>1160</width>
 				<label>#myfilms.user.mastertitle.value</label>
 				<font>fontB20</font>
@@ -83,7 +83,7 @@
 				<label>#myfilms.db.year.label</label>
 				<id>0</id>
 				<posX>744</posX>
-				<posY>328</posY>
+				<posY>308</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight12</font>
@@ -101,7 +101,7 @@
 				<label>#myfilms.db.year.value</label>
 				<id>0</id>
 				<posX>1058</posX>
-				<posY>328</posY>
+				<posY>308</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight12</font>
@@ -119,7 +119,7 @@
 				<label>#myfilms.db.length.label</label>
 				<id>0</id>
 				<posX>744</posX>
-				<posY>368</posY>
+				<posY>348</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight12</font>
@@ -137,7 +137,7 @@
 				<label>#myfilms.db.length.value min</label>
 				<id>0</id>
 				<posX>1058</posX>
-				<posY>368</posY>
+				<posY>348</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight12</font>
@@ -155,7 +155,7 @@
 				<label>#myfilms.db.category.label</label>
 				<id>0</id>
 				<posX>744</posX>
-				<posY>408</posY>
+				<posY>388</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight12</font>
@@ -173,10 +173,10 @@
 				<label>#myfilms.db.category.value</label>
 				<id>0</id>
 				<posX>1058</posX>
-				<posY>408</posY>
-				<width>330</width>
+				<posY>388</posY>
+				<width>700</width>
 				<align>left</align>
-				<font>AvalonLight12</font>
+				<font>AvalonLight14</font>
 				<textcolor>ffffff</textcolor>
 				<visible>Control.HasFocus(80)</visible>
 			</control>
@@ -191,7 +191,7 @@
 				<label>#myfilms.db.director.label</label>
 				<id>0</id>
 				<posX>744</posX>
-				<posY>448</posY>
+				<posY>428</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight12</font>
@@ -209,10 +209,10 @@
 				<label>#myfilms.db.director.value</label>
 				<id>0</id>
 				<posX>1058</posX>
-				<posY>448</posY>
+				<posY>428</posY>
 				<width>700</width>
 				<align>left</align>
-				<font>AvalonLight12</font>
+				<font>AvalonLight14</font>
 				<textcolor>ffffff</textcolor>
 				<visible>Control.HasFocus(80)</visible>
 			</control>
@@ -226,9 +226,9 @@
 				<description>Summary (list)</description>
 				<id>1025</id>
 				<posX>744</posX>
-				<posY>520</posY>
+				<posY>490</posY>
 				<width>1060</width>
-				<height>270</height>
+				<height>280</height>
 				<label>#myfilms.db.description.value</label>
 				<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 				<onleft>1026</onleft>
@@ -239,30 +239,26 @@
 			</control>
 			
 			<control>
-				<animation effect="fade" time="250">WindowOpen</animation>
 				<animation effect="fade" time="250">WindowClose</animation>
 				<animation effect="slide" time="250" start="1200,0">visible</animation>
 				<animation effect="slide" time="0" end="1500,0">hidden</animation>
-				<description>Actors</description>
-				<type>fadelabel</type>
-				<label>#myfilms.db.actors.label: #myfilms.db.actors.value</label>
+				<description>frame</description>
+				<type>image</type>
 				<id>0</id>
-				<posX>744</posX>
-				<posY>805</posY>
-				<width>900</width>
-				<align>left</align>
-				<font>font12</font>
-				<textcolor>ffffff</textcolor>
+				<posX>743</posX>
+				<posY>786</posY>
+				<width>1041</width>
+				<height>73</height>
+				<texture>movie_detail_frame.png</texture>
 				<visible>Control.HasFocus(80)</visible>
 			</control>
-			
-			
-	<control>
+	
+  	<control>
 		<type>imagelist</type>
 		<id>101</id>
-		<posX>1582</posX>
-		<posY>328</posY>
-		<width>185</width>
+		<posX>840</posX>
+		<posY>809</posY>
+		<width>315</width>
 		<height>29</height>
 		<textureWidth>28</textureWidth>
 		<textureHeight>27</textureHeight>
@@ -272,8 +268,26 @@
 		</subitems>
 		<orientation>horizontal</orientation>
 		<align>left</align>
-		<imagesToDraw>5</imagesToDraw>
+		<imagesToDraw>10</imagesToDraw>
 		<percentage>#myfilms.db.rating.value</percentage>
+		<visible>Control.HasFocus(80)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="1200,0">visible</animation>
+		<animation effect="slide" time="0" end="1500,0">hidden</animation>
+	</control>
+
+	<control>
+		<description>Score</description>
+		<type>label</type>
+		<label>#myfilms.db.rating.value</label>
+		<id>0</id>
+		<posX>1220</posX>
+		<posY>802</posY>
+		<width>185</width>
+		<align>right</align>
+		<font>fontB14</font>
+		<textcolor>ffffff</textcolor>
 		<visible>Control.HasFocus(80)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -282,27 +296,23 @@
 	</control>
 	
 	<control>
-		<description>Score</description>
-		<type>label</type>
-		<label>#myfilms.db.rating.value</label>
-		<id>0</id>
-		<posX>1770</posX>
-		<posY>328</posY>
-		<width>185</width>
-		<align>right</align>
-		<font>AvalonLight12</font>
-		<textcolor>ffffff</textcolor>
+		<type>image</type>
+		<description>thumb Logos ID 2012</description>
+		<id>2012</id>
+		<posX>1274</posX>
+		<posY>802</posY>
+		<width>392</width>
+		<height>41</height>
+		<texture>#myfilms.logos_id2012</texture>
+		<keepaspectratio>no</keepaspectratio>
+		<spaceBetweenItems>2</spaceBetweenItems>
 		<visible>Control.HasFocus(80)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 	</control>
-			
-    <!--            :: MEDIAINFO ::            -->
-			
-
-			
+		
 		</control>
 	</controls>
 </window>

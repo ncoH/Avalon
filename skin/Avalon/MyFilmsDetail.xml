@@ -82,21 +82,6 @@
 
 	
 	<!-- Mouse Buttons -->
-
-	<control>
-		<description>unfocus background</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>248</posX>
-		<posY>155</posY>
-		<width>1426</width>
-		<height>99</height>
-		<texture>myfilms_tabs_nofocus.png</texture>
-		<visible>!control.hasfocus(10099)</visible>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
-	</control>
 	
     	<control>
 			<description>Play Button and Overview</description>
@@ -104,8 +89,8 @@
 			<id>10000</id>
 			<posX>248</posX>
 			<posY>155</posY>
-			<width>286</width>
-			<height>94</height>		
+			<width>302</width>
+			<height>99</height>		
 			<onup>10099</onup>
 			<ondown>107</ondown>
 			<onleft>109</onleft>
@@ -117,7 +102,7 @@
  			<textXOff>50</textXOff>	
 			<textYOff>20</textYOff>
 			<textureFocus>myfilms_tab_left_focus.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
+			<textureNoFocus>myfilms_tab_left_nofocus.png</textureNoFocus>
 			<visible allowhiddenfocus="true">!Control.HasFocus(10099)</visible>
 			<animation effect="fade" start="100" end="0" time="500">Hidden</animation>
 			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
@@ -127,9 +112,9 @@
 			<description>Description</description>		
 			<type>button</type>
 			<id>10001</id>
-			<posX>532</posX>
+			<posX>534</posX>
 			<posY>155</posY>
-			<width>284</width>
+			<width>302</width>
 			<height>70</height>
 			<onup>10099</onup>
 			<ondown>107</ondown>
@@ -142,7 +127,7 @@
  			<textXOff>50</textXOff>	
 			<textYOff>20</textYOff>	
 			<textureFocus>myfilms_tab_middle_focus.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
+			<textureNoFocus>myfilms_tab_middle_nofocus.png</textureNoFocus>
 			<visible allowhiddenfocus="true">!Control.HasFocus(10099)</visible>
 			<animation effect="fade" start="100" end="0" time="500">Hidden</animation>
 			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
@@ -152,9 +137,9 @@
 			<description>Comments</description>		
 			<type>button</type>
 			<id>10002</id>			
-			<posX>817</posX>
+			<posX>819</posX>
 			<posY>155</posY>
-			<width>284</width>
+			<width>302</width>
 			<height>70</height>
 			<onup>10099</onup>
 			<ondown>107</ondown>
@@ -167,7 +152,7 @@
  			<textXOff>50</textXOff>	
 			<textYOff>20</textYOff>		
 			<textureFocus>myfilms_tab_middle_focus.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
+			<textureNoFocus>myfilms_tab_middle_nofocus.png</textureNoFocus>
 			<visible>!Control.HasFocus(10099)</visible>
 			<animation effect="fade" start="100" end="0" time="500">Hidden</animation>
 			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
@@ -177,9 +162,9 @@
 			<description>Actor Details</description>		
 			<type>button</type>
 			<id>10003</id>			
-			<posX>1102</posX>
+			<posX>1104</posX>
 			<posY>155</posY>
-			<width>284</width>
+			<width>302</width>
 			<height>70</height>
 			<onup>10099</onup>
 			<ondown>107</ondown>
@@ -192,7 +177,7 @@
  			<textXOff>50</textXOff>	
 			<textYOff>20</textYOff>	
 			<textureFocus>myfilms_tab_middle_focus.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
+			<textureNoFocus>myfilms_tab_middle_nofocus.png</textureNoFocus>
 			<visible>!Control.HasFocus(10099)</visible>
 			<animation effect="fade" start="100" end="0" time="500">Hidden</animation>
 			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
@@ -202,10 +187,10 @@
 			<description>Technical Details</description>		
 			<type>button</type>
 			<id>10004</id>			
-			<posX>1388</posX>
+			<posX>1389</posX>
 			<posY>155</posY>
 			<width>285</width>
-			<height>94</height>
+			<height>99</height>
 			<onup>10099</onup>
 			<ondown>107</ondown>
 			<onleft>10003</onleft>
@@ -217,7 +202,7 @@
  			<textXOff>50</textXOff>	
 			<textYOff>20</textYOff>	
 			<textureFocus>myfilms_tab_right_focus.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
+			<textureNoFocus>myfilms_tab_right_nofocus.png</textureNoFocus>
 			<visible>!Control.HasFocus(10099)</visible>
 			<animation effect="fade" start="100" end="0" time="500">Hidden</animation>
 			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
@@ -1316,7 +1301,7 @@
 			<type>label</type>
 			<id>2061</id>
 			<posX>1108</posX>
-			<posY>985</posY>
+			<posY>980</posY>
 			<label>#myfilms.db.rating.value</label>
 			<textcolor>ffffffff</textcolor>
 			<font>fontB14</font>
