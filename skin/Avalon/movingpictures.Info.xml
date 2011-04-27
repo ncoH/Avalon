@@ -49,8 +49,8 @@
 				<description>info gfx</description>
 				<type>image</type>
 				<id>0</id>
-				<posX>744</posX>
-				<posY>235</posY>
+				<posX>741</posX>
+				<posY>223</posY>
 				<width>58</width>
 				<height>59</height>
 				<texture>info.png</texture>
@@ -62,7 +62,7 @@
 				<type>fadelabel</type>
 				<id>1</id>
 				<posX>838</posX>
-				<posY>235</posY>
+				<posY>225</posY>
 				<width>1160</width>
 				<label>#MovingPictures.SelectedMovie.title</label>
 				<font>fontB20</font>
@@ -83,7 +83,7 @@
 				<label>#SkinTranslation.Translations.movingpictures.release.Label</label>
 				<id>0</id>
 				<posX>744</posX>
-				<posY>328</posY>
+				<posY>308</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight12</font>
@@ -101,10 +101,10 @@
 				<label>#MovingPictures.SelectedMovie.year</label>
 				<id>0</id>
 				<posX>1058</posX>
-				<posY>328</posY>
+				<posY>308</posY>
 				<width>240</width>
 				<align>left</align>
-				<font>AvalonLight12</font>
+				<font>AvalonLight14</font>
 				<textcolor>ffffff</textcolor>
 				<visible>Control.HasFocus(80)</visible>
 			</control>
@@ -119,7 +119,7 @@
 				<label>#SkinTranslation.Translations.movingpictures.runtime.Label</label>
 				<id>0</id>
 				<posX>744</posX>
-				<posY>368</posY>
+				<posY>348</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight12</font>
@@ -137,10 +137,10 @@
 				<label>#MovingPictures.SelectedMovie.runtime.totalminutes min</label>
 				<id>0</id>
 				<posX>1058</posX>
-				<posY>368</posY>
+				<posY>348</posY>
 				<width>240</width>
 				<align>left</align>
-				<font>AvalonLight12</font>
+				<font>AvalonLight14</font>
 				<textcolor>ffffff</textcolor>
 				<visible>Control.HasFocus(80)</visible>
 			</control>
@@ -155,7 +155,7 @@
 				<label>#MovingPictures.Translation.Genre.Label</label>
 				<id>0</id>
 				<posX>744</posX>
-				<posY>408</posY>
+				<posY>388</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight12</font>
@@ -173,10 +173,10 @@
 				<label>#MovingPictures.SelectedMovie.genres</label>
 				<id>0</id>
 				<posX>1058</posX>
-				<posY>408</posY>
-				<width>330</width>
+				<posY>388</posY>
+				<width>700</width>
 				<align>left</align>
-				<font>AvalonLight12</font>
+				<font>AvalonLight14</font>
 				<textcolor>ffffff</textcolor>
 				<visible>Control.HasFocus(80)</visible>
 			</control>
@@ -191,7 +191,7 @@
 				<label>#MovingPictures.Translation.Director.Label</label>
 				<id>0</id>
 				<posX>744</posX>
-				<posY>448</posY>
+				<posY>428</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight12</font>
@@ -209,10 +209,10 @@
 				<label>#MovingPictures.SelectedMovie.directors</label>
 				<id>0</id>
 				<posX>1058</posX>
-				<posY>448</posY>
+				<posY>428</posY>
 				<width>700</width>
 				<align>left</align>
-				<font>AvalonLight12</font>
+				<font>AvalonLight14</font>
 				<textcolor>ffffff</textcolor>
 				<visible>Control.HasFocus(80)</visible>
 			</control>
@@ -226,9 +226,9 @@
 				<description>Summary (list)</description>
 				<id>1025</id>
 				<posX>744</posX>
-				<posY>520</posY>
+				<posY>490</posY>
 				<width>1060</width>
-				<height>270</height>
+				<height>280</height>
 				<label>#MovingPictures.SelectedMovie.summary</label>
 				<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 				<onleft>1026</onleft>
@@ -237,43 +237,46 @@
 				<ondown>1026</ondown>
 				<visible>Control.HasFocus(80)</visible>
 			</control>
+	
 			
 			<control>
-				<animation effect="fade" time="250">WindowOpen</animation>
 				<animation effect="fade" time="250">WindowClose</animation>
 				<animation effect="slide" time="250" start="1200,0">visible</animation>
 				<animation effect="slide" time="0" end="1500,0">hidden</animation>
-				<description>Actors</description>
-				<type>fadelabel</type>
-				<label>#MovingPictures.Translation.Actor.Label: #MovingPictures.SelectedMovie.extra.actors.1, #MovingPictures.SelectedMovie.extra.actors.2, #MovingPictures.SelectedMovie.extra.actors.3</label>
+				<description>frame</description>
+				<type>image</type>
 				<id>0</id>
-				<posX>744</posX>
-				<posY>805</posY>
-				<width>900</width>
-				<align>left</align>
-				<font>font12</font>
-				<textcolor>ffffff</textcolor>
+				<posX>743</posX>
+				<posY>786</posY>
+				<width>1041</width>
+				<height>73</height>
+				<texture>movie_detail_frame.png</texture>
 				<visible>Control.HasFocus(80)</visible>
 			</control>
 			
+			<control>
+				<animation effect="fade" time="250">WindowClose</animation>
+				<animation effect="slide" time="250" start="1200,0">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>certification logo</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>765</posX>
+				<posY>802</posY>
+				<width>41</width>
+				<height>41</height>
+				<texture>certification\#MovingPictures.SelectedMovie.certification.png</texture>
+				<visible>Control.HasFocus(80)</visible>
+			</control>
 			
 	<control>
-		<type>imagelist</type>
+		<type>image</type>
 		<id>101</id>
-		<posX>1582</posX>
-		<posY>328</posY>
-		<width>185</width>
-		<height>29</height>
-		<textureWidth>28</textureWidth>
-		<textureHeight>27</textureHeight>
-		<subitems>
-		<subitem>stargrey.png</subitem>
-		<subitem>starwhite.png</subitem>
-		</subitems>
-		<orientation>horizontal</orientation>
-		<align>left</align>
-		<imagesToDraw>5</imagesToDraw>
-		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
+		<posX>840</posX>
+		<posY>807</posY>
+		<width>315</width>
+		<height>27</height>
+		<texture>star#MovingPictures.SelectedMovie.score.rounded.png</texture>
 		<visible>Control.HasFocus(80)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -286,11 +289,11 @@
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.score.localized</label>
 		<id>0</id>
-		<posX>1770</posX>
-		<posY>328</posY>
+		<posX>1220</posX>
+		<posY>802</posY>
 		<width>185</width>
 		<align>right</align>
-		<font>AvalonLight12</font>
+		<font>fontB14</font>
 		<textcolor>ffffff</textcolor>
 		<visible>Control.HasFocus(80)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -310,9 +313,9 @@
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1415</posX>
-		<posY>395</posY>
-		<height>38</height>
+		<posX>1370</posX>
+		<posY>802</posY>
+		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\1080_h264_235.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80) + [string.contains(#MovingPictures.LocalMedia.videoresolution,1080p)+string.contains(#MovingPictures.LocalMedia.videocodec,h264)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
@@ -320,16 +323,15 @@
 	
 	<control>
 		<description>720p / H.264 / Widescreen</description>
-		<description>1080p / H.264 / Widescreen</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1415</posX>
-		<posY>395</posY>
-		<height>38</height>
+		<posX>1370</posX>
+		<posY>802</posY>
+		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\720_h264_235.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80) + [string.contains(#MovingPictures.LocalMedia.videoresolution,720p)+string.contains(#MovingPictures.LocalMedia.videocodec,h264)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
@@ -337,16 +339,15 @@
 	
 	<control>
 		<description>SD / Xvid / Widescreen</description>
-		<description>1080p / H.264 / Widescreen</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1415</posX>
-		<posY>395</posY>
-		<height>38</height>
+		<posX>1370</posX>
+		<posY>802</posY>
+		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_xvid_235.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,XVID)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
@@ -354,16 +355,15 @@
 	
 	<control>
 		<description>SD / Xvid / Fullscreen</description>
-		<description>1080p / H.264 / Widescreen</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1415</posX>
-		<posY>395</posY>
-		<height>38</height>
+		<posX>1370</posX>
+		<posY>802</posY>
+		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_xvid_133.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,XVID)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)]</visible>
@@ -371,16 +371,15 @@
 	
 	<control>
 		<description>SD / DivX / Widescreen</description>
-		<description>1080p / H.264 / Widescreen</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1415</posX>
-		<posY>395</posY>
-		<height>38</height>
+		<posX>1370</posX>
+		<posY>802</posY>
+		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_divx_235.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,DIVX)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
@@ -388,16 +387,15 @@
 	
 	<control>
 		<description>SD / DivX / Fullscreen</description>
-		<description>1080p / H.264 / Widescreen</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1415</posX>
-		<posY>395</posY>
-		<height>38</height>
+		<posX>1370</posX>
+		<posY>802</posY>
+		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_divx_133.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80) + string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,DIVX)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)]</visible>
@@ -406,16 +404,15 @@
 	<!-- Audiocodec -->
 	<control>
 		<description>AC3 / 5.1</description>
-		<description>1080p / H.264 / Widescreen</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1595</posX>
-		<posY>395</posY>
-		<height>38</height>
+		<posX>1582</posX>
+		<posY>802</posY>
+		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\ac3_51.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80) + [string.contains(#MovingPictures.LocalMedia.audiocodec,ac3)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
@@ -423,16 +420,15 @@
 	
 	<control>
 		<description>DTS / 5.1</description>
-		<description>1080p / H.264 / Widescreen</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1595</posX>
-		<posY>395</posY>
-		<height>38</height>
+		<posX>1582</posX>
+		<posY>802</posY>
+		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dts_51.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80) + [string.contains(#MovingPictures.LocalMedia.audiocodec,dts)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
@@ -440,16 +436,15 @@
 	
 	<control>
 		<description>DTS / 7.1</description>
-		<description>1080p / H.264 / Widescreen</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1595</posX>
-		<posY>395</posY>
-		<height>38</height>
+		<posX>1582</posX>
+		<posY>802</posY>
+		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dts_71.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80) + [string.contains(#MovingPictures.LocalMedia.audiocodec,dts)+[string.contains(#MovingPictures.LocalMedia.audiochannels,7.1)|string.contains(#MovingPictures.LocalMedia.audiochannels,8)]]</visible>
@@ -457,16 +452,15 @@
 	
 	<control>
 		<description>AC3 / 2.0</description>
-		<description>1080p / H.264 / Widescreen</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1595</posX>
-		<posY>395</posY>
-		<height>38</height>
+		<posX>1582</posX>
+		<posY>802</posY>
+		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\ac3_20.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80) + [string.contains(#MovingPictures.LocalMedia.audiocodec,ac3)+string.contains(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
@@ -474,16 +468,15 @@
 	
 	<control>
 		<description>mp3 / 2.0</description>
-		<description>1080p / H.264 / Widescreen</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1595</posX>
-		<posY>395</posY>
-		<height>38</height>
+		<posX>1582</posX>
+		<posY>802</posY>
+		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\mp3_20.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80) + [string.contains(#MovingPictures.LocalMedia.audiocodec,MP3)+string.contains(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
@@ -492,16 +485,15 @@
 	<!-- Source -->
 	<control>
 		<description>BluRay</description>
-		<description>1080p / H.264 / Widescreen</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1705</posX>
-		<posY>395</posY>
-		<height>38</height>
+		<posX>1274</posX>
+		<posY>802</posY>
+		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\bluray.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80) + [string.contains(#MovingPictures.LocalMedia.videoresolution,720p)|string.contains(#MovingPictures.LocalMedia.videoresolution,1080p)]</visible>
@@ -509,19 +501,49 @@
 	
 	<control>
 		<description>DVD</description>
-		<description>1080p / H.264 / Widescreen</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="1200,0">visible</animation>
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1705</posX>
-		<posY>395</posY>
-		<height>38</height>
+		<posX>1274</posX>
+		<posY>802</posY>
+		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\dvd.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)]</visible>
+	</control>
+			
+	<!-- Subtitle -->
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="1200,0">visible</animation>
+		<animation effect="slide" time="0" end="1500,0">hidden</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1716</posX>
+		<posY>806</posY>
+		<width>36</width>
+		<height>37</height>
+		<texture>Logos\#MovingPictures.LocalMedia.Subtitles.png</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="1200,0">visible</animation>
+		<animation effect="slide" time="0" end="1500,0">hidden</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1716</posX>
+		<posY>806</posY>
+		<width>36</width>
+		<height>37</height>
+		<texture>Logos\#MovingPictures.LocalMedia.Subtitles.png</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.HasFocus(80)</visible>
 	</control>
 			
 		</control>

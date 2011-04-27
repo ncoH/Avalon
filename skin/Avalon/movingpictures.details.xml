@@ -28,7 +28,7 @@ This file should contain the details view
 		<description>PLAY Button</description>
 		<type>button</type>
 		<posX>433</posX>
-		<posY>315</posY>
+		<posY>312</posY>
 		<id>6</id>
 		<label>-</label>
 		<onup>6</onup>
@@ -66,7 +66,7 @@ This file should contain the details view
 		<label>#SkinTranslation.Translations.movingpictures.release.Label</label>
 		<id>0</id>
 		<posX>439</posX>
-		<posY>414</posY>
+		<posY>394</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -83,10 +83,10 @@ This file should contain the details view
 		<label>#MovingPictures.SelectedMovie.year</label>
 		<id>0</id>
 		<posX>694</posX>
-		<posY>414</posY>
+		<posY>394</posY>
 		<width>200</width>
 		<align>left</align>
-		<font>AvalonLight12</font>
+		<font>AvalonLight14</font>
 		<textcolor>ffffff</textcolor>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -99,7 +99,7 @@ This file should contain the details view
 		<label>#SkinTranslation.Translations.movingpictures.runtime.Label</label>
 		<id>0</id>
 		<posX>439</posX>
-		<posY>457</posY>
+		<posY>435</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -116,10 +116,10 @@ This file should contain the details view
 		<label>#MovingPictures.SelectedMovie.runtime.totalminutes min</label>
 		<id>0</id>
 		<posX>694</posX>
-		<posY>457</posY>
+		<posY>435</posY>
 		<width>240</width>
 		<align>left</align>
-		<font>AvalonLight12</font>
+		<font>AvalonLight14</font>
 		<textcolor>ffffff</textcolor>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -133,7 +133,7 @@ This file should contain the details view
 		<label>#MovingPictures.Translation.Genre.Label</label>
 		<id>0</id>
 		<posX>439</posX>
-		<posY>496</posY>
+		<posY>476</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -150,10 +150,10 @@ This file should contain the details view
 		<label>#MovingPictures.SelectedMovie.genres</label>
 		<id>0</id>
 		<posX>694</posX>
-		<posY>496</posY>
-		<width>400</width>
+		<posY>476</posY>
+		<width>800</width>
 		<align>left</align>
-		<font>AvalonLight12</font>
+		<font>AvalonLight14</font>
 		<textcolor>ffffff</textcolor>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -167,7 +167,7 @@ This file should contain the details view
 		<label>#MovingPictures.Translation.Director.Label</label>
 		<id>0</id>
 		<posX>439</posX>
-		<posY>538</posY>
+		<posY>518</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -184,10 +184,44 @@ This file should contain the details view
 		<label>#MovingPictures.SelectedMovie.directors</label>
 		<id>0</id>
 		<posX>694</posX>
-		<posY>538</posY>
+		<posY>518</posY>
 		<width>700</width>
 		<align>left</align>
+		<font>AvalonLight14</font>
+		<textcolor>ffffff</textcolor>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+	</control>
+	
+	<control>
+		<description>Actors Label</description>
+		<type>label</type>
+		<label>#MovingPictures.Translation.Actors.Label</label>
+		<id>0</id>
+		<posX>439</posX>
+		<posY>558</posY>
+		<width>240</width>
+		<align>left</align>
 		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+	</control>
+			
+	<control>
+		<description>Actors</description>
+		<type>fadelabel</type>
+		<label>#MovingPictures.SelectedMovie.actors</label>
+		<id>0</id>
+		<posX>694</posX>
+		<posY>558</posY>
+		<width>800</width>
+		<align>left</align>
+		<font>AvalonLight14</font>
 		<textcolor>ffffff</textcolor>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -200,8 +234,8 @@ This file should contain the details view
 		<description>Summary (list)</description>
 		<id>1025</id>
 		<posX>439</posX>
-		<posY>608</posY>
-		<width>1120</width>
+		<posY>615</posY>
+		<width>1090</width>
 		<height>230</height>
 		<label>#MovingPictures.SelectedMovie.summary</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
@@ -216,43 +250,47 @@ This file should contain the details view
 	</control>
 			
 	<control>
-		<description>Actors</description>
-		<type>fadelabel</type>
-		<label>#MovingPictures.Translation.Actor.Label: #MovingPictures.SelectedMovie.extra.actors.1, #MovingPictures.SelectedMovie.extra.actors.2, #MovingPictures.SelectedMovie.extra.actors.3</label>
-		<id>0</id>
-		<posX>439</posX>
-		<posY>892</posY>
-		<width>900</width>
-		<align>left</align>
-		<font>font12</font>
-		<textcolor>ffffff</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<description>frame</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>435</posX>
+		<posY>880</posY>
+		<width>1041</width>
+		<height>73</height>
+		<texture>movie_detail_frame.png</texture>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+	</control>
+			
+	<control>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<description>certification logo</description>
+		<type>image</type>
+		<id>101</id>
+		<posX>458</posX>
+		<posY>895</posY>
+		<width>41</width>
+		<height>41</height>
+		<texture>certification\#MovingPictures.SelectedMovie.certification.png</texture>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 	</control>
 	
 	<control>
-		<type>imagelist</type>
+		<type>image</type>
 		<id>101</id>
-		<posX>1290</posX>
-		<posY>414</posY>
-		<width>185</width>
-		<height>29</height>
-		<textureWidth>28</textureWidth>
-		<textureHeight>27</textureHeight>
-		<subitems>
-		<subitem>stargrey.png</subitem>
-		<subitem>starwhite.png</subitem>
-		</subitems>
-		<orientation>horizontal</orientation>
-		<align>left</align>
-		<imagesToDraw>5</imagesToDraw>
-		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
+		<posX>534</posX>
+		<posY>901</posY>
+		<width>315</width>
+		<height>27</height>
+		<texture>star#MovingPictures.SelectedMovie.score.rounded.png</texture>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 	
 	<control>
@@ -260,11 +298,11 @@ This file should contain the details view
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.score.localized</label>
 		<id>0</id>
-		<posX>1478</posX>
-		<posY>414</posY>
+		<posX>914</posX>
+		<posY>896</posY>
 		<width>185</width>
 		<align>right</align>
-		<font>AvalonLight12</font>
+		<font>fontB14</font>
 		<textcolor>ffffff</textcolor>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
