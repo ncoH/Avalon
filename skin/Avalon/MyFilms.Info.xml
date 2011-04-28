@@ -104,7 +104,7 @@
 				<posY>308</posY>
 				<width>240</width>
 				<align>left</align>
-				<font>AvalonLight12</font>
+				<font>AvalonLight14</font>
 				<textcolor>ffffff</textcolor>
 				<visible>Control.HasFocus(80)</visible>
 			</control>
@@ -140,7 +140,7 @@
 				<posY>348</posY>
 				<width>240</width>
 				<align>left</align>
-				<font>AvalonLight12</font>
+				<font>AvalonLight14</font>
 				<textcolor>ffffff</textcolor>
 				<visible>Control.HasFocus(80)</visible>
 			</control>

@@ -23,6 +23,7 @@ This file should contain the facade view
 				<height>700</height>
 				<width>684</width>
 				<textXOff>50</textXOff>
+				<textXOff2>650</textXOff2>	
 				<textureHeight>55</textureHeight>
 				<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
