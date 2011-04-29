@@ -75,7 +75,7 @@
 			</control>
 				
 			<control>
-				<type>sortbutton</type>
+				<type>button</type>
 				<description>Update</description>				
 				<id>107</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
