@@ -15,6 +15,24 @@
 	</control>
 	
 	<control>
+		<description>background listview poster enabled</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>243</posX>
+		<posY>192</posY>
+		<width>954</width>
+		<height>590</height>
+		<texture>viewport_poster_short.png</texture>
+		<visible>facadeview.list + Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+	</control>
+	
+	<control>
 		<description>background listview</description>
 		<type>image</type>
 		<id>0</id>
@@ -22,12 +40,28 @@
 		<posY>164</posY>
 		<width>1893</width>
 		<height>646</height>
-		<texture>viewport_short.png</texture>
+		<texture>viewport_noposter_short.png</texture>
 		<visible>facadeview.list + Control.IsVisible(50)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
 		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>viewport shadow poster disabled</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>729</posX>
+		<posY>192</posY>
+		<width>467</width>
+		<height>590</height>
+		<texture>viewport_shadow_short.png</texture>
+		<visible>facadeview.list + Control.IsVisible(50) + string.equals(#Avalon.hidePoster,yes)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="fade" time="0" delay="0">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 	</control>
 	
 	<control>
