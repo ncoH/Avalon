@@ -58,7 +58,7 @@
 			<control>
 				<type>button</type>
 				<description>Layout</description>
-				<id>6</id>
+				<id>2</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<posX>69</posX>
@@ -71,12 +71,12 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>10014</onup>
-				<ondown>2</ondown>					
+				<ondown>3</ondown>					
 			</control>
 				
 			<control>
 				<type>sortbutton</type>
-				<id>2</id>
+				<id>3</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<posX>69</posX>
@@ -88,14 +88,14 @@
 				<label>103</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>6</onup>
-				<ondown>3</ondown>					
+				<onup>2</onup>
+				<ondown>5</ondown>					
 			</control>
 				
 			<control>
 				<type>button</type>
 				<description>Switch view</description>
-				<id>3</id>
+				<id>5</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<posX>69</posX>
@@ -107,7 +107,7 @@
 				<label>457</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>2</onup>
+				<onup>3</onup>
 				<ondown>4</ondown>					
 			</control>
 				
@@ -127,13 +127,13 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>3</onup>
-				<ondown>5</ondown>					
+				<ondown>6</ondown>					
 			</control>
 				
 			<control>
 				<type>button</type>
 				<description>Options</description>
-				<id>5</id>
+				<id>6</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<posX>69</posX>
@@ -225,7 +225,7 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>10013</onup>
-				<ondown>6</ondown>					
+				<ondown>2</ondown>					
 				<label>TV-Serien</label>
 			</control>
 			

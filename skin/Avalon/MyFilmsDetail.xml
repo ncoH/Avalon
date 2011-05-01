@@ -1366,7 +1366,7 @@
 			<posY>911</posY>
 			<width>38</width>
 			<height>38</height>
-			<texture>tv_is_unavailable.png</texture>
+			<texture>led_red.png</texture>
 			<keepaspectratio>yes</keepaspectratio>
 			<centered>yes</centered>
 			<visible>!string.equals(#myfilms.user.source.value)+!Control.HasFocus(10003) + !Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
@@ -1380,12 +1380,26 @@
 			<posY>911</posY>
 			<width>38</width>
 			<height>38</height>
-			<texture>tv_is_available.png</texture>
+			<texture>led_green.png</texture>
 			<keepaspectratio>yes</keepaspectratio>
 			<centered>yes</centered>
 			<visible>string.equals(#myfilms.user.source.value)+!Control.HasFocus(10003) + !Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
 		</control>
 
+		<control>
+			<description>Movie available Icon</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>297</posX>
+			<posY>911</posY>
+			<width>38</width>
+			<height>38</height>
+			<texture>led_yellow.png</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+			<visible>string.equals(#myfilms.user.source.value)++string.contains(#myfilms.user.source.isonline,False)+!Control.HasFocus(10003) + !Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
+		</control>
+		
 <!-- Trailer Available Info -->
 
  		<control>
@@ -1421,7 +1435,7 @@
 			<posY>911</posY>
 			<width>38</width>
 			<height>38</height>
-			<texture>tv_is_unavailable.png</texture>
+			<texture>led_red.png</texture>
 			<keepaspectratio>yes</keepaspectratio>
 			<centered>yes</centered>
 			<visible>!string.equals(#myfilms.user.sourcetrailer.value)+!Control.HasFocus(10003) + !Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
@@ -1435,12 +1449,26 @@
 			<posY>911</posY>
 			<width>38</width>
 			<height>38</height>
-			<texture>tv_is_available.png</texture>
+			<texture>led_green.png</texture>
 			<keepaspectratio>yes</keepaspectratio>
 			<centered>yes</centered>
 			<visible>string.equals(#myfilms.user.sourcetrailer.value)+!Control.HasFocus(10003) + !Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
 		</control>
 
+		<control>
+			<description>Trailer available Icon</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>435</posX>
+			<posY>911</posY>
+			<width>38</width>
+			<height>38</height>
+			<texture>led_yellow.png</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+			<visible>string.equals(#myfilms.user.sourcetrailer.value)++string.contains(#myfilms.user.sourcetrailer.isonline,False)+!Control.HasFocus(10003) + !Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
+		</control>
+		
 	<control>
 		<type>animation</type>
 		<description>Waiting during search</description>
