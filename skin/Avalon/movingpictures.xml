@@ -48,6 +48,32 @@ multiple view modes.
       <posY>-50</posY>
       <width>0</width>
     </control>
+    <control>
+      <description>dummy backdrop control 1</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>-5</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <height>1</height>
+    </control>
+    <control>
+      <description>dummy backdrop control 2</description>
+      <type>image</type>
+      <id>11</id>
+      <posX>-5</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <height>1</height>
+    </control>
+    <control>
+      <description>dummy poster control</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>-2000</posX>
+      <posY>-2000</posY>
+      <label>#Avalon.EnablePosterHide</label>
+    </control>
     <!--            :: MOVIE BACKDROP ::            -->
     <control>
       <description>DEFAULT BACKGROUND</description>
@@ -63,7 +89,7 @@ multiple view modes.
     <control>
       <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
       <type>image</type>
-      <id>1</id>
+      <id>0</id>
       <posX>0</posX>
       <posY>0</posY>
       <width>1920</width>
@@ -73,11 +99,12 @@ multiple view modes.
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>[facadeview.filmstrip+control.isvisible(50)]+control.isvisible(1)</visible>
     </control>
     <control>
       <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
       <type>image</type>
-      <id>11</id>
+      <id>0</id>
       <posX>0</posX>
       <posY>0</posY>
       <width>1920</width>
@@ -87,6 +114,37 @@ multiple view modes.
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>[facadeview.filmstrip+control.isvisible(50)]+control.isvisible(11)</visible>
+    </control>
+    <control>
+      <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>180</posY>
+      <width>1273</width>
+      <height>720</height>
+      <texture>#MovingPictures.Backdrop</texture>
+      <animation effect="fade" time="300">visible</animation>
+      <animation effect="fade" time="300" delay="300">hidden</animation>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>!facadeview.filmstrip+control.isvisible(1)</visible>
+    </control>
+    <control>
+      <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>180</posY>
+      <width>1273</width>
+      <height>720</height>
+      <texture>#MovingPictures.Backdrop2</texture>
+      <animation effect="fade" time="300">visible</animation>
+      <animation effect="fade" time="300" delay="300">hidden</animation>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>!facadeview.filmstrip+control.isvisible(11)</visible>
     </control>
     <!--            :: CATEGORY VIEW ::            -->
     <control>
@@ -159,13 +217,13 @@ multiple view modes.
       <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
     </control>
     <!--            :: IMPORT ::            -->
-    <import tag="Background">movingpictures.background.noinfo.thumbs.XL.xml</import>
+    <import tag="Background">movingpictures.background.default.xml</import>
     <import>common.time.xml</import>
     <import>movingpictures.hiddenmenu.xml</import>
-    <import tag="Views">movingpictures.views.noinfo.xml</import>
-    <import tag="Facade">movingpictures.facade.noinfo.thumbs.XL.xml</import>
+    <import tag="Views">movingpictures.views.default.xml</import>
+    <import tag="Facade">movingpictures.facade.default.xml</import>
     <import>movingpictures.Info.xml</import>
-    <import tag="Mediainfo">movingpictures.mediainfo.noinfo.xml</import>
+    <import tag="Mediainfo">movingpictures.mediainfo.default.xml</import>
     <import>movingpictures.details.xml</import>
     <import>movingpictures.mediainfo.details.xml</import>
     <import>common.overlay.xml</import>
