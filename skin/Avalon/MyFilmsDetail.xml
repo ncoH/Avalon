@@ -38,10 +38,8 @@
 		<height>1080</height>
 		<texture>#myfilms.fanart</texture>	
 		<keepaspectratio>no</keepaspectratio>		
-		<animation effect="fade" time="300">visible</animation>
-		<animation effect="fade" time="300" delay="300">hidden</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>	
+		<animation effect="fade" time="250">WindowOpen</animation>
     </control>
 	
     <control>
@@ -57,10 +55,8 @@
 		<loop>yes</loop>		  
 		<randomize>true</randomize>
 		<keepaspectratio>no</keepaspectratio> 
-		<animation effect="fade" time="300">visible</animation>
-		<animation effect="fade" time="300" delay="300">hidden</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>	
+		<animation effect="fade" time="250">WindowOpen</animation>
 	</control>
 
 	<!--            :: MAIN DETAILS ::            -->
@@ -75,9 +71,8 @@
 		<height>872</height>
 		<texture>myfilms_details_bg.png</texture>
 		<visible>!control.hasfocus(10099)</visible>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">WindowClose</animation>	
+		<animation effect="fade" time="0">WindowOpen</animation>
 	</control>
 
 	

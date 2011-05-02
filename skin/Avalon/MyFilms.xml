@@ -1,29 +1,56 @@
 <window>
-	<id>7986</id>
-	<defaultcontrol>50</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-	<controls>
-
+  <id>7986</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
     <control>
-        <type>label</type>
-        <description>(Folder) - Visible when Folder or selection - Label use for Hide or unHide some items with Skin visible conditions</description>
-        <id>34</id>
-        <posX>0</posX>
-        <posY>0</posY>
-        <visible>yes</visible>
-        <focusable>no</focusable>
+      <type>label</type>
+      <description>(Folder) - Visible when Folder or selection - Label use for Hide or unHide some items with Skin visible conditions</description>
+      <id>34</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <visible>yes</visible>
+      <focusable>no</focusable>
     </control>
-			
     <control>
-        <type>label</type>
-        <description>(Fanart) - Visible when Fanart found</description>
-        <id>35</id>
-        <posX>0</posX>
-        <posY>0</posY>
-        <visible>yes</visible>
-        <focusable>no</focusable>
+      <type>label</type>
+      <description>(Fanart) - Visible when Fanart found</description>
+      <id>35</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <visible>yes</visible>
+      <focusable>no</focusable>
     </control>
-		
+	
+    <control>
+      <description>dummy backdrop control 1</description>
+      <type>image</type>
+      <id>11</id>
+      <posX>-5</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <height>1</height>
+    </control>
+	
+    <control>
+      <description>dummy backdrop control 2</description>
+      <type>image</type>
+      <id>21</id>
+      <posX>-5</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <height>1</height>
+    </control>
+	
+    <control>
+      <description>dummy poster control</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>-2000</posX>
+      <posY>-2000</posY>
+      <label>#Avalon.EnablePosterHide</label>
+    </control>
+	
     <!--            :: MOVIE BACKDROP ::            -->
     <control>
       <description>DEFAULT BACKGROUND</description>
@@ -40,7 +67,7 @@
     <control>
       <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
       <type>image</type>
-      <id>11</id>
+      <id>0</id>
       <posX>0</posX>
       <posY>0</posY>
       <width>1920</width>
@@ -50,12 +77,12 @@
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    </control>
-	
+      <visible>[facadeview.filmstrip+control.isvisible(50)]+control.isvisible(11)</visible>	  
+    </control>	
     <control>
       <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
       <type>image</type>
-      <id>21</id>
+      <id>0</id>
       <posX>0</posX>
       <posY>0</posY>
       <width>1920</width>
@@ -65,8 +92,41 @@
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>[facadeview.filmstrip+control.isvisible(50)]+control.isvisible(21)</visible>	  
     </control>
-		
+	
+    <control>
+      <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>180</posY>
+      <width>1273</width>
+      <height>720</height>
+      <texture>#myfilms.fanart</texture>
+      <animation effect="fade" time="300">visible</animation>
+      <animation effect="fade" time="300" delay="300">hidden</animation>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>!facadeview.filmstrip+control.isvisible(11)</visible>
+    </control>
+    <control>
+      <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>180</posY>
+      <width>1273</width>
+      <height>720</height>
+      <texture>#myfilms.fanart2</texture>
+      <animation effect="fade" time="300">visible</animation>
+      <animation effect="fade" time="300" delay="300">hidden</animation>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>!facadeview.filmstrip+control.isvisible(21)</visible>
+    </control>
+
+	
     <!--            :: HEADER ::            -->
     <control>
       <animation effect="fade" time="250">WindowOpen</animation>
@@ -80,7 +140,7 @@
       <textcolor>6aa5cb</textcolor>
       <font>font22</font>
       <visible>Control.IsVisible(50)</visible>
-    </control>	
+    </control>
 	
     <control>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -98,47 +158,43 @@
       <visible>Control.IsVisible(50)</visible>
     </control>
 	
+    <control>
+      <description>Selection display</description>
+      <type>fadelabel</type>
+      <id>12</id>
+      <posX>-2000</posX>
+      <posY>80</posY>
+      <font>font12</font>
+      <width>430</width>
+      <label>#myfilms.view - #myfilms.select</label>
+      <visible>string.contains(#myfilms.view)|string.contains(#myfilms.select)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="250">WindowOpen</animation>
+    </control>
 	
-	<control>
-		<description>Selection display</description>
-		<type>fadelabel</type>
-		<id>12</id>
-		<posX>-2000</posX>
-		<posY>80</posY>
-		<font>font12</font>
-		<width>430</width>
-		<label>#myfilms.view - #myfilms.select</label>
-		<visible>string.contains(#myfilms.view)|string.contains(#myfilms.select)</visible>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="250">WindowOpen</animation>
-	</control>
-		
-
-	<!--            :: LIST VIEW Dummy ::            -->
-
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>textboxscrollup</type>
-		<description>Summary (list)</description>
-		<id>1025</id>
-		<posX>-2000</posX>
-		<posY>340</posY>
-		<width>400</width>
-		<height>243</height>
-		<label>#myfilms.db.description.value</label>
-		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
-		<onleft>1026</onleft>
-		<onright>1026</onright>
-		<onup>1026</onup>
-		<ondown>1026</ondown>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
-	</control>
-
-
-<!-- Fanrt/Movie Available Info -->
-
-<!-- 		<control>
+	
+    <!--            :: LIST VIEW Dummy ::            -->
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <type>textboxscrollup</type>
+      <description>Summary (list)</description>
+      <id>1025</id>
+      <posX>-2000</posX>
+      <posY>340</posY>
+      <width>400</width>
+      <height>243</height>
+      <label>#myfilms.db.description.value</label>
+      <seperator>---------------------------------------------------------------------------------------------------------</seperator>
+      <onleft>1026</onleft>
+      <onright>1026</onright>
+      <onup>1026</onup>
+      <ondown>1026</ondown>
+      <visible>facadeview.list+Control.IsVisible(50)</visible>
+    </control>
+	
+    <!-- Fanrt/Movie Available Info -->
+    <!-- 		<control>
 			<description>Movie available Info Label</description>
 			<type>fadelabel</type>
 			<id>1</id>
@@ -178,10 +234,8 @@
 			<centered>yes</centered>
 			<visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)+string.equals(#myfilms.user.source.value)</visible>
 		</control> -->
-
-<!-- Trailer Available Info -->
-
-<!-- 		<control>
+    <!-- Trailer Available Info -->
+    <!-- 		<control>
 			<description>Trailer available Info Label</description>
 			<type>fadelabel</type>
 			<id>1</id>
@@ -234,60 +288,57 @@
 			<centered>yes</centered>
 			<visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)+string.equals(#myfilms.user.sourcetrailer.value)</visible>
 		</control> -->
-
 		
-<!-- Global Overlay Filter Info -->
-
-	<control>
-		<description>Filters group</description>
-		<type>group</type>
-		<posX>1095</posX>
-		<posY>21</posY>
-		<layout>StackLayout(5,Horizontal)</layout>
-       		<dimColor>ffffffff</dimColor>
-		<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" time="250">WindowClose</animation>	
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<control>
-			<type>image</type>
-			<description>UnWatched Global Filter Icon</description>
-			<id>0</id>
-			<width>16</width>
-			<keepaspectratio>yes</keepaspectratio>
-			<texture>MyFilms\overlayunwatched.png</texture>
-			<visible>string.contains(#myfilms.globalfilter.unwatched,True)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-			<animation effect="fade" time="250">WindowClose</animation>	
-			<animation effect="fade" time="250">WindowOpen</animation>
-		</control>
 		
-		<control>
-			<type>image</type>
-			<description>Trailer Global Filter Icon</description>
-			<id>0</id>
-			<width>16</width>
-			<keepaspectratio>yes</keepaspectratio>
-			<texture>MyFilms\filmstrip.png</texture>
-			<visible>string.contains(#myfilms.globalfilter.trailersonly,True)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-			<animation effect="fade" time="250">WindowClose</animation>	
-			<animation effect="fade" time="250">WindowOpen</animation>
-		</control>
-		
-		<control>
-			<type>image</type>
-			<description>Rating Global Filter Icon</description>
-			<id>0</id>
-			<width>18</width>
-			<keepaspectratio>yes</keepaspectratio>
-			<texture>MyFilms\UserRatingStarOn.png</texture>
-			<visible>string.contains(#myfilms.globalfilter.minrating,True)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-			<animation effect="fade" time="250">WindowClose</animation>	
-			<animation effect="fade" time="250">WindowOpen</animation>
-		</control>
-		
-		<!-- <control>
+    <!-- Global Overlay Filter Info -->
+    <control>
+      <description>Filters group</description>
+      <type>group</type>
+      <posX>1095</posX>
+      <posY>21</posY>
+      <layout>StackLayout(5,Horizontal)</layout>
+      <dimColor>ffffffff</dimColor>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <control>
+        <type>image</type>
+        <description>UnWatched Global Filter Icon</description>
+        <id>0</id>
+        <width>16</width>
+        <keepaspectratio>yes</keepaspectratio>
+        <texture>MyFilms\overlayunwatched.png</texture>
+        <visible>string.contains(#myfilms.globalfilter.unwatched,True)</visible>
+        <animation effect="fade" time="250">visiblechange</animation>
+        <animation effect="fade" time="250">WindowClose</animation>
+        <animation effect="fade" time="250">WindowOpen</animation>
+      </control>
+      <control>
+        <type>image</type>
+        <description>Trailer Global Filter Icon</description>
+        <id>0</id>
+        <width>16</width>
+        <keepaspectratio>yes</keepaspectratio>
+        <texture>MyFilms\filmstrip.png</texture>
+        <visible>string.contains(#myfilms.globalfilter.trailersonly,True)</visible>
+        <animation effect="fade" time="250">visiblechange</animation>
+        <animation effect="fade" time="250">WindowClose</animation>
+        <animation effect="fade" time="250">WindowOpen</animation>
+      </control>
+      <control>
+        <type>image</type>
+        <description>Rating Global Filter Icon</description>
+        <id>0</id>
+        <width>18</width>
+        <keepaspectratio>yes</keepaspectratio>
+        <texture>MyFilms\UserRatingStarOn.png</texture>
+        <visible>string.contains(#myfilms.globalfilter.minrating,True)</visible>
+        <animation effect="fade" time="250">visiblechange</animation>
+        <animation effect="fade" time="250">WindowClose</animation>
+        <animation effect="fade" time="250">WindowOpen</animation>
+      </control>
+	  
+      <!-- <control>
 			<type>label</type>
 			<description>Rating Global Filter Value</description>
 			<id>0</id>
@@ -297,17 +348,15 @@
 			<animation effect="fade" time="250">WindowClose</animation>	
 			<animation effect="fade" time="250">WindowOpen</animation>
 		</control> -->
-	</control>
 		
-			
+    </control>
     <!--            :: IMPORT ::            -->
-    <import tag="Background">MyFilms.background.noinfo.xml</import>	
-	<import>common.time.xml</import>	
-    <import>MyFilms.hiddenmenu.xml</import>		
-    <import tag="Views">MyFilms.views.noinfo.xml</import>	
-    <import tag="Facade">MyFilms.facade.noinfo.xml</import> 	
-    <import>MyFilms.Info.xml</import>	
-	<import>common.overlay.xml</import>	
-	
+    <import tag="Background">MyFilms.background.default.xml</import>
+    <import>common.time.xml</import>
+    <import>MyFilms.hiddenmenu.xml</import>
+    <import tag="Views">MyFilms.views.default.xml</import>
+    <import tag="Facade">MyFilms.facade.default.xml</import>
+    <import>MyFilms.Info.xml</import>
+    <import>common.overlay.xml</import>
   </controls>
 </window>
