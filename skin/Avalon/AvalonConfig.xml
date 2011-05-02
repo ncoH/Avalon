@@ -67,6 +67,16 @@
         <onleft>50</onleft>
         <onright>50</onright>
         <onup>51</onup>
+        <ondown>54</ondown>
+      </control>
+      <control>
+        <description>MovingPictures Settings</description>
+        <type>button</type>
+        <id>54</id>
+	    <label>-</label>
+        <onleft>54</onleft>
+        <onright>54</onright>
+        <onup>50</onup>
         <ondown>51</ondown>
       </control>
       <control>
@@ -76,7 +86,7 @@
 	    <label>-</label>
         <onleft>51</onleft>
         <onright>51</onright>
-        <onup>50</onup>
+        <onup>54</onup>
         <ondown>52</ondown>
       </control>
       <control>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <window>
-  <id>155101</id>
+  <id>155105</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
@@ -15,7 +15,7 @@
 		<posX>189</posX>
 		<posY>99</posY>
 		<width>500</width>
-		<label>Skin Settings | Moving Pictures</label>
+		<label>Skin Settings | MyFilms</label>
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
@@ -29,7 +29,7 @@
 		<posX>766</posX>
 		<posY>264</posY>
 		<width>500</width>
-		<label>Moving Pictures</label>
+		<label>MyFilms</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>fontB22</font>
 	</control>
@@ -63,7 +63,7 @@
       <control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-        <description>MovingPictures Default/NoInfo Style</description>
+        <description>MyFilms Default/NoInfo Style</description>
         <type>togglebutton</type>
         <id>2</id>
 		<label>Enable movie info at bottom of screen</label>
@@ -85,7 +85,7 @@
       <control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-        <description>MovingPictures Thumbnail Mod</description>
+        <description>MyFilms Thumbnail Mod</description>
         <type>button</type>
         <id>3</id>
 		<posX>736</posX>
@@ -101,7 +101,7 @@
 		<textureFocus>settings_button_large_focus.png</textureFocus>
 		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
       </control>
-
+<!--
       <control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -124,7 +124,7 @@
 		<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
 		<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
       </control>
-
+-->
 <import>common.time.xml</import>
 <import>avalon.version.xml</import>
   </controls>
