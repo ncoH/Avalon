@@ -240,6 +240,8 @@
         <label>-</label>
         <onleft>901</onleft>
         <onright>222</onright>
+		<onup>221</onup>
+		<ondown>221</ondown>
         <font>font12</font>
     </control>
     </control>
@@ -275,6 +277,8 @@
         <label>-</label>
         <onleft>221</onleft>
         <onright>223</onright>
+		<onup>222</onup>
+		<ondown>222</ondown>
         <font>font12</font>
     </control>
     </control>
@@ -310,6 +314,8 @@
         <label>-</label>
         <onleft>222</onleft>
         <onright>221</onright>
+		<onup>223</onup>
+		<ondown>223</ondown>
         <font>font12</font>
     </control>
     </control>

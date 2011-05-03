@@ -29,13 +29,26 @@
         <label>-</label>
         <onleft>99999</onleft>
         <onright>99998</onright>
+    </control>
+	
+	<control>
+        <description>dummy button for exitmenu</description>
+        <type>button</type>
+        <id>99997</id>
+        <posX>-2000</posX>
+        <posY>-2000</posY>
+        <textureFocus>-</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>3</onleft>
+        <onright>99997</onright>
     </control>	
 <!--
 <control>
 	<description>dummy label for topbar</description>
 	<type>label</type>
 	<id>331</id>
-	<posX>-2000</posX>
+	<posX>200</posX>
 	<posY>300</posY>
 	<label>homeitem: #homeitem</label>
 </control>
@@ -44,7 +57,7 @@
 	<description>dummy label for topbar</description>
 	<type>label</type>
 	<id>331</id>
-	<posX>-2000</posX>
+	<posX>200</posX>
 	<posY>400</posY>
 	<label>highlightedbutton: #highlightedbutton</label>
 </control>
@@ -53,7 +66,7 @@
 	<description>dummy label for topbar</description>
 	<type>label</type>
 	<id>331</id>
-	<posX>-2000</posX>
+	<posX>200</posX>
 	<posY>500</posY>
 	<label>mainmenu: #mainmenu</label>
 </control>
@@ -62,7 +75,7 @@
 	<description>dummy label for topbar</description>
 	<type>label</type>
 	<id>331</id>
-	<posX>-2000</posX>
+	<posX>200</posX>
 	<posY>600</posY>
 	<label>recentMedia: #recentMedia</label>
 </control>
@@ -71,7 +84,7 @@
 	<description>dummy label for topbar</description>
 	<type>label</type>
 	<id>331</id>
-	<posX>-2000</posX>
+	<posX>200</posX>
 	<posY>700</posY>
 	<label>update: #Avalon.UpdateAvailable</label>
 </control>
@@ -425,7 +438,7 @@
 		<textureNoFocus>-</textureNoFocus>
 		<onup>902</onup>
 		<ondown>802</ondown>
-		<onleft>99999</onleft>
+		<onleft>801</onleft>
 		<onright>601</onright>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [string.equals(#mainmenu,801) | Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) | Control.IsVisible(2) ]</visible>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
@@ -525,7 +538,7 @@
 		<textureNoFocus>-</textureNoFocus>
 		<onup>901</onup>
 		<ondown>801</ondown>
-		<onleft>99999</onleft>
+		<onleft>802</onleft>
 		<onright>501</onright>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [string.equals(#mainmenu,802) | Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) | Control.IsVisible(2) ]</visible>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
@@ -614,7 +627,7 @@
 		<textureNoFocus>-</textureNoFocus>
 		<onup>902</onup>
 		<ondown>802</ondown>
-		<onleft>99999</onleft>
+		<onleft>901</onleft>
 		<onright>601</onright>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [string.equals(#mainmenu,901) | Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) | Control.IsVisible(2) ]</visible>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
@@ -714,7 +727,7 @@
 		<textureNoFocus>-</textureNoFocus>
 		<onup>901</onup>
 		<ondown>801</ondown>
-		<onleft>99999</onleft>
+		<onleft>902</onleft>
 		<onright>501</onright>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [string.equals(#mainmenu,902) | Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505) | Control.HasFocus(221) | Control.HasFocus(222) | Control.HasFocus(223) | Control.HasFocus(231) | Control.HasFocus(232) | Control.HasFocus(233) | Control.HasFocus(99999) | Control.IsVisible(2) ]</visible>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
