@@ -53,7 +53,7 @@
 		<episode use="true" />
 		<series use="true" />		
 		<season use="true" />		
-		<!--<custom use="false"><![CDATA[skin\Maya\Media\custom.png]]></custom>-->
+		<!--<custom use="false"><![CDATA[skin\Maya\Avalon\custom.png]]></custom>-->
 	</videoosdimages>
 	
 	<!-- Define the images loaded in properties during play -->	
@@ -151,37 +151,36 @@
 <Enabled>1<Format>SeasonWatchedAndUnWatched<FormatAs>Eval(PrettyNumber10(<Season.EpisodesUnWatched>))          Eval(PrettyNumber10(<Season.EpisodeCount>-<Season.EpisodesUnWatched>))
 <Enabled>1<Format>SMALLSPACE<FormatAs> ]]>
 	</formatting>
-	<logos import="true">
-		<![CDATA[skin\Maya\Media\Logos\source\DVD.png;-;<Episode.EpisodeFilename>;-;contains;-;DVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HDDVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HD-DVD;-;<Restrict:Episode>
-skin\Maya\Media\Logos\source\HDTV.png;-;<Episode.EpisodeFilename>;-;contains;-;HDTV;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\source\HDDVD.png;-;<Episode.EpisodeFilename>;-;contains;-;HDDVD;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;HD-DVD;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\source\bluray.png;-;<Episode.EpisodeFilename>;-;contains;-;BLURAY;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;BLU-RAY;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\source\blurayrip.png;-;<Episode.EpisodeFilename>;-;contains;-;BDRip;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\source\hdtv.png;-;<Episode.EpisodeFilename>;-;contains;-;hdtv;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\source\sdtv.png;-;<Episode.EpisodeFilename>;-;contains;-;sdtv;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\video\h264.png;-;<Episode.VideoFormat>;-;=;-;AVC;-;OR;-;<Episode.VideoCodec>;-;contains;-;AVC;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\video\MP2V.png;-;<Episode.VideoFormat>;-;=;-;MPEG video;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPEG2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\video\MP1V.png;-;<Episode.VideoFormat>;-;=;-;MPEG video;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPEG1;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\video\DIVX.png;-;<Episode.VideoCodec>;-;contains;-;DIVX;-;OR;-;<Episode.VideoCodec>;-;contains;-;DX50;-;OR;-;<Episode.VideoCodec>;-;contains;-;DIV3;-;<Restrict:Episode>
-skin\Maya\Media\Logos\video\XVID.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPG4;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\video\wvc1.png;-;<Episode.VideoFormat>;-;contains;-;VC-1;-;OR;-;<Episode.VideoCodec>;-;contains;-;VC1;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\video\wmv.png;-;<Episode.VideoCodec>;-;contains;-;WMV;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\video\vp6f.png;-;<Episode.VideoFormat>;-;=;-;VP6;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\audio\dd20.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\audio\dd51.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\audio\dts51.png;-;<Episode.AudioCodec>;-;=;-;DTS;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;<Restrict:Episode>
-skin\Maya\Media\Logos\audio\dts71.png;-;<Episode.AudioCodec>;-;=;-;DTS;-;AND;-;<Episode.AudioChannels>;-;=;-;7;-;<Restrict:Episode>
-skin\Maya\Media\Logos\audio\mp3_20.png;-;<Episode.AudioCodec>;-;contains;-;MPA1L3;-;OR;-;<Episode.AudioCodec>;-;contains;-;MPA2L3;-;OR;-;<Episode.AudioFormat>;-;=;-;MPEG Audio;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;<Restrict:Episode>
-skin\Maya\Media\Logos\audio\aac51.png;-;<Episode.AudioCodec>;-;=;-;AAC;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\TVSeries\Logos\resolution\480.png;-;<Episode.videoWidth>;-;<;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\TVSeries\Logos\resolution\540.png;-;<Episode.videoWidth>;-;=;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\TVSeries\Logos\resolution\720.png;-;<Episode.videoWidth>;-;=;-;1280;-;OR;-;<Episode.videoHeight>;-;=;-;720;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\TVSeries\Logos\resolution\1080.png;-;<Episode.videoWidth>;-;=;-;1920;-;OR;-;<Episode.videoHeight>;-;=;-;1080;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\TVSeries\Logos\aspectratio\1.33.png;-;<Episode.VideoAspectRatio>;-;<;-;1.4;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\TVSeries\Logos\aspectratio\1.85.png;-;<Episode.VideoAspectRatio>;-;<;-;1.9;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.79;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\TVSeries\Logos\aspectratio\1.78.png;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;1.79;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\TVSeries\logos\subtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;1;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;subbed.;-;AND;-;;-;=;-;;-;
-skin\Maya\Media\TVSeries\logos\nosubtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;0;-;AND;-;;-;=;-;;-;
+	<logos import="false">
+		<![CDATA[skin\Avalon\Logos\source\DVD.png;-;<Episode.EpisodeFilename>;-;contains;-;DVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HDDVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HD-DVD;-;<Restrict:Episode>
+skin\Avalon\Logos\source\HDTV.png;-;<Episode.EpisodeFilename>;-;contains;-;HDTV;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\source\HDDVD.png;-;<Episode.EpisodeFilename>;-;contains;-;HDDVD;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;HD-DVD;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\source\bluray.png;-;<Episode.EpisodeFilename>;-;contains;-;BLURAY;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;BLU-RAY;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\source\blurayrip.png;-;<Episode.EpisodeFilename>;-;contains;-;BDRip;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\source\hdtv.png;-;<Episode.EpisodeFilename>;-;contains;-;hdtv;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\source\sdtv.png;-;<Episode.EpisodeFilename>;-;contains;-;sdtv;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\video\720_h264_235.png;-;<Episode.VideoFormat>;-;=;-;AVC;-;OR;-;<Episode.VideoCodec>;-;contains;-;AVC;-;OR;-;<Episode.videoWidth>;-;=;-;1280;-;OR;-;<Episode.videoHeight>;-;=;-;720;-;OR;-;<Episode.VideoAspectRatio>;-;<;-;1.9;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.79;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\video\MP2V.png;-;<Episode.VideoFormat>;-;=;-;MPEG video;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPEG2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\video\MP1V.png;-;<Episode.VideoFormat>;-;=;-;MPEG video;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPEG1;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\video\DIVX.png;-;<Episode.VideoCodec>;-;contains;-;DIVX;-;OR;-;<Episode.VideoCodec>;-;contains;-;DX50;-;OR;-;<Episode.VideoCodec>;-;contains;-;DIV3;-;<Restrict:Episode>
+skin\Avalon\Logos\video\XVID.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPG4;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\video\wvc1.png;-;<Episode.VideoFormat>;-;contains;-;VC-1;-;OR;-;<Episode.VideoCodec>;-;contains;-;VC1;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\video\wmv.png;-;<Episode.VideoCodec>;-;contains;-;WMV;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\video\vp6f.png;-;<Episode.VideoFormat>;-;=;-;VP6;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\audio\dd20.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\audio\dd51.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Logos\audio\dts51.png;-;<Episode.AudioCodec>;-;=;-;DTS;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;<Restrict:Episode>
+skin\Avalon\Logos\audio\dts71.png;-;<Episode.AudioCodec>;-;=;-;DTS;-;AND;-;<Episode.AudioChannels>;-;=;-;7;-;<Restrict:Episode>
+skin\Avalon\Logos\audio\mp3_20.png;-;<Episode.AudioCodec>;-;contains;-;MPA1L3;-;OR;-;<Episode.AudioCodec>;-;contains;-;MPA2L3;-;OR;-;<Episode.AudioFormat>;-;=;-;MPEG Audio;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;<Restrict:Episode>
+skin\Avalon\Logos\audio\aac51.png;-;<Episode.AudioCodec>;-;=;-;AAC;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Avalon\TVSeries\Logos\resolution\480.png;-;<Episode.videoWidth>;-;<;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Avalon\TVSeries\Logos\resolution\540.png;-;<Episode.videoWidth>;-;=;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Avalon\TVSeries\Logos\resolution\1080.png;-;<Episode.videoWidth>;-;=;-;1920;-;OR;-;<Episode.videoHeight>;-;=;-;1080;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Avalon\TVSeries\Logos\aspectratio\1.33.png;-;<Episode.VideoAspectRatio>;-;<;-;1.4;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Avalon\TVSeries\Logos\aspectratio\1.85.png;-;<Episode.VideoAspectRatio>;-;<;-;1.9;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.79;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Avalon\TVSeries\Logos\aspectratio\1.78.png;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;1.79;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Avalon\TVSeries\logos\subtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;1;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;subbed.;-;AND;-;;-;=;-;;-;
+skin\Maya\Avalon\TVSeries\logos\nosubtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;0;-;AND;-;;-;=;-;;-;
 ]]>
 	</logos>	
 	
