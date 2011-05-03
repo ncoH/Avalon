@@ -132,6 +132,7 @@
 		<height>215</height>
 		<seperator>---------------------------------------------------------------------------------------------------------------------</seperator>
 		<font>AvalonLight11</font>
+		<lineSpacing>0.85</lineSpacing>
 		<visible>facadeview.list+Control.IsVisible(1240)+!Control.IsVisible(632)</visible>
 		<label>#TVSeries.Description</label>
     </control>
@@ -321,6 +322,7 @@
 		<onright>1026</onright>
 		<onup>1026</onup>
 		<ondown>1026</ondown>
+		<lineSpacing>0.85</lineSpacing>
 		<visible>[facadeview.list | facadeview.filmstrip]+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
 	</control>
 	
@@ -657,6 +659,7 @@
 		<onright>1026</onright>
 		<onup>1026</onup>
 		<ondown>1026</ondown>
+		<lineSpacing>0.85</lineSpacing>
 		<visible>facadeview.list+Control.IsVisible(1239)</visible>
 	</control>
 	
