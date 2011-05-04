@@ -8,6 +8,24 @@
     <import>TVSeries.dummy.xml</import>
     <!-- ********************** BACKGROUNDS************************************** -->
     <control>
+      <description>dummy backdrop control 1</description>
+      <type>image</type>
+      <id>524</id>
+      <posX>-5</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <height>1</height>
+    </control>
+    <control>
+      <description>dummy backdrop control 2</description>
+      <type>image</type>
+      <id>525</id>
+      <posX>-5</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <height>1</height>
+    </control>
+    <control>
       <description>default background</description>
       <type>image</type>
       <id>1</id>
@@ -21,7 +39,7 @@
     <control>
       <description>Fanart Background #1</description>
       <type>image</type>
-      <id>524</id>
+      <id>0</id>
       <posY>0</posY>
       <posX>0</posX>
       <width>1920</width>
@@ -31,11 +49,12 @@
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>[facadeview.filmstrip|facadeview.coverflow]+control.isvisible(524)</visible>
     </control>
     <control>
       <description>Fanart Background #2</description>
       <type>image</type>
-      <id>525</id>
+      <id>0</id>
       <posY>0</posY>
       <posX>0</posX>
       <width>1920</width>
@@ -45,8 +64,39 @@
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>[facadeview.filmstrip|facadeview.coverflow]+control.isvisible(525)</visible>
     </control>
-    <import tag="Background">TVSeries.background.default.xml</import>
+    <control>
+      <description>Fanart Background #1</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>180</posY>
+      <width>1273</width>
+      <height>720</height>
+      <texture>#TVSeries.Fanart.1</texture>
+      <animation effect="fade" time="300">visible</animation>
+      <animation effect="fade" time="200" delay="0">hidden</animation>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>[!facadeview.filmstrip+!facadeview.coverflow]+control.isvisible(524)</visible>
+    </control>
+    <control>
+      <description>Fanart Background #2</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>180</posY>
+      <width>1273</width>
+      <height>720</height>
+      <texture>#TVSeries.Fanart.2</texture>
+      <animation effect="fade" time="300">visible</animation>
+      <animation effect="fade" time="200" delay="0">hidden</animation>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>[!facadeview.filmstrip+!facadeview.coverflow]+control.isvisible(525)</visible>
+    </control>
+    <import tag="Background">TVSeries.background.noinfo.xml</import>
     <import>common.time.xml</import>
     <control>
       <animation effect="fade" time="250">WindowOpen</animation>
@@ -76,10 +126,10 @@
       <textcolor>ffffff</textcolor>
       <visible>[facadeview.list|facadeview.filmstrip]+Control.IsVisible(1237)</visible>
     </control>
-    <import tag="Views">TVSeries.views.default.xml</import>
+    <import tag="Views">TVSeries.views.noinfo.xml</import>
     <import>TVSeries.hiddenmenu.xml</import>
     <import>common.overlay.xml</import>
-    <import tag="Facade">TVSeries.facade.default.xml</import>
+    <import tag="Facade">TVSeries.facade.noinfo.xml</import>
     <import>TVSeries.Info.xml</import>
   </controls>
 </window>
