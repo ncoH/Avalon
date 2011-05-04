@@ -98,8 +98,8 @@
 				<thumbPosYBig>0</thumbPosYBig>
 				<thumbZoom>no</thumbZoom>
 				<enableFocusZoom>no</enableFocusZoom>
-				<zoomXPixels>0</zoomXPixels>
-				<zoomYPixels>0</zoomYPixels>
+				<zoomXPixels>20</zoomXPixels>
+				<zoomYPixels>30</zoomYPixels>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>
@@ -112,7 +112,7 @@
 				<frameNoFocus>music_thumb_nofocus.png</frameNoFocus>
 				<frameFocus>music_thumb_focus.png</frameFocus>
 				<textureMask>music_thumb_mask.png</textureMask>
-				<keepaspectratio>no</keepaspectratio>
+				<keepaspectratio>yes</keepaspectratio>
 			</control>
 
 			<control>

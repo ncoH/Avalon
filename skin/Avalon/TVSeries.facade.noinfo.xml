@@ -56,9 +56,9 @@
         <thumbHeightBig>73</thumbHeightBig>
         <thumbPosXBig>10</thumbPosXBig>
         <thumbPosYBig>10</thumbPosYBig>
-		<zoomXPixels>0</zoomXPixels>
-		<zoomYPixels>0</zoomYPixels>
-        <thumbZoom>no</thumbZoom>
+		<zoomXPixels>20</zoomXPixels>
+		<zoomYPixels>30</zoomYPixels>
+        <thumbZoom>yes</thumbZoom>
         <!-- text (No banner) -->
         <textXOff>0</textXOff>
         <textYOff>0</textYOff>

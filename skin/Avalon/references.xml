@@ -386,7 +386,7 @@
 		<spinPosY>104</spinPosY>
 		<spinAlign>right</spinAlign>
 		<spinCanFocus>no</spinCanFocus>
-		<unfocusedAlpha>150</unfocusedAlpha>
+		<unfocusedAlpha>255</unfocusedAlpha>
 		<frameNoFocus>music_thumb_nofocus.png</frameNoFocus>
 		<frameFocus>music_thumb_focus.png</frameFocus>
 		<textureMask>music_thumb_mask.png</textureMask>

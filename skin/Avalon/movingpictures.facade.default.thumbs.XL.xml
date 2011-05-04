@@ -127,8 +127,8 @@ This file should contain the facade view
 				<textureHeightBig>280</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
-				<zoomXPixels>0</zoomXPixels>
-				<zoomYPixels>0</zoomYPixels>
+				<zoomXPixels>20</zoomXPixels>
+				<zoomYPixels>30</zoomYPixels>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<keepaspectratio>no</keepaspectratio>
 				<renderFocusText>no</renderFocusText>
@@ -138,7 +138,7 @@ This file should contain the facade view
 				<textureMask>video_thumb_mask.png</textureMask>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
-				<thumbZoom>no</thumbZoom>
+				<thumbZoom>yes</thumbZoom>
 			</control>
 
 				<control>

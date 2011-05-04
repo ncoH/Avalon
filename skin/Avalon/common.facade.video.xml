@@ -96,8 +96,8 @@
 				<textureHeightBig>306</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
-				<zoomXPixels>0</zoomXPixels>
-				<zoomYPixels>0</zoomYPixels>
+				<zoomXPixels>20</zoomXPixels>
+				<zoomYPixels>30</zoomYPixels>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<keepaspectratio>no</keepaspectratio>
 				<renderFocusText>no</renderFocusText>
@@ -106,10 +106,10 @@
 				<frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
 				<frameFocus>video_thumb_focus.png</frameFocus>
 				<textureMask>video_thumb_mask.png</textureMask>
-				<unfocusedAlpha>150</unfocusedAlpha>
+				<unfocusedAlpha>255</unfocusedAlpha>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
-				<thumbZoom>no</thumbZoom>
+				<thumbZoom>yes</thumbZoom>
 				<keepaspectratio>no</keepaspectratio>
 			</control>
 
