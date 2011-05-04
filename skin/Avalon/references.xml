@@ -495,6 +495,7 @@
 	    <type>textboxscrollup</type>
 		<font>AvalonLight12</font>
 	    <colordiffuse>ffffffff</colordiffuse>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
 	</control>
 
 	<control>
