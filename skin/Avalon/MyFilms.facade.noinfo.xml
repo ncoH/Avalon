@@ -63,6 +63,12 @@
 				<showFolder>no</showFolder>
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
+                <scrollbarBackground>scrollbar_bg.png</scrollbarBackground>
+                <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+                <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+                <scrollbarWidth>689</scrollbarWidth>
+				<scrollbarHeight>4</scrollbarHeight>
+                <scrollbarYOff>538</scrollbarYOff>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,780" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,780" time="100">unfocus</thumbAnimation>
 		</control>
@@ -96,8 +102,8 @@
 				<textureHeightBig>306</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
-				<zoomXPixels>0</zoomXPixels>
-				<zoomYPixels>0</zoomYPixels>
+				<zoomXPixels>20</zoomXPixels>
+				<zoomYPixels>30</zoomYPixels>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<keepaspectratio>no</keepaspectratio>
 				<renderFocusText>no</renderFocusText>
@@ -108,265 +114,68 @@
 				<textureMask>video_thumb_mask.png</textureMask>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
-				<thumbZoom>no</thumbZoom>
+				<thumbZoom>yes</thumbZoom>
 				<keepaspectratio>no</keepaspectratio>
 			</control>
 			
-        <control>
-          <description>Cover Flow view</description>
-          <type>coverflow</type>
-          <colordiffuse>90ffffff</colordiffuse>
-          <dimColor>90ffffff</dimColor>
-          <id>50</id>
-          <onup>2</onup>
-		  <ondown>50</ondown>		  
-          <onleft>2</onleft>
-          <onright>50</onright>			  
-          <posX>0</posX>
-          <posY>285</posY>
-          <width>1366</width>
-          <height>768</height>	  
-          <selectedCard>0</selectedCard>
-		  <cardWidth>280</cardWidth>
-		  <cardHeight>385</cardHeight>
-          <angle>45</angle>
-          <sideShift>310</sideShift>
-          <sideGap>100</sideGap>
-          <sideDepth>270</sideDepth>
-          <offsetY>0</offsetY>
-          <selectedOffsetY>0</selectedOffsetY>
-          <speed>8</speed>
-          <showFrame>yes</showFrame>
-          <frame>coverflow_glass_overlay_videos.png</frame>
-          <frameFocus>coverflow_glass_overlay_videos.png</frameFocus>
-		  <keepaspectratio>no</keepaspectratio>		  
-          <frameWidth>280</frameWidth>
-          <frameHeight>385</frameHeight>
-          <spinSpeed>8</spinSpeed>
-          <unfocusedAlpha>FF</unfocusedAlpha>
-          <folderPrefix></folderPrefix>
-          <folderSuffix></folderSuffix>
-          <font1>font13</font1>
-          <font2>font11</font2>
-          <label1>#title</label1>
-          <label2>#genre</label2>
-          <textColor>FFFFFFFF</textColor>
-          <remoteColor>FFFF0000</remoteColor>
-          <playedColor>FFA0D0FF</playedColor>
-          <downloadColor>FF00FF00</downloadColor>
-          <selectedColor>FFFFFFFF</selectedColor>
-          <shadowAngle>45</shadowAngle>
-          <shadowDistance>1</shadowDistance>
-          <shadowColor>FF000000</shadowColor>
-          <label1YOff>1430</label1YOff>
-          <label2YOff>1390</label2YOff>
-          <pageSize>5</pageSize>
-          <scrollbarBackground>bar_hor.png</scrollbarBackground>
-          <scrollbarLeft>mouse_left_horizontal.png</scrollbarLeft>
-          <scrollbarRight>mouse_right_horizontal.png</scrollbarRight>
-          <scrollbarYOff>450</scrollbarYOff>
-          <showScrollbar>no</showScrollbar>
-		  <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png"/>
-          <subitems>
-            <subitem>
-							<![CDATA[
-							<controls>
-								<control>
-									<description>background</description>
-									<type>image</type>
-									<posX>0</posX>
-									<posY>0</posY>
-									<width>255</width>
-									<height>360</height>
-									<texture flipY="yes" diffuse="Thumb_Mask.png" mask="DVDCase_coverflow_mask.png">black.png</texture>
-								</control>
-
-								
-								<control>
-									<description>Watched Icon</description>
-									<type>image</type>
-									<id>0</id>
-									<posX>233</posX>
-									<posY>10</posY>
-									<width>15</width>
-									<height>15</height>
-									<texture>overlaywatched.png</texture>
-									<visible>!string.equals(#runtime,0)+!string.equals(#year,1900)+string.contains(#iswatched, yes)</visible>
-								</control>
-								<control>
-									<description>Un-Watched Icon</description>
-									<type>image</type>
-									<id>0</id>
-									<posX>233</posX>
-									<posY>10</posY>
-									<width>15</width>
-									<height>15</height>
-									<texture>overlayunwatched.png</texture>
-									<visible>!string.equals(#runtime,0)+!string.equals(#year,1900)+!string.contains(#iswatched, yes)</visible>
-								</control>
-								
-								<control>
-									<description>Movie Title</description>
-									<type>fadelabel</type>
-									<id>0</id>
-									<posX>20</posX>
-									<posY>9</posY>
-									<width>215</width>
-									<label>#myfilms.translatedtitle</label>
-									<font>font16</font>
-									<textcolor>FFFFFFFF</textcolor>
-									<wrapString> : : : </wrapString>
-									<shadowAngle>45</shadowAngle>
-									<shadowDistance>2</shadowDistance>
-									<shadowColor>FF000000</shadowColor>
-									<visible>!string.equals(#runtime,0)+!string.equals(#year,1900)</visible>
-								</control>
-								
-								<control>
-									<type>image</type>
-									<id>0</id>
-									<posX>15</posX>
-									<posY>-10</posY>
-									<width>225</width>
-									<height>53</height>
-									<texture>bg_button_nofocus.png</texture>
-									<visible>!string.equals(#runtime,0)+!string.equals(#year,1900)</visible>
-								</control>
-							
-
-								<control>
-									<type>imagelist</type>
-									<id>1</id>
-									<posX>20</posX>
-									<posY>51</posY>
-									<width>302</width>
-									<height>40</height>
-									<textureWidth>15</textureWidth>
-									<textureHeight>15</textureHeight>
-									<subitems>
-										<subitem>star_nofocus.png</subitem>
-										<subitem>star_focus.png</subitem>
-									</subitems>
-									<orientation>horizontal</orientation>
-									<align>left</align>
-									<imagesToDraw>10</imagesToDraw>
-									<percentage>#myfilms.rating</percentage>
-									<visible>!string.equals(#runtime,0)+!string.equals(#year,1900)</visible>
-								</control>
-								<control>
-									<description>genre</description>
-									<type>fadelabel</type>
-									<posX>20</posX>
-									<posY>72</posY>
-									<width>215</width>
-									<label>#myfilms.category</label>
-									<font>font11</font>
-									<textcolor>ffFFFFFF</textcolor>
-									<wrapString> : : : </wrapString>
-									<visible>!string.equals(#runtime,0)+!string.equals(#year,1900)</visible>
-								</control>
-								<control>
-									<description>year</description>
-									<type>fadelabel</type>
-									<posX>20</posX>
-									<posY>97</posY>
-									<width>215</width>
-									<label>#myfilms.year     #myfilms.length min     #myfilms.rating</label>
-									<font>font11</font>
-									<textcolor>90FFFFFF</textcolor>
-									<wrapString> : : : </wrapString>
-									<visible>!string.equals(#runtime,0)+!string.equals(#year,1900)</visible>
-								</control>
-								
-								
-								<control>
-									<description>Director</description>
-									<type>fadelabel</type>
-									<posX>20</posX>
-									<posY>123</posY>
-									<width>215</width>
-									<label>Directed by #myfilms.director</label>
-									<font>font12</font>
-									<textcolor>FFFFFFFF</textcolor>
-									<wrapString> : : : </wrapString>
-									<visible>!string.equals(#runtime,0)+!string.equals(#year,1900)</visible>
-								</control>
-								<control>
-									<description>cast</description>
-									<type>textboxscrollup</type>
-									<posX>20</posX>
-									<posY>150</posY>
-									<width>215</width>
-									<height>20</height>
-									<label>#myfilms.actors</label>
-									<font>font10</font>
-									<lineSpacing>2</lineSpacing>
-									<align>left</align>
-									<textcolor>90FFFFFF</textcolor>
-									<visible>!string.equals(#runtime,0)+!string.equals(#year,1900)</visible>
-								</control>
-								
-								<control>
-									<description>plot</description>
-									<type>textboxscrollup</type>
-									<posX>20</posX>
-									<posY>205</posY>
-									<width>215</width>
-									<height>70</height>
-									<label>#myfilms.description</label>
-									<font>font10</font>
-									<lineSpacing>2</lineSpacing>
-									<textcolor>FFFFFFFF</textcolor>
-									<visible>!string.equals(#runtime,0)+!string.equals(#year,1900)</visible>
-								</control>
-								
-								<control>
-									<description>Title</description>
-									<type>fadelabel</type>
-									<id>0</id>
-									<posX>20</posX>
-									<posY>9</posY>
-									<width>215</width>
-									<label>#selecteditem</label>
-									<font>font16</font>
-									<textcolor>FFFFFFFF</textcolor>
-									<wrapString> : : : </wrapString>
-									<shadowAngle>45</shadowAngle>
-									<shadowDistance>2</shadowDistance>
-									<shadowColor>FF000000</shadowColor>
-									<visible>![!string.equals(#runtime,0)+!string.equals(#year,1900)]</visible>
-								</control>
-								
-								<!-- <control>
-									<type>image</type>
-									<id>0</id>
-									<posX>1</posX>
-									<posY>-10</posY>
-									<width>278</width>
-									<height>53</height>
-									<texture>bg_button_nofocus.png</texture>
-								</control> -->
-								
-								<control>
-									<description>genre</description>
-									<type>fadelabel</type>
-									<posX>20</posX>
-									<posY>48</posY>
-									<width>215</width>
-									<label>#selecteditem2</label>
-									<font>font11</font>
-									<textcolor>90FFFFFF</textcolor>
-									<wrapString> : : : </wrapString>
-									<visible>![!string.equals(#runtime,0)+!string.equals(#year,1900)]</visible>
-								</control>
-
-								
-							</controls>
-							]]>
-						</subitem>
-					</subitems>
+				<control>
+				  <description>Cover Flow view</description>
+				  <type>coverflow</type>
+				  <colordiffuse>90ffffff</colordiffuse>
+				  <dimColor>90ffffff</dimColor>
+				  <id>50</id>
+				  <onup>2</onup>
+				  <ondown>2</ondown>
+				  <onleft>50</onleft>
+				  <onright>50</onright>	  
+				  <posX>0</posX>
+				  <posY>520</posY>
+				  <width>1920</width>
+				  <height>1080</height>	  
+				  <selectedCard>0</selectedCard>
+				  <cardWidth>280</cardWidth>
+				  <cardHeight>385</cardHeight>
+				  <angle>45</angle>
+				  <sideShift>310</sideShift>
+				  <sideGap>100</sideGap>
+				  <sideDepth>270</sideDepth>
+				  <offsetY>0</offsetY>
+				  <selectedOffsetY>0</selectedOffsetY>
+				  <speed>8</speed>
+				  <showFrame>yes</showFrame>
+				  <frame>-</frame>
+				  <frameFocus>-</frameFocus>
+				  <keepaspectratio>no</keepaspectratio>		  
+				  <frameWidth>280</frameWidth>
+				  <frameHeight>385</frameHeight>
+				  <spinSpeed>8</spinSpeed>
+				  <unfocusedAlpha>FF</unfocusedAlpha>
+				  <folderPrefix></folderPrefix>
+				  <folderSuffix></folderSuffix>
+				  <font1>font13</font1>
+				  <font2>font11</font2>
+				  <label1>#title</label1>
+				  <label2>#genre</label2>
+				  <textColor>FFFFFFFF</textColor>
+				  <remoteColor>FFFF0000</remoteColor>
+				  <playedColor>FFA0D0FF</playedColor>
+				  <downloadColor>FF00FF00</downloadColor>
+				  <selectedColor>FFFFFFFF</selectedColor>
+				  <shadowAngle>45</shadowAngle>
+				  <shadowDistance>1</shadowDistance>
+				  <shadowColor>FF000000</shadowColor>
+				  <label1YOff>1430</label1YOff>
+				  <label2YOff>1390</label2YOff>
+				  <pageSize>5</pageSize>
+                <scrollbarBackground>scrollbar_bg.png</scrollbarBackground>
+                <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+                <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+                <scrollbarWidth>689</scrollbarWidth>
+				<scrollbarHeight>4</scrollbarHeight>
+                <scrollbarYOff>538</scrollbarYOff>
+					<keepaspectratio>no</keepaspectratio>
+					<cards flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_fanart_mask.png"></cards>
 				</control>
-			</control>
-		</control>
-  </controls>
+	</control>
+</controls>
 </window>

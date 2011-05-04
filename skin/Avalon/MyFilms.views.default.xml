@@ -13,7 +13,7 @@
 		<width>810</width>
 		<label>#myfilms.user.mastertitle.value</label>
 		<font>fontB20</font>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]+control.isvisible(50)</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+control.isvisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
@@ -98,7 +98,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
 
 	<control>
@@ -115,7 +115,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
 
 	<control>
@@ -132,7 +132,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>
@@ -149,7 +149,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>
@@ -166,7 +166,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>
@@ -183,7 +183,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>
@@ -200,7 +200,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>
@@ -217,7 +217,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>
@@ -238,7 +238,8 @@
 		<onright>1026</onright>
 		<onup>1026</onup>
 		<ondown>1026</ondown>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<lineSpacing>0.85</lineSpacing>		
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>
@@ -261,7 +262,7 @@
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#myfilms.db.rating.value</percentage>
-		<visible>facadeview.filmstrip+Control.IsVisible(50)</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
 
 	<control>
@@ -273,12 +274,12 @@
 		<id>2012</id>
 		<posX>1500</posX>
 		<posY>834</posY>
-		<width>730</width>
+		<width>720</width>
 		<height>38</height>
 		<texture>#myfilms.logos_id2012</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<spaceBetweenItems>2</spaceBetweenItems>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 		</control>
 		
 	<control>
@@ -302,7 +303,7 @@
 		<posX>858</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.HasFocus(50)</visible>
 	</control>	
 </controls>
 </window>

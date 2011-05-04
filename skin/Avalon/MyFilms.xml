@@ -21,7 +21,6 @@
       <visible>yes</visible>
       <focusable>no</focusable>
     </control>
-	
     <control>
       <description>dummy backdrop control 1</description>
       <type>image</type>
@@ -31,7 +30,6 @@
       <width>1</width>
       <height>1</height>
     </control>
-	
     <control>
       <description>dummy backdrop control 2</description>
       <type>image</type>
@@ -41,7 +39,6 @@
       <width>1</width>
       <height>1</height>
     </control>
-	
     <control>
       <description>dummy poster control</description>
       <type>label</type>
@@ -50,7 +47,6 @@
       <posY>-2000</posY>
       <label>#Avalon.EnablePosterHide</label>
     </control>
-	
     <!--            :: MOVIE BACKDROP ::            -->
     <control>
       <description>DEFAULT BACKGROUND</description>
@@ -63,7 +59,6 @@
       <texture>background.png</texture>
       <shouldCache>true</shouldCache>
     </control>
-	
     <control>
       <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
       <type>image</type>
@@ -77,8 +72,8 @@
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <visible>[facadeview.filmstrip+control.isvisible(50)]+control.isvisible(11)</visible>	  
-    </control>	
+      <visible>[facadeview.filmstrip+control.isvisible(50)]+control.isvisible(11)</visible>
+    </control>
     <control>
       <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
       <type>image</type>
@@ -92,9 +87,8 @@
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <visible>[facadeview.filmstrip+control.isvisible(50)]+control.isvisible(21)</visible>	  
+      <visible>[facadeview.filmstrip+control.isvisible(50)]+control.isvisible(21)</visible>
     </control>
-	
     <control>
       <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
       <type>image</type>
@@ -125,8 +119,6 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>!facadeview.filmstrip+control.isvisible(21)</visible>
     </control>
-
-	
     <!--            :: HEADER ::            -->
     <control>
       <animation effect="fade" time="250">WindowOpen</animation>
@@ -141,7 +133,6 @@
       <font>font22</font>
       <visible>Control.IsVisible(50)</visible>
     </control>
-	
     <control>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -157,7 +148,6 @@
       <textcolor>ffffff</textcolor>
       <visible>Control.IsVisible(50)</visible>
     </control>
-	
     <control>
       <description>Selection display</description>
       <type>fadelabel</type>
@@ -171,8 +161,6 @@
       <animation effect="fade" time="250">WindowClose</animation>
       <animation effect="fade" time="250">WindowOpen</animation>
     </control>
-	
-	
     <!--            :: LIST VIEW Dummy ::            -->
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -192,7 +180,6 @@
       <ondown>1026</ondown>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
-	
     <!-- Fanrt/Movie Available Info -->
     <!-- 		<control>
 			<description>Movie available Info Label</description>
@@ -288,8 +275,6 @@
 			<centered>yes</centered>
 			<visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)+string.equals(#myfilms.user.sourcetrailer.value)</visible>
 		</control> -->
-		
-		
     <!-- Global Overlay Filter Info -->
     <control>
       <description>Filters group</description>
@@ -337,7 +322,6 @@
         <animation effect="fade" time="250">WindowClose</animation>
         <animation effect="fade" time="250">WindowOpen</animation>
       </control>
-	  
       <!-- <control>
 			<type>label</type>
 			<description>Rating Global Filter Value</description>
@@ -348,7 +332,6 @@
 			<animation effect="fade" time="250">WindowClose</animation>	
 			<animation effect="fade" time="250">WindowOpen</animation>
 		</control> -->
-		
     </control>
     <!--            :: IMPORT ::            -->
     <import tag="Background">MyFilms.background.default.xml</import>

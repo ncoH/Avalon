@@ -99,8 +99,8 @@
 			<textureFocus>myfilms_tab_left_focus.png</textureFocus>
 			<textureNoFocus>myfilms_tab_left_nofocus.png</textureNoFocus>
 			<visible allowhiddenfocus="true">!Control.HasFocus(10099)</visible>
-			<animation effect="fade" start="100" end="0" time="500">Hidden</animation>
-			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>
 		</control>
 
 		<control>
@@ -124,8 +124,8 @@
 			<textureFocus>myfilms_tab_middle_focus.png</textureFocus>
 			<textureNoFocus>myfilms_tab_middle_nofocus.png</textureNoFocus>
 			<visible allowhiddenfocus="true">!Control.HasFocus(10099)</visible>
-			<animation effect="fade" start="100" end="0" time="500">Hidden</animation>
-			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>
 		</control>
 	
 		<control>
@@ -149,8 +149,8 @@
 			<textureFocus>myfilms_tab_middle_focus.png</textureFocus>
 			<textureNoFocus>myfilms_tab_middle_nofocus.png</textureNoFocus>
 			<visible>!Control.HasFocus(10099)</visible>
-			<animation effect="fade" start="100" end="0" time="500">Hidden</animation>
-			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>
 		</control>
 	
 		<control>
@@ -174,8 +174,8 @@
 			<textureFocus>myfilms_tab_middle_focus.png</textureFocus>
 			<textureNoFocus>myfilms_tab_middle_nofocus.png</textureNoFocus>
 			<visible>!Control.HasFocus(10099)</visible>
-			<animation effect="fade" start="100" end="0" time="500">Hidden</animation>
-			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>
 		</control>
 	
 		<control>
@@ -199,8 +199,8 @@
 			<textureFocus>myfilms_tab_right_focus.png</textureFocus>
 			<textureNoFocus>myfilms_tab_right_nofocus.png</textureNoFocus>
 			<visible>!Control.HasFocus(10099)</visible>
-			<animation effect="fade" start="100" end="0" time="500">Hidden</animation>
-			<animation effect="fade" start="0" end="100" time="500">Visible</animation>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>
 		</control>
 
 		<control>
@@ -219,8 +219,8 @@
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>				
 			<textureFocus>-</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<animation effect="fade" start="100" end="0" time="500">Hidden</animation>
-			<animation effect="fade" start="0" end="100" time="500">Visible</animation>			
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>		
 		</control>
 		
 	
@@ -547,6 +547,8 @@
 			<label>#myfilms.db.description.value</label>
 			<font>AvalonLight12</font>
 			<visible>Control.HasFocus(10001)+!Control.HasFocus(10099)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>			
 		</control>
 
 		
@@ -564,6 +566,8 @@
 			<label>#myfilms.db.comments.value</label>
 			<font>AvalonLight12</font>
 			<visible>Control.HasFocus(10002)+!Control.HasFocus(10099)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>			
 		</control>
 	
 	
@@ -594,6 +598,8 @@
 			<label>#myfilms.db.actors.value</label>
 			<font>AvalonLight12</font>
 			<visible>Control.HasFocus(10003)+!Control.HasFocus(10099)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>			
 		</control>
 	
 	

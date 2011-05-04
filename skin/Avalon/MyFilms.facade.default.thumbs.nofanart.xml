@@ -30,11 +30,11 @@ This file should contain the facade view
 				<dimColor>ffffffff</dimColor>
 			</control>
 
-			<control>
-				<description>Filmstrip view</description>
-				<type>filmstrip</type>
-				<dimColor>90ffffff</dimColor>
-				<id>50</id>
+		<control>
+			<description>Filmstrip view</description>
+			<type>filmstrip</type>
+			<dimColor>90ffffff</dimColor>
+			<id>50</id>
 				<scrollOffset>3</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
@@ -69,10 +69,10 @@ This file should contain the facade view
                 <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
                 <scrollbarWidth>689</scrollbarWidth>
 				<scrollbarHeight>4</scrollbarHeight>
-                <scrollbarYOff>530</scrollbarYOff>				
+                <scrollbarYOff>530</scrollbarYOff>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="108,108" center="0,500" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="108,108" reversible="false" end="100,100" center="0,500" time="100">unfocus</thumbAnimation>
-			</control>
+		</control>
 
 			<control>
 				<description>Thumbnail Panel</description>
@@ -103,8 +103,8 @@ This file should contain the facade view
 				<textureHeightBig>260</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
-				<zoomXPixels>0</zoomXPixels>
-				<zoomYPixels>0</zoomYPixels>
+				<zoomXPixels>20</zoomXPixels>
+				<zoomYPixels>30</zoomYPixels>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<keepaspectratio>no</keepaspectratio>
 				<renderFocusText>no</renderFocusText>
@@ -115,9 +115,9 @@ This file should contain the facade view
 				<shadowAngle>90</shadowAngle>
 				<unfocusedAlpha>150</unfocusedAlpha>
     			<shadowDistance>50</shadowDistance>
-				<thumbZoom>no</thumbZoom>
+				<thumbZoom>yes</thumbZoom>
 			</control>
-
+			
 				<control>
 				  <description>Cover Flow view</description>
 				  <type>coverflow</type>
@@ -176,7 +176,6 @@ This file should contain the facade view
 					<keepaspectratio>no</keepaspectratio>
 					<cards flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_fanart_mask.png"></cards>
 				</control>
-				
 	</control>
 </controls>
 </window>

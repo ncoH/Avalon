@@ -30,11 +30,11 @@ This file should contain the facade view
 				<dimColor>ffffffff</dimColor>
 			</control>
 
-			<control>
-				<description>Filmstrip view</description>
-				<type>filmstrip</type>
-				<dimColor>90ffffff</dimColor>
-				<id>50</id>
+		<control>
+			<description>Filmstrip view</description>
+			<type>filmstrip</type>
+			<dimColor>90ffffff</dimColor>
+			<id>50</id>
 				<scrollOffset>3</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
@@ -64,6 +64,12 @@ This file should contain the facade view
 				<showFolder>no</showFolder>
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
+                <scrollbarBackground>scrollbar_bg.png</scrollbarBackground>
+                <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+                <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+                <scrollbarWidth>689</scrollbarWidth>
+				<scrollbarHeight>4</scrollbarHeight>
+                <scrollbarYOff>538</scrollbarYOff>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,780" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,780" time="100">unfocus</thumbAnimation>
 		</control>
@@ -97,8 +103,8 @@ This file should contain the facade view
 				<textureHeightBig>345</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
-				<zoomXPixels>0</zoomXPixels>
-				<zoomYPixels>0</zoomYPixels>
+				<zoomXPixels>20</zoomXPixels>
+				<zoomYPixels>30</zoomYPixels>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<keepaspectratio>no</keepaspectratio>
 				<renderFocusText>no</renderFocusText>
@@ -109,8 +115,67 @@ This file should contain the facade view
 				<textureMask>video_thumb_mask.png</textureMask>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
-				<thumbZoom>no</thumbZoom>
+				<thumbZoom>yes</thumbZoom>
 			</control>
+			
+				<control>
+				  <description>Cover Flow view</description>
+				  <type>coverflow</type>
+				  <colordiffuse>90ffffff</colordiffuse>
+				  <dimColor>90ffffff</dimColor>
+				  <id>50</id>
+				  <onup>2</onup>
+				  <ondown>2</ondown>
+				  <onleft>50</onleft>
+				  <onright>50</onright>	  
+				  <posX>0</posX>
+				  <posY>520</posY>
+				  <width>1920</width>
+				  <height>1080</height>	  
+				  <selectedCard>0</selectedCard>
+				  <cardWidth>280</cardWidth>
+				  <cardHeight>385</cardHeight>
+				  <angle>45</angle>
+				  <sideShift>310</sideShift>
+				  <sideGap>100</sideGap>
+				  <sideDepth>270</sideDepth>
+				  <offsetY>0</offsetY>
+				  <selectedOffsetY>0</selectedOffsetY>
+				  <speed>8</speed>
+				  <showFrame>yes</showFrame>
+				  <frame>-</frame>
+				  <frameFocus>-</frameFocus>
+				  <keepaspectratio>no</keepaspectratio>		  
+				  <frameWidth>280</frameWidth>
+				  <frameHeight>385</frameHeight>
+				  <spinSpeed>8</spinSpeed>
+				  <unfocusedAlpha>FF</unfocusedAlpha>
+				  <folderPrefix></folderPrefix>
+				  <folderSuffix></folderSuffix>
+				  <font1>font13</font1>
+				  <font2>font11</font2>
+				  <label1>#title</label1>
+				  <label2>#genre</label2>
+				  <textColor>FFFFFFFF</textColor>
+				  <remoteColor>FFFF0000</remoteColor>
+				  <playedColor>FFA0D0FF</playedColor>
+				  <downloadColor>FF00FF00</downloadColor>
+				  <selectedColor>FFFFFFFF</selectedColor>
+				  <shadowAngle>45</shadowAngle>
+				  <shadowDistance>1</shadowDistance>
+				  <shadowColor>FF000000</shadowColor>
+				  <label1YOff>1430</label1YOff>
+				  <label2YOff>1390</label2YOff>
+				  <pageSize>5</pageSize>
+                <scrollbarBackground>scrollbar_bg.png</scrollbarBackground>
+                <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+                <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+                <scrollbarWidth>689</scrollbarWidth>
+				<scrollbarHeight>4</scrollbarHeight>
+                <scrollbarYOff>538</scrollbarYOff>
+					<keepaspectratio>no</keepaspectratio>
+					<cards flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_fanart_mask.png"></cards>
+				</control>
 	</control>
 </controls>
 </window>

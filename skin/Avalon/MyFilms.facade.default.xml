@@ -68,7 +68,7 @@ This file should contain the facade view
                 <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
                 <scrollbarWidth>689</scrollbarWidth>
 				<scrollbarHeight>4</scrollbarHeight>
-                <scrollbarYOff>530</scrollbarYOff>				
+                <scrollbarYOff>530</scrollbarYOff>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="108,108" center="0,500" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="108,108" reversible="false" end="100,100" center="0,500" time="100">unfocus</thumbAnimation>
 		</control>
@@ -102,8 +102,8 @@ This file should contain the facade view
 				<textureHeightBig>247</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
-				<zoomXPixels>0</zoomXPixels>
-				<zoomYPixels>0</zoomYPixels>
+				<zoomXPixels>20</zoomXPixels>
+				<zoomYPixels>30</zoomYPixels>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<keepaspectratio>no</keepaspectratio>
 				<renderFocusText>no</renderFocusText>
@@ -113,7 +113,7 @@ This file should contain the facade view
 				<textureMask>video_thumb_mask.png</textureMask>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
-				<thumbZoom>no</thumbZoom>
+				<thumbZoom>yes</thumbZoom>
 			</control>
 
 				<control>
@@ -165,16 +165,15 @@ This file should contain the facade view
 				  <label1YOff>1430</label1YOff>
 				  <label2YOff>1390</label2YOff>
 				  <pageSize>5</pageSize>
-					<scrollbarBackground>-</scrollbarBackground>
-					<scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
-					<scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
-					<scrollbarWidth>689</scrollbarWidth>
-					<scrollbarHeight>4</scrollbarHeight>
-					<scrollbarYOff>530</scrollbarYOff>
+                <scrollbarBackground>-</scrollbarBackground>
+                <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+                <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+                <scrollbarWidth>689</scrollbarWidth>
+				<scrollbarHeight>4</scrollbarHeight>
+                <scrollbarYOff>530</scrollbarYOff>
 					<keepaspectratio>no</keepaspectratio>
 					<cards flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_fanart_mask.png"></cards>
 				</control>
-				
 	</control>
 </controls>
 </window>
