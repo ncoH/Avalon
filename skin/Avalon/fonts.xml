@@ -33,6 +33,15 @@
 </font>
 
 <font>
+	<name>fontB11</name>
+	<filename>AvalonType Bold</filename>
+	<height>11</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>yes</bold>
+</font>
+
+<font>
 	<name>fontB14</name>
 	<filename>AvalonType Bold</filename>
 	<height>14</height>
@@ -135,15 +144,6 @@
 	<name>AvalonLight24</name>
 	<filename>AvalonType Light</filename>
 	<height>24</height>
-	<start>0</start>
-	<end>1536</end>
-	<bold>no</bold>
-</font>
-
-<font>
-	<name>AvalonLight26</name>
-	<filename>AvalonType Light</filename>
-	<height>26</height>
 	<start>0</start>
 	<end>1536</end>
 	<bold>no</bold>
