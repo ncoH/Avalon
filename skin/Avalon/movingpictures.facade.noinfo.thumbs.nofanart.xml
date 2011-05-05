@@ -5,32 +5,6 @@ This file should contain the facade view
 <window>
 <controls>
 
-<control>		
-      <type>facadeview</type>
-      <id>51</id>
-	  	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-      <control>
-        <description>Categories List</description>
-        <type>listcontrol</type>
-        <id>51</id>
-        <onleft>51</onleft>
-        <onright>51</onright>
-		<scrollOffset>1</scrollOffset>
-		<posX>1166</posX>
-		<posY>236</posY>
-		<height>700</height>
-		<width>684</width>
-		<spinPosX>1667</spinPosX>
-		<spinPosY>1010</spinPosY>
-		<spinAlign>right</spinAlign>
-		<textXOff>50</textXOff>
-		<textureHeight>55</textureHeight>		
-		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-		<textureNoFocus>-</textureNoFocus>
-      </control>
-    </control>
-
 	<control>
 		<type>facadeview</type>
 		<id>50</id>
@@ -48,6 +22,7 @@ This file should contain the facade view
 			<height>700</height>
 			<width>684</width>
 			<textXOff>50</textXOff>
+			<textXOff2>650</textXOff2>				
 			<textureHeight>55</textureHeight>
 			<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>

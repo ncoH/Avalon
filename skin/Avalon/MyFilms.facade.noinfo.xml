@@ -1,15 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file should contain the facade view
+-->
 <window>
-  <controls>
-		<control>
-			<type>group</type>
-			<description>group element</description>								
+<controls>
+
 	<control>
 		<type>facadeview</type>
 		<id>50</id>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		
 		<control>
 			<description>Movie List</description>
 			<type>listcontrol</type>
@@ -21,8 +21,9 @@
 			<posY>236</posY>
 			<height>700</height>
 			<width>684</width>
+			<spinAlign>right</spinAlign>
 			<textXOff>50</textXOff>
-			<textXOff2>650</textXOff2>	
+			<textXOff2>650</textXOff2>				
 			<textureHeight>55</textureHeight>
 			<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
@@ -179,3 +180,5 @@
 	</control>
 </controls>
 </window>
+
+
