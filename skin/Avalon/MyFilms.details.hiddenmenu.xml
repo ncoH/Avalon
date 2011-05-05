@@ -67,7 +67,7 @@
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>				
-				<onup>10014</onup>
+				<onup>10015</onup>
 				<ondown>107</ondown>
 				<onleft>10000</onleft>				
 				<onright>10000</onright>
@@ -224,8 +224,28 @@
 				<onleft>10000</onleft>					
 				<onright>10000</onright>
 				<onup>10013</onup>
-				<ondown>109</ondown>					
+				<ondown>10015</ondown>					
 				<label>TV-Serien</label>
+			</control>
+
+			<control>
+				<description>Skin Setting</description>
+				<type>button</type>
+				<id>10015</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>845</posY>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+				<label>Skin Settings</label>
+				<hyperlink>155105</hyperlink>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>10014</onup>
+				<ondown>109</ondown>
 			</control>
 			
 		</control>

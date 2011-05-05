@@ -49,6 +49,11 @@
 	<string Field="movingpictures.runtime">Laufzeit</string>
 	<string Field="movingpictures.release">Veröffentlicht</string>
 	<string Field="movingpictures.minutes">minuten</string>
+	<string Field="myfilms.overview">Start/Übersicht</string>
+	<string Field="myfilms.description">Beschreibung</string>
+	<string Field="myfilms.comments">Kommentare</string>
+	<string Field="myfilms.actors">Darsteller</string>
+	<string Field="myfilms.techinfo">Technische Infos</string>	
 	
 	<!-- N -->
 

@@ -90,12 +90,12 @@
 			<ondown>107</ondown>
 			<onleft>109</onleft>
 			<onright>10001</onright>
-			<label>Overview/Start</label>
-			<font>font12</font>
+			<label>#SkinTranslation.Translations.myfilms.overview.Label</label>
+			<font>fontB11</font>
 			<textcolor>white</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
- 			<textXOff>50</textXOff>	
-			<textYOff>20</textYOff>
+			<textYOff>-10</textYOff>				
+			<textalign>center</textalign>	
 			<textureFocus>myfilms_tab_left_focus.png</textureFocus>
 			<textureNoFocus>myfilms_tab_left_nofocus.png</textureNoFocus>
 			<visible allowhiddenfocus="true">!Control.HasFocus(10099)</visible>
@@ -115,12 +115,12 @@
 			<ondown>107</ondown>
 			<onleft>10000</onleft>
 			<onright>10002</onright>
-			<label>#myfilms.menu.description</label>
-			<font>font12</font>
+			<label>#SkinTranslation.Translations.myfilms.description.Label</label>
+			<font>fontB11</font>
 			<textcolor>white</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
- 			<textXOff>50</textXOff>	
-			<textYOff>20</textYOff>	
+			<textYOff>4</textYOff>				
+ 			<textalign>center</textalign>	
 			<textureFocus>myfilms_tab_middle_focus.png</textureFocus>
 			<textureNoFocus>myfilms_tab_middle_nofocus.png</textureNoFocus>
 			<visible allowhiddenfocus="true">!Control.HasFocus(10099)</visible>
@@ -140,12 +140,12 @@
 			<ondown>107</ondown>
 			<onleft>10001</onleft>
 			<onright>10003</onright>
-			<label>#myfilms.menu.comments</label>
-			<font>font12</font>
+			<label>#SkinTranslation.Translations.myfilms.comments.Label</label>
+			<font>fontB11</font>
 			<textcolor>white</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>		
- 			<textXOff>50</textXOff>	
-			<textYOff>20</textYOff>		
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>	
+			<textYOff>4</textYOff>				
+			<textalign>center</textalign>		
 			<textureFocus>myfilms_tab_middle_focus.png</textureFocus>
 			<textureNoFocus>myfilms_tab_middle_nofocus.png</textureNoFocus>
 			<visible>!Control.HasFocus(10099)</visible>
@@ -165,12 +165,12 @@
 			<ondown>107</ondown>
 			<onleft>10002</onleft>
 			<onright>10004</onright>
-			<label>#myfilms.menu.actors</label>
-			<font>font12</font>
+			<label>#SkinTranslation.Translations.myfilms.actors.Label</label>
+			<font>fontB11</font>
 			<textcolor>white</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>	
- 			<textXOff>50</textXOff>	
-			<textYOff>20</textYOff>	
+			<textYOff>4</textYOff>				
+			<textalign>center</textalign>			
 			<textureFocus>myfilms_tab_middle_focus.png</textureFocus>
 			<textureNoFocus>myfilms_tab_middle_nofocus.png</textureNoFocus>
 			<visible>!Control.HasFocus(10099)</visible>
@@ -190,12 +190,12 @@
 			<ondown>107</ondown>
 			<onleft>10003</onleft>
 			<onright>10099</onright>
-			<label>#myfilms.menu.techinfos</label>
-			<font>font12</font>
+			<label>#SkinTranslation.Translations.myfilms.techinfo.Label</label>
+			<font>fontB11</font>
 			<textcolor>white</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>	
- 			<textXOff>50</textXOff>	
-			<textYOff>20</textYOff>	
+			<textYOff>-10</textYOff>	
+			<textalign>center</textalign>				
 			<textureFocus>myfilms_tab_right_focus.png</textureFocus>
 			<textureNoFocus>myfilms_tab_right_nofocus.png</textureNoFocus>
 			<visible>!Control.HasFocus(10099)</visible>
@@ -214,7 +214,7 @@
 			<ondown>107</ondown>
 			<onright>10099</onright>
 			<label>-</label>
-			<font>font12</font>
+			<font>fontB11</font>
 			<textcolor>white</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>				
 			<textureFocus>-</textureFocus>
