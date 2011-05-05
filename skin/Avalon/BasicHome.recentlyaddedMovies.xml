@@ -231,10 +231,10 @@
         <description>Play Button</description>
         <type>button</type>
         <id>221</id>
-        <posX>1200</posX>
-        <posY>316</posY>
-        <width>217</width>
-        <height>294</height>
+        <posX>1212</posX>
+        <posY>330</posY>
+        <width>194</width>
+        <height>269</height>
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
@@ -249,7 +249,7 @@
       <description>GROUP: RecentlyAdded Movie</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,MovingPictures) + ![control.isvisible(601) | control.isvisible(501)] + ![string.starts(#avalon.recentlyAdded.movie2.fanart,#)|string.starts(#avalon.recentlyAdded.movie2.thumb,#)]</visible>
+      <visible>string.equals(#recentMedia, MovingPictures) + ![control.isvisible(601) | control.isvisible(501)] + ![string.starts(#avalon.recentlyAdded.movie2.fanart,#)|string.starts(#avalon.recentlyAdded.movie2.thumb,#)]</visible>
       <animation effect="slide" end="360,0" time="300" acceleration="-0.1" reversible="false">Hidden</animation>
       <animation effect="slide" start="360,0" end="0,0" time="400" delay="500" acceleration="-0.1" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -268,10 +268,10 @@
         <description>Play Button</description>
         <type>button</type>
         <id>222</id>
-        <posX>1400</posX>
-        <posY>316</posY>
-        <width>217</width>
-        <height>294</height>
+        <posX>1412</posX>
+        <posY>330</posY>
+        <width>194</width>
+        <height>269</height>
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
@@ -286,7 +286,7 @@
       <description>GROUP: RecentlyAdded Movie</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,MovingPictures) + ![control.isvisible(601) | control.isvisible(501)] + ![string.starts(#avalon.recentlyAdded.movie3.fanart,#)|string.starts(#avalon.recentlyAdded.movie3.thumb,#)]</visible>
+      <visible>string.equals(#recentMedia, MovingPictures) + ![control.isvisible(601) | control.isvisible(501)] + ![string.starts(#avalon.recentlyAdded.movie3.fanart,#)|string.starts(#avalon.recentlyAdded.movie3.thumb,#)]</visible>
       <animation effect="slide" end="360,0" time="300" acceleration="-0.1" reversible="false">Hidden</animation>
       <animation effect="slide" start="360,0" end="0,0" time="400" delay="500" acceleration="-0.1" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -305,10 +305,10 @@
         <description>Play Button</description>
         <type>button</type>
         <id>223</id>
-        <posX>1602</posX>
-        <posY>316</posY>
-        <width>217</width>
-        <height>294</height>
+        <posX>1615</posX>
+        <posY>330</posY>
+        <width>194</width>
+        <height>269</height>
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>

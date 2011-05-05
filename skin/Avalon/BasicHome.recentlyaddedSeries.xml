@@ -172,10 +172,10 @@
         <description>Play Button</description>
         <type>button</type>
         <id>231</id>
-        <posX>1200</posX>
-        <posY>317</posY>
-        <width>217</width>
-        <height>294</height>
+        <posX>1212</posX>
+        <posY>330</posY>
+        <width>194</width>
+        <height>269</height>
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
@@ -209,10 +209,10 @@
         <description>Play Button</description>
         <type>button</type>
         <id>232</id>
-        <posX>1400</posX>
-        <posY>317</posY>
-        <width>217</width>
-        <height>294</height>
+        <posX>1412</posX>
+        <posY>330</posY>
+        <width>194</width>
+        <height>269</height>
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
@@ -233,23 +233,6 @@
       <animation effect="slide" start="360,0" end="0,0" time="400" delay="500" acceleration="-0.1" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	<control>
-        <description>Play Button</description>
-        <type>button</type>
-        <id>233</id>
-        <posX>1602</posX>
-        <posY>317</posY>
-        <width>217</width>
-        <height>294</height>
-        <textureFocus>basichome_focus.png</textureFocus>
-        <textureNoFocus>-</textureNoFocus>
-        <label>-</label>
-        <onleft>232</onleft>
-        <onright>231</onright>
-		<onup>233</onup>
-		<ondown>233</ondown>
-        <font>font12</font>
-    </control>
       <control>
         <description>Series 3 thumb/fanart</description>
         <type>image</type>
@@ -260,6 +243,23 @@
         <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask_test.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.series3.thumb</texture>
       </control>
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>233</id>
+        <posX>1615</posX>
+        <posY>330</posY>
+        <width>194</width>
+        <height>269</height>
+        <textureFocus>basichome_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>232</onleft>
+        <onright>231</onright>
+		<onup>233</onup>
+		<ondown>233</ondown>
+        <font>font12</font>
+    </control>
     </control>
 	
     <!--            :: RIGHT ::            -->
