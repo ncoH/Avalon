@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profile>
+  <section name="AvalonBasicHome">
+    <entry name="menuItemHyperlink0">1</entry>
+    <entry name="menuItemHyperlink1">96742</entry>
+    <entry name="menuItemHyperlink2">9811</entry>
+    <entry name="menuItemHyperlink3">501</entry>
+    <entry name="menuItemHyperlink4">6</entry>
+    <entry name="menuItemHyperlink5">4755</entry>
+    <entry name="menuItemHyperlink6">4</entry>
+    <entry name="menuItemHyperlink7">2</entry>
+    <entry name="MovingPicturesInfo">1</entry>
+    <entry name="menuItemHyperlink8">501</entry>
+    <entry name="menuItemName0">TV</entry>
+    <entry name="menuItemBgImage0">tv</entry>
+    <entry name="menuItemParameter0">
+    </entry>
+    <entry name="menuItemName1">Movies</entry>
+    <entry name="menuItemBgImage1">movies</entry>
+    <entry name="menuItemName2">TV Series</entry>
+    <entry name="menuItemBgImage2">series</entry>
+    <entry name="menuItemParameter2">All</entry>
+    <entry name="menuItemName3">Music</entry>
+    <entry name="menuItemBgImage3">music</entry>
+    <entry name="menuItemParameter3">
+    </entry>
+    <entry name="menuItemName4">Videos</entry>
+    <entry name="menuItemBgImage4">movies</entry>
+    <entry name="menuItemParameter4">
+    </entry>
+    <entry name="menuItemName5">Webvideos</entry>
+    <entry name="menuItemBgImage5">movies_default.jpg</entry>
+    <entry name="menuItemName6">Settings</entry>
+    <entry name="menuItemBgImage6">settings_default.jpg</entry>
+    <entry name="menuItemParameter6">
+    </entry>
+    <entry name="menuItemName7">Pictures</entry>
+    <entry name="menuItemBgImage7">pictures_default.jpg</entry>
+    <entry name="menuItemParameter7">
+    </entry>
+  </section>
+  <section name="AvalonBasicHomeSubmenu1">
+  </section>
+  <section name="AvalonBasicHomeSubmenu3">
+    <entry name="submenuItemName0">Alben</entry>
+    <entry name="submenuItemHyperlink0">504</entry>
+    <entry name="submenuItemParameter0">132</entry>
+    <entry name="submenuItemName1">Genre</entry>
+    <entry name="submenuItemHyperlink1">504</entry>
+    <entry name="submenuItemParameter1">135</entry>
+    <entry name="submenuItemName2">Neu</entry>
+    <entry name="submenuItemHyperlink2">504</entry>
+    <entry name="submenuItemParameter2">4558</entry>
+  </section>
+  <section name="AvalonBasicHomeSubmenu5">
+    <entry name="submenuItemName0">YouTube</entry>
+    <entry name="submenuItemHyperlink0">4755</entry>
+    <entry name="submenuItemParameter0">site:YouTube|return:Root</entry>
+    <entry name="submenuItemName1">Pro7</entry>
+    <entry name="submenuItemHyperlink1">4755</entry>
+    <entry name="submenuItemParameter1">site:Pro7|return:Root</entry>
+    <entry name="submenuItemName2">RTL Now</entry>
+    <entry name="submenuItemHyperlink2">4755</entry>
+    <entry name="submenuItemParameter2">site:RTL Now|return:Root</entry>
+  </section>
+  <section name="MovingPicturesConfig">
+    <entry name="MovingPicturesInfo">1</entry>
+    <entry name="MovingPicturesThumbMod">1</entry>
+  </section>
+  <section name="TVConfig">
+    <entry name="TVMiniGuideSize">8</entry>
+  </section>
+  <section name="TVSeriesConfig">
+    <entry name="TVSeriesInfo">1</entry>
+  </section>
+  <section name="UpdateConfig">
+    <entry name="updateCheckOnStart">1</entry>
+    <entry name="updateCheckForUpdateAt">0</entry>
+    <entry name="updateCheckInterval">0</entry>
+    <entry name="updateCheckTime">00:00</entry>
+    <entry name="updateRunPatchUtilityUnattended">1</entry>
+    <entry name="updatePatchUtilityRestartMP">1</entry>
+    <entry name="updatePatchAppliedLastRun">1</entry>
+  </section>
+  <section name="AvalonBasicHomeSubmenu2">
+    <entry name="submenuItemName0">Neu</entry>
+    <entry name="submenuItemHyperlink0">9811</entry>
+    <entry name="submenuItemParameter0">RecentlyAdded</entry>
+    <entry name="submenuItemName1">Favoriten</entry>
+    <entry name="submenuItemHyperlink1">9811</entry>
+    <entry name="submenuItemParameter1">Favourites</entry>
+    <entry name="submenuItemName2">Ungesehen</entry>
+    <entry name="submenuItemHyperlink2">9811</entry>
+    <entry name="submenuItemParameter2">Unwatched</entry>
+    <entry name="submenuItemName3">Genre</entry>
+    <entry name="submenuItemHyperlink3">9811</entry>
+    <entry name="submenuItemParameter3">Genres</entry>
+  </section>
+</profile>

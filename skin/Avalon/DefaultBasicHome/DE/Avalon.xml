@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profile>
-  <section name="MayaBasicHome">
+  <section name="AvalonBasicHome">
     <entry name="menuItemHyperlink0">1</entry>
     <entry name="menuItemHyperlink1">96742</entry>
     <entry name="menuItemHyperlink2">9811</entry>
@@ -15,12 +15,12 @@
     <entry name="menuItemBgImage0">tv</entry>
     <entry name="menuItemParameter0">
     </entry>
-    <entry name="menuItemName1">Movies</entry>
+    <entry name="menuItemName1">Filme</entry>
     <entry name="menuItemBgImage1">movies</entry>
-    <entry name="menuItemName2">TV Series</entry>
+    <entry name="menuItemName2">Serien</entry>
     <entry name="menuItemBgImage2">series</entry>
     <entry name="menuItemParameter2">All</entry>
-    <entry name="menuItemName3">Music</entry>
+    <entry name="menuItemName3">Musik</entry>
     <entry name="menuItemBgImage3">music</entry>
     <entry name="menuItemParameter3">
     </entry>
@@ -34,14 +34,14 @@
     <entry name="menuItemBgImage6">settings_default.jpg</entry>
     <entry name="menuItemParameter6">
     </entry>
-    <entry name="menuItemName7">Pictures</entry>
+    <entry name="menuItemName7">Bilder</entry>
     <entry name="menuItemBgImage7">pictures_default.jpg</entry>
     <entry name="menuItemParameter7">
     </entry>
   </section>
-  <section name="MayaBasicHomeSubmenu1">
+  <section name="AvalonBasicHomeSubmenu1">
   </section>
-  <section name="MayaBasicHomeSubmenu3">
+  <section name="AvalonBasicHomeSubmenu3">
     <entry name="submenuItemName0">Alben</entry>
     <entry name="submenuItemHyperlink0">504</entry>
     <entry name="submenuItemParameter0">132</entry>
@@ -52,7 +52,7 @@
     <entry name="submenuItemHyperlink2">504</entry>
     <entry name="submenuItemParameter2">4558</entry>
   </section>
-  <section name="MayaBasicHomeSubmenu5">
+  <section name="AvalonBasicHomeSubmenu5">
     <entry name="submenuItemName0">YouTube</entry>
     <entry name="submenuItemHyperlink0">4755</entry>
     <entry name="submenuItemParameter0">site:YouTube|return:Root</entry>
@@ -82,7 +82,7 @@
     <entry name="updatePatchUtilityRestartMP">1</entry>
     <entry name="updatePatchAppliedLastRun">1</entry>
   </section>
-  <section name="MayaBasicHomeSubmenu2">
+  <section name="AvalonBasicHomeSubmenu2">
     <entry name="submenuItemName0">Neu</entry>
     <entry name="submenuItemHyperlink0">9811</entry>
     <entry name="submenuItemParameter0">RecentlyAdded</entry>
