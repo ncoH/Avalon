@@ -68,6 +68,9 @@
 
 	<!-- S -->
 	<string Field="site">Seite:</string>
+	<string Field="SkinSettings">Skin Einstellungen</string>
+	<string Field="SkinUpdateNF">Update verfügbar</string>
+	<string Field="SkinUpdateNF2">Press left and push the button to install</string>
 
 	<!-- T -->
 	<string Field="tv.recordings">Aufnahmen</string>

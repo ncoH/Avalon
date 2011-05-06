@@ -69,7 +69,7 @@
 				<label>#MovingPictures.Translation.CycleView.Label</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>66610</onup>
+				<onup>66613</onup>
 				<ondown>3</ondown>
 			</control>
 
@@ -126,28 +126,9 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>14</onup>
-				<ondown>66612</ondown>
-			</control>
-				
-			<control>
-				<description>Skin Setting</description>
-				<type>button</type>
-				<id>66612</id>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>495</posY>
-				<width>459</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
-				<label>Skin Settings</label>
-				<hyperlink>155101</hyperlink>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>15</onup>
 				<ondown>66610</ondown>
 			</control>
+				
 				
 			<control>
 				<description>Video Settings</description>
@@ -156,16 +137,57 @@
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<posX>69</posX>
+				<posY>495</posY>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+				<label>6022</label>
+				<hyperlink>703</hyperlink>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>15</onup>
+				<ondown>66613</ondown>
+			</control>
+			
+			<control>
+				<description>Trailer</description>
+				<id>66613</id>
+				<type>button</type>
+				<posX>69</posX>
 				<posY>565</posY>
 				<width>459</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
-				<label>#SkinTranslation.Translations.Video.settings.Label</label>
-				<hyperlink>703</hyperlink>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<label>Trailer</label>
+				<hyperlink>4755</hyperlink>
+				<hyperlinkParameter>site:iTunes Movie Trailers|search:#selecteditem|return:Locked</hyperlinkParameter>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>66612</onup>
+				<onup>66610</onup>
+				<ondown>66612</ondown>    
+			</control>	
+			
+			<control>
+				<description>Skin Setting</description>
+				<type>button</type>
+				<id>66612</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>635</posY>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+				<label>#SkinTranslation.Translations.SkinSettings.Label</label>
+				<hyperlink>155101</hyperlink>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>66613</onup>
 				<ondown>66611</ondown>
 			</control>
 			
@@ -174,7 +196,7 @@
 				<id>66611</id>
 				<type>button</type>
 				<posX>69</posX>
-				<posY>635</posY>
+				<posY>705</posY>
 				<width>459</width>
 				<height>70</height>
 				<textXOff>66</textXOff>

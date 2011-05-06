@@ -53,7 +53,7 @@
 	<string Field="myfilms.description">Description</string>
 	<string Field="myfilms.comments">Comments</string>
 	<string Field="myfilms.actors">Actors</string>
-	<string Field="mmyfilms.techinfo">Technical Info</string>		
+	<string Field="myfilms.techinfo">Technical Info</string>		
 	
 	<!-- N -->
 
@@ -67,6 +67,9 @@
 
 	<!-- S -->
 	<string Field="site">Page:</string>
+	<string Field="SkinSettings">Skin Settings</string>
+	<string Field="SkinUpdateNF">Update available</string>
+	<string Field="SkinUpdateNF2">Press left and push the button to install</string>
 	
 	<!-- T -->
 

@@ -191,24 +191,24 @@
 
 			<control>
 				<description>Trailers</description>
-				<type>button</type>
 				<id>10</id>
-				<hyperlink>5900</hyperlink>
-				<label>5900</label>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
+				<type>button</type>
 				<posX>69</posX>
 				<posY>705</posY>
 				<width>459</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
-				<onright>50</onright>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<label>Trailer</label>
+				<hyperlink>4755</hyperlink>
+				<hyperlinkParameter>site:iTunes Movie Trailers|search:#selecteditem|return:Locked</hyperlinkParameter>
 				<onleft>50</onleft>
-				<onup>9</onup>
-				<ondown>2</ondown>
-				<visible>plugin.isenabled(My Trailers)</visible>
-			</control>
+				<onright>50</onright>
+				<onup>66611</onup>
+				<ondown>2</ondown>    
+			</control>	
 
 		</control>
 </control>

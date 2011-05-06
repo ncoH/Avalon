@@ -122,29 +122,10 @@
 				<label>983</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<ondown>66613</ondown>
+				<ondown>4</ondown>
 				<onup>20</onup>
           </control>	
 
-			<control>
-				<description>Skin Setting</description>
-				<type>button</type>
-				<id>66613</id>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>495</posY>
-				<width>459</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
-				<label>Skin Settings</label>
-				<hyperlink>155103</hyperlink>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>9</onup>
-				<ondown>4</ondown>
-			</control>
 		  
 		  <control>
 				<description>Options</description>
@@ -153,7 +134,7 @@
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<posX>69</posX>
-				<posY>565</posY>
+				<posY>495</posY>
 				<width>459</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
@@ -161,7 +142,7 @@
 				<label>496</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>66613</onup>
+				<onup>9</onup>
 				<ondown>5</ondown>
           </control>
           <control>
@@ -171,7 +152,7 @@
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<posX>69</posX>
-				<posY>635</posY>
+				<posY>565</posY>
 				<width>459</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
@@ -182,6 +163,25 @@
 				<onup>4</onup>
 				<ondown>2</ondown>
           </control>
+			<control>
+				<description>Skin Settings</description>
+				<type>button</type>
+				<id>66613</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>635</posY>
+				<width>459</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+				<label>#SkinTranslation.Translations.SkinSettings.Label</label>
+				<hyperlink>155103</hyperlink>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>9</onup>
+				<ondown>4</ondown>
+			</control>
         </control>
       </control>
   </controls>
