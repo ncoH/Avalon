@@ -482,8 +482,8 @@
 				<id>66</id>
 				<posX>1190</posX>
 				<posY>318</posY>
-				<width>650</width>
-				<height>54</height>
+				<width>900</width>
+				<height>38</height>
 				<texture>#TVSeries.Logos</texture>
 				<keepaspectratio>yes</keepaspectratio>
 				<visible>facadeview.list+Control.IsVisible(1239)+Control.HasFocus(80)</visible>

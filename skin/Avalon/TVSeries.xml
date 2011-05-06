@@ -106,7 +106,7 @@
       <posX>185</posX>
       <posY>38</posY>
       <width>500</width>
-      <label>#TVSeries.Translation.Series_Plural.Label &gt; #TVSeries.SimpleCurrentView</label>
+      <label>#TVSeries.Translation.Series_Plural.Label</label>
       <textcolor>6aa5cb</textcolor>
       <font>font22</font>
       <visible>[facadeview.list|facadeview.largeicons|facadeview.filmstrip]+Control.IsVisible(50)</visible>
@@ -117,7 +117,7 @@
       <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
       <type>label</type>
-      <label>| #TVSeries.Translation.Series_Plural.Label: #TVSeries.SeriesCount</label>
+      <label>| #TVSeries.SimpleCurrentView: #TVSeries.SeriesCount</label>
       <id>0</id>
       <posX>242</posX>
       <posY>99</posY>

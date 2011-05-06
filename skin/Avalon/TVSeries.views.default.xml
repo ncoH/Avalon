@@ -361,22 +361,24 @@
     </control>
 
 	
-    <!--  ***************************** LOGOS (GROUP LIST  LAYOUT) ******************************** -->
-    <control>
-		<type>image</type>
+    <!--  ***************************** LOGOS  ******************************** -->
+		
+		<control>
+			<description>Logos</description>
+			<type>image</type>
+			<id>66</id>
+			<posX>1500</posX>
+			<posY>834</posY>
+			<width>900</width>
+			<height>38</height>
+			<texture>#TVSeries.Logos</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<spaceBetweenItems>10</spaceBetweenItems>
+			<visible>control.isvisible(1239)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-		<description>thumb Logos ( in textlist group)</description>
-		<id>0</id>
-		<posX>925</posX>
-		<posY>675</posY>
-		<width>650</width>
-		<height>54</height>
-		<texture>#TVSeries.Logos</texture>
-		<keepaspectratio>yes</keepaspectratio>
-		<visible>Control.IsVisible(1240)</visible>
-    </control>
+		</control>
 	
 	
 	
@@ -390,7 +392,7 @@
 		<id>1</id>
 		<posX>555</posX>
 		<posY>602</posY>
-		<width>222</width>
+		<width>315</width>
 		<height>27</height>
 		<texture>#TVSeries.Series.RatingPath</texture>
 		<visible>!facadeview.list+Control.IsVisible(1237)+!Control.IsVisible(1242)</visible>
