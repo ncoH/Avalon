@@ -114,16 +114,17 @@
 		</control>
 -->		
 		<control>
-			<type>label</type>
+			<type>fadelabel</type>
 			<description>Current program time</description>
 			<id>0</id>
 			<posX>74</posX>
 			<posY>578</posY>
+			<width>800</width>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight14</font>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-			<label>#TV.RecordedTV.Time</label>
+			<label>#TV.RecordedTV.Time #TV.RecordedTV.Genre</label>
 			<visible>facadeview.list</visible>
 		</control>
 		
