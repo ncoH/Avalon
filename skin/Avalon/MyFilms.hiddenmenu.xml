@@ -164,32 +164,11 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>5</onup>
-				<ondown>10012</ondown>
-			</control>
-
-			<control>
-				<description>Trailer</description>
-				<type>button</type>
-				<id>10012</id>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>635</posY>
-				<width>459</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>				
-				<hyperlink>5900</hyperlink>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>7</onup>
-				<ondown>10013</ondown>					
-				<label>Trailer</label>
-				<visible>plugin.isenabled(My Trailers)</visible>
+				<ondown>10013</ondown>
 			</control>
 				
 			<control>
-				<description>Onlinevideos</description>
+				<description>Onlinevideos Trailer</description>
 				<type>button</type>
 				<id>10013</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
@@ -199,14 +178,14 @@
 				<width>459</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>				
+				<textYOff>17</textYOff>		
+				<label>Trailer</label>				
 				<hyperlink>4755</hyperlink>
+				<hyperlinkParameter>site:iTunes Movie Trailers|search:#selecteditem|return:Locked</hyperlinkParameter>				
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>10012</onup>
+				<onup>7</onup>
 				<ondown>10014</ondown>					
-				<label>Online Videos</label>
-				<ondown>10014</ondown>
 			</control>
 				
 			<control>

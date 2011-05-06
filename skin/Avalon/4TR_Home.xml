@@ -348,12 +348,13 @@
 		<type>textboxscrollup</type>
 		<id>15</id>
 		<posX>681</posX>
-		<posY>934</posY>
+		<posY>922</posY>
 		<width>1185</width>
-		<height>110</height>
-		<font>font11</font>
+		<height>145</height>
+		<font>AvalonLight11</font>
 		<seperator>----------------------------------------------------------------------------------------------</seperator>
 		<label>#TV.View.description</label>
+		<lineSpacing>0.85</lineSpacing>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
