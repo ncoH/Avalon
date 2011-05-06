@@ -55,6 +55,7 @@
 					<textureFocus>shutdown_button_focus.png</textureFocus>
 					<action>99</action>
 					<onright>901</onright>
+					<onleft>3</onleft>
 					<onup>2</onup>
 					<ondown>4</ondown>
 					<label>1030</label>
@@ -73,6 +74,7 @@
 					<textureFocus>restart_button_focus.png</textureFocus>
 					<action>98</action>
 					<onright>901</onright>
+					<onleft>4</onleft>
 					<onup>3</onup>
 					<ondown>2</ondown>
 					<label>1031</label>
@@ -92,6 +94,7 @@
 					<textureFocus>exit_button_focus.png</textureFocus>
 					<action>97</action>
 					<onright>901</onright>
+					<onleft>2</onleft>
 					<onup>4</onup>
 					<ondown>3</ondown>
 					<label>Exit</label>
