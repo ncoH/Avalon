@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profile>
+  <section name="FanartHandler">
+		<entry name="useFanart">True</entry>
+		<entry name="useAlbum">False</entry>
+		<entry name="useArtist">False</entry>
+		<entry name="useOverlayFanart">True</entry>
+		<entry name="useMusicFanart">True</entry>
+		<entry name="useVideoFanart">True</entry>
+		<entry name="useScoreCenterFanart">True</entry>
+		<entry name="imageInterval">20</entry>
+		<entry name="minResolution">960x540</entry>
+		<entry name="defaultBackdrop"></entry>
+		<entry name="scraperMaxImages">3</entry>
+		<entry name="scraperMusicPlaying">True</entry>
+		<entry name="scraperMPDatabase">False</entry>
+		<entry name="scraperInterval">24</entry>
+		<entry name="useAspectRatio">True</entry>
+		<entry name="skipWhenHighResAvailable">True</entry>
+		<entry name="disableMPTumbsForRandom">True</entry>
+		<entry name="defaultBackdropIsImage">True</entry>
+		<entry name="useDefaultBackdrop">True</entry>
+		<entry name="proxyHostname"></entry>
+		<entry name="proxyPort"></entry>
+		<entry name="proxyUsername"></entry>
+		<entry name="proxyPassword"></entry>
+		<entry name="proxyDomain"></entry>
+		<entry name="useProxy">False</entry>
+		<entry name="latestMovingPictures">False</entry>
+		<entry name="latestTVSeries">False</entry>
+		<entry name="latestPictures">True</entry>
+  </section>
+</profile>
