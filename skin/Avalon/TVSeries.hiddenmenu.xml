@@ -161,7 +161,7 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>4</onup>
-				<ondown>2</ondown>
+				<ondown>66613</ondown>
           </control>
 			<control>
 				<description>Skin Settings</description>
@@ -179,8 +179,8 @@
 				<hyperlink>155103</hyperlink>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>9</onup>
-				<ondown>4</ondown>
+				<onup>5</onup>
+				<ondown>2</ondown>
 			</control>
         </control>
       </control>
