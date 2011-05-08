@@ -19,6 +19,7 @@
 	<!-- E -->
 
 	<!-- F -->
+	<string Field="fanart.scraping">Lade Fanart</string>
 	<string Field="format">Format:</string>
 	
 	<!-- G -->
@@ -70,7 +71,7 @@
 	<string Field="site">Seite:</string>
 	<string Field="SkinSettings">Skin Einstellungen</string>
 	<string Field="SkinUpdateNF">Update verfügbar</string>
-	<string Field="SkinUpdateNF2">Press left and push the button to install</string>
+	<string Field="SkinUpdateNF2">zum installieren nach links drücken und bestätigen</string>
 
 	<!-- T -->
 	<string Field="tv.recordings">Aufnahmen</string>

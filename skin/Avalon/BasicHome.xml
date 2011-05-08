@@ -43,52 +43,6 @@
         <onleft>3</onleft>
         <onright>99997</onright>
     </control>	
-<!--
-<control>
-	<description>dummy label for topbar</description>
-	<type>label</type>
-	<id>331</id>
-	<posX>200</posX>
-	<posY>300</posY>
-	<label>homeitem: #homeitem</label>
-</control>
-
-<control>
-	<description>dummy label for topbar</description>
-	<type>label</type>
-	<id>331</id>
-	<posX>200</posX>
-	<posY>400</posY>
-	<label>highlightedbutton: #highlightedbutton</label>
-</control>
-
-<control>
-	<description>dummy label for topbar</description>
-	<type>label</type>
-	<id>331</id>
-	<posX>200</posX>
-	<posY>500</posY>
-	<label>mainmenu: #mainmenu</label>
-</control>
-
-<control>
-	<description>dummy label for topbar</description>
-	<type>label</type>
-	<id>331</id>
-	<posX>200</posX>
-	<posY>600</posY>
-	<label>recentMedia: #recentMedia</label>
-</control>
-
-<control>
-	<description>dummy label for topbar</description>
-	<type>label</type>
-	<id>331</id>
-	<posX>200</posX>
-	<posY>700</posY>
-	<label>update: #Avalon.UpdateAvailable</label>
-</control>
--->
 <control>
 	<description>dummy label for topbar</description>
 	<type>label</type>
@@ -1089,7 +1043,8 @@
 		<visible>![Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)]</visible>
 	</control>
 	
-<import>BasicHome.weather.xml</import>  
+<import>BasicHome.weather.xml</import> 
+<import>BasicHome.scraper.xml</import>  
 <import>common.overlay.xml</import>
 <import>BasicHome.recentlyaddedSeries.xml</import>
 <import>BasicHome.recentlyaddedMovies.xml</import>
