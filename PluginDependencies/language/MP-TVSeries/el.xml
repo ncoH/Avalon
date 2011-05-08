@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- MP-TV-Series translation file -->
+<!-- Greek (EL) -->
+<!-- Last Updated: 18th Oct 2010 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<strings>
+  <string Field="Series" Original="Series">Σειρά</string>
+  <string Field="Series_Plural" Original="Series (Plr)">Σειρές</string> <!-- plural -->
+  <string Field="Season" Original="Season">Κύκλος</string>
+  <string Field="Seasons" Original="Seasons">Κύκλοι</string>
+  <string Field="Episode" Original="Episode">Επεισόδιο</string>
+  <string Field="Episodes" Original="Episodes">Επεισόδια</string>
+  <string Field="Toggle_watched_flag" Original="Toggle watched flag">Εναλλαγή: προβληθέν/μη προβληθέν</string>
+  <string Field="Retrieve_Subtitle" Original="Retrieve Subtitle">Ανάκτηση υπότιτλου</string>
+  <string Field="Load_via_Torrent" Original="Load via Torrent">Άνοιγμα μέσω Torrent</string>
+  <string Field="Mark_all_as_watched" Original="Mark all as watched">Σημείωση όλων ως προβληθέντα</string>
+  <string Field="Mark_all_as_unwatched" Original="Mark all as unwatched">Σημείωση όλων ως μη προβληθέντα</string>
+  <string Field="Hide" Original="Hide">Απόκρυψη</string>
+  <string Field="Delete" Original="Delete">Διαγραφή</string>
+  <string Field="Remove_series_from_Favourites" Original="Remove series from Favourites">Διαγραφή από τα αγαπημένα</string>
+  <string Field="Add_series_to_Favourites" Original="Add series to Favourites">Προσθήκη στα αγαπημένα</string>
+  <string Field="Force_Local_Scan" Original="Force Local Scan ">Επιβολή τοπικής σάρωσης </string>
+  <string Field="Force_Online_Refresh" Original="Force Online Refresh ">Επιβολή ανανέωσης από το διαδίκτυο </string>
+  <string Field="In_Progress_with_Barracks" Original="(In Progress)">(Σε εξέλιξη)</string>
+  <string Field="Only_show_episodes_with_a_local_file" Original="Only show episodes with a local file">Προβολή μόνο τοπικών επεισοδίων</string>
+  <string Field="Hide_summary_on_unwatched" Original="Hide the episode's summary on unwatched episodes">Απόκρυψη περίληψης</string>
+  <string Field="on" Original="on">ενεργό</string>
+  <string Field="off" Original="off">ανενεργό</string>
+  <string Field="Play_Random_Episode" Original="Play Random Episode">Αναπαραγωγή τυχαίου επεισοδίου</string>
+  <string Field="Play_Random_First_Unwatched_Episode" Original="Play Random First Unwatched Episode">Αναπαραγωγή του πρώτου τυχαίου, μη προβληθέντος επεισοδίου</string>
+  <string Field="Delete_that_series" Original="Delete that series?">Διαγραφή της σειράς;</string>
+  <string Field="Delete_that_season" Original="Delete that season?">Διαγραφή του κύκλου;</string>
+  <string Field="Delete_that_episode" Original="Delete that episode?">Διαγραφή του επεισοδίου;</string>
+  <string Field="Confirm" Original="Confirm">Επιβεβαίωση</string>
+  <string Field="Completed" Original="Completed">Ολοκληρώθηκε</string>
+  <string Field="No_subtitles_found" Original="No subtitles found">Δε βρέθηκαν υπότιτλοι</string>
+  <string Field="CFS_No_Results_Found" Original="No Results Found!">Δε βρέθηκαν αποτελέσματα!</string>
+  <string Field="_Hidden_to_prevent_spoilers_" Original=" * Hidden to prevent spoilers *"> * Κρυφό για αποφυγή περίληψης *</string>
+  <string Field="Yes" Original="Yes">Ναι</string>
+  <string Field="No" Original="No">Όχι</string>
+  <string Field="Error" Original="#Error">#Σφάλμα</string>
+  <string Field="No_items" Original="No items!">Δεν υπάρχουν στοιχεία!</string>
+  <string Field="Unknown" Original="Unknown">Άγνωστο</string>
+  <string Field="wrongSkin" Original="Wrong Skin file">Λάθος αρχείο θέματος</string>
+  <string Field="special" Original="Special">Σπέσιαλ</string>
+  <string Field="specials" Original="Specials">Σπέσιαλ</string>
+  <string Field="delPhyiscalWarning" Original="You are about to permanently delete {0} physical file(s).Would you like to proceed?">"Πρόκειται να διαγράψετε {0} φυσικό(ά) αρχείο(α).\nΘέλετε να συνεχίσετε;"</string>
+  <string Field="Force_Online_Match" Original="Force New Online Lookup For Series">Νέα αναζήτηση για τη Σειρά</string>
+  <string Field="Load_via_NewsLeecher" Original="Load via NewsLeecher">Άνοιγμα μέσω NewsLeecher</string>
+  <string Field="Download" Original="Download">Μεταφόρτωση</string>
+  <string Field="Actions" Original="Actions">Ενέργειες</string>
+  <string Field="Options" Original="Options">Επιλογές</string>
+  <string Field="Genres" Original="Genres">Είδη</string>
+  <string Field="All" Original="All">Όλα</string>
+  <string Field="Latest" Original="Latest Aired">Τελευταία</string>
+  <string Field="Channels" Original="Channels">Κανάλια</string>
+  <string Field="Unwatched" Original="Unwatched">Μη προβληθέντα</string>
+  <string Field="Favourites" Original="Favourites">Αγαπημένα</string>
+  <string Field="updateMI" Original="Update Mediainfo of local file">Ενημέρωση πληροφοριών αρχείου</string>
+  <string Field="RateSeries" Original="Rate this Series">Αξιολόγηση της σειράς</string>
+  <string Field="RateEpisode" Original="Rate this Episode">Αξιολόγηση του επεισοδίου</string>
+  <string Field="ResetRating" Original="Reset Rating">Επαναφορά αξιολόγησης</string>
+  <string Field="AskToRate" Original="Ask me to rate unrated episodes">Να γίνεται ερώτηση για αξιολόγηση επεισοδίων</string>
+  <string Field="DontAskToRate" Original="Don't ask me to rate again">Να μην γίνεται ερώτηση για επαναξιολόγηση</string>
+  <string Field="RatingStar" Original="Star">Αστέρι</string>
+  <string Field="RatingStars" Original="Stars">Αστέρια</string>
+  <string Field="ChangeView" Original="Change View">Αλλαγή προβολής</string>
+  <string Field="ChangeViewFast" Original="Immediatly Change Views">Άμεση αλλαγή προβολής</string>
+  <string Field="FanArt" Original="Fanart">Fanart</string>
+  <string Field="FanListAll" Original="List all Fanart for this Series">Προβολή Fanart για τη σειρά</string>
+  <string Field="FanArtGetAndUse" Original="Download Fanart and Use">Μεταφόρτωση και χρήση Fanart</string>
+  <string Field="FanArtGet" Original="Download Fanart">Μεταφόρτωση Fanart</string>
+  <string Field="FanArtUse" Original="Set Fanart as Default">Ορισμός Fanart ως προεπιλεγμένου</string>
+  <string Field="FanArtDelete" Original="Delete Fanart">Διαγραφή Fanart</string>
+  <string Field="FanDownloadingStatus" Original="Downloading {0} Fanart...">Μεταφόρτωση {0} Fanart...</string>
+  <string Field="FanArtLocal" Original="Local">Τοπικά</string>
+  <string Field="FanArtOnline" Original="Remote">Απομακρυσμένα</string>
+  <string Field="FanArtOnlineLoading" Original="Loading {0} of {1} Fanart...">Άνοιγμα {0} από {1} Fanart...</string>
+  <string Field="FanArtRandom" Original="Display random Fanart">Προβολή τυχαίου Fanart</string>
+  <string Field="FanArtNoneFound" Original="No Fanart could be found">Δεν βρέθηκε Fanart</string>
+  <string Field="CFS_Choose_Item" Original="Choose item">Επιλέξτε στοιχείο</string>
+  <string Field="CFS_Select_Matching_Item" Original="Select matching item:">Επιλέξτε αυτό που ταιριάζει:</string>
+  <string Field="CFS_Search_Again" Original="Search again">Αναζήτηση ξανά</string>
+  <string Field="CFS_Select_Matching_Subitle_File" Original="Select Matching Subtitle File">Επιλέξτε τον υπότιτλο που ταιριάζει</string>
+  <string Field="CFS_Subtitle_Episode" Original="Choose item">Επεισόδιο:</string>
+  <string Field="CFS_Matching_Subtitles" Original="Matching Subtitles">Ταιριαστοί υπότιτλοι</string>
+  <string Field="CFS_Choose_Correct_Series" Original="Choose Correct Series">Επιλέξτε τη σωστή σειρά</string>
+  <string Field="CFS_Available_Series" Original="Available Series">Διαθέσιμες Σειρές</string>
+  <string Field="CFS_Select_Correct_Subtitle_Version" Original="Select desired subtitles version">Επιλέξτε την επιθυμητή έκδοση υπότιτλων</string>
+  <string Field="CFS_Select_Version" Original="Version:">Έκδοση:</string>
+  <string Field="CFS_Choose_Correct_Episode" Original="Choose Correct Episode">Επιλέξτε το σωστό επεισόδιο</string>
+  <string Field="CFS_Local_Episode_Index" Original="Local Episiode index:">Ευρετήριο τοπικών επεισοδίων:</string>
+  <string Field="CFS_Available_Episode_List" Original="Available Episode list:">Λίστα διαθέσιμων επεισοδίων:</string>
+  <string Field="CFS_Choose_Search_Site" Original="Choose search site:">Επιλέξτε ιστοσελίδα για αναζήτηση:</string>
+  <string Field="CFS_List_Search_Site" Original="List of search sites:">Λίστα ιστοσελίδων αναζήτησης:</string>
+  <string Field="CFS_Found_Torrents" Original="Found torrents:">Torrents που βρέθηκαν:</string>
+  <string Field="CFS_Looking_For" Original="Looking for:">Αναζήτηση για:</string>
+  <string Field="CFS_Choose_Correct_Season" Original="Choose correct season">Επιλέξτε το σωστό κύκλο</string>
+  <string Field="CFS_Local_Season_Index" Original="Local Season index:">Ευρετήριο τοπικών κύκλων:</string>
+  <string Field="CFS_Available_Seasons" Original="Available Seasons list:">Λίστα διαθέσιμων κύκλων:</string>
+  <string Field="CFS_Skip_Never_Ask_Again" Original="Skip / Never Ask Again">Παράληψη/Μη ρωτήσεις ξανά</string>
+  <string Field="CYN_Subtitle_File_Replace" Original="Subtitle File Replace">Αντικατάσταση αρχείου υπότιτλου</string>
+  <string Field="CYN_Old_Subtitle_Replace" Original="Old subtitle File present: overwrite?">Βρέθηκε παλαιό αρχείο υπότιτλου: διαγραφή;</string>
+  <string Field="RecentlyAdded" Original="Recently Added">Προστέθηκαν πρόσφατα</string>
+  <string Field="TVDB_ERROR_TITLE" Original="theTVDB Error">Σφάλμα theTVDB</string>
+  <string Field="TVDB_INFO_TITLE" Original="theTVDB">theTVDB</string>
+  <string Field="TVDB_INFO_ACCOUNTID_1" Original="Account Identifier is not set">Δεν έχει οριστεί το Account Identifier</string>
+  <string Field="TVDB_INFO_ACCOUNTID_2" Original="Enter your online account ID in Configuration">Εισάγετε το account ID στις ρυθμίσεις</string>
+  <string Field="ShowSeriesFanart" Original="Show Fanart in Series View">Προβολή Fanart στην προβολή σειράς</string>
+  <string Field="ChangeLayout" Original="Change Layout">Αλλαγή διάταξης</string>
+  <string Field="UseOnlineFavourites" Original="Use Online Favourites">Χρήση αγαπημένων στο διαδίκτυο</string>
+  <string Field="AddToPlaylist" Original="Add To Playlist">Προσθήκη στη λίστα αναπαραγωγής</string>
+  <string Field="FanartDisableLabel" Original="Disabled">Απενεργοποιημένο</string>
+  <string Field="FanartMenuEnable" Original="Enable Fanart">Ενεργοποίηση Fanart</string>
+  <string Field="FanartMenuDisable" Original="Disable Fanart">Απενεργοποίηση Fanart</string>
+  <string Field="SortByStrings" Original="SortByStrings">the|a|an</string><!--Additional ones should be added for other languages, dont translate existing ones as they will be used as well-->
+  <string Field="LayoutList" Original="List">Λίστα</string>
+  <string Field="LayoutListBanners" Original="List Banners">Προβολή Banners</string>
+  <string Field="LayoutListPosters" Original="List Posters">Προβολή Posters</string>
+  <string Field="LayoutWideBanners" Original="Wide Banners">Ευρεία Banners</string>
+  <string Field="LayoutFilmstrip" Original="Filmstrip">Filmstrip</string>
+  <string Field="LayoutSmallIcons" Original="Small Icons">Μικρά εικονίδια</string>
+  <string Field="ButtonAutoPlay" Original="Auto Play">Αυτόματη αναπαραγωγή</string>
+  <string Field="ButtonSwitchView" Original="Switch View">Αλλαγή προβολής</string>
+  <string Field="ButtonRunImport" Original="Run Import">Εκτέλεση εισαγωγής</string>
+  <string Field="ButtonChangeLayout" Original="Change Layout">Αλλαγή διάταξης</string>
+  <string Field="ButtonOptions" Original="Options">Επιλογές</string>
+  <string Field="FanArtFilter" Original="Filter">Φίλτρο</string>
+  <string Field="FanArtFilterAll" Original="All">Όλα</string>
+  <string Field="ButtonRandomFanart" Original="Random Fanart">Τυχαίο Fanart</string>
+  <string Field="LabelResolution" Original="Resolution">Ανάλυση</string>
+  <string Field="LabelChosen" Original="Chosen">Προεπιλεγμένο</string>
+  <string Field="LabelDisabled" Original="Disabled">Απενεργοποιημένο</string>
+  <string Field="ResetUserSelections" Original="Reset User Selections">Αναίρεση επιλογών χρήστη</string>
+  <string Field="DeleteFromDisk" Original="Delete from Disk">Διαγραφή από το δίσκο</string>
+  <string Field="DeleteFromDatabase" Original="Delete from Database">Διαγραφή από τη βάση δεδομένων</string>
+  <string Field="DeleteFromFileDatabase" Original="Delete from Disk and Database">Διαγραφή από το δίσκο και τη βάση δεδομένων</string>
+  <string Field="RateDialogLabel" Original="Select Your Rating for {0}">Επιλέξτε την αξιολόγησή σας για το {0}</string>
+  <string Field="Hide_thumbnail_on_unwatched" Original="Hide Spoiler Thumbnails">Απόκρυψη μικρογραφιών περίληψης</string>
+
+  <!-- Rate Descriptions - 5 Stars-->
+  <string Field="RateFiveStarOne" Original="Terrible">Απαίσιο</string>
+  <string Field="RateFiveStarTwo" Original="Mediocre">Μέτριο</string>
+  <string Field="RateFiveStarThree" Original="Good">Καλό</string>
+  <string Field="RateFiveStarFour" Original="Superb">Εξαιρετικό</string>
+  <string Field="RateFiveStarFive" Original="Perfect">Τέλειο</string>
+  <!-- Rate Descriptions - 10 Stars-->
+  <string Field="RateTenStarOne" Original="Abysmal">Δεν βλέπεται</string>
+  <string Field="RateTenStarTwo" Original="Terrible">Απαίσιο</string>
+  <string Field="RateTenStarThree" Original="Bad">Κακό</string>
+  <string Field="RateTenStarFour" Original="Poor">Φτωχό</string>
+  <string Field="RateTenStarFive" Original="Mediocre">Μέτριο</string>
+  <string Field="RateTenStarSix" Original="Fair">Τίμιο</string>
+  <string Field="RateTenStarSeven" Original="Good">Καλό</string>
+  <string Field="RateTenStarEight" Original="Great">Σπουδαίο</string>
+  <string Field="RateTenStarNine" Original="Superb">Εξαιρετικό</string>
+  <string Field="RateTenStarTen" Original="Perfect">Τέλειο</string>
+
+  <string Field="ContentRating" Original="Content Rating">Καταλληλότητα</string>
+  <string Field="ViewTags" Original="View Tags">Προβολή ετικετών</string>
+  <string Field="AddViewTag" Original="Add Series to View Tag">Προσθήκη σειράς στην προβολή</string>
+  <string Field="RemoveViewTag" Original="Remove Series from View Tag">Αφαίρεση σειράς από την προβολή</string>
+  <string Field="NewViewTag" Original="New Tag">Νέα προβολή</string>
+  <string Field="CycleSeriesBanner" Original="Cycle Series Banner">Εναλλαγή Banner σειράς</string>
+  <string Field="CycleSeasonBanner" Original="Cycle Season Poster">Εναλλαγή Poster κύκλου</string>
+  <string Field="CycleSeriesPoster" Original="Cycle Series Poster">Εναλλαγή Poster σειράς</string>
+  <string Field="FanartRandomInterval" Original="Fanart Timer Interval">Διάστημα για αλλαγή Fanart</string>
+  <string Field="FanartIntervalFiveSeconds" Original="5 Seconds">5 δευτερόλεπτα</string>
+  <string Field="FanartIntervalTenSeconds" Original="10 Seconds">10 δευτερόλεπτα</string>
+  <string Field="FanartIntervalFifteenSeconds" Original="15 Seconds">15 δευτερόλεπτα</string>
+  <string Field="FanartIntervalThirtySeconds" Original="30 Seconds">30 δευτερόλεπτα</string>
+  <string Field="FanartIntervalFortyFiveSeconds" Original="45 Seconds">45 δευτερόλεπτα</string>
+  <string Field="FanartIntervalSixtySeconds" Original="60 Seconds">60 δευτερόλεπτα</string>
+  <string Field="NoPlaylistsFound" Original="No Playlists found in:">Δεν βρέθηκαν λίστες αναπαραγωγής σε:</string>
+  <string Field="PinCode" Original="Pin Code">Κωδικός Pin</string>
+  <string Field="PinCodeIncorrectLine1" Original="The entered pin code is incorrect">Ο εισαγμένος κωδικός Pin δεν είναι σωστός</string>
+  <string Field="PinCodeIncorrectLine2" Original="Press OK to try again">Πιέστε OK για να δοκιμάσετε ξανά</string>
+  <string Field="ParentalControlLocked" Original="Lock Views">Κλείδωμα προβολών</string>
+  <string Field="ViewIsLocked" Original="View Locked">Εμφάνιση κλειδωμένων</string>
+  <string Field="PinCodeDlgLabel1" Original="The view {0} is locked">Η προβολή "{0}" είναι κλειδωμένη</string>
+  <string Field="PinCodeDlgLabel2" Original="Enter in 4 Digit Pin Code to proceed:">Εισάγετε τον τετραψήφιο κωδικό Pin για να συνεχίσετε:</string>
+  <string Field="PinCodeMessageIncorrect" Original="Pin Incorrect">Λάθος Pin</string>=
+  <string Field="Continuing" Original="Continuing Series">Σειρά σε εξέλιξη</string>
+  <string Field="Ended" Original="Ended Series">Η σειρά έχει ολοκληρωθεί</string>
+  <string Field="HighDefinition" Original="High Definition">Υψηλή πιστότητα</string>
+  <string Field="StandardDefinition" Original="Standard Defintion">Τυπική πιστότητα</string>
+  <string Field="Top10Online" Original="Top 10 (Online)">Top 10 (Διαδύκτιο)</string>
+  <string Field="Top10User" Original="Top 10 (User)">Top 10 (Χρήστης)</string>
+  <string Field="Top25Online" Original="Top 25 (Online)">Top 25 (Διαδύκτιο)</string>
+  <string Field="Top25User" Original="Top 25 (User)">Top 25(Χρήστης)</string>
+  <string Field="Subtitles" Original="Subtitles">Υπότιτλοι</string>
+  <string Field="MultiAudio" Original="Multiple Audio Tracks">Πολλαπλά κανάλια ήχου</string>
+  <string Field="OnlineFavourites" Original="Online Favourites">Αγαπημένα στο διαδίκτυο</string>
+  <string Field="Actors" Original="Actors">Ηθοποιοί</string>
+  <string Field="RemovableMedia" Original="Removable Media">Αφαιρούμενο μέσα</string>
+  <string Field="LocalMedia" Original="Local Media">Τοπικό μέσα</string>
+  <string Field="AdultSeries" Original="Adult Series">Για ενήλικες</string>
+  <string Field="KidsSeries" Original="Kids Series">Για παιδιά</string>
+  <string Field="ClearFanartCache" Original="Clear Fanart Cache">Καθαρισμός προσωρινά αποθηκευμένου Fanart</string>
+
+  <string Field="DeleteThumbnailsHeading" Original="Delete Thumbnails">Διαγραφή μικρογραφιών</string>
+  <string Field="DeleteThumbnailsLine1" Original="Would you also like to Delete and Re-Download">Θα θέλατε τη διαγραφή και την επαναμεταφόρτωση,</string>
+  <string Field="DeleteThumbnailsLine2" Original="all episode thumbnails?">όλων των μικρογραφιών επεισοδίων;</string>
+  <string Field="RateDialog" Original="Rate Dialog">Διάλογος αξιολόγησης</string>
+  <string Field="PinCodeDialog" Original="Pin Code Dialog">Διάλογος κωδικού Pin</string>
+
+  <string Field="Aired" Original="Aired">Προβλήθηκε</string>
+  <string Field="AiredStatusContinuing" Original="Continuing">Σε εξέλιξη</string>
+  <string Field="AiredStatusEnded" Original="Ended">Ολοκληρωμένη</string>
+  <string Field="Airs" Original="Airs">Προβάλλεται</string>
+  <string Field="AirsDay" Original="Airs Day">Ημέρα προβολής</string>
+  <string Field="AirsTime" Original="Airs Time">Ώρα προβολής</string>
+  <string Field="Cast" Original="Cast">Ηθοποιοί</string>
+  <string Field="Certification" Original="Certification">Καταλληλότητα</string>
+  <string Field="Director" Original="Director">Σκηνοθέτης</string>
+  <string Field="Directors" Original="Directors">Σκηνοθέτες</string>
+  <string Field="FileSize" Original="File Size">Μέγεθος αρχείου</string>
+  <string Field="FirstAired" Original="First Aired">Πρώτη προβολή</string>
+  <string Field="Genre" Original="Genre">Είδος</string>
+  <string Field="Group" Original="Groups">Ομάδα</string>
+  <string Field="Groups" Original="Groups">Ομάδες</string>
+  <string Field="GuestStar" Original="Guest Star">Έκτακτη συμμετοχή</string>
+  <string Field="GuestStars" Original="Guest Stars">Έκτακτες συμμετοχές</string>
+  <string Field="MediaInfo" Original="Media Info">Πληροφορίες μέσου</string>
+  <string Field="Minutes" Original="Minutes">Λεπτά</string>
+  <string Field="MyRating" Original="My Rating">Η βαθμολογία μου</string>
+  <string Field="Network" Original="Network">Δίκτυο</string>
+  <string Field="Rated" Original="Rated">Αξιολογήθηκε ως</string>
+  <string Field="Rating" Original="Rating">Αξιολόγηση</string>
+  <string Field="Runtime" Original="Runtime">Διάρκεια</string>
+  <string Field="SeriesDetails" Original="Series Details">Λεπτομέρειες σειράς</string>
+  <string Field="SeriesStatus" Original="Series Status">Κατάσταση σειράς</string>
+  <string Field="Starring" Original="Starring">Πρωταγωνιστούν</string>
+  <string Field="Watched" Original="Watched">Προβληθέν</string>
+  <string Field="Writer" Original="Writer">Σεναριογράφος</string>
+  <string Field="Writers" Original="Writers">Σεναριογράφοι</string>
+
+  <string Field="TVDB_ERROR_UNAVAILABLE_1" Original="TheTVDB.com is currently unavailable">TheTVDB.com μη διαθέσιμο</string>
+  <string Field="TVDB_ERROR_UNAVAILABLE_2" Original="Please try again later">Παρακαλώ δοκιμάστε αργότερα</string>
+  <string Field="NETWORK_ERROR_UNAVAILABLE_1" Original="Network connection is unavailable">Μη διαθέσιμη σύνδεση δικτύου</string>
+  <string Field="NETWORK_ERROR_UNAVAILABLE_2" Original="Check your connection and try again">Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά</string>
+
+  <string Field="Playlist" Original="Playlist">Λίστα αναπαραγωγής</string>
+  <string Field="LastOnlineUpdate" Original="LastOnlineUpdate">Τελευταία ενημέρωση</string>
+
+  <string Field="ResetIgnoredDownloadedFiles" Original="Reset Ignored Downloaded Files">Επαναφορά κατεβασμένων αρχείων(αγνοημένα)</string>
+
+  <string Field="GetSubtitlesFrom" Original="Get subtitles from?">Ανάκτηση υπότιτλων από;</string>
+  <string Field="EnabledSubtitleSites" Original="Enabled subtitle sites:">Ενεργές ιστοσελίδες υπότιτλων:</string>
+  <string Field="PlayNow" Original="Play Now">Αναπαραγωγή τώρα</string>
+  <string Field="NoSubtitleDownload" Original="No Subtitle Download">Δεν μεταφορτώθηκε κανένας υπότιτλος</string>
+
+  <string Field="DeleteSubtitles" Original="Delete Subtitles">Διαγραφή υπότιτλων</string>
+  <string Field="EpisodeFilenameEmpty" Original="Episode Filename is Empty in Database">Το όνομα αρχείου του επεισοδίου είναι κενό στην βάση δεδομένων</string>
+  <string Field="UnableToDeleteSubtitleFile" Original="Unable to Delete Subtitle File: {0}">Αδύνατη η διαγραφή του: {0}</string>
+  <string Field="PathNotAvailable" Original="Path is not available: {0}">Το μονοπάτι δεν είναι διαθέσιμο: {0}</string>
+  <string Field="UnableToDeleteSubtitles" Original="Unable to Delete Subtitles">Αδύνατη η διαγραφή των υπότιτλων</string>
+  <string Field="ErrorClear" Original="Error">Σφάλμα</string>
+  <string Field="UnableToRetrieveSubtitles" Original="Unable to retrieve subtitles">Αδύνατη η ανάκτηση των υπότιτλων</string>
+  <string Field="NoSubtitlesFoundOrRetrieved" Original="No subtitles found or retrieved">Δεν βρέθηκαν υπότιτλοι</string>
+
+  <string Field="UnableToDelete" Original="Unable to Delete">Αδύνατη η διαγραφή</string>
+  <string Field="UnableToDeleteFile" Original="Unable to Delete File: {0}">Αδύνατη η διαγραφή του: {0}</string>
+
+  <string Field="PlaySomething" Original="Play...">Αναπαραγωγή...</string>
+  <string Field="PlayError" Original="Play error">Σφάλμα αναπαραγωγής</string>
+  <string Field="RandomEpisode" Original="random episode">τυχαίο επεισόδιο</string>
+  <string Field="FirstUnwatchedEpisode" Original="first unwatched episode">το πρώτο μη προβληθέν επεισόδιο</string>
+  <string Field="RandomUnwatchedEpisode" Original="random unwatched episode">τυχαίο μη προβληθέν επεισόδιο</string>
+  <string Field="LatestEpisode" Original="latest episode">το πιο πρόσφατο επεισόδιο</string>
+  <string Field="UnableToFindAny" Original="Unable to find any {0}">Αδύνατη η εύρεση οποιουδήποτε {0}</string>
+  <string Field="UnableToFindAnyEpisode" Original="Unable to find any episode">Αδύνατη η εύρεση οποιουδήποτε επεισοδίου</string>
+
+  <string Field="SortBy" Original="Sort By">Ταξινόμηση κατά:</string>
+  <string Field="DVDOrder" Original="DVD Order">Την σειρά έκδοσης σε DVD</string>
+  <string Field="AiredOrder" Original="Aired Order">Την σειρά προβολής στην τηλεόραση</string>
+  <string Field="AbsoluteOrder" Original="Absolute Order">Την απόλυτη σειρά</string>
+  <string Field="Title" Original="Title">Τίτλο</string>
+  <string Field="ChangeOnlineMatchOrder" Original="Change Online Matching Method">Αλλαγή τρόπου εύρεσης</string>
+
+  <string Field="InsertDiskMessageLine1" Original="The media for the episode you have selected">Το μέσο για το επεισόδιο που επιλέξατε</string>
+  <string Field="InsertDiskMessageLine2" Original="is currently not available.">δεν είναι διαθέσιμο.</string>
+  <string Field="InsertDiskMessageLine3" Original="Please insert or connect media">Παρακαλώ εισάγετε ή συνδέστε </string>
+  <string Field="InsertDiskMessageLine4" Original="labeled: {0}">το μέσο: {0}</string>
+  
+  <string Field="ShowHiddenItems" Original="Show Hidden Items">Εμφάνιση κρυφών στοιχείων</string>
+  <string Field="UnHide" Original="UnHide">Εμφάνιση</string>
+
+  <string Field="CFS_Skip" Original="Skip">Παράληψη</string>
+  <string Field="CFS_No_Match_Manual_Search" Original="No Match Found, Manual Search...">Δεν βρέθηκε, χειροκίνητη αναζήτηση...</string>
+  <string Field="CFS_Local_Series" Original="Local Series:">Τοπική σειρά:</string>
+
+  <string Field="AvailableMedia" Original="Available Media">Διαθέσιμα μέσα</string>
+
+  <string Field="Votes" Original="votes">ψήφοι</string>
+  
+</strings>

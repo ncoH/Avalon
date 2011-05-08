@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?> 
+<!--  MP-TV-Series translation file --> 
+<!--  Norwegian --> 
+<!--  Note: English is the fallback for any strings not found in other languages --> 
+<strings>
+  <string Field="Series" Original="Series">Serier</string> 
+  <string Field="Series_Plural" Original="Series (Plr)">Serier</string> 
+<!--  plural --> 
+  <string Field="Season" Original="Season">Sesong</string> 
+  <string Field="Seasons" Original="Seasons">Sesonger</string> 
+  <string Field="Episode" Original="Episode">Episodek</string> 
+  <string Field="Episodes" Original="Episodes">Episoder</string> 
+  <string Field="Toggle_watched_flag" Original="Toggle watched flag">Merk Som Sett</string> 
+  <string Field="Retrieve_Subtitle" Original="Retrieve Subtitle">Hent Undertekst</string> 
+  <string Field="Load_via_Torrent" Original="Load via Torrent">Hent Via Torrent</string> 
+  <string Field="Mark_all_as_watched" Original="Mark all as watched">Merk Alle Som Sett</string> 
+  <string Field="Mark_all_as_unwatched" Original="Mark all as unwatched">Merk Alle Som Usett</string> 
+  <string Field="Hide" Original="Hide">Gjem</string> 
+  <string Field="Delete" Original="Delete">Slett</string> 
+  <string Field="Remove_series_from_Favourites" Original="Remove series from Favourites">Fjern Serie Fra Favoritter</string> 
+  <string Field="Add_series_to_Favourites" Original="Add series to Favourites">Legg Serie Som Favoritt</string> 
+  <string Field="Force_Local_Scan" Original="Force Local Scan">Tving Lokal Søk</string> 
+  <string Field="Force_Online_Refresh" Original="Force Online Refresh">Opptattere Serie Informasjon</string> 
+  <string Field="In_Progress_with_Barracks" Original="(In Progress)">(Arbeider)</string> 
+  <string Field="Only_show_episodes_with_a_local_file" Original="Only show episodes with a local file">Vis Bare Episoder på Pc'en</string> 
+  <string Field="Hide_summary_on_unwatched" Original="Hide the episode's summary on unwatched episodes">Gjem Oppsumering Vist Usett</string> 
+  <string Field="on" Original="on">På</string> 
+  <string Field="off" Original="off">Av</string> 
+  <string Field="Play_Random_Episode" Original="Play Random Episode">Spill Tilfeldig Episode</string> 
+  <string Field="Play_Random_First_Unwatched_Episode" Original="Play Random First Unwatched Episode">Spill Første Tilfedige Usette Episode</string> 
+  <string Field="Delete_that_series" Original="Delete that series?">Slett Denne Serien?</string> 
+  <string Field="Delete_that_season" Original="Delete that season?">Slett Denne Seongen?</string> 
+  <string Field="Delete_that_episode" Original="Delete that episode?">Slett Denne Episoden?</string> 
+  <string Field="Confirm" Original="Confirm">Bekreft</string> 
+  <string Field="Completed" Original="Completed">Ferdig</string> 
+  <string Field="No_subtitles_found" Original="No subtitles found">Ingen Undertekst Funnet</string> 
+  <string Field="CFS_Skip_Never_Ask_Again" Original="skip / Never ask again">Hopp Over / Aldrig Spør Igjen</string> 
+  <string Field="CFS_No_Results_Found" Original="no results found!">Ingen Passende Resultater Funnet!</string> 
+  <string Field="_Hidden_to_prevent_spoilers_" Original="* Hidden to prevent spoilers *">* Gjem for Å forhindre "Spoilers"  *</string> 
+  <string Field="Yes" Original="Yes">Ja</string> 
+  <string Field="No" Original="No">Nei</string> 
+  <string Field="Error" Original="#Error">#Feil</string> 
+  <string Field="No_items" Original="No items!">Ingen Objekter!</string> 
+  <string Field="Unknown" Original="Unknown">Ukjent</string> 
+  <string Field="wrongSkin" Original="Wrong Skin file">Feil Skin Fil</string> 
+  <string Field="special" Original="Special">Spesial</string> 
+  <string Field="specials" Original="Specials">Spesial</string> 
+  <string Field="delPhyiscalWarning" Original="You are about to permanently delete {0} physical file(s).\nWould you like to proceed?">"Du Holder På Og Slette {0} Fysisk(e) Fil(er).\nVil Du Fortsette?"</string> 
+  <string Field="Force_Online_Match" Original="Force Online Match">Tving Online Treff</string> 
+  <string Field="Load_via_NewsLeecher" Original="Load via NewsLeecher">Hent Via NewsLeecher</string> 
+  <string Field="Download" Original="Download">Last Ned</string> 
+  <string Field="Actions" Original="Actions">Handlinger</string> 
+  <string Field="Options" Original="Options">Valg</string> 
+  <string Field="Genres" Original="Genres">Genrer</string> 
+  <string Field="All" Original="All">Alle</string> 
+  <string Field="Latest" Original="Latest Aired">Siste</string> 
+  <string Field="Channels" Original="Channels">Kanaler</string> 
+  <string Field="Unwatched" Original="Unwatched">Usett</string> 
+  <string Field="Favourites" Original="Favourites">Favoritter</string> 
+  <string Field="updateMI" Original="Update Mediainfo of local file">Opptatter MediaInfo for Lokal Fil</string> 
+  <string Field="Cycle_Banner" Original="Cycle Banner">Velg Tilfedige Bannere</string>
+</strings>

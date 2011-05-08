@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- MP-TV-Series translation file -->
+<!-- Russian(RU) -->
+<!-- Contributed by Undel -->
+<!-- Last Updated: 27 Mar 2011 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+
+<strings>
+	<string Field="Series" Original="Series">Сериалы</string>
+	<string Field="Series_Plural" Original="Series (Plr)">Сериал</string> <!-- plural -->
+	<string Field="Season" Original="Season">Сезон</string>
+	<string Field="Seasons" Original="Seasons">Сезоны</string>
+	<string Field="Episode" Original="Episode">Эпизод</string>
+	<string Field="Episodes" Original="Episodes">Эпизоды</string>
+	<string Field="Toggle_watched_flag" Original="Toggle watched flag">Отметить как просмотренный</string>
+	<string Field="Retrieve_Subtitle" Original="Retrieve Subtitle">Получить субтитры</string>
+	<string Field="Load_via_Torrent" Original="Load via Torrent">Загрузить Torrent</string>
+	<string Field="Mark_all_as_watched" Original="Mark all as watched">Отметить все как просмотренные</string>
+	<string Field="Mark_all_as_unwatched" Original="Mark all as unwatched">Отметить все как непросмотренные</string>
+	<string Field="Hide" Original="Hide">Скрыть</string>
+	<string Field="Delete" Original="Delete">Удалить</string>
+	<string Field="Remove_series_from_Favourites" Original="Remove series from Favourites">Удалить сериал из  избранного</string>
+	<string Field="Add_series_to_Favourites" Original="Add series to Favourites">Добавить сериал в избранное</string>
+	<string Field="Force_Local_Scan" Original="Force Local Scan ">Принудительное локальное сканирование </string>
+	<string Field="Force_Online_Refresh" Original="Force Online Refresh ">Принудительное обновление онлайн </string>
+	<string Field="In_Progress_with_Barracks" Original="(In Progress)">(Прогресс)</string>
+	<string Field="Only_show_episodes_with_a_local_file" Original="Only show episodes with a local file">Показывать  только эпизоды, к которым есть файлы</string>
+	<string Field="Hide_summary_on_unwatched" Original="Hide the episode's summary on unwatched episodes">Скрыть описания  непросмотренных эпизодов</string>
+	<string Field="on" Original="on">Вкл</string>
+	<string Field="off" Original="off">Выкл</string>
+	<string Field="Play_Random_Episode" Original="Play Random Episode">Показать случайный эпизод</string>
+	<string Field="Play_Random_First_Unwatched_Episode" Original="Play Random First Unwatched Episode">Показать случайный  первый непросмотренный эпизод</string>
+	<string Field="Delete_that_series" Original="Delete that series?">Удалить этот сериал?</string>
+	<string Field="Delete_that_season" Original="Delete that season?">Удалить этот сезон?</string>
+	<string Field="Delete_that_episode" Original="Delete that episode?">Удалить этот эпизод?</string>
+	<string Field="Confirm" Original="Confirm">Подтверждение</string>
+	<string Field="Completed" Original="Completed">Завершено</string>
+	<string Field="No_subtitles_found" Original="No subtitles found">Субтитры не найдены</string>
+	<string Field="skip_Never_ask_again" Original="skip / Never ask again">Пропустить / Больше не спрашивать</string>
+	<string Field="no_results_found" Original="no results found!">ничего не найдено!</string>
+	<string Field="_Hidden_to_prevent_spoilers_" Original=" * Hidden to prevent spoilers *"> * Скрыто, чтобы не  показывать спойлеры *</string>
+	<string Field="Yes" Original="Yes">Да</string>
+	<string Field="No" Original="No">Нет</string>
+	<string Field="Error" Original="#Error">#Ошибка</string>
+	<string Field="No_items" Original="No items!">Нет содержимого!</string>
+	<string Field="Unknown" Original="Unknown">Неизвестно</string>
+	<string Field="wrongSkin" Original="Wrong Skin file">Неверный файл скина</string>
+	<string Field="special" Original="Special">Дополнение</string>
+	<string Field="specials" Original="Specials">Дополнения</string>
+	<string Field="delPhyiscalWarning" Original="You are about to permanently delete {0} physical file(s).\nWould you  like to proceed?">"Вы собираетесь удалить навсегда {0} файл(ов) с диска.\nВы хотите продолжить?"</string>
+	<string Field="Force_Online_Match" Original="Force Online Match">Принудительное соответствие онлайн</string>
+	<string Field="Load_via_NewsLeecher" Original="Load via NewsLeecher">Загрузить качалкой новостей</string>
+	<string Field="Download" Original="Download">Скачать</string>
+	<string Field="Actions" Original="Actions">Действия</string>
+	<string Field="Options" Original="Options">Опции</string>
+	<string Field="Genres" Original="Genres">Жанры</string>
+	<string Field="All" Original="All">Все</string>
+	<string Field="Latest" Original="Latest Aired">Последние</string>
+	<string Field="Channels" Original="Channels">Каналы</string>
+	<string Field="Unwatched" Original="Unwatched">непросмотренное</string>
+	<string Field="Favourites" Original="Favourites">Избранное</string>
+	<string Field="updateMI" Original="Update Mediainfo of local file">Обновить медиаинформацию файла(ов) на  диске</string>
+	<string Field="RateSeries" Original="Rate this Series">Оценить сериал</string>
+	<string Field="RateEpisode" Original="Rate this Episode">Оценить эпизод</string>
+	<string Field="ResetRating" Original="Reset Rating">Сбросить оценку</string>
+	<string Field="AskToRate" Original="Ask me to rate unrated episodes">Просить меня оценивать неоцененные серии</string>
+	<string Field="DontAskToRate" Original="Don't ask me to rate again">Больше не спрашивать у меня оценку</string>
+	<string Field="RatingStar" Original="Star">Звезда</string>
+	<string Field="RatingStars" Original="Stars">Звезды</string>
+	<string Field="ChangeView" Original="Change View">Изменить вид</string>
+	<string Field="ChangeViewFast" Original="Immediatly Change Views">Немедленно изменить виды</string>
+	<string Field="FanArt" Original="Fanart">Фанарт</string>
+	<string Field="FanListAll" Original="List all Fanart for this Series">Перечислить весь фанарт для этого сериала</string>
+	<string Field="FanArtGetAndUse" Original="Download Fanart and Use">Скачать и использовать фанарт</string>
+	<string Field="FanArtGet" Original="Download Fanart">Скачать фанарт</string>
+	<string Field="FanArtUse" Original="Set Fanart as Default">Установить фанарт по умолчанию</string>
+	<string Field="FanArtDelete" Original="Delete Fanart">Удалить фанарт</string>
+	<string Field="FanDownloadingStatus" Original="Downloading {0} Fanart...">Скачивается {0} фанарта...</string>
+	<string Field="FanArtLocal" Original="Local">Локально</string>
+	<string Field="FanArtOnline" Original="Remote">Не загружен</string>
+	<string Field="FanArtOnlineLoading" Original="Loading {0} of {1} Fanart...">Загружается {0} из {1} фанартов...</string>
+	<string Field="FanArtRandom" Original="Display random Fanart">Отобразить случайный фанарт</string>
+	<string Field="FanArtNoneFound" Original="No Fanart could be found">Не удается найти фанарт</string>
+	<string Field="CFS_Choose_Item" Original="Choose item">Выберите пункт</string>
+	<string Field="CFS_Select_Matching_Item" Original="Select matching item:">Выберите соответствующий пункт:</string>
+	<string Field="CFS_Search_Again" Original="Search again">Искать снова</string>
+	<string Field="CFS_Select_Matching_Subitle_File" Original="Select Matching Subtitle File">Выберите соответствующий файл субтитров</string>
+	<string Field="CFS_Subtitle_Episode" Original="Choose item">Эпизод:</string>
+	<string Field="CFS_Matching_Subtitles" Original="Matching Subtitles">Соотвтетствие субтитров</string>
+	<string Field="CFS_Choose_Correct_Series" Original="Choose Correct Series">Выберите нужный сериал</string>
+	<string Field="CFS_Available_Series" Original="Available Series">Доступные сериалы</string>
+	<string Field="CFS_Select_Correct_Subtitle_Version" Original="Select desired subtitles version">Выберите желаемую версию субтитров</string>
+	<string Field="CFS_Select_Version" Original="Version:">Версия:</string>
+	<string Field="CFS_Choose_Correct_Episode" Original="Choose Correct Episode">Выберите нужный эпизод</string>
+	<string Field="CFS_Local_Episode_Index" Original="Local Episiode index:">Список локальных эпизодов:</string>
+	<string Field="CFS_Available_Episode_List" Original="Available Episode list:">Список доступных эпизодов:</string>
+	<string Field="CFS_Choose_Search_Site" Original="Choose search site:">Выберите поисковый сайт:</string>
+	<string Field="CFS_List_Search_Site" Original="List of search sites:">Список поисковых сайтов:</string>
+	<string Field="CFS_Found_Torrents" Original="Found torrents:">Найдено торрентов:</string>
+	<string Field="CFS_Looking_For" Original="Looking for:">Искать:</string>
+	<string Field="CFS_Choose_Correct_Season" Original="Choose correct season">Выберите нужный сезон</string>
+	<string Field="CFS_Local_Season_Index" Original="Local Season index:">Список локальных сезонов:</string>
+	<string Field="CFS_Available_Seasons" Original="Available Seasons list:">Список доступных сезонов:</string>
+	<string Field="CYN_Subtitle_File_Replace" Original="Subtitle File Replace">Замена файла субтитров</string>
+	<string Field="CYN_Old_Subtitle_Replace" Original="Old subtitle File present: overwrite?">Присутствует старый файл субтитров: перезаписать?</string>
+	<string Field="RecentlyAdded" Original="Recently Added">Недавно добавленные</string>
+	<string Field="TVDB_ERROR_TITLE" Original="theTVDB Error">ошибка theTVDB</string>
+	<string Field="TVDB_INFO_TITLE" Original="theTVDB">theTVDB</string>
+	<string Field="TVDB_INFO_ACCOUNTID_1" Original="Account Identifier is not set">Не установлен идентификатор аккаунта</string>
+	<string Field="TVDB_INFO_ACCOUNTID_2" Original="Enter your online account ID in Configuration">Ввведите в настройках ваш онлайновый идентификатор пользователя</string>
+	<string Field="TVDB_ERROR_UNAVAILABLE_1" Original="TheTVDB.com is currently unavailable">TheTVDB.com сейчас недоступен,</string>
+	<string Field="TVDB_ERROR_UNAVAILABLE_2" Original="Please try again later">попробуйте позднее</string>
+	<string Field="NETWORK_ERROR_UNAVAILABLE_1" Original="Network connection is unavailable">Подключение к сети недоступно,</string>
+	<string Field="NETWORK_ERROR_UNAVAILABLE_2" Original="Check your connection and try again">проверьте соединение и попробуйте снова</string>
+	<string Field="Playlist" Original="Playlist">Плейлист</string>
+  <string Field="LastOnlineUpdate" Original="LastOnlineUpdate">Последние обновление онлайн</string>
+	<string Field="ShowSeriesFanart" Original="Show Fanart in Series View">Отображать фанарт при просмотре сериалов</string>
+	<string Field="ChangeLayout" Original="Change Layout">Изменить представление</string>
+	<string Field="UseOnlineFavourites" Original="Use Online Favourites">Использовать избранное онлайн</string>
+	<string Field="AddToPlaylist" Original="Add To Playlist">Добавить в плейлист</string>
+	<string Field="FanartDisableLabel" Original="Disabled">Отключено</string>
+	<string Field="FanartMenuEnable" Original="Enable Fanart">Включить фанарт</string>
+	<string Field="FanartMenuDisable" Original="Disable Fanart">Отключить фанарт</string>
+	<string Field="SortByStrings" Original="SortByStrings">the|a|an</string><!--Additional ones should be added for other languages, dont translate existing ones as they will be used as well-->
+	<string Field="LayoutList" Original="List">Отображение списка</string>
+	<string Field="LayoutListBanners" Original="List Banners">Отображение баннерами</string>
+	<string Field="LayoutListPosters" Original="List Posters">Отображение постерами</string>
+	<string Field="LayoutWideBanners" Original="Wide Banners">Отображение широкими баннерами</string>
+	<string Field="LayoutFilmstrip" Original="Filmstrip">Отображение "кинопленкой"</string>
+	<string Field="LayoutSmallIcons" Original="Small Icons">Отображение маленькими иконками</string>
+	<string Field="ButtonAutoPlay" Original="Auto Play">Автовоспроизведение</string>
+	<string Field="ButtonSwitchView" Original="Switch View">Переключить вид</string>
+	<string Field="ButtonRunImport" Original="Run Import">Произвести импорт</string>
+	<string Field="ButtonChangeLayout" Original="Change Layout">Изменить отображение</string>
+	<string Field="ButtonOptions" Original="Options">Опции</string>	
+	<string Field="FanArtFilter" Original="Filter">Фильтр</string>
+	<string Field="FanArtFilterAll" Original="All">Все</string>
+	<string Field="ButtonRandomFanart" Original="Random Fanart">Случайный фанарт</string>	
+	<string Field="LabelResolution" Original="Resolution:">Разрешение:</string>
+	<string Field="LabelChosen" Original="Chosen:">Выбрано:</string>
+	<string Field="LabelDisabled" Original="Disabled:">Отключено:</string>
+	<string Field="ResetUserSelections" Original="Reset User Selections">Сбросить пользовательский выбор</string>
+	<string Field="DeleteFromDisk" Original="Delete from Disk">Удалить с диска</string>
+	<string Field="DeleteFromDatabase" Original="Delete from Database">Удалить из базы данных</string>
+	<string Field="DeleteFromFileDatabase" Original="Delete from Disk and Database">Удалить с диска и из базы данных</string>
+	<string Field="RateDialogLabel" Original="Select Your Rating for {0}">Установите ваш рейтинг для {0}</string>
+	<string Field="Hide_thumbnail_on_unwatched" Original="Hide Spoiler Thumbnails">Скрыть спойлерные скриншоты</string>	
+	<!-- Rate Descriptions - 5 Stars-->
+	<string Field="RateFiveStarOne" Original="Terrible">Ужасно</string>
+	<string Field="RateFiveStarTwo" Original="">Посредственно</string>
+	<string Field="RateFiveStarThree" Original="">Хорошо</string>
+	<string Field="RateFiveStarFour" Original="">Супер</string>
+	<string Field="RateFiveStarFive" Original="">Идеально</string>
+	<!-- Rate Descriptions - 10 Stars-->
+	<string Field="RateTenStarOne" Original="Abysmal">Отстой</string>
+	<string Field="RateTenStarTwo" Original="Terrible">Ужасно</string>
+	<string Field="RateTenStarThree" Original="Bad">Плохо</string>
+	<string Field="RateTenStarFour" Original="Poor">Неважно</string>
+	<string Field="RateTenStarFive" Original="Mediocre">Посредственно</string>
+	<string Field="RateTenStarSix" Original="Fair">Ничего так</string>
+	<string Field="RateTenStarSeven" Original="Good">Хорошо</string>
+	<string Field="RateTenStarEight" Original="Great">Здорово</string>
+	<string Field="RateTenStarNine" Original="Superb">Супер</string>
+	<string Field="RateTenStarTen" Original="Perfect">Идеально</string>
+	<string Field="ContentRating" Original="Content Rating">Рейтинг содержания</string>
+	<string Field="ViewTags" Original="View Tags">Посмотреть тэги</string>
+	<string Field="AddViewTag" Original="Add Series to View Tag">Добавить сериал к виду</string>
+	<string Field="RemoveViewTag" Original="Remove Series from View Tag">Убрать сериал из вида</string>
+	<string Field="NewViewTag" Original="New Tag">Новый вид</string>
+	<string Field="CycleSeriesBanner" Original="Cycle Series Banner">Чередовать баннер сериала</string>
+	<string Field="CycleSeasonBanner" Original="Cycle Season Poster">Чередовать постер сезона</string>
+	<string Field="CycleSeriesPoster" Original="Cycle Series Poster">Чередовать постер сериала</string>
+	<string Field="FanartRandomInterval" Original="Fanart Timer Interval">Интервал таймера фанарта</string>
+	<string Field="FanartIntervalFiveSeconds" Original="5 Seconds">5 секунд</string>
+	<string Field="FanartIntervalTenSeconds" Original="10 Seconds">10 секунд</string>
+	<string Field="FanartIntervalFifteenSeconds" Original="15 Seconds">15 секунд</string>
+	<string Field="FanartIntervalThirtySeconds" Original="30 Seconds">30 секунд</string>
+	<string Field="FanartIntervalFortyFiveSeconds" Original="45 Seconds">45 секунд</string>
+	<string Field="FanartIntervalSixtySeconds" Original="60 Seconds">60 секунд</string>
+	<string Field="NoPlaylistsFound" Original="No Playlists found in:">Не найдено плейлистов в:</string>
+	<string Field="PinCode" Original="Pin Code">Пин-код</string>
+	<string Field="PinCodeIncorrectLine1" Original="The entered pin code is incorrect">Введенный пин-код неверен</string>
+	<string Field="PinCodeIncorrectLine2" Original="Press OK to try again">Нажмите OK чтобы попробовать опять</string>
+	<string Field="ParentalControlLocked" Original="Lock Views">Заблокировать виды</string>
+	<string Field="ViewIsLocked" Original="View Locked">Вид заблокирован</string>
+	<string Field="PinCodeDlgLabel1" Original="The view {0} is locked">Вид "{0}" заблокирован</string>
+	<string Field="PinCodeDlgLabel2" Original="Enter in 4 Digit Pin Code to proceed:">Введите 4-значный пин-код для продолжения:</string>
+	<string Field="PinCodeMessageIncorrect" Original="Pin Incorrect">Неверный пин</string>	
+	<string Field="Continuing" Original="Continuing Series">Продолжающийся серриал</string>
+	<string Field="Ended" Original="Ended Series">Закончившийся сериал</string>
+	<string Field="HighDefinition" Original="High Definition">Высокая четкость</string>
+	<string Field="StandardDefinition" Original="Standard Defintion">Стандартная четкость</string>
+	<string Field="Top10Online" Original="Top 10 (Online)">Топ 10 (онлайн)</string>
+	<string Field="Top10User" Original="Top 10 (User)">Топ 10 (пользовательские)</string>
+	<string Field="Top25Online" Original="Top 25 (Online)">Топ 25 (онлайн)</string>
+	<string Field="Top25User" Original="Top 25 (User)">Топ 25(пользовательские)</string>
+	<string Field="Subtitles" Original="Subtitles">Субтитры</string>
+	<string Field="MultiAudio" Original="Multiple Audio Tracks">Несколько звуковых дорожек</string>
+	<string Field="OnlineFavourites" Original="Online Favourites">Избранное онлайн</string>	
+	<string Field="Actors" Original="Actors">Актеры</string>
+	<string Field="RemovableMedia" Original="Removable Media">Съемный носитель</string>
+	<string Field="LocalMedia" Original="Local Media">Локальный носитель</string>
+	<string Field="AdultSeries" Original="Adult Series">Сериал "для взрослых"</string>
+	<string Field="KidsSeries" Original="Kids Series">Детский сериал</string>
+	<string Field="ClearFanartCache" Original="Clear Fanart Cache">Очистить кэш фанарта</string>
+	<string Field="DeleteThumbnailsHeading" Original="Delete Thumbnails">Удалить скриншоты</string>
+	<string Field="DeleteThumbnailsLine1" Original="Would you also like to Delete and Re-Download">Вы бы хотели также удалить и загрузить снова?</string>
+	<string Field="DeleteThumbnailsLine2" Original="all episode thumbnails?">все скриншоты эпизода?</string>
+	<string Field="RateDialog" Original="Rate Dialog">Оценка</string>
+	<string Field="PinCodeDialog" Original="Pin Code Dialog">Ввод PIN-кода</string>
+	<string Field="Aired" Original="Aired">Дата показа</string>
+	<string Field="AiredStatusContinuing" Original="Continuing">Продолжается</string>
+	<string Field="AiredStatusEnded" Original="Ended">Закончился</string>
+	<string Field="AirsDay" Original="Airs Day">День показов</string>
+	<string Field="AirsTime" Original="Airs Time">Время показов</string>
+	<string Field="Certification" Original="Certification">Сертификация</string>    
+	<string Field="Director" Original="Director">Режиссер</string>
+	<string Field="Directors" Original="Directors">Режиссеры</string>    
+	<string Field="File Size" Original="File Size">Размер файла</string>
+	<string Field="FirstAired" Original="First Aired">Первый показ</string>
+	<string Field="Genre" Original="Genre">Жанр</string>
+	<string Field="Group" Original="Groups">Группа</string>
+	<string Field="Groups" Original="Groups">Группы</string>
+	<string Field="GuestStar" Original="Guest Star">Приглашенная звезда</string>
+	<string Field="GuestStars" Original="Guest Stars">Приглашенные звезды</string>
+	<string Field="MediaInfo" Original="Media Info">Медиаинформация</string>
+	<string Field="Minutes" Original="Minutes">Минуты</string>
+  <string Field="MyRating" Original="My Rating">Мой рейтинг</string>
+	<string Field="Network" Original="Network">Сеть</string>
+	<string Field="Rated" Original="Rated">Оценен</string>
+	<string Field="Rating" Original="Rating">Рейтинг</string>
+	<string Field="Runtime" Original="Runtime">Время</string>
+	<string Field="SeriesDetails" Original="Series Details">Данные о сериале</string>
+  <string Field="SeriesStatus" Original="Series Status">Статус сериала</string>
+  <string Field="Watched" Original="Watched">Просмотрен</string>
+  <string Field="Writer" Original="Writer">Сценарист</string>
+  <string Field="Writers" Original="Writers">Сценаристы</string>
+	<string Field="ResetIgnoredDownloadedFiles" Original="Reset Ignored Downloaded Files">Сброс игнорирования загруженных файлов</string>
+  <string Field="GetSubtitlesFrom" Original="Get subtitles from?">Откуда загружать субтитры?</string>
+  <string Field="EnabledSubtitleSites" Original="Enabled subtitle sites:">Включены сайты субтитров:</string>
+  <string Field="PlayNow" Original="Play Now">Воспроизвести</string>
+  <string Field="NoSubtitleDownload" Original="No Subtitle Download">Субтитры не загружены</string>
+  <string Field="DeleteSubtitles" Original="Delete Subtitles">Удалить субтитры</string>
+  <string Field="EpisodeFilenameEmpty" Original="Episode Filename is Empty in Database">В базе данных имя файла не указано</string>
+  <string Field="UnableToDeleteSubtitleFile" Original="Unable to Delete Subtitle File: {0}">Невозможно удалить файл субтитров: {0}</string>
+  <string Field="PathNotAvailable" Original="Path is not available: {0}">Путь недоступен: {0}</string>
+  <string Field="UnableToDeleteSubtitles" Original="Unable to Delete Subtitles">Невозможно удалить субтитры</string>
+  <string Field="ErrorClear" Original="Error">Ошибка</string>
+  <string Field="UnableToRetrieveSubtitles" Original="Unable to retrieve subtitles">Невозможно получитть субтитры</string>
+  <string Field="NoSubtitlesFoundOrRetrieved" Original="No subtitles found or retrieved">Не удалось найти или получить субтитры</string>
+  <string Field="UnableToDelete" Original="Unable to Delete">Удаление невозможно</string>
+  <string Field="UnableToDeleteFile" Original="Unable to Delete File: {0}">Невозможно удалить файл: {0}</string>
+  <string Field="PlaySomething" Original="Play...">Воспроизвести...</string>
+  <string Field="PlayError" Original="Play error">Ошибка воспроизведения</string>
+  <string Field="RandomEpisode" Original="random episode">случайный эпизод</string>
+  <string Field="FirstUnwatchedEpisode" Original="first unwatched episode">первый непросмотренный эпизод</string>
+  <string Field="RandomUnwatchedEpisode" Original="random unwatched episode">случайный непросмотренный эпизод</string>
+  <string Field="LatestEpisode" Original="latest episode">последний эпизод</string>
+  <string Field="UnableToFindAny" Original="Unable to find any {0}">Невозможно найти {0}</string>
+  <string Field="UnableToFindAnyEpisode" Original="Unable to find any episode">Невозможно найти эпизоды</string>
+  <string Field="SortBy" Original="Sort By">Сортировка по</string>
+  <string Field="DVDOrder" Original="DVD Order">Порядку на DVD</string>
+  <string Field="AiredOrder" Original="Aired Order">Порядку показа</string>
+  <string Field="AbsoluteOrder" Original="Absolute Order">Порядку нумерации</string>
+  <string Field="Title" Original="Title">Название</string>
+  <string Field="ChangeOnlineMatchOrder" Original="Change Online Matching Method">Изменить метод соответствия онлайн</string>
+  <string Field="InsertDiskMessageLine1" Original="The media for the episode you have selected">Носитель для выбранного эпизода</string>
+  <string Field="InsertDiskMessageLine2" Original="is currently not available.">сейчас не доступен.</string>
+  <string Field="InsertDiskMessageLine3" Original="Please insert or connect media">Подключите или вставьте носитель</string>
+  <string Field="InsertDiskMessageLine4" Original="labeled: {0}">с меткой: {0}</string>
+  <string Field="ShowHiddenItems" Original="Show Hidden Items">Показать скрытые пункты</string>
+  <string Field="UnHide" Original="UnHide">Сделать видимым</string>
+  <string Field="CFS_Skip" Original="Skip">Пропустить</string>
+  <string Field="CFS_No_Match_Manual_Search" Original="No Match Found, Manual Search...">Соответствие не найдено, ручной поиск...</string>
+  <string Field="CFS_Local_Series" Original="Local Series:">Локальный сериал:</string>
+  <string Field="AvailableMedia" Original="Available Media">Доступные носители</string>
+  <string Field="Votes" Original="votes">голоса</string>
+  <string Field="LayoutCoveflow" Original="Coveflow">Отображение обложками</string>
+  <string Field="TraktError" Original="Trakt Error">Ошибка тракта</string>
+  <string Field="TraktNotEnoughInfo" Original="Not enough information to send to server.">Недостаточно информации для отправки запроса.</string>
+  <string Field="ResumeEpisode" Original="Resume episode from last time?">Продолжить эпизод с прошлого раза?</string>
+  <string Field="SummaryNotAvailable" Original="No summary is currently available.">Краткого описания пока нет.</string>
+  <string Field="Timeout" Original="Timeout">Время истекло</string>
+  <string Field="NoActors" Original="There are no Actors for this series.">Актеров для данного сериала нет.</string>
+  <string Field="GettingActors" Original="Getting Actors from Online">Загрзка данных об актерах из Интернета</string>
+</strings>

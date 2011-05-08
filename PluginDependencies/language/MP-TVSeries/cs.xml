@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- MP-TV-Series translation file -->
+<!-- Czech (CS) -->
+<!-- Last Updated: 11th Jan 2010 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+
+<strings>
+	<string Field="Series" Original="Series">TV pořad</string>
+	<string Field="Series_Plural" Original="Series (Plr)">TV pořady</string> <!-- plural -->
+	<string Field="Season" Original="Season">Řada</string>
+	<string Field="Seasons" Original="Seasons">Řad</string>
+	<string Field="Episode" Original="Episode">Epizoda</string>
+	<string Field="Episodes" Original="Episodes">Epizod</string>
+	<string Field="Toggle_watched_flag" Original="Toggle watched flag">Přepnout zhlédnutí</string>
+	<string Field="Retrieve_Subtitle" Original="Retrieve Subtitle">Získat titulky</string>
+	<string Field="Load_via_Torrent" Original="Load via Torrent">Stáhnout jako torrent</string>
+	<string Field="Mark_all_as_watched" Original="Mark all as watched">Označit vše za zhlédnuté</string>
+	<string Field="Mark_all_as_unwatched" Original="Mark all as unwatched">Označit vše za nezhlédnuté</string>
+	<string Field="Hide" Original="Hide">Skrýt</string>
+	<string Field="Delete" Original="Delete">Odstranit</string>
+	<string Field="Remove_series_from_Favourites" Original="Remove series from Favourites">Odstranit z Oblíbených</string>
+	<string Field="Add_series_to_Favourites" Original="Add series to Favourites">Přidat do Oblíbených</string>
+	<string Field="Force_Local_Scan" Original="Force Local Scan ">Vyvolat lokální kontrolu </string>
+	<string Field="Force_Online_Refresh" Original="Force Online Refresh ">Vyvolat online aktualizaci </string>
+	<string Field="In_Progress_with_Barracks" Original="(In Progress)">(ve vývoji)</string>
+	<string Field="Only_show_episodes_with_a_local_file" Original="Only show episodes with a local file">Zobrazit jen dostupné epizody</string>
+	<string Field="Hide_summary_on_unwatched" Original="Hide the episode's summary on unwatched episodes">Skrýt zápletky nezhlédnutých</string>
+	<string Field="on" Original="on">zapnuto</string>
+	<string Field="off" Original="off">vypnuto</string>
+	<string Field="Play_Random_Episode" Original="Play Random Episode">Přehrát náhodnou epizodu</string>
+	<string Field="Play_Random_First_Unwatched_Episode" Original="Play Random First Unwatched Episode">Přehrát náhodnou první nezhlédnutou epizodu</string>
+	<string Field="Delete_that_series" Original="Delete that series?">Odstranit tento TV pořad?</string>
+	<string Field="Delete_that_season" Original="Delete that season?">Odstranit tuto řadu?</string>
+	<string Field="Delete_that_episode" Original="Delete that episode?">Odstranit tuto epizodu?</string>
+	<string Field="Confirm" Original="Confirm">Potvrdit</string>
+	<string Field="Completed" Original="Completed">Dokončeno</string>
+	<string Field="No_subtitles_found" Original="No subtitles found">Žádné titulky nenalezeny</string>
+	<string Field="CFS_Skip_Never_Ask_Again" Original="Skip / Never ask again">Přeskočit / Již se nedotazovat</string>
+	<string Field="CFS_No_Results_Found" Original="No results found!">Žádné výsledky nenalezeny!</string>
+	<string Field="_Hidden_to_prevent_spoilers_" Original=" * Hidden to prevent spoilers *"> * Skryto kvůli prozrazení *</string>
+	<string Field="Yes" Original="Yes">Ano</string>
+	<string Field="No" Original="No">Ne</string>
+	<string Field="Error" Original="#Error">#Error</string>
+	<string Field="No_items" Original="No items!">Žádné položky!</string>
+	<string Field="Unknown" Original="Unknown">Neznámé</string>
+	<string Field="wrongSkin" Original="Wrong Skin file">Chybný soubor vzhledu</string>
+	<string Field="special" Original="Special">Speciál</string>
+	<string Field="specials" Original="Specials">Speciály</string>
+	<string Field="delPhyiscalWarning" Original="You are about to permanently delete {0} physical file(s).\nWould you like to proceed?">"Chystáte se trvale odstranit {0} souborů.\nPřejete si pokračovat?"</string>
+	<string Field="Force_Online_Match" Original="Force Online Match">Vyvolat online porovnání</string>
+	<string Field="Load_via_NewsLeecher" Original="Load via NewsLeecher">Stáhnout pomocí NewsLeecher</string>
+	<string Field="Download" Original="Download">Stáhnout</string>
+	<string Field="Actions" Original="Actions">Akce</string>
+	<string Field="Options" Original="Options">Možnosti</string>
+	<string Field="Genres" Original="Genres">Žánry</string>
+	<string Field="All" Original="All">Vše</string>
+	<string Field="Latest" Original="Latest Aired">Aktuální</string>
+	<string Field="Channels" Original="Channels">Kanály</string>
+	<string Field="Unwatched" Original="Unwatched">Nezhlédnuté</string>
+	<string Field="Favourites" Original="Favourites">Oblíbené</string>
+	<string Field="updateMI" Original="Update Mediainfo of local file">Aktualizovat údaje o médiích</string>
+	<string Field="RateSeries" Original="Rate this Series">Zhodnoťte tento pořad</string>
+	<string Field="RateEpisode" Original="Rate this Episode">Zhodnoťte tuto epizodu</string>
+	<string Field="ResetRating" Original="Reset Rating">Odstranit hodnocení</string>
+	<string Field="AskToRate" Original="Ask me to rate unrated episodes">Ptát se na hodnocení nehodnocených epizod</string>
+	<string Field="DontAskToRate" Original="Don't ask me to rate again">Již se neptat na hodnocení</string>
+	<string Field="RatingStar" Original="Star">hvězdička</string>
+	<string Field="RatingStars" Original="Stars">hvězdiček</string>
+	<string Field="ChangeView" Original="Change View">Změnit pohled</string>
+	<string Field="ChangeViewFast" Original="Immediatly Change Views">Změnit pohled nyní</string>
+	<string Field="FanArt" Original="Fanart">Pozadí</string>
+	<string Field="FanListAll" Original="List all Fanart for this Series">Ukázat všechna pozadí pro tento pořad</string>
+	<string Field="FanArtGetAndUse" Original="Download Fanart and Use">Stáhnout a použít pozadí</string>
+	<string Field="FanArtGet" Original="Download Fanart">Stáhnout pozadí</string>
+	<string Field="FanArtUse" Original="Set Fanart as Default">Nastavit pozadí jako výchozí</string>
+	<string Field="FanArtDelete" Original="Delete Fanart">Odstranit pozadí</string>
+	<string Field="FanDownloadingStatus" Original="Downloading {0} Fanart...">Stahuje se {0} pozadí...</string>
+	<string Field="FanArtLocal" Original="Available locally">Dostupné</string>
+	<string Field="FanArtOnline" Original="Available for downloading">K dispozici ke stažení</string>
+	<string Field="FanArtOnlineLoading" Original="Loading {0} of {1} Fanart...">Stahuje se {0} z {1} pozadí...</string>
+	<string Field="FanArtRandom" Original="Display random Fanart">Zobrazit náhodná pozadí</string>
+	<string Field="FanArtNoneFound" Original="No Fanart could be found">Žádné pozadí nenalezeno</string>
+	<string Field="CFS_Choose_Item" Original="Choose item">Zvolte položku</string>
+	<string Field="CFS_Select_Matching_Item" Original="Select matching item:">Zvolte odpovídající položku:</string>
+	<string Field="CFS_Search_Again" Original="Search again">Vyhledat znovu</string>
+	<string Field="CFS_Select_Matching_Subitle_File" Original="Select Matching Subtitle File">Zvolte odpovídající soubor titulků</string>
+	<string Field="CFS_Subtitle_Episode" Original="Choose item">Epizoda:</string>
+	<string Field="CFS_Matching_Subtitles" Original="Matching Subtitles">Odpovídající titulky</string>
+	<string Field="CFS_Choose_Correct_Series" Original="Choose Correct Series">Zvolte správný pořad</string>
+	<string Field="CFS_Available_Series" Original="Available Series">Dostupné pořady</string>
+	<string Field="CFS_Select_Correct_Subtitle_Version" Original="Select desired subtitles version">Zvolte požadovanou verzi titulků</string>
+	<string Field="CFS_Select_Version" Original="Version:">Verze:</string>
+	<string Field="CFS_Choose_Correct_Episode" Original="Choose Correct Episode">Zvolte správnou epizodu</string>
+	<string Field="CFS_Local_Episode_Index" Original="Local Episiode index:">Index místní epizody:</string>
+	<string Field="CFS_Available_Episode_List" Original="Available Episode list:">Seznam dostupných epizod:</string>
+	<string Field="CFS_Choose_Search_Site" Original="Choose search site:">Zvolte stránku k vyhledání:</string>
+	<string Field="CFS_List_Search_Site" Original="List of search sites:">Seznam stránek k vyhledání:</string>
+	<string Field="CFS_Found_Torrents" Original="Found torrents:">Nalezené torrenty:</string>
+	<string Field="CFS_Looking_For" Original="Looking for:">Hledá se:</string>
+	<string Field="CFS_Choose_Correct_Season" Original="Choose correct season">Zvolte správnou řadu</string>
+	<string Field="CFS_Local_Season_Index" Original="Local Season index:">Index místní řady:</string>
+	<string Field="CFS_Available_Seasons" Original="Available Seasons list:">Seznam dostupných řad:</string>
+	<string Field="CYN_Subtitle_File_Replace" Original="Subtitle File Replace">Nahrazení souboru titulků</string>
+	<string Field="CYN_Old_Subtitle_Replace" Original="Old subtitle File present: overwrite?">Soubor titulků již existuje. Přepsat?</string>
+	<string Field="RecentlyAdded" Original="Recently Added">Nedávno přidané</string>
+	<string Field="TVDB_ERROR_TITLE" Original="theTVDB Error">Chyba theTVDB</string>
+	<string Field="TVDB_INFO_TITLE" Original="theTVDB">theTVDB</string>
+	<string Field="TVDB_INFO_ACCOUNTID_1" Original="Account Identifier is not set">Identifikátor účtu není nastaven.</string>
+	<string Field="TVDB_INFO_ACCOUNTID_2" Original="Enter your online account ID in Configuration">Zadejte ID vašeho účtu v konfiguraci.</string>
+	<string Field="ShowSeriesFanart" Original="Show Fanart in Series View">Zobrazit pozadí v přehledu pořadů</string>
+	<string Field="ChangeLayout" Original="Change Layout">Změnit zobrazení</string>
+	<string Field="UseOnlineFavourites" Original="Use Online Favourites">Používat Oblíbené online</string>
+	<string Field="AddToPlaylist" Original="Add To Playlist">Přidat do playlistu</string>
+	<string Field="FanartDisableLabel" Original="Disabled">Zakázáno</string>
+	<string Field="FanartMenuEnable" Original="Enable Fanart">Povolit pozadí</string>
+	<string Field="FanartMenuDisable" Original="Disable Fanart">Zakázat pozadí</string>
+	<string Field="SortByStrings" Original="SortByStrings">the|a|an</string><!--Additional ones should be added for other languages, dont translate existing ones as they will be used as well-->
+	<string Field="LayoutList" Original="List">Seznam</string>
+	<string Field="LayoutListBanners" Original="List Banners">Seznam s bannery</string>
+	<string Field="LayoutListPosters" Original="List Posters">Seznam s plakáty</string>
+	<string Field="LayoutWideBanners" Original="Wide Banners">Široké bannery</string>
+	<string Field="LayoutFilmstrip" Original="Filmstrip">Filmový pás</string>
+	<string Field="LayoutSmallIcons" Original="Small Icons">Malé ikony</string>
+	<string Field="ButtonAutoPlay" Original="Auto Play">Auto Play</string>
+	<string Field="ButtonSwitchView" Original="Switch View">Změnit pohled</string>
+	<string Field="ButtonRunImport" Original="Run Import">Spustit import</string>
+	<string Field="ButtonChangeLayout" Original="Change Layout">Změnit zobrazení</string>
+	<string Field="ButtonOptions" Original="Options">Možnosti</string>
+	<string Field="FanArtFilter" Original="Filter">Filtr</string>
+	<string Field="FanArtFilterAll" Original="All">Vše</string>
+	<string Field="ButtonRandomFanart" Original="Random Fanart">Náhodné pozadí</string>
+	<string Field="LabelResolution" Original="Resolution:">Rozlišení:</string>
+	<string Field="LabelChosen" Original="Chosen:">Zvoleno:</string>
+	<string Field="LabelDisabled" Original="Disabled:">Zakázáno:</string>
+	<string Field="ResetUserSelections" Original="Reset User Selections">Resetovat uživatelská nastavení</string>
+	<string Field="DeleteFromDisk" Original="Delete from Disk">Odstranit z disku</string>
+	<string Field="DeleteFromDatabase" Original="Delete from Database">Odstranit z databáze</string>
+	<string Field="DeleteFromFileDatabase" Original="Delete from Disk and Database">Odstranit z disku a databáze</string>
+	<string Field="RateDialogLabel" Original="Select Your Rating for {0}">Zvolte hodnocení pro {0}</string>
+	<string Field="Hide_thumbnail_on_unwatched" Original="Hide Spoiler Thumbnails">Skrýt náhledy nezhlédnutých</string>
+	<!-- Rate Descriptions - 5 Stars-->
+	<string Field="RateFiveStarOne" Original="Terrible">Otřesné</string>
+	<string Field="RateFiveStarTwo" Original="">Slabé</string>
+	<string Field="RateFiveStarThree" Original="">Slušné</string>
+	<string Field="RateFiveStarFour" Original="">Skvělé</string>
+	<string Field="RateFiveStarFive" Original="">Perfektní</string>
+	<!-- Rate Descriptions - 10 Stars-->
+	<string Field="RateTenStarOne" Original="Abysmal">Hrozné</string>
+	<string Field="RateTenStarTwo" Original="Terrible">Otřesné</string>
+	<string Field="RateTenStarThree" Original="Bad">Zlé</string>
+	<string Field="RateTenStarFour" Original="Poor">Slabé</string>
+	<string Field="RateTenStarFive" Original="Mediocre">Průměrné</string>
+	<string Field="RateTenStarSix" Original="Fair">Slušné</string>
+	<string Field="RateTenStarSeven" Original="Good">Dobré</string>
+	<string Field="RateTenStarEight" Original="Great">Skvělé</string>
+	<string Field="RateTenStarNine" Original="Superb">Výborné</string>
+	<string Field="RateTenStarTen" Original="Perfect">Perfektní</string>
+	<string Field="ContentRating" Original="Content Rating">Hodnocení obsahu</string>
+	<string Field="ViewTags" Original="View Tags">Vlastní</string>
+	<string Field="AddViewTag" Original="Add Series to View Tag">Přidat pořad do pohledu</string>
+	<string Field="RemoveViewTag" Original="Remove Series from View Tag">Odstranit pořad z pohledu</string>
+	<string Field="NewViewTag" Original="New Tag">Nový pohled</string>
+	<string Field="CycleSeriesBanner" Original="Cycle Series Banner">Další banner pořadu</string>
+	<string Field="CycleSeasonBanner" Original="Cycle Season Poster">Další pozadí řady</string>
+	<string Field="CycleSeriesPoster" Original="Cycle Series Poster">Další pozadí pořadu</string>
+	<string Field="FanartRandomInterval" Original="Fanart Timer Interval">Interval změny pozadí</string>
+	<string Field="FanartIntervalFiveSeconds" Original="5 Seconds">5 sekund</string>
+	<string Field="FanartIntervalTenSeconds" Original="10 Seconds">10 sekund</string>
+	<string Field="FanartIntervalFifteenSeconds" Original="15 Seconds">15 sekund</string>
+	<string Field="FanartIntervalThirtySeconds" Original="30 Seconds">30 sekund</string>
+	<string Field="FanartIntervalFortyFiveSeconds" Original="45 Seconds">45 sekund</string>
+	<string Field="FanartIntervalSixtySeconds" Original="60 Seconds">60 sekund</string>
+	<string Field="NoPlaylistsFound" Original="No Playlists found in:">Žádné playlisty v umístění:</string>
+	<string Field="PinCode" Original="Pin Code">PIN kód</string>
+	<string Field="PinCodeIncorrectLine1" Original="The entered pin code is incorrect">Byl vložen chybný PIN kód.</string>
+	<string Field="PinCodeIncorrectLine2" Original="Press OK to try again">Stiskněte OK pro další pokus.</string>
+	<string Field="ParentalControlLocked" Original="Lock Views">Zamknout pohledy</string>
+	<string Field="ViewIsLocked" Original="View Locked">Pohled uzamčen</string>
+	<string Field="PinCodeDlgLabel1" Original="The view {0} is locked">Pohled "{0}" je uzamčen.</string>
+	<string Field="PinCodeDlgLabel2" Original="Enter in 4 Digit Pin Code to proceed:">Zadejte čtyřčíselný PIN kód pro pokračování:</string>
+	<string Field="PinCodeMessageIncorrect" Original="Pin Incorrect">Neplatný PIN kód</string>
+	<string Field="Continuing" Original="Continuing Series">Vysílané pořady</string>
+	<string Field="Ended" Original="Ended Series">Ukončené pořady</string>
+	<string Field="HighDefinition" Original="High Definition">Vysoké rozlišení</string>
+	<string Field="StandardDefinition" Original="Standard Defintion">Běžné rozlišení</string>
+	<string Field="Top10Online" Original="Top 10 (Online)">Top 10 (online)</string>
+	<string Field="Top10User" Original="Top 10 (User)">Top 10 (uživatel)</string>
+	<string Field="Top25Online" Original="Top 25 (Online)">Top 25 (online)</string>
+	<string Field="Top25User" Original="Top 25 (User)">Top 25 (uživatel)</string>
+	<string Field="Subtitles" Original="Subtitles">S titulky</string>
+	<string Field="MultiAudio" Original="Multiple Audio Tracks">Více zvukových stop</string>
+	<string Field="OnlineFavourites" Original="Online Favourites">Oblíbené online</string>
+	<string Field="Actors" Original="Actors">Herci</string>
+	<string Field="RemovableMedia" Original="Removable Media">Vyměnitelná úložiště</string>
+	<string Field="LocalMedia" Original="Local Media">Místní úložiště</string>
+	<string Field="AdultSeries" Original="Adult Series">Pořady pro dospělé</string>
+	<string Field="KidsSeries" Original="Kids Series">Pořady pro děti</string>
+	<string Field="ClearFanartCache" Original="Clear Fanart Cache">Aktualizovat nabízená pozadí</string>
+	<string Field="DeleteThumbnailsHeading" Original="Delete Thumbnails">Odstranit náhledy</string>
+	<string Field="DeleteThumbnailsLine1" Original="Would you also like to Delete and Re-Download">Přejete si také odstranit a znovu stáhnout</string>
+	<string Field="DeleteThumbnailsLine2" Original="all episode thumbnails?">náhledy všech epizod?</string>
+	<string Field="RateDialog" Original="Rate Dialog">Dialog hodnocení</string>
+	<string Field="PinCodeDialog" Original="Pin Code Dialog">Dialog PIN kódu</string>
+	<string Field="Aired" Original="Aired">Premiéra</string>
+	<string Field="AiredStatusContinuing" Original="Continuing">Vysílán</string>
+	<string Field="AiredStatusEnded" Original="Ended">Ukončen</string>
+	<string Field="Airs" Original="Airs">Vysílán</string>
+	<string Field="AirsDay" Original="Airs Day">Vysílací den</string>
+	<string Field="AirsTime" Original="Airs Time">Vysílací čas</string>
+	<string Field="Cast" Original="Cast">Hrají</string>
+	<string Field="Certification" Original="Certification">Certifikace</string>
+	<string Field="Director" Original="Director">Režisér</string>
+	<string Field="Directors" Original="Directors">Režiséři</string>
+	<string Field="FileSize" Original="File Size">Velikost souboru</string>
+	<string Field="FirstAired" Original="First Aired">Vysíláno</string>
+	<string Field="Genre" Original="Genre">Žánr</string>
+	<string Field="Group" Original="Groups">Skupina</string>
+	<string Field="Groups" Original="Groups">Skupiny</string>
+	<string Field="GuestStar" Original="Guest Star">Guest Star</string>
+	<string Field="GuestStars" Original="Guest Stars">Guest Stars</string>
+	<string Field="MediaInfo" Original="Media Info">Údaje o médiu</string>
+	<string Field="Minutes" Original="Minutes">Minut</string>
+	<string Field="MyRating" Original="My Rating">Mé hodnocení</string>
+	<string Field="Network" Original="Network">Kanál</string>
+	<string Field="Rated" Original="Rated">Hodnoceno</string>
+	<string Field="Rating" Original="Rating">Hodnocení</string>
+	<string Field="Runtime" Original="Runtime">Délka</string>
+	<string Field="SeriesDetails" Original="Series Details">Detaily o pořadu</string>
+	<string Field="SeriesStatus" Original="Series Status">Stav pořadu</string>
+	<string Field="Starring" Original="Starring">V hlavních rolích</string>
+	<string Field="Watched" Original="Watched">Zhlédnuto</string>
+	<string Field="Writer" Original="Writer">Scénárista</string>
+	<string Field="Writers" Original="Writers">Scénáristé</string>
+	<string Field="TVDB_ERROR_UNAVAILABLE_1" Original="TheTVDB.com is currently unavailable">TheTVDB.com je momentálně nedostupná.</string>
+	<string Field="TVDB_ERROR_UNAVAILABLE_2" Original="Please try again later">Zkuste to prosím později.</string>
+	<string Field="NETWORK_ERROR_UNAVAILABLE_1" Original="Network connection is unavailable">Připojení k síti není dostupné.</string>
+	<string Field="NETWORK_ERROR_UNAVAILABLE_2" Original="Check your connection and try again">Zkontrolujte připojení a opakujte akci.</string>
+	<string Field="Playlist" Original="Playlist">Playlist</string>
+</strings>

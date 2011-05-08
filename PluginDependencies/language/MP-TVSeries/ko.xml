@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MP-TV-Series translation file -->
+<!-- Korean (KO) -->
+<!-- Last Updated: 21th Apr 2010 -->
+
+<strings>
+    <string Field="Series" Original="Series">시리즈</string>
+    <string Field="Series_Plural" Original="Series (Plr)">시리즈</string> <!-- plural -->
+    <string Field="Season" Original="Season">시즌</string>
+    <string Field="Seasons" Original="Seasons">시즌</string>
+    <string Field="Episode" Original="Episode">회차</string>
+    <string Field="Episodes" Original="Episodes">에피소드</string>
+    <string Field="Toggle_watched_flag" Original="Toggle watched flag">시청여부 토글</string>
+    <string Field="Retrieve_Subtitle" Original="Retrieve Subtitle">자막 가져오기</string>
+    <string Field="Load_via_Torrent" Original="Load via Torrent">토렌트로 읽기</string>
+    <string Field="Mark_all_as_watched" Original="Mark all as watched">전부 시청으로 표시</string>
+    <string Field="Mark_all_as_unwatched" Original="Mark all as unwatched">전부 미시청으로 표시</string>
+    <string Field="Hide" Original="Hide">숨김</string>
+    <string Field="Delete" Original="Delete">삭제</string>
+    <string Field="Remove_series_from_Favourites" Original="Remove series from Favourites">즐겨찾기에서 제거</string>
+    <string Field="Add_series_to_Favourites" Original="Add series to Favourites">즐겨찾기에 추가</string>
+    <string Field="Force_Local_Scan" Original="Force Local Scan ">강제 로컬 검색 </string>
+    <string Field="Force_Online_Refresh" Original="Force Online Refresh ">강제 온라인 새로고침 </string>
+    <string Field="In_Progress_with_Barracks" Original="(In Progress)">(진행중)</string>
+    <string Field="Only_show_episodes_with_a_local_file" Original="Only show episodes with a local file">로컬 에피소드만 표시</string>
+    <string Field="Hide_summary_on_unwatched" Original="Hide the episode's summary on unwatched episodes">스포일러 숨김</string>
+    <string Field="on" Original="on">켜기</string>
+    <string Field="off" Original="off">끄기</string>
+    <string Field="Play_Random_Episode" Original="Play Random Episode">에피소드 임의재생</string>
+    <string Field="Play_Random_First_Unwatched_Episode" Original="Play Random First Unwatched Episode">첫번째 미시청 에피소드 임의재생</string>
+    <string Field="Delete_that_series" Original="Delete that series?">이 시리즈를 삭제할까요?</string>
+    <string Field="Delete_that_season" Original="Delete that season?">이 시즌을 삭제할까요?</string>
+    <string Field="Delete_that_episode" Original="Delete that episode?">이 에프소드를 삭제할까요?</string>
+    <string Field="Confirm" Original="Confirm">확인</string>
+    <string Field="Completed" Original="Completed">완료</string>
+    <string Field="No_subtitles_found" Original="No subtitles found">작막을 찾지 못했습니다</string>
+    <string Field="CFS_Skip_Never_Ask_Again" Original="Skip / Never ask again">넘김 / 다시 물어보지 않음</string>
+    <string Field="CFS_No_Results_Found" Original="No results found!">결과가 없습니다!</string>
+    <string Field="_Hidden_to_prevent_spoilers_" Original=" * Hidden to prevent spoilers *"> * 스포일을 막기위해 숨김 *</string>
+    <string Field="Yes" Original="Yes">예</string>
+    <string Field="No" Original="No">아니오</string>
+    <string Field="Error" Original="#Error">#오류</string>
+    <string Field="No_items" Original="No items!">아이템 없음!</string>
+    <string Field="Unknown" Original="Unknown">알수없음</string>
+    <string Field="wrongSkin" Original="Wrong Skin file">잘못된 스킨 파일</string>
+    <string Field="special" Original="Special">스페셜</string>
+    <string Field="specials" Original="Specials">스페셜</string>
+    <string Field="delPhyiscalWarning" Original="You are about to permanently delete {0} physical file(s).\nWould you like to proceed?">"{0} 물리파일이 영원히 지워지게됩니다.\n진행하시겠습니까?"</string>
+    <string Field="Force_Online_Match" Original="Force Online Match">강제로 온라인 매치</string>
+    <string Field="Load_via_NewsLeecher" Original="Load via NewsLeecher">NewsLeecher로 읽기</string>
+    <string Field="Download" Original="Download">다운로드</string>
+    <string Field="Actions" Original="Actions">Actions</string>
+    <string Field="Options" Original="Options">옵션</string>
+    <string Field="Genres" Original="Genres">장르</string>
+    <string Field="All" Original="All">전부</string>
+    <string Field="Latest" Original="Latest Aired">최근</string>
+    <string Field="Channels" Original="Channels">채널</string>
+    <string Field="Unwatched" Original="Unwatched">미시청</string>
+    <string Field="Favourites" Original="Favourites">즐겨찾기</string>
+    <string Field="updateMI" Original="Update Mediainfo of local file">매체정보 갱신</string>
+    <string Field="RateSeries" Original="Rate this Series">시리즈 점수매김</string>
+    <string Field="RateEpisode" Original="Rate this Episode">에피소드 점수매김</string>
+    <string Field="ResetRating" Original="Reset Rating">점수 초기화</string>
+    <string Field="AskToRate" Original="Ask me to rate unrated episodes">미득점 에피소드에 대해 점수매김을 요구하세요</string>
+    <string Field="DontAskToRate" Original="Don't ask me to rate again">다시는 점수매김을 요구하지 마세요</string>
+    <string Field="RatingStar" Original="Star">별</string>
+    <string Field="RatingStars" Original="Stars">별</string>
+    <string Field="ChangeView" Original="Change View">보기변경</string>
+    <string Field="ChangeViewFast" Original="Immediatly Change Views">즉시 보기변경</string>	
+    <string Field="FanArt" Original="Fanart">팬아트</string>
+    <string Field="FanListAll" Original="List all Fanart for this Series">시리즈의 모든 팬아트 보임</string>
+    <string Field="FanArtGetAndUse" Original="Download Fanart and Use">팬아트 다운로드후 사용</string>
+    <string Field="FanArtGet" Original="Download Fanart">팬아트 다운로드</string>
+    <string Field="FanArtUse" Original="Set Fanart as Default">기본 팬아트를 설정</string>
+    <string Field="FanArtDelete" Original="Delete Fanart">팬아트 삭제</string>
+    <string Field="FanDownloadingStatus" Original="Downloading {0} Fanart...">{0} 팬아트 다운로드...</string>
+    <string Field="FanArtLocal" Original="Local">지역</string>
+    <string Field="FanArtOnline" Original="Remote">원격</string>
+    <string Field="FanArtOnlineLoading" Original="Loading {0} of {1} Fanart...">{1} 중 {0} 팬아트...</string>
+    <string Field="FanArtRandom" Original="Display random Fanart">랜덤 팬아트 보기</string>
+    <string Field="FanArtNoneFound" Original="No Fanart could be found">팬아트를 찾을 수 없습니다</string>
+    <string Field="CFS_Choose_Item" Original="Choose item">아이템을 선택</string>
+    <string Field="CFS_Select_Matching_Item" Original="Select matching item:">맞는 아이템을 선택:</string>
+    <string Field="CFS_Search_Again" Original="Search again">다시 검색</string>
+    <string Field="CFS_Select_Matching_Subitle_File" Original="Select Matching Subtitle File">맞는 자막 파일을 고르세요</string>
+    <string Field="CFS_Subtitle_Episode" Original="Choose item">에피소드:</string>
+    <string Field="CFS_Matching_Subtitles" Original="Matching Subtitles">자막 매칭</string>
+    <string Field="CFS_Choose_Correct_Series" Original="Choose Correct Series">올바른 시리즈를 고르세요</string>
+    <string Field="CFS_Available_Series" Original="Available Series">가능한 시리즈</string>
+    <string Field="CFS_Select_Correct_Subtitle_Version" Original="Select desired subtitles version">Select desired subtitles version</string>
+    <string Field="CFS_Select_Version" Original="Version:">버전:</string>
+    <string Field="CFS_Choose_Correct_Episode" Original="Choose Correct Episode">올바른 에피소드를 고르세요</string>
+    <string Field="CFS_Local_Episode_Index" Original="Local Episiode index:">로컬 에피소드 인덱스:</string>
+    <string Field="CFS_Available_Episode_List" Original="Available Episode list:">가능한 에피소드 리스트:</string>
+    <string Field="CFS_Choose_Search_Site" Original="Choose search site:">검색사이트를 선택:</string>
+    <string Field="CFS_List_Search_Site" Original="List of search sites:">검색사이트 리스트:</string>
+    <string Field="CFS_Found_Torrents" Original="Found torrents:">토렌트를 찾음:</string>
+    <string Field="CFS_Looking_For" Original="Looking for:">Looking for:</string>
+    <string Field="CFS_Choose_Correct_Season" Original="Choose correct season">올바른 시즌을 고르세요</string>
+    <string Field="CFS_Local_Season_Index" Original="Local Season index:">로컬 시즌 인덱스:</string>
+    <string Field="CFS_Available_Seasons" Original="Available Seasons list:">가능한 시즌 리스트:</string>
+    <string Field="CYN_Subtitle_File_Replace" Original="Subtitle File Replace">자막 파일 교환</string>
+    <string Field="CYN_Old_Subtitle_Replace" Original="Old subtitle File present: overwrite?">다른 자막 파일이 존재합니다: 덮어쓸까요?</string>
+    <string Field="RecentlyAdded" Original="Recently Added">최근 추가됨</string>
+    <string Field="TVDB_ERROR_TITLE" Original="theTVDB Error">theTVDB 오류</string>
+    <string Field="TVDB_INFO_TITLE" Original="theTVDB">theTVDB</string>
+    <string Field="TVDB_INFO_ACCOUNTID_1" Original="Account Identifier is not set">계정이름이 설정되지 않았습니다</string>
+    <string Field="TVDB_INFO_ACCOUNTID_2" Original="Enter your online account ID in Configuration">설정에서 온라인 계정이름을 입력하세요</string>	
+    <string Field="ShowSeriesFanart" Original="Show Fanart in Series View">시리즈에서 팬아트 보기</string>
+    <string Field="ChangeLayout" Original="Change Layout">보기 변경</string>
+    <string Field="UseOnlineFavourites" Original="Use Online Favourites">온라인 즐겨찾기 사용</string>
+    <string Field="AddToPlaylist" Original="Add To Playlist">재생목록에 추가</string>
+    <string Field="FanartDisableLabel" Original="Disabled">사용안함</string>
+    <string Field="FanartMenuEnable" Original="Enable Fanart">팬아트 사용</string>
+    <string Field="FanartMenuDisable" Original="Disable Fanart">팬아트 사용안함</string>
+    <string Field="SortByStrings" Original="SortByStrings">the|a|an</string><!--Additional ones should be added for other languages, dont translate existing ones as they will be used as well-->
+    <string Field="LayoutList" Original="List">리스트</string>
+    <string Field="LayoutListBanners" Original="List Banners">배너 리스트</string>
+    <string Field="LayoutListPosters" Original="List Posters">포스터 리스트</string>
+    <string Field="LayoutWideBanners" Original="Wide Banners">넓은 배너</string>
+    <string Field="LayoutFilmstrip" Original="Filmstrip">필름스트립</string>
+    <string Field="LayoutSmallIcons" Original="Small Icons">작은 아이콘</string>
+    <string Field="ButtonAutoPlay" Original="Auto Play">자동실행</string>
+    <string Field="ButtonSwitchView" Original="Switch View">보기변경</string>
+    <string Field="ButtonRunImport" Original="Run Import">읽어오기 실행</string>
+    <string Field="ButtonChangeLayout" Original="Change Layout">보기변경</string>
+    <string Field="ButtonOptions" Original="Options">옵션</string>	
+    <string Field="FanArtFilter" Original="Filter">필터</string>
+    <string Field="FanArtFilterAll" Original="All">전부</string>
+    <string Field="ButtonRandomFanart" Original="Random Fanart">랜덤 팬아트</string>	
+    <string Field="LabelResolution" Original="Resolution">해상도</string>
+    <string Field="LabelChosen" Original="Chosen">기본</string>
+    <string Field="LabelDisabled" Original="Disabled">사용안함</string>
+    <string Field="ResetUserSelections" Original="Reset User Selections">사용자선택 초기화</string>
+    <string Field="DeleteFromDisk" Original="Delete from Disk">디스크에서 삭제</string>
+    <string Field="DeleteFromDatabase" Original="Delete from Database">데이터베이스에서 삭제</string>
+    <string Field="DeleteFromFileDatabase" Original="Delete from Disk and Database">디스크와 데이터베이스에서 삭제</string>
+    <string Field="RateDialogLabel" Original="Select Your Rating for {0}">{0}에 대한 평점을 고르세요</string>
+    <string Field="Hide_thumbnail_on_unwatched" Original="Hide Spoiler Thumbnails">스포일러 미리보기를 숨김</string>	
+    
+    <!-- Rate Descriptions - 5 Stars-->
+    <string Field="RateFiveStarOne" Original="Terrible">1점</string>
+    <string Field="RateFiveStarTwo" Original="Mediocre">2점</string>
+    <string Field="RateFiveStarThree" Original="Good">3점</string>
+    <string Field="RateFiveStarFour" Original="Superb">4점</string>
+    <string Field="RateFiveStarFive" Original="Perfect">5점</string>
+    <!-- Rate Descriptions - 10 Stars-->
+    <string Field="RateTenStarOne" Original="Abysmal">1 점</string>
+    <string Field="RateTenStarTwo" Original="Terrible">2 점</string>
+    <string Field="RateTenStarThree" Original="Bad">3 점</string>
+    <string Field="RateTenStarFour" Original="Poor">4 점</string>
+    <string Field="RateTenStarFive" Original="Mediocre">5 점</string>
+    <string Field="RateTenStarSix" Original="Fair">6 점</string>
+    <string Field="RateTenStarSeven" Original="Good">7 점</string>
+    <string Field="RateTenStarEight" Original="Great">8 점</string>
+    <string Field="RateTenStarNine" Original="Superb">9 점</string>
+    <string Field="RateTenStarTen" Original="Perfect">10 점</string>
+    
+    <string Field="ContentRating" Original="Content Rating">내용 평점</string>
+    <string Field="ViewTags" Original="View Tags">태그 보기</string>
+    <string Field="AddViewTag" Original="Add Series to View Tag">보기에 시리즈 추가</string>
+    <string Field="RemoveViewTag" Original="Remove Series from View Tag">보기에서 시리즈를 삭제</string>
+    <string Field="NewViewTag" Original="New Tag">새로 보기</string>
+    <string Field="CycleSeriesBanner" Original="Cycle Series Banner">시리즈배너 순환</string>
+    <string Field="CycleSeasonBanner" Original="Cycle Season Poster">시즌포스터 순환</string>
+    <string Field="CycleSeriesPoster" Original="Cycle Series Poster">시리즈배너 순환</string>
+    <string Field="FanartRandomInterval" Original="Fanart Timer Interval">팬아트 타이머 간격</string>
+    <string Field="FanartIntervalFiveSeconds" Original="5 Seconds">5 초</string>
+    <string Field="FanartIntervalTenSeconds" Original="10 Seconds">10 초</string>
+    <string Field="FanartIntervalFifteenSeconds" Original="15 Seconds">15 초</string>
+    <string Field="FanartIntervalThirtySeconds" Original="30 Seconds">30 초</string>
+    <string Field="FanartIntervalFortyFiveSeconds" Original="45 Seconds">45 초</string>
+    <string Field="FanartIntervalSixtySeconds" Original="60 Seconds">60 초</string>
+    <string Field="NoPlaylistsFound" Original="No Playlists found in:">재생목록을 찾을 수 없음:</string>
+    <string Field="PinCode" Original="Pin Code">핀코드</string>
+    <string Field="PinCodeIncorrectLine1" Original="The entered pin code is incorrect">잘못된 핀코드가 입력되었습니다</string>
+    <string Field="PinCodeIncorrectLine2" Original="Press OK to try again">OK를 누르면 다시 시도합니다</string>
+    <string Field="ParentalControlLocked" Original="Lock Views">보기 잠김</string>
+    <string Field="ViewIsLocked" Original="View Locked">잠긴 보기</string>
+    <string Field="PinCodeDlgLabel1" Original="The view {0} is locked">"{0}" 보기는 잠겨있습니다</string>
+    <string Field="PinCodeDlgLabel2" Original="Enter in 4 Digit Pin Code to proceed:">4개 숫자로된 핀코드를 입력하세요:</string>
+    <string Field="PinCodeMessageIncorrect" Original="Pin Incorrect">잘못된 핀</string>
+    <string Field="Continuing" Original="Continuing Series">방영중인 시리즈</string>
+    <string Field="Ended" Original="Ended Series">종영 시리즈</string>
+    <string Field="HighDefinition" Original="High Definition">고해상도</string>
+    <string Field="StandardDefinition" Original="Standard Defintion">기본 해상도</string>
+    <string Field="Top10Online" Original="Top 10 (Online)">인기 10 (온라인)</string>
+    <string Field="Top10User" Original="Top 10 (User)">인기 10 (사용자)</string>
+    <string Field="Top25Online" Original="Top 25 (Online)">인기 25 (온라인)</string>
+    <string Field="Top25User" Original="Top 25 (User)">인기 25(사용자)</string>
+    <string Field="Subtitles" Original="Subtitles">자막</string>
+    <string Field="MultiAudio" Original="Multiple Audio Tracks">다중 오디오 트랙</string>
+    <string Field="OnlineFavourites" Original="Online Favourites">온라인 즐겨찾기</string>	
+    <string Field="Actors" Original="Actors">배우</string>
+    <string Field="RemovableMedia" Original="Removable Media">외장형 장치</string>
+    <string Field="LocalMedia" Original="Local Media">Local Media</string>
+    <string Field="AdultSeries" Original="Adult Series">성인 시리즈</string>
+    <string Field="KidsSeries" Original="Kids Series">아동 시리즈</string>
+    <string Field="ClearFanartCache" Original="Clear Fanart Cache">팬아트 캐쉬 지우기</string>
+    
+    <string Field="DeleteThumbnailsHeading" Original="Delete Thumbnails">미리보기 삭제</string>
+    <string Field="DeleteThumbnailsLine1" Original="Would you also like to Delete and Re-Download">모든 에피소드 미리보기를 삭제하거나</string>
+    <string Field="DeleteThumbnailsLine2" Original="all episode thumbnails?">다시 다운로드하시겠습니까?</string>
+    <string Field="RateDialog" Original="Rate Dialog">평점 입력창</string>
+    <string Field="PinCodeDialog" Original="Pin Code Dialog">핀코드 입력창</string>
+    
+    <string Field="Aired" Original="Aired">방영</string>
+    <string Field="AiredStatusContinuing" Original="Continuing">방영중</string>
+    <string Field="AiredStatusEnded" Original="Ended">종영</string>
+    <string Field="Airs" Original="Airs">방영</string>
+    <string Field="AirsDay" Original="Airs Day">방영일</string>
+    <string Field="AirsTime" Original="Airs Time">방영시간</string>
+    <string Field="Cast" Original="Cast">출연진</string>
+    <string Field="Certification" Original="Certification">Certification</string>
+    <string Field="Director" Original="Director">감독</string>
+    <string Field="Directors" Original="Directors">감독</string>    
+    <string Field="FileSize" Original="File Size">파일크기</string>
+    <string Field="FirstAired" Original="First Aired">첫방영</string>
+    <string Field="Genre" Original="Genre">장르</string>
+    <string Field="Group" Original="Groups">그룹</string>
+    <string Field="Groups" Original="Groups">그룹</string>
+    <string Field="GuestStar" Original="Guest Star">게스트 스타</string>
+    <string Field="GuestStars" Original="Guest Stars">게스트 스타</string>
+    <string Field="MediaInfo" Original="Media Info">매체정보</string>
+    <string Field="Minutes" Original="Minutes">분</string>
+    <string Field="MyRating" Original="My Rating">내 점수</string>
+    <string Field="Network" Original="Network">네트웍</string>
+    <string Field="Rated" Original="Rated">점수매겨짐</string>
+    <string Field="Rating" Original="Rating">점수</string>
+    <string Field="Runtime" Original="Runtime">방영시간</string>
+    <string Field="SeriesDetails" Original="Series Details">시리즈 상세정보</string>
+    <string Field="SeriesStatus" Original="Series Status">시리즈 상황</string>
+    <string Field="Starring" Original="Starring">Starring</string>
+    <string Field="Watched" Original="Watched">시청</string>
+    <string Field="Writer" Original="Writer">작가</string>
+    <string Field="Writers" Original="Writers">작가</string>
+    
+    <string Field="TVDB_ERROR_UNAVAILABLE_1" Original="TheTVDB.com is currently unavailable">TheTVDB.com를 지금 사용할 수 없습니다</string>
+    <string Field="TVDB_ERROR_UNAVAILABLE_2" Original="Please try again later">다음에 다시 시도해주세요</string>
+    <string Field="NETWORK_ERROR_UNAVAILABLE_1" Original="Network connection is unavailable">네트웍에 연결할 수 없습니다</string>
+    <string Field="NETWORK_ERROR_UNAVAILABLE_2" Original="Check your connection and try again">연결을 확인하고 다시 시도해주세요</string>
+    
+    <string Field="Playlist" Original="Playlist">재생목록</string>
+    <string Field="LastOnlineUpdate" Original="LastOnlineUpdate">지난 온라인 업데이트</string>
+
+    <string Field="ResetIgnoredDownloadedFiles" Original="Reset Ignored Downloaded Files">무시할 다운로드 파일 초기화</string>
+
+    <string Field="GetSubtitlesFrom" Original="Get subtitles from?">어디에서 자막을 받을까요?</string>
+    <string Field="EnabledSubtitleSites" Original="Enabled subtitle sites:">사용할 자막 사이트:</string>
+    <string Field="PlayNow" Original="Play Now">지금 시작</string>
+    <string Field="NoSubtitleDownload" Original="No Subtitle Download">자막을 다운로드하지 못했습니다</string>
+
+    <string Field="DeleteSubtitles" Original="Delete Subtitles">자막 삭제</string>
+    <string Field="EpisodeFilenameEmpty" Original="Episode Filename is Empty in Database">에피소드 파일이름이 데이터베이스에 비어있습니다</string>
+    <string Field="UnableToDeleteSubtitleFile" Original="Unable to Delete Subtitle File: {0}">자막파일을 삭제할 수 없습니다: {0}</string>
+    <string Field="PathNotAvailable" Original="Path is not available: {0}">경로가 존재하지 않습니다: {0}</string>
+    <string Field="UnableToDeleteSubtitles" Original="Unable to Delete Subtitles">자막을 삭제할 수 없습니다</string>
+    <string Field="ErrorClear" Original="Error">오류</string>
+    <string Field="UnableToRetrieveSubtitles" Original="Unable to retrieve subtitles">자막을 가져올 수 없음</string>
+    <string Field="NoSubtitlesFoundOrRetrieved" Original="No subtitles found or retrieved">자막이 없거나 가져올 수 없습니다</string>
+
+    <string Field="UnableToDelete" Original="Unable to Delete">삭제할 수 없습니다</string>
+    <string Field="UnableToDeleteFile" Original="Unable to Delete File: {0}">파일을 삭제할 수 없습니다: {0}</string>
+  
+</strings>

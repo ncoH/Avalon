@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- MP-TV-Series translation file -->
+<!-- Nederlands (nl) -->
+<!-- Last Updated: 6th March 2010 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<strings>
+  <string Field="Series" Original="Series">Serie</string>
+  <string Field="Series_Plural" Original="Series (Plr)">Series</string>
+  <string Field="Season" Original="Season">Seizoen</string>
+  <string Field="Seasons" Original="Seasons">Seizoenen</string>
+  <string Field="Episode" Original="Episode">Aflevering</string>
+  <string Field="Episodes" Original="Episodes">Afleveringen</string>
+  <string Field="Toggle_watched_flag" Original="Toggle watched flag">Bekeken aan / uit</string>
+  <string Field="Retrieve_Subtitle" Original="Retrieve Subtitle">Ondertiteling ophalen</string>
+  <string Field="Load_via_Torrent" Original="Load via Torrent">Via torrent laden</string>
+  <string Field="Mark_all_as_watched" Original="Mark all as watched">Markeer alles als bekeken</string>
+  <string Field="Mark_all_as_unwatched" Original="Mark all as unwatched">Markeer alles als onbekeken</string>
+  <string Field="Hide" Original="Hide">Verberg</string>
+  <string Field="Delete" Original="Delete">Verwijder</string>
+  <string Field="Remove_series_from_Favourites" Original="Remove series from Favourites">Verwijder uit favorieten</string>
+  <string Field="Add_series_to_Favourites" Original="Add series to Favourites">Voeg toe aan favorieten</string>
+  <string Field="Force_Local_Scan" Original="Force Local Scan ">Forceer lokale scan</string>
+  <string Field="Force_Online_Refresh" Original="Force Online Refresh ">Forceer online vernieuwen</string>
+  <string Field="In_Progress_with_Barracks" Original="(In Progress)"> (Bezig)</string>
+  <string Field="Only_show_episodes_with_a_local_file" Original="Only show episodes with a local file">Toon alleen lokale afleveringen</string>
+  <string Field="Hide_summary_on_unwatched" Original="Hide the episode's summary on unwatched episodes">Verberg de omschrijving bij onbekeken afleveringen</string>
+  <string Field="on" Original="on">aan</string>
+  <string Field="off" Original="off">uit</string>
+  <string Field="Play_Random_Episode" Original="Play Random Episode">Speel willekeurige aflevering</string>
+  <string Field="Play_Random_First_Unwatched_Episode" Original="Play Random First Unwatched Episode">Speel willekeurige onbekeken eerste aflevering</string>
+  <string Field="Delete_that_series" Original="Delete that series?">Deze serie verwijderen?</string>
+  <string Field="Delete_that_season" Original="Delete that season?">Dit seizoen verwijderen?</string>
+  <string Field="Delete_that_episode" Original="Delete that episode?">Deze aflevering verwijderen?</string>
+  <string Field="Confirm" Original="Confirm">Bevestigen</string>
+  <string Field="Completed" Original="Completed">Voltooid</string>
+  <string Field="No_subtitles_found" Original="No subtitles found">Geen ondertiteling gevonden</string>
+  <string Field="CFS_Skip_Never_Ask_Again" Original="Skip / Never ask again">Overslaan / Niet meer vragen</string>
+  <string Field="CFS_No_Results_Found" Original="No results found!">Geen resultaten gevonden!</string>
+  <string Field="_Hidden_to_prevent_spoilers_" Original=" * Hidden to prevent spoilers *"> * Verborgen omwille van spoilers *</string>
+  <string Field="Yes" Original="Yes">Ja</string>
+  <string Field="No" Original="No">Nee</string>
+  <string Field="Error" Original="#Error">#Fout</string>
+  <string Field="No_items" Original="No items!">Geen items!</string>
+  <string Field="Unknown" Original="Unknown">Onbekend</string>
+  <string Field="wrongSkin" Original="Wrong Skin file">Foutief skinbestand</string>
+  <string Field="special" Original="Special">Extra</string>
+  <string Field="specials" Original="Specials">Extra's</string>
+  <string Field="delPhyiscalWarning" Original="You are about to permanently delete {0} physical file(s).\nWould you like to proceed?">"U staat op het punt om {0} bestand(en) permanent te verwijderen.\nWilt u doorgaan?"</string>
+  <string Field="Force_Online_Match" Original="Force Online Match">Forceer online overeenkomst</string>
+  <string Field="Load_via_NewsLeecher" Original="Load via NewsLeecher">Laad via NewsLeecher</string>
+  <string Field="Download" Original="Download">Download</string>
+  <string Field="Actions" Original="Actions">Acties</string>
+  <string Field="Options" Original="Options">Opties</string>
+  <string Field="Genres" Original="Genres">Genres</string>
+  <string Field="All" Original="All">Alle</string>
+  <string Field="Latest" Original="Latest Aired">Laatste</string>
+  <string Field="Channels" Original="Channels">Kanalen</string>
+  <string Field="Unwatched" Original="Unwatched">Onbekeken</string>
+  <string Field="Favourites" Original="Favourites">Favorieten</string>
+  <string Field="updateMI" Original="Update Mediainfo of local file">Mediainformatie bijwerken</string>
+  <string Field="RateSeries" Original="Rate this Series">Waardeer deze serie</string>
+  <string Field="RateEpisode" Original="Rate this Episode">Waardeer deze aflevering</string>
+  <string Field="ResetRating" Original="Reset Rating">Waardering herstellen</string>
+  <string Field="AskToRate" Original="Ask me to rate unrated episodes">Vraag me om ongewaardeerde afleveringen te waarderen</string>
+  <string Field="DontAskToRate" Original="Don't ask me to rate again">Vraag me niet opnieuw om te waarderen</string>
+  <string Field="RatingStar" Original="Star">Ster</string>
+  <string Field="RatingStars" Original="Stars">Sterren</string>
+  <string Field="ChangeView" Original="Change View">Wijzig weergave</string>
+  <string Field="ChangeViewFast" Original="Immediatly Change Views">Onmiddelijk weergaves wijzigen</string>
+  <string Field="FanArt" Original="Fanart">Fanart</string>
+  <string Field="FanListAll" Original="List all Fanart for this Series">Toon alle fanart voor deze serie</string>
+  <string Field="FanArtGetAndUse" Original="Download Fanart and Use">Download en gebruik fanart</string>
+  <string Field="FanArtGet" Original="Download Fanart">Download fanart</string>
+  <string Field="FanArtUse" Original="Set Fanart as Default">Fanart als standaard instellen</string>
+  <string Field="FanArtDelete" Original="Delete Fanart">Verwijder fanart</string>
+  <string Field="FanDownloadingStatus" Original="Downloading {0} Fanart...">Downloaden van {0} fanart(s)...</string>
+  <string Field="FanArtLocal" Original="Local">Lokaal</string>
+  <string Field="FanArtOnline" Original="Remote">Online</string>
+  <string Field="FanArtOnlineLoading" Original="Loading {0} of {1} Fanart...">Bezig met laden van {0} van {1} fanart afbeelding(en)...</string>
+  <string Field="FanArtRandom" Original="Display random Fanart">Toon willekeurige fanart</string>
+  <string Field="FanArtNoneFound" Original="No Fanart could be found">Geen fanart gevonden</string>
+  <string Field="CFS_Choose_Item" Original="Choose item">Kies item</string>
+  <string Field="CFS_Select_Matching_Item" Original="Select matching item:">Selecteer passend item:</string>
+  <string Field="CFS_Search_Again" Original="Search again">Opnieuw zoeken</string>
+  <string Field="CFS_Select_Matching_Subitle_File" Original="Select Matching Subtitle File">Kies passende ondertiteling</string>
+  <string Field="CFS_Subtitle_Episode" Original="Choose item">Aflevering:</string>
+  <string Field="CFS_Matching_Subtitles" Original="Matching Subtitles">Passende ondertitelingen</string>
+  <string Field="CFS_Choose_Correct_Series" Original="Choose Correct Series">Kies correcte serie</string>
+  <string Field="CFS_Available_Series" Original="Available Series">Beschikbare series</string>
+  <string Field="CFS_Select_Correct_Subtitle_Version" Original="Select desired subtitles version">Selecteer gewenste ondertiteling</string>
+  <string Field="CFS_Select_Version" Original="Version:">Versie:</string>
+  <string Field="CFS_Choose_Correct_Episode" Original="Choose Correct Episode">Kies correcte aflevering</string>
+  <string Field="CFS_Local_Episode_Index" Original="Local Episiode index:">Lokale afleveringenindex:</string>
+  <string Field="CFS_Available_Episode_List" Original="Available Episode list:">Beschikbare afleveringenlijst:</string>
+  <string Field="CFS_Choose_Search_Site" Original="Choose search site:">Kies zoeksite:</string>
+  <string Field="CFS_List_Search_Site" Original="List of search sites:">Lijst met zoeksites:</string>
+  <string Field="CFS_Found_Torrents" Original="Found torrents:">Gevonden torrents:</string>
+  <string Field="CFS_Looking_For" Original="Looking for:">Bezig met zoeken naar:</string>
+  <string Field="CFS_Choose_Correct_Season" Original="Choose correct season">Kies correct seizoen</string>
+  <string Field="CFS_Local_Season_Index" Original="Local Season index:">Lokale Seizoenenindex:</string>
+  <string Field="CFS_Available_Seasons" Original="Available Seasons list:">Beschikbare seizoenenlijst:</string>
+  <string Field="CYN_Subtitle_File_Replace" Original="Subtitle File Replace">Ondertitelingsbestand vervangen</string>
+  <string Field="CYN_Old_Subtitle_Replace" Original="Old subtitle File present: overwrite?">Oud ondertitelingsbestand aanwezig: overschrijven?</string>
+  <string Field="RecentlyAdded" Original="Recently Added">Recent toegevoegd</string>
+  <string Field="TVDB_ERROR_TITLE" Original="theTVDB Error">theTVDB-fout</string>
+  <string Field="TVDB_INFO_TITLE" Original="theTVDB">theTVDB</string>
+  <string Field="TVDB_INFO_ACCOUNTID_1" Original="Account Identifier is not set">Account Identificatie is niet ingesteld</string>
+  <string Field="TVDB_INFO_ACCOUNTID_2" Original="Enter your online account ID in Configuration">Voer uw online account ID in bij Configuratie</string>
+  <string Field="TVDB_ERROR_UNAVAILABLE_1" Original="TheTVDB.com is currently unavailable">TheTVDB.com is momenteel niet beschikbaar</string>
+  <string Field="TVDB_ERROR_UNAVAILABLE_2" Original="Please try again later">Probeer later opnieuw</string>
+  <string Field="NETWORK_ERROR_UNAVAILABLE_1" Original="Network connection is unavailable">Netwerk verbinding is niet beschikbaar</string>
+  <string Field="NETWORK_ERROR_UNAVAILABLE_2" Original="Check your connection and try again">Controleer verbinding en probeer opnieuw</string>
+  <string Field="ShowSeriesFanart" Original="Show Fanart in Series View">Toon fanart in serieweergave</string>
+  <string Field="ChangeLayout" Original="Change Layout">Wijzig layout</string>
+  <string Field="UseOnlineFavourites" Original="Use Online Favourites">Gebruik online favorieten</string>
+  <string Field="AddToPlaylist" Original="Add To Playlist">Aan afspeellijst toevoegen</string>
+  <string Field="FanartDisableLabel" Original="Disabled">Uitgeschakeld</string>
+  <string Field="FanartMenuEnable" Original="Enable Fanart">Fanart inschakelen</string>
+  <string Field="FanartMenuDisable" Original="Disable Fanart">Fanart uitschakelen</string>
+  <string Field="SortByStrings" Original="SortByStrings">the|a|an|de|het|een</string> 
+  <!--Additional ones should be added for other languages, dont translate existing ones as they will be used as well-->
+  <string Field="LayoutList" Original="List">Lijst</string>
+  <string Field="LayoutListBanners" Original="List Banners">Lijst met banners</string>
+  <string Field="LayoutListPosters" Original="List Posters">Lijst met posters</string>
+  <string Field="LayoutWideBanners" Original="Wide Banners">Brede banners</string>
+  <string Field="LayoutFilmstrip" Original="Filmstrip">Filmstrip</string>
+  <string Field="LayoutSmallIcons" Original="Small Icons">Kleine pictogrammen</string>
+  <string Field="ButtonAutoPlay" Original="Auto Play">Automatisch afspelen</string>
+  <string Field="ButtonSwitchView" Original="Switch View">Wissel weergave</string>
+  <string Field="ButtonRunImport" Original="Run Import">Start importeren</string>
+  <string Field="ButtonChangeLayout" Original="Change Layout">Wijzig layout</string>
+  <string Field="ButtonOptions" Original="Options">Opties</string>
+  <string Field="FanArtFilter" Original="Filter">Filter</string>
+  <string Field="FanArtFilterAll" Original="All">Alle</string>
+  <string Field="ButtonRandomFanart" Original="Random Fanart">Willekeurige fanart</string>
+  <string Field="LabelResolution" Original="Resolution:">Resolutie:</string>
+  <string Field="LabelChosen" Original="Chosen:">Gekozen:</string>
+  <string Field="LabelDisabled" Original="Disabled:">Uitgeschakeld:</string>
+  <string Field="ResetUserSelections" Original="Reset User Selections">Gebruikerselectie herstellen</string>
+  <string Field="DeleteFromDisk" Original="Delete from Disk">Verwijder van schijf</string>
+  <string Field="DeleteFromDatabase" Original="Delete from Database">Verwijder uit database</string>
+  <string Field="DeleteFromFileDatabase" Original="Delete from Disk and Database">Verwijder van schijf en uit database</string>
+  <string Field="RateDialogLabel" Original="Select Your Rating for {0}">Selecteer uw waardering voor {0}</string>
+  <string Field="Hide_thumbnail_on_unwatched" Original="Hide Spoiler Thumbnails">Verberg spoilerminiaturen</string>
+  <!-- Rate Descriptions - 5 Stars-->
+  <string Field="RateFiveStarOne" Original="Terrible">Slecht</string>
+  <string Field="RateFiveStarTwo" Original="Mediocre">Matig</string>
+  <string Field="RateFiveStarThree" Original="Good">Goed</string>
+  <string Field="RateFiveStarFour" Original="Superb">Heel Goed</string>
+  <string Field="RateFiveStarFive" Original="Perfect">Uitstekend</string>
+  <!-- Rate Descriptions - 10 Stars-->
+  <string Field="RateTenStarOne" Original="Abysmal">Verschrikkelijk</string>
+  <string Field="RateTenStarTwo" Original="Terrible">Heel slecht</string>
+  <string Field="RateTenStarThree" Original="Bad">Slecht</string>
+  <string Field="RateTenStarFour" Original="Poor">Ondermaats</string>
+  <string Field="RateTenStarFive" Original="Mediocre">Matig</string>
+  <string Field="RateTenStarSix" Original="Fair">Bovengemiddeld</string>
+  <string Field="RateTenStarSeven" Original="Good">Goed</string>
+  <string Field="RateTenStarEight" Original="Great">Heel Goed</string>
+  <string Field="RateTenStarNine" Original="Superb">Geweldig</string>
+  <string Field="RateTenStarTen" Original="Perfect">Uitstekend</string>
+  <string Field="ContentRating" Original="Content Rating">Inhoudswaardering</string>
+  <string Field="ViewTags" Original="View Tags">Weergave tags</string>
+  <string Field="AddViewTag" Original="Add Series to View Tag">Voeg serie toe aan weergave</string>
+  <string Field="RemoveViewTag" Original="Remove Series from View Tag">Verwijder serie uit weergave</string>
+  <string Field="NewViewTag" Original="New Tag">Nieuwe weergave</string>
+  <string Field="CycleSeriesBanner" Original="Cycle Series Banner">Wissel seriebanner</string>
+  <string Field="CycleSeasonBanner" Original="Cycle Season Poster">Wissel seizoenposter</string>
+  <string Field="CycleSeriesPoster" Original="Cycle Series Poster">Wissel serieposter</string>
+  <string Field="FanartRandomInterval" Original="Fanart Timer Interval">Fanart wisselinterval</string>
+  <string Field="FanartIntervalFiveSeconds" Original="5 Seconds">5 seconden</string>
+  <string Field="FanartIntervalTenSeconds" Original="10 Seconds">10 seconden</string>
+  <string Field="FanartIntervalFifteenSeconds" Original="15 Seconds">15 seconden</string>
+  <string Field="FanartIntervalThirtySeconds" Original="30 Seconds">30 seconden</string>
+  <string Field="FanartIntervalFortyFiveSeconds" Original="45 Seconds">45 seconden</string>
+  <string Field="FanartIntervalSixtySeconds" Original="60 Seconds">60 seconden</string>
+  <string Field="NoPlaylistsFound" Original="No Playlists found in:">Geen afspeellijst gevonden in:</string>
+  <string Field="PinCode" Original="Pin Code">PIN Code</string>
+  <string Field="PinCodeIncorrectLine1" Original="The entered pin code is incorrect">De ingevoerde PIN code is niet correct</string>
+  <string Field="PinCodeIncorrectLine2" Original="Press OK to try again">Druk op OK om opnieuw te proberen</string>
+  <string Field="ParentalControlLocked" Original="Lock Views">Vergrendel weergaves</string>
+  <string Field="ViewIsLocked" Original="View Locked">Bekijk vergrendelde</string>
+  <string Field="PinCodeDlgLabel1" Original="The view {0} is locked">De weergave "{0}" is vergrendeld</string>
+  <string Field="PinCodeDlgLabel2" Original="Enter in 4 Digit Pin Code to proceed:">Voer 4-cijferige PIN code in om verder te gaan:</string>
+  <string Field="PinCodeMessageIncorrect" Original="Pin Incorrect">PIN Foutief</string>
+  <string Field="Continuing" Original="Continuing Series">Lopende series</string>
+  <string Field="Ended" Original="Ended Series">Afgelopen series</string>
+  <string Field="HighDefinition" Original="High Definition">Hoge Resolutie</string>
+  <string Field="StandardDefinition" Original="Standard Defintion">Standaard Resolutie</string>
+  <string Field="Top10Online" Original="Top 10 (Online)">Top 10 (Online)</string>
+  <string Field="Top10User" Original="Top 10 (User)">Top 10 (Gebruiker)</string>
+  <string Field="Top25Online" Original="Top 25 (Online)">Top 25 (Online)</string>
+  <string Field="Top25User" Original="Top 25 (User)">Top 25 (Gebruiker)</string>
+  <string Field="Subtitles" Original="Subtitles">Ondertiteling</string>
+  <string Field="MultiAudio" Original="Multiple Audio Tracks">Meerdere audiosporen</string>
+  <string Field="OnlineFavourites" Original="Online Favourites">Online favorieten</string>
+  <string Field="Actors" Original="Actors">Acteurs</string>
+  <string Field="RemovableMedia" Original="Removable Media">Verwijderbare media</string>
+  <string Field="LocalMedia" Original="Local Media">Lokale media</string>
+  <string Field="AdultSeries" Original="Adult Series">Volwassenseries</string>
+  <string Field="KidsSeries" Original="Kids Series">Kinderseries</string>
+  <string Field="ClearFanartCache" Original="Clear Fanart Cache">Leeg fanartcache</string>
+  <string Field="DeleteThumbnailsHeading" Original="Delete Thumbnails">Verwijder miniaturen</string> 
+  <string Field="DeleteThumbnailsLine1" Original="Would you also like to Delete and Re-Download">Wilt u ook graag alle afleveringminiaturen</string> 
+  <string Field="DeleteThumbnailsLine2" Original="all episode thumbnails?">verwijderen en opnieuw downloaden?</string> 
+  <string Field="RateDialog" Original="Rate Dialog">Waardeeringsdialoog</string> 
+  <string Field="PinCodeDialog" Original="Pin Code Dialog">Pincodedialoog</string> 
+  <string Field="Aired" Original="Aired">Uitgezonden</string> 
+  <string Field="AiredStatusContinuing" Original="Continuing">Lopend</string> 
+  <string Field="AiredStatusEnded" Original="Ended">Afgelopen</string> 
+  <string Field="AirsDay" Original="Airs Day">Uitzendingsdag</string> 
+  <string Field="AirsTime" Original="Airs Time">Uitzendingstijd</string> 
+  <string Field="Certification" Original="Certification">Kijkwijzer</string> 
+  <string Field="Director" Original="Director">Regisseur</string> 
+  <string Field="Directors" Original="Directors">Regisseurs</string> 
+  <string Field="FileSize" Original="File Size">Bestandsgrootte</string> 
+  <string Field="FirstAired" Original="First Aired">Eerste uitzending</string> 
+  <string Field="Genre" Original="Genre">Genre</string> 
+  <string Field="Group" Original="Groups">Groep</string> 
+  <string Field="Groups" Original="Groups">Groepen</string> 
+  <string Field="GuestStar" Original="Guest Star">Gastrol</string> 
+  <string Field="GuestStars" Original="Guest Stars">Gastrollen</string> 
+  <string Field="MediaInfo" Original="Media Info">Media-info</string> 
+  <string Field="Minutes" Original="Minutes">Minuten</string> 
+  <string Field="Network" Original="Network">Netwerk</string> 
+  <string Field="Rated" Original="Rated">Gewaardeerd</string> 
+  <string Field="Rating" Original="Rating">Waardering</string> 
+  <string Field="Runtime" Original="Runtime">Speeltijd</string> 
+  <string Field="SeriesDetails" Original="Series Details">Serieinformatie</string> 
+  <string Field="Watched" Original="Watched">Bekeken</string> 
+  <string Field="Writer" Original="Writer">Schrijver</string> 
+  <string Field="Writers" Original="Writers">Schrijvers</string> 
+  <string Field="MyRating" Original="My Rating">Mijn waardering</string>
+  <string Field="SeriesStatus" Original="Series Status">Seriestatus</string>
+  <string Field="Starring" Original="Starring">Met:</string>
+  <string Field="Playlist" Original="Playlist">Afspeellijst</string>
+  <string Field="Cast" Original="Cast">Rolverdeling:</string>
+</strings>

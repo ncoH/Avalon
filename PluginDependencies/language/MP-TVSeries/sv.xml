@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- MP-TV-Series translation file -->
+<!-- Swedish -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<!-- Last Updated: 09th Feb 2010 -->
+
+<strings>
+	<string Field="Series" Original="Series">Serie</string>
+	<string Field="Series_Plural" Original="Series (Plr)">Serier</string> <!-- plural -->
+	<string Field="Season" Original="Season">Säsong</string>
+	<string Field="Seasons" Original="Seasons">Säsonger</string>
+	<string Field="Episode" Original="Episode">Avsnitt</string>
+	<string Field="Episodes" Original="Episodes">Avsnitt</string>
+	<string Field="Toggle_watched_flag" Original="Toggle watched flag">Sedd/Ej sedd</string>
+	<string Field="Retrieve_Subtitle" Original="Retrieve Subtitle">Hämta undertext</string>
+	<string Field="Load_via_Torrent" Original="Load via Torrent">Hämta via torrent</string>
+	<string Field="Mark_all_as_watched" Original="Mark all as watched">Markera alla som sedda</string>
+	<string Field="Mark_all_as_unwatched" Original="Mark all as unwatched">Markera alla som ej sedda</string>
+	<string Field="Hide" Original="Hide">Göm</string>
+	<string Field="Delete" Original="Delete">Ta bort</string>
+	<string Field="Remove_series_from_Favourites" Original="Remove series from Favourites">Ta bort serie från favoriter</string>
+	<string Field="Add_series_to_Favourites" Original="Add series to Favourites">Lägg till serie bland favoriter</string>
+	<string Field="Force_Local_Scan" Original="Force Local Scan ">Tvinga lokal scanning</string>
+	<string Field="Force_Online_Refresh" Original="Force Online Refresh ">Uppdatera serie-information</string>
+	<string Field="In_Progress_with_Barracks" Original="(In Progress)">(Arbetar)</string>
+	<string Field="Only_show_episodes_with_a_local_file" Original="Only show episodes with a local file">Visa endast lokalt tillgängliga avsnitt</string>
+	<string Field="Hide_summary_on_unwatched" Original="Hide the episode's summary on unwatched episodes">Göm avsnittsinformation om avsnitt ej är sett</string>
+	<string Field="on" Original="on">på</string>
+	<string Field="off" Original="off">av</string>
+	<string Field="Play_Random_Episode" Original="Play Random Episode">Spela slumpmässigt avsnitt</string>
+	<string Field="Play_Random_First_Unwatched_Episode" Original="Play Random First Unwatched Episode">Slumpmässig uppspelning av nya, osedda avsnitt</string>
+	<string Field="Delete_that_series" Original="Delete that series?">Ta bort serien?</string>
+	<string Field="Delete_that_season" Original="Delete that season?">Ta bort denna säsong?</string>
+	<string Field="Delete_that_episode" Original="Delete that episode?">Delete this episode?</string>
+	<string Field="Confirm" Original="Confirm">Bekräfta</string>
+	<string Field="Completed" Original="Completed">Färdig</string>
+	<string Field="No_subtitles_found" Original="No subtitles found">Ingen undertext hittad</string>
+	<string Field="CFS_Skip_Never_Ask_Again" Original="skip / Never ask again">Hoppa över / Fråga ej igen</string>
+	<string Field="CFS_No_Results_Found" Original="no results found!">Sökningen fann inga matchande träffar</string>
+	<string Field="_Hidden_to_prevent_spoilers_" Original=" * Hidden to prevent spoilers *"> * Gömd för att förhindra 'spoilers' *</string>
+	<string Field="Yes" Original="Yes">Ja</string>
+	<string Field="No" Original="No">Nej</string>
+	<string Field="Error" Original="#Error">#Fel</string>
+	<string Field="No_items" Original="No items!">Inga objekt!</string>
+	<string Field="Unknown" Original="Unknown">Okänd</string>
+	<string Field="wrongSkin" Original="Wrong Skin file">Felaktig skin-fil</string>
+	<string Field="special" Original="Special">Special</string>
+	<string Field="specials" Original="Specials">Specialer</string>
+	<string Field="delPhyiscalWarning" Original="You are about to permanently delete {0} physical file(s).\nWould you like to proceed?">"Radera {0} fysik(a) fil(er).\nFortsätt?"</string>
+	<string Field="Force_Online_Match" Original="Force Online Match">Tvinga träff i Online-databas</string>
+	<string Field="Load_via_NewsLeecher" Original="Load via NewsLeecher">Ladda ner via NewsLeecher</string>
+	<string Field="Download" Original="Download">Ladda ner</string>
+	<string Field="Actions" Original="Actions">Händelser</string>
+	<string Field="Options" Original="Options">Inställningar</string>
+	<string Field="Genres" Original="Genres">Genrer</string>
+	<string Field="All" Original="All">Samtliga</string>
+	<string Field="Latest" Original="Latest Aired">Senaste</string>
+	<string Field="Channels" Original="Channels">Kanaler</string>
+	<string Field="Unwatched" Original="Unwatched">Ej sedda</string>
+	<string Field="Favourites" Original="Favourites">Favouriter</string>
+	<string Field="updateMI" Original="Update Mediainfo of local file">Uppdatera mediainformation för lokal(a) fil(er)</string>
+	<string Field="RateSeries" Original="Rate this Series">Betygsätt denna serie</string>
+	<string Field="RateEpisode" Original="Rate this Episode">Betygsätt detta avsnitt</string>
+	<string Field="ResetRating" Original="Reset Rating">Nollställ betyg</string>
+	<string Field="AskToRate" Original="Ask me to rate unrated episodes">Fråga om betygsättning av avsnitt utan betyg</string>
+	<string Field="DontAskToRate" Original="Don't ask me to rate again">Fråga ej om betygsättning igen</string>
+	<string Field="RatingStar" Original="Star">Stjärna</string>
+	<string Field="RatingStars" Original="Stars">Stjärnor</string>
+	<string Field="ChangeView" Original="Change View">Byt vy</string>
+	<string Field="ChangeViewFast" Original="Immediatly Change Views">Byt vy omedelbart</string>
+	<string Field="Cycle_Banner" Original="Cycle Banner">Växla till nästa banner</string>
+	<string Field="FanArt" Original="Fanart">Fanart</string>
+	<string Field="FanListAll" Original="List all Fanart for this Series">Visa Fanart för denna serie</string>
+	<string Field="FanArtGetAndUse" Original="Download Fanart and Use">Ladda ner denna Fanart och använd direkt</string>
+	<string Field="FanArtGet" Original="Download Fanart">Ladda ner Fanart</string>
+	<string Field="FanArtUse" Original="Set Fanart as Default">Sätt denna Fanart som standard</string>
+	<string Field="FanArtDelete" Original="Delete Fanart">Radera denna Fanart</string>
+	<string Field="FanDownloadingStatus" Original="Downloading {0} Fanart...">Laddar ner {0} Fanart...</string>
+	<string Field="FanArtLocal" Original="Available locally">Tillgänglig lokalt</string>
+	<string Field="FanArtOnline" Original="Available for downloading">Tillgänglig för nerladdning</string>
+	<string Field="FanArtOnlineLoading" Original="loading {0} of {1} Fanart...">hämtar {0} av {1} Fanart-filer...</string>
+	<string Field="FanArtRandom" Original="Display random Fanart">Slumpmässig visning av Fanart</string>
+	<string Field="FanArtNoneFound" Original="No Fanart could be found">Ingen Fanart är tillgänglig</string>
+	<string Field="CFS_Choose_Item" Original="Choose item">Välj objekt</string>
+	<string Field="CFS_Select_Matching_Item" Original="Select matching item:">Välj matchande objekt:</string>
+	<string Field="CFS_Search_Again" Original="Search again">Ny sökning</string>
+	<string Field="CFS_Select_Matching_Subitle_File" Original="Select Matching Subtitle File">Välj en matchande undertext-fil</string>
+	<string Field="CFS_Subtitle_Episode" Original="Choose item">Avsnitt:</string>
+	<string Field="CFS_Matching_Subtitles" Original="Matching Subtitles">Matchande undertext</string>
+	<string Field="CFS_Choose_Correct_Series" Original="Choose Correct Series">Välj korrekt serie</string>
+	<string Field="CFS_Available_Series" Original="Available Series">Tillgängliga serier</string>
+	<string Field="CFS_Select_Correct_Subtitle_Version" Original="Select desired subtitles version">Välj önskad text-version</string>
+	<string Field="CFS_Select_Version" Original="Version:">Version:</string>
+	<string Field="CFS_Choose_Correct_Episode" Original="Choose Correct Episode">Välj korrekt avsnitt</string>
+	<string Field="CFS_Local_Episode_Index" Original="Local Episiode index:">Lista över lokalt tillgängliga avsnitt:</string>
+	<string Field="CFS_Available_Episode_List" Original="Available Episode list:">Lista över tillgängliga avsnitt:</string>
+	<string Field="CFS_Choose_Search_Site" Original="Choose search site:">Välj söktjänst:</string>
+	<string Field="CFS_List_Search_Site" Original="List of search sites:">Lista över söktjänster:</string>
+	<string Field="CFS_Found_Torrents" Original="Found torrents:">Funna torrent-filer:</string>
+	<string Field="CFS_Looking_For" Original="Looking for:">Letar efter:</string>
+	<string Field="CFS_Choose_Correct_Season" Original="Choose correct season">Välj korrekt säsong</string>
+	<string Field="CFS_Local_Season_Index" Original="Local Season index:">Lista över lokalt tillgängliga säsonger:</string>
+	<string Field="CFS_Available_Seasons" Original="Available Seasons list:">Lista över tillgängliga säsonger:</string>
+	<string Field="CYN_Subtitle_File_Replace" Original="Subtitle File Replace">överskrivning av undertext-fil</string>
+	<string Field="CYN_Old_Subtitle_Replace" Original="Old subtitle File present: overwrite?">Tidigare skapad fil existerar: Skriv över den?</string>
+	<string Field="RecentlyAdded" Original="Recently Added">Nyligen tillagd(a)</string>
+	<string Field="TVDB_ERROR_TITLE" Original="theTVDB Error">Fel hos theTVDBs server</string>
+	<string Field="TVDB_INFO_TITLE" Original="theTVDB">theTVDB</string>
+	<string Field="TVDB_INFO_ACCOUNTID_1" Original="Account Identifier is not set">Konto-id är inte korrekt inmatat</string>
+	<string Field="TVDB_INFO_ACCOUNTID_2" Original="Enter your online account ID in Configuration">Mata in ditt theTVDB-konto i inställningarna för denna plugin</string>	
+	<string Field="ShowSeriesFanart" Original="Show Fanart in Series View">Visa Fanart i Serier-vyn</string>
+	<string Field="ChangeLayout" Original="Change Layout">byt layout</string>
+	<string Field="UseOnlineFavourites" Original="Use Online Favourites">Använd online-favoriter</string>
+	<string Field="AddToPlaylist" Original="Add To Playlist">Lägg till i spellistan</string>
+	<string Field="FanartDisableLabel" Original="Disabled">Används ej</string>
+	<string Field="FanartMenuEnable" Original="Enable Fanart">Använd denna Fanart</string>
+	<string Field="FanartMenuDisable" Original="Disable Fanart">Stäng av denna Fanart</string>
+	<string Field="SortByStrings" Original="SortByStrings">the|a|an</string><!--Additional ones should be added for other languages, dont translate existing ones as they will be used as well-->
+	<string Field="LayoutList" Original="List">Lista</string>
+	<string Field="LayoutListBanners" Original="List Banners">Lista + banner</string>
+	<string Field="LayoutListPosters" Original="List Posters">Lista + Posters</string>
+	<string Field="LayoutWideBanners" Original="Wide Banners">Banners sida vid sida</string>
+	<string Field="LayoutFilmstrip" Original="Filmstrip">Filmstrip-vy</string>
+	<string Field="LayoutSmallIcons" Original="Small Icons">Små ikoner</string>
+	<string Field="ButtonAutoPlay" Original="Auto Play">Spela upp automatiskt</string>
+	<string Field="ButtonSwitchView" Original="Switch View">Byt vy</string>
+	<string Field="ButtonRunImport" Original="Run Import">Kör importören</string>
+	<string Field="ButtonChangeLayout" Original="Change Layout">Byt layout</string>
+	<string Field="ButtonOptions" Original="Options">Inställningar</string>       
+	<string Field="FanArtFilter" Original="Filter">Filtrera</string>
+	<string Field="FanArtFilterAll" Original="All">Samtliga</string>
+	<string Field="ButtonRandomFanart" Original="Random Fanart">Slumpad Fanart</string>
+	<string Field="ButtonToggleLayout" Original="Toggle Layout">Fanart av/på</string>
+	<string Field="LabelResolution" Original="Resolution:">Upplösning:</string>
+	<string Field="LabelChosen" Original="Chosen:">Vald:</string>
+	<string Field="LabelDisabled" Original="Disabled:">Ej vald:</string>
+	<string Field="ResetUserSelections" Original="Reset User Selections">Nollställ egen markering</string>
+
+	<string Field="DeleteFromDisk" Original="Delete from Disk">Radera filen från hårddisken</string>
+	<string Field="DeleteFromDatabase" Original="Delete from Database">Ta bort från databasen</string>
+	<string Field="DeleteFromFileDatabase" Original="Delete from Disk and Database">Radera filen och ta bort från databasen</string>
+	<string Field="RateDialogLabel" Original="Select Your Rating for {0}">Välj betyg för {0}</string>
+	<string Field="Hide_thumbnail_on_unwatched" Original="Hide Spoiler Thumbnails">Göm tumnagelbild med spoiler</string>	
+	
+	<!-- Rate Descriptions - 5 Stars-->
+	<string Field="RateFiveStarOne" Original="Terrible">Förskräckligt</string>
+	<string Field="RateFiveStarTwo" Original="Mediocre">Medelmåttigt</string>
+	<string Field="RateFiveStarThree" Original="Good">Bra</string>
+	<string Field="RateFiveStarFour" Original="Superb">Fantastiskt</string>
+	<string Field="RateFiveStarFive" Original="Perfect">Perfekt</string>
+	<!-- Rate Descriptions - 10 Stars-->
+	<string Field="RateTenStarOne" Original="Abysmal">Avskyvärt</string>
+	<string Field="RateTenStarTwo" Original="Terrible">Förskräckligt</string>
+	<string Field="RateTenStarThree" Original="Bad">Dåligt</string>
+	<string Field="RateTenStarFour" Original="Poor">Undermåligt</string>
+	<string Field="RateTenStarFive" Original="Mediocre">Medelmåttigt</string>
+	<string Field="RateTenStarSix" Original="Fair">Okay</string>
+	<string Field="RateTenStarSeven" Original="Good">Bra</string>
+	<string Field="RateTenStarEight" Original="Great">Toppen</string>
+	<string Field="RateTenStarNine" Original="Superb">Fantastiskt</string>
+	<string Field="RateTenStarTen" Original="Perfect">Perfekt</string>
+	
+	<string Field="ContentRating" Original="Content Rating">Åldersgräns</string>
+	<string Field="ViewTags" Original="View Tags">Visa taggar</string>
+	<string Field="AddViewTag" Original="Add Series to View Tag">Lägg till serien i vy</string>
+	<string Field="RemoveViewTag" Original="Remove Series from View Tag">Ta bort serien från vy</string>
+	<string Field="NewViewTag" Original="New Tag">Ny vy</string>
+	<string Field="CycleSeriesBanner" Original="Cycle Series Banner">Rotera serie-banner</string>
+	<string Field="CycleSeasonBanner" Original="Cycle Season Poster">Rotera säsongs-affisch</string>
+	<string Field="CycleSeriesPoster" Original="Cycle Series Poster">Rotera serie-affisch</string>
+	<string Field="FanartRandomInterval" Original="Fanart Timer Interval">Intervall för Fanart</string>
+	<string Field="FanartIntervalFiveSeconds" Original="5 Seconds">5 sekunder</string>
+	<string Field="FanartIntervalTenSeconds" Original="10 Seconds">10 sekunder</string>
+	<string Field="FanartIntervalFifteenSeconds" Original="15 Seconds">15 sekunder</string>
+	<string Field="FanartIntervalThirtySeconds" Original="30 Seconds">30 sekunder</string>
+	<string Field="FanartIntervalFortyFiveSeconds" Original="45 Seconds">45 sekunder</string>
+	<string Field="FanartIntervalSixtySeconds" Original="60 Seconds">60 sekunder</string>
+	<string Field="NoPlaylistsFound" Original="No Playlists found in:">Inga spel-listor hittades i:</string>
+	<string Field="PinCode" Original="Pin Code">Pin-kod</string>
+	<string Field="PinCodeIncorrectLine1" Original="The entered pin code is incorrect">Den inmatade koden är felaktig</string>
+	<string Field="PinCodeIncorrectLine2" Original="Press OK to try again">Tryck på OK för ett nytt försök</string>
+	<string Field="ParentalControlLocked" Original="Lock Views">Spärra vyer</string>
+	<string Field="ViewIsLocked" Original="View Locked">Vy spärrad</string>
+	<string Field="PinCodeDlgLabel1" Original="The view {0} is locked">Vyn "{0}" är spärrad</string>
+	<string Field="PinCodeDlgLabel2" Original="Enter in 4 Digit Pin Code to proceed:">Mata in 4-siffrig Pin-kod för att fortsätta:</string>
+	<string Field="PinCodeMessageIncorrect" Original="Pin Incorrect">Pin-koden är felaktig</string>
+	<string Field="Continuing" Original="Continuing Series">Pågående serie</string>
+	<string Field="Ended" Original="Ended Series">Avslutad serie</string>
+	<string Field="HighDefinition" Original="High Definition">Högupplöst</string>
+	<string Field="StandardDefinition" Original="Standard Defintion">Standard-upplösning</string>
+	<string Field="Top10Online" Original="Top 10 (Online)">Top 10 (Online)</string>
+	<string Field="Top10User" Original="Top 10 (User)">Top 10 (Användare)</string>
+	<string Field="Top25Online" Original="Top 25 (Online)">Top 25 (Online)</string>
+	<string Field="Top25User" Original="Top 25 (User)">Top 25(Användare)</string>
+	<string Field="Subtitles" Original="Subtitles">Textning</string>
+	<string Field="MultiAudio" Original="Multiple Audio Tracks">Flera ljudspår</string>
+	<string Field="OnlineFavourites" Original="Online Favourites">Online-favoriter</string>	
+	<string Field="Actors" Original="Actors">Skådespelare</string>
+	<string Field="RemovableMedia" Original="Removable Media">Utmatningsbar enhet</string>
+	<string Field="LocalMedia" Original="Local Media">Lokal enhet</string>
+	<string Field="AdultSeries" Original="Adult Series">Vuxen-serie</string>
+	<string Field="KidsSeries" Original="Kids Series">Barn-serie</string>
+	<string Field="ClearFanartCache" Original="Clear Fanart Cache">Töm Fanart-Cache</string>
+	
+    <string Field="DeleteThumbnailsHeading" Original="Delete Thumbnails">Radera tumnagelbilder</string>
+	<string Field="DeleteThumbnailsLine1" Original="Would you also like to Delete and Re-Download">Vill du radera för att sedan ladda ner</string>
+	<string Field="DeleteThumbnailsLine2" Original="all episode thumbnails?">alla avsnitts-tumnagelbilder igen?</string>
+	<string Field="RateDialog" Original="Rate Dialog">Betygsättning</string>
+	<string Field="PinCodeDialog" Original="Pin Code Dialog">Pin-kod</string>
+    
+    <string Field="Aired" Original="Aired">TV-visade</string>
+    <string Field="AiredStatusContinuing" Original="Continuing">Pågående</string>
+    <string Field="AiredStatusEnded" Original="Ended">Avslutade</string>
+    <string Field="Airs" Original="Airs">Visas</string>
+	<string Field="AirsDay" Original="Airs Day">Visas på</string>
+    <string Field="AirsTime" Original="Airs Time">Visas klockan</string>
+	<string Field="Cast" Original="Cast">Rollbesättning</string>
+    <string Field="Certification" Original="Certification">Certifiering</string>
+    <string Field="Director" Original="Director">Regi</string>
+    <string Field="Directors" Original="Directors">Regi</string>    
+    <string Field="FileSize" Original="File Size">Fil-storlek</string>
+    <string Field="FirstAired" Original="First Aired">Först visad</string>
+    <string Field="Genre" Original="Genre">Genre</string>
+    <string Field="Group" Original="Groups">Grupp</string>
+    <string Field="Groups" Original="Groups">Grupper</string>
+    <string Field="GuestStar" Original="Guest Star">Gästspel av</string>
+    <string Field="GuestStars" Original="Guest Stars">Gästspel av</string>
+    <string Field="MediaInfo" Original="Media Info">Media Info</string>
+    <string Field="Minutes" Original="Minutes">Minuter</string>
+	<string Field="MyRating" Original="My Rating">Mitt betyg</string>
+    <string Field="Network" Original="Network">Kanal/Producent</string>
+    <string Field="Rated" Original="Rated">Betygsatt</string>
+    <string Field="Rating" Original="Rating">Betygsättning</string>
+    <string Field="Runtime" Original="Runtime">Speltid</string>
+    <string Field="SeriesDetails" Original="Series Details">Serie-detaljer</string>
+	<string Field="SeriesStatus" Original="Series Status">Serie-status</string>
+	<string Field="Starring" Original="Starring">Med</string>
+    <string Field="Watched" Original="Watched">Sedd</string>
+	<string Field="Writer" Original="Writer">Författare</string>
+    <string Field="Writers" Original="Writers">Författare</string>
+	
+	<string Field="TVDB_ERROR_UNAVAILABLE_1" Original="TheTVDB.com is currently unavailable">TheTVDB.com verkar vara nere</string>
+	<string Field="TVDB_ERROR_UNAVAILABLE_2" Original="Please try again later">Försök igen senare</string>
+	<string Field="NETWORK_ERROR_UNAVAILABLE_1" Original="Network connection is unavailable">Ingen nätverksanslutning</string>
+	<string Field="NETWORK_ERROR_UNAVAILABLE_2" Original="Check your connection and try again">Felsök och försök igen</string>
+    
+	<string Field="Playlist" Original="Playlist">Spel-lista</string>
+    <string Field="LastOnlineUpdate" Original="LastOnlineUpdate">Senaste online-uppdatering</string>
+</strings>
