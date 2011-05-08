@@ -123,15 +123,45 @@ multiple view modes.
       <type>image</type>
       <id>0</id>
       <posX>0</posX>
-      <posY>180</posY>
-      <width>1273</width>
-      <height>720</height>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
       <texture>#MovingPictures.Backdrop</texture>
       <animation effect="fade" time="300">visible</animation>
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <visible>[!facadeview.filmstrip+!facadeview.coverflow]+control.isvisible(1)</visible>
+      <visible>!Control.IsVisible(50) + !Control.IsVisible(51) + control.isvisible(1)</visible>
+    </control>
+    <control>
+      <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#MovingPictures.Backdrop2</texture>
+      <animation effect="fade" time="300">visible</animation>
+      <animation effect="fade" time="300" delay="300">hidden</animation>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>!Control.IsVisible(50) + !Control.IsVisible(51) + control.isvisible(11)</visible>
+    </control>
+    <control>
+      <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>180</posY>
+      <width>1273</width>
+      <height>720</height>
+      <texture>#MovingPictures.Backdrop</texture>
+      <animation effect="fade" time="300">visible</animation>
+      <animation effect="fade" time="200" delay="0">hidden</animation>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>[!facadeview.filmstrip+!facadeview.coverflow+Control.IsVisible(50)]+control.isvisible(1)</visible>
     </control>
     <control>
       <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
@@ -143,10 +173,10 @@ multiple view modes.
       <height>720</height>
       <texture>#MovingPictures.Backdrop2</texture>
       <animation effect="fade" time="300">visible</animation>
-      <animation effect="fade" time="300" delay="300">hidden</animation>
+      <animation effect="fade" time="200" delay="0">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <visible>[!facadeview.filmstrip+!facadeview.coverflow]+control.isvisible(11)</visible>
+      <visible>[!facadeview.filmstrip+!facadeview.coverflow+Control.IsVisible(50)]+control.isvisible(11)</visible>
     </control>
     <!--            :: CATEGORY VIEW ::            -->
     <control>
@@ -234,13 +264,13 @@ multiple view modes.
       <visible>Control.IsVisible(50)</visible>
     </control>
     <!--            :: IMPORT ::            -->
-    <import tag="Background">movingpictures.background.default.xml</import>
+    <import tag="Background">movingpictures.background.noinfo.thumbs.nofanart.xml</import>
     <import>common.time.xml</import>
     <import>movingpictures.hiddenmenu.xml</import>
-    <import tag="Views">movingpictures.views.default.xml</import>
-    <import tag="Facade">movingpictures.facade.default.xml</import>
+    <import tag="Views">movingpictures.views.noinfo.xml</import>
+    <import tag="Facade">movingpictures.facade.noinfo.thumbs.nofanart.xml</import>
     <import>movingpictures.Info.xml</import>
-    <import tag="Mediainfo">movingpictures.mediainfo.default.xml</import>
+    <import tag="Mediainfo">movingpictures.mediainfo.noinfo.xml</import>
     <import>movingpictures.details.xml</import>
     <import>movingpictures.mediainfo.details.xml</import>
     <import>common.overlay.xml</import>
