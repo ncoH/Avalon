@@ -145,8 +145,8 @@
 		<id>1</id>
 		<posX>1535</posX>
 		<posY>832</posY>
-		<width>222</width>
-		<height>19</height>
+		<width>315</width>
+		<height>27</height>
 		<align>left</align>
 		<texture>#TVSeries.Series.RatingPath</texture>
 		<visible>facadeview.list+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
@@ -160,8 +160,8 @@
 		<id>1</id>
 		<posX>850</posX>
 		<posY>732</posY>
-		<width>222</width>
-		<height>19</height>
+		<width>315</width>
+		<height>27</height>
 		<align>left</align>
 		<texture>#TVSeries.Series.RatingPath</texture>
 		<visible>facadeview.filmstrip+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
