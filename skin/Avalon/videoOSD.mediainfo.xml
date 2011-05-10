@@ -75,65 +75,17 @@
 		<visible>string.contains(#Play.Current.VideoResolution,SD)+string.contains(#Play.Current.VideoCodec.Texture,DIVX)+string.contains(#Play.Current.AspectRatio,fullscreen)]</visible>
 	</control>
 	
-	<!-- Audiocodec -->
-	<control>
-		<description>AC3 / 5.1</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>669</posX>
-		<posY>969</posY>
-		<height>38</height>
-		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\audio\ac3_51.png</texture>
-		<visible>[string.contains(#Play.Current.AudioCodec.Texture,AC-3)+string.contains(#Play.Current.AudioChannels.Texture,5.1)]</visible>
-	</control>
+	<!-- Audio -->
 	
 	<control>
-		<description>DTS / 5.1</description>
+		<description>Audiocodec/channels</description>
 		<type>image</type>
 		<id>0</id>
 		<posX>669</posX>
 		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\audio\dts_51.png</texture>
-		<visible>string.contains(#Play.Current.AudioCodec.Texture,dts)+string.contains(#Play.Current.AudioChannels.Texture,5.1)</visible>
-	</control>
-	
-	<control>
-		<description>DTS / 7.1</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>669</posX>
-		<posY>969</posY>
-		<height>38</height>
-		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\audio\dts_71.png</texture>
-		<visible>string.contains(#Play.Current.AudioCodec.Texture,dts)+[string.contains(#Play.Current.AudioChannels.Texture,7)|string.contains(#Play.Current.AudioChannels.Texture,7.1)]</visible>
-	</control>
-	
-	<control>
-		<description>AC3 / 2.0</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>669</posX>
-		<posY>969</posY>
-		<height>38</height>
-		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\audio\ac3_20.png</texture>
-		<visible>string.contains(#Play.Current.AudioCodec.Texture,ac-3)+string.contains(#Play.Current.AudioChannels.Texture,stereo.png)</visible>
-	</control>
-	
-	<control>
-		<description>mp3 / 2.0</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>669</posX>
-		<posY>969</posY>
-		<height>38</height>
-		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\audio\mp3_20.png</texture>
-		<visible>[string.contains(#Play.Current.AudioCodec.Texture, LAYER 3)+string.contains(#Play.Current.AudioChannels.Texture,stereo)]</visible>
+		<texture>Logos\audio\#Play.Current.AudioCodec.Texture #Play.Current.AudioChannels.png</texture>
 	</control>
 	
 	<!-- Source -->
