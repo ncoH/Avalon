@@ -71,6 +71,14 @@
 	<string Field="SkinSettings">Skin Settings</string>
 	<string Field="SkinUpdateNF">Update available</string>
 	<string Field="SkinUpdateNF2">Press left and push the button to install</string>
+	<string Field="SkinSettings.movpicsLayout">Movie Information Layout</string>
+	<string Field="SkinSettings.seriesLayout">Series Information Layout</string>
+	<string Field="SkinSettings.Thumbview">Thumbnails</string>
+	<string Field="SkinSettings.Info">Enable Infos at bottom of the screen</string>
+	<string Field="SkinSettings.PosterHide">Hide Poster on listview when not scrolling</string>
+	<string Field="SkinSettings.TV">Television</string>
+	<string Field="SkinSettings.TVSeries">TV Series</string>
+	<string Field="SkinSettings.Update">Update</string>
 	
 	<!-- T -->
 

@@ -15,7 +15,7 @@
 		<posX>189</posX>
 		<posY>99</posY>
 		<width>500</width>
-		<label>Skin Settings | TV Series</label>
+		<label>#SkinTranslation.Translations.SkinSettings.Label | #SkinTranslation.Translations.SkinSettings.TVSeries.Label</label>
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
@@ -42,7 +42,7 @@
 		<posX>766</posX>
 		<posY>375</posY>
 		<width>500</width>
-		<label>Series information layout</label>
+		<label>#SkinTranslation.Translations.SkinSettings.seriesLayout.Label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>fontB14</font>
 	</control>
@@ -53,7 +53,7 @@
         <description>TV Series Default/NoInfo Style</description>
         <type>togglebutton</type>
         <id>2</id>
-		<label>Enable serie info at bottom of screen</label>
+		<label>#SkinTranslation.Translations.SkinSettings.Info.Label</label>
 		<posX>736</posX>
 		<posY>430</posY>
         <onleft>10011</onleft>

@@ -15,7 +15,7 @@
 		<posX>189</posX>
 		<posY>99</posY>
 		<width>500</width>
-		<label>Skin Settings | Update</label>
+		<label>#SkinTranslation.Translations.SkinSettings.Label | #SkinTranslation.Translations.SkinSettings.Update.Label</label>
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>

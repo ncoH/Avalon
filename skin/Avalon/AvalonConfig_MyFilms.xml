@@ -15,7 +15,7 @@
 		<posX>189</posX>
 		<posY>99</posY>
 		<width>500</width>
-		<label>Skin Settings | MyFilms</label>
+		<label>#SkinTranslation.Translations.SkinSettings.Label | MyFilms</label>
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
@@ -42,7 +42,7 @@
 		<posX>766</posX>
 		<posY>375</posY>
 		<width>500</width>
-		<label>Movie information layout</label>
+		<label>#SkinTranslation.Translations.SkinSettings.movpicsLayout.Label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>fontB14</font>
 	</control>
@@ -55,7 +55,7 @@
 		<posX>766</posX>
 		<posY>488</posY>
 		<width>500</width>
-		<label>Thumbview layout</label>
+		<label>#SkinTranslation.Translations.SkinSettings.Thumbview.Label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>fontB14</font>
 	</control>
@@ -66,7 +66,7 @@
         <description>MyFilms Default/NoInfo Style</description>
         <type>togglebutton</type>
         <id>2</id>
-		<label>Enable movie info at bottom of screen</label>
+		<label>#SkinTranslation.Translations.SkinSettings.Info.Label</label>
 		<posX>736</posX>
 		<posY>430</posY>
         <onleft>10011</onleft>
@@ -101,14 +101,14 @@
 		<textureFocus>settings_button_large_focus.png</textureFocus>
 		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
       </control>
-<!--
+
       <control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-        <description>MovingPictures Hide Poster</description>
+        <description>MyFilms Hide Poster</description>
         <type>togglebutton</type>
         <id>4</id>
-		<label>Auto Hide Poster in listview</label>
+		<label>#SkinTranslation.Translations.SkinSettings.PosterHide.Label</label>
 		<posX>736</posX>
 		<posY>630</posY>
         <onleft>10011</onleft>
@@ -124,7 +124,7 @@
 		<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
 		<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
       </control>
--->
+
 <import>common.time.xml</import>
 <import>avalon.version.xml</import>
   </controls>

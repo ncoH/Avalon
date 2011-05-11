@@ -45,7 +45,7 @@
 		<posX>189</posX>
 		<posY>99</posY>
 		<width>500</width>
-		<label>Skin Settings</label>
+		<label>#SkinTranslation.Translations.SkinSettings.Label</label>
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>

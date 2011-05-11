@@ -19,7 +19,6 @@
 	<!-- E -->
 
 	<!-- F -->
-	<string Field="fanart.scraping">Lade Fanart</string>
 	<string Field="format">Format:</string>
 	
 	<!-- G -->
@@ -72,6 +71,14 @@
 	<string Field="SkinSettings">Skin Einstellungen</string>
 	<string Field="SkinUpdateNF">Update verfügbar</string>
 	<string Field="SkinUpdateNF2">zum installieren nach links drücken und bestätigen</string>
+	<string Field="SkinSettings.movpicsLayout">Filme Information Ansicht</string>
+	<string Field="SkinSettings.seriesLayout">Serien Information Ansicht</string>
+	<string Field="SkinSettings.Thumbview">Vorschaubilder</string>
+	<string Field="SkinSettings.Info">Zeige Infos</string>
+	<string Field="SkinSettings.PosterHide">Poster beim scrollen verstecken</string>
+	<string Field="SkinSettings.TV">Fernsehen</string>
+	<string Field="SkinSettings.TVSeries">Serien</string>
+	<string Field="SkinSettings.Update">Aktualisierung</string>
 
 	<!-- T -->
 	<string Field="tv.recordings">Aufnahmen</string>
