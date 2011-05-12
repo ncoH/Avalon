@@ -69,7 +69,7 @@
 				<label>#MovingPictures.Translation.CycleView.Label</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>66613</onup>
+				<onup>66612</onup>
 				<ondown>3</ondown>
 			</control>
 
@@ -172,7 +172,7 @@
 			</control>	
 			
 			<control>
-				<description>Skin Setting</description>
+				<description>Skin Settings</description>
 				<type>button</type>
 				<id>66612</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
@@ -183,7 +183,7 @@
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
-				<label>#SkinTranslation.Translations.SkinSettings.Label</label>
+				<label>#Avalon.SkinSettings</label>
 				<hyperlink>155101</hyperlink>
 				<onleft>50</onleft>
 				<onright>50</onright>

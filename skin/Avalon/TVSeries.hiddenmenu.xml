@@ -67,7 +67,7 @@
 				<label>Switch View</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>5</onup>
+				<onup>66613</onup>
 				<ondown>3</ondown>
 			</control> 
 		<control>
@@ -175,7 +175,7 @@
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
-				<label>#SkinTranslation.Translations.SkinSettings.Label</label>
+				<label>#Avalon.SkinSettings</label>
 				<hyperlink>155103</hyperlink>
 				<onleft>50</onleft>
 				<onright>50</onright>

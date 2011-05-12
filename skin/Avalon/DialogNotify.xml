@@ -45,7 +45,7 @@
                 <posY>732</posY>
 				<width>44</width>
 				<height>45</height>
-                <texture>tvguide_record_button.png</texture>
+                <texture>tv_is_recording.gif</texture>
             </control>
 			
 			<control>
@@ -104,8 +104,8 @@
                 <ondown>4</ondown>
                 <posX>680</posX>
                 <posY>825</posY>
-                <width>960</width>
-                <height>110</height>
+                <width>800</width>
+                <height>210</height>
                 <textcolor>ffffffff</textcolor>
                 <spinPosX>1031</spinPosX>
                 <spinPosY>-2000</spinPosY>
