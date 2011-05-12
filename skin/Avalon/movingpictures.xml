@@ -131,7 +131,7 @@ multiple view modes.
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <visible>!Control.IsVisible(50) + !Control.IsVisible(51) + control.isvisible(1)</visible>
+      <visible>[!Control.IsVisible(50) + !Control.IsVisible(51)]+ control.isvisible(1)</visible>
     </control>
     <control>
       <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
@@ -146,7 +146,7 @@ multiple view modes.
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <visible>!Control.IsVisible(50) + !Control.IsVisible(51) + control.isvisible(11)</visible>
+      <visible>[!Control.IsVisible(50) + !Control.IsVisible(51)]+ control.isvisible(11)</visible>
     </control>
     <control>
       <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
@@ -161,7 +161,7 @@ multiple view modes.
       <animation effect="fade" time="200" delay="0">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <visible>[!facadeview.filmstrip+!facadeview.coverflow+Control.IsVisible(50)]+control.isvisible(1)</visible>
+      <visible>[[!facadeview.filmstrip+!facadeview.coverflow+Control.IsVisible(50)] | Control.IsVisible(51)]+control.isvisible(1)</visible>
     </control>
     <control>
       <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
@@ -176,7 +176,7 @@ multiple view modes.
       <animation effect="fade" time="200" delay="0">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <visible>[!facadeview.filmstrip+!facadeview.coverflow+Control.IsVisible(50)]+control.isvisible(11)</visible>
+      <visible>[[!facadeview.filmstrip+!facadeview.coverflow+Control.IsVisible(50)] | Control.IsVisible(51)]+control.isvisible(11)</visible>
     </control>
     <!--            :: CATEGORY VIEW ::            -->
     <control>

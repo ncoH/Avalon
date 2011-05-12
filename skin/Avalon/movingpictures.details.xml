@@ -63,7 +63,7 @@ This file should contain the details view
 	<control>
 		<description>Release Date Label</description>
 		<type>label</type>
-		<label>#Avalon.Release</label>
+		<label>#Avalon.ReleaseDate</label>
 		<id>0</id>
 		<posX>439</posX>
 		<posY>394</posY>
