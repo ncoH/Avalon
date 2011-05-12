@@ -311,7 +311,7 @@
 			<id>2033</id>
 			<posX>585</posX>
 			<posY>352</posY>
-			<label>#myfilms.db.country/#myfilms.db.year.label:</label>
+			<label>#myfilms.db.country.label/#myfilms.db.year.label:</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>

@@ -93,7 +93,7 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
 		<description>Year / Runtime / Genre</description>
 		<type>fadelabel</type>
-		<label>#myfilms.db.year.value - #myfilms.db.length.value #SkinTranslation.Translations.movingpictures.minutes.Label - #myfilms.db.category.value</label>
+		<label>#myfilms.db.year.value - #myfilms.db.length.value #Avalon.Minutes - #myfilms.db.category.value</label>
 		<id>0</id>
 		<posX>1856</posX>
 		<posY>1006</posY>
