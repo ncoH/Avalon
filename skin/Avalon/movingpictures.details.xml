@@ -63,7 +63,7 @@ This file should contain the details view
 	<control>
 		<description>Release Date Label</description>
 		<type>label</type>
-		<label>#Avalon.movingpictures.release</label>
+		<label>#Avalon.Release</label>
 		<id>0</id>
 		<posX>439</posX>
 		<posY>394</posY>
@@ -130,7 +130,7 @@ This file should contain the details view
 	<control>
 		<description>Genre Label</description>
 		<type>label</type>
-		<label>#MovingPictures.Translation.Genre</label>
+		<label>#MovingPictures.Translation.Genre.Label</label>
 		<id>0</id>
 		<posX>439</posX>
 		<posY>476</posY>
@@ -164,7 +164,7 @@ This file should contain the details view
 	<control>
 		<description>Director Label</description>
 		<type>label</type>
-		<label>#MovingPictures.Translation.Director</label>
+		<label>#MovingPictures.Translation.Director.Label</label>
 		<id>0</id>
 		<posX>439</posX>
 		<posY>518</posY>
@@ -198,7 +198,7 @@ This file should contain the details view
 	<control>
 		<description>Actors Label</description>
 		<type>label</type>
-		<label>#MovingPictures.Translation.Actors</label>
+		<label>#MovingPictures.Translation.Actors.Label</label>
 		<id>0</id>
 		<posX>439</posX>
 		<posY>558</posY>
