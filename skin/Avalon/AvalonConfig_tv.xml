@@ -15,7 +15,7 @@
 		<posX>189</posX>
 		<posY>99</posY>
 		<width>500</width>
-		<label>#SkinTranslation.Translations.SkinSettings.Label | #SkinTranslation.Translations.SkinSettings.TV.Label</label>
+		<label>#Avalon.SkinSettings | #Avalon.SkinSettingsTV</label>
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
@@ -29,7 +29,7 @@
 		<posX>766</posX>
 		<posY>264</posY>
 		<width>500</width>
-		<label>Television</label>
+		<label>#Avalon.SkinSettingsTV</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>fontB22</font>
 	</control>
@@ -42,7 +42,7 @@
 		<posX>766</posX>
 		<posY>375</posY>
 		<width>500</width>
-		<label>TVMiniGuide rows</label>
+		<label>#Avalon.TVMiniGuideRows</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>fontB14</font>
 	</control>

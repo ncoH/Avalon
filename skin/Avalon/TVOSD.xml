@@ -118,7 +118,7 @@
 		<posY>966</posY>
 		<width>44</width>
 		<height>45</height>
-		<texture>osd_is_recording.png</texture>
+		<texture>tv_is_recording.gif</texture>
 	</control>
 	
 	<control>

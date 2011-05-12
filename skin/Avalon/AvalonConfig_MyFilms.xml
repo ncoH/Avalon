@@ -15,7 +15,7 @@
 		<posX>189</posX>
 		<posY>99</posY>
 		<width>500</width>
-		<label>#SkinTranslation.Translations.SkinSettings.Label | MyFilms</label>
+		<label>#Avalon.SkinSettings | MyFilms</label>
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
@@ -42,7 +42,7 @@
 		<posX>766</posX>
 		<posY>375</posY>
 		<width>500</width>
-		<label>#SkinTranslation.Translations.SkinSettings.movpicsLayout.Label</label>
+		<label>#Avalon.SkinSettingsMovpicsLayout</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>fontB14</font>
 	</control>
@@ -55,7 +55,7 @@
 		<posX>766</posX>
 		<posY>488</posY>
 		<width>500</width>
-		<label>#SkinTranslation.Translations.SkinSettings.Thumbview.Label</label>
+		<label>#Avalon.SkinSettingsThumbview</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>fontB14</font>
 	</control>
@@ -66,7 +66,7 @@
         <description>MyFilms Default/NoInfo Style</description>
         <type>togglebutton</type>
         <id>2</id>
-		<label>#SkinTranslation.Translations.SkinSettings.Info.Label</label>
+		<label>#Avalon.SkinSettingsInfo</label>
 		<posX>736</posX>
 		<posY>430</posY>
         <onleft>10011</onleft>
@@ -108,7 +108,7 @@
         <description>MyFilms Hide Poster</description>
         <type>togglebutton</type>
         <id>4</id>
-		<label>#SkinTranslation.Translations.SkinSettings.PosterHide.Label</label>
+		<label>#Avalon.SkinSettingsPosterHide</label>
 		<posX>736</posX>
 		<posY>630</posY>
         <onleft>10011</onleft>

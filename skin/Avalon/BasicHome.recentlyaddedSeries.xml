@@ -154,7 +154,7 @@
         <posX>1218</posX>
         <posY>256</posY>
         <width>590</width>
-        <label>#SkinTranslation.Translations.Latest.episodes.Label</label>
+        <label>#Avalon.LatestEpisodes</label>
         <font>AvalonLight20</font>
         <textcolor>ffffff</textcolor>
       </control>

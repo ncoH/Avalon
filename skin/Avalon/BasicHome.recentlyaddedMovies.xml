@@ -211,7 +211,7 @@
         <posX>1218</posX>
         <posY>256</posY>
         <width>590</width>
-        <label>#SkinTranslation.Translations.Latest.movies.Label</label>
+        <label>#Avalon.LatestMovies</label>
         <font>AvalonLight20</font>
         <textcolor>ffffff</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="400">Visible</animation>

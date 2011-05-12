@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- German (DE) -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<!-- Last Updated: 12th May 2011 -->
+<strings>
+  <!-- Skin Updates / Patching GUI -->
+  <string Field="SkinUpdate">Skin Aktualisierung</string>
+  <string Field="UpdateInstall">Update installieren</string>
+  <string Field="NoUpdatesAvailable">Zur Zeit keine Updates verfügbar</string>
+  <string Field="DownloadingPatch">Patch {0} wird heruntergeladen</string>
+  <string Field="DownloadingProgress">{0}KB von {1}KB ({2}%) geladen</string>
+  <string Field="NumPatchesInstalled">Anzahl installierter Patches: {0}</string>
+  <string Field="PatchUpdateComplete">Update zu Skin Version {0} fertiggestellt</string>
+  <string Field="UpdateAvailableHeading">Update verfügbar - Change Log</string>
+  <string Field="mupdateheader">Patch Installer wurde auf den Desktop heruntergeladen</string>
+  <string Field="mupdateline1">Manuelles Update erforderlich - zur Ausführung</string>
+  <string Field="mupdateline2">MediaPortal und/oder Konfiguration schließen</string>
+  <string Field="mupdateline3">und den Patch: {0} ausführen</string>
+  <string Field="mupdateline4">der sich auf Ihrem Desktop befindet</string>
+  <!-- Skin Settings --> 
+  <string Field="SkinSettings">Skin Einstellungen</string>
+  <string Field="SkinUpdateNF">Update verfügbar</string>
+  <string Field="SkinUpdateNF2">zum installieren nach links drücken und bestätigen</string>
+  <string Field="SkinSettingsMovpicsLayout">Filme Information Ansicht</string>
+  <string Field="SkinSettingsSeriesLayout">Serien Information Ansicht</string>
+  <string Field="SkinSettingsThumbview">Vorschaubilder</string>
+  <string Field="SkinSettingsInfo">Zeige Infos</string>
+  <string Field="SkinSettingsPosterHide">Poster automatisch ausblenden</string>
+  <string Field="SkinSettingsTV">Fernsehen</string>
+  <string Field="SkinSettingsTVSeries">Serien</string>
+  <string Field="SkinSettingsUpdate">Aktualisierung</string>
+  <string Field="SkinSettingsMovingPictures">Moving Pictures</string>
+  <string Field="SkinSettingsMyFilms">My Films</string>
+  <string Field="Thumbnails">Vorschaubilder</string>
+  <string Field="ThumbnailDefault">Vorschaubilder: Standard</string>
+  <string Field="ThumbnailsNoFanart">Vorschaubilder: ohne Fanart</string>
+  <string Field="ThumbnailXL">Vorschaubilder: XL</string>
+  <string Field="TVMiniGuideSize">TV Mini Guide Größe</string>
+  <string Field="TVMiniGuideRows">TV Mini Guide Zeilen</string> 
+  <string Field="TVMiniGuideThreeRows">TV Mini Guide: 3 Zeilen</string>
+  <string Field="TVMiniGuideEightRows">TV Mini Guide: 8 Zeilen</string> 
+  <!-- MovingPictures/MyFilms -->  
+  <string Field="Runtime">Laufzeit</string>
+  <string Field="ReleaseDate">Veröffentlicht</string>
+  <string Field="Minutes">minuten</string>
+  <string Field="Overview">Start/Übersicht</string>
+  <string Field="Description">Beschreibung</string>
+  <string Field="Comments">Kommentare</string>
+  <string Field="Actors">Darsteller</string>
+  <string Field="Techinfo">Technische Infos</string>
+  <!-- Latest Media -->  
+  <string Field="LatestMovies">Neueste Filme</string>
+  <string Field="LatestEpisodes">Neueste Episoden</string> 
+  <!-- Misc -->   
+  <string Field="FanartScraping">Lade Fanart</string>  
+</strings>

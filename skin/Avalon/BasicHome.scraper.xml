@@ -35,7 +35,7 @@
         <width>400</width>
         <textcolor>ffffffff</textcolor>
         <font>AvalonLight12</font>
-        <label>#SkinTranslation.Translations.fanart.scraping.Label | #fanarthandler.scraper.percent.completed %</label>
+        <label>#Avalon.FanartScraping | #fanarthandler.scraper.percent.completed %</label>
         <align>left</align>
         <visible>control.isvisible(91919280)+!string.equals(#Avalon.ShowUpdateInd,true)</visible>
     </control> 	

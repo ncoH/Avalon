@@ -1006,7 +1006,7 @@
 		<posX>225</posX>
 		<posY>97</posY>
 		<width>500</width>
-		<label>#SkinTranslation.Translations.SkinUpdateNF.Label</label>
+		<label>#Avalon.SkinUpdateNF</label>
 		<textcolor>ffffff</textcolor>
 		<font>AvalonLight12</font>
 		<visible>string.equals(#Avalon.ShowUpdateInd,true) + string.equals(#uplabel1,yes)</visible>
@@ -1020,8 +1020,8 @@
 		<id>4202</id>
 		<posX>225</posX>
 		<posY>97</posY>
-		<width>500</width>
-		<label>#SkinTranslation.Translations.SkinUpdateNF2.Label</label>
+		<width>600</width>
+		<label>#Avalon.SkinUpdateNF2</label>
 		<textcolor>ffffff</textcolor>
 		<font>AvalonLight12</font>
 		<visible>string.equals(#Avalon.ShowUpdateInd,true) + string.equals(#uplabel2,yes)</visible>

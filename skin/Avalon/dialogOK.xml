@@ -13,8 +13,8 @@
 	    <id>10</id>
 		<posX>620</posX>
 		<posY>807</posY>
-		<textXOff>1</textXOff>
-		<textYOff>1</textYOff>
+		<textXOff>0</textXOff>
+		<textYOff>5</textYOff>
 		<width>676</width>
 		<height>68</height>
 		<font>AvalonLight14</font>
