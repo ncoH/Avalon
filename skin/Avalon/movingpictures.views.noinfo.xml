@@ -195,7 +195,7 @@
 		<align>center</align>
 		<label>#MovingPictures.SelectedMovie.title</label>
 		<font>fontB20</font>
-		<visible>facadeview.filmstrip+Control.IsVisible(50)</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -215,7 +215,7 @@
 		<align>center</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.HasFocus(80)</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>
@@ -238,7 +238,7 @@
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
-		<visible>facadeview.filmstrip+Control.IsVisible(50)</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>
@@ -249,7 +249,7 @@
 		<posX>858</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.HasFocus(50)</visible>
 	</control>	
 </controls>
 </window>

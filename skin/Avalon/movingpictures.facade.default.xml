@@ -197,7 +197,7 @@ This file should contain the facade view
 				<scrollbarHeight>4</scrollbarHeight>
                 <scrollbarYOff>530</scrollbarYOff>
 					<keepaspectratio>no</keepaspectratio>
-					<cards flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_fanart_mask.png"></cards>
+					<cards flipY="true" diffuse="Thumb_Mask_test.png" mask="video_filmstrip_mask.png"></cards>
 				</control>
 	</control>
 </controls>

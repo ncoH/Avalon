@@ -90,7 +90,7 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<description>Release Date Label</description>
 		<type>label</type>
-		<label>#Avalon.Release</label>
+		<label>#Avalon.ReleaseDate</label>
 		<id>0</id>
 		<posX>678</posX>
 		<posY>884</posY>
@@ -158,7 +158,7 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<description>Genre Label</description>
 		<type>label</type>
-		<label>#MovingPictures.Translation.Genre</label>
+		<label>#MovingPictures.Translation.Genre.Label</label>
 		<id>0</id>
 		<posX>678</posX>
 		<posY>964</posY>
@@ -192,7 +192,7 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<description>Director Label</description>
 		<type>label</type>
-		<label>#MovingPictures.Translation.Director</label>
+		<label>#MovingPictures.Translation.Director.Label</label>
 		<id>0</id>
 		<posX>678</posX>
 		<posY>1004</posY>
