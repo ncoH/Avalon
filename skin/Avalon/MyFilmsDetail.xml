@@ -280,7 +280,7 @@
 			<id>1</id>
 			<posX>-2000</posX>
 			<posY>185</posY>
-			<label>#myfilms.db.originaltitle:</label>
+			<label>#myfilms.db.originaltitle.label:</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -311,7 +311,7 @@
 			<id>2033</id>
 			<posX>585</posX>
 			<posY>352</posY>
-			<label>#myfilms.db.country/#myfilms.db.year:</label>
+			<label>#myfilms.db.country/#myfilms.db.year.label:</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -341,7 +341,7 @@
 			<id>1</id>
 			<posX>585</posX>
 			<posY>394</posY>
-			<label>#myfilms.db.length:</label>
+			<label>#myfilms.db.length.label:</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -371,7 +371,7 @@
 			<id>2032</id>
 			<posX>585</posX>
 			<posY>435</posY>
-			<label>#myfilms.db.category:</label>
+			<label>#myfilms.db.category.label:</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -401,7 +401,7 @@
 			<id>2034</id>
 			<posX>585</posX>
 			<posY>476</posY>
-			<label>#myfilms.db.director:</label>
+			<label>#myfilms.db.director.label:</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -485,7 +485,7 @@
 			<id>2065</id>
 			<posX>585</posX>
 			<posY>517</posY>
-			<label>#myfilms.db.actors:</label>
+			<label>#myfilms.db.actors.label:</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>535</width>
@@ -642,7 +642,7 @@
 			<id>1</id>
 			<posX>585</posX>
 			<posY>352</posY>
-			<label>#myfilms.db.videoformat</label>
+			<label>#myfilms.db.videoformat.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -670,7 +670,7 @@
 			<id>1</id>
 			<posX>1142</posX>
 			<posY>352</posY>
-			<label>#myfilms.db.videobitrate</label>
+			<label>#myfilms.db.videobitrate.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -698,7 +698,7 @@
 			<id>1</id>
 			<posX>585</posX>
 			<posY>394</posY>
-			<label>#myfilms.db.resolution</label>
+			<label>#myfilms.db.resolution.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -726,7 +726,7 @@
 			<id>1</id>
 			<posX>1142</posX>
 			<posY>394</posY>
-			<label>#myfilms.db.calc.aspectratio</label>
+			<label>#myfilms.db.calc.aspectratio.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -755,7 +755,7 @@
 			<posX>585</posX>
 			<posY>435</posY>
 			<label>174</label>
-			<label>#myfilms.db.framerate</label>
+			<label>#myfilms.db.framerate.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -782,7 +782,7 @@
 			<id>1</id>
 			<posX>1142</posX>
 			<posY>435</posY>
-			<label>#myfilms.db.calc.imageformat</label>
+			<label>#myfilms.db.calc.imageformat.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -810,7 +810,7 @@
 			<id>1</id>
 			<posX>585</posX>
 			<posY>476</posY>
-			<label>#myfilms.db.audioformat</label>
+			<label>#myfilms.db.audioformat.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -837,7 +837,7 @@
 			<id>1</id>
 			<posX>1142</posX>
 			<posY>476</posY>
-			<label>#myfilms.db.audiobitrate</label>
+			<label>#myfilms.db.audiobitrate.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -864,7 +864,7 @@
 			<id>1</id>
 			<posX>585</posX>
 			<posY>558</posY>
-			<label>#myfilms.db.number</label>
+			<label>#myfilms.db.number.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -892,7 +892,7 @@
 			<id>1</id>
 			<posX>1142</posX>
 			<posY>558</posY>
-			<label>#myfilms.db.checked</label>
+			<label>#myfilms.db.checked.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -920,7 +920,7 @@
 			<id>1</id>
 			<posX>585</posX>
 			<posY>599</posY>
-			<label>#myfilms.db.date</label>
+			<label>#myfilms.db.date.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -948,7 +948,7 @@
 			<id>1</id>
 			<posX>1142</posX>
 			<posY>599</posY>
-			<label>#myfilms.db.dateadded</label>
+			<label>#myfilms.db.dateadded.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -976,7 +976,7 @@
 			<id>1</id>
 			<posX>585</posX>
 			<posY>640</posY>
-			<label>#myfilms.db.mediatype</label>
+			<label>#myfilms.db.mediatype.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -1004,7 +1004,7 @@
 			<id>1</id>
 			<posX>1142</posX>
 			<posY>640</posY>
-			<label>#myfilms.db.medialabel</label>
+			<label>#myfilms.db.medialabel.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -1032,7 +1032,7 @@
 			<id>1</id>
 			<posX>585</posX>
 			<posY>681</posY>
-			<label>#myfilms.db.disks</label>
+			<label>#myfilms.db.disks.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -1060,7 +1060,7 @@
 			<id>1</id>
 			<posX>1142</posX>
 			<posY>681</posY>
-			<label>#myfilms.db.size</label>
+			<label>#myfilms.db.size.label</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -1089,7 +1089,7 @@
 			<id>1</id>
 			<posX>585</posX>
 			<posY>802</posY>
-			<label>#myfilms.db.url:</label>
+			<label>#myfilms.db.url.label:</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -1117,7 +1117,7 @@
 			<id>1</id>
 			<posX>585</posX>
 			<posY>845</posY>
-			<label>#myfilms.user.source:</label>
+			<label>#myfilms.user.source.label:</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -1145,7 +1145,7 @@
 			<id>1</id>
 			<posX>585</posX>
 			<posY>886</posY>
-			<label>#myfilms.user.sourcetrailer:</label>
+			<label>#myfilms.user.sourcetrailer.label:</label>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight12</font>
 			<width>170</width>
@@ -1269,7 +1269,7 @@
 			<id>1</id>
 			<posX>594</posX>
 			<posY>914</posY>
-			<label>#myfilms.db.languages:</label>
+			<label>#myfilms.db.languages.label:</label>
 			<font>AvalonLight11</font>		
 			<width>1033</width>
 			<visible>!Control.HasFocus(10003) + !Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
@@ -1283,7 +1283,7 @@
 			<id>1</id>
 			<posX>904</posX>
 			<posY>914</posY>
-			<label>|  #myfilms.db.subtitles:</label>
+			<label>|  #myfilms.db.subtitles.label:</label>
 			<font>AvalonLight11</font>		
 			<width>1033</width>
 			<visible>!Control.HasFocus(10003) + !Control.HasFocus(10004) + !Control.HasFocus(10099)</visible>
