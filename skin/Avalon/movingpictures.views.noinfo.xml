@@ -92,12 +92,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
 		<description>Year / Runtime / Genre</description>
-		<type>fadelabel</type>
-		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime.totalminutes #Avalon.Minutes - #MovingPictures.SelectedMovie.genres</label>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime.totalminutes #Avalon.Minutes - #MovingPictures.SelectedMovie.extra.genres.1</label>
 		<id>0</id>
 		<posX>1856</posX>
 		<posY>1006</posY>
-		<width>455</width>
+		<width>475</width>
 		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>

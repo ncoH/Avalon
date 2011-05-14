@@ -464,6 +464,7 @@
 		<width>320</width>
 		<align>left</align>
 		<font>font12</font>
+		<scrollStartDelaySec>5<scrollStartDelaySec>
 		<textcolor>white</textcolor>
 	</control>
 
