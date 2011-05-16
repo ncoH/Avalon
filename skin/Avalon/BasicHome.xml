@@ -748,7 +748,7 @@
 	<visible>!Control.HasFocus(2) + !Control.HasFocus(3) + !Control.HasFocus(4) + !Control.HasFocus(5)+!string.equals(#subitem1,)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	<animation effect="fade" start="0" end="100" time="200" delay="250">Visible</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
 	<texture>submenu_arrow.png</texture>
 </control>
 
