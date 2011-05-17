@@ -303,8 +303,8 @@
         <description>Play Button</description>
         <type>button</type>
         <id>223</id>
-        <posX>1620</posX>
-        <posY>335</posY>
+        <posX>1615</posX>
+        <posY>330</posY>
         <width>194</width>
         <height>269</height>
         <textureFocus>basichome_focus.png</textureFocus>
