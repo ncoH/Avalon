@@ -63,8 +63,8 @@
 		<posY>250</posY>
 		<width>330</width>
 		<height>470</height>
-		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">defaultdvdcover.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">defaultVideoBig.png</texture>
+		<visible>facadeview.list + Control.IsVisible(50) + !Control.HasThumb(60) + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 
 	<control>
@@ -264,6 +264,22 @@
 		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
 		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
+	
+    <control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+        <description>New Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>762</posX>
+        <posY>250</posY>
+        <width>162</width>
+        <height>164</height>
+        <texture>tvseries_newlabel.png</texture>
+        <visible>facadeview.list + Control.IsVisible(50) + !Control.IsVisible(9) + Control.HasThumb(60) + !string.equals(#Avalon.hidePoster,yes)</visible>
+    </control>
 	
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
