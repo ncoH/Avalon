@@ -223,7 +223,7 @@
         <posY>335</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask_test.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie1.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie1.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
@@ -260,7 +260,7 @@
         <posY>335</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask_test.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie2.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie2.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
@@ -297,7 +297,7 @@
         <posY>335</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask_test.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie3.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie3.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
@@ -328,7 +328,7 @@
         <posY>335</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask_test.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie1.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie1.thumb</texture>
 		<visible>string.equals(#recentMedia,MovingPictures) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
