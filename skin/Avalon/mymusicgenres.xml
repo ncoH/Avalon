@@ -28,7 +28,7 @@
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<description>Poster shadow</description>
 		<type>image</type>
@@ -38,13 +38,13 @@
 		<width>486</width>
 		<height>487</height>
 		<texture>list_music_shadow.png</texture>
-		<visible>[[facadeview.list|facadeview.album] + control.hasthumb(500)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<visible>[[facadeview.list|facadeview.album] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<description>Poster glow</description>
 		<type>image</type>
@@ -54,27 +54,27 @@
 		<width>486</width>
 		<height>487</height>
 		<texture>list_music_glow.png</texture>
-		<visible>[[facadeview.list|facadeview.album] + control.hasthumb(500)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<visible>[[facadeview.list|facadeview.album] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<id>0</id>
 		<posX>490</posX>
 		<posY>236</posY>
 		<width>350</width>
 		<height>350</height>
-		<visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)] + !string.equals(#Avalon.hidePoster,yes)</visible>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
 	</control>
 	
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<type>image</type>
 		<id>500</id>
@@ -92,7 +92,9 @@
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
-		<posY>325</posY>
+		<posY>440</posY>
+		<width>64</width>
+		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.album]+Control.HasFocus(50)</visible>
 	</control>
@@ -102,7 +104,7 @@
 		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
-		<posX>624</posX>
+		<posX>858</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
 		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>

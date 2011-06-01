@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+		
+    <!--            :: Overview Labels ::            -->
+	
+	
+        <control>
+            <id>0</id>
+            <description>title label</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>544</posX>
+			<posY>142</posY>
+			<label>182</label>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>ff6aa5cb</textcolor>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>title value</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>747</posX>
+			<posY>139</posY>
+			<label>#Play.Current.Title</label>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+	
+        <control>
+            <id>0</id>
+            <description>duration label</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>544</posX>
+			<posY>182</posY>
+			<label>Duration</label>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>ff6aa5cb</textcolor>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>duration value</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>747</posX>
+			<posY>180</posY>
+			<label>#Play.Current.Duration</label>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>artist label</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>544</posX>
+			<posY>222</posY>
+			<label>Artist</label>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>ff6aa5cb</textcolor>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>artist value</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>747</posX>
+			<posY>217</posY>
+			<label>#Play.Current.Artist</label>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>rating label</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>544</posX>
+			<posY>266</posY>
+			<label>Rating</label>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>ff6aa5cb</textcolor>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>rating value</description>
+			<visible>Control.HasFocus(6101)</visible>
+            <type>imagelist</type>
+            <posX>747</posX>
+            <posY>271</posY>
+			<width>185</width>
+			<height>29</height>
+			<textureWidth>28</textureWidth>
+			<textureHeight>27</textureHeight>
+            <percentage>#Play.Current.Rating</percentage>
+            <imagesToDraw>5</imagesToDraw>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+			<subitems>
+			<subitem>starblue.png</subitem>
+			<subitem>starwhite.png</subitem>
+			</subitems>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>composer label</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>544</posX>
+			<posY>305</posY>
+			<label>Composer</label>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>ff6aa5cb</textcolor>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>composer value</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>747</posX>
+			<posY>302</posY>
+			<label>#Play.Current.Composer</label>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>Album label</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>544</posX>
+			<posY>385</posY>
+			<label>Album</label>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>ff6aa5cb</textcolor>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>album value</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>747</posX>
+			<posY>382</posY>
+			<label>#Play.Current.Album</label>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>Album Artist label</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>544</posX>
+			<posY>425</posY>
+			<label>Albumartist</label>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>ff6aa5cb</textcolor>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>album artist value</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>747</posX>
+			<posY>422</posY>
+			<label>#Play.Current.AlbumArtist</label>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+        
+        <control>
+            <id>0</id>
+            <description>year label</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>544</posX>
+			<posY>466</posY>
+			<label>Year</label>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>ff6aa5cb</textcolor>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>year value</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>747</posX>
+			<posY>464</posY>
+			<label>#Play.AlbumInfo.Year</label>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>genre label</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>544</posX>
+			<posY>509</posY>
+			<label>Genre</label>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>ff6aa5cb</textcolor>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>genre value</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>747</posX>
+			<posY>506</posY>
+			<label>#Play.AlbumInfo.Genre</label>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>rating (album) label</description>
+            <type>label</type>
+			<visible>Control.HasFocus(6101)</visible>
+			<posX>544</posX>
+			<posY>548</posY>
+			<label>Rating</label>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>ff6aa5cb</textcolor>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>0</id>
+            <description>genre (album) value</description>
+			<visible>Control.HasFocus(6101)</visible>
+            <type>imagelist</type>
+            <posX>747</posX>
+            <posY>554</posY>
+			<width>185</width>
+			<height>29</height>
+			<textureWidth>28</textureWidth>
+			<textureHeight>27</textureHeight>
+            <percentage>#Play.AlbumInfo.Rating</percentage>
+            <imagesToDraw>5</imagesToDraw>
+            <orientation>HORIZONTAL</orientation>
+            <align>LEFT</align>
+			<subitems>
+			<subitem>starblue.png</subitem>
+			<subitem>starwhite.png</subitem>
+			</subitems>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+    </controls>
+</window>

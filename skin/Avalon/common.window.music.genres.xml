@@ -143,7 +143,7 @@
 		<width>934</width>
 		<height>699</height>
 		<texture>viewport_posterbg_music.png</texture>
-		<visible>[[facadeview.list | facadeview.album] + Control.IsVisible(50) + control.hasthumb(500)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<visible>[[facadeview.list | facadeview.album] + Control.IsVisible(50)] + !string.equals(#Avalon.hidePoster,yes)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
@@ -177,7 +177,7 @@
 		<width>467</width>
 		<height>699</height>
 		<texture>viewport_shadow.png</texture>
-		<visible>[[[facadeview.list | facadeview.album] + Control.IsVisible(50)] + string.equals(#Avalon.hidePoster,yes)] | !control.hasthumb(500)</visible>
+		<visible>[[[facadeview.list | facadeview.album] + Control.IsVisible(50)] + string.equals(#Avalon.hidePoster,yes)]</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
