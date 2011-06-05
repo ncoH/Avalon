@@ -97,6 +97,16 @@
         <onleft>52</onleft>
         <onright>52</onright>
         <onup>51</onup>
+        <ondown>55</ondown>
+      </control>
+      <control>
+        <description>Misc Settings</description>
+        <type>button</type>
+        <id>55</id>
+	    <label>-</label>
+        <onleft>55</onleft>
+        <onright>55</onright>
+        <onup>52</onup>
         <ondown>53</ondown>
       </control>
       <control>
@@ -106,7 +116,7 @@
 	    <label>-</label>
         <onleft>53</onleft>
         <onright>53</onright>
-        <onup>52</onup>
+        <onup>55</onup>
         <ondown>50</ondown>
       </control>
     </control>

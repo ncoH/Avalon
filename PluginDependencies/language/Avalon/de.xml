@@ -25,7 +25,7 @@
   <string Field="SkinSettingsSeriesLayout">Serien Information Ansicht</string>
   <string Field="SkinSettingsThumbview">Vorschaubilder</string>
   <string Field="SkinSettingsInfo">Zeige Infos</string>
-  <string Field="SkinSettingsPosterHide">Poster automatisch ausblenden</string>
+  <string Field="SkinSettingsPosterHide">Poster in Listenansicht automatisch ausblenden</string>
   <string Field="SkinSettingsTV">Fernsehen</string>
   <string Field="SkinSettingsTVSeries">Serien</string>
   <string Field="SkinSettingsUpdate">Aktualisierung</string>
@@ -38,7 +38,8 @@
   <string Field="TVMiniGuideSize">TV Mini Guide Größe</string>
   <string Field="TVMiniGuideRows">TV Mini Guide Zeilen</string> 
   <string Field="TVMiniGuideThreeRows">TV Mini Guide: 3 Zeilen</string>
-  <string Field="TVMiniGuideEightRows">TV Mini Guide: 8 Zeilen</string> 
+  <string Field="TVMiniGuideEightRows">TV Mini Guide: 8 Zeilen</string>
+  <string Field="SkinSettingsMisc">Verschiedenes</string>  
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Laufzeit</string>
   <string Field="ReleaseDate">Veröffentlicht</string>

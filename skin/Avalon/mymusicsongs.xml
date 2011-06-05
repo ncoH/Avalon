@@ -6,6 +6,15 @@
 <define>#useSelectedFanart:Yes</define>
 <controls>
 
+    <control>
+      <description>dummy poster control</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>-2000</posX>
+      <posY>-2000</posY>
+      <label>#Avalon.EnablePosterHide</label>
+    </control>
+
 <import>common.window.music.xml</import>
 	
 	

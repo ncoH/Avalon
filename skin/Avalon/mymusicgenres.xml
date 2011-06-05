@@ -7,6 +7,15 @@
 <define>#useSelectedFanart:Yes</define>
 <controls>
 
+    <control>
+      <description>dummy poster control</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>-2000</posX>
+      <posY>-2000</posY>
+      <label>#Avalon.EnablePosterHide</label>
+    </control>
+
 	<import>common.window.music.genres.xml</import>
 	
 	<control>
@@ -38,7 +47,7 @@
 		<width>486</width>
 		<height>487</height>
 		<texture>list_music_shadow.png</texture>
-		<visible>[[facadeview.list|facadeview.album] + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<visible>[[facadeview.list|facadeview.album] + control.hasthumb(500)] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
 	<control>
@@ -54,7 +63,7 @@
 		<width>486</width>
 		<height>487</height>
 		<texture>list_music_glow.png</texture>
-		<visible>[[facadeview.list|facadeview.album] + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<visible>[[facadeview.list|facadeview.album] + control.hasthumb(500)] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
 	<control>
@@ -67,7 +76,7 @@
 		<posY>236</posY>
 		<width>350</width>
 		<height>350</height>
-		<visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)] + !string.equals(#Avalon.hidePoster,yes)</visible>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
 	</control>
 	
