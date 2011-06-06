@@ -236,8 +236,9 @@
 		<posX>678</posX>
 		<posY>922</posY>
 		<width>1060</width>
-		<height>180</height>
+		<height>146</height>
 		<font>AvalonLight11</font>
+		<lineSpacing>0.85</lineSpacing>
 		<label>#OnlineVideos.desc</label>
 		<visible>[facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>

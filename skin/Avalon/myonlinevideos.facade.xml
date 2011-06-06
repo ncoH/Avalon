@@ -40,38 +40,41 @@
 				<onleft>2</onleft>
 				<onright>50</onright>
           
-          <imageFolder>-</imageFolder>          
-          <imageFolderFocus>-</imageFolderFocus>  
-          <showFrame>true</showFrame>          
-          <dimColor>90ffffff</dimColor>
+			  <imageFolder>-</imageFolder>          
+			  <imageFolderFocus>-</imageFolderFocus>  
+			  <showFrame>true</showFrame>          
+			  <dimColor>90ffffff</dimColor>
           
-          <enableFocusZoom>no</enableFocusZoom>                    
-          <zoomXPixels>0</zoomXPixels>
-          <zoomYPixels>0</zoomYPixels>          
-          <hideUnfocusTexture>no</hideUnfocusTexture>          
-          <renderFocusText>no</renderFocusText>
-          <renderUnfocusText>no</renderUnfocusText>                    
-          <thumbZoom>no</thumbZoom>
+			<enableFocusZoom>no</enableFocusZoom>                    
+			<zoomXPixels>40</zoomXPixels>
+			<zoomYPixels>30</zoomYPixels>          
+			<hideUnfocusTexture>no</hideUnfocusTexture>          
+			<renderFocusText>no</renderFocusText>
+			<renderUnfocusText>no</renderUnfocusText>                    
+			<thumbZoom>yes</thumbZoom>
+			<frameNoFocus>onlinevideos_thumb_nofocus.png</frameNoFocus>
+			<frameFocus>onlinevideos_thumb_focus.png</frameFocus>
+			<textureMask>onlinevideos_thumb_mask.png</textureMask>
           
           <!-- smallicons -->
-          <itemWidth>228</itemWidth>
-          <itemHeight>127</itemHeight>
-          <textureWidth>228</textureWidth>
-          <textureHeight>127</textureHeight>
-          <thumbWidth>228</thumbWidth>
-          <thumbHeight>127</thumbHeight>
-          <thumbPosX>0</thumbPosX>
-          <thumbPosY>0</thumbPosY>
+			<itemWidth>228</itemWidth>
+			<itemHeight>127</itemHeight>
+			<textureWidth>228</textureWidth>
+			<textureHeight>127</textureHeight>
+			<thumbWidth>228</thumbWidth>
+			<thumbHeight>127</thumbHeight>
+			<thumbPosX>0</thumbPosX>
+			<thumbPosY>0</thumbPosY>
           
           <!-- largeicons -->
-          <itemWidthBig>275</itemWidthBig>
-          <itemHeightBig>153</itemHeightBig>
-          <textureWidthBig>275</textureWidthBig>
-          <textureHeightBig>153</textureHeightBig>
-          <thumbWidthBig>275</thumbWidthBig>
-          <thumbHeightBig>153</thumbHeightBig>
-          <thumbPosXBig>0</thumbPosXBig>
-          <thumbPosYBig>0</thumbPosYBig>       
+			<itemWidthBig>275</itemWidthBig>
+			<itemHeightBig>153</itemHeightBig>
+			<textureWidthBig>275</textureWidthBig>
+			<textureHeightBig>153</textureHeightBig>
+			<thumbWidthBig>275</thumbWidthBig>
+			<thumbHeightBig>153</thumbHeightBig>
+			<thumbPosXBig>0</thumbPosXBig>
+			<thumbPosYBig>0</thumbPosYBig>       
         </control>        
       </control>
     </control>
