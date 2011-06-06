@@ -24,7 +24,7 @@
 				<width>684</width>
 				<textXOff>50</textXOff>
 				<textureHeight>55</textureHeight>
-				<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
+				<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 				<dimColor>ffffffff</dimColor>
 			</control>
 

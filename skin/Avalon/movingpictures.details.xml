@@ -271,10 +271,10 @@ This file should contain the details view
 		<description>certification logo</description>
 		<type>image</type>
 		<id>101</id>
-		<posX>458</posX>
-		<posY>895</posY>
-		<width>41</width>
-		<height>41</height>
+		<posX>445</posX>
+		<posY>886</posY>
+		<width>60</width>
+		<height>60</height>
 		<texture>certification\#MovingPictures.SelectedMovie.certification.png</texture>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 	</control>
