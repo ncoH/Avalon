@@ -145,8 +145,8 @@
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
 				<keepaspectratio>no</keepaspectratio>
-				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,820" time="400">focus</thumbAnimation>
-				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,820" time="100">unfocus</thumbAnimation>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="128,128" center="0,700" time="200">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="128,128" reversible="false" end="100,100" center="0,700" time="100">unfocus</thumbAnimation>
 			</control>
 
 			<control>
@@ -157,6 +157,11 @@
 				<onright>50</onright>
 				<scrollOffset>1</scrollOffset>
 				<spinCanFocus>no</spinCanFocus>
+				<spinWidth>46</spinWidth>
+				<spinHeight>33</spinHeight>
+				<spinPosX>233</spinPosX>
+				<spinPosY>104</spinPosY>
+				<spinAlign>right</spinAlign>
 				<dimColor>ffffffff</dimColor>
 			</control>
 

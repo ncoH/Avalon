@@ -121,6 +121,12 @@
 					<onleft>50</onleft>
 					<onup>20</onup>
 					<ondown>10</ondown>
+					<textureFocus>hiddenmenu_toggle-on-focus.png</textureFocus>
+					<textureNoFocus>hiddenmenu_toggle-on-nofocus.png</textureNoFocus>
+					<AltTextureFocus>hiddenmenu_toggle-off-focus.png</AltTextureFocus>
+					<AltTextureNoFocus>hiddenmenu_toggle-off-nofocus.png</AltTextureNoFocus>
+					<textcolor>white</textcolor>
+					<textcolorNoFocus>ff85cfff</textcolorNoFocus>
 					<posX>69</posX>
 					<posY>355</posY>
 					<width>459</width>
