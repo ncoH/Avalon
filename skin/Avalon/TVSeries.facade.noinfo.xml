@@ -26,50 +26,44 @@
         <type>thumbnailpanel</type>
 		<dimColor>90ffffff</dimColor>
         <id>50</id>
-        <posX>72</posX>
-		<posY>192</posY>
-        <width>500</width>
-        <height>500</height>
+        <posX>1210</posX>
+		<posY>230</posY>
+        <width>650</width>
+        <height>700</height>
         <!-- up/down buttons & page # -->     
 		<onleft>2</onleft>
         <onright>50</onright>		  
-		<spinColor>FFFFFFFF</spinColor>
-		<spinPosX>555</spinPosX>
-		<spinPosY>705</spinPosY>
-		<spinAlign>left</spinAlign>
-        <spinColor>ffffffff</spinColor>
         <!-- Textures -->
         <imageFolder>-</imageFolder> 			
         <!-- Text -->
-        <font>font13</font>
         <selectedColor>00ffffff</selectedColor>
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>          
         <suffix>|</suffix>
-        <itemWidthBig>393</itemWidthBig>
-        <itemHeightBig>94</itemHeightBig>
+        <itemWidthBig>623</itemWidthBig>
+        <itemHeightBig>129</itemHeightBig>
         <!-- boxes -->
-        <textureWidthBig>389</textureWidthBig>
-        <textureHeightBig>90</textureHeightBig>
+        <textureWidthBig>623</textureWidthBig>
+        <textureHeightBig>129</textureHeightBig>
         <!-- banners -->
-        <thumbWidthBig>370</thumbWidthBig>
-        <thumbHeightBig>73</thumbHeightBig>
-        <thumbPosXBig>10</thumbPosXBig>
-        <thumbPosYBig>10</thumbPosYBig>
-		<zoomXPixels>20</zoomXPixels>
-		<zoomYPixels>30</zoomYPixels>
+        <thumbWidthBig>623</thumbWidthBig>
+        <thumbHeightBig>129</thumbHeightBig>
+        <thumbPosXBig>0</thumbPosXBig>
+        <thumbPosYBig>0</thumbPosYBig>
+		<zoomXPixels>30</zoomXPixels>
+		<zoomYPixels>20</zoomYPixels>
         <thumbZoom>yes</thumbZoom>
         <!-- text (No banner) -->
         <textXOff>0</textXOff>
         <textYOff>0</textYOff>
         <frame>-</frame>
-        <frameFocus>tvseries_banner_focus.png</frameFocus>
+        <frameFocus>tvseries_listbanner_focus.png</frameFocus>
+		<frameNoFocus>tvseries_listbanner_nofocus.png</frameNoFocus>
+		<textureMask>tvseries_listbanner_mask.png</textureMask>
         <keepaspectratio>no</keepaspectratio>
-        <enableFocusZoom>no</enableFocusZoom>
+        <enableFocusZoom>yes</enableFocusZoom>
         <scrollOffset>1</scrollOffset>
-        <unfocusedAlpha>50</unfocusedAlpha>   
-		<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,550" time="200">focus</thumbAnimation>
-		<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
+        <unfocusedAlpha>255</unfocusedAlpha>
     </control>
 		
 		<control>

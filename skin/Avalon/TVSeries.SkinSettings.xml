@@ -68,7 +68,7 @@
 	
   <layouts>
     <group List="true" SmallIcons="false" />
-    <series ListPosters="true" ListBanners="true" Filmstrip="true" WideBanners="true" />
+    <series ListPosters="true" ListBanners="false" Filmstrip="true" WideBanners="true" />
     <season List="true" Filmstrip="true" />
     <episode List="true" />
   </layouts>
