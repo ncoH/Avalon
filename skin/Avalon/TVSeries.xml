@@ -96,7 +96,7 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>[!facadeview.filmstrip+!facadeview.coverflow]+control.isvisible(525)</visible>
     </control>
-    <import tag="Background">TVSeries.background.noinfo.xml</import>
+    <import tag="Background">TVSeries.background.default.xml</import>
     <import>common.time.xml</import>
     <control>
       <animation effect="fade" time="250">WindowOpen</animation>
@@ -126,10 +126,10 @@
       <textcolor>ffffff</textcolor>
       <visible>[facadeview.list|facadeview.largeicons|facadeview.filmstrip]+Control.IsVisible(1237)</visible>
     </control>
-    <import tag="Views">TVSeries.views.noinfo.xml</import>
+    <import tag="Views">TVSeries.views.default.xml</import>
     <import>TVSeries.hiddenmenu.xml</import>
     <import>common.overlay.xml</import>
-    <import tag="Facade">TVSeries.facade.noinfo.xml</import>
+    <import tag="Facade">TVSeries.facade.default.xml</import>
     <import>TVSeries.Info.xml</import>
   </controls>
 </window>

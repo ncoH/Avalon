@@ -17,7 +17,7 @@
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_shadow.png</texture>
-      <visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list|facadeview.largeicons</visible>
+      <visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list</visible>
 	</control>
 	
 	<control>
@@ -31,7 +31,7 @@
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_glow.png</texture>
-      <visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list|facadeview.largeicons</visible>
+      <visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list</visible>
 	</control>
 
     <control>
@@ -45,7 +45,7 @@
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#TVSeries.SeriesPoster</texture>
-      <visible>[control.isvisible(1237)+control.isvisible(1242)]+facadeview.list|facadeview.largeicons</visible>
+      <visible>[control.isvisible(1237)+control.isvisible(1242)]+facadeview.list</visible>
     </control>
   
     <control>
@@ -75,7 +75,7 @@
         <width>162</width>
         <height>164</height>
         <texture>tvseries_newlabel.png</texture>
-        <visible>[[control.isvisible(1237)+control.isvisible(1242)] | control.isvisible(1238)] + !control.isvisible(1243) + facadeview.list|facadeview.largeicons</visible>
+        <visible>[[control.isvisible(1237)+control.isvisible(1242)] | control.isvisible(1238)] + !control.isvisible(1243) + facadeview.list</visible>
     </control>
 
 
@@ -181,7 +181,7 @@
 		<height>27</height>
 		<align>left</align>
 		<texture>#TVSeries.Series.RatingPath</texture>
-		<visible>[facadeview.list|facadeview.largeicons]+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
+		<visible>facadeview.list+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
     </control>
 	
     <control>      

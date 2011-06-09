@@ -26,10 +26,10 @@
         <type>thumbnailpanel</type>
 		<dimColor>90ffffff</dimColor>
         <id>50</id>
-        <posX>1210</posX>
-		<posY>230</posY>
-        <width>650</width>
-        <height>550</height>
+        <posX>180</posX>
+		<posY>256</posY>
+        <width>1600</width>
+        <height>650</height>
         <!-- up/down buttons & page # -->     
 		<onleft>2</onleft>
         <onright>50</onright>		  
@@ -40,14 +40,14 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>          
         <suffix>|</suffix>
-        <itemWidthBig>623</itemWidthBig>
-        <itemHeightBig>129</itemHeightBig>
+        <itemWidthBig>756</itemWidthBig>
+        <itemHeightBig>140</itemHeightBig>
         <!-- boxes -->
-        <textureWidthBig>623</textureWidthBig>
-        <textureHeightBig>129</textureHeightBig>
+        <textureWidthBig>756</textureWidthBig>
+        <textureHeightBig>140</textureHeightBig>
         <!-- banners -->
-        <thumbWidthBig>623</thumbWidthBig>
-        <thumbHeightBig>129</thumbHeightBig>
+        <thumbWidthBig>756</thumbWidthBig>
+        <thumbHeightBig>140</thumbHeightBig>
         <thumbPosXBig>0</thumbPosXBig>
         <thumbPosYBig>0</thumbPosYBig>
 		<zoomXPixels>50</zoomXPixels>
@@ -74,40 +74,40 @@
 				<scrollOffset>3</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<posX>70</posX>
-				<posY>250</posY>
+				<posX>114</posX>
+				<posY>520</posY>
 				<width>1920</width>
 				<height>768</height>
 				<onup>2</onup>
 				<ondown>2</ondown>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<thumbWidth>327</thumbWidth>
-				<thumbHeight>463</thumbHeight>
+				<thumbWidth>231</thumbWidth>
+				<thumbHeight>327</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
-				<itemWidth>355</itemWidth>
-				<itemHeight>463</itemHeight>
-				<textureWidth>327</textureWidth>
-				<textureHeight>463</textureHeight>
+				<itemWidth>248</itemWidth>
+				<itemHeight>345</itemHeight>
+				<textureWidth>231</textureWidth>
+				<textureHeight>327</textureHeight>
 				<textYOff>-2000</textYOff>
 				<imageFolderFocus>-</imageFolderFocus>
 				<frame>-</frame>
 				<frameFocus>-</frameFocus>
 				<background>-</background>
-				<thumbs flipY="true" diffuse="Thumb_Mask_test.png" mask="video_filmstrip_mask.png"></thumbs>
+				<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_fanart_mask.png"></thumbs>
 				<showFrame>yes</showFrame>
 				<showFolder>no</showFolder>
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
-                <scrollbarBackground>-</scrollbarBackground>
+                <scrollbarBackground>scrollbar_bg.png</scrollbarBackground>
                 <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
                 <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
                 <scrollbarWidth>689</scrollbarWidth>
 				<scrollbarHeight>4</scrollbarHeight>
-                <scrollbarYOff>530</scrollbarYOff>
-				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="108,108" center="0,500" time="200">focus</thumbAnimation>
-				<thumbAnimation effect="zoom" start="108,108" reversible="false" end="100,100" center="0,500" time="100">unfocus</thumbAnimation>
+                <scrollbarYOff>538</scrollbarYOff>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,780" time="200">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,780" time="100">unfocus</thumbAnimation>
 		</control>
 		
     <control>
@@ -115,13 +115,13 @@
 		<type>listcontrol</type>
 		<id>50</id>
 		<onleft>2</onleft>
-		<onright>2</onright>
+		<onright>80</onright>
 		<scrollOffset>1</scrollOffset>
 		<posX>1166</posX>
 		<posY>236</posY>
-		<height>550</height>
+		<height>700</height>
 		<width>684</width>
-		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+		<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
 		<textureNoFocus>-</textureNoFocus>
 		<textXOff>50</textXOff>
 		<textYOff>8</textYOff>

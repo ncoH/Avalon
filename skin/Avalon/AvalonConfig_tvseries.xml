@@ -69,6 +69,25 @@
 		<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
 		<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
       </control>
+      <control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        <description>TVSeries Widebanner Mod</description>
+        <type>button</type>
+        <id>3</id>
+		<posX>736</posX>
+		<posY>540</posY>
+        <onleft>10011</onleft>
+        <onright>3</onright>
+        <onup>2</onup>
+        <ondown>2</ondown>
+		<width>956</width>
+		<height>52</height>
+		<textXOff>30</textXOff>
+		<textYOff>8</textYOff>
+		<textureFocus>settings_button_large_focus.png</textureFocus>
+		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+      </control>
 <import>common.time.xml</import>
 <import>avalon.version.xml</import>
   </controls>

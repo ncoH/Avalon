@@ -45,7 +45,7 @@
       <id>1</id>
       <posX>-2000</posX>
       <posY>-2000</posY>
-      <label>#Avalon.EnablePosterHide</label>
+      <label>#Avalon.EnablePosterHideFilms</label>
     </control>
     <!--            :: MOVIE BACKDROP ::            -->
     <control>
@@ -334,11 +334,11 @@
 		</control> -->
     </control>
     <!--            :: IMPORT ::            -->
-    <import tag="Background">MyFilms.background.noinfo.xml</import>
+    <import tag="Background">MyFilms.background.default.xml</import>
     <import>common.time.xml</import>
     <import>MyFilms.hiddenmenu.xml</import>
-    <import tag="Views">MyFilms.views.noinfo.xml</import>
-    <import tag="Facade">MyFilms.facade.noinfo.xml</import>
+    <import tag="Views">MyFilms.views.default.xml</import>
+    <import tag="Facade">MyFilms.facade.default.xml</import>
     <import>MyFilms.Info.xml</import>
     <import>common.overlay.xml</import>
   </controls>

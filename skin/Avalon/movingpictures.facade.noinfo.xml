@@ -128,8 +128,8 @@ This file should contain the facade view
 				<textureHeightBig>306</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
-				<zoomXPixels>20</zoomXPixels>
-				<zoomYPixels>30</zoomYPixels>
+				<zoomXPixels>40</zoomXPixels>
+				<zoomYPixels>60</zoomYPixels>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<keepaspectratio>no</keepaspectratio>
 				<renderFocusText>no</renderFocusText>

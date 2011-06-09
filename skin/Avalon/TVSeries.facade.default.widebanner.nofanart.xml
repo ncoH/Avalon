@@ -26,10 +26,10 @@
         <type>thumbnailpanel</type>
 		<dimColor>90ffffff</dimColor>
         <id>50</id>
-        <posX>1210</posX>
-		<posY>230</posY>
-        <width>650</width>
-        <height>550</height>
+        <posX>180</posX>
+		<posY>260</posY>
+        <width>1600</width>
+        <height>500</height>
         <!-- up/down buttons & page # -->     
 		<onleft>2</onleft>
         <onright>50</onright>		  
@@ -40,14 +40,14 @@
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>          
         <suffix>|</suffix>
-        <itemWidthBig>623</itemWidthBig>
-        <itemHeightBig>129</itemHeightBig>
+        <itemWidthBig>756</itemWidthBig>
+        <itemHeightBig>140</itemHeightBig>
         <!-- boxes -->
-        <textureWidthBig>623</textureWidthBig>
-        <textureHeightBig>129</textureHeightBig>
+        <textureWidthBig>756</textureWidthBig>
+        <textureHeightBig>140</textureHeightBig>
         <!-- banners -->
-        <thumbWidthBig>623</thumbWidthBig>
-        <thumbHeightBig>129</thumbHeightBig>
+        <thumbWidthBig>756</thumbWidthBig>
+        <thumbHeightBig>140</thumbHeightBig>
         <thumbPosXBig>0</thumbPosXBig>
         <thumbPosYBig>0</thumbPosYBig>
 		<zoomXPixels>50</zoomXPixels>

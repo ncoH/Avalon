@@ -264,13 +264,13 @@ multiple view modes.
       <visible>Control.IsVisible(50)</visible>
     </control>
     <!--            :: IMPORT ::            -->
-    <import tag="Background">movingpictures.background.noinfo.xml</import>
+    <import tag="Background">movingpictures.background.default.xml</import>
     <import>common.time.xml</import>
     <import>movingpictures.hiddenmenu.xml</import>
-    <import tag="Views">movingpictures.views.noinfo.xml</import>
-    <import tag="Facade">movingpictures.facade.noinfo.xml</import>
+    <import tag="Views">movingpictures.views.default.xml</import>
+    <import tag="Facade">movingpictures.facade.default.xml</import>
     <import>movingpictures.Info.xml</import>
-    <import tag="Mediainfo">movingpictures.mediainfo.noinfo.xml</import>
+    <import tag="Mediainfo">movingpictures.mediainfo.default.xml</import>
     <import>movingpictures.details.xml</import>
     <import>movingpictures.mediainfo.details.xml</import>
     <import>common.overlay.xml</import>

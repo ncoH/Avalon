@@ -194,9 +194,9 @@ skin\Avalon\Media\Logos\nosubtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;0;-
 	<!-- #TVSeries.SeriesBanner and #TVSeries.SeasonBanner properties dont use the values below, those images will be presented as they are but will be using a delay of 250ms to present image -->
 	<!-- Note: Choosing higher quality settings will result in a drop in performance -->
 	<graphicsquality import="true">
-		<seriesbanners>65</seriesbanners>
+		<seriesbanners>80</seriesbanners>
 		<seriesposters>50</seriesposters>
-		<seasonbanners>75</seasonbanners>
+		<seasonbanners>80</seasonbanners>
 		<episodethumbs>80</episodethumbs>
 	</graphicsquality>
 </settings>
