@@ -63,7 +63,7 @@
 			<height>64</height>
 			<textureFocus>settings_button_focus.png</textureFocus>
 			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
-			<label>Skin Settings</label>
+			<label>#Avalon.SkinSettings</label>
 			<hyperlink>155100</hyperlink>
 		</control>
 		

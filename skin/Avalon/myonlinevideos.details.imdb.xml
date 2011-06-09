@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>    
+	
+    <!--            :: INFOS ::           	 -->
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Title</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>745</posX>
+		<posY>234</posY>
+		<width>1170</width>
+		<label>#OnlineVideos.Details.Title</label>
+		<font>fontB20</font>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil,IMDB)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Actors</description>
+		<type>fadelabel</type>
+		<label>#OnlineVideos.Translation.Actors.Label: #OnlineVideos.Details.Actors</label>
+		<id>0</id>
+		<posX>744</posX>
+		<posY>805</posY>
+		<width>1000</width>
+		<align>left</align>
+		<font>font12</font>
+		<textcolor>ffffff</textcolor>
+      <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil,IMDB)</visible>
+	</control>
+	
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Director Label</description>
+		<type>label</type>
+		<label>#OnlineVideos.Translation.Directors.Label</label>
+		<id>0</id>
+		<posX>744</posX>
+		<posY>408</posY>
+		<width>240</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+      <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil,IMDB)</visible>
+	</control>
+			
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Director</description>
+		<type>fadelabel</type>
+		<label>#OnlineVideos.Details.Directors</label>
+		<id>0</id>
+		<posX>1058</posX>
+		<posY>408</posY>
+		<width>700</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil,IMDB)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Release Date Label</description>
+		<type>label</type>
+		<label>#OnlineVideos.Translation.DateOfRelease.Label</label>
+		<id>0</id>
+		<posX>744</posX>
+		<posY>328</posY>
+		<width>240</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil,IMDB)</visible>
+	</control>
+
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Release Date Value</description>
+		<type>label</type>
+		<label>#OnlineVideos.Details.ReleaseDate</label>
+		<id>0</id>
+		<posX>1058</posX>
+		<posY>328</posY>
+		<width>240</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil,IMDB)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Genre Label</description>
+		<type>label</type>
+		<label>#OnlineVideos.Translation.Genre.Label</label>
+		<id>0</id>
+		<posX>744</posX>
+		<posY>368</posY>
+		<width>240</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil,IMDB)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Genre</description>
+		<type>fadelabel</type>
+		<label>#OnlineVideos.Details.Genres</label>
+		<id>0</id>
+		<posX>1058</posX>
+		<posY>368</posY>
+		<width>330</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil,IMDB)</visible>
+	</control>
+			
+    <control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>textboxscrollup</type>
+		<description>Plot value</description>
+		<id>61</id>
+		<posX>745</posX>
+		<posY>520</posY>
+		<width>1040</width>
+		<height>240</height>
+		<colordiffuse>ffffffff</colordiffuse>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil,IMDB)</visible>
+		<label>#(iif(neq(string.trim(#OnlineVideos.DetailsItem.Description),''),#OnlineVideos.DetailsItem.Description,#OnlineVideos.Details.Plot))</label>
+    </control>    
+  </controls>
+</window>
