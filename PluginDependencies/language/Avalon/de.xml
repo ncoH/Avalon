@@ -42,8 +42,7 @@
   <string Field="SkinSettingsMisc">Verschiedenes</string>  
   <string Field="Widebanner">Breite Banner</string>
   <string Field="WidebannerDefault">Breite Banner: Standard</string>
-  <string Field="WidebannerNoFanart">Breite Banner: ohne Fanart</string>
-  <string Field="SkinSettingsMisc">Verschiedenes</string>    
+  <string Field="WidebannerNoFanart">Breite Banner: ohne Fanart</string>  
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Laufzeit</string>
   <string Field="ReleaseDate">Veröffentlicht</string>
