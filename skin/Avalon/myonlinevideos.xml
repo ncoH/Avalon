@@ -240,7 +240,7 @@
 		<font>AvalonLight11</font>
 		<lineSpacing>0.85</lineSpacing>
 		<label>#OnlineVideos.desc</label>
-		<visible>[facadeview.smallicons | facadeview.largeicons]</visible>
+		<visible>!string.equals(#OnlineVideos.state, details) + [facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>
 			
 	<control>
@@ -326,13 +326,13 @@
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<id>500</id>
+		<id>0</id>
 		<type>image</type>
 		<posX>409</posX>
         <posY>812</posY>
         <width>242</width>
 	    <height>141</height>
-		<visible>[facadeview.smallicons|facadeview.largeicons] + !string.contains(#selecteditem, ..) + string.equals(#OnlineVideos.state, videos)</visible>
+		<visible>[facadeview.smallicons|facadeview.largeicons]  + !string.contains(#selecteditem, ..) + string.equals(#OnlineVideos.state, videos)</visible>
 		<texture>onlinevideos_station_shadow.png</texture>
 	</control>
 			
@@ -361,6 +361,7 @@
 	</control>
 	<import>myonlinevideos.hiddenmenu.xml</import>
     <import>myonlinevideos.details.xml</import>
+    <import>myonlinevideos.details.imdb.xml</import>
     <import>myonlinevideos.facade.xml</import>  
 	<import>myonlinevideos.listview.details.xml</import>	
   </controls>
