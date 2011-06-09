@@ -40,6 +40,10 @@
   <string Field="TVMiniGuideThreeRows">TV Mini Guide: 3 Zeilen</string>
   <string Field="TVMiniGuideEightRows">TV Mini Guide: 8 Zeilen</string>
   <string Field="SkinSettingsMisc">Verschiedenes</string>  
+  <string Field="Widebanner">Breite Banner</string>
+  <string Field="WidebannerDefault">Breite Banner: Standard</string>
+  <string Field="WidebannerNoFanart">Breite Banner: ohne Fanart</string>
+  <string Field="SkinSettingsMisc">Verschiedenes</string>    
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Laufzeit</string>
   <string Field="ReleaseDate">Veröffentlicht</string>
