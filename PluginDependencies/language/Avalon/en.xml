@@ -58,4 +58,6 @@
   <string Field="LatestEpisodes">Latest episodes</string>
   <!-- Misc -->   
   <string Field="FanartScraping">Fanart scraping</string>
+  <string Field="ReturnListMovies">Press left to return to movie list</string> 
+  <string Field="ReturnListSeries">Press left to return to series list</string> 
 </strings>

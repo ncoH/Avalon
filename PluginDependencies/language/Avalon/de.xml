@@ -56,5 +56,7 @@
   <string Field="LatestMovies">Neueste Filme</string>
   <string Field="LatestEpisodes">Neueste Episoden</string> 
   <!-- Misc -->   
-  <string Field="FanartScraping">Lade Fanart</string>  
+  <string Field="FanartScraping">Lade Fanart</string> 
+  <string Field="ReturnListMovies">Press left to return to movie list</string> 
+  <string Field="ReturnListSeries">Press left to return to series list</string>  
 </strings>

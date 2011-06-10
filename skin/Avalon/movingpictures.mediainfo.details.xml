@@ -92,6 +92,21 @@
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,DIVX)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)]</visible>
 	</control>
 	
+	<control>
+		<description>SD / mpeg2 / Widescreen</description>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1063</posX>
+		<posY>896</posY>
+		<height>41</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\video\540_mpeg2_235.png</texture>
+		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) +  [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,MP2V)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+	</control>
+	
 	<!-- Audiocodec -->
 	<control>
 		<description>AC3 / 5.1</description>
