@@ -10,7 +10,7 @@
 		<width>1920</width>
 		<height>1080</height>
 		<texture>overlay.png</texture>
-		<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)|control.isvisible(1239)]+facadeview.list</visible>
+		<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)|control.isvisible(1239)]+facadeview.list|facadeview.largeicons</visible>
 	</control>
 	
 	<control>
