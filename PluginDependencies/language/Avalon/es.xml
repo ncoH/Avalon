@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Spanish (es) -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<!-- Last Updated: 10th June 2011 -->
+<strings>
+ 
+ <!-- Skin Updates / Patching GUI -->
+  <string Field="SkinUpdate">Actualizar Skin</string>
+  <string Field="UpdateInstall">Actualizar e Instalar</string>
+  <string Field="NoUpdatesAvailable">No hay parches disponibles</string>
+  <string Field="DownloadingPatch">Descargando parche: {0}</string>
+  <string Field="DownloadingProgress">Descargados {0}KB de {1}KB ({2}%)</string>
+  <string Field="NumPatchesInstalled">Número de archivos instalados: {0}</string>
+  <string Field="PatchUpdateComplete">Actualización a la versión: {0} Completada</string>
+  <string Field="UpdateAvailableHeading">Actualización disponible - Cambios</string>
+  <string Field="mupdateheader">Instalador del parche descargado al escritorio</string>
+  <string Field="mupdateline1">Actualización manual necesaria - Para continuar, cierre</string>
+  <string Field="mupdateline2">MediaPortal y/o Configuración</string>
+  <string Field="mupdateline3">y ejecute:  {0}</string>
+  <string Field="mupdateline4">que se encuentra en su escritorio</string>
+  <!-- Skin Settings --> 
+  <string Field="SkinSettings">Configuración Skin</string>
+  <string Field="SkinUpdateNF">Actualización disponible</string>
+  <string Field="SkinUpdateNF2">Pulse "izquierda" y presione el botón para instalar</string>
+  <string Field="SkinSettingsmovpicsLayout">Diseño en las películas</string>
+  <string Field="SkinSettingsseriesLayout">Diseño en las series</string>
+  <string Field="SkinSettingsThumbview ">Vista Miniaturas</string>
+  <string Field="SkinSettingsInfo">Mostrar info en la parte inferior de la pantalla</string>
+  <string Field="SkinSettingsPosterHide">Ocultar carátula al no hacer scroll</string>
+  <string Field="SkinSettingsTV">Televisión</string>
+  <string Field="SkinSettingsTVSeries">TV Series</string>
+  <string Field="SkinSettingsUpdate">Actualizar</string>
+  <string Field="SkinSettingsMovingPictures">MovingPictures</string>
+  <string Field="SkinSettingsMyFilms">MyFilms</string>
+  <string Field="Thumbnails">Miniaturas</string>
+  <string Field="ThumbnailDefault">Miniaturas: Por defecto</string>
+  <string Field="ThumbnailsNoFanart">Miniaturas: Sin Fanart</string>
+  <string Field="ThumbnailXL">Miniaturas: XL</string>
+  <string Field="TVMiniGuideSize">Tamaño Mini Guía TV</string>
+  <string Field="TVMiniGuideRows">Filas Mini Guía TV</string> 
+  <string Field="TVMiniGuideThreeRows">Mini Guía TV: 3 filas</string>
+  <string Field="TVMiniGuideEightRows">Mini Guía TV: 8 filas</string>
+  <string Field="SkinSettingsMisc">Otros</string>
+  <string Field="Widebanner">Banners grandes</string>
+  <string Field="WidebannerDefault">Banners grandes: Por defecto</string>
+  <string Field="WidebannerNoFanart">Banners grandes: Sin Fanart</string> 
+  <!-- MovingPictures/MyFilms -->  
+  <string Field="Runtime">Duración</string>
+  <string Field="ReleaseDate">Fecha de estreno</string>
+  <string Field="Minutes">minutos</string>
+  <string Field="Overview">Inicio/Resumen</string>
+  <string Field="Description">Descripción</string>
+  <string Field="Comments">Comentarios</string>
+  <string Field="Actors">Actores</string>
+  <string Field="Techinfo">Info Técnica</string>	
+  <!-- Latest Media -->  
+  <string Field="LatestMovies">Últimas Películas</string>
+  <string Field="LatestEpisodes">Últimos Capítulos</string>
+  <!-- Misc -->   
+  <string Field="FanartScraping">Descargando Fanart</string>
+  <string Field="ReturnListMovies">Pulse "izquierda" para volver a la lista de películas</string> 
+  <string Field="ReturnListSeries">Pulse "izquierda" para volver a la lista de series</string> 
+</strings>
