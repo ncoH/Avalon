@@ -41,7 +41,7 @@
             <textcolor>ffffff</textcolor>
             <label>#date | #infoservice.weather.today.temp</label>
 			<align>right</align>
-			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)]</visible>
+			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)] + plugin.isenabled(InfoService)</visible>
         </control>
 <!--Weather-->
 
@@ -55,7 +55,7 @@
 			<width>100</width>
 			<texture>weather/#infoservice.weather.today.img.small.filenamewithext</texture>
 			<visible>plugin.isenabled(InfoService)</visible>
-			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)]</visible>
+			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)] + plugin.isenabled(InfoService)</visible>
 		</control>
     </controls>
 </window>
