@@ -28,8 +28,9 @@
 		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
-		<posX>0</posX>
-		<posY>325</posY>
+		<posY>440</posY>
+		<width>64</width>
+		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
 	</control>
@@ -39,7 +40,7 @@
 		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
-		<posX>624</posX>
+		<posX>858</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
 		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
