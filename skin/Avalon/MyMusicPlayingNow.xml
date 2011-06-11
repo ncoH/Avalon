@@ -307,7 +307,7 @@
             <type>fadelabel</type>
             <posX>545</posX>
             <posY>751</posY>
-            <width>800</width>
+			<width>924</width>
             <font>fontB20</font>
             <label>#Play.Current.Title</label>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -320,7 +320,7 @@
             <type>fadelabel</type>
             <posX>545</posX>
             <posY>809</posY>
-            <width>800</width>
+			<width>924</width>
             <font>fontB14</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>#Play.Current.Artist - #Play.Current.Album</label>
@@ -343,10 +343,11 @@
         <control>
             <id>0</id>
             <description>up next label</description>
-            <type>label</type>
+            <type>fadelabel</type>
             <visible>Control.HasText(20)</visible>
             <posX>545</posX>
             <posY>885</posY>
+			<width>924</width>
             <font>AvalonLight14</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>Next: #Play.Next.Artist - #Play.Next.Title</label>
