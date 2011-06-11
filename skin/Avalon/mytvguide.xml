@@ -338,7 +338,7 @@
       <type>label</type>
       <id>0</id>
       <posX>65</posX>
-      <posY>628</posY>
+      <posY>720</posY>
 	  <valign>middle</valign>
       <label>#TV.Guide.ChangeGroup</label>
       <font>AvalonLight16</font>
