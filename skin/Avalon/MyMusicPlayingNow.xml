@@ -384,9 +384,9 @@
             <visible>player.hasmedia</visible>
 			<posX>648</posX>
 			<posY>961</posY>
-			<width>737</width>
+			<width>914</width>
 			<height>18</height>
-			<texture>osd_progress_bg.png</texture>
+			<texture>osd_progress_bg_music.png</texture>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
         </control>
@@ -405,7 +405,7 @@
             <visible>player.hasmedia</visible>
 			<posX>638</posX>
 			<posY>963</posY>
-			<width>758</width>
+			<width>935</width>
 			<height>15</height>
 			<label>#percentage</label>
 			<texturebg>-</texturebg>
