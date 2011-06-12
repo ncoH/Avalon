@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Danish (DA) -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<!-- Last Updated: 10th Juni 2011 -->
+<strings>
+ 
+ <!-- Skin Updates / Patching GUI -->
+  <string Field="SkinUpdate">Skinopdatering</string>
+  <string Field="UpdateInstall">Opdatér og installér</string>
+  <string Field="NoUpdatesAvailable">Ingen opdatering tilgængelig</string>
+  <string Field="DownloadingPatch">Henter opdatering: {0}</string>
+  <string Field="DownloadingProgress">Hentet {0}KB ud af {1}KB ({2}%)</string>
+  <string Field="NumPatchesInstalled">Antal opdateringer installeret: {0}</string>
+  <string Field="PatchUpdateComplete">Opdatering til skinversion: {0} fuldført</string>
+  <string Field="UpdateAvailableHeading">Tilgængelig opdatering - Ændringer</string>
+  <string Field="mupdateheader">Opdatering hentet til skrivebordet</string>
+  <string Field="mupdateline1">Manual opdatering påkrævet - Tryk OK og luk</string>
+  <string Field="mupdateline2">MediaPortal og/eller Konfiguration</string>
+  <string Field="mupdateline3">og kør:  {0}</string>
+  <string Field="mupdateline4">som kan findes på skrivebordet</string>
+  <!-- Skin Settings --> 
+  <string Field="SkinSettings">Skinindstillinger</string>
+  <string Field="SkinUpdateNF">Tilgængelig opdatering</string>
+  <string Field="SkinUpdateNF2">Tryk venstre og tryk på knappen for at installerer</string>
+  <string Field="SkinSettingsmovpicsLayout">Film informationslayout</string>
+  <string Field="SkinSettingsseriesLayout">Serier informationslayout</string>
+  <string Field="SkinSettingsThumbview ">Thumbnails</string>
+  <string Field="SkinSettingsInfo">Gør info i bunden af skærmen tilgængelig</string>
+  <string Field="SkinSettingsPosterHide">Skjul plakter på listesynet når der ikke scrolles</string>
+  <string Field="SkinSettingsTV">Fjernsyn</string>
+  <string Field="SkinSettingsTVSeries">TV Serier</string>
+  <string Field="SkinSettingsUpdate">Opdatering</string>
+  <string Field="SkinSettingsMovingPictures">MovingPictures</string>
+  <string Field="SkinSettingsMyFilms">MyFilms</string>
+  <string Field="Thumbnails">Thumbnails</string>
+  <string Field="ThumbnailDefault">Thumbnails: Default</string>
+  <string Field="ThumbnailsNoFanart">Thumbnails: Uden fanart</string>
+  <string Field="ThumbnailXL">Thumbnails: XL</string>
+  <string Field="TVMiniGuideSize">TV Mini Guide størrelse</string>
+  <string Field="TVMiniGuideRows">TV Mini Guide rækker</string> 
+  <string Field="TVMiniGuideThreeRows">TV Mini Guide: 3 rækker</string>
+  <string Field="TVMiniGuideEightRows">TV Mini Guide: 8 rækker</string>
+  <string Field="SkinSettingsMisc">Diverse</string>
+  <string Field="Widebanner">Brede bannere</string>
+  <string Field="WidebannerDefault">Brede bannere: Default</string>
+  <string Field="WidebannerNoFanart">Brede bannere: Uden fanart</string> 
+  <!-- MovingPictures/MyFilms -->  
+  <string Field="Runtime">Spilletid</string>
+  <string Field="ReleaseDate">Frigivet dato</string>
+  <string Field="Minutes">minutter</string>
+  <string Field="Overview">Start/Overblik</string>
+  <string Field="Description">Beskrivelse</string>
+  <string Field="Comments">Kommentarer</string>
+  <string Field="Actors">Skuespillere</string>
+  <string Field="Techinfo">Teknisk info</string>	
+  <!-- Latest Media -->  
+  <string Field="LatestMovies">Seneste film</string>
+  <string Field="LatestEpisodes">Seneste serier</string>
+  <!-- Misc -->   
+  <string Field="FanartScraping">Henter fanart</string>
+  <string Field="ReturnListMovies">Tryk til venstre for at returnere til filmlisten</string> 
+  <string Field="ReturnListSeries">Tryk til venstre for at returnere til serielisten</string> 
+</strings>
