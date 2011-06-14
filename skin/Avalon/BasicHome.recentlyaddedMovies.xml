@@ -12,7 +12,7 @@
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
         <onleft>1001</onleft>
-        <onright>221</onright>
+        <onright>91919991</onright>
     </control>
   
       <control>
@@ -24,7 +24,7 @@
         <width>48</width>
         <height>48</height>
         <texture>basichome_play.png</texture>
-		<visible>string.equals(#recentMedia,MovingPictures) + control.isvisible(1021) + [control.hasfocus(221) | control.hasfocus(222) | control.hasfocus(223)]</visible>
+		<visible>string.equals(#recentMedia,MovingPictures) + control.isvisible(1021) + [control.hasfocus(91919991) | control.hasfocus(91919992) | control.hasfocus(91919993)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -37,11 +37,11 @@
         <posX>1266</posX>
         <posY>634</posY>
         <width>500</width>
-        <label>#avalon.recentlyAdded.movie1.title</label>
+        <label>#fanarthandler.movingpicture.latest1.title</label>
         <font>AvalonLight14</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(221) + control.isvisible(1021)</visible>
+		<visible>control.hasfocus(91919991) + control.isvisible(1021)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -53,11 +53,11 @@
         <posX>1266</posX>
         <posY>675</posY>
         <width>500</width>
-        <label>#avalon.recentlyAdded.movie1.runtime - #avalon.recentlyAdded.movie1.year - #avalon.recentlyAdded.movie1.genres</label>
+        <label>#fanarthandler.movingpicture.latest1.runtime min - #fanarthandler.movingpicture.latest1.year - #fanarthandler.movingpicture.latest1.genre</label>
         <font>AvalonLight14</font>
         <textcolor>85cffe</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(221) + control.isvisible(1021)</visible>
+		<visible>control.hasfocus(91919991) + control.isvisible(1021)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -78,8 +78,8 @@
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
-		<percentage>#avalon.recentlyAdded.movie1.score</percentage>
-		<visible>control.hasfocus(221) + control.isvisible(1021)</visible>
+		<percentage>#fanarthandler.movingpicture.latest1.rating</percentage>
+		<visible>control.hasfocus(91919991) + control.isvisible(1021)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -92,11 +92,11 @@
         <posX>1266</posX>
         <posY>634</posY>
         <width>500</width>
-        <label>#avalon.recentlyAdded.movie2.title</label>
+        <label>#fanarthandler.movingpicture.latest2.title</label>
         <font>AvalonLight14</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(222)</visible>
+		<visible>control.hasfocus(91919992)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -108,11 +108,11 @@
         <posX>1266</posX>
         <posY>675</posY>
         <width>500</width>
-        <label>#avalon.recentlyAdded.movie2.runtime - #avalon.recentlyAdded.movie2.year - #avalon.recentlyAdded.movie2.genres</label>
+        <label>#fanarthandler.movingpicture.latest2.runtime min - #fanarthandler.movingpicture.latest2.year - #fanarthandler.movingpicture.latest2.genre</label>
         <font>AvalonLight14</font>
         <textcolor>85cffe</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(222)</visible>
+		<visible>control.hasfocus(91919992)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -133,8 +133,8 @@
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
-		<percentage>#avalon.recentlyAdded.movie2.score</percentage>
-		<visible>control.hasfocus(222)</visible>
+		<percentage>#fanarthandler.movingpicture.latest2.rating</percentage>
+		<visible>control.hasfocus(91919992)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -147,11 +147,11 @@
         <posX>1266</posX>
         <posY>634</posY>
         <width>500</width>
-        <label>#avalon.recentlyAdded.movie3.title</label>
+        <label>#fanarthandler.movingpicture.latest3.title</label>
         <font>AvalonLight14</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(223)</visible>
+		<visible>control.hasfocus(91919993)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -163,11 +163,11 @@
         <posX>1266</posX>
         <posY>675</posY>
         <width>500</width>
-        <label>#avalon.recentlyAdded.movie1.runtime - #avalon.recentlyAdded.movie1.year - #avalon.recentlyAdded.movie1.genres</label>
+        <label>#fanarthandler.movingpicture.latest3.runtime min - #fanarthandler.movingpicture.latest3.year - #fanarthandler.movingpicture.latest3.genre</label>
         <font>AvalonLight14</font>
         <textcolor>85cffe</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(223)</visible>
+		<visible>control.hasfocus(91919993)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -188,8 +188,8 @@
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
-		<percentage>#avalon.recentlyAdded.movie3.score</percentage>
-		<visible>control.hasfocus(223)</visible>
+		<percentage>#fanarthandler.movingpicture.latest3.rating</percentage>
+		<visible>control.hasfocus(91919993)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -223,12 +223,12 @@
         <posY>335</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie1.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.movingpicture.latest1.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
         <type>button</type>
-        <id>221</id>
+        <id>91919991</id>
         <posX>1212</posX>
         <posY>330</posY>
         <width>194</width>
@@ -237,9 +237,9 @@
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
         <onleft>901</onleft>
-        <onright>222</onright>
-		<onup>221</onup>
-		<ondown>221</ondown>
+        <onright>91919992</onright>
+		<onup>91919991</onup>
+		<ondown>91919991</ondown>
         <font>font12</font>
     </control>
     </control>
@@ -247,7 +247,7 @@
       <description>GROUP: RecentlyAdded Movie</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia, MovingPictures) + ![control.isvisible(601) | control.isvisible(501)] + ![string.starts(#avalon.recentlyAdded.movie2.fanart,#)|string.starts(#avalon.recentlyAdded.movie2.thumb,#)]</visible>
+      <visible>string.equals(#recentMedia, MovingPictures) + ![control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -260,12 +260,12 @@
         <posY>335</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie2.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.movingpicture.latest2.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
         <type>button</type>
-        <id>222</id>
+        <id>91919992</id>
         <posX>1412</posX>
         <posY>330</posY>
         <width>194</width>
@@ -273,10 +273,10 @@
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
-        <onleft>221</onleft>
-        <onright>223</onright>
-		<onup>222</onup>
-		<ondown>222</ondown>
+        <onleft>91919991</onleft>
+        <onright>91919993</onright>
+		<onup>91919992</onup>
+		<ondown>91919992</ondown>
         <font>font12</font>
     </control>
     </control>
@@ -284,7 +284,7 @@
       <description>GROUP: RecentlyAdded Movie</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia, MovingPictures) + ![control.isvisible(601) | control.isvisible(501)] + ![string.starts(#avalon.recentlyAdded.movie3.fanart,#)|string.starts(#avalon.recentlyAdded.movie3.thumb,#)]</visible>
+      <visible>string.equals(#recentMedia, MovingPictures) + ![control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -297,12 +297,12 @@
         <posY>335</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.movie3.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.movingpicture.latest3.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
         <type>button</type>
-        <id>223</id>
+        <id>91919993</id>
         <posX>1615</posX>
         <posY>330</posY>
         <width>194</width>
@@ -310,10 +310,10 @@
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
-        <onleft>222</onleft>
-        <onright>221</onright>
-		<onup>223</onup>
-		<ondown>223</ondown>
+        <onleft>91919992</onleft>
+        <onright>91919991</onright>
+		<onup>91919993</onup>
+		<ondown>91919993</ondown>
         <font>font12</font>
     </control>
     </control>

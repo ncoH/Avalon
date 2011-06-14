@@ -12,7 +12,7 @@
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
         <onleft>1001</onleft>
-        <onright>231</onright>
+        <onright>91919994</onright>
     </control>	
 
       <control>
@@ -24,7 +24,7 @@
         <width>48</width>
         <height>48</height>
         <texture>basichome_play.png</texture>
-		<visible>string.equals(#recentMedia,TVSeries) + [control.hasfocus(231) | control.hasfocus(232) | control.hasfocus(233)] + Control.IsVisible(10)</visible>
+		<visible>string.equals(#recentMedia,TVSeries) + [control.hasfocus(91919994) | control.hasfocus(91919995) | control.hasfocus(91919996)] + Control.IsVisible(10)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -39,11 +39,11 @@
         <posX>1266</posX>
         <posY>634</posY>
         <width>500</width>
-        <label>#avalon.recentlyAdded.series1.title</label>
+        <label>#fanarthandler.tvseries.latest1.serieName</label>
         <font>AvalonLight14</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(231) + Control.IsVisible(10)</visible>
+		<visible>control.hasfocus(91919994) + Control.IsVisible(10)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -56,11 +56,11 @@
         <posX>1266</posX>
         <posY>675</posY>
         <width>500</width>
-        <label>#avalon.RecentlyAddedSE.1 - #avalon.recentlyAdded.series1.episodetitle</label>
+        <label>S#fanarthandler.tvseries.latest1.seasonIndexE#fanarthandler.tvseries.latest1.episodeIndex - #fanarthandler.tvseries.latest1.episodeName</label>
         <font>AvalonLight14</font>
         <textcolor>85cffe</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(231) + Control.IsVisible(10)</visible>
+		<visible>control.hasfocus(91919994) + Control.IsVisible(10)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -75,11 +75,11 @@
         <posX>1266</posX>
         <posY>634</posY>
         <width>500</width>
-        <label>#avalon.recentlyAdded.series2.title</label>
+        <label>#fanarthandler.tvseries.latest2.serieName</label>
         <font>AvalonLight14</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(232)</visible>
+		<visible>control.hasfocus(91919995)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -92,11 +92,11 @@
         <posX>1266</posX>
         <posY>675</posY>
         <width>500</width>
-        <label>#avalon.RecentlyAddedSE.2 - #avalon.recentlyAdded.series2.episodetitle</label>
+        <label>S#fanarthandler.tvseries.latest2.seasonIndexE#fanarthandler.tvseries.latest2.episodeIndex - #fanarthandler.tvseries.latest2.episodeName</label>
         <font>AvalonLight14</font>
         <textcolor>85cffe</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(232)</visible>
+		<visible>control.hasfocus(91919995)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -111,11 +111,11 @@
         <posX>1266</posX>
         <posY>634</posY>
         <width>500</width>
-        <label>#avalon.recentlyAdded.series3.title</label>
+        <label>#fanarthandler.tvseries.latest3.serieName</label>
         <font>AvalonLight14</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(233)</visible>
+		<visible>control.hasfocus(91919996)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -128,11 +128,11 @@
         <posX>1266</posX>
         <posY>675</posY>
         <width>500</width>
-        <label>#avalon.RecentlyAddedSE.3 - #avalon.recentlyAdded.series3.episodetitle</label>
+        <label>S#fanarthandler.tvseries.latest3.seasonIndexE#fanarthandler.tvseries.latest3.episodeIndex - #fanarthandler.tvseries.latest3.episodeName</label>
         <font>AvalonLight14</font>
         <textcolor>85cffe</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(233)</visible>
+		<visible>control.hasfocus(91919996)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -142,7 +142,7 @@
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,TVSeries) + ![control.isvisible(601) | control.isvisible(501)]  + ![string.starts(#avalon.recentlyAdded.series1.fanart,#)|string.starts(#avalon.recentlyAdded.series1.thumb,#)]</visible>
+      <visible>string.equals(#recentMedia,TVSeries) + ![control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -166,12 +166,12 @@
         <posY>335</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.series1.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.tvseries.latest1.serieThumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
         <type>button</type>
-        <id>231</id>
+        <id>91919994</id>
         <posX>1212</posX>
         <posY>330</posY>
         <width>194</width>
@@ -180,9 +180,9 @@
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
         <onleft>901</onleft>
-        <onright>232</onright>
-		<onup>231</onup>
-		<ondown>231</ondown>
+        <onright>91919995</onright>
+		<onup>91919994</onup>
+		<ondown>91919994</ondown>
         <font>font12</font>
     </control>
     </control>
@@ -190,7 +190,7 @@
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,TVSeries) + ![control.isvisible(601) | control.isvisible(501)] + ![string.starts(#avalon.recentlyAdded.series2.fanart,#)|string.starts(#avalon.recentlyAdded.series2.thumb,#)]</visible>
+      <visible>string.equals(#recentMedia,TVSeries) + ![control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -203,12 +203,12 @@
         <posY>335</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.series2.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.tvseries.latest2.serieThumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
         <type>button</type>
-        <id>232</id>
+        <id>91919995</id>
         <posX>1412</posX>
         <posY>330</posY>
         <width>194</width>
@@ -216,10 +216,10 @@
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
-        <onleft>231</onleft>
-        <onright>233</onright>
-		<onup>232</onup>
-		<ondown>232</ondown>
+        <onleft>91919994</onleft>
+        <onright>91919996</onright>
+		<onup>91919995</onup>
+		<ondown>91919995</ondown>
         <font>font12</font>
     </control>
 	  
@@ -228,7 +228,7 @@
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,TVSeries) + ![control.isvisible(601) | control.isvisible(501)]+ ![string.starts(#avalon.recentlyAdded.series3.fanart,#)|string.starts(#avalon.recentlyAdded.series3.thumb,#)]</visible>
+      <visible>string.equals(#recentMedia,TVSeries) + ![control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -241,12 +241,12 @@
         <posY>335</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.series3.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.tvseries.latest3.serieThumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
         <type>button</type>
-        <id>233</id>
+        <id>91919996</id>
         <posX>1615</posX>
         <posY>330</posY>
         <width>194</width>
@@ -254,10 +254,10 @@
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
-        <onleft>232</onleft>
-        <onright>231</onright>
-		<onup>233</onup>
-		<ondown>233</ondown>
+        <onleft>91919995</onleft>
+        <onright>91919994</onright>
+		<onup>91919996</onup>
+		<ondown>91919996</ondown>
         <font>font12</font>
     </control>
     </control>
@@ -272,7 +272,7 @@
         <posY>335</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#avalon.recentlyAdded.series1.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.tvseries.latest1.serieThumb</texture>
 		<visible>string.equals(#recentMedia,TVSeries) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
