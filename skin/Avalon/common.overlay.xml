@@ -46,6 +46,9 @@
 		<visible>player.hasvideo+!control.isvisible(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
 	</control>
 
 	<control>
@@ -53,22 +56,24 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>326</posX>
-		<posY>962</posY>
+		<posY>968</posY>
 		<width>240</width>
-		<height>50</height>
 		<label>4540</label>
-		<font>AvalonLight12</font>
-		<textcolor>85cffe</textcolor>
+		<font>AvalonLight11</font>
+		<textcolor>6aa5cb</textcolor>
 		<visible>player.hasvideo+!control.isvisible(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
 	</control>
 	
 	<control>
       <description>EQ</description>
       <type>image</type>
       <id>1</id>
-      <posX>326</posX>
+      <posX>329</posX>
       <posY>1039</posY>
       <width>33</width>
       <height>16</height>
@@ -76,6 +81,9 @@
       <visible>player.hasvideo+!control.isvisible(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
     </control>
 	
 	<control>
@@ -83,14 +91,17 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>376</posX>
-		<posY>1039</posY>
-		<width>140</width>
+		<posY>1033</posY>
+		<width>200</width>
 		<label>#currentplaytime / #duration</label>
-		<font>AvalonLight12</font>
+		<font>AvalonLight10</font>
 		<textcolor>ffffff</textcolor>
 		<visible>player.hasvideo+!control.isvisible(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
 	</control>
 
 <!--Video-->
@@ -100,12 +111,15 @@
 		<id>1</id>
 		<width>330</width>
 		<posX>326</posX>
-		<posY>996</posY>
-		<font>fontB14</font>
+		<posY>998</posY>
+		<font>fontB12</font>
 		<label>#Play.Current.Title</label>
 		<visible>player.hasvideo+!control.isvisible(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
 	</control>
 
 	<control>
@@ -120,6 +134,9 @@
 		<visible>player.hasvideo+!control.isvisible(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
 	</control>
 
 	<control>
@@ -138,6 +155,9 @@
 		<visible>player.hasvideo+!control.isvisible(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
 	</control>
 	
 <!--Audio-->
@@ -145,7 +165,7 @@
       <description>album logo</description>
       <type>image</type>
       <id>1</id>
-      <posX>53</posX>
+      <posX>60</posX>
       <posY>915</posY>
       <width>135</width>
       <height>135</height>
@@ -153,13 +173,16 @@
       <visible>player.hasaudio+control.isvisible(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
     </control>
 	
 	<control>
       <description>no album logo</description>
       <type>image</type>
       <id>1</id>
-      <posX>53</posX>
+      <posX>60</posX>
       <posY>915</posY>
       <width>135</width>
       <height>135</height>
@@ -167,117 +190,87 @@
       <visible>player.hasaudio+control.isvisible(3337)+string.equals(#Play.Current.Thumb,)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
     </control>
 
 	<control>
 		<type>fadelabel</type>
 		<description>title label</description>
 		<id>1</id>
-		<posX>215</posX>
-		<posY>978</posY>
+		<posX>222</posX>
+		<posY>998</posY>
 		<width>380</width>
 		<label>#Play.Current.Title</label>
-		<font>AvalonLight14</font>
+		<font>fontB12</font>
 		<textcolor>ffffff</textcolor>
 		<visible>player.hasaudio+control.hastext(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
 	</control>
-<!--
-	<control>
-		<type>fadelabel</type>
-		<description>artist label</description>
-		<id>1</id>
-		<posX>160</posX>
-		<posY>699</posY>
-		<width>230</width>
-		<label>#Play.Current.Artist</label>
-		<font>font10</font>
-		<visible>player.hasaudio+control.hastext(3337)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
--->
+	
 	<control>
 		<description>nowplaying label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>215</posX>
-		<posY>950</posY>
+		<posX>222</posX>
+		<posY>968</posY>
 		<width>240</width>
-		<height>50</height>
 		<label>4540</label>
-		<font>AvalonLight12</font>
-		<textcolor>85cffe</textcolor>
+		<font>AvalonLight11</font>
+		<textcolor>6aa5cb</textcolor>
 		<visible>player.hasaudio+control.isvisible(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
 	</control>
 	
 	<control>
       <description>EQ</description>
       <type>image</type>
       <id>1</id>
-      <posX>215</posX>
-      <posY>1031</posY>
+      <posX>222</posX>
+      <posY>1040</posY>
       <width>33</width>
       <height>16</height>
       <texture>now_playing_eq.png</texture>
       <visible>player.hasaudio+control.hastext(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
     </control>
 	
 	<control>
 		<description>nowplaying text</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>260</posX>
-		<posY>1020</posY>
-		<width>180</width>
-		<height>50</height>
+		<posX>267</posX>
+		<posY>1034</posY>
+		<width>200</width>
 		<label>#currentplaytime / #duration</label>
-		<font>AvalonLight12</font>
+		<font>AvalonLight10</font>
 		<textcolor>ffffff</textcolor>
 		<visible>player.hasaudio+control.hastext(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
 	</control>
-<!--	
-	<control>
-		<description>play logo</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>160</posX>
-		<posY>681</posY>
-		<width>15</width>
-		<height>17</height>
-		<texture>now_playing_play.png</texture>
-		<visible>player.playing+player.hasaudio+control.hastext(3337)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-	
-	<control>
-		<description>pause logo</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>160</posX>
-		<posY>679</posY>
-		<width>15</width>
-		<height>17</height>
-		<texture>now_playing_pause.png</texture>
-		<visible>player.paused+player.hasaudio+control.hastext(3337)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-	
--->
+
 	<control>
 		<description>progress bar bg</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>52</posX>
+		<posX>59</posX>
 		<posY>1040</posY>
 		<width>135</width>
 		<height>16</height>
@@ -285,13 +278,16 @@
 		<visible>player.hasmedia+control.hastext(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
 	</control>
 
 	<control>
 		<description>progress bar</description>
 		<type>progress</type>
 		<id>1</id>
-		<posX>41</posX>
+		<posX>48</posX>
 		<posY>1048</posY>
 		<width>136</width>
 		<height>5</height>
@@ -303,52 +299,10 @@
 		<visible>player.hasmedia+control.hastext(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
 	</control>
-<!--
-	<control>
-		<type>label</type>
-		<description>track duration label start</description>
-		<id>1</id>
-		<posX>154</posX>
-		<posY>682</posY>
-		<width>390</width>
-		<label>#currentplaytime</label>
-		<align>left</align>
-		<font>font10</font>
-		<visible>player.hasmedia+control.hastext(3337)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-
-	<control>
-		<type>label</type>
-		<description>track duration label end</description>
-		<id>1</id>
-		<posX>374</posX>
-		<posY>682</posY>
-		<width>390</width>
-		<label>#duration</label>
-		<align>right</align>
-		<font>font10</font>
-		<visible>player.hasmedia+control.hastext(3337)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-
-	<control>
-		<description>Pause logo</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>240</posX>
-		<posY>685</posY>
-		<width>48</width>
-		<height>26</height>
-		<texture>now_playing_pause.png</texture>
-		<visible>player.paused+player.hasmedia+control.hastext(3337)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
--->
 
 <!--Radio-->
 
@@ -356,102 +310,144 @@
       <description>radio logo</description>
       <type>image</type>
       <id>1</id>
-      <posX>62</posX>
-      <posY>639</posY>
-      <width>82</width>
-      <height>77</height>
+      <posX>60</posX>
+      <posY>915</posY>
+      <width>135</width>
+      <height>135</height>
       <texture>#Play.Current.Thumb</texture>
       <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
     </control>
 	
 	<control>
       <description>no radio logo</description>
       <type>image</type>
       <id>1</id>
-      <posX>62</posX>
-      <posY>639</posY>
-      <width>82</width>
-      <height>77</height>
+      <posX>60</posX>
+      <posY>915</posY>
+      <width>135</width>
+      <height>135</height>
       <texture>audio_nothumb.png</texture>
       <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+string.equals(#Play.Current.Thumb,)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
     </control>
-
-	<control>
-		<type>image</type>
-		<id>1</id>
-		<posX>21</posX>
-		<posY>598</posY>
-		<width>420</width>
-		<height>158</height>
-		<texture>now_playing_music_bg.png</texture>
-		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
-
-	<control>
-		<description>nowplaying text</description>
-		<type>label</type>
-		<id>1</id>
-		<posX>160</posX>
-		<posY>636</posY>
-		<width>170</width>
-		<height>50</height>
-		<label>4540</label>
-		<font>AvalonLight16</font>
-		<textcolor>85cffe</textcolor>
-		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
-
-	<control>
-		<description>nowplaying time</description>
-		<type>label</type>
-		<id>1</id>
-		<posX>335</posX>
-		<posY>636</posY>
-		<width>65</width>
-		<height>50</height>
-		<label>#currentplaytime</label>
-		<font>AvalonLight16</font>
-		<align>left</align>
-		<textcolor>85cffe</textcolor>
-		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
 
 	<control>
 		<description>Current Channel</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<width>210</width>
-		<posX>182</posX>
-		<posY>674</posY>
-		<font>font12</font>
+		<posX>222</posX>
+		<posY>998</posY>
+		<width>380</width>
 		<label>#Play.Current.Title</label>
+		<font>fontB12</font>
+		<textcolor>ffffff</textcolor>
 		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
 	</control>
 
 	<control>
-		<description>play logo</description>
+		<description>progress bar bg</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>160</posX>
-		<posY>681</posY>
-		<width>15</width>
-		<height>17</height>
-		<texture>now_playing_play.png</texture>
-		<visible>player.playing+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+		<posX>59</posX>
+		<posY>1040</posY>
+		<width>135</width>
+		<height>16</height>
+		<texture>now_playing_music_progress_bg.png</texture>
+		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
+	</control>
+
+	<control>
+		<description>progress bar</description>
+		<type>progress</type>
+		<id>1</id>
+		<posX>48</posX>
+		<posY>1048</posY>
+		<width>136</width>
+		<height>5</height>
+		<texturebg>-</texturebg>
+		<lefttexture>-</lefttexture>
+		<midtexture>now_playing_progress_bar.png</midtexture>
+		<righttexture>-</righttexture>
+		<label>#percentage</label>
+		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
+	</control>
+
+
+	<control>
+		<description>nowplaying label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>222</posX>
+		<posY>968</posY>
+		<width>240</width>
+		<label>4540</label>
+		<font>AvalonLight11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
+	</control>
+	
+	<control>
+      <description>EQ</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>222</posX>
+      <posY>1040</posY>
+      <width>33</width>
+      <height>16</height>
+      <texture>now_playing_eq.png</texture>
+		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
+    </control>
+	
+	<control>
+		<description>nowplaying text</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>267</posX>
+		<posY>1034</posY>
+		<width>200</width>
+		<label>#currentplaytime / #duration</label>
+		<font>AvalonLight10</font>
+		<textcolor>ffffff</textcolor>
+		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
 	</control>
 
 </controls>
