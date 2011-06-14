@@ -139,10 +139,10 @@
         <description>Weather today name</description>
         <type>label</type>
         <id>0</id>
-        <posX>748</posX>
-        <posY>996</posY>
-		<align>left</align>
-        <label>Today</label>
+        <posX>768</posX>
+        <posY>1020</posY>
+		<valign>middle</valign>
+        <label>6030</label>
         <font>fontB14</font>
         <textcolor>ffffff</textcolor>
 		<visible>plugin.isenabled(InfoService)</visible>

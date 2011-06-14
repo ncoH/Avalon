@@ -211,7 +211,7 @@ multiple view modes.
       <posX>1856</posX>
       <posY>945</posY>
       <width>697</width>
-      <label>Category: #MovingPictures.SelectedNode.name</label>
+      <label>#(L(2053)): #MovingPictures.SelectedNode.name</label>
       <font>fontB20</font>
       <align>right</align>
       <visible>control.isvisible(51)</visible>
