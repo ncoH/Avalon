@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- English (US) -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<!-- Last Updated: 12th May 2011 -->
+<strings>
+ 
+ <!-- Skin Updates / Patching GUI -->
+  <string Field="SkinUpdate">Skin-uppdatering</string>
+  <string Field="UpdateInstall">Uppdatera och installera</string>
+  <string Field="NoUpdatesAvailable">Inga patchar är tillgängliga just nu</string>
+  <string Field="DownloadingPatch">Hämta patch: {0}</string>
+  <string Field="DownloadingProgress">Hämtat {0}KB av {1}KB ({2}%)</string>
+  <string Field="NumPatchesInstalled">Antal filer i patchen installerade: {0}</string>
+  <string Field="PatchUpdateComplete">Uppdatera till skin-version: {0} färdigt</string>
+  <string Field="UpdateAvailableHeading">Uppdatering är tillgänglig - nya ändringar</string>
+  <string Field="mupdateheader">Patch-installerare hämtad till skrivbordet</string>
+  <string Field="mupdateline1">Manuell uppdatering krävs - stäng för att tillämpa</string>
+  <string Field="mupdateline2">MediaPortal och/eller Configuration</string>
+  <string Field="mupdateline3">och kör:  {0}</string>
+  <string Field="mupdateline4">som finns på Skrivbordet</string>
+  <!-- Skin Settings --> 
+  <string Field="SkinSettings">Skin-inställningar</string>
+  <string Field="SkinUpdateNF">Uppdatering tillgänglig</string>
+  <string Field="SkinUpdateNF2">Stega till vänster och tryck på knappen för att installera</string>
+  <string Field="SkinSettingsmovpicsLayout">Filminformation-Layout</string>
+  <string Field="SkinSettingsseriesLayout">Serieinformation-layout</string>
+  <string Field="SkinSettingsThumbview ">Miniatyrbilder</string>
+  <string Field="SkinSettingsInfo">Tillåt information på botten av skärmen</string>
+  <string Field="SkinSettingsPosterHide">Göm affisch i listvyn när rullning inte sker</string>
+  <string Field="SkinSettingsTV">TV</string>
+  <string Field="SkinSettingsTVSeries">TV-serier</string>
+  <string Field="SkinSettingsUpdate">Uppdatering</string>
+  <string Field="SkinSettingsMovingPictures">MovingPictures</string>
+  <string Field="SkinSettingsMyFilms">MyFilms</string>
+  <string Field="Thumbnails">Miniatyrer</string>
+  <string Field="ThumbnailDefault">Miniatyrer: grundinställning</string>
+  <string Field="ThumbnailsNoFanart">Miniatyrer: utan FanArt</string>
+  <string Field="ThumbnailXL">Miniatyrer: XL</string>
+  <string Field="TVMiniGuideSize">Storlek, TV-miniguide</string>
+  <string Field="TVMiniGuideRows">Antal rader, TV-miniguide</string> 
+  <string Field="TVMiniGuideThreeRows">TV-miniguide: 3 rader</string>
+  <string Field="TVMiniGuideEightRows">TV-miniguide: 8 rader</string>
+  <string Field="SkinSettingsMisc">Övrigt</string>
+  <string Field="Widebanner">WideBanners</string>
+  <string Field="WidebannerDefault">Banners sida vid sida: grundinställning</string>
+  <string Field="WidebannerNoFanart">Banners sida vid sida: utan FanArt</string> 
+  <!-- MovingPictures/MyFilms -->  
+  <string Field="Runtime">Speltid</string>
+  <string Field="ReleaseDate">Publiceringsdatum</string>
+  <string Field="Minutes">minuter</string>
+  <string Field="Overview">Start/Översikt</string>
+  <string Field="Description">Beskrivning</string>
+  <string Field="Comments">Kommentarer</string>
+  <string Field="Actors">Skådespelare</string>
+  <string Field="Techinfo">Teknisk information</string>	
+  <!-- Latest Media -->  
+  <string Field="LatestMovies">Senaste filmerna</string>
+  <string Field="LatestEpisodes">Senaste avsnitten</string>
+  <!-- Misc -->   
+  <string Field="FanartScraping">Letar ny FanArt</string>
+  <string Field="ReturnListMovies">Steg åt vänster återvänder till filmlistan</string> 
+  <string Field="ReturnListSeries">Steg åt vänster återvänder till serielistan</string> 
+</strings>
