@@ -53,13 +53,13 @@
 		<height>320</height>
 		<textureFocus>tv_miniguide_bar.png</textureFocus>
 		<textureNoFocus>tv_miniguide_bar_nofocus.png</textureNoFocus>
-		<textYOff>31</textYOff>
-		<textXOff>35</textXOff>
-		<textXOff2>660</textXOff2>
-		<textYOff2>31</textYOff2>
+		<textYOff>41</textYOff>
+		<textXOff>-50</textXOff>
+		<textXOff2>1156</textXOff2>
+		<textYOff2>41</textYOff2>
 		<textXOff3>35</textXOff3>
 		<textYOff3>6</textYOff3>
-		<IconXOff>13</IconXOff>
+		<IconXOff>-90</IconXOff>
 		<IconYOff>10</IconYOff>
 		<PinIconWidth>-</PinIconWidth>
 		<PinIconHeight>-</PinIconHeight>
@@ -80,6 +80,7 @@
 		<textcolor2>FF85cffe</textcolor2>
 		<textcolor3>FFFFFFFF</textcolor3>
 		<remoteColor>FFFFFFFF</remoteColor><!-- used for selected channel -->
+		<unfocusedAlpha>255</unfocusedAlpha>
 		<onleft>36</onleft>
 		<onright>34</onright>
 	</control>
