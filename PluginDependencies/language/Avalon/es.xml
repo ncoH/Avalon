@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Spanish (es) -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
-<!-- Last Updated: 10th June 2011 -->
+<!-- Last Updated: 15th June 2011 -->
 <strings>
  
  <!-- Skin Updates / Patching GUI -->
@@ -19,7 +19,7 @@
   <string Field="mupdateline3">y ejecute:  {0}</string>
   <string Field="mupdateline4">que se encuentra en su escritorio</string>
   <!-- Skin Settings --> 
-  <string Field="SkinSettings">Configuración Skin</string>
+  <string Field="SkinSettings">Configuración de Skin</string>
   <string Field="SkinUpdateNF">Actualización disponible</string>
   <string Field="SkinUpdateNF2">Pulse "izquierda" y presione el botón para instalar</string>
   <string Field="SkinSettingsmovpicsLayout">Diseño en las películas</string>
@@ -46,7 +46,7 @@
   <string Field="WidebannerNoFanart">Banners grandes: Sin Fanart</string> 
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Duración</string>
-  <string Field="ReleaseDate">Fecha de estreno</string>
+  <string Field="ReleaseDate">Año</string>
   <string Field="Minutes">minutos</string>
   <string Field="Overview">Inicio/Resumen</string>
   <string Field="Description">Descripción</string>
