@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profile>
+  <section name="AvalonBasicHome">
+    <entry name="menuItemHyperlink0">1</entry>
+    <entry name="menuItemHyperlink1">96742</entry>
+    <entry name="menuItemHyperlink2">9811</entry>
+    <entry name="menuItemHyperlink3">6</entry>
+    <entry name="menuItemHyperlink4">501</entry>
+    <entry name="menuItemHyperlink5">2</entry>
+    <entry name="menuItemHyperlink6">4755</entry>
+    <entry name="menuItemHyperlink7">2600</entry>
+    <entry name="menuItemHyperlink8">34</entry>
+    <entry name="menuItemHyperlink9">4</entry>
+    <entry name="menuItemName0">TV</entry>
+    <entry name="menuItemBgImage0">tv</entry>
+    <entry name="menuItemParameter0">
+    </entry>
+    <entry name="menuItemRecentMedia0">
+    </entry>
+    <entry name="menuItemName1">Películas</entry>
+    <entry name="menuItemBgImage1">movies</entry>
+    <entry name="menuItemParameter1">
+    </entry>
+    <entry name="menuItemRecentMedia1">MovingPictures</entry>
+    <entry name="menuItemName2">Series</entry>
+    <entry name="menuItemBgImage2">series</entry>
+    <entry name="menuItemParameter2">
+    </entry>
+    <entry name="menuItemRecentMedia2">TVSeries</entry>
+    <entry name="menuItemName3">Vídeos</entry>
+    <entry name="menuItemBgImage3">movies</entry>
+    <entry name="menuItemParameter3">
+    </entry>
+    <entry name="menuItemRecentMedia3">
+    </entry>
+    <entry name="menuItemName4">Música</entry>
+    <entry name="menuItemBgImage4">music</entry>
+    <entry name="menuItemParameter4">
+    </entry>
+    <entry name="menuItemRecentMedia4">
+    </entry>
+    <entry name="menuItemName5">Fotos</entry>
+    <entry name="menuItemBgImage5">pictures</entry>
+    <entry name="menuItemParameter5">
+    </entry>
+    <entry name="menuItemRecentMedia5">
+    </entry>
+    <entry name="menuItemName6">Vídeos Web</entry>
+    <entry name="menuItemBgImage6">plugins</entry>
+    <entry name="menuItemParameter6">
+    </entry>
+    <entry name="menuItemRecentMedia6">
+    </entry>
+    <entry name="menuItemName7">Tiempo</entry>
+    <entry name="menuItemBgImage7">weather_default.jpg</entry>
+    <entry name="menuItemParameter7">
+    </entry>
+    <entry name="menuItemRecentMedia7">
+    </entry>
+    <entry name="menuItemName8">Plugins</entry>
+    <entry name="menuItemBgImage8">plugins</entry>
+    <entry name="menuItemParameter8">
+    </entry>
+    <entry name="menuItemRecentMedia8">
+    </entry>
+    <entry name="menuItemName9">Configuración</entry>
+    <entry name="menuItemBgImage9">settings_default.jpg</entry>
+    <entry name="menuItemParameter9">
+    </entry>
+    <entry name="menuItemRecentMedia9">
+    </entry>
+  </section>
+  <section name="MovingPicturesConfig">
+    <entry name="MovingPicturesInfo">0</entry>
+    <entry name="MovingPicturesThumbMod">0</entry>
+  </section>
+  <section name="TVConfig">
+    <entry name="TVMiniGuideSize">3</entry>
+  </section>
+  <section name="TVSeriesConfig">
+    <entry name="TVSeriesInfo">0</entry>
+    <entry name="TVSeriesWidebannerMod">0</entry>
+  </section>
+  <section name="UpdateConfig">
+    <entry name="updateCheckOnStart">1</entry>
+    <entry name="updateCheckForUpdateAt">0</entry>
+    <entry name="updateCheckInterval">0</entry>
+    <entry name="updateCheckTime">00:00</entry>
+    <entry name="updateRunPatchUtilityUnattended">1</entry>
+    <entry name="updatePatchUtilityRestartMP">1</entry>
+    <entry name="updatePatchAppliedLastRun">0</entry>
+  </section>
+  <section name="AvalonBasicHomeSubmenu0">
+    <entry name="submenuItemName0">Grabaciones</entry>
+    <entry name="submenuItemHyperlink0">603</entry>
+    <entry name="submenuItemParameter0">
+    </entry>
+    <entry name="submenuItemName1">Guía</entry>
+    <entry name="submenuItemHyperlink1">600</entry>
+    <entry name="submenuItemParameter1">
+    </entry>
+  </section>
+  <section name="AvalonBasicHomeSubmenu2">
+    <entry name="submenuItemName0">Nuevas</entry>
+    <entry name="submenuItemHyperlink0">9811</entry>
+    <entry name="submenuItemParameter0">RecentlyAdded</entry>
+    <entry name="submenuItemName1">No vistas</entry>
+    <entry name="submenuItemHyperlink1">9811</entry>
+    <entry name="submenuItemParameter1">Unwatched</entry>
+  </section>
+  <section name="AvalonBasicHomeSubmenu6">
+    <entry name="submenuItemName0">YouTube</entry>
+    <entry name="submenuItemHyperlink0">4755</entry>
+    <entry name="submenuItemParameter0">site:YouTube|return:Locked</entry>
+    <entry name="submenuItemName1">Trailers</entry>
+    <entry name="submenuItemHyperlink1">4755</entry>
+    <entry name="submenuItemParameter1">site:iTunes Movie Trailers|return:Locked</entry>
+  </section>
+  <section name="MyFilmsConfig">
+    <entry name="MyFilmsInfo">0</entry>
+    <entry name="MyFilmsThumbMod">0</entry>
+  </section>
+  <section name="MiscConfig">
+    <entry name="MiscHidePoster">0</entry>
+  </section>
+</profile>
