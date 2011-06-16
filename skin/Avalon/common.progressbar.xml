@@ -48,7 +48,7 @@
 		<description>End Time Info</description>
 		<type>label</type>
 		<id>998</id>
-		<posX>1415</posX>
+		<posX>1435</posX>
 		<posY>895</posY>
 		<label>#currentremaining</label>
 		<align>right</align>
@@ -114,12 +114,12 @@
     <control>
 		<description>2x label</description>
 		<type>label</type>
-		<posX>610</posX>
-		<posY>700</posY>
-		<height>30</height>
+		<posX>1502</posX>
+		<posY>973</posY>
 		<width>144</width>
-		<font>font14</font>
+		<font>fontB14</font>
 		<align>center</align>
+		<textcolor>ffffffff</textcolor>
 		<visible>player.forwarding2x</visible>
 		<label>FFW 2x</label>
 		<animation effect="fade" time="250">visiblechange</animation>
@@ -128,12 +128,12 @@
     <control>
 		<description>4x label</description>
 		<type>label</type>
-		<posX>610</posX>
-		<posY>700</posY>
-		<height>30</height>
+		<posX>1502</posX>
+		<posY>973</posY>
 		<width>144</width>
-		<font>font14</font>
+		<font>fontB14</font>
 		<align>center</align>
+		<textcolor>ffffffff</textcolor>
 		<visible>player.forwarding4x</visible>
 		<label>FFW 4x</label>
 		<animation effect="fade" time="250">visiblechange</animation>
@@ -142,12 +142,12 @@
     <control>
 		<description>8x label</description>
 		<type>label</type>
-		<posX>610</posX>
-		<posY>700</posY>
-		<height>30</height>
+		<posX>1502</posX>
+		<posY>973</posY>
 		<width>144</width>
-		<font>font14</font>
+		<font>fontB14</font>
 		<align>center</align>
+		<textcolor>ffffffff</textcolor>
 		<visible>player.forwarding8x</visible>
 		<label>FFW 8x</label>
 		<animation effect="fade" time="250">visiblechange</animation>
@@ -156,12 +156,12 @@
     <control>
 		<description>16x label</description>
 		<type>label</type>
-		<posX>610</posX>
-		<posY>700</posY>
-		<height>30</height>
+		<posX>1502</posX>
+		<posY>973</posY>
 		<width>144</width>
-		<font>font14</font>
+		<font>fontB14</font>
 		<align>center</align>
+		<textcolor>ffffffff</textcolor>
 		<visible>player.forwarding16x</visible>
 		<label>FFW 16x</label>
 		<animation effect="fade" time="250">visiblechange</animation>
@@ -170,12 +170,12 @@
     <control>
 		<description>32x label</description>
 		<type>label</type>
-		<posX>610</posX>
-		<posY>700</posY>
-		<height>30</height>
+		<posX>1502</posX>
+		<posY>973</posY>
 		<width>144</width>
-		<font>font14</font>
+		<font>fontB14</font>
 		<align>center</align>
+		<textcolor>ffffffff</textcolor>
 		<visible>player.forwarding32x</visible>
 		<label>FFW 32x</label>
 		<animation effect="fade" time="250">visiblechange</animation>
@@ -185,12 +185,12 @@
     <control>
 		<description>2x label</description>
 		<type>label</type>
-		<posX>610</posX>
-		<posY>700</posY>
-		<height>30</height>
+		<posX>1502</posX>
+		<posY>973</posY>
 		<width>144</width>
-		<font>font14</font>
+		<font>fontB14</font>
 		<align>center</align>
+		<textcolor>ffffffff</textcolor>
 		<visible>player.rewinding2x</visible>
 		<label>REW 2x</label>
 		<animation effect="fade" time="250">visiblechange</animation>
@@ -199,12 +199,12 @@
     <control>
 		<description>4x label</description>
 		<type>label</type>
-		<posX>610</posX>
-		<posY>700</posY>
-		<height>30</height>
+		<posX>1502</posX>
+		<posY>973</posY>
 		<width>144</width>
-		<font>font14</font>
+		<font>fontB14</font>
 		<align>center</align>
+		<textcolor>ffffffff</textcolor>
 		<visible>player.rewinding4x</visible>
 		<label>REW 4x</label>
 		<animation effect="fade" time="250">visiblechange</animation>
@@ -213,12 +213,12 @@
     <control>
 		<description>8x label</description>
 		<type>label</type>
-		<posX>610</posX>
-		<posY>700</posY>
-		<height>30</height>
+		<posX>1502</posX>
+		<posY>973</posY>
 		<width>144</width>
-		<font>font14</font>
+		<font>fontB14</font>
 		<align>center</align>
+		<textcolor>ffffffff</textcolor>
 		<visible>player.rewinding8x</visible>
 		<label>REW 8x</label>
 		<animation effect="fade" time="250">visiblechange</animation>
@@ -227,12 +227,12 @@
     <control>
 		<description>16x label</description>
 		<type>label</type>
-		<posX>610</posX>
-		<posY>700</posY>
-		<height>30</height>
+		<posX>1502</posX>
+		<posY>973</posY>
 		<width>144</width>
-		<font>font14</font>
+		<font>fontB14</font>
 		<align>center</align>
+		<textcolor>ffffffff</textcolor>
 		<visible>player.rewinding16x</visible>
 		<label>REW 16x</label>
 		<animation effect="fade" time="250">visiblechange</animation>
@@ -241,12 +241,12 @@
     <control>
 		<description>32x label</description>
 		<type>label</type>
-		<posX>610</posX>
-		<posY>700</posY>
-		<height>30</height>
+		<posX>1502</posX>
+		<posY>973</posY>
 		<width>144</width>
-		<font>font14</font>
+		<font>fontB14</font>
 		<align>center</align>
+		<textcolor>ffffffff</textcolor>
 		<visible>player.rewinding32x</visible>
 		<label>REW 32x</label>
 		<animation effect="fade" time="250">visiblechange</animation>

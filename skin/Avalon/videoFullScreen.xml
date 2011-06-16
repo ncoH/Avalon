@@ -40,7 +40,7 @@
 		<align>center</align>
 		<label>#time</label>
 		<textcolor>ff85cffe</textcolor>
-		<visible>player.paused + ![control.isvisible(10)|control.isvisible(11)|control.isvisible(12)]</visible>
+		<visible>player.paused|player.forwarding|player.rewinding|player.seeking|control.isvisible(10)|control.isvisible(11)|control.isvisible(12)</visible>
 	</control>
 	
 	<control>
@@ -60,23 +60,47 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>1481</posX>
-		<posY>945</posY>
-		<width>187</width>
-		<height>51</height>
+		<posY>947</posY>
+		<width>184</width>
+		<height>49</height>
+		<texture>osd_button.png</texture>
+		<visible>player.forwarding|player.rewinding|player.seeking|control.isvisible(10)|control.isvisible(11)|control.isvisible(12)</visible>
+	</control>
+	
+	<control>
+		<description>pause button</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>1481</posX>
+		<posY>947</posY>
+		<width>184</width>
+		<height>49</height>
 		<texture>osd_pause_button.png</texture>
-		<visible>player.paused</visible>
+		<visible>!window.isosdvisible + player.paused</visible>
+	</control>
+	
+	<control>
+		<description>pause button</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>857</posX>
+		<posY>295</posY>
+		<width>209</width>
+		<height>221</height>
+		<texture>osd_pause.png</texture>
+		<visible>!window.isosdvisible + player.paused</visible>
 	</control>
 	
 	<control>
 		<description>row 1 label</description>
 		<type>label</type>
 		<id>10</id>
-		<posX>278</posX>
+		<posX>1502</posX>
 		<posY>973</posY>
 		<width>144</width>
-		<font>AvalonLight14</font>
+		<font>fontB14</font>
 		<align>center</align>
-		<textcolor>ff85cffe</textcolor>
+		<textcolor>ffffffff</textcolor>
 		<label>-</label>
 		<visible>Control.IsVisible(10)</visible>
 	</control>
@@ -85,12 +109,12 @@
 		<description>row 2 label</description>
 		<type>label</type>
 		<id>11</id>
-		<posX>278</posX>
+		<posX>1502</posX>
 		<posY>973</posY>
 		<width>144</width>
-		<font>AvalonLight14</font>
+		<font>fontB14</font>
 		<align>center</align>
-		<textcolor>ff85cffe</textcolor>
+		<textcolor>ffffffff</textcolor>
 		<label>-</label>
 	</control>
 
@@ -98,12 +122,12 @@
 		<description>row 3 label</description>
 		<type>label</type>
 		<id>12</id>
-		<posX>278</posX>
+		<posX>1502</posX>
 		<posY>973</posY>
 		<width>144</width>
-		<font>AvalonLight14</font>
+		<font>fontB14</font>
 		<align>center</align>
-		<textcolor>ff85cffe</textcolor>
+		<textcolor>ffffffff</textcolor>
 		<label>-</label>
 	</control>
 
@@ -116,8 +140,7 @@
 		<width>48</width>
 		<height>48</height>
 		<visible>no</visible>
-		<texture>osdpausenf.png</texture>
-		<colordiffuse>White</colordiffuse>
+		<texture>osd_pause.png</texture>
 	</control>
 
 	<control>
@@ -286,79 +309,6 @@
 		<colordiffuse>White</colordiffuse>
 		<visible>no</visible>
 	</control>
-<!--		
-	<control>
-		<description>Trigger button</description>
-		<posY>878</posY>
-		<posX>1431</posX>
-		<type>button</type>
-		<id>990</id>
-		<label>-</label>
-		<textureFocus>-</textureFocus>
-		<textureNoFocus>-</textureNoFocus>
-		<onup>995</onup>
-		<ondown>990</ondown>
-		<onright>992</onright>
-		<onleft>992</onleft>
-		<width>41</width>
-		<height>41</height>
-	</control>
-	
-	<control>
-		<description>Trigger button</description>
-		<posY>839</posY>
-		<posX>1431</posX>
-		<type>button</type>
-		<id>995</id>
-		<label>-</label>
-		<textureFocus>-</textureFocus>
-		<textureNoFocus>-</textureNoFocus>
-		<onup>995</onup>
-		<ondown>990</ondown>
-		<onright>995</onright>
-		<onleft>995</onleft>
-		<width>41</width>
-		<height>41</height>
-	</control>
-	
-	<control>
-		<description>Trigger button</description>
-		<posY>584</posY>
-		<type>button</type>
-		<id>990</id>
-		<label>-</label>
-		<textureFocus>-</textureFocus>
-		<textureNoFocus>-</textureNoFocus>
-		<onup>991</onup>
-		<ondown>990</ondown>
-		<onright>990</onright>
-		<onleft>990</onleft>
-	</control>
-
-	<control>
-		<description>Fake trigger button expand</description>
-		<posX>657</posX>
-		<posY>559</posY>
-		<width>53</width>
-		<height>20</height>
-		<type>image</type>
-		<id>999</id>
-		<texture>osd_expand_icon.png</texture>
-		<visible>Control.HasFocus(990) + window.isosdvisible</visible>
-	</control>
-	
-	<control>
-		<description>Fake trigger button collapse</description>
-		<posX>657</posX>
-		<posY>559</posY>
-		<width>53</width>
-		<height>20</height>
-		<type>image</type>
-		<id>999</id>
-		<texture>osd_collapse_icon.png</texture>
-		<visible>!Control.HasFocus(990) + window.isosdvisible</visible>
-	</control>
--->
 	<import>common.progressbar.xml</import>
 </controls>
 </window>

@@ -97,18 +97,6 @@
 		<texture>osd_play_button.png</texture>
 		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
-	
-	<control>
-		<description>pause button</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>1481</posX>
-		<posY>930</posY>
-		<width>187</width>
-		<height>51</height>
-		<texture>osd_pause_button.png</texture>
-		<visible>window.isosdvisible + player.paused</visible>
-	</control>
 
 	<control>
 		<description>rec logo</description>
