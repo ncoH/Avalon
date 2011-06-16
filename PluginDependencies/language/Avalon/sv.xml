@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- English (US) -->
+<!-- Swedish -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
 <!-- Last Updated: 12th May 2011 -->
 <strings>
@@ -46,7 +46,7 @@
   <string Field="WidebannerNoFanart">Banners sida vid sida: utan FanArt</string> 
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Speltid</string>
-  <string Field="ReleaseDate">Publiceringsdatum</string>
+  <string Field="ReleaseDate">År</string>
   <string Field="Minutes">minuter</string>
   <string Field="Overview">Start/Översikt</string>
   <string Field="Description">Beskrivning</string>
