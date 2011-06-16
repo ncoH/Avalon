@@ -135,7 +135,7 @@
 			<posX>74</posX>
 			<posY>630</posY>
 			<width>780</width>
-			<height>230</height>
+			<height>350</height>
 			<label>#TV.RecordedTV.Description</label>
 			<visible>facadeview.list</visible>
 		</control>

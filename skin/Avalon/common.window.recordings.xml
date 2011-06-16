@@ -23,7 +23,7 @@
 		<posX>0</posX>
 		<posY>164</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>866</height>
 		<texture>viewport_tv_recordings.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>

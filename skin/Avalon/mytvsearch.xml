@@ -26,7 +26,7 @@
 		<posX>0</posX>
 		<posY>164</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>866</height>
 		<texture>viewport_tv_recordings.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -217,7 +217,7 @@
 				<id>10</id>
 				<posX>918</posX>
 				<posY>236</posY>
-				<height>700</height>
+				<height>800</height>
 				<width>919</width>
 				<onleft>5</onleft>
 				<onright>2</onright>
@@ -246,7 +246,7 @@
 				<id>11</id>
 				<posX>918</posX>
 				<posY>236</posY>
-				<height>700</height>
+				<height>800</height>
 				<width>919</width>
 				<onleft>19</onleft>
 				<onright>2</onright>
@@ -329,7 +329,7 @@
 		<posX>74</posX>
 		<posY>634</posY>
 		<width>780</width>
-		<height>230</height>
+		<height>350</height>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<label>#TV.Search.Description</label>
