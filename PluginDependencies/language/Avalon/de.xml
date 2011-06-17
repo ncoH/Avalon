@@ -55,6 +55,7 @@
   <!-- Latest Media -->  
   <string Field="LatestMovies">Neueste Filme</string>
   <string Field="LatestEpisodes">Neueste Episoden</string> 
+  <string Field="LatestMusic">Neueste Musik</string> 
   <!-- Misc -->   
   <string Field="FanartScraping">Lade Fanart</string> 
   <string Field="ReturnListMovies">Press left to return to movie list</string> 
