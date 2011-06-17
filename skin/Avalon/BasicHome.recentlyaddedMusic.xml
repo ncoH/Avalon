@@ -5,14 +5,14 @@
 	<control>
         <description>DUMMY</description>
         <type>button</type>
-        <id>71717772</id>
+        <id>71717773</id>
         <posX>-2000</posX>
         <posY>-2000</posY>
         <textureFocus>-</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
         <onleft>1001</onleft>
-        <onright>91919994</onright>
+        <onright>91919997</onright>
     </control>	
 
       <control>
@@ -24,125 +24,125 @@
         <width>48</width>
         <height>48</height>
         <texture>basichome_play.png</texture>
-		<visible>string.equals(#recentMedia,TVSeries) + [control.hasfocus(91919994) | control.hasfocus(91919995) | control.hasfocus(91919996)] + Control.IsVisible(10)</visible>
+		<visible>string.equals(#recentMedia,Music) + [control.hasfocus(91919997) | control.hasfocus(91919998) | control.hasfocus(91919999)] + Control.IsVisible(10)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
       </control>
 	
-    <!--            :: SERIES 1 ::            -->
+    <!--            :: Album 1 ::            -->
 	
       <control>
-        <description>Series 1 name</description>
+        <description>Album 1 name</description>
         <type>fadelabel</type>
         <id>0</id>
         <posX>1266</posX>
         <posY>639</posY>
         <width>500</width>
-        <label>#fanarthandler.tvseries.latest1.serieName</label>
+        <label>#fanarthandler.music.latest1.album</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(91919994) + Control.IsVisible(10)</visible>
+		<visible>control.hasfocus(91919997) + Control.IsVisible(10)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
       </control>
 	  
       <control>
-        <description>Series 1 Episode</description>
-        <type>fadelabel</type>
-        <id>0</id>
-        <posX>1266</posX>
-        <posY>675</posY>
-        <width>500</width>
-        <label>S#fanarthandler.tvseries.latest1.seasonIndexE#fanarthandler.tvseries.latest1.episodeIndex - #fanarthandler.tvseries.latest1.episodeName</label>
-        <font>AvalonLight12</font>
-        <textcolor>85cffe</textcolor>
-		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(91919994) + Control.IsVisible(10)</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
-      </control>
-	
-    <!--            :: SERIES 2 ::            -->
-	
-      <control>
-        <description>Series 2 name</description>
-        <type>fadelabel</type>
-        <id>0</id>
-        <posX>1266</posX>
-        <posY>639</posY>
-        <width>500</width>
-        <label>#fanarthandler.tvseries.latest2.serieName</label>
-		<font>fontB12</font>
-        <textcolor>ffffff</textcolor>
-		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(91919995)</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
-      </control>
-	  
-      <control>
-        <description>Series 2 Episode</description>
+        <description>Album 1 Artist</description>
         <type>fadelabel</type>
         <id>0</id>
         <posX>1266</posX>
         <posY>680</posY>
         <width>500</width>
-        <label>S#fanarthandler.tvseries.latest2.seasonIndexE#fanarthandler.tvseries.latest2.episodeIndex - #fanarthandler.tvseries.latest2.episodeName</label>
+        <label>#fanarthandler.music.latest1.artist</label>
         <font>AvalonLight12</font>
         <textcolor>85cffe</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(91919995)</visible>
+		<visible>control.hasfocus(91919997) + Control.IsVisible(10)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
       </control>
 	
-    <!--            :: SERIES 3 ::            -->
+    <!--            :: Album 2 ::            -->
 	
       <control>
-        <description>Series 3 name</description>
+        <description>Album 2 name</description>
         <type>fadelabel</type>
         <id>0</id>
         <posX>1266</posX>
         <posY>639</posY>
         <width>500</width>
-        <label>#fanarthandler.tvseries.latest3.serieName</label>
+        <label>#fanarthandler.music.latest2.album</label>
 		<font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(91919996)</visible>
+		<visible>control.hasfocus(91919998)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
       </control>
 	  
       <control>
-        <description>Series 3 Episode</description>
+        <description>Album 2 Artist</description>
         <type>fadelabel</type>
         <id>0</id>
         <posX>1266</posX>
         <posY>680</posY>
         <width>500</width>
-        <label>S#fanarthandler.tvseries.latest3.seasonIndexE#fanarthandler.tvseries.latest3.episodeIndex - #fanarthandler.tvseries.latest3.episodeName</label>
+        <label>#fanarthandler.music.latest2.artist</label>
         <font>AvalonLight12</font>
         <textcolor>85cffe</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(91919996)</visible>
+		<visible>control.hasfocus(91919998)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+	
+    <!--            :: Album 3 ::            -->
+	
+      <control>
+        <description>Album 3 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1266</posX>
+        <posY>639</posY>
+        <width>500</width>
+        <label>#fanarthandler.music.latest3.album</label>
+		<font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>control.hasfocus(91919999)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+	  
+      <control>
+        <description>Album 3 Artist</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1266</posX>
+        <posY>680</posY>
+        <width>500</width>
+        <label>#fanarthandler.music.latest3.artist</label>
+        <font>AvalonLight12</font>
+        <textcolor>85cffe</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>control.hasfocus(91919999)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
       </control>
 	
     <control>
-      <description>GROUP: RecentlyAdded Series</description>
+      <description>GROUP: RecentlyAdded Albums</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,TVSeries) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+      <visible>string.equals(#recentMedia,Music) + ![control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -154,110 +154,110 @@
         <posX>1218</posX>
         <posY>256</posY>
         <width>590</width>
-        <label>#Avalon.LatestEpisodes</label>
+        <label>#Avalon.LatestMusic</label>
         <font>AvalonLight20</font>
         <textcolor>ffffff</textcolor>
       </control>
       <control>
-        <description>Series 1 thumb/fanart</description>
+        <description>Album 1 thumb/fanart</description>
         <type>image</type>
         <id>10</id>
         <posX>1218</posX>
-        <posY>335</posY>
+        <posY>412</posY>
         <width>183</width>
-        <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.tvseries.latest1.serieThumb</texture>
+        <height>181</height>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.music.latest1.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
         <type>button</type>
-        <id>91919994</id>
+        <id>91919997</id>
         <posX>1212</posX>
-        <posY>330</posY>
-        <width>194</width>
-        <height>269</height>
+        <posY>407</posY>
+        <width>193</width>
+        <height>191</height>
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
         <onleft>901</onleft>
-        <onright>91919995</onright>
-		<onup>91919994</onup>
-		<ondown>91919994</ondown>
+        <onright>91919998</onright>
+		<onup>91919997</onup>
+		<ondown>91919997</ondown>
         <font>font12</font>
     </control>
     </control>
     <control>
-      <description>GROUP: RecentlyAdded Series</description>
+      <description>GROUP: RecentlyAdded Albums</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,TVSeries) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+      <visible>string.equals(#recentMedia,Music) + ![control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
       <control>
-        <description>Series 2 thumb/fanart</description>
+        <description>Album 2 thumb/fanart</description>
         <type>image</type>
         <id>0</id>
         <posX>1418</posX>
-        <posY>335</posY>
+        <posY>412</posY>
         <width>183</width>
-        <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.tvseries.latest2.serieThumb</texture>
+        <height>181</height>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.music.latest2.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
         <type>button</type>
-        <id>91919995</id>
+        <id>91919998</id>
         <posX>1412</posX>
-        <posY>330</posY>
-        <width>194</width>
-        <height>269</height>
+        <posY>407</posY>
+        <width>193</width>
+        <height>191</height>
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
-        <onleft>91919994</onleft>
-        <onright>91919996</onright>
-		<onup>91919995</onup>
-		<ondown>91919995</ondown>
+        <onleft>91919997</onleft>
+        <onright>91919999</onright>
+		<onup>91919998</onup>
+		<ondown>91919998</ondown>
         <font>font12</font>
     </control>
 	  
     </control>
     <control>
-      <description>GROUP: RecentlyAdded Series</description>
+      <description>GROUP: RecentlyAdded Albums</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,TVSeries) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+      <visible>string.equals(#recentMedia,Music) + ![control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
       <control>
-        <description>Series 3 thumb/fanart</description>
+        <description>Album 3 thumb/fanart</description>
         <type>image</type>
         <id>0</id>
         <posX>1620</posX>
-        <posY>335</posY>
+        <posY>412</posY>
         <width>183</width>
-        <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.tvseries.latest3.serieThumb</texture>
+        <height>181</height>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.music.latest3.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
         <type>button</type>
-        <id>91919996</id>
+        <id>91919999</id>
         <posX>1615</posX>
-        <posY>330</posY>
-        <width>194</width>
-        <height>269</height>
+        <posY>407</posY>
+        <width>193</width>
+        <height>191</height>
         <textureFocus>basichome_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
-        <onleft>91919995</onleft>
-        <onright>91919994</onright>
-		<onup>91919996</onup>
-		<ondown>91919996</ondown>
+        <onleft>91919998</onleft>
+        <onright>91919997</onright>
+		<onup>91919999</onup>
+		<ondown>91919999</ondown>
         <font>font12</font>
     </control>
     </control>
@@ -265,15 +265,15 @@
     <!--            :: RIGHT ::            -->
 	
     <control>
-        <description>Series 1 thumb/fanart</description>
+        <description>Album 1 thumb/fanart</description>
         <type>image</type>
         <id>444</id>
         <posX>1620</posX>
-        <posY>335</posY>
+        <posY>412</posY>
         <width>183</width>
-        <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.tvseries.latest1.serieThumb</texture>
-		<visible>string.equals(#recentMedia,TVSeries) + [control.isvisible(601) | control.isvisible(501)]</visible>
+        <height>181</height>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.music.latest1.thumb</texture>
+		<visible>string.equals(#recentMedia,Music) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -288,7 +288,7 @@
         <width>1</width>
         <height>468</height>
         <texture>basichome_sub_separator.png</texture>
-		<visible>string.equals(#recentMedia,TVSeries) + control.hasthumb(444) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<visible>string.equals(#recentMedia,Music) + control.hasthumb(444) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>

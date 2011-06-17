@@ -19,8 +19,8 @@
         <description>play</description>
         <type>image</type>
         <id>0</id>
-        <posX>1214</posX>
-        <posY>635</posY>
+        <posX>1212</posX>
+        <posY>633</posY>
         <width>48</width>
         <height>48</height>
         <texture>basichome_play.png</texture>
@@ -35,10 +35,10 @@
         <type>fadelabel</type>
         <id>0</id>
         <posX>1266</posX>
-        <posY>634</posY>
+        <posY>639</posY>
         <width>500</width>
         <label>#fanarthandler.movingpicture.latest1.title</label>
-        <font>AvalonLight14</font>
+        <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
 		<visible>control.hasfocus(91919991) + control.isvisible(1021)</visible>
@@ -51,10 +51,10 @@
         <type>fadelabel</type>
         <id>0</id>
         <posX>1266</posX>
-        <posY>675</posY>
+        <posY>680</posY>
         <width>500</width>
         <label>#fanarthandler.movingpicture.latest1.runtime min - #fanarthandler.movingpicture.latest1.year - #fanarthandler.movingpicture.latest1.genre</label>
-        <font>AvalonLight14</font>
+        <font>AvalonLight12</font>
         <textcolor>85cffe</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
 		<visible>control.hasfocus(91919991) + control.isvisible(1021)</visible>
@@ -65,8 +65,8 @@
       <control>
 		<type>imagelist</type>
 		<id>0</id>
-		<posX>1264</posX>
-		<posY>726</posY>
+		<posX>1265</posX>
+		<posY>725</posY>
 		<width>185</width>
 		<height>29</height>
 		<textureWidth>28</textureWidth>
@@ -90,10 +90,10 @@
         <type>fadelabel</type>
         <id>0</id>
         <posX>1266</posX>
-        <posY>634</posY>
+        <posY>639</posY>
         <width>500</width>
         <label>#fanarthandler.movingpicture.latest2.title</label>
-        <font>AvalonLight14</font>
+        <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
 		<visible>control.hasfocus(91919992)</visible>
@@ -106,10 +106,10 @@
         <type>fadelabel</type>
         <id>0</id>
         <posX>1266</posX>
-        <posY>675</posY>
+        <posY>680</posY>
         <width>500</width>
         <label>#fanarthandler.movingpicture.latest2.runtime min - #fanarthandler.movingpicture.latest2.year - #fanarthandler.movingpicture.latest2.genre</label>
-        <font>AvalonLight14</font>
+        <font>AvalonLight12</font>
         <textcolor>85cffe</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
 		<visible>control.hasfocus(91919992)</visible>
@@ -120,8 +120,8 @@
       <control>
 		<type>imagelist</type>
 		<id>0</id>
-		<posX>1264</posX>
-		<posY>726</posY>
+		<posX>1265</posX>
+		<posY>725</posY>
 		<width>185</width>
 		<height>29</height>
 		<textureWidth>28</textureWidth>
@@ -145,10 +145,10 @@
         <type>fadelabel</type>
         <id>0</id>
         <posX>1266</posX>
-        <posY>634</posY>
+        <posY>639</posY>
         <width>500</width>
         <label>#fanarthandler.movingpicture.latest3.title</label>
-        <font>AvalonLight14</font>
+        <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
 		<visible>control.hasfocus(91919993)</visible>
@@ -161,10 +161,10 @@
         <type>fadelabel</type>
         <id>0</id>
         <posX>1266</posX>
-        <posY>675</posY>
+        <posY>680</posY>
         <width>500</width>
         <label>#fanarthandler.movingpicture.latest3.runtime min - #fanarthandler.movingpicture.latest3.year - #fanarthandler.movingpicture.latest3.genre</label>
-        <font>AvalonLight14</font>
+        <font>AvalonLight12</font>
         <textcolor>85cffe</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
 		<visible>control.hasfocus(91919993)</visible>
@@ -175,8 +175,8 @@
       <control>
 		<type>imagelist</type>
 		<id>0</id>
-		<posX>1264</posX>
-		<posY>726</posY>
+		<posX>1265</posX>
+		<posY>725</posY>
 		<width>185</width>
 		<height>29</height>
 		<textureWidth>28</textureWidth>
