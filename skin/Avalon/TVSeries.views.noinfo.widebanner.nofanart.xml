@@ -252,7 +252,7 @@
 		<align>center</align>
 		<font>fontB20</font>
 		<label>#TVSeries.Title</label>
-		<visible>facadeview.filmstrip+Control.IsVisible(1237)</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(1237)</visible>
     </control>
 	
     <control>
@@ -268,7 +268,7 @@
 		<align>center</align>
 		<font>fontB20</font>
 		<label>#TVSeries.Series.Pretty_Name: #TVSeries.Season.SeasonLabel</label>
-		<visible>facadeview.filmstrip+Control.IsVisible(1238)</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(1238)</visible>
     </control>
 	
     <control>
@@ -283,7 +283,7 @@
 		<height>27</height>
 		<align>left</align>
 		<texture>#TVSeries.Series.RatingPath</texture>
-		<visible>facadeview.filmstrip+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow]+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
     </control>
 	
     <control>      
@@ -299,7 +299,7 @@
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TVSeries.Series.InfoPanelLine2Value - #TVSeries.Series.InfoPanelLine4Value - #TVSeries.Series.InfoPanelLine3Value</label>
-		<visible>facadeview.filmstrip+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow]+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
     </control>
 	
 	
@@ -405,7 +405,7 @@
 		<posX>858</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.HasFocus(50)</visible>
 	</control>
   </controls>
 </window>

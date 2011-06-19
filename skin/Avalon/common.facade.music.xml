@@ -137,7 +137,7 @@
 				<itemHeight>239</itemHeight>
 				<textureWidth>230</textureWidth>
 				<textureHeight>229</textureHeight>
-				<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="music_filmstrip_fanart_mask.png">></thumbs>
+				<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="music_filmstrip_fanart_mask.png"></thumbs>
 				<InfoImage flipY="true" diffuse="Thumb_Mask.png"></InfoImage>
 				<showFrame>yes</showFrame>
 				<textYOff>-2000</textYOff>
@@ -147,6 +147,64 @@
 				<keepaspectratio>no</keepaspectratio>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="128,128" center="0,700" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="128,128" reversible="false" end="100,100" center="0,700" time="100">unfocus</thumbAnimation>
+			</control>
+			
+		   <control>
+			  <description>Cover Flow view</description>
+			  <type>coverflow</type>
+			  <colordiffuse>90ffffff</colordiffuse>
+			  <dimColor>90ffffff</dimColor>
+			  <id>50</id>
+			  <onup>2</onup>
+			  <ondown>2</ondown>		  
+			  <onleft>50</onleft>
+			  <onright>50</onright>	
+			  <posX>0</posX>
+			  <posY>600</posY>
+			  <width>1920</width>
+			  <height>1080</height>
+			  <selectedCard>0</selectedCard>
+			  <cardWidth>340</cardWidth>
+			  <cardHeight>339</cardHeight>
+			  <angle>65</angle>
+			  <sideShift>310</sideShift>
+			  <sideGap>210</sideGap>
+			  <sideDepth>280</sideDepth>
+			  <offsetY>0</offsetY>
+			  <selectedOffsetY>0</selectedOffsetY>
+			  <speed>8</speed>
+			  <showFrame>yes</showFrame>
+			  <frame>-</frame>
+			  <frameFocus>-</frameFocus>
+			  <frameWidth>340</frameWidth>
+			  <frameHeight>339</frameHeight>
+			  <spinSpeed>8</spinSpeed>
+			  <unfocusedAlpha>FF</unfocusedAlpha>
+			  <folderPrefix></folderPrefix>
+			  <folderSuffix></folderSuffix>
+			  <font1>font13</font1>
+			  <font2>font11</font2>
+			  <label1>#selecteditem</label1>
+			  <label2>#selecteditem2</label2>
+			  <textColor>FFFFFFFF</textColor>
+			  <remoteColor>FFFF0000</remoteColor>
+			  <playedColor>FFA0D0FF</playedColor>
+			  <downloadColor>FF00FF00</downloadColor>
+			  <selectedColor>FFFFFFFF</selectedColor>
+			  <shadowAngle>45</shadowAngle>
+			  <shadowDistance>0</shadowDistance>
+			  <shadowColor>FF000000</shadowColor>
+			  <label1YOff>2405</label1YOff>
+			  <label2YOff>2430</label2YOff>
+			  <pageSize>5</pageSize>
+              <scrollbarBackground>scrollbar_bg.png</scrollbarBackground>
+              <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+              <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+              <scrollbarWidth>689</scrollbarWidth>
+			  <scrollbarHeight>4</scrollbarHeight>
+              <scrollbarYOff>538</scrollbarYOff>
+			  <keepaspectratio>no</keepaspectratio>
+			  <cards flipY="yes" diffuse="Thumb_Mask.png" mask="music_filmstrip_fanart_mask.png"></cards>
 			</control>
 
 			<control>

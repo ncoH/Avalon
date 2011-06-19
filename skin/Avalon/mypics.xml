@@ -18,7 +18,7 @@
 		<label>1</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>font22</font>
-		<visible>facadeview.list | facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
+		<visible>facadeview.list | facadeview.filmstrip | facadeview.coverflow |facadeview.smallicons | facadeview.largeicons</visible>
 	</control>
 	
 	<import>common.time.xml</import>
@@ -43,7 +43,7 @@
 		<posX>858</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+		<visible>[facadeview.filmstripfacadeview.coverflow]+Control.HasFocus(50)</visible>
 	</control>
 	
 	<import>common.facade.pictures.xml</import>

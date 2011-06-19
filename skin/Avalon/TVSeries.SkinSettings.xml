@@ -68,8 +68,8 @@
 	
   <layouts>
     <group List="true" SmallIcons="false" />
-    <series ListPosters="true" ListBanners="false" Filmstrip="true" WideBanners="true" />
-    <season List="true" Filmstrip="true" />
+    <series ListPosters="true" ListBanners="false" Filmstrip="true" WideBanners="true" Coverflow="true"/>
+    <season List="true" Filmstrip="true" Coverflow="true"/>
     <episode List="true" />
   </layouts>
   <views import="true" AppendlmageToList="false">
@@ -196,7 +196,9 @@ skin\Avalon\Media\Logos\nosubtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;0;-
 	<graphicsquality import="true">
 		<seriesbanners>80</seriesbanners>
 		<seriesposters>50</seriesposters>
+		<seriescoverflow>80</seriescoverflow> 
 		<seasonbanners>80</seasonbanners>
-		<episodethumbs>80</episodethumbs>
+		<seasoncoverflow>90</seasoncoverflow>
+		<episodethumbs>90</episodethumbs>
 	</graphicsquality>
 </settings>
