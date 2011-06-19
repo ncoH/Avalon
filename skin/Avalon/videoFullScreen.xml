@@ -288,7 +288,7 @@
 	<control>
 		<type>volumebar</type>
 		<id>501</id>
-		<posX>755</posX>
+		<posX>1062</posX>
 		<posY>60</posY>
 		<align>right</align>
 		<height>13</height>
