@@ -1040,7 +1040,7 @@
 		<width>64</width>
 		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
-		<visible>![Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)]</visible>
+		<visible>![Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)] + string.contains(#Avalon.HiddenMenu, true)</visible>
 	</control>
 	
 <!--RSS-->
@@ -1048,12 +1048,12 @@
 <control>
 	<description>RSS background</description>
 	<type>image</type>
-	<id>1</id>
+	<id>111</id>
 	<posX>0</posX>
 	<posY>750</posY>
 	<width>1865</width>
 	<height>90</height>
-	<texture>basichome_rss_bg.png</texture>
+	<texture>#Avalon.RSS</texture>
 	<visible>plugin.isenabled(InfoService)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -1070,7 +1070,7 @@
 	<font>font11</font>
 	<textcolor>6aa5cb</textcolor>
 	<label>#infoservice.feed.titles</label>
-	<visible>plugin.isenabled(InfoService)</visible>
+	<visible>plugin.isenabled(InfoService)+Control.Hasthumb(111)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 </control>
