@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>1</id>
-	<defaultcontrol>6</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-  <controls>
-  
+<id>1</id>
+<defaultcontrol>6</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<controls>
+	  
 	<control>
 		<description>BG</description>
 		<type>image</type>
@@ -27,6 +28,7 @@
 	<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
 	<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
 </control>
+
 		
 	<control>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -258,13 +260,25 @@
 			<textureFocus>tvhome_item_selected.png</textureFocus>
 			<textureNoFocus>tvhome_item.png</textureNoFocus>
 		</control>
+<!--
+	<control>
+			<description>TuningDetails</description>
+			<type>button</type>
+			<id>14</id>
+			<label>200041</label>
+			<onup>13</onup>
+			<ondown>2</ondown>
+			<onright>99</onright>
+		</control>
+
+	-->		
 	</control>
 	
 	<control>
 		<description>video window</description>
 		<type>videowindow</type>
 		<id>99</id>
-		<posX>532</posX>
+		<posX>529</posX>
 		<posY>239</posY>
 		<width>866</width>
 		<height>494</height>
@@ -301,26 +315,13 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
-
-	<control>
-		<description>Info Separator</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>678</posX>
-		<posY>875</posY>
-		<width>1181</width>
-		<height>1</height>
-		<texture>info_separator.png</texture>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
 	
 	<control>
 		<description>Play info label</description>
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>681</posX>
-		<posY>885</posY>
+		<posY>880</posY>
 		<width>850</width>
 		<label>#TV.View.start - #TV.View.stop #TV.View.channel #TV.Guide.Genre</label>
 		<font>AvalonLight14</font>
@@ -334,10 +335,10 @@
 		<type>fadelabel</type>
 		<id>13</id>
 		<posX>681</posX>
-		<posY>811</posY>
+		<posY>820</posY>
 		<width>1175</width>
 		<label>#TV.View.title</label>
-		<font>AvalonLight18</font>
+		<font>fontB20</font>
 		<textcolor>ffffff</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>

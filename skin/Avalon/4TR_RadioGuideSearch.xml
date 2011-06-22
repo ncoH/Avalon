@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>49851</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
-<define>#header.label:724</define> 
-<controls>
+		<id>49851</id>
+		<defaultcontrol>2</defaultcontrol>
+		<allowoverlay>yes</allowoverlay>
+	<controls>
 
 	<control>
 		<description>default background</description>
@@ -43,7 +42,7 @@
 		<posX>185</posX>
 		<posY>38</posY>
 		<width>800</width>
-		<label>#header.label</label>
+		<label>724</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>font22</font>
 	</control>
@@ -60,6 +59,7 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
+<!-- 		<label>| #itemtype: #itemcount</label>		 -->
 		<label>| #itemcount</label>
 		<posX>242</posX>
 		<posY>99</posY>
@@ -84,8 +84,7 @@
 	</control>
 	
 <import>common.time.xml</import>
-	
-	
+		
 	<control>
 		<type>group</type>
 		<description>group element</description>
@@ -163,36 +162,34 @@
 	  
     </control>
 	
-	<control>
-		<description>listcontrol</description>
-		<type>listcontrol</type>
-		<id>10</id>
-		<posX>918</posX>
-		<posY>236</posY>
-		<height>700</height>
-		<width>919</width>
-		<onleft>2</onleft>
-		<onright>2</onright>
-		<scrollOffset>1</scrollOffset>
-		<PinIconHeight>53</PinIconHeight>
-		<PinIconWidth>34</PinIconWidth>
-		<PinIconXOff>0</PinIconXOff>
-		<PinIconYOff>0</PinIconYOff>
-		<itemWidth>64</itemWidth>
-		<itemHeight>53</itemHeight>
-		<textureFocus>listcontrol_item_selected_tv.png</textureFocus>
-		<textureNoFocus>-</textureNoFocus>
-		<IconXOff>-2000</IconXOff>
-		<IconYOff>0</IconYOff>
-		<spinPosX>193</spinPosX>
-		<spinPosY>102</spinPosY>
-		<spinAlign>left</spinAlign>				
-		<textXOff>40</textXOff>
-		<textXOff3>-2000</textXOff3>		
-		<keepaspectratio>yes</keepaspectratio>
-		<spinCanFocus>no</spinCanFocus>
-		<dimColor>ffffffff</dimColor>
-	</control>
+			<control>
+				<description>listcontrol</description>
+				<type>listcontrol</type>
+				<id>10</id>
+				<posX>918</posX>
+				<posY>236</posY>
+				<height>700</height>
+				<width>919</width>
+				<onleft>5</onleft>
+				<onright>2</onright>
+				<scrollOffset>1</scrollOffset>
+				<PinIconHeight>46</PinIconHeight>
+				<PinIconWidth>45</PinIconWidth>
+				<PinIconXOff>40</PinIconXOff>
+				<PinIconYOff>6</PinIconYOff>
+				<itemWidth>64</itemWidth>
+				<itemHeight>53</itemHeight>
+				<textureFocus>listcontrol_item_selected_tv.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<IconXOff>-2000</IconXOff>
+				<IconYOff>0</IconYOff>
+				<textXOff>40</textXOff>
+				<keepaspectratio>yes</keepaspectratio>
+				<spinCanFocus>no</spinCanFocus>
+				<dimColor>ffffffff</dimColor>
+				<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>				
+			</control>
 	
 	<control>
 		<id>0</id>

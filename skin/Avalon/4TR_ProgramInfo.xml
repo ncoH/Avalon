@@ -22,7 +22,7 @@
 		<posX>0</posX>
 		<posY>164</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>866</height>
 		<texture>viewport_tv_recordings.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -181,7 +181,7 @@
 			<posX>74</posX>
 			<posY>634</posY>
 			<width>780</width>
-			<height>230</height>
+			<height>350</height>
 			<label>#TV.RecordedTV.Description</label>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -207,27 +207,23 @@
 				<id>10</id>
 				<posX>918</posX>
 				<posY>350</posY>
-				<height>550</height>
+				<height>700</height>
 				<width>919</width>
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
-				<PinIconHeight>46</PinIconHeight>
-				<PinIconWidth>45</PinIconWidth>
-				<PinIconXOff>40</PinIconXOff>
-				<PinIconYOff>6</PinIconYOff>
+				<PinIconHeight>53</PinIconHeight>
+				<PinIconWidth>34</PinIconWidth>
+				<PinIconXOff>0</PinIconXOff>
+				<PinIconYOff>0</PinIconYOff>
 				<itemWidth>64</itemWidth>
 				<itemHeight>53</itemHeight>
 				<textureFocus>listcontrol_item_selected_tv.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<IconXOff>-2000</IconXOff>
-				<IconYOff>0</IconYOff>
-				<spinPosX>312</spinPosX>
-				<spinPosY>104</spinPosY>
-				<spinAlign>right</spinAlign>
+				<IconXOff>45</IconXOff>
+				<IconYOff>0</IconYOff>				
 				<textXOff>40</textXOff>
 				<keepaspectratio>yes</keepaspectratio>
-				<spinCanFocus>no</spinCanFocus>
 				<dimColor>ffffffff</dimColor>
 			</control>
 
