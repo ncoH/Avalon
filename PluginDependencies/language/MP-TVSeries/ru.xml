@@ -275,9 +275,7 @@
   <string Field="CFS_Local_Series" Original="Local Series:">Локальный сериал:</string>
   <string Field="AvailableMedia" Original="Available Media">Доступные носители</string>
   <string Field="Votes" Original="votes">голоса</string>
-  <string Field="LayoutCoveflow" Original="Coveflow">Отображение обложками</string>
-  <string Field="TraktError" Original="Trakt Error">Ошибка тракта</string>
-  <string Field="TraktNotEnoughInfo" Original="Not enough information to send to server.">Недостаточно информации для отправки запроса.</string>
+  <string Field="LayoutCoveflow" Original="Coveflow">Отображение обложками</string>  
   <string Field="ResumeEpisode" Original="Resume episode from last time?">Продолжить эпизод с прошлого раза?</string>
   <string Field="SummaryNotAvailable" Original="No summary is currently available.">Краткого описания пока нет.</string>
   <string Field="Timeout" Original="Timeout">Время истекло</string>

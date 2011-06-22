@@ -294,9 +294,6 @@
   
   <string Field="LayoutCoveflow" Original="Coveflow">Coveflow</string>
 
-  <string Field="TraktError" Original="Trakt Error">Trakt Error</string>
-  <string Field="TraktNotEnoughInfo" Original="Not enough information to send to server.">Not enough information to send to server.</string>
-
   <string Field="ResumeEpisode" Original="Resume episode from last time?">Resume episode from last time?</string>
 	
 	<string Field="SummaryNotAvailable" Original="No summary is currently available.">No summary is currently available.</string>
@@ -308,5 +305,9 @@
   <string Field="ShowAllEpisodes" Original="Show all Episodes">Show all Episodes</string>
 
   <string Field="DownloadAllEpisodeInfo" Original="Download All Episode Info">Download All Episode Info</string>
-  
+
+  <string Field="Calendar" Original="Calendar">Calendar</string>
+  <string Field="Recommendations" Original="Recommendations">Recommendations</string>
+  <string Field="Trending" Original="Trending">Trending</string>
+  <string Field="WatchList" Original="WatchList">Watch List</string>
 </strings>

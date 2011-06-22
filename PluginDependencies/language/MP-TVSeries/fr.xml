@@ -296,9 +296,6 @@
   
   <string Field="LayoutCoveflow" Original="Coveflow">Coveflow</string>
   
-  <string Field="TraktError" Original="Trakt Error">Chercher les erreurs</string>
-  <string Field="TraktNotEnoughInfo" Original="Not enough information to send to server.">Trop peu de renseignements pour le serveur.</string>
-
   <string Field="ResumeEpisode" Original="Resume episode from last time?">Resume episode from last time?</string>
 		
   <string Field="SummaryNotAvailable" Original="No summary is currently available.">Aucun résumé n'est actuellement disponible.</string>

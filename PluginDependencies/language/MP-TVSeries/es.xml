@@ -274,9 +274,7 @@
   <string Field="CFS_Local_Series">Series Locales:</string>
   <string Field="AvailableMedia">Archivos disponibles</string>
   <string Field="Votes">votos</string>
-  <string Field="LayoutCoveflow">Coverflow</string>
-  <string Field="TraktError">Trakt Error</string>
-  <string Field="TraktNotEnoughInfo">No hay información suficiente para enviar al servidor.</string>
+  <string Field="LayoutCoveflow">Coverflow</string>  
   <string Field="ResumeEpisode">¿Reanudar episodio desde la última posición?</string>
   <string Field="SummaryNotAvailable">No hay resumen disponible.</string>
   <string Field="Timeout">Tiempo Excedido</string>
