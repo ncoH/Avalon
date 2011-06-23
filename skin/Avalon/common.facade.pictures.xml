@@ -69,7 +69,7 @@
 				<textureMask>pictures_thumb_mask.png</textureMask>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
-				<keepaspectratio>no</keepaspectratio>
+				<keepaspectratio>yes</keepaspectratio>
 			</control>
 				
 		<control>
@@ -106,7 +106,7 @@
 				<showFolder>no</showFolder>
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
-				<keepaspectratio>no</keepaspectratio>
+				<keepaspectratio>yes</keepaspectratio>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,580" time="400">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,580" time="100">unfocus</thumbAnimation>
 		</control>
@@ -159,7 +159,7 @@
 			  <label1YOff>2405</label1YOff>
 			  <label2YOff>2430</label2YOff>
 			  <pageSize>5</pageSize>
-			  <keepaspectratio>no</keepaspectratio>
+			  <keepaspectratio>yes</keepaspectratio>
 			  <cards flipY="yes" diffuse="Thumb_Mask.png" mask="music_filmstrip_fanart_mask.png"></cards>
 			</control>
 		</control>

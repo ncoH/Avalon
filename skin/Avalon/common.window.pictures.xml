@@ -22,6 +22,7 @@
 		<width>1273</width>
 		<height>720</height>
 		<texture>#selectedthumb</texture>
+		<keepaspectratio>yes</keepaspectratio>
 		<visible>facadeview.list | facadeview.smallicons | facadeview.largeicons</visible>
 		<animation effect="fade" time="300">visible</animation>
 		<animation effect="fade" time="300" delay="300">hidden</animation>
