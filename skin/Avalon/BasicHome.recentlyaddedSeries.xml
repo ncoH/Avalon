@@ -54,7 +54,7 @@
         <type>fadelabel</type>
         <id>0</id>
         <posX>1266</posX>
-        <posY>675</posY>
+        <posY>680</posY>
         <width>500</width>
         <label>S#fanarthandler.tvseries.latest1.seasonIndexE#fanarthandler.tvseries.latest1.episodeIndex - #fanarthandler.tvseries.latest1.episodeName</label>
         <font>AvalonLight12</font>
