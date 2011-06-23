@@ -79,9 +79,9 @@
 </font>
 
 <font>
-	<name>fontB32</name>
+	<name>fontB26</name>
 	<filename>AvalonType Bold</filename>
-	<height>32</height>
+	<height>26</height>
 	<start>0</start>
 	<end>1536</end>
 	<bold>yes</bold>
@@ -132,6 +132,15 @@
 	<bold>no</bold>
 </font>
 
+<font>
+	<name>AvalonLight18</name>
+	<filename>AvalonType Light</filename>
+	<height>18</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
 
 <font>
 	<name>AvalonLight20</name>
@@ -146,15 +155,6 @@
 	<name>AvalonLight22</name>
 	<filename>AvalonType Light</filename>
 	<height>22</height>
-	<start>0</start>
-	<end>1536</end>
-	<bold>no</bold>
-</font>
-
-<font>
-	<name>AvalonLight24</name>
-	<filename>AvalonType Light</filename>
-	<height>24</height>
 	<start>0</start>
 	<end>1536</end>
 	<bold>no</bold>
