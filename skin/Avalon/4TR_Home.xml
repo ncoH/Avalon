@@ -40,7 +40,7 @@
 		<width>500</width>
 		<label>100001</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>AvalonLight24</font>
+		<font>font22</font>
 	</control>
 
 	<import>common.time.xml</import>

@@ -26,7 +26,7 @@
 		<posX>0</posX>
 		<posY>164</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>866</height>
 		<texture>viewport_tv_recordings.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -254,7 +254,7 @@
 			<posX>74</posX>
 			<posY>634</posY>
 			<width>780</width>
-			<height>230</height>
+			<height>350</height>
 			<label>#TV.Scheduled.Description</label>
 		</control>
 		
