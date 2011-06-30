@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+
+	<control>
+        <description>DUMMY</description>
+        <type>button</type>
+        <id>71717774</id>
+        <posX>-2000</posX>
+        <posY>-2000</posY>
+        <textureFocus>-</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>1001</onleft>
+        <onright>91919984</onright>
+    </control>	
+	
+	<control>
+		<type>image</type>
+		<id>555</id>
+        <posX>1270</posX>
+        <posY>525</posY>
+		<width>318</width>
+		<height>179</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#fanarthandler.tvrecordings.latest1.thumb</texture>
+		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919984)</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>556</id>
+        <posX>1270</posX>
+        <posY>525</posY>
+		<width>318</width>
+		<height>179</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#fanarthandler.tvrecordings.latest2.thumb</texture>
+		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919985)</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>557</id>
+        <posX>1270</posX>
+        <posY>525</posY>
+		<width>318</width>
+		<height>179</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#fanarthandler.tvrecordings.latest3.thumb</texture>
+		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919986)</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>558</id>
+        <posX>1270</posX>
+        <posY>525</posY>
+		<width>318</width>
+		<height>179</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#fanarthandler.tvrecordings.latest4.thumb</texture>
+		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919987)</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>1</id>
+        <posX>1270</posX>
+        <posY>525</posY>
+		<width>318</width>
+		<height>179</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">defaultTVBig.png</texture>
+		<visible>string.equals(#recentMedia,Recordings) + [!control.hasthumb(555) + control.hasfocus(91919984)] | [!control.hasthumb(556) + control.hasfocus(91919985)] | [!control.hasthumb(557) + control.hasfocus(91919986)] | [!control.hasthumb(558) + control.hasfocus(91919987)]</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
+    <control>
+      <description>GROUP: RecentlyAdded Recordings</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest1.title, ) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <control>
+        <description>Header label</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1218</posX>
+        <posY>256</posY>
+        <width>590</width>
+        <label>#Avalon.LatestRecordings</label>
+        <font>AvalonLight20</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>91919984</id>
+        <posX>1214</posX>
+        <posY>345</posY>
+        <width>531</width>
+        <height>37</height>
+		<textXOff>52</textXOff>
+		<textYOff>0</textYOff>
+        <textureFocus>recently_play_focus.png</textureFocus>
+        <textureNoFocus>recently_play_nofocus.png</textureNoFocus>
+        <label>#fanarthandler.tvrecordings.latest1.title</label>
+        <onleft>901</onleft>
+        <onright>91919984</onright>
+		<onup>91919987</onup>
+		<ondown>91919985</ondown>
+		<font>AvalonLight12</font>
+		<textcolor>ffffffff</textcolor>
+		<textcolorNoFocus>ff6aa5cb</textcolorNoFocus>
+    </control>
+    </control>
+    <control>
+      <description>GROUP: RecentlyAdded Recordings</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest2.title, ) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>91919985</id>
+        <posX>1214</posX>
+        <posY>385</posY>
+        <width>531</width>
+        <height>37</height>
+		<textXOff>52</textXOff>
+		<textYOff>0</textYOff>
+        <textureFocus>recently_play_focus.png</textureFocus>
+        <textureNoFocus>recently_play_nofocus.png</textureNoFocus>
+        <label>#fanarthandler.tvrecordings.latest2.title</label>
+        <onleft>901</onleft>
+        <onright>91919985</onright>
+		<onup>91919984</onup>
+		<ondown>91919986</ondown>
+		<font>AvalonLight12</font>
+		<textcolor>ffffffff</textcolor>
+		<textcolorNoFocus>ff6aa5cb</textcolorNoFocus>
+    </control>
+    </control>
+    <control>
+      <description>GROUP: RecentlyAdded Recordings</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest3.title, ) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>91919986</id>
+        <posX>1214</posX>
+        <posY>425</posY>
+        <width>531</width>
+        <height>37</height>
+		<textXOff>52</textXOff>
+		<textYOff>0</textYOff>
+        <textureFocus>recently_play_focus.png</textureFocus>
+        <textureNoFocus>recently_play_nofocus.png</textureNoFocus>
+        <label>#fanarthandler.tvrecordings.latest3.title</label>
+        <onleft>901</onleft>
+        <onright>91919986</onright>
+		<onup>91919985</onup>
+		<ondown>91919987</ondown>
+		<font>AvalonLight12</font>
+		<textcolor>ffffffff</textcolor>
+		<textcolorNoFocus>ff6aa5cb</textcolorNoFocus>
+    </control>
+    </control>
+    <control>
+      <description>GROUP: RecentlyAdded Recordings</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest4.title, ) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>91919987</id>
+        <posX>1214</posX>
+        <posY>465</posY>
+        <width>531</width>
+        <height>37</height>
+		<textXOff>52</textXOff>
+		<textYOff>0</textYOff>
+        <textureFocus>recently_play_focus.png</textureFocus>
+        <textureNoFocus>recently_play_nofocus.png</textureNoFocus>
+        <label>#fanarthandler.tvrecordings.latest4.title</label>
+        <onleft>901</onleft>
+        <onright>91919987</onright>
+		<onup>91919986</onup>
+		<ondown>91919984</ondown>
+		<font>AvalonLight12</font>
+		<textcolor>ffffffff</textcolor>
+		<textcolorNoFocus>ff6aa5cb</textcolorNoFocus>
+    </control>
+    </control>
+	
+    <!--            :: RIGHT ::            -->
+	
+	<control>
+		<type>image</type>
+		<id>1</id>
+        <posX>1620</posX>
+        <posY>345</posY>
+		<width>35</width>
+		<height>37</height>
+		<texture>recently_play.png</texture>
+		<visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest1.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="slide" time="250" start="-350,0">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
+      <control>
+        <description>Recording 1 title</description>
+        <type>fadelabel</type>
+        <id>1</id>
+        <posX>1671</posX>
+        <posY>345</posY>
+        <width>180</width>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+        <label>#fanarthandler.tvrecordings.latest1.title</label>
+		<visible>string.equals(#recentMedia,Recordings) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="slide" time="250" start="-350,0">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      </control>
+	  
+	<control>
+		<type>image</type>
+		<id>1</id>
+        <posX>1620</posX>
+        <posY>385</posY>
+		<width>35</width>
+		<height>37</height>
+		<texture>recently_play.png</texture>
+		<visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest2.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="slide" time="250" start="-350,0">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	  
+      <control>
+        <description>Recording 2 title</description>
+        <type>fadelabel</type>
+        <id>1</id>
+        <posX>1671</posX>
+        <posY>385</posY>
+        <width>180</width>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+        <label>#fanarthandler.tvrecordings.latest2.title</label>
+		<visible>string.equals(#recentMedia,Recordings) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="slide" time="250" start="-350,0">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      </control>
+	  
+	<control>
+		<type>image</type>
+		<id>1</id>
+        <posX>1620</posX>
+        <posY>425</posY>
+		<width>35</width>
+		<height>37</height>
+		<texture>recently_play.png</texture>
+		<visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest3.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="slide" time="250" start="-350,0">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	  
+	   <control>
+        <description>Recording 3 title</description>
+        <type>fadelabel</type>
+        <id>1</id>
+        <posX>1671</posX>
+        <posY>425</posY>
+        <width>180</width>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+        <label>#fanarthandler.tvrecordings.latest3.title</label>
+		<visible>string.equals(#recentMedia,Recordings) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="slide" time="250" start="-350,0">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      </control>
+	  
+	<control>
+		<type>image</type>
+		<id>1</id>
+        <posX>1620</posX>
+        <posY>465</posY>
+		<width>35</width>
+		<height>37</height>
+		<texture>recently_play.png</texture>
+		<visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest4.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="slide" time="250" start="-350,0">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	  
+	   <control>
+        <description>Recording 4 title</description>
+        <type>fadelabel</type>
+        <id>1</id>
+        <posX>1671</posX>
+        <posY>465</posY>
+        <width>180</width>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+        <label>#fanarthandler.tvrecordings.latest4.title</label>
+		<visible>string.equals(#recentMedia,Recordings) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="slide" time="250" start="-350,0">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      </control>
+			
+	<control>
+        <description>Sub Separator</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1581</posX>
+        <posY>270</posY>
+        <width>1</width>
+        <height>468</height>
+        <texture>basichome_sub_separator.png</texture>
+		<visible>string.equals(#recentMedia,Recordings)  + !string.equals(#fanarthandler.tvrecordings.latest1.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="slide" time="250" start="-350,0">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+  </controls>
+</window>
