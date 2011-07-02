@@ -50,6 +50,7 @@
 			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
 			<label>128</label>
 			<hyperlink>705</hyperlink>
+            <onup>10008</onup>
 		</control>
 
 		<control>
@@ -134,6 +135,7 @@
 			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
 			<label>2</label>
 			<hyperlink>14</hyperlink>
+			<ondown>10001</ondown>
 		</control>
 <!--
 		<control>

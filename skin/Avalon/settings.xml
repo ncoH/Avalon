@@ -53,6 +53,7 @@
 			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
 			<label>128</label>
 			<hyperlink>705</hyperlink>
+            <onup>10008</onup>
 		</control>
 
 		<control>
@@ -137,21 +138,22 @@
 			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
 			<label>2</label>
 			<hyperlink>14</hyperlink>
+            <ondown>10001</ondown>
 		</control>
-
+<!--
 		<control>
 			<description>MiniDisplay</description>
 			<type>button</type>
 			<id>11</id>
 			<width>385</width>
 			<height>64</height>
-	<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+        	<textureFocus>settings_button_focus.png</textureFocus>
+        	<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
 			<label>9100</label>
 			<hyperlink>9000</hyperlink>
-			<ondown>10010</ondown>
+			<ondown>10001</ondown>
 		</control>
-<!--	
+	
 				<control>
 			<description>I.F.C</description>
 			<type>button</type>
