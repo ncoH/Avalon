@@ -1,0 +1,171 @@
+<fonts>
+
+<font>
+	<name>font11</name>
+	<filename>AvalonType</filename>
+	<height>11</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>font12</name>
+	<filename>AvalonType</filename>
+	<height>12</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>font22</name>
+	<filename>AvalonType</filename>
+	<height>22</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>fontB11</name>
+	<filename>AvalonType Bold</filename>
+	<height>11</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>yes</bold>
+</font>
+
+<font>
+	<name>fontB12</name>
+	<filename>AvalonType Bold</filename>
+	<height>12</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>yes</bold>
+</font>
+
+<font>
+	<name>fontB14</name>
+	<filename>AvalonType Bold</filename>
+	<height>14</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>yes</bold>
+</font>
+
+<font>
+	<name>fontB16</name>
+	<filename>AvalonType Bold</filename>
+	<height>16</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>yes</bold>
+</font>
+
+<font>
+	<name>fontB20</name>
+	<filename>AvalonType Bold</filename>
+	<height>20</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>yes</bold>
+</font>
+
+<font>
+	<name>fontB22</name>
+	<filename>AvalonType Bold</filename>
+	<height>22</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>yes</bold>
+</font>
+
+<font>
+	<name>fontB32</name>
+	<filename>AvalonType Bold</filename>
+	<height>32</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>yes</bold>
+</font>
+
+<font>
+	<name>AvalonLight10</name>
+	<filename>AvalonType Light</filename>
+	<height>10</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+<font>
+	<name>AvalonLight11</name>
+	<filename>AvalonType Light</filename>
+	<height>11</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+<font>
+	<name>AvalonLight12</name>
+	<filename>AvalonType Light</filename>
+	<height>12</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+<font>
+	<name>AvalonLight14</name>
+	<filename>AvalonType Light</filename>
+	<height>14</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+<font>
+	<name>AvalonLight16</name>
+	<filename>AvalonType Light</filename>
+	<height>16</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+
+<font>
+	<name>AvalonLight20</name>
+	<filename>AvalonType Light</filename>
+	<height>20</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+<font>
+	<name>AvalonLight22</name>
+	<filename>AvalonType Light</filename>
+	<height>22</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+<font>
+	<name>AvalonLight24</name>
+	<filename>AvalonType Light</filename>
+	<height>24</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+<font>
+	<name>AvalonLight32</name>
+	<filename>AvalonType Light</filename>
+	<height>32</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+</fonts>
