@@ -194,6 +194,107 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
       </control>  
+	  
+    <control>
+      <description>GROUP: RecentlyAdded Movie (nofocus)</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia, MovingPictures) + !control.hasfocus(91919991) + !control.hasfocus(91919992)  + !control.hasfocus(91919993) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <control>
+        <description>Movie 1 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1218</posX>
+        <posY>622</posY>
+        <width>435</width>
+        <label>#fanarthandler.movingpicture.latest1.title</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+		<type>imagelist</type>
+		<id>0</id>
+		<posX>1658</posX>
+		<posY>627</posY>
+		<width>185</width>
+		<height>29</height>
+		<textureWidth>32</textureWidth>
+		<textureHeight>27</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#fanarthandler.movingpicture.latest1.rating</percentage>
+      </control> 
+      <control>
+        <description>Movie 2 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1218</posX>
+        <posY>662</posY>
+        <width>435</width>
+        <label>#fanarthandler.movingpicture.latest2.title</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+		<type>imagelist</type>
+		<id>0</id>
+		<posX>1658</posX>
+		<posY>666</posY>
+		<width>185</width>
+		<height>29</height>
+		<textureWidth>32</textureWidth>
+		<textureHeight>27</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#fanarthandler.movingpicture.latest2.rating</percentage>
+      </control>
+      <control>
+        <description>Movie 3 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1218</posX>
+        <posY>702</posY>
+        <width>435</width>
+        <label>#fanarthandler.movingpicture.latest3.title</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+		<type>imagelist</type>
+		<id>0</id>
+		<posX>1658</posX>
+		<posY>705</posY>
+		<width>185</width>
+		<height>29</height>
+		<textureWidth>32</textureWidth>
+		<textureHeight>27</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#fanarthandler.movingpicture.latest3.rating</percentage>
+      </control> 	  
+</control>	  
 
     <control>
       <description>GROUP: RecentlyAdded Movie</description>
@@ -319,6 +420,23 @@
     </control>
 	
     <!--            :: RIGHT ::            -->
+	
+      <control>
+        <description>Movie 1 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1620</posX>
+        <posY>622</posY>
+        <width>180</width>
+        <label>#fanarthandler.movingpicture.latest1.title</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>string.equals(#recentMedia,MovingPictures) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="slide" time="250" start="-350,0">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      </control>
 	
     <control>
         <description>Movie 1 thumb/fanart</description>

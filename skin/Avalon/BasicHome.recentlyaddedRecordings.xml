@@ -91,6 +91,25 @@
 	</control>
 	
     <control>
+      <description>GROUP: RecentlyAdded Recordings (nofocus)</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia,Recordings) + !control.hasfocus(91919984) + !control.hasfocus(91919985) + !control.hasfocus(91919986) + !control.hasfocus(91919987) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	<control>
+		<type>image</type>
+		<id>1</id>
+        <posX>1270</posX>
+        <posY>525</posY>
+		<width>318</width>
+		<height>179</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">recently_nothumb.png</texture>
+	</control>
+</control>
+    <control>
       <description>GROUP: RecentlyAdded Recordings</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>

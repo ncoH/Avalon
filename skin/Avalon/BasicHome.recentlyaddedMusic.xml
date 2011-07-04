@@ -139,6 +139,53 @@
       </control>
 	
     <control>
+      <description>GROUP: RecentlyAdded Music (nofocus)</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia,Music) + !control.hasfocus(91919997) + !control.hasfocus(91919998)  + !control.hasfocus(91919999) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <control>
+        <description>Album 1 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1218</posX>
+        <posY>622</posY>
+        <width>435</width>
+        <label>#fanarthandler.music.latest1.album</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+        <description>Album 2 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1218</posX>
+        <posY>662</posY>
+        <width>435</width>
+        <label>#fanarthandler.music.latest2.album</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+        <description>Album 3 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1218</posX>
+        <posY>702</posY>
+        <width>435</width>
+        <label>#fanarthandler.music.latest3.album</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>	  
+</control>
+	
+    <control>
       <description>GROUP: RecentlyAdded Albums</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
