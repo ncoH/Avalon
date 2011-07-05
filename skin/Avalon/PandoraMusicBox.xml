@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <!-- 
+  This is the main pandora skin file and should contain all screen elements that are common
+  to all views in the GUI. Anything that belongs only in a specific view should be placed in the
+  coorespodning subfile.
+  -->
+  <id>82341</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#usePlayFanart:Yes</define>
+  <define>#header.background:hover_my music.png</define>	
+    <controls>
+
+    <control>
+      <description>default background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+      <shouldCache>true</shouldCache>
+    </control>
+
+    <control>
+	<description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
+        <type>label</type>
+	<id>91919295</id>
+        <posX>0</posX>
+        <posY>0</posY>
+        <width>1</width>
+    </control>
+
+    <control>
+	<description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
+        <type>label</type>
+	<id>91919296</id>
+        <posX>0</posX>
+        <posY>0</posY>
+        <width>1</width>
+    </control>
+
+    <control>
+	<description>DUMMY CONTROLL FOR PLAYING FANART2 AVAILABILITY CONDITION</description>
+        <type>label</type>
+	<id>91919294</id>
+        <posX>0</posX>
+        <posY>0</posY>
+        <width>1</width>
+	<visible>no</visible>
+    </control>
+
+    <control>
+        <id>0</id>
+        <description>DEFAULT BACKGROUND WHEN FANART NOT AVAILABLE</description>
+        <type>multiimage</type>
+        <visible>!control.isvisible(91919294)</visible>
+        <posX>0</posX>
+        <posY>180</posY>
+        <width>1273</width>
+        <height>720</height>
+        <imagepath>music</imagepath>
+        <timeperimage>30000</timeperimage>
+        <fadetime>800</fadetime>
+        <loop>yes</loop>
+        <randomize>True</randomize>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>			
+     </control>
+		
+     <control>
+        <description>FANART IMAGE 1</description>
+	<id>897688</id>
+        <type>image</type>
+        <posX>0</posX>
+        <posY>180</posY>
+        <width>1273</width>
+        <height>720</height>
+        <texture>#fanarthandler.music.backdrop1.play</texture>
+	<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919295)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+     </control>
+
+     <control>
+        <description>FANART IMAGE 2</description>
+	<id>897689</id>
+        <type>image</type>
+        <posX>0</posX>
+        <posY>180</posY>
+        <width>1273</width>
+        <height>720</height>
+        <texture>#fanarthandler.music.backdrop2.play</texture>
+	<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919296)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+     </control>
+<!-- Fanart overlays -->
+	<control>
+		<description>filmstrip overlay</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+     		<posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>filmstrip_fanart_overlay.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+	<control>
+		<description>background listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+      		<posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>overlay_long.png</texture>
+	</control>
+
+	<control>
+		<description>Viewport List</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>1</posX>
+		<posY>164</posY>
+		<width>1893</width>
+		<height>755</height>
+		<texture>viewport_categories.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+
+    <!-- Top Bar Controls -->
+
+    <control>
+	<description>Plugin Name</description>
+        <animation effect="fade" time="250">WindowOpen</animation>
+        <animation effect="fade" time="250">WindowClose</animation>
+        <type>label</type>
+        <id>1</id>
+        <posX>185</posX>
+        <posY>38</posY>
+        <width>500</width>
+        <label>Pandora</label>
+        <textcolor>85cffe</textcolor>
+        <font>font22</font>
+    </control>   	
+    <control>
+      <description>Current Station</description>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+      <type>label</type>
+      <label>| #PandoraMusicBox.CurrentStation.Name</label>
+      <id>0</id>
+      <posX>242</posX>
+      <posY>99</posY>
+      <align>left</align>
+      <font>AvalonLight12</font>
+      <textcolor>ffffff</textcolor>
+    </control>
+
+    <import>common.time.xml</import>
+
+    <control>
+      <description>GROUP: Buttons</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+	<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowClose</animation>
+	<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+	<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+      
+	
+      <!-- Album Art -->
+ 	<!-- HISTORY 4 -->
+	<control>
+ 	        <posX>90</posX>
+ 	        <posY>660</posY>
+ 	        <width>175</width>
+  	        <height>175</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
+        	<visible>!String.Equals(#PandoraMusicBox.Current.IsAdvertisement,True)</visible>
+	</control>
+	<control>
+	        <description>History 4 Image</description>
+		<type>image</type>
+        	<posX>90</posX>
+        	<posY>660</posY>
+        	<width>175</width>
+        	<height>175</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#PandoraMusicBox.History4.ArtworkURL</texture>
+        	<visible>!String.Equals(#PandoraMusicBox.Current.IsAdvertisement,True)</visible>
+	</control>
+	<!-- HISTORY 3 -->
+	<control>
+ 	        <posX>345</posX>
+ 	        <posY>660</posY>
+ 	        <width>175</width>
+  	        <height>175</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
+        	<visible>!String.Equals(#PandoraMusicBox.Current.IsAdvertisement,True)</visible>
+	</control>
+	<control>
+	        <description>History 3 Image</description>
+		<type>image</type>
+        	<posX>345</posX>
+        	<posY>660</posY>
+        	<width>175</width>
+        	<height>175</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#PandoraMusicBox.History3.ArtworkURL</texture>
+        	<visible>!String.Equals(#PandoraMusicBox.Current.IsAdvertisement,True)</visible>
+	</control>
+	<!-- HISTORY 2 -->
+	<control>
+ 	        <posX>600</posX>
+ 	        <posY>660</posY>
+ 	        <width>175</width>
+  	        <height>175</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
+        	<visible>!String.Equals(#PandoraMusicBox.Current.IsAdvertisement,True)</visible>
+	</control>
+	<control>
+	        <description>History 2 Image</description>
+		<type>image</type>
+        	<posX>600</posX>
+        	<posY>660</posY>
+        	<width>175</width>
+        	<height>175</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#PandoraMusicBox.History2.ArtworkURL</texture>
+        	<visible>!String.Equals(#PandoraMusicBox.Current.IsAdvertisement,True)</visible>
+	</control>
+	<!-- HISTORY 1 -->
+	<control>
+ 	        <posX>855</posX>
+ 	        <posY>660</posY>
+ 	        <width>175</width>
+  	        <height>175</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
+        	<visible>!String.Equals(#PandoraMusicBox.Current.IsAdvertisement,True)</visible>
+	</control>
+	<control>
+	        <description>History 1 Image</description>
+		<type>image</type>
+		<id>500</id>
+        	<posX>855</posX>
+        	<posY>660</posY>
+        	<width>175</width>
+        	<height>175</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#PandoraMusicBox.History1.ArtworkURL</texture>
+        	<visible>!String.Equals(#PandoraMusicBox.Current.IsAdvertisement,True)</visible>
+	</control>
+	<!-- cURRENT sONG -->
+	<control>
+		<description>Poster shadow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>1273</posX>
+		<posY>368</posY>
+		<width>486</width>
+		<height>487</height>
+		<texture>list_music_shadow.png</texture>
+	</control>
+	<control>
+		<description>Poster glow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>1273</posX>
+		<posY>368</posY>
+		<width>486</width>
+		<height>487</height>
+		<texture>list_music_glow.png</texture>
+	</control>
+	<control>
+		<posX>1340</posX>
+		<posY>436</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
+	</control>
+	<control>
+        	<description>Current Song Image</description>
+		<type>image</type>
+		<id>500</id>
+		<posX>1340</posX>
+		<posY>436</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#PandoraMusicBox.Current.ArtworkURL</texture>
+	</control>
+<!-- Buttons -->
+      <control>
+        <description>History Song 4 Button</description>
+        <type>button</type>
+        <id>6</id>
+        <label>
+        </label>
+        <posX>88</posX>
+        <posY>658</posY>
+        <width>179</width>
+        <height>179</height>
+        <onleft>6</onleft>
+        <onright>5</onright>
+        <ondown>6</ondown>
+        <textureNoFocus>music_thumb_nofocus.png</textureNoFocus>
+        <textureFocus>music_thumb_focus.png</textureFocus>
+        <animation effect="zoom" start="100,100" end="100,100" time="100">unfocus</animation>
+        <animation effect="zoom" start="100,100" end="100,100" time="100">focus</animation>
+      </control>
+      <control>
+        <description>History Song 3 Button</description>
+        <type>button</type>
+        <id>5</id>
+        <label>
+        </label>
+        <posX>343</posX>
+        <posY>658</posY>
+        <width>179</width>
+        <height>179</height>
+        <onleft>6</onleft>
+        <onright>4</onright>
+        <ondown>5</ondown>
+        <textureNoFocus>music_thumb_nofocus.png</textureNoFocus>
+        <textureFocus>music_thumb_focus.png</textureFocus>
+        <animation effect="zoom" start="100,100" end="100,100" time="100">unfocus</animation>
+        <animation effect="zoom" start="100,100" end="100,100" time="100">focus</animation>
+      </control>
+      <control>
+        <description>History Song 2 Button</description>
+        <type>button</type>
+        <id>4</id>
+        <label>
+        </label>
+        <posX>598</posX>
+        <posY>658</posY>
+        <width>179</width>
+        <height>179</height>
+        <onleft>5</onleft>
+        <onright>3</onright>
+        <ondown>4</ondown>
+        <textureNoFocus>music_thumb_nofocus.png</textureNoFocus>
+        <textureFocus>music_thumb_focus.png</textureFocus>
+        <animation effect="zoom" start="100,100" end="100,100" time="100">unfocus</animation>
+        <animation effect="zoom" start="100,100" end="100,100" time="100">focus</animation>
+      </control>
+      <control>
+        <description>History Song 1 Button</description>
+        <type>button</type>
+        <id>3</id>
+        <label>
+        </label>
+        <posX>853</posX>
+        <posY>658</posY>
+        <width>179</width>
+        <height>179</height>
+        <onleft>4</onleft>
+        <onright>2</onright>
+        <ondown>3</ondown>
+        <textureNoFocus>music_thumb_nofocus.png</textureNoFocus>
+        <textureFocus>music_thumb_focus.png</textureFocus>
+        <animation effect="zoom" start="100,100" end="100,100" time="100">unfocus</animation>
+        <animation effect="zoom" start="100,100" end="100,100" time="100">focus</animation>
+      </control>
+      <control>
+        <description>Current Song Button</description>
+        <type>button</type>
+        <id>2</id>
+        <label>
+        </label>
+	<posX>1335</posX>
+	<posY>431</posY>
+	<width>360</width>
+	<height>360</height>
+        <onleft>3</onleft>
+        <onright>2</onright>
+        <ondown>2</ondown>
+        <textureNoFocus>music_thumb_nofocus.png</textureNoFocus>
+        <textureFocus>music_thumb_focus.png</textureFocus>
+        <animation effect="zoom" start="100,100" end="100,100" time="100">unfocus</animation>
+        <animation effect="zoom" start="100,100" end="100,100" time="100">focus</animation>
+      </control>
+
+<!-- Song Labels -->
+	<control>
+		<description>History 4 Title</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>64</posX>
+		<posY>945</posY>
+		<align>left</align>
+		<label>#PandoraMusicBox.History4.Title</label>
+		<font>fontB20</font>
+		<visible>Control.HasFocus(6)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+	</control>
+	<control>
+		<description>History 4 Artist</description>		
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
+		<type>label</type>
+		<label>#PandoraMusicBox.History4.Artist</label>
+		<id>0</id>
+		<posX>64</posX>
+		<posY>1006</posY>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>85cffe</textcolor>
+		<visible>Control.HasFocus(6)+!String.Equals(#PandoraMusicBox.History4.IsAdvertisement,True)</visible>
+	</control>
+     	<control>
+		<description>History 3 Title</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>64</posX>
+		<posY>945</posY>
+		<align>left</align>
+		<label>#PandoraMusicBox.History3.Title</label>
+		<font>fontB20</font>
+		<visible>Control.HasFocus(5)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+	</control>
+	<control>
+		<description>History 3 Artist</description>		
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
+		<type>label</type>
+		<label>#PandoraMusicBox.History3.Artist</label>
+		<id>0</id>
+		<posX>64</posX>
+		<posY>1006</posY>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>85cffe</textcolor>
+		<visible>Control.HasFocus(5)+!String.Equals(#PandoraMusicBox.History4.IsAdvertisement,True)</visible>
+	</control>
+	<control>
+		<description>History 2 Title</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>64</posX>
+		<posY>945</posY>
+		<align>left</align>
+		<label>#PandoraMusicBox.History2.Title</label>
+		<font>fontB20</font>
+		<visible>Control.HasFocus(4)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+	</control>
+	<control>
+		<description>History 2 Artist</description>		
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
+		<type>label</type>
+		<label>#PandoraMusicBox.History2.Artist</label>
+		<id>0</id>
+		<posX>64</posX>
+		<posY>1006</posY>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>85cffe</textcolor>
+		<visible>Control.HasFocus(4)+!String.Equals(#PandoraMusicBox.History4.IsAdvertisement,True)</visible>
+	</control>
+	<control>
+		<description>History 1 Title</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>64</posX>
+		<posY>945</posY>
+		<label>#PandoraMusicBox.History1.Title</label>
+		<font>fontB20</font>
+		<align>left</align>
+		<visible>Control.HasFocus(3)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+	</control>
+	<control>
+		<description>History 1 Artist</description>		
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
+		<type>label</type>
+		<label>#PandoraMusicBox.History1.Artist</label>
+		<id>0</id>
+		<posX>64</posX>
+		<posY>1006</posY>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>85cffe</textcolor>
+		<visible>Control.HasFocus(3)+!String.Equals(#PandoraMusicBox.History4.IsAdvertisement,True)</visible>
+	</control>      
+      <control>
+        <description>Current Title</description>
+        <type>label</type>
+        <label>#PandoraMusicBox.Current.Title</label>
+        <posX>1340</posX>
+        <posY>255</posY>
+        <width>350</width>
+        <font>fontB20</font>
+        <visible>!Control.HasFocus(2)</visible>
+      </control>
+      <control>
+        <description>Current Title Scrolling</description>
+        <type>fadelabel</type>
+        <label>#PandoraMusicBox.Current.Title</label>
+        <posX>1340</posX>
+        <posY>255</posY>
+        <width>350</width>
+        <font>fontB20</font>
+        <visible>Control.HasFocus(2)</visible>
+      </control>
+      <control>
+        <description>Current Artist</description>
+        <type>label</type>
+        <label>#PandoraMusicBox.Current.Artist</label>
+        <posX>1340</posX>
+        <posY>315</posY>
+        <width>350</width>
+        <font>AvalonLight12</font>
+        <textcolor>ff85cffe</textcolor>
+        <visible>!Control.HasFocus(2)+!String.Equals(#PandoraMusicBox.Current.IsAdvertisement,True)</visible>
+      </control>
+      <control>
+        <description>Current Artist Scrolling</description>
+        <type>fadelabel</type>
+        <label>#PandoraMusicBox.Current.Artist</label>
+        <posX>1340</posX>
+        <posY>315</posY>
+        <width>350</width>
+        <font>AvalonLight12</font>
+        <textcolor>ff85cffe</textcolor>
+        <visible>Control.HasFocus(2)+!String.Equals(#PandoraMusicBox.Current.IsAdvertisement,True)</visible>
+      </control>
+      
+      <control>
+        <description>EQ</description>
+        <type>image</type>
+        <id>1</id>
+        <posX>1340</posX>
+        <posY>366</posY>
+        <width>33</width>
+        <height>16</height>
+	<visible>player.playing</visible>
+        <texture>now_playing_eq.png</texture>
+      </control>
+      <control>
+        <description>Pause Indicator</description>
+        <type>image</type>
+        <texture>logo_pause.png</texture>
+        <posX>1335</posX>
+        <posY>352</posY>
+        <width>40</width>
+        <height>40</height>
+        <visible>!player.playing</visible>
+      </control>	
+	<control>
+		<description>nowplaying text</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1385</posX>
+		<posY>355</posY>
+		<width>180</width>
+		<height>50</height>
+		<label>#currentplaytime / #duration</label>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
+	</control>
+	<control>
+		<description>progress bar</description>
+		<type>progress</type>
+		<id>1</id>
+        	<posX>1329</posX>
+      		<posY>400</posY>
+        	<width>351</width>
+		<height>10</height>
+        	<visible>yes</visible>
+        	<texturebg>-</texturebg>
+        	<lefttexture>now_playing_progress_bar.png</lefttexture>
+        	<righttexture>now_playing_progress_bar.png</righttexture>
+        	<midtexture>now_playing_progress_bar.png</midtexture>
+		<label>#percentage</label>
+	</control>
+
+
+      <control>
+        <description>History 4 Rating</description>
+        <type>image</type>
+        <texture>pandora_rating_#PandoraMusicBox.History4.Rating.png</texture>
+        <posX>228</posX>
+        <posY>840</posY>
+        <width>37</width>
+        <height>37</height>
+      </control>
+      <control>
+        <description>History 3 Rating</description>
+        <type>image</type>
+        <texture>pandora_rating_#PandoraMusicBox.History3.Rating.png</texture>
+        <posX>483</posX>
+        <posY>840</posY>
+        <width>37</width>
+        <height>37</height>
+      </control>
+      <control>
+        <description>History 2 Rating</description>
+        <type>image</type>
+        <texture>pandora_rating_#PandoraMusicBox.History2.Rating.png</texture>
+        <posX>738</posX>
+        <posY>840</posY>
+        <width>37</width>
+        <height>37</height>
+      </control>
+      <control>
+        <description>History 1 Rating</description>
+        <type>image</type>
+        <texture>pandora_rating_#PandoraMusicBox.History1.Rating.png</texture>
+        <posX>995</posX>
+        <posY>840</posY>
+        <width>37</width>
+        <height>37</height>
+      </control>
+      <control>
+        <description>Current Song Rating</description>
+        <type>image</type>
+        <texture>pandora_rating_#PandoraMusicBox.Current.Rating.png</texture>
+	<posX>1615</posX>
+	<posY>800</posY>
+        <width>75</width>
+        <height>75</height>
+      </control>
+      
+    </control>
+    <control>
+      <description>Dummy Working Label</description>
+      <type>label</type>
+      <id>13</id>
+      <label>
+      </label>
+    </control>
+    <control>
+      <description>Working Animation</description>
+      <type>animation</type>
+	<posX>878</posX>
+	<posY>548</posY>
+	<width>207</width>
+	<height>207</height>
+        <textures>common.waiting.1.png;common.waiting.2.png;common.waiting.3.png;common.waiting.4.png;common.waiting.5.png;common.waiting.6.png;common.waiting.7.png;common.waiting.8.png</textures>
+	<Duration>0:0:01.5</Duration>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>Control.IsVisible(13)</visible>
+    </control>
+  </controls>
+</window>
+<!--Checksum:afcc6e152e4ca04ab2e15b308ba52295-->
