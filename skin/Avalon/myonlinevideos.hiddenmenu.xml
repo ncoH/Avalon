@@ -73,7 +73,7 @@
 			<onup>13</onup>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<width>459</width>
+			<width>497</width>
 			<height>70</height>
 			<textXOff>66</textXOff>
 			<textYOff>17</textYOff>
@@ -87,7 +87,7 @@
 			<label>#OnlineVideos.Translation.Search.Label</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<width>459</width>
+			<width>497</width>
 			<height>70</height>
 			<textXOff>66</textXOff>
 			<textYOff>17</textYOff>
@@ -99,7 +99,7 @@
 			<onleft>50</onleft>
 			<onright>50</onright>
 			<label>#OnlineVideos.Translation.Category.Label</label>
-			<width>459</width>
+			<width>497</width>
 			<height>70</height>
 			<textXOff>50</textXOff>
 			<textYOff>17</textYOff>
@@ -117,7 +117,7 @@
           <onleft>50</onleft>
           <onright>50</onright>
           <label>#OnlineVideos.Translation.MaxResults.Label</label>
-			<width>459</width>
+			<width>497</width>
 			<height>70</height>
 			<textXOff>50</textXOff>
 			<textYOff>17</textYOff>
@@ -135,7 +135,7 @@
           <onleft>50</onleft>
           <onright>50</onright>
           <label>#OnlineVideos.Translation.SortOptions.Label</label>
-			<width>459</width>
+			<width>497</width>
 			<height>70</height>
 			<textXOff>50</textXOff>
 			<textYOff>17</textYOff>
@@ -153,7 +153,7 @@
           <onleft>50</onleft>
           <onright>50</onright>
           <label>#OnlineVideos.Translation.Timeframe.Label</label>
-			<width>459</width>
+			<width>497</width>
 			<height>70</height>
 			<textXOff>50</textXOff>
 			<textYOff>17</textYOff>
@@ -173,7 +173,7 @@
           <label>#OnlineVideos.Translation.Refresh.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<width>459</width>
+				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
@@ -187,7 +187,7 @@
           <label>#OnlineVideos.Translation.EnterPin.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<width>459</width>
+				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
@@ -202,7 +202,7 @@
           <label>#OnlineVideos.Translation.ManageSites.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<width>459</width>
+				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
