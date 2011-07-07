@@ -8,53 +8,55 @@
         <control>
             <description>group element</description>
             <type>group</type>
-            <animation effect="fade" time="250">WindowOpen</animation>
-			<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 	
 	
         <control>
             <id>0</id>
-            <type>image</type>
-            <posX>409</posX>
-		<posY>213</posY>
-		<width>548</width>
-		<height>342</height>
-		<texture>dialog_background.png</texture>
+			<type>image</type>
+			<posX>575</posX>
+			<posY>395</posY>
+			<width>768</width>
+			<height>651</height>
+			<texture>dialog_rating_background.png</texture>
         </control>
-        <control>
-            <id>2</id>
-            <description>dialog Heading</description>
-            <type>label</type>
-            <posX>470</posX>
-            <posY>261</posY>
-            <font>Segoe Light18</font>
-            <textcolor>ff85cffe</textcolor>
-			<width>420</width>
-            <label>934</label>
-        </control>
+    	<control>
+    		<description>Heading text label</description>
+    		<type>label</type>
+    		<id>2</id>
+    		<posX>678</posX>
+    		<posY>478</posY>
+    		<width>560</width>
+    		<label>181</label>
+    		<font>AvalonLight20</font>
+    		<textcolor>ffffff</textcolor>
+    	</control>
+<!--
         <control>
             <id>3</id>
             <description>Rating label</description>
             <type>label</type>
             <posX>533</posX>
-            <posY>350</posY>
+            <posY>700</posY>
 			<width>300</width>
 			<align>center</align>
             <label>204</label>
         </control>
-		
+-->		
         <control>
             <id>11</id>
             <description>left button</description>
             <type>button</type>
             <onleft>11</onleft>
             <onright>10</onright>
-            <onup>14</onup>
+            <onup>15</onup>
             <ondown>15</ondown>
-            <posX>470</posX>
-            <posY>368</posY>
-            <width>21</width>
-            <height>21</height>
+            <posX>676</posX>
+            <posY>622</posY>
+            <width>36</width>
+            <height>37</height>
             <textureFocus>arrow_round_left_focus.png</textureFocus>
             <textureNoFocus>arrow_round_left_nofocus.png</textureNoFocus>
         </control>
@@ -67,10 +69,10 @@
             <onright>10</onright>
             <onup>13</onup>
             <ondown>13</ondown>
-            <posX>875</posX>
-            <posY>368</posY>
-            <width>21</width>
-            <height>21</height>
+            <posX>1212</posX>
+            <posY>622</posY>
+            <width>36</width>
+            <height>37</height>
             <textureFocus>arrow_round_right_focus.png</textureFocus>
             <textureNoFocus>arrow_round_right_nofocus.png</textureNoFocus>
         </control>
@@ -80,13 +82,13 @@
             <description>previous item</description>
             <type>button</type>
             <onleft>15</onleft>
-            <onright>14</onright>
+            <onright>13</onright>
             <onup>11</onup>
             <ondown>14</ondown>
-            <posX>471</posX>
-            <posY>450</posY>
-            <width>21</width>
-            <height>21</height>
+            <posX>676</posX>
+            <posY>692</posY>
+            <width>36</width>
+            <height>37</height>
             <textureFocus>arrow_round_left_focus.png</textureFocus>
             <textureNoFocus>arrow_round_left_nofocus.png</textureNoFocus>
         </control>
@@ -98,11 +100,11 @@
             <onleft>12</onleft>
             <onright>13</onright>
             <onup>10</onup>
-            <ondown>12</ondown>
-            <posX>875</posX>
-            <posY>450</posY>
-            <width>21</width>
-            <height>21</height>
+            <ondown>14</ondown>
+            <posX>1212</posX>
+            <posY>692</posY>
+            <width>36</width>
+            <height>37</height>
             <textureFocus>arrow_round_right_focus.png</textureFocus>
             <textureNoFocus>arrow_round_right_nofocus.png</textureNoFocus>
         </control>
@@ -112,15 +114,16 @@
             <description>Play</description>
             <type>button</type>
             <onleft>15</onleft>
-            <onright>12</onright>
+            <onright>13</onright>
             <onup>15</onup>
-            <ondown>11</ondown>
-            <posX>471</posX>
-            <posY>480</posY>
-            <width>210</width>
-            <textureFocus>button-small-focus.png</textureFocus>
+            <ondown>12</ondown>
+            <posX>619</posX>
+            <posY>768</posY>
+            <width>678</width>
+            <height>70</height>
+            <textureFocus>context_item_selected.png</textureFocus>
 			<textalign>center</textalign>
-			<textYOff>0</textYOff>
+			<textYOff>2</textYOff>
             <label>208</label>
         </control>
 		
@@ -128,26 +131,27 @@
             <id>12</id>
             <description>OK button</description>
             <type>button</type>
-            <onleft>14</onleft>
+            <onleft>15</onleft>
             <onright>13</onright>
-            <onup>13</onup>
-            <ondown>10</ondown>
-            <posX>686</posX>
-            <posY>480</posY>
-            <width>210</width>
-            <textureFocus>button-small-focus.png</textureFocus>
+            <onup>14</onup>
+            <ondown>14</ondown>
+            <posX>619</posX>
+            <posY>838</posY>
+            <width>678</width>
+            <height>70</height>
+            <textureFocus>context_item_selected.png</textureFocus>
             <label>186</label>
 			<textalign>center</textalign>
-            <textYOff>0</textYOff>
+            <textYOff>2</textYOff>
         </control>
 
         <control>
             <id>4</id>
             <description>Title</description>
             <type>label</type>
-            <posX>533</posX>
-            <posY>410</posY>
-			<width>300</width>
+            <posX>710</posX>
+            <posY>705</posY>
+			<width>480</width>
 			<align>center</align>
             <label>204</label>
         </control>
@@ -155,101 +159,101 @@
 	 <control>
             <id>0</id>
             <type>image</type>
-            <posX>592</posX>
-            <posY>370</posY>
-            <width>23</width>
-            <height>19</height>
-            <texture>stargrey.png</texture>
+            <posX>818</posX>
+            <posY>616</posY>
+            <width>53</width>
+            <height>41</height>
+            <texture>starblue_rating.png</texture>
         </control>
 		
         <control>
             <id>0</id>
             <type>image</type>
-            <posX>632</posX>
-            <posY>370</posY>
-            <width>23</width>
-            <height>19</height>
-            <texture>stargrey.png</texture>
+	       	<posX>876</posX>
+            <posY>616</posY>
+            <width>53</width>
+            <height>41</height>
+            <texture>starblue_rating.png</texture>
         </control>
 		
         <control>
             <id>0</id>
             <type>image</type>
-            <posX>672</posX>
-            <posY>370</posY>
-            <width>23</width>
-            <height>19</height>
-            <texture>stargrey.png</texture>
+            <posX>930</posX>
+            <posY>616</posY>
+            <width>53</width>
+            <height>41</height>
+            <texture>starblue_rating.png</texture>
         </control>
 		
         <control>
             <id>0</id>
             <type>image</type>
-            <posX>712</posX>
-            <posY>370</posY>
-            <width>23</width>
-            <height>19</height>
-            <texture>stargrey.png</texture>
+            <posX>984</posX>
+            <posY>616</posY>
+            <width>53</width>
+            <height>41</height>
+            <texture>starblue_rating.png</texture>
         </control>
 		
         <control>
             <id>0</id>
             <type>image</type>
-            <posX>752</posX>
-            <posY>370</posY>
-            <width>23</width>
-            <height>19</height>
-            <texture>stargrey.png</texture>
+            <posX>1038</posX>
+            <posY>616</posY>
+            <width>53</width>
+            <height>41</height>
+            <texture>starblue_rating.png</texture>
         </control>
 		
         <control>
             <id>100</id>
             <type>image</type>
-            <posX>592</posX>
-            <posY>370</posY>
-            <width>23</width>
-            <height>19</height>
-            <texture>starwhite.png</texture>
+            <posX>818</posX>
+            <posY>616</posY>
+            <width>53</width>
+            <height>41</height>
+            <texture>starwhite_rating.png</texture>
         </control>
 		
         <control>
             <id>101</id>
             <type>image</type>
-            <posX>632</posX>
-            <posY>370</posY>
-            <width>23</width>
-            <height>19</height>
-            <texture>starwhite.png</texture>
+            <posX>876</posX>
+            <posY>616</posY>
+            <width>53</width>
+            <height>41</height>
+            <texture>starwhite_rating.png</texture>
         </control>
 		
         <control>
             <id>102</id>
             <type>image</type>
-            <posX>672</posX>
-            <posY>370</posY>
-            <width>23</width>
-            <height>19</height>
-            <texture>starwhite.png</texture>
+            <posX>930</posX>
+            <posY>616</posY>
+            <width>53</width>
+            <height>41</height>
+            <texture>starwhite_rating.png</texture>
         </control>
 		
         <control>
             <id>103</id>
             <type>image</type>
-            <posX>712</posX>
-            <posY>370</posY>
-            <width>23</width>
-            <height>19</height>
-            <texture>starwhite.png</texture>
+            <posX>984</posX>
+            <posY>616</posY>
+            <width>53</width>
+            <height>41</height>
+            <texture>starwhite_rating.png</texture>
         </control>
 		
         <control>
             <id>104</id>
             <type>image</type>
-            <posX>752</posX>
-            <posY>370</posY>
-            <width>23</width>
-            <height>19</height>
-            <texture>starwhite.png</texture>
+            <posX>1038</posX>
+            <posY>616</posY>
+            <width>53</width>
+            <height>41</height>
+            <texture>starwhite_rating.png</texture>
         </control>
 		
 	</control>
