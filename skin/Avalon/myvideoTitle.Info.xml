@@ -1,0 +1,247 @@
+<window>
+	<controls>
+		<control>
+			<type>actiongroup</type>
+			<description>action menu</description>
+			<defaultcontrol>80</defaultcontrol>
+			<onexit>50</onexit>
+			<buttonX>0</buttonX>
+			<buttonY>0</buttonY>
+			<buttonwidth>0</buttonwidth>
+			<buttonheight>0</buttonheight>
+			<textureFocus></textureFocus>
+			<textureNoFocus></textureNoFocus>
+			<width>1920</width>
+			<height>1080</height>
+			<dimColor>00ffffff</dimColor>
+			<control>
+				<type>image</type>
+				<posX>680</posX>
+				<posY>192</posY>
+				<width>1186</width>
+				<height>699</height>
+				<texture>info_bg.png</texture>
+				<visible>!Control.HasFocus(50)</visible>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" time="150" start="1200,0">visible</animation>
+				<animation effect="fade" time="250">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+			</control>
+			<control>
+				<description>default button</description>
+				<type>button</type>
+				<id>80</id>
+				<posX>1200</posX>
+				<posY>335</posY>
+				<width>38</width>
+				<height>39</height>
+				<onright>50</onright>
+				<onleft>50</onleft>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<textureFocus></textureFocus>
+				<textureNoFocus></textureNoFocus>
+				<font>font12</font>
+			</control>
+			
+			<control>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" time="150" start="1200,0">visible</animation>
+				<animation effect="fade" time="250">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>info gfx</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>741</posX>
+				<posY>223</posY>
+				<width>58</width>
+				<height>59</height>
+				<texture>info.png</texture>
+				<visible>Control.HasFocus(80)</visible>
+			</control>
+			
+			<control>
+				<description>Selected item Label</description>
+				<type>fadelabel</type>
+				<id>1</id>
+				<posX>838</posX>
+				<posY>225</posY>
+				<width>1160</width>
+				<label>#selecteditem</label>
+				<font>fontB20</font>
+				<visible>Control.HasFocus(80)</visible>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" time="150" start="1200,0">visible</animation>
+				<animation effect="fade" time="250">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+			</control>
+			
+			<control>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" time="150" start="1200,0">visible</animation>
+				<animation effect="fade" time="250">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>Release Date Label</description>
+				<type>label</type>
+				<label>#Avalon.ReleaseDate</label>
+				<id>0</id>
+				<posX>744</posX>
+				<posY>308</posY>
+				<width>240</width>
+				<align>left</align>
+				<font>AvalonLight12</font>
+				<textcolor>6aa5cb</textcolor>
+				<visible>Control.HasFocus(80)</visible>
+			</control>
+
+			<control>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" time="150" start="1200,0">visible</animation>
+				<animation effect="fade" time="250">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>Release Date Value</description>
+				<type>label</type>
+				<label>#year</label>
+				<id>0</id>
+				<posX>1058</posX>
+				<posY>308</posY>
+				<width>240</width>
+				<align>left</align>
+				<font>AvalonLight14</font>
+				<textcolor>ffffff</textcolor>
+				<visible>Control.HasFocus(80)</visible>
+			</control>
+
+			<control>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" time="150" start="1200,0">visible</animation>
+				<animation effect="fade" time="250">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>Runtime Label</description>
+				<type>label</type>
+				<label>#Avalon.Runtime</label>
+				<id>0</id>
+				<posX>744</posX>
+				<posY>348</posY>
+				<width>240</width>
+				<align>left</align>
+				<font>AvalonLight12</font>
+				<textcolor>6aa5cb</textcolor>
+				<visible>Control.HasFocus(80)</visible>
+			</control>
+			
+			<control>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" time="150" start="1200,0">visible</animation>
+				<animation effect="fade" time="250">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>Runtime</description>
+				<type>label</type>
+				<label>#runtime</label>
+				<id>0</id>
+				<posX>1058</posX>
+				<posY>348</posY>
+				<width>240</width>
+				<align>left</align>
+				<font>AvalonLight14</font>
+				<textcolor>ffffff</textcolor>
+				<visible>Control.HasFocus(80)</visible>
+			</control>
+			
+			<control>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" time="150" start="1200,0">visible</animation>
+				<animation effect="fade" time="250">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>Genre Label</description>
+				<type>label</type>
+				<label>135</label>
+				<id>0</id>
+				<posX>744</posX>
+				<posY>388</posY>
+				<width>240</width>
+				<align>left</align>
+				<font>AvalonLight12</font>
+				<textcolor>6aa5cb</textcolor>
+				<visible>Control.HasFocus(80)</visible>
+			</control>
+			
+			<control>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" time="150" start="1200,0">visible</animation>
+				<animation effect="fade" time="250">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>Genre</description>
+				<type>fadelabel</type>
+				<label>#genre</label>
+				<id>0</id>
+				<posX>1058</posX>
+				<posY>388</posY>
+				<width>700</width>
+				<align>left</align>
+				<font>AvalonLight14</font>
+				<textcolor>ffffff</textcolor>
+				<visible>Control.HasFocus(80)</visible>
+			</control>
+			
+			<control>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" time="150" start="1200,0">visible</animation>
+				<animation effect="fade" time="250">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>Director Label</description>
+				<type>label</type>
+				<label>#(string.rtrim(L(199),':'))</label>
+				<id>0</id>
+				<posX>744</posX>
+				<posY>428</posY>
+				<width>240</width>
+				<align>left</align>
+				<font>AvalonLight12</font>
+				<textcolor>6aa5cb</textcolor>
+				<visible>Control.HasFocus(80)</visible>
+			</control>
+			
+			<control>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" time="150" start="1200,0">visible</animation>
+				<animation effect="fade" time="250">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<description>Director</description>
+				<type>fadelabel</type>
+				<label>#(iif(neq(#director,''),#director,'N/A'))</label>
+				<id>0</id>
+				<posX>1058</posX>
+				<posY>428</posY>
+				<width>700</width>
+				<align>left</align>
+				<font>AvalonLight14</font>
+				<textcolor>ffffff</textcolor>
+				<visible>Control.HasFocus(80)</visible>
+			</control>
+			
+			<control>
+				<animation effect="fade" time="0">WindowClose</animation>
+				<animation effect="slide" time="150" start="1200,0">visible</animation>
+				<animation effect="fade" time="250">visible</animation>
+				<animation effect="slide" time="0" end="1500,0">hidden</animation>
+				<type>textboxscrollup</type>
+				<description>Summary (list)</description>
+				<id>1025</id>
+				<posX>744</posX>
+				<posY>490</posY>
+				<width>1060</width>
+				<height>280</height>
+				<label>#plot</label>
+				<seperator>---------------------------------------------------------------------------------------------------------</seperator>
+				<onleft>1026</onleft>
+				<onright>1026</onright>
+				<onup>1026</onup>
+				<ondown>1026</ondown>
+				<visible>Control.HasFocus(80)</visible>
+			</control>
+			
+			
+		</control>
+	</controls>
+</window>
