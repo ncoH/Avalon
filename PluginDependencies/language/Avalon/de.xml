@@ -26,6 +26,8 @@
   <string Field="SkinSettingsThumbview">Vorschaubilder</string>
   <string Field="SkinSettingsInfo">Zeige Infos</string>
   <string Field="SkinSettingsPosterHide">Poster in Listenansicht automatisch ausblenden</string>
+  <string Field="SkinSettingsShowRSS">Aktiviere RSS Feeds im BasicHome/Home Menü</string>
+  <string Field="SkinSettingsShowHiddenMenu">Zeige Grafik für verstecktes Menü</string> 
   <string Field="SkinSettingsTV">Fernsehen</string>
   <string Field="SkinSettingsTVSeries">Serien</string>
   <string Field="SkinSettingsUpdate">Aktualisierung</string>
@@ -42,7 +44,18 @@
   <string Field="SkinSettingsMisc">Verschiedenes</string>  
   <string Field="Widebanner">Breite Banner</string>
   <string Field="WidebannerDefault">Breite Banner: Standard</string>
-  <string Field="WidebannerNoFanart">Breite Banner: ohne Fanart</string>  
+  <string Field="WidebannerNoFanart">Breite Banner: ohne Fanart</string>
+  <string Field="UnfocusedAlpha">Transparenz für Vorschaubilder und Liste</string>
+  <string Field="UnfocusedAlphaMenuLists">Unmarkierte Elemente: {0}</string>
+  <string Field="UnfocusedAlphaMenuThumbs">Unmarkierte Vorschaubilder: {0}</string>
+  <string Field="UnfocusedAlphaInvalidLine1">Ungültiger Wert, geben Sie einen Wert</string>
+  <string Field="UnfocusedAlphaInvalidLine2">zwischen 0 - 255 ein.</string>
+  <string Field="UnfocusedAlphaInvalidLine3">0 % Transparenz = 255, 100 % Transparenz = 0</string>
+  <string Field="RestoreDefaults">Voreinstellungen laden</string>
+  <string Field="ConfigRequiresRestartLine1">Die folgenden Einstellungsänderungen werden</string>
+  <string Field="ConfigRequiresRestartLine2">nach einem Neustart von Mediaportal sichtbar.</string>
+  <string Field="ConfigRequiresRestartLine3">Möchten Sie Mediaportal jetzt neustarten?</string>
+  <string Field="UseLargeFonts">Größere Schrift</string>  
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Laufzeit</string>
   <string Field="ReleaseDate">Veröffentlicht</string>

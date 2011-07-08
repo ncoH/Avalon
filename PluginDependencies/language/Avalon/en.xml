@@ -27,6 +27,8 @@
   <string Field="SkinSettingsThumbview ">Thumbnails</string>
   <string Field="SkinSettingsInfo">Enable Infos at bottom of the screen</string>
   <string Field="SkinSettingsPosterHide">Hide Poster on listview when not scrolling</string>
+  <string Field="SkinSettingsShowRSS">Enable RSS Feeds on BasicHome/Home</string>
+  <string Field="SkinSettingsShowHiddenMenu">Show Hidden Menu Image</string>  
   <string Field="SkinSettingsTV">Television</string>
   <string Field="SkinSettingsTVSeries">TV Series</string>
   <string Field="SkinSettingsUpdate">Update</string>
@@ -43,7 +45,18 @@
   <string Field="SkinSettingsMisc">Miscellaneous</string>
   <string Field="Widebanner">WideBanners</string>
   <string Field="WidebannerDefault">WideBanners: Default</string>
-  <string Field="WidebannerNoFanart">WideBanners: Without Fanart</string> 
+  <string Field="WidebannerNoFanart">WideBanners: Without Fanart</string>
+  <string Field="UnfocusedAlpha">Transparency/Opacity for thumbs and list</string>
+  <string Field="UnfocusedAlphaMenuLists">Unfocused Alpha on List Layouts: {0}</string>
+  <string Field="UnfocusedAlphaMenuThumbs">Unfocused Alpha on Thumb Layouts: {0}</string>
+  <string Field="UnfocusedAlphaInvalidLine1">Invalid value entered, please enter a value</string>
+  <string Field="UnfocusedAlphaInvalidLine2">between 0 - 255.</string>
+  <string Field="UnfocusedAlphaInvalidLine3">Opaque = 255, Transparent = 0</string>
+  <string Field="RestoreDefaults">Restore Defaults</string>
+  <string Field="ConfigRequiresRestartLine1">The following configuration changes will take</string>
+  <string Field="ConfigRequiresRestartLine2">affect on next MediaPortal restart.</string>
+  <string Field="ConfigRequiresRestartLine3">Would you like to restart now?</string>
+  <string Field="UseLargeFonts">Use Large Fonts</string>
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Runtime</string>
   <string Field="ReleaseDate">Release date</string>
