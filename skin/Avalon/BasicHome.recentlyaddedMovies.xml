@@ -55,7 +55,7 @@
         <width>500</width>
         <label>#fanarthandler.movingpicture.latest1.runtime min - #fanarthandler.movingpicture.latest1.year - #fanarthandler.movingpicture.latest1.genre</label>
         <font>AvalonLight12</font>
-        <textcolor>85cffe</textcolor>
+        <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
 		<visible>control.hasfocus(91919991) + control.isvisible(1021)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -110,7 +110,7 @@
         <width>500</width>
         <label>#fanarthandler.movingpicture.latest2.runtime min - #fanarthandler.movingpicture.latest2.year - #fanarthandler.movingpicture.latest2.genre</label>
         <font>AvalonLight12</font>
-        <textcolor>85cffe</textcolor>
+        <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
 		<visible>control.hasfocus(91919992)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -165,7 +165,7 @@
         <width>500</width>
         <label>#fanarthandler.movingpicture.latest3.runtime min - #fanarthandler.movingpicture.latest3.year - #fanarthandler.movingpicture.latest3.genre</label>
         <font>AvalonLight12</font>
-        <textcolor>85cffe</textcolor>
+        <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
 		<visible>control.hasfocus(91919993)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -217,22 +217,15 @@
 		<scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
       <control>
-		<type>imagelist</type>
+		<type>label</type>
 		<id>0</id>
-		<posX>1658</posX>
+		<posX>1803</posX>
 		<posY>627</posY>
 		<width>185</width>
 		<height>29</height>
-		<textureWidth>32</textureWidth>
-		<textureHeight>27</textureHeight>
-		<subitems>
-		<subitem>starblue.png</subitem>
-		<subitem>starwhite.png</subitem>
-		</subitems>
-		<orientation>horizontal</orientation>
-		<align>left</align>
-		<imagesToDraw>5</imagesToDraw>
-		<percentage>#fanarthandler.movingpicture.latest1.rating</percentage>
+        <label>#fanarthandler.movingpicture.latest1.runtime min</label>
+        <textcolor>6aa5cb</textcolor>
+        <align>right</align>
       </control> 
       <control>
         <description>Movie 2 name</description>
@@ -246,24 +239,17 @@
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
-      <control>
-		<type>imagelist</type>
+       <control>
+		<type>label</type>
 		<id>0</id>
-		<posX>1658</posX>
+		<posX>1803</posX>
 		<posY>666</posY>
 		<width>185</width>
 		<height>29</height>
-		<textureWidth>32</textureWidth>
-		<textureHeight>27</textureHeight>
-		<subitems>
-		<subitem>starblue.png</subitem>
-		<subitem>starwhite.png</subitem>
-		</subitems>
-		<orientation>horizontal</orientation>
-		<align>left</align>
-		<imagesToDraw>5</imagesToDraw>
-		<percentage>#fanarthandler.movingpicture.latest2.rating</percentage>
-      </control>
+        <label>#fanarthandler.movingpicture.latest2.runtime min</label>
+        <textcolor>6aa5cb</textcolor>
+        <align>right</align>
+      </control> 
       <control>
         <description>Movie 3 name</description>
         <type>fadelabel</type>
@@ -276,23 +262,16 @@
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
-      <control>
-		<type>imagelist</type>
+       <control>
+		<type>label</type>
 		<id>0</id>
-		<posX>1658</posX>
+		<posX>1803</posX>
 		<posY>705</posY>
 		<width>185</width>
 		<height>29</height>
-		<textureWidth>32</textureWidth>
-		<textureHeight>27</textureHeight>
-		<subitems>
-		<subitem>starblue.png</subitem>
-		<subitem>starwhite.png</subitem>
-		</subitems>
-		<orientation>horizontal</orientation>
-		<align>left</align>
-		<imagesToDraw>5</imagesToDraw>
-		<percentage>#fanarthandler.movingpicture.latest3.rating</percentage>
+        <label>#fanarthandler.movingpicture.latest3.runtime min</label>
+        <textcolor>6aa5cb</textcolor>
+        <align>right</align>
       </control> 	  
 </control>	  
 
