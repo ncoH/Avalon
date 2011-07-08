@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Spanish (es) -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
-<!-- Last Updated: 15th June 2011 -->
+<!-- Last Updated: 8th July 2011 -->
 <strings>
  
  <!-- Skin Updates / Patching GUI -->
@@ -27,6 +27,8 @@
   <string Field="SkinSettingsThumbview ">Vista Miniaturas</string>
   <string Field="SkinSettingsInfo">Mostrar info en la parte inferior de la pantalla</string>
   <string Field="SkinSettingsPosterHide">Ocultar carátula al no hacer scroll</string>
+  <string Field="SkinSettingsShowRSS">Mostrar barra RSS en BasicHome/Home</string>
+  <string Field="SkinSettingsShowHiddenMenu">Mostrar imagen de "Menú Oculto"</string>  
   <string Field="SkinSettingsTV">Televisión</string>
   <string Field="SkinSettingsTVSeries">TV Series</string>
   <string Field="SkinSettingsUpdate">Actualizar</string>
@@ -43,7 +45,18 @@
   <string Field="SkinSettingsMisc">Otros</string>
   <string Field="Widebanner">Banners grandes</string>
   <string Field="WidebannerDefault">Banners grandes: Por defecto</string>
-  <string Field="WidebannerNoFanart">Banners grandes: Sin Fanart</string> 
+  <string Field="WidebannerNoFanart">Banners grandes: Sin Fanart</string>
+  <string Field="UnfocusedAlpha">Transparencia/Opacidad en miniaturas y listas</string>
+  <string Field="UnfocusedAlphaMenuLists">Alfa no seleccionado en listas: {0}</string>
+  <string Field="UnfocusedAlphaMenuThumbs">Alfa no seleccionado en miniaturas: {0}</string>
+  <string Field="UnfocusedAlphaInvalidLine1">Valor no válido, por favor introduzca un valor</string>
+  <string Field="UnfocusedAlphaInvalidLine2">entre 0 - 255.</string>
+  <string Field="UnfocusedAlphaInvalidLine3">Opacidad = 255, Transparencia = 0</string>
+  <string Field="RestoreDefaults">Restaurar por defecto</string>
+  <string Field="ConfigRequiresRestartLine1">Los cambios efectuados surtirán efecto la</string>
+  <string Field="ConfigRequiresRestartLine2">próxima vez que reinicie MediaPortal.</string>
+  <string Field="ConfigRequiresRestartLine3">¿Desea reiniciar el programa ahora?</string>
+  <string Field="UseLargeFonts">Usar letras grandes</string>
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Duración</string>
   <string Field="ReleaseDate">Año</string>
@@ -56,6 +69,8 @@
   <!-- Latest Media -->  
   <string Field="LatestMovies">Últimas Películas</string>
   <string Field="LatestEpisodes">Últimos Capítulos</string>
+  <string Field="LatestMusic">Últimos Álbumes</string>
+  <string Field="LatestRecordings">Últimas Grabaciones</string>
   <!-- Misc -->   
   <string Field="FanartScraping">Descargando Fanart</string>
   <string Field="ReturnListMovies">Pulse "izquierda" para volver a la lista de películas</string> 
