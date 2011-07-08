@@ -168,11 +168,11 @@
 		<type>label</type>
 		<id>1</id>
 		<width>400</width>
-		<posX>340</posX>
-		<posY>354</posY>
+		<posX>325</posX>
+		<posY>154</posY>
 		<label>287</label>
-		<font>AvalonLight16</font>
-		<textcolor>ff85cffe</textcolor>
+		<font>fontB20</font>
+		<textcolor>ffffffff</textcolor>
 		<visible>Control.IsVisible(850)</visible>
     </control>
 	
@@ -181,11 +181,11 @@
 		<type>label</type>
 		<id>1</id>
 		<width>400</width>
-		<posX>340</posX>
-		<posY>354</posY>
+		<posX>325</posX>
+		<posY>154</posY>
 		<label>292</label>
-		<font>AvalonLight16</font>
-		<textcolor>ff85cffe</textcolor>
+		<font>fontB20</font>
+		<textcolor>ffffffff</textcolor>
 		<visible>Control.IsVisible(500)</visible>
     </control>
 	
@@ -300,9 +300,11 @@
       <description>Subtitle Delay label</description>
       <type>label</type>
       <id>850</id>
-      <posX>340</posX>
-      <posY>414</posY>
+      <posX>399</posX>
+      <posY>464</posY>
 	  <align>left</align>
+	  <font>AvalonLight12</font>
+	  <textcolor>6aa5cb</textcolor>
       <label>303</label>
       <visible>no</visible>
     </control>
@@ -311,41 +313,28 @@
       <description>Subtitle Delay Slider</description>
       <type>slider</type>
       <id>800</id>
-      <posX>320</posX>
-      <posY>440</posY>
+      <posX>666</posX>
+      <posY>459</posY>
       <spintype>float</spintype>
       <showrange>no</showrange>
-      <textureSliderBar>osd_slider_bg2.png</textureSliderBar>
-      <textureSliderNib>osd_slider_nibNF2.png</textureSliderNib>
-      <textureSliderNibFocus>osd_slider_nibFO2.png</textureSliderNibFocus>
-      <onup>800</onup>
+      <textureSliderBar>osd_slider_bg.png</textureSliderBar>
+      <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
+      <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
+      <onup>801</onup>
       <ondown>801</ondown>
       <onleft>800</onleft>
       <onright>800</onright>
       <visible>no</visible>
     </control>
-	
-	<control>
-      <description>Subtitles delay On/Off Checkbox Background</description>
-      <type>image</type>
-      <id>0</id>
-      <posX>315</posX>
-      <posY>470</posY>
-      <width>236</width>
-      <height>36</height>
-      <texture>listcontrol_item_selected_tiny.png</texture>
-      <visible>Control.HasFocus(801)</visible>
-    </control>
+
 	
     <control>
       <description>Subtitles delay On/Off Checkbox</description>
       <type>checkmark</type>
       <id>801</id>
-      <posX>315</posX>
-      <posY>475</posY>
+      <posX>323</posX>
+      <posY>246</posY>
       <label>305</label>
-      <MarkWidth>39</MarkWidth>
-      <MarkHeight>36</MarkHeight>
       <font>font12</font>
       <onup>800</onup>
       <ondown>800</ondown>
@@ -485,14 +474,15 @@
       <onright>400</onright>
       <visible>no</visible>
     </control>
-	
     <control>
       <description>A/v Delay label</description>
       <type>label</type>
       <id>550</id>
-      <posX>340</posX>
-      <posY>368</posY>
+      <posX>399</posX>
+      <posY>464</posY>
 	  <align>left</align>
+	  <font>AvalonLight12</font>
+	  <textcolor>6aa5cb</textcolor>
       <label>303</label>
       <visible>no</visible>
     </control>
@@ -501,13 +491,13 @@
       <description>A/V Delay Slider</description>
       <type>slider</type>
       <id>500</id>
-      <posX>320</posX>
-      <posY>394</posY>
+      <posX>666</posX>
+      <posY>459</posY>
       <spintype>float</spintype>
       <showrange>no</showrange>
-      <textureSliderBar>osd_slider_bg2.png</textureSliderBar>
-      <textureSliderNib>osd_slider_nibNF2.png</textureSliderNib>
-      <textureSliderNibFocus>osd_slider_nibFO2.png</textureSliderNibFocus>
+      <textureSliderBar>osd_slider_bg.png</textureSliderBar>
+      <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
+      <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
       <onup>500</onup>
       <ondown>501</ondown>
       <onleft>501</onleft>

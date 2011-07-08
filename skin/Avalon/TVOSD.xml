@@ -229,7 +229,7 @@
 		<width>1560</width>
 		<height>734</height>
 		<texture>osd_top_bg.png</texture>
-		<visible>[Control.IsVisible(2111) + Control.HasFocus(995)] | [Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)]</visible>
+		<visible>[Control.IsVisible(2111) + Control.HasFocus(995)] | [Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)]</visible>
 	</control>
 	
     <control>
@@ -237,11 +237,11 @@
 		<type>label</type>
 		<id>1</id>
 		<width>400</width>
-		<posX>340</posX>
-		<posY>354</posY>
+		<posX>325</posX>
+		<posY>154</posY>
 		<label>287</label>
-		<font>Segoe Light16</font>
-		<textcolor>ff85cffe</textcolor>
+		<font>fontB20</font>
+		<textcolor>ffffffff</textcolor>
 		<visible>Control.IsVisible(850)</visible>
     </control>
 	
@@ -250,11 +250,11 @@
 		<type>label</type>
 		<id>1</id>
 		<width>400</width>
-		<posX>340</posX>
-		<posY>354</posY>
+		<posX>325</posX>
+		<posY>154</posY>
 		<label>292</label>
-		<font>Segoe Light16</font>
-		<textcolor>ff85cffe</textcolor>
+		<font>fontB20</font>
+		<textcolor>ffffffff</textcolor>
 		<visible>Control.IsVisible(500)</visible>
     </control>
 	
@@ -264,7 +264,7 @@
 		<id>1</id>
 		<width>400</width>
 		<posX>325</posX>
-		<posY>205</posY>
+		<posY>154</posY>
 		<label>291</label>
 		<font>fontB20</font>
 		<textcolor>ffffffff</textcolor>
@@ -416,9 +416,11 @@
       <description>Subtitle Delay label</description>
       <type>label</type>
       <id>850</id>
-      <posX>340</posX>
-      <posY>414</posY>
+      <posX>399</posX>
+      <posY>464</posY>
 	  <align>left</align>
+	  <font>AvalonLight12</font>
+	  <textcolor>6aa5cb</textcolor>
       <label>303</label>
       <visible>no</visible>
     </control>
@@ -427,41 +429,28 @@
       <description>Subtitle Delay Slider</description>
       <type>slider</type>
       <id>800</id>
-      <posX>320</posX>
-      <posY>440</posY>
+      <posX>666</posX>
+      <posY>459</posY>
       <spintype>float</spintype>
       <showrange>no</showrange>
-      <textureSliderBar>osd_slider_bg2.png</textureSliderBar>
-      <textureSliderNib>osd_slider_nibNF2.png</textureSliderNib>
-      <textureSliderNibFocus>osd_slider_nibFO2.png</textureSliderNibFocus>
-      <onup>800</onup>
+      <textureSliderBar>osd_slider_bg.png</textureSliderBar>
+      <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
+      <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
+      <onup>801</onup>
       <ondown>801</ondown>
       <onleft>800</onleft>
       <onright>800</onright>
       <visible>no</visible>
     </control>
-	
-	<control>
-      <description>Subtitles delay On/Off Checkbox Background</description>
-      <type>image</type>
-      <id>0</id>
-      <posX>315</posX>
-      <posY>470</posY>
-      <width>236</width>
-      <height>36</height>
-      <texture>listcontrol_item_selected_tiny.png</texture>
-      <visible>Control.HasFocus(801)</visible>
-    </control>
+
 	
     <control>
       <description>Subtitles delay On/Off Checkbox</description>
       <type>checkmark</type>
       <id>801</id>
-      <posX>315</posX>
-      <posY>475</posY>
+      <posX>323</posX>
+      <posY>246</posY>
       <label>305</label>
-      <MarkWidth>39</MarkWidth>
-      <MarkHeight>36</MarkHeight>
       <font>font12</font>
       <onup>800</onup>
       <ondown>800</ondown>
@@ -606,9 +595,11 @@
       <description>A/v Delay label</description>
       <type>label</type>
       <id>550</id>
-      <posX>340</posX>
-      <posY>414</posY>
+      <posX>399</posX>
+      <posY>464</posY>
 	  <align>left</align>
+	  <font>AvalonLight12</font>
+	  <textcolor>6aa5cb</textcolor>
       <label>303</label>
       <visible>no</visible>
     </control>
@@ -617,13 +608,13 @@
       <description>A/V Delay Slider</description>
       <type>slider</type>
       <id>500</id>
-      <posX>320</posX>
-      <posY>440</posY>
+      <posX>666</posX>
+      <posY>459</posY>
       <spintype>float</spintype>
       <showrange>no</showrange>
-      <textureSliderBar>osd_slider_bg2.png</textureSliderBar>
-      <textureSliderNib>osd_slider_nibNF2.png</textureSliderNib>
-      <textureSliderNibFocus>osd_slider_nibFO2.png</textureSliderNibFocus>
+      <textureSliderBar>osd_slider_bg.png</textureSliderBar>
+      <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
+      <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
       <onup>500</onup>
       <ondown>501</ondown>
       <onleft>501</onleft>
@@ -656,26 +647,28 @@
       <description>Video Position label</description>
       <type>label</type>
       <id>750</id>
-      <posX>340</posX>
-      <posY>414</posY>
+      <posX>399</posX>
+      <posY>464</posY>
 	  <align>left</align>
       <label>Video Position</label>
       <visible>no</visible>
+	  <font>AvalonLight12</font>
+	  <textcolor>6aa5cb</textcolor>
     </control>
 	
     <control>
       <description>Video Position Slider</description>
       <type>slider</type>
       <id>700</id>
-      <posX>320</posX>
-      <posY>440</posY>
+      <posX>666</posX>
+      <posY>459</posY>
       <spintype>float</spintype>
       <showrange>no</showrange>
-      <textureSliderBar>osd_slider_bg2.png</textureSliderBar>
-      <textureSliderNib>osd_slider_nibNF2.png</textureSliderNib>
-      <textureSliderNibFocus>osd_slider_nibFO2.png</textureSliderNibFocus>
-      <onup>700</onup>
-      <ondown>700</ondown>
+      <textureSliderBar>osd_slider_bg.png</textureSliderBar>
+      <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
+      <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
+      <onup>703</onup>
+      <ondown>704</ondown>
       <onleft>700</onleft>
       <onright>700</onright>
       <visible>no</visible>
@@ -685,11 +678,11 @@
       <description>Non-Interleaved Checkbox</description>
       <type>checkmark</type>
       <id>701</id>
-      <posX>1828</posX>
-      <posY>462</posY>
+      <posX>323</posX>
+      <posY>246</posY>
       <label>306</label>
-      <onup>700</onup>
-      <ondown>703</ondown>
+      <onup>706</onup>
+      <ondown>702</ondown>
       <onleft>701</onleft>
       <onright>701</onright>
       <visible>no</visible>
@@ -699,12 +692,12 @@
       <description>No Cache Checkbox</description>
       <type>checkmark</type>
       <id>702</id>
-      <posX>1838</posX>
-      <posY>462</posY>
+      <posX>323</posX>
+      <posY>299</posY>
       <label>431</label>
-      <onup>700</onup>
+      <onup>701</onup>
       <ondown>703</ondown>
-      <onleft>701</onleft>
+      <onleft>702</onleft>
       <onright>702</onright>
       <visible>no</visible>
     </control>
@@ -713,13 +706,13 @@
       <description>Adjust Framerate Checkbox</description>
       <type>checkmark</type>
       <id>703</id>
-      <posX>1828</posX>
-      <posY>493</posY>
+      <posX>323</posX>
+      <posY>346</posY>
       <label>343</label>
-      <onup>701</onup>
-      <ondown>704</ondown>
+      <onup>702</onup>
+      <ondown>700</ondown>
       <onleft>703</onleft>
-      <onright>702</onright>
+      <onright>703</onright>
       <visible>no</visible>
     </control>
 	
@@ -727,10 +720,11 @@
       <description>brightness label</description>
       <type>label</type>
       <id>752</id>
-      <posX>1828</posX>
-      <posY>531</posY>
+      <posX>399</posX>
+      <posY>519</posY>
       <label>464</label>
-      <font>font13</font>
+	  <font>AvalonLight12</font>
+	  <textcolor>6aa5cb</textcolor>
       <visible>no</visible>
     </control>
 	
@@ -738,13 +732,14 @@
       <description>brightness</description>
       <type>slider</type>
       <id>704</id>
-      <posX>1833</posX>
-      <posY>531</posY>
-      <spintype>int</spintype>
+      <posX>666</posX>
+      <posY>514</posY>
+      <spintype>float</spintype>
+      <showrange>no</showrange>
       <textureSliderBar>osd_slider_bg.png</textureSliderBar>
       <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
       <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
-      <onup>703</onup>
+      <onup>700</onup>
       <ondown>705</ondown>
       <onleft>704</onleft>
       <onright>704</onright>
@@ -755,10 +750,11 @@
       <description>contrast label</description>
       <type>label</type>
       <id>753</id>
-      <posX>1828</posX>
-      <posY>568</posY>
+      <posX>399</posX>
+      <posY>579</posY>
       <label>465</label>
-      <font>font13</font>
+	  <font>AvalonLight12</font>
+	  <textcolor>6aa5cb</textcolor>
       <visible>no</visible>
     </control>
 	
@@ -766,9 +762,10 @@
       <description>contrast</description>
       <type>slider</type>
       <id>705</id>
-      <posX>1833</posX>
-      <posY>568</posY>
-      <spintype>int</spintype>
+      <posX>666</posX>
+      <posY>574</posY>
+      <spintype>float</spintype>
+      <showrange>no</showrange>
       <textureSliderBar>osd_slider_bg.png</textureSliderBar>
       <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
       <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
@@ -783,10 +780,11 @@
       <description>gamma label</description>
       <type>label</type>
       <id>754</id>
-      <posX>1828</posX>
-      <posY>606</posY>
+      <posX>399</posX>
+      <posY>638</posY>
       <label>466</label>
-      <font>font13</font>
+	  <font>AvalonLight12</font>
+	  <textcolor>6aa5cb</textcolor>
       <visible>no</visible>
     </control>
 	
@@ -794,14 +792,15 @@
       <description>gamma</description>
       <type>slider</type>
       <id>706</id>
-      <posX>1833</posX>
-      <posY>606</posY>
-      <spintype>int</spintype>
+      <posX>666</posX>
+      <posY>634</posY>
+      <spintype>float</spintype>
+      <showrange>no</showrange>
       <textureSliderBar>osd_slider_bg.png</textureSliderBar>
       <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
       <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
       <onup>705</onup>
-      <ondown>706</ondown>
+      <ondown>701</ondown>
       <onleft>706</onleft>
       <onright>706</onright>
       <visible>no</visible>
