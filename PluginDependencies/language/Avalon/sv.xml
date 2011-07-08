@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Swedish -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
-<!-- Last Updated: 12th May 2011 -->
+<!-- Last Updated: 8th July 2011 -->
 <strings>
  
  <!-- Skin Updates / Patching GUI -->
@@ -27,6 +27,8 @@
   <string Field="SkinSettingsThumbview ">Miniatyrbilder</string>
   <string Field="SkinSettingsInfo">Tillåt information på botten av skärmen</string>
   <string Field="SkinSettingsPosterHide">Göm affisch i listvyn när rullning inte sker</string>
+  <string Field="SkinSettingsShowRSS">Visa RSS-strömmar på Basic Home/Home</string>
+  <string Field="SkinSettingsShowHiddenMenu">Visa hänvisning till gömd meny</string>  
   <string Field="SkinSettingsTV">TV</string>
   <string Field="SkinSettingsTVSeries">TV-serier</string>
   <string Field="SkinSettingsUpdate">Uppdatering</string>
@@ -44,6 +46,17 @@
   <string Field="Widebanner">WideBanners</string>
   <string Field="WidebannerDefault">Banners sida vid sida: grundinställning</string>
   <string Field="WidebannerNoFanart">Banners sida vid sida: utan FanArt</string> 
+  <string Field="UnfocusedAlpha">Transparens/Opacitet för tumnagelbilder och listor</string>
+  <string Field="UnfocusedAlphaMenuLists">Ej fokuserad Alfa-kanal för list-vyer: {0}</string>
+  <string Field="UnfocusedAlphaMenuThumbs">Ej fokuserad Alfa-kanal för fingernagel-vyer: {0}</string>
+  <string Field="UnfocusedAlphaInvalidLine1">Ogiltigt värde valt, mata in ett värde</string>
+  <string Field="UnfocusedAlphaInvalidLine2">mellan 0 - 255.</string>
+  <string Field="UnfocusedAlphaInvalidLine3">Opaque = 255, Transparent = 0</string>
+  <string Field="RestoreDefaults">Återställ förvalda värden</string>
+  <string Field="ConfigRequiresRestartLine1">De inställningar som gjorts kommer att gälla</string>
+  <string Field="ConfigRequiresRestartLine2">nästa gång MediaPortal startats om.</string>
+  <string Field="ConfigRequiresRestartLine3">Starta om nu?</string>
+  <string Field="UseLargeFonts">Använd stor textstorlek</string>
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Speltid</string>
   <string Field="ReleaseDate">År</string>
@@ -56,6 +69,8 @@
   <!-- Latest Media -->  
   <string Field="LatestMovies">Senaste filmerna</string>
   <string Field="LatestEpisodes">Senaste avsnitten</string>
+  <string Field="LatestMusic">Senaste musiken</string>
+  <string Field="LatestRecordings">Senaste inspelningarna</string>
   <!-- Misc -->   
   <string Field="FanartScraping">Letar ny FanArt</string>
   <string Field="ReturnListMovies">Steg åt vänster återvänder till filmlistan</string> 
