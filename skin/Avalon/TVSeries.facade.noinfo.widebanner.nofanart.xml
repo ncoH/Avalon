@@ -62,7 +62,6 @@
 		<textureMask>tvseries_listbanner_mask.png</textureMask>
         <keepaspectratio>no</keepaspectratio>
         <enableFocusZoom>yes</enableFocusZoom>
-        <scrollOffset>1</scrollOffset>
         <unfocusedAlpha>255</unfocusedAlpha>
     </control>
 		

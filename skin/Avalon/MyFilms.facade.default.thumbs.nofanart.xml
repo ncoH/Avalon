@@ -82,7 +82,6 @@ This file should contain the facade view
 				<posY>232</posY>
 				<width>1650</width>
 				<height>600</height>
-				<scrollOffset>1</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<onleft>2</onleft>

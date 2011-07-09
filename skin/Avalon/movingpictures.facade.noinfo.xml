@@ -18,13 +18,14 @@ This file should contain the facade view
         <onright>51</onright>
 		<scrollOffset>1</scrollOffset>
 		<posX>1166</posX>
-		<posY>236</posY>
-		<height>700</height>
+		<posY>153</posY>
+		<height>750</height>
 		<width>684</width>
 		<spinPosX>1667</spinPosX>
 		<spinPosY>1010</spinPosY>
 		<spinAlign>right</spinAlign>
 		<textXOff>50</textXOff>
+		<textXOff2>650</textXOff2>
 		<textureHeight>55</textureHeight>		
 		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 		<textureNoFocus>-</textureNoFocus>
@@ -44,15 +45,18 @@ This file should contain the facade view
 			<onright>80</onright>
 			<scrollOffset>1</scrollOffset>
 			<posX>1166</posX>
-			<posY>236</posY>
-			<height>700</height>
+			<posY>153</posY>
+			<height>750</height>
 			<width>684</width>
 			<spinAlign>right</spinAlign>
 			<textXOff>50</textXOff>
+			<textXOff2>650</textXOff2>
 			<textureHeight>55</textureHeight>
 			<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
 			<dimColor>ffffffff</dimColor>
+			<spinPosX>1832</spinPosX>
+			<spinPosY>880</spinPosY>
 		</control>
 
 		<control>
@@ -95,8 +99,9 @@ This file should contain the facade view
                 <scrollbarWidth>689</scrollbarWidth>
 				<scrollbarHeight>4</scrollbarHeight>
                 <scrollbarYOff>538</scrollbarYOff>
-				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,780" time="200">focus</thumbAnimation>
-				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,780" time="100">unfocus</thumbAnimation>
+                <spinPosX>-2000</spinPosX>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="142,142" center="0,780" time="200">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="142,142" reversible="false" end="100,100" center="0,780" time="100">unfocus</thumbAnimation>
 		</control>
 
 			<control>
@@ -107,7 +112,6 @@ This file should contain the facade view
 				<posY>232</posY>
 				<width>1120</width>
 				<height>800</height>
-				<scrollOffset>1</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<onleft>2</onleft>

@@ -47,7 +47,6 @@
 				<posY>226</posY>
 				<width>1200</width>
 				<height>450</height>
-				<scrollOffset>0</scrollOffset>
 				<onleft>2</onleft>
 				<onright>50</onright>
 				<itemWidth>165</itemWidth>
