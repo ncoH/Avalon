@@ -10,35 +10,26 @@ languages -->
   <string Field="UpdateInstall">Updaten en Installeren</string>
   <string Field="NoUpdatesAvailable">Geen Updates beschikbaar</string>
   <string Field="DownloadingPatch">Update Downloaden: {0}</string>
-  <string Field="DownloadingProgress">Gedownload {0}KB van {1}KB
-({2}%)</string>
-  <string Field="NumPatchesInstalled">Aantal Update bestanden geinstalleerd:
-{0}</string>
-  <string Field="PatchUpdateComplete">Updaten naar Skin versie: {0}
-Complete</string>
-  <string Field="UpdateAvailableHeading">Update beschikbaar - Veranderingen
-Logboek</string>
-  <string Field="mupdateheader">Update Installatieprogramma gedownload naar
-het bureaublad</string>
-  <string Field="mupdateline1">Handmatige Update nodig - Sluit om te
-activeren</string>
+  <string Field="DownloadingProgress">Gedownload {0}KB van {1}KB ({2}%)</string>
+  <string Field="NumPatchesInstalled">Aantal Update bestanden geinstalleerd: {0}</string>
+  <string Field="PatchUpdateComplete">Updaten naar Skin versie: {0} Complete</string>
+  <string Field="UpdateAvailableHeading">Update beschikbaar - Veranderingen Logboek</string>
+  <string Field="mupdateheader">Update Installatieprogramma gedownload naar het bureaublad</string>
+  <string Field="mupdateline1">Handmatige Update nodig - Sluit om te activeren</string>
   <string Field="mupdateline2">MediaPortal en/of Configuratie</string>
   <string Field="mupdateline3">en start:  {0}</string>
   <string Field="mupdateline4">Welke u op het Bureaublad vindt</string>
   <!-- Skin Settings -->
   <string Field="SkinSettings">Skin Instellingen</string>
   <string Field="SkinUpdateNF">Update beschikbaar</string>
-  <string Field="SkinUpdateNF2">Klik links en druk knop in voor
-installatie</string>
+  <string Field="SkinUpdateNF2">Klik links en OK voor installatie</string>
   <string Field="SkinSettingsmovpicsLayout">Film Informatie Layout</string>
   <string Field="SkinSettingsseriesLayout">Series Informatie Layout</string>
   <string Field="SkinSettingsThumbview ">Pictogrammen</string>
   <string Field="SkinSettingsInfo">Activeer Info op het scherm</string>
-  <string Field="SkinSettingsPosterHide">Verberg Poster in lijstweergave als
-u niet scrollt</string>
-  <string Field="SkinSettingsShowRSS">Enable RSS Feeds on
-BasicHome/Home</string>
-  <string Field="SkinSettingsShowHiddenMenu">Show Hidden Menu Image</string>
+  <string Field="SkinSettingsPosterHide">Verberg Poster in lijstweergave bij scroll pauze</string>
+  <string Field="SkinSettingsShowRSS">Activeer RSS Feeds op BasicHome/Home</string>
+  <string Field="SkinSettingsShowHiddenMenu">Toon Verborgen Menu Tab</string>
   <string Field="SkinSettingsTV">Televisie</string>
   <string Field="SkinSettingsTVSeries">TV Series</string>
   <string Field="SkinSettingsUpdate">Update</string>
@@ -52,27 +43,20 @@ BasicHome/Home</string>
   <string Field="TVMiniGuideRows">TV Mini Gids Rijen</string>
   <string Field="TVMiniGuideThreeRows">TV Mini Gids: 3 Rijen</string>
   <string Field="TVMiniGuideEightRows">TV Mini Gids: 8 Rijen</string>
-  <string Field="SkinSettingsMisc">Overige</string>
+  <string Field="SkinSettingsMisc">Algemeen</string>
   <string Field="Widebanner">Brede Banners</string>
   <string Field="WidebannerDefault">Brede Banners: Standaard</string>
   <string Field="WidebannerNoFanart">Brede Banners: Zonder Fanart</string>
-  <string Field="UnfocusedAlpha">Transparantie van Pictogram en Lijst
-weergave</string>
-  <string Field="UnfocusedAlphaMenuLists">Oneselecteerde Lijst Weergave:
-{0}</string>
-  <string Field="UnfocusedAlphaMenuThumbs">Onselecteerde Pictogram Weergave:
-{0}</string>
-  <string Field="UnfocusedAlphaInvalidLine1">Ongeldige waarde, geef een
-waarde in</string>
+  <string Field="UnfocusedAlpha">Lijst/Pictogram Dekking</string>
+  <string Field="UnfocusedAlphaMenuLists">Lijst Dekking: {0}</string>
+  <string Field="UnfocusedAlphaMenuThumbs">Pictogram Dekking: {0}</string>
+  <string Field="UnfocusedAlphaInvalidLine1">Ongeldige waarde, geef een waarde in</string>
   <string Field="UnfocusedAlphaInvalidLine2">tussen 0 - 255.</string>
-  <string Field="UnfocusedAlphaInvalidLine3">Niet Transparant = 255,
-Transparant = 0</string>
+  <string Field="UnfocusedAlphaInvalidLine3">Onbedekt = 255, Bedekt = 0</string>
   <string Field="RestoreDefaults">Herstel Standaard Waarden</string>
-  <string Field="ConfigRequiresRestartLine1">Deze veranderingen zullen van
-kracht</string>
-  <string Field="ConfigRequiresRestartLine2">worden bij de volgende
-MediaPortal herstart.</string>
-  <string Field="ConfigRequiresRestartLine3">Wilt u nu herstarten?</string>
+  <string Field="ConfigRequiresRestartLine1">U moet herstarten</string>
+  <string Field="ConfigRequiresRestartLine2">om de aanpassingen te activeren</string>
+  <string Field="ConfigRequiresRestartLine3">Nu herstarten?</string>
   <string Field="UseLargeFonts">Gebruik Groot Lettertype</string>
   <!-- MovingPictures/MyFilms -->
   <string Field="Runtime">Speelduur</string>
