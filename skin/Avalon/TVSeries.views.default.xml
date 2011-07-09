@@ -164,7 +164,7 @@
 		<height>27</height>
 		<align>left</align>
 		<texture>#TVSeries.Series.RatingPath</texture>
-		<visible>facadeview.list|facadeview.largeicons+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
+		<visible>[facadeview.list|facadeview.largeicons]+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
     </control>
 	
     <control>
@@ -343,6 +343,22 @@
 	
 	
 	<!-- 			:: EPISODE INFO LABELS ::		-->
+    
+	<control>
+		<type>image</type>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<description>Logos</description>
+		<id>66</id>
+		<posX>1500</posX>
+		<posY>834</posY>
+		<width>900</width>
+		<height>38</height>
+		<texture>#TVSeries.Logos</texture>
+		<keepaspectratio>yes</keepaspectratio>
+		<visible>facadeview.list+Control.IsVisible(1239)</visible>
+	</control>
 	
 	<control>
 		<type>label</type>
@@ -548,6 +564,22 @@
 		<texture flipY="true" mask="tvseries_thumb_mask.png">#TVSeries.EpisodeImage</texture>
 		<visible>facadeview.list+Control.IsVisible(1239)</visible>
 	</control>
+    
+	<control>
+		<description>Episode Thumb Shadow</description>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>245</posX>
+		<posY>814</posY>
+		<width>399</width>
+		<height>233</height>
+		<texture>tvseries_thumb_shadow.png</texture>
+		<visible>facadeview.list+Control.IsVisible(1239)</visible>
+	</control>
+
 	
     <!-- ********************** IMPORT PROCESS *************************************** -->
     <control>
