@@ -127,7 +127,6 @@
 		<width>1920</width>
 		<height>1080</height>
 		<texture>background.png</texture>
-		<visible>Control.IsVisible(1000)|Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
@@ -139,7 +138,6 @@
 		<width>1890</width>
 		<height>682</height>
 		<texture>weather_bg.png</texture>
-		<visible>Control.IsVisible(1000)|Control.IsVisible(31)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
@@ -156,7 +154,6 @@
 		<label>8</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>font22</font>
-		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
 	</control>
 
 	<control>
@@ -168,37 +165,21 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
-		<visible>!plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
-	<control>
-		<description>last update time</description>
-		<type>label</type>
-		<id>0</id>
-		<posX>190</posX>
-		<posY>99</posY>
-		<align>left</align>
-		<font>AvalonLight12</font>
-		<textcolor>ffffff</textcolor>
-		<label>#infoservice.weather.lastupdated.message</label>
-		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
 	
 	<control>
 		<description>5-day location</description>
 		<type>label</type>
-		<id>1</id>
+		<id>10</id>
 		<posX>1856</posX>
 		<posY>945</posY>
 		<width>1170</width>
-		<label>#infoservice.weather.location</label>
+		<label>-</label>
 		<font>fontB20</font>
 		<align>right</align>
-		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -214,7 +195,7 @@
 		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+		<visible>plugin.isenabled(InfoService)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -257,13 +238,12 @@
 	<control>
 		<description>current feels like static label</description>
 		<type>label</type>
-		<id>0</id>
+		<id>224</id>
 		<posX>582</posX>
 		<posY>710</posY>
-		<label>402</label>
+		<label>-</label>
 		<font>font11</font>
 		<textcolor>85cffe</textcolor>
-		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -271,14 +251,13 @@
 	<control>
 		<description>current feels like label</description>
 		<type>label</type>
-		<id>0</id>
+		<id>24</id>
 		<posX>800</posX>
 		<posY>710</posY>
-		<label>#infoservice.weather.today.feelsliketemp</label>
+		<label>-</label>
 		<font>font11</font>
 		<align>right</align>
 		<textcolor>85cffe</textcolor>
-		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -286,14 +265,13 @@
 	<control>
 		<description>current humidity static label</description>
 		<type>fadelabel</type>
-		<id>0</id>
+		<id>228</id>
 		<posX>582</posX>
 		<posY>742</posY>
 		<width>200</width>
-		<label>406</label>
+		<label>-</label>
 		<font>font11</font>
 		<textcolor>85cffe</textcolor>
-		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -301,115 +279,45 @@
 	<control>
 		<description>current humidity label</description>
 		<type>label</type>
-		<id>0</id>
+		<id>28</id>
 		<posX>800</posX>
 		<posY>742</posY>
-		<label>#infoservice.weather.today.humidity</label>
+		<label>-</label>
 		<font>font11</font>
 		<align>right</align>
 		<textcolor>85cffe</textcolor>
-		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
+	
 	
 	<control>
 		<description>current UV Index static label</description>
 		<type>label</type>
 		<id>225</id>
-		<posX>231</posX>
-		<posY>773</posY>
-		<label>-</label>
-		<font>font11</font>
-		<textcolor>85cffe</textcolor>
-		<visible>!plugin.isenabled(InfoService)</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
-	
-	<control>
-		<description>current UV Index static label</description>
-		<type>label</type>
-		<id>0</id>
 		<posX>582</posX>
 		<posY>773</posY>
-		<label>403</label>
+		<label>-</label>
 		<font>font11</font>
 		<textcolor>85cffe</textcolor>
-		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 	
 	<control>
 		<description>current UV Index label</description>
-		<type>fadelabel</type>
+		<type>label</type>
 		<id>25</id>
-		<posX>800</posX>
+		<posX>805</posX>
 		<posY>773</posY>
-		<width>200</width>
 		<label>-</label>
 		<font>font11</font>
 		<align>right</align>
 		<textcolor>85cffe</textcolor>
-		<visible>!plugin.isenabled(InfoService)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
-	
-	<control>
-		<description>current UV Index label</description>
-		<type>label</type>
-		<id>0</id>
-		<posX>800</posX>
-		<posY>773</posY>
-		<label>#infoservice.weather.today.uvindex</label>
-		<font>font11</font>
-		<align>right</align>
-		<textcolor>85cffe</textcolor>
-		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
-<!--	
-		<control>
-		<description>Toggle Background</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>426</posX>
-		<posY>680</posY>
-		<width>553</width>
-		<height>51</height>
-		<texture>weather_toggle_bg.png</texture>
-		<visible>Control.IsVisible(31)</visible>
-	</control>
-	
-	
-	<control>
-		<description>press ok to toggle label</description>
-		<type>label</type>
-		<id>1</id>
-		<posX>584</posX>
-		<posY>694</posY>
-		<textcolor>FF6aa5cb</textcolor>
-		<label>#SkinTranslation.Translations.weather.toggleday.Label</label>
-		<visible>Control.IsVisible(31)</visible>
-	</control>
-	
 
-	
-1-day stuff   
-
-	<control>
-		<description>Alternate BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>weather\backgrounds\#infoservice.weather.today.img.big.filenamewithoutext.jpg</texture>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
-	</control>
--->	
 <import>common.time.xml</import>
 	<control>
 		<description>View Button</description>
@@ -424,55 +332,7 @@
 		<onup>4</onup>
 		<label>185</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible allowhiddenfocus="true">!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
 	</control>
-<!--	
-	<control>
-		<description>last update date</description>
-		<type>fadelabel</type>
-		<id>0</id>
-		<posX>900</posX>
-		<posY>175</posY>
-		<width>350</width>
-		<label>#infoservice.weather.lastupdated.message</label>
-		<font>Segoe Light18</font>
-		<visible>plugin.isenabled(InfoService)+!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
-	</control>
-	<control>
-		<description>last update time</description>
-		<type>textbox</type>
-		<id>0</id>
-		<posX>900</posX>
-		<posY>212</posY>
-		<width>350</width>
-		<label>#maya.weather.update.time</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light18</font>
-		<visible>plugin.isenabled(InfoService)+!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
-	</control>
-
-	<control>
-		<description>press ok to toggle label</description>
-		<type>label</type>
-		<id>1</id>
-		<posX>900</posX>
-		<posY>665</posY>
-		<label>#SkinTranslation.Translations.weather.toggleday.Label</label>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
-	</control>
-
-	<control>
-		<description>Vignette background</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>822</posX>
-		<posY>0</posY>
-		<width>544</width>
-		<height>768</height>
-		<texture>moving_pictures_detail_vignette.png</texture>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
-	</control>
-	-->	
 	<control>
 		<description>current temp label</description>
 		<type>label</type>
@@ -491,7 +351,7 @@
 		<posX>900</posX>
 		<posY>350</posY>
 		<label>-</label>
-<font>Segoe Light40</font>
+        <font>Segoe Light40</font>
 		<textcolor>6aa5cb</textcolor>
 		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
 	</control>
@@ -663,27 +523,28 @@
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 	
-<!--
+
 	<control>
 		<description>day 0 general weather label</description>
 		<type>label</type>
 		<id>34</id>
-		<posX>318</posX>
+		<posX>-2000</posX>
 		<posY>646</posY>
 		<label>-</label>
 		<align>center</align>
 		<font>font11</font>
 		<textcolor>White</textcolor>
 	</control>
--->	
+	
 	<control>
 		<description>day 0 icon</description>
 		<type>image</type>
-		<id>1</id>
+		<id>35</id>
 		<posX>600</posX>
 		<posY>258</posY>
-		<texture>weather/128/#infoservice.weather.today.img.big.filenamewithext</texture>
-		<visible>Control.IsVisible(9999)</visible>
+        <height>128</height>
+        <width>128</width>
+      <texture>-</texture>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -764,11 +625,12 @@
 	<control>
 		<description>day 1 icon</description>
 		<type>image</type>
-		<id>1</id>
+		<id>45</id>
 		<posX>864</posX>
 		<posY>258</posY>
-		<texture>weather/128/#infoservice.weather.forecast2.day.img.big.filenamewithext</texture>
-		<visible>Control.IsVisible(9999)</visible>
+         <height>128</height>
+        <width>128</width>
+		<texture>-</texture>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -849,11 +711,12 @@
 	<control>
 		<description>day 2 icon</description>
 		<type>image</type>
-		<id>1</id>
-		<posX>1128</posX>
+		<id>55</id>
+		<posX>1148</posX>
 		<posY>258</posY>
-		<texture>weather/128/#infoservice.weather.forecast3.day.img.big.filenamewithext</texture>
-		<visible>Control.IsVisible(9999)</visible>
+         <height>128</height>
+        <width>128</width>
+		<texture>-</texture>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -934,10 +797,12 @@
 	<control>
 		<description>day 3 icon</description>
 		<type>image</type>
-		<id>1</id>
+		<id>65</id>
 		<posX>1390</posX>
 		<posY>258</posY>
-		<texture>weather/128/#infoservice.weather.forecast4.day.img.big.filenamewithext</texture>
+         <height>128</height>
+        <width>128</width>
+		<texture>-</texture>
 		<visible>Control.IsVisible(9999)</visible>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -1019,11 +884,12 @@
 	<control>
 		<description>day  4 icon</description>
 		<type>image</type>
-		<id>1</id>
+		<id>75</id>
 		<posX>1660</posX>
 		<posY>258</posY>
-		<texture>weather/128/#infoservice.weather.forecast5.day.img.big.filenamewithext</texture>
-		<visible>Control.IsVisible(9999)</visible>
+         <height>128</height>
+        <width>128</width>
+		<texture>-</texture>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -1042,87 +908,6 @@
 		<colordiffuse>White</colordiffuse>
 		<centered>yes</centered>
 		<keepaspectratio>yes</keepaspectratio>
-	</control>
-
-	
-	
-	
-	
-	
-	
-	<control>
-	<id>0</id>
-	<description>icon group</description>
-	<type>group</type>
-	<visible>Control.IsVisible(1000)</visible>
-	<dimColor>ffffffff</dimColor>
-	
-		<control>
-			<description>sat icon</description>
-			<type>image</type>
-			<id>0</id>
-			<posX>1140</posX>
-			<posY>275</posY>
-			<texture>#maya.weather.icons.sat</texture>
-			<width>90</width>
-			<height>74</height>
-		</control>
-		
-		<control>
-			<description>temp icon</description>
-			<type>image</type>
-			<id>0</id>
-			<posX>1140</posX>
-			<posY>340</posY>
-			<texture>#maya.weather.icons.temp</texture>
-			<width>90</width>
-			<height>74</height>
-		</control>
-		
-		<control>
-			<description>uv icon</description>
-			<type>image</type>
-			<id>0</id>
-			<posX>1140</posX>
-			<posY>390</posY>
-			<texture>#maya.weather.icons.uv</texture>
-			<width>90</width>
-			<height>74</height>
-		</control>
-		
-		<control>
-			<description>wind icon</description>
-			<type>image</type>
-			<id>0</id>
-			<posX>1140</posX>
-			<posY>435</posY>
-			<texture>#maya.weather.icons.wind</texture>
-			<width>90</width>
-			<height>74</height>
-		</control>
-		
-			<control>
-			<description>hum icon</description>
-			<type>image</type>
-			<id>0</id>
-			<posX>1140</posX>
-			<posY>485</posY>
-			<texture>#maya.weather.icons.hum</texture>
-			<width>90</width>
-			<height>74</height>
-		</control>
-		
-		<control>
-			<description>prec icon</description>
-			<type>image</type>
-			<id>0</id>
-			<posX>1140</posX>
-			<posY>543</posY>
-			<texture>#maya.weather.icons.prec</texture>
-			<width>90</width>
-			<height>74</height>
-		</control>		
-		
 	</control>
 		
 		
@@ -1154,37 +939,6 @@
 	</control>
 
 	
-	
-	
-
-
-	<control>
-		<description>location label</description>
-		<type>label</type>
-		<id>10</id>
-		<posX>-2000</posX>
-		<posY>87</posY>
-		<label>-</label>
-	</control>
-	
-	<control>
-		<description>current feels like static label</description>
-		<type>label</type>
-		<id>224</id>
-		<posX>-2000</posX>
-		<posY>218</posY>
-		<label>-</label>
-	</control>
-	
-	<control>
-		<description>Current Temp static label</description>
-		<type>label</type>
-		<id>223</id>
-		<posX>-2000</posX>
-		<posY>20</posY>
-		<label>-</label>
-	</control>
-	
 	<control>
 		<description>TWC Logo</description>
 		<type>image</type>
@@ -1194,63 +948,6 @@
 		<width>152</width>
 		<height>80</height>
 		<texture>weather\logos\TWClogo_64px.png</texture>
-	</control>
-	
-	<control>
-		<description>day 4 icon</description>
-		<type>image</type>
-		<id>75</id>
-		<posX>-2000</posX>
-		<posY>506</posY>
-		<texture>-</texture>
-		<colorkey>FFFF00FF</colorkey>
-		<colordiffuse>White:#20</colordiffuse>
-	</control>
-	
-	<control>
-		<description>day 3 icon</description>
-		<type>image</type>
-		<id>65</id>
-		<posX>-2000</posX>
-		<posY>506</posY>
-		<texture>-</texture>
-		<colorkey>FFFF00FF</colorkey>
-		<colordiffuse>White:#20</colordiffuse>
-	</control>
-	
-
-	<control>
-		<description>day 1 icon</description>
-		<type>image</type>
-		<id>45</id>
-		<posX>-2000</posX>
-		<posY>506</posY>
-		<texture>-</texture>
-		<colorkey>FFFF00FF</colorkey>
-		<colordiffuse>White:#20</colordiffuse>
-	</control>
-	
-	<control>
-		<description>day 2 icon</description>
-		<type>image</type>
-		<id>55</id>
-		<posX>-2000</posX>
-		<posY>506</posY>
-		<texture>-</texture>
-		<colorkey>FFFF00FF</colorkey>
-		<colordiffuse>White:#20</colordiffuse>
-	</control>
-	
-
-	<control>
-		<description>l icon</description>
-		<type>image</type>
-		<id>35</id>
-		<posX>-2000</posX>
-		<posY>506</posY>
-		<texture>-</texture>
-		<colorkey>FFFF00FF</colorkey>
-		<colordiffuse>White:#20</colordiffuse>
 	</control>
 	
 </controls>
