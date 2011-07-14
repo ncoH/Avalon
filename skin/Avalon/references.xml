@@ -47,7 +47,7 @@
     <type>updownbutton</type>
     <id>1</id>
     <posX>533</posX>
-    <posY>186</posY>
+    <posY>250</posY>
     <width>260</width>
     <height>45</height>
     <textXOff>17</textXOff>
@@ -102,7 +102,7 @@
     <type>togglebutton</type>
     <id>4</id>
     <posX>533</posX>
-    <posY>186</posY>
+    <posY>250</posY>
     <width>385</width>
     <height>64</height>
     <textXOff>25</textXOff>
