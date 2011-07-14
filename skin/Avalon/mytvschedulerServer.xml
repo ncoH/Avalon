@@ -97,7 +97,7 @@
 		<description>group element</description>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-			
+		<dimColor>ffffffff</dimColor>
 		<control>
 			<type>sortbutton</type>
 			<id>2</id>
@@ -188,6 +188,7 @@
 		<description>group element</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
+        <dimColor>ffffffff</dimColor>
 		
 			<control>
 				<description>listcontrol</description>
@@ -212,7 +213,6 @@
 				<IconYOff>0</IconYOff>				
 				<textXOff>40</textXOff>
 				<keepaspectratio>yes</keepaspectratio>
-                <unfocusedAlpha>255</unfocusedAlpha>
 			</control>
 
 	</control>

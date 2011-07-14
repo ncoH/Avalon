@@ -53,6 +53,7 @@
             <textureNoFocus>-</textureNoFocus>
             <spaceBetweenItems>0</spaceBetweenItems>
             <visible>Control.HasFocus(6104) | Control.HasFocus(166) | Control.HasFocus(155)</visible>
+			<dimColor>ffffffff</dimColor>
         </control>
 		
         <control>
@@ -103,6 +104,7 @@
             <textureNoFocus>-</textureNoFocus>
             <spaceBetweenItems>0</spaceBetweenItems>
             <visible>Control.HasFocus(6104) | Control.HasFocus(155) | Control.HasFocus(166)</visible>
+			<dimColor>ffffffff</dimColor>
         </control>	
 
     </controls>
