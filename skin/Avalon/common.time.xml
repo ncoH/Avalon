@@ -6,7 +6,7 @@
             <description>Maya logo</description>
             <type>image</type>
             <posX>55</posX>
-            <posY>43</posY>
+            <posY>31</posY>
             <texture>mp_logo.png</texture>
 			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)]</visible>
         </control>
@@ -15,18 +15,18 @@
             <description>top seperator</description>
             <type>image</type>
             <posX>160</posX>
-            <posY>45</posY>
+            <posY>33</posY>
             <texture>top_separator.png</texture>
 			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)]</visible>
         </control>
         <control>
             <id>0</id>
             <type>label</type>
-            <posX>1760</posX>
-            <posY>38</posY>
+            <posX>1644</posX>
+            <posY>37</posY>
             <width>555</width>
             <font>font22</font>
-            <textcolor>6aa5cb</textcolor>
+            <textcolor>ffffff</textcolor>
             <label>#time</label>
 			<align>right</align>
 			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)]</visible>
@@ -34,13 +34,13 @@
         <control>
             <id>0</id>
             <type>label</type>
-            <posX>1760</posX>
-            <posY>98</posY>
+            <posX>1644</posX>
+            <posY>50</posY>
             <width>555</width>
-            <font>AvalonLight12</font>
-            <textcolor>ffffff</textcolor>
-            <label>#date | #infoservice.weather.today.temp</label>
-			<align>right</align>
+            <font>AvalonLight16</font>
+            <textcolor>6aa5cb</textcolor>
+            <label>/#infoservice.weather.today.temp</label>
+			<align>left</align>
 			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)] + plugin.isenabled(InfoService)</visible>
         </control>
 <!--Weather-->
@@ -49,11 +49,11 @@
 			<description>Weather image</description>
 			<type>image</type>
 			<id>0</id>
-			<posX>1780</posX>
-			<posY>30</posY>
+			<posX>1752</posX>
+			<posY>10</posY>
 			<height>100</height>
 			<width>100</width>
-			<texture>weather/#infoservice.weather.today.img.small.filenamewithext</texture>
+			<texture>Weather/128x128/#infoservice.weather.today.img.small.filenamewithext</texture>
 			<visible>plugin.isenabled(InfoService)</visible>
 			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)] + plugin.isenabled(InfoService)</visible>
 		</control>
