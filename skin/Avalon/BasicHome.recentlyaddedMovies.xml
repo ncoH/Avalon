@@ -289,7 +289,7 @@
         <type>label</type>
         <id>0</id>
         <posX>1218</posX>
-        <posY>256</posY>
+        <posY>210</posY>
         <width>590</width>
         <label>#Avalon.LatestMovies</label>
         <font>AvalonLight20</font>
@@ -300,7 +300,7 @@
         <type>image</type>
         <id>1021</id>
         <posX>1218</posX>
-        <posY>335</posY>
+        <posY>290</posY>
         <width>183</width>
         <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.movingpicture.latest1.thumb</texture>
@@ -310,7 +310,7 @@
         <type>button</type>
         <id>91919991</id>
         <posX>1212</posX>
-        <posY>330</posY>
+        <posY>284</posY>
         <width>194</width>
         <height>269</height>
         <textureFocus>basichome_focus.png</textureFocus>
@@ -337,7 +337,7 @@
         <type>image</type>
         <id>0</id>
         <posX>1418</posX>
-        <posY>335</posY>
+        <posY>290</posY>
         <width>183</width>
         <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.movingpicture.latest2.thumb</texture>
@@ -347,7 +347,7 @@
         <type>button</type>
         <id>91919992</id>
         <posX>1412</posX>
-        <posY>330</posY>
+        <posY>284</posY>
         <width>194</width>
         <height>269</height>
         <textureFocus>basichome_focus.png</textureFocus>
@@ -374,7 +374,7 @@
         <type>image</type>
         <id>0</id>
         <posX>1620</posX>
-        <posY>335</posY>
+        <posY>290</posY>
         <width>183</width>
         <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.movingpicture.latest3.thumb</texture>
@@ -384,7 +384,7 @@
         <type>button</type>
         <id>91919993</id>
         <posX>1615</posX>
-        <posY>330</posY>
+        <posY>284</posY>
         <width>194</width>
         <height>269</height>
         <textureFocus>basichome_focus.png</textureFocus>
@@ -422,7 +422,7 @@
         <type>image</type>
         <id>445</id>
         <posX>1620</posX>
-        <posY>335</posY>
+        <posY>290</posY>
         <width>183</width>
         <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.movingpicture.latest1.thumb</texture>
@@ -437,7 +437,7 @@
         <type>image</type>
         <id>0</id>
         <posX>1581</posX>
-        <posY>270</posY>
+        <posY>212</posY>
         <width>1</width>
         <height>468</height>
         <texture>basichome_sub_separator.png</texture>

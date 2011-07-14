@@ -18,10 +18,10 @@
 		<description>background listview poster enabled</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>243</posX>
-		<posY>192</posY>
-		<width>954</width>
-		<height>699</height>
+		<posX>241</posX>
+		<posY>120</posY>
+		<width>956</width>
+		<height>739</height>
 		<texture>viewport_poster.png</texture>
 		<visible>facadeview.list + Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -37,9 +37,9 @@
 		<type>image</type>
 		<id>2020</id>
 		<posX>1</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>795</height>
 		<texture>viewport_noposter.png</texture>
 		<visible>facadeview.list + Control.IsVisible(50)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -53,9 +53,9 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>729</posX>
-		<posY>192</posY>
-		<width>467</width>
-		<height>699</height>
+		<posY>120</posY>
+		<width>469</width>
+		<height>739</height>
 		<texture>viewport_shadow.png</texture>
 		<visible>facadeview.list + Control.IsVisible(50) + string.equals(#Avalon.hidePoster,yes)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -64,28 +64,13 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 	</control>
 	
-	<control>
-		<description>background thumbview</description>
-		<type>image</type>
-		<id>2021</id>
-		<posX>0</posX>
-		<posY>164</posY>
-		<width>1893</width>
-		<height>755</height>
-		<texture>viewport_thumbs2.png</texture>
-		<visible>[facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
-	</control>
 	
 	<control>
 		<description>background thumbview</description>
 		<type>image</type>
 		<id>2021</id>
 		<posX>0</posX>
-		<posY>150</posY>
+		<posY>92</posY>
 		<width>1920</width>
 		<height>819</height>
 		<texture>viewport_thumbsXL.png</texture>

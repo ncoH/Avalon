@@ -10,7 +10,7 @@
 		<width>1920</width>
 		<height>1080</height>
 		<texture>overlay.png</texture>
-		<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)|control.isvisible(1239)]+facadeview.list|facadeview.largeicons</visible>
+		<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)|control.isvisible(1239)|control.isvisible(1240)]+facadeview.list|facadeview.largeicons</visible>
 	</control>
 	
 	<control>
@@ -18,11 +18,11 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>1</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
 		<height>646</height>
 		<texture>viewport_short.png</texture>
-		<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list</visible>
+		<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)|control.isvisible(1240)]+facadeview.list</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
@@ -34,7 +34,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>1</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
 		<height>646</height>
 		<texture>viewport_small.png</texture>
@@ -50,7 +50,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>0</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
 		<height>646</height>
 		<texture>viewport_thumbs_short2.png</texture>

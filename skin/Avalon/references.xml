@@ -47,7 +47,7 @@
     <type>updownbutton</type>
     <id>1</id>
     <posX>533</posX>
-    <posY>250</posY>
+    <posY>186</posY>
     <width>260</width>
     <height>45</height>
     <textXOff>17</textXOff>
@@ -102,7 +102,7 @@
     <type>togglebutton</type>
     <id>4</id>
     <posX>533</posX>
-    <posY>250</posY>
+    <posY>186</posY>
     <width>385</width>
     <height>64</height>
     <textXOff>25</textXOff>
@@ -182,8 +182,8 @@
     <spinCanFocus>no</spinCanFocus>
     <spinWidth>46</spinWidth>
     <spinHeight>33</spinHeight>
-    <spinPosX>233</spinPosX>
-    <spinPosY>104</spinPosY>
+    <spinPosX>1832</spinPosX>
+    <spinPosY>880</spinPosY>
     <spinAlign>right</spinAlign>
     <spinColor>FF6aa5cb</spinColor>
   </control>
@@ -371,7 +371,7 @@
     </folderPrefix>
     <folderSuffix>
     </folderSuffix>
-    <spinColor>FFFFFFFF</spinColor>
+    <spinColor>FF6aa5cb</spinColor>
     <spinWidth>46</spinWidth>
     <spinHeight>33</spinHeight>
     <spinPosX>233</spinPosX>
@@ -442,10 +442,10 @@
     </folderSuffix>
     <spinWidth>46</spinWidth>
     <spinHeight>33</spinHeight>
-    <spinPosX>233</spinPosX>
-    <spinPosY>104</spinPosY>
+    <spinPosX>1832</spinPosX>
+    <spinPosY>730</spinPosY>
     <spinAlign>right</spinAlign>
-    <spinColor>FFFFFFFF</spinColor>
+    <spinColor>FF6aa5cb</spinColor>
     <spinCanFocus>no</spinCanFocus>
   </control>
   <control>

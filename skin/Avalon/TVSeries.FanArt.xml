@@ -21,10 +21,10 @@
 		<description>preview</description>
 		<id>4560</id>
 		<type>image</type>
-		<posX>0</posX>
-		<posY>180</posY>
-		<width>1273</width>
-		<height>720</height>
+        <posX>0</posX>
+        <posY>120</posY>
+        <width>1312</width>
+        <height>739</height>
 		<texture>#TVSeries.FanArt.SelectedPreview</texture>
 		<visible>[facadeview.smallicons | facadeview.largeicons]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -61,9 +61,9 @@
 		<type>image</type>
 		<id>2021</id>
 		<posX>1</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>795</height>
 		<texture>viewport_thumbs.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -84,16 +84,29 @@
 		<visible>facadeview.filmstrip + Control.IsVisible(50)</visible>
 	</control>
  
+  	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>829</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control> 
+ 
     <control>
 		<description>Status</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>242</posX>
-		<posY>99</posY>
-		<align>left</align>
-		<font>AvalonLight12</font>
-		<textcolor>ffffff</textcolor>
-		<label>| #TVSeries.FanArt.DownloadingStatus #TVSeries.FanArt.LoadingStatus</label>
+      <posX>714</posX>
+      <posY>875</posY>
+      <align>left</align>
+      <font>AvalonLight12</font>
+      <textcolor>6aa5cb</textcolor>
+		<label>#TVSeries.FanArt.DownloadingStatus #TVSeries.FanArt.LoadingStatus</label>
     </control>
 	<control>
 		<description>Status</description>
@@ -259,7 +272,7 @@
           <type>thumbnailpanel</type>
           <id>50</id>
 				<posX>723</posX>
-				<posY>232</posY>
+				<posY>188</posY>
 				<width>1120</width>
 				<height>700</height>
           <!-- largeicons -->
@@ -288,6 +301,8 @@
 				<frameNoFocus>pictures_thumb_nofocus.png</frameNoFocus>
 				<frameFocus>pictures_thumb_focus.png</frameFocus>
 				<textureMask>pictures_thumb_mask.png</textureMask>
+     			<spinPosX>1832</spinPosX>
+    			<spinPosY>880</spinPosY>
         </control>
 		<control>
 			<description>Filmstrip view</description>

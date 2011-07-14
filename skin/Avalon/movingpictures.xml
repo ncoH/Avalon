@@ -153,9 +153,9 @@ multiple view modes.
       <type>image</type>
       <id>0</id>
       <posX>0</posX>
-      <posY>180</posY>
-      <width>1273</width>
-      <height>720</height>
+      <posY>120</posY>
+      <width>1312</width>
+      <height>738</height>
       <texture>#MovingPictures.Backdrop</texture>
       <animation effect="fade" time="300">visible</animation>
       <animation effect="fade" time="200" delay="0">hidden</animation>
@@ -168,9 +168,9 @@ multiple view modes.
       <type>image</type>
       <id>0</id>
       <posX>0</posX>
-      <posY>180</posY>
-      <width>1273</width>
-      <height>720</height>
+      <posY>120</posY>
+      <width>1312</width>
+      <height>738</height>
       <texture>#MovingPictures.Backdrop2</texture>
       <animation effect="fade" time="300">visible</animation>
       <animation effect="fade" time="200" delay="0">hidden</animation>
@@ -198,10 +198,38 @@ multiple view modes.
       <id>0</id>
       <type>image</type>
       <posX>1</posX>
-      <posY>164</posY>
+      <posY>92</posY>
       <width>1893</width>
-      <height>755</height>
+      <height>795</height>
       <texture>viewport_categories.png</texture>
+      <visible>Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>RSS background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>829</posY>
+      <width>1865</width>
+      <height>96</height>
+      <texture>basichome_rss_bg.png</texture>
+      <visible>Control.IsVisible(51)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+      <description>Moviecount</description>
+      <type>label</type>
+      <label>#MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount</label>
+      <id>0</id>
+      <posX>1166</posX>
+      <posY>880</posY>
+      <align>left</align>
+      <font>AvalonLight12</font>
+      <textcolor>6aa5cb</textcolor>
       <visible>Control.IsVisible(51)</visible>
     </control>
     <control>
@@ -233,42 +261,12 @@ multiple view modes.
       <font>font22</font>
       <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
     </control>
-    <control>
-      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-      <description>Moviecount</description>
-      <type>label</type>
-      <label>| #MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount</label>
-      <id>0</id>
-      <posX>242</posX>
-      <posY>99</posY>
-      <align>left</align>
-      <font>AvalonLight12</font>
-      <textcolor>ffffff</textcolor>
-      <visible>Control.IsVisible(51)</visible>
-    </control>
-    <control>
-      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-      <description>Moviecount</description>
-      <type>label</type>
-      <label>| #MovingPictures.CurrentNode.name: #MovingPictures.general.filteredmoviecount</label>
-      <id>0</id>
-      <posX>242</posX>
-      <posY>99</posY>
-      <align>left</align>
-      <font>AvalonLight12</font>
-      <textcolor>ffffff</textcolor>
-      <visible>Control.IsVisible(50)</visible>
-    </control>
     <!--            :: IMPORT ::            -->
-    <import tag="Background">movingpictures.background.default.xml</import>
+    <import tag="Background">movingpictures.background.default.thumbs.XL.xml</import>
     <import>common.time.xml</import>
     <import>movingpictures.hiddenmenu.xml</import>
     <import tag="Views">movingpictures.views.default.xml</import>
-    <import tag="Facade">movingpictures.facade.default.xml</import>
+    <import tag="Facade">movingpictures.facade.default.thumbs.XL.xml</import>
     <import>movingpictures.Info.xml</import>
     <import tag="Mediainfo">movingpictures.mediainfo.default.xml</import>
     <import>movingpictures.details.xml</import>

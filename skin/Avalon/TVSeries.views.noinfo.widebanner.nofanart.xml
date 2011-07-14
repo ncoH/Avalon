@@ -143,10 +143,10 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<description>Description (grouplist)</description>
 		<id>0</id>
-		<posX>924</posX>
-		<posY>330</posY>
-		<width>400</width>
-		<height>215</height>
+		<posX>762</posX>
+		<posY>236</posY>
+		<height>600</height>
+		<width>684</width>
 		<seperator>---------------------------------------------------------------------------------------------------------------------</seperator>
 		<font>AvalonLight11</font>
 		<visible>facadeview.list+Control.IsVisible(1240)+!Control.IsVisible(632)</visible>

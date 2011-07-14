@@ -5,6 +5,40 @@ This file should contain the facade view
 <window>
 <controls>
 
+	<!--            :: Count Background ::            -->
+
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>829</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+	<!--            :: Count ::            -->
+	
+    <control>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+      <description>Moviecount</description>
+      <type>label</type>
+      <label>#MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount  |  Filter: #MovingPictures.CurrentNode.name</label>
+      <id>0</id>
+      <posX>714</posX>
+      <posY>875</posY>
+      <align>left</align>
+      <font>AvalonLight12</font>
+      <textcolor>6aa5cb</textcolor>
+	  <visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
+    </control>
+
 <control>		
       <type>facadeview</type>
       <id>51</id>
@@ -109,7 +143,7 @@ This file should contain the facade view
 				<type>thumbnailpanel</type>
 				<id>50</id>
 				<posX>723</posX>
-				<posY>232</posY>
+				<posY>188</posY>
 				<width>1120</width>
 				<height>800</height>
 				<folderPrefix></folderPrefix>
@@ -146,6 +180,8 @@ This file should contain the facade view
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>yes</thumbZoom>
 				<keepaspectratio>no</keepaspectratio>
+    			<spinPosX>1832</spinPosX>
+    			<spinPosY>880</spinPosY>
 			</control>
 			
 				<control>

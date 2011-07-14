@@ -27,7 +27,7 @@
 		<dimColor>90ffffff</dimColor>
         <id>50</id>
         <posX>1210</posX>
-		<posY>230</posY>
+		<posY>185</posY>
         <width>650</width>
         <height>550</height>
         <!-- up/down buttons & page # -->     
@@ -62,7 +62,8 @@
 		<textureMask>tvseries_listbanner_mask.png</textureMask>
         <keepaspectratio>no</keepaspectratio>
         <enableFocusZoom>yes</enableFocusZoom>
-        <unfocusedAlpha>255</unfocusedAlpha>
+        <spinPosX>1832</spinPosX>
+        <spinPosY>730</spinPosY>
     </control>
 		
 		<control>
@@ -74,7 +75,7 @@
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<posX>70</posX>
-				<posY>250</posY>
+				<posY>186</posY>
 				<width>1920</width>
 				<height>768</height>
 				<onup>2</onup>
@@ -104,7 +105,7 @@
                 <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
                 <scrollbarWidth>689</scrollbarWidth>
 				<scrollbarHeight>4</scrollbarHeight>
-                <scrollbarYOff>530</scrollbarYOff>
+                <scrollbarYOff>522</scrollbarYOff>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="108,108" center="0,500" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="108,108" reversible="false" end="100,100" center="0,500" time="100">unfocus</thumbAnimation>
 		</control>
@@ -120,7 +121,7 @@
 				  <onleft>50</onleft>
 				  <onright>50</onright>	  
 				  <posX>-10</posX>
-				  <posY>250</posY>
+				  <posY>186</posY>
 				  <width>1920</width>
 				  <height>1080</height>	  
 				  <selectedCard>0</selectedCard>
@@ -163,7 +164,7 @@
                 <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
                 <scrollbarWidth>689</scrollbarWidth>
 				<scrollbarHeight>4</scrollbarHeight>
-                <scrollbarYOff>530</scrollbarYOff>
+                <scrollbarYOff>522</scrollbarYOff>
 					<keepaspectratio>no</keepaspectratio>
 					<cards flipY="true" diffuse="Thumb_Mask_test.png" mask="video_filmstrip_mask.png"></cards>
 				</control>
@@ -176,7 +177,7 @@
 		<onright>2</onright>
 		<scrollOffset>1</scrollOffset>
 		<posX>1166</posX>
-		<posY>236</posY>
+		<posY>164</posY>
 		<height>550</height>
 		<width>684</width>
 		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
@@ -191,6 +192,8 @@
 		<IconYOff>19</IconYOff>
 		<textureHeight>55</textureHeight>
 		<dimColor>ffffffff</dimColor>
+        <spinPosX>1832</spinPosX>
+        <spinPosY>730</spinPosY>
         </control>
       </control>
     </control>

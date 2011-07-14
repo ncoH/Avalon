@@ -27,7 +27,7 @@
 		<dimColor>90ffffff</dimColor>
         <id>50</id>
         <posX>180</posX>
-		<posY>260</posY>
+		<posY>200</posY>
         <width>1600</width>
         <height>500</height>
         <!-- up/down buttons & page # -->     
@@ -62,7 +62,8 @@
 		<textureMask>tvseries_listbanner_mask.png</textureMask>
         <keepaspectratio>no</keepaspectratio>
         <enableFocusZoom>yes</enableFocusZoom>
-        <unfocusedAlpha>255</unfocusedAlpha>
+        <spinPosX>1832</spinPosX>
+        <spinPosY>730</spinPosY>
     </control>
 		
 		<control>
@@ -74,7 +75,7 @@
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<posX>70</posX>
-				<posY>250</posY>
+				<posY>186</posY>
 				<width>1920</width>
 				<height>768</height>
 				<onup>2</onup>
@@ -104,10 +105,69 @@
                 <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
                 <scrollbarWidth>689</scrollbarWidth>
 				<scrollbarHeight>4</scrollbarHeight>
-                <scrollbarYOff>530</scrollbarYOff>
+                <scrollbarYOff>522</scrollbarYOff>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="108,108" center="0,500" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="108,108" reversible="false" end="100,100" center="0,500" time="100">unfocus</thumbAnimation>
 		</control>
+        
+				<control>
+				  <description>Cover Flow view</description>
+				  <type>coverflow</type>
+				  <colordiffuse>90ffffff</colordiffuse>
+				  <dimColor>90ffffff</dimColor>
+				  <id>50</id>
+				  <onup>2</onup>
+				  <ondown>2</ondown>
+				  <onleft>50</onleft>
+				  <onright>50</onright>	  
+				  <posX>-10</posX>
+				  <posY>186</posY>
+				  <width>1920</width>
+				  <height>1080</height>	  
+				  <selectedCard>0</selectedCard>
+				  <cardWidth>337</cardWidth>
+				  <cardHeight>477</cardHeight>
+				  <angle>45</angle>
+				  <sideShift>310</sideShift>
+				  <sideGap>100</sideGap>
+				  <sideDepth>270</sideDepth>
+				  <offsetY>0</offsetY>
+				  <selectedOffsetY>0</selectedOffsetY>
+				  <speed>8</speed>
+				  <showFrame>yes</showFrame>
+				  <frame>-</frame>
+				  <frameFocus>-</frameFocus>
+				  <keepaspectratio>no</keepaspectratio>		  
+				  <frameWidth>327</frameWidth>
+				  <frameHeight>463</frameHeight>
+				  <spinSpeed>8</spinSpeed>
+				  <unfocusedAlpha>FF</unfocusedAlpha>
+				  <folderPrefix></folderPrefix>
+				  <folderSuffix></folderSuffix>
+				  <font1>font13</font1>
+				  <font2>font11</font2>
+				  <label1>#title</label1>
+				  <label2>#genre</label2>
+				  <textColor>FFFFFFFF</textColor>
+				  <remoteColor>FFFF0000</remoteColor>
+				  <playedColor>FFA0D0FF</playedColor>
+				  <downloadColor>FF00FF00</downloadColor>
+				  <selectedColor>FFFFFFFF</selectedColor>
+				  <shadowAngle>45</shadowAngle>
+				  <shadowDistance>1</shadowDistance>
+				  <shadowColor>FF000000</shadowColor>
+				  <label1YOff>1430</label1YOff>
+				  <label2YOff>1390</label2YOff>
+				  <pageSize>5</pageSize>
+                <scrollbarBackground>-</scrollbarBackground>
+                <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+                <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+                <scrollbarWidth>689</scrollbarWidth>
+				<scrollbarHeight>4</scrollbarHeight>
+                <scrollbarYOff>522</scrollbarYOff>
+					<keepaspectratio>no</keepaspectratio>
+					<cards flipY="true" diffuse="Thumb_Mask_test.png" mask="video_filmstrip_mask.png"></cards>
+				</control>
 		
     <control>
 		<description>Text List</description>
@@ -117,7 +177,7 @@
 		<onright>2</onright>
 		<scrollOffset>1</scrollOffset>
 		<posX>1166</posX>
-		<posY>236</posY>
+		<posY>164</posY>
 		<height>550</height>
 		<width>684</width>
 		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
@@ -132,6 +192,8 @@
 		<IconYOff>19</IconYOff>
 		<textureHeight>55</textureHeight>
 		<dimColor>ffffffff</dimColor>
+        <spinPosX>1832</spinPosX>
+        <spinPosY>730</spinPosY>
         </control>
       </control>
     </control>

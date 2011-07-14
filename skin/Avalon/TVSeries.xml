@@ -6,6 +6,14 @@
   <controls>
     <!-- Import Dummy Controls to handle visibility -->
     <import>TVSeries.dummy.xml</import>
+    <control>
+      <description>dummy poster control</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>-2000</posX>
+      <posY>-2000</posY>
+      <label>#Avalon.EnablePosterHide</label>
+    </control>
     <!-- ********************** BACKGROUNDS************************************** -->
     <control>
       <description>dummy backdrop control 1</description>
@@ -71,9 +79,9 @@
       <type>image</type>
       <id>0</id>
       <posX>0</posX>
-      <posY>180</posY>
-      <width>1273</width>
-      <height>720</height>
+      <posY>120</posY>
+      <width>1312</width>
+      <height>739</height>
       <texture>#TVSeries.Fanart.1</texture>
       <animation effect="fade" time="300">visible</animation>
       <animation effect="fade" time="200" delay="0">hidden</animation>
@@ -86,9 +94,9 @@
       <type>image</type>
       <id>0</id>
       <posX>0</posX>
-      <posY>180</posY>
-      <width>1273</width>
-      <height>720</height>
+      <posY>120</posY>
+      <width>1312</width>
+      <height>739</height>
       <texture>#TVSeries.Fanart.2</texture>
       <animation effect="fade" time="300">visible</animation>
       <animation effect="fade" time="200" delay="0">hidden</animation>
@@ -96,8 +104,9 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>[!facadeview.filmstrip+!facadeview.coverflow]+control.isvisible(525)</visible>
     </control>
-    <import tag="Background">TVSeries.background.default.xml</import>
+    <import tag="Background">TVSeries.background.default.widebanner.nofanart.xml</import>
     <import>common.time.xml</import>
+    <!--            :: HEADER ::            -->
     <control>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
@@ -109,27 +118,11 @@
       <label>#TVSeries.Translation.Series_Plural.Label</label>
       <textcolor>6aa5cb</textcolor>
       <font>font22</font>
-      <visible>[facadeview.list|facadeview.largeicons|facadeview.filmstrip]+Control.IsVisible(50)</visible>
     </control>
-    <control>
-      <description>Media Count Label</description>
-      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-      <type>label</type>
-      <label>| #TVSeries.SimpleCurrentView: #TVSeries.SeriesCount</label>
-      <id>0</id>
-      <posX>242</posX>
-      <posY>99</posY>
-      <align>left</align>
-      <font>AvalonLight12</font>
-      <textcolor>ffffff</textcolor>
-      <visible>[facadeview.list|facadeview.largeicons|facadeview.filmstrip]+Control.IsVisible(1237)</visible>
-    </control>
-    <import tag="Views">TVSeries.views.default.xml</import>
+    <import tag="Views">TVSeries.views.default.widebanner.nofanart.xml</import>
     <import>TVSeries.hiddenmenu.xml</import>
     <import>common.overlay.xml</import>
-    <import tag="Facade">TVSeries.facade.default.xml</import>
+    <import tag="Facade">TVSeries.facade.default.widebanner.nofanart.xml</import>
     <import>TVSeries.Info.xml</import>
   </controls>
 </window>

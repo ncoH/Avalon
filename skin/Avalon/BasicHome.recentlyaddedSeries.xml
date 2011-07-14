@@ -232,7 +232,7 @@
         <type>label</type>
         <id>0</id>
         <posX>1218</posX>
-        <posY>256</posY>
+        <posY>210</posY>
         <width>590</width>
         <label>#Avalon.LatestEpisodes</label>
         <font>AvalonLight20</font>
@@ -243,7 +243,7 @@
         <type>image</type>
         <id>10</id>
         <posX>1218</posX>
-        <posY>335</posY>
+        <posY>290</posY>
         <width>183</width>
         <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.tvseries.latest1.serieThumb</texture>
@@ -253,7 +253,7 @@
         <type>button</type>
         <id>91919994</id>
         <posX>1212</posX>
-        <posY>330</posY>
+        <posY>284</posY>
         <width>194</width>
         <height>269</height>
         <textureFocus>basichome_focus.png</textureFocus>
@@ -280,7 +280,7 @@
         <type>image</type>
         <id>0</id>
         <posX>1418</posX>
-        <posY>335</posY>
+        <posY>290</posY>
         <width>183</width>
         <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.tvseries.latest2.serieThumb</texture>
@@ -290,7 +290,7 @@
         <type>button</type>
         <id>91919995</id>
         <posX>1412</posX>
-        <posY>330</posY>
+        <posY>284</posY>
         <width>194</width>
         <height>269</height>
         <textureFocus>basichome_focus.png</textureFocus>
@@ -318,7 +318,7 @@
         <type>image</type>
         <id>0</id>
         <posX>1620</posX>
-        <posY>335</posY>
+        <posY>290</posY>
         <width>183</width>
         <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.tvseries.latest3.serieThumb</texture>
@@ -328,7 +328,7 @@
         <type>button</type>
         <id>91919996</id>
         <posX>1615</posX>
-        <posY>330</posY>
+        <posY>284</posY>
         <width>194</width>
         <height>269</height>
         <textureFocus>basichome_focus.png</textureFocus>
@@ -366,7 +366,7 @@
         <type>image</type>
         <id>444</id>
         <posX>1620</posX>
-        <posY>335</posY>
+        <posY>290</posY>
         <width>183</width>
         <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.tvseries.latest1.serieThumb</texture>
@@ -381,7 +381,7 @@
         <type>image</type>
         <id>0</id>
         <posX>1581</posX>
-        <posY>270</posY>
+        <posY>212</posY>
         <width>1</width>
         <height>468</height>
         <texture>basichome_sub_separator.png</texture>

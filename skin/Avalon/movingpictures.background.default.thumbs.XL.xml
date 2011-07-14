@@ -19,7 +19,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>243</posX>
-		<posY>192</posY>
+		<posY>120</posY>
 		<width>954</width>
 		<height>590</height>
 		<texture>viewport_poster_short.png</texture>
@@ -37,7 +37,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
 		<height>646</height>
 		<texture>viewport_noposter_short.png</texture>
@@ -53,7 +53,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>729</posX>
-		<posY>192</posY>
+		<posY>120</posY>
 		<width>467</width>
 		<height>590</height>
 		<texture>viewport_shadow_short.png</texture>
@@ -69,7 +69,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>0</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1920</width>
 		<height>646</height>
 		<texture>viewport_thumbs_shortXL.png</texture>

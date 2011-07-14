@@ -9,12 +9,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1500</posX>
-		<posY>834</posY>
+		<posX>1478</posX>
+		<posY>816</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\1080_h264_235.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,1080p)+string.contains(#MovingPictures.LocalMedia.videocodec,h264)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,1080p)+string.contains(#MovingPictures.LocalMedia.videocodec,h264)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
 	</control>
 	
 	<control>
@@ -23,12 +23,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1500</posX>
-		<posY>834</posY>
+		<posX>1478</posX>
+		<posY>816</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\720_h264_235.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,720p)+string.contains(#MovingPictures.LocalMedia.videocodec,h264)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,720p)+string.contains(#MovingPictures.LocalMedia.videocodec,h264)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
 	</control>
 	
 	<control>
@@ -37,12 +37,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1500</posX>
-		<posY>834</posY>
+		<posX>1478</posX>
+		<posY>816</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_xvid_235.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,XVID)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,XVID)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
 	</control>
 	
 	<control>
@@ -51,12 +51,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1500</posX>
-		<posY>834</posY>
+		<posX>1478</posX>
+		<posY>816</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_xvid_133.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,XVID)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)]</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,XVID)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)]</visible>
 	</control>
 	
 	<control>
@@ -65,12 +65,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1500</posX>
-		<posY>834</posY>
+		<posX>1478</posX>
+		<posY>816</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_divx_235.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,DIVX)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,DIVX)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
 	</control>
 	
 	<control>
@@ -79,12 +79,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1500</posX>
-		<posY>834</posY>
+		<posX>1478</posX>
+		<posY>816</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_divx_133.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,DIVX)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)]</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,DIVX)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)]</visible>
 	</control>
 	
 	<control>
@@ -95,12 +95,12 @@
 		<animation effect="slide" time="0" end="1500,0">hidden</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1500</posX>
-		<posY>834</posY>
+		<posX>1478</posX>
+		<posY>816</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\540_mpeg2_235.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,MP2V)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,MP2V)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
 	</control>
 	
 	<!-- Audiocodec -->
@@ -110,12 +110,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1685</posX>
-		<posY>834</posY>
+		<posX>1663</posX>
+		<posY>816</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\ac3_51.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.audiocodec,ac3)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.audiocodec,ac3)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
 	</control>
 	
 	<control>
@@ -124,12 +124,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1685</posX>
-		<posY>834</posY>
+		<posX>1663</posX>
+		<posY>816</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dts_51.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.audiocodec,dts)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.audiocodec,dts)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
 	</control>
 	
 	<control>
@@ -138,12 +138,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1685</posX>
-		<posY>834</posY>
+		<posX>1663</posX>
+		<posY>816</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dts_71.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.audiocodec,dts)+[string.contains(#MovingPictures.LocalMedia.audiochannels,7.1)|string.contains(#MovingPictures.LocalMedia.audiochannels,8)]]</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.audiocodec,dts)+[string.contains(#MovingPictures.LocalMedia.audiochannels,7.1)|string.contains(#MovingPictures.LocalMedia.audiochannels,8)]]</visible>
 	</control>
 	
 	<control>
@@ -152,12 +152,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1685</posX>
-		<posY>834</posY>
+		<posX>1663</posX>
+		<posY>816</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\ac3_20.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.audiocodec,ac3)+string.contains(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.audiocodec,ac3)+string.contains(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
 	</control>
 	
 	<control>
@@ -166,12 +166,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1685</posX>
-		<posY>834</posY>
+		<posX>1663</posX>
+		<posY>816</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\mp3_20.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.audiocodec,MP3)+string.contains(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.audiocodec,MP3)+string.contains(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
 	</control>
 	
 	<!-- Source -->
@@ -181,12 +181,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1800</posX>
-		<posY>834</posY>
+		<posX>1778</posX>
+		<posY>816</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\bluray.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,720p)|string.contains(#MovingPictures.LocalMedia.videoresolution,1080p)]</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,720p)|string.contains(#MovingPictures.LocalMedia.videoresolution,1080p)]</visible>
 	</control>
 	
 	<control>
@@ -195,12 +195,12 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1800</posX>
-		<posY>834</posY>
+		<posX>1778</posX>
+		<posY>816</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\dvd.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)]</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)]</visible>
 	</control>
 
 	</controls>

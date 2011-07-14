@@ -10,7 +10,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1063</posX>
+		<posX>1213</posX>
 		<posY>896</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
@@ -24,7 +24,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1063</posX>
+		<posX>1213</posX>
 		<posY>896</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
@@ -39,7 +39,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1063</posX>
+		<posX>1213</posX>
 		<posY>896</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
@@ -54,7 +54,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1063</posX>
+		<posX>1213</posX>
 		<posY>896</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
@@ -69,7 +69,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1063</posX>
+		<posX>1213</posX>
 		<posY>896</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
@@ -84,7 +84,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1063</posX>
+		<posX>1213</posX>
 		<posY>896</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
@@ -99,7 +99,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1063</posX>
+		<posX>1213</posX>
 		<posY>896</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
@@ -115,7 +115,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1275</posX>
+		<posX>1425</posX>
 		<posY>896</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
@@ -130,7 +130,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1275</posX>
+		<posX>1425</posX>
 		<posY>896</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
@@ -145,7 +145,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1275</posX>
+		<posX>1425</posX>
 		<posY>896</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
@@ -160,7 +160,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1275</posX>
+		<posX>1425</posX>
 		<posY>896</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
@@ -175,7 +175,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1275</posX>
+		<posX>1425</posX>
 		<posY>896</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
@@ -191,7 +191,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>968</posX>
+		<posX>1118</posX>
 		<posY>896</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
@@ -206,7 +206,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>968</posX>
+		<posX>1118</posX>
 		<posY>896</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
@@ -221,7 +221,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1408</posX>
+		<posX>1558</posX>
 		<posY>900</posY>
 		<width>36</width>
 		<height>37</height>
@@ -235,7 +235,7 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1408</posX>
+		<posX>1558</posX>
 		<posY>900</posY>
 		<width>36</width>
 		<height>37</height>

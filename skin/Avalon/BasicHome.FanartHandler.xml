@@ -9,9 +9,9 @@
     <type>image</type>
     <id>1101</id>
     <posX>0</posX>
-    <posY>192</posY>
-    <width>1045</width>
-    <height>588</height>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
     <visible>Control.IsVisible(1201) + string.contains(#bgimage1,series)</visible>
     <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
     <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
@@ -25,9 +25,9 @@
     <type>image</type>
     <id>1102</id>
     <posX>0</posX>
-    <posY>192</posY>
-    <width>1045</width>
-    <height>588</height>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
     <visible>Control.IsVisible(1202) + string.contains(#bgimage2,series)</visible>
     <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
     <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
@@ -43,9 +43,9 @@
     <type>image</type>
     <id>1101</id>
     <posX>0</posX>
-    <posY>192</posY>
-    <width>1045</width>
-    <height>588</height>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
     <visible>Control.IsVisible(1201) + string.contains(#bgimage1,movies)</visible>
     <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
     <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
@@ -59,9 +59,9 @@
     <type>image</type>
     <id>1102</id>
     <posX>0</posX>
-    <posY>192</posY>
-    <width>1045</width>
-    <height>588</height>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
     <visible>Control.IsVisible(1202) + string.contains(#bgimage2,movies)</visible>
     <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
     <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
@@ -77,9 +77,9 @@
     <type>image</type>
     <id>1101</id>
     <posX>0</posX>
-    <posY>192</posY>
-    <width>1045</width>
-    <height>588</height>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
     <visible>Control.IsVisible(1201) + string.contains(#bgimage1,music)</visible>
     <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
     <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
@@ -93,9 +93,9 @@
     <type>image</type>
     <id>1102</id>
     <posX>0</posX>
-    <posY>192</posY>
-    <width>1045</width>
-    <height>588</height>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
     <visible>Control.IsVisible(1202) + string.contains(#bgimage2,music)</visible>
     <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
     <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
@@ -111,9 +111,9 @@
     <type>image</type>
     <id>1101</id>
     <posX>0</posX>
-    <posY>192</posY>
-    <width>1045</width>
-    <height>588</height>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
     <visible>Control.IsVisible(1201) + string.contains(#bgimage1,tv)</visible>
     <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
     <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
@@ -127,9 +127,9 @@
     <type>image</type>
     <id>1102</id>
     <posX>0</posX>
-    <posY>192</posY>
-    <width>1045</width>
-    <height>588</height>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
     <visible>Control.IsVisible(1202) + string.contains(#bgimage2,tv)</visible>
     <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
     <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
@@ -145,9 +145,9 @@
     <type>image</type>
     <id>1101</id>
     <posX>0</posX>
-    <posY>192</posY>
-    <width>1045</width>
-    <height>588</height>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
     <visible>Control.IsVisible(1201) + string.contains(#bgimage1,pictures)</visible>
     <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
     <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
@@ -161,9 +161,9 @@
     <type>image</type>
     <id>1102</id>
     <posX>0</posX>
-    <posY>192</posY>
-    <width>1045</width>
-    <height>588</height>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
     <visible>Control.IsVisible(1202) + string.contains(#bgimage2,pictures)</visible>
     <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
     <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
@@ -179,9 +179,9 @@
     <type>image</type>
     <id>1101</id>
     <posX>0</posX>
-    <posY>192</posY>
-    <width>1045</width>
-    <height>588</height>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
     <visible>Control.IsVisible(1201) + string.contains(#bgimage1,plugins)</visible>
     <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
     <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>
@@ -195,9 +195,9 @@
     <type>image</type>
     <id>1102</id>
     <posX>0</posX>
-    <posY>192</posY>
-    <width>1045</width>
-    <height>588</height>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
     <visible>Control.IsVisible(1202) + string.contains(#bgimage2,plugins)</visible>
     <animation effect="fade" start="100" end="0" time="600" reversible="false">Hidden</animation>
     <animation effect="fade" start="30" end="100" time="600" reversible="false">Visible</animation>

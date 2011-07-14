@@ -5,6 +5,85 @@ This file should contain the facade view
 <window>
 <controls>
 
+
+	<!--            :: Count Background ::            -->
+
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>680</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<visible>facadeview.list + control.isvisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+    
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>716</posY>
+		<width>1865</width>
+		<height>51</height>
+		<texture>movies_count_bg_filmstrip.png</texture>
+		<visible>[facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+    
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>710</posY>
+		<width>1865</width>
+		<height>64</height>
+		<texture>movies_count_bg_filmstrip.png</texture>
+		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control> 
+    
+	<!--            :: Count ::            -->
+	
+    <control>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+      <description>Moviecount</description>
+      <type>label</type>
+      <label>#MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount  |  Filter: #MovingPictures.CurrentNode.name</label>
+      <id>0</id>
+		<posX>1342</posX>
+      <posY>725</posY>
+      <align>left</align>
+      <font>AvalonLight12</font>
+      <textcolor>6aa5cb</textcolor>
+	  <visible>[facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + control.isvisible(50)</visible>
+    </control>
+    
+     <control>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+      <description>Moviecount</description>
+      <type>label</type>
+      <label>#MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount  |  Filter: #MovingPictures.CurrentNode.name</label>
+      <id>0</id>
+		<posX>714</posX>
+      <posY>725</posY>
+      <align>left</align>
+      <font>AvalonLight12</font>
+      <textcolor>6aa5cb</textcolor>
+	  <visible>facadeview.list + control.isvisible(50)</visible>
+    </control>
+
 <control>
       <type>facadeview</type>
       <id>51</id>
@@ -18,7 +97,7 @@ This file should contain the facade view
         <onright>51</onright>
 		<scrollOffset>1</scrollOffset>
 		<posX>1166</posX>
-		<posY>236</posY>
+		<posY>164</posY>
 		<height>700</height>
 		<width>684</width>
 		<spinPosX>1667</spinPosX>
@@ -44,7 +123,7 @@ This file should contain the facade view
 			<onright>2</onright>
 			<scrollOffset>1</scrollOffset>
 			<posX>1166</posX>
-			<posY>236</posY>
+			<posY>164</posY>
 			<height>550</height>
 			<width>684</width>
 			<textXOff>50</textXOff>
@@ -53,6 +132,8 @@ This file should contain the facade view
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
 			<dimColor>ffffffff</dimColor>
+            <spinPosX>1832</spinPosX>
+            <spinPosY>730</spinPosY>
 		</control>
 
 		<control>
@@ -64,7 +145,7 @@ This file should contain the facade view
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<posX>70</posX>
-				<posY>250</posY>
+				<posY>186</posY>
 				<width>1920</width>
 				<height>768</height>
 				<onup>2</onup>
@@ -94,7 +175,7 @@ This file should contain the facade view
                 <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
                 <scrollbarWidth>689</scrollbarWidth>
 				<scrollbarHeight>4</scrollbarHeight>
-                <scrollbarYOff>530</scrollbarYOff>
+                <scrollbarYOff>522</scrollbarYOff>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="108,108" center="0,500" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="108,108" reversible="false" end="100,100" center="0,500" time="100">unfocus</thumbAnimation>
 		</control>
@@ -104,7 +185,7 @@ This file should contain the facade view
 				<type>thumbnailpanel</type>
 				<id>50</id>
 				<posX>55</posX>
-				<posY>206</posY>
+				<posY>132</posY>
 				<width>1920</width>
 				<height>600</height>
 				<folderPrefix></folderPrefix>
@@ -127,8 +208,8 @@ This file should contain the facade view
 				<textureHeightBig>280</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
-				<zoomXPixels>20</zoomXPixels>
-				<zoomYPixels>30</zoomYPixels>
+				<zoomXPixels>40</zoomXPixels>
+				<zoomYPixels>60</zoomYPixels>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<keepaspectratio>no</keepaspectratio>
 				<renderFocusText>no</renderFocusText>
@@ -139,6 +220,8 @@ This file should contain the facade view
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>yes</thumbZoom>
+                <spinPosX>1832</spinPosX>
+                <spinPosY>730</spinPosY>
 			</control>
 
 				<control>
@@ -152,7 +235,7 @@ This file should contain the facade view
 				  <onleft>50</onleft>
 				  <onright>50</onright>	  
 				  <posX>-10</posX>
-				  <posY>250</posY>
+				  <posY>186</posY>
 				  <width>1920</width>
 				  <height>1080</height>	  
 				  <selectedCard>0</selectedCard>
@@ -195,7 +278,7 @@ This file should contain the facade view
                 <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
                 <scrollbarWidth>689</scrollbarWidth>
 				<scrollbarHeight>4</scrollbarHeight>
-                <scrollbarYOff>530</scrollbarYOff>
+                <scrollbarYOff>522</scrollbarYOff>
 					<keepaspectratio>no</keepaspectratio>
 					<cards flipY="true" diffuse="Thumb_Mask_test.png" mask="video_filmstrip_mask.png"></cards>
 				</control>

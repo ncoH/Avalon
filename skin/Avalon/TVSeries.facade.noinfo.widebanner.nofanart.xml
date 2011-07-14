@@ -117,8 +117,8 @@
 		<onright>80</onright>
 		<scrollOffset>1</scrollOffset>
 		<posX>1166</posX>
-		<posY>236</posY>
-		<height>700</height>
+		<posY>153</posY>
+		<height>750</height>
 		<width>684</width>
 		<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
 		<textureNoFocus>-</textureNoFocus>

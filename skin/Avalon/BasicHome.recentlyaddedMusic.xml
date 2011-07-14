@@ -199,7 +199,7 @@
         <type>label</type>
         <id>0</id>
         <posX>1218</posX>
-        <posY>256</posY>
+        <posY>210</posY>
         <width>590</width>
         <label>#Avalon.LatestMusic</label>
         <font>AvalonLight20</font>
@@ -210,7 +210,7 @@
         <type>image</type>
         <id>10</id>
         <posX>1218</posX>
-        <posY>412</posY>
+        <posY>362</posY>
         <width>183</width>
         <height>181</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.music.latest1.thumb</texture>
@@ -220,7 +220,7 @@
         <type>button</type>
         <id>91919997</id>
         <posX>1212</posX>
-        <posY>407</posY>
+        <posY>357</posY>
         <width>193</width>
         <height>191</height>
         <textureFocus>basichome_focus.png</textureFocus>
@@ -247,7 +247,7 @@
         <type>image</type>
         <id>0</id>
         <posX>1418</posX>
-        <posY>412</posY>
+        <posY>362</posY>
         <width>183</width>
         <height>181</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.music.latest2.thumb</texture>
@@ -257,7 +257,7 @@
         <type>button</type>
         <id>91919998</id>
         <posX>1412</posX>
-        <posY>407</posY>
+        <posY>357</posY>
         <width>193</width>
         <height>191</height>
         <textureFocus>basichome_focus.png</textureFocus>
@@ -285,7 +285,7 @@
         <type>image</type>
         <id>0</id>
         <posX>1620</posX>
-        <posY>412</posY>
+        <posY>362</posY>
         <width>183</width>
         <height>181</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.music.latest3.thumb</texture>
@@ -295,7 +295,7 @@
         <type>button</type>
         <id>91919999</id>
         <posX>1615</posX>
-        <posY>407</posY>
+        <posY>357</posY>
         <width>193</width>
         <height>191</height>
         <textureFocus>basichome_focus.png</textureFocus>
@@ -316,7 +316,7 @@
         <type>image</type>
         <id>444</id>
         <posX>1620</posX>
-        <posY>412</posY>
+        <posY>362</posY>
         <width>183</width>
         <height>181</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.music.latest1.thumb</texture>
@@ -331,7 +331,7 @@
         <type>image</type>
         <id>0</id>
         <posX>1581</posX>
-        <posY>270</posY>
+        <posY>212</posY>
         <width>1</width>
         <height>468</height>
         <texture>basichome_sub_separator.png</texture>

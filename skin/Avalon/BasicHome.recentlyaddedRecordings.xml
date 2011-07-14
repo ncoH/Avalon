@@ -123,7 +123,7 @@
         <type>label</type>
         <id>0</id>
         <posX>1218</posX>
-        <posY>256</posY>
+        <posY>210</posY>
         <width>590</width>
         <label>#Avalon.LatestRecordings</label>
         <font>AvalonLight20</font>
@@ -134,7 +134,7 @@
         <type>button</type>
         <id>91919984</id>
         <posX>1214</posX>
-        <posY>345</posY>
+        <posY>295</posY>
         <width>531</width>
         <height>37</height>
 		<textXOff>52</textXOff>
@@ -165,7 +165,7 @@
         <type>button</type>
         <id>91919985</id>
         <posX>1214</posX>
-        <posY>385</posY>
+        <posY>335</posY>
         <width>531</width>
         <height>37</height>
 		<textXOff>52</textXOff>
@@ -196,7 +196,7 @@
         <type>button</type>
         <id>91919986</id>
         <posX>1214</posX>
-        <posY>425</posY>
+        <posY>375</posY>
         <width>531</width>
         <height>37</height>
 		<textXOff>52</textXOff>
@@ -227,7 +227,7 @@
         <type>button</type>
         <id>91919987</id>
         <posX>1214</posX>
-        <posY>465</posY>
+        <posY>415</posY>
         <width>531</width>
         <height>37</height>
 		<textXOff>52</textXOff>
@@ -251,7 +251,7 @@
 		<type>image</type>
 		<id>1</id>
         <posX>1620</posX>
-        <posY>345</posY>
+        <posY>295</posY>
 		<width>35</width>
 		<height>37</height>
 		<texture>recently_play.png</texture>
@@ -266,7 +266,7 @@
         <type>fadelabel</type>
         <id>1</id>
         <posX>1671</posX>
-        <posY>345</posY>
+        <posY>295</posY>
         <width>180</width>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
@@ -281,7 +281,7 @@
 		<type>image</type>
 		<id>1</id>
         <posX>1620</posX>
-        <posY>385</posY>
+        <posY>335</posY>
 		<width>35</width>
 		<height>37</height>
 		<texture>recently_play.png</texture>
@@ -296,7 +296,7 @@
         <type>fadelabel</type>
         <id>1</id>
         <posX>1671</posX>
-        <posY>385</posY>
+        <posY>335</posY>
         <width>180</width>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
@@ -311,7 +311,7 @@
 		<type>image</type>
 		<id>1</id>
         <posX>1620</posX>
-        <posY>425</posY>
+        <posY>375</posY>
 		<width>35</width>
 		<height>37</height>
 		<texture>recently_play.png</texture>
@@ -326,7 +326,7 @@
         <type>fadelabel</type>
         <id>1</id>
         <posX>1671</posX>
-        <posY>425</posY>
+        <posY>375</posY>
         <width>180</width>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
@@ -341,7 +341,7 @@
 		<type>image</type>
 		<id>1</id>
         <posX>1620</posX>
-        <posY>465</posY>
+        <posY>415</posY>
 		<width>35</width>
 		<height>37</height>
 		<texture>recently_play.png</texture>
@@ -356,7 +356,7 @@
         <type>fadelabel</type>
         <id>1</id>
         <posX>1671</posX>
-        <posY>465</posY>
+        <posY>415</posY>
         <width>180</width>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
@@ -372,7 +372,7 @@
         <type>image</type>
         <id>0</id>
         <posX>1581</posX>
-        <posY>270</posY>
+        <posY>212</posY>
         <width>1</width>
         <height>468</height>
         <texture>basichome_sub_separator.png</texture>

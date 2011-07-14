@@ -17,9 +17,9 @@
 			<control>
 				<type>image</type>
 				<posX>680</posX>
-				<posY>192</posY>
+				<posY>120</posY>
 				<width>1186</width>
-				<height>699</height>
+				<height>739</height>
 				<texture>info_bg.png</texture>
 				<visible>!Control.HasFocus(50)</visible>
 				<animation effect="fade" time="0">WindowClose</animation>
@@ -53,7 +53,7 @@
 				<type>image</type>
 				<id>0</id>
 				<posX>741</posX>
-				<posY>223</posY>
+				<posY>151</posY>
 				<width>58</width>
 				<height>59</height>
 				<texture>info.png</texture>
@@ -64,8 +64,8 @@
 				<description>Selected item Label</description>
 				<type>fadelabel</type>
 				<id>1</id>
-				<posX>838</posX>
-				<posY>225</posY>
+				<posX>835</posX>
+				<posY>154</posY>
 				<width>1160</width>
 				<label>#MovingPictures.SelectedMovie.title</label>
 				<font>fontB20</font>
@@ -86,7 +86,7 @@
 				<label>#Avalon.ReleaseDate</label>
 				<id>0</id>
 				<posX>744</posX>
-				<posY>308</posY>
+				<posY>240</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight12</font>
@@ -103,8 +103,8 @@
 				<type>label</type>
 				<label>#MovingPictures.SelectedMovie.year</label>
 				<id>0</id>
-				<posX>1058</posX>
-				<posY>308</posY>
+				<posX>998</posX>
+				<posY>238</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight14</font>
@@ -122,7 +122,7 @@
 				<label>#Avalon.Runtime</label>
 				<id>0</id>
 				<posX>744</posX>
-				<posY>348</posY>
+				<posY>280</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight12</font>
@@ -139,8 +139,8 @@
 				<type>label</type>
 				<label>#MovingPictures.SelectedMovie.runtime.totalminutes min</label>
 				<id>0</id>
-				<posX>1058</posX>
-				<posY>348</posY>
+				<posX>998</posX>
+				<posY>278</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight14</font>
@@ -158,7 +158,7 @@
 				<label>#MovingPictures.Translation.Genre.Label</label>
 				<id>0</id>
 				<posX>744</posX>
-				<posY>388</posY>
+				<posY>320</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight12</font>
@@ -175,8 +175,8 @@
 				<type>fadelabel</type>
 				<label>#MovingPictures.SelectedMovie.genres</label>
 				<id>0</id>
-				<posX>1058</posX>
-				<posY>388</posY>
+				<posX>998</posX>
+				<posY>318</posY>
 				<width>700</width>
 				<align>left</align>
 				<font>AvalonLight14</font>
@@ -194,7 +194,7 @@
 				<label>#MovingPictures.Translation.Director.Label</label>
 				<id>0</id>
 				<posX>744</posX>
-				<posY>428</posY>
+				<posY>360</posY>
 				<width>240</width>
 				<align>left</align>
 				<font>AvalonLight12</font>
@@ -211,8 +211,8 @@
 				<type>fadelabel</type>
 				<label>#MovingPictures.SelectedMovie.directors</label>
 				<id>0</id>
-				<posX>1058</posX>
-				<posY>428</posY>
+				<posX>998</posX>
+				<posY>358</posY>
 				<width>700</width>
 				<align>left</align>
 				<font>AvalonLight14</font>
@@ -229,9 +229,10 @@
 				<description>Summary (list)</description>
 				<id>1025</id>
 				<posX>744</posX>
-				<posY>490</posY>
+				<posY>422</posY>
 				<width>1060</width>
 				<height>280</height>
+		        <font>AvalonLight12</font>
 				<label>#MovingPictures.SelectedMovie.summary</label>
 				<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 				<onleft>1026</onleft>
@@ -251,7 +252,7 @@
 				<type>image</type>
 				<id>0</id>
 				<posX>743</posX>
-				<posY>786</posY>
+				<posY>748</posY>
 				<width>1041</width>
 				<height>73</height>
 				<texture>movie_detail_frame.png</texture>
@@ -267,7 +268,7 @@
 				<type>image</type>
 				<id>0</id>
 				<posX>756</posX>
-				<posY>792</posY>
+				<posY>754</posY>
 				<width>60</width>
 				<height>60</height>
 				<texture>certification\#MovingPictures.SelectedMovie.certification.png</texture>
@@ -277,8 +278,8 @@
 	<control>
 		<type>image</type>
 		<id>101</id>
-		<posX>840</posX>
-		<posY>807</posY>
+		<posX>842</posX>
+		<posY>769</posY>
 		<width>315</width>
 		<height>27</height>
 		<texture>star#MovingPictures.SelectedMovie.score.rounded.png</texture>
@@ -294,8 +295,8 @@
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.score.localized</label>
 		<id>0</id>
-		<posX>1220</posX>
-		<posY>802</posY>
+		<posX>1222</posX>
+		<posY>764</posY>
 		<width>185</width>
 		<align>right</align>
 		<font>fontB14</font>
@@ -319,7 +320,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1370</posX>
-		<posY>802</posY>
+		<posY>765</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\1080_h264_235.png</texture>
@@ -335,7 +336,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1370</posX>
-		<posY>802</posY>
+		<posY>765</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\720_h264_235.png</texture>
@@ -351,7 +352,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1370</posX>
-		<posY>802</posY>
+		<posY>765</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_xvid_235.png</texture>
@@ -367,7 +368,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1370</posX>
-		<posY>802</posY>
+		<posY>765</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_xvid_133.png</texture>
@@ -383,7 +384,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1370</posX>
-		<posY>802</posY>
+		<posY>765</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_divx_235.png</texture>
@@ -399,7 +400,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1370</posX>
-		<posY>802</posY>
+		<posY>765</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_divx_133.png</texture>
@@ -415,7 +416,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1370</posX>
-		<posY>802</posY>
+		<posY>765</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\540_mpeg2_235.png</texture>
@@ -432,7 +433,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1582</posX>
-		<posY>802</posY>
+		<posY>765</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\ac3_51.png</texture>
@@ -448,7 +449,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1582</posX>
-		<posY>802</posY>
+		<posY>765</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dts_51.png</texture>
@@ -464,7 +465,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1582</posX>
-		<posY>802</posY>
+		<posY>765</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dts_71.png</texture>
@@ -480,7 +481,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1582</posX>
-		<posY>802</posY>
+		<posY>765</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\ac3_20.png</texture>
@@ -496,7 +497,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1582</posX>
-		<posY>802</posY>
+		<posY>765</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\mp3_20.png</texture>
@@ -513,7 +514,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1274</posX>
-		<posY>802</posY>
+		<posY>765</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\bluray.png</texture>
@@ -529,7 +530,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1274</posX>
-		<posY>802</posY>
+		<posY>765</posY>
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\dvd.png</texture>
@@ -545,7 +546,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1716</posX>
-		<posY>806</posY>
+		<posY>769</posY>
 		<width>36</width>
 		<height>37</height>
 		<texture>Logos\#MovingPictures.LocalMedia.Subtitles.png</texture>
@@ -560,7 +561,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1716</posX>
-		<posY>806</posY>
+		<posY>769</posY>
 		<width>36</width>
 		<height>37</height>
 		<texture>Logos\#MovingPictures.LocalMedia.Subtitles.png</texture>

@@ -8,11 +8,11 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>680</posX>
-		<posY>822</posY>
+		<posX>714</posX>
+		<posY>810</posY>
 		<width>810</width>
 		<label>#MovingPictures.SelectedMovie.title</label>
-		<font>fontB20</font>
+		<font>fontB16</font>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+control.isvisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -28,7 +28,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>695</posX>
-		<posY>182</posY>
+		<posY>101</posY>
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_shadow.png</texture>
@@ -44,7 +44,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>695</posX>
-		<posY>182</posY>
+		<posY>101</posY>
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_glow.png</texture>
@@ -60,7 +60,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>762</posX>
-		<posY>250</posY>
+		<posY>169</posY>
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">defaultVideoBig.png</texture>
@@ -76,12 +76,14 @@
 		<type>image</type>
 		<id>60</id>
 		<posX>762</posX>
-		<posY>250</posY>
+		<posY>169</posY>
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#MovingPictures.Coverart</texture>
 		<visible>facadeview.list+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
+    
+    
 	<!--            :: INFO LABELS ::            -->
 	
 	<control>
@@ -92,8 +94,8 @@
 		<type>label</type>
 		<label>#Avalon.ReleaseDate</label>
 		<id>0</id>
-		<posX>678</posX>
-		<posY>884</posY>
+		<posX>714</posX>
+		<posY>872</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -110,7 +112,7 @@
 		<label>#MovingPictures.SelectedMovie.year</label>
 		<id>0</id>
 		<posX>882</posX>
-		<posY>884</posY>
+		<posY>872</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -126,8 +128,8 @@
 		<type>label</type>
 		<label>#Avalon.Runtime</label>
 		<id>0</id>
-		<posX>678</posX>
-		<posY>924</posY>
+		<posX>714</posX>
+		<posY>912</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -144,7 +146,7 @@
 		<label>#MovingPictures.SelectedMovie.runtime.totalminutes min</label>
 		<id>0</id>
 		<posX>882</posX>
-		<posY>924</posY>
+		<posY>912</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -160,8 +162,8 @@
 		<type>label</type>
 		<label>#MovingPictures.Translation.Genre.Label</label>
 		<id>0</id>
-		<posX>678</posX>
-		<posY>964</posY>
+		<posX>714</posX>
+		<posY>952</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -178,7 +180,7 @@
 		<label>#MovingPictures.SelectedMovie.genres</label>
 		<id>0</id>
 		<posX>882</posX>
-		<posY>964</posY>
+		<posY>952</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -194,8 +196,8 @@
 		<type>label</type>
 		<label>#MovingPictures.Translation.Director.Label</label>
 		<id>0</id>
-		<posX>678</posX>
-		<posY>1004</posY>
+		<posX>714</posX>
+		<posY>990</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -212,7 +214,7 @@
 		<label>#MovingPictures.SelectedMovie.directors</label>
 		<id>0</id>
 		<posX>882</posX>
-		<posY>1004</posY>
+		<posY>990</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -227,32 +229,31 @@
 		<type>textboxscrollup</type>
 		<description>Summary (list)</description>
 		<id>1025</id>
-		<posX>1138</posX>
-		<posY>884</posY>
+		<posX>1175</posX>
+		<posY>872</posY>
 		<width>725</width>
-		<height>180</height>
+		<height>150</height>
 		<label>#MovingPictures.SelectedMovie.summary</label>
-		<font>AvalonLight11</font>
+		<font>AvalonLight12</font>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
 		<onright>1026</onright>
 		<onup>1026</onup>
 		<ondown>1026</ondown>
-		<lineSpacing>0.85</lineSpacing>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
-	
+    
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>imagelist</type>
 		<id>101</id>
-		<posX>850</posX>
-		<posY>732</posY>
+		<posX>710</posX>
+		<posY>726</posY>
 		<width>185</width>
 		<height>29</height>
-		<textureWidth>28</textureWidth>
+		<textureWidth>32</textureWidth>
 		<textureHeight>27</textureHeight>
 		<subitems>
 		<subitem>starblue.png</subitem>
@@ -262,7 +263,7 @@
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
-		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
 	
     <control>
@@ -274,7 +275,7 @@
         <type>image</type>
         <id>0</id>
         <posX>762</posX>
-        <posY>250</posY>
+        <posY>169</posY>
         <width>162</width>
         <height>164</height>
         <texture>tvseries_newlabel.png</texture>
