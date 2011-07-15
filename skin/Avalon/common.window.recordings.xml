@@ -21,7 +21,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>0</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
 		<height>866</height>
 		<texture>viewport_tv_recordings.png</texture>
@@ -30,16 +30,31 @@
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
 		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
 	</control>
+    
+	<!--            :: Count Background ::            -->
+
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>900</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
 
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>74</posX>
-		<posY>514</posY>
+		<posY>473</posY>
 		<width>800</width>
 		<label>#selecteditem</label>
-		<font>fontB20</font>
+		<font>fontB16</font>
 		<visible>[facadeview.list | facadeview.album | facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons | facadeview.playlist]+Control.IsVisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -49,12 +64,12 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<label>| #currentmodule: #itemcount</label>
-		<posX>242</posX>
-		<posY>99</posY>
+		<label>#currentmodule: #itemcount</label>
+		<posX>948</posX>
+		<posY>944</posY>
 		<align>left</align>
 		<font>AvalonLight12</font>
-		<textcolor>ffffff</textcolor>
+		<textcolor>6aa5cb</textcolor>
 		<visible>[facadeview.list | facadeview.album | facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons | facadeview.playlist]+Control.IsVisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
