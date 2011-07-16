@@ -14,24 +14,22 @@
       <posY>-2000</posY>
       <label>#Avalon.EnablePosterHide</label>
     </control>
-
-<import>common.window.music.xml</import>
-	
 	
 	<control>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		  <posX>185</posX>
-		  <posY>38</posY>
-		  <width>500</width>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
 		<label>2</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>font22</font>
-		<visible>facadeview.list | facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
+		<visible>facadeview.list | facadeview.filmstrip | facadeview.coverflow | facadeview.smallicons | facadeview.largeicons</visible>
 	</control>
 	
+<import>common.window.music.xml</import>
 <import>common.time.xml</import>
 
 		<!--            :: Overlays ::            -->	
@@ -45,7 +43,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>423</posX>
-		<posY>168</posY>
+		<posY>101</posY>
 		<width>486</width>
 		<height>487</height>
 		<texture>list_music_shadow.png</texture>
@@ -61,7 +59,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>423</posX>
-		<posY>168</posY>
+		<posY>101</posY>
 		<width>486</width>
 		<height>487</height>
 		<texture>list_music_glow.png</texture>
@@ -76,7 +74,7 @@
 		<id>0</id>
 		<type>image</type>
 		<posX>490</posX>
-		<posY>236</posY>
+		<posY>169</posY>
 		<width>350</width>
 		<height>350</height>
 		<visible>[facadeview.list+!control.hasthumb(500)+!string.contains(#selecteditem, ..)] + !string.equals(#Avalon.hidePoster,yes)</visible>
@@ -91,7 +89,7 @@
 		<id>0</id>
 		<type>image</type>
 		<posX>490</posX>
-		<posY>236</posY>
+		<posY>169</posY>
 		<width>350</width>
 		<height>350</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">DefaultMyradioBackBig.png</texture>
@@ -107,7 +105,7 @@
 		<type>image</type>
 		<id>500</id>
 		<posX>490</posX>
-		<posY>236</posY>
+		<posY>169</posY>
 		<width>350</width>
 		<height>350</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#selectedthumb</texture>
@@ -137,7 +135,7 @@
 		<texture>hiddenmenu_tab_up.png</texture>
 		<visible>facadeview.filmstrip+Control.HasFocus(50) + string.contains(#Avalon.HiddenMenu, true)</visible>
 	</control>	
-	
+    
 <import>mymusic.hiddenmenu.xml</import>	
 <import>common.facade.music.xml</import>	
 <import>common.overlay.xml</import>

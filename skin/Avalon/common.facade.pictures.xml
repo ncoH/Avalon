@@ -2,6 +2,66 @@
 <window>
 <controls>
 
+	<!--            :: Count Background ::            -->
+
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>829</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+    
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>859</posY>
+		<width>1865</width>
+		<height>64</height>
+		<texture>movies_count_bg_filmstrip.png</texture>
+		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>  
+
+	<!--            :: Count ::            -->
+
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+        <posX>720</posX>
+        <posY>875</posY>
+        <align>left</align>
+        <font>AvalonLight12</font>
+        <textcolor>6aa5cb</textcolor>
+		<label>#currentmodule: #itemcount</label>
+		<visible>[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+Control.IsVisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+    
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+        <posX>940</posX>
+        <posY>875</posY>
+        <align>left</align>
+        <font>AvalonLight12</font>
+        <textcolor>6aa5cb</textcolor>
+		<label>#currentmodule: #itemcount</label>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+    
 	<control>
 		<description>group element</description>
 		<type>group</type>
@@ -19,13 +79,15 @@
 				<onright>50</onright>
 				<scrollOffset>1</scrollOffset>
 				<posX>905</posX>
-				<posY>236</posY>
-				<width>924</width>
-				<height>700</height>
+			    <posY>153</posY>
+		      	<height>750</height>
+  				<width>924</width>
 				<textXOff>50</textXOff>
 				<dimColor>ffffffff</dimColor>
 				<textureFocus>listcontrol_item_selected_large.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
+			    <spinPosX>1832</spinPosX>
+		      	<spinPosY>880</spinPosY>
 			</control>
 
 			<control>
@@ -34,7 +96,7 @@
 				<dimColor>90ffffff</dimColor>
 				<id>50</id>
 				<posX>723</posX>
-				<posY>232</posY>
+				<posY>188</posY>
 				<width>1120</width>
 				<height>800</height>
 				<onleft>2</onleft>
@@ -55,8 +117,8 @@
 				<textureHeightBig>210</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
-				<zoomXPixels>20</zoomXPixels>
-				<zoomYPixels>30</zoomYPixels>
+				<zoomXPixels>40</zoomXPixels>
+				<zoomYPixels>60</zoomYPixels>
 				<thumbZoom>yes</thumbZoom>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<renderFocusText>no</renderFocusText>
@@ -69,6 +131,8 @@
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
 				<keepaspectratio>yes</keepaspectratio>
+			    <spinPosX>1832</spinPosX>
+		      	<spinPosY>880</spinPosY>
 			</control>
 				
 		<control>
@@ -80,7 +144,7 @@
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<posX>168</posX>
-				<posY>360</posY>
+				<posY>320</posY>
 				<width>1690</width>
 				<height>768</height>
 				<onup>2</onup>
@@ -106,6 +170,13 @@
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
 				<keepaspectratio>yes</keepaspectratio>
+                <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+                <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+                <scrollbarWidth>689</scrollbarWidth>
+				<scrollbarHeight>4</scrollbarHeight>
+                <scrollbarYOff>536</scrollbarYOff>
+			    <spinPosX>1832</spinPosX>
+		      	<spinPosY>880</spinPosY>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,580" time="400">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,580" time="100">unfocus</thumbAnimation>
 		</control>
@@ -121,7 +192,7 @@
 			  <onleft>50</onleft>
 			  <onright>50</onright>	
 			  <posX>0</posX>
-			  <posY>272</posY>
+			  <posY>260</posY>
 			  <width>1920</width>
 			  <height>1080</height>
 			  <selectedCard>0</selectedCard>
@@ -159,6 +230,13 @@
 			  <label2YOff>2430</label2YOff>
 			  <pageSize>5</pageSize>
 			  <keepaspectratio>yes</keepaspectratio>
+                <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+                <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+                <scrollbarWidth>689</scrollbarWidth>
+				<scrollbarHeight>4</scrollbarHeight>
+                <scrollbarYOff>597</scrollbarYOff>
+			    <spinPosX>1832</spinPosX>
+		      	<spinPosY>880</spinPosY>
 			  <cards flipY="yes" diffuse="Thumb_Mask.png" mask="music_filmstrip_fanart_mask.png"></cards>
 			</control>
 		</control>

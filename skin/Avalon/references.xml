@@ -144,9 +144,9 @@
     <description>default listcontrol</description>
     <type>listcontrol</type>
     <id>10</id>
-    <posX>1166</posX>
-    <posY>236</posY>
-    <height>700</height>
+	<posX>1166</posX>
+	<posY>153</posY>
+	<height>750</height>
     <width>684</width>
     <textureFocus>listcontrol_item_selected_small.png</textureFocus>
     <textureNoFocus>-</textureNoFocus>
@@ -186,6 +186,7 @@
     <spinPosY>880</spinPosY>
     <spinAlign>right</spinAlign>
     <spinColor>FF6aa5cb</spinColor>
+    <dimColor>ffffffff</dimColor>
   </control>
   <control>
     <description>default checklistcontrol</description>
@@ -276,16 +277,16 @@
     <description>default playlist item listcontrol</description>
     <type>playlistcontrol</type>
     <id>10</id>
-    <posX>905</posX>
-    <posY>236</posY>
-    <width>924</width>
-    <height>700</height>
+	<posX>906</posX>
+	<posY>153</posY>
+	<width>924</width>
+	<height>750</height>
     <spinWidth>46</spinWidth>
     <spinHeight>33</spinHeight>
     <spinPosX>312</spinPosX>
     <spinPosY>104</spinPosY>
     <spinAlign>right</spinAlign>
-    <spinColor>FFFFFFFF</spinColor>
+    <spinColor>FF6aa5cb</spinColor>
     <textureHeight>55</textureHeight>
     <image>-</image>
     <font>font12</font>

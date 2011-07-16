@@ -41,21 +41,21 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<id>50</id>
 		<posX>920</posX>
-		<posY>226</posY>
+		<posY>184</posY>
 		<width>800</width>
 		<textcolor>ffffffff</textcolor>
 		<textColorNoFocus>ff6aa5cb</textColorNoFocus>
 		<buttonTextXOff>10</buttonTextXOff>
 		<buttonTextYOff>0</buttonTextYOff>
-		<buttonHeight>92</buttonHeight>
+		<buttonHeight>105</buttonHeight>
 		<buttonOffset>25</buttonOffset>
 		<buttonFont>AvalonLight32</buttonFont>
 		<spaceBetweenButtons>0</spaceBetweenButtons>
 		<numberOfButtons>5</numberOfButtons>
 		<hoverX>0</hoverX>
-		<hoverY>188</hoverY>
-		<hoverWidth>1059</hoverWidth>
-		<hoverHeight>596</hoverHeight>
+		<hoverY>117</hoverY>
+		<hoverWidth>1173</hoverWidth>
+		<hoverHeight>662</hoverHeight>
 		<hoverKeepAspectratio>no</hoverKeepAspectratio>
 		<scrollTime>160</scrollTime>
 		<scrollTimeMin>100</scrollTimeMin>
@@ -68,9 +68,9 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>0</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
-		<height>644</height>
+		<height>716</height>
 		<texture>viewport_music_list_fanart.png</texture>
 		<shouldCache>true</shouldCache>
 		<animation effect="fade" time="250">WindowOpen</animation>

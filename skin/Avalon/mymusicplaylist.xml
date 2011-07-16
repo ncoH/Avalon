@@ -308,7 +308,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>423</posX>
-		<posY>168</posY>
+		<posY>101</posY>
 		<width>486</width>
 		<height>487</height>
 		<texture>list_music_shadow.png</texture>
@@ -324,7 +324,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>423</posX>
-		<posY>168</posY>
+		<posY>101</posY>
 		<width>486</width>
 		<height>487</height>
 		<texture>list_music_glow.png</texture>
@@ -339,7 +339,7 @@
 		<id>0</id>
 		<type>image</type>
 		<posX>490</posX>
-		<posY>236</posY>
+		<posY>169</posY>
 		<width>350</width>
 		<height>350</height>
 		<visible>[[facadeview.list | facadeview.album | facadeview.playlist]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]] + !string.equals(#Avalon.hidePoster,yes)</visible>
@@ -354,7 +354,7 @@
 		<id>500</id>
 		<type>image</type>
 		<posX>490</posX>
-		<posY>236</posY>
+		<posY>169</posY>
 		<width>350</width>
 		<height>350</height>
 		<visible>[facadeview.list | facadeview.album | facadeview.playlist] + !string.equals(#Avalon.hidePoster,yes)</visible>

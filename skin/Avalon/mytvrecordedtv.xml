@@ -40,7 +40,7 @@
 			<id>0</id>
 			<type>image</type>
 			<posX>74</posX>
-			<posY>245</posY>
+			<posY>174</posY>
 			<width>421</width>
 			<height>238</height>
 			<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">defaultTVBig.png</texture>
@@ -53,7 +53,7 @@
 			<id>500</id>
 			<type>image</type>
 			<posX>74</posX>
-			<posY>245</posY>
+			<posY>174</posY>
 			<width>421</width>
 			<height>238</height>
 			<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#selectedthumb</texture>
@@ -66,7 +66,7 @@
 			<id>0</id>
 			<type>image</type>
 			<posX>7</posX>
-			<posY>177</posY>
+			<posY>106</posY>
 			<width>556</width>
 			<height>373</height>
 			<texture>recordings_thumb_shadow.png</texture>
@@ -79,7 +79,7 @@
 			<id>0</id>
 			<type>image</type>
 			<posX>536</posX>
-			<posY>364</posY>
+			<posY>293</posY>
 			<width>187</width>
 			<height>119</height>
 			<texture>tv_logo_bg.png</texture>
@@ -92,7 +92,7 @@
 			<id>0</id>
 			<type>image</type>
 			<posX>585</posX>
-			<posY>378</posY>
+			<posY>307</posY>
 			<width>90</width>
 			<height>90</height>
 			<texture>#TV.RecordedTV.thumb</texture>
@@ -118,7 +118,7 @@
 			<description>Current program time</description>
 			<id>0</id>
 			<posX>74</posX>
-			<posY>578</posY>
+			<posY>532</posY>
 			<width>800</width>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight14</font>
@@ -133,9 +133,9 @@
 			<description>Description1</description>
 			<id>0</id>
 			<posX>74</posX>
-			<posY>630</posY>
+			<posY>594</posY>
 			<width>780</width>
-			<height>350</height>
+			<height>320</height>
 			<label>#TV.RecordedTV.Description</label>
 			<visible>facadeview.list</visible>
 		</control>

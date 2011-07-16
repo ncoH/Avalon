@@ -2,6 +2,54 @@
 <window>
 <controls>
 
+	<!--            :: Count Background ::            -->
+
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>829</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.playlist] + control.isvisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+	<!--            :: Count ::            -->
+
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+        <posX>456</posX>
+        <posY>875</posY>
+        <align>left</align>
+        <font>AvalonLight12</font>
+        <textcolor>6aa5cb</textcolor>
+		<label>#currentmodule: #itemcount</label>
+		<visible>[facadeview.list|facadeview.album | facadeview.playlist]+Control.IsVisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+        <posX>720</posX>
+        <posY>875</posY>
+        <align>left</align>
+        <font>AvalonLight12</font>
+        <textcolor>6aa5cb</textcolor>
+		<label>#currentmodule: #itemcount</label>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
 	<control>
 		<description>group element</description>
 		<type>group</type>
@@ -19,13 +67,15 @@
 				<onright>50</onright>
 				<scrollOffset>1</scrollOffset>
 				<posX>906</posX>
-				<posY>236</posY>
+			    <posY>153</posY>
 				<width>924</width>
-				<height>700</height>
+				<height>750</height>
 				<textXOff>50</textXOff>
 				<dimColor>ffffffff</dimColor>
 				<textureFocus>listcontrol_item_selected_large.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
+			    <spinPosX>1832</spinPosX>
+		      	<spinPosY>880</spinPosY>
 			</control>
 
             <control>
@@ -34,7 +84,7 @@
                 <subtype>album</subtype>
                 <id>50</id>
 				<posX>905</posX>
-				<posY>236</posY>
+			    <posY>153</posY>
 				<height>710</height>
 				<width>939</width>
 				<textXOff>246</textXOff>
@@ -60,6 +110,8 @@
                 <onleft>2</onleft>
                 <onright>50</onright>
                 <keepaspectratio>yes</keepaspectratio>
+			    <spinPosX>1832</spinPosX>
+		      	<spinPosY>880</spinPosY>
 			</control>
 			
 			<control>
@@ -67,7 +119,7 @@
 				<type>thumbnailpanel</type>
 				<id>50</id>
 				<posX>723</posX>
-				<posY>232</posY>
+				<posY>188</posY>
 				<width>1120</width>
 				<height>800</height>
 				<textureUp>page_up_nofocus.png</textureUp>
@@ -111,7 +163,9 @@
 				<frameNoFocus>music_thumb_nofocus.png</frameNoFocus>
 				<frameFocus>music_thumb_focus.png</frameFocus>
 				<textureMask>music_thumb_mask.png</textureMask>
-				<keepaspectratio>yes</keepaspectratio>
+				<keepaspectratio>no</keepaspectratio>
+			    <spinPosX>1832</spinPosX>
+		      	<spinPosY>880</spinPosY>
 			</control>
 
 			<control>
@@ -144,6 +198,13 @@
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
 				<keepaspectratio>no</keepaspectratio>
+                <scrollbarBackground>scrollbar_bg.png</scrollbarBackground>
+                <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+                <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+                <scrollbarWidth>689</scrollbarWidth>
+				<scrollbarHeight>4</scrollbarHeight>
+                <scrollbarYOff>538</scrollbarYOff>
+                <spinPosX>-2000</spinPosX>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="128,128" center="0,700" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="128,128" reversible="false" end="100,100" center="0,700" time="100">unfocus</thumbAnimation>
 			</control>
@@ -159,7 +220,7 @@
 			  <onleft>50</onleft>
 			  <onright>50</onright>	
 			  <posX>0</posX>
-			  <posY>600</posY>
+			  <posY>520</posY>
 			  <width>1920</width>
 			  <height>1080</height>
 			  <selectedCard>0</selectedCard>
@@ -216,8 +277,8 @@
 				<spinCanFocus>no</spinCanFocus>
 				<spinWidth>46</spinWidth>
 				<spinHeight>33</spinHeight>
-				<spinPosX>233</spinPosX>
-				<spinPosY>104</spinPosY>
+			    <spinPosX>1832</spinPosX>
+		      	<spinPosY>880</spinPosY>
 				<spinAlign>right</spinAlign>
 				<dimColor>ffffffff</dimColor>
 			</control>

@@ -34,7 +34,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>695</posX>
-		<posY>182</posY>
+		<posY>101</posY>
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_shadow.png</texture>
@@ -49,7 +49,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>695</posX>
-		<posY>182</posY>
+		<posY>101</posY>
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_glow.png</texture>
@@ -62,7 +62,7 @@
 		<id>0</id>
 		<type>image</type>
 		<posX>762</posX>
-		<posY>250</posY>
+		<posY>169</posY>
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">defaultFolderBig.png</texture>
@@ -75,7 +75,7 @@
 		<id>0</id>
 		<type>image</type>
 		<posX>762</posX>
-		<posY>250</posY>
+		<posY>169</posY>
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">DefaultFolderBackBig.png</texture>
@@ -88,7 +88,7 @@
 		<id>500</id>
 		<type>image</type>
 		<posX>762</posX>
-		<posY>250</posY>
+		<posY>169</posY>
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#selectedthumb</texture>

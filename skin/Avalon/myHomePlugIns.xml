@@ -41,21 +41,21 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<id>50</id>
 		<posX>920</posX>
-		<posY>226</posY>
+		<posY>184</posY>
 		<width>800</width>
 		<textcolor>ffffffff</textcolor>
 		<textColorNoFocus>ff6aa5cb</textColorNoFocus>
 		<buttonTextXOff>10</buttonTextXOff>
 		<buttonTextYOff>0</buttonTextYOff>
-		<buttonHeight>92</buttonHeight>
+		<buttonHeight>105</buttonHeight>
 		<buttonOffset>25</buttonOffset>
 		<buttonFont>AvalonLight32</buttonFont>
 		<spaceBetweenButtons>0</spaceBetweenButtons>
 		<numberOfButtons>5</numberOfButtons>
 		<hoverX>0</hoverX>
-		<hoverY>188</hoverY>
-		<hoverWidth>1059</hoverWidth>
-		<hoverHeight>596</hoverHeight>
+		<hoverY>117</hoverY>
+		<hoverWidth>1173</hoverWidth>
+		<hoverHeight>662</hoverHeight>
 		<hoverKeepAspectratio>no</hoverKeepAspectratio>
 		<scrollTime>160</scrollTime>
 		<scrollTimeMin>100</scrollTimeMin>
@@ -68,9 +68,9 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>0</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
-		<height>644</height>
+		<height>716</height>
 		<texture>viewport_music_list_fanart.png</texture>
 		<shouldCache>true</shouldCache>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -89,8 +89,38 @@
 		<width>64</width>
 		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
-		<visible>![Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)]</visible>
+		<visible>![Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)] + string.contains(#Avalon.HiddenMenu, true)</visible>
 	</control>
+
+<control>
+	<description>RSS background</description>
+	<type>image</type>
+	<id>111</id>
+	<posX>0</posX>
+	<posY>754</posY>
+	<width>1865</width>
+	<height>90</height>
+	<texture>#Avalon.RSS</texture>
+	<visible>plugin.isenabled(InfoService)</visible>
+	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+</control>
+
+<control>
+	<description>RSS items</description>
+	<type>fadelabel</type>
+	<id>1</id>
+	<posX>25</posX>
+	<posY>799</posY>
+	<width>1810</width>
+	<height>30</height>
+	<font>font11</font>
+	<textcolor>6aa5cb</textcolor>
+	<label>#infoservice.feed.titles</label>
+	<visible>plugin.isenabled(InfoService)+Control.Hasthumb(111)</visible>
+	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+</control>
 
 <import>myHome.exitmenu.xml</import>
 <import>BasicHome.weather.xml</import>  

@@ -12,7 +12,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>695</posX>
-		<posY>182</posY>
+		<posY>101</posY>
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_shadow.png</texture>
@@ -28,7 +28,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>695</posX>
-		<posY>182</posY>
+		<posY>101</posY>
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_glow.png</texture>
@@ -44,7 +44,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>762</posX>
-		<posY>250</posY>
+		<posY>169</posY>
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">defaultVideoBig.png</texture>
@@ -60,7 +60,7 @@
 		<type>image</type>
 		<id>60</id>
 		<posX>762</posX>
-		<posY>250</posY>
+		<posY>169</posY>
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#selectedthumb</texture>
@@ -165,7 +165,7 @@
 		<label>#year - #runtime #Avalon.Minutes - #genre</label>
 		<id>0</id>
 		<posX>0</posX>
-		<posY>1024</posY>
+		<posY>985</posY>
 		<width>1920</width>
 		<align>center</align>
 		<font>AvalonLight12</font>
@@ -179,11 +179,11 @@
 		<animation effect="fade" time="450" reversible="false">visible</animation>
 		<type>imagelist</type>
 		<id>101</id>
-		<posX>882</posX>
-		<posY>900</posY>
+		<posX>880</posX>
+		<posY>1010</posY>
 		<width>185</width>
 		<height>29</height>
-		<textureWidth>28</textureWidth>
+		<textureWidth>32</textureWidth>
 		<textureHeight>27</textureHeight>
 		<subitems>
 		<subitem>starblue.png</subitem>

@@ -18,7 +18,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>1</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
 		<height>646</height>
 		<texture>viewport_short.png</texture>
@@ -34,7 +34,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>1</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
 		<height>646</height>
 		<texture>viewport_small.png</texture>
