@@ -18,9 +18,9 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>1</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>795</height>
 		<texture>viewport_long.png</texture>
 		<visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)|control.isvisible(1240)]+facadeview.list</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -34,9 +34,9 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>1</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>795</height>
 		<texture>viewport_categories.png</texture>
 		<visible>control.isvisible(1239)+facadeview.list</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -50,9 +50,9 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>0</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>795</height>
 		<texture>viewport_thumbs2.png</texture>
 		<visible>control.isvisible(1237)+facadeview.largeicons</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>

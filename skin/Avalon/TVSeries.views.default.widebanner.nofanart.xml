@@ -171,8 +171,8 @@
 		<description>Description (grouplist)</description>
 		<id>0</id>
 		<posX>762</posX>
-		<posY>236</posY>
-		<height>600</height>
+		<posY>168</posY>
+		<height>520</height>
 		<width>684</width>
 		<seperator>---------------------------------------------------------------------------------------------------------------------</seperator>
 		<font>AvalonLight12</font>

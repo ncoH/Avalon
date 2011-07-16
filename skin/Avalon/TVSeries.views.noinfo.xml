@@ -173,8 +173,8 @@
 		<description>Description (grouplist)</description>
 		<id>0</id>
 		<posX>762</posX>
-		<posY>236</posY>
-		<height>600</height>
+		<posY>168</posY>
+		<height>650</height>
 		<width>684</width>
 		<seperator>---------------------------------------------------------------------------------------------------------------------</seperator>
 		<font>AvalonLight11</font>
@@ -341,7 +341,7 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<id>640</id>
-        <posX>1166</posX>
+        <posX>1196</posX>
         <posY>880</posY>
         <align>left</align>
         <font>AvalonLight12</font>
