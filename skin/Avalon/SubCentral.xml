@@ -54,16 +54,31 @@
 			<type>image</type>
 			<id>0</id>
 			<posX>0</posX>
-			<posY>164</posY>
+			<posY>92</posY>
 			<width>1893</width>
-			<height>755</height>
+			<height>795</height>
 			<texture>viewport_settings.png</texture>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 			<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
 			<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
 		</control>
-		
+	
+    	<control>
+    		<description>RSS background</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>0</posX>
+    		<posY>829</posY>
+    		<width>1865</width>
+    		<height>96</height>
+    		<texture>basichome_rss_bg.png</texture>
+    		<animation effect="fade" time="250">WindowOpen</animation>
+    		<animation effect="fade" time="250">WindowClose</animation>
+    		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+    		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+    	</control>
+        
 		<control>
 			<type>label</type>
 			<description>Settings label</description>

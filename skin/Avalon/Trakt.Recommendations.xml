@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>87261</id>
+	<defaultcontrol>88882</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:#Trakt.Translation.Recommendations.Label</define>
+	<define>#defaultcontrol:88882</define>
+	<define>#defaultcontrol.onright:9993</define>
+	<controls>
+		<import>Trakt.Common.xml</import>
+        <import>common.time.xml</import>
+	<control>
+		<description>buttons</description>
+		<type>group</type>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<posX>736</posX>
+		<posY>360</posY>
+		<layout>StackLayout</layout>
+		<control>
+			<type>button</type>
+			<description>Recommended Movies</description>
+			<id>88882</id>
+			<label>#Trakt.Translation.RecommendedMovies.Label</label>
+			<hyperlink>87263</hyperlink>
+			<onup>17</onup>
+			<onright>#defaultcontrol.onright</onright>
+			<width>956</width>
+			<height>52</height>
+			<textXOff>30</textXOff>
+			<textYOff>8</textYOff>
+			<textureFocus>settings_button_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		</control>
+		<control>
+			<description>Recommended Shows</description>
+			<type>button</type>
+			<id>88883</id>
+			<label>#Trakt.Translation.RecommendedShows.Label</label>
+			<hyperlink>87262</hyperlink>
+			<onright>#defaultcontrol.onright</onright>
+			<width>956</width>
+			<height>52</height>
+			<textXOff>30</textXOff>
+			<textYOff>8</textYOff>
+			<textureFocus>settings_button_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		</control>
+  </control>
+		<import>common.overlay.xml</import>
+	</controls>
+</window>

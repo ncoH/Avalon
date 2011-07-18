@@ -1,25 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>9</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
-<define>#defaultcontrol.onleft:10002</define>
-<controls>
-	<import>settings.menu.xml</import>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<type>label</type>
-		<id>1</id>
-		<posX>766</posX>
-		<posY>264</posY>
-		<width>1000</width>
-		<label>6023</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB22</font>
-	</control>
-	
+	<id>87267</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:#Trakt.Translation.WatchList.Label</define>
+	<define>#header.hover:hover_trakt.png</define>
+	<define>#defaultcontrol:2</define>
+	<define>#defaultcontrol.onright:9995</define>
+	<controls>
+		<import>Trakt.Common.xml</import>
+        <import>common.time.xml</import>
 	<control>
 		<description>buttons</description>
 		<type>group</type>
@@ -29,9 +19,13 @@
 		<posY>360</posY>
 		<layout>StackLayout</layout>
 		<control>
-			<description>UI Calibration button</description>
 			<type>button</type>
+			<description>Watch List Movies</description>
 			<id>2</id>
+			<label>#Trakt.Translation.WatchListMovies.Label</label>
+			<hyperlink>87270</hyperlink>
+			<onup>17</onup>
+			<onright>#defaultcontrol.onright</onright>
 			<width>956</width>
 			<height>52</height>
 			<textXOff>30</textXOff>
@@ -40,16 +34,14 @@
 			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
 			<textcolor>ffffffff</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-			<label>213</label>
-			<hyperlink>10</hyperlink>
-			<onup>4</onup>
-			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
-
 		<control>
-			<description>Screen Calibration button</description>
+			<description>Watch List Shows</description>
 			<type>button</type>
-			<id>3</id>
+			<id>88883</id>
+			<label>#Trakt.Translation.WatchListShows.Label</label>
+			<hyperlink>87268</hyperlink>
+			<onright>#defaultcontrol.onright</onright>
 			<width>956</width>
 			<height>52</height>
 			<textXOff>30</textXOff>
@@ -58,15 +50,14 @@
 			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
 			<textcolor>ffffffff</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-			<label>214</label>
-			<hyperlink>11</hyperlink>
-			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
-
 		<control>
-			<description>Scroll speed button</description>
+			<description>Watch List Episodes</description>
 			<type>button</type>
-			<id>4</id>
+			<id>88884</id>
+			<label>#Trakt.Translation.WatchListEpisodes.Label</label>
+			<hyperlink>87269</hyperlink>
+			<onright>#defaultcontrol.onright</onright>
 			<width>956</width>
 			<height>52</height>
 			<textXOff>30</textXOff>
@@ -75,14 +66,8 @@
 			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
 			<textcolor>ffffffff</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-			<label>673</label>
-			<hyperlink>31</hyperlink>
-			<ondown>2</ondown>
-			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
-
-	</control>
-<import>common.time.xml</import>
-<import>avalon.version.xml</import>
-</controls>
+ </control>
+		<import>common.overlay.home.xml</import>
+	</controls>
 </window>

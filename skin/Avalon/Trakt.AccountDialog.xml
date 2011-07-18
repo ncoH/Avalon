@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<!-- #Trakt.Settings.Account.Dialog.Visible is true when account controls are visible -->
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	<controls>
+		<control>
+			<description>Selected Index Label</description>
+			<type>label</type>
+			<id>10</id>
+			<posX>1850</posX>
+			<posY>45</posY>
+			<width>1220</width>
+			<align>right</align>
+			<label></label>
+			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
+		</control>
+		<control>
+			<description>Username Label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>766</posX>
+    		<posY>438</posY>
+			<label>#Trakt.Translation.Username.Label</label>
+			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
+		</control>
+		<control>
+			<description>Username Button</description>
+			<type>button</type>
+			<id>11</id>
+			<label></label>
+    		<posX>736</posX>
+    		<posY>430</posY>
+    		<width>956</width>
+    		<height>52</height>
+    		<textXOff>300</textXOff>
+    		<textYOff>8</textYOff>
+    		<textureFocus>settings_button_large_focus.png</textureFocus>
+    		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
+		</control>
+		<control>
+			<description>Password Label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>766</posX>
+    		<posY>490</posY>
+			<label>#Trakt.Translation.Password.Label</label>
+			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
+		</control>
+		<control>
+			<description>Password Button</description>
+			<type>button</type>
+			<id>12</id>
+			<label></label>
+    		<posX>736</posX>
+    		<posY>482</posY>
+    		<width>956</width>
+    		<height>52</height>
+    		<textXOff>300</textXOff>
+    		<textYOff>8</textYOff>
+    		<textureFocus>settings_button_large_focus.png</textureFocus>
+    		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
+		</control>
+		<!-- Only Visible for Create New User -->
+		<control>
+			<description>Email Label</description>
+			<type>label</type>
+			<id>14</id>
+    		<posX>766</posX>
+    		<posY>542</posY>
+			<label>#Trakt.Translation.Email.Label</label>
+			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)+string.equals(#Trakt.Settings.Account.Dialog.NewUser,true)</visible>
+		</control>
+		<control>
+			<description>Email Button</description>
+			<type>button</type>
+			<id>13</id>
+			<label></label>
+    		<posX>736</posX>
+    		<posY>534</posY>
+    		<width>956</width>
+    		<height>52</height>
+    		<textXOff>300</textXOff>
+    		<textYOff>8</textYOff>
+    		<textureFocus>settings_button_large_focus.png</textureFocus>
+    		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)+string.equals(#Trakt.Settings.Account.Dialog.NewUser,true)</visible>
+		</control>
+		<control>
+			<description>Create\Login Button</description>
+			<type>button</type>
+			<id>15</id>
+			<label></label>
+    		<posX>736</posX>
+    		<posY>634</posY>
+    		<width>385</width>
+    		<height>64</height>
+    		<textXOff>30</textXOff>
+    		<textYOff>12</textYOff>
+    		<textureFocus>settings_button_focus.png</textureFocus>
+    		<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
+		</control>
+		<control>
+			<description>Cancel Button</description>
+			<type>button</type>
+			<id>16</id>
+			<label>#Trakt.Translation.Cancel.Label</label>
+    		<posX>1136</posX>
+    		<posY>634</posY>
+    		<width>385</width>
+    		<height>64</height>
+    		<textXOff>30</textXOff>
+    		<textYOff>12</textYOff>
+    		<textureFocus>settings_button_focus.png</textureFocus>
+    		<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
+		</control>
+		<control>
+			<description>Test Connection</description>
+			<type>label</type>
+			<id>17</id>
+			<posX>736</posX>
+			<posY>665</posY>
+			<label></label>
+			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
+		</control>
+	</controls>
+</window>

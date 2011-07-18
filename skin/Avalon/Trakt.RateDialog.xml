@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>87300</id>
+	<defaultcontrol>100</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<import>common.dialog.xml</import>
+		<!-- Rate Buttons -->
+		<control>
+			<description>Love</description>
+			<type>button</type>
+			<id>100</id>
+			<posX>680</posX>
+			<posY>745</posY>
+			<width>50</width>
+			<height>36</height>
+			<onup>101</onup>
+			<textureFocus>rate.love.on.png</textureFocus>
+			<textureNoFocus>rate.love.off.png</textureNoFocus>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			</control>
+		<control>
+			<description>Hate</description>
+			<type>button</type>
+			<id>101</id>
+			<posX>740</posX>
+			<posY>745</posY>
+			<width>50</width>
+			<height>36</height>
+			<onup>102</onup>
+			<textureFocus>rate.hate.on.png</textureFocus>
+			<textureNoFocus>rate.hate.off.png</textureNoFocus>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			</control>
+		<control>
+			<description>Rating Description</description>
+			<type>label</type>
+			<id>10</id>
+			<posX>680</posX>
+			<posY>811</posY>
+			<width>630</width>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			</control>
+	</controls>
+</window>

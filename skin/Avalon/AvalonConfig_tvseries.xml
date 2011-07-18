@@ -12,13 +12,13 @@
 		<type>label</type>
 		<description>Settings label</description>
 		<id>0</id>
-		<posX>189</posX>
-		<posY>99</posY>
+        <posX>600</posX>
+        <posY>875</posY>
 		<width>500</width>
 		<label>#Avalon.SkinSettings | #Avalon.SkinSettingsTVSeries</label>
 		<align>left</align>
 		<font>AvalonLight12</font>
-		<textcolor>ffffff</textcolor>
+        <textcolor>6aa5cb</textcolor>
 	</control>
 	
 	<control>

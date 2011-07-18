@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>87258</id>
+	<defaultcontrol>10</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:Trakt</define>
+	<controls>
+    <!--            :: BACKGROUNDS ::           	 -->
+    
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+	<control>
+		<description>viewport list</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>795</height>
+		<texture>viewport_settings.png</texture>
+	</control>
+	
+	<control>
+		<type>label</type>
+		<description>Settings label</description>
+		<id>121</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+	</control>
+
+<import>common.time.xml</import>
+
+		<control>
+			<description>button group</description>
+    		<type>group</type>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<posX>130</posX>
+    		<posY>262</posY>
+			<layout>StackLayout(0, Vertical, true)</layout>
+			<control>
+				<description>Calendar</description>
+				<type>button</type>
+				<id>10</id>
+				<label>#Trakt.Translation.Calendar.Label</label>
+				<hyperlink>87259</hyperlink>
+				<onup>21</onup>
+			</control>
+			<control>
+				<description>Friends</description>
+				<type>button</type>
+				<id>11</id>
+				<hyperlink>87260</hyperlink>
+				<label>#Trakt.Translation.Friends.Label</label>
+			</control>
+			<control>
+				<description>Recommendations</description>
+				<type>button</type>
+				<id>12</id>
+				<hyperlink>87261</hyperlink>
+				<label>#Trakt.Translation.Recommendations.Label</label>
+			</control>
+			<control>
+				<description>Trending</description>
+				<type>button</type>
+				<id>13</id>
+				<hyperlink>87264</hyperlink>
+				<label>#Trakt.Translation.Trending.Label</label>
+			</control>
+			<control>
+				<description>Watch List</description>
+				<type>button</type>
+				<id>14</id>
+				<hyperlink>87267</hyperlink>
+				<label>#Trakt.Translation.WatchList.Label</label>
+			</control>
+			<control>
+				<description>Settings</description>
+				<type>button</type>
+				<id>15</id>
+				<label>#Trakt.Translation.Settings.Label</label>
+				<hyperlink>87271</hyperlink>
+				<ondown>10</ondown>
+			</control>
+		</control>
+		<import>common.overlay.xml</import>
+	</controls>
+</window>

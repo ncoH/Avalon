@@ -3,8 +3,8 @@
   <controls>
     <control>
 		<type>label</type>
-		<posX>1856</posX>
-		<posY>905</posY>
+		<posX>1832</posX>
+		<posY>880</posY>
 		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
