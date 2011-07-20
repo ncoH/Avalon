@@ -100,8 +100,8 @@
 	<posY>754</posY>
 	<width>1865</width>
 	<height>90</height>
-	<texture>#Avalon.RSS</texture>
-	<visible>plugin.isenabled(InfoService)</visible>
+	<texture>basichome_rss_bg.png</texture>
+	<visible>plugin.isenabled(InfoService) + !string.contains(#Avalon.RSS, false)</visible>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 </control>
@@ -117,7 +117,7 @@
 	<font>font11</font>
 	<textcolor>6aa5cb</textcolor>
 	<label>#infoservice.feed.titles</label>
-	<visible>plugin.isenabled(InfoService)+Control.Hasthumb(111)</visible>
+	<visible>plugin.isenabled(InfoService) + !string.contains(#Avalon.RSS, false)</visible>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 </control>

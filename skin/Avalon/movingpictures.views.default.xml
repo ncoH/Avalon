@@ -293,7 +293,7 @@
         <posX>925</posX>
         <posY>613</posY>
         <align>center</align>
-        <label>Unwatched</label>
+        <label>#Avalon.UnWatched</label>
 		<font>fontB12</font>
 		<textcolor>FFFFFFFF</textcolor>
         <shadowAngle>120</shadowAngle>
@@ -313,7 +313,7 @@
         <posX>925</posX>
         <posY>613</posY>
         <align>center</align>
-        <label>Watched</label>
+        <label>#Avalon.Watched</label>
 		<font>fontB12</font>
 		<textcolor>FFFFFFFF</textcolor>
         <shadowAngle>120</shadowAngle>

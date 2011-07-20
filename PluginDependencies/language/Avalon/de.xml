@@ -27,7 +27,8 @@
   <string Field="SkinSettingsInfo">Zeige Infos</string>
   <string Field="SkinSettingsPosterHide">Poster in Listenansicht automatisch ausblenden</string>
   <string Field="SkinSettingsShowRSS">Aktiviere RSS Feeds im BasicHome/Home Menü</string>
-  <string Field="SkinSettingsShowHiddenMenu">Zeige Grafik für verstecktes Menü</string> 
+  <string Field="SkinSettingsShowHiddenMenu">Zeige Grafik für verstecktes Menü</string>
+  <string Field="SkinSettingsShow5DayWeather">Zeige 5 Tage Wettervorschau im BasicHome/Home Menü</string>    
   <string Field="SkinSettingsTV">Fernsehen</string>
   <string Field="SkinSettingsTVSeries">Serien</string>
   <string Field="SkinSettingsUpdate">Aktualisierung</string>
@@ -41,6 +42,9 @@
   <string Field="TVMiniGuideRows">TV Mini Guide Zeilen</string> 
   <string Field="TVMiniGuideThreeRows">TV Mini Guide: 3 Zeilen</string>
   <string Field="TVMiniGuideEightRows">TV Mini Guide: 8 Zeilen</string>
+  <string Field="TVGuideSize">TV Guide Größe</string> 
+  <string Field="TVGuideEightRows">TV Guide: 8 Zeilen</string>
+  <string Field="TVGuideTenRows">TV Guide: 10 Zeilen</string>
   <string Field="SkinSettingsMisc">Verschiedenes</string>  
   <string Field="Widebanner">Breite Banner</string>
   <string Field="WidebannerDefault">Breite Banner: Standard</string>
@@ -73,5 +77,7 @@
   <!-- Misc -->   
   <string Field="FanartScraping">Lade Fanart</string> 
   <string Field="ReturnListMovies">Press left to return to movie list</string> 
-  <string Field="ReturnListSeries">Press left to return to series list</string>  
+  <string Field="ReturnListSeries">Press left to return to series list</string> 
+  <string Field="Watched">Gesehen</string>    
+  <string Field="UnWatched">Ungesehen</string>    
 </strings>

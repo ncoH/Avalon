@@ -29,6 +29,7 @@
   <string Field="SkinSettingsPosterHide">Hide Poster on listview when not scrolling</string>
   <string Field="SkinSettingsShowRSS">Enable RSS Feeds on BasicHome/Home</string>
   <string Field="SkinSettingsShowHiddenMenu">Show Hidden Menu Image</string>  
+  <string Field="SkinSettingsShow5DayWeather">Show 5 Day Weather forecast on BasicHome/Home</string>  
   <string Field="SkinSettingsTV">Television</string>
   <string Field="SkinSettingsTVSeries">TV Series</string>
   <string Field="SkinSettingsUpdate">Update</string>
@@ -42,6 +43,9 @@
   <string Field="TVMiniGuideRows">TV Mini Guide Rows</string> 
   <string Field="TVMiniGuideThreeRows">TV Mini Guide: 3 Rows</string>
   <string Field="TVMiniGuideEightRows">TV Mini Guide: 8 Rows</string>
+  <string Field="TVGuideSize">TV Guide Rows</string> 
+  <string Field="TVGuideEightRows">TV Guide: 8 Rows</string>
+  <string Field="TVGuideTenRows">TV Guide: 10 Rows</string>
   <string Field="SkinSettingsMisc">Miscellaneous</string>
   <string Field="Widebanner">WideBanners</string>
   <string Field="WidebannerDefault">WideBanners: Default</string>
@@ -75,4 +79,6 @@
   <string Field="FanartScraping">Fanart scraping</string>
   <string Field="ReturnListMovies">Press left to return to movie list</string> 
   <string Field="ReturnListSeries">Press left to return to series list</string> 
+  <string Field="Watched">Watched</string>    
+  <string Field="UnWatched">UnWatched</string> 
 </strings>
