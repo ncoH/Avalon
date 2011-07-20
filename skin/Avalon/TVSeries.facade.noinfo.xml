@@ -105,6 +105,7 @@
                 <scrollbarWidth>689</scrollbarWidth>
 				<scrollbarHeight>4</scrollbarHeight>
                 <scrollbarYOff>538</scrollbarYOff>
+                <spinPosX>-2000</spinPosX>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,780" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,780" time="100">unfocus</thumbAnimation>
 		</control>
@@ -165,6 +166,7 @@
 				<scrollbarHeight>4</scrollbarHeight>
                 <scrollbarYOff>538</scrollbarYOff>
 					<keepaspectratio>no</keepaspectratio>
+                <spinPosX>-2000</spinPosX>
 					<cards flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_fanart_mask.png"></cards>
 				</control>
 		

@@ -271,15 +271,55 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
-        <description>New Icon</description>
+        <description>New Overlay</description>
         <type>image</type>
         <id>0</id>
-        <posX>762</posX>
-        <posY>169</posY>
-        <width>162</width>
-        <height>164</height>
-        <texture>tvseries_newlabel.png</texture>
+        <posX>761</posX>
+        <posY>592</posY>
+        <width>331</width>
+        <height>48</height>
+        <texture>new_overlay.png</texture>
+        <visible>facadeview.list + Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
+    </control>
+	
+    <control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+        <description>Unwatched label</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>925</posX>
+        <posY>613</posY>
+        <align>center</align>
+        <label>Unwatched</label>
+		<font>fontB12</font>
+		<textcolor>FFFFFFFF</textcolor>
+        <shadowAngle>120</shadowAngle>
+        <shadowDistance>1</shadowDistance>
+        <shadowColor>FF000000</shadowColor>
         <visible>facadeview.list + Control.IsVisible(50) + !Control.IsVisible(9) + Control.HasThumb(60) + !string.equals(#Avalon.hidePoster,yes)</visible>
+    </control>
+
+    <control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+        <description>Unwatched label</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>925</posX>
+        <posY>613</posY>
+        <align>center</align>
+        <label>Watched</label>
+		<font>fontB12</font>
+		<textcolor>FFFFFFFF</textcolor>
+        <shadowAngle>120</shadowAngle>
+        <shadowDistance>1</shadowDistance>
+        <shadowColor>FF000000</shadowColor>
+        <visible>facadeview.list + Control.IsVisible(50) + Control.IsVisible(9) + Control.HasThumb(60) + !string.equals(#Avalon.hidePoster,yes)</visible>
     </control>
 	
 	<control>
