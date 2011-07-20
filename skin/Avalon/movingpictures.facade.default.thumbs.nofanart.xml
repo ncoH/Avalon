@@ -69,6 +69,40 @@ This file should contain the facade view
 	  <visible>facadeview.list + control.isvisible(50)</visible>
     </control>
 
+	<!--            :: Parental Lock ::            -->
+	
+    <control>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+      <description>Parental Lock</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>683</posX>
+      <posY>720</posY>
+      <with>22</with>
+      <height>34</height>
+      <align>left</align>
+      <texture>parental_lock.png</texture>
+	  <visible>facadeview.list + control.isvisible(16) + control.isvisible(50)</visible>
+    </control>
+
+    <control>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+      <description>Parental Lock</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1315</posX>
+      <posY>720</posY>
+      <with>22</with>
+      <height>34</height>
+      <align>left</align>
+      <texture>parental_lock.png</texture>
+	  <visible>[facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + control.isvisible(16) + control.isvisible(50)</visible>
+    </control>
+
 <control>
       <type>facadeview</type>
       <id>51</id>

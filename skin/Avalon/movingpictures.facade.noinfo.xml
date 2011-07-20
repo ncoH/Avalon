@@ -31,12 +31,30 @@ This file should contain the facade view
       <type>label</type>
       <label>#MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount  |  Filter: #MovingPictures.CurrentNode.name</label>
       <id>0</id>
-      <posX>714</posX>
-      <posY>875</posY>
+	  <posX>714</posX>
+      <posY>876</posY>
       <align>left</align>
       <font>AvalonLight12</font>
       <textcolor>6aa5cb</textcolor>
 	  <visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
+    </control>
+    
+	<!--            :: Parental Lock ::            -->
+	
+    <control>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+      <description>Parental Lock</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>683</posX>
+      <posY>871</posY>
+      <with>22</with>
+      <height>34</height>
+      <align>left</align>
+      <texture>parental_lock.png</texture>
+	  <visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + control.isvisible(16) + control.isvisible(50)</visible>
     </control>
 
 <control>		
@@ -91,6 +109,7 @@ This file should contain the facade view
 			<dimColor>ffffffff</dimColor>
 			<spinPosX>1832</spinPosX>
 			<spinPosY>880</spinPosY>
+				<textcolorNoFocus>FF6aa5cb</textcolorNoFocus>
 		</control>
 
 		<control>

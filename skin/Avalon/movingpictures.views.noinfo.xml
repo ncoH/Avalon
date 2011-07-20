@@ -169,7 +169,7 @@
         <type>label</type>
         <id>0</id>
         <posX>925</posX>
-        <posY>613</posY>
+        <posY>615</posY>
         <align>center</align>
         <label>Unwatched</label>
 		<font>fontB12</font>
@@ -189,7 +189,7 @@
         <type>label</type>
         <id>0</id>
         <posX>925</posX>
-        <posY>613</posY>
+        <posY>615</posY>
         <align>center</align>
         <label>Watched</label>
 		<font>fontB12</font>

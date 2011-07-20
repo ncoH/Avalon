@@ -26,56 +26,7 @@ multiple view modes.
   <define>#coverflow.backdrop.used:true</define>
   <controls>
     <!--            :: DUMMY CONTROLS ::             -->
-    <control>
-      <description>Visibile when filtering by watched flag. Only unwatched movies are listed.</description>
-      <type>label</type>
-      <id>8</id>
-      <posX>-50</posX>
-      <posY>-50</posY>
-      <width>0</width>
-    </control>
-    <control>
-      <description>Visibile when the currently selected movie has been watched</description>
-      <type>label</type>
-      <id>9</id>
-      <posX>-50</posX>
-      <posY>-50</posY>
-      <width>0</width>
-    </control>
-    <control>
-      <description>Visibile when filtering by remote control searching.</description>
-      <type>label</type>
-      <id>10</id>
-      <posX>-50</posX>
-      <posY>-50</posY>
-      <width>0</width>
-    </control>
-    <control>
-      <description>dummy backdrop control 1</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>-5</posX>
-      <posY>0</posY>
-      <width>1</width>
-      <height>1</height>
-    </control>
-    <control>
-      <description>dummy backdrop control 2</description>
-      <type>image</type>
-      <id>11</id>
-      <posX>-5</posX>
-      <posY>0</posY>
-      <width>1</width>
-      <height>1</height>
-    </control>
-    <control>
-      <description>dummy poster control</description>
-      <type>label</type>
-      <id>1</id>
-      <posX>-2000</posX>
-      <posY>-2000</posY>
-      <label>#Avalon.EnablePosterHide</label>
-    </control>
+    <import>movingpictures.dummy.xml</import>
     <!--            :: MOVIE BACKDROP ::            -->
     <control>
       <description>DEFAULT BACKGROUND</description>
@@ -262,13 +213,13 @@ multiple view modes.
       <visible>Control.IsVisible(50) | Control.IsVisible(51)</visible>
     </control>
     <!--            :: IMPORT ::            -->
-    <import tag="Background">movingpictures.background.noinfo.xml</import>
+    <import tag="Background">movingpictures.background.default.thumbs.XL.xml</import>
     <import>common.time.xml</import>
     <import>movingpictures.hiddenmenu.xml</import>
-    <import tag="Views">movingpictures.views.noinfo.xml</import>
-    <import tag="Facade">movingpictures.facade.noinfo.xml</import>
+    <import tag="Views">movingpictures.views.default.xml</import>
+    <import tag="Facade">movingpictures.facade.default.thumbs.XL.xml</import>
     <import>movingpictures.Info.xml</import>
-    <import tag="Mediainfo">movingpictures.mediainfo.noinfo.xml</import>
+    <import tag="Mediainfo">movingpictures.mediainfo.default.xml</import>
     <import>movingpictures.details.xml</import>
     <import>movingpictures.mediainfo.details.xml</import>
     <import>common.overlay.xml</import>
