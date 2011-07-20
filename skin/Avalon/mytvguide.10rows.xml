@@ -284,7 +284,7 @@
 		<posY>505</posY>
 		<width>994</width>
 		<height>24</height>
-		<visible>yes</visible>
+		<visible>no</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -297,7 +297,7 @@
 		<posY>165</posY>
 		<width>26</width>
 		<height>338</height>
-		<visible>yes</visible>
+		<visible>no</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
