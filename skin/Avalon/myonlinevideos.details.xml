@@ -11,7 +11,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>109</posX>
-		<posY>182</posY>
+		<posY>110</posY>
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_shadow.png</texture>
@@ -25,7 +25,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>109</posX>
-		<posY>182</posY>
+		<posY>110</posY>
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_glow.png</texture>
@@ -39,7 +39,7 @@
 		<description>movie poster</description>
 		<id>24</id>
 		<posX>176</posX>
-		<posY>250</posY>
+		<posY>178</posY>
 		<width>330</width>
 		<height>470</height>
 		<visible>string.equals(#OnlineVideos.state, details)</visible>
@@ -58,7 +58,7 @@
 		<onright>51</onright>
 		<scrollOffset>1</scrollOffset>
 		<posX>1398</posX>
-		<posY>314</posY>
+		<posY>242</posY>
 		<width>385</width>
 		<height>256</height>
 		<textXOff>50</textXOff>
@@ -79,7 +79,7 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>745</posX>
-		<posY>234</posY>
+		<posY>162</posY>
 		<width>1170</width>
 		<label>#OnlineVideos.Details.Title</label>
 		<font>fontB20</font>
@@ -94,7 +94,7 @@
 		<label>#OnlineVideos.Translation.Actors.Label: #OnlineVideos.Details.Actors</label>
 		<id>0</id>
 		<posX>744</posX>
-		<posY>805</posY>
+		<posY>733</posY>
 		<width>1000</width>
 		<align>left</align>
 		<font>font12</font>
@@ -111,7 +111,7 @@
 		<label>#OnlineVideos.Translation.Directors.Label</label>
 		<id>0</id>
 		<posX>744</posX>
-		<posY>408</posY>
+		<posY>336</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -127,7 +127,7 @@
 		<label>#OnlineVideos.Details.Directors</label>
 		<id>0</id>
 		<posX>1058</posX>
-		<posY>408</posY>
+		<posY>336</posY>
 		<width>700</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -143,7 +143,7 @@
 		<label>#OnlineVideos.Translation.DateOfRelease.Label</label>
 		<id>0</id>
 		<posX>744</posX>
-		<posY>328</posY>
+		<posY>256</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -159,7 +159,7 @@
 		<label>#OnlineVideos.Details.ReleaseDate</label>
 		<id>0</id>
 		<posX>1058</posX>
-		<posY>328</posY>
+		<posY>256</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -175,7 +175,7 @@
 		<label>#OnlineVideos.Translation.Genre.Label</label>
 		<id>0</id>
 		<posX>744</posX>
-		<posY>368</posY>
+		<posY>296</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -191,7 +191,7 @@
 		<label>#OnlineVideos.Details.Genres</label>
 		<id>0</id>
 		<posX>1058</posX>
-		<posY>368</posY>
+		<posY>266</posY>
 		<width>330</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -206,7 +206,7 @@
       <description>Plot value</description>
       <id>61</id>
       <posX>745</posX>
-      <posY>520</posY>
+      <posY>648</posY>
       <width>1040</width>
       <height>240</height>
       <colordiffuse>ffffffff</colordiffuse>

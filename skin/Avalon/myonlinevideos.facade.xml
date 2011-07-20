@@ -1,6 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <controls>
+  
+
+	<!--            :: Count Background ::            -->
+
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>829</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<visible>[facadeview.list + control.isvisible(50)] | string.equals(#OnlineVideos.state, details)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+    
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>680</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<visible>[facadeview.smallicons | facadeview.largeicons] + control.isvisible(50) + !string.equals(#OnlineVideos.state, details)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+	<!--            :: Count ::            -->
+	
+    <control>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+      <description>Moviecount</description>
+      <type>label</type>
+      <label>#itemtype: #itemcount</label>
+      <id>0</id>
+      <posX>714</posX>
+      <posY>875</posY>
+      <align>left</align>
+      <font>AvalonLight12</font>
+      <textcolor>6aa5cb</textcolor>
+	  <visible>facadeview.list + !string.equals(#OnlineVideos.state, details)</visible>
+    </control>
+  
+    <control>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+      <description>Moviecount</description>
+      <type>fadelabel</type>
+      <label>#itemtype: #itemcount  |  #header.label</label>
+      <id>0</id>
+	  <posX>1342</posX>
+      <posY>725</posY>
+      <align>left</align>
+      <width>400</width>
+      <font>AvalonLight12</font>
+      <textcolor>6aa5cb</textcolor>
+	  <visible>[facadeview.smallicons | facadeview.largeicons] + !string.equals(#OnlineVideos.state, details)</visible>
+    </control>
+  
     <control>
       <description>group element</description>
       <type>group</type>
@@ -18,9 +85,9 @@
 				<onright>80</onright>
 				<scrollOffset>1</scrollOffset>
 				<posX>678</posX>
-				<posY>236</posY>
-				<width>1180</width>
-				<height>700</height>
+    			<posY>153</posY>
+    			<height>750</height>
+    			<width>684</width>
 				<textXOff>50</textXOff>
 				<textXOff2>1155</textXOff2>
 				<textureHeight>55</textureHeight>
@@ -32,9 +99,9 @@
 				<description>Thumbnail Panel</description>
 				<type>thumbnailpanel</type>
 				<id>50</id>
-				<posX>100</posX>
-				<posY>242</posY>
-				<width>1650</width>
+				<posX>80</posX>
+				<posY>162</posY>
+				<width>1800</width>
 				<height>600</height>
 				<onleft>2</onleft>
 				<onright>50</onright>
@@ -45,8 +112,8 @@
 			  <dimColor>90ffffff</dimColor>
           
 			<enableFocusZoom>no</enableFocusZoom>                    
-			<zoomXPixels>40</zoomXPixels>
-			<zoomYPixels>30</zoomYPixels>          
+			<zoomXPixels>60</zoomXPixels>
+			<zoomYPixels>40</zoomYPixels>          
 			<hideUnfocusTexture>no</hideUnfocusTexture>          
 			<renderFocusText>no</renderFocusText>
 			<renderUnfocusText>no</renderUnfocusText>                    
@@ -56,24 +123,26 @@
 			<textureMask>onlinevideos_thumb_mask.png</textureMask>
           
           <!-- smallicons -->
-			<itemWidth>228</itemWidth>
-			<itemHeight>127</itemHeight>
-			<textureWidth>228</textureWidth>
-			<textureHeight>127</textureHeight>
-			<thumbWidth>228</thumbWidth>
-			<thumbHeight>127</thumbHeight>
+			<itemWidth>245</itemWidth>
+			<itemHeight>129</itemHeight>
+			<textureWidth>245</textureWidth>
+			<textureHeight>129</textureHeight>
+			<thumbWidth>245</thumbWidth>
+			<thumbHeight>129</thumbHeight>
 			<thumbPosX>0</thumbPosX>
 			<thumbPosY>0</thumbPosY>
           
           <!-- largeicons -->
-			<itemWidthBig>275</itemWidthBig>
-			<itemHeightBig>153</itemHeightBig>
-			<textureWidthBig>275</textureWidthBig>
-			<textureHeightBig>153</textureHeightBig>
-			<thumbWidthBig>275</thumbWidthBig>
-			<thumbHeightBig>153</thumbHeightBig>
+			<itemWidthBig>292</itemWidthBig>
+			<itemHeightBig>171</itemHeightBig>
+			<textureWidthBig>292</textureWidthBig>
+			<textureHeightBig>171</textureHeightBig>
+			<thumbWidthBig>292</thumbWidthBig>
+			<thumbHeightBig>171</thumbHeightBig>
 			<thumbPosXBig>0</thumbPosXBig>
-			<thumbPosYBig>0</thumbPosYBig>       
+			<thumbPosYBig>0</thumbPosYBig>
+            <spinPosX>1832</spinPosX>
+            <spinPosY>730</spinPosY>       
         </control>        
       </control>
     </control>

@@ -18,9 +18,9 @@
 			<control>
 				<type>image</type>
 				<posX>680</posX>
-				<posY>192</posY>
+				<posY>120</posY>
 				<width>1186</width>
-				<height>699</height>
+				<height>739</height>
 				<texture>info_bg.png</texture>
 				<visible>!Control.HasFocus(50)</visible>
 				<animation effect="slide" time="250" start="1200,0">visible</animation>

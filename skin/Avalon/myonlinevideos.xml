@@ -35,9 +35,9 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>0</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>795</height>
 		<texture>viewport_onlinevideos.png</texture>
 		<visible>facadeview.list | Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -51,7 +51,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>0</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
 		<height>646</height>
 		<texture>viewport_thumbs_short2.png</texture>
@@ -100,10 +100,11 @@
 		<posY>249</posY>
 		<width>542</width>
 		<height>310</height>
-		<keepaspectratio>no</keepaspectratio>
+		<keepaspectratio>yes</keepaspectratio>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="onlinevideos_poster_mask.png">#selectedthumb</texture>
 		<visible>!videoplayer.usingoverlays + !player.hasmedia + !Control.IsVisible(51) + facadeview.list </visible>
-		<animation effect="fade" time="250" reversible="false">visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     </control>
     
     <control>
@@ -112,11 +113,11 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>1856</posX>
-		<posY>945</posY>
+		<posX>1832</posX>
+		<posY>956</posY>
 		<width>1170</width>
 		<label>#selecteditem</label>
-		<font>fontB20</font>
+		<font>fontB16</font>
 		<align>right</align>
 		<visible>!Control.IsVisible(51) + !string.contains(#selecteditem, ..) + !Control.HasFocus(80) + facadeview.list</visible>
     </control>    
@@ -124,9 +125,9 @@
     <control>
 		<type>fadelabel</type>
 		<id>1</id>      
-		<posX>1856</posX>
+		<posX>1832</posX>
 		<posY>1006</posY>
-		<width>455</width>
+		<width>475</width>
 		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
@@ -156,46 +157,32 @@
 		<description>Buffering Label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>263</posX>
-		<posY>129</posY>
-		<align>left</align>
-		<font>AvalonLight12</font>
-		<textcolor>ffffff</textcolor>
+        <posX>914</posX>
+        <posY>875</posY>
+        <align>left</align>
+        <font>AvalonLight12</font>
+        <textcolor>6aa5cb</textcolor>
 		<label>#OnlineVideos.buffered % #OnlineVideos.Translation.Buffered.Label</label>
-		<visible>string.equals(#OnlineVideos.IsBuffering, true) + !player.hasmedia</visible>
+		<visible>string.equals(#OnlineVideos.IsBuffering, true) [facadeview.list]</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+	
+    <control>
+		<description>Buffering Label</description>
+		<type>label</type>
+		<id>0</id>
+        <posX>914</posX>
+        <posY>725</posY>
+        <align>left</align>
+        <font>AvalonLight12</font>
+        <textcolor>6aa5cb</textcolor>
+		<label>#OnlineVideos.buffered % #OnlineVideos.Translation.Buffered.Label</label>
+		<visible>string.equals(#OnlineVideos.IsBuffering, true) + [facadeview.smallicons | facadeview.largeicons]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     </control>
     
-    <control>
-		<description>Label for Current, Total Amount and Localized Type of items</description>
-		<type>label</type>
-		<id>0</id>
-		<posX>242</posX>
-		<posY>99</posY>
-		<align>left</align>
-		<font>AvalonLight12</font>
-		<textcolor>ffffff</textcolor>
-		<label>| #itemtype: #itemcount</label>
-		<visible>string.equals(#selectedindex)+!string.equals(#OnlineVideos.state, details)</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    </control>    
-    <control>
-		<description>Label for Total Amount and Localized Type of items</description>
-		<type>label</type>
-		<id>0</id>
-		<posX>242</posX>
-		<posY>99</posY>
-		<align>left</align>
-		<font>AvalonLight12</font>
-		<textcolor>ffffff</textcolor>
-		<label>| #itemtype: #itemcount</label>
-		<visible>!string.equals(#selectedindex)+!string.equals(#OnlineVideos.state, details)</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    </control>    
-	
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -205,7 +192,7 @@
 		<posY>249</posY>
 		<width>542</width>
 		<height>310</height>
-		<keepaspectratio>no</keepaspectratio>
+		<keepaspectratio>yes</keepaspectratio>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="onlinevideos_poster_mask.png">Onlinevideos\logos\#OnlineVideos.selectedSite.png</texture>
 		<visible>facadeview.list + !string.contains(#selecteditem, ..) + !string.equals(#OnlineVideos.state, videos)</visible>
 	</control>
@@ -220,10 +207,10 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>678</posX>
-		<posY>815</posY>
+		<posY>814</posY>
 		<width>1170</width>
 		<label>#selecteditem</label>
-		<font>fontB20</font>
+		<font>fontB16</font>
 		<visible>!Control.IsVisible(51) + !string.contains(#selecteditem, ..) + [facadeview.smallicons | facadeview.largeicons]</visible>
     </control>    
 	
@@ -234,11 +221,10 @@
 		<type>textboxscrollup</type>
 		<id>0</id>
 		<posX>678</posX>
-		<posY>922</posY>
+		<posY>906</posY>
 		<width>1060</width>
-		<height>146</height>
-		<font>AvalonLight11</font>
-		<lineSpacing>0.85</lineSpacing>
+		<height>150</height>
+		<font>AvalonLight12</font>
 		<label>#OnlineVideos.desc</label>
 		<visible>!string.equals(#OnlineVideos.state, details) + [facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>
@@ -249,16 +235,32 @@
 		<description>Length Label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>678</posX>
-		<posY>880</posY>
+		<posX>1185</posX>
+		<posY>867</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<label>#OnlineVideos.Translation.Runtime.Label:</label>
+		<label>#OnlineVideos.Translation.Runtime.Label</label>
 		<visible>string.equals(#OnlineVideos.state, videos)+control.hastext(502) + !string.contains(#selecteditem, ..) + [facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>  
-			
+		
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>release Label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>678</posX>
+		<posY>867</posY>
+		<width>240</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+		<label>#OnlineVideos.Translation.Airdate.Label</label>
+		<visible>string.equals(#OnlineVideos.state, videos)+control.hastext(502) + !string.contains(#selecteditem, ..) + [facadeview.smallicons | facadeview.largeicons]</visible>
+	</control>  
+        	
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -266,7 +268,7 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>678</posX>
-		<posY>880</posY>
+		<posY>867</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -282,7 +284,7 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>678</posX>
-		<posY>880</posY>
+		<posY>867</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -298,7 +300,7 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>678</posX>
-		<posY>880</posY>
+		<posY>867</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -314,7 +316,23 @@
 		<type>fadelabel</type>
 		<id>502</id>
 		<posX>858</posX>
-		<posY>880</posY>
+		<posY>867</posY>
+		<width>500</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
+		<label>#OnlineVideos.aired</label>
+		<visible>!string.equals(#OnlineVideos.state, details) + [facadeview.smallicons | facadeview.largeicons]</visible>
+	</control>
+			
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>language of site | number of sites in group | number of videos in category | length of video</description>
+		<type>fadelabel</type>
+		<id>502</id>
+		<posX>1372</posX>
+		<posY>867</posY>
 		<width>500</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -322,7 +340,7 @@
 		<label>#selecteditem2</label>
 		<visible>!string.equals(#OnlineVideos.state, details) + [facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>
-			
+            
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -332,7 +350,7 @@
         <posY>812</posY>
         <width>242</width>
 	    <height>141</height>
-		<visible>[facadeview.smallicons|facadeview.largeicons]  + !string.contains(#selecteditem, ..) + string.equals(#OnlineVideos.state, videos)</visible>
+		<visible>[facadeview.smallicons|facadeview.largeicons]  + !string.contains(#selecteditem, ..) + string.equals(#OnlineVideos.state, videos) + control.hasthumb(500)</visible>
 		<texture>onlinevideos_station_shadow.png</texture>
 	</control>
 			
@@ -353,6 +371,7 @@
 		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
+		<posX>0</posX>
 		<posY>440</posY>
 		<width>64</width>
 		<height>199</height>
