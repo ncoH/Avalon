@@ -123,6 +123,7 @@
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
+ 		<id>1</id>
 		<posX>678</posX>
 		<posY>814</posY>
 		<width>1170</width>
@@ -180,6 +181,7 @@
 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>
+		<id>1</id>
         <posX>720</posX>
         <posY>875</posY>
         <align>left</align>
