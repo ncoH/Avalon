@@ -44,74 +44,98 @@
 				<description>Thumbnail Panel</description>
 				<type>thumbnailpanel</type>
 				<id>50</id>
-				<posX>113</posX>
-				<posY>226</posY>
-				<width>1200</width>
-				<height>450</height>
+				<posX>80</posX>
+				<posY>162</posY>
+				<width>1800</width>
+				<height>600</height>
 				<onleft>2</onleft>
 				<onright>50</onright>
-				<itemWidth>165</itemWidth>
-				<itemHeight>120</itemHeight>
-				<textureWidth>160</textureWidth>
-				<textureHeight>103</textureHeight>
-				<thumbWidth>130</thumbWidth>
-				<thumbHeight>73</thumbHeight>
-				<thumbPosX>15</thumbPosX>
-				<thumbPosY>15</thumbPosY>
-				<itemWidthBig>284</itemWidthBig>
-				<itemHeightBig>181</itemHeightBig>
-				<textureWidthBig>290</textureWidthBig>
-				<textureHeightBig>187</textureHeightBig>
-				<thumbWidthBig>233</thumbWidthBig>
-				<thumbHeightBig>130</thumbHeightBig>
-				<thumbPosXBig>28</thumbPosXBig>
-				<thumbPosYBig>29</thumbPosYBig>
-				<zoomXPixels>0</zoomXPixels>
-				<zoomYPixels>0</zoomYPixels>
-				<thumbZoom>no</thumbZoom>
-				<enableFocusZoom>no</enableFocusZoom>
-				<keepaspectratio>no</keepaspectratio>
-				<hideUnfocusTexture>no</hideUnfocusTexture>
-				<renderFocusText>no</renderFocusText>
-				<renderUnfocusText>no</renderUnfocusText>
-				<imageFolderFocus>-</imageFolderFocus>
-				<imageFolder>-</imageFolder>
-
-				<frameNoFocus>blackborders_recordings_thumbnail_nofocus.png</frameNoFocus>
-    <frameFocus>blackborders_recordings_thumbnail_focus.png</frameFocus>
-			</control>
+          
+			  <imageFolder>-</imageFolder>          
+			  <imageFolderFocus>-</imageFolderFocus>  
+			  <showFrame>true</showFrame>          
+			  <dimColor>90ffffff</dimColor>
+          
+			<enableFocusZoom>no</enableFocusZoom>                    
+			<zoomXPixels>60</zoomXPixels>
+			<zoomYPixels>40</zoomYPixels>          
+			<hideUnfocusTexture>no</hideUnfocusTexture>          
+			<renderFocusText>no</renderFocusText>
+			<renderUnfocusText>no</renderUnfocusText>                    
+			<thumbZoom>yes</thumbZoom>
+			<frameNoFocus>onlinevideos_thumb_nofocus.png</frameNoFocus>
+			<frameFocus>onlinevideos_thumb_focus.png</frameFocus>
+			<textureMask>onlinevideos_thumb_mask.png</textureMask>
+          
+          <!-- smallicons -->
+			<itemWidth>245</itemWidth>
+			<itemHeight>129</itemHeight>
+			<textureWidth>245</textureWidth>
+			<textureHeight>129</textureHeight>
+			<thumbWidth>245</thumbWidth>
+			<thumbHeight>129</thumbHeight>
+			<thumbPosX>0</thumbPosX>
+			<thumbPosY>0</thumbPosY>
+          
+          <!-- largeicons -->
+			<itemWidthBig>292</itemWidthBig>
+			<itemHeightBig>171</itemHeightBig>
+			<textureWidthBig>292</textureWidthBig>
+			<textureHeightBig>171</textureHeightBig>
+			<thumbWidthBig>292</thumbWidthBig>
+			<thumbHeightBig>171</thumbHeightBig>
+			<thumbPosXBig>0</thumbPosXBig>
+			<thumbPosYBig>0</thumbPosYBig>
+            <spinPosX>1832</spinPosX>
+            <spinPosY>730</spinPosY>       
+        </control> 
 			
-			<control>
-				<description>Filmstrip view</description>
-				<type>filmstrip</type>
-				<dimColor>90ffffff</dimColor>
-				<id>50</id>
-				<scrollOffset>1</scrollOffset>
+		<control>
+			<description>Filmstrip view</description>
+			<type>filmstrip</type>
+			<dimColor>90ffffff</dimColor>
+			<id>50</id>
+				<scrollOffset>3</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<posX>40</posX>
-				<posY>210</posY>
-				<width>1286</width>
-				<height>720</height>
+				<posX>168</posX>
+				<posY>320</posY>
+				<width>1690</width>
+				<height>768</height>
 				<onup>2</onup>
+				<ondown>2</ondown>
 				<onleft>50</onleft>
-				<thumbWidth>365</thumbWidth>
-				<thumbHeight>203</thumbHeight>
-				<thumbPosX>47</thumbPosX>
-				<thumbPosY>46</thumbPosY>
-				<itemWidth>412</itemWidth>
-				<itemHeight>231</itemHeight>
-				<textureWidth>457</textureWidth>
-				<textureHeight>295</textureHeight>
-				<thumbs></thumbs>
-				<InfoImage></InfoImage>
-				<showFrame>yes</showFrame>
+				<onright>50</onright>
+				<thumbWidth>523</thumbWidth>
+				<thumbHeight>350</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidth>533</itemWidth>
+				<itemHeight>350</itemHeight>
+				<textureWidth>523</textureWidth>
+				<textureHeight>350</textureHeight>
 				<textYOff>-2000</textYOff>
+				<imageFolderFocus>-</imageFolderFocus>
+				<frame>-</frame>
+				<frameFocus>-</frameFocus>
+				<background>-</background>
+				<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="pictures_filmstrip_mask.png"></thumbs>
+				<showFrame>yes</showFrame>
 				<showFolder>no</showFolder>
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
-				<frameFocus>blackborders_recordings.png</frameFocus>
-			</control>
+				<keepaspectratio>yes</keepaspectratio>
+                <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+                <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+                <scrollbarWidth>689</scrollbarWidth>
+				<scrollbarHeight>4</scrollbarHeight>
+                <scrollbarYOff>536</scrollbarYOff>
+			    <spinPosX>1832</spinPosX>
+		      	<spinPosY>880</spinPosY>
+                <keepaspectratio>no</keepaspectratio>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,580" time="200">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,580" time="100">unfocus</thumbAnimation>
+		</control>
 
 		</control>
 

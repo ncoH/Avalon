@@ -19,7 +19,7 @@
 		<label>604</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>font22</font>
-		<visible>facadeview.list</visible>
+		<visible>facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip</visible>
 	</control>
 
 	<control>
@@ -124,7 +124,7 @@
 			<font>AvalonLight14</font>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-			<label>#TV.RecordedTV.Time #TV.RecordedTV.Genre</label>
+			<label>#TV.RecordedTV.Time  |  #TV.RecordedTV.Genre</label>
 			<visible>facadeview.list</visible>
 		</control>
 		
@@ -156,53 +156,33 @@
 		
 		<control>
 			<description>Current program channel</description>
-			<type>label</type>
+			<type>fadelabel</type>
 			<id>0</id>
-			<posX>515</posX>
-			<posY>610</posY>
-			<label>#TV.RecordedTV.Channel</label>
-			<font>Segoe Light18</font>
-			<textcolor>6aa5cb</textcolor>
-			<align>right</align>
+    		<posX>678</posX>
+    		<posY>867</posY>
+    		<width>900</width>
+    		<align>left</align>
+    		<font>AvalonLight12</font>
+    		<textcolor>6aa5cb</textcolor>
+			<label>#TV.RecordedTV.Channel  |  #TV.RecordedTV.Time  |  #TV.RecordedTV.Genre</label>
 			<visible>facadeview.smallicons|facadeview.largeicons</visible>
-		</control>
-		
-		<control>
-			<type>label</type>
-			<description>Current program genre</description>
-			<id>0</id>
-			<posX>515</posX>
-			<posY>643</posY>
-			<textcolor>6aa5cb</textcolor>
-			<font>Segoe Light18</font>
-			<label>#TV.RecordedTV.Genre</label>
-			<align>right</align>
-			<visible>facadeview.smallicons|facadeview.largeicons</visible>
-		</control>
-			
-		<control>
-			<type>label</type>
-			<description>Current program time</description>
-			<id>0</id>
-			<posX>515</posX>
-			<posY>682</posY>
-			<textcolor>6aa5cb</textcolor>
-			<font>Segoe Light18</font>
-			<label>#TV.RecordedTV.Time</label>
-			<align>right</align>
-			<visible>facadeview.smallicons|facadeview.largeicons</visible>
+     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
 		
 		<control>
 			<type>textboxscrollup</type>
 			<description>Description1</description>
 			<id>0</id>
-			<posX>555</posX>
-			<posY>614</posY>
-			<width>741</width>
-			<height>134</height>
+    		<posX>678</posX>
+    		<posY>906</posY>
+    		<width>1060</width>
+    		<height>160</height>
+    		<font>AvalonLight12</font>
 			<label>#TV.RecordedTV.Description</label>
 			<visible>facadeview.smallicons|facadeview.largeicons</visible>
+      		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
 		
 			<!-- Filmstrip -->
@@ -211,24 +191,27 @@
 			<type>label</type>
 			<description>Current program time</description>
 			<id>0</id>
-			<posX>515</posX>
-			<posY>682</posY>
-			<textcolor>6aa5cb</textcolor>
-			<font>Segoe Light18</font>
-			<label>#selecteditem2</label>
+    		<posX>720</posX>
+    		<posY>1015</posY>
+    		<width>900</width>
+    		<font>AvalonLight12</font>
+    		<textcolor>6aa5cb</textcolor>
+			<label>#TV.RecordedTV.Channel  |  #TV.RecordedTV.Time  |  #TV.RecordedTV.Genre</label>
 			<visible>facadeview.filmstrip</visible>
+       		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
 		
-	<control>
-		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
-		<id>1</id>
-		<type>image</type>
-		<posX>858</posX>
-		<posY>0</posY>
-		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
-	</control>
+    	<control>
+    		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+    		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+    		<id>1</id>
+    		<type>image</type>
+    		<posX>858</posX>
+    		<posY>0</posY>
+    		<texture>hiddenmenu_tab_up.png</texture>
+    		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+    	</control>
 
 	</control>	
 	<import>mytvrecordedtv.hiddenmenu.xml</import>

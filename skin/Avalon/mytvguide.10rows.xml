@@ -269,7 +269,7 @@
 		<posX>681</posX>
 		<posY>1006</posY>
 		<width>850</width>
-		<label>#TV.Guide.Time #TV.Guide.ChannelName - #TV.Guide.DurationMins #TV.Guide.Genre</label>
+		<label>#TV.Guide.Time #TV.Guide.ChannelName  |  #TV.Guide.DurationMins  |  #TV.Guide.Genre</label>
 		<font>AvalonLight12</font>
 		<textcolor>FF6aa5cb</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
