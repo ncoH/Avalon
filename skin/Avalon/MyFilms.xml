@@ -94,9 +94,9 @@
       <type>image</type>
       <id>0</id>
       <posX>0</posX>
-      <posY>180</posY>
-      <width>1273</width>
-      <height>720</height>
+      <posY>120</posY>
+      <width>1312</width>
+      <height>738</height>
       <texture>#myfilms.fanart</texture>
       <animation effect="fade" time="300">visible</animation>
       <animation effect="fade" time="300" delay="300">hidden</animation>
@@ -109,9 +109,9 @@
       <type>image</type>
       <id>0</id>
       <posX>0</posX>
-      <posY>180</posY>
-      <width>1273</width>
-      <height>720</height>
+      <posY>120</posY>
+      <width>1312</width>
+      <height>738</height>
       <texture>#myfilms.fanart2</texture>
       <animation effect="fade" time="300">visible</animation>
       <animation effect="fade" time="300" delay="300">hidden</animation>
@@ -131,21 +131,6 @@
       <label>My Films</label>
       <textcolor>6aa5cb</textcolor>
       <font>font22</font>
-      <visible>Control.IsVisible(50)</visible>
-    </control>
-    <control>
-      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-      <description>Moviecount</description>
-      <type>label</type>
-      <label>| #currentmodule: #itemcount</label>
-      <id>2073</id>
-      <posX>242</posX>
-      <posY>99</posY>
-      <align>left</align>
-      <font>AvalonLight12</font>
-      <textcolor>ffffff</textcolor>
       <visible>Control.IsVisible(50)</visible>
     </control>
     <control>
@@ -334,11 +319,11 @@
 		</control> -->
     </control>
     <!--            :: IMPORT ::            -->
-    <import tag="Background">MyFilms.background.default.xml</import>
+    <import tag="Background">MyFilms.background.default.thumbs.nofanart.xml</import>
     <import>common.time.xml</import>
     <import>MyFilms.hiddenmenu.xml</import>
     <import tag="Views">MyFilms.views.default.xml</import>
-    <import tag="Facade">MyFilms.facade.default.xml</import>
+    <import tag="Facade">MyFilms.facade.default.thumbs.nofanart.xml</import>
     <import>MyFilms.Info.xml</import>
     <import>common.overlay.xml</import>
   </controls>

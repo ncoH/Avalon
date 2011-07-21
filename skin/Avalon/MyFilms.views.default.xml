@@ -8,11 +8,11 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>680</posX>
-		<posY>822</posY>
+		<posX>714</posX>
+		<posY>810</posY>
 		<width>810</width>
 		<label>#myfilms.user.mastertitle.value</label>
-		<font>fontB20</font>
+		<font>fontB16</font>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+control.isvisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -28,7 +28,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>695</posX>
-		<posY>182</posY>
+		<posY>101</posY>
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_shadow.png</texture>
@@ -44,7 +44,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>695</posX>
-		<posY>182</posY>
+		<posY>101</posY>
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_glow.png</texture>
@@ -60,7 +60,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>762</posX>
-		<posY>250</posY>
+		<posY>169</posY>
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">defaultdvdcover.png</texture>
@@ -76,7 +76,7 @@
 		<type>image</type>
 		<id>60</id>
 		<posX>762</posX>
-		<posY>250</posY>
+		<posY>169</posY>
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#myfilms.coverimage</texture>
@@ -92,8 +92,8 @@
 		<type>label</type>
 		<label>#myfilms.db.year.label</label>
 		<id>0</id>
-		<posX>678</posX>
-		<posY>884</posY>
+		<posX>714</posX>
+		<posY>872</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -110,7 +110,7 @@
 		<label>#myfilms.db.year.value</label>
 		<id>0</id>
 		<posX>882</posX>
-		<posY>884</posY>
+		<posY>872</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -126,8 +126,8 @@
 		<type>label</type>
 		<label>#myfilms.db.length.label</label>
 		<id>0</id>
-		<posX>678</posX>
-		<posY>924</posY>
+		<posX>714</posX>
+		<posY>912</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -144,7 +144,7 @@
 		<label>#myfilms.db.length.value min</label>
 		<id>0</id>
 		<posX>882</posX>
-		<posY>924</posY>
+		<posY>912</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -160,8 +160,8 @@
 		<type>label</type>
 		<label>#myfilms.db.category.label</label>
 		<id>0</id>
-		<posX>678</posX>
-		<posY>964</posY>
+		<posX>714</posX>
+		<posY>952</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -178,7 +178,7 @@
 		<label>#myfilms.db.category.value</label>
 		<id>0</id>
 		<posX>882</posX>
-		<posY>964</posY>
+		<posY>952</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -194,8 +194,8 @@
 		<type>label</type>
 		<label>#myfilms.db.director.label</label>
 		<id>0</id>
-		<posX>678</posX>
-		<posY>1004</posY>
+		<posX>714</posX>
+		<posY>990</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -212,7 +212,7 @@
 		<label>#myfilms.db.director.value</label>
 		<id>0</id>
 		<posX>882</posX>
-		<posY>1004</posY>
+		<posY>990</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -227,18 +227,17 @@
 		<type>textboxscrollup</type>
 		<description>Summary (list)</description>
 		<id>1025</id>
-		<posX>1138</posX>
-		<posY>884</posY>
+		<posX>1175</posX>
+		<posY>872</posY>
 		<width>725</width>
-		<height>180</height>
+		<height>160</height>
 		<label>#myfilms.db.description.value</label>
-		<font>AvalonLight11</font>
+		<font>AvalonLight12</font>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
 		<onright>1026</onright>
 		<onup>1026</onup>
-		<ondown>1026</ondown>
-		<lineSpacing>0.85</lineSpacing>		
+		<ondown>1026</ondown>	
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
 	
@@ -248,11 +247,11 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>imagelist</type>
 		<id>101</id>
-		<posX>850</posX>
-		<posY>732</posY>
+		<posX>710</posX>
+		<posY>726</posY>
 		<width>185</width>
 		<height>29</height>
-		<textureWidth>28</textureWidth>
+		<textureWidth>32</textureWidth>
 		<textureHeight>27</textureHeight>
 		<subitems>
 		<subitem>starblue.png</subitem>
@@ -262,7 +261,7 @@
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#myfilms.db.rating.value</percentage>
-		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 	</control>
 
 	<control>
@@ -292,7 +291,7 @@
 		<width>64</width>
 		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50)</visible>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
 	</control>
 	
 	<control>
@@ -303,7 +302,7 @@
 		<posX>858</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.HasFocus(50)</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
 	</control>	
 </controls>
 </window>

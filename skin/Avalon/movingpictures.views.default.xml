@@ -232,7 +232,7 @@
 		<posX>1175</posX>
 		<posY>872</posY>
 		<width>725</width>
-		<height>150</height>
+		<height>160</height>
 		<label>#MovingPictures.SelectedMovie.summary</label>
 		<font>AvalonLight12</font>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>

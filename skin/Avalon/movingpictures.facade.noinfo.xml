@@ -109,7 +109,6 @@ This file should contain the facade view
 			<dimColor>ffffffff</dimColor>
 			<spinPosX>1832</spinPosX>
 			<spinPosY>880</spinPosY>
-				<textcolorNoFocus>FF6aa5cb</textcolorNoFocus>
 		</control>
 
 		<control>

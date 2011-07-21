@@ -220,7 +220,7 @@
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
-				<label>Skin Settings</label>
+				<label>#Avalon.SkinSettings</label>
 				<hyperlink>155105</hyperlink>
 				<onleft>50</onleft>
 				<onright>50</onright>

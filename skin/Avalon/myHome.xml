@@ -41,7 +41,7 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<id>50</id>
 		<posX>920</posX>
-		<posY>184</posY>
+		<posY>174</posY>
 		<width>800</width>
 		<textcolor>ffffffff</textcolor>
 		<textColorNoFocus>ff6aa5cb</textColorNoFocus>

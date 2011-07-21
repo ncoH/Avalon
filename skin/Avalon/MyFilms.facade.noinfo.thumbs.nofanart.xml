@@ -5,6 +5,40 @@ This file should contain the facade view
 <window>
 <controls>
 
+	<!--            :: Count Background ::            -->
+
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>829</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+	<!--            :: Count ::            -->
+	
+    <control>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+      <description>Moviecount</description>
+      <type>label</type>
+      <label>#MyFilms: #itemcount  |  Filter: #myfilms.view</label>
+      <id>0</id>
+      <posX>714</posX>
+      <posY>875</posY>
+      <align>left</align>
+      <font>AvalonLight12</font>
+      <textcolor>6aa5cb</textcolor>
+	  <visible>facadeview.list + control.isvisible(50)</visible>
+    </control>
+
 	<control>
 		<type>facadeview</type>
 		<id>50</id>
@@ -18,10 +52,10 @@ This file should contain the facade view
 				<onleft>2</onleft>
 				<onright>80</onright>
 				<scrollOffset>1</scrollOffset>
-				<posX>1166</posX>
-				<posY>236</posY>
-				<height>700</height>
-				<width>684</width>
+    			<posX>1166</posX>
+    			<posY>153</posY>
+    			<height>750</height>
+    			<width>684</width>
 				<textXOff>50</textXOff>
 				<textXOff2>650</textXOff2>	
 				<textureHeight>55</textureHeight>
@@ -79,7 +113,7 @@ This file should contain the facade view
 				<type>thumbnailpanel</type>
 				<id>50</id>
 				<posX>144</posX>
-				<posY>232</posY>
+				<posY>162</posY>
 				<width>1650</width>
 				<height>800</height>
 				<folderPrefix></folderPrefix>
