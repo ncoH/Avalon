@@ -136,6 +136,7 @@
 			<posY>594</posY>
 			<width>780</width>
 			<height>320</height>
+            <lineSpacing>0.85</lineSpacing>
 			<label>#TV.RecordedTV.Description</label>
 			<visible>facadeview.list</visible>
 		</control>
@@ -179,6 +180,7 @@
     		<width>1060</width>
     		<height>160</height>
     		<font>AvalonLight12</font>
+            <lineSpacing>0.85</lineSpacing>
 			<label>#TV.RecordedTV.Description</label>
 			<visible>facadeview.smallicons|facadeview.largeicons</visible>
       		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
