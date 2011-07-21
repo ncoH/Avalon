@@ -149,8 +149,8 @@
 				<thumbPosYBig>0</thumbPosYBig>
 				<thumbZoom>no</thumbZoom>
 				<enableFocusZoom>no</enableFocusZoom>
-				<zoomXPixels>20</zoomXPixels>
-				<zoomYPixels>30</zoomYPixels>
+				<zoomXPixels>40</zoomXPixels>
+				<zoomYPixels>40</zoomYPixels>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>

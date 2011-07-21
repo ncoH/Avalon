@@ -177,7 +177,7 @@
                 <scrollbarYOff>536</scrollbarYOff>
 			    <spinPosX>1832</spinPosX>
 		      	<spinPosY>880</spinPosY>
-				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,580" time="400">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,580" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,580" time="100">unfocus</thumbAnimation>
 		</control>
 

@@ -308,7 +308,7 @@
             <posX>545</posX>
             <posY>751</posY>
 			<width>924</width>
-            <font>fontB20</font>
+            <font>fontB16</font>
             <label>#Play.Current.Title</label>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>

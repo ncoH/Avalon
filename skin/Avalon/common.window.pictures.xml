@@ -109,9 +109,10 @@
 		<description>Selected item Label (filmstrip)</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>714</posX>
-		<posY>960</posY>
-		<width>810</width>
+		<posX>0</posX>
+		<posY>980</posY>
+		<width>1920</width>
+		<align>center</align>
 		<label>#selecteditem</label>
 		<font>fontB16</font>
 		<visible>[facadeview.filmstrip|facadeview.coverflow]+Control.IsVisible(50)</visible>

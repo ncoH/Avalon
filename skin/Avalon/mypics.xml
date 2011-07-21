@@ -43,7 +43,7 @@
 		<posX>858</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>[facadeview.filmstripfacadeview.coverflow]+Control.HasFocus(50) + string.contains(#Avalon.HiddenMenu, true)</visible>
+		<visible>[facadeview.filmstrip|facadeview.coverflow]+Control.HasFocus(50) + string.contains(#Avalon.HiddenMenu, true)</visible>
 	</control>
 	
 	<import>common.facade.pictures.xml</import>
