@@ -8,7 +8,7 @@
 		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<label>Avalon v0.9.2.252</label>
+		<label>Avalon v0.9.3.294</label>
 		<textcolor>ffffff</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
