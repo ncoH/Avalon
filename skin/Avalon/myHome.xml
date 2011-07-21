@@ -53,9 +53,9 @@
 		<spaceBetweenButtons>0</spaceBetweenButtons>
 		<numberOfButtons>5</numberOfButtons>
 		<hoverX>0</hoverX>
-		<hoverY>117</hoverY>
+		<hoverY>118</hoverY>
 		<hoverWidth>1173</hoverWidth>
-		<hoverHeight>662</hoverHeight>
+		<hoverHeight>664</hoverHeight>
 		<hoverKeepAspectratio>no</hoverKeepAspectratio>
 		<scrollTime>160</scrollTime>
 		<scrollTimeMin>100</scrollTimeMin>
