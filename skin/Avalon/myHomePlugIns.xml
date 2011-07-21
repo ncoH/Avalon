@@ -89,7 +89,7 @@
 		<width>64</width>
 		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
-		<visible>![Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)] + string.contains(#Avalon.HiddenMenu, true)</visible>
+		<visible>![Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)] + !string.contains(#Avalon.HiddenMenu, false)</visible>
 	</control>
 
 <control>
@@ -127,4 +127,3 @@
 <import>common.overlay.xml</import>
 </controls>
 </window>
-

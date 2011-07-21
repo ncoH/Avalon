@@ -127,6 +127,7 @@
 		<width>1920</width>
 		<height>1080</height>
 		<texture>background.png</texture>
+        <shouldCache>true</shouldCache>
 	</control>
 	
 	<control>
@@ -134,14 +135,29 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>0</posX>
-		<posY>174</posY>
+		<posY>92</posY>
 		<width>1890</width>
-		<height>682</height>
+		<height>795</height>
 		<texture>weather_bg.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
 		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+        <shouldCache>true</shouldCache>
+	</control>
+
+	<control>
+		<description>Viewport</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>774</posY>
+		<width>1865</width>
+		<height>151</height>
+		<texture>weather_banner.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+
 	</control>
 
 	<control>
@@ -160,11 +176,11 @@
 		<description>update time label</description>
 		<type>label</type>
 		<id>11</id>
-		<posX>190</posX>
-		<posY>99</posY>
-		<align>left</align>
+		<posX>1832</posX>
+		<posY>878</posY>
+		<align>right</align>
 		<font>AvalonLight12</font>
-		<textcolor>ffffff</textcolor>
+		<textcolor>ff6aa5cb</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -174,11 +190,11 @@
 		<description>5-day location</description>
 		<type>label</type>
 		<id>10</id>
-		<posX>1856</posX>
-		<posY>945</posY>
+		<posX>1832</posX>
+		<posY>958</posY>
 		<width>1170</width>
 		<label>-</label>
-		<font>fontB20</font>
+		<font>fontB16</font>
 		<align>right</align>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -189,8 +205,8 @@
 		<type>label</type>
 		<id>1</id>
 		<label>#infoservice.weather.today.condition</label>
-		<posX>1856</posX>
-		<posY>1006</posY>
+		<posX>1838</posX>
+		<posY>1008</posY>
 		<width>475</width>
 		<align>right</align>
 		<font>AvalonLight12</font>
@@ -541,10 +557,12 @@
 		<type>image</type>
 		<id>35</id>
 		<posX>600</posX>
-		<posY>258</posY>
+		<posY>208</posY>
         <height>128</height>
         <width>128</width>
       <texture>-</texture>
+      <align>center</align>
+      <valign>middle</valign>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -626,11 +644,13 @@
 		<description>day 1 icon</description>
 		<type>image</type>
 		<id>45</id>
-		<posX>864</posX>
-		<posY>258</posY>
+		<posX>880</posX>
+		<posY>208</posY>
          <height>128</height>
         <width>128</width>
 		<texture>-</texture>
+      <align>center</align>
+      <valign>middle</valign>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -713,10 +733,12 @@
 		<type>image</type>
 		<id>55</id>
 		<posX>1148</posX>
-		<posY>258</posY>
+		<posY>208</posY>
          <height>128</height>
         <width>128</width>
 		<texture>-</texture>
+       <align>center</align>
+      <valign>middle</valign>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -798,11 +820,13 @@
 		<description>day 3 icon</description>
 		<type>image</type>
 		<id>65</id>
-		<posX>1390</posX>
-		<posY>258</posY>
+		<posX>1410</posX>
+		<posY>208</posY>
          <height>128</height>
         <width>128</width>
 		<texture>-</texture>
+      <align>center</align>
+      <valign>middle</valign>
 		<visible>Control.IsVisible(9999)</visible>
 	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -885,11 +909,13 @@
 		<description>day  4 icon</description>
 		<type>image</type>
 		<id>75</id>
-		<posX>1660</posX>
-		<posY>258</posY>
+		<posX>1680</posX>
+		<posY>208</posY>
          <height>128</height>
         <width>128</width>
 		<texture>-</texture>
+       <align>center</align>
+      <valign>middle</valign>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -935,7 +961,9 @@
 		<width>64</width>
 		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
-		<visible>Control.HasFocus(4) + string.contains(#Avalon.HiddenMenu, true)</visible>
+		<visible>Control.HasFocus(4) + !string.contains(#Avalon.HiddenMenu, false)</visible>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
 	</control>
 
 	

@@ -376,7 +376,7 @@
 		<width>64</width>
 		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
-		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50) + string.contains(#Avalon.HiddenMenu, true)</visible>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
 	</control>
 	<import>myonlinevideos.hiddenmenu.xml</import>
     <import>myonlinevideos.details.xml</import>
