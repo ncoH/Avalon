@@ -10,34 +10,20 @@
         <posY>0</posY>
         <width>1</width>
 		<visible>no</visible>
-    </control>      
-                
-    <control>
-        <description>Scraping Header</description>
-		<type>label</type>
-        <id>0</id>
-		<posX>186</posX>
-		<posY>136</posY>
-        <width>400</width>
-        <textcolor>ffffffff</textcolor>
-        <font>AvalonLight12</font>
-        <label>Fanart scraping | #fanarthandler.scraper.percent.completed %</label>
-        <align>left</align>
-        <visible>control.isvisible(91919280)+string.equals(#Avalon.ShowUpdateInd,true)</visible>
-    </control>  
+    </control>       
 
     <control>
         <description>Scraping Header</description>
 		<type>label</type>
         <id>0</id>
 		<posX>186</posX>
-		<posY>98</posY>
+		<posY>88</posY>
         <width>400</width>
         <textcolor>ffffffff</textcolor>
         <font>AvalonLight12</font>
         <label>#Avalon.FanartScraping | #fanarthandler.scraper.percent.completed %</label>
         <align>left</align>
-        <visible>control.isvisible(91919280)+!string.equals(#Avalon.ShowUpdateInd,true)</visible>
+        <visible>control.isvisible(91919280)</visible>
     </control> 	
         
   </controls>
