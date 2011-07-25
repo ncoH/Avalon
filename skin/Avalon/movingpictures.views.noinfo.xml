@@ -153,11 +153,11 @@
         <type>image</type>
         <id>0</id>
         <posX>761</posX>
-        <posY>592</posY>
+        <posY>167</posY>
         <width>331</width>
         <height>48</height>
         <texture>new_overlay.png</texture>
-        <visible>facadeview.list + Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
+        <visible>facadeview.list + Control.IsVisible(50) + !Control.IsVisible(9) + Control.HasThumb(60) + !string.equals(#Avalon.hidePoster,yes)</visible>
     </control>
 	
     <control>
@@ -169,7 +169,7 @@
         <type>label</type>
         <id>0</id>
         <posX>925</posX>
-        <posY>615</posY>
+        <posY>192</posY>
         <align>center</align>
         <label>#Avalon.UnWatched</label>
 		<font>fontB12</font>
@@ -179,27 +179,6 @@
         <shadowColor>FF000000</shadowColor>
         <visible>facadeview.list + Control.IsVisible(50) + !Control.IsVisible(9) + Control.HasThumb(60) + !string.equals(#Avalon.hidePoster,yes)</visible>
     </control>
-
-    <control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
-        <description>Unwatched label</description>
-        <type>label</type>
-        <id>0</id>
-        <posX>925</posX>
-        <posY>615</posY>
-        <align>center</align>
-        <label>#Avalon.Watched</label>
-		<font>fontB12</font>
-		<textcolor>FFFFFFFF</textcolor>
-        <shadowAngle>120</shadowAngle>
-        <shadowDistance>1</shadowDistance>
-        <shadowColor>FF000000</shadowColor>
-        <visible>facadeview.list + Control.IsVisible(50) + Control.IsVisible(9) + Control.HasThumb(60) + !string.equals(#Avalon.hidePoster,yes)</visible>
-    </control>
-
 	
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
