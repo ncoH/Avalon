@@ -203,7 +203,7 @@
 				<textYOff>17</textYOff>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<label>#SkinTranslation.Translations.check.subtitles.Label</label>
+				<label>287</label>
 				<hyperlink>84623</hyperlink>
 				<visible>plugin.isenabled(SubCentral)</visible>
 				<onleft>50</onleft>
