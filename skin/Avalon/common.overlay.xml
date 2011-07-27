@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id></id>
 <controls>
 
 <!-- Dummy -->
@@ -170,6 +169,7 @@
       <width>135</width>
       <height>135</height>
       <texture>#Play.Current.Thumb</texture>
+      <keepaspectratio>yes</keepaspectratio>
       <visible>player.hasaudio+control.isvisible(3337)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -315,6 +315,7 @@
       <width>135</width>
       <height>135</height>
       <texture>#Play.Current.Thumb</texture>
+      <keepaspectratio>yes</keepaspectratio>
       <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>

@@ -29,9 +29,9 @@
 		<type>image</type>
 		<id>2020</id>
 		<posX>1</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>795</height>
 		<texture>viewport_long.png</texture>
 		<visible>[facadeview.list | facadeview.album] + Control.IsVisible(50)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -45,9 +45,9 @@
 		<type>image</type>
 		<id>2021</id>
 		<posX>1</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>795</height>
 		<texture>viewport_thumbs.png</texture>
 		<visible>[facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -60,11 +60,11 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>1856</posX>
-		<posY>945</posY>
+		<posX>1832</posX>
+		<posY>956</posY>
 		<width>1170</width>
 		<label>#selecteditem</label>
-		<font>fontB20</font>
+		<font>fontB16</font>
 		<align>right</align>
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+control.isvisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -75,12 +75,12 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>242</posX>
-		<posY>99</posY>
+		<posX>714</posX>
+		<posY>876</posY>
 		<align>left</align>
 		<font>AvalonLight12</font>
-		<textcolor>ffffff</textcolor>
-		<label>| #currentmodule: #itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<label>#currentmodule: #itemcount</label>
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip]+Control.IsVisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
