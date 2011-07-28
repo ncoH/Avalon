@@ -80,5 +80,14 @@
   <string Field="ReturnListMovies">Press left to return to movie list</string> 
   <string Field="ReturnListSeries">Press left to return to series list</string> 
   <string Field="Watched">Watched</string>    
-  <string Field="UnWatched">UnWatched</string> 
+  <string Field="UnWatched">UnWatched</string>
+  <string Field="SearchMusic">Search Music</string>
+  <string Field="SearchPhrase">Search Phrase</string>
+  <string Field="SearchHistory">Search History</string>
+  <string Field="SearchFields">Search Fields</string>
+  <string Field="SearchType">Search Type</string>
+  <string Field="CaseSensitive">Case Sensitive</string>
+  <string Field="Lastplayed">Lastplayed</string>
+  <string Field="Filename">Filename</string>
+  <string Field="Playcount">Playcount</string> 
 </strings>
