@@ -34,9 +34,9 @@
 		<type>image</type>
 		<id>2020</id>
 		<posX>1</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>795</height>
 		<texture>viewport_onlinevideos.png</texture>
 		<visible>[facadeview.list | facadeview.album] + Control.IsVisible(50)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -63,27 +63,43 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>1856</posX>
-		<posY>945</posY>
+		<posX>1832</posX>
+		<posY>956</posY>
 		<width>1170</width>
 		<label>#selecteditem</label>
-		<font>fontB20</font>
+		<font>fontB16</font>
 		<align>right</align>
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+control.isvisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 	
+	<!--            :: Count Background ::            -->
+
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>829</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+    
 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>242</posX>
-		<posY>99</posY>
-		<align>left</align>
-		<font>AvalonLight12</font>
-		<textcolor>ffffff</textcolor>
-		<label>| #currentmodule: #infoservice.feed.itemcount</label>
+    	<posX>714</posX>
+        <posY>876</posY>
+        <align>left</align>
+        <font>AvalonLight12</font>
+        <textcolor>6aa5cb</textcolor>
+		<label>#currentmodule: #infoservice.feed.itemcount</label>
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip]+Control.IsVisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -97,7 +113,7 @@
 		<type>textboxscrollup</type>
 		<id>506</id>
 		<posX>74</posX>
-		<posY>244</posY>
+		<posY>153</posY>
 		<width>600</width>
 		<height>600</height>
 		<label>-</label>
@@ -222,15 +238,15 @@
 			<onleft>2</onleft>
 			<onright>80</onright>
 			<scrollOffset>1</scrollOffset>
-			<posX>678</posX>
-			<posY>236</posY>
-			<width>1180</width>
-			<height>700</height>
+			<posX>679</posX>
+			<posY>153</posY>
+			<width>1152</width>
+			<height>750</height>
 			<textXOff>50</textXOff>
-			<textXOff2>1155</textXOff2>
+			<textXOff2>1152</textXOff2>
 			<textureHeight>55</textureHeight>
 			<spinCanFocus>no</spinCanFocus>
-			<textureFocus>listcontrol_item_selected_large.png</textureFocus>
+			<textureFocus>listcontrol_item_selected_wide.png</textureFocus>
 			<dimColor>ffffffff</dimColor>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -245,7 +261,7 @@
 		<width>64</width>
 		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
-		<visible>Control.HasFocus(50)</visible>
+		<visible>Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
 	</control>
 	
 	<import>common.overlay.xml</import>

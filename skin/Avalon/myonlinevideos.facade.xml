@@ -87,12 +87,12 @@
 				<posX>678</posX>
     			<posY>153</posY>
     			<height>750</height>
-    			<width>684</width>
+    			<width>1152</width>
 				<textXOff>50</textXOff>
-				<textXOff2>1155</textXOff2>
+				<textXOff2>1152</textXOff2>
 				<textureHeight>55</textureHeight>
 				<spinCanFocus>no</spinCanFocus>
-				<textureFocus>listcontrol_item_selected_large.png</textureFocus>
+				<textureFocus>listcontrol_item_selected_wide.png</textureFocus>
 				<dimColor>ffffffff</dimColor>
 			</control>
 			<control>
