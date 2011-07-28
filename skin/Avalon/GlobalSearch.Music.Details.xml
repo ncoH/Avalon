@@ -1,0 +1,398 @@
+﻿<window>
+	<id>510</id>
+	<defaultcontrol>11</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>0</id>
+			<texture>background.png</texture>
+			<width>1920</width>
+			<height>1080</height>
+            <shouldCache>true</shouldCache>
+		</control>
+
+     <!--            :: BACKGROUNDS ::           	 -->
+     
+    	<control>
+    		<description>background listview</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>0</posX>
+            <posY>0</posY>
+    		<width>1920</width>
+    		<height>1080</height>
+    		<texture>overlay.png</texture>
+    	</control>
+    	
+    	<control>
+    		<description>viewport list</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>0</posX>
+    		<posY>92</posY>
+    		<width>1893</width>
+    		<height>795</height>
+    		<texture>viewport_onlinevideos.png</texture>
+    		<animation effect="fade" time="250">WindowOpen</animation>
+    		<animation effect="fade" time="250">WindowClose</animation>
+    		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+    		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+    	</control>
+      
+     	<control>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<description>Poster shadow</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>109</posX>
+    		<posY>101</posY>
+    		<width>486</width>
+    		<height>487</height>
+    		<texture>list_music_shadow.png</texture>
+    	</control>
+    	
+    	<control>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<description>Poster shadow</description>
+    		<type>image</type>
+    		<id>0</id>
+     		<posX>109</posX>
+    		<posY>101</posY>
+    		<width>486</width>
+    		<height>487</height>
+    		<texture>list_music_glow.png</texture>
+    	</control>
+     
+    	<control>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<id>0</id>
+    		<type>image</type>
+    		<posX>176</posX>
+    		<posY>169</posY>
+    		<width>350</width>
+    		<height>350</height>
+    		<visible>!control.hasthumb(7)</visible>
+    		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
+    	</control>
+      
+        <control>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<type>image</type>
+    		<description>poster</description>
+    		<id>7</id>
+    		<posX>176</posX>
+    		<posY>169</posY>
+    		<width>350</width>
+    		<height>350</height>
+    		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#selectedthumb</texture>
+        </control>
+
+		<control>
+			<type>label</type>
+			<description>label</description>
+			<id>121</id>
+			<posX>185</posX>
+			<posY>38</posY>
+			<width>500</width>
+			<label>Info</label>
+			<textcolor>6aa5cb</textcolor>
+			<font>font22</font>
+    		<animation effect="fade" time="250">WindowOpen</animation>
+    		<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+
+    <import>common.time.xml</import>
+
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<control>
+				<description>button group</description>
+				<type>group</type>
+        		<posX>1398</posX>
+        		<posY>242</posY>
+				<layout>StackLayout(0, Vertical, true)</layout>
+        		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+				<control>
+					<type>button</type>
+					<description>Play now</description>
+					<id>11</id>
+					<onup>15</onup>
+					<ondown>12</ondown>
+					<label>4552</label>
+				</control>
+				<control>
+					<type>button</type>
+					<description>Play next</description>
+					<id>12</id>
+					<onup>11</onup>
+					<ondown>13</ondown>
+					<label>4551</label>
+				</control>
+				<control>
+					<type>button</type>
+					<description>Add to playlist</description>
+					<id>13</id>
+					<onup>12</onup>
+					<ondown>14</ondown>
+					<label>926</label>
+				</control>
+				<control>
+					<type>button</type>
+					<description>Add album to playlist</description>
+					<id>14</id>
+					<onup>13</onup>
+					<ondown>15</ondown>
+					<label>33041</label>
+					<font>font12</font>
+				</control>
+				<control>
+					<type>button</type>
+					<description>Add to favorites</description>
+					<id>15</id>
+					<onup>14</onup>
+					<ondown>11</ondown>
+					<label>930</label>
+				</control>
+			</control>
+		</control>
+
+    	<!--            :: Count Background ::            -->
+    
+    	<control>
+    		<description>RSS background</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>0</posX>
+    		<posY>829</posY>
+    		<width>1865</width>
+    		<height>96</height>
+    		<texture>basichome_rss_bg.png</texture>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	</control>
+
+		<control Style="InfoLabel">
+			<type>label</type>
+			<id>25</id>
+    		<posX>744</posX>
+    		<posY>256</posY>
+			<label>484</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoValue">
+			<type>fadelabel</type>
+			<id>1</id>
+    		<posX>1058</posX>
+    		<posY>256</posY>
+			<label>#artist</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoLabel">
+			<type>label</type>
+			<id>26</id>
+			<posX>744</posX>
+			<posY>296</posY>
+			<label>483</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoValue">
+			<type>fadelabel</type>
+			<id>2</id>
+            <posX>1058</posX>
+			<posY>296</posY>
+			<label>#album</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoLabel">
+			<type>label</type>
+			<id>27</id>
+			<posX>744</posX>
+			<posY>336</posY>
+			<label>Songname</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoValue">
+			<type>fadelabel</type>
+			<id>3</id>
+            <posX>1058</posX>
+			<posY>336</posY>
+			<label>#songname</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoLabel">
+			<type>label</type>
+			<id>28</id>
+			<posX>744</posX>
+			<posY>376</posY>
+			<label>Genre</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoValue">
+			<type>fadelabel</type>
+			<id>4</id>
+            <posX>1058</posX>
+			<posY>376</posY>
+			<label>#genre</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoLabel">
+			<type>label</type>
+			<id>29</id>
+			<posX>744</posX>
+			<posY>416</posY>
+			<label>345</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoValue">
+			<type>fadelabel</type>
+			<id>5</id>
+            <posX>1058</posX>
+			<posY>416</posY>
+			<label>#year</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoLabel">
+			<type>label</type>
+			<id>0</id>
+			<posX>744</posX>
+			<posY>456</posY>
+			<label>180</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoValue">
+			<type>fadelabel</type>
+			<id>9</id>
+			<posX>1058</posX>
+			<posY>456</posY>
+			<label>#duration</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoLabel">
+			<type>label</type>
+			<id>31</id>
+			<posX>744</posX>
+			<posY>496</posY>
+			<label>931</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control>
+			<type>imagelist</type>
+			<description>-</description>
+			<id>1337</id>
+    		<posX>1054</posX>
+    		<posY>496</posY>
+    		<width>185</width>
+    		<height>29</height>
+    		<textureWidth>32</textureWidth>
+    		<textureHeight>27</textureHeight>
+    		<subitems>
+    		<subitem>starblue.png</subitem>
+    		<subitem>starwhite.png</subitem>
+    		</subitems>
+    		<orientation>horizontal</orientation>
+    		<align>left</align>
+    		<imagesToDraw>5</imagesToDraw>	 
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>		
+
+		<control Style="InfoLabel">
+			<type>label</type>
+			<id>35</id>
+			<posX>744</posX>
+			<posY>536</posY>
+			<label>#Avalon.Playcount</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoValue">
+			<type>fadelabel</type>
+			<id>8</id>
+            <posX>1058</posX>
+			<posY>536</posY>
+			<label>#tp</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoLabel">
+			<type>label</type>
+			<id>37</id>
+			<posX>744</posX>
+			<posY>576</posY>
+			<label>#Avalon.Lastplayed</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoValue">
+			<type>fadelabel</type>
+			<id>10</id>
+            <posX>1058</posX>
+			<posY>576</posY>
+			<label>#last_played</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoLabel">
+			<type>label</type>
+			<id>30</id>
+			<posX>744</posX>
+			<posY>616</posY>
+			<label>#Avalon.Filename</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control Style="InfoValue">
+			<type>fadelabel</type>
+			<id>6</id>
+			<posX>1058</posX>
+			<posY>616</posY>
+			<label>#filename</label>
+        	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<import>common.overlay.xml</import>
+
+	</controls>
+</window>
