@@ -265,7 +265,7 @@
 		<id>0</id>
 		<posX>674</posX>
 		<posY>271</posY>
-		<width>1070</width>
+		<width>1005</width>
 		<font>fontB20</font>
 		<label>#myfilms.user.mastertitle.value</label>
 		<visible>!Control.HasFocus(10099)</visible>
