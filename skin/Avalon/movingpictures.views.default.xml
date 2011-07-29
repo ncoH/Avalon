@@ -12,6 +12,9 @@
 		<posY>810</posY>
 		<label>#MovingPictures.SelectedMovie.title</label>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+control.isvisible(50)</visible>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 	</control>
 	
 	<control>
@@ -90,6 +93,9 @@
 		<posY>872</posY>
 		<label>#Avalon.ReleaseDate</label>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 	</control>
 
 	<control Style="InfoValueSmall">
@@ -100,7 +106,10 @@
 		<posY>872</posY>
 		<label>#MovingPictures.SelectedMovie.year</label>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
-	</control>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
 
 	<control Style="InfoLabel">
 		<description>Runtime Label</description>
@@ -110,7 +119,10 @@
 		<posY>912</posY>
 		<label>#Avalon.Runtime</label>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
-	</control>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
 	
 	<control Style="InfoValueSmall">
 		<description>Runtime Value</description>
@@ -120,7 +132,10 @@
 		<posY>912</posY>
 		<label>#MovingPictures.SelectedMovie.runtime.totalminutes min</label>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
-	</control>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
 	
 	<control Style="InfoLabel">
 		<description>Genre Label</description>
@@ -130,7 +145,10 @@
 		<posY>952</posY>
 		<label>#MovingPictures.Translation.Genre.Label</label>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
-	</control>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
 	
 	<control Style="InfoValueSmall">
 		<description>Genre Value</description>
@@ -140,7 +158,10 @@
 		<posY>952</posY>
 		<label>#MovingPictures.SelectedMovie.genres</label>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
-	</control>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
 	
 	<control Style="InfoLabel">
 		<description>Director Label</description>
@@ -150,7 +171,10 @@
 		<posY>990</posY>
 		<label>#MovingPictures.Translation.Director.Label</label>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
-	</control>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
 	
 	<control Style="InfoValueSmall">
 		<description>Director Value</description>
@@ -160,7 +184,10 @@
 		<posY>990</posY>
 		<label>#MovingPictures.SelectedMovie.directors</label>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
-	</control>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
 	
 	<control>
 		<description>Summary (list)</description>
