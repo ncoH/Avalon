@@ -4,27 +4,17 @@
 
 	<!--            :: LIST ::            -->
 	
-	<control>
+	<control Style="wideTitle">
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>1832</posX>
 		<posY>956</posY>
-		<width>1170</width>
 		<label>#MovingPictures.SelectedMovie.title</label>
-		<font>fontB16</font>
-		<align>right</align>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)+!Control.HasFocus(80)</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 	</control>
 
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<description>Poster shadow</description>
 		<type>image</type>
 		<id>1</id>
@@ -34,13 +24,13 @@
 		<height>606</height>
 		<texture>list_poster_shadow.png</texture>
 		<visible>facadeview.list+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+	</control>
+	
+	<control>
 		<description>Poster shadow</description>
 		<type>image</type>
 		<id>1</id>
@@ -50,13 +40,13 @@
 		<height>606</height>
 		<texture>list_poster_glow.png</texture>
 		<visible>facadeview.list+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
-	</control>
-	
-	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+	</control>
+	
+	<control>
 		<description>Default Cover Art</description>
 		<type>image</type>
 		<id>0</id>
@@ -66,13 +56,13 @@
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">defaultVideoBig.png</texture>
 		<visible>facadeview.list + Control.IsVisible(50) + !Control.HasThumb(60) + !string.equals(#Avalon.hidePoster,yes)</visible>
-	</control>
-
-	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+	</control>
+
+	<control>
 		<description>Cover Art</description>
 		<type>image</type>
 		<id>60</id>
@@ -82,18 +72,18 @@
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#MovingPictures.Coverart</texture>
 		<visible>[facadeview.list+Control.IsVisible(50)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 	</control>
 	
 
 	<!--            :: Info Labels ::            -->
 	
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
 		<description>Year / Runtime / Genre</description>
 		<type>label</type>
-		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime.totalminutes #Avalon.Minutes - #MovingPictures.SelectedMovie.extra.genres.1</label>
 		<id>0</id>
 		<posX>1832</posX>
 		<posY>1006</posY>
@@ -101,30 +91,30 @@
 		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
+		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime.totalminutes #Avalon.Minutes - #MovingPictures.SelectedMovie.extra.genres.1</label>
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)+!Control.HasFocus(80)</visible>
-	</control>
-	
-	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
+	</control>
+	
+	<control>
 		<description>return to movie list</description>
 		<type>label</type>
-		<label>Press left to return to movie list</label>
 		<id>0</id>
 		<posX>1856</posX>
 		<posY>1006</posY>
 		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
+		<label>Press left to return to movie list</label>
 		<visible>facadeview.list+Control.HasFocus(80)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
 	</control>
 	
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<type>imagelist</type>
 		<id>101</id>
 		<posX>850</posX>
@@ -142,13 +132,13 @@
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
 		<visible>facadeview.list+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
-	</control>
-	
-    <control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+	</control>
+	
+    <control>
         <description>New Overlay</description>
         <type>image</type>
         <id>0</id>
@@ -158,13 +148,12 @@
         <height>48</height>
         <texture>new_overlay.png</texture>
         <visible>facadeview.list + Control.IsVisible(50) + !Control.IsVisible(9) + Control.HasThumb(60) + !string.equals(#Avalon.hidePoster,yes)</visible>
-    </control>
-	
-    <control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+    </control>
+	
         <description>Unwatched label</description>
         <type>label</type>
         <id>0</id>
@@ -178,11 +167,14 @@
         <shadowDistance>1</shadowDistance>
         <shadowColor>FF000000</shadowColor>
         <visible>facadeview.list + Control.IsVisible(50) + !Control.IsVisible(9) + Control.HasThumb(60) + !string.equals(#Avalon.hidePoster,yes)</visible>
+    <control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
     </control>
 	
 	<control>
-		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
@@ -191,14 +183,13 @@
 		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
 	</control>
 	
 	<!--            :: THUMBVIEW ::            -->
 	
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		<type>imagelist</type>
 		<id>101</id>
 		<posX>1280</posX>
@@ -216,6 +207,9 @@
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
 		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 	</control>
 	
 	
@@ -229,8 +223,8 @@
 		<posY>942</posY>
 		<width>1920</width>
 		<align>center</align>
-		<label>#MovingPictures.SelectedMovie.title</label>
 		<font>fontB16</font>
+		<label>#MovingPictures.SelectedMovie.title</label>
 		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -238,12 +232,8 @@
 	</control>
 	
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
 		<description>Year / Runtime / Genre</description>
 		<type>fadelabel</type>
-		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime.totalminutes #Avalon.Minutes - #MovingPictures.SelectedMovie.genres</label>
 		<id>0</id>
 		<posX>0</posX>
 		<posY>985</posY>
@@ -251,13 +241,14 @@
 		<align>center</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
+		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime.totalminutes #Avalon.Minutes - #MovingPictures.SelectedMovie.genres</label>
 		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
 	</control>
 	
 	<control>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
 		<type>imagelist</type>
 		<id>101</id>
 		<posX>880</posX>
@@ -275,17 +266,20 @@
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
 		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
 	</control>
 	
 	<control>
-		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>858</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
 		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
+		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
 	</control>	
 </controls>
 </window>
