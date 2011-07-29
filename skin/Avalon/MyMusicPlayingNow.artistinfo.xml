@@ -44,10 +44,11 @@
         <control>
             <id>0</id>
             <description>artist value</description>
-            <type>label</type>
+            <type>fadelabel</type>
 			<visible>Control.HasFocus(6103)</visible>
 			<posX>747</posX>
 			<posY>139</posY>
+            <width>924</width>
 			<label>#Play.Current.Artist</label>
 			<align>left</align>
 			<font>AvalonLight14</font>
@@ -77,10 +78,11 @@
         <control>
             <id>0</id>
             <description>born value</description>
-            <type>label</type>
+            <type>fadelabel</type>
 			<visible>Control.HasFocus(6103)</visible>
 			<posX>747</posX>
 			<posY>180</posY>
+            <width>924</width>
 			<label>#Play.ArtistInfo.Born</label>
 			<align>left</align>
 			<font>AvalonLight14</font>
