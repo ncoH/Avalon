@@ -94,7 +94,7 @@
 	<!--            :: INFO LABELS ::            -->
         
     <control>
-		<id>500</id>
+		<id>0</id>
 		<type>image</type>
 		<posX>95</posX>
 		<posY>249</posY>
@@ -102,9 +102,65 @@
 		<height>310</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="onlinevideos_poster_mask.png">#selectedthumb</texture>
-		<visible>!videoplayer.usingoverlays + !player.hasmedia + !Control.IsVisible(51) + facadeview.list </visible>
+		<visible>facadeview.list+!control.isvisible(51)+![string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+    
+ 	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Poster shadow</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>109</posX>
+		<posY>110</posY>
+		<width>466</width>
+		<height>606</height>
+		<texture>list_poster_shadow.png</texture>
+		<visible>facadeview.list+!string.equals(#OnlineVideos.state,details)+[string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Poster shadow</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>109</posX>
+		<posY>110</posY>
+		<width>466</width>
+		<height>606</height>
+		<texture>list_poster_glow.png</texture>
+		<visible>facadeview.list+!string.equals(#OnlineVideos.state,details)+[string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+	</control>
+  
+    <control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>image</type>
+		<description>movie poster</description>
+		<id>0</id>
+		<posX>176</posX>
+		<posY>178</posY>
+		<width>330</width>
+		<height>470</height>
+		<visible>facadeview.list+!Control.HasThumb(500)+!string.equals(#OnlineVideos.state,details)+[string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">defaultVideoBig.png</texture>
+    </control>
+  
+    <control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>image</type>
+		<description>movie poster</description>
+		<id>500</id>
+		<posX>176</posX>
+		<posY>178</posY>
+		<width>330</width>
+		<height>470</height>
+		<visible>facadeview.list+!string.equals(#OnlineVideos.state,details)+[string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)|string.equals(#OnlineVideos.selectedSiteUtil,IMDb)]</visible>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#selectedthumb</texture>
     </control>
     
     <control>
