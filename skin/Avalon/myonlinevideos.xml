@@ -249,11 +249,11 @@
 		<width>542</width>
 		<height>310</height>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture flipY="true" diffuse="Thumb_Mask.png" mask="onlinevideos_poster_mask.png">Onlinevideos\logos\#OnlineVideos.selectedSite.png</texture>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="onlinevideos_poster_mask.png">Onlinevideos\Icons\#OnlineVideos.selectedSite.png</texture>
 		<visible>facadeview.list + !string.contains(#selecteditem, ..) + !string.equals(#OnlineVideos.state, videos)</visible>
 	</control>
 	
-	<!--            :: Thumbviews ::            -->
+	 <!--          :: Thumbviews ::            -->
 	
 	
     <control>
@@ -420,7 +420,7 @@
         <width>224</width>
 	    <height>125</height>
 		<visible>[facadeview.smallicons|facadeview.largeicons] + !string.contains(#selecteditem, ..) + string.equals(#OnlineVideos.state, videos)</visible>
-		<texture mask="onlinevideos_station_mask.png">Onlinevideos\logos\#OnlineVideos.selectedSite.png</texture>
+		<texture mask="onlinevideos_station_mask.png">Onlinevideos\Icons\#OnlineVideos.selectedSite.png</texture>
 	</control>
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
