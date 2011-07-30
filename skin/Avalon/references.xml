@@ -6,31 +6,26 @@
     <version>1.2.0.0</version>
   </skin>
   <style Name="InfoLabel">
-	<id>0</id>
 	<width>240</width>
     <font>AvalonLight12</font>
     <textcolor>FF6aa5cb</textcolor>
   </style>
   <style Name="InfoValue">
-	<id>0</id>
-	<width>450</width>
+	<width>920</width>
     <font>AvalonLight12</font>
     <textcolor>FFffffff</textcolor>
   </style>
   <style Name="InfoValueSmall">
-	<id>0</id>
 	<width>240</width>
     <font>AvalonLight12</font>
     <textcolor>FFffffff</textcolor>
   </style>
   <style Name="smallTitle">
-	<id>0</id>
 	<width>810</width>
 	<font>fontB16</font>
     <textcolor>FFffffff</textcolor>
   </style>
   <style Name="wideTitle">
-	<id>0</id>
 	<width>1170</width>
 	<font>fontB16</font>
     <textcolor>FFffffff</textcolor>
@@ -411,7 +406,7 @@
     <hideUnfocusTexture>no</hideUnfocusTexture>
     <renderFocusText>no</renderFocusText>
     <renderUnfocusText>no</renderUnfocusText>
-    <scrollOffset>1</scrollOffset>
+    <scrollOffset>0</scrollOffset>
   </control>
   <control>
     <description>default filmstrip</description>

@@ -117,8 +117,8 @@
 			<control>
 				<description>button group</description>
 				<type>group</type>
-        		<posX>1398</posX>
-        		<posY>242</posY>
+        		<posX>744</posX>
+        		<posY>575</posY>
 				<layout>StackLayout(0, Vertical, true)</layout>
         		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -129,6 +129,11 @@
 					<onup>15</onup>
 					<ondown>12</ondown>
 					<label>4552</label>
+                    <width>1050</width>
+                    <height>52</height>
+            		<textureFocus>settings_button_focus.png</textureFocus>
+            		<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+                    <textYOff>8</textYOff>
 				</control>
 				<control>
 					<type>button</type>
@@ -137,6 +142,11 @@
 					<onup>11</onup>
 					<ondown>13</ondown>
 					<label>4551</label>
+                    <width>1050</width>
+                    <height>52</height>
+            		<textureFocus>settings_button_focus.png</textureFocus>
+            		<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+                    <textYOff>8</textYOff>
 				</control>
 				<control>
 					<type>button</type>
@@ -145,6 +155,11 @@
 					<onup>12</onup>
 					<ondown>14</ondown>
 					<label>926</label>
+                    <width>1050</width>
+                    <height>52</height>
+            		<textureFocus>settings_button_focus.png</textureFocus>
+            		<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+                    <textYOff>8</textYOff>
 				</control>
 				<control>
 					<type>button</type>
@@ -153,7 +168,11 @@
 					<onup>13</onup>
 					<ondown>15</ondown>
 					<label>33041</label>
-					<font>font12</font>
+                    <width>1050</width>
+                    <height>52</height>
+            		<textureFocus>settings_button_focus.png</textureFocus>
+            		<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+                    <textYOff>8</textYOff>
 				</control>
 				<control>
 					<type>button</type>
@@ -162,6 +181,11 @@
 					<onup>14</onup>
 					<ondown>11</ondown>
 					<label>930</label>
+                    <width>1050</width>
+                    <height>52</height>
+            		<textureFocus>settings_button_focus.png</textureFocus>
+            		<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+                    <textYOff>8</textYOff>
 				</control>
 			</control>
 		</control>
@@ -185,7 +209,7 @@
 			<type>label</type>
 			<id>25</id>
     		<posX>744</posX>
-    		<posY>256</posY>
+    		<posY>162</posY>
 			<label>484</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -195,7 +219,7 @@
 			<type>fadelabel</type>
 			<id>1</id>
     		<posX>1058</posX>
-    		<posY>256</posY>
+    		<posY>162</posY>
 			<label>#artist</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -205,7 +229,7 @@
 			<type>label</type>
 			<id>26</id>
 			<posX>744</posX>
-			<posY>296</posY>
+			<posY>202</posY>
 			<label>483</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -215,7 +239,7 @@
 			<type>fadelabel</type>
 			<id>2</id>
             <posX>1058</posX>
-			<posY>296</posY>
+			<posY>202</posY>
 			<label>#album</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -225,7 +249,7 @@
 			<type>label</type>
 			<id>27</id>
 			<posX>744</posX>
-			<posY>336</posY>
+			<posY>242</posY>
 			<label>Songname</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -235,7 +259,7 @@
 			<type>fadelabel</type>
 			<id>3</id>
             <posX>1058</posX>
-			<posY>336</posY>
+			<posY>242</posY>
 			<label>#songname</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -245,7 +269,7 @@
 			<type>label</type>
 			<id>28</id>
 			<posX>744</posX>
-			<posY>376</posY>
+			<posY>282</posY>
 			<label>Genre</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -255,7 +279,7 @@
 			<type>fadelabel</type>
 			<id>4</id>
             <posX>1058</posX>
-			<posY>376</posY>
+			<posY>282</posY>
 			<label>#genre</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -265,7 +289,7 @@
 			<type>label</type>
 			<id>29</id>
 			<posX>744</posX>
-			<posY>416</posY>
+			<posY>322</posY>
 			<label>345</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -275,7 +299,7 @@
 			<type>fadelabel</type>
 			<id>5</id>
             <posX>1058</posX>
-			<posY>416</posY>
+			<posY>322</posY>
 			<label>#year</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -285,7 +309,7 @@
 			<type>label</type>
 			<id>0</id>
 			<posX>744</posX>
-			<posY>456</posY>
+			<posY>362</posY>
 			<label>180</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -295,7 +319,7 @@
 			<type>fadelabel</type>
 			<id>9</id>
 			<posX>1058</posX>
-			<posY>456</posY>
+			<posY>362</posY>
 			<label>#duration</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -305,7 +329,7 @@
 			<type>label</type>
 			<id>31</id>
 			<posX>744</posX>
-			<posY>496</posY>
+			<posY>402</posY>
 			<label>931</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -316,7 +340,7 @@
 			<description>-</description>
 			<id>1337</id>
     		<posX>1054</posX>
-    		<posY>496</posY>
+    		<posY>402</posY>
     		<width>185</width>
     		<height>29</height>
     		<textureWidth>32</textureWidth>
@@ -336,7 +360,7 @@
 			<type>label</type>
 			<id>35</id>
 			<posX>744</posX>
-			<posY>536</posY>
+			<posY>442</posY>
 			<label>#Avalon.Playcount</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -346,7 +370,7 @@
 			<type>fadelabel</type>
 			<id>8</id>
             <posX>1058</posX>
-			<posY>536</posY>
+			<posY>442</posY>
 			<label>#tp</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -356,7 +380,7 @@
 			<type>label</type>
 			<id>37</id>
 			<posX>744</posX>
-			<posY>576</posY>
+			<posY>482</posY>
 			<label>#Avalon.Lastplayed</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -366,7 +390,7 @@
 			<type>fadelabel</type>
 			<id>10</id>
             <posX>1058</posX>
-			<posY>576</posY>
+			<posY>482</posY>
 			<label>#last_played</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -376,7 +400,7 @@
 			<type>label</type>
 			<id>30</id>
 			<posX>744</posX>
-			<posY>616</posY>
+			<posY>522</posY>
 			<label>#Avalon.Filename</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -386,7 +410,7 @@
 			<type>fadelabel</type>
 			<id>6</id>
 			<posX>1058</posX>
-			<posY>616</posY>
+			<posY>522</posY>
 			<label>#filename</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
