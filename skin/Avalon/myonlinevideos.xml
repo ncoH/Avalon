@@ -165,37 +165,6 @@
     </control>    
 	
     <control>
-		<type>fadelabel</type>
-		<id>1</id>      
-		<posX>1832</posX>
-		<posY>1006</posY>
-		<width>475</width>
-		<align>right</align>
-		<font>AvalonLight12</font>
-		<textcolor>6aa5cb</textcolor>
-		<label>Online Videos | #header.label</label>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<visible>!Control.HasFocus(80) + !string.contains(#header.label, Online Videos) + facadeview.list</visible>
-    </control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
-		<description>return to video list</description>
-		<type>label</type>
-		<label>Press left to return to video list</label>
-		<id>0</id>
-		<posX>1856</posX>
-		<posY>1006</posY>
-		<align>right</align>
-		<font>AvalonLight12</font>
-		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(51) + facadeview.list + Control.HasFocus(80)</visible>
-	</control>
-	
-    <control>
 		<description>Buffering Label</description>
 		<type>label</type>
 		<id>0</id>
@@ -236,7 +205,7 @@
 		<height>310</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="onlinevideos_poster_mask.png">Onlinevideos\Icons\#OnlineVideos.selectedSite.png</texture>
-		<visible>facadeview.list + !string.contains(#selecteditem, ..) + !string.equals(#OnlineVideos.state, videos)</visible>
+		<visible>facadeview.list + !string.equals(#OnlineVideos.state, videos) + !string.equals(#OnlineVideos.state, details)</visible>
 	</control>
 	
 	 <!--          :: Thumbviews ::            -->
