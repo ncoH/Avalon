@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+		<!-- Information in Details View Only -->
+		<control>
+			<description>Vignette background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>202</posX>
+			<posY>179</posY>
+			<width>1518</width>
+			<height>872</height>
+			<texture>myfilms_details_bg.png</texture>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<description>Movie Title</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>586</posX>
+			<posY>280</posY>
+			<width>1005</width>
+			<font>fontB20</font>
+			<label>#selecteditem</label>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<description>Poster Background</description>
+			<type>image</type>
+			<id>23</id>
+			<posX>-2000</posX>
+			<posY>195</posY>
+			<width>555</width>
+			<height>790</height>
+			<texture>-</texture>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<description>Poster</description>
+			<type>image</type>
+			<id>24</id>
+			<posX>298</posX>
+			<posY>350</posY>
+			<width>250</width>
+			<height>354</height>
+			<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">empty.png</texture>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<!--
+		<control>
+			<description>certification</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>665</posX>
+			<posY>235</posY>
+			<width>840</width>
+			<label>#st_rating</label>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+		-->
+		<control>
+			<description>Release Date Label</description>
+			<type>label</type>
+			<label>#Avalon.ReleaseDate</label>
+			<id>0</id>
+			<posX>586</posX>
+			<posY>360</posY>
+			<width>240</width>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>6aa5cb</textcolor>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<description>year</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>838</posX>
+			<posY>360</posY>
+			<width>200</width>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<textcolor>ffffff</textcolor>
+			<label>#st_releasedate</label>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<type>label</type>
+			<label>#Avalon.Runtime</label>
+			<id>0</id>
+			<posX>586</posX>
+			<posY>401</posY>
+			<width>240</width>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>6aa5cb</textcolor>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<description>runtime</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>838</posX>
+			<posY>401</posY>
+			<width>240</width>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<textcolor>ffffff</textcolor>
+			<label>#st_runtime</label>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<description>5 star rating</description>
+			<type>imagelist</type>
+			<id>1</id>
+    		<posX>588</posX>
+    		<posY>901</posY>
+    		<width>315</width>
+			<height>29</height>
+			<textureWidth>32</textureWidth>
+			<textureHeight>27</textureHeight>
+			<subitems>
+				<subitem>starblue.png</subitem>
+				<subitem>starwhite.png</subitem>
+			</subitems>
+			<orientation>horizontal</orientation>
+			<align>left</align>
+			<imagesToDraw>10</imagesToDraw>
+			<percentage>#st_userrating</percentage>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<description>Director Label</description>
+			<type>label</type>
+			<label>199</label>
+			<id>0</id>
+			<posX>586</posX>
+			<posY>484</posY>
+			<width>240</width>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>6aa5cb</textcolor>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<description>Directors</description>
+			<type>label</type>
+			<label>#st_director</label>
+			<id>0</id>
+			<posX>838</posX>
+			<posY>484</posY>
+			<width>700</width>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<textcolor>ffffff</textcolor>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<description>actors</description>
+			<type>label</type>
+			<label>#(L(206))</label>
+			<id>0</id>
+			<posX>586</posX>
+			<posY>524</posY>
+			<width>240</width>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>6aa5cb</textcolor>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<description>actors</description>
+			<id>0</id>
+			<label>#st_starring</label>
+			<type>fadelabel</type>
+			<posX>838</posX>
+			<posY>524</posY>
+			<width>800</width>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<description>Genre Label</description>
+			<type>label</type>
+			<label>#(L(725))</label>
+			<id>0</id>
+			<posX>586</posX>
+			<posY>442</posY>
+			<width>240</width>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<textcolor>6aa5cb</textcolor>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<description>Genres</description>
+			<type>label</type>
+			<label>#st_genre</label>
+			<id>0</id>
+			<posX>838</posX>
+			<posY>442</posY>
+			<width>800</width>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<textcolor>ffffff</textcolor>
+			<visible>Control.IsVisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<type>button</type>
+			<description>ShowTimes</description>
+			<id>40</id>
+			<posX>1010</posX>
+			<posY>880</posY>
+			<label>4</label>
+            <width>264</width>
+            <height>62</height>
+			<onright>43</onright>
+			<onleft>41</onleft>
+			<onup>40</onup>
+			<ondown>40</ondown>
+			<visible>control.isvisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<type>button</type>
+			<description>Play Trailer</description>
+			<id>41</id>
+			<posX>462</posX>
+			<posY>880</posY>
+			<label>3</label>
+    		<width>58</width>
+    		<height>59</height>
+			<onright>40</onright>
+			<onleft>42</onleft>
+			<onup>41</onup>
+			<ondown>41</ondown>
+    		<textureFocus>movie_details_trailer_focus.png</textureFocus>
+    		<textureNoFocus>movie_details_trailer_nofocus.png</textureNoFocus>
+			<visible>control.isvisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<type>button</type>
+			<description>Next</description>
+			<id>42</id>
+			<posX>1448</posX>
+			<posY>880</posY>
+			<label>209</label>
+            <width>171</width>
+            <height>62</height>
+			<onright>41</onright>
+			<onleft>43</onleft>
+			<onup>42</onup>
+			<ondown>42</ondown>
+			<visible>control.isvisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<type>button</type>
+			<description>Previous</description>
+			<id>43</id>
+			<posX>1275</posX>
+			<posY>880</posY>
+			<label>210</label>
+            <width>171</width>
+            <height>62</height>
+			<onright>42</onright>
+			<onleft>40</onleft>
+			<onup>42</onup>
+			<ondown>42</ondown>
+			<visible>control.isvisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+		<control>
+			<description>Summary</description>
+			<type>textboxscrollup</type>
+			<id>0</id>
+			<posX>586</posX>
+			<posY>581</posY>
+			<width>1090</width>
+			<height>230</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<label>#st_plot</label>
+			<visible>control.isvisible(24)</visible>
+			<animation effect="fade" time="250">Visible</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		</control>
+    	<control>
+    		<description>frame</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>586</posX>
+    		<posY>880</posY>
+    		<width>415</width>
+    		<height>73</height>
+    		<texture>movie_detail_frame_small.png</texture>
+    		<visible>control.isvisible(24)</visible>
+    		<animation effect="fade" time="250">Visible</animation>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+    	</control>
+        <control>
+            <description>Star Rating Value</description>
+            <type>label</type>
+            <id>0</id>
+    		<posX>921</posX>
+    		<posY>896</posY>
+    		<width>185</width>
+    		<font>fontB14</font>
+    		<textcolor>ffffff</textcolor>
+            <label>#st_userrating</label>
+            <visible>control.isvisible(24)</visible>
+    		<animation effect="fade" time="250">Visible</animation>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+        </control>
+	</controls>
+</window>
