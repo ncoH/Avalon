@@ -78,15 +78,13 @@
 	<import>ShowTimesGUI.background.xml</import>
 	<import>common.time.xml</import>
 		<!-- Title Bar Controls -->
-		<control>
+		<control Style="wideTitle">
 			<description>Selected Item</description>
 			<type>label</type>
 			<id>0</id>
 			<posX>714</posX>
 			<posY>810</posY>
-			<width>1100</width>
 			<label>#selecteditem</label>
-			<font>fontB16</font>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 			<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
@@ -105,42 +103,42 @@
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
-	<import>ShowTimesGUI.hiddenmenu.xml</import>
-		<!-- Information in List View Only-->
-	<control>
-		<description>Poster shadow</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>695</posX>
-		<posY>101</posY>
-		<width>466</width>
-		<height>606</height>
-		<texture>list_poster_shadow.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(24)</visible>
-	</control>
-	
-	<control>
-		<description>Poster shadow</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>695</posX>
-		<posY>101</posY>
-		<width>466</width>
-		<height>606</height>
-		<texture>list_poster_glow.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(24)</visible>
-	</control>
-	
-	<control>
-		<type>image</type>
-		<id>0</id>
-		<posX>762</posX>
-		<posY>169</posY>
-		<width>330</width>
-		<height>470</height>
-		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#st_poster</texture>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(24)</visible>
-	</control>
+    	<import>ShowTimesGUI.hiddenmenu.xml</import>
+    		<!-- Information in List View Only-->
+    	<control>
+    		<description>Poster shadow</description>
+    		<type>image</type>
+    		<id>1</id>
+    		<posX>695</posX>
+    		<posY>101</posY>
+    		<width>466</width>
+    		<height>606</height>
+    		<texture>list_poster_shadow.png</texture>
+    		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(24)</visible>
+    	</control>
+    	
+    	<control>
+    		<description>Poster shadow</description>
+    		<type>image</type>
+    		<id>1</id>
+    		<posX>695</posX>
+    		<posY>101</posY>
+    		<width>466</width>
+    		<height>606</height>
+    		<texture>list_poster_glow.png</texture>
+    		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(24)</visible>
+    	</control>
+    	
+    	<control>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>762</posX>
+    		<posY>169</posY>
+    		<width>330</width>
+    		<height>470</height>
+    		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#st_poster</texture>
+    		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(24)</visible>
+    	</control>
 		<control>
 			<description>Director Label</description>
 			<type>label</type>

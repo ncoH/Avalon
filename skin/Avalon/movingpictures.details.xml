@@ -19,22 +19,115 @@ This file should contain the details view
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 	
-	<!-- Details Box -->
+	<!-- Tabs -->
+	
+    <control>
+		<description>Summary</description>
+		<type>image</type>
+	    <id>900</id>
+		<posX>248</posX>
+		<posY>155</posY>
+		<width>491</width>
+		<height>99</height>	
+		<texture>movies_tab_left_focus.png</texture>
+        <visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+	</control>
+    
+    <control>
+		<description>Summary</description>
+		<type>image</type>
+	    <id>0</id>
+		<posX>248</posX>
+		<posY>155</posY>
+		<width>491</width>
+		<height>99</height>	
+		<texture>movies_tab_left_nofocus.png</texture>
+        <visible>!Control.IsVisible(50)+!Control.IsVisible(51) + ![Control.HasFocus(6) | Control.HasFocus(700) | Control.HasFocus(800)]</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+	</control>
+    
+    <control>
+		<description>Summary label</description>
+		<type>label</type>
+	    <id>0</id>
+		<posX>392</posX>
+		<posY>175</posY>
+		<width>491</width>
+		<font>fontB11</font>
+ 		<textalign>center</textalign>	
+        <label>#Avalon.Overview</label>
+        <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+	</control>
+    
+	<control>
+		<description>Description</description>		
+		<type>button</type>
+		<id>10001</id>
+		<posX>723</posX>
+		<posY>155</posY>
+		<width>493</width>
+		<height>70</height>
+		<onup>10001</onup>
+		<ondown>107</ondown>
+		<onleft>6</onleft>
+		<onright>10002</onright>
+		<label>#Avalon.Description</label>
+		<font>fontB11</font>
+		<textcolor>white</textcolor>
+		<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		<textYOff>4</textYOff>				
+ 		<textalign>center</textalign>	
+		<textureFocus>movies_tab_middle_focus.png</textureFocus>
+		<textureNoFocus>movies_tab_middle_nofocus.png</textureNoFocus>
+        <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+	</control>
+	<control>
+		<description>Technical Infos</description>		
+		<type>button</type>
+		<id>10002</id>
+		<posX>1199</posX>
+		<posY>155</posY>
+		<width>475</width>
+		<height>99</height>
+		<onup>10002</onup>
+		<ondown>107</ondown>
+		<onleft>10001</onleft>
+		<onright>6</onright>
+		<label>#Avalon.Techinfo</label>
+		<font>fontB11</font>
+		<textcolor>white</textcolor>
+		<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		<textYOff>-10</textYOff>				
+ 		<textalign>center</textalign>	
+		<textureFocus>movies_tab_right_focus.png</textureFocus>
+		<textureNoFocus>movies_tab_right_nofocus.png</textureNoFocus>
+        <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+	</control>
+    
+	<!-- Buttons -->
 	
 	<control>
 		<description>PLAY Button</description>
 		<type>button</type>
-		<posX>460</posX>
-		<posY>880</posY>
+		<posX>463</posX>
+		<posY>884</posY>
 		<id>6</id>
 		<label>-</label>
 		<onup>6</onup>
 		<ondown>6</ondown>
 		<onleft>700</onleft>
-		<onright>6</onright>
+		<onright>10001</onright>
 		<width>58</width>
 		<height>59</height>
 		<textureFocus>movie_details_play_focus.png</textureFocus>
@@ -42,14 +135,13 @@ This file should contain the details view
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 	
 	<control>
 		<description>Subtitle Button</description>
 		<type>button</type>
-		<posX>390</posX>
-		<posY>880</posY>
+		<posX>391</posX>
+		<posY>884</posY>
 		<id>700</id>
 		<label>-</label>
 		<onup>700</onup>
@@ -64,14 +156,13 @@ This file should contain the details view
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 	
 	<control>
 		<description>Trailer Button</description>
 		<type>button</type>
 		<posX>320</posX>
-		<posY>880</posY>
+		<posY>884</posY>
 		<id>800</id>
 		<label>-</label>
 		<onup>800</onup>
@@ -81,15 +172,16 @@ This file should contain the details view
 		<width>58</width>
 		<height>59</height>
 		<hyperlink>4755</hyperlink>
-		<hyperlinkParameter>site:IMDb Movie Trailers|search:#selecteditem|return:Locked</hyperlinkParameter>
+		<hyperlinkParameter>site:IMDb Movie Trailers|search:#MovingPictures.SelectedMovie.title|return:Locked</hyperlinkParameter>
 		<textureFocus>movie_details_trailer_focus.png</textureFocus>
 		<textureNoFocus>movie_details_trailer_nofocus.png</textureNoFocus>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 	
+	<!-- Summary labels -->
+    
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -104,7 +196,6 @@ This file should contain the details view
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 	
 	<control>
@@ -119,91 +210,65 @@ This file should contain the details view
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 	
-	<control>
+	<control Style="InfoLabel">
 		<description>Release Date Label</description>
 		<type>label</type>
 		<label>#Avalon.ReleaseDate</label>
 		<id>0</id>
 		<posX>586</posX>
-		<posY>360</posY>
-		<width>240</width>
-		<align>left</align>
-		<font>AvalonLight12</font>
-		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<posY>364</posY>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 	
-	<control>
+	<control Style="InfoValueDetails">
 		<description>Year</description>
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.year</label>
 		<id>0</id>
 		<posX>838</posX>
 		<posY>360</posY>
-		<width>200</width>
-		<align>left</align>
-		<font>AvalonLight14</font>
-		<textcolor>ffffff</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 
-	<control>
+	<control Style="InfoLabel">
 		<type>label</type>
 		<label>#Avalon.Runtime</label>
 		<id>0</id>
 		<posX>586</posX>
-		<posY>401</posY>
-		<width>240</width>
-		<align>left</align>
-		<font>AvalonLight12</font>
-		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<posY>405</posY>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 			
-	<control>
+	<control Style="InfoValueDetails">
 		<description>Runtime</description>
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.runtime.totalminutes min</label>
 		<id>0</id>
 		<posX>838</posX>
 		<posY>401</posY>
-		<width>240</width>
-		<align>left</align>
-		<font>AvalonLight14</font>
-		<textcolor>ffffff</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 
-	<control>
+	<control Style="InfoLabel">
 		<description>Genre Label</description>
 		<type>label</type>
 		<label>#MovingPictures.Translation.Genre.Label</label>
 		<id>0</id>
 		<posX>586</posX>
-		<posY>442</posY>
-		<width>240</width>
-		<align>left</align>
-		<font>AvalonLight12</font>
-		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<posY>446</posY>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 			
 	<control>
@@ -213,31 +278,25 @@ This file should contain the details view
 		<id>0</id>
 		<posX>838</posX>
 		<posY>442</posY>
-		<width>800</width>
+		<width>770</width>
 		<align>left</align>
 		<font>AvalonLight14</font>
 		<textcolor>ffffff</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 	
-	<control>
+	<control Style="InfoLabel">
 		<description>Director Label</description>
 		<type>label</type>
 		<label>#MovingPictures.Translation.Director.Label</label>
 		<id>0</id>
 		<posX>586</posX>
-		<posY>484</posY>
-		<width>240</width>
-		<align>left</align>
-		<font>AvalonLight12</font>
-		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<posY>488</posY>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 			
 	<control>
@@ -247,31 +306,25 @@ This file should contain the details view
 		<id>0</id>
 		<posX>838</posX>
 		<posY>484</posY>
-		<width>700</width>
+		<width>770</width>
 		<align>left</align>
 		<font>AvalonLight14</font>
 		<textcolor>ffffff</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 	
-	<control>
+	<control Style="InfoLabel">
 		<description>Actors Label</description>
 		<type>label</type>
 		<label>#MovingPictures.Translation.Actors.Label</label>
 		<id>0</id>
 		<posX>586</posX>
-		<posY>524</posY>
-		<width>240</width>
-		<align>left</align>
-		<font>AvalonLight12</font>
-		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<posY>528</posY>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 			
 	<control>
@@ -281,14 +334,13 @@ This file should contain the details view
 		<id>0</id>
 		<posX>838</posX>
 		<posY>524</posY>
-		<width>800</width>
+		<width>770</width>
 		<align>left</align>
 		<font>AvalonLight14</font>
 		<textcolor>ffffff</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 	
 	<control>
@@ -298,23 +350,19 @@ This file should contain the details view
 		<posX>586</posX>
 		<posY>581</posY>
 		<width>1090</width>
-		<height>230</height>
+		<height>240</height>
 		<label>#MovingPictures.SelectedMovie.summary</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
 		<onright>1026</onright>
 		<onup>1026</onup>
 		<ondown>1026</ondown>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 			
 	<control>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<description>frame</description>
 		<type>image</type>
 		<id>0</id>
@@ -324,12 +372,11 @@ This file should contain the details view
 		<height>73</height>
 		<texture>movie_detail_frame.png</texture>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 			
 	<control>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<description>certification logo</description>
 		<type>image</type>
 		<id>101</id>
@@ -339,6 +386,8 @@ This file should contain the details view
 		<height>60</height>
 		<texture>certification\#MovingPictures.SelectedMovie.certification.png</texture>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<control>
@@ -352,7 +401,6 @@ This file should contain the details view
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 	</control>
 	
 	<control>
@@ -369,7 +417,274 @@ This file should contain the details view
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+	</control>
+    
+	<!-- Description -->
+    
+	<control>
+		<description>Description</description>
+		<type>textboxscrollup</type>
+		<id>0</id>
+		<posX>585</posX>
+		<posY>354</posY>
+		<width>1039</width>
+		<height>422</height>
+		<textcolor>FFFFFFFF</textcolor>
+		<label>#MovingPictures.SelectedMovie.summary</label>
+		<visible>Control.HasFocus(10001)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>			
+	</control>
+    
+ 	<!-- Technical Details -->
+    
+	<control Style="InfoLabel">
+		<type>label</type>
+		<id>1</id>
+		<posX>585</posX>
+		<posY>356</posY>
+		<label>Video Format</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+		
+ 	<control Style="InfoValueDetails">
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>840</posX>
+		<posY>352</posY>
+		<label>#MovingPictures.LocalMedia.videocodec</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+ 
+	<control Style="InfoLabel">
+	   <type>label</type>
+	   <id>1</id>
+	   <posX>1142</posX>
+	   <posY>356</posY>
+	   <label>Aspectratio</label>
+	   <visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>			
+	</control>
+		
+ 	<control Style="InfoValueDetails">
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>1395</posX>
+		<posY>352</posY>
+		<label>#MovingPictures.LocalMedia.videoaspectratio</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+    
+	<control Style="InfoLabel">
+		<type>label</type>
+		<id>1</id>
+		<posX>585</posX>
+		<posY>398</posY>
+		<label>Resolution</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+		
+ 	<control Style="InfoValueDetails">
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>840</posX>
+		<posY>394</posY>
+		<label>#MovingPictures.LocalMedia.videoresolution</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+    
+	<control Style="InfoLabel">
+		<type>label</type>
+		<id>1</id>
+		<posX>585</posX>
+		<posY>439</posY>
+		<label>174</label>
+		<label>Framerate</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+		
+	<control Style="InfoValueDetails">
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>840</posX>
+		<posY>435</posY>
+		<label>#MovingPictures.LocalMedia.videoframerate fps</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+    
+	<control Style="InfoLabel">
+		<type>label</type>
+		<id>1</id>
+		<posX>585</posX>
+		<posY>480</posY>
+		<label>Audio Format</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+		
+	<control Style="InfoValueDetails">
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>840</posX>
+		<posY>476</posY>
+		<label>#MovingPictures.LocalMedia.audiocodec</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+    
+	<control Style="InfoLabel">
+		<type>label</type>
+		<id>1</id>
+		<posX>585</posX>
+		<posY>521</posY>
+		<label>Audio Channels</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+		
+	<control Style="InfoValueDetails">
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>840</posX>
+		<posY>517</posY>
+		<label>#MovingPictures.LocalMedia.audiochannels</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+ 
+	<control Style="InfoLabel">
+		<type>label</type>
+		<id>1</id>
+		<posX>585</posX>
+		<posY>604</posY>
+		<label>Date Added</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+		
+	<control Style="InfoValueDetails">
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>840</posX>
+		<posY>600</posY>
+		<label>#MovingPictures.SelectedMovie.date_added</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+    
+	<control Style="InfoLabel">
+		<type>label</type>
+		<id>1</id>
+		<posX>585</posX>
+		<posY>645</posY>
+		<label>Media Type</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+		
+	<control Style="InfoValueDetails">
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>840</posX>
+		<posY>641</posY>
+		<label>#MovingPictures.LocalMedia.videoformat</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+ 
+	<control Style="InfoLabel">
+		<type>label</type>
+		<id>1</id>
+	    <posX>1142</posX>
+		<posY>604</posY>
+		<label>Watched Count</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+		
+	<control Style="InfoValueDetails">
+		<type>fadelabel</type>
+		<id>1</id>
+	    <posX>1395</posX>
+		<posY>600</posY>
+		<label>#MovingPictures.UserMovieSettings.watched</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+    
+	<control Style="InfoLabel">
+		<type>label</type>
+		<id>1</id>
+		<posX>585</posX>
+		<posY>730</posY>
+		<label>Info URL</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+		
+	<control>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>840</posX>
+		<posY>724</posY>
+	    <width>770</width>
+        <font>AvalonLight14</font>
+        <textcolor>FFffffff</textcolor>
+		<label>#MovingPictures.SelectedMovie.details_url</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+    
+	<control Style="InfoLabel">
+		<type>label</type>
+		<id>1</id>
+		<posX>585</posX>
+		<posY>771</posY>
+		<label>Source</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+		
+	<control>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>840</posX>
+		<posY>775</posY>
+	    <width>770</width>
+        <font>AvalonLight14</font>
+        <textcolor>FFffffff</textcolor>
+		<label>#MovingPictures.LocalMedia.fullpath</label>
+		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
 </controls>
 </window>

@@ -5,9 +5,6 @@
 	<!-- Videocodec -->
 	<control>
 		<description>1080p / H.264 / Widescreen</description>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1213</posX>
@@ -16,12 +13,11 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\1080_h264_235.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.videoresolution,1080p)+string.contains(#MovingPictures.LocalMedia.videocodec,h264)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<control>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1213</posX>
@@ -30,13 +26,12 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\720_h264_235.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.videoresolution,720p)+string.contains(#MovingPictures.LocalMedia.videocodec,h264)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<control>
 		<description>SD / Xvid / Widescreen</description>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1213</posX>
@@ -45,13 +40,12 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_xvid_235.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,XVID)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<control>
 		<description>SD / Xvid / Fullscreen</description>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1213</posX>
@@ -60,13 +54,12 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_xvid_133.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,XVID)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<control>
 		<description>SD / DivX / Widescreen</description>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1213</posX>
@@ -75,13 +68,12 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_divx_235.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,DIVX)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<control>
 		<description>SD / DivX / Fullscreen</description>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1213</posX>
@@ -90,13 +82,12 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_divx_133.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,DIVX)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<control>
 		<description>SD / mpeg2 / Widescreen</description>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1213</posX>
@@ -105,14 +96,13 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\540_mpeg2_235.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) +  [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,MP2V)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<!-- Audiocodec -->
 	<control>
 		<description>AC3 / 5.1</description>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1425</posX>
@@ -121,13 +111,12 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\ac3_51.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.audiocodec,ac3)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<control>
 		<description>DTS / 5.1</description>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1425</posX>
@@ -136,13 +125,12 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dts_51.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.audiocodec,dts)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<control>
 		<description>DTS / 7.1</description>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1425</posX>
@@ -151,13 +139,12 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dts_71.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.audiocodec,dts)+[string.contains(#MovingPictures.LocalMedia.audiochannels,7.1)|string.contains(#MovingPictures.LocalMedia.audiochannels,8)]]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<control>
 		<description>AC3 / 2.0</description>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1425</posX>
@@ -166,13 +153,12 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\ac3_20.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.audiocodec,ac3)+string.contains(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<control>
 		<description>mp3 / 2.0</description>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1425</posX>
@@ -181,14 +167,13 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\mp3_20.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.audiocodec,MP3)+string.contains(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<!-- Source -->
 	<control>
 		<description>BluRay</description>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1118</posX>
@@ -197,13 +182,12 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\bluray.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.videoresolution,720p)|string.contains(#MovingPictures.LocalMedia.videoresolution,1080p)]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<control>
 		<description>DVD</description>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1118</posX>
@@ -212,13 +196,12 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\dvd.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
 	<!-- Subtitle -->
 	<control>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1558</posX>
@@ -227,12 +210,11 @@
 		<height>37</height>
 		<texture>Logos\#MovingPictures.LocalMedia.Subtitles.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51)</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	<control>
-		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>1558</posX>
@@ -241,6 +223,8 @@
 		<height>37</height>
 		<texture>Logos\#MovingPictures.LocalMedia.Subtitles.png</texture>
 		<visible>!Control.IsVisible(50) + !Control.IsVisible(51)</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
 	</controls>

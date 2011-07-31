@@ -20,6 +20,11 @@
     <font>AvalonLight12</font>
     <textcolor>FFffffff</textcolor>
   </style>
+  <style Name="InfoValueDetails">
+	<width>240</width>
+    <font>AvalonLight14</font>
+    <textcolor>FFffffff</textcolor>
+  </style>
   <style Name="smallTitle">
 	<width>810</width>
 	<font>fontB16</font>
