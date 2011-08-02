@@ -19,16 +19,13 @@
         <texture>basichome_weather_bg.png</texture>
       </control>
 
-      <control>
+      <control Style="InfoLabel">
         <description>Weather 5th name</description>
-        <type>label</type>
+        <type>fadelabel</type>
         <id>0</id>
         <posX>1715</posX>
         <posY>960</posY>
-		<align>left</align>
         <label>#infoservice.weather.forecast5.weekday</label>
-        <font>AvalonLight14</font>
-        <textcolor>6aa5cb</textcolor>
       </control>
 	  
       <control>
@@ -43,16 +40,13 @@
         <textcolor>6aa5cb</textcolor>
       </control>
 	  
-      <control>
+     <control Style="InfoLabel">
         <description>Weather 4th name</description>
         <type>label</type>
         <id>0</id>
         <posX>1525</posX>
         <posY>960</posY>
-		<align>left</align>
         <label>#infoservice.weather.forecast4.weekday</label>
-        <font>AvalonLight14</font>
-        <textcolor>6aa5cb</textcolor>
       </control>
 	  
       <control>
@@ -67,16 +61,13 @@
         <textcolor>6aa5cb</textcolor>
       </control>
 	  
-      <control>
+     <control Style="InfoLabel">
         <description>Weather 3th name</description>
         <type>label</type>
         <id>0</id>
         <posX>1339</posX>
         <posY>960</posY>
-		<align>left</align>
         <label>#infoservice.weather.forecast3.weekday</label>
-        <font>AvalonLight14</font>
-        <textcolor>6aa5cb</textcolor>
       </control>
 	  
       <control>
@@ -91,16 +82,13 @@
         <textcolor>6aa5cb</textcolor>
       </control>
 	  
-      <control>
+     <control Style="InfoLabel">
         <description>Weather 2th name</description>
         <type>label</type>
         <id>0</id>
         <posX>1153</posX>
         <posY>960</posY>
-		<align>left</align>
         <label>#infoservice.weather.forecast2.weekday</label>
-        <font>AvalonLight14</font>
-        <textcolor>6aa5cb</textcolor>
       </control>
 	  
       <control>
@@ -136,7 +124,7 @@
 		<width>185</width>
 		<align>left</align>
         <label>#infoservice.weather.today.condition</label>
-        <font>AvalonLight14</font>
+        <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
       </control>
 	  
