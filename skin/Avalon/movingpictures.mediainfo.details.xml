@@ -12,7 +12,7 @@
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\1080_h264_235.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.videoresolution,1080p)+string.contains(#MovingPictures.LocalMedia.videocodec,h264)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.videoresolution,1080p)+string.contains(#MovingPictures.LocalMedia.videocodec,h264)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -25,7 +25,7 @@
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\720_h264_235.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.videoresolution,720p)+string.contains(#MovingPictures.LocalMedia.videocodec,h264)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.videoresolution,720p)+string.contains(#MovingPictures.LocalMedia.videocodec,h264)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -39,7 +39,7 @@
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_xvid_235.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,XVID)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,XVID)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -53,7 +53,7 @@
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_xvid_133.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,XVID)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)]</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,XVID)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)]</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -67,7 +67,7 @@
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_divx_235.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,DIVX)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,DIVX)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -81,7 +81,7 @@
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\480_divx_133.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,DIVX)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)]</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,DIVX)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)]</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -95,7 +95,7 @@
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\540_mpeg2_235.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) +  [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,MP2V)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) +  [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)+string.contains(#MovingPictures.LocalMedia.videocodec,MP2V)+string.contains(#MovingPictures.LocalMedia.videoaspectratio,widescreen)]</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -110,7 +110,7 @@
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\ac3_51.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.audiocodec,ac3)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.audiocodec,ac3)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -124,7 +124,7 @@
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dts_51.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.audiocodec,dts)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.audiocodec,dts)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -138,7 +138,7 @@
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dts_71.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.audiocodec,dts)+[string.contains(#MovingPictures.LocalMedia.audiochannels,7.1)|string.contains(#MovingPictures.LocalMedia.audiochannels,8)]]</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.audiocodec,dts)+[string.contains(#MovingPictures.LocalMedia.audiochannels,7.1)|string.contains(#MovingPictures.LocalMedia.audiochannels,8)]]</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -152,7 +152,7 @@
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\ac3_20.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.audiocodec,ac3)+string.contains(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.audiocodec,ac3)+string.contains(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -166,7 +166,7 @@
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\mp3_20.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.audiocodec,MP3)+string.contains(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.audiocodec,MP3)+string.contains(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -181,7 +181,7 @@
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\bluray.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.videoresolution,720p)|string.contains(#MovingPictures.LocalMedia.videoresolution,1080p)]</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.videoresolution,720p)|string.contains(#MovingPictures.LocalMedia.videoresolution,1080p)]</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -195,7 +195,7 @@
 		<height>41</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\dvd.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)]</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.videoresolution,SD)]</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -209,7 +209,7 @@
 		<width>36</width>
 		<height>37</height>
 		<texture>Logos\#MovingPictures.LocalMedia.Subtitles.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -222,7 +222,7 @@
 		<width>36</width>
 		<height>37</height>
 		<texture>Logos\#MovingPictures.LocalMedia.Subtitles.png</texture>
-		<visible>!Control.IsVisible(50) + !Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>

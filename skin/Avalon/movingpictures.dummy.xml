@@ -68,5 +68,15 @@
       <posY>-2000</posY>
       <label>#Avalon.EnablePosterHide</label>
     </control>
+    <control>
+      <description>dummy fullfanart control</description>
+      <type>button</type>
+      <id>10003</id>
+      <posX>-2000</posX>
+      <posY>-2000</posY>
+      <onleft>10002</onleft>
+      <onright>6</onright>
+      <label>-</label>
+    </control>
 </controls>
 </window>

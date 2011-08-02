@@ -16,7 +16,7 @@ This file should contain the details view
 		<width>1518</width>
 		<height>872</height>
 		<texture>myfilms_details_bg.png</texture>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -32,7 +32,7 @@ This file should contain the details view
 		<width>491</width>
 		<height>99</height>	
 		<texture>movies_tab_left_focus.png</texture>
-        <visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
+        <visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -46,7 +46,7 @@ This file should contain the details view
 		<width>491</width>
 		<height>99</height>	
 		<texture>movies_tab_left_nofocus.png</texture>
-        <visible>!Control.IsVisible(50)+!Control.IsVisible(51) + ![Control.HasFocus(6) | Control.HasFocus(700) | Control.HasFocus(800)]</visible>
+        <visible>!Control.IsVisible(50)+!Control.IsVisible(51) + ![Control.HasFocus(6) | Control.HasFocus(700) | Control.HasFocus(800)] + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -61,7 +61,7 @@ This file should contain the details view
 		<font>fontB11</font>
  		<textalign>center</textalign>	
         <label>#Avalon.Overview</label>
-        <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+        <visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -86,7 +86,7 @@ This file should contain the details view
  		<textalign>center</textalign>	
 		<textureFocus>movies_tab_middle_focus.png</textureFocus>
 		<textureNoFocus>movies_tab_middle_nofocus.png</textureNoFocus>
-        <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+        <visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -101,7 +101,7 @@ This file should contain the details view
 		<onup>10002</onup>
 		<ondown>107</ondown>
 		<onleft>10001</onleft>
-		<onright>6</onright>
+		<onright>10003</onright>
 		<label>#Avalon.Techinfo</label>
 		<font>fontB11</font>
 		<textcolor>white</textcolor>
@@ -110,7 +110,7 @@ This file should contain the details view
  		<textalign>center</textalign>	
 		<textureFocus>movies_tab_right_focus.png</textureFocus>
 		<textureNoFocus>movies_tab_right_nofocus.png</textureNoFocus>
-        <visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+        <visible allowhiddenfocus="true">!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -132,7 +132,7 @@ This file should contain the details view
 		<height>59</height>
 		<textureFocus>movie_details_play_focus.png</textureFocus>
 		<textureNoFocus>movie_details_play_nofocus.png</textureNoFocus>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible allowhiddenfocus="true">!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -153,7 +153,7 @@ This file should contain the details view
 		<hyperlink>84623</hyperlink>
 		<textureFocus>movie_details_sub_focus.png</textureFocus>
 		<textureNoFocus>movie_details_sub_nofocus.png</textureNoFocus>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -175,7 +175,7 @@ This file should contain the details view
 		<hyperlinkParameter>site:IMDb Movie Trailers|search:#MovingPictures.SelectedMovie.title|return:Locked</hyperlinkParameter>
 		<textureFocus>movie_details_trailer_focus.png</textureFocus>
 		<textureNoFocus>movie_details_trailer_nofocus.png</textureNoFocus>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -193,7 +193,7 @@ This file should contain the details view
 		<width>250</width>
 		<height>354</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#MovingPictures.Coverart</texture>		
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -207,7 +207,7 @@ This file should contain the details view
 		<width>1005</width>
 		<font>fontB20</font>
 		<label>#MovingPictures.SelectedMovie.title</label>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51 + !Control.HasFocus(10003))</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -219,7 +219,7 @@ This file should contain the details view
 		<id>0</id>
 		<posX>586</posX>
 		<posY>364</posY>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -231,7 +231,7 @@ This file should contain the details view
 		<id>0</id>
 		<posX>838</posX>
 		<posY>360</posY>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -242,7 +242,7 @@ This file should contain the details view
 		<id>0</id>
 		<posX>586</posX>
 		<posY>405</posY>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -254,7 +254,7 @@ This file should contain the details view
 		<id>0</id>
 		<posX>838</posX>
 		<posY>401</posY>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -266,7 +266,7 @@ This file should contain the details view
 		<id>0</id>
 		<posX>586</posX>
 		<posY>446</posY>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -282,7 +282,7 @@ This file should contain the details view
 		<align>left</align>
 		<font>AvalonLight14</font>
 		<textcolor>ffffff</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -294,7 +294,7 @@ This file should contain the details view
 		<id>0</id>
 		<posX>586</posX>
 		<posY>488</posY>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -310,7 +310,7 @@ This file should contain the details view
 		<align>left</align>
 		<font>AvalonLight14</font>
 		<textcolor>ffffff</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -322,7 +322,7 @@ This file should contain the details view
 		<id>0</id>
 		<posX>586</posX>
 		<posY>528</posY>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -338,7 +338,7 @@ This file should contain the details view
 		<align>left</align>
 		<font>AvalonLight14</font>
 		<textcolor>ffffff</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -357,7 +357,7 @@ This file should contain the details view
 		<onright>1026</onright>
 		<onup>1026</onup>
 		<ondown>1026</ondown>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001) + !Control.HasFocus(10002)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -371,7 +371,7 @@ This file should contain the details view
 		<width>1041</width>
 		<height>73</height>
 		<texture>movie_detail_frame.png</texture>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -385,7 +385,7 @@ This file should contain the details view
 		<width>60</width>
 		<height>60</height>
 		<texture>certification\#MovingPictures.SelectedMovie.certification.png</texture>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -398,7 +398,7 @@ This file should contain the details view
 		<width>315</width>
 		<height>27</height>
 		<texture>star#MovingPictures.SelectedMovie.score.rounded.png</texture>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -414,7 +414,7 @@ This file should contain the details view
 		<align>right</align>
 		<font>fontB14</font>
 		<textcolor>ffffff</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
@@ -683,6 +683,79 @@ This file should contain the details view
         <textcolor>FFffffff</textcolor>
 		<label>#MovingPictures.LocalMedia.fullpath</label>
 		<visible>Control.HasFocus(10002)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+    
+<!-- Fanart -->
+
+	<control>
+		<description>Fanart Overlay</description>
+		<type>image</type>
+		<id>0</id>
+		<width>1518</width>
+		<height>267</height>
+		<posX>202</posX>		
+		<posY>814</posY>		
+		<texture>MyFilms_fanart info_panel.png</texture>
+		<visible>Control.HasFocus(10003)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>				
+	</control>
+
+	<control>
+		<type>label</type>
+		<description>Title (Fanart View)</description>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>906</posY>
+		<width>1920</width>
+		<align>center</align>
+		<font>fontB20</font>			
+		<label>#MovingPictures.SelectedMovie.title</label>
+		<visible>Control.HasFocus(10003)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>	
+	</control> 
+		
+	<control>
+		<type>label</type>
+		<description>Year and Category (Fanart View)</description>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>956</posY>
+		<width>1920</width>
+		<align>center</align>
+		<font>AvalonLight14</font>
+		<textcolor>6aa5cb</textcolor>
+		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime.totalminutes #Avalon.Minutes - #MovingPictures.SelectedMovie.extra.genres.1</label>
+		<visible>Control.HasFocus(10003)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>	
+	</control> 
+	
+    <control>
+		<type>image</type>
+		<id>1</id>
+		<posX>772</posX>
+		<posY>986</posY>
+		<width>315</width>
+		<height>27</height>
+		<texture>star#MovingPictures.SelectedMovie.score.rounded.png</texture>
+		<visible>Control.HasFocus(10003)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Rating Value</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>1108</posX>
+		<posY>980</posY>
+		<label>#MovingPictures.SelectedMovie.score.localized</label>
+		<font>fontB14</font>
+		<visible>Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
