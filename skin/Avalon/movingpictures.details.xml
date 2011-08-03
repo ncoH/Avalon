@@ -384,6 +384,8 @@ This file should contain the details view
 		<posY>886</posY>
 		<width>60</width>
 		<height>60</height>
+        <keepaspectratio>yes</keepaspectratio>
+        <centered>yes</centered>
 		<texture>certification\#MovingPictures.SelectedMovie.certification.png</texture>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
