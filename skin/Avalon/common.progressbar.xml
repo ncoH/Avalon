@@ -83,7 +83,7 @@
 		<lefttexture>osd_progress_left.png</lefttexture>
 		<midtexture>osd_progress_mid.png</midtexture>
 		<righttexture>osd_progress_right.png</righttexture>
-		<visible>[player.paused|player.forwarding|player.rewinding|control.isvisible(10)|control.isvisible(11)|control.isvisible(12)]+!window.isosdvisible</visible>>
+		<visible>[player.paused|player.forwarding|player.rewinding|control.isvisible(10)|control.isvisible(11)|control.isvisible(12)]+!window.isosdvisible</visible>
 	</control>
 	
 	<control>
