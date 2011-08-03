@@ -147,6 +147,62 @@
 	</control>
 	
 	<control>
+		<description>True-HD / 5.1</description>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1663</posX>
+		<posY>816</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\audio\true-hd_51.png</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.audiocodec,TrueHD)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
+	</control>
+	
+	<control>
+		<description>True-HD / 7.1</description>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1663</posX>
+		<posY>816</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\audio\true-hd_71.png</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.audiocodec,TrueHD)+[string.contains(#MovingPictures.LocalMedia.audiochannels,7.1)|string.contains(#MovingPictures.LocalMedia.audiochannels,8)]]</visible>
+	</control>
+    
+	<control>
+		<description>DTS-HD / 5.1</description>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1663</posX>
+		<posY>816</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\audio\dts-hd_51.png</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.audiocodec,DTSHD)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
+	</control>
+	
+	<control>
+		<description>DTS-HD / 7.1</description>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1663</posX>
+		<posY>816</posY>
+		<height>38</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\audio\tdts-hd_51.png</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50) + [string.contains(#MovingPictures.LocalMedia.audiocodec,DTSHD)+[string.contains(#MovingPictures.LocalMedia.audiochannels,7.1)|string.contains(#MovingPictures.LocalMedia.audiochannels,8)]]</visible>
+	</control>
+    
+	<control>
 		<description>AC3 / 2.0</description>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>

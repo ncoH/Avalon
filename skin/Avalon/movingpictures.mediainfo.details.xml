@@ -142,7 +142,63 @@
  		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
+    
+	<control>
+		<description>True-HD / 5.1</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>1425</posX>
+		<posY>896</posY>
+		<height>41</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\audio\true-hd_51.png</texture>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.audiocodec,TrueHD)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+	</control>
 	
+	<control>
+		<description>True-HD / 7.1</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>1425</posX>
+		<posY>896</posY>
+		<height>41</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\audio\true-hd_71.png</texture>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.audiocodec,TrueHD)+[string.contains(#MovingPictures.LocalMedia.audiochannels,7.1)|string.contains(#MovingPictures.LocalMedia.audiochannels,8)]]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+	</control>
+    
+ 	<control>
+		<description>DTS-HD / 5.1</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>1425</posX>
+		<posY>896</posY>
+		<height>41</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\audio\dts-hd_51.png</texture>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.audiocodec,DTSHD)+string.contains(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>DTS-HD / 7.1</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>1425</posX>
+		<posY>896</posY>
+		<height>41</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\audio\dts-hd_71.png</texture>
+		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003) + [string.contains(#MovingPictures.LocalMedia.audiocodec,DTSHD)+[string.contains(#MovingPictures.LocalMedia.audiochannels,7.1)|string.contains(#MovingPictures.LocalMedia.audiochannels,8)]]</visible>
+ 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+	</control>
+    
 	<control>
 		<description>AC3 / 2.0</description>
 		<type>image</type>
