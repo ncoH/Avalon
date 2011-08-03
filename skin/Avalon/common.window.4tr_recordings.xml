@@ -152,7 +152,7 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<label>#currentmodule: #itemcount</label>
+		<label>#itemcount</label>
 		<posX>948</posX>
 		<posY>944</posY>
 		<align>left</align>

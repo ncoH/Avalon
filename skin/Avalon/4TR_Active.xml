@@ -76,7 +76,7 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<label>#currentmodule: #itemcount</label>
+		<label>#itemcount</label>
 		<posX>948</posX>
 		<posY>944</posY>
 		<align>left</align>
@@ -219,7 +219,7 @@
 			<width>800</width>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight14</font>
-			<label>#TV.Active.Time  |  #TV.Active.Genre</label>
+			<label>#TV.Active.Time #TV.Active.Genre</label>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>			
       </control>

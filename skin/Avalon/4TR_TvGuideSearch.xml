@@ -73,7 +73,7 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<label>#currentmodule: #itemcount</label>
+		<label>#itemcount</label>
 		<posX>948</posX>
 		<posY>944</posY>
 		<align>left</align>
@@ -182,7 +182,7 @@
 				<posY>160</posY>
 				<height>800</height>
 				<width>919</width>
-				<onleft>5</onleft>
+				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
 				<PinIconHeight>46</PinIconHeight>
@@ -196,8 +196,11 @@
 				<IconXOff>-2000</IconXOff>
 				<IconYOff>0</IconYOff>
 				<textXOff>40</textXOff>
+                <textXOff2>2000</textXOff2>
 				<keepaspectratio>yes</keepaspectratio>
 				<spinCanFocus>no</spinCanFocus>
+                <spinPosX>1832</spinPosX>
+                <spinPosY>950</spinPosY>
 				<dimColor>ffffffff</dimColor>
 				<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>				

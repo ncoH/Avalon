@@ -122,7 +122,7 @@
 			<width>800</width>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight14</font>
-			<label>#TV.RecordedTV.Time  |  #TV.RecordedTV.Genre</label>
+			<label>#TV.RecordedTV.Time #TV.RecordedTV.Genre</label>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 			<visible>facadeview.list</visible>
