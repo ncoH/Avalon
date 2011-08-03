@@ -24,7 +24,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>0</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
 		<height>866</height>
 		<texture>viewport_tv_recordings.png</texture>
@@ -32,6 +32,20 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
 		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+	<!--            :: Count Background ::            -->
+
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>900</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 	<control>
@@ -59,12 +73,12 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<label>| #itemcount</label>
-		<posX>242</posX>
-		<posY>99</posY>
+		<label>#currentmodule: #itemcount</label>
+		<posX>948</posX>
+		<posY>944</posY>
 		<align>left</align>
 		<font>AvalonLight12</font>
-		<textcolor>ffffff</textcolor>
+		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -74,10 +88,10 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>270</posX>
-		<posY>514</posY>
+		<posY>472</posY>
 		<width>580</width>
 		<label>#selecteditem</label>
-		<font>fontB20</font>
+		<font>fontB16</font>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -91,13 +105,12 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 
-<!-- left Buttons	 -->	
       <control>
         <type>button</type>
         <description>Search by title</description>
         <id>2</id>
 		<posX>72</posX>
-		<posY>228</posY>	
+		<posY>156</posY>	
         <label>6032</label>			
         <onleft>10</onleft>
         <onright>10</onright>
@@ -111,7 +124,7 @@
         <type>button</type>
         <id>3</id>
 		<posX>72</posX>
-		<posY>292</posY>	
+		<posY>220</posY>	
         <label>192</label>		
         <onleft>10</onleft>
         <onright>10</onright>
@@ -125,7 +138,7 @@
         <type>sortbutton</type>
         <id>4</id>
 		<posX>72</posX>
-		<posY>356</posY>	
+		<posY>284</posY>	
         <label>620</label>		
         <onleft>10</onleft>
         <onright>10</onright>
@@ -135,12 +148,11 @@
 		<offsetSortButtonX>260</offsetSortButtonX>
       </control>	
 
-<!-- right Buttons	   -->
       <control>
         <type>button</type>
         <description>empty button</description>
 		<posX>462</posX>
-		<posY>228</posY>		
+		<posY>156</posY>		
 		<textalign>left</textalign>		
       </control>
 	  
@@ -148,7 +160,7 @@
         <type>button</type>
         <description>empty button</description>
 		<posX>462</posX>
-		<posY>292</posY>		
+		<posY>220</posY>		
 		<textalign>left</textalign>		
       </control>
 
@@ -156,7 +168,7 @@
         <type>button</type>
         <description>empty button</description>
 		<posX>462</posX>
-		<posY>356</posY>		
+		<posY>284</posY>		
 		<textalign>left</textalign>		
       </control>
 	  
@@ -167,7 +179,7 @@
 				<type>listcontrol</type>
 				<id>10</id>
 				<posX>918</posX>
-				<posY>236</posY>
+				<posY>160</posY>
 				<height>800</height>
 				<width>919</width>
 				<onleft>5</onleft>
@@ -195,7 +207,7 @@
 		<id>0</id>
 		<type>image</type>
 		<posX>70</posX>
-		<posY>500</posY>
+		<posY>458</posY>
 		<width>187</width>
 		<height>119</height>
 		<texture>tv_logo_bg.png</texture>
@@ -235,9 +247,9 @@
 		<type>label</type>
 		<id>14</id>
 		<posX>270</posX>
-		<posY>570</posY>
+		<posY>528</posY>
 		<textcolor>6aa5cb</textcolor>
-		<font>AvalonLight12</font>
+		<font>AvalonLight14</font>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<label>#TV.Search.Time</label>
@@ -248,12 +260,13 @@
 		<type>textboxscrollup</type>
 		<id>15</id>
 		<posX>74</posX>
-		<posY>634</posY>
+		<posY>592</posY>
 		<width>780</width>
-		<height>350</height>
+		<height>325</height>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<label>#TV.Search.Description</label>
+        <lineSpacing>0.85</lineSpacing>
 	</control>
 
 	<control>
@@ -274,7 +287,7 @@
 		<id>60</id>
 		<type>image</type>
 		<posX>121</posX>
-		<posY>514</posY>
+		<posY>472</posY>
 		<width>90</width>
 		<height>90</height>
 		<texture>#TV.Search.thumb</texture>

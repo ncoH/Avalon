@@ -35,9 +35,9 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>0</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>866</height>
 		<texture>viewport_tv_recordings.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -63,10 +63,10 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>74</posX>
-		<posY>514</posY>
+		<posY>473</posY>
 		<width>800</width>
 		<label>#selecteditem</label>
-		<font>fontB20</font>
+		<font>fontB16</font>
 		<visible>Control.IsVisible(10)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -76,12 +76,12 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<label>| #itemcount</label>
-		<posX>242</posX>
-		<posY>99</posY>
+		<label>#currentmodule: #itemcount</label>
+		<posX>948</posX>
+		<posY>944</posY>
 		<align>left</align>
 		<font>AvalonLight12</font>
-		<textcolor>ffffff</textcolor>
+		<textcolor>6aa5cb</textcolor>
 		<visible>Control.IsVisible(10)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -89,6 +89,21 @@
 
 <import>common.time.xml</import>
 	
+	<!--            :: Count Background ::            -->
+
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>900</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+    
 	<control>
 		<type>group</type>
 		<description>group element</description>
@@ -106,8 +121,8 @@
 				<type>listcontrol</type>
 				<id>10</id>
 				<posX>918</posX>
-				<posY>236</posY>
-				<height>700</height>
+				<posY>160</posY>
+				<height>800</height>
 				<width>919</width>
 				<onleft>2</onleft>
 				<onright>2</onright>
@@ -125,6 +140,8 @@
 				<textXOff>40</textXOff>
 				<keepaspectratio>yes</keepaspectratio>
 				<spinCanFocus>no</spinCanFocus>
+                <spinPosX>1832</spinPosX>
+                <spinPosY>950</spinPosY>
 				<dimColor>ffffffff</dimColor>
 			</control>
 		
@@ -132,7 +149,7 @@
 			<id>0</id>
 			<type>image</type>
 			<posX>74</posX>
-			<posY>245</posY>
+			<posY>174</posY>
 			<width>421</width>
 			<height>238</height>
 			<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">defaultTVBig.png</texture>
@@ -145,7 +162,7 @@
 			<id>500</id>
 			<type>image</type>
 			<posX>74</posX>
-			<posY>245</posY>
+			<posY>174</posY>
 			<width>421</width>
 			<height>238</height>
 			<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#selectedthumb</texture>
@@ -158,7 +175,7 @@
 			<id>0</id>
 			<type>image</type>
 			<posX>7</posX>
-			<posY>177</posY>
+			<posY>106</posY>
 			<width>556</width>
 			<height>373</height>
 			<texture>recordings_thumb_shadow.png</texture>
@@ -194,14 +211,15 @@
       </control>
 	  
       <control>
-			<type>label</type>
+			<type>fadelabel</type>
 			<description>Current program time</description>
 			<id>0</id>
 			<posX>74</posX>
-			<posY>578</posY>
+			<posY>532</posY>
+			<width>800</width>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight14</font>
-			<label>#TV.Active.Time</label>
+			<label>#TV.Active.Time  |  #TV.Active.Genre</label>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>			
       </control>
@@ -211,9 +229,10 @@
 			<description>Description1</description>
 			<id>0</id>
 			<posX>74</posX>
-			<posY>630</posY>
+			<posY>594</posY>
 			<width>780</width>
-			<height>230</height>
+			<height>320</height>
+            <lineSpacing>0.85</lineSpacing>
 			<label>#TV.Active.Description</label>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -229,7 +248,7 @@
 		<width>64</width>
 		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
-		<visible>Control.HasFocus(10)</visible>
+		<visible>Control.HasFocus(10) + !string.contains(#Avalon.HiddenMenu, false)</visible>
 	</control>
 
 <import>common.overlay.xml</import>
