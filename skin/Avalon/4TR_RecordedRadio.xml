@@ -19,7 +19,7 @@
 		<label>604</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>font22</font>
-		<visible>facadeview.list</visible>
+		<visible>facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip</visible>
 	</control>
 	
 	<control>
@@ -40,7 +40,7 @@
 			<id>0</id>
 			<type>image</type>
 			<posX>74</posX>
-			<posY>245</posY>
+			<posY>174</posY>
 			<width>421</width>
 			<height>238</height>
 			<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">defaultTVBig.png</texture>
@@ -53,7 +53,7 @@
 			<id>500</id>
 			<type>image</type>
 			<posX>74</posX>
-			<posY>245</posY>
+			<posY>174</posY>
 			<width>421</width>
 			<height>238</height>
 			<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#selectedthumb</texture>
@@ -66,7 +66,7 @@
 			<id>0</id>
 			<type>image</type>
 			<posX>7</posX>
-			<posY>177</posY>
+			<posY>106</posY>
 			<width>556</width>
 			<height>373</height>
 			<texture>recordings_thumb_shadow.png</texture>
@@ -79,7 +79,7 @@
 			<id>0</id>
 			<type>image</type>
 			<posX>536</posX>
-			<posY>364</posY>
+			<posY>293</posY>
 			<width>187</width>
 			<height>119</height>
 			<texture>tv_logo_bg.png</texture>
@@ -92,7 +92,7 @@
 			<id>0</id>
 			<type>image</type>
 			<posX>585</posX>
-			<posY>378</posY>
+			<posY>307</posY>
 			<width>90</width>
 			<height>90</height>
 			<texture>#Radio.RecordedTV.thumb</texture>
@@ -114,11 +114,12 @@
 		</control> -->
 		
 		<control>
-			<type>label</type>
+			<type>fadelabel</type>
 			<description>Current program time</description>
 			<id>0</id>
 			<posX>74</posX>
-			<posY>578</posY>
+			<posY>532</posY>
+			<width>800</width>
 			<textcolor>6aa5cb</textcolor>
 			<font>AvalonLight14</font>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -132,10 +133,11 @@
 			<description>Description1</description>
 			<id>0</id>
 			<posX>74</posX>
-			<posY>630</posY>
+			<posY>594</posY>
 			<width>780</width>
-			<height>230</height>
+			<height>320</height>
 			<label>#Radio.RecordedTV.Description</label>
+            <lineSpacing>0.85</lineSpacing>
 			<visible>facadeview.list</visible>
 		</control>
 		
@@ -143,39 +145,13 @@
 		
 		<control>
 			<description>Current program channel</description>
-			<type>label</type>
+			<type>fadelabel</type>
 			<id>0</id>
-			<posX>515</posX>
-			<posY>610</posY>
-			<label>#Radio.RecordedTV.Channel</label>
-			<font>Segoe Light18</font>
+			<posX>678</posX>
+			<posY>867</posY>
+			<label>#Radio.RecordedTV.Channel  | #Radio.RecordedTV.Time  |  #Radio.RecordedTV.Genre</label>
+			<font>Segoe Light12</font>
 			<textcolor>6aa5cb</textcolor>
-			<align>right</align>
-			<visible>facadeview.smallicons|facadeview.largeicons</visible>
-		</control>
-		
-		<control>
-			<type>label</type>
-			<description>Current program genre</description>
-			<id>0</id>
-			<posX>515</posX>
-			<posY>643</posY>
-			<textcolor>6aa5cb</textcolor>
-			<font>Segoe Light18</font>
-			<label>#Radio.RecordedTV.Genre</label>
-			<align>right</align>
-			<visible>facadeview.smallicons|facadeview.largeicons</visible>
-		</control>
-			
-		<control>
-			<type>label</type>
-			<description>Current program time</description>
-			<id>0</id>
-			<posX>515</posX>
-			<posY>682</posY>
-			<textcolor>6aa5cb</textcolor>
-			<font>Segoe Light18</font>
-			<label>#Radio.RecordedTV.Time</label>
 			<align>right</align>
 			<visible>facadeview.smallicons|facadeview.largeicons</visible>
 		</control>
@@ -189,23 +165,27 @@
 			<width>741</width>
 			<height>134</height>
 			<label>#Radio.RecordedTV.Description</label>
+            <lineSpacing>0.85</lineSpacing>
+    		<font>AvalonLight12</font>
 			<visible>facadeview.smallicons|facadeview.largeicons</visible>
 		</control>
-		
+			
 			<!-- Filmstrip -->
 			
 		<control>
 			<type>label</type>
 			<description>Current program time</description>
 			<id>0</id>
-			<posX>515</posX>
-			<posY>682</posY>
-			<textcolor>6aa5cb</textcolor>
-			<font>Segoe Light18</font>
-			<label>#selecteditem2</label>
+    		<posX>720</posX>
+    		<posY>1015</posY>
+    		<width>900</width>
+    		<font>AvalonLight12</font>
+    		<textcolor>6aa5cb</textcolor>
+			<label>#Radio.RecordedTV.Channel  | #Radio.RecordedTV.Time  |  #Radio.RecordedTV.Genre</label>
 			<visible>facadeview.filmstrip</visible>
-		</control>
-	</control>	
+       		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>	
 	
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
@@ -216,7 +196,7 @@
 		<width>64</width>
 		<height>199</height>
 		<texture>hiddenmenu_tab.png</texture>
-		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
 	</control>
 
 	<control>
@@ -227,7 +207,7 @@
 		<posX>858</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+		<visible>facadeview.filmstrip+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
 	</control>
 
 	<import>4TR_RecordedRadio.hiddenmenu.xml</import>

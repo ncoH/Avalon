@@ -19,9 +19,9 @@
 	<type>image</type>
 	<id>0</id>
 	<posX>0</posX>
-	<posY>164</posY>
+	<posY>92</posY>
 	<width>1893</width>
-	<height>645</height>
+	<height>716</height>
 	<texture>tv_viewport.png</texture>
     <animation effect="fade" time="250">WindowOpen</animation>
     <animation effect="fade" time="250">WindowClose</animation>
@@ -36,11 +36,11 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>185</posX>
-		<posY>28</posY>
+		<posY>38</posY>
 		<width>500</width>
 		<label>665</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>AvalonLight24</font>
+		<font>font22</font>
 	</control>
 
 	<import>common.time.xml</import>
@@ -57,7 +57,7 @@
 			<type>togglebutton</type>
 			<id>6</id>
 			<posX>160</posX>
-			<posY>239</posY>
+			<posY>204</posY>
 			<label>707</label>
 			<AltTextureFocus>tvhome_item_selected_toggleoff.png</AltTextureFocus>
 			<AltTextureNoFocus>tvhome_item_toggleoff.png</AltTextureNoFocus>
@@ -70,8 +70,8 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
-			<font>AvalonLight14</font>
+			<textYOff>35</textYOff>
+			<font>AvalonLight12</font>
 			<textalign>left</textalign>
 		</control>
 		
@@ -80,7 +80,7 @@
 			<type>button</type>
 			<id>2</id>
 			<posX>160</posX>
-			<posY>338</posY>
+			<posY>303</posY>
 			<label>600</label>
 			<onup>6</onup>
 			<ondown>5</ondown>
@@ -90,8 +90,8 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
-			<font>AvalonLight14</font>
+			<textYOff>35</textYOff>
+			<font>AvalonLight12</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
 			<textureNoFocus>tvhome_item.png</textureNoFocus>
@@ -102,7 +102,7 @@
 			<type>button</type>
 			<id>5</id>
 			<posX>160</posX>
-			<posY>437</posY>
+			<posY>402</posY>
 			<label>602</label>
 			<onup>2</onup>
 			<ondown>9</ondown>
@@ -112,8 +112,8 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
-			<font>AvalonLight14</font>
+			<textYOff>35</textYOff>
+			<font>AvalonLight12</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
 			<textureNoFocus>tvhome_item.png</textureNoFocus>
@@ -124,7 +124,7 @@
 			<type>button</type>
 			<id>9</id>
 			<posX>160</posX>
-			<posY>536</posY>
+			<posY>501</posY>
 			<label>1441</label>
 			<onup>5</onup>
 			<ondown>6</ondown>
@@ -134,8 +134,8 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
-			<font>AvalonLight14</font>
+			<textYOff>35</textYOff>
+			<font>AvalonLight12</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
 			<textureNoFocus>tvhome_item.png</textureNoFocus>
@@ -145,12 +145,12 @@
 			<description>empty button</description>
 			<type>button</type>
 			<posX>160</posX>
-			<posY>635</posY>
+			<posY>600</posY>
 			<textalign>left</textalign>
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
+			<textYOff>35</textYOff>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
 			<textureNoFocus>tvhome_item.png</textureNoFocus>
@@ -162,7 +162,7 @@
 			<type>button</type>
 			<id>4</id>
 			<posX>1398</posX>
-			<posY>239</posY>
+			<posY>204</posY>
 			<label>604</label>
 			<hyperlink>603</hyperlink>
 			<onup>3</onup>
@@ -173,8 +173,8 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
-			<font>AvalonLight14</font>
+			<textYOff>35</textYOff>
+			<font>AvalonLight12</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
 			<textureNoFocus>tvhome_item.png</textureNoFocus>
@@ -185,7 +185,7 @@
 			<type>button</type>
 			<id>8</id>
 			<posX>1398</posX>
-			<posY>338</posY>
+			<posY>303</posY>
 			<label>Active Recordings</label>
 			<onup>4</onup>
 			<ondown>7</ondown>
@@ -195,8 +195,8 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
-			<font>AvalonLight14</font>
+			<textYOff>35</textYOff>
+			<font>AvalonLight12</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
 			<textureNoFocus>tvhome_item.png</textureNoFocus>
@@ -207,7 +207,7 @@
 			<type>button</type>
 			<id>7</id>
 			<posX>1398</posX>
-			<posY>437</posY>
+			<posY>402</posY>
 			<label>603</label>
 			<onup>8</onup>
 			<ondown>3</ondown>
@@ -217,8 +217,8 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
-			<font>AvalonLight14</font>
+			<textYOff>35/textYOff>
+			<font>AvalonLight12</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
 			<textureNoFocus>tvhome_item.png</textureNoFocus>
@@ -229,7 +229,7 @@
 			<type>button</type>
 			<id>3</id>
 			<posX>1398</posX>
-			<posY>536</posY>
+			<posY>501</posY>
 			<label>Search</label>
 			<onup>7</onup>
 			<ondown>4</ondown>
@@ -239,8 +239,8 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
-			<font>AvalonLight14</font>
+			<textYOff>35</textYOff>
+			<font>AvalonLight12</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
 			<textureNoFocus>tvhome_item.png</textureNoFocus>
@@ -250,12 +250,12 @@
 			<description>empty button</description>
 			<type>button</type>
 			<posX>1398</posX>
-			<posY>635</posY>
+			<posY>600</posY>
 			<textalign>left</textalign>
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>24</textYOff>
+			<textYOff>35</textYOff>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
 			<textureNoFocus>tvhome_item.png</textureNoFocus>
@@ -267,7 +267,7 @@
 		<type>videowindow</type>
 		<id>99</id>
 		<posX>529</posX>
-		<posY>239</posY>
+		<posY>204</posY>
 		<width>866</width>
 		<height>494</height>
 		<onleft>6</onleft>
@@ -296,7 +296,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>132</posX>
-		<posY>227</posY>
+		<posY>192</posY>
 		<width>1670</width>
 		<height>552</height>
 		<texture>tvhome_bg.png</texture>
@@ -309,10 +309,10 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>681</posX>
-		<posY>880</posY>
+		<posY>868</posY>
 		<width>850</width>
 		<label>#Radio.View.start - #Radio.View.stop #Radio.View.channel #Radio.Guide.Genre</label>
-		<font>AvalonLight14</font>
+		<font>AvalonLight12</font>
 		<textcolor>ff85cffe</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -323,10 +323,10 @@
 		<type>fadelabel</type>
 		<id>13</id>
 		<posX>681</posX>
-		<posY>820</posY>
+		<posY>816</posY>
 		<width>1175</width>
 		<label>#Radio.View.title</label>
-		<font>fontB20</font>
+		<font>fontB16</font>
 		<textcolor>ffffff</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -337,12 +337,13 @@
 		<type>textboxscrollup</type>
 		<id>15</id>
 		<posX>681</posX>
-		<posY>934</posY>
+		<posY>908</posY>
 		<width>1185</width>
-		<height>110</height>
-		<font>font11</font>
+		<height>165</height>
+		<font>AvalonLight12</font>
 		<seperator>----------------------------------------------------------------------------------------------</seperator>
 		<label>#Radio.View.description</label>
+		<lineSpacing>0.85</lineSpacing>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -409,7 +410,7 @@
 		<type>image</type>
 		<id>24</id>
 		<posX>462</posX>
-		<posY>531</posY>
+		<posY>526</posY>
 		<texture>tvguide_record_button.png</texture>
 		<visible>no</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
