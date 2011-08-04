@@ -69,7 +69,18 @@
   <string Field="Description">Description</string>
   <string Field="Comments">Comments</string>
   <string Field="Actors">Actors</string>
-  <string Field="Techinfo">Technical Info</string>	
+  <string Field="Techinfo">Technical Info</string>
+  <string Field="VideoFormat">Video Format</string>
+  <string Field="Resolution">Resolution</string>
+  <string Field="Framerate">Framrate</string>
+  <string Field="AudioFormat">Audio Format</string>
+  <string Field="AudioChannels">Audio Channels</string>
+  <string Field="DateAdded">Date Added</string>
+  <string Field="MediaType">Media Type</string>
+  <string Field="InfoUrl">Info URL</string>
+  <string Field="Source">Source</string>
+  <string Field="Aspectratio">Aspectratio</string>
+  <string Field="WatchedCount">Watched Count</string>  
   <!-- Latest Media -->  
   <string Field="LatestMovies">Latest movies</string>
   <string Field="LatestEpisodes">Latest episodes</string>

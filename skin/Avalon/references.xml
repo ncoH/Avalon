@@ -10,6 +10,11 @@
     <font>AvalonLight12</font>
     <textcolor>FF6aa5cb</textcolor>
   </style>
+  <style Name="InfoLabelDetails">
+	<width>240</width>
+    <font>AvalonLight12</font>
+    <textcolor>FF6aa5cb</textcolor>
+  </style>    
   <style Name="InfoValue">
 	<width>750</width>
     <font>AvalonLight12</font>

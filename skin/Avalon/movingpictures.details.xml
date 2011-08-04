@@ -207,12 +207,12 @@ This file should contain the details view
 		<width>1005</width>
 		<font>fontB20</font>
 		<label>#MovingPictures.SelectedMovie.title</label>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51 + !Control.HasFocus(10003))</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<description>Release Date Label</description>
 		<type>label</type>
 		<label>#Avalon.ReleaseDate</label>
@@ -236,7 +236,7 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<type>label</type>
 		<label>#Avalon.Runtime</label>
 		<id>0</id>
@@ -259,7 +259,7 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<description>Genre Label</description>
 		<type>label</type>
 		<label>#MovingPictures.Translation.Genre.Label</label>
@@ -287,7 +287,7 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<description>Director Label</description>
 		<type>label</type>
 		<label>#MovingPictures.Translation.Director.Label</label>
@@ -315,7 +315,7 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
 	
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<description>Actors Label</description>
 		<type>label</type>
 		<label>#MovingPictures.Translation.Actors.Label</label>
@@ -440,12 +440,12 @@ This file should contain the details view
     
  	<!-- Technical Details -->
     
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<type>label</type>
 		<id>1</id>
 		<posX>585</posX>
 		<posY>356</posY>
-		<label>Video Format</label>
+		<label>#Avalon.VideoFormat</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
@@ -462,12 +462,12 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
  
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 	   <type>label</type>
 	   <id>1</id>
 	   <posX>1142</posX>
 	   <posY>356</posY>
-	   <label>Aspectratio</label>
+	   <label>#Avalon.Aspectratio</label>
 	   <visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>			
@@ -484,12 +484,12 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
     
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<type>label</type>
 		<id>1</id>
 		<posX>585</posX>
 		<posY>398</posY>
-		<label>Resolution</label>
+		<label>#Avalon.Resolution</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
@@ -506,13 +506,13 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
     
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<type>label</type>
 		<id>1</id>
 		<posX>585</posX>
 		<posY>439</posY>
 		<label>174</label>
-		<label>Framerate</label>
+		<label>#Avalon.Framerate</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
@@ -529,12 +529,12 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
     
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<type>label</type>
 		<id>1</id>
 		<posX>585</posX>
 		<posY>480</posY>
-		<label>Audio Format</label>
+		<label>#Avalon.AudioFormat</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
@@ -551,12 +551,12 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
     
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<type>label</type>
 		<id>1</id>
 		<posX>585</posX>
 		<posY>521</posY>
-		<label>Audio Channels</label>
+		<label>#Avalon.AudioChannels</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
@@ -573,12 +573,12 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
  
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<type>label</type>
 		<id>1</id>
 		<posX>585</posX>
 		<posY>604</posY>
-		<label>Date Added</label>
+		<label>#Avalon.DateAdded</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
@@ -595,12 +595,12 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
     
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<type>label</type>
 		<id>1</id>
 		<posX>585</posX>
 		<posY>645</posY>
-		<label>Media Type</label>
+		<label>#Avalon.MediaType</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
@@ -617,12 +617,12 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
  
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<type>label</type>
 		<id>1</id>
 	    <posX>1142</posX>
 		<posY>604</posY>
-		<label>Watched Count</label>
+		<label>#Avalon.WatchedCount</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
@@ -639,12 +639,12 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
     
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<type>label</type>
 		<id>1</id>
 		<posX>585</posX>
 		<posY>730</posY>
-		<label>Info URL</label>
+		<label>#Avalon.InfoUrl</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				
@@ -664,12 +664,12 @@ This file should contain the details view
 		<animation effect="fade" time="0">WindowClose</animation>				
 	</control>
     
-	<control Style="InfoLabel">
+	<control Style="InfoLabelDetails">
 		<type>label</type>
 		<id>1</id>
 		<posX>585</posX>
 		<posY>771</posY>
-		<label>Source</label>
+		<label>#Avalon.Source</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>				

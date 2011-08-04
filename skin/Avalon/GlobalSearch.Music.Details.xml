@@ -1,4 +1,4 @@
-﻿<window>
+<window>
 	<id>510</id>
 	<defaultcontrol>11</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
@@ -205,7 +205,7 @@
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     	</control>
 
-		<control Style="InfoLabel">
+		<control Style="InfoLabelDetails">
 			<type>label</type>
 			<id>25</id>
     		<posX>744</posX>
@@ -225,7 +225,7 @@
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
 
-		<control Style="InfoLabel">
+		<control Style="InfoLabelDetails">
 			<type>label</type>
 			<id>26</id>
 			<posX>744</posX>
@@ -245,7 +245,7 @@
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
 
-		<control Style="InfoLabel">
+		<control Style="InfoLabelDetails">
 			<type>label</type>
 			<id>27</id>
 			<posX>744</posX>
@@ -265,7 +265,7 @@
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
 
-		<control Style="InfoLabel">
+		<control Style="InfoLabelDetails">
 			<type>label</type>
 			<id>28</id>
 			<posX>744</posX>
@@ -285,7 +285,7 @@
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
 
-		<control Style="InfoLabel">
+		<control Style="InfoLabelDetails">
 			<type>label</type>
 			<id>29</id>
 			<posX>744</posX>
@@ -305,7 +305,7 @@
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
 
-		<control Style="InfoLabel">
+		<control Style="InfoLabelDetails">
 			<type>label</type>
 			<id>0</id>
 			<posX>744</posX>
@@ -325,7 +325,7 @@
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
 
-		<control Style="InfoLabel">
+		<control Style="InfoLabelDetails">
 			<type>label</type>
 			<id>31</id>
 			<posX>744</posX>
@@ -356,7 +356,7 @@
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>		
 
-		<control Style="InfoLabel">
+		<control Style="InfoLabelDetails">
 			<type>label</type>
 			<id>35</id>
 			<posX>744</posX>
@@ -376,7 +376,7 @@
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
 
-		<control Style="InfoLabel">
+		<control Style="InfoLabelDetails">
 			<type>label</type>
 			<id>37</id>
 			<posX>744</posX>
@@ -396,7 +396,7 @@
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
 
-		<control Style="InfoLabel">
+		<control Style="InfoLabelDetails">
 			<type>label</type>
 			<id>30</id>
 			<posX>744</posX>

@@ -69,6 +69,17 @@
   <string Field="Comments">Kommentare</string>
   <string Field="Actors">Darsteller</string>
   <string Field="Techinfo">Technische Infos</string>
+  <string Field="VideoFormat">Video Format</string>
+  <string Field="Resolution">Auflösung</string>
+  <string Field="Framerate">Wiederholrate</string>
+  <string Field="AudioFormat">Audio Format</string>
+  <string Field="AudioChannels">Audio Kanäle</string>
+  <string Field="DateAdded">Hinzugefügt</string>
+  <string Field="MediaType">Medientyp</string>
+  <string Field="InfoUrl">Info URL</string>
+  <string Field="Source">Quellpfad</string>
+  <string Field="Aspectratio">Bildverhältnis</string>
+  <string Field="WatchedCount">Gesehen</string>
   <!-- Latest Media -->  
   <string Field="LatestMovies">Neueste Filme</string>
   <string Field="LatestEpisodes">Neueste Episoden</string> 
