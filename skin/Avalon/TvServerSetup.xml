@@ -7,13 +7,14 @@
 <define>#header.hover:hover_my tv.png</define>
 <controls>
 	<import>common.settings.xml</import>
+    <import>common.time.xml</import>
 	<control>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<layout>GridLayout(2, 6, 52, 8, 1)</layout>
-		<posX>99</posX>
-		<posY>188</posY>
+		<posX>130</posX>
+		<posY>262</posY>
 		<control>
 			<type>button</type>
 			<id>24</id>
@@ -24,11 +25,11 @@
 
 	<control>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<layout>GridLayout(2, 6, 52, 8, 1)</layout>
-		<posX>99</posX>
-		<posY>238</posY>
+		<posX>130</posX>
+		<posY>326</posY>
 		<control>
 			<type>button</type>
 			<id>25</id>
@@ -41,37 +42,46 @@
 		<type>label</type>
 		<description>Please specify the IP address or hostname</description>
 		<id>1</id>
-		<posX>462</posX>
-		<posY>120</posY>
+		<posX>766</posX>
+		<posY>375</posY>
 		<label>6026</label>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<type>label</type>
 		<description>of the master TV-Server</description>
 		<id>1</id>
-		<posX>462</posX>
-		<posY>140</posY>
+		<posX>766</posX>
+		<posY>415</posY>
 		<label>6027</label>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<type>label</type>
 		<description>Current setting:</description>
 		<id>1</id>
-		<posX>462</posX>
-		<posY>200</posY>
+		<posX>766</posX>
+		<posY>455</posY>
 		<label>6028</label>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<type>label</type>
 		<description>:</description>
 		<id>30</id>
-		<posX>462</posX>
-		<posY>225</posY>
-		<font>font16</font>
+		<posX>766</posX>
+		<posY>495</posY>
+		<font>AvalonLight14</font>
+		<textcolor>6aa5cb</textcolor>
 		<label>-</label>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 </controls>

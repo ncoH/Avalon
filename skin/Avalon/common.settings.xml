@@ -11,44 +11,59 @@
 	</control>
 
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<description>viewport</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>795</height>
+		<texture>viewport_settings.png</texture>
+        <animation effect="fade" time="250">WindowOpen</animation>
+        <animation effect="fade" time="250">WindowClose</animation>
+    	<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+    	<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>552</posX>
-		<posY>30</posY>
+		<posX>185</posX>
+		<posY>38</posY>
 		<width>500</width>
-		<height>100</height>
 		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
+		<font>font22</font>
 	</control>
 	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
-		<id>1</id>
-		<posX>552</posX>
-		<posY>120</posY>
+		<description>Settings label</description>
+		<id>121</id>
+		<posX>766</posX>
+		<posY>264</posY>
 		<width>500</width>
-		<height>100</height>
 		<label>5</label>
-		<font>Segoe Light22</font>
+		<textcolor>6aa5cb</textcolor>
+		<font>fontB22</font>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<description>Hover image</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>136</posX>
+		<posX>130</posX>
 		<posY>500</posY>
-		<width>286</width>
-		<height>197</height>
+		<width>385</width>
+		<height>217</height>
 		<texture>#header.hover</texture>
 		<visible>!videoplayer.usingoverlays</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 </controls>
