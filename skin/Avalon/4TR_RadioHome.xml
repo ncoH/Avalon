@@ -217,7 +217,7 @@
 			<width>375</width>
 			<textXOff>36</textXOff>
 			<height>100</height>
-			<textYOff>35/textYOff>
+			<textYOff>35</textYOff>
 			<font>AvalonLight12</font>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<textureFocus>tvhome_item_selected.png</textureFocus>
