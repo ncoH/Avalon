@@ -237,7 +237,7 @@
 		<height>150</height>
 		<font>AvalonLight12</font>
 		<label>#OnlineVideos.desc</label>
-		<visible>!string.equals(#OnlineVideos.state, details) + [facadeview.smallicons | facadeview.largeicons]</visible>
+		<visible>!string.equals(#OnlineVideos.state, details) + !string.equals(#OnlineVideos.selectedSiteUtil, YouTube) + [facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>
 			
 	<control>
@@ -253,7 +253,7 @@
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
 		<label>#OnlineVideos.Translation.Runtime.Label</label>
-		<visible>string.equals(#OnlineVideos.state, videos)+control.hastext(502) + !string.contains(#selecteditem, ..) + [facadeview.smallicons | facadeview.largeicons]</visible>
+		<visible>string.equals(#OnlineVideos.state, videos) + !string.equals(#OnlineVideos.selectedSiteUtil, YouTube) + !string.contains(#selecteditem, ..) + [facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>  
 		
 	<control>
@@ -269,7 +269,7 @@
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
 		<label>#OnlineVideos.Translation.Airdate.Label</label>
-		<visible>string.equals(#OnlineVideos.state, videos)+control.hastext(502) + !string.contains(#selecteditem, ..) + [facadeview.smallicons | facadeview.largeicons]</visible>
+		<visible>string.equals(#OnlineVideos.state, videos)+control.hastext(502) + !string.equals(#OnlineVideos.selectedSiteUtil, YouTube) + !string.contains(#selecteditem, ..) + [facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>  
         	
 	<control>
@@ -285,7 +285,7 @@
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
 		<label>248</label>
-		<visible>string.equals(#OnlineVideos.state, sites)+control.hastext(502) + !string.contains(#selecteditem, ..) + [facadeview.smallicons | facadeview.largeicons]</visible>
+		<visible>string.equals(#OnlineVideos.state, sites)+control.hastext(502) + !string.equals(#OnlineVideos.selectedSiteUtil, YouTube) + !string.contains(#selecteditem, ..) + [facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>
 			
 	<control>
@@ -333,7 +333,7 @@
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
 		<label>#OnlineVideos.aired</label>
-		<visible>!string.equals(#OnlineVideos.state, details) + [facadeview.smallicons | facadeview.largeicons]</visible>
+		<visible>!string.equals(#OnlineVideos.state, details) + !string.equals(#OnlineVideos.selectedSiteUtil, YouTube) + [facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>
 			
 	<control>
@@ -349,7 +349,7 @@
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
 		<label>#selecteditem2</label>
-		<visible>!string.equals(#OnlineVideos.state, details) + [facadeview.smallicons | facadeview.largeicons]</visible>
+		<visible>!string.equals(#OnlineVideos.state, details) + !string.equals(#OnlineVideos.selectedSiteUtil, YouTube) + [facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>
             
 	<control>
@@ -392,6 +392,7 @@
 	<import>myonlinevideos.hiddenmenu.xml</import>
     <import>myonlinevideos.details.xml</import>
     <import>myonlinevideos.details.imdb.xml</import>
+    <import>myonlinevideos.details.youtube.xml</import>
     <import>myonlinevideos.facade.xml</import>  
 	<import>myonlinevideos.listview.details.xml</import>	
   </controls>
