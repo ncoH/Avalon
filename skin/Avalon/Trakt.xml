@@ -53,7 +53,7 @@
 				<id>10</id>
 				<label>#Trakt.Translation.Calendar.Label</label>
 				<hyperlink>87259</hyperlink>
-				<onup>21</onup>
+				<onup>15</onup>
 			</control>
 			<control>
 				<description>Friends</description>
