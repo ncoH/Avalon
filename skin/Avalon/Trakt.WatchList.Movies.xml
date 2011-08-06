@@ -498,7 +498,7 @@
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Movie.Ratings.Percentage% (#Trakt.Movie.Ratings.Votes #Trakt.Translation.Votes.Label)</label>
-    		<posX>882</posX>
+    		<posX>930</posX>
     		<posY>952</posY>
     		<width>240</width>
     		<align>left</align>
@@ -515,8 +515,8 @@
 			<id>1</id>
 			<width>39</width>
 			<height>36</height>
-			<posX>1315</posX>
-			<posY>984</posY>
+    		<posX>882</posX>
+    		<posY>952</posY>
 			<texture>#Trakt.Movie.Ratings.Icon.png</texture>
 			<visible>!string.equals(#Trakt.Movie.Ratings.Icon,)+[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
