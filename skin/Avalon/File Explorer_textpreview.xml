@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <id>557312</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+    
+		<!--            :: Overlays ::            -->	
+
+
+	<control>
+		<description>Viewport listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>866</height>
+		<texture>viewport_file.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+    
+    <import>common.time.xml</import>
+    
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>900</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>  
+    
+    <control>
+      <type>textbox</type>
+      <id>2</id>
+      <posX>264</posX>
+      <posY>156</posY>
+      <width>1600</width>
+      <height>800</height>
+      <font>AvalonLight12</font>
+      <spinPosX>1690</spinPosX>
+      <spinPosY>950</spinPosY>
+      <spinWidth>36</spinWidth>
+      <spinHeight>37</spinHeight>
+      <spinAlign>right</spinAlign>
+      <spinColor>FF6aa5cb</spinColor>
+      <animation effect="fade" time="250" delay="0">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+  </controls>
+</window>

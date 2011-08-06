@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <id>557316</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+    <import>common.dialog.xml</import>
+  </controls>
+</window>

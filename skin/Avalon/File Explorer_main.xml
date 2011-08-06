@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <id>557311</id>
+  <defaultcontrol>11</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+    
+		<!--            :: Overlays ::            -->	
+
+
+	<control>
+		<description>Viewport listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>866</height>
+		<texture>viewport_file.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+    
+	<control>
+		<description>FileExplorer BG</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>165</posX>
+		<posY>120</posY>
+		<width>1700</width>
+		<height>810</height>
+		<texture>fileExplorer_bg.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>800</width>
+		<label>File Explorer</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+	</control>
+
+    <import>common.time.xml</import>
+    <!-- GUI Buttons -->
+    <control>
+      <description>Menu Left</description>
+      <type>button</type>
+      <id>11</id>
+      <label>Menu Left</label>
+      <posX>264</posX>
+      <posY>156</posY>
+      <width>675</width>
+      <textXOff>270</textXOff>
+      <onup>17</onup>
+      <ondown>3</ondown>
+      <onright>2</onright>
+      <onleft>2</onleft>
+      <font>font12</font>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>Menu Right</description>
+      <type>button</type>
+      <id>2</id>
+      <label>Menu right</label>
+      <posX>1140</posX>
+      <posY>156</posY>
+      <width>675</width>
+      <textXOff>270</textXOff>
+      <onup>17</onup>
+      <ondown>4</ondown>
+      <onright>11</onright>
+      <onleft>11</onleft>
+      <font>font12</font>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>900</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>   
+ 
+    <control>
+      <description>File/Folder List (Left)</description>
+      <type>listcontrol</type>
+      <id>3</id>
+      <posX>166</posX>
+      <posY>272</posY>
+      <onleft>11</onleft>
+      <onright>4</onright>
+      <onup>11</onup>
+      <ondown>3</ondown>
+      <height>700</height>
+      <width>820</width>
+      <scrollOffset>3</scrollOffset>
+      <itemWidth>64</itemWidth>
+      <itemHeight>53</itemHeight>
+      <IconXOff>20</IconXOff>
+      <IconYOff>0</IconYOff>
+      <textXOff>25</textXOff>
+      <textYOff>8</textYOff>
+      <textXOff2>810</textXOff2>
+      <textYOff2>8</textYOff2>
+      <font2>AvalonLight11</font2>
+      <keepaspectratio>yes</keepaspectratio>
+      <spinPosX>961</spinPosX>
+      <spinPosY>950</spinPosY>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <dimColor>ffffffff</dimColor>
+    </control>
+    <control>
+      <description>File/Folder List (Right)</description>
+      <type>listcontrol</type>
+      <id>4</id>
+      <posX>1041</posX>
+  	  <posY>272</posY>
+      <onleft>3</onleft>
+      <onright>2</onright>
+      <onup>2</onup>
+      <ondown>4</ondown>
+      <height>700</height>
+      <width>820</width>
+      <scrollOffset>3</scrollOffset>
+      <itemWidth>64</itemWidth>
+      <itemHeight>53</itemHeight>
+      <IconXOff>20</IconXOff>
+      <IconYOff>0</IconYOff>
+      <textXOff>25</textXOff>
+      <textYOff>8</textYOff>
+      <textXOff2>810</textXOff2>
+      <textYOff2>8</textYOff2>
+      <font2>AvalonLight11</font2>
+      <keepaspectratio>yes</keepaspectratio>
+      <spinPosX>1832</spinPosX>
+      <spinPosY>950</spinPosY>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	  <dimColor>ffffffff</dimColor>
+    </control>
+    <control>
+      <description>File/Folder Label (Left)</description>
+      <type>label</type>
+      <id>9</id>
+      <posX>186</posX>
+      <posY>946</posY>
+      <label>
+      </label>
+      <font>AvalonLight12</font>
+      <align>left</align>
+      <textcolor>White</textcolor>
+      <width>620</width>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>File/Folder Label (Right)</description>
+      <type>label</type>
+      <id>10</id>
+      <posX>1078</posX>
+      <posY>946</posY>
+      <label>
+      </label>
+      <font>AvalonLight12</font>
+      <align>left</align>
+      <textcolor>White</textcolor>
+      <width>620</width>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>File/Folder Attributes (Left)</description>
+      <type>label</type>
+      <id>6</id>
+      <posX>-2000</posX>
+      <posY>860</posY>
+      <label>
+      </label>
+      <font>AvalonLight12</font>
+      <align>left</align>
+      <textcolor>White</textcolor>
+      <width>620</width>
+      <textXOff>25</textXOff>
+      <textXOff2>620</textXOff2>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>File/Folder Attributes (Right)</description>
+      <type>label</type>
+      <id>7</id>
+      <posX>-2000</posX>
+      <posY>860</posY>
+      <label>
+      </label>
+      <font>AvalonLight12</font>
+      <align>left</align>
+      <textcolor>White</textcolor>
+      <width>620</width>
+      <textXOff>25</textXOff>
+      <textXOff2>620</textXOff2>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+  </controls>
+</window>
