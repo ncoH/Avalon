@@ -53,80 +53,74 @@
 			<label>924</label>
 			<font>font22</font>
 			<textcolor>ffffff</textcolor>
-		</control>		
+		</control>
+          <control>
+            <type>group</type>
+            <description>group element</description>
+            <visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+            <posX>69</posX>
+            <posY>215</posY>
+            <width>220</width>
+            <height>720</height>
+            <layout>StackLayout(0, Vertical, true)</layout>		
 			<control>
 				<description>Toggle View</description>
 				<type>button</type>
 				<id>2</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>215</posY>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
 				<label>#MovingPictures.Translation.CycleView.Label</label>
 				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>66612</onup>
-				<ondown>3</ondown>
-			</control>
-
-			<control>
-				<description>Switch View</description>
-				<type>button</type>
-				<id>3</id>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>285</posY>
-				<width>497</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
-				<label>#MovingPictures.Translation.ChangeView.Label</label>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>2</onup>
-				<ondown>14</ondown>
+                <onright>50</onright>
 			</control>
 
 			<control>
 				<description>Sort</description>
 				<type>button</type>
 				<id>14</id>
-				<label>495</label>
+				<label>#MovingPictures.Translation.SortBy.Label: #MovingPictures.Sort.Field</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>355</posY>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
-				<onright>50</onright>
-				<onup>3</onup>
-				<ondown>15</ondown>
+				<onleft>50</onleft>
+                <onright>50</onright>
 			</control>
 				
+			<control>
+				<description>Filter Menu</description>
+				<type>button</type>
+				<id>4</id>
+				<label>#MovingPictures.Translation.FilterBy.Label ...</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+				<onleft>50</onleft>
+                <onright>50</onright>
+			</control>
+                
 			<control>
 				<description>Parental controls</description>
 				<type>button</type>
 				<id>15</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>425</posY>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
 				<label>#MovingPictures.Translation.ToggleParentalLock.Label</label>
 				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>14</onup>
-				<ondown>66610</ondown>
+                <onright>50</onright>
 			</control>
 				
 				
@@ -136,8 +130,6 @@
 				<id>66610</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>495</posY>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
@@ -145,31 +137,10 @@
 				<label>6022</label>
 				<hyperlink>703</hyperlink>
 				<onleft>50</onleft>
-				<onright>50</onright>
+                <onright>50</onright>
 				<onup>15</onup>
-				<ondown>66613</ondown>
+				<ondown>66612</ondown>
 			</control>
-			
-			<control>
-				<description>Trailer</description>
-				<id>66613</id>
-				<type>button</type>
-				<posX>69</posX>
-				<posY>565</posY>
-				<width>497</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<label>Trailer</label>
-				<hyperlink>4755</hyperlink>
-				<hyperlinkParameter>site:iTunes Movie Trailers|search:#selecteditem|return:Locked</hyperlinkParameter>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>66610</onup>
-				<ondown>66612</ondown>    
-			</control>	
 			
 			<control>
 				<description>Skin Settings</description>
@@ -177,8 +148,6 @@
 				<id>66612</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>635</posY>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
@@ -186,17 +155,35 @@
 				<label>#Avalon.SkinSettings</label>
 				<hyperlink>155101</hyperlink>
 				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>66613</onup>
-				<ondown>66611</ondown>
+                <onright>50</onright>
+				<onup>66610</onup>
+				<ondown>66613</ondown>
 			</control>
+            
+			<control>
+				<description>Trailers</description>
+				<id>66613</id>
+				<type>button</type>
+				<width>497</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<label>#(L(5900))</label>
+				<hyperlink>4755</hyperlink>
+                <hyperlinkParameter>site:#Avalon.TrailerSite|search:#MovingPictures.SelectedMovie.title|return:Locked</hyperlinkParameter>
+				<onleft>50</onleft>
+                <onright>50</onright>
+				<onup>66612</onup>
+				<ondown>66611</ondown>    
+			</control>	
 			
+            
 			<control>
 				<description>SubCentral</description>
 				<id>66611</id>
 				<type>button</type>
-				<posX>69</posX>
-				<posY>705</posY>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
@@ -207,11 +194,12 @@
 				<hyperlink>84623</hyperlink>
 				<visible>plugin.isenabled(SubCentral)</visible>
 				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>66610</onup>
+                <onright>50</onright>
+				<onup>66613</onup>
 				<ondown>2</ondown>    
 			</control>	
 		</control>
+        </control>
 </control>
 </controls>
 </window>

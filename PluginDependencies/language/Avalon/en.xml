@@ -24,7 +24,7 @@
   <string Field="SkinUpdateNF2">Press left and push the button to install</string>
   <string Field="SkinSettingsmovpicsLayout">Movie Information Layout</string>
   <string Field="SkinSettingsseriesLayout">Series Information Layout</string>
-  <string Field="SkinSettingsThumbview ">Thumbnails</string>
+  <string Field="SkinSettingsThumbview">Thumbnails</string>
   <string Field="SkinSettingsInfo">Enable Infos at bottom of the screen</string>
   <string Field="SkinSettingsPosterHide">Hide Poster on listview when not scrolling</string>
   <string Field="SkinSettingsShowRSS">Enable RSS Feeds on BasicHome/Home</string>
@@ -61,6 +61,7 @@
   <string Field="ConfigRequiresRestartLine2">affect on next MediaPortal restart.</string>
   <string Field="ConfigRequiresRestartLine3">Would you like to restart now?</string>
   <string Field="UseLargeFonts">Use Large Fonts</string>
+  <string Field="TrailerSite">Choose Trailer Search Site</string>
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Runtime</string>
   <string Field="ReleaseDate">Release date</string>
@@ -91,7 +92,7 @@
   <string Field="ReturnListMovies">Press left to return to movie list</string> 
   <string Field="ReturnListSeries">Press left to return to series list</string> 
   <string Field="Watched">Watched</string>    
-  <string Field="UnWatched">UnWatched</string>
+  <string Field="UnWatched">Unwatched</string>
   <string Field="SearchMusic">Search Music</string>
   <string Field="SearchPhrase">Search Phrase</string>
   <string Field="SearchHistory">Search History</string>

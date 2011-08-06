@@ -203,7 +203,7 @@
 				<textureNoFocus>-</textureNoFocus>
 				<label>Trailer</label>
 				<hyperlink>4755</hyperlink>
-				<hyperlinkParameter>site:iTunes Movie Trailers|search:#selecteditem|return:Locked</hyperlinkParameter>
+				<hyperlinkParameter>site:#Avalon.TrailerSite|search:#selecteditem|return:Locked</hyperlinkParameter>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>66611</onup>

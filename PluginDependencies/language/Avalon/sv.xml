@@ -28,7 +28,8 @@
   <string Field="SkinSettingsInfo">Tillåt information på botten av skärmen</string>
   <string Field="SkinSettingsPosterHide">Göm affisch i listvyn när rullning inte sker</string>
   <string Field="SkinSettingsShowRSS">Visa RSS-strömmar på Basic Home/Home</string>
-  <string Field="SkinSettingsShowHiddenMenu">Visa hänvisning till gömd meny</string>  
+  <string Field="SkinSettingsShowHiddenMenu">Visa hänvisning till gömd meny</string>
+  <string Field="SkinSettingsShow5DayWeather">Show 5 Day Weather forecast on BasicHome/Home</string>  
   <string Field="SkinSettingsTV">TV</string>
   <string Field="SkinSettingsTVSeries">TV-serier</string>
   <string Field="SkinSettingsUpdate">Uppdatering</string>
@@ -42,6 +43,9 @@
   <string Field="TVMiniGuideRows">Antal rader, TV-miniguide</string> 
   <string Field="TVMiniGuideThreeRows">TV-miniguide: 3 rader</string>
   <string Field="TVMiniGuideEightRows">TV-miniguide: 8 rader</string>
+  <string Field="TVGuideSize">TV Guide Rows</string> 
+  <string Field="TVGuideEightRows">TV Guide: 8 Rows</string>
+  <string Field="TVGuideTenRows">TV Guide: 10 Rows</string>
   <string Field="SkinSettingsMisc">Övrigt</string>
   <string Field="Widebanner">WideBanners</string>
   <string Field="WidebannerDefault">Banners sida vid sida: grundinställning</string>
@@ -57,6 +61,7 @@
   <string Field="ConfigRequiresRestartLine2">nästa gång MediaPortal startats om.</string>
   <string Field="ConfigRequiresRestartLine3">Starta om nu?</string>
   <string Field="UseLargeFonts">Använd stor textstorlek</string>
+  <string Field="TrailerSite">Choose Trailer Search Site</string>
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Speltid</string>
   <string Field="ReleaseDate">År</string>
@@ -65,7 +70,18 @@
   <string Field="Description">Beskrivning</string>
   <string Field="Comments">Kommentarer</string>
   <string Field="Actors">Skådespelare</string>
-  <string Field="Techinfo">Teknisk information</string>	
+  <string Field="Techinfo">Teknisk information</string>
+  <string Field="VideoFormat">Video Format</string>
+  <string Field="Resolution">Resolution</string>
+  <string Field="Framerate">Framrate</string>
+  <string Field="AudioFormat">Audio Format</string>
+  <string Field="AudioChannels">Audio Channels</string>
+  <string Field="DateAdded">Date Added</string>
+  <string Field="MediaType">Media Type</string>
+  <string Field="InfoUrl">Info URL</string>
+  <string Field="Source">Source</string>
+  <string Field="Aspectratio">Aspectratio</string>
+  <string Field="WatchedCount">Watched Count</string> 	
   <!-- Latest Media -->  
   <string Field="LatestMovies">Senaste filmerna</string>
   <string Field="LatestEpisodes">Senaste avsnitten</string>
@@ -74,5 +90,16 @@
   <!-- Misc -->   
   <string Field="FanartScraping">Letar ny FanArt</string>
   <string Field="ReturnListMovies">Steg åt vänster återvänder till filmlistan</string> 
-  <string Field="ReturnListSeries">Steg åt vänster återvänder till serielistan</string> 
+  <string Field="ReturnListSeries">Steg åt vänster återvänder till serielistan</string>
+  <string Field="Watched">Watched</string>    
+  <string Field="UnWatched">Unwatched</string>
+  <string Field="SearchMusic">Search Music</string>
+  <string Field="SearchPhrase">Search Phrase</string>
+  <string Field="SearchHistory">Search History</string>
+  <string Field="SearchFields">Search Fields</string>
+  <string Field="SearchType">Search Type</string>
+  <string Field="CaseSensitive">Case Sensitive</string>
+  <string Field="Lastplayed">Lastplayed</string>
+  <string Field="Filename">Filename</string>
+  <string Field="Playcount">Playcount</string>  
 </strings>

@@ -27,6 +27,9 @@
   <string Field="SkinSettingsThumbview ">Thumbnails</string>
   <string Field="SkinSettingsInfo">Gør info i bunden af skærmen tilgængelig</string>
   <string Field="SkinSettingsPosterHide">Skjul plakter på listesynet når der ikke scrolles</string>
+  <string Field="SkinSettingsShowRSS">Enable RSS Feeds on BasicHome/Home</string>
+  <string Field="SkinSettingsShowHiddenMenu">Show Hidden Menu Image</string>  
+  <string Field="SkinSettingsShow5DayWeather">Show 5 Day Weather forecast on BasicHome/Home</string>  
   <string Field="SkinSettingsTV">Fjernsyn</string>
   <string Field="SkinSettingsTVSeries">TV Serier</string>
   <string Field="SkinSettingsUpdate">Opdatering</string>
@@ -40,10 +43,25 @@
   <string Field="TVMiniGuideRows">TV Mini Guide rækker</string> 
   <string Field="TVMiniGuideThreeRows">TV Mini Guide: 3 rækker</string>
   <string Field="TVMiniGuideEightRows">TV Mini Guide: 8 rækker</string>
+  <string Field="TVGuideSize">TV Guide Rows</string> 
+  <string Field="TVGuideEightRows">TV Guide: 8 Rows</string>
+  <string Field="TVGuideTenRows">TV Guide: 10 Rows</string>
   <string Field="SkinSettingsMisc">Diverse</string>
   <string Field="Widebanner">Brede bannere</string>
   <string Field="WidebannerDefault">Brede bannere: Default</string>
-  <string Field="WidebannerNoFanart">Brede bannere: Uden fanart</string> 
+  <string Field="WidebannerNoFanart">Brede bannere: Uden fanart</string>
+  <string Field="UnfocusedAlpha">Transparency/Opacity for thumbs and list</string>
+  <string Field="UnfocusedAlphaMenuLists">Unfocused Alpha on List Layouts: {0}</string>
+  <string Field="UnfocusedAlphaMenuThumbs">Unfocused Alpha on Thumb Layouts: {0}</string>
+  <string Field="UnfocusedAlphaInvalidLine1">Invalid value entered, please enter a value</string>
+  <string Field="UnfocusedAlphaInvalidLine2">between 0 - 255.</string>
+  <string Field="UnfocusedAlphaInvalidLine3">Opaque = 255, Transparent = 0</string>
+  <string Field="RestoreDefaults">Restore Defaults</string>
+  <string Field="ConfigRequiresRestartLine1">The following configuration changes will take</string>
+  <string Field="ConfigRequiresRestartLine2">affect on next MediaPortal restart.</string>
+  <string Field="ConfigRequiresRestartLine3">Would you like to restart now?</string>
+  <string Field="UseLargeFonts">Use Large Fonts</string>
+  <string Field="TrailerSite">Choose Trailer Search Site</string> 
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Spilletid</string>
   <string Field="ReleaseDate">Frigivet dato</string>
@@ -52,12 +70,36 @@
   <string Field="Description">Beskrivelse</string>
   <string Field="Comments">Kommentarer</string>
   <string Field="Actors">Skuespillere</string>
-  <string Field="Techinfo">Teknisk info</string>	
+  <string Field="Techinfo">Teknisk info</string>
+  <string Field="VideoFormat">Video Format</string>
+  <string Field="Resolution">Resolution</string>
+  <string Field="Framerate">Framrate</string>
+  <string Field="AudioFormat">Audio Format</string>
+  <string Field="AudioChannels">Audio Channels</string>
+  <string Field="DateAdded">Date Added</string>
+  <string Field="MediaType">Media Type</string>
+  <string Field="InfoUrl">Info URL</string>
+  <string Field="Source">Source</string>
+  <string Field="Aspectratio">Aspectratio</string>
+  <string Field="WatchedCount">Watched Count</string> 	
   <!-- Latest Media -->  
   <string Field="LatestMovies">Seneste film</string>
   <string Field="LatestEpisodes">Seneste serier</string>
+  <string Field="LatestMusic">Latest music</string>
+  <string Field="LatestRecordings">Latest recordings</string>
   <!-- Misc -->   
   <string Field="FanartScraping">Henter fanart</string>
   <string Field="ReturnListMovies">Tryk til venstre for at returnere til filmlisten</string> 
-  <string Field="ReturnListSeries">Tryk til venstre for at returnere til serielisten</string> 
+  <string Field="ReturnListSeries">Tryk til venstre for at returnere til serielisten</string>
+  <string Field="Watched">Watched</string>    
+  <string Field="UnWatched">UnWatched</string>
+  <string Field="SearchMusic">Search Music</string>
+  <string Field="SearchPhrase">Search Phrase</string>
+  <string Field="SearchHistory">Search History</string>
+  <string Field="SearchFields">Search Fields</string>
+  <string Field="SearchType">Search Type</string>
+  <string Field="CaseSensitive">Case Sensitive</string>
+  <string Field="Lastplayed">Lastplayed</string>
+  <string Field="Filename">Filename</string>
+  <string Field="Playcount">Playcount</string>  
 </strings>

@@ -59,7 +59,8 @@
   <string Field="ConfigRequiresRestartLine1">Die folgenden Einstellungsänderungen werden</string>
   <string Field="ConfigRequiresRestartLine2">nach einem Neustart von Mediaportal sichtbar.</string>
   <string Field="ConfigRequiresRestartLine3">Möchten Sie Mediaportal jetzt neustarten?</string>
-  <string Field="UseLargeFonts">Größere Schrift</string>  
+  <string Field="UseLargeFonts">Größere Schrift</string>
+  <string Field="TrailerSite">Trailer Suchseite auswählen</string>  
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Laufzeit</string>
   <string Field="ReleaseDate">Veröffentlicht</string>

@@ -172,7 +172,7 @@ This file should contain the details view
 		<width>58</width>
 		<height>59</height>
 		<hyperlink>4755</hyperlink>
-		<hyperlinkParameter>site:IMDb Movie Trailers|search:#MovingPictures.SelectedMovie.title|return:Locked</hyperlinkParameter>
+		<hyperlinkParameter>site:#Avalon.TrailerSite|search:#MovingPictures.SelectedMovie.title|return:Locked</hyperlinkParameter>
 		<textureFocus>movie_details_trailer_focus.png</textureFocus>
 		<textureNoFocus>movie_details_trailer_nofocus.png</textureNoFocus>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>

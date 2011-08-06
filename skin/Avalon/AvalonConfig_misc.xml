@@ -153,6 +153,24 @@
         <onleft>10011</onleft>
         <onright>4</onright>
         <onup>7</onup>
+        <ondown>8</ondown>
+		<width>956</width>
+		<height>52</height>
+		<textXOff>30</textXOff>
+		<textYOff>8</textYOff>
+		<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		<textureFocus>settings_button_large_focus.png</textureFocus>
+		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+      </control>
+      <control>
+        <description>Transparency/Opacity Settings</description>
+        <type>button</type>
+        <id>8</id>
+		<posX>736</posX>
+		<posY>736</posY>
+        <onleft>10011</onleft>
+        <onright>4</onright>
+        <onup>6</onup>
         <ondown>2</ondown>
 		<width>956</width>
 		<height>52</height>
