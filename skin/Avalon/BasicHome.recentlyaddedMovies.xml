@@ -53,7 +53,7 @@
         <posX>1266</posX>
         <posY>680</posY>
         <width>500</width>
-        <label>#fanarthandler.movingpicture.latest1.runtime min - #fanarthandler.movingpicture.latest1.year - #fanarthandler.movingpicture.latest1.genre</label>
+        <label>#fanarthandler.movingpicture.latest1.runtime - #fanarthandler.movingpicture.latest1.year - #fanarthandler.movingpicture.latest1.genre</label>
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -108,7 +108,7 @@
         <posX>1266</posX>
         <posY>680</posY>
         <width>500</width>
-        <label>#fanarthandler.movingpicture.latest2.runtime min - #fanarthandler.movingpicture.latest2.year - #fanarthandler.movingpicture.latest2.genre</label>
+        <label>#fanarthandler.movingpicture.latest2.runtime - #fanarthandler.movingpicture.latest2.year - #fanarthandler.movingpicture.latest2.genre</label>
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -163,7 +163,7 @@
         <posX>1266</posX>
         <posY>680</posY>
         <width>500</width>
-        <label>#fanarthandler.movingpicture.latest3.runtime min - #fanarthandler.movingpicture.latest3.year - #fanarthandler.movingpicture.latest3.genre</label>
+        <label>#fanarthandler.movingpicture.latest3.runtime - #fanarthandler.movingpicture.latest3.year - #fanarthandler.movingpicture.latest3.genre</label>
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -223,7 +223,7 @@
 		<posY>627</posY>
 		<width>185</width>
 		<height>29</height>
-        <label>#fanarthandler.movingpicture.latest1.runtime min</label>
+        <label>#fanarthandler.movingpicture.latest1.runtime</label>
         <textcolor>6aa5cb</textcolor>
         <align>right</align>
       </control> 
@@ -246,7 +246,7 @@
 		<posY>666</posY>
 		<width>185</width>
 		<height>29</height>
-        <label>#fanarthandler.movingpicture.latest2.runtime min</label>
+        <label>#fanarthandler.movingpicture.latest2.runtime</label>
         <textcolor>6aa5cb</textcolor>
         <align>right</align>
       </control> 
@@ -269,7 +269,7 @@
 		<posY>705</posY>
 		<width>185</width>
 		<height>29</height>
-        <label>#fanarthandler.movingpicture.latest3.runtime min</label>
+        <label>#fanarthandler.movingpicture.latest3.runtime</label>
         <textcolor>6aa5cb</textcolor>
         <align>right</align>
       </control> 	  
