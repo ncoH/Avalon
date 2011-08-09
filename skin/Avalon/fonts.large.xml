@@ -79,9 +79,9 @@
 </font>
 
 <font>
-	<name>fontB32</name>
+	<name>fontB26</name>
 	<filename>AvalonType Bold</filename>
-	<height>32</height>
+	<height>26</height>
 	<start>0</start>
 	<end>1536</end>
 	<bold>yes</bold>
