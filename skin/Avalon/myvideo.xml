@@ -1,125 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>6</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
-<define>#header.label:#selecteditem</define>
-<define>#useSelectedFanart:Yes</define>
-
-<controls>
-	<import>common.window.video.xml</import>
-	
-	
-	<control>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<type>label</type>
-		<id>1</id>
-		<posX>185</posX>
-		<posY>38</posY>
-		<width>500</width>
-		<label>3</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>font22</font>
-		<visible>facadeview.list | facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
-	</control>
-	
-<import>common.time.xml</import>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-		<description>Poster shadow</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>695</posX>
-		<posY>101</posY>
-		<width>466</width>
-		<height>606</height>
-		<texture>list_poster_shadow.png</texture>
-		<visible>facadeview.list</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-		<description>Poster shadow</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>695</posX>
-		<posY>101</posY>
-		<width>466</width>
-		<height>606</height>
-		<texture>list_poster_glow.png</texture>
-		<visible>facadeview.list</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<id>0</id>
-		<type>image</type>
-		<posX>762</posX>
-		<posY>169</posY>
-		<width>330</width>
-		<height>470</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">defaultFolderBig.png</texture>
-		<visible>facadeview.list+!control.hasthumb(500)+!string.contains(#selecteditem, ..)</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<id>0</id>
-		<type>image</type>
-		<posX>762</posX>
-		<posY>169</posY>
-		<width>330</width>
-		<height>470</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">DefaultFolderBackBig.png</texture>
-		<visible>facadeview.list+string.contains(#selecteditem, ..)</visible>
-	</control>
-
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<id>500</id>
-		<type>image</type>
-		<posX>762</posX>
-		<posY>169</posY>
-		<width>330</width>
-		<height>470</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#selectedthumb</texture>
-		<visible>facadeview.list</visible>
-	</control>
-	
-	<control>
-		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
-		<id>1</id>
-		<type>image</type>
-		<posY>440</posY>
-		<width>64</width>
-		<height>199</height>
-		<texture>hiddenmenu_tab.png</texture>
-		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
-	</control>
-
-	<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>858</posX>
-		<posY>0</posY>
-		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
-		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
-	</control>
-	
-<import>common.facade.video.xml</import>
-<import>common.overlay.xml</import>
-<import>myvideo.hiddenmenu.xml</import>
-</controls>
+  <id>6</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:#selecteditem</define>
+  <define>#useSelectedFanart:Yes</define>
+  <controls>
+    <!--            :: DUMMY ::            -->
+    <control>
+      <description>Selected item Label</description>
+      <type>label</type>
+      <id>7773</id>
+      <posX>-2000</posX>
+      <posY>100</posY>
+      <label>#title</label>
+      <visible>control.hastext(7773)</visible>
+    </control>
+    <control>
+      <description>dummy poster control</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>-2000</posX>
+      <posY>-2000</posY>
+      <label>#Avalon.EnablePosterHide</label>
+    </control>
+    <!--            :: DEFAULT BACKGROUND ::            -->
+    <control>
+      <description>DEFAULT BACKGROUND</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+      <shouldCache>true</shouldCache>
+    </control>
+    <import>common.fanart.selected.xml</import>
+    <!--            :: HEADER ::            -->
+    <control>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <type>label</type>
+      <id>1</id>
+      <posX>185</posX>
+      <posY>38</posY>
+      <width>500</width>
+      <label>3</label>
+      <textcolor>6aa5cb</textcolor>
+      <font>font22</font>
+      <visible>facadeview.list | facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
+    </control>
+    <!--            :: IMPORT ::            -->
+    <import tag="Background">myvideo.background.default.xml</import>
+    <import>common.time.xml</import>
+    <import>myvideo.hiddenmenu.xml</import>
+    <import tag="Views">myvideo.views.default.xml</import>
+    <import tag="Facade">common.facade.video.default.xml</import>
+    <import>myvideoTitle.Info.xml</import>
+    <import>common.overlay.xml</import>
+  </controls>
 </window>

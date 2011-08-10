@@ -108,6 +108,16 @@
         <onleft>52</onleft>
         <onright>52</onright>
         <onup>51</onup>
+        <ondown>56</ondown>
+      </control>
+      <control>
+        <description>Video Settings</description>
+        <type>button</type>
+        <id>56</id>
+	    <label>-</label>
+        <onleft>53</onleft>
+        <onright>53</onright>
+        <onup>52</onup>
         <ondown>55</ondown>
       </control>
       <control>
@@ -117,7 +127,7 @@
 	    <label>-</label>
         <onleft>55</onleft>
         <onright>55</onright>
-        <onup>52</onup>
+        <onup>56</onup>
         <ondown>53</ondown>
       </control>
       <control>

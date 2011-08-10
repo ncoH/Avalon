@@ -60,10 +60,9 @@
             <visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
             <posX>69</posX>
             <posY>215</posY>
-            <width>220</width>
-            <height>720</height>
-            <layout>StackLayout(0, Vertical, true)</layout>		
-			<control>
+            <layout>StackLayout(0, Vertical, true)</layout>	
+			
+            <control>
 				<description>Toggle View</description>
 				<type>button</type>
 				<id>2</id>

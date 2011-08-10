@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+<controls>
+
+	<!--            :: LIST / THUMBVIEW ::            -->
+	
+	<control Style="smallTitle">
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>714</posX>
+		<posY>810</posY>
+		<label>#selecteditem</label>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+control.isvisible(50)</visible>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+	</control>
+	
+	<control>
+		<description>Poster shadow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>695</posX>
+		<posY>101</posY>
+		<width>466</width>
+		<height>606</height>
+		<texture>list_poster_shadow.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+	</control>
+	
+	<control>
+		<description>Poster shadow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>695</posX>
+		<posY>101</posY>
+		<width>466</width>
+		<height>606</height>
+		<texture>list_poster_glow.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<id>0</id>
+		<type>image</type>
+		<posX>762</posX>
+		<posY>169</posY>
+		<width>330</width>
+		<height>470</height>
+		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">DefaultFolderBackBig.png</texture>
+		<visible>facadeview.list+string.contains(#selecteditem, ..)</visible>
+	</control>
+    
+	<control>
+		<description>Default Cover Art</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>762</posX>
+		<posY>169</posY>
+		<width>330</width>
+		<height>470</height>
+		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">defaultVideoBig.png</texture>
+		<visible>facadeview.list + Control.IsVisible(50) + !Control.HasThumb(60) + !string.contains(#selecteditem, ..) + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+	</control>
+
+	<control>
+		<description>Cover Art</description>
+		<type>image</type>
+		<id>60</id>
+		<posX>762</posX>
+		<posY>169</posY>
+		<width>330</width>
+		<height>470</height>
+		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#selectedthumb</texture>
+		<visible>facadeview.list+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+	</control>
+    
+    
+	<!--            :: INFO LABELS ::            -->
+    
+	
+	<control Style="InfoLabel">
+		<description>Release Date Label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>714</posX>
+		<posY>872</posY>
+		<label>#Avalon.ReleaseDate</label>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+	</control>
+
+	<control Style="InfoValueSmall">
+		<description>Release Date Value</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>882</posX>
+		<posY>872</posY>
+		<label>#(iif(neq(#year,'1900'),#year,'N/A'))</label>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+
+	<control Style="InfoLabel">
+		<description>Runtime Label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>714</posX>
+		<posY>912</posY>
+		<label>#Avalon.Runtime</label>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+	
+	<control Style="InfoValueSmall">
+		<description>Runtime Value</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>882</posX>
+		<posY>912</posY>
+		<label>#(iif(neq(#runtime,'0'),'#runtime min','N/A'))</label>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+	
+	<control Style="InfoLabel">
+		<description>Genre Label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>714</posX>
+		<posY>952</posY>
+		<label>135</label>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+	
+	<control Style="InfoValueSmall">
+		<description>Genre Value</description>
+		<type>fadelabel</type>
+		<id>0</id>
+		<posX>882</posX>
+		<posY>952</posY>
+		<label>#(iif(neq(#genre,''),#genre,'N/A'))</label>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+	
+	<control Style="InfoLabel">
+		<description>Director Label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>714</posX>
+		<posY>990</posY>
+		<label>#(string.rtrim(L(199),':'))</label>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+	
+	<control Style="InfoValueSmall">
+		<description>Director Value</description>
+		<type>fadelabel</type>
+		<id>0</id>
+		<posX>882</posX>
+		<posY>990</posY>
+		<label>#(iif(neq(#director,''),#director,'N/A'))</label>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+	
+	<control>
+		<description>Summary (list)</description>
+		<type>textboxscrollup</type>
+		<id>1025</id>
+		<posX>1175</posX>
+		<posY>872</posY>
+		<width>725</width>
+		<height>160</height>
+		<label>#plot</label>
+		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
+		<onleft>1026</onleft>
+		<onright>1026</onright>
+		<onup>1026</onup>
+		<ondown>1026</ondown>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+	</control>
+    
+	<control>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>710</posX>
+		<posY>726</posY>
+		<width>185</width>
+		<height>29</height>
+		<textureWidth>32</textureWidth>
+		<textureHeight>27</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#rating</percentage>
+		<visible>[facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+	</control>
+	
+    <control>
+        <description>New Overlay</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>761</posX>
+        <posY>167</posY>
+        <width>331</width>
+        <height>48</height>
+        <texture>new_overlay.png</texture>
+        <visible>facadeview.list + Control.IsVisible(50) + string.equals(#iswatched,no) + Control.HasThumb(60) + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+    </control>
+	
+    <control>
+        <description>Unwatched label</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>925</posX>
+        <posY>192</posY>
+        <align>center</align>
+        <label>#Avalon.UnWatched</label>
+		<font>fontB12</font>
+		<textcolor>FFFFFFFF</textcolor>
+        <shadowAngle>120</shadowAngle>
+        <shadowDistance>1</shadowDistance>
+        <shadowColor>FF000000</shadowColor>
+        <visible>facadeview.list + Control.IsVisible(50) + string.equals(#iswatched,no) + Control.HasThumb(60) + !string.equals(#Avalon.hidePoster,yes)</visible>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+    </control>
+    	
+</controls>
+</window>

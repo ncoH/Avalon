@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>
+
+
+	<!--            :: Fanart ::            -->	
+		
+	<control>
+		<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+		<type>label</type>
+		<id>91919291</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1</width>
+	</control>
+
+	<control>
+		<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+		<type>label</type>
+		<id>91919292</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1</width>
+	</control>
+
+	<control>
+		<description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
+		<type>label</type>
+		<id>91919293</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1</width>
+		<visible>no</visible>
+	</control>	
+		
+	<control>
+		<description>FANART BACKGROUND</description>
+		<id>897689</id>
+	   	<type>image</type>
+        <posX>0</posX>
+        <posY>120</posY>
+        <width>1312</width>
+        <height>738</height>
+		<texture>#fanarthandler.movie.backdrop1.selected</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + [control.isvisible(91919291)+control.isvisible(91919293)]</visible>
+        <animation effect="fade" time="300">visible</animation>
+        <animation effect="fade" time="300" delay="300">hidden</animation>
+        <animation effect="fade" time="0">WindowClose</animation>
+        <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	</control>
+
+	<control>
+		<description>FANART BACKGROUND</description>
+		<id>897688</id>
+		<type>image</type>
+        <posX>0</posX>
+        <posY>120</posY>
+        <width>1312</width>
+        <height>738</height>
+		<texture>#fanarthandler.movie.backdrop2.selected</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + [control.isvisible(91919292)+control.isvisible(91919293)]</visible>
+        <animation effect="fade" time="300">visible</animation>
+        <animation effect="fade" time="300" delay="300">hidden</animation>
+        <animation effect="fade" time="0">WindowClose</animation>
+        <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	</control>
+	
+ 	<control>
+		<description>FANART BACKGROUND 1 (filmstrip)</description>
+		<id>897686</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<keepaspectratio>no</keepaspectratio>
+		<centered>yes</centered>
+		<zoom>yes</zoom>
+		<texture>#fanarthandler.movie.backdrop1.selected</texture>  
+		<visible>[facadeview.filmstrip|facadeview.coverflow] + [control.isvisible(91919291)+control.isvisible(91919293)]</visible>	
+		  <animation effect="fade" time="300">visible</animation>
+		  <animation effect="fade" time="300" delay="300">hidden</animation>
+		  <animation effect="fade" time="0">WindowClose</animation>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	</control>
+
+	<control>
+		<description>FANART BACKGROUND 2 (filmstrip)</description>
+		<id>897687</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<keepaspectratio>no</keepaspectratio>
+		<centered>yes</centered>
+		<zoom>yes</zoom>
+		<texture>#fanarthandler.movie.backdrop2.selected</texture>  
+		<visible>[facadeview.filmstrip|facadeview.coverflow] + [control.isvisible(91919292)+control.isvisible(91919293)]</visible>
+    	  <animation effect="fade" time="300">visible</animation>
+		  <animation effect="fade" time="300" delay="300">hidden</animation>
+		  <animation effect="fade" time="0">WindowClose</animation>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	</control>	
+    
+	<control>
+		<description>NO FANART BACKGROUND</description>
+		<id>0</id>
+		<type>image</type>
+        <posX>0</posX>
+        <posY>120</posY>
+        <width>1312</width>
+        <height>738</height>
+		<texture>hover_my videos.png</texture>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + !control.isvisible(919192923)</visible>
+        <animation effect="fade" time="300">visible</animation>
+        <animation effect="fade" time="300" delay="300">hidden</animation>
+        <animation effect="fade" time="0">WindowClose</animation>
+        <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	</control>
+    
+	<control>
+		<description>NO FANART BACKGROUND</description>
+		<id>0</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<keepaspectratio>no</keepaspectratio>
+		<centered>yes</centered>
+		<zoom>yes</zoom>
+		<texture>hover_my videos.png</texture>
+		<visible>[facadeview.filmstrip|facadeview.coverflow] + !control.isvisible(919192923)</visible>
+        <animation effect="fade" time="300">visible</animation>
+        <animation effect="fade" time="300" delay="300">hidden</animation>
+        <animation effect="fade" time="0">WindowClose</animation>
+        <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	</control>
+</controls>
+</window>

@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <controls>
+
+	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+		<id>1</id>
+		<type>image</type>
+		<posY>440</posY>
+		<width>64</width>
+		<height>199</height>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
+	</control>
+
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>858</posX>
+		<posY>0</posY>
+		<texture>hiddenmenu_tab_up.png</texture>
+		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
+		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+	</control>
+
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
@@ -50,7 +74,14 @@
 			<label>924</label>
 			<font>font22</font>
 			<textcolor>ffffff</textcolor>
-		</control>	
+		</control>
+          <control>
+            <type>group</type>
+            <description>group element</description>
+            <visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+            <posX>69</posX>
+            <posY>215</posY>
+            <layout>StackLayout(0, Vertical, true)</layout>			
 			
 			<control>
 				<description>View-As</description>
@@ -59,16 +90,12 @@
 				<label>100</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>215</posY>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
 				<onright>50</onright>
 				<onleft>50</onleft>
-				<onup>10</onup>
-				<ondown>3</ondown>
 			</control>
 
 			<control>
@@ -78,8 +105,6 @@
 				<label>103</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>285</posY>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
@@ -88,8 +113,6 @@
 				<offsetSortButtonY>27</offsetSortButtonY>
 				<onright>50</onright>
 				<onleft>50</onleft>
-				<onup>2</onup>
-				<ondown>5</ondown>
 			</control>
 
 			<control>
@@ -99,16 +122,12 @@
 				<label>457</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>355</posY>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
 				<onright>50</onright>
 				<onleft>50</onleft>
-				<onup>3</onup>
-				<ondown>6</ondown>
 			</control>
 
 			<control>
@@ -118,16 +137,12 @@
 				<label>341</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>425</posY>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
 				<onright>50</onright>
 				<onleft>50</onleft>
-				<onup>5</onup>
-				<ondown>7</ondown>
 			</control>
 
 			<control>
@@ -137,8 +152,6 @@
 				<label>654</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>495</posY>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
@@ -146,8 +159,6 @@
 				<action>100</action>
 				<onright>50</onright>
 				<onleft>50</onleft>
-				<onup>6</onup>
-				<ondown>20</ondown>
 			</control>
 
 			<control>
@@ -157,8 +168,6 @@
 				<label>4555</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>565</posY>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
@@ -166,8 +175,6 @@
 				<action>33</action>
 				<onright>50</onright>
 				<onleft>50</onleft>
-				<onup>7</onup>
-				<ondown>9</ondown>
 			</control>
 
 			<control>
@@ -177,8 +184,6 @@
 				<label>983</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>635</posY>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
@@ -186,6 +191,24 @@
 				<onright>50</onright>
 				<onleft>50</onleft>
 				<onup>20</onup>
+				<ondown>66612</ondown>
+			</control>
+
+			<control>
+				<description>Skin Settings</description>
+				<type>button</type>
+				<id>66612</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+				<label>#Avalon.SkinSettings</label>
+				<hyperlink>155101</hyperlink>
+				<onleft>50</onleft>
+                <onright>50</onright>
+				<onup>9</onup>
 				<ondown>10</ondown>
 			</control>
 
@@ -206,11 +229,11 @@
 				<hyperlinkParameter>site:#Avalon.TrailerSite|search:#selecteditem|return:Locked</hyperlinkParameter>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>66611</onup>
+				<onup>66612</onup>
 				<ondown>2</ondown>    
 			</control>	
-
-		</control>
+        </control>
+        </control>
 </control>
 </controls>
 </window>

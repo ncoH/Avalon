@@ -104,46 +104,41 @@
 				<width>1800</width>
 				<height>600</height>
 				<onleft>2</onleft>
-				<onright>50</onright>
-          
-			  <imageFolder>-</imageFolder>          
-			  <imageFolderFocus>-</imageFolderFocus>  
-			  <showFrame>true</showFrame>          
-			  <dimColor>90ffffff</dimColor>
-          
-			<enableFocusZoom>no</enableFocusZoom>                    
-			<zoomXPixels>60</zoomXPixels>
-			<zoomYPixels>40</zoomYPixels>          
-			<hideUnfocusTexture>no</hideUnfocusTexture>          
-			<renderFocusText>no</renderFocusText>
-			<renderUnfocusText>no</renderUnfocusText>                    
-			<thumbZoom>yes</thumbZoom>
-			<frameNoFocus>onlinevideos_thumb_nofocus.png</frameNoFocus>
-			<frameFocus>onlinevideos_thumb_focus.png</frameFocus>
-			<textureMask>onlinevideos_thumb_mask.png</textureMask>
-          
-          <!-- smallicons -->
-			<itemWidth>245</itemWidth>
-			<itemHeight>129</itemHeight>
-			<textureWidth>245</textureWidth>
-			<textureHeight>129</textureHeight>
-			<thumbWidth>245</thumbWidth>
-			<thumbHeight>129</thumbHeight>
-			<thumbPosX>0</thumbPosX>
-			<thumbPosY>0</thumbPosY>
-          
-          <!-- largeicons -->
-			<itemWidthBig>292</itemWidthBig>
-			<itemHeightBig>171</itemHeightBig>
-			<textureWidthBig>292</textureWidthBig>
-			<textureHeightBig>171</textureHeightBig>
-			<thumbWidthBig>292</thumbWidthBig>
-			<thumbHeightBig>171</thumbHeightBig>
-			<thumbPosXBig>0</thumbPosXBig>
-			<thumbPosYBig>0</thumbPosYBig>
-            <spinPosX>1832</spinPosX>
-            <spinPosY>730</spinPosY>       
-        </control>        
+				<onright>50</onright>       
+			    <imageFolder>-</imageFolder>          
+			    <imageFolderFocus>-</imageFolderFocus>  
+			    <showFrame>true</showFrame>          
+			    <dimColor>90ffffff</dimColor> 
+			    <enableFocusZoom>no</enableFocusZoom>                    
+			    <zoomXPixels>60</zoomXPixels>
+			    <zoomYPixels>40</zoomYPixels>          
+			    <hideUnfocusTexture>no</hideUnfocusTexture>          
+		      	<renderFocusText>no</renderFocusText>
+			    <renderUnfocusText>no</renderUnfocusText>                    
+			    <thumbZoom>no</thumbZoom>
+			    <frameNoFocus>onlinevideos_thumb_nofocus.png</frameNoFocus>
+		      	<frameFocus>onlinevideos_thumb_focus.png</frameFocus>
+		      	<textureMask>onlinevideos_thumb_mask.png</textureMask>
+			    <itemWidth>245</itemWidth>
+			    <itemHeight>129</itemHeight>
+			    <textureWidth>245</textureWidth>
+			    <textureHeight>129</textureHeight>
+			    <thumbWidth>245</thumbWidth>
+			    <thumbHeight>129</thumbHeight>
+			    <thumbPosX>0</thumbPosX>
+			    <thumbPosY>0</thumbPosY>
+			    <itemWidthBig>292</itemWidthBig>
+			    <itemHeightBig>171</itemHeightBig>
+			    <textureWidthBig>292</textureWidthBig>
+			    <textureHeightBig>171</textureHeightBig>
+    			<thumbWidthBig>292</thumbWidthBig>
+    			<thumbHeightBig>171</thumbHeightBig>
+    			<thumbPosXBig>0</thumbPosXBig>
+    			<thumbPosYBig>0</thumbPosYBig>
+                <spinPosX>1832</spinPosX>
+                <spinPosY>730</spinPosY>
+                <keepaspectratio>yes</keepaspectratio>       
+            </control>        
       </control>
     </control>
   </controls>
