@@ -8,11 +8,12 @@
 			<description>Selected Index Label</description>
 			<type>label</type>
 			<id>10</id>
-			<posX>1850</posX>
-			<posY>45</posY>
+    		<posX>766</posX>
+    		<posY>375</posY>
 			<width>1220</width>
-			<align>right</align>
 			<label></label>
+     		<textcolor>6aa5cb</textcolor>
+    		<font>fontB14</font>
 			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
 		</control>
 		<control>
