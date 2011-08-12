@@ -398,7 +398,7 @@
 		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<label>#TVSeries.Episode.Aired - #TVSeries.Series.InfoPanelLine4Value - #TVSeries.Series.InfoPanelLine3Value</label>
+		<label>#TVSeries.Episode.Aired - #TVSeries.Episode.InfoPanelLine10Value - #TVSeries.Series.InfoPanelLine3Value</label>
 		<visible>[Control.IsVisible(1239)+facadeview.list]+!Control.HasFocus(80)</visible>
     </control>
 
