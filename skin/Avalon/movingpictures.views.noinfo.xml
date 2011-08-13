@@ -157,6 +157,7 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
     </control>
 	
+    <control>
         <description>Unwatched label</description>
         <type>label</type>
         <id>0</id>
@@ -170,25 +171,11 @@
         <shadowDistance>1</shadowDistance>
         <shadowColor>FF000000</shadowColor>
         <visible>facadeview.list + Control.IsVisible(50) + !Control.IsVisible(9) + Control.HasThumb(60) + !string.equals(#Avalon.hidePoster,yes)</visible>
-    <control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
     </control>
-	
-	<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>0</posX>
-		<posY>440</posY>
-		<width>64</width>
-		<height>199</height>
-		<texture>hiddenmenu_tab.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
-		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
-	</control>
 	
 	<!--            :: THUMBVIEW ::            -->
 	
@@ -274,15 +261,5 @@
 		<animation effect="fade" time="450" reversible="false">visible</animation>
 	</control>
 	
-	<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>858</posX>
-		<posY>0</posY>
-		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
-		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
-	</control>	
 </controls>
 </window>

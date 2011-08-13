@@ -121,7 +121,7 @@ This file should contain the facade view
 			<description>Movie List</description>
 			<type>listcontrol</type>
 			<id>50</id>
-			<onleft>2</onleft>
+			<onleft>3</onleft>
 			<onright>80</onright>
 			<scrollOffset>1</scrollOffset>
 			<posX>1166</posX>
@@ -148,8 +148,8 @@ This file should contain the facade view
 				<posY>520</posY>
 				<width>1920</width>
 				<height>768</height>
-				<onup>2</onup>
-				<ondown>2</ondown>
+				<onup>3</onup>
+				<ondown>3</ondown>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<thumbWidth>230</thumbWidth>
@@ -190,8 +190,8 @@ This file should contain the facade view
 				<height>800</height>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<onleft>2</onleft>
-				<onright>2</onright>
+				<onleft>3</onleft>
+				<onright>3</onright>
 				<itemWidth>157</itemWidth>
 				<itemHeight>215</itemHeight>
 				<textureWidth>157</textureWidth>
@@ -231,8 +231,8 @@ This file should contain the facade view
 				  <colordiffuse>90ffffff</colordiffuse>
 				  <dimColor>90ffffff</dimColor>
 				  <id>50</id>
-				  <onup>2</onup>
-				  <ondown>2</ondown>
+				  <onup>3</onup>
+				  <ondown>3</ondown>
 				  <onleft>50</onleft>
 				  <onright>50</onright>	  
 				  <posX>0</posX>
