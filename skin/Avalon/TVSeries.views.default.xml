@@ -266,7 +266,7 @@
 			
 	<control Style="InfoValueSmall">
 		<description>Rating Value (Episode)</description>
-		<type>label</type>
+		<type>fadelabel</type>
 		<label>#TVSeries.Series.InfoPanelLine1Value/10 #TVSeries.Series.InfoPanelLine9Value</label>
 		<id>0</id>
 		<posX>882</posX>
@@ -478,7 +478,7 @@
 			
 	<control Style="InfoValueSmall">
 		<description>Rating Value (Episode)</description>
-		<type>label</type>
+		<type>fadelabel</type>
 		<label>#TVSeries.Episode.InfoPanelLine1Value/10 #TVSeries.Episode.InfoPanelLine8Value</label>
 		<id>0</id>
 		<posX>882</posX>
