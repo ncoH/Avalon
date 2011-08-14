@@ -176,8 +176,8 @@
         			<description>Movie List</description>
         			<type>listcontrol</type>
         			<id>50</id>
-        			<onleft>2</onleft>
-        			<onright>2</onright>
+        			<onleft>50</onleft>
+        			<onright>50</onright>
         			<scrollOffset>1</scrollOffset>
         			<posX>1166</posX>
         			<posY>164</posY>

@@ -51,6 +51,7 @@
 				<hyperlink>87259</hyperlink>
 				<onup>9996</onup>
 				<onleft>#defaultcontrol</onleft>
+                <onup>9996</onup>
 			</control>
 			<control>
 				<description>Friends</description>
@@ -91,6 +92,7 @@
 				<label>#Trakt.Translation.Settings.Label</label>
 				<hyperlink>87271</hyperlink>
 				<onleft>#defaultcontrol</onleft>
+                <ondown>9991</ondown>
 			</control>
 		</control>
 	</controls>

@@ -31,6 +31,10 @@
           <texture>hover_trakt.png</texture>
           <shouldCache>true</shouldCache>
           <visible>[facadeview.filmstrip|facadeview.coverflow]+!control.hasthumb(60)+!control.hasthumb(61)</visible>
+          <animation effect="fade" time="300">visible</animation>
+          <animation effect="fade" time="300" delay="300">hidden</animation>
+          <animation effect="fade" time="0">WindowClose</animation>
+          <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         </control>
         <control>
           <description>default backdrop</description>
@@ -43,6 +47,10 @@
           <texture>hover_trakt.png</texture>
           <shouldCache>true</shouldCache>
           <visible>[!facadeview.filmstrip+!facadeview.coverflow]+!control.hasthumb(60)+!control.hasthumb(61)</visible>
+          <animation effect="fade" time="300">visible</animation>
+          <animation effect="fade" time="300" delay="300">hidden</animation>
+          <animation effect="fade" time="0">WindowClose</animation>
+          <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         </control>
         <control>
           <description>Fanart Background #1</description>

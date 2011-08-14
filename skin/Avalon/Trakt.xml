@@ -5,26 +5,9 @@
 	<allowoverlay>no</allowoverlay>
 	<define>#header.label:Trakt</define>
 	<controls>
-    <!--            :: BACKGROUNDS ::           	 -->
-    
-	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1920</width>
-		<height>1080</height>
-	</control>
-	<control>
-		<description>viewport list</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>0</posX>
-		<posY>92</posY>
-		<width>1893</width>
-		<height>795</height>
-		<texture>viewport_settings.png</texture>
-	</control>
 	
+    <import>Trakt.Common.Background.xml</import>
+    
 	<control>
 		<type>label</type>
 		<description>Settings label</description>
@@ -35,6 +18,8 @@
 		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>font22</font>
+        <animation effect="fade" time="250">WindowOpen</animation>
+        <animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
 <import>common.time.xml</import>
@@ -44,13 +29,19 @@
     		<type>group</type>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<posX>130</posX>
-    		<posY>262</posY>
+    		<posX>1166</posX>
+    		<posY>153</posY>
 			<layout>StackLayout(0, Vertical, true)</layout>
 			<control>
 				<description>Calendar</description>
 				<type>button</type>
 				<id>10</id>
+                <textXOff>50</textXOff>
+                <textYOff>10</textYOff>
+        		<height>55</height>
+	           	<width>684</width>
+        		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>
 				<label>#Trakt.Translation.Calendar.Label</label>
 				<hyperlink>87259</hyperlink>
 				<onup>15</onup>
@@ -59,6 +50,12 @@
 				<description>Friends</description>
 				<type>button</type>
 				<id>11</id>
+                <textXOff>50</textXOff>
+                <textYOff>8</textYOff>
+        		<height>55</height>
+	           	<width>684</width>
+        		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>
 				<hyperlink>87260</hyperlink>
 				<label>#Trakt.Translation.Friends.Label</label>
 			</control>
@@ -66,6 +63,12 @@
 				<description>Recommendations</description>
 				<type>button</type>
 				<id>12</id>
+                <textXOff>50</textXOff>
+                <textYOff>8</textYOff>
+        		<height>55</height>
+	           	<width>684</width>
+        		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>
 				<hyperlink>87261</hyperlink>
 				<label>#Trakt.Translation.Recommendations.Label</label>
 			</control>
@@ -73,6 +76,12 @@
 				<description>Trending</description>
 				<type>button</type>
 				<id>13</id>
+                <textXOff>50</textXOff>
+                <textYOff>8</textYOff>
+        		<height>55</height>
+	           	<width>684</width>
+        		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>
 				<hyperlink>87264</hyperlink>
 				<label>#Trakt.Translation.Trending.Label</label>
 			</control>
@@ -80,6 +89,12 @@
 				<description>Watch List</description>
 				<type>button</type>
 				<id>14</id>
+                <textXOff>50</textXOff>
+                <textYOff>8</textYOff>
+        		<height>55</height>
+	           	<width>684</width>
+        		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>
 				<hyperlink>87267</hyperlink>
 				<label>#Trakt.Translation.WatchList.Label</label>
 			</control>
@@ -87,6 +102,12 @@
 				<description>Settings</description>
 				<type>button</type>
 				<id>15</id>
+                <textXOff>50</textXOff>
+                <textYOff>8</textYOff>
+        		<height>55</height>
+	           	<width>684</width>
+        		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>
 				<label>#Trakt.Translation.Settings.Label</label>
 				<hyperlink>87271</hyperlink>
 				<ondown>10</ondown>
