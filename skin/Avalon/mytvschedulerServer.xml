@@ -210,44 +210,30 @@
 				<type>listcontrol</type>
 				<id>10</id>
 				<posX>918</posX>
-				<posY>279</posY>
-				<height>700</height>
+				<posY>160</posY>
+				<height>800</height>
 				<width>919</width>
 				<onleft>2</onleft>
 				<onright>5</onright>
 				<scrollOffset>1</scrollOffset>
-				<PinIconHeight>53</PinIconHeight>
-				<PinIconWidth>34</PinIconWidth>
-				<PinIconXOff>0</PinIconXOff>
-				<PinIconYOff>0</PinIconYOff>
-				<itemWidth>64</itemWidth>
-				<itemHeight>53</itemHeight>
+				<PinIconHeight>44</PinIconHeight>
+				<PinIconWidth>45</PinIconWidth>
+				<PinIconXOff>5</PinIconXOff>
+				<PinIconYOff>8</PinIconYOff>
+				<itemWidth>44</itemWidth>
+				<itemHeight>45</itemHeight>
 				<textureFocus>listcontrol_item_selected_tv.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<IconXOff>45</IconXOff>
-				<IconYOff>0</IconYOff>				
-				<textXOff>40</textXOff>
+				<IconXOff>55</IconXOff>
+				<IconYOff>6</IconYOff>				
+				<textXOff>50</textXOff>
 				<keepaspectratio>yes</keepaspectratio>
                 <spinPosX>1832</spinPosX>
                 <spinPosY>950</spinPosY>
 			</control>
 
 	</control>
-	
-		<control>
-			<description>scheduled recordings label</description>
-			<type>label</type>
-			<id>1</id>
-			<posX>1030</posX>
-			<posY>168</posY>
-			<width>800</width>
-			<label>Scheduled recordings</label>
-			<textcolor>85cffe</textcolor>
-			<font>AvalonLight16</font>
-			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		</control>
-				
+					
 		<control>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
