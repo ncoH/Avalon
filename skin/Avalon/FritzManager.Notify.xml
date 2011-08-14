@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <description>New Messages label(focus of ID 66670)</description>
+      <type>label</type>
+      <id>0</id>
+      <width>300</width>
+      <height>40</height>
+      <posX>1170</posX>
+      <posY>143</posY>
+      <label>#FritzManager.NewMessages</label>
+      <align>right</align>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <visible>string.equals(#FritzManager.NewMessagesAvail,true)+plugin.isenabled(FritzManager)+Control.HasFocus(66670)</visible>
+      <animation effect="fade" time="700" start="0" end="100" delay="700">Visible</animation>
+    </control>
+    <control>
+      <description>New Messages label</description>
+      <type>label</type>
+      <id>0</id>
+      <width>300</width>
+      <height>40</height>
+      <posX>1170</posX>
+      <posY>143</posY>
+      <label>#FritzManager.NewMessages</label>
+      <align>right</align>
+      <textcolor>FFFFFFFF</textcolor>
+      <font>font12</font>
+      <visible>string.equals(#FritzManager.NewMessagesAvail,true)+plugin.isenabled(FritzManager)</visible>
+      <animation effect="fade" time="700" delay="1400">WindowOpen</animation>
+      <animation effect="fade" time="700" start="100" end="0" delay="2800">WindowOpen</animation>
+      <animation effect="fade" time="700" start="0" end="100" delay="1400">visible</animation>
+      <animation effect="fade" time="700" start="100" end="0" delay="2800">visible</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>New Messages button</description>
+      <type>button</type>
+      <id>66670</id>
+      <posX>1200</posX>
+      <posY>108</posY>
+      <width>60</width>
+      <height>60</height>
+      <hyperlink>464554871</hyperlink>
+      <textureFocus>DefaultInboxBig.png</textureFocus>
+      <textureNoFocus>DefaultInboxBig.png</textureNoFocus>
+      <visible>string.equals(#FritzManager.NewMessagesAvail,true)+plugin.isenabled(FritzManager)</visible>
+      <animation effect="zoom" start="30,30" end="150,150" time="700" tween="circle" ease="inout" reversible="false">WindowOpen</animation>
+      <animation effect="zoom" start="150,150" end="100,100" time="700" tween="circle" ease="inout" reversible="false" delay="700">WindowOpen</animation>
+      <animation effect="zoom" start="30,30" end="150,150" time="700" tween="circle" ease="inout" reversible="false">visible</animation>
+      <animation effect="zoom" start="150,150" end="100,100" time="700" tween="circle" ease="inout" reversible="false" delay="700">visible</animation>
+      <animation effect="zoom" start="100,100" end="120,120" time="700" tween="circle" ease="inout">focus</animation>
+      <animation effect="zoom" start="110,110" end="100,100" time="700" tween="back" ease="inout">unfocus</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+  </controls>
+</window>

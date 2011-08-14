@@ -80,7 +80,9 @@
                 <onright>4</onright>
                 <onup>4</onup>
                 <ondown>4</ondown>
-                <posX>-2000</posX>
+                <posX>200</posX>
+                <textureFocus>-</textureFocus>
+                <textureNoFocus>-</textureNoFocus>
             </control>
             <control>
                 <id>5</id>
