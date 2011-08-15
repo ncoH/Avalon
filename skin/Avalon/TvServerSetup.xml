@@ -14,7 +14,7 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<layout>GridLayout(2, 6, 52, 8, 1)</layout>
 		<posX>130</posX>
-		<posY>262</posY>
+		<posY>156</posY>
 		<control>
 			<type>button</type>
 			<id>24</id>
@@ -43,7 +43,7 @@
 		<description>Please specify the IP address or hostname</description>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>375</posY>
+		<posY>269</posY>
 		<label>6026</label>
  		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>

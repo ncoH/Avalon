@@ -78,7 +78,7 @@
 			<label>#Avalon.ReleaseDate</label>
 			<id>0</id>
 			<posX>586</posX>
-			<posY>360</posY>
+			<posY>254</posY>
 			<width>240</width>
 			<align>left</align>
 			<font>AvalonLight12</font>
@@ -93,7 +93,7 @@
 			<type>label</type>
 			<id>0</id>
 			<posX>838</posX>
-			<posY>360</posY>
+			<posY>254</posY>
 			<width>200</width>
 			<align>left</align>
 			<font>AvalonLight14</font>

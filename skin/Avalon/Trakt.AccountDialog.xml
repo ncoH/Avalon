@@ -9,7 +9,7 @@
 			<type>label</type>
 			<id>10</id>
     		<posX>766</posX>
-    		<posY>375</posY>
+    		<posY>269</posY>
 			<width>1220</width>
 			<label></label>
      		<textcolor>6aa5cb</textcolor>
@@ -31,7 +31,7 @@
 			<id>11</id>
 			<label></label>
     		<posX>736</posX>
-    		<posY>430</posY>
+    		<posY>324</posY>
     		<width>956</width>
     		<height>52</height>
     		<textXOff>300</textXOff>

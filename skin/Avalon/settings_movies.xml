@@ -12,7 +12,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>264</posY>
+		<posY>158</posY>
 		<width>500</width>
 		<label>3</label>
 		<textcolor>6aa5cb</textcolor>
@@ -25,7 +25,7 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<posX>736</posX>
-		<posY>360</posY>
+		<posY>254</posY>
 		<layout>GridLayout(1, 0, 1, 0, 1)</layout>
 		<control>
 			<description>MPEG-2 Video Codecs</description>

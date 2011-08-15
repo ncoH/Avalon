@@ -27,7 +27,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>264</posY>
+		<posY>158</posY>
 		<width>500</width>
 		<label>#(L(3))</label>
 		<textcolor>6aa5cb</textcolor>
@@ -40,7 +40,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>375</posY>
+		<posY>269</posY>
 		<width>500</width>
 		<label>#Avalon.SkinSettingsMovpicsLayout</label>
 		<textcolor>6aa5cb</textcolor>
@@ -53,7 +53,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>488</posY>
+		<posY>382</posY>
 		<width>500</width>
 		<label>#Avalon.SkinSettingsThumbview</label>
 		<textcolor>6aa5cb</textcolor>
@@ -68,7 +68,7 @@
         <id>2</id>
 		<label>#Avalon.SkinSettingsInfo</label>
 		<posX>736</posX>
-		<posY>430</posY>
+		<posY>324</posY>
         <onleft>10011</onleft>
         <onright>2</onright>
         <onup>2</onup>
@@ -89,7 +89,7 @@
         <type>button</type>
         <id>3</id>
 		<posX>736</posX>
-		<posY>540</posY>
+		<posY>434</posY>
         <onleft>10011</onleft>
         <onright>3</onright>
         <onup>2</onup>

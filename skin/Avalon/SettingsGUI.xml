@@ -13,7 +13,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>264</posY>
+		<posY>158</posY>
 		<width>1000</width>
 		<label>673</label>
 		<textcolor>6aa5cb</textcolor>
@@ -28,7 +28,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>736</posX>
-		<posY>360</posY>
+		<posY>254</posY>
 		<width>836</width>
 		<height>52</height>
 		<texture>settings_button_large_focus.png</texture>
@@ -41,7 +41,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>736</posX>
-		<posY>360</posY>
+		<posY>254</posY>
 		<width>836</width>
 		<height>52</height>
 		<texture>settings_button_large_nofocus.png</texture>

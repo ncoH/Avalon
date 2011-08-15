@@ -46,7 +46,7 @@
 				<description>button group</description>
 				<type>group</type>
 				<posX>130</posX>
-				<posY>262</posY>
+				<posY>156</posY>
 				<layout>StackLayout(0, Vertical, true)</layout>
 				<control>
 					<id>2</id>
@@ -74,7 +74,7 @@
 				<description>button group</description>
 				<type>group</type>
 				<posX>736</posX>
-				<posY>262</posY>
+				<posY>156</posY>
 				<layout>StackLayout(0, Vertical, true)</layout>
 				<control>
 					<id>101</id>

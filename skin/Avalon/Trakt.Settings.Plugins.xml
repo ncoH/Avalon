@@ -13,7 +13,7 @@
 			<type>group</type>
 			<description>group element</description>
     		<posX>736</posX>
-    		<posY>430</posY>
+    		<posY>218</posY>
 			<layout>StackLayout(0, Vertical, true)</layout>
 			<control>
 				<description>MP-TVSeries</description>
