@@ -49,7 +49,6 @@
 				<id>9991</id>
 				<label>#Trakt.Translation.Calendar.Label</label>
 				<hyperlink>87259</hyperlink>
-				<onup>9996</onup>
 				<onleft>#defaultcontrol</onleft>
                 <onup>9996</onup>
 			</control>
