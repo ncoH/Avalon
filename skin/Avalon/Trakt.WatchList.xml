@@ -72,6 +72,6 @@
             <ondown>2</ondown>
 		</control>
  </control>
-		<import>common.overlay.home.xml</import>
+		<import>common.overlay.xml</import>
 	</controls>
 </window>

@@ -82,6 +82,6 @@
         		<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
 			</control>
 		</control>
-		<import>common.overlay.home.xml</import>
+		<import>common.overlay.xml</import>
 	</controls>
 </window>
