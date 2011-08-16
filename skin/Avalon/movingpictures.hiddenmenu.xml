@@ -59,7 +59,7 @@
 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
 		</control>
 	
@@ -74,7 +74,7 @@
 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
 		</control>
 		<control>
@@ -88,7 +88,7 @@
 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
 		</control>
 		<control>
@@ -103,7 +103,7 @@
 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
     		</control>
 		<control>
@@ -118,7 +118,7 @@
  			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
 		</control>
 		<control>
@@ -133,7 +133,7 @@
  			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
 		</control>
           <control>
@@ -142,7 +142,7 @@
  			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
             <posX>69</posX>
             <posY>155</posY>

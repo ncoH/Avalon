@@ -32,7 +32,7 @@
 			<texture>menu_bg.png</texture>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
 		</control>
 	
@@ -46,7 +46,7 @@
 			<texture>hiddenmenu_separator.png</texture>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
 		</control>
 		<control>
@@ -59,7 +59,7 @@
 			<texture>hiddenmenu_separator.png</texture>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
 		</control>
 		<control>
@@ -73,7 +73,7 @@
 			<textcolor>ffffff</textcolor>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
     		</control>
 		<control>
@@ -87,7 +87,7 @@
 			<textcolor>ffffff</textcolor>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
 		</control>
 		<control>
@@ -101,7 +101,7 @@
 			<textcolor>ffffff</textcolor>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
 		</control>
           <control>
@@ -109,7 +109,7 @@
             <description>group element</description>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
             <posX>69</posX>
             <posY>155</posY>
