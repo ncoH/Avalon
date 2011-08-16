@@ -4,6 +4,79 @@
   <defaultcontrol>10</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
-    <import>common.dialog.xml</import>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <width>1280</width>
+      <height>720</height>
+      <texture>black.png</texture>
+      <colordiffuse>90ffffff</colordiffuse>
+      <animation effect="fade" time="200">windowopen</animation>
+      <animation effect="fade" time="200">windowclose</animation>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>375</posX>
+      <posY>228</posY>
+      <width>532</width>
+      <height>23</height>
+      <texture>dialogtop.png</texture>
+      <colordiffuse>eeffffff</colordiffuse>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>375</posX>
+      <posY>251</posY>
+      <width>532</width>
+      <height>180</height>
+      <texture>dialogmiddle.png</texture>
+      <colordiffuse>eeffffff</colordiffuse>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>375</posX>
+      <posY>430</posY>
+      <width>532</width>
+      <height>23</height>
+      <texture>dialogbottom.png</texture>
+      <colordiffuse>eeffffff</colordiffuse>
+    </control>
+    <control>
+      <description>dialog Heading</description>
+      <type>fadelabel</type>
+      <id>2</id>
+      <posX>405</posX>
+      <posY>250</posY>
+      <width>470</width>
+      <label>-</label>
+      <font>mediastream11tc</font>
+      <textcolor>White</textcolor>
+      <align>left</align>
+    </control>
+    <control>
+      <description>dialog line 1</description>
+      <type>fadelabel</type>
+      <id>3</id>
+      <posX>405</posX>
+      <posY>275</posY>
+      <label>-</label>
+      <width>470</width>
+      <font>mediastream11c</font>
+      <textcolor>White</textcolor>
+    </control>
+    <control>
+      <description>dialog line 2</description>
+      <type>fadelabel</type>
+      <id>4</id>
+      <posX>405</posX>
+      <posY>300</posY>
+      <label>-</label>
+      <width>470</width>
+      <font>mediastream11c</font>
+      <textcolor>White</textcolor>
+    </control>
   </controls>
 </window>

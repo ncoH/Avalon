@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>2901</id>
-<defaultcontrol>995</defaultcontrol>
+<defaultcontrol>1111</defaultcontrol>
 <allowoverlay>no</allowoverlay>
 <controls>
 
 	<control>
-		<description>Dummy for Info visible</description>
-		<type>image</type>
+		<description>Dummy Info Button</description>
+		<type>button</type>
 		<id>1111</id>
-		<posX>-2000</posX>
-		<posY>-2000</posY>
-		<width>20</width>
-		<height>20</height>
-		<texture>-</texture>
-		<visible>no</visible>
+		<posX>2000</posX>
+		<posY>10</posY>
+		<width>10</width>
+		<height>10</height>
+		<textureFocus>-</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+		<label>-</label>
+		<onleft>1111</onleft>
+		<onright>995</onright>
+		<onup>1111</onup>
+		<ondown>1111</ondown>
 	</control>
 	
 	<control>
@@ -133,7 +138,7 @@
 		<font>fontB22</font>
 		<textcolor>6aa5cb</textcolor>
 		<label>#Play.Current.Title</label>
-		<visible>Control.IsVisible(1111) + Control.HasFocus(995)</visible>
+		<visible>window.isosdvisible + Control.HasFocus(995)</visible>
 	</control>
 	
 	<control>
@@ -144,7 +149,8 @@
 		<posY>264</posY>
 		<width>1295</width>
 		<height>320</height>
-	<visible>Control.IsVisible(1111) + Control.HasFocus(995)</visible>	<seperator>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</seperator>
+        <visible>window.isosdvisible + Control.HasFocus(995)</visible>
+    	<seperator>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</seperator>
 		<label>#Play.Current.Plot</label>
 		<font>AvalonLight16</font>
 		<textcolor>6aa5cb</textcolor>
@@ -160,7 +166,7 @@
 		<width>1560</width>
 		<height>734</height>
 		<texture>osd_top_bg.png</texture>
-		<visible>[Control.IsVisible(1111) + Control.HasFocus(995)] | [Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(705) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)]</visible>
+		<visible>window.isosdvisible + [Control.HasFocus(995) | Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(705) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)]</visible>
 	</control>
 	
    <control>
@@ -278,7 +284,7 @@
 		<onup>995</onup>
 		<ondown>995</ondown>
 		<onright>218</onright>
-		<onleft>220</onleft>
+		<onleft>1111</onleft>
 		<width>51</width>
 		<height>51</height>
 		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>

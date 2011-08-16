@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>2005</id>
-<defaultcontrol>995</defaultcontrol>
+<defaultcontrol>1111</defaultcontrol>
 <allowoverlay>no</allowoverlay>
 <controls>
 
@@ -95,9 +95,9 @@
 		<description>row 1 label</description>
 		<type>label</type>
 		<id>10</id>
-		<posX>1502</posX>
+		<posX>1495</posX>
 		<posY>973</posY>
-		<width>144</width>
+		<width>160</width>
 		<font>fontB14</font>
 		<align>center</align>
 		<textcolor>ffffffff</textcolor>
@@ -109,9 +109,9 @@
 		<description>row 2 label</description>
 		<type>label</type>
 		<id>11</id>
-		<posX>1502</posX>
+		<posX>1495</posX>
 		<posY>973</posY>
-		<width>144</width>
+		<width>160</width>
 		<font>fontB14</font>
 		<align>center</align>
 		<textcolor>ffffffff</textcolor>
@@ -122,9 +122,9 @@
 		<description>row 3 label</description>
 		<type>label</type>
 		<id>12</id>
-		<posX>1502</posX>
+		<posX>1495</posX>
 		<posY>973</posY>
-		<width>144</width>
+		<width>160</width>
 		<font>fontB14</font>
 		<align>center</align>
 		<textcolor>ffffffff</textcolor>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>602</id>
-<defaultcontrol>995</defaultcontrol>
+<defaultcontrol>2111</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <define>#percentage:#TV.View.Percentage</define>
 <define>#currentplaytime:#TV.View.start</define>
