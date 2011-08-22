@@ -50,9 +50,9 @@
 			with any of episode/season/series database fields (<Series.ID> for example)
 	-->
 	<videoosdimages import="true">
-		<episode use="true" />
+		<episode use="false" />
 		<series use="true" />		
-		<season use="true" />		
+		<season use="false" />
 		<!--<custom use="false"><![CDATA[skin\Maya\Avalon\custom.png]]></custom>-->
 	</videoosdimages>
 	
@@ -97,8 +97,7 @@
 <Enabled>1<Format><Episode.InfoPanelLine1Key><FormatAs>
 <Enabled>1<Format><Episode.InfoPanelLine1Value><FormatAs>Eval(Round(<Episode.Rating>*10)/10)
 <Enabled>1<Format><Episode.InfoPanelLine7Value><FormatAs>(Trans(Rated): <Episode.myRating>)
-<Enabled>1<Format><Episode.InfoPanelLine8Value><FormatAs>(<Episode.RatingCount> Trans(Votes), Trans(Rated): <Episode.myRating>)
-<Enabled>1<Format><Episode.InfoPanelLine9Value><FormatAs>(<Episode.RatingCount> Trans(Votes))
+<Enabled>1<Format><Episode.InfoPanelLine8Value><FormatAs>(<Episode.RatingCount> Trans(Votes))
 <Enabled>1<Format><Episode.InfoPanelLine2Key><FormatAs>FILE SIZE
 <Enabled>1<Format><Episode.InfoPanelLine2Value><FormatAs><Episode.FileSize>
 <Enabled>1<Format><Episode.InfoPanelLine3Key><FormatAs>video INFO
@@ -115,8 +114,7 @@
 <Enabled>1<Format><Series.InfoPanelLine1Key><FormatAs>RATING
 <Enabled>1<Format><Series.InfoPanelLine1Value><FormatAs><FormatAs>Eval(Round(<Series.Rating>*10)/10)
 <Enabled>1<Format><Series.InfoPanelLine8Value><FormatAs>(Trans(Rated): <Series.myRating>)
-<Enabled>1<Format><Series.InfoPanelLine9Value><FormatAs>(<Series.RatingCount> Trans(Votes), Trans(Rated): <Series.myRating>)
-<Enabled>1<Format><Series.InfoPanelLine10Value><FormatAs>(<Series.RatingCount> Trans(Votes))
+<Enabled>1<Format><Series.InfoPanelLine9Value><FormatAs>(<Series.RatingCount> Trans(Votes))
 <Enabled>1<Format><Series.InfoPanelLine2Key><FormatAs>Eval(PrettyNumber100(<Series.EpisodesUnWatched>))
 <Enabled>1<Format><Series.InfoPanelLine2Value><FormatAs><Series.FirstAired>
 <Enabled>1<Format><Series.InfoPanelLine3Key><FormatAs><Series.EpisodesWatched>
