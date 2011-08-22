@@ -190,6 +190,7 @@
 				<label>457</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
+                <ondown>5</ondown>
 			</control>
             
             <control>

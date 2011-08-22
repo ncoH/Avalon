@@ -161,6 +161,7 @@
 				<label>#MovingPictures.Translation.ChangeView.Label</label>
 				<onleft>50</onleft>
                 <onright>50</onright>
+                <ondown>14</ondown>
 			</control>
 
 			<control>
