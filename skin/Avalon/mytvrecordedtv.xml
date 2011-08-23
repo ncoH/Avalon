@@ -218,5 +218,6 @@
 	</control>	
 	<import>mytvrecordedtv.hiddenmenu.xml</import>
 	<import>common.facade.recordings.xml</import>
+    <import>common.overlay.xml</import>
 </controls>
 </window>

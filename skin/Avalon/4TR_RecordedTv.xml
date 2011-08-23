@@ -217,5 +217,6 @@
 
 	<import>4TR_RecordedTv.hiddenmenu.xml</import>
 	<import>common.facade.recordings.xml</import>
+    <import>common.overlay.xml</import>
 </controls>
 </window>
