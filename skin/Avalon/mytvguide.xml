@@ -4,7 +4,7 @@
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
-    <import tag="TVGuideChannels">mytvguide.10rows.xml</import>
+    <import tag="TVGuideChannels">mytvguide.8rows.xml</import>
     <import>common.time.xml</import>
     <import>common.overlay.xml</import>
   </controls>
