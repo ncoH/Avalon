@@ -574,10 +574,10 @@
 			<posX>585</posX>
 			<posY>354</posY>
 			<width>1039</width>
-			<height>435</height>
+			<height>470</height>
 			<textcolor>FFFFFFFF</textcolor>
 			<label>#myfilms.db.description.value</label>
-			<font>AvalonLight12</font>
+			<font>AvalonLight14</font>
 			<visible>Control.HasFocus(10001)+!Control.HasFocus(10099)</visible>
 			<animation effect="fade" time="250">WindowClose</animation>	
 			<animation effect="fade" time="0">WindowOpen</animation>			

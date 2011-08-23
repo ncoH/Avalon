@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>3003</id>
-<defaultcontrol>2111</defaultcontrol>
+<defaultcontrol>995</defaultcontrol>
 <allowoverlay>no</allowoverlay>
 <define>#percentage:#TV.View.Percentage</define>
 <define>#currentplaytime:#TV.View.start</define>
@@ -9,23 +9,85 @@
 <define>#duration:#TV.View.stop</define>
 <controls>
 	
-	<control>
-		<description>Dummy Info Button</description>
-		<type>button</type>
-		<id>2111</id>
-		<posX>2000</posX>
-		<posY>10</posY>
-		<width>10</width>
-		<height>10</height>
-		<textureFocus>-</textureFocus>
-		<textureNoFocus>-</textureNoFocus>
-		<label>-</label>
-		<onleft>2111</onleft>
-		<onright>995</onright>
-		<onup>2111</onup>
-		<ondown>2111</ondown>
+ 	<control>
+		<description>OSD Background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>180</posX>
+		<posY>702</posY>
+		<width>1560</width>
+		<height>376</height>
+		<texture>osd_bg.png</texture>
 	</control>
-	
+    
+	<control>
+		<description>progressbar bg</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>588</posX>
+		<posY>904</posY>
+		<width>737</width>
+		<height>18</height>
+		<texture>osd_progress_bg.png</texture>
+	</control>
+    
+	<control>
+		<description>TV Progress Bar</description>
+		<type>tvprogress</type>
+		<id>1</id>
+		<posX>590</posX>
+		<posY>906</posY>
+		<width>758</width>
+		<height>15</height>
+		<toptexture>-</toptexture>
+		<TextureOffsetY>0</TextureOffsetY>
+		<bottomtexture>-</bottomtexture>
+		<texturetick>-</texturetick>
+		<lefttexture>osd_progress_left.png</lefttexture>
+		<midtexture>-</midtexture>
+		<righttexture>-</righttexture>
+		<logotexture>-</logotexture>
+		<fillbackgroundtexture>-</fillbackgroundtexture>
+		<fillbgxoff>-3</fillbgxoff>
+		<fillbgyoff>0</fillbgyoff>
+		<filltexture1>osd_progress_mid.png</filltexture1>
+		<filltexture2>osd_progress_mid.png</filltexture2>
+		<filltexture3>osd_progress_mid_orange.png</filltexture3>
+		<fillheight>15</fillheight>
+		<label>#TV.Record.percent1</label>
+		<label1>#TV.Record.percent2</label1>
+		<label2>#TV.Record.percent3</label2>
+		<startlabel />
+		<endlabel />
+		<toplabel />
+		<font>font10</font>
+		<textcolor>ffffffff</textcolor>
+	</control>
+    
+	<control>
+		<description>Start Time Info</description>
+		<type>label</type>
+		<id>997</id>
+		<posX>487</posX>
+		<posY>895</posY>
+		<label>#currentplaytime</label>
+		<align>left</align>
+		<font>font11</font>
+		<visible>window.isosdvisible</visible>
+	</control>
+
+	<control>
+		<description>End Time Info</description>
+		<type>label</type>
+		<id>998</id>
+		<posX>1435</posX>
+		<posY>895</posY>
+		<label>#currentremaining</label>
+		<align>right</align>
+		<font>font11</font>
+		<visible>window.isosdvisible</visible>
+	</control>
+    
 	<control>
 		<description>thumb bg</description>
 		<type>image</type>
@@ -35,7 +97,6 @@
 		<width>187</width>
 		<height>154</height>
 		<texture>osd_thumb_bg.png</texture>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
 	
 	<control>
@@ -47,7 +108,6 @@
 		<width>184</width>
 		<height>50</height>
 		<texture>osd_settings_button_bg.png</texture>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
 	
 	<control>
@@ -59,7 +119,6 @@
 		<width>187</width>
 		<height>88</height>
 		<texture>osd_clock_bg.png</texture>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
 	
 	<control>
@@ -74,7 +133,6 @@
      	<centered>yes</centered>
 		<texture>#TV.View.thumb</texture>
 		<keepaspectratio>yes</keepaspectratio>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
 	
 	<control>
@@ -88,7 +146,6 @@
 		<align>center</align>
 		<label>#time</label>
 		<textcolor>ff85cffe</textcolor>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
 	
 	<control>
@@ -100,7 +157,19 @@
 		<width>187</width>
 		<height>51</height>
 		<texture>osd_play_button.png</texture>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
+        <visible>!player.paused</visible>
+	</control>
+    
+	<control>
+		<description>pause button</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>1481</posX>
+		<posY>888</posY>
+		<width>187</width>
+		<height>51</height>
+		<texture>osd_pause_button.png</texture>
+        <visible>player.paused</visible>
 	</control>
 
 	<control>
@@ -137,7 +206,6 @@
 		<posY>838</posY>
 		<font>AvalonLight14</font>
 		<textcolor>ff85cffe</textcolor>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
     </control>
 
 	<control>
@@ -193,33 +261,17 @@
 		<posY>774</posY>
 		<font>fontB20</font>
 		<label>#TV.View.title</label>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
 	
-	<control>
-		<description>On tv NOW (OSD Info)</description>
-		<id>0</id>
-		<type>fadelabel</type>
-		<width>1295</width>
-		<height>24</height>
-		<posX>325</posX>
-		<posY>154</posY>
-		<font>fontB22</font>
-		<textcolor>6aa5cb</textcolor>
-		<label>#TV.View.title</label>
-		<visible>window.isosdvisible + Control.HasFocus(995)</visible>
-	</control>
-	
-
 	<control>
 		<description>Plot</description>
 		<type>textboxscrollup</type>
 		<id>38</id>
 		<posX>325</posX>
-		<posY>264</posY>
+		<posY>150</posY>
 		<width>1295</width>
-		<height>320</height>
-        <visible>window.isosdvisible + Control.HasFocus(995)</visible>
+		<height>480</height>
+        <visible>Control.HasFocus(995)</visible>
         <seperator>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</seperator>
 		<label>#TV.View.description</label>
 		<font>AvalonLight16</font>
@@ -235,7 +287,7 @@
 		<width>1560</width>
 		<height>734</height>
 		<texture>osd_top_bg.png</texture>
-		<visible>window.isosdvisible + [Control.HasFocus(995) | Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)]</visible>
+		<visible>[Control.HasFocus(995) | Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)]</visible>
 	</control>
 	
     <control>
@@ -296,7 +348,6 @@
 		<onright>221</onright>
 		<onup>218</onup>
 		<ondown>218</ondown>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
     </control>
 	
 	<control>
@@ -317,7 +368,6 @@
 		<textureNoFocus>oosd_audio_button_focus.png</textureNoFocus>
 		<label>-</label>
 		<font>-</font>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
    </control>
    
 	<control>
@@ -338,7 +388,6 @@
         <onright>995</onright>
         <onup>220</onup>
         <ondown>220</ondown>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
 	
 	<control>
@@ -400,10 +449,9 @@
 		<onup>995</onup>
 		<ondown>995</ondown>
 		<onright>218</onright>
-		<onleft>2111</onleft>
+		<onleft>220</onleft>
 		<width>51</width>
 		<height>51</height>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
 
     <control>
@@ -442,7 +490,7 @@
       <textureSliderBar>osd_slider_bg.png</textureSliderBar>
       <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
       <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
-      <onup>801</onup>
+      <onup>802</onup>
       <ondown>801</ondown>
       <onleft>800</onleft>
       <onright>800</onright>
@@ -459,9 +507,9 @@
       <label>305</label>
       <font>font12</font>
       <onup>800</onup>
-      <ondown>800</ondown>
+      <ondown>802</ondown>
       <onleft>801</onleft>
-      <onright>802</onright>
+      <onright>801</onright>
       <visible>no</visible>
 	  <align>right</align>
     </control>
@@ -470,24 +518,24 @@
 		<description>Subtitles List Control</description>
 		<type>listcontrol</type>
 		<id>802</id>
-		<posX>755</posX>
-		<posY>415</posY>
-		<width>236</width>
+        <posX>323</posX>
+        <posY>286</posY>
+		<width>471</width>
 		<height>110</height>
-		<textureHeight>36</textureHeight>
-		<onleft>801</onleft>
-		<onright>218</onright>
-		<onup>802</onup>
-		<ondown>802</ondown>
+		<textureHeight>52</textureHeight>
+		<onleft>802</onleft>
+		<onright>802</onright>
+		<onup>801</onup>
+		<ondown>800</ondown>
 		<font>font12</font>
 		<textcolor>ffffffff</textcolor>
 		<colordiffuse>ffffffff</colordiffuse>
-		<textXOff>9</textXOff>
-		<textYOff>2</textYOff>
-		<textureFocus>listcontrol_item_selected_tiny.png</textureFocus>
-		<textureNoFocus>listcontrol_item_tiny.png</textureNoFocus>
-		<spaceBetweenItems>0</spaceBetweenItems>
+        <textXOff>40</textXOff>
+		<textureFocus>settings_button_medium_focus.png</textureFocus>
+		<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
 		<visible>no</visible>
+        <dimColor>ffffffff</dimColor>
+        <unfocusedAlpha>255</unfocusedAlpha>
     </control>
 
     <control>
