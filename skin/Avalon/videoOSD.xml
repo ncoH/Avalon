@@ -144,7 +144,7 @@
     		<textcolor>6aa5cb</textcolor>
 			<label>#Play.Current.Plot</label>
 			<seperator>--------------------------------------------------------------------------------------------------------------------------------------------------------------</seperator>
-			<visible>Control.HasFocus(995)</visible>
+			<visible>Control.HasFocus(995) + ![Control.IsVisible(501) | Control.IsVisible(801) | Control.IsVisible(750)]</visible>
 		</control>
 
     	<control>
@@ -206,7 +206,7 @@
 		<width>1560</width>
 		<height>734</height>
 		<texture>osd_top_bg.png</texture>
-		<visible>[Control.HasFocus(995) | Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(705) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)]</visible>
+		<visible>Control.HasFocus(995) | Control.IsVisible(501) | Control.IsVisible(801) | Control.IsVisible(750)</visible>
 	</control>
 	
    <control>
@@ -260,7 +260,7 @@
 		<AltTextureFocus>osd_sub_button_focus.png</AltTextureFocus>
 		<AltTextureNoFocus>osd_sub_button_nofocus.png</AltTextureNoFocus>
 		<textureFocus>osd_sub_button_focus.png</textureFocus>
-		<textureNoFocus>osd_sub_button_focus.png</textureNoFocus>
+		<textureNoFocus>osd_sub_button_nofocus.png</textureNoFocus>
 		<label>-</label>
 		<font>-</font>
 		<onleft>995</onleft>
@@ -284,7 +284,7 @@
 		<AltTextureFocus>osd_audio_button_focus.png</AltTextureFocus>
 		<AltTextureNoFocus>osd_audio_button_nofocus.png</AltTextureNoFocus>
 		<textureFocus>osd_audio_button_focus.png</textureFocus>
-		<textureNoFocus>osd_audio_button_focus.png</textureNoFocus>
+		<textureNoFocus>osd_audio_button_nofocus.png</textureNoFocus>
 		<label>-</label>
 		<font>-</font>
    </control>
@@ -300,7 +300,7 @@
         <AltTextureFocus>osd_video_button_focus.png</AltTextureFocus>
         <AltTextureNoFocus>osd_video_button_nofocus.png</AltTextureNoFocus>
         <textureFocus>osd_video_button_focus.png</textureFocus>
-        <textureNoFocus>osd_video_button_focus.png</textureNoFocus>
+        <textureNoFocus>osd_video_button_nofocus.png</textureNoFocus>
         <label>-</label>
         <font>-</font>
         <onleft>221</onleft>
@@ -321,7 +321,7 @@
 		<onup>995</onup>
 		<ondown>995</ondown>
 		<onright>218</onright>
-		<onleft>1111</onleft>
+		<onleft>995</onleft>
 		<width>51</width>
 		<height>51</height>
 	</control>
@@ -363,7 +363,7 @@
       <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
       <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
       <onup>802</onup>
-      <ondown>801</ondown>
+      <ondown>218</ondown>
       <onleft>800</onleft>
       <onright>800</onright>
       <visible>no</visible>
@@ -390,10 +390,10 @@
 		<description>Subtitles List Control</description>
 		<type>listcontrol</type>
 		<id>802</id>
-        <posX>323</posX>
-        <posY>286</posY>
-		<width>471</width>
-		<height>110</height>
+		<posX>672</posX>
+		<posY>302</posY>
+		<width>780</width>
+		<height>200</height>
 		<textureHeight>52</textureHeight>
 		<onleft>802</onleft>
 		<onright>802</onright>
@@ -402,9 +402,10 @@
 		<font>font12</font>
 		<textcolor>ffffffff</textcolor>
 		<colordiffuse>ffffffff</colordiffuse>
-        <textXOff>40</textXOff>
-		<textureFocus>settings_button_medium_focus.png</textureFocus>
-		<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+        <textXOff>25</textXOff>
+        <textYOff>6</textYOff>
+		<textureFocus>settings_button_large_focus.png</textureFocus>
+		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
 		<visible>no</visible>
         <dimColor>ffffffff</dimColor>
         <unfocusedAlpha>255</unfocusedAlpha>
@@ -540,8 +541,8 @@
       <textureSliderBar>osd_slider_bg.png</textureSliderBar>
       <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
       <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
-      <onup>500</onup>
-      <ondown>501</ondown>
+      <onup>501</onup>
+      <ondown>221</ondown>
       <onleft>501</onleft>
       <onright>501</onright>
       <visible>no</visible>
@@ -551,23 +552,22 @@
 		<description>Audio Stream List Control</description>
 		<type>listcontrol</type>
 		<id>501</id>
-		<posX>755</posX>
-		<posY>369</posY>
-		<width>236</width>
-		<height>110</height>
-		<textureHeight>36</textureHeight>
-		<font>font12</font>
-		<textcolor>ffffffff</textcolor>
-		<colordiffuse>ffffffff</colordiffuse>
-		<textXOff>9</textXOff>
-		<textYOff>2</textYOff>
-		<textureFocus>listcontrol_item_selected_tiny.png</textureFocus>
-		<textureNoFocus>listcontrol_item_tiny.png</textureNoFocus>
+		<posX>672</posX>
+		<posY>248</posY>
+		<width>334</width>
+		<height>200</height>
+		<textureHeight>52</textureHeight>
+		<textureFocus>settings_button_medium_focus.png</textureFocus>
+		<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
 		<onleft>500</onleft>
 		<onright>500</onright>
 		<onup>500</onup>
 		<ondown>500</ondown>
+        <textXOff>25</textXOff>
+        <textYOff>6</textYOff>
 		<visible>no</visible>
+        <dimColor>ffffffff</dimColor>
+        <unfocusedAlpha>255</unfocusedAlpha>
     </control>
 	
     <control>
@@ -727,7 +727,7 @@
       <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
       <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
       <onup>705</onup>
-      <ondown>701</ondown>
+      <ondown>220</ondown>
       <onleft>706</onleft>
       <onright>706</onright>
       <visible>no</visible>
@@ -787,7 +787,6 @@
       <spinPosY>600</spinPosY>
       <visible>no</visible>
     </control>
-    <import>common.progressbar.xml</import>
 
 </controls>
 </window>
