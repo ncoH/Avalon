@@ -21,10 +21,6 @@
 	<width>1893</width>
 	<height>649</height>
 	<texture>viewport_tv_guide.png</texture>
-    <animation effect="fade" time="250">WindowOpen</animation>
-    <animation effect="fade" time="250">WindowClose</animation>
-	<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-	<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
 	<shouldCache>true</shouldCache>
 </control>
 
@@ -37,10 +33,6 @@
 	<width>1865</width>
 	<height>101</height>
 	<texture>tvguide_timeline_bg.png</texture>
-    <animation effect="fade" time="250">WindowOpen</animation>
-    <animation effect="fade" time="250">WindowClose</animation>
-	<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-	<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
 </control>
 	
 	<control>
