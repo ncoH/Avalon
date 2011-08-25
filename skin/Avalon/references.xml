@@ -198,7 +198,7 @@
     <colordiffuse>ffffffff</colordiffuse>
     <remoteColor>ff04db4c</remoteColor>
     <downloadColor>ff04db4c</downloadColor>
-    <playedColor>ffa0d0ff</playedColor>
+    <playedColor>ff85cfff</playedColor>
     <spaceBetweenItems>1</spaceBetweenItems>
     <unfocusedAlpha>150</unfocusedAlpha>
     <scrollOffset>1</scrollOffset>
