@@ -111,7 +111,7 @@
 			<id>1</id>
 			<posX>128</posX>
 			<posY>114</posY>
-			<label>499</label>
+			<label>924</label>
 			<font>fontB12</font>
 			<textcolor>ffffff</textcolor>
 			<visible>!Control.HasFocus(50)</visible>
