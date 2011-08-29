@@ -1,6 +1,15 @@
 <fonts>
 
 <font>
+	<name>font2</name>
+	<filename>MayaType UI</filename>
+	<height>12</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+<font>
 	<name>font11</name>
 	<filename>AvalonType</filename>
 	<height>13</height>
@@ -142,14 +151,6 @@
 	<bold>no</bold>
 </font>
 
-<font>
-	<name>AvalonLight22</name>
-	<filename>AvalonType Light</filename>
-	<height>22</height>
-	<start>0</start>
-	<end>1536</end>
-	<bold>no</bold>
-</font>
 
 <font>
 	<name>AvalonLight24</name>
