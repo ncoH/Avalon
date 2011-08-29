@@ -317,27 +317,13 @@
 			<id>0</id>
 			<type>fadelabel</type>
 			<label>#Trakt.Show.Network | #Trakt.Show.AirDay | #Trakt.Show.AirTime</label>
-    		<posX>930</posX>
+    		<posX>882</posX>
     		<posY>952</posY>
     		<width>240</width>
     		<align>left</align>
     		<font>AvalonLight12</font>
     		<textcolor>ffffff</textcolor>
 			<visible>!string.equals(#Trakt.Show.Network,)+[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-		</control>
-		<control>
-			<description>Rating Icon</description>
-			<type>image</type>
-			<id>1</id>
-			<width>39</width>
-			<height>36</height>
-    		<posX>882</posX>
-    		<posY>952</posY>
-			<texture>#Trakt.Movie.Ratings.Icon.png</texture>
-			<visible>!string.equals(#Trakt.Movie.Ratings.Icon,)+[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
