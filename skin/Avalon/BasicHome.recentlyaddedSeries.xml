@@ -39,7 +39,7 @@
         <posX>1266</posX>
         <posY>639</posY>
         <width>500</width>
-        <label>#fanarthandler.tvseries.latest1.serieName</label>
+        <label>#latestMediaHandler.tvseries.latest1.serieName</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -56,7 +56,7 @@
         <posX>1266</posX>
         <posY>680</posY>
         <width>500</width>
-        <label>S#fanarthandler.tvseries.latest1.seasonIndexE#fanarthandler.tvseries.latest1.episodeIndex - #fanarthandler.tvseries.latest1.episodeName</label>
+        <label>S#latestMediaHandler.tvseries.latest1.seasonIndexE#latestMediaHandler.tvseries.latest1.episodeIndex - #latestMediaHandler.tvseries.latest1.episodeName</label>
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -75,7 +75,7 @@
         <posX>1266</posX>
         <posY>639</posY>
         <width>500</width>
-        <label>#fanarthandler.tvseries.latest2.serieName</label>
+        <label>#latestMediaHandler.tvseries.latest2.serieName</label>
 		<font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -92,7 +92,7 @@
         <posX>1266</posX>
         <posY>680</posY>
         <width>500</width>
-        <label>S#fanarthandler.tvseries.latest2.seasonIndexE#fanarthandler.tvseries.latest2.episodeIndex - #fanarthandler.tvseries.latest2.episodeName</label>
+        <label>S#latestMediaHandler.tvseries.latest2.seasonIndexE#latestMediaHandler.tvseries.latest2.episodeIndex - #latestMediaHandler.tvseries.latest2.episodeName</label>
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -111,7 +111,7 @@
         <posX>1266</posX>
         <posY>639</posY>
         <width>500</width>
-        <label>#fanarthandler.tvseries.latest3.serieName</label>
+        <label>#latestMediaHandler.tvseries.latest3.serieName</label>
 		<font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -128,7 +128,7 @@
         <posX>1266</posX>
         <posY>680</posY>
         <width>500</width>
-        <label>S#fanarthandler.tvseries.latest3.seasonIndexE#fanarthandler.tvseries.latest3.episodeIndex - #fanarthandler.tvseries.latest3.episodeName</label>
+        <label>S#latestMediaHandler.tvseries.latest3.seasonIndexE#latestMediaHandler.tvseries.latest3.episodeIndex - #latestMediaHandler.tvseries.latest3.episodeName</label>
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -154,7 +154,7 @@
         <posX>1218</posX>
         <posY>622</posY>
         <width>435</width>
-        <label>#fanarthandler.tvseries.latest1.serieName</label>
+        <label>#latestMediaHandler.tvseries.latest1.serieName</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -166,7 +166,7 @@
 		<posY>627</posY>
 		<width>185</width>
 		<height>29</height>
-        <label>S#fanarthandler.tvseries.latest1.seasonIndexE#fanarthandler.tvseries.latest1.episodeIndex</label>
+        <label>S#latestMediaHandler.tvseries.latest1.seasonIndexE#latestMediaHandler.tvseries.latest1.episodeIndex</label>
         <textcolor>6aa5cb</textcolor>
         <align>right</align>
       </control> 
@@ -177,7 +177,7 @@
         <posX>1218</posX>
         <posY>662</posY>
         <width>435</width>
-        <label>#fanarthandler.tvseries.latest2.serieName</label>
+        <label>#latestMediaHandler.tvseries.latest2.serieName</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -189,7 +189,7 @@
 		<posY>666</posY>
 		<width>185</width>
 		<height>29</height>
-        <label>S#fanarthandler.tvseries.latest2.seasonIndexE#fanarthandler.tvseries.latest2.episodeIndex</label>
+        <label>S#latestMediaHandler.tvseries.latest2.seasonIndexE#latestMediaHandler.tvseries.latest2.episodeIndex</label>
         <textcolor>6aa5cb</textcolor>
         <align>right</align>
       </control> 
@@ -200,7 +200,7 @@
         <posX>1218</posX>
         <posY>702</posY>
         <width>435</width>
-        <label>#fanarthandler.tvseries.latest3.serieName</label>
+        <label>#latestMediaHandler.tvseries.latest3.serieName</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -212,7 +212,7 @@
 		<posY>705</posY>
 		<width>185</width>
 		<height>29</height>
-        <label>S#fanarthandler.tvseries.latest3.seasonIndexE#fanarthandler.tvseries.latest3.episodeIndex</label>
+        <label>S#latestMediaHandler.tvseries.latest3.seasonIndexE#latestMediaHandler.tvseries.latest3.episodeIndex</label>
         <textcolor>6aa5cb</textcolor>
         <align>right</align>
       </control> 	  
@@ -246,7 +246,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.tvseries.latest1.serieThumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#latestMediaHandler.tvseries.latest1.serieThumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
@@ -283,7 +283,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.tvseries.latest2.serieThumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#latestMediaHandler.tvseries.latest2.serieThumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
@@ -321,7 +321,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.tvseries.latest3.serieThumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.tvseries.latest3.serieThumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
@@ -351,7 +351,7 @@
         <posX>1620</posX>
         <posY>622</posY>
         <width>180</width>
-        <label>#fanarthandler.tvseries.latest1.serieName</label>
+        <label>#latestMediaHandler.tvseries.latest1.serieName</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -369,7 +369,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.tvseries.latest1.serieThumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.tvseries.latest1.serieThumb</texture>
 		<visible>string.equals(#recentMedia,TVSeries) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>

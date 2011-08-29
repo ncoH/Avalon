@@ -39,7 +39,7 @@
         <posX>1266</posX>
         <posY>639</posY>
         <width>500</width>
-        <label>#fanarthandler.music.latest1.album</label>
+        <label>#latestMediaHandler.music.latest1.album</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -56,7 +56,7 @@
         <posX>1266</posX>
         <posY>680</posY>
         <width>500</width>
-        <label>#fanarthandler.music.latest1.artist</label>
+        <label>#latestMediaHandler.music.latest1.artist</label>
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -75,7 +75,7 @@
         <posX>1266</posX>
         <posY>639</posY>
         <width>500</width>
-        <label>#fanarthandler.music.latest2.album</label>
+        <label>#latestMediaHandler.music.latest2.album</label>
 		<font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -92,7 +92,7 @@
         <posX>1266</posX>
         <posY>680</posY>
         <width>500</width>
-        <label>#fanarthandler.music.latest2.artist</label>
+        <label>#latestMediaHandler.music.latest2.artist</label>
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -111,7 +111,7 @@
         <posX>1266</posX>
         <posY>639</posY>
         <width>500</width>
-        <label>#fanarthandler.music.latest3.album</label>
+        <label>#latestMediaHandler.music.latest3.album</label>
 		<font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -128,7 +128,7 @@
         <posX>1266</posX>
         <posY>680</posY>
         <width>500</width>
-        <label>#fanarthandler.music.latest3.artist</label>
+        <label>#latestMediaHandler.music.latest3.artist</label>
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -154,7 +154,7 @@
         <posX>1218</posX>
         <posY>622</posY>
         <width>435</width>
-        <label>#fanarthandler.music.latest1.album</label>
+        <label>#latestMediaHandler.music.latest1.album</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -166,7 +166,7 @@
         <posX>1218</posX>
         <posY>662</posY>
         <width>435</width>
-        <label>#fanarthandler.music.latest2.album</label>
+        <label>#latestMediaHandler.music.latest2.album</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -178,7 +178,7 @@
         <posX>1218</posX>
         <posY>702</posY>
         <width>435</width>
-        <label>#fanarthandler.music.latest3.album</label>
+        <label>#latestMediaHandler.music.latest3.album</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -213,7 +213,7 @@
         <posY>362</posY>
         <width>183</width>
         <height>181</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.music.latest1.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#latestMediaHandler.music.latest1.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
@@ -250,7 +250,7 @@
         <posY>362</posY>
         <width>183</width>
         <height>181</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.music.latest2.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#latestMediaHandler.music.latest2.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
@@ -288,7 +288,7 @@
         <posY>362</posY>
         <width>183</width>
         <height>181</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.music.latest3.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#latestMediaHandler.music.latest3.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
@@ -319,7 +319,7 @@
         <posY>362</posY>
         <width>183</width>
         <height>181</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#fanarthandler.music.latest1.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#latestMediaHandler.music.latest1.thumb</texture>
 		<visible>string.equals(#recentMedia,Music) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>

@@ -22,7 +22,7 @@
         <posY>525</posY>
 		<width>318</width>
 		<height>179</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#fanarthandler.tvrecordings.latest1.thumb</texture>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#latestMediaHandler.tvrecordings.latest1.thumb</texture>
 		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919984)</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
@@ -37,7 +37,7 @@
         <posY>525</posY>
 		<width>318</width>
 		<height>179</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#fanarthandler.tvrecordings.latest2.thumb</texture>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#latestMediaHandler.tvrecordings.latest2.thumb</texture>
 		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919985)</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
@@ -52,7 +52,7 @@
         <posY>525</posY>
 		<width>318</width>
 		<height>179</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#fanarthandler.tvrecordings.latest3.thumb</texture>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#latestMediaHandler.tvrecordings.latest3.thumb</texture>
 		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919986)</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
@@ -67,7 +67,7 @@
         <posY>525</posY>
 		<width>318</width>
 		<height>179</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#fanarthandler.tvrecordings.latest4.thumb</texture>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#latestMediaHandler.tvrecordings.latest4.thumb</texture>
 		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919987)</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
@@ -113,7 +113,7 @@
       <description>GROUP: RecentlyAdded Recordings</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest1.title, ) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+      <visible>string.equals(#recentMedia,Recordings) + !string.equals(#latestMediaHandler.tvrecordings.latest1.title, ) + ![control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -141,7 +141,7 @@
 		<textYOff>0</textYOff>
         <textureFocus>recently_play_focus.png</textureFocus>
         <textureNoFocus>recently_play_nofocus.png</textureNoFocus>
-        <label>#fanarthandler.tvrecordings.latest1.title</label>
+        <label>#latestMediaHandler.tvrecordings.latest1.title</label>
         <onleft>901</onleft>
         <onright>91919984</onright>
 		<onup>91919987</onup>
@@ -155,7 +155,7 @@
       <description>GROUP: RecentlyAdded Recordings</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest2.title, ) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+      <visible>string.equals(#recentMedia,Recordings) + !string.equals(#latestMediaHandler.tvrecordings.latest2.title, ) + ![control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -172,7 +172,7 @@
 		<textYOff>0</textYOff>
         <textureFocus>recently_play_focus.png</textureFocus>
         <textureNoFocus>recently_play_nofocus.png</textureNoFocus>
-        <label>#fanarthandler.tvrecordings.latest2.title</label>
+        <label>#latestMediaHandler.tvrecordings.latest2.title</label>
         <onleft>901</onleft>
         <onright>91919985</onright>
 		<onup>91919984</onup>
@@ -186,7 +186,7 @@
       <description>GROUP: RecentlyAdded Recordings</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest3.title, ) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+      <visible>string.equals(#recentMedia,Recordings) + !string.equals(#latestMediaHandler.tvrecordings.latest3.title, ) + ![control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -203,7 +203,7 @@
 		<textYOff>0</textYOff>
         <textureFocus>recently_play_focus.png</textureFocus>
         <textureNoFocus>recently_play_nofocus.png</textureNoFocus>
-        <label>#fanarthandler.tvrecordings.latest3.title</label>
+        <label>#latestMediaHandler.tvrecordings.latest3.title</label>
         <onleft>901</onleft>
         <onright>91919986</onright>
 		<onup>91919985</onup>
@@ -217,7 +217,7 @@
       <description>GROUP: RecentlyAdded Recordings</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest4.title, ) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+      <visible>string.equals(#recentMedia,Recordings) + !string.equals(#latestMediaHandler.tvrecordings.latest4.title, ) + ![control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -234,7 +234,7 @@
 		<textYOff>0</textYOff>
         <textureFocus>recently_play_focus.png</textureFocus>
         <textureNoFocus>recently_play_nofocus.png</textureNoFocus>
-        <label>#fanarthandler.tvrecordings.latest4.title</label>
+        <label>#latestMediaHandler.tvrecordings.latest4.title</label>
         <onleft>901</onleft>
         <onright>91919987</onright>
 		<onup>91919986</onup>
@@ -255,7 +255,7 @@
 		<width>35</width>
 		<height>37</height>
 		<texture>recently_play.png</texture>
-		<visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest1.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<visible>string.equals(#recentMedia,Recordings) + !string.equals(#latestMediaHandler.tvrecordings.latest1.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -270,7 +270,7 @@
         <width>180</width>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-        <label>#fanarthandler.tvrecordings.latest1.title</label>
+        <label>#latestMediaHandler.tvrecordings.latest1.title</label>
 		<visible>string.equals(#recentMedia,Recordings) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -285,7 +285,7 @@
 		<width>35</width>
 		<height>37</height>
 		<texture>recently_play.png</texture>
-		<visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest2.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<visible>string.equals(#recentMedia,Recordings) + !string.equals(#latestMediaHandler.tvrecordings.latest2.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -300,7 +300,7 @@
         <width>180</width>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-        <label>#fanarthandler.tvrecordings.latest2.title</label>
+        <label>#latestMediaHandler.tvrecordings.latest2.title</label>
 		<visible>string.equals(#recentMedia,Recordings) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -315,7 +315,7 @@
 		<width>35</width>
 		<height>37</height>
 		<texture>recently_play.png</texture>
-		<visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest3.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<visible>string.equals(#recentMedia,Recordings) + !string.equals(#latestMediaHandler.tvrecordings.latest3.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -330,7 +330,7 @@
         <width>180</width>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-        <label>#fanarthandler.tvrecordings.latest3.title</label>
+        <label>#latestMediaHandler.tvrecordings.latest3.title</label>
 		<visible>string.equals(#recentMedia,Recordings) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -345,7 +345,7 @@
 		<width>35</width>
 		<height>37</height>
 		<texture>recently_play.png</texture>
-		<visible>string.equals(#recentMedia,Recordings) + !string.equals(#fanarthandler.tvrecordings.latest4.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<visible>string.equals(#recentMedia,Recordings) + !string.equals(#latestMediaHandler.tvrecordings.latest4.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -360,7 +360,7 @@
         <width>180</width>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-        <label>#fanarthandler.tvrecordings.latest4.title</label>
+        <label>#latestMediaHandler.tvrecordings.latest4.title</label>
 		<visible>string.equals(#recentMedia,Recordings) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -376,7 +376,7 @@
         <width>1</width>
         <height>468</height>
         <texture>basichome_sub_separator.png</texture>
-		<visible>string.equals(#recentMedia,Recordings)  + !string.equals(#fanarthandler.tvrecordings.latest1.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<visible>string.equals(#recentMedia,Recordings)  + !string.equals(#latestMediaHandler.tvrecordings.latest1.title, ) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>

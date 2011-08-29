@@ -37,7 +37,7 @@
         <posX>1266</posX>
         <posY>639</posY>
         <width>500</width>
-        <label>#fanarthandler.movingpicture.latest1.title</label>
+        <label>#latestMediaHandler.movingpicture.latest1.title</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -53,7 +53,7 @@
         <posX>1266</posX>
         <posY>680</posY>
         <width>500</width>
-        <label>#fanarthandler.movingpicture.latest1.runtime - #fanarthandler.movingpicture.latest1.year - #fanarthandler.movingpicture.latest1.genre</label>
+        <label>#latestMediaHandler.movingpicture.latest1.runtime min - #latestMediaHandler.movingpicture.latest1.year - #latestMediaHandler.movingpicture.latest1.genre</label>
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -78,7 +78,7 @@
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
-		<percentage>#fanarthandler.movingpicture.latest1.rating</percentage>
+		<percentage>#latestMediaHandler.movingpicture.latest1.rating</percentage>
 		<visible>control.hasfocus(91919991) + control.isvisible(1021)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -92,7 +92,7 @@
         <posX>1266</posX>
         <posY>639</posY>
         <width>500</width>
-        <label>#fanarthandler.movingpicture.latest2.title</label>
+        <label>#latestMediaHandler.movingpicture.latest2.title</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -108,7 +108,7 @@
         <posX>1266</posX>
         <posY>680</posY>
         <width>500</width>
-        <label>#fanarthandler.movingpicture.latest2.runtime - #fanarthandler.movingpicture.latest2.year - #fanarthandler.movingpicture.latest2.genre</label>
+        <label>#latestMediaHandler.movingpicture.latest2.runtime min - #latestMediaHandler.movingpicture.latest2.year - #latestMediaHandler.movingpicture.latest2.genre</label>
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -133,7 +133,7 @@
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
-		<percentage>#fanarthandler.movingpicture.latest2.rating</percentage>
+		<percentage>#latestMediaHandler.movingpicture.latest2.rating</percentage>
 		<visible>control.hasfocus(91919992)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -147,7 +147,7 @@
         <posX>1266</posX>
         <posY>639</posY>
         <width>500</width>
-        <label>#fanarthandler.movingpicture.latest3.title</label>
+        <label>#latestMediaHandler.movingpicture.latest3.title</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -163,7 +163,7 @@
         <posX>1266</posX>
         <posY>680</posY>
         <width>500</width>
-        <label>#fanarthandler.movingpicture.latest3.runtime - #fanarthandler.movingpicture.latest3.year - #fanarthandler.movingpicture.latest3.genre</label>
+        <label>#latestMediaHandler.movingpicture.latest3.runtime min - #latestMediaHandler.movingpicture.latest3.year - #latestMediaHandler.movingpicture.latest3.genre</label>
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -188,7 +188,7 @@
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
-		<percentage>#fanarthandler.movingpicture.latest3.rating</percentage>
+		<percentage>#latestMediaHandler.movingpicture.latest3.rating</percentage>
 		<visible>control.hasfocus(91919993)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -211,7 +211,7 @@
         <posX>1218</posX>
         <posY>622</posY>
         <width>435</width>
-        <label>#fanarthandler.movingpicture.latest1.title</label>
+        <label>#latestMediaHandler.movingpicture.latest1.title</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -223,7 +223,7 @@
 		<posY>627</posY>
 		<width>185</width>
 		<height>29</height>
-        <label>#fanarthandler.movingpicture.latest1.runtime</label>
+        <label>#latestMediaHandler.movingpicture.latest1.runtime min</label>
         <textcolor>6aa5cb</textcolor>
         <align>right</align>
       </control> 
@@ -234,7 +234,7 @@
         <posX>1218</posX>
         <posY>662</posY>
         <width>435</width>
-        <label>#fanarthandler.movingpicture.latest2.title</label>
+        <label>#latestMediaHandler.movingpicture.latest2.title</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -246,7 +246,7 @@
 		<posY>666</posY>
 		<width>185</width>
 		<height>29</height>
-        <label>#fanarthandler.movingpicture.latest2.runtime</label>
+        <label>#latestMediaHandler.movingpicture.latest2.runtime min</label>
         <textcolor>6aa5cb</textcolor>
         <align>right</align>
       </control> 
@@ -257,7 +257,7 @@
         <posX>1218</posX>
         <posY>702</posY>
         <width>435</width>
-        <label>#fanarthandler.movingpicture.latest3.title</label>
+        <label>#latestMediaHandler.movingpicture.latest3.title</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -269,7 +269,7 @@
 		<posY>705</posY>
 		<width>185</width>
 		<height>29</height>
-        <label>#fanarthandler.movingpicture.latest3.runtime</label>
+        <label>#latestMediaHandler.movingpicture.latest3.runtime min</label>
         <textcolor>6aa5cb</textcolor>
         <align>right</align>
       </control> 	  
@@ -303,7 +303,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.movingpicture.latest1.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.movingpicture.latest1.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
@@ -340,7 +340,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.movingpicture.latest2.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.movingpicture.latest2.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
@@ -377,7 +377,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.movingpicture.latest3.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.movingpicture.latest3.thumb</texture>
       </control>
 	<control>
         <description>Play Button</description>
@@ -407,7 +407,7 @@
         <posX>1620</posX>
         <posY>622</posY>
         <width>180</width>
-        <label>#fanarthandler.movingpicture.latest1.title</label>
+        <label>#latestMediaHandler.movingpicture.latest1.title</label>
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
@@ -425,7 +425,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#fanarthandler.movingpicture.latest1.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.movingpicture.latest1.thumb</texture>
 		<visible>string.equals(#recentMedia,MovingPictures) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
