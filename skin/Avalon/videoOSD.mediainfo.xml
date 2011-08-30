@@ -11,7 +11,7 @@
 		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\video\1080_h264_235.png</texture>
+		<texture>Logos\video\1080p h264 widescreen.png</texture>
 		<visible>string.contains(#Play.Current.VideoResolution,1080p)+string.contains(#Play.Current.VideoCodec.Texture,AVC)]+string.contains(#Play.Current.AspectRatio,widescreen)]</visible>
 	</control>
 	
@@ -23,7 +23,7 @@
 		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\video\720_h264_235.png</texture>
+		<texture>Logos\video\720p h264 widescreen.png</texture>
 		<visible>string.contains(#Play.Current.VideoResolution,720p) + [string.contains(#Play.Current.VideoCodec.Texture,h264) | string.contains(#Play.Current.VideoCodec.Texture,AVC)] + string.contains(#Play.Current.AspectRatio,widescreen)</visible>
 	</control>
 	
@@ -35,7 +35,7 @@
 		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\video\480_xvid_235.png</texture>
+		<texture>Logos\video\SD xvid widescreen.png</texture>
 		<visible>string.contains(#Play.Current.VideoResolution, SD)+string.contains(#Play.Current.VideoCodec.Texture, XVID)+string.contains(#Play.Current.AspectRatio, widescreen)</visible>
 	</control>
 	
@@ -47,7 +47,7 @@
 		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\video\480_xvid_133.png</texture>
+		<texture>Logos\video\SD xvid fullscreen.png</texture>
 		<visible>[string.contains(#Play.Current.VideoResolution,SD)+string.contains(#Play.Current.VideoCodec.Texture,XVID)+string.contains(#Play.Current.AspectRatio,fullscreen)]</visible>
 	</control>
 	
@@ -59,7 +59,7 @@
 		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\video\480_divx_235.png</texture>
+		<texture>Logos\video\SD divx widescreen.png</texture>
 		<visible>[string.contains(#Play.Current.VideoResolution,SD)+string.contains(#Play.Current.VideoCodec.Texture,DIVX)+string.contains(#Play.Current.AspectRatio,widescreen)]</visible>
 	</control>
 	
@@ -71,7 +71,7 @@
 		<posY>969</posY>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\video\480_divx_133.png</texture>
+		<texture>Logos\video\SD divx fullscreen.png</texture>
 		<visible>string.contains(#Play.Current.VideoResolution,SD)+string.contains(#Play.Current.VideoCodec.Texture,DIVX)+string.contains(#Play.Current.AspectRatio,fullscreen)]</visible>
 	</control>
 	
