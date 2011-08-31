@@ -12,6 +12,7 @@
 		<id>0</id>
 		<posX>1478</posX>
 		<posY>816</posY>
+		<width>177</width>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\#MovingPictures.LocalMedia.videoresolution #MovingPictures.LocalMedia.videocodec #MovingPictures.LocalMedia.videoaspectratio.png</texture>
@@ -30,6 +31,7 @@
 		<id>0</id>
 		<posX>1663</posX>
 		<posY>816</posY>
+		<width>177</width>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\#MovingPictures.LocalMedia.audiocodec #MovingPictures.LocalMedia.audiochannels.png</texture>
