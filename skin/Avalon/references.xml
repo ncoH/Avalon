@@ -196,8 +196,8 @@
     <textcolor2>ffffffff</textcolor2>
     <textcolor3>ffffffff</textcolor3>
     <colordiffuse>ffffffff</colordiffuse>
-    <remoteColor>ff04db4c</remoteColor>
-    <downloadColor>ff04db4c</downloadColor>
+    <remoteColor>fffc7b19</remoteColor>
+    <downloadColor>fffc7b19</downloadColor>
     <playedColor>ff85cfff</playedColor>
     <spaceBetweenItems>1</spaceBetweenItems>
     <unfocusedAlpha>150</unfocusedAlpha>
