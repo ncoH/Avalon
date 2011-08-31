@@ -9,6 +9,7 @@
 		<id>0</id>
 		<posX>484</posX>
 		<posY>969</posY>
+		<width>177</width>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\1080p h264 widescreen.png</texture>
@@ -21,6 +22,7 @@
 		<id>0</id>
 		<posX>484</posX>
 		<posY>969</posY>
+		<width>177</width>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\720p h264 widescreen.png</texture>
@@ -33,6 +35,7 @@
 		<id>0</id>
 		<posX>484</posX>
 		<posY>969</posY>
+		<width>177</width>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\SD xvid widescreen.png</texture>
@@ -45,6 +48,7 @@
 		<id>0</id>
 		<posX>484</posX>
 		<posY>969</posY>
+		<width>177</width>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\SD xvid fullscreen.png</texture>
@@ -57,6 +61,7 @@
 		<id>0</id>
 		<posX>484</posX>
 		<posY>969</posY>
+		<width>177</width>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\SD divx widescreen.png</texture>
@@ -69,6 +74,7 @@
 		<id>0</id>
 		<posX>484</posX>
 		<posY>969</posY>
+		<width>177</width>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\video\SD divx fullscreen.png</texture>
@@ -83,6 +89,7 @@
 		<id>0</id>
 		<posX>669</posX>
 		<posY>969</posY>
+		<width>103</width>
 		<height>38</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\#Play.Current.AudioCodec.Texture #Play.Current.AudioChannels.png</texture>
