@@ -21,15 +21,21 @@
 	<posX>0</posX>
 	<posY>164</posY>
 	<width>1893</width>
-	<height>645</height>
-	<texture>tv_viewport.png</texture>
-    <animation effect="fade" time="250">WindowOpen</animation>
-    <animation effect="fade" time="250">WindowClose</animation>
-	<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-	<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	<height>649</height>
+	<texture>viewport_tv_guide.png</texture>
+
 	<shouldCache>true</shouldCache>
 </control>
-	
+	<control>
+	<description>VIEWPORT</description>
+	<type>image</type>
+	<id>0</id>
+	<posX>0</posX>
+	<posY>120</posY>
+	<width>1865</width>
+	<height>101</height>
+	<texture>tvguide_timeline_bg.png</texture>
+</control>
 	<control>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -48,9 +54,9 @@
       <type>image</type>
       <id>2</id>
       <posX>460</posX>
-      <posY>270</posY>
-      <width>1400</width>
-      <height>466</height>
+      <posY>219</posY>
+      <width>1410</width>
+      <height>566</height>
       <colordiffuse>ffffffff</colordiffuse>
       <texture>-</texture>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -91,7 +97,7 @@
 		<type>image</type>
 		<id>90</id>
 		<posX>463</posX>
-		<posY>216</posY>
+		<posY>217</posY>
 		<width>153</width>
 		<height>37</height>
 		<texture>-</texture>
@@ -104,7 +110,7 @@
 		<type>label</type>
 		<id>40</id>
 		<posX>463</posX>
-		<posY>222</posY>
+		<posY>138</posY>
 		<font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -115,11 +121,11 @@
 		<description>day spin control</description>
 		<type>spincontrol</type>
 		<id>6</id>
-		<width>16</width>
-		<height>16</height>
-		<posX>120</posX>
+		<width>35</width>
+		<height>37</height>
+		<posX>117</posX>
 		<textYOff>1</textYOff>
-		<posY>230</posY>
+		<posY>138</posY>
 		<showrange>no</showrange>
 		<orientation>horizontal</orientation>
 		<align>center</align>
@@ -138,10 +144,10 @@
 		<description>time interval spin control</description>
 		<type>spincontrol</type>
 		<id>8</id>
-		<width>16</width>
-		<height>16</height>
-		<posX>294</posX>
-		<posY>230</posY>
+		<width>35</width>
+		<height>37</height>
+		<posX>397</posX>
+		<posY>138</posY>
 		<showrange>no</showrange>
 		<orientation>horizontal</orientation>
 		<align>center</align>
@@ -160,7 +166,7 @@
 		<type>image</type>
 		<id>20</id>
 		<posX>129</posX>
-		<posY>277</posY>
+		<posY>219</posY>
 		<width>335</width>
 		<height>64</height>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -200,10 +206,10 @@
 		<type>fadelabel</type>
 		<id>13</id>
 		<posX>681</posX>
-		<posY>820</posY>
+		<posY>816</posY>
 		<width>1175</width>
 		<label>#Radio.Guide.CompositeTitle</label>
-		<font>fontB20</font>
+		<font>fontB16</font>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -213,10 +219,10 @@
 		<type>label</type>
 		<id>14</id>
 		<posX>681</posX>
-		<posY>880</posY>
+		<posY>868</posY>
 		<width>850</width>
 		<label>#Radio.Guide.Time #Radio.Guide.ChannelName - #Radio.Guide.DurationMins #Radio.Guide.Genre</label>
-		<font>AvalonLight14</font>
+		<font>AvalonLight12</font>
 		<textcolor>85cfff</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -227,10 +233,10 @@
 		<type>textboxscrollup</type>
 		<id>15</id>
 		<posX>681</posX>
-		<posY>922</posY>
+		<posY>908</posY>
 		<width>1185</width>
-		<height>140</height>
-		<font>AvalonLight11</font>
+		<height>165</height>
+		<font>AvalonLight12</font>
 		<lineSpacing>0.85</lineSpacing>				
 		<label>#Radio.Guide.Description</label>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -270,8 +276,8 @@
 		<type>image</type>
 		<id>25</id>
 		<posX>55</posX>
-		<posY>235</posY>
-		<height>554</height>
+		<posY>180</posY>
+		<height>602</height>
 		<colordiffuse>c0ffffff</colordiffuse>
 		<texture>tvguide_slider.png</texture>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -283,10 +289,10 @@
 		<type>hscrollbar</type>
 		<id>28</id>
 		<posX>330</posX>
-		<posY>505</posY>
+		<posY>905</posY>
 		<width>994</width>
 		<height>24</height>
-		<visible>yes</visible>
+		<visible>no</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -295,11 +301,11 @@
 		<description>Vertical scrollbar</description>
 		<type>vscrollbar</type>
 		<id>29</id>
-		<posX>1329</posX>
+		<posX>1829</posX>
 		<posY>165</posY>
 		<width>26</width>
 		<height>338</height>
-		<visible>yes</visible>
+		<visible>no</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -308,24 +314,24 @@
 		<description>record pin</description>
 		<type>image</type>
 		<id>31</id>
-		<posX>882</posX>
-		<posY>820</posY>
-		<texture>tvguide_record_button.png</texture>
+		<posX>615</posX>
+		<posY>826</posY>
+		<texture>tv_is_recording.gif</texture>
 		<visible>no</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 	
-<!--      <control>
+      <control>
       <description>TvGroup button</description>
       <type>button</type>
       <id>100</id>
-      <posX>38</posX>
-      <posY>328</posY>
-      <width>50</width>
-      <height>336</height>
+      <posX>27</posX>
+      <posY>216</posY>
+      <width>65</width>
+      <height>533</height>
       <textureFocus>tvgroup_button_selected.png</textureFocus>
-      <textureNoFocus>blue.png</textureNoFocus>
+      <textureNoFocus>tvgroup_button.png</textureNoFocus>
       <label></label>
       <onleft>60</onleft>
       <onright>6</onright>
@@ -337,15 +343,15 @@
       <description>TvGroup button label</description>
       <type>label</type>
       <id>0</id>
-      <posX>65</posX>
-      <posY>628</posY>
+      <posX>62</posX>
+      <posY>730</posY>
 	  <valign>middle</valign>
-      <label>#TV.Guide.ChangeGroup</label>
+      <label>#Radio.Guide.ChangeGroup</label>
       <font>AvalonLight16</font>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>ffffff</textcolor>
       <animation effect="rotate" end="90" time="0">WindowOpen</animation>
 	  <animation effect="rotate" end="90" time="0">WindowClose</animation>
-      </control> -->
+      </control>
 	  
 <import>common.time.xml</import>
 <import>common.overlay.xml</import>
