@@ -31,7 +31,7 @@
             <onup>155</onup>
             <ondown>155</ondown>
             <posX>504</posX>
-            <posY>189</posY>
+            <posY>200</posY>
             <width>640</width>
             <height>210</height>
 			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
@@ -82,7 +82,7 @@
             <onup>166</onup>
             <ondown>155</ondown>
             <posX>504</posX>
-            <posY>429</posY>
+            <posY>440</posY>
             <width>640</width>
             <height>210</height>
 			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>

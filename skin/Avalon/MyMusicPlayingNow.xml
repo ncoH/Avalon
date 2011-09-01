@@ -109,7 +109,7 @@
 		<id>0</id>
 		<posX>1480</posX>
 		<posY>748</posY>
-		<width>187</width>
+		<width>188</width>
 		<height>80</height>
 		<texture>osd_clock_bg.png</texture>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -131,6 +131,32 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 		
+	<control>
+		<description>Animated EQ BG</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>1480</posX>
+		<posY>840</posY>
+		<width>188</width>
+		<height>80</height>
+		<texture>EQ_bg.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+        
+	<control>
+		<description>Animated EQ</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>1495</posX>
+		<posY>852</posY>
+		<width>158</width>
+		<height>55</height>
+		<texture>MusicPlayingNow_EQ.gif</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+        
         <control>
             <id>0</id>
             <type>image</type>
@@ -359,7 +385,7 @@
             <id>141</id>
             <description>Rating</description>
             <type>imagelist</type>
-            <posX>1498</posX>
+            <posX>-2000</posX>
             <posY>845</posY>
 			<width>185</width>
 			<height>29</height>
