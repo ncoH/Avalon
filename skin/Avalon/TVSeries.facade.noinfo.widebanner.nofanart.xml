@@ -172,30 +172,35 @@
 					<cards flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_fanart_mask.png"></cards>
 				</control>
 		
-    <control>
-		<description>Text List</description>
-		<type>listcontrol</type>
-		<id>50</id>
-		<onleft>2</onleft>
-		<onright>80</onright>
-		<scrollOffset>1</scrollOffset>
-		<posX>1166</posX>
-		<posY>153</posY>
-		<height>750</height>
-		<width>684</width>
-		<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
-		<textureNoFocus>-</textureNoFocus>
-		<textXOff>50</textXOff>
-		<textYOff>8</textYOff>
-		<textXOff2>650</textXOff2>
-		<textYOff2>8</textYOff2>
-		<textXOff3>-2000</textXOff3>
-		<textYOff3>8</textYOff3>
-		<IconXOff>-2000</IconXOff>
-		<IconYOff>19</IconYOff>
-		<textureHeight>55</textureHeight>
-		<dimColor>ffffffff</dimColor>
-        </control>
+            <control>
+            	<description>Text List</description>
+            	<type>listcontrol</type>
+            	<id>50</id>
+            	<onleft>2</onleft>
+            	<onright>80</onright>
+            	<scrollOffset>1</scrollOffset>
+            	<posX>1166</posX>
+            	<posY>153</posY>
+            	<height>750</height>
+            	<width>684</width>
+            	<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
+            	<textureNoFocus>-</textureNoFocus>
+        		<textXOff>-100</textXOff>
+        		<textYOff>8</textYOff>
+        		<textXOff2>462</textXOff2>
+        		<textYOff2>8</textYOff2>
+        		<textXOff3>630</textXOff3>
+        		<textYOff3>14</textYOff3>
+                <textalign3>right</textalign3>
+                <font3>font2</font3>
+                <itemWidth>142</itemWidth>
+                <itemHeight>19</itemHeight>
+                <IconXOff>446</IconXOff>
+                <IconYOff>18</IconYOff>
+            	<textureHeight>55</textureHeight>
+            	<dimColor>ffffffff</dimColor>
+                <playedColor>ffffffff</playedColor>
+            </control>
       </control>
     </control>
 </controls>
