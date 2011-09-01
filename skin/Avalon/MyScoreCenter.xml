@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!-- Note to skinner:
+ The two main controls are the listcontrol (ID = 10) and the textboxscrollup (ID = 20).
+ The score result itself is created dynamically with labels. the textboxscrollup is used to define
+ the area (posX, posY, width and height) where to create the control
+ and how to format them (font and color).
+-->
+<window>
+  <id>42000</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+	<control>
+		<description>viewport list</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>795</height>
+		<texture>viewport_settings.png</texture>
+	</control>
+
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>829</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+	</control>
+
+    <!-- backdrop matching current sport -->
+    <control>
+      <description>backdrop</description>
+      <type>image</type>
+      <id>30</id>
+      <posX>-2000</posX>
+      <posY>0</posY>
+      <width>1280</width>
+      <height>720</height>
+      <texture>-</texture>
+    </control>
+    <control>
+        <type>fadelabel</type>
+        <description>Title</description>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>#ScoreCenter.Title</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+    
+    <import>common.time.xml</import>
+  <!-->  
+    <control>
+      <description>Current Image1</description>
+      <type>image</type>
+      <posX>10</posX>
+      <posY>50</posY>
+      <width>50</width>
+      <height>50</height>
+      <texture>#ScoreCenter.Ico1</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+    </control>
+    <control>
+      <description>Current Image2</description>
+      <type>image</type>
+      <posX>70</posX>
+      <posY>50</posY>
+      <width>50</width>
+      <height>50</height>
+      <texture>#ScoreCenter.Ico2</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+    </control>
+    <control>
+      <description>Current Image3</description>
+      <type>image</type>
+      <posX>130</posX>
+      <posY>50</posY>
+      <width>50</width>
+      <height>50</height>
+      <texture>#ScoreCenter.Ico3</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+    </control>
+    <control>
+      <description>Current Image4</description>
+      <type>image</type>
+      <posX>190</posX>
+      <posY>50</posY>
+      <width>50</width>
+      <height>50</height>
+      <texture>#ScoreCenter.Ico4</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+    </control>-->
+    <control>
+      <description>Current Results</description>
+      <type>label</type>
+      <posX>595</posX>
+      <posY>875</posY>
+      <align>left</align>
+      <font>AvalonLight12</font>
+      <textcolor>6aa5cb</textcolor>
+      <label>#ScoreCenter.Source  |  #ScoreCenter.Results</label>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+    <control>
+        <id>10</id>
+        <description>Scores</description>
+        <type>listcontrol</type>
+        <onright>40</onright>
+		<posX>130</posX>
+		<posY>156</posY>
+        <width>385</width>
+        <height>750</height>
+        <font>font12</font>
+        <textXOff>55</textXOff>
+        <textYOff>14</textYOff>
+        <IconXOff>5</IconXOff>
+        <IconYOff>5</IconYOff>
+        <textureFocus>button-focus.png</textureFocus>
+        <textureNoFocus>button-nofocus.png</textureNoFocus>
+        <textvisible2>no</textvisible2>
+        <textvisible3>no</textvisible3>
+        <spaceBetweenItems>2</spaceBetweenItems>
+        <textureHeight>64</textureHeight>
+        <keepaspectratio>yes</keepaspectratio>
+        <spinPosX>10</spinPosX>
+        <spinPosY>660</spinPosY>
+        <dimColor>ffffffff</dimColor>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+
+    <!-- This control defines the area and the format (font and color)
+    in which the score will be displayed -->
+    <control>
+        <id>20</id>
+        <description>Results</description>
+        <type>textboxscrollup</type>
+        <visible>yes</visible>
+		<posX>745</posX>
+		<posY>156</posY>
+        <width>970</width>
+        <height>650</height>
+        <font>AvalonLight12</font>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+    
+    <control>
+      <id>40</id>
+      <description>Next Button</description>
+      <type>button</type>
+      <onleft>10</onleft>
+      <onup>10</onup>
+      <ondown>10</ondown>
+      <posX>130</posX>
+      <posY>700</posY>
+      <label>Next</label>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+
+    <!-- Uncomment this control to make the list 
+    disapear when a score is displayed -->
+    <!--
+    <control>
+      <description>Dummy Label</description>
+      <type>label</type>
+      <id>50</id>
+      <posX>-100</posX>
+      <posY>10</posY>
+      <width>10</width>
+      <label>dummy</label>
+      <font>font12</font>
+    </control>
+    -->
+
+  </controls>
+</window>
