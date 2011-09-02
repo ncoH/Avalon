@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profile>
+  <section name="LatestMediaHandler">
+    <entry name="latestPictures">True</entry>
+    <entry name="latestMusic">True</entry>
+    <entry name="latestMovingPictures">True</entry>
+    <entry name="latestTVSeries">True</entry>
+    <entry name="latestTVRecordings">True</entry>
+    <entry name="refreshDbPicture">False</entry>
+    <entry name="refreshDbMusic">False</entry>
+    <entry name="latestMovingPicturesWatched">False</entry>
+    <entry name="latestTVSeriesWatched">False</entry>
+    <entry name="latestTVRecordingsWatched">False</entry>
+    <entry name="reorgInterval">1440</entry>
+    <entry name="useLatestMediaCache">True</entry>
+  </section>
+</profile>
