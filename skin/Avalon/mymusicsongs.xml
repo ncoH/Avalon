@@ -112,6 +112,34 @@
 		<visible>[facadeview.list+Control.IsVisible(50)] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
     
+	<!--            :: Info Labels ::            -->
+	
+	<control>
+		<description>year dummy</description>
+		<type>label</type>
+		<id>400</id>
+		<posX>-2000</posX>
+		<posY>1006</posY>
+		<label>#music.year</label>
+	</control>
+    
+	<control>
+		<description>Album / Tracks</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>1832</posX>
+		<posY>1006</posY>
+		<width>1200</width>
+		<align>right</align>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+		<label>Album: #music.album | #music.year - #music.genre</label>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50) + Control.Hastext(400)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
+	</control>
+    
 <import>mymusic.hiddenmenu.xml</import>	
 <import>common.facade.music.xml</import>	
 <import>common.overlay.xml</import>
