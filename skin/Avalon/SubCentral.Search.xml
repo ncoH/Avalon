@@ -12,9 +12,9 @@
 			<description>Number of Files Label</description>
 			<id>0</id>
 			<width>785</width>
-			<posX>949</posX>
-			<posY>835</posY>
-			<label>| #itemcount</label>
+    		<posX>600</posX>
+    		<posY>880</posY>
+			<label>#itemcount</label>
 			<font>AvalonLight12</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>Control.IsVisible(102)</visible>
@@ -27,7 +27,7 @@
 			<type>image</type>
 			<id>1</id>
 			<posX>887</posX>
-			<posY>517</posY>
+			<posY>413</posY>
 			<width>809</width>
 			<height>300</height>
 			<texture>SubCentral_list_bg.png</texture>
@@ -40,7 +40,7 @@
 			<type>image</type>
 			<id>1</id>
 			<posX>743</posX>
-			<posY>574</posY>
+			<posY>470</posY>
 			<width>953</width>
 			<height>200</height>
 			<texture>SubCentral_list_bg.png</texture>
@@ -53,7 +53,7 @@
 			<type>image</type>
 			<id>1</id>
 			<posX>887</posX>
-			<posY>416</posY>
+			<posY>312</posY>
 			<width>809</width>
 			<height>52</height>
 			<texture>SubCentral_file_bg.png</texture>
@@ -73,7 +73,7 @@
 				<onright>202</onright>
 				<scrollOffset>1</scrollOffset>
 				<posX>888</posX>
-				<posY>518</posY>
+				<posY>414</posY>
                 <width>808</width>
 				<height>350</height>
 				<textureHeight>42</textureHeight>
@@ -82,13 +82,13 @@
 				<IconXOff>10</IconXOff>
 				<IconYOff>-4</IconYOff>
 				<textXOff>10</textXOff>
-				<textXOff2>180</textXOff2>
+				<textXOff2>500</textXOff2>
 				<textYOff2>26</textYOff2>
-				<textXOff3>550</textXOff3>
-				<textYOff3>28</textYOff3>
+				<textXOff3>100</textXOff3>
+				<textYOff3>26</textYOff3>
 				<font>AvalonLight11</font>	
 				<font2>font10</font2>	
-				<font3>font10</font3>	
+				<font3>font10</font3>
 				<textYOff>2</textYOff>
 				<textureFocus>SubCentral_list_focus.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
@@ -105,6 +105,7 @@
 				<textcolor2>ffffff</textcolor2>
 				<textcolor3>ffffff</textcolor3>
 				<visible>Control.IsVisible(102)</visible>
+                <dimColor>ffffffff</dimColor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 			</control>
@@ -115,7 +116,7 @@
             <type>image</type>
             <id>911</id>
             <posX>639</posX>
-            <posY>518</posY>
+            <posY>414</posY>
             <width>216</width>
             <height>306</height>
 			<keepaspectratio>no</keepaspectratio>
@@ -131,7 +132,7 @@
 			<id>0</id>
 			<keepaspectratio>no</keepaspectratio>
             <posX>639</posX>
-            <posY>518</posY>
+            <posY>414</posY>
             <width>216</width>
             <height>306</height>
 			<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">defaultVideoBig.png</texture>
@@ -251,7 +252,7 @@
 			<id>0</id>
 			<width>250</width>
 			<posX>766</posX>
-			<posY>372</posY>
+			<posY>268</posY>
 			<label>Title</label>
 			<font>fontB16</font>
 			<textcolor>6aa5cb</textcolor>
@@ -266,7 +267,7 @@
 			<id>0</id>
 			<width>250</width>
 			<posX>766</posX>
-			<posY>424</posY>
+			<posY>320</posY>
 			<label>File</label>
 			<font>fontB14</font>
 			<textcolor>6aa5cb</textcolor>
@@ -279,7 +280,7 @@
 			<type>fadelabel</type>
 			<id>0</id>
 			<posX>172</posX>
-			<posY>672</posY>
+			<posY>568</posY>
 			<width>562</width>
 			<label>#SubCentral.Search.SearchType.Text</label>
 			<font>font12</font>
@@ -293,7 +294,7 @@
 			<type>fadelabel</type>
 			<id>0</id>
 			<posX>307</posX>
-			<posY>256</posY>
+			<posY>152</posY>
 			<width>427</width>
 			<label>#SubCentral.Search.Media.Title</label>
 			<font>font14</font>
@@ -307,7 +308,7 @@
 			<type>fadelabel</type>
 			<id>0</id>
 			<posX>910</posX>
-			<posY>372</posY>
+			<posY>268</posY>
 			<width>427</width>
 			<label>#SubCentral.Search.Media.TitleWithYear</label>
 			<font>AvalonLight14</font>
@@ -321,7 +322,7 @@
 			<type>fadelabel</type>
 			<id>0</id>
 			<posX>910</posX>
-			<posY>372</posY>
+			<posY>268</posY>
 			<width>427</width>
 			<label>#SubCentral.Search.Media.TitleWithSE</label>
 			<font>AvalonLight14</font>
@@ -350,7 +351,7 @@
 			<type>textboxscrollup</type>
 			<id>0</id>
 			<posX>910</posX>
-			<posY>424</posY>
+			<posY>320</posY>
 			<width>785</width>
 			<height>134</height>
 			<font>AvalonLight12</font>
