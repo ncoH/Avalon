@@ -91,7 +91,7 @@
     		<posY>169</posY>
     		<width>350</width>
     		<height>350</height>
-    		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#selectedthumb</texture>
+    		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#GlobalSearch.Music.Details.CoverArt</texture>
         </control>
 
 		<control>
@@ -220,7 +220,7 @@
 			<id>1</id>
     		<posX>1058</posX>
     		<posY>162</posY>
-			<label>#artist</label>
+			<label>#GlobalSearch.Music.Details.Artist</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
@@ -240,7 +240,7 @@
 			<id>2</id>
             <posX>1058</posX>
 			<posY>202</posY>
-			<label>#album</label>
+			<label>#GlobalSearch.Music.Details.Album</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
@@ -260,7 +260,7 @@
 			<id>3</id>
             <posX>1058</posX>
 			<posY>242</posY>
-			<label>#songname</label>
+			<label>#GlobalSearch.Music.Details.Title</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
@@ -280,7 +280,7 @@
 			<id>4</id>
             <posX>1058</posX>
 			<posY>282</posY>
-			<label>#genre</label>
+			<label>#GlobalSearch.Music.Details.Genre</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
@@ -300,7 +300,7 @@
 			<id>5</id>
             <posX>1058</posX>
 			<posY>322</posY>
-			<label>#year</label>
+			<label>#GlobalSearch.Music.Details.Year</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
@@ -320,7 +320,7 @@
 			<id>9</id>
 			<posX>1058</posX>
 			<posY>362</posY>
-			<label>#duration</label>
+			<label>#GlobalSearch.Music.Details.Duration</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
@@ -338,7 +338,7 @@
 		<control>
 			<type>imagelist</type>
 			<description>-</description>
-			<id>1337</id>
+			<id>0</id>
     		<posX>1054</posX>
     		<posY>402</posY>
     		<width>185</width>
@@ -351,7 +351,8 @@
     		</subitems>
     		<orientation>horizontal</orientation>
     		<align>left</align>
-    		<imagesToDraw>5</imagesToDraw>	 
+    		<imagesToDraw>5</imagesToDraw>
+            <percentage>#GlobalSearch.Music.Details.Rating</percentage>	 
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>		
@@ -371,7 +372,7 @@
 			<id>8</id>
             <posX>1058</posX>
 			<posY>442</posY>
-			<label>#tp</label>
+			<label>#GlobalSearch.Music.Details.TimesPlayed</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
@@ -391,7 +392,7 @@
 			<id>10</id>
             <posX>1058</posX>
 			<posY>482</posY>
-			<label>#last_played</label>
+			<label>#GlobalSearch.Music.Details.DateTimePlayed</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
@@ -411,7 +412,7 @@
 			<id>6</id>
 			<posX>1058</posX>
 			<posY>522</posY>
-			<label>#filename</label>
+			<label>#GlobalSearch.Music.Details.FileName</label>
         	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
         	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>

@@ -81,24 +81,17 @@
 					<type>togglebutton</type>
 					<id>3</id>
 					<label>#Avalon.CaseSensitive</label>
-					<ondown>5</ondown>
+					<ondown>10</ondown>
 					<onup>6</onup>
                     <textcolorNoFocus>FF6aa5cb</textcolorNoFocus>
 				</control>
 				<control>
-					<description>Searchtype (start, contain, end)</description>
-					<type>selectbutton</type>
-					<id>5</id>
+					<description>Searchtype</description>
+					<type>button</type>
+					<id>10</id>
 					<label>#Avalon.SearchType</label>
 					<ondown>8</ondown>
 					<onup>3</onup>
-					<subitems>
-						<subitem>Equals</subitem>
-						<subitem>Starts With</subitem>
-						<subitem>Contains</subitem>
-						<subitem>Ends With</subitem>
-					</subitems>
-					<selected>2</selected>
                     <textcolorNoFocus>FF6aa5cb</textcolorNoFocus>
 				</control>
 				<control>
@@ -106,7 +99,7 @@
 					<type>button</type>
 					<id>8</id>
 					<label>2</label>
-					<onup>5</onup>
+					<onup>10</onup>
 					<ondown>9</ondown>
 				</control>
 				<control>
