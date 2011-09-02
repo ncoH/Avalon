@@ -3,162 +3,199 @@
 	<id>4759</id>
 	<defaultcontrol>995</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<controls>
-	<control>
-		<description>Dummy for Info visible</description>
-		<type>image</type>
-		<id>1111</id>
-		<posX>-2000</posX>
-		<posY>-2000</posY>
-		<width>20</width>
-		<height>20</height>
-		<texture>-</texture>
-		<visible>no</visible>
-	</control>
+<controls>
+	
+		<control>
+			<description>background top</description>
+			<type>image</type>
+			<id>0</id>
+    		<posX>180</posX>
+    		<posY>702</posY>
+    		<width>1560</width>
+    		<height>376</height>
+    		<texture>osd_bg.png</texture>
+		</control>
 
-	<control>
-		<description>Description bg</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>0</posX>
-		<posX>180</posX>
-		<posY>702</posY>
-		<width>1560</width>
-		<height>376</height>
-		<texture>osd_bg.png</texture>
-	</control>	
+    	<control>
+    		<description>settings button bg</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>1484</posX>
+    		<posY>962</posY>
+    		<width>184</width>
+    		<height>50</height>
+    		<texture>osd_settings_button_bg.png</texture>
+    	</control>
+    	
+    	<control>
+    		<description>clock bg</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>1484</posX>
+    		<posY>776</posY>
+    		<width>187</width>
+    		<height>88</height>
+    		<texture>osd_clock_bg.png</texture>
+    	</control>
 
-	<control>
-		<description>settings button bg</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>1484</posX>
-		<posY>962</posY>
-		<width>184</width>
-		<height>50</height>
-		<texture>osd_settings_button_bg.png</texture>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
-	</control>
-	
-	<control>
-		<description>clock bg</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>1484</posX>
-		<posY>776</posY>
-		<width>187</width>
-		<height>88</height>
-		<texture>osd_clock_bg.png</texture>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
-	</control>
-	
-	<control>
-		<description>Movie Name</description>
-		<id>0</id>
-		<type>fadelabel</type>
-		<width>925</width>
-		<height>24</height>
-		<posX>484</posX>
-		<posY>774</posY>
-		<font>fontB20</font>
-		<label>#Play.Current.Title</label>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
-	</control>
-	
-	<control>
-		<description>Channel Name and time</description>
-		<id>0</id>
-		<type>fadelabel</type>
-		<width>940</width>
-		<posX>484</posX>
-		<posY>838</posY>
-		<font>AvalonLight14</font>
-		<textcolor>ff85cffe</textcolor>
-		<label>#Play.Current.Genre - #Play.Current.Year</label>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
-	</control>
-	
-	<control>
-		<type>label</type>
-		<id>1</id>
-		<description>Clock</description>
-		<posX>1500</posX>
-		<posY>825</posY>
-		<width>144</width>
-		<font>AvalonLight14</font>
-		<align>center</align>
-		<label>#time</label>
-		<textcolor>ff85cffe</textcolor>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
-	</control>
-	
-	<control>
-		<description>play button</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>1481</posX>
-		<posY>888</posY>
-		<width>187</width>
-		<height>51</height>
-		<texture>osd_play_button.png</texture>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
-	</control>
-	
-	<control>
-		<description>pause button</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>1481</posX>
-		<posY>930</posY>
-		<width>187</width>
-		<height>51</height>
-		<texture>osd_pause_button.png</texture>
-		<visible>window.isosdvisible + player.paused</visible>
-	</control>
-	
-	<control>
-		<description>Video Logo</description>
-		<type>image</type>
-		<id>999</id>
-		<posX>275</posX>
-		<posY>765</posY>
-		<width>166</width>
-		<height>242</height>
-		<align>center</align>
-     	<centered>yes</centered>
-		<texture mask="poster_mask.png">#Play.Current.Thumb</texture>
-		<keepaspectratio>yes</keepaspectratio>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
-	</control>
+		<control>
+			<description>Series thumb</description>
+			<type>image</type>
+			<id>0</id>
+    		<posX>275</posX>
+    		<posY>765</posY>
+    		<width>166</width>
+    		<height>242</height>
+			<texture mask="poster_mask.png">#TVSeries.SeriesPoster</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+            <align>center</align>
+			<zoom>no</zoom>
+			<valign>top</valign>
+			<visible>!string.equals(#TVSeries.Episode.SeriesName,)</visible>
+		</control>
 
-	<control>
-		<description>Movie Name</description>
-		<id>0</id>
-		<type>fadelabel</type>
-		<width>1295</width>
-		<height>24</height>
-		<posX>325</posX>
-		<posY>154</posY>
-		<font>fontB22</font>
-		<textcolor>6aa5cb</textcolor>
-		<label>#Play.Current.Title</label>
-		<visible>Control.IsVisible(1111) + Control.HasFocus(995)</visible>
-	</control>
+		<control>
+			<description>Movie thumb</description>
+			<type>image</type>
+			<id>102</id>
+    		<posX>275</posX>
+    		<posY>765</posY>
+    		<width>166</width>
+    		<height>242</height>
+			<texture mask="poster_mask.png">#Play.Current.Thumb</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+            <align>center</align>
+			<zoom>no</zoom>
+			<valign>top</valign>
+		</control>
+
+		<control>
+			<description>Movie Name</description>
+			<id>36</id>
+    		<type>fadelabel</type>
+    		<width>925</width>
+    		<height>24</height>
+    		<posX>484</posX>
+    		<posY>774</posY>
+    		<font>fontB20</font>
+    		<label>#Play.Current.Title</label>
+		</control>
+
+		<control>
+			<description>Year/Genre Info</description>
+			<id>0</id>
+    		<type>fadelabel</type>
+    		<width>940</width>
+    		<posX>484</posX>
+    		<posY>838</posY>
+    		<font>AvalonLight14</font>
+    		<textcolor>ff85cffe</textcolor>
+			<label>#Play.Current.Genre - #Play.Current.Year</label>
+		</control>
+
+    	<control>
+    		<type>label</type>
+    		<id>1</id>
+    		<description>Clock</description>
+    		<posX>1500</posX>
+    		<posY>825</posY>
+    		<width>144</width>
+    		<font>AvalonLight14</font>
+    		<align>center</align>
+    		<label>#time</label>
+    		<textcolor>ff85cffe</textcolor>
+    	</control>
+
+    	<control>
+    		<description>play button</description>
+    		<type>image</type>
+    		<id>1</id>
+    		<posX>1481</posX>
+    		<posY>888</posY>
+    		<width>187</width>
+    		<height>51</height>
+    		<texture>osd_play_button.png</texture>
+            <visible>!player.paused</visible>
+    	</control>
+
+    	<control>
+    		<description>pause button</description>
+    		<type>image</type>
+    		<id>1</id>
+    		<posX>1481</posX>
+    		<posY>888</posY>
+    		<width>187</width>
+    		<height>51</height>
+    		<texture>osd_pause_button.png</texture>
+            <visible>player.paused</visible>
+    	</control>
+
+		<control>
+			<description>Plot</description>
+			<type>textboxscrollup</type>
+			<id>1</id>
+    		<posX>325</posX>
+    		<posY>150</posY>
+    		<width>1295</width>
+    		<height>480</height>
+    		<font>AvalonLight16</font>
+    		<textcolor>6aa5cb</textcolor>
+			<label>#Play.Current.Plot</label>
+			<seperator>--------------------------------------------------------------------------------------------------------------------------------------------------------------</seperator>
+			<visible>Control.HasFocus(995) + ![Control.IsVisible(501) | Control.IsVisible(801) | Control.IsVisible(750)]</visible>
+		</control>
+
+    	<control>
+    		<description>progressbar bg</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>588</posX>
+    		<posY>904</posY>
+    		<width>737</width>
+    		<height>18</height>
+    		<texture>osd_progress_bg.png</texture>
+    	</control>
+
+		<control>
+			<description>Progress Bar</description>
+			<type>progress</type>
+			<id>105</id>
+    		<posX>578</posX>
+    		<posY>906</posY>
+    		<width>758</width>
+    		<height>15</height>
+    		<label>#percentage</label>
+    		<lefttexture>osd_progress_left.png</lefttexture>
+    		<midtexture>osd_progress_mid.png</midtexture>
+    		<righttexture>osd_progress_right.png</righttexture>
+			<label>#percentage</label>
+		</control>
+
+		<control>
+			<description>Remaining time</description>
+			<type>label</type>
+			<id>102</id>
+    		<posX>1435</posX>
+    		<posY>895</posY>
+    		<label>#currentremaining</label>
+    		<align>right</align>
+    		<font>font11</font>
+		</control>
+
+		<control>
+			<description>Start Time Info</description>
+			<type>label</type>
+			<id>101</id>
+    		<posX>487</posX>
+    		<posY>895</posY>
+    		<label>#currentplaytime</label>
+    		<align>left</align>
+    		<font>font11</font>
+		</control>
 	
-	<control>
-		<description>Plot</description>
-		<type>textboxscrollup</type>
-		<id>0</id>
-		<posX>325</posX>
-		<posY>264</posY>
-		<width>1295</width>
-		<height>320</height>
-	<visible>Control.IsVisible(1111) + Control.HasFocus(995)</visible>	<seperator>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</seperator>
-		<label>#Play.Current.Plot</label>
-		<font>AvalonLight16</font>
-		<textcolor>6aa5cb</textcolor>
-	</control>
-	
+	<include>videoOSD.mediainfo.xml</include>
 		
 	<control>
 		<description>Adjustment bg</description>
@@ -169,7 +206,7 @@
 		<width>1560</width>
 		<height>734</height>
 		<texture>osd_top_bg.png</texture>
-		<visible>[Control.IsVisible(1111) + Control.HasFocus(995)] | [Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)]</visible>
+		<visible>Control.HasFocus(995) | Control.IsVisible(501) | Control.IsVisible(801) | Control.IsVisible(750)</visible>
 	</control>
 	
    <control>
@@ -177,11 +214,11 @@
 		<type>label</type>
 		<id>1</id>
 		<width>400</width>
-		<posX>340</posX>
-		<posY>354</posY>
+		<posX>325</posX>
+		<posY>154</posY>
 		<label>287</label>
-		<font>AvalonLight16</font>
-		<textcolor>ff85cffe</textcolor>
+		<font>fontB20</font>
+		<textcolor>ffffffff</textcolor>
 		<visible>Control.IsVisible(850)</visible>
     </control>
 	
@@ -190,11 +227,11 @@
 		<type>label</type>
 		<id>1</id>
 		<width>400</width>
-		<posX>340</posX>
-		<posY>354</posY>
+		<posX>325</posX>
+		<posY>154</posY>
 		<label>292</label>
-		<font>AvalonLight16</font>
-		<textcolor>ff85cffe</textcolor>
+		<font>fontB20</font>
+		<textcolor>ffffffff</textcolor>
 		<visible>Control.IsVisible(500)</visible>
     </control>
 	
@@ -204,7 +241,7 @@
 		<id>1</id>
 		<width>400</width>
 		<posX>325</posX>
-		<posY>205</posY>
+		<posY>154</posY>
 		<label>291</label>
 		<font>fontB20</font>
 		<textcolor>ffffffff</textcolor>
@@ -223,14 +260,13 @@
 		<AltTextureFocus>osd_sub_button_focus.png</AltTextureFocus>
 		<AltTextureNoFocus>osd_sub_button_nofocus.png</AltTextureNoFocus>
 		<textureFocus>osd_sub_button_focus.png</textureFocus>
-		<textureNoFocus>osd_sub_button_focus.png</textureNoFocus>
+		<textureNoFocus>osd_sub_button_nofocus.png</textureNoFocus>
 		<label>-</label>
 		<font>-</font>
 		<onleft>995</onleft>
 		<onright>221</onright>
 		<onup>218</onup>
 		<ondown>218</ondown>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
     </control>
 	
 	<control>
@@ -248,10 +284,9 @@
 		<AltTextureFocus>osd_audio_button_focus.png</AltTextureFocus>
 		<AltTextureNoFocus>osd_audio_button_nofocus.png</AltTextureNoFocus>
 		<textureFocus>osd_audio_button_focus.png</textureFocus>
-		<textureNoFocus>osd_audio_button_focus.png</textureNoFocus>
+		<textureNoFocus>osd_audio_button_nofocus.png</textureNoFocus>
 		<label>-</label>
 		<font>-</font>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
    </control>
    
 	<control>
@@ -265,14 +300,13 @@
         <AltTextureFocus>osd_video_button_focus.png</AltTextureFocus>
         <AltTextureNoFocus>osd_video_button_nofocus.png</AltTextureNoFocus>
         <textureFocus>osd_video_button_focus.png</textureFocus>
-        <textureNoFocus>osd_video_button_focus.png</textureNoFocus>
+        <textureNoFocus>osd_video_button_nofocus.png</textureNoFocus>
         <label>-</label>
         <font>-</font>
         <onleft>221</onleft>
         <onright>995</onright>
         <onup>220</onup>
         <ondown>220</ondown>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
 	
 	<control>
@@ -287,10 +321,9 @@
 		<onup>995</onup>
 		<ondown>995</ondown>
 		<onright>218</onright>
-		<onleft>220</onleft>
+		<onleft>995</onleft>
 		<width>51</width>
 		<height>51</height>
-		<visible>window.isosdvisible + ![player.paused | player.rewinding | player.forwarding | player.seeking]</visible>
 	</control>
 	
     <control>
@@ -309,9 +342,11 @@
       <description>Subtitle Delay label</description>
       <type>label</type>
       <id>850</id>
-      <posX>340</posX>
-      <posY>414</posY>
+      <posX>399</posX>
+      <posY>464</posY>
 	  <align>left</align>
+	  <font>AvalonLight12</font>
+	  <textcolor>6aa5cb</textcolor>
       <label>303</label>
       <visible>no</visible>
     </control>
@@ -320,46 +355,33 @@
       <description>Subtitle Delay Slider</description>
       <type>slider</type>
       <id>800</id>
-      <posX>320</posX>
-      <posY>440</posY>
+      <posX>666</posX>
+      <posY>459</posY>
       <spintype>float</spintype>
       <showrange>no</showrange>
-      <textureSliderBar>osd_slider_bg2.png</textureSliderBar>
-      <textureSliderNib>osd_slider_nibNF2.png</textureSliderNib>
-      <textureSliderNibFocus>osd_slider_nibFO2.png</textureSliderNibFocus>
-      <onup>800</onup>
-      <ondown>801</ondown>
+      <textureSliderBar>osd_slider_bg.png</textureSliderBar>
+      <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
+      <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
+      <onup>802</onup>
+      <ondown>218</ondown>
       <onleft>800</onleft>
       <onright>800</onright>
       <visible>no</visible>
     </control>
-	
-	<control>
-      <description>Subtitles delay On/Off Checkbox Background</description>
-      <type>image</type>
-      <id>0</id>
-      <posX>315</posX>
-      <posY>470</posY>
-      <width>236</width>
-      <height>36</height>
-      <texture>listcontrol_item_selected_tiny.png</texture>
-      <visible>Control.HasFocus(801)</visible>
-    </control>
+
 	
     <control>
       <description>Subtitles delay On/Off Checkbox</description>
       <type>checkmark</type>
       <id>801</id>
-      <posX>315</posX>
-      <posY>475</posY>
+      <posX>323</posX>
+      <posY>246</posY>
       <label>305</label>
-      <MarkWidth>39</MarkWidth>
-      <MarkHeight>36</MarkHeight>
       <font>font12</font>
       <onup>800</onup>
-      <ondown>800</ondown>
+      <ondown>802</ondown>
       <onleft>801</onleft>
-      <onright>802</onright>
+      <onright>801</onright>
       <visible>no</visible>
 	  <align>right</align>
     </control>
@@ -368,24 +390,25 @@
 		<description>Subtitles List Control</description>
 		<type>listcontrol</type>
 		<id>802</id>
-		<posX>755</posX>
-		<posY>415</posY>
-		<width>236</width>
-		<height>110</height>
-		<textureHeight>36</textureHeight>
-		<onleft>801</onleft>
-		<onright>218</onright>
-		<onup>802</onup>
-		<ondown>802</ondown>
+		<posX>672</posX>
+		<posY>302</posY>
+		<width>780</width>
+		<height>200</height>
+		<textureHeight>52</textureHeight>
+		<onleft>802</onleft>
+		<onright>802</onright>
+		<onup>801</onup>
+		<ondown>800</ondown>
 		<font>font12</font>
 		<textcolor>ffffffff</textcolor>
 		<colordiffuse>ffffffff</colordiffuse>
-		<textXOff>9</textXOff>
-		<textYOff>2</textYOff>
-		<textureFocus>listcontrol_item_selected_tiny.png</textureFocus>
-		<textureNoFocus>listcontrol_item_tiny.png</textureNoFocus>
-		<spaceBetweenItems>0</spaceBetweenItems>
+        <textXOff>25</textXOff>
+        <textYOff>6</textYOff>
+		<textureFocus>settings_button_large_focus.png</textureFocus>
+		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
 		<visible>no</visible>
+        <dimColor>ffffffff</dimColor>
+        <unfocusedAlpha>255</unfocusedAlpha>
     </control>
 
     <control>
@@ -482,7 +505,7 @@
       <type>slider</type>
       <id>400</id>
       <posX>320</posX>
-      <posY>440</posY>
+      <posY>394</posY>
       <spintype>float</spintype>
       <showrange>no</showrange>
       <textureSliderBar>osd_slider_bg2.png</textureSliderBar>
@@ -494,14 +517,15 @@
       <onright>400</onright>
       <visible>no</visible>
     </control>
-	
     <control>
       <description>A/v Delay label</description>
       <type>label</type>
       <id>550</id>
-      <posX>340</posX>
-      <posY>414</posY>
+      <posX>399</posX>
+      <posY>464</posY>
 	  <align>left</align>
+	  <font>AvalonLight12</font>
+	  <textcolor>6aa5cb</textcolor>
       <label>303</label>
       <visible>no</visible>
     </control>
@@ -510,15 +534,15 @@
       <description>A/V Delay Slider</description>
       <type>slider</type>
       <id>500</id>
-      <posX>320</posX>
-      <posY>440</posY>
+      <posX>666</posX>
+      <posY>459</posY>
       <spintype>float</spintype>
       <showrange>no</showrange>
-      <textureSliderBar>osd_slider_bg2.png</textureSliderBar>
-      <textureSliderNib>osd_slider_nibNF2.png</textureSliderNib>
-      <textureSliderNibFocus>osd_slider_nibFO2.png</textureSliderNibFocus>
-      <onup>500</onup>
-      <ondown>501</ondown>
+      <textureSliderBar>osd_slider_bg.png</textureSliderBar>
+      <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
+      <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
+      <onup>501</onup>
+      <ondown>221</ondown>
       <onleft>501</onleft>
       <onright>501</onright>
       <visible>no</visible>
@@ -528,23 +552,22 @@
 		<description>Audio Stream List Control</description>
 		<type>listcontrol</type>
 		<id>501</id>
-		<posX>755</posX>
-		<posY>415</posY>
-		<width>236</width>
-		<height>110</height>
-		<textureHeight>36</textureHeight>
-		<font>font12</font>
-		<textcolor>ffffffff</textcolor>
-		<colordiffuse>ffffffff</colordiffuse>
-		<textXOff>9</textXOff>
-		<textYOff>2</textYOff>
-		<textureFocus>listcontrol_item_selected_tiny.png</textureFocus>
-		<textureNoFocus>listcontrol_item_tiny.png</textureNoFocus>
+		<posX>672</posX>
+		<posY>248</posY>
+		<width>334</width>
+		<height>200</height>
+		<textureHeight>52</textureHeight>
+		<textureFocus>settings_button_medium_focus.png</textureFocus>
+		<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
 		<onleft>500</onleft>
 		<onright>500</onright>
 		<onup>500</onup>
 		<ondown>500</ondown>
+        <textXOff>25</textXOff>
+        <textYOff>6</textYOff>
 		<visible>no</visible>
+        <dimColor>ffffffff</dimColor>
+        <unfocusedAlpha>255</unfocusedAlpha>
     </control>
 	
     <control>
@@ -552,7 +575,7 @@
       <type>label</type>
       <id>750</id>
       <posX>399</posX>
-      <posY>510</posY>
+      <posY>464</posY>
 	  <align>left</align>
       <label>Video Position</label>
       <visible>no</visible>
@@ -565,7 +588,7 @@
       <type>slider</type>
       <id>700</id>
       <posX>666</posX>
-      <posY>505</posY>
+      <posY>459</posY>
       <spintype>float</spintype>
       <showrange>no</showrange>
       <textureSliderBar>osd_slider_bg.png</textureSliderBar>
@@ -583,7 +606,7 @@
       <type>checkmark</type>
       <id>701</id>
       <posX>323</posX>
-      <posY>300</posY>
+      <posY>246</posY>
       <label>306</label>
       <onup>706</onup>
       <ondown>702</ondown>
@@ -597,7 +620,7 @@
       <type>checkmark</type>
       <id>702</id>
       <posX>323</posX>
-      <posY>350</posY>
+      <posY>299</posY>
       <label>431</label>
       <onup>701</onup>
       <ondown>703</ondown>
@@ -611,7 +634,7 @@
       <type>checkmark</type>
       <id>703</id>
       <posX>323</posX>
-      <posY>399</posY>
+      <posY>346</posY>
       <label>343</label>
       <onup>702</onup>
       <ondown>700</ondown>
@@ -625,7 +648,7 @@
       <type>label</type>
       <id>752</id>
       <posX>399</posX>
-      <posY>565</posY>
+      <posY>519</posY>
       <label>464</label>
 	  <font>AvalonLight12</font>
 	  <textcolor>6aa5cb</textcolor>
@@ -637,7 +660,7 @@
       <type>slider</type>
       <id>704</id>
       <posX>666</posX>
-      <posY>560</posY>
+      <posY>514</posY>
       <spintype>float</spintype>
       <showrange>no</showrange>
       <textureSliderBar>osd_slider_bg.png</textureSliderBar>
@@ -655,7 +678,7 @@
       <type>label</type>
       <id>753</id>
       <posX>399</posX>
-      <posY>625</posY>
+      <posY>579</posY>
       <label>465</label>
 	  <font>AvalonLight12</font>
 	  <textcolor>6aa5cb</textcolor>
@@ -667,7 +690,7 @@
       <type>slider</type>
       <id>705</id>
       <posX>666</posX>
-      <posY>620</posY>
+      <posY>574</posY>
       <spintype>float</spintype>
       <showrange>no</showrange>
       <textureSliderBar>osd_slider_bg.png</textureSliderBar>
@@ -685,7 +708,7 @@
       <type>label</type>
       <id>754</id>
       <posX>399</posX>
-      <posY>684</posY>
+      <posY>638</posY>
       <label>466</label>
 	  <font>AvalonLight12</font>
 	  <textcolor>6aa5cb</textcolor>
@@ -697,14 +720,14 @@
       <type>slider</type>
       <id>706</id>
       <posX>666</posX>
-      <posY>680</posY>
+      <posY>634</posY>
       <spintype>float</spintype>
       <showrange>no</showrange>
       <textureSliderBar>osd_slider_bg.png</textureSliderBar>
       <textureSliderNib>osd_slider_nibNF.png</textureSliderNib>
       <textureSliderNibFocus>osd_slider_nibFO.png</textureSliderNibFocus>
       <onup>705</onup>
-      <ondown>701</ondown>
+      <ondown>220</ondown>
       <onleft>706</onleft>
       <onright>706</onright>
       <visible>no</visible>
@@ -764,5 +787,6 @@
       <spinPosY>600</spinPosY>
       <visible>no</visible>
     </control>
+
 </controls>
 </window>
