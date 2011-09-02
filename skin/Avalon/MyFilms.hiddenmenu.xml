@@ -161,7 +161,8 @@
 				<label>101</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
-                <ondown>3</ondown>					
+                <ondown>3</ondown>	
+                <onup>66614</onup>				
 			</control>
 				
 			<control>

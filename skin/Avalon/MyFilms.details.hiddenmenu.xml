@@ -127,7 +127,8 @@
 				<textYOff>14</textYOff>			
 				<onleft>10000</onleft>				
 				<onright>10000</onright>
-				<label>Play Trailer</label>				
+				<label>Play Trailer</label>
+                <onup>66613</onup>				
 			</control>
 
 			<control>

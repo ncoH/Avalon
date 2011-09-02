@@ -191,6 +191,7 @@
 					<onright>50</onright>
 					<onleft>50</onleft>
                     <ondown>5</ondown>
+                    <onup>15</onup>
 				</control>
 
 				<control>
@@ -363,6 +364,7 @@
 					<onright>50</onright>
 					<onleft>50</onleft>
                     <ondown>15</ondown>
+                    <onup>11</onup>
 					<visible>plugin.isenabled(Search music)</visible>
 				</control>
 
@@ -381,6 +383,7 @@
 					<onright>50</onright>
 					<onleft>50</onleft>
                     <ondown>2</ondown>
+                    <onup>200</onup>
                     <visible>plugin.isenabled(My Lyrics)</visible>
 				</control>	
 
