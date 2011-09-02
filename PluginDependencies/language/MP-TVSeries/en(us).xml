@@ -310,4 +310,5 @@
   <string Field="Recommendations" Original="Recommendations">Recommendations</string>
   <string Field="Trending" Original="Trending">Trending</string>
   <string Field="WatchList" Original="WatchList">Watch List</string>
+  <string Field="Shouts" Original="Shouts">Shouts</string>
 </strings>
