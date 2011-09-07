@@ -141,11 +141,10 @@
 	<bold>no</bold>
 </font>
 
-
 <font>
-	<name>AvalonLight20</name>
+	<name>AvalonLight18</name>
 	<filename>AvalonType Light</filename>
-	<height>20</height>
+	<height>18</height>
 	<start>0</start>
 	<end>1536</end>
 	<bold>no</bold>
@@ -153,9 +152,9 @@
 
 
 <font>
-	<name>AvalonLight24</name>
+	<name>AvalonLight20</name>
 	<filename>AvalonType Light</filename>
-	<height>24</height>
+	<height>20</height>
 	<start>0</start>
 	<end>1536</end>
 	<bold>no</bold>
