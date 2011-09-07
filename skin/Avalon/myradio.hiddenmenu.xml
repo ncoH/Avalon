@@ -2,6 +2,29 @@
 <window>
 <controls>
 	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+		<id>1</id>
+		<type>image</type>
+		<posY>440</posY>
+		<width>64</width>
+		<height>199</height>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
+	</control>
+
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>858</posX>
+		<posY>0</posY>
+		<texture>hiddenmenu_tab_up.png</texture>
+		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
+		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+	</control>
+
+	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
 		<defaultcontrol>2</defaultcontrol>
@@ -22,14 +45,7 @@
 			<animation effect="fade" time="450">visible</animation>
 			<animation effect="fade" time="400">hidden</animation>
 		</control>
-		
-	<control>
-		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
-		<animation effect="fade" time="250">visible</animation>
-		<animation effect="fade" time="0">hidden</animation>
+	
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -39,18 +55,67 @@
 			<height>1044</height>
 			<texture>menu_bg.png</texture>
 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
 		</control>
 	
 		<control>
-			<description>Heading text label</description>
+			<type>image</type>
+			<id>0</id>
+			<posY>296</posY>
+			<posX>128</posX>
+			<width>376</width>
+			<height>1</height>
+			<texture>hiddenmenu_separator.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+		<control>
+			<description>Menu label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>136</posX>
-			<posY>128</posY>
+			<posX>128</posX>
+			<posY>114</posY>
 			<label>924</label>
-			<font>font22</font>
+			<font>fontB12</font>
 			<textcolor>ffffff</textcolor>
-		</control>	
+			<visible>!Control.HasFocus(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+    	</control>
+		<control>
+			<description>Jump to label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>310</posY>
+			<label>1065</label>
+			<font>fontB12</font>
+			<textcolor>ffffff</textcolor>
+ 			<visible>!Control.HasFocus(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+          <control>
+            <type>group</type>
+            <description>group element</description>
+ 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+            <posX>69</posX>
+            <posY>155</posY>
+            <layout>StackLayout(0, Vertical, true)</layout>	
 				
 			<control>
 				<type>button</type>
@@ -58,17 +123,15 @@
 				<id>2</id>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>10</onup>
+				<onup>1143</onup>
 				<ondown>3</ondown>
 				<label>100</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>215</posY>
 				<width>497</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
 			</control>
 
 			<control>
@@ -81,15 +144,25 @@
 				<label>620</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>285</posY>
 				<width>497</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
-				<offsetSortButtonX>260</offsetSortButtonX>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+				<offsetSortButtonX>280</offsetSortButtonX>
 				<offsetSortButtonY>27</offsetSortButtonY>
 			</control>
+
+            <control>
+                <description>Empty button</description>
+                <type>button</type>
+                <id>0</id>
+    		    <textureFocus>-</textureFocus>
+    		    <textureNoFocus>-</textureNoFocus>
+    		    <width>497</width>
+    		    <height>64</height>
+                <label>-</label>
+                <visible>true</visible>
+            </control>
 
 			<control>
 				<description>Previous</description>
@@ -103,12 +176,10 @@
 				<action>15</action>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>355</posY>
 				<width>497</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>					
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>				
 			</control>
 
 			<control>
@@ -123,12 +194,10 @@
 				<action>14</action>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>425</posY>
 				<width>497</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>					
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>				
 			</control>
 
 			<control>
@@ -143,12 +212,10 @@
 				<hyperlink>762</hyperlink>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>495</posY>
 				<width>497</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>					
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>				
 			</control>
 
 			<control>
@@ -163,12 +230,10 @@
 				<hyperlink>763</hyperlink>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>565</posY>
 				<width>497</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>				
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>			
 			</control>
 
 			<control>
@@ -178,18 +243,72 @@
 				<label>137</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<ondown>2</ondown>
+				<ondown>11</ondown>
 				<onup>9</onup>
 				<hyperlink>8900</hyperlink>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>635</posY>
 				<width>497</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>				
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>			
 			</control>
+            
+            <control>
+                <description>Now playing button</description>
+                <type>button</type>
+                <id>11</id>
+                <label>4540</label>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<ondown>1142</ondown>
+				<onup>10</onup>
+                <hyperlink>510</hyperlink>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+            </control>
+            
+            <control>
+                <description>My Lyrics</description>
+                <type>button</type>
+                <id>1142</id>
+                <label>Lyrics</label>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<ondown>1143</ondown>
+				<onup>11</onup>
+                <hyperlink>90478</hyperlink>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+                <visible>plugin.isenabled(My Lyrics)</visible>
+            </control>
+            
+            <control>
+                <description>Last.FM</description>
+                <type>button</type>
+                <id>1143</id>
+                <label>Last.Fm Radio</label>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<ondown>2</ondown>
+				<onup>1142</onup>
+                <hyperlink>7890</hyperlink>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+                <visible>plugin.isenabled(Last.fm Radio)</visible>
+            </control>
 		
 	</control>
 </control>
