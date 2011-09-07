@@ -138,7 +138,6 @@
 			<width>780</width>
 			<height>320</height>
 			<label>#Radio.Recorded.Description</label>
-			<label>#TV.RecordedTV.Description</label>
 			<visible>facadeview.list</visible>
 		</control>
 		
