@@ -81,6 +81,13 @@
   <string Field="Source">Quellpfad</string>
   <string Field="Aspectratio">Bildverhältnis</string>
   <string Field="WatchedCount">Gesehen</string>
+  <string Field="AddToWatchList">Film zur Beobachtungsliste hinzufügen</string>
+  <string Field="Rate">Film bewerten</string>
+  <string Field="Trakt">Trakt</string>
+  <string Field="Watchlist">Beobachtungsliste</string>
+  <string Field="Recommendations">Empfehlungen</string>
+  <string Field="Trending">Aktuelle Trends</string>
+  <string Field="Shouts">Shouts</string>
   <!-- Latest Media -->  
   <string Field="LatestMovies">Neueste Filme</string>
   <string Field="LatestEpisodes">Neueste Episoden</string> 

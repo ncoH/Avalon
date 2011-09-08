@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- English (US) -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
-<!-- Last Updated: 12th May 2011 -->
+<!-- Last Updated: 08th September 2011 -->
 <strings>
  
  <!-- Skin Updates / Patching GUI -->
@@ -81,7 +81,14 @@
   <string Field="InfoUrl">Info URL</string>
   <string Field="Source">Source</string>
   <string Field="Aspectratio">Aspectratio</string>
-  <string Field="WatchedCount">Watched Count</string>  
+  <string Field="WatchedCount">Watched Count</string>
+  <string Field="AddToWatchList">Add movie to watchlist</string>
+  <string Field="Rate">Rate movie</string>
+  <string Field="Trakt">Trakt</string>
+  <string Field="Watchlist">Watchlist</string>
+  <string Field="Recommendations">Recommendations</string>
+  <string Field="Trending">Trending movies</string>
+  <string Field="Shouts">Shouts</string>  
   <!-- Latest Media -->  
   <string Field="LatestMovies">Latest movies</string>
   <string Field="LatestEpisodes">Latest episodes</string>

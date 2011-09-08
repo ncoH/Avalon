@@ -162,7 +162,7 @@
 				<onleft>50</onleft>
                 <onright>50</onright>
                 <ondown>14</ondown>
-                <onup>66614</onup>
+                <onup>66661</onup>
 			</control>
 
 			<control>
@@ -307,13 +307,13 @@
 				<onleft>50</onleft>
                 <onright>50</onright>
 				<onup>66613</onup>
-				<ondown>66614</ondown>    
+				<ondown>66661</ondown>    
 			</control>
             
             <control>
                 <description>Trakt</description>
                 <type>button</type>
-                <id>66614</id>
+                <id>66661</id>
 				<width>497</width>
 				<height>64</height>
 				<textXOff>58</textXOff>
@@ -321,7 +321,6 @@
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
                 <label>Trakt</label>
-                <hyperlink>87258</hyperlink>
                 <onup>66611</onup>
                 <ondown>3</ondown>
 				<onleft>50</onleft>
