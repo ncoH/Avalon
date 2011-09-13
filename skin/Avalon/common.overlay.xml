@@ -42,10 +42,9 @@
 		<height>136</height>
 		<action>18</action>
 		<textureFocus>tv_green_border.png</textureFocus>
-		<visible>player.hasvideo+!control.isvisible(3337)</visible>
+		<visible>player.hasvideo+!control.isvisible(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -60,10 +59,9 @@
 		<label>4540</label>
 		<font>AvalonLight11</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>player.hasvideo+!control.isvisible(3337)</visible>
+		<visible>player.hasvideo+!control.isvisible(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -77,10 +75,9 @@
       <width>33</width>
       <height>16</height>
       <texture>now_playing_eq.gif</texture>
-      <visible>player.hasvideo+!control.isvisible(3337)</visible>
+      <visible>player.hasvideo+!control.isvisible(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
     </control>
@@ -95,10 +92,9 @@
 		<label>#currentplaytime / #duration</label>
 		<font>AvalonLight10</font>
 		<textcolor>ffffff</textcolor>
-		<visible>player.hasvideo+!control.isvisible(3337)</visible>
+		<visible>player.hasvideo+!control.isvisible(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -113,10 +109,9 @@
 		<posY>998</posY>
 		<font>fontB12</font>
 		<label>#Play.Current.Title</label>
-		<visible>player.hasvideo+!control.isvisible(3337)</visible>
+		<visible>player.hasvideo+!control.isvisible(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -130,10 +125,9 @@
 		<width>240</width>
 		<height>16</height>
 		<texture>now_playing_video_progress_bg.png</texture>
-		<visible>player.hasvideo+!control.isvisible(3337)</visible>
+		<visible>player.hasvideo+!control.isvisible(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -151,10 +145,9 @@
 		<midtexture>now_playing_progress_bar.png</midtexture>
 		<righttexture>-</righttexture>
 		<label>#percentage</label>
-		<visible>player.hasvideo+!control.isvisible(3337)</visible>
+		<visible>player.hasvideo+!control.isvisible(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -170,10 +163,9 @@
       <height>135</height>
       <texture>#Play.Current.Thumb</texture>
       <keepaspectratio>yes</keepaspectratio>
-      <visible>player.hasaudio+control.isvisible(3337)</visible>
+      <visible>player.hasaudio+control.isvisible(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
     </control>
@@ -187,10 +179,9 @@
       <width>135</width>
       <height>135</height>
       <texture>audio_nothumb.png</texture>
-      <visible>player.hasaudio+control.isvisible(3337)+string.equals(#Play.Current.Thumb,)</visible>
+      <visible>player.hasaudio+control.isvisible(3337)+string.equals(#Play.Current.Thumb,)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
     </control>
@@ -205,10 +196,9 @@
 		<label>#Play.Current.Title</label>
 		<font>fontB12</font>
 		<textcolor>ffffff</textcolor>
-		<visible>player.hasaudio+control.hastext(3337)</visible>
+		<visible>player.hasaudio+control.hastext(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -223,10 +213,9 @@
 		<label>4540</label>
 		<font>AvalonLight11</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>player.hasaudio+control.isvisible(3337)</visible>
+		<visible>player.hasaudio+control.isvisible(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -240,10 +229,9 @@
       <width>33</width>
       <height>16</height>
       <texture>now_playing_eq.gif</texture>
-      <visible>player.hasaudio+control.hastext(3337)</visible>
+      <visible>player.hasaudio+control.hastext(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
     </control>
@@ -258,10 +246,9 @@
 		<label>#currentplaytime / #duration</label>
 		<font>AvalonLight10</font>
 		<textcolor>ffffff</textcolor>
-		<visible>player.hasaudio+control.hastext(3337)</visible>
+		<visible>player.hasaudio+control.hastext(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -275,10 +262,9 @@
 		<width>135</width>
 		<height>16</height>
 		<texture>now_playing_music_progress_bg.png</texture>
-		<visible>player.hasmedia+control.hastext(3337)</visible>
+		<visible>player.hasmedia+control.hastext(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -296,10 +282,9 @@
 		<midtexture>now_playing_progress_bar.png</midtexture>
 		<righttexture>-</righttexture>
 		<label>#percentage</label>
-		<visible>player.hasmedia+control.hastext(3337)</visible>
+		<visible>player.hasmedia+control.hastext(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -316,10 +301,9 @@
       <height>135</height>
       <texture>#Play.Current.Thumb</texture>
       <keepaspectratio>yes</keepaspectratio>
-      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
     </control>
@@ -333,10 +317,9 @@
       <width>135</width>
       <height>135</height>
       <texture>audio_nothumb.png</texture>
-      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+string.equals(#Play.Current.Thumb,)</visible>
+      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+string.equals(#Play.Current.Thumb,)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
     </control>
@@ -351,10 +334,9 @@
 		<label>#Play.Current.Title</label>
 		<font>fontB12</font>
 		<textcolor>ffffff</textcolor>
-		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -368,10 +350,9 @@
 		<width>135</width>
 		<height>16</height>
 		<texture>now_playing_music_progress_bg.png</texture>
-		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -389,10 +370,9 @@
 		<midtexture>now_playing_progress_bar.png</midtexture>
 		<righttexture>-</righttexture>
 		<label>#percentage</label>
-		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -408,10 +388,9 @@
 		<label>4540</label>
 		<font>AvalonLight11</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>
@@ -425,10 +404,9 @@
       <width>33</width>
       <height>16</height>
       <texture>now_playing_eq.gif</texture>
-		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
     </control>
@@ -443,10 +421,9 @@
 		<label>#currentplaytime / #duration</label>
 		<font>AvalonLight10</font>
 		<textcolor>ffffff</textcolor>
-		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+		<visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		<animation effect="fade" time="250">visible</animation>
 		<animation effect="fade" time="0">hidden</animation>
 	</control>

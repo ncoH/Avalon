@@ -129,6 +129,6 @@
 	
 <import>myHome.exitmenu.xml</import>
 <import>BasicHome.weather.xml</import>  
-<import>common.overlay.xml</import>
+<import>common.overlay.home.xml</import>
 </controls>
 </window>
