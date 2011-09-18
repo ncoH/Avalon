@@ -1193,7 +1193,7 @@
 <import>BasicHome.scraper.xml</import>  
 <import>common.overlay.home.xml</import>
 <import>BasicHome.recentlyaddedSeries.xml</import>
-<import>BasicHome.recentlyaddedMoviesList.xml</import>
+<import>BasicHome.recentlyaddedMovies.xml</import>
 <import>BasicHome.recentlyaddedMusic.xml</import>
 <import>BasicHome.recentlyaddedRecordings.xml</import>
 </controls>
