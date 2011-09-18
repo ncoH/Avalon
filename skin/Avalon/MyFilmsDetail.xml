@@ -1356,9 +1356,9 @@
 			<type>label</type>
 			<description>Title (FullColor Fanart View)</description>
 			<id>1</id>
-			<posX>0</posX>
+			<posX>260</posX>
 			<posY>906</posY>
-			<width>1920</width>
+			<width>1400</width>
 			<align>center</align>
 			<font>fontB20</font>			
 			<label>#myfilms.user.mastertitle.value</label>

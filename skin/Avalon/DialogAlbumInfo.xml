@@ -46,10 +46,11 @@
 	
 	<control>
 		<description>Artist value</description>
-		<type>label</type>
+		<type>fadelabel</type>
 		<id>21</id>
 		<posX>843</posX>
 		<posY>396</posY>
+		<widht>800</width>
 		<font>AvalonLight14</font>
 		<label>-</label>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -72,10 +73,11 @@
 	
 	<control>
 		<description>Album value</description>
-		<type>label</type>
+		<type>fadelabel</type>
 		<id>20</id>
 		<posX>843</posX>
 		<posY>352</posY>
+		<widht>800</width>
 		<label>-</label>
 		<font>AvalonLight14</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
