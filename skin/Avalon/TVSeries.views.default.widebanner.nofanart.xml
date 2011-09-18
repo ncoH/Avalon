@@ -609,7 +609,7 @@
 		<width>382</width>
 		<height>215</height>
 		<texture flipY="true" mask="tvseries_thumb_mask.png">#TVSeries.EpisodeImage</texture>
-		<visible>facadeview.list+Control.IsVisible(1239)</visible>
+		<visible>[facadeview.list+Control.IsVisible(1239)]+!player.playing</visible>
 	</control>
     
 	<control>
@@ -624,7 +624,7 @@
 		<width>399</width>
 		<height>233</height>
 		<texture>tvseries_thumb_shadow.png</texture>
-		<visible>facadeview.list+Control.IsVisible(1239)</visible>
+		<visible>[facadeview.list+Control.IsVisible(1239)]+!player.playing</visible>
 	</control>
 	
     <!-- ********************** IMPORT PROCESS *************************************** -->
