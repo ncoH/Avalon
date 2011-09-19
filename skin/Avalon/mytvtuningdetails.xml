@@ -5,55 +5,59 @@
 <allowoverlay>no</allowoverlay>
 <define>#header.label:200041</define>
 <controls>
-	<import>common.window.xml</import>
+
+     <control>
+      <description>BackGround</description>
+      <type>image</type>
+      <id>1</id>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>      
+    </control>
+	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<description>background listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+        <posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>overlay.png</texture>
+	</control>
+	
+	<control>
+		<description>viewport list</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>795</height>
+		<texture>viewport_onlinevideos.png</texture>
+	</control>
+    
+    <import>common.time.xml</import>
+    
+	<control>
 		<type>label</type>
 		<id>1</id>
-		<posX>552</posX>
-		<posY>30</posY>
+		<posX>185</posX>
+		<posY>38</posY>
 		<width>500</width>
-		<height>100</height>
 		<label>tuning details</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
+		<font>font22</font>
 	</control>
 	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<description>listcontrol background</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>524</posX>
-        <posY>173</posY>
-		<width>725</width>
-		<height>561</height>
-		<texture>listcontrol_bg_recordings.png</texture>
-	</control>
-	
-	<control>
-		<description>TV background</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>87</posX>
-		<posY>170</posY>
-		<width>392</width>
-		<height>266</height>
-		<texture>tvhome_tvframe.png</texture>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-
 	<control>
 		<description>video window</description>
 		<type>videowindow</type>
 		<id>99</id>
-		<posX>135</posX>
-		<posY>221</posY>
-		<width>297</width>
-		<height>166</height>
+		<posX>95</posX>
+		<posY>249</posY>
+		<width>542</width>
+		<height>310</height>
 		<onleft>2</onleft>
 		<onright>2</onright>
 		<action>18</action>
@@ -66,11 +70,11 @@
 		<description>Channel</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>555</posX>
-		<posY>192</posY>
+		<posX>788</posX>
+		<posY>200</posY>
 		<label>Channel name</label>
-		<font>Segoe Light18</font>
-		<textcolor>85cfff</textcolor>
+		<font>fontB16</font>
+		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -79,10 +83,10 @@
 		<description>Channel name</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>555</posX>
-		<posY>230</posY>
+		<posX>1190</posX>
+		<posY>200</posY>
 		<label>#TV.TuningDetails.ChannelName</label>
-		<font>Segoe Light18</font>
+		<font>fontB16</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -91,11 +95,11 @@
 		<description>Provider</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>555</posX>
-		<posY>265</posY>
+		<posX>788</posX>
+		<posY>252</posY>
 		<label>Provider</label>
-		<font>Segoe Light18</font>
-		<textcolor>85cfff</textcolor>
+		<font>fontB16</font>
+		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -104,10 +108,10 @@
 		<description>Provider name</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>555</posX>
-		<posY>302</posY>
+		<posX>1190</posX>
+		<posY>252</posY>
 		<label>#TV.TuningDetails.Provider</label>
-		<font>Segoe Light18</font>
+		<font>fontB16</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -116,10 +120,11 @@
 		<description>Signal level</description>
 		<type>label</type>
 		<id>22</id>
-		<posX>555</posX>
-		<posY>373</posY>
+		<posX>788</posX>
+		<posY>354</posY>
 		<label>Signal level</label>
-		<font>Segoe Light18</font>
+		<font>AvalonLight16</font>
+        <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -128,10 +133,11 @@
 		<description>Signal level 0</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>742</posX>
-		<posY>374</posY>
+		<posX>1092</posX>
+		<posY>338</posY>
 		<label> 0</label>
-		<font>font10</font>
+		<font>font11</font>
+        <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -140,11 +146,12 @@
 		<description>Signal level 100</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>1183</posX>
-		<posY>374</posY>
+		<posX>1770</posX>
+		<posY>338</posY>
 		<label> 100</label>
-		<font>font10</font>
+		<font>font11</font>
 		<align>right</align>
+        <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -153,26 +160,26 @@
 		<description>Progress background</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>747</posX>
-		<posY>396</posY>
-		<width>436</width>
-		<height>3</height>
-		<texture>blue.png</texture>
+    	<posX>1092</posX>
+    	<posY>372</posY>
+    	<width>677</width>
+    	<height>18</height>
+		<texture>osd_progress_bg.png</texture>
 	</control>
 
 	<control>
 		<description>Signal level progress bar</description>
 		<type>progress</type>
 		<id>23</id>
-		<posX>735</posX>
-		<posY>396</posY>
-		<width>460</width>
-		<height>3</height>
+		<posX>1082</posX>
+		<posY>374</posY>
+		<width>677</width>
+		<height>15</height>
 		<label>#TV.TuningDetails.SignalLevel</label>
 		<texturebg>-</texturebg>
-		<lefttexture>white.png</lefttexture>
-		<midtexture>white.png</midtexture>
-		<righttexture>white.png</righttexture>
+		<lefttexture>osd_progress_left.png</lefttexture>
+		<midtexture>osd_progress_mid.png</midtexture>
+		<righttexture>osd_progress_right.png</righttexture>
 		<visible>yes</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -182,35 +189,11 @@
 		<description>Signal Quality</description>
 		<type>label</type>
 		<id>24</id>
-		<posX>555</posX>
-		<posY>409</posY>
+		<posX>788</posX>
+		<posY>406</posY>
 		<label>Signal quality</label>
-		<font>Segoe Light18</font>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-	
-	<control>
-		<description>Signal level 0</description>
-		<type>label</type>
-		<id> 0</id>
-		<posX>742</posX>
-		<posY>409</posY>
-		<label> 0</label>
-		<font>font10</font>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-	
-	<control>
-		<description>Signal level 100</description>
-		<type>label</type>
-		<id>0</id>
-		<posX>1183</posX>
-		<posY>409</posY>
-		<label> 100</label>
-		<font>font10</font>
-		<align>right</align>
+		<font>AvalonLight16</font>
+        <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -219,26 +202,26 @@
 		<description>Progress background</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>747</posX>
-		<posY>431</posY>
-		<width>436</width>
-		<height>3</height>
-		<texture>blue.png</texture>
+    	<posX>1092</posX>
+    	<posY>425</posY>
+    	<width>677</width>
+    	<height>18</height>
+		<texture>osd_progress_bg.png</texture>
 	</control>
 
 	<control>
-		<description>Signal quality progress bar</description>
+		<description>Signal level progress bar</description>
 		<type>progress</type>
-		<id>25</id>
-		<posX>735</posX>
-		<posY>431</posY>
-		<width>460</width>
-		<height>3</height>
+		<id>23</id>
+		<posX>1082</posX>
+		<posY>427</posY>
+		<width>677</width>
+		<height>15</height>
 		<label>#TV.TuningDetails.SignalQuality</label>
 		<texturebg>-</texturebg>
-		<lefttexture>white.png</lefttexture>
-		<midtexture>white.png</midtexture>
-		<righttexture>white.png</righttexture>
+		<lefttexture>osd_progress_left.png</lefttexture>
+		<midtexture>osd_progress_mid.png</midtexture>
+		<righttexture>osd_progress_right.png</righttexture>
 		<visible>yes</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -248,10 +231,11 @@
 		<description>Band</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>1020</posX>
-		<posY>462</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>1440</posX>
+		<posY>500</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>Band</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -260,9 +244,10 @@
 		<description>Band value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>1163</posX>
-		<posY>462</posY>
+		<posX>1640</posX>
+		<posY>500</posY>
 		<label>#TV.TuningDetails.Band</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -271,10 +256,11 @@
 		<description>Band width</description>
 		<type>label</type>
 		<id>6</id>
-		<posX>555</posX>
-		<posY>462</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>788</posX>
+		<posY>500</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>Band width</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -283,9 +269,10 @@
 		<description>Band width value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>700</posX>
-		<posY>462</posY>
+		<posX>992</posX>
+		<posY>500</posY>
 		<label>#TV.TuningDetails.BandWidth</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -294,10 +281,11 @@
 		<description>Channel type</description>
 		<type>label</type>
 		<id>7</id>
-		<posX>1020</posX>
-		<posY>486</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>1440</posX>
+		<posY>534</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>Channel type</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -306,9 +294,10 @@
 		<description>Channel type value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>1163</posX>
-		<posY>486</posY>
+		<posX>1640</posX>
+		<posY>534</posY>
 		<label>#TV.TuningDetails.ChannelType</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -317,10 +306,11 @@
 		<description>RTSP URL</description>
 		<type>label</type>
 		<id>4</id>
-		<posX>555</posX>
-		<posY>486</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>788</posX>
+		<posY>534</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>RTSP URL</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -329,9 +319,10 @@
 		<description>RTSP URL value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>700</posX>
-		<posY>486</posY>
+		<posX>992</posX>
+		<posY>534</posY>
 		<label>#TV.TuningDetails.RTSPURL</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -340,10 +331,11 @@
 		<description>Country id</description>
 		<type>label</type>
 		<id>8</id>
-		<posX>555</posX>
-		<posY>510</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>788</posX>
+		<posY>568</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>Country id</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -352,9 +344,10 @@
 		<description>Country id value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>700</posX>
-		<posY>510</posY>
+		<posX>992</posX>
+		<posY>568</posY>
 		<label>#TV.TuningDetails.CountryId</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -363,10 +356,11 @@
 		<description>Free to air</description>
 		<type>label</type>
 		<id>9</id>
-		<posX>1020</posX>
-		<posY>510</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>1440</posX>
+		<posY>568</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>Free to air?</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -375,10 +369,10 @@
 		<description>Free to air value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>1163</posX>
-		<posY>510</posY>
+		<posX>1640</posX>
+		<posY>568</posY>
 		<label>#TV.TuningDetails.FreeToAir</label>
-
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -387,10 +381,11 @@
 		<description>Frequency</description>
 		<type>label</type>
 		<id>10</id>
-		<posX>555</posX>
-		<posY>534</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>788</posX>
+		<posY>602</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>Frequency</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -399,9 +394,10 @@
 		<description>Frequency value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>700</posX>
-		<posY>534</posY>
+		<posX>992</posX>
+		<posY>602</posY>
 		<label>#TV.TuningDetails.Frequency</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -410,10 +406,11 @@
 		<description>InnerFecRate</description>
 		<type>label</type>
 		<id>11</id>
-		<posX>1020</posX>
-		<posY>534</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>1440</posX>
+		<posY>602</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>Inner fec rate</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -422,9 +419,10 @@
 		<description>InnerFecRate value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>1163</posX>
-		<posY>534</posY>
+		<posX>1640</posX>
+		<posY>602</posY>
 		<label>#TV.TuningDetails.InnerFecRate</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -433,10 +431,11 @@
 		<description>Modulation</description>
 		<type>label</type>
 		<id>12</id>
-		<posX>555</posX>
-		<posY>558</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>788</posX>
+		<posY>636</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>Modulation</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -445,9 +444,10 @@
 		<description>Modulation value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>700</posX>
-		<posY>558</posY>
+		<posX>992</posX>
+		<posY>636</posY>
 		<label>#TV.TuningDetails.Modulation</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -456,10 +456,11 @@
 		<description>NetworkId</description>
 		<type>label</type>
 		<id>13</id>
-		<posX>1020</posX>
-		<posY>558</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>1440</posX>
+		<posY>636</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>NetworkId</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -468,9 +469,10 @@
 		<description>NetworkId value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>1163</posX>
-		<posY>558</posY>
+		<posX>1640</posX>
+		<posY>636</posY>
 		<label>#TV.TuningDetails.NetworkId</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -479,10 +481,11 @@
 		<description>PcrPid</description>
 		<type>label</type>
 		<id>14</id>
-		<posX>555</posX>
-		<posY>582</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>788</posX>
+		<posY>670</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>PcrPid</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -491,9 +494,10 @@
 		<description>PcrPid value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>700</posX>
-		<posY>582</posY>
+		<posX>992</posX>
+		<posY>670</posY>
 		<label>#TV.TuningDetails.PcrPid</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -502,10 +506,11 @@
 		<description>PmtPid</description>
 		<type>label</type>
 		<id>15</id>
-		<posX>1020</posX>
-		<posY>582</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>1440</posX>
+		<posY>670</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>PmtPid</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -514,9 +519,10 @@
 		<description>PmtPid value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>1163</posX>
-		<posY>582</posY>
+		<posX>1640</posX>
+		<posY>670</posY>
 		<label>#TV.TuningDetails.PmtPid</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -525,10 +531,11 @@
 		<description>AudioPid</description>
 		<type>label</type>
 		<id>16</id>
-		<posX>555</posX>
-		<posY>606</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>788</posX>
+		<posY>704</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>AudioPid</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -537,9 +544,10 @@
 		<description>AudioPid value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>700</posX>
-		<posY>606</posY>
+		<posX>992</posX>
+		<posY>704</posY>
 		<label>#TV.TuningDetails.AudioPid</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -548,10 +556,11 @@
 		<description>VideoPid</description>
 		<type>label</type>
 		<id>17</id>
-		<posX>1020</posX>
-		<posY>606</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>1440</posX>
+		<posY>704</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>VideoPid</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -560,9 +569,10 @@
 		<description>VideoPid value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>1163</posX>
-		<posY>606</posY>
+		<posX>1640</posX>
+		<posY>704</posY>
 		<label>#TV.TuningDetails.VideoPid</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -571,10 +581,11 @@
 		<description>Polarisation</description>
 		<type>label</type>
 		<id>18</id>
-		<posX>555</posX>
-		<posY>630</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>788</posX>
+		<posY>738</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>Polarisation</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -583,9 +594,10 @@
 		<description>Polarisation value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>700</posX>
-		<posY>630</posY>
+		<posX>992</posX>
+		<posY>738</posY>
 		<label>#TV.TuningDetails.Polarisation</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -594,10 +606,11 @@
 		<description>Service id</description>
 		<type>label</type>
 		<id>19</id>
-		<posX>1020</posX>
-		<posY>630</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>1440</posX>
+		<posY>738</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>ServiceId</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -606,9 +619,10 @@
 		<description>Service id value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>1163</posX>
-		<posY>630</posY>
+		<posX>1640</posX>
+		<posY>738</posY>
 		<label>#TV.TuningDetails.ServiceId</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -617,10 +631,11 @@
 		<description>Symbol rate</description>
 		<type>label</type>
 		<id>20</id>
-		<posX>555</posX>
-		<posY>654</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>788</posX>
+		<posY>772</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>Symbol rate</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -629,9 +644,10 @@
 		<description>Symbol rate value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>700</posX>
-		<posY>654</posY>
+		<posX>992</posX>
+		<posY>772</posY>
 		<label>#TV.TuningDetails.SymbolRate</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -640,10 +656,11 @@
 		<description>TransportId</description>
 		<type>label</type>
 		<id>21</id>
-		<posX>1020</posX>
-		<posY>654</posY>
-		<textcolor>85cfff</textcolor>
+		<posX>1440</posX>
+		<posY>772</posY>
+		<textcolor>6aa5cb</textcolor>
 		<label>TransportId</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -652,9 +669,10 @@
 		<description>TransportId value</description>
 		<type>label</type>
 		<id>5</id>
-		<posX>1163</posX>
-		<posY>654</posY>
+		<posX>1640</posX>
+		<posY>772</posY>
 		<label>#TV.TuningDetails.TransportId</label>
+        <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
