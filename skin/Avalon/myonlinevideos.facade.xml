@@ -136,8 +136,7 @@
     			<thumbPosXBig>0</thumbPosXBig>
     			<thumbPosYBig>0</thumbPosYBig>
                 <spinPosX>1832</spinPosX>
-                <spinPosY>730</spinPosY>
-                <keepaspectratio>yes</keepaspectratio>       
+                <spinPosY>730</spinPosY>     
             </control>        
       </control>
     </control>

@@ -253,8 +253,24 @@
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
 		<label>#OnlineVideos.Translation.Runtime.Label</label>
-		<visible>string.equals(#OnlineVideos.state, videos) + !string.equals(#OnlineVideos.selectedSiteUtil, YouTube) + !string.contains(#selecteditem, ..) + [facadeview.smallicons | facadeview.largeicons]</visible>
-	</control>  
+		<visible>string.equals(#OnlineVideos.state, videos) + !string.equals(#OnlineVideos.selectedSiteUtil, YouTube) + !string.equals(#OnlineVideos.selectedSiteUtil,IMDB) + !string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers) + !string.contains(#selecteditem, ..) + [facadeview.smallicons | facadeview.largeicons]</visible>
+	</control>
+    
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Length Label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>678</posX>
+		<posY>867</posY>
+		<width>240</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+		<label>#OnlineVideos.Translation.DateOfRelease.Label</label>
+		<visible>string.equals(#OnlineVideos.state, videos) + control.hastext(512) + [string.equals(#OnlineVideos.selectedSiteUtil,IMDB)|string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)] + [facadeview.smallicons | facadeview.largeicons]</visible>
+	</control>   
 		
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -269,7 +285,7 @@
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
 		<label>#OnlineVideos.Translation.Airdate.Label</label>
-		<visible>string.equals(#OnlineVideos.state, videos)+control.hastext(502) + !string.equals(#OnlineVideos.selectedSiteUtil, YouTube) + !string.contains(#selecteditem, ..) + [facadeview.smallicons | facadeview.largeicons]</visible>
+		<visible>string.equals(#OnlineVideos.state, videos)+control.hastext(502) + !string.equals(#OnlineVideos.selectedSiteUtil, YouTube) + !string.equals(#OnlineVideos.selectedSiteUtil,IMDB) + !string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers) + !string.contains(#selecteditem, ..) + [facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>  
         	
 	<control>
@@ -349,7 +365,23 @@
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
 		<label>#selecteditem2</label>
-		<visible>!string.equals(#OnlineVideos.state, details) + !string.equals(#OnlineVideos.selectedSiteUtil, YouTube) + [facadeview.smallicons | facadeview.largeicons]</visible>
+		<visible>string.equals(#OnlineVideos.state, videos) + !string.equals(#OnlineVideos.selectedSiteUtil, YouTube) + !string.equals(#OnlineVideos.selectedSiteUtil,IMDB) + !string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers) + !string.contains(#selecteditem, ..) + [facadeview.smallicons | facadeview.largeicons]</visible>
+	</control>
+    
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>language of site | number of sites in group | number of videos in category | length of video</description>
+		<type>fadelabel</type>
+		<id>512</id>
+		<posX>972</posX>
+		<posY>867</posY>
+		<width>500</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
+		<label>#selecteditem2</label>
+		<visible>string.equals(#OnlineVideos.state, videos) + [string.equals(#OnlineVideos.selectedSiteUtil,IMDB)|string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)] + [facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>
             
 	<control>
@@ -376,18 +408,6 @@
 	    <height>125</height>
 		<visible>[facadeview.smallicons|facadeview.largeicons] + !string.contains(#selecteditem, ..) + string.equals(#OnlineVideos.state, videos)</visible>
 		<texture mask="onlinevideos_station_mask.png">Onlinevideos\Icons\#OnlineVideos.selectedSite.png</texture>
-	</control>
-	<control>
-		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
-		<id>1</id>
-		<type>image</type>
-		<posX>0</posX>
-		<posY>440</posY>
-		<width>64</width>
-		<height>199</height>
-		<texture>hiddenmenu_tab.png</texture>
-		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
 	</control>
 	<import>myonlinevideos.hiddenmenu.xml</import>
     <import>myonlinevideos.details.xml</import>
