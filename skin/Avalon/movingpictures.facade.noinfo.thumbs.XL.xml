@@ -4,6 +4,40 @@ This file should contain the facade view
 -->
 <window>
 <controls>
+
+	<!--            :: List Scrolling Popup ::            -->
+    
+    <control>
+        <description>listscroller bg</description>
+        <type>image</type>
+        <id>1</id>
+        <posX>980</posX>
+        <posY>395</posY>
+        <width>187</width>
+        <height>202</height>
+        <texture>listscroller_bg.png</texture>
+        <visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+        <animation effect="fade" start="0" end="100" time="300" delay="0">Visible</animation>
+        <animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+    </control>
+    
+    <control>
+        <type>label</type>
+        <id>1</id>
+        <posX>1035</posX>
+        <posY>449</posY>
+        <width>96</width>
+        <height>96</height>
+        <font>AvalonLight32</font>
+        <textcolor>ff6aa5cb</textcolor>
+        <label>#selecteditem.scrolllabel</label>
+        <visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+        <align>center</align>
+        <valign>middle</valign>
+        <animation effect="fade" start="0" end="100" time="300" delay="0">Visible</animation>
+        <animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+    </control>
+
 	<!--            :: Count Background ::            -->
 
 	<control>
@@ -100,12 +134,11 @@ This file should contain the facade view
 	  <visible>[facadeview.smallicons | facadeview.largeicons] + control.isvisible(16) + control.isvisible(50)</visible>
     </control>
 
-<control>		
+<control>
       <type>facadeview</type>
       <id>51</id>
-	  	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		
       <control>
         <description>Categories List</description>
         <type>listcontrol</type>
@@ -114,16 +147,15 @@ This file should contain the facade view
         <onright>51</onright>
 		<scrollOffset>1</scrollOffset>
 		<posX>1166</posX>
-		<posY>153</posY>
+		<posY>164</posY>
 		<height>750</height>
 		<width>684</width>
-		<spinPosX>1667</spinPosX>
-		<spinPosY>1010</spinPosY>
-		<spinAlign>right</spinAlign>
 		<textXOff>50</textXOff>
 		<textureHeight>55</textureHeight>		
 		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 		<textureNoFocus>-</textureNoFocus>
+		<dimColor>ffffffff</dimColor>
+        <explicitlyEnableScrollLabel>yes</explicitlyEnableScrollLabel>
       </control>
     </control>
 

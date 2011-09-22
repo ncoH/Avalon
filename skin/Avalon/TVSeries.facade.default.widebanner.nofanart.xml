@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window> 
 <controls>
+
+	<!--            :: List Scrolling Popup ::            -->
+    
+    <control>
+        <description>listscroller bg</description>
+        <type>image</type>
+        <id>1</id>
+        <posX>980</posX>
+        <posY>320</posY>
+        <width>187</width>
+        <height>202</height>
+        <texture>listscroller_bg.png</texture>
+        <visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+        <animation effect="fade" start="0" end="100" time="300" delay="0">Visible</animation>
+        <animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+    </control>
+    
+    <control>
+        <type>label</type>
+        <id>1</id>
+        <posX>1035</posX>
+        <posY>374</posY>
+        <width>96</width>
+        <height>96</height>
+        <font>AvalonLight32</font>
+        <textcolor>ff6aa5cb</textcolor>
+        <label>#selecteditem.scrolllabel</label>
+        <visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+        <align>center</align>
+        <valign>middle</valign>
+        <animation effect="fade" start="0" end="100" time="300" delay="0">Visible</animation>
+        <animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+    </control>
+
     <control>
 		<type>group</type>
 		<description>group element</description>
@@ -198,6 +232,7 @@
         		<dimColor>ffffffff</dimColor>
                 <spinPosX>1832</spinPosX>
                 <spinPosY>730</spinPosY>
+                <playedColor>ffffffff</playedColor>
            </control>
       </control>
     </control>

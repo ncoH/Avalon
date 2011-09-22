@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window> 
 <controls>
+
+	<!--            :: List Scrolling Popup ::            -->
+    
+    <control>
+        <description>listscroller bg</description>
+        <type>image</type>
+        <id>1</id>
+        <posX>980</posX>
+        <posY>395</posY>
+        <width>187</width>
+        <height>202</height>
+        <texture>listscroller_bg.png</texture>
+        <visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+        <animation effect="fade" start="0" end="100" time="300" delay="0">Visible</animation>
+        <animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+    </control>
+    
+    <control>
+        <type>label</type>
+        <id>1</id>
+        <posX>1035</posX>
+        <posY>449</posY>
+        <width>96</width>
+        <height>96</height>
+        <font>AvalonLight32</font>
+        <textcolor>ff6aa5cb</textcolor>
+        <label>#selecteditem.scrolllabel</label>
+        <visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+        <align>center</align>
+        <valign>middle</valign>
+        <animation effect="fade" start="0" end="100" time="300" delay="0">Visible</animation>
+        <animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+    </control>
+
     <control>
 		<type>group</type>
 		<description>group element</description>
@@ -106,8 +140,8 @@
 				<scrollbarHeight>4</scrollbarHeight>
                 <scrollbarYOff>538</scrollbarYOff>
                 <spinPosX>-2000</spinPosX>
-				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,780" time="200">focus</thumbAnimation>
-				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,780" time="100">unfocus</thumbAnimation>
+                <thumbAnimation effect="zoom" tween="back" acceleration="-1.1" easing="out"  start="100,100" reversible="true" end="118,125" center="0,750" time="350">focus</thumbAnimation>
+                <thumbAnimation effect="zoom" start="118,125" reversible="true" end="100,100" center="0,750" time="200">unfocus</thumbAnimation>
 		</control>
 		
 				<control>
@@ -197,6 +231,7 @@
                 <IconYOff>18</IconYOff>
             	<textureHeight>55</textureHeight>
             	<dimColor>ffffffff</dimColor>
+                <playedColor>ffffffff</playedColor>
             </control>
       </control>
     </control>
