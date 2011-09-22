@@ -3,6 +3,7 @@
 	<id>25652</id>
 	<defaultcontrol>155</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<define>#usePlayFanart:Yes</define>
 	<controls>
 
 		<control>
@@ -13,6 +14,8 @@
 			<width>1920</width>
 			<height>1080</height>
 		</control>
+        
+		<import>common.music.play.fanart.xml</import>
 
         <control>
             <id>0</id>
