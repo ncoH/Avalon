@@ -311,4 +311,8 @@
   <string Field="Trending" Original="Trending">Trending</string>
   <string Field="WatchList" Original="WatchList">Watch List</string>
   <string Field="Shouts" Original="Shouts">Shouts</string>
+  <string Field="MainMenu" Original="Main Menu">Main Menu</string>
+  <string Field="WatchList" Original="Add {0} to Watchlist">Add {0} to Watchlist</string>
+  <string Field="TraktNotLoggedIn" Original="You can not do this operation without being\nlogged in. Would you like to Signup or Login\nto trakt.tv now?">You can not do this operation without being\nlogged in. Would you like to Signup or Login\nto trakt.tv now?</string>
+
 </strings>

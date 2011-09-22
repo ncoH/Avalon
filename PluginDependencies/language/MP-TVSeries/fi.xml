@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- MP-TV-Series translation file -->
+<!-- Finnish -->
+<!-- Last Updated: 10th May 2011 -->
+<strings>
+  <string Field="Series" Original="Series">Sarjat</string>
+  <string Field="Series_Plural" Original="Series (Plr)">Sarjat</string> <!-- plural -->
+  <string Field="Season" Original="Season">Tuotantokausi</string>
+  <string Field="Seasons" Original="Seasons">Tuotantokaudet</string>
+  <string Field="Episode" Original="Episode">Jakso</string>
+  <string Field="Episodes" Original="Episodes">Jaksot</string>
+  <string Field="Toggle_watched_flag" Original="Toggle watched flag">Merkitse katsotuksi</string>
+  <string Field="Retrieve_Subtitle" Original="Retrieve Subtitle">Hae tekstitys</string>
+  <string Field="Load_via_Torrent" Original="Load via Torrent">Lataa Torrentin välityksellä</string>
+  <string Field="Mark_all_as_watched" Original="Mark all as watched">Merkitse kaikki katsotuiksi</string>
+  <string Field="Mark_all_as_unwatched" Original="Mark all as unwatched">Merkitse kaikki katsomattomiksi</string>
+  <string Field="Hide" Original="Hide">Piilota</string>
+  <string Field="Delete" Original="Delete">Poista</string>
+  <string Field="Remove_series_from_Favourites" Original="Remove series from Favourites">Poista suosikeista</string>
+  <string Field="Add_series_to_Favourites" Original="Add series to Favourites">Lisää suosikkeihin</string>
+  <string Field="Force_Local_Scan" Original="Force Local Scan ">Pakota paikallinen skannaus </string>
+  <string Field="Force_Online_Refresh" Original="Force Online Refresh ">Pakota online päivitys </string>
+  <string Field="In_Progress_with_Barracks" Original="(In Progress)">(Käynnissä)</string>  
+  <string Field="Hide_summary_on_unwatched" Original="Hide the episode's summary on unwatched episodes">Piilota juonikuvaus</string>
+  <string Field="on" Original="on">päällä</string>
+  <string Field="off" Original="off">pois</string>
+  <string Field="Play_Random_Episode" Original="Play Random Episode">Toista satunnainen jakso</string>
+  <string Field="Play_Random_First_Unwatched_Episode" Original="Play Random First Unwatched Episode">Toista satunnainen katsomaton jakso</string>
+  <string Field="Delete_that_series" Original="Delete that series?">Poistetaanko tämä sarja?</string>
+  <string Field="Delete_that_season" Original="Delete that season?">Poistetaanko tämä kausi?</string>
+  <string Field="Delete_that_episode" Original="Delete that episode?">Poistetaanko tämä jakso?</string>
+  <string Field="Confirm" Original="Confirm">Vahvista</string>
+  <string Field="Completed" Original="Completed">Valmis</string>
+  <string Field="No_subtitles_found" Original="No subtitles found">Tekstityksiä ei löytynyt</string>
+  <string Field="CFS_No_Results_Found" Original="No Results Found!">Ei tuloksia!</string>
+  <string Field="_Hidden_to_prevent_spoilers_" Original=" * Hidden to prevent spoilers *"> * Juonikuvaus piilotettu *</string>
+  <string Field="Yes" Original="Yes">Kyllä</string>
+  <string Field="No" Original="No">Ei</string>
+  <string Field="Error" Original="#Error">#Virhe</string>
+  <string Field="No_items" Original="No items!">Ei kohteita!</string>
+  <string Field="Unknown" Original="Unknown">Tuntematon</string>
+  <string Field="wrongSkin" Original="Wrong Skin file">Viallinen ulkoasun tiedosto</string>
+  <string Field="special" Original="Special">Erikoinen</string>
+  <string Field="specials" Original="Specials">Erikoisuudet</string>
+  <string Field="delPhyiscalWarning" Original="You are about to permanently delete {0} physical file(s).Would you like to proceed?">"Olet poistamassa pysyvästi {0} tiedostoa.\nHaluatko varmasti jatkaa?"</string>
+  <string Field="Force_Online_Match" Original="Force New Online Lookup For Series">Pakota sarjojen uusi online haku</string>
+  <string Field="Load_via_NewsLeecher" Original="Load via NewsLeecher">Lataa NewsLeecher:n välityksellä</string>
+  <string Field="Download" Original="Download">Lataa</string>
+  <string Field="Actions" Original="Actions">Toimenpiteet</string>
+  <string Field="Options" Original="Options">Asetukset</string>
+  <string Field="Genres" Original="Genres">Lajityypit</string>
+  <string Field="All" Original="All">Kaikki</string>
+  <string Field="Latest" Original="Latest Aired">Viimeksi esitetty</string>
+  <string Field="Channels" Original="Channels">Kanavat</string>
+  <string Field="Unwatched" Original="Unwatched">Katsomattomat</string>
+  <string Field="Favourites" Original="Favourites">Suosikit</string>
+  <string Field="updateMI" Original="Update Mediainfo of local file">Päivitä median tiedot</string>
+  <string Field="RateSeries" Original="Rate this Series">Arvostele tämä sarja</string>
+  <string Field="RateEpisode" Original="Rate this Episode">Arvostele tämä jakso</string>
+  <string Field="ResetRating" Original="Reset Rating">Nollaa arvosana</string>
+  <string Field="AskToRate" Original="Ask me to rate unrated episodes">Pyydä minua arvostelemaan arvostelemattomat jaksot</string>
+  <string Field="DontAskToRate" Original="Don't ask me to rate again">Älä pyydä minua arvostelemaan uudelleen</string>
+  <string Field="RatingStar" Original="Star">Tähti</string>
+  <string Field="RatingStars" Original="Stars">Tähtiä</string>
+  <string Field="ChangeView" Original="Change View">Vaihda näkymää</string>
+  <string Field="ChangeViewFast" Original="Immediatly Change Views">Vaihda näkymä välittömästi</string>
+  <string Field="FanArt" Original="Fanart">Fanitaide</string>
+  <string Field="FanListAll" Original="List all Fanart for this Series">Listaa kaikki tämän sarjan fanitaidekuvat</string>
+  <string Field="FanArtGetAndUse" Original="Download Fanart and Use">Lataa ja käytä fanitaidetta</string>
+  <string Field="FanArtGet" Original="Download Fanart">Lataa fanitaide</string>
+  <string Field="FanArtUse" Original="Set Fanart as Default">Aseta fanitaide oletukseksi</string>
+  <string Field="FanArtDelete" Original="Delete Fanart">Poista fanitaide</string>
+  <string Field="FanDownloadingStatus" Original="Downloading {0} Fanart...">Ladataan {0} fanitaidekuva...</string>
+  <string Field="FanArtLocal" Original="Local">Paikallinen</string>
+  <string Field="FanArtOnline" Original="Remote">Etä</string>
+  <string Field="FanArtOnlineLoading" Original="Loading {0} of {1} Fanart...">Ladataan fanitaidekuvaa {0} / {1}...</string>
+  <string Field="FanArtRandom" Original="Display random Fanart">Näytä satunnainen fanitaidekuva</string>
+  <string Field="FanArtNoneFound" Original="No Fanart could be found">Fanitaidetta ei löytynyt</string>
+  <string Field="CFS_Choose_Item" Original="Choose item">Valitse kohde</string>
+  <string Field="CFS_Select_Matching_Item" Original="Select matching item:">Valitse vastaava kohde:</string>
+  <string Field="CFS_Search_Again" Original="Search again">Hae uudelleen</string>
+  <string Field="CFS_Select_Matching_Subitle_File" Original="Select Matching Subtitle File">Valitse vastaava tekstitystiedosto</string>
+  <string Field="CFS_Subtitle_Episode" Original="Choose item">Jakso:</string>
+  <string Field="CFS_Matching_Subtitles" Original="Matching Subtitles">Vastaavat tekstitykset</string>
+  <string Field="CFS_Choose_Correct_Series" Original="Choose Correct Series">Valitse oikea sarja</string>
+  <string Field="CFS_Available_Series" Original="Available Series">Saatavilla olevat sarjat</string>
+  <string Field="CFS_Select_Correct_Subtitle_Version" Original="Select desired subtitles version">Valitse haluamasi tekstityksen versio</string>
+  <string Field="CFS_Select_Version" Original="Version:">Versio:</string>
+  <string Field="CFS_Choose_Correct_Episode" Original="Choose Correct Episode">Valitse oikea jakso</string>
+  <string Field="CFS_Local_Episode_Index" Original="Local Episiode index:">Paikallinen jaksoluettelo:</string>
+  <string Field="CFS_Available_Episode_List" Original="Available Episode list:">Saatavilla olevat jaksot:</string>
+  <string Field="CFS_Choose_Search_Site" Original="Choose search site:">Valitse hakusivusto:</string>
+  <string Field="CFS_List_Search_Site" Original="List of search sites:">Lista hakusivustoista:</string>
+  <string Field="CFS_Found_Torrents" Original="Found torrents:">Löytyi torrentit:</string>
+  <string Field="CFS_Looking_For" Original="Looking for:">Haetaan:</string>
+  <string Field="CFS_Choose_Correct_Season" Original="Choose correct season">Valitse oikea tuotantokausi</string>
+  <string Field="CFS_Local_Season_Index" Original="Local Season index:">Paikallinen tuotantokausiluettelo:</string>
+  <string Field="CFS_Available_Seasons" Original="Available Seasons list:">Saatavilla olevat tuotantokaudet:</string>
+  <string Field="CFS_Skip_Never_Ask_Again" Original="Skip / Never Ask Again">Ohita / Älä kysy enää koskaan</string>
+  <string Field="CYN_Subtitle_File_Replace" Original="Subtitle File Replace">Korvaa tekstitystiedosto</string>
+  <string Field="CYN_Old_Subtitle_Replace" Original="Old subtitle File present: overwrite?">Tekstitystiedosto on jo olemassa: korvataanko?</string>
+  <string Field="RecentlyAdded" Original="Recently Added">Viimeksi lisätyt</string>
+  <string Field="TVDB_ERROR_TITLE" Original="theTVDB Error">theTVDB Virhe</string>
+  <string Field="TVDB_INFO_TITLE" Original="theTVDB">theTVDB</string>
+  <string Field="TVDB_INFO_ACCOUNTID_1" Original="Account Identifier is not set">Käyttäjätunnuksia ei ole asetettu</string>
+  <string Field="TVDB_INFO_ACCOUNTID_2" Original="Enter your online account ID in Configuration">Anna online käyttäjätunnuksesi asetusvalikossa</string>
+  <string Field="ChangeLayout" Original="Change Layout">Vaihda asettelua</string>
+  <string Field="UseOnlineFavourites" Original="Use Online Favourites">Käytä online suosikkeja</string>
+  <string Field="AddToPlaylist" Original="Add To Playlist">Lisää toistolistalle</string>
+  <string Field="FanartDisableLabel" Original="Disabled">Ei käytössä</string>
+  <string Field="FanartMenuEnable" Original="Enable Fanart">Käytä fanitaidetta</string>
+  <string Field="FanartMenuDisable" Original="Disable Fanart">Poista fanitaide käytöstä</string>
+  <string Field="SortByStrings" Original="SortByStrings">the|a|an</string><!--Additional ones should be added for other languages, dont translate existing ones as they will be used as well-->
+  <string Field="LayoutList" Original="List">Lista</string>
+  <string Field="LayoutListBanners" Original="List Banners">Bannerilista</string>
+  <string Field="LayoutListPosters" Original="List Posters">Julistelista</string>
+  <string Field="LayoutWideBanners" Original="Wide Banners">Leveät bannerit</string>
+  <string Field="LayoutFilmstrip" Original="Filmstrip">Filminauha</string>  
+  <string Field="LayoutSmallIcons" Original="Small Icons">Pienet kuvakkeet</string>
+  <string Field="ButtonAutoPlay" Original="Auto Play">Automaattinen toisto</string>
+  <string Field="ButtonSwitchView" Original="Switch View">Vaihda näkymää</string>
+  <string Field="ButtonRunImport" Original="Run Import">Aja tuonti</string>
+  <string Field="ButtonChangeLayout" Original="Change Layout">Vaihda asettelua</string>
+  <string Field="ButtonOptions" Original="Options">Asetukset</string>
+  <string Field="FanArtFilter" Original="Filter">Suodata</string>
+  <string Field="FanArtFilterAll" Original="All">Kaikki</string>
+  <string Field="ButtonRandomFanart" Original="Random Fanart">Satunnainen fanitaide</string>
+  <string Field="LabelResolution" Original="Resolution">Piirtotarkkuus</string>
+  <string Field="LabelChosen" Original="Chosen">Oletus</string>
+  <string Field="LabelDisabled" Original="Disabled">Ei käytössä</string>
+  <string Field="ResetUserSelections" Original="Reset User Selections">Nollaa käyttäjän valinnat</string>
+  <string Field="DeleteFromDisk" Original="Delete from Disk">Poista kiintolevyltä</string>
+  <string Field="DeleteFromDatabase" Original="Delete from Database">Poista tietokannasta</string>
+  <string Field="DeleteFromFileDatabase" Original="Delete from Disk and Database">Poista kiintolevyltä ja tietokannasta</string>
+  <string Field="RateDialogLabel" Original="Select Your Rating for {0}">Valitse arvosanasi kohteelle {0}</string>
+  <string Field="Hide_thumbnail_on_unwatched" Original="Hide Spoiler Thumbnails">Piilota pienoiskuvat</string>
+
+  <!-- Rate Descriptions - 5 Stars-->
+  <string Field="RateFiveStarOne" Original="Terrible">Kamala</string>
+  <string Field="RateFiveStarTwo" Original="Mediocre">Keskiverto</string>
+  <string Field="RateFiveStarThree" Original="Good">Hyvä</string>
+  <string Field="RateFiveStarFour" Original="Superb">Loistava</string>
+  <string Field="RateFiveStarFive" Original="Perfect">Täydellinen</string>
+  <!-- Rate Descriptions - 10 Stars-->
+  <string Field="RateTenStarOne" Original="Abysmal">Pohjattoman huono</string>
+  <string Field="RateTenStarTwo" Original="Terrible">Kamala</string>
+  <string Field="RateTenStarThree" Original="Bad">Huono</string>
+  <string Field="RateTenStarFour" Original="Poor">Kehno</string>
+  <string Field="RateTenStarFive" Original="Mediocre">Keskiverto</string>
+  <string Field="RateTenStarSix" Original="Fair">Kohtalainen</string>
+  <string Field="RateTenStarSeven" Original="Good">Hyvä</string>
+  <string Field="RateTenStarEight" Original="Great">Todella hyvä</string>
+  <string Field="RateTenStarNine" Original="Superb">Loistava</string>
+  <string Field="RateTenStarTen" Original="Perfect">Täydellinen</string>
+
+  <string Field="ContentRating" Original="Content Rating">Sisällön arvosana</string>
+  <string Field="ViewTags" Original="View Tags">Näytä tagit</string>
+  <string Field="AddViewTag" Original="Add Series to View Tag">Lisää sarja näkymään</string>
+  <string Field="RemoveViewTag" Original="Remove Series from View Tag">Poista sarja näkymästä</string>
+  <string Field="NewViewTag" Original="New Tag">Uusi näkymä</string>
+  <string Field="CycleSeriesBanner" Original="Cycle Series Banner">Kierrätä sarjan bannereita</string>
+  <string Field="CycleSeasonBanner" Original="Cycle Season Poster">Kierrätä kauden julisteita</string>
+  <string Field="CycleSeriesPoster" Original="Cycle Series Poster">Kierrätä sarjan julisteita</string>
+  <string Field="FanartRandomInterval" Original="Fanart Timer Interval">Fanitaiteen päivitysväli</string>
+  <string Field="FanartIntervalFiveSeconds" Original="5 Seconds">5 Sekuntia</string>
+  <string Field="FanartIntervalTenSeconds" Original="10 Seconds">10 Sekuntia</string>
+  <string Field="FanartIntervalFifteenSeconds" Original="15 Seconds">15 Sekuntia</string>
+  <string Field="FanartIntervalThirtySeconds" Original="30 Seconds">30 Sekuntia</string>
+  <string Field="FanartIntervalFortyFiveSeconds" Original="45 Seconds">45 Sekuntia</string>
+  <string Field="FanartIntervalSixtySeconds" Original="60 Seconds">60 Sekuntia</string>
+  <string Field="NoPlaylistsFound" Original="No Playlists found in:">Toistolistoja ei löytynyt kohteesta:</string>
+  <string Field="PinCode" Original="Pin Code">Pin-koodi</string>
+  <string Field="PinCodeIncorrectLine1" Original="The entered pin code is incorrect">Annettu pin-koodi on väärä</string>
+  <string Field="PinCodeIncorrectLine2" Original="Press OK to try again">Paina OK yrittääksesi uudelleen</string>
+  <string Field="ParentalControlLocked" Original="Lock Views">Lukitse näkymät</string>
+  <string Field="ViewIsLocked" Original="View Locked">Näkymä lukittu</string>
+  <string Field="PinCodeDlgLabel1" Original="The view {0} is locked">Näkymä "{0}" on lukittu</string>
+  <string Field="PinCodeDlgLabel2" Original="Enter in 4 Digit Pin Code to proceed:">Anna nelinumeroinen pin-koodi jatkaaksesi:</string>
+  <string Field="PinCodeMessageIncorrect" Original="Pin Incorrect">Pin-koodi väärin</string>=
+  <string Field="Continuing" Original="Continuing Series">Jatkuvat sarjat</string>
+  <string Field="Ended" Original="Ended Series">Päättyneet sarjat</string>
+  <string Field="HighDefinition" Original="High Definition">Teräväpiirto</string>
+  <string Field="StandardDefinition" Original="Standard Defintion">Vakiopiirto</string>
+  <string Field="Top10Online" Original="Top 10 (Online)">Top 10 (Online)</string>
+  <string Field="Top10User" Original="Top 10 (User)">Top 10 (Käyttäjä)</string>
+  <string Field="Top25Online" Original="Top 25 (Online)">Top 25 (Online)</string>
+  <string Field="Top25User" Original="Top 25 (User)">Top 25 (Käyttäjä)</string>
+  <string Field="Subtitles" Original="Subtitles">Tekstitykset</string>
+  <string Field="MultiAudio" Original="Multiple Audio Tracks">Useita ääniraitoja</string>
+  <string Field="OnlineFavourites" Original="Online Favourites">Online suosikit</string>
+  <string Field="Actors" Original="Actors">Näyttelijät</string>
+  <string Field="RemovableMedia" Original="Removable Media">Siirrettävä media</string>
+  <string Field="LocalMedia" Original="Local Media">Paikallinen media</string>
+  <string Field="AdultSeries" Original="Adult Series">Aikuisten sarjat</string>
+  <string Field="KidsSeries" Original="Kids Series">Lasten sarjat</string>
+  <string Field="ClearFanartCache" Original="Clear Fanart Cache">Tyhjennä fanitaiteen välimuisti</string>
+
+  <string Field="DeleteThumbnailsHeading" Original="Delete Thumbnails">Poista pienoiskuvakkeet</string>
+  <string Field="DeleteThumbnailsLine1" Original="Would you also like to Delete and Re-Download">Haluatko myös poistaa ja ladata uudelleen</string>
+  <string Field="DeleteThumbnailsLine2" Original="all episode thumbnails?">kaikki jakson pienoiskuvat?</string>
+  <string Field="RateDialog" Original="Rate Dialog">Arvosana ikkuna</string>
+  <string Field="PinCodeDialog" Original="Pin Code Dialog">Pin-koodi ikkuna</string>
+
+  <string Field="Aired" Original="Aired">Esitetty</string>
+  <string Field="AiredStatusContinuing" Original="Continuing">Jatkuu</string>
+  <string Field="AiredStatusEnded" Original="Ended">Päättynyt</string>
+  <string Field="Airs" Original="Airs">Esitetään</string>
+  <string Field="AirsDay" Original="Airs Day">Esityspäivä</string>
+  <string Field="AirsTime" Original="Airs Time">Esitysaika</string>
+  <string Field="Cast" Original="Cast">Näyttelijät</string>
+  <string Field="Certification" Original="Certification">Sertifionti</string>
+  <string Field="Director" Original="Director">Ohjaaja</string>
+  <string Field="Directors" Original="Directors">Ohjaajat</string>
+  <string Field="FileSize" Original="File Size">Tiedoston koko</string>
+  <string Field="FirstAired" Original="First Aired">Ensiesitys</string>
+  <string Field="Genre" Original="Genre">Lajityyppi</string>
+  <string Field="Group" Original="Groups">Ryhmä</string>
+  <string Field="Groups" Original="Groups">Ryhmät</string>
+  <string Field="GuestStar" Original="Guest Star">Vieraileva tähti</string>
+  <string Field="GuestStars" Original="Guest Stars">Vierailevat tähdet</string>
+  <string Field="MediaInfo" Original="Media Info">Median tiedot</string>
+  <string Field="Minutes" Original="Minutes">Minuuttia</string>
+  <string Field="MyRating" Original="My Rating">Oma arvosanani</string>
+  <string Field="Network" Original="Network">Studio</string>
+  <string Field="Rated" Original="Rated">Arvosteltu</string>
+  <string Field="Rating" Original="Rating">Arvosana</string>
+  <string Field="Runtime" Original="Runtime">Kestoaika</string>
+  <string Field="SeriesDetails" Original="Series Details">Sarjan yksityiskohdat</string>
+  <string Field="SeriesStatus" Original="Series Status">Sarjan tilanne</string>
+  <string Field="Starring" Original="Starring">Pääosissa</string>
+  <string Field="Watched" Original="Watched">Katsottu</string>
+  <string Field="Writer" Original="Writer">Käsikirjoittaja</string>
+  <string Field="Writers" Original="Writers">Käsikirjoittajat</string>
+
+  <string Field="TVDB_ERROR_UNAVAILABLE_1" Original="TheTVDB.com is currently unavailable">TheTVDB.com ei ole tällä hetkellä saatavilla</string>
+  <string Field="TVDB_ERROR_UNAVAILABLE_2" Original="Please try again later">Yritä myöhemmin uudelleen</string>
+  <string Field="NETWORK_ERROR_UNAVAILABLE_1" Original="Network connection is unavailable">Verkkoyhteyttä ei ole saatavilla</string>
+  <string Field="NETWORK_ERROR_UNAVAILABLE_2" Original="Check your connection and try again">Tarkista verkkoyhteytesi ja yritä uudelleen</string>
+
+  <string Field="Playlist" Original="Playlist">Toistolista</string>
+  <string Field="LastOnlineUpdate" Original="LastOnlineUpdate">Viimeinen päivitys</string>
+
+  <string Field="ResetIgnoredDownloadedFiles" Original="Reset Ignored Downloaded Files">Nollaa huomiotta jätetyt ladatut tiedostot</string>
+
+  <string Field="GetSubtitlesFrom" Original="Get subtitles from?">Hae tekstitykset kohteesta?</string>
+  <string Field="EnabledSubtitleSites" Original="Enabled subtitle sites:">Käytössä olevat tekstityssivustot:</string>
+  <string Field="PlayNow" Original="Play Now">Toista</string>
+  <string Field="NoSubtitleDownload" Original="No Subtitle Download">Ei ladattavia tekstityksiä</string>
+
+  <string Field="DeleteSubtitles" Original="Delete Subtitles">Poista tekstitykset</string>
+  <string Field="EpisodeFilenameEmpty" Original="Episode Filename is Empty in Database">Jakson tiedostonimi on tyhjä</string>
+  <string Field="UnableToDeleteSubtitleFile" Original="Unable to Delete Subtitle File: {0}">Ei voitu poistaa tekstitystiedostoa: {0}</string>
+  <string Field="PathNotAvailable" Original="Path is not available: {0}">Polku ei ole saatavilla: {0}</string>
+  <string Field="UnableToDeleteSubtitles" Original="Unable to Delete Subtitles">Tekstitystä ei voitu poistaa</string>
+  <string Field="ErrorClear" Original="Error">Virhe</string>
+  <string Field="UnableToRetrieveSubtitles" Original="Unable to retrieve subtitles">Tekstityksiä ei voitu noutaa</string>
+  <string Field="NoSubtitlesFoundOrRetrieved" Original="No subtitles found or retrieved">Tekstityksiä ei löytynyt eikä niitä noudettu</string>
+
+  <string Field="UnableToDelete" Original="Unable to Delete">Ei voi poistaa</string>
+  <string Field="UnableToDeleteFile" Original="Unable to Delete File: {0}">Ei voi poistaa tiedostoa: {0}</string>
+
+  <string Field="PlaySomething" Original="Play...">Toista...</string>
+  <string Field="PlayError" Original="Play error">Toistovirhe</string>
+  <string Field="RandomEpisode" Original="random episode">satunnainen jakso</string>
+  <string Field="FirstUnwatchedEpisode" Original="first unwatched episode">ensimmäinen katsomaton jakso</string>
+  <string Field="RandomUnwatchedEpisode" Original="random unwatched episode">satunnainen katsomaton jakso</string>
+  <string Field="LatestEpisode" Original="latest episode">viimeisin jakso</string>
+  <string Field="UnableToFindAny" Original="Unable to find any {0}">Ei löydy yhtään {0}</string>
+  <string Field="UnableToFindAnyEpisode" Original="Unable to find any episode">Yhtään jaksoa ei löydy</string>
+
+  <string Field="SortBy" Original="Sort By">Järjestä</string>
+  <string Field="DVDOrder" Original="DVD Order">DVD-järjestys</string>
+  <string Field="AiredOrder" Original="Aired Order">Esitysjärjestys</string>
+  <string Field="AbsoluteOrder" Original="Absolute Order">Absoluuttinen järjestys</string>
+  <string Field="Title" Original="Title">Nimi</string>
+  <string Field="ChangeOnlineMatchOrder" Original="Change Online Matching Method">Vaihda online-täsmäystapaa</string>
+
+  <string Field="InsertDiskMessageLine1" Original="The media for the episode you have selected">Valitun jakson tallennusmedia</string>
+  <string Field="InsertDiskMessageLine2" Original="is currently not available.">ei ole tällä hetkellä saatavilla.</string>
+  <string Field="InsertDiskMessageLine3" Original="Please insert or connect media">Liitä tai yhdistä media</string>
+  <string Field="InsertDiskMessageLine4" Original="labeled: {0}">nimeltään: {0}</string>
+  
+  <string Field="ShowHiddenItems" Original="Show Hidden Items">Näytä piilotetut kohteet</string>
+  <string Field="UnHide" Original="UnHide">Tuo näkyviin</string>
+
+  <string Field="CFS_Skip" Original="Skip">Ohita</string>
+  <string Field="CFS_No_Match_Manual_Search" Original="No Match Found, Manual Search...">Vastaavia kohteita ei löytynyt, hae manuaalisesti...</string>
+  <string Field="CFS_Local_Series" Original="Local Series:">Paikalliset sarjat:</string>
+
+  <string Field="AvailableMedia" Original="Available Media">Saatavilla olevat tallennusmediat</string>
+
+  <string Field="Votes" Original="votes">ääniä</string>
+  
+  <string Field="LayoutCoveflow" Original="Coveflow">Kansivirta</string>
+
+  <string Field="TraktError" Original="Trakt Error">Trakt virhe</string>
+  <string Field="TraktNotEnoughInfo" Original="Not enough information to send to server.">Tiedot ei riitä palvelimelle lähettämiseen.</string>
+
+  <string Field="ResumeEpisode" Original="Resume episode from last time?">Jatketaanko katselua kohdasta mihin viimeksi jäätiin?</string>
+	
+  <string Field="SummaryNotAvailable" Original="No summary is currently available.">Yhteenvetoa ei ole saatavilla.</string>
+  
+  <string Field="Timeout" Original="Timeout">Aikakatkaisu</string>
+  <string Field="NoActors" Original="There are no Actors for this series.">Tälle sarjalle ei ole näyttelijöitä.</string>
+  <string Field="GettingActors" Original="Getting Actors from Online">Haetaan näyttelijöitä palvelimelta</string>
+
+  <string Field="ShowAllEpisodes" Original="Show all Episodes">Näytä kaikki jaksot</string>
+
+  <string Field="DownloadAllEpisodeInfo" Original="Download All Episode Info">Lataa kaikki jakson tiedot</string>
+  
+</strings>
