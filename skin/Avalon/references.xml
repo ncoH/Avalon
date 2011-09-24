@@ -220,6 +220,7 @@
     <spinPosY>880</spinPosY>
     <spinAlign>right</spinAlign>
     <spinColor>FF6aa5cb</spinColor>
+    <explicitlyEnableScrollLabel>yes</explicitlyEnableScrollLabel>
   </control>
   <control>
     <description>default checklistcontrol</description>
@@ -513,6 +514,8 @@
   <control>
     <description>default textboxscrollup</description>
     <type>textboxscrollup</type>
+    <width>725</width>
+    <height>160</height>
     <font>AvalonLight12</font>
     <colordiffuse>ffffffff</colordiffuse>
     <scrollStartDelaySec>10</scrollStartDelaySec>

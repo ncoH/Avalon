@@ -131,8 +131,11 @@
             <type>textboxscrollup</type>
 			<visible>Control.HasFocus(6103)</visible>
 			<posX>544</posX>
-			<posY>266</posY>
+			<posY>285</posY>
+			<width>1080</width>
+			<height>318</height>
 			<label>#Play.ArtistInfo.Bio</label>
+			<lineSpacing>0.95</lineSpacing>
 			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
