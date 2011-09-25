@@ -77,7 +77,7 @@
 		<id>20</id>
 		<posX>843</posX>
 		<posY>352</posY>
-		<widht>800</width>
+		<width>800</width>
 		<label>-</label>
 		<font>AvalonLight14</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
