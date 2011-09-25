@@ -50,7 +50,7 @@
 		<id>21</id>
 		<posX>843</posX>
 		<posY>396</posY>
-		<widht>800</width>
+		<width>800</width>
 		<font>AvalonLight14</font>
 		<label>-</label>
 		<animation effect="fade" time="250">WindowOpen</animation>
