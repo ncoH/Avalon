@@ -29,9 +29,11 @@
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_shadow.png</texture>
-        <visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list|facadeview.largeicons</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        <visible>[[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list|facadeview.largeicons] + !string.equals(#Avalon.hidePoster,yes)</visible>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 	</control>
 	
 	<control>
@@ -43,9 +45,11 @@
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_glow.png</texture>
-        <visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list|facadeview.largeicons</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        <visible>[[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list|facadeview.largeicons] + !string.equals(#Avalon.hidePoster,yes)</visible>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 	</control>
 
     <control>
@@ -57,9 +61,11 @@
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask_Test.png" mask="poster_mask.png">#TVSeries.SeriesPoster</texture>
-        <visible>[control.isvisible(1237)+control.isvisible(1242)]+facadeview.list|facadeview.largeicons</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        <visible>[[control.isvisible(1237)+control.isvisible(1242)]+facadeview.list|facadeview.largeicons] + !string.equals(#Avalon.hidePoster,yes)</visible>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
     </control>
   
     <control>
@@ -71,9 +77,11 @@
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask_Test.png" mask="poster_mask.png">#TVSeries.SeasonPoster</texture>
-        <visible>control.isvisible(1238)+facadeview.list</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        <visible>control.isvisible(1238)+facadeview.list + !string.equals(#Avalon.hidePoster,yes)</visible>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
     </control>
 	
     <control>
@@ -85,10 +93,10 @@
         <width>331</width>
         <height>48</height>
         <texture>new_overlay.png</texture>
-        <visible>[[control.isvisible(1237)+control.isvisible(1242)] | control.isvisible(1238)] + !control.isvisible(1243) + facadeview.list</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        <visible>[[[control.isvisible(1237)+control.isvisible(1242)] | control.isvisible(1238)] + !control.isvisible(1243) + facadeview.list] + !string.equals(#Avalon.hidePoster,yes)</visible>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="350" delay="250" reversible="false">visible</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
     </control>
 	
@@ -105,10 +113,10 @@
         <shadowAngle>120</shadowAngle>
         <shadowDistance>1</shadowDistance>
         <shadowColor>FF000000</shadowColor>
-        <visible>[[control.isvisible(1237)+control.isvisible(1242)] | control.isvisible(1238)] + !control.isvisible(1243) + facadeview.list</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        <visible>[[[control.isvisible(1237)+control.isvisible(1242)] | control.isvisible(1238)] + !control.isvisible(1243) + facadeview.list] + !string.equals(#Avalon.hidePoster,yes)</visible>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="350" delay="250" reversible="false">visible</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
     </control>
 	
