@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>70943676</id>
+    <defaultcontrol>50</defaultcontrol>
+    <define>#header.hover:TvWishList.Icon.png</define>
+    <controls>
+     <control>
+      <description>BackGround</description>
+      <type>image</type>
+      <id>1</id>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>      
+    </control>
+		
+	<control>
+		<description>viewport list</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>866</height>
+		<texture>viewport_tv_recordings.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>800</width>
+		<label>TvWishList</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+	</control>
+
+        <import>common.time.xml</import>
+	
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>440</posY>
+		<width>64</width>
+		<height>199</height>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+	</control>
+    
+    <control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<dimColor>00ffffff</dimColor>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>521</buttonwidth>
+		<buttonheight>1080</buttonheight>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="400">hidden</animation>
+		</control>
+	
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+	
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>232</posY>
+			<posX>128</posX>
+			<width>376</width>
+			<height>1</height>
+			<texture>hiddenmenu_separator.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>486</posY>
+			<posX>128</posX>
+			<width>376</width>
+			<height>1</height>
+			<texture>hiddenmenu_separator.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+		<control>
+			<description>Menu label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>114</posY>
+			<label>924</label>
+			<font>fontB12</font>
+			<textcolor>ffffff</textcolor>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+ 		</control>
+		<control>
+			<description>Options label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>246</posY>
+			<label>496</label>
+			<font>fontB12</font>
+			<textcolor>ffffff</textcolor>
+ 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+		<control>
+			<description>Jump to label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>496</posY>
+			<label>1065</label>
+			<font>fontB12</font>
+			<textcolor>ffffff</textcolor>
+ 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+          <control>
+            <type>group</type>
+            <description>group element</description>
+ 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+            <posX>69</posX>
+            <posY>155</posY>
+            <layout>StackLayout(0, Vertical, true)</layout>	
+            <visible>!Control.HasFocus(50)</visible>
+                    <control>
+                        <id>2</id>
+                        <description>TvWish</description>
+                        <type>button</type>
+        				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        				<textureNoFocus>-</textureNoFocus>
+        				<width>497</width>
+        				<height>64</height>
+        				<textXOff>58</textXOff>
+        				<textYOff>14</textYOff>
+                        <onright>50</onright>
+                        <ondown>3</ondown>
+                        <hyperlink>70943675</hyperlink>
+                    </control>
+                    <control>
+                      <description>Empty button</description>
+                      <type>button</type>
+                      <id>0</id>
+        			  <textureFocus>-</textureFocus>
+        			  <textureNoFocus>-</textureNoFocus>
+        			  <width>497</width>
+        			  <height>64</height>
+                      <label>-</label>
+                      <visible>true</visible>
+                    </control>
+                    <control>
+                        <id>3</id>
+                        <description>Update</description>
+                        <type>button</type>
+        				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        				<textureNoFocus>-</textureNoFocus>
+        				<width>497</width>
+        				<height>64</height>
+        				<textXOff>58</textXOff>
+        				<textYOff>14</textYOff>
+                        <onright>50</onright>
+                        <onup>2</onup>
+                        <ondown>4</ondown>
+                    </control>
+                    <control>
+                        <id>4</id>
+                        <description>Sort</description>
+                        <type>sortbutton</type>
+        				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        				<textureNoFocus>-</textureNoFocus>
+        				<width>497</width>
+        				<height>64</height>
+        				<textXOff>58</textXOff>
+        				<textYOff>14</textYOff>
+        				<offsetSortButtonX>270</offsetSortButtonX>
+        				<offsetSortButtonY>27</offsetSortButtonY>
+                        <onright>50</onright>
+                        <onup>3</onup>
+                        <ondown>5</ondown>
+                    </control>
+                    <control>
+                        <id>5</id>
+                        <description>Filter</description>
+                        <type>button</type>
+        				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        				<textureNoFocus>-</textureNoFocus>
+        				<width>497</width>
+        				<height>64</height>
+        				<textXOff>58</textXOff>
+        				<textYOff>14</textYOff>
+                        <onright>50</onright>
+                        <onup>4</onup>
+                        <ondown>6</ondown>
+                    </control>
+                    <control>
+                      <description>Empty button</description>
+                      <type>button</type>
+                      <id>0</id>
+        			  <textureFocus>-</textureFocus>
+        			  <textureNoFocus>-</textureNoFocus>
+        			  <width>497</width>
+        			  <height>64</height>
+                      <label>-</label>
+                      <visible>true</visible>
+                    </control>
+                    <control>
+                        <id>6</id>
+                        <description>TV</description>
+                        <type>button</type>
+         				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        				<textureNoFocus>-</textureNoFocus>
+        				<width>497</width>
+        				<height>64</height>
+        				<textXOff>58</textXOff>
+        				<textYOff>14</textYOff>
+                        <onright>50</onright>
+                        <onup>5</onup>
+                        <ondown>7</ondown>
+                        <hyperlink>1</hyperlink>
+                        <label>100001</label>
+                    </control>
+                    <control>
+                        <id>7</id>
+                        <description>Recordings</description>
+                        <type>button</type>
+        				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        				<textureNoFocus>-</textureNoFocus>
+        				<width>497</width>
+        				<height>64</height>
+        				<textXOff>58</textXOff>
+        				<textYOff>14</textYOff>
+                        <onright>50</onright>
+                        <onup>6</onup>
+                        <ondown>8</ondown>
+                        <hyperlink>603</hyperlink>
+                        <label>604</label>
+                    </control>
+            </control>
+        </control>
+        
+    	<control>
+    		<description>Count background</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>0</posX>
+    		<posY>900</posY>
+    		<width>1865</width>
+    		<height>96</height>
+    		<texture>basichome_rss_bg.png</texture>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	</control>
+        
+        <control>
+            <description>group element</description>
+            <type>group</type>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+ 			<dimColor>ffffffff</dimColor>
+            <control>
+                <id>50</id>
+                <description>listcontrol</description>
+                <type>listcontrol</type>
+    			<posX>918</posX>
+    			<posY>160</posY>
+    			<height>800</height>
+    			<width>919</width>
+                <onleft>2</onleft>
+                <scrollOffset>2</scrollOffset>
+                <spinPosX>1180</spinPosX>
+                <scrollOffset>2</scrollOffset>
+                <spinPosX>1832</spinPosX>
+                <spinPosY>950</spinPosY>
+            </control>
+        </control>
+        
+    	<control>
+    		<description>Selected item Label</description>
+    		<type>fadelabel</type>
+    		<id>1</id>
+    		<posX>75</posX>
+    		<posY>192</posY>
+    		<width>800</width>
+    		<label>#selecteditem</label>
+    		<font>fontB16</font>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	</control>
+        
+        <control>
+            <id>61</id>
+            <type>fadelabel</type>
+            <posX>344</posX>
+            <posY>679</posY>
+            <width>650</width>
+            <label>#status.label</label>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+        <control>
+            <id>70</id>
+            <type>textboxscrollup</type>
+            <posX>74</posX>
+            <posY>252</posY>
+            <width>815</width>
+            <height>650</height>
+            <label>#textbox.label</label>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+        <control>
+            <id>21</id>
+            <description>Header</description>
+            <type>label</type>
+            <posX>948</posX>
+            <posY>950</posY>
+            <font>AvalonLight12</font>
+            <label>#header.label</label>
+    		<textcolor>6aa5cb</textcolor>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+        <control>
+            <id>20</id>
+            <description>TvWishListIcon</description>
+            <type>image</type>
+            <visible>yes</visible>
+    		<posX>-2000</posX>
+    		<posY>720</posY>
+            <width>156</width>
+            <height>156</height>
+            <texture>TvWishList.Icon.png</texture>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        </control>
+    </controls>
+</window>
