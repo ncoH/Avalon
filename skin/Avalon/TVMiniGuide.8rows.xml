@@ -7,6 +7,7 @@
 	<type>group</type>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+        <dimColor>ffffffff</dimColor>
 
 	<control>
 		<description>background</description>
@@ -18,7 +19,7 @@
 		<posX>180</posX>
 		<posY>146</posY>
 	</control>
-
+	
 	<control>
 		<description>Heading text label</description>
 		<type>label</type>
@@ -30,7 +31,7 @@
 		<font>fontB16</font>
 		<textcolor>ffffff</textcolor>
 	</control>
-	
+    
 	<control>
 		<description>time label</description>
 		<id>0</id>
@@ -41,6 +42,24 @@
 		<font>fontB16</font>
 		<textcolor>ffffff</textcolor>
 		<label>#time</label>
+	</control>
+
+	<control>
+		<description>exit button</description>
+		<type>button</type>
+		<id>34</id>
+		<posX>2000</posX>
+		<posY>10</posY>
+		<width>10</width>
+		<height>10</height>
+		<textureFocus>-</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+		<label>-</label>
+		<label>-</label>
+		<onleft>36</onleft>
+		<onright>34</onright>
+		<ondown>35</ondown>
+		<onup>34</onup>
 	</control>
 
 	<control>
@@ -61,8 +80,8 @@
 		<textYOff3>6</textYOff3>
 		<IconXOff>-90</IconXOff>
 		<IconYOff>10</IconYOff>
-		<PinIconWidth>-</PinIconWidth>
-		<PinIconHeight>-</PinIconHeight>
+		<PinIconWidth>45</PinIconWidth>
+		<PinIconHeight>46</PinIconHeight>
 		<spinPosY>980</spinPosY>
 		<spinPosX>405</spinPosX>
 		<spinColor>FFFFFFFF</spinColor>
@@ -83,6 +102,7 @@
 		<unfocusedAlpha>255</unfocusedAlpha>
 		<onleft>36</onleft>
 		<onright>34</onright>
+        <dimColor>ffffffff</dimColor>
 	</control>
 
 	<control>
