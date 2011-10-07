@@ -72,7 +72,7 @@
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <visible>[facadeview.filmstrip+control.isvisible(50)]+control.isvisible(11)</visible>
+      <visible>[[facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)]+control.isvisible(11)</visible>
     </control>
     <control>
       <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
@@ -87,7 +87,7 @@
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <visible>[facadeview.filmstrip+control.isvisible(50)]+control.isvisible(21)</visible>
+      <visible>[[facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)]+control.isvisible(21)</visible>
     </control>
     <control>
       <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
@@ -102,7 +102,7 @@
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <visible>!facadeview.filmstrip+control.isvisible(11)</visible>
+      <visible>!facadeview.filmstrip+!facadeview.coverflow+control.isvisible(11)</visible>
     </control>
     <control>
       <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
@@ -117,7 +117,7 @@
       <animation effect="fade" time="300" delay="300">hidden</animation>
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-      <visible>!facadeview.filmstrip+control.isvisible(21)</visible>
+      <visible>!facadeview.filmstrip+!facadeview.coverflow+control.isvisible(21)</visible>
     </control>
     <!--            :: HEADER ::            -->
     <control>
@@ -128,7 +128,7 @@
       <posX>185</posX>
       <posY>38</posY>
       <width>500</width>
-      <label>My Films</label>
+      <label>#myfilms.config.pluginname</label>
       <textcolor>6aa5cb</textcolor>
       <font>font22</font>
       <visible>Control.IsVisible(50)</visible>
@@ -319,11 +319,11 @@
 		</control> -->
     </control>
     <!--            :: IMPORT ::            -->
-    <import tag="Background">MyFilms.background.default.thumbs.nofanart.xml</import>
+    <import tag="Background">MyFilms.background.default.xml</import>
     <import>common.time.xml</import>
     <import>MyFilms.hiddenmenu.xml</import>
     <import tag="Views">MyFilms.views.default.xml</import>
-    <import tag="Facade">MyFilms.facade.default.thumbs.nofanart.xml</import>
+    <import tag="Facade">MyFilms.facade.default.xml</import>
     <import>MyFilms.Info.xml</import>
     <import>common.overlay.xml</import>
   </controls>

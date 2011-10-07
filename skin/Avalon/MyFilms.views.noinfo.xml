@@ -11,7 +11,7 @@
 		<posX>1832</posX>
 		<posY>956</posY>
 		<width>1170</width>
-		<label>#myfilms.user.mastertitle.value</label>
+		<label>#selecteditem</label>
 		<font>fontB16</font>
 		<align>right</align>
 		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
@@ -101,7 +101,7 @@
 		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)+!Control.HasFocus(80)</visible>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)+string.equals(#myfilms.db.year.value)+!Control.HasFocus(80)</visible>
 	</control>
 	
 	<control>

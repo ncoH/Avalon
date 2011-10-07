@@ -76,7 +76,7 @@ This file should contain the facade view
       <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
       <description>Moviecount</description>
       <type>label</type>
-      <label>MyFilms: #itemcount  |  Filter: #myfilms.view</label>
+      <label>#(L(507)): #itemcount  |  Filter: #myfilms.view #myfilms.select</label>
       <id>0</id>
       <posX>714</posX>
       <posY>875</posY>
@@ -92,7 +92,7 @@ This file should contain the facade view
       <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
       <description>Moviecount</description>
       <type>label</type>
-      <label>MyFilms: #itemcount  |  Filter: #myfilms.view</label>
+      <label>#(L(507)): #itemcount  |  Filter: #myfilms.view #myfilms.select</label>
       <id>0</id>
       <posX>1346</posX>
       <posY>892</posY>
@@ -165,6 +165,7 @@ This file should contain the facade view
                 <scrollbarWidth>689</scrollbarWidth>
 				<scrollbarHeight>4</scrollbarHeight>
                 <scrollbarYOff>538</scrollbarYOff>
+                <spinPosX>-2000</spinPosX>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,780" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,780" time="100">unfocus</thumbAnimation>
 		</control>
