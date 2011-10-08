@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Avalon plugin">
+</Property><Property Name="Solution File" Value="Y:\Avalon plugin\Avalon plugin.sln">
+</Property><Property Name="User Options File" Value="Y:\Avalon plugin\Avalon plugin.suo">
+</Property><Property Name="Date" Value="Donnerstag, 9. Dezember 2010">
+</Property><Property Name="Time" Value="17:43">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Avalon plugin.sln" Description="File successfully backed up as Y:\Avalon plugin\Backup\Avalon plugin.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Avalon plugin.suo" Description="File successfully backed up as Y:\Avalon plugin\Backup\Avalon plugin.suo">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="Avalon plugin.csproj" Description="Project file successfully backed up as Y:\Avalon plugin\Backup\Avalon plugin.csproj">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="Avalon plugin.csproj.user" Description="Project user file successfully backed up as Y:\Avalon plugin\Backup\Avalon plugin.csproj.user">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="AvalonConfig.cs" Description="File successfully backed up as Y:\Avalon plugin\Backup\AvalonConfig.cs">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="AvalonConfig.Designer.cs" Description="File successfully backed up as Y:\Avalon plugin\Backup\AvalonConfig.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="AvalonPlugin.cs" Description="File successfully backed up as Y:\Avalon plugin\Backup\AvalonPlugin.cs">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="AvalonHelper.cs" Description="File successfully backed up as Y:\Avalon plugin\Backup\AvalonHelper.cs">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="RecentlyAdded.cs" Description="File successfully backed up as Y:\Avalon plugin\Backup\RecentlyAdded.cs">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="PlayMedia.cs" Description="File successfully backed up as Y:\Avalon plugin\Backup\PlayMedia.cs">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="SkinInfo.cs" Description="File successfully backed up as Y:\Avalon plugin\Backup\SkinInfo.cs">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as Y:\Avalon plugin\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as Y:\Avalon plugin\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="AvalonConfig.resx" Description="File successfully backed up as Y:\Avalon plugin\Backup\AvalonConfig.resx">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="Plugin.png" Description="File successfully backed up as Y:\Avalon plugin\Backup\Plugin.png">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="PluginDisabled.png" Description="File successfully backed up as Y:\Avalon plugin\Backup\PluginDisabled.png">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="Properties\Resources.resx" Description="File successfully backed up as Y:\Avalon plugin\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="Avalon plugin.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Avalon plugin" Source="Avalon plugin.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Avalon plugin.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Avalon plugin.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Avalon plugin" Source="Avalon plugin.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00DC88F9-883E-4011-8A66-4E8A1110CB36}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AvalonEditor</RootNamespace>
+    <AssemblyName>AvalonEditor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Utils">
+      <HintPath>..\Externals\Common.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Core">
+      <HintPath>..\Externals\Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Cornerstone, Version=1.2.3.1329, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Externals\Cornerstone.dll</HintPath>
+    </Reference>
+    <Reference Include="Dialogs">
+      <HintPath>..\Externals\Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="DirectShowLib">
+      <HintPath>..\Externals\DirectShowLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MediaPortal.Support">
+      <HintPath>..\Externals\MediaPortal.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="MovingPictures, Version=1.2.3.1329, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Externals\MovingPictures.dll</HintPath>
+    </Reference>
+    <Reference Include="MP-TVSeries, Version=3.1.1.1864, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Externals\MP-TVSeries.dll</HintPath>
+    </Reference>
+    <Reference Include="MyFilms">
+      <HintPath>..\Externals\MyFilms.dll</HintPath>
+    </Reference>
+    <Reference Include="OnlineVideos, Version=0.29.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Externals\OnlineVideos.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Utils">
+      <HintPath>..\Externals\Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowPlugins">
+      <HintPath>..\Externals\WindowPlugins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AvalonConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvalonConfig.Designer.cs">
+      <DependentUpon>AvalonConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvalonEditor.cs" />
+    <Compile Include="AvalonHelper.cs" />
+    <Compile Include="RecentlyAdded.cs" />
+    <Compile Include="PlayMedia.cs" />
+    <Compile Include="SkinInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AvalonConfig.resx">
+      <DependentUpon>AvalonConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
