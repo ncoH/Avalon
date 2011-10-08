@@ -21,8 +21,10 @@
 	<!-- 			:: DVD COVER (SEASON/EPISODE) :: -->
     
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<description>Poster shadow</description>
 		<type>image</type>
 		<id>1</id>
@@ -31,12 +33,14 @@
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_shadow.png</texture>
-      <visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list|facadeview.largeicons</visible>
+      <visible>[[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list|facadeview.largeicons] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<description>Poster glow</description>
 		<type>image</type>
 		<id>1</id>
@@ -45,13 +49,15 @@
 		<width>466</width>
 		<height>606</height>
 		<texture>list_poster_glow.png</texture>
-      <visible>[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list|facadeview.largeicons</visible>
+      <visible>[[[control.isvisible(1237)+control.isvisible(1242)]|control.isvisible(1238)]+facadeview.list|facadeview.largeicons] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 
     <control>
 		<type>image</type>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<description>Series Poster</description>
 		<id>46</id>
 		<posX>762</posX>
@@ -59,13 +65,15 @@
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#TVSeries.SeriesPoster</texture>
-      <visible>[control.isvisible(1237)+control.isvisible(1242)]+facadeview.list|facadeview.largeicons</visible>
+      <visible>[[control.isvisible(1237)+control.isvisible(1242)]+facadeview.list|facadeview.largeicons] + !string.equals(#Avalon.hidePoster,yes)</visible>
     </control>
   
     <control>
       <type>image</type>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<description>Season Poster</description>
 		<id>46</id>
 		<posX>762</posX>
@@ -73,13 +81,13 @@
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#TVSeries.SeasonPoster</texture>
-      <visible>control.isvisible(1238)+facadeview.list</visible>
+      <visible>control.isvisible(1238)+facadeview.list + !string.equals(#Avalon.hidePoster,yes)</visible>
     </control>
 	
     <control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="350" delay="250" reversible="false">visible</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
         <description>New Overlay</description>
         <type>image</type>
@@ -89,13 +97,13 @@
         <width>331</width>
         <height>48</height>
         <texture>new_overlay.png</texture>
-        <visible>[[control.isvisible(1237)+control.isvisible(1242)] | control.isvisible(1238)] + !control.isvisible(1243) + facadeview.list</visible>
+        <visible>[[control.isvisible(1237)+control.isvisible(1242)] | control.isvisible(1238)] + !control.isvisible(1243) + facadeview.list + !string.equals(#Avalon.hidePoster,yes)</visible>
     </control>
 	
     <control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="350" delay="250" reversible="false">visible</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
         <description>Unwatched label</description>
         <type>label</type>
@@ -109,7 +117,7 @@
         <shadowAngle>120</shadowAngle>
         <shadowDistance>1</shadowDistance>
         <shadowColor>FF000000</shadowColor>
-        <visible>[[control.isvisible(1237)+control.isvisible(1242)] | control.isvisible(1238)] + !control.isvisible(1243) + facadeview.list</visible>
+        <visible>[[control.isvisible(1237)+control.isvisible(1242)] | control.isvisible(1238)] + !control.isvisible(1243) + facadeview.list + !string.equals(#Avalon.hidePoster,yes)</visible>
     </control>
 
     <control>
@@ -220,9 +228,10 @@
 
     <control>
 		<type>image</type>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 		<id>1</id>
 		<posX>770</posX>
 		<posY>789</posY>
@@ -230,7 +239,7 @@
 		<height>27</height>
 		<align>left</align>
 		<texture>#TVSeries.Series.RatingPath</texture>
-		<visible>[facadeview.list|facadeview.largeicons]+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
+		<visible>[facadeview.list|facadeview.largeicons]+[Control.IsVisible(1237)|Control.IsVisible(1238)] + !string.equals(#Avalon.hidePoster,yes)</visible>
     </control>
 	
     <control>      
