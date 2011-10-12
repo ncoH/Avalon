@@ -37,7 +37,8 @@ namespace AvalonGUIConfig
             WatchList,
             Rate,
             AddToWatchList,
-            Shouts
+            Shouts,
+            AddToList
         }
 
         #endregion
@@ -768,6 +769,15 @@ namespace AvalonGUIConfig
                 TraktPlugin.TraktHelper.AddMovieToWatchList(Title, Year, IMDB, true);
         }
 
+        private void TraktAddToList()
+        {
+                string IMDBID = GUIPropertyManager.GetProperty("#MovingPictures.SelectedMovie.imdb_id").Trim();
+                string Title = GUIPropertyManager.GetProperty("#MovingPictures.SelectedMovie.title").Trim();
+                string Year = GUIPropertyManager.GetProperty("#MovingPictures.SelectedMovie.year").Trim();
+
+                TraktHelper.AddRemoveMovieInUserList(Title, Year, IMDBID, false);
+        }
+
 
         private void ShowTraktMenu()
         {
@@ -800,6 +810,10 @@ namespace AvalonGUIConfig
             listItem = new GUIListItem(Translation.AddToWatchList);
             dlg.Add(listItem);
             listItem.ItemId = (int)TraktMenuItems.AddToWatchList;
+
+            listItem = new GUIListItem(Translation.AddToList);
+            dlg.Add(listItem);
+            listItem.ItemId = (int)TraktMenuItems.AddToList;
             
             listItem = new GUIListItem(Translation.Rate);
             dlg.Add(listItem);
@@ -839,6 +853,11 @@ namespace AvalonGUIConfig
                 case ((int)TraktMenuItems.AddToWatchList):
                     // Add to Watchlist
                     TraktAddToWatchlist();
+                    break;
+
+               case ((int)TraktMenuItems.AddToList):
+                    // Add to Watchlist
+                    TraktAddToList();
                     break;
 
                 case ((int)TraktMenuItems.Rate):

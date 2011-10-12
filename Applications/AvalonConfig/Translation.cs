@@ -268,12 +268,14 @@ namespace AvalonGUIConfig
         public static string Aspectratio = "Aspectratio";
         public static string WatchedCount = "Watched Count";
         public static string AddToWatchList = "Add movie to watchlist";
+        public static string AddToList = "Add movie to a list";
         public static string Rate = "Rate movie";
         public static string Trakt = "Trakt";
         public static string Watchlist = "Watchlist";
         public static string Recommendations = "Recommendations";
         public static string Trending = "Trending movies";
         public static string Shouts = "Shouts";
+        public static string List = "List";
         
         //Latest Media
         public static string LatestMovies = "Latest movies";

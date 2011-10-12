@@ -43,7 +43,6 @@ namespace ProcessPlugins.AvalonEditor
         List<menuItem> HomemenuItems = new List<menuItem>();
         List<menuItem> PluginmenuItems = new List<menuItem>();
         private ArrayList Parents = new ArrayList();
-        private ArrayList Children = new ArrayList();
         private ArrayList newChildren = new ArrayList();
         private ArrayList tempChildren = new ArrayList();
         private ArrayList singleChildren = new ArrayList();
@@ -65,7 +64,7 @@ namespace ProcessPlugins.AvalonEditor
             InitializeComponent();
         }
 
-        #region Parmeter Handling
+        #region Parameter Handling
 
         /// <summary>
         /// Get list of views in TVseries database
@@ -263,22 +262,25 @@ namespace ProcessPlugins.AvalonEditor
 
         }
 
-
         public class Child
         {
             public int Owner;
             public int ID;
             public string Name;
             public int Hyperlink;
+            public string bgImage;
             public string property;
+            public string media;
 
-            public Child(int intOwner, int strID, string strName, int intHyperlink, string property)
+            public Child(int intOwner, int strID, string strName, int intHyperlink, string bgimage, string property, string media)
             {
                 this.Owner = intOwner;
                 this.ID = strID;
                 this.Name = strName;
                 this.Hyperlink = intHyperlink;
+                this.bgImage = bgimage;
                 this.property = property;
+                this.media = media;
             }
 
             public override string ToString()
@@ -287,8 +289,6 @@ namespace ProcessPlugins.AvalonEditor
             }
 
         }
-
-
 
         private void LoadWindowPlugins()
         {
@@ -392,10 +392,6 @@ namespace ProcessPlugins.AvalonEditor
 
         }
 
-
-
-
-
         public static List<FileInfo> getFilesRecursive(DirectoryInfo inputDir)
         {
             List<FileInfo> fileList = new List<FileInfo>();
@@ -416,14 +412,6 @@ namespace ProcessPlugins.AvalonEditor
 
             return fileList;
         }
-
-
-
-
-
-
-
-
 
         /// <summary>
         /// Load the Path information from the Config File into the dictionary
@@ -483,8 +471,6 @@ namespace ProcessPlugins.AvalonEditor
             }
             return string.Empty;
         }
-
-
 
         private void frmAvalonEditor_Load(object sender, EventArgs e)
         {
@@ -725,6 +711,7 @@ namespace ProcessPlugins.AvalonEditor
                 menuItem item = new menuItem();
                 item.name = new_name.Text;
                 item.identifier = menuItems.Count;
+                item.property = string.Empty;
 
                 if (cB_singleImage.Checked)
                 {
@@ -738,29 +725,31 @@ namespace ProcessPlugins.AvalonEditor
                 if (cB_RecentMedia.Checked)
                 {
 
-                    if (rB_Movies.Checked)
-                    {
-                        item.media = "MovingPictures";
-                    }
-                    else if (rB_Series.Checked)
-                    {
-                        item.media = "TVSeries";
-                    }
-                    else if (rB_Music.Checked)
-                    {
-                        item.media = "Music";
-                    }
-                    else if (rB_Recordings.Checked)
-                    {
-                        item.media = "Recordings";
-                    }
-                    //else if (rB_Pictures.Checked)
-                    //{
-                    //    item.media = "Pictures";
-                    //}
+                  if (rB_Movies.Checked)
+                  {
+                    item.media = "MovingPictures";
+                  }
+                  else if (rB_Series.Checked)
+                  {
+                    item.media = "TVSeries";
+                  }
+                  else if (rB_Music.Checked)
+                  {
+                    item.media = "Music";
+                  }
+                  else if (rB_Recordings.Checked)
+                  {
+                    item.media = "Recordings";
+                  }
+                  //else if (rB_Pictures.Checked)
+                  //{
+                  //    item.media = "Pictures";
+                  //}
                 }
                 else
-                    item.media = "";
+                {
+                  item.media = "";
+                }
 
                 int num1;
                 bool res = int.TryParse(new_windowid.Text, out num1);
@@ -780,7 +769,7 @@ namespace ProcessPlugins.AvalonEditor
                     }
                 }
 
-                if (cboParameterViews.SelectedIndex != -1 || (movPicsCategoryCombo.Visible && movPicsCategoryCombo.SelectedIndex != -1) || tbEditorStartParamsOutput.Text != string.Empty)
+                if (cboParameterViews.SelectedIndex != -1 || movPicsCategoryCombo.Visible || tbEditorStartParamsOutput.Text != string.Empty)
                 {
                     if (item.hyperlink == 9811)
                     {
@@ -824,7 +813,6 @@ namespace ProcessPlugins.AvalonEditor
                 }
                 else
                     item.property = "";
-
                 menuItems.Add(item);
                 used_list.Items.Add(item.name);
 
@@ -867,6 +855,7 @@ namespace ProcessPlugins.AvalonEditor
                 menuItem item = new menuItem();
                 item.name = new_name.Text;
                 item.owner = menuItems[used_list.SelectedIndex].identifier;
+                item.property = string.Empty;
 
                 if (Convert.ToInt32(new_windowid.Text) == 501 && cboParameterViews.Text != "")
                 {
@@ -877,8 +866,7 @@ namespace ProcessPlugins.AvalonEditor
                     item.hyperlink = Convert.ToInt32(new_windowid.Text);
                 }
 
-
-                if (cboParameterViews.SelectedIndex != -1 || (movPicsCategoryCombo.Visible && movPicsCategoryCombo.SelectedIndex != -1) || tbEditorStartParamsOutput.Text != string.Empty)
+                if (cboParameterViews.SelectedIndex != -1 || movPicsCategoryCombo.Visible || tbEditorStartParamsOutput.Text != string.Empty)
                 {
                     if (item.hyperlink == 9811)
                     {
@@ -903,15 +891,14 @@ namespace ProcessPlugins.AvalonEditor
 
                     if (item.hyperlink == 96742)
                     {
-                        if (movPicsCategoryCombo.SelectedIndex != -1)
-                        {
+                      if (movPicsCategoryCombo.SelectedIndex != -1)
+                      {
 
-                            int? id = GetMovPicsCategoryNodeID(movPicsCategoryCombo.SelectedNode);
-                            if (id != null)
-                                item.property = "categoryid:" + id.ToString();
-
-                            ClearMovingPicturesCategories();
-                        }
+                        int? id = GetMovPicsCategoryNodeID(movPicsCategoryCombo.SelectedNode);
+                        if (id != null)
+                          item.property = "categoryid:" + id.ToString();
+                        ClearMovingPicturesCategories();
+                      }
                     }
                     if (item.hyperlink == 7986)
                     {
@@ -919,8 +906,7 @@ namespace ProcessPlugins.AvalonEditor
                     }
 
                 }
-                newChildren.Add(new Child(item.owner, newChildren.Count, new_name.Text, item.hyperlink, item.property));
-                //tempChildren.Add(new Child(item.owner, tempChildren.Count, new_name.Text, Convert.ToInt32(new_windowid.Text)));
+                singleChildren.Add(new Child(item.owner, used_list_submenu.Items.Count, new_name.Text, item.hyperlink, "", item.property, ""));
                 used_list_submenu.Items.Add(item.name);
 
 
@@ -929,6 +915,8 @@ namespace ProcessPlugins.AvalonEditor
                 new_windowid.Text = "";
                 cboParameterViews.Text = "";
                 movPicsCategoryCombo.SelectedIndex = -1;
+                cB_singleImage.Checked = false;
+                cB_FanartHandler.Checked = false;
                 cB_RecentMedia.Checked = false;
                 if (used_list_submenu.Items.Count > 0)
                     avail_list.SelectedIndex = -1;
@@ -959,6 +947,7 @@ namespace ProcessPlugins.AvalonEditor
                 menuItem used_item = new menuItem();
                 used_item.name = new_name.Text;
                 used_item.identifier = selected;
+                used_item.property = string.Empty;
 
                 if (cB_singleImage.Checked)
                 {
@@ -972,29 +961,31 @@ namespace ProcessPlugins.AvalonEditor
                 if (cB_RecentMedia.Checked)
                 {
 
-                    if (rB_Movies.Checked)
-                    {
-                        used_item.media = "MovingPictures";
-                    }
-                    else if (rB_Series.Checked)
-                    {
-                        used_item.media = "TVSeries";
-                    }
-                    else if (rB_Music.Checked)
-                    {
-                        used_item.media = "Music";
-                    }
-                    else if (rB_Recordings.Checked)
-                    {
-                        used_item.media = "Recordings";
-                    }
-                    //else if (rB_Pictures.Checked)
-                    //{
-                    //    used_item.media = "Pictures";
-                    //}
+                  if (rB_Movies.Checked)
+                  {
+                    used_item.media = "MovingPictures";
+                  }
+                  else if (rB_Series.Checked)
+                  {
+                    used_item.media = "TVSeries";
+                  }
+                  else if (rB_Music.Checked)
+                  {
+                    used_item.media = "Music";
+                  }
+                  else if (rB_Recordings.Checked)
+                  {
+                    used_item.media = "Recordings";
+                  }
+                  //else if (rB_Pictures.Checked)
+                  //{
+                  //    used_item.media = "Pictures";
+                  //}
                 }
                 else
-                    used_item.media = "";
+                {
+                  used_item.media = "";
+                }
 
                 if (new_windowid.Text.Length > 0)
                 {
@@ -1013,7 +1004,7 @@ namespace ProcessPlugins.AvalonEditor
                     used_item.hyperlink = -1;
                 }
 
-                if (cboParameterViews.SelectedIndex != -1 || (movPicsCategoryCombo.Visible && movPicsCategoryCombo.SelectedIndex != -1))
+                if (cboParameterViews.SelectedIndex != -1 || movPicsCategoryCombo.Visible)
                 {
                     if (used_item.hyperlink == 9811)
                     {
@@ -1038,16 +1029,17 @@ namespace ProcessPlugins.AvalonEditor
 
                     if (used_item.hyperlink == 96742)
                     {
-                        if (movPicsCategoryCombo.SelectedIndex != -1)
+                      if (movPicsCategoryCombo.SelectedIndex != -1)
+                      {
+                        int? id = GetMovPicsCategoryNodeID(movPicsCategoryCombo.SelectedNode);
+                        if (id != null)
                         {
-
-                            int? id = GetMovPicsCategoryNodeID(movPicsCategoryCombo.SelectedNode);
-                            if (id != null)
-                                used_item.property = "categoryid:" + id.ToString();
-
-                            ClearMovingPicturesCategories();
+                          used_item.property = "categoryid:" + id.ToString();
                         }
+                        ClearMovingPicturesCategories();
+                      }
                     }
+
                 }
 
                 used_list.Items.RemoveAt(index);
@@ -1062,363 +1054,475 @@ namespace ProcessPlugins.AvalonEditor
         {
             if (used_list_submenu.SelectedItem != null)
             {
+              int index = used_list_submenu.SelectedIndex;
+              int owner = menuItems[used_list.SelectedIndex].identifier;
+              Child actchild = null;
+              foreach (Child mychild in singleChildren)
+                {
+                  if (mychild.Owner == owner && mychild.ID == index)
+                  {
+                    actchild = mychild;
+                  }
+                }
+              actchild.Name = new_name.Text;
 
-                int index = used_list_submenu.SelectedIndex;
-                int owner = menuItems[used_list.SelectedIndex].identifier;
-                int hyperlink = 0;
-                string property = "";
+                if (cB_singleImage.Checked)
+                {
+                  actchild.bgImage = new_bgimage.Text;
+                }
+                if (cB_FanartHandler.Checked)
+                {
+                  actchild.bgImage = combo_FanartHandler.Text;
+                }
+
+                if (cB_RecentMedia.Checked)
+                {
+
+                  if (rB_Movies.Checked)
+                  {
+                    actchild.media = "MovingPictures";
+                  }
+                  else if (rB_Series.Checked)
+                  {
+                    actchild.media = "TVSeries";
+                  }
+                  else if (rB_Music.Checked)
+                  {
+                    actchild.media = "Music";
+                  }
+                  else if (rB_Recordings.Checked)
+                  {
+                    actchild.media = "Recordings";
+                  }
+                  //else if (rB_Pictures.Checked)
+                  //{
+                  //    used_item.media = "Pictures";
+                  //}
+                }
+                else
+                {
+                  actchild.media = "";
+                }
+
 
                 if (new_windowid.Text.Length > 0)
                 {
                     if (Convert.ToInt32(new_windowid.Text) == 501 && cboParameterViews.Text != "")
                     {
-                        hyperlink = Convert.ToInt32(504);
+                      actchild.Hyperlink = Convert.ToInt32(504);
                     }
                     else
                     {
-                        hyperlink = Convert.ToInt32(new_windowid.Text);
+                      actchild.Hyperlink = Convert.ToInt32(new_windowid.Text);
                     }
                 }
-                else
-                {
-                    hyperlink = -1;
-                }
 
-                if (cboParameterViews.SelectedIndex != -1)
+                if (cboParameterViews.SelectedIndex != -1 || movPicsCategoryCombo.Visible)
                 {
-                    if (hyperlink == 9811)
+                  if (actchild.Hyperlink == 9811)
                     {
-                        property = getTVSeriesViewKey(cboParameterViews.SelectedItem.ToString());
+                      actchild.property = getTVSeriesViewKey(cboParameterViews.SelectedItem.ToString());
                     }
 
-                    if (hyperlink == 504)
+                  if (actchild.Hyperlink == 504)
                     {
-                        property = getMusicViewKey(cboParameterViews.SelectedItem.ToString());
+                      actchild.property = getMusicViewKey(cboParameterViews.SelectedItem.ToString());
                     }
 
-                    if (hyperlink == 4755)
+                  if (actchild.Hyperlink == 4755)
                     {
                         string OnlineVideosReturn = "";
                         if (cB_onlinevideosOption.Checked)
-                            OnlineVideosReturn = "Root";
+                        {
+                          OnlineVideosReturn = "Root";
+                        }
                         else
-                            OnlineVideosReturn = "Locked";
-
-                        property = "site:" + getOnlineVideosViewKey(cboParameterViews.SelectedItem.ToString()) + "|return:" + OnlineVideosReturn;
+                        {
+                          OnlineVideosReturn = "Locked";
+                        }
+                        actchild.property = "site:" + getOnlineVideosViewKey(cboParameterViews.SelectedItem.ToString()) + "|return:" + OnlineVideosReturn;
                     }
 
-                    if (hyperlink == 96742)
+                  if (actchild.Hyperlink == 96742)
                     {
-                        if (movPicsCategoryCombo.SelectedIndex != -1)
+                      if (movPicsCategoryCombo.SelectedIndex != -1)
+                      {
+                        int? id = GetMovPicsCategoryNodeID(movPicsCategoryCombo.SelectedNode);
+                        if (id != null)
                         {
-
-                            int? id = GetMovPicsCategoryNodeID(movPicsCategoryCombo.SelectedNode);
-                            if (id != null)
-                                property = "categoryid:" + id.ToString();
-
-                            ClearMovingPicturesCategories();
+                          actchild.property = "categoryid:" + id.ToString();
                         }
+                        ClearMovingPicturesCategories();
+                      }
                     }
 
                 }
-
-                Child newchild = new Child(owner, index, new_name.Text, hyperlink, property);
-
 
                 used_list_submenu.Items.RemoveAt(index);
                 used_list_submenu.Items.Insert(index, new_name.Text);
-
-
-                int a = 0;
-                int itemtoremove = 0;
-                foreach (Child mychild in newChildren)
-                {
-                    if (mychild.Owner == owner && mychild.ID == index)
-                    {
-                        itemtoremove = a;
-                    }
-                    a++;
-                }
-
-                singleChildren.RemoveAt(index);
-                singleChildren.Insert(index, newchild);
-
-                newChildren.RemoveAt(itemtoremove);
-                newChildren.Insert(itemtoremove, newchild);
-
-
             }
         }
 
         // Move selected menu item down one position in list. 
         private void btMoveDown_Click(object sender, EventArgs e)
         {
-            // Do nothing if no item is selected or if already at bottom
-            if (used_list.SelectedItem != null && used_list.SelectedIndex < used_list.Items.Count - 1)
+          // Do nothing if no item is selected or if already at bottom
+          if (used_list.SelectedItem != null && used_list.SelectedIndex < used_list.Items.Count - 1)
+          {
+
+            int index = used_list.SelectedIndex;
+            Object listItem = used_list.SelectedItem;
+
+            menuItem mnuItem = menuItems[index];
+            mnuItem.identifier = index + 1;
+
+
+            menuItem mnuItem2 = menuItems[index + 1];
+            mnuItem2.identifier = index;
+
+            used_list.Items.RemoveAt(index);
+            menuItems.RemoveAt(index);
+            used_list.Items.Insert(index + 1, listItem);
+            menuItems.Insert(index + 1, mnuItem);
+
+
+            tempChildren.Clear();
+            foreach (Child mychild in singleChildren)
             {
-                int index = used_list.SelectedIndex;
-                Object listItem = used_list.SelectedItem;
-                menuItem mnuItem = menuItems[index];
-                used_list.Items.RemoveAt(index);
-                menuItems.RemoveAt(index);
-                if (index < used_list.Items.Count)
-                {
-                    used_list.Items.Insert(index + 1, listItem);
-                    menuItems.Insert(index + 1, mnuItem);
-                }
-                else
-                {
-                    used_list.Items.Add(listItem);
-                    menuItems.Add(mnuItem);
-                }
-                used_list.SelectedIndex = index + 1;
+              if (mychild.Owner == index)
+              {
+                mychild.Owner = index + 1;
+                tempChildren.Add(mychild);
+              }
+              else if (mychild.Owner == index + 1)
+              {
+                mychild.Owner = index;
+                tempChildren.Add(mychild);
+              }
+
             }
+
+            foreach (Child b in new ArrayList(singleChildren))
+            {
+              if (b.Owner == index || b.Owner == index + 1)
+              {
+                singleChildren.Remove(b);
+              }
+            }
+
+            singleChildren.AddRange(tempChildren);
+            used_list.SelectedIndex = index + 1;
+          }
         }
 
-        // Move selected menu item down one position in list. 
+        // Move selected submenu item down one position in list. 
         private void btSubMoveDown_Click(object sender, EventArgs e)
         {
-            // Do nothing if no item is selected or if already at bottom
-            if (used_list_submenu.SelectedItem != null && used_list_submenu.SelectedIndex < used_list_submenu.Items.Count - 1)
+          // Do nothing if no item is selected or if already at bottom
+          if (used_list_submenu.SelectedItem != null && used_list_submenu.SelectedIndex < used_list_submenu.Items.Count - 1)
+          {
+            int index = used_list_submenu.SelectedIndex;
+            int selected = menuItems[used_list.SelectedIndex].identifier;
+            int a = 0;
+            int start = 0;
+            int end = 0;
+            int itemID = 0;
+            int place = 0;
+            string name = string.Empty;
+            string childname = string.Empty;
+            int hyper = 0;
+            string property = string.Empty;
+            string media = string.Empty;
+            Child child1 = null;
+            Child child2 = null;
+
+            tempChildren.Clear();
+            foreach (Child mychild in singleChildren)
             {
-                int index = used_list_submenu.SelectedIndex;
-                int a = 0;
-                int itemID = 0;
-                int selID = 0;
-                int itemtoremove = 0;
-                int selected = menuItems[used_list.SelectedIndex].identifier;
-                foreach (Child mychild in singleChildren)
-                {
-                    if (mychild.Owner == selected && a == used_list_submenu.SelectedIndex)
-                    {
-                        //Log.Info("fjern elm. " + mychild.Name);
-                        itemtoremove = a;
-                        itemID = mychild.ID;
-                    }
-                    a++;
-                }
+              if (mychild.Owner == selected && mychild.ID == index) // 4
+              {
+                end = a;
+                place = mychild.ID + 1;
+                itemID = mychild.ID + 1;
+                name = mychild.Name;
+                hyper = mychild.Hyperlink;
+                property = mychild.property;
+                media = mychild.media;
+                
+                child1 = new Child(selected, place, name, hyper, "", property, media);
+                tempChildren.Add(child1);
+              }
 
-                singleChildren.RemoveAt(index);
-
-                a = 0;
-                foreach (Child mychild in newChildren)
-                {
-                    if (mychild.Owner == selected && mychild.ID == index)
-                    {
-                        itemtoremove = a;
-                        selID = mychild.ID;
-                    }
-                    a++;
-                }
-
-                newChildren.RemoveAt(itemtoremove);
-
-                Child newchild = new Child(selected, selID, new_name.Text, Convert.ToInt32(new_windowid.Text), cboParameterViews.Text);
-                Object listItem = used_list_submenu.SelectedItem;
-                used_list_submenu.Items.RemoveAt(index);
-                if (index < used_list_submenu.Items.Count)
-                {
-                    used_list_submenu.Items.Insert(index + 1, listItem);
-                    newChildren.Insert(itemtoremove + 1, newchild);
-                    singleChildren.Insert(index + 1, newchild);
-                }
-                else
-                {
-                    used_list_submenu.Items.Add(listItem);
-                    newChildren.Add(newchild);
-                    singleChildren.Add(newchild);
-                }
-                used_list_submenu.SelectedIndex = index + 1;
+              else if (mychild.Owner == selected && mychild.ID == index + 1)
+              {
+                start = a;
+                place = mychild.ID - 1;
+                itemID = mychild.ID - 1;
+                name = mychild.Name;
+                hyper = mychild.Hyperlink;
+                property = mychild.property;
+                media = mychild.media;
+                child2 = new Child(selected, place, name, hyper, "", property, media);
+                tempChildren.Add(child2);
+              }
+              a++;
             }
+            singleChildren.RemoveAt(start);
+            singleChildren.RemoveAt(end);
+
+            singleChildren.Insert(end, child2);
+            singleChildren.Insert(start, child1);
+
+            Object listItem = used_list_submenu.SelectedItem;
+            used_list_submenu.Items.RemoveAt(index);
+            if (index < used_list_submenu.Items.Count)
+            {
+              used_list_submenu.Items.Insert(index + 1, listItem);
+            }
+            else
+            {
+              used_list_submenu.Items.Add(listItem);
+            }
+            used_list_submenu.SelectedIndex = index + 1;
+
+          }
         }
 
         // Move selected menu item up one position in list. 
         private void btMoveUp_Click(object sender, EventArgs e)
         {
-            // Do nothing if no item is selected or if already at top
-            if (used_list.SelectedItem != null && used_list.SelectedIndex > 0)
+          // Do nothing if no item is selected or if already at top
+          if (used_list.SelectedItem != null && used_list.SelectedIndex > 0)
+          {
+            int index = used_list.SelectedIndex;
+            Object listItem = used_list.SelectedItem;
+
+            menuItem mnuItem = menuItems[index];
+            mnuItem.identifier = index - 1;
+
+            menuItem mnuItem2 = menuItems[index - 1];
+            mnuItem2.identifier = index;
+
+            used_list.Items.RemoveAt(index);
+            menuItems.RemoveAt(index);
+            used_list.Items.Insert(index - 1, listItem);
+            menuItems.Insert(index - 1, mnuItem);
+
+            tempChildren.Clear();
+            foreach (Child mychild in singleChildren)
             {
-                int index = used_list.SelectedIndex;
-                Object listItem = used_list.SelectedItem;
-                menuItem mnuItem = menuItems[index];
-                used_list.Items.RemoveAt(index);
-                menuItems.RemoveAt(index);
-                used_list.Items.Insert(index - 1, listItem);
-                menuItems.Insert(index - 1, mnuItem);
-                used_list.SelectedIndex = index - 1;
+              if (mychild.Owner == index)
+              {
+                mychild.Owner = index - 1;
+                tempChildren.Add(mychild);
+              }
+              else if (mychild.Owner == index - 1)
+              {
+                mychild.Owner = index;
+                tempChildren.Add(mychild);
+              }
+
             }
+
+            foreach (Child b in new ArrayList(singleChildren))
+            {
+              if (b.Owner == index || b.Owner == index - 1)
+              {
+                singleChildren.Remove(b);
+              }
+            }
+
+            singleChildren.AddRange(tempChildren);
+            used_list.SelectedIndex = index - 1;
+
+          }
 
         }
 
-        // Move selected menu item up one position in list. 
+        // Move selected submenu item up one position in list. 
         private void btSubMoveUp_Click(object sender, EventArgs e)
         {
-            // Do nothing if no item is selected or if already at top
-            if (used_list_submenu.SelectedItem != null && used_list_submenu.SelectedIndex > 0)
+          // Do nothing if no item is selected or if already at top
+          if (used_list_submenu.SelectedItem != null && used_list_submenu.SelectedIndex > 0)
+          {
+
+            int index = used_list_submenu.SelectedIndex;
+            int selected = menuItems[used_list.SelectedIndex].identifier;
+            int a = 0;
+            int start = 0;
+            int end = 0;
+            int itemID = 0;
+            int place = 0;
+            string name = string.Empty;
+            string childname = string.Empty;
+            int hyper = 0;
+            string bgimage = string.Empty;
+            string property = string.Empty;
+            string media = string.Empty;
+            Child child1 = null;
+            Child child2 = null;
+
+            tempChildren.Clear();
+            foreach (Child mychild in singleChildren)
             {
+              if (mychild.Owner == selected && mychild.ID == index) // 5
+              {
+                end = a;
+                place = mychild.ID - 1; // 4
+                itemID = mychild.ID - 1;
+                name = mychild.Name;
+                hyper = mychild.Hyperlink;
+                bgimage = mychild.bgImage;
+                property = mychild.property;
+                media = mychild.media;
+                child1 = new Child(selected, place, name, hyper, bgimage, property, media);
+                tempChildren.Add(child1);
+              }
 
-                int index = used_list_submenu.SelectedIndex;
-                int selected = menuItems[used_list.SelectedIndex].identifier;
-                int a = 0;
-                int itemID = 0;
-                int place = 0;
-                string name = string.Empty;
-                string childname = string.Empty;
-                int hyper = 0;
-                string property = string.Empty;
-                Child child = null;
-
-                tempChildren.Clear();
-
-                foreach (Child mychild in newChildren)
-                {
-                    //MessageBox.Show("ejer:" + selected + "id:" + mychild.ID + "op:" + index + ":" + mychild.Name);
-                    if (mychild.Owner == selected && mychild.ID == index)
-                    {
-                        place = mychild.ID - 1;
-                        itemID = mychild.ID;
-                        name = mychild.Name;
-                        hyper = mychild.Hyperlink;
-                        child = new Child(selected, place, name, hyper, property);
-                    }
-
-                    else if (mychild.Owner == selected && mychild.ID == index - 1)
-                    {
-                        place = mychild.ID + 1;
-                        itemID = mychild.ID;
-                        name = mychild.Name;
-                        hyper = mychild.Hyperlink;
-                        property = mychild.property;
-                        child = new Child(selected, place, name, hyper, property);
-                    }
-                    else
-                    {
-                        place = mychild.ID;
-                        itemID = mychild.ID;
-                        name = mychild.Name;
-                        hyper = mychild.Hyperlink;
-                        property = mychild.property;
-                        child = new Child(mychild.Owner, place, name, hyper, property);
-                    }
-                    tempChildren.Add(child);
-                    a++;
-                }
-                newChildren.Clear();
-                newChildren.AddRange(tempChildren);
-
-                tempChildren.Clear();
-                a = 0;
-                do
-                {
-
-
-
-                    foreach (Child mychild in newChildren)
-                    {
-                        if (mychild.ID == a)
-                        {
-                            place = mychild.ID;
-                            itemID = mychild.ID;
-                            name = mychild.Name;
-                            hyper = mychild.Hyperlink;
-                            property = mychild.property;
-                            child = new Child(mychild.Owner, place, name, hyper, property);
-                            tempChildren.Add(child);
-
-                        }
-                    }
-
-                    a++;
-                }
-                while (a < newChildren.Count);
-
-                newChildren.Clear();
-                newChildren.AddRange(tempChildren);
-
-                Object listItem = used_list_submenu.SelectedItem;
-                used_list_submenu.Items.RemoveAt(index);
-
-                used_list_submenu.Items.Insert(index - 1, listItem);
-
-                used_list_submenu.SelectedIndex = index - 1;
-
-
-
-                new_windowid.Text = "" + hyper;
-                new_name.Text = "" + name;
-                toolStripStatusLabel1.Text = "Window ID: " + hyper;
-
-                //foreach (Child mychild in newChildren)
-                //{
-                //    MessageBox.Show(mychild.ID + " " + mychild.Name);
-                //}
-
-
+              else if (mychild.Owner == selected && mychild.ID == index - 1) // 4
+              {
+                start = a;
+                place = mychild.ID + 1; // 5
+                itemID = mychild.ID + 1;
+                name = mychild.Name;
+                hyper = mychild.Hyperlink;
+                bgimage = mychild.bgImage;
+                property = mychild.property;
+                media = mychild.media;
+                child2 = new Child(selected, place, name, hyper, bgimage, property, media);
+                tempChildren.Add(child2);
+              }
+              a++;
             }
+            singleChildren.RemoveAt(end);
+            singleChildren.RemoveAt(start);
+
+            singleChildren.Insert(start, child1);
+            singleChildren.Insert(end, child2);
+
+            Object listItem = used_list_submenu.SelectedItem;
+            used_list_submenu.Items.RemoveAt(index);
+            used_list_submenu.Items.Insert(index - 1, listItem);
+            used_list_submenu.SelectedIndex = index - 1;
+          }
 
         }
 
         private void removeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int a = 0;
-            if (used_list.SelectedItem != null)
+          if (used_list.SelectedItem != null)
+          {
+            int owner = menuItems[used_list.SelectedIndex].identifier;
+            menuItems.RemoveAt(used_list.SelectedIndex);
+            used_list.Items.Remove(used_list.SelectedItem);
+
+            foreach (menuItem mnu in menuItems)
             {
-                int owner = menuItems[used_list.SelectedIndex].identifier;
-                menuItems.RemoveAt(used_list.SelectedIndex);
-                used_list.Items.Remove(used_list.SelectedItem);
-
-                tempChildren.Clear();
-                tempChildren.AddRange(newChildren);
-
-                foreach (Child mychild in newChildren)
-                {
-                    if (mychild.Owner == owner)
-                    {
-                        //MessageBox.Show("Fandt " + mychild.Name + " der ejes af " + mychild.Owner + " og er på index " + a);
-                        tempChildren.RemoveAt(a);
-                        a--;
-                    }
-                    a++;
-                }
-
-                newChildren.Clear();
-                newChildren.AddRange(tempChildren);
-                used_list_submenu.Items.Clear();
-                //Save();
+              if (mnu.identifier > owner)
+              {
+                mnu.identifier = mnu.identifier - 1;
+              }
             }
-            else
-                MessageBox.Show("No item is selected for removal", "Remove", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            tempChildren.Clear();
+            tempChildren.AddRange(singleChildren);
+
+            foreach (Child mychild in singleChildren)
+            {
+              if (mychild.Owner == owner)
+              {
+                tempChildren.Remove(mychild);
+              }
+
+              if (mychild.Owner > owner)
+              {
+                tempChildren.Remove(mychild);
+              }
+            }
+
+
+
+            foreach (Child mychild in singleChildren)
+            {
+              if (mychild.Owner > owner)
+              {
+
+                mychild.Owner = mychild.Owner - 1;
+                tempChildren.Add(mychild);
+              }
+            }
+
+
+
+
+            singleChildren.Clear();
+            singleChildren.AddRange(tempChildren);
+            used_list_submenu.Items.Clear();
+            // Clear items
+            new_name.Text = "";
+            new_bgimage.Text = "";
+            new_windowid.Text = "";
+            tbEditorStartParamsOutput.Text = "";
+          }
+          else
+            MessageBox.Show("No item is selected for removal", "Remove", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
         private void removeToolStripSubMenuItem_Click(object sender, EventArgs e)
         {
-            if (used_list_submenu.SelectedItem != null)
+          if (used_list_submenu.SelectedItem != null)
+          {
+            int a = 0;
+            int owner = menuItems[used_list.SelectedIndex].identifier;
+            int selected = used_list_submenu.SelectedIndex;
+
+            tempChildren.Clear();
+            tempChildren.AddRange(singleChildren); // Old array stored in temp
+
+            foreach (Child mychild in singleChildren)
             {
-                int a = 0;
-                int owner = menuItems[used_list.SelectedIndex].identifier;
-                int selected = used_list_submenu.SelectedIndex;
-
-                tempChildren.Clear();
-                tempChildren.AddRange(newChildren);
-
-                foreach (Child mychild in newChildren)
+              if (mychild.Owner == owner)
+              {
+                if (mychild.ID == selected)
                 {
-                    if (mychild.Owner == owner && a == selected)
-                    {
-                        //MessageBox.Show(selected + "-fjern " + mychild.Name + " der ejes af " + mychild.Owner);
-                        tempChildren.RemoveAt(a);
-                    }
-                    a++;
+                  tempChildren.Remove(mychild);
                 }
 
-                newChildren.Clear();
-                newChildren.AddRange(tempChildren);
-                used_list_submenu.Items.Remove(used_list_submenu.SelectedItem);
+                if (mychild.ID > selected)
+                {
+                  tempChildren.Remove(mychild);
+                }
+              }
+              a++;
             }
-            else
-                MessageBox.Show("No item is selected for removal", "Remove", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-        }
 
+
+            foreach (Child mychild in singleChildren)
+            {
+              if (mychild.Owner == owner)
+              {
+                if (mychild.ID > selected)
+                {
+                  mychild.ID = mychild.ID - 1;
+                  tempChildren.Add(mychild);
+                }
+
+              }
+            }
+
+            singleChildren.Clear();
+            singleChildren.AddRange(tempChildren);
+            used_list_submenu.Items.Remove(used_list_submenu.SelectedItem);
+
+            // Clear items
+            new_name.Text = "";
+            new_bgimage.Text = "";
+            new_windowid.Text = "";
+            tbEditorStartParamsOutput.Text = "";
+          }
+          else
+            MessageBox.Show("No item is selected for removal", "Remove", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
 
         int? GetMovPicsCategoryNodeID(IDBNode node)
         {
@@ -1448,7 +1552,6 @@ namespace ProcessPlugins.AvalonEditor
         // Save settings to file
         private void btSave_Click(object sender, EventArgs e)
         {
-
             using (MediaPortal.Profile.Settings xmlwriter = new MediaPortal.Profile.Settings(Config.GetFile(Config.Dir.Config, "Avalon.xml")))
             {
                 if (configloaded)
@@ -1456,7 +1559,8 @@ namespace ProcessPlugins.AvalonEditor
                     int a = 0;
                     do
                     {
-                        xmlwriter.RemoveEntry("AvalonBasicHome", "menuItemName" + a);
+                      xmlwriter.RemoveEntry("AvalonBasicHome", "menuItemName" + a);
+                      xmlwriter.RemoveEntry("AvalonBasicHome", "menuItemHyperlink" + a);
                         xmlwriter.RemoveEntry("AvalonBasicHome", "AvalonBasicHomeSubmenu" + a);
                         xmlwriter.RemoveEntry("AvalonBasicHome", "menuItemBgImage" + a);
                         xmlwriter.RemoveEntry("AvalonBasicHome", "menuItemParameter" + a);
@@ -1467,10 +1571,11 @@ namespace ProcessPlugins.AvalonEditor
                         {
                             xmlwriter.RemoveEntry("AvalonBasicHomeSubmenu" + a, "submenuItemName" + b);
                             xmlwriter.RemoveEntry("AvalonBasicHomeSubmenu" + a, "submenuItemHyperlink" + b);
+                            xmlwriter.RemoveEntry("AvalonBasicHomeSubmenu" + a, "submenuItemBgImage" + b);
                             xmlwriter.RemoveEntry("AvalonBasicHomeSubmenu" + a, "submenuItemParameter" + b);
+                            xmlwriter.RemoveEntry("AvalonBasicHomeSubmenu" + a, "submenuItemRecentMedia" + b);
                             b++;
                         } while (b < 250);
-
 
                         a++;
                     } while (a < 25);
@@ -1487,19 +1592,30 @@ namespace ProcessPlugins.AvalonEditor
                 {
                     xmlwriter.SetValue("AvalonBasicHome", "menuItemName" + mycount, item.name);
                     xmlwriter.SetValue("AvalonBasicHome", "menuItemHyperlink" + mycount, item.hyperlink);
-                    xmlwriter.SetValue("AvalonBasicHome", "menuItemBgImage" + mycount, item.bgImage);
-                    xmlwriter.SetValue("AvalonBasicHome", "menuItemParameter" + mycount, item.property);
-                    xmlwriter.SetValue("AvalonBasicHome", "menuItemRecentMedia" + mycount, item.media);
+                    if (item.bgImage != string.Empty)
+                    {
+                      xmlwriter.SetValue("AvalonBasicHome", "menuItemBgImage" + mycount, item.bgImage);
+                    }
+                    if (item.property != string.Empty)
+                    {
+                      xmlwriter.SetValue("AvalonBasicHome", "menuItemParameter" + mycount, item.property);
+                    }
+                    if (item.media != string.Empty)
+                    {
+                      xmlwriter.SetValue("AvalonBasicHome", "menuItemRecentMedia" + mycount, item.media);
+                    }
 
                     int mycount2 = 0;
-                    foreach (Child mychild in newChildren)
+                    foreach (Child mychild in singleChildren)
                     {
-                        //Log.Info("tester gem: " + mychild.Name);
                         if (item.identifier == mychild.Owner)
                         {
                             xmlwriter.SetValue("AvalonBasicHomeSubmenu" + mycount, "submenuItemName" + mycount2, mychild.Name);
                             xmlwriter.SetValue("AvalonBasicHomeSubmenu" + mycount, "submenuItemHyperlink" + mycount2, mychild.Hyperlink);
-                            xmlwriter.SetValue("AvalonBasicHomeSubmenu" + mycount, "submenuItemParameter" + mycount2, mychild.property);
+                            if (mychild.property != string.Empty)
+                            {
+                              xmlwriter.SetValue("AvalonBasicHomeSubmenu" + mycount, "submenuItemParameter" + mycount2, mychild.property);
+                            }
                             mycount2++;
                         }
                     }
@@ -1516,11 +1632,6 @@ namespace ProcessPlugins.AvalonEditor
         {
             this.Close();
         }
-
-
-
-
-
 
         private bool loadIDs(bool onLoad)
         {
@@ -1571,7 +1682,6 @@ namespace ProcessPlugins.AvalonEditor
 
         }
 
-
         public bool loadMenuIDs(bool onLoad)
         {
 
@@ -1611,7 +1721,7 @@ namespace ProcessPlugins.AvalonEditor
                             if (xmlreader.GetValueAsString("AvalonBasicHomeSubmenu" + a, "submenuItemName" + b, "") != "")
                             {
                                 //Log.Info("found some submenus, :" + a + ", " + b + "navn: " + xmlreader.GetValueAsString("AvalonBasicHomeSubmenu" + a, "submenuItemName" + b, ""));
-                                Children.Add(new Child(a, b, xmlreader.GetValueAsString("AvalonBasicHomeSubmenu" + a, "submenuItemName" + b, ""), xmlreader.GetValueAsInt("AvalonBasicHomeSubmenu" + a, "submenuItemHyperlink" + b, 0), xmlreader.GetValueAsString("AvalonBasicHomeSubmenu" + a, "submenuItemParameter" + b, "")));
+                              singleChildren.Add(new Child(a, b, xmlreader.GetValueAsString("AvalonBasicHomeSubmenu" + a, "submenuItemName" + b, ""), xmlreader.GetValueAsInt("AvalonBasicHomeSubmenu" + a, "submenuItemHyperlink" + b, 0), xmlreader.GetValueAsString("AvalonBasicHomeSubmenu" + a, "submenuItemBgImage" + b, ""), xmlreader.GetValueAsString("AvalonBasicHomeSubmenu" + a, "submenuItemParameter" + b, ""), xmlreader.GetValueAsString("AvalonBasicHome", "menuItemRecentMedia" + a, "")));
                             }
                             b++;
                         } while (b < 250);
@@ -1622,7 +1732,6 @@ namespace ProcessPlugins.AvalonEditor
                     }
                     a++;
                 } while (a < 25);
-                newChildren = Children;
 
                 cB_FanartHandler.Checked = false;
                 new_bgimage.Visible = false;
@@ -1666,33 +1775,29 @@ namespace ProcessPlugins.AvalonEditor
 
 
         }
-
         
         public void loadSubMenuIDs(int owner)
         {
         }
 
-
         private void avail_list_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (avail_list.SelectedIndex >= 0)
             {
-                if (radioButton1.Checked)
-                {
-                    new_windowid.Text = "" + AvailmenuItems[avail_list.SelectedIndex].hyperlink;
-
-                    new_name.Text = "" + AvailmenuItems[avail_list.SelectedIndex].name;
-                    //cboParameterViews.Text = "";
-                    toolStripStatusLabel1.Text = "Window ID: " + AvailmenuItems[avail_list.SelectedIndex].hyperlink;
-                    //used_list.SelectedIndex = -1;
-
-                    cB_RecentMedia.Checked = false;
+              cB_FanartHandler.Checked = false;
+              cB_singleImage.Checked = false;                   
+              cB_RecentMedia.Checked = false;
                     rB_Movies.Checked = false;
                     rB_Music.Checked = false;
                     rB_Recordings.Checked = false;
                     //rB_Pictures.Checked = false;
                     rB_Series.Checked = false;
-                    cB_FanartHandler.Checked = false;
+                if (radioButton1.Checked)
+                {
+                    new_windowid.Text = "" + AvailmenuItems[avail_list.SelectedIndex].hyperlink;
+                    new_name.Text = "" + AvailmenuItems[avail_list.SelectedIndex].name;
+                    toolStripStatusLabel1.Text = "Window ID: " + AvailmenuItems[avail_list.SelectedIndex].hyperlink;
+                    cboParameterViews.Text = "";
 
                     switch (AvailmenuItems[avail_list.SelectedIndex].hyperlink)
                     {
@@ -1745,7 +1850,7 @@ namespace ProcessPlugins.AvalonEditor
                             rB_Movies.Location = new Point(39, 450);
                             rB_Music.Location = new Point(39, 474);
                             rB_Series.Location = new Point(109, 450);
-                            rB_Recordings.Location = new Point(39, 474);
+                            rB_Recordings.Location = new Point(109, 474);
                             break;
                         default:
                             cboParameterViews.Visible = false;
@@ -1759,7 +1864,7 @@ namespace ProcessPlugins.AvalonEditor
                             rB_Movies.Location = new Point(39, 280);
                             rB_Music.Location = new Point(39, 304);
                             rB_Series.Location = new Point(109, 280);
-                            rB_Recordings.Location = new Point(39, 304);
+                            rB_Recordings.Location = new Point(109, 304);
                             break;
                     }
 
@@ -1770,16 +1875,6 @@ namespace ProcessPlugins.AvalonEditor
                     new_windowid.Text = "" + HomemenuItems[avail_list.SelectedIndex].hyperlink;
                     new_name.Text = "" + HomemenuItems[avail_list.SelectedIndex].name;
                     toolStripStatusLabel1.Text = "Window ID: " + HomemenuItems[avail_list.SelectedIndex].hyperlink;
-                    //cboParameterViews.Text = "";
-                    //used_list.SelectedIndex = -1;
-
-                    cB_RecentMedia.Checked = false;
-                    rB_Movies.Checked = false;
-                    rB_Music.Checked = false;
-                    rB_Recordings.Checked = false;
-                    //rB_Pictures.Checked = false;
-                    rB_Series.Checked = false;
-                    cB_FanartHandler.Checked = false;
 
                     switch (HomemenuItems[avail_list.SelectedIndex].hyperlink)
                     {
@@ -1832,7 +1927,7 @@ namespace ProcessPlugins.AvalonEditor
                             rB_Movies.Location = new Point(39, 450);
                             rB_Music.Location = new Point(39, 474);
                             rB_Series.Location = new Point(109, 450);
-                            rB_Recordings.Location = new Point(39, 474);
+                            rB_Recordings.Location = new Point(109, 474);
                             break;
                         default:
                             cboParameterViews.Visible = false;
@@ -1846,7 +1941,7 @@ namespace ProcessPlugins.AvalonEditor
                             rB_Movies.Location = new Point(39, 280);
                             rB_Music.Location = new Point(39, 304);
                             rB_Series.Location = new Point(109, 280);
-                            rB_Recordings.Location = new Point(39, 304);
+                            rB_Recordings.Location = new Point(109, 304);
                             break;
                     }
 
@@ -1857,15 +1952,6 @@ namespace ProcessPlugins.AvalonEditor
                     new_windowid.Text = "" + PluginmenuItems[avail_list.SelectedIndex].hyperlink;
                     new_name.Text = "" + PluginmenuItems[avail_list.SelectedIndex].name;
                     toolStripStatusLabel1.Text = "Window ID: " + PluginmenuItems[avail_list.SelectedIndex].hyperlink;
-                    cboParameterViews.Text = "";
-                    //used_list.SelectedIndex = -1;
-
-                    cB_RecentMedia.Checked = false;
-                    rB_Movies.Checked = false;
-                    rB_Music.Checked = false;
-                    rB_Recordings.Checked = false;
-                    //rB_Pictures.Checked = false;
-                    rB_Series.Checked = false;
 
                     switch (PluginmenuItems[avail_list.SelectedIndex].hyperlink)
                     {
@@ -1917,7 +2003,7 @@ namespace ProcessPlugins.AvalonEditor
                             rB_Movies.Location = new Point(39, 450);
                             rB_Music.Location = new Point(39, 474);
                             rB_Series.Location = new Point(109, 450);
-                            rB_Recordings.Location = new Point(39, 474);
+                            rB_Recordings.Location = new Point(109, 474);
                             break;
                         default:
                             cboParameterViews.Visible = false;
@@ -1931,12 +2017,16 @@ namespace ProcessPlugins.AvalonEditor
                             rB_Movies.Location = new Point(39, 280);
                             rB_Music.Location = new Point(39, 304);
                             rB_Series.Location = new Point(109, 280);
-                            rB_Recordings.Location = new Point(39, 304);
+                            rB_Recordings.Location = new Point(109, 304);
                             break;
                     }
                 }
 
             }
+                              
+
+          combo_FanartHandler.Text = "";
+                    new_bgimage.Text = "";
             movPicsCategoryCombo.SelectedIndex = -1;
             cboParameterViews.SelectedIndex = -1;
         }
@@ -1946,15 +2036,15 @@ namespace ProcessPlugins.AvalonEditor
             if (used_list.SelectedIndex >= 0)
             {
                 used_list_submenu.Items.Clear();
-                singleChildren.Clear();
-                foreach (Child mychild in newChildren)
+                avail_list.SelectedIndex = -1;
+                foreach (Child mychild in singleChildren)
                 {
                     if (mychild.Owner == menuItems[used_list.SelectedIndex].identifier)
                     {
-                        singleChildren.Add(mychild);
                         used_list_submenu.Items.Add(mychild.Name);
                     }
                 }
+
                 if (menuItems[used_list.SelectedIndex].hyperlink > -1)
                 {
                     new_windowid.Text = "" + menuItems[used_list.SelectedIndex].hyperlink;
@@ -1965,28 +2055,51 @@ namespace ProcessPlugins.AvalonEditor
                 }
                 new_name.Text = "" + menuItems[used_list.SelectedIndex].name;
                 toolStripStatusLabel1.Text = "Window ID: " + menuItems[used_list.SelectedIndex].hyperlink;
-                new_bgimage.Text = menuItems[used_list.SelectedIndex].bgImage;
-                combo_FanartHandler.Text = menuItems[used_list.SelectedIndex].bgImage;
-                avail_list.SelectedIndex = -1;
 
-                if (!new_bgimage.Text.Contains(".jpg") || !new_bgimage.Text.Contains(".png"))
+                if (menuItems[used_list.SelectedIndex].hyperlink == 504 && menuItems[used_list.SelectedIndex].property.Length > 0)
+                {
+                  string prop = getMusicViewValue(menuItems[used_list.SelectedIndex].property);
+                  cboParameterViews.Text = prop;
+                }
+                else
+                {
+                  cboParameterViews.Text = "";
+                }
+                if (menuItems[used_list.SelectedIndex].hyperlink == 96742)
+                {
+
+                  int num1;
+                  bool res = int.TryParse(menuItems[used_list.SelectedIndex].property.Replace("categoryid:", ""), out num1);
+                  if (res == false)
+                  {
+                    movPicsCategoryCombo.SelectedIndex = -1;
+                  }
+                  else
+                  {
+                    movPicsCategoryCombo.SelectedNode = GetMovPicsDBNodeFromID(num1);
+                  }
+                }
+
+                string imagePath = menuItems[used_list.SelectedIndex].bgImage + "";
+
+                if (!imagePath.Contains(".jpg") || !imagePath.Contains(".png"))
                 {
                     cB_singleImage.Checked = false;
                     cB_FanartHandler.Checked = true;
+                    combo_FanartHandler.Text = imagePath;
                 }
 
-                if (combo_FanartHandler.Text.Contains(".jpg") || combo_FanartHandler.Text.Contains(".png"))
+                if (imagePath.Contains(".jpg") || imagePath.Contains(".png"))
                 {
                     cB_singleImage.Checked = true;
                     cB_FanartHandler.Checked = false;
+                  new_bgimage.Text = imagePath;
                 }
-
-                if (new_bgimage.Text == String.Empty && combo_FanartHandler.Text == String.Empty)
+                if (imagePath == String.Empty)
                 {
                     cB_singleImage.Checked = false;
                     cB_FanartHandler.Checked = false;
                 }
-
                 switch (menuItems[used_list.SelectedIndex].media)
                 {
                     case "MovingPictures":
@@ -2018,7 +2131,6 @@ namespace ProcessPlugins.AvalonEditor
                         //    rB_Pictures.Checked = false;
                         break;
                 }
-
                 switch (menuItems[used_list.SelectedIndex].hyperlink)
                 {
                     case 9811:
@@ -2036,7 +2148,14 @@ namespace ProcessPlugins.AvalonEditor
                         movPicsCategoryCombo.Visible = false;
                         lblMovieCategories.Visible = false;
                         cboParameterViews.DataSource = theMusicViews;
-                        cboParameterViews.Text = menuItems[used_list.SelectedIndex].property;
+                        cB_onlinevideosOption.Visible = false;
+                        break;
+                    case 504:
+                        cboParameterViews.Visible = true;
+                        lblParameter.Visible = true;
+                        movPicsCategoryCombo.Visible = false;
+                        lblMovieCategories.Visible = false;
+                        cboParameterViews.DataSource = theMusicViews;
                         cB_onlinevideosOption.Visible = false;
                         break;
                     case 4755:
@@ -2056,6 +2175,7 @@ namespace ProcessPlugins.AvalonEditor
                         lblMovieCategories.Visible = true;
                         lblMovieCategories.Location = new Point(6, 84);
                         cB_onlinevideosOption.Visible = false;
+                        cboParameterViews.SelectedIndex = -1;
                         break;
                     default:
                         cboParameterViews.Visible = false;
@@ -2063,39 +2183,130 @@ namespace ProcessPlugins.AvalonEditor
                         cB_onlinevideosOption.Visible = false;
                         movPicsCategoryCombo.Visible = false;
                         lblMovieCategories.Visible = false;
+                        cboParameterViews.SelectedIndex = -1;
                         break;
                 }
             }
-            movPicsCategoryCombo.SelectedIndex = -1;
-            cboParameterViews.SelectedIndex = -1;
         }
 
         private void used_list_submenu_SelectedIndexChanged(object sender, EventArgs e)
         {
+          Child actchild = null;
+          if (used_list_submenu.SelectedIndex >= 0)
+          {
             int selected = used_list_submenu.SelectedIndex;
-            int a = 0;
             foreach (Child mychild in singleChildren)
             {
-                if (a == selected)
+              if (mychild.Owner == used_list.SelectedIndex && mychild.ID == selected)
                 {
-                    if (mychild.Hyperlink > -1)
-                    {
-                        new_windowid.Text = "" + mychild.Hyperlink;
-                    }
-                    else
-                    {
-                        new_windowid.Text = "";
-                    }
-                    new_name.Text = "" + mychild.Name;
-                    cboParameterViews.Text = "" + mychild.property;
-                    toolStripStatusLabel1.Text = "Window ID: " + mychild.Hyperlink;
+                  actchild = mychild;
                 }
-                a++;
             }
 
-            //avail_list.SelectedIndex = -1;
-            movPicsCategoryCombo.SelectedIndex = -1;
-            cboParameterViews.SelectedIndex = -1;
+            if (actchild.Hyperlink > -1)
+            {
+              new_windowid.Text = "" + actchild.Hyperlink;
+            }
+            else
+            {
+              new_windowid.Text = "";
+            }
+
+            new_name.Text = "" + actchild.Name;
+            tbEditorStartParamsOutput.Text = "" + actchild.property;
+            toolStripStatusLabel1.Text = "Window ID: " + actchild.Hyperlink;
+
+            if (actchild.Hyperlink == 504 && actchild.property.Length > 0)
+            {
+              string prop = getMusicViewValue(actchild.property);
+              cboParameterViews.Text = prop;
+            }
+            else
+            {
+              cboParameterViews.Text = "";
+            }
+
+            if (actchild.Hyperlink == 96742)
+            {
+              int num1;
+              bool res = int.TryParse(actchild.property.Replace("categoryid:", ""), out num1);
+              if (res == false)
+              {
+                movPicsCategoryCombo.SelectedIndex = -1;
+              }
+              else
+              {
+                movPicsCategoryCombo.SelectedNode = GetMovPicsDBNodeFromID(num1);
+              }
+            }
+
+            new_bgimage.Text = "";
+            combo_FanartHandler.Text = "";
+            avail_list.SelectedIndex = -1;
+              cB_singleImage.Checked = false;
+              cB_FanartHandler.Checked = false;
+
+                cB_RecentMedia.Checked = false;
+                rB_Movies.Checked = false;
+                rB_Music.Checked = false;
+                rB_Recordings.Checked = false;
+                rB_Series.Checked = false;
+
+            switch (actchild.Hyperlink)
+            {
+              case 9811:
+                cboParameterViews.Visible = true;
+                lblParameter.Visible = true;
+                movPicsCategoryCombo.Visible = false;
+                lblMovieCategories.Visible = false;
+                cboParameterViews.DataSource = theTVSeriesViews;
+                cboParameterViews.Text = actchild.property;
+                cB_onlinevideosOption.Visible = false;
+                break;
+              case 501:
+                cboParameterViews.Visible = true;
+                lblParameter.Visible = true;
+                movPicsCategoryCombo.Visible = false;
+                lblMovieCategories.Visible = false;
+                cboParameterViews.DataSource = theMusicViews;
+                cB_onlinevideosOption.Visible = false;
+                break;
+              case 504:
+                cboParameterViews.Visible = true;
+                lblParameter.Visible = true;
+                movPicsCategoryCombo.Visible = false;
+                lblMovieCategories.Visible = false;
+                cboParameterViews.DataSource = theMusicViews;
+                cB_onlinevideosOption.Visible = false;
+                break;
+              case 4755:
+                cboParameterViews.Visible = true;
+                lblParameter.Visible = true;
+                movPicsCategoryCombo.Visible = false;
+                lblMovieCategories.Visible = false;
+                cB_onlinevideosOption.Visible = true;
+                cboParameterViews.DataSource = theOnlineVideosViews;
+                cboParameterViews.Text = actchild.property;
+                break;
+              case 96742:
+                movPicsCategoryCombo.Visible = true;
+                movPicsCategoryCombo.Location = new Point(70, 81);
+                cboParameterViews.Visible = false;
+                lblParameter.Visible = false;
+                lblMovieCategories.Visible = true;
+                lblMovieCategories.Location = new Point(6, 84);
+                cB_onlinevideosOption.Visible = false;
+                break;
+              default:
+                cboParameterViews.Visible = false;
+                lblParameter.Visible = false;
+                cB_onlinevideosOption.Visible = false;
+                movPicsCategoryCombo.Visible = false;
+                lblMovieCategories.Visible = false;
+                break;
+            }
+
+          }
 
         }
 

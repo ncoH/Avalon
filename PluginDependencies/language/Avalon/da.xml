@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Danish (DA) -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
-<!-- Last Updated: 10th Juni 2011 -->
+<!-- Last Updated: 12th October 2011 -->
 <strings>
  
  <!-- Skin Updates / Patching GUI -->
@@ -88,7 +88,8 @@
   <string Field="Watchlist">Watchlist</string>
   <string Field="Recommendations">Recommendations</string>
   <string Field="Trending">Trending movies</string>
-  <string Field="Shouts">Shouts</string>    
+  <string Field="Shouts">Shouts</string>
+  <string Field="AddToList">Add movie to a list</string>
   <!-- Latest Media -->  
   <string Field="LatestMovies">Seneste film</string>
   <string Field="LatestEpisodes">Seneste serier</string>
