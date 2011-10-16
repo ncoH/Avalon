@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- German (DE) -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
-<!-- Last Updated: 12th May 2011 -->
+<!-- Last Updated: 12th October 2011 -->
 <strings>
   <!-- Skin Updates / Patching GUI -->
   <string Field="SkinUpdate">Skin Aktualisierung</string>
@@ -88,6 +88,7 @@
   <string Field="Recommendations">Empfehlungen</string>
   <string Field="Trending">Aktuelle Trends</string>
   <string Field="Shouts">Shouts</string>
+  <string Field="AddToList">Film zur Liste hinzufügen</string>
   <!-- Latest Media -->  
   <string Field="LatestMovies">Neueste Filme</string>
   <string Field="LatestEpisodes">Neueste Episoden</string> 

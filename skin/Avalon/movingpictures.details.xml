@@ -707,12 +707,12 @@ This file should contain the details view
 	</control>
 
 	<control>
-		<type>label</type>
+		<type>fadelabel</type>
 		<description>Title (Fanart View)</description>
 		<id>1</id>
-		<posX>0</posX>
+		<posX>270</posX>
 		<posY>906</posY>
-		<width>1920</width>
+		<width>1390</width>
 		<align>center</align>
 		<font>fontB20</font>			
 		<label>#MovingPictures.SelectedMovie.title</label>
@@ -722,12 +722,12 @@ This file should contain the details view
 	</control> 
 		
 	<control>
-		<type>label</type>
+		<type>fadelabel</type>
 		<description>Year and Category (Fanart View)</description>
 		<id>1</id>
-		<posX>0</posX>
+		<posX>270</posX>
 		<posY>956</posY>
-		<width>1920</width>
+		<width>1390</width>
 		<align>center</align>
 		<font>AvalonLight14</font>
 		<textcolor>6aa5cb</textcolor>

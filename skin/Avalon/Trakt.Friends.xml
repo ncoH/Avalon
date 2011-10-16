@@ -6,6 +6,7 @@
 	<define>#Fanart.1:#Trakt.Friends.Fanart.1</define>
 	<define>#Fanart.2:#Trakt.Friends.Fanart.2</define>
 	<controls>
+    
     <control>
       <description>DEFAULT BACKGROUND</description>
       <type>image</type>
@@ -63,8 +64,6 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
 		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
 	</control>
 	
 	<control>
@@ -85,19 +84,16 @@
     
          <import>common.time.xml</import>
 	
-    	<control>
+    <control Style="smallTitle">
     		<description>Selected item Label</description>
     		<type>fadelabel</type>
     		<id>1</id>
     		<posX>714</posX>
     		<posY>810</posY>
-    		<width>1110</width>
     		<label>#selecteditem</label>
-    		<font>fontB16</font>
     		<visible>facadeview.list+control.isvisible(50)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
     	</control>
 
 		<control>
@@ -113,7 +109,6 @@
 			<visible>facadeview.list</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
         
     	<control>
@@ -133,9 +128,6 @@
 	<!--            :: Count ::            -->
 	
         <control>
-          <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-          <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-          <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
           <description>Moviecount</description>
           <type>label</type>
           <label>#itemcount #Trakt.Translation.WatchedMovies.Label</label>
@@ -146,12 +138,11 @@
           <font>AvalonLight12</font>
           <textcolor>6aa5cb</textcolor>
     	  <visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,movie)</visible>
+          <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+          <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
         </control>
 
         <control>
-          <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-          <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-          <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
           <description>Moviecount</description>
           <type>label</type>
           <label>#itemcount #Trakt.Translation.WatchedEpisodes.Label</label>
@@ -161,7 +152,9 @@
           <align>left</align>
           <font>AvalonLight12</font>
           <textcolor>6aa5cb</textcolor>
-			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,episode)</visible>
+		  <visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,episode)</visible>
+          <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+          <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
         </control>
 
 		<control>
@@ -196,10 +189,6 @@
     </control>
     
     	<control>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
     		<description>Poster shadow</description>
     		<type>image</type>
     		<id>1</id>
@@ -209,13 +198,11 @@
     		<height>487</height>
     		<texture>list_music_shadow.png</texture>
  			<visible>!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     	</control>
     	
     	<control>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
     		<description>Poster glow</description>
     		<type>image</type>
     		<id>1</id>
@@ -225,13 +212,11 @@
     		<height>487</height>
     		<texture>list_music_glow.png</texture>
 			<visible>!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     	</control>
     	
     	<control>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
     		<description>Cover Art</description>
     		<type>image</type>
     		<id>500</id>
@@ -241,145 +226,109 @@
     		<height>350</height>
     		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#selectedthumb</texture>
 			<visible>!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     	</control>
         	
-		<control>
+        <control Style="InfoLabelDetails">
 			<description>User Label</description>
 			<type>label</type>
 			<label>#Trakt.Translation.User.Label</label>
     		<posX>714</posX>
     		<posY>872</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
 			<visible>!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoValueSmall">
 			<description>User</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.User.Username</label>
     		<posX>982</posX>
     		<posY>872</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>ffffff</textcolor>
 			<visible>!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 
-		<control>
+        <control Style="InfoLabelDetails">
 			<description>Fullname Label</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Translation.FullName.Label</label>
     		<posX>714</posX>
     		<posY>912</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
 			<visible>!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoValueSmall">
 			<description>Fullname</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.User.FullName</label>
     		<posX>982</posX>
     		<posY>912</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>ffffff</textcolor>
 			<visible>!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>            
 
-		<control>
+        <control Style="InfoLabelDetails">
 			<description>Location</description>
 			<type>fadelabel</type>
 			<label>#Trakt.Translation.Location.Label</label>
 			<id>0</id>
     		<posX>714</posX>
     		<posY>952</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
 			<visible>!string.equals(#Trakt.User.JoinDate,)+!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoValueSmall">
 			<description>Location</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.User.Location</label>
     		<posX>982</posX>
     		<posY>952</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>ffffff</textcolor>
 			<visible>!string.equals(#Trakt.User.JoinDate,)+!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 
-		<control>
+        <control Style="InfoLabelDetails">
 			<description>Gender Label</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Translation.Gender.Label</label>
     		<posX>714</posX>
     		<posY>990</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
 			<visible>!string.equals(#Trakt.User.JoinDate,)+!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoValueSmall">
 			<description>Gender</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.User.Gender</label>
     		<posX>982</posX>
     		<posY>990</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>ffffff</textcolor>
 			<visible>!string.equals(#Trakt.User.JoinDate,)+!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 
 		<!-- Trakt Episodes -->
-    	<control>
+    	
+        <control>
     		<description>Big Episode Thumb</description>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
     		<type>image</type>
     		<id>67</id>
     		<posX>254</posX>
@@ -388,13 +337,12 @@
     		<height>215</height>
     		<texture flipY="true" mask="tvseries_thumb_mask.png">#selectedthumb</texture>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,episode)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     	</control>
         
     	<control>
     		<description>Episode Thumb Shadow</description>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
     		<type>image</type>
     		<id>0</id>
     		<posX>245</posX>
@@ -403,134 +351,105 @@
     		<height>233</height>
     		<texture>tvseries_thumb_shadow.png</texture>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,episode)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     	</control>
-		<control>
+        
+        <control Style="InfoLabel">
 			<description>Network</description>
 			<type>fadelabel</type>
 			<label>#Trakt.Translation.Network.Label</label>
 			<id>0</id>
     		<posX>714</posX>
     		<posY>952</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,episode)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoValueSmall">
 			<description>Network</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Show.Network</label>
     		<posX>882</posX>
     		<posY>952</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>ffffff</textcolor>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,episode)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoLabel">
 			<description>Certification Label</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Translation.Certification.Label</label>
     		<posX>714</posX>
     		<posY>990</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,episode)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoValueSmall">
 			<description>Certification</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Show.Certification</label>
     		<posX>882</posX>
     		<posY>990</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>ffffff</textcolor>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,episode)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoLabel">
 			<description>Runtime Label</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Translation.Runtime.Label</label>
     		<posX>714</posX>
     		<posY>912</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,episode)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoValueSmall">
 			<description>Runtime</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Show.Runtime min</label>
     		<posX>882</posX>
     		<posY>912</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>ffffff</textcolor>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,episode)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoLabel">
 			<description>Released Label</description>
 			<type>fadelabel</type>
 			<label>#Trakt.Translation.AirDate.Label</label>
     		<posX>714</posX>
     		<posY>872</posY>
-    		<width>150</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,episode)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoValueSmall">
 			<description>Released</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Show.AirDay | #Trakt.Show.AirTime</label>
     		<posX>882</posX>
     		<posY>872</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>ffffff</textcolor>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,episode)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
+        
 		<control>
 			<description>Summary</description>
 			<type>textboxscrollup</type>
@@ -544,14 +463,11 @@
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,episode)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
+        
 		<!-- Movies -->
+        
     	<control>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
     		<description>Poster shadow</description>
     		<type>image</type>
     		<id>1</id>
@@ -561,13 +477,11 @@
     		<height>606</height>
     		<texture>list_poster_shadow.png</texture>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,movie)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     	</control>
     	
     	<control>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
     		<description>Poster shadow</description>
     		<type>image</type>
     		<id>1</id>
@@ -577,13 +491,11 @@
     		<height>606</height>
     		<texture>list_poster_glow.png</texture>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,movie)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     	</control>
     
     	<control>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
     		<description>Cover Art</description>
     		<type>image</type>
     		<id>60</id>
@@ -593,7 +505,10 @@
     		<height>470</height>
     		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#selectedthumb</texture>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,movie)</visible>
-    	</control>        
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	</control> 
+               
 		<control>
 			<description>Rating Icon</description>
 			<type>image</type>
@@ -606,103 +521,79 @@
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,movie)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoLabel">
 			<description>Certification Label</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Translation.Certification.Label</label>
     		<posX>714</posX>
     		<posY>952</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,movie)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoValueSmall">
 			<description>Certification</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Movie.Certification</label>
     		<posX>882</posX>
     		<posY>952</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>ffffff</textcolor>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,movie)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoLabel">
 			<description>Runtime Label</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Translation.Runtime.Label</label>
     		<posX>714</posX>
     		<posY>912</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,movie)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoValueSmall">
 			<description>Runtime</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Movie.Runtime min</label>
     		<posX>882</posX>
     		<posY>912</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>ffffff</textcolor>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,movie)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoLabel">
 			<description>Released Label</description>
 			<type>label</type>
 			<label>#Trakt.Translation.Released.Label</label>
     		<posX>714</posX>
     		<posY>872</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,movie)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
-		<control>
+        
+        <control Style="InfoValueSmall">
 			<description>Released</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Movie.Released</label>
     		<posX>882</posX>
     		<posY>872</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>ffffff</textcolor>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,movie)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
+        
 		<control>
 			<description>Summary</description>
 			<type>textboxscrollup</type>
@@ -716,7 +607,6 @@
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,movie)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		<import>common.overlay.xml</import>
 	</controls>

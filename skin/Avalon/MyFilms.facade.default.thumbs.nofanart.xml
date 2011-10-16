@@ -76,9 +76,9 @@ This file should contain the facade view
       <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
       <description>Moviecount</description>
       <type>label</type>
-      <label>MyFilms: #itemcount  |  Filter: #myfilms.view</label>
+      <label>#(L(507)): #itemcount  |  Filter: #myfilms.view #myfilms.select</label>
       <id>0</id>
-		<posX>1342</posX>
+	  <posX>1342</posX>
       <posY>725</posY>
       <align>left</align>
       <font>AvalonLight12</font>
@@ -92,9 +92,9 @@ This file should contain the facade view
       <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
       <description>Moviecount</description>
       <type>label</type>
-      <label>MyFilms: #itemcount  |  Filter: #myfilms.view</label>
+      <label>#(L(507)): #itemcount  |  Filter: #myfilms.view #myfilms.select</label>
       <id>0</id>
-		<posX>714</posX>
+	  <posX>714</posX>
       <posY>725</posY>
       <align>left</align>
       <font>AvalonLight12</font>

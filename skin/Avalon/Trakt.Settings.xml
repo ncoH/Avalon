@@ -17,7 +17,7 @@
 		<posX>736</posX>
 		<posY>254</posY>
 		<layout>StackLayout</layout>
-		<control>
+		<control Style="SettingsButtonLarge">
 			<type>button</type>
 			<description>Account Setup</description>
 			<id>2</id>
@@ -25,47 +25,23 @@
 			<label>#Trakt.Translation.AccountSetup.Label</label>
 			<hyperlink>87272</hyperlink>
 			<onright>#defaultcontrol.onright</onright>
-			<width>956</width>
-			<height>52</height>
-			<textXOff>30</textXOff>
-			<textYOff>8</textYOff>
-			<textureFocus>settings_button_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 		</control>
-		<control>
+		<control Style="SettingsButtonLarge">
 			<type>button</type>
 			<description>Plugin Setup</description>
 			<id>3</id>
 			<label>#Trakt.Translation.Plugins.Label</label>
 			<hyperlink>87273</hyperlink>
 			<onright>#defaultcontrol.onright</onright>
-			<width>956</width>
-			<height>52</height>
-			<textXOff>30</textXOff>
-			<textYOff>8</textYOff>
-			<textureFocus>settings_button_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 		</control>
-    <control>
+		<control Style="SettingsButtonLarge">
 			<type>button</type>
 			<description>Plugin Setup</description>
 			<id>4</id>
 			<label>#Trakt.Translation.General.Label</label>
 			<hyperlink>87274</hyperlink>
 			<onright>#defaultcontrol.onright</onright>
-			<width>956</width>
-			<height>52</height>
-			<textXOff>30</textXOff>
-			<textYOff>8</textYOff>
             <ondown>2</ondown>
-			<textureFocus>settings_button_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 		</control>
   </control>
 		<import>common.overlay.xml</import>
