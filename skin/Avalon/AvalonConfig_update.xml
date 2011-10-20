@@ -27,7 +27,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>645</posX>
-		<posY>250</posY>
+		<posY>158</posY>
 		<width>500</width>
 		<label>#Avalon.Revisions</label>
 		<textcolor>6aa5cb</textcolor>
@@ -38,10 +38,10 @@
 		<description>textarea</description>
 		<type>textbox</type>
 		<id>2</id>
-		<posY>320</posY>
+		<posY>228</posY>
 		<posX>645</posX>
 		<width>1100</width>
-		<height>470</height>
+		<height>570</height>
 		<onup>3</onup>
 		<ondown>3</ondown>
 		<onleft>3</onleft>
