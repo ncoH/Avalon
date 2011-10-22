@@ -35,5 +35,5 @@ using MediaPortal.Common.Utils;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 //[assembly: AssemblyVersion("0.7.509")]
-[assembly: AssemblyFileVersion("0.9.6.0")]
-[assembly: AssemblyVersionAttribute("0.9.6.0")]
+[assembly: AssemblyFileVersion("0.9.6.1")]
+[assembly: AssemblyVersionAttribute("0.9.6.1")]
