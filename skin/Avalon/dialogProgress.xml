@@ -26,7 +26,7 @@
 		<id>20</id>
 		<posX>666</posX>
 		<posY>903</posY>
-		<width>482</width>
+		<width>589</width>
 		<height>18</height>
 		<texturebg>-</texturebg>
 		<lefttexture>osd_progress_left.png</lefttexture>
