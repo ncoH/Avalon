@@ -359,7 +359,7 @@
     		<visible>no</visible>
     	</control>
 
-		********************************* PAUSE Screen ********************************************* -->
+	<!--	********************************* PAUSE Screen ********************************************* -->
 		<control>
 			<description>MSGBox</description>
 			<type>button</type>
