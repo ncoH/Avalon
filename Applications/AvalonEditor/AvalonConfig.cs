@@ -59,9 +59,16 @@ namespace ProcessPlugins.AvalonEditor
         public static List<KeyValuePair<string, string>> musicViews = new List<KeyValuePair<string, string>>();
         public static List<KeyValuePair<string, string>> onlineVideosViews = new List<KeyValuePair<string, string>>();
 
+        bool IsMyFilmsAvailable = File.Exists(Path.Combine(Path.Combine(SkinInfo.mpPaths.pluginPath, "windows"), "MyFilms.dll"));
+
         public AvalonConfig()
         {
             InitializeComponent();
+
+            if (IsMyFilmsAvailable)
+            {
+                MyFilmsParameter();
+            }
         }
 
         #region Parameter Handling
@@ -548,25 +555,6 @@ namespace ProcessPlugins.AvalonEditor
                 }
             }
 
-            filename = Path.Combine(Path.Combine(SkinInfo.mpPaths.pluginPath, "windows"), "MyFilms.dll");
-            if (AvalonHelper.IsAssemblyAvailable("MyFilms", new Version(5, 1, 0, 0), filename))
-            {
-                tbEditorStartParamsOutput.Text = "";
-                cbEditorConfigs.Items.Clear();
-                cbEditorViews.Items.Clear();
-                cbEditorViewValues.Items.Clear();
-                cbEditorConfigs.Text = "";
-                cbEditorViews.Text = "";
-                cbEditorViewValues.Text = "";
-
-                ArrayList MyFilmsEditor = BaseMesFilms.GetConfigViewLists();
-                // cbEditorConfigs.Items.Add("");
-                foreach (BaseMesFilms.MFConfig config in MyFilmsEditor)
-                {
-                    cbEditorConfigs.Items.Add(config.Name);
-                }
-            }
-
             filename = Path.Combine(Path.Combine(SkinInfo.mpPaths.pluginPath, "windows"), "MovingPictures.dll");
             if (AvalonHelper.IsAssemblyAvailable("MovingPictures", new Version(1, 1, 0, 0), filename))
             {
@@ -697,6 +685,23 @@ namespace ProcessPlugins.AvalonEditor
             // initialize filter combo to manage the default filter
             movPicsCategoryCombo.TreePanel.TranslationParser = new TranslationParserDelegate(MediaPortal.Plugins.MovingPictures.MainUI.Translation.ParseString);
             movPicsCategoryCombo.Menu = MovingPicturesCore.Settings.CategoriesMenu;
+        }
+
+        private void MyFilmsParameter()
+        {
+            tbEditorStartParamsOutput.Text = "";
+            cbEditorConfigs.Items.Clear();
+            cbEditorViews.Items.Clear();
+            cbEditorViewValues.Items.Clear();
+            cbEditorConfigs.Text = "";
+            cbEditorViews.Text = "";
+            cbEditorViewValues.Text = "";
+
+            ArrayList MyFilmsEditor = BaseMesFilms.GetConfigViewLists();
+            foreach (BaseMesFilms.MFConfig config in MyFilmsEditor)
+            {
+                cbEditorConfigs.Items.Add(config.Name);
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
