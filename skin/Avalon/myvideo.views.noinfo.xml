@@ -156,7 +156,7 @@
 		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
     </control>
-	
+	<control>
         <description>Unwatched label</description>
         <type>label</type>
         <id>0</id>
@@ -170,7 +170,6 @@
         <shadowDistance>1</shadowDistance>
         <shadowColor>FF000000</shadowColor>
         <visible>facadeview.list + Control.IsVisible(50) + string.equals(#iswatched,no) + Control.HasThumb(60) + !string.equals(#Avalon.hidePoster,yes)</visible>
-    <control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
