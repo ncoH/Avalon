@@ -37,7 +37,7 @@
         <type>label</type>
         <posX>924</posX>
         <posY>48</posY>
-        <label>Recording</label>
+        <label>#Avalon.Recording</label>
         <font>font12</font>
         <textcolor>6aa5cb</textcolor>
      	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>

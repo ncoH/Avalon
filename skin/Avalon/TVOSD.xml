@@ -191,7 +191,7 @@
 		<posY>972</posY>
 		<width>200</width>
 		<font>font12</font>
-		<label>Recording</label>
+		<label>#Avalon.Recording</label>
 		<textcolor>ffbf0101</textcolor>
 		<visible>Control.IsVisible(39)</visible>
 	</control>

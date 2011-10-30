@@ -76,7 +76,7 @@ This file should contain the facade view
       <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
       <description>Moviecount</description>
       <type>label</type>
-      <label>#MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount  |  Filter: #MovingPictures.CurrentNode.name</label>
+      <label>#MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount  |  #(L(2053)): #MovingPictures.CurrentNode.name</label>
       <id>0</id>
 	  <posX>1342</posX>
       <posY>725</posY>
@@ -92,7 +92,7 @@ This file should contain the facade view
       <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
       <description>Moviecount</description>
       <type>label</type>
-      <label>#MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount  |  Filter: #MovingPictures.CurrentNode.name</label>
+      <label>#MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount  |  #(L(2053)): #MovingPictures.CurrentNode.name</label>
       <id>0</id>
 	  <posX>714</posX>
       <posY>725</posY>

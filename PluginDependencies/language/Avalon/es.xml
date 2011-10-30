@@ -62,6 +62,10 @@
   <string Field="ConfigRequiresRestartLine3">¿Desea reiniciar el programa ahora?</string>
   <string Field="UseLargeFonts">Use Large Fonts</string>
   <string Field="TrailerSite">Choose Trailer Search Site</string>
+  <!-- TV -->
+  <string Field="Recording">Grabando</string>
+  <!-- TVSeries -->
+  <string Field="View">Vista</string>
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Duración</string>
   <string Field="ReleaseDate">Año</string>

@@ -61,7 +61,11 @@
   <string Field="ConfigRequiresRestartLine2">affect on next MediaPortal restart.</string>
   <string Field="ConfigRequiresRestartLine3">Would you like to restart now?</string>
   <string Field="UseLargeFonts">Use Large Fonts</string>
-  <string Field="TrailerSite">Choose Trailer Search Site</string> 
+  <string Field="TrailerSite">Choose Trailer Search Site</string>
+  <!-- TV -->
+  <string Field="Recording">Recording</string>
+  <!-- TVSeries -->
+  <string Field="View">View</string>
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Spilletid</string>
   <string Field="ReleaseDate">Frigivet dato</string>

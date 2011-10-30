@@ -123,7 +123,7 @@
     <control>
       <description>count</description>
       <type>label</type>
-      <label>#TVSeries.Translation.Series_Plural.Label: #TVSeries.SeriesCount  |  Filter: #TVSeries.SimpleCurrentView</label>
+      <label>#TVSeries.Translation.Series_Plural.Label: #TVSeries.SeriesCount  |  #Avalon.View: #TVSeries.SimpleCurrentView</label>
       <id>0</id>
       <posX>714</posX>
       <posY>725</posY>

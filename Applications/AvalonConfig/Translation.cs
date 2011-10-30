@@ -247,6 +247,12 @@ namespace AvalonGUIConfig
         public static string NumPatchesInstalled = "Number of patch files installed: {0}";
         public static string PatchUpdateComplete = "Update to Skin Version: {0} Complete";
 
+        //TV
+        public static string Recording = "Recording";
+
+        //TVSeries
+        public static string View = "View";
+
         //MovingPictures/MyFilms
         public static string Runtime = "Runtime";
         public static string ReleaseDate = "Release date";

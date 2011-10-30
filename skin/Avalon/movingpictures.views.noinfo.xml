@@ -110,7 +110,7 @@
 		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<label>Press left to return to movie list</label>
+		<label>#Avalon.ReturnListMovies</label>
 		<visible>facadeview.list+Control.HasFocus(80)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>

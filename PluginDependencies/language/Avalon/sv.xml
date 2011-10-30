@@ -62,6 +62,10 @@
   <string Field="ConfigRequiresRestartLine3">Starta om nu?</string>
   <string Field="UseLargeFonts">Använd stor textstorlek</string>
   <string Field="TrailerSite">Choose Trailer Search Site</string>
+  <!-- TV -->
+  <string Field="Recording">Recording</string>
+  <!-- TVSeries -->
+  <string Field="View">View</string>
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Speltid</string>
   <string Field="ReleaseDate">År</string>
