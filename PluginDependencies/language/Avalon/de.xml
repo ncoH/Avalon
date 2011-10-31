@@ -62,9 +62,9 @@
   <string Field="UseLargeFonts">Größere Schrift</string>
   <string Field="TrailerSite">Trailer Suchseite auswählen</string>
   <!-- TV -->
-  <string Field="Recording">Recording</string>
+  <string Field="Recording">Aufnahme</string>
   <!-- TVSeries -->
-  <string Field="View">View</string> 
+  <string Field="View">Ansicht</string> 
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Laufzeit</string>
   <string Field="ReleaseDate">Veröffentlicht</string>
