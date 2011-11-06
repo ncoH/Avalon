@@ -219,20 +219,21 @@
             	<width>684</width>
             	<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
             	<textureNoFocus>-</textureNoFocus>
-        		<textXOff>-100</textXOff>
+        		<textXOff>-80</textXOff>
         		<textYOff>8</textYOff>
-        		<textXOff2>462</textXOff2>
+        		<textXOff2>620</textXOff2>
         		<textYOff2>8</textYOff2>
-        		<textXOff3>630</textXOff3>
+        		<textXOff3>663</textXOff3>
         		<textYOff3>14</textYOff3>
                 <textalign3>right</textalign3>
                 <font3>font2</font3>
-                <itemWidth>142</itemWidth>
+                <itemWidth>132</itemWidth>
                 <itemHeight>19</itemHeight>
-                <IconXOff>446</IconXOff>
+                <IconXOff>520</IconXOff>
                 <IconYOff>18</IconYOff>
             	<textureHeight>55</textureHeight>
             	<dimColor>ffffffff</dimColor>
+                <playedColor>ffffffff</playedColor>
             </control>
       </control>
     </control>

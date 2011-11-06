@@ -76,18 +76,18 @@
     <group layout="List">
     </group>
     <series layout="ListPosters">
-      <item1>SeriesWatchedAndUnWatched</item1>
-      <item2><![CDATA[<Series.Pretty_Name>]]></item2>
-      <item3>SMALLSPACE</item3>
+      <item1>SMALLSPACE</item1>
+      <item2><![CDATA[<Series.Pretty_Name>]]></item2>                 
+      <item3>SeriesUnWatched</item3>
     </series>
     <season layout="List">
-      <item1>SeasonWatchedAndUnWatched</item1>
-      <item2><![CDATA[Season <Season.SeasonIndex>]]></item2>
-      <item3>SMALLSPACE</item3>
+      <item1>SMALLSPACE</item1>
+      <item2><![CDATA[Season <Season.SeasonIndex>]]></item2>          
+      <item3>SeasonUnWatched</item3>
     </season>
     <episode>
-      <item1><![CDATA[<Episode.FirstAired>]]></item1>
-      <item2><![CDATA[<Episode.EpisodeIndex>. <Episode.LocalEpisodeName>]]></item2>
+      <item1>SMALLSPACE</item1>
+      <item2><![CDATA[<Episode.EpisodeIndex>. <Episode.LocalEpisodeName>]]></item2>                   
       <item3>SMALLSPACE</item3>
     </episode>
   </views>
@@ -154,6 +154,8 @@
 <Enabled>1<Format>SeasonEpisodeCount<FormatAs><Season.EpisodeCount> Episodes
 <Enabled>1<Format>SeriesWatchedAndUnWatched<FormatAs>Eval(PrettyNumber100(<Series.EpisodesUnWatched>))        Eval(PrettyNumber100(<Series.EpisodeCount>-<Series.EpisodesUnWatched>))
 <Enabled>1<Format>SeasonWatchedAndUnWatched<FormatAs>Eval(PrettyNumber10(<Season.EpisodesUnWatched>))          Eval(PrettyNumber10(<Season.EpisodeCount>-<Season.EpisodesUnWatched>))
+<Enabled>1<Format>SeriesUnWatched<FormatAs>Eval(PrettyNumber100(<Series.EpisodesUnWatched>))
+<Enabled>1<Format>SeasonUnWatched<FormatAs>Eval(PrettyNumber10(<Season.EpisodesUnWatched>))
 <Enabled>1<Format>SMALLSPACE<FormatAs> ]]>
 	</formatting>
 	<logos import="true">
