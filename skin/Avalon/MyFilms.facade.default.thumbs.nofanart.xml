@@ -119,8 +119,13 @@ This file should contain the facade view
     			<posY>164</posY>
     			<height>550</height>
 				<width>684</width>
-				<textXOff>50</textXOff>
+				<textXOff>70</textXOff>
 				<textXOff2>650</textXOff2>	
+				<font2>AvalonLight11</font2>
+				<PinIconHeight>19</PinIconHeight>
+				<PinIconWidth>40</PinIconWidth>
+				<PinIconXOff>20</PinIconXOff>
+				<PinIconYOff>18</PinIconYOff>	
 				<textureHeight>55</textureHeight>
 				<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
