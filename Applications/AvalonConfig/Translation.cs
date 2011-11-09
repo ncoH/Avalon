@@ -232,6 +232,17 @@ namespace AvalonGUIConfig
         public static string ConfigRequiresRestartLine3 = "Would you like to restart now?";
         public static string UseLargeFonts = "Use Large Fonts";
         public static string TrailerSite = "Choose Trailer Search Site";
+        public static string ListColors = "Set List Colors";
+        public static string ListDefaultColor = "Default Color: {0}";
+        public static string ListText2Color = "Text 2 Color: {0}";
+        public static string ListText3Color = "Text 3 Color: {0}";
+        public static string ListWatchedColor = "Watched Color: {0}";
+        public static string ListRemoteColor = "Remote Color: {0}";
+        public static string ListColorInvalidLine1 = "Invalid color code entered, please enter a";
+        public static string ListColorInvalidLine2 = "valid HEX code e.g. the color red is FF0000.";
+        public static string ListColorInvalidLine3 = "which is '255' red, '0' green, and '0' blue.";
+        public static string CustomColor = "Custom Color";
+
 
         //Update
         public static string SkinUpdate = "Skin Update";

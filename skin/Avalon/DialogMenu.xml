@@ -59,7 +59,7 @@
                 <textYOff2>16</textYOff2>
                 <spinPosX>729</spinPosX>
                 <spinPosY>924</spinPosY>
-                <textXOff>50</textXOff>
+                <textXOff>15</textXOff>
                 <textYOff>16</textYOff>
                 <textureFocus>context_item_selected.png</textureFocus>
                 <textureNoFocus>-</textureNoFocus>
@@ -69,7 +69,10 @@
 				<PinIconHeight>15</PinIconHeight>
                 <PinIconXOff>2000</PinIconXOff>
                 <PinIconYOff>15</PinIconYOff>
-				<unfocusedAlpha>150</unfocusedAlpha>
+				<itemHeight>34</itemHeight>
+			    <itemWidth>34</itemWidth>
+			    <IconXOff>15</IconXOff>
+			    <IconYOff>18</IconYOff>
             </control>
         </control>
     </controls>

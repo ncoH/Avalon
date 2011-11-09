@@ -62,6 +62,16 @@
   <string Field="ConfigRequiresRestartLine3">Would you like to restart now?</string>
   <string Field="UseLargeFonts">Use Large Fonts</string>
   <string Field="TrailerSite">Choose Trailer Search Site</string>
+  <string Field="ListColors">Set List Colors</string>
+  <string Field="ListDefaultColor">Default Color: {0}</string>
+  <string Field="ListText2Color">Text 2 Color: {0}</string>
+  <string Field="ListText3Color">Text 3 Color: {0}</string>
+  <string Field="ListWatchedColor">Watched Color: {0}</string>
+  <string Field="ListRemoteColor">Remote Color: {0}</string>
+  <string Field="ListColorInvalidLine1">Invalid color code entered, please enter a</string>
+  <string Field="ListColorInvalidLine2">valid HEX code e.g. the color red is FF0000.</string>
+  <string Field="ListColorInvalidLine3">which is '255' red, '0' green, and '0' blue.</string>
+  <string Field="CustomColor">Custom Color</string>
   <!-- TV -->
   <string Field="Recording">Recording</string>
   <!-- TVSeries -->

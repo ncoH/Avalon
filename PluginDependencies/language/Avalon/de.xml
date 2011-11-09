@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- German (DE) -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
-<!-- Last Updated: 12th October 2011 -->
+<!-- Last Updated: 08th November 2011 -->
 <strings>
   <!-- Skin Updates / Patching GUI -->
   <string Field="SkinUpdate">Skin Aktualisierung</string>
@@ -61,6 +61,16 @@
   <string Field="ConfigRequiresRestartLine3">Möchten Sie Mediaportal jetzt neustarten?</string>
   <string Field="UseLargeFonts">Größere Schrift</string>
   <string Field="TrailerSite">Trailer Suchseite auswählen</string>
+  <string Field="ListColors">Farben Listenansicht</string>
+  <string Field="ListDefaultColor">Standard: {0}</string>
+  <string Field="ListText2Color">Text 2: {0}</string>
+  <string Field="ListText3Color">Text 3: {0}</string>
+  <string Field="ListWatchedColor">Gesehene Elemente: {0}</string>
+  <string Field="ListRemoteColor">Nicht vorhandene Elemente: {0}</string>
+  <string Field="ListColorInvalidLine1">Ungültiger Farbcode, bitte einen</string>
+  <string Field="ListColorInvalidLine2">gültigen HEX code eingeben z.B. für Rot FF0000.</string>
+  <string Field="ListColorInvalidLine3">'255' Rot, '0' Grün, und '0' Blau.</string>
+  <string Field="CustomColor">Benutzerdefiniert</string>
   <!-- TV -->
   <string Field="Recording">Aufnahme</string>
   <!-- TVSeries -->

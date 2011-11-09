@@ -62,6 +62,16 @@
   <string Field="ConfigRequiresRestartLine3">Starta om nu?</string>
   <string Field="UseLargeFonts">Använd stor textstorlek</string>
   <string Field="TrailerSite">Choose Trailer Search Site</string>
+  <string Field="ListColors">Välj listornas färger</string>
+  <string Field="ListDefaultColor">Ursprunglig färg: {0}</string>
+  <string Field="ListText2Color">Text 2 färg: {0}</string>
+  <string Field="ListText3Color">Text 3 färg: {0}</string>
+  <string Field="ListWatchedColor">Färg för sedd/visad: {0}</string>
+  <string Field="ListRemoteColor">Färg för icke lokalt objekt: {0}</string>
+  <string Field="ListColorInvalidLine1">Ogiltig färg vald, ställ in ett</string>
+  <string Field="ListColorInvalidLine2">giltigt HEX-värde exempelvis. RÖD som blir FF0000.</string>
+  <string Field="ListColorInvalidLine3">innehållande '255' av röd, '0'  av grön och '0' av blå.</string>
+  <string Field="CustomColor">Egeninställd färg</string>
   <!-- TV -->
   <string Field="Recording">Recording</string>
   <!-- TVSeries -->

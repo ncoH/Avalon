@@ -52,6 +52,11 @@ namespace AvalonGUIConfig
 
         public const string cXMLSettingMiscUnfocusedAlphaListItems = "miscUnfocusedAlphaListItems";
         public const string cXMLSettingMiscUnfocusedAlphaThumbs = "miscUnfocusedAlphaThumbs";
+        public const string cXMLSettingMiscTextColor = "miscTextColor";
+        public const string cXMLSettingMiscTextColor2 = "miscTextColor2";
+        public const string cXMLSettingMiscTextColor3 = "miscTextColor3";
+        public const string cXMLSettingMiscWatchedColor = "miscWatchedColor";
+        public const string cXMLSettingMiscRemoteColor = "miscRemoteColor";
 
         public const string cXMLSettingMiscUseLargeFonts = "miscUseLargeFonts";
 
@@ -187,6 +192,11 @@ namespace AvalonGUIConfig
                         MiscConfigGUI.UseLargeFonts = xmlreader.GetValueAsInt(section, settings.cXMLSettingMiscUseLargeFonts, 0) == 1;
                         MiscConfigGUI.showFiveDayWeather = xmlreader.GetValueAsInt(section, settings.cXMLSettingMiscShow5DayWeather, 1) == 1;
                         MiscConfigGUI.siteUtil = xmlreader.GetValueAsInt(section, settings.cXMLSettingMiscTrailerSite, 0);
+                        MiscConfigGUI.TextColor = xmlreader.GetValueAsString(section, settings.cXMLSettingMiscTextColor, "FFFFFF");
+                        MiscConfigGUI.TextColor2 = xmlreader.GetValueAsString(section, settings.cXMLSettingMiscTextColor2, "FFFFFF");
+                        MiscConfigGUI.TextColor3 = xmlreader.GetValueAsString(section, settings.cXMLSettingMiscTextColor3, "FFFFFF");
+                        MiscConfigGUI.WatchedColor = xmlreader.GetValueAsString(section, settings.cXMLSettingMiscWatchedColor, "85CFFF");
+                        MiscConfigGUI.RemoteColor = xmlreader.GetValueAsString(section, settings.cXMLSettingMiscRemoteColor, "FC7B19");
                         break;
                     #endregion
 
@@ -258,6 +268,11 @@ namespace AvalonGUIConfig
                         xmlwriter.SetValue(section, settings.cXMLSettingMiscUseLargeFonts, MiscConfigGUI.UseLargeFonts ? 1 : 0);
                         xmlwriter.SetValue(section, settings.cXMLSettingMiscShow5DayWeather, MiscConfigGUI.showFiveDayWeather ? 1 : 0);
                         xmlwriter.SetValue(section, settings.cXMLSettingMiscTrailerSite, MiscConfigGUI.siteUtil);
+                        xmlwriter.SetValue(section, settings.cXMLSettingMiscTextColor, MiscConfigGUI.TextColor);
+                        xmlwriter.SetValue(section, settings.cXMLSettingMiscTextColor2, MiscConfigGUI.TextColor2);
+                        xmlwriter.SetValue(section, settings.cXMLSettingMiscTextColor3, MiscConfigGUI.TextColor3);
+                        xmlwriter.SetValue(section, settings.cXMLSettingMiscRemoteColor, MiscConfigGUI.RemoteColor);
+                        xmlwriter.SetValue(section, settings.cXMLSettingMiscWatchedColor, MiscConfigGUI.WatchedColor);
                         break;
                     #endregion
 
