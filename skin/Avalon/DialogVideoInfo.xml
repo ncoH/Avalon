@@ -52,19 +52,6 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     </control>
-
- 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<description>Poster shadow</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>109</posX>
-		<posY>182</posY>
-		<width>466</width>
-		<height>606</height>
-		<texture>list_poster_shadow.png</texture>
-	</control>
 	
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -74,8 +61,8 @@
 		<id>1</id>
 		<posX>109</posX>
 		<posY>182</posY>
-		<width>466</width>
-		<height>606</height>
+		<width>465</width>
+		<height>605</height>
 		<texture>list_poster_glow.png</texture>
 	</control>
   

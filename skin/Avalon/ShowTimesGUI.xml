@@ -104,27 +104,17 @@
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
     	<import>ShowTimesGUI.hiddenmenu.xml</import>
-    		<!-- Information in List View Only-->
+    		
+            <!-- Information in List View Only-->   
+             	
     	<control>
     		<description>Poster shadow</description>
     		<type>image</type>
     		<id>1</id>
     		<posX>695</posX>
     		<posY>101</posY>
-    		<width>466</width>
-    		<height>606</height>
-    		<texture>list_poster_shadow.png</texture>
-    		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(24)</visible>
-    	</control>
-    	
-    	<control>
-    		<description>Poster shadow</description>
-    		<type>image</type>
-    		<id>1</id>
-    		<posX>695</posX>
-    		<posY>101</posY>
-    		<width>466</width>
-    		<height>606</height>
+    		<width>465</width>
+    		<height>605</height>
     		<texture>list_poster_glow.png</texture>
     		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(24)</visible>
     	</control>

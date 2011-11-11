@@ -106,7 +106,7 @@ multiple view modes.
       <posX>0</posX>
       <posY>120</posY>
       <width>1312</width>
-      <height>738</height>
+      <height>739</height>
       <texture>#MovingPictures.Backdrop</texture>
       <animation effect="fade" time="300">visible</animation>
       <animation effect="fade" time="200" delay="0">hidden</animation>
@@ -121,7 +121,7 @@ multiple view modes.
       <posX>0</posX>
       <posY>120</posY>
       <width>1312</width>
-      <height>738</height>
+      <height>739</height>
       <texture>#MovingPictures.Backdrop2</texture>
       <animation effect="fade" time="300">visible</animation>
       <animation effect="fade" time="200" delay="0">hidden</animation>
