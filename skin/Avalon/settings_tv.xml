@@ -7,8 +7,6 @@
 	<import>settings.menu.xml</import>
 	
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
@@ -22,8 +20,6 @@
 	<control>
 		<description>buttons</description>
 		<type>group</type>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<posX>736</posX>
 		<posY>254</posY>
 		<layout>GridLayout(2, 0, 1, 0, 1)</layout>

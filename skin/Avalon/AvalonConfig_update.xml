@@ -7,8 +7,6 @@
    <import>settings.menu.xml</import>
    
   	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
 		<description>Settings label</description>
 		<id>0</id>
@@ -22,8 +20,6 @@
 	</control>
    
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
 		<posX>645</posX>
@@ -56,8 +52,6 @@
 		<textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
 		<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
 		<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     </control>
     <control>
 		<description>Do Update and Install</description>
@@ -79,8 +73,6 @@
 		<textcolorNoFocus>bfffffff</textcolorNoFocus>
 		<textureFocus>settings_button_large_focus.png</textureFocus>
 		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     </control>
 <import>common.time.xml</import>
 <import>avalon.version.xml</import>

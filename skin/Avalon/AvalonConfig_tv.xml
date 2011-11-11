@@ -22,8 +22,6 @@
 	</control>
 	
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
@@ -35,8 +33,6 @@
 	</control>
 	
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
@@ -47,9 +43,7 @@
 		<font>fontB14</font>
 	</control>
 	
-      <control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <control Style="SettingsButtonLarge">
         <description>TVMiniGuide rows</description>
         <type>button</type>
         <id>2</id>
@@ -59,14 +53,9 @@
         <onright>2</onright>
         <onup>3</onup>
         <ondown>3</ondown>
-		<width>956</width>
-		<height>52</height>
-		<textXOff>30</textXOff>
-		<textYOff>8</textYOff>
-		<textureFocus>settings_button_large_focus.png</textureFocus>
-		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
       </control>
-      <control>
+      
+      <control Style="SettingsButtonLarge">
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
         <description>TVMiniGuide rows</description>
@@ -78,12 +67,6 @@
         <onright>2</onright>
         <onup>2</onup>
         <ondown>2</ondown>
-		<width>956</width>
-		<height>52</height>
-		<textXOff>30</textXOff>
-		<textYOff>8</textYOff>
-		<textureFocus>settings_button_large_focus.png</textureFocus>
-		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
       </control>
 <import>common.time.xml</import>
 <import>avalon.version.xml</import>

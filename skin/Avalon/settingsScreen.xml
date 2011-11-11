@@ -8,8 +8,6 @@
 	<import>settings.menu.xml</import>
 	
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
@@ -23,58 +21,32 @@
 	<control>
 		<description>buttons</description>
 		<type>group</type>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<posX>736</posX>
 		<posY>254</posY>
 		<layout>StackLayout</layout>
-		<control>
+        <control Style="SettingsButtonLarge">
 			<description>UI Calibration button</description>
 			<type>button</type>
 			<id>2</id>
-			<width>956</width>
-			<height>52</height>
-			<textXOff>30</textXOff>
-			<textYOff>8</textYOff>
-			<textureFocus>settings_button_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<label>213</label>
 			<hyperlink>10</hyperlink>
 			<onup>4</onup>
 			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
-		<control>
+        <control Style="SettingsButtonLarge">
 			<description>Screen Calibration button</description>
 			<type>button</type>
 			<id>3</id>
-			<width>956</width>
-			<height>52</height>
-			<textXOff>30</textXOff>
-			<textYOff>8</textYOff>
-			<textureFocus>settings_button_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<label>214</label>
 			<hyperlink>11</hyperlink>
 			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
-		<control>
+        <control Style="SettingsButtonLarge">
 			<description>Scroll speed button</description>
 			<type>button</type>
 			<id>4</id>
-			<width>956</width>
-			<height>52</height>
-			<textXOff>30</textXOff>
-			<textYOff>8</textYOff>
-			<textureFocus>settings_button_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 			<label>673</label>
 			<hyperlink>31</hyperlink>
 			<ondown>2</ondown>

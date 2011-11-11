@@ -76,164 +76,84 @@
 				<posX>736</posX>
 				<posY>156</posY>
 				<layout>StackLayout(0, Vertical, true)</layout>
-				<control>
+                <control Style="SettingsButtonLarge">
 					<id>101</id>
 					<type>button</type>
 					<onright>101</onright>
 					<ondown>102</ondown>
 					<onup>110</onup>
-					<width>956</width>
-					<height>52</height>
-					<textXOff>30</textXOff>
-					<textYOff>8</textYOff>
-					<textureFocus>settings_button_large_focus.png</textureFocus>
-					<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-					<textcolor>ffffffff</textcolor>
-					<textcolorNoFocus>ffffffff</textcolorNoFocus>
 					<label>#RadioTime.Presets.1.Name</label>
 				</control>
-				<control>
+                <control Style="SettingsButtonLarge">
 					<id>102</id>
 					<type>button</type>
 					<onright>102</onright>
 					<onup>101</onup>
 					<ondown>103</ondown>
-					<width>956</width>
-					<height>52</height>
-					<textXOff>30</textXOff>
-					<textYOff>8</textYOff>
-					<textureFocus>settings_button_large_focus.png</textureFocus>
-					<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-					<textcolor>ffffffff</textcolor>
-					<textcolorNoFocus>ffffffff</textcolorNoFocus>
 					<label>#RadioTime.Presets.2.Name</label>
 				</control>
-				<control>
+                <control Style="SettingsButtonLarge">
 					<id>103</id>
 					<type>button</type>
 					<onright>103</onright>
 					<onup>102</onup>
 					<ondown>104</ondown>
-					<width>956</width>
-					<height>52</height>
-					<textXOff>30</textXOff>
-					<textYOff>8</textYOff>
-					<textureFocus>settings_button_large_focus.png</textureFocus>
-					<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-					<textcolor>ffffffff</textcolor>
-					<textcolorNoFocus>ffffffff</textcolorNoFocus>
 					<label>#RadioTime.Presets.3.Name</label>
 				</control>
-				<control>
+                <control Style="SettingsButtonLarge">
 					<id>104</id>
 					<type>button</type>
 					<onright>104</onright>
 					<onup>103</onup>
 					<ondown>105</ondown>
-					<width>956</width>
-					<height>52</height>
-					<textXOff>30</textXOff>
-					<textYOff>8</textYOff>
-					<textureFocus>settings_button_large_focus.png</textureFocus>
-					<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-					<textcolor>ffffffff</textcolor>
-					<textcolorNoFocus>ffffffff</textcolorNoFocus>
 					<label>#RadioTime.Presets.4.Name</label>
 				</control>
-				<control>
+                <control Style="SettingsButtonLarge">
 					<id>105</id>
 					<type>button</type>
 					<onright>105</onright>
 					<onup>104</onup>
 					<ondown>106</ondown>
-					<width>956</width>
-					<height>52</height>
-					<textXOff>30</textXOff>
-					<textYOff>8</textYOff>
-					<textureFocus>settings_button_large_focus.png</textureFocus>
-					<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-					<textcolor>ffffffff</textcolor>
-					<textcolorNoFocus>ffffffff</textcolorNoFocus>
 					<label>#RadioTime.Presets.5.Name</label>
 				</control>
-				<control>
+                <control Style="SettingsButtonLarge">
 					<id>106</id>
 					<type>button</type>
 					<onleft>2</onleft>
 					<onup>105</onup>
 					<ondown>107</ondown>
-					<width>956</width>
-					<height>52</height>
-					<textXOff>30</textXOff>
-					<textYOff>8</textYOff>
-					<textureFocus>settings_button_large_focus.png</textureFocus>
-					<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-					<textcolor>ffffffff</textcolor>
-					<textcolorNoFocus>ffffffff</textcolorNoFocus>
 					<label>#RadioTime.Presets.6.Name</label>
 				</control>
-				<control>
+                <control Style="SettingsButtonLarge">
 					<id>107</id>
 					<type>button</type>
 					<onleft>2</onleft>
 					<onup>106</onup>
 					<ondown>108</ondown>
-					<width>956</width>
-					<height>52</height>
-					<textXOff>30</textXOff>
-					<textYOff>8</textYOff>
-					<textureFocus>settings_button_large_focus.png</textureFocus>
-					<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-					<textcolor>ffffffff</textcolor>
-					<textcolorNoFocus>ffffffff</textcolorNoFocus>
 					<label>#RadioTime.Presets.7.Name</label>
 				</control>
-				<control>
+                <control Style="SettingsButtonLarge">
 					<id>108</id>
 					<type>button</type>
 					<onleft>2</onleft>
 					<onup>107</onup>
 					<ondown>109</ondown>
-					<width>956</width>
-					<height>52</height>
-					<textXOff>30</textXOff>
-					<textYOff>8</textYOff>
-					<textureFocus>settings_button_large_focus.png</textureFocus>
-					<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-					<textcolor>ffffffff</textcolor>
-					<textcolorNoFocus>ffffffff</textcolorNoFocus>
 					<label>#RadioTime.Presets.8.Name</label>
 				</control>
-				<control>
+                <control Style="SettingsButtonLarge">
 					<id>109</id>
 					<type>button</type>
 					<onleft>2</onleft>
 					<onup>108</onup>
 					<ondown>110</ondown>
-					<width>956</width>
-					<height>52</height>
-					<textXOff>30</textXOff>
-					<textYOff>8</textYOff>
-					<textureFocus>settings_button_large_focus.png</textureFocus>
-					<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-					<textcolor>ffffffff</textcolor>
-					<textcolorNoFocus>ffffffff</textcolorNoFocus>
 					<label>#RadioTime.Presets.9.Name</label>
 				</control>
-				<control>
+                <control Style="SettingsButtonLarge">
 					<id>110</id>
 					<type>button</type>
 					<onleft>2</onleft>
 					<onup>109</onup>
 					<ondown>101</ondown>
-					<width>956</width>
-					<height>52</height>
-					<textXOff>30</textXOff>
-					<textYOff>8</textYOff>
-					<textureFocus>settings_button_large_focus.png</textureFocus>
-					<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-					<textcolor>ffffffff</textcolor>
-					<textcolorNoFocus>ffffffff</textcolorNoFocus>
 					<label>#RadioTime.Presets.10.Name</label>
 				</control>
 			</control>

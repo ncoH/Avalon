@@ -17,7 +17,7 @@
 		<posX>736</posX>
 		<posY>254</posY>
 		<layout>StackLayout</layout>
-		<control>
+      <control Style="SettingsButtonLarge">
 			<type>button</type>
 			<description>Create New Account</description>
 			<id>2</id>
@@ -25,46 +25,22 @@
 			<onup>17</onup>
 			<onright>#defaultcontrol.onright</onright>
 			<visible>!string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
-			<width>956</width>
-			<height>52</height>
-			<textXOff>30</textXOff>
-			<textYOff>8</textYOff>
-			<textureFocus>settings_button_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 		</control>
-		<control>
+      <control Style="SettingsButtonLarge">
 			<description>Login to Existing Account</description>
 			<type>button</type>
 			<id>3</id>
 			<label>#Trakt.Translation.LoginExistingAccount.Label</label>
 			<onright>#defaultcontrol.onright</onright>
 			<visible>!string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
-			<width>956</width>
-			<height>52</height>
-			<textXOff>30</textXOff>
-			<textYOff>8</textYOff>
-			<textureFocus>settings_button_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 		</control>
-		<control>
+      <control Style="SettingsButtonLarge">
 			<description>Disconnect Current Account</description>
 			<type>button</type>
 			<id>4</id>
 			<label></label>
 			<onright>#defaultcontrol.onright</onright>
 			<visible>!string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
-			<width>956</width>
-			<height>52</height>
-			<textXOff>30</textXOff>
-			<textYOff>8</textYOff>
-			<textureFocus>settings_button_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 		</control>
  </control>
 		<import>common.overlay.xml</import>
