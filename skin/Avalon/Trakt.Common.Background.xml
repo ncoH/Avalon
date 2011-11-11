@@ -22,10 +22,6 @@
         <height>739</height>
         <texture>hover_trakt.png</texture>
         <shouldCache>true</shouldCache>
-        <animation effect="fade" time="300">visible</animation>
-        <animation effect="fade" time="200" delay="0">hidden</animation>
-        <animation effect="fade" time="0">WindowClose</animation>
-        <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     </control>
  
     <control>
@@ -47,10 +43,6 @@
         <width>1893</width>
         <height>795</height>
         <texture>viewport_categories.png</texture>
-        <animation effect="fade" time="250">WindowOpen</animation>
-        <animation effect="fade" time="250">WindowClose</animation>
-        <animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-        <animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
     </control>
 	</controls>
 </window>

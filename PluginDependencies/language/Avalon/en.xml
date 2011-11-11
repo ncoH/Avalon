@@ -104,6 +104,7 @@
   <string Field="Trending">Trending movies</string>
   <string Field="Shouts">Shouts</string>
   <string Field="AddToList">Add movie to a list</string>
+  <string Field="RelatedMovies">Related Movies</string>
   <!-- Latest Media -->  
   <string Field="LatestMovies">Latest movies</string>
   <string Field="LatestEpisodes">Latest episodes</string>

@@ -247,6 +247,7 @@
         <width>183</width>
         <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#latestMediaHandler.tvseries.latest1.serieThumb</texture>
+ 	   <shouldCache>true</shouldCache>
       </control>
 	<control>
         <description>Play Button</description>
@@ -284,6 +285,7 @@
         <width>183</width>
         <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png">#latestMediaHandler.tvseries.latest2.serieThumb</texture>
+	   <shouldCache>true</shouldCache>
       </control>
 	<control>
         <description>Play Button</description>
@@ -322,6 +324,7 @@
         <width>183</width>
         <height>259</height>
         <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.tvseries.latest3.serieThumb</texture>
+	   <shouldCache>true</shouldCache>
       </control>
 	<control>
         <description>Play Button</description>

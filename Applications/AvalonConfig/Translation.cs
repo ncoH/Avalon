@@ -293,6 +293,7 @@ namespace AvalonGUIConfig
         public static string Trending = "Trending movies";
         public static string Shouts = "Shouts";
         public static string List = "List";
+        public static string RelatedMovies = "Related Movies";
         
         //Latest Media
         public static string LatestMovies = "Latest movies";

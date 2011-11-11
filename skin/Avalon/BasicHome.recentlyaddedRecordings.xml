@@ -23,6 +23,7 @@
 		<width>318</width>
 		<height>179</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#latestMediaHandler.tvrecordings.latest1.thumb</texture>
+	   <shouldCache>true</shouldCache>
 		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919984)</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
@@ -38,6 +39,7 @@
 		<width>318</width>
 		<height>179</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#latestMediaHandler.tvrecordings.latest2.thumb</texture>
+	   <shouldCache>true</shouldCache>
 		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919985)</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
@@ -53,6 +55,7 @@
 		<width>318</width>
 		<height>179</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#latestMediaHandler.tvrecordings.latest3.thumb</texture>
+	   <shouldCache>true</shouldCache>
 		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919986)</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
@@ -68,6 +71,7 @@
 		<width>318</width>
 		<height>179</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#latestMediaHandler.tvrecordings.latest4.thumb</texture>
+	   <shouldCache>true</shouldCache>
 		<visible>string.equals(#recentMedia,Recordings) + control.hasfocus(91919987)</visible>
 		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
 		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>

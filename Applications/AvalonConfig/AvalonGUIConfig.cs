@@ -38,7 +38,8 @@ namespace AvalonGUIConfig
             Rate,
             AddToWatchList,
             Shouts,
-            AddToList
+            AddToList,
+            RelatedMovies
         }
 
         #endregion
@@ -64,7 +65,6 @@ namespace AvalonGUIConfig
         public static string nextUpdateCheck { get; set; }
         public static System.Threading.Timer updateChkTimer;
         System.Windows.Forms.Timer mrTimer = new System.Windows.Forms.Timer();
-
       
         public static List<PendingChanges> PendingRestartChanges = new List<PendingChanges>();
 
@@ -778,6 +778,14 @@ namespace AvalonGUIConfig
                 TraktHelper.AddRemoveMovieInUserList(Title, Year, IMDBID, false);
         }
 
+        private void TraktShowRelatedMovies()
+        {
+            string IMDBID = GUIPropertyManager.GetProperty("#MovingPictures.SelectedMovie.imdb_id").Trim();
+            string Title = GUIPropertyManager.GetProperty("#MovingPictures.SelectedMovie.title").Trim();
+            string Year = GUIPropertyManager.GetProperty("#MovingPictures.SelectedMovie.year").Trim();
+
+            TraktHelper.ShowRelatedMovies(IMDBID, Title, Year);
+        }
 
         private void ShowTraktMenu()
         {
@@ -814,6 +822,10 @@ namespace AvalonGUIConfig
             listItem = new GUIListItem(Translation.AddToList);
             dlg.Add(listItem);
             listItem.ItemId = (int)TraktMenuItems.AddToList;
+
+            listItem = new GUIListItem(Translation.RelatedMovies);
+            dlg.Add(listItem);
+            listItem.ItemId = (int)TraktMenuItems.RelatedMovies;
             
             listItem = new GUIListItem(Translation.Rate);
             dlg.Add(listItem);
@@ -858,6 +870,11 @@ namespace AvalonGUIConfig
                case ((int)TraktMenuItems.AddToList):
                     // Add to Watchlist
                     TraktAddToList();
+                    break;
+
+               case ((int)TraktMenuItems.RelatedMovies):
+                    // Rate window
+                    TraktShowRelatedMovies();
                     break;
 
                 case ((int)TraktMenuItems.Rate):

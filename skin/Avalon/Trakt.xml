@@ -27,8 +27,6 @@
 		<control>
 			<description>button group</description>
     		<type>group</type>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     		<posX>1166</posX>
     		<posY>153</posY>
 			<layout>StackLayout(0, Vertical, true)</layout>

@@ -635,7 +635,7 @@
     		<align>left</align>
     		<font>AvalonLight12</font>
     		<textcolor>6aa5cb</textcolor>
-			<visible>!string.equals(#Trakt.Show.Released,)</visible>
+			<visible>!string.equals(#Trakt.Show.FirstAired,)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
@@ -647,7 +647,7 @@
 			<label>#Trakt.Show.FirstAired</label>
     		<posX>882</posX>
     		<posY>872</posY>
-			<visible>!string.equals(#Trakt.Show.Released,)</visible>
+			<visible>!string.equals(#Trakt.Show.FirstAired,)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>

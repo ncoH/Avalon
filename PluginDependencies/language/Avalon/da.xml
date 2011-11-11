@@ -104,6 +104,7 @@
   <string Field="Trending">Trending movies</string>
   <string Field="Shouts">Shouts</string>
   <string Field="AddToList">Add movie to a list</string>
+  <string Field="RelatedMovies">Related Movies</string>
   <!-- Latest Media -->  
   <string Field="LatestMovies">Seneste film</string>
   <string Field="LatestEpisodes">Seneste serier</string>

@@ -103,6 +103,7 @@
   <string Field="Trending">Aktuelle Trends</string>
   <string Field="Shouts">Shouts</string>
   <string Field="AddToList">Film zur Liste hinzufügen</string>
+  <string Field="RelatedMovies">Ähnliche Filme</string>
   <!-- Latest Media -->  
   <string Field="LatestMovies">Neueste Filme</string>
   <string Field="LatestEpisodes">Neueste Episoden</string> 
