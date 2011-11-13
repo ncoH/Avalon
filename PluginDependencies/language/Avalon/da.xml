@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Danish (DA) -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
-<!-- Last Updated: 12th October 2011 -->
+<!-- Last Updated: 11/11/2011 -->
 <strings>
  
  <!-- Skin Updates / Patching GUI -->
@@ -27,13 +27,13 @@
   <string Field="SkinSettingsThumbview ">Thumbnails</string>
   <string Field="SkinSettingsInfo">Gør info i bunden af skærmen tilgængelig</string>
   <string Field="SkinSettingsPosterHide">Skjul plakter på listesynet når der ikke scrolles</string>
-  <string Field="SkinSettingsShowRSS">Enable RSS Feeds on BasicHome/Home</string>
-  <string Field="SkinSettingsShowHiddenMenu">Show Hidden Menu Image</string>  
-  <string Field="SkinSettingsShow5DayWeather">Show 5 Day Weather forecast on BasicHome/Home</string>  
+  <string Field="SkinSettingsShowRSS">Benyt RSS Feeds på startsiden</string>
+  <string Field="SkinSettingsShowHiddenMenu">Vis skjulte menubilleder</string>  
+  <string Field="SkinSettingsShow5DayWeather">Vis 5 dage vejrudsigt på startsiden</string>  
   <string Field="SkinSettingsTV">Fjernsyn</string>
   <string Field="SkinSettingsTVSeries">TV Serier</string>
   <string Field="SkinSettingsUpdate">Opdatering</string>
-  <string Field="SkinSettingsMovingPictures">MovingPictures</string>
+  <string Field="SkinSettingsMovingPictures">Moving Pictures</string>
   <string Field="SkinSettingsMyFilms">MyFilms</string>
   <string Field="Thumbnails">Thumbnails</string>
   <string Field="ThumbnailDefault">Thumbnails: Default</string>
@@ -43,86 +43,86 @@
   <string Field="TVMiniGuideRows">TV Mini Guide rækker</string> 
   <string Field="TVMiniGuideThreeRows">TV Mini Guide: 3 rækker</string>
   <string Field="TVMiniGuideEightRows">TV Mini Guide: 8 rækker</string>
-  <string Field="TVGuideSize">TV Guide Rows</string> 
-  <string Field="TVGuideEightRows">TV Guide: 8 Rows</string>
-  <string Field="TVGuideTenRows">TV Guide: 10 Rows</string>
+  <string Field="TVGuideSize">TV Guide rækker</string> 
+  <string Field="TVGuideEightRows">TV Guide: 8 rækker</string>
+  <string Field="TVGuideTenRows">TV Guide: 10 rækker</string>
   <string Field="SkinSettingsMisc">Diverse</string>
   <string Field="Widebanner">Brede bannere</string>
   <string Field="WidebannerDefault">Brede bannere: Default</string>
   <string Field="WidebannerNoFanart">Brede bannere: Uden fanart</string>
   <string Field="UnfocusedAlpha">Transparency/Opacity for thumbs and list</string>
-  <string Field="UnfocusedAlphaMenuLists">Unfocused Alpha on List Layouts: {0}</string>
-  <string Field="UnfocusedAlphaMenuThumbs">Unfocused Alpha on Thumb Layouts: {0}</string>
-  <string Field="UnfocusedAlphaInvalidLine1">Invalid value entered, please enter a value</string>
-  <string Field="UnfocusedAlphaInvalidLine2">between 0 - 255.</string>
-  <string Field="UnfocusedAlphaInvalidLine3">Opaque = 255, Transparent = 0</string>
-  <string Field="RestoreDefaults">Restore Defaults</string>
-  <string Field="ConfigRequiresRestartLine1">The following configuration changes will take</string>
-  <string Field="ConfigRequiresRestartLine2">affect on next MediaPortal restart.</string>
-  <string Field="ConfigRequiresRestartLine3">Would you like to restart now?</string>
-  <string Field="UseLargeFonts">Use Large Fonts</string>
-  <string Field="TrailerSite">Choose Trailer Search Site</string>
-  <string Field="ListColors">Set List Colors</string>
-  <string Field="ListDefaultColor">Default Color: {0}</string>
-  <string Field="ListText2Color">Text 2 Color: {0}</string>
-  <string Field="ListText3Color">Text 3 Color: {0}</string>
-  <string Field="ListWatchedColor">Watched Color: {0}</string>
-  <string Field="ListRemoteColor">Remote Color: {0}</string>
-  <string Field="ListColorInvalidLine1">Invalid color code entered, please enter a</string>
-  <string Field="ListColorInvalidLine2">valid HEX code e.g. the color red is FF0000.</string>
-  <string Field="ListColorInvalidLine3">which is '255' red, '0' green, and '0' blue.</string>
-  <string Field="CustomColor">Custom Color</string>
+  <string Field="UnfocusedAlphaMenuLists">Ufokuserede alpha på liste layouts: {0}</string>
+  <string Field="UnfocusedAlphaMenuThumbs">Ufokuserede alpha på  billedlayouts: {0}</string>
+  <string Field="UnfocusedAlphaInvalidLine1">Ugyldig værdi. Indtast venligst en ny</string>
+  <string Field="UnfocusedAlphaInvalidLine2">mellem 0 - 255.</string>
+  <string Field="UnfocusedAlphaInvalidLine3">Ugennemsigtig = 255, gennemsigtig = 0</string>
+  <string Field="RestoreDefaults">Gendan standarder</string>
+  <string Field="ConfigRequiresRestartLine1">Ændringer vil finde sted</string>
+  <string Field="ConfigRequiresRestartLine2">næste gang MediaPortal genstartes.</string>
+  <string Field="ConfigRequiresRestartLine3">Ønsker du at genstarte nu?</string>
+  <string Field="UseLargeFonts">Benyt stor skriftstørrelse</string>
+  <string Field="TrailerSite">Vælg trailer søgeside</string>
+  <string Field="ListColors">Indstil listefarve</string>
+  <string Field="ListDefaultColor">Default farve: {0}</string>
+  <string Field="ListText2Color">Tekst 2 fave: {0}</string>
+  <string Field="ListText3Color">Tekst 3 fave: {0}</string>
+  <string Field="ListWatchedColor">Setfarve: {0}</string>
+  <string Field="ListRemoteColor">Fjernfarve: {0}</string>
+  <string Field="ListColorInvalidLine1">Ugyldig farve. Indtast venligst en</string>
+  <string Field="ListColorInvalidLine2">gyldig HEX kode, f.eks. er farven rød FF0000.</string>
+  <string Field="ListColorInvalidLine3">hvor '255' er rød, '0' grøn, og '0' blå.</string>
+  <string Field="CustomColor">Bruger farver</string>
   <!-- TV -->
-  <string Field="Recording">Recording</string>
+  <string Field="Recording">Optager</string>
   <!-- TVSeries -->
-  <string Field="View">View</string>
+  <string Field="View">Syng</string>
   <!-- MovingPictures/MyFilms -->  
   <string Field="Runtime">Spilletid</string>
-  <string Field="ReleaseDate">Frigivet dato</string>
+  <string Field="ReleaseDate">Premiere</string>
   <string Field="Minutes">minutter</string>
   <string Field="Overview">Start/Overblik</string>
   <string Field="Description">Beskrivelse</string>
   <string Field="Comments">Kommentarer</string>
   <string Field="Actors">Skuespillere</string>
   <string Field="Techinfo">Teknisk info</string>
-  <string Field="VideoFormat">Video Format</string>
-  <string Field="Resolution">Resolution</string>
+  <string Field="VideoFormat">Videoformat</string>
+  <string Field="Resolution">Opløsning</string>
   <string Field="Framerate">Framrate</string>
-  <string Field="AudioFormat">Audio Format</string>
-  <string Field="AudioChannels">Audio Channels</string>
-  <string Field="DateAdded">Date Added</string>
-  <string Field="MediaType">Media Type</string>
+  <string Field="AudioFormat">Lydformat</string>
+  <string Field="AudioChannels">Lydkanaler</string>
+  <string Field="DateAdded">Tilføjet</string>
+  <string Field="MediaType">Medietype</string>
   <string Field="InfoUrl">Info URL</string>
-  <string Field="Source">Source</string>
+  <string Field="Source">Kilde</string>
   <string Field="Aspectratio">Aspectratio</string>
-  <string Field="WatchedCount">Watched Count</string>
-  <string Field="AddToWatchList">Add movie to watchlist</string>
-  <string Field="Rate">Rate movie</string>
+  <string Field="WatchedCount">Antal gange set</string>
+  <string Field="AddToWatchList">Tilføj film til setliste</string>
+  <string Field="Rate">Vurder film</string>
   <string Field="Trakt">Trakt</string>
-  <string Field="Watchlist">Watchlist</string>
-  <string Field="Recommendations">Recommendations</string>
-  <string Field="Trending">Trending movies</string>
-  <string Field="Shouts">Shouts</string>
-  <string Field="AddToList">Add movie to a list</string>
-  <string Field="RelatedMovies">Related Movies</string>
+  <string Field="Watchlist">Setliste</string>
+  <string Field="Recommendations">Anbefalinger</string>
+  <string Field="Trending">Populære film</string>
+  <string Field="Shouts">Debatindlæg</string>
+  <string Field="AddToList">Tilføj film til en liste</string>
+  <string Field="RelatedMovies">Relaterede film</string>
   <!-- Latest Media -->  
   <string Field="LatestMovies">Seneste film</string>
   <string Field="LatestEpisodes">Seneste serier</string>
-  <string Field="LatestMusic">Latest music</string>
-  <string Field="LatestRecordings">Latest recordings</string>
+  <string Field="LatestMusic">Seneste musik</string>
+  <string Field="LatestRecordings">Seneste optagelser</string>
   <!-- Misc -->   
   <string Field="FanartScraping">Henter fanart</string>
   <string Field="ReturnListMovies">Tryk til venstre for at returnere til filmlisten</string> 
   <string Field="ReturnListSeries">Tryk til venstre for at returnere til serielisten</string>
-  <string Field="Watched">Watched</string>    
-  <string Field="UnWatched">UnWatched</string>
-  <string Field="SearchMusic">Search Music</string>
-  <string Field="SearchPhrase">Search Phrase</string>
-  <string Field="SearchHistory">Search History</string>
-  <string Field="SearchFields">Search Fields</string>
-  <string Field="SearchType">Search Type</string>
+  <string Field="Watched">Set</string>    
+  <string Field="UnWatched">Uset</string>
+  <string Field="SearchMusic">Søg musik</string>
+  <string Field="SearchPhrase">Søgeord</string>
+  <string Field="SearchHistory">Historik</string>
+  <string Field="SearchFields">Søgefelter</string>
+  <string Field="SearchType">Søgetype</string>
   <string Field="CaseSensitive">Case Sensitive</string>
-  <string Field="Lastplayed">Lastplayed</string>
-  <string Field="Filename">Filename</string>
-  <string Field="Playcount">Playcount</string>  
+  <string Field="Lastplayed">Sidst afspillet</string>
+  <string Field="Filename">Filenavn</string>
+  <string Field="Playcount">Antal gange afspillet</string>  
 </strings>
