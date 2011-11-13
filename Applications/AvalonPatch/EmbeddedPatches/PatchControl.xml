@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <patches>
   <!-- This defines the minium skin version this patch can run against -->
-  <minskinversion>0.9.5.431</minskinversion>
+  <minskinversion>0.9.6.1</minskinversion>
   <!-- There are 4 possible fields for each patch, 'version' is only needed for the zip file as versions are extracted from .dll and .exe -->
   <!-- Set <action> to mandatoryinstall if it must be installed even though it doesn't exist locally e.g. new core file -->
   <!-- Window Plugins -->
@@ -32,6 +32,6 @@
     <name>SkinUpdate.zip</name>
     <action>unzip</action>
     <location>temp</location>
-    <version>0.9.6.1</version>
+    <version>0.9.7.0</version>
   </patch>
 </patches>
