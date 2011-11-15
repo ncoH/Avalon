@@ -233,7 +233,6 @@
                 <IconYOff>18</IconYOff>
             	<textureHeight>55</textureHeight>
             	<dimColor>ffffffff</dimColor>
-                <playedColor>ffffffff</playedColor>
             </control>
       </control>
     </control>
