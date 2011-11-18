@@ -12,8 +12,8 @@
 			<type>button</type>
 			<id>216</id>
 			<label>#SubCentral.Translation.Movie.Label</label>
-            <posX>1180</posX>
-            <posY>264</posY>
+            <posX>1108</posX>
+            <posY>272</posY>
 			<width>256</width>
 			<height>52</height>
 			<onleft>216</onleft>
@@ -25,17 +25,16 @@
 			<font>AvalonLight12</font>
 			<textalign>center</textalign>
 			<visible>Control.IsVisible(103)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 		<control>
 			<description>TV Show Search Button</description>
 			<type>button</type>
 			<id>217</id>
 			<label>#SubCentral.Translation.TVShow.Label</label>
-            <posX>1440</posX>
-            <posY>264</posY>
+            <posX>1364</posX>
+            <posY>272</posY>
 			<width>256</width>
 			<height>52</height>
 			<onleft>216</onleft>
@@ -47,227 +46,216 @@
 			<font>AvalonLight12</font>
 			<textalign>center</textalign>
 			<visible>Control.IsVisible(103)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 
 		<control>
 			<type>label</type>
 			<id>0</id>
-			<posX>769</posX>
-			<posY>370</posY>
+			<posX>295</posX>
+			<posY>350</posY>
 			<label>#SubCentral.Translation.Title.Label:</label>
 			<font>font12</font>
-			<textcolor>ffa9d0f7</textcolor>
+			<textcolor>ff6aa5cb</textcolor>
 			<visible>Control.IsVisible(103)+Control.IsVisible(222)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 		<control>
 			<description>Title Button</description>
 			<type>button</type>
 			<id>222</id>
 			<label>#SubCentral.ManualSearch.Media.Title</label>
-			<posX>888</posX>
-			<posY>370</posY>
+			<posX>452</posX>
+			<posY>335</posY>
 			<onleft>222</onleft>
 			<onright>222</onright>
 			<onup>216</onup>
 			<ondown>223</ondown>
 			<textXOff>20</textXOff>
-			<textYOff>6</textYOff>
+			<textYOff>12</textYOff>
 			<font>AvalonLight12</font>
 			<textalign>left</textalign>
-			<height>52</height>
-			<width>809</width>
+			<height>60</height>
+			<width>1171</width>
 			<textureFocus>SubCentral_list_long_focus.png</textureFocus>
 			<textureNoFocus>SubCentral_list_long_nofocus.png</textureNoFocus>
 			<visible>Control.IsVisible(103)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 
 		<control>
 			<type>label</type>
 			<id>0</id>
-			<posX>769</posX>
-			<posY>427</posY>
+			<posX>295</posX>
+			<posY>412</posY>
 			<label>#SubCentral.Translation.Year.Label:</label>
 			<font>font12</font>
-			<textcolor>ffa9d0f7</textcolor>
+			<textcolor>ff6aa5cb</textcolor>
 			<visible>Control.IsVisible(103)+Control.IsVisible(223)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 		<control>
 			<description>Year Button</description>
 			<type>button</type>
 			<id>223</id>
 			<label>#SubCentral.ManualSearch.Media.Year</label>
-			<posX>888</posX>
-			<posY>422</posY>
+			<posX>452</posX>
+			<posY>395</posY>
 			<onleft>216</onleft>
 			<onright>223</onright>
 			<onup>222</onup>
 			<ondown>221</ondown>
 			<textXOff>20</textXOff>
-			<textYOff>6</textYOff>
+			<textYOff>12</textYOff>
 			<font>AvalonLight12</font>
 			<textalign>left</textalign>
-			<height>52</height>
-			<width>809</width>
+			<height>60</height>
+			<width>1171</width>
 			<textureFocus>SubCentral_list_long_focus.png</textureFocus>
 			<textureNoFocus>SubCentral_list_long_nofocus.png</textureNoFocus>
 			<visible>Control.IsVisible(103)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,MOVIE)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 
 		<control>
 			<type>label</type>
 			<id>0</id>
-			<posX>769</posX>
-			<posY>481</posY>
+			<posX>295</posX>
+			<posY>475</posY>
 			<label>#SubCentral.Translation.IMDbID.Label:</label>
 			<font>font12</font>
-			<textcolor>ffa9d0f7</textcolor>
+			<textcolor>ff6aa5cb</textcolor>
 			<visible>Control.IsVisible(103)+Control.IsVisible(221)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 		<control>
 			<description>IMDb Button</description>
 			<type>button</type>
 			<id>221</id>
 			<label>#SubCentral.ManualSearch.Media.IMDb.ID.Complete</label>
-			<posX>888</posX>
-			<posY>474</posY>
+			<posX>452</posX>
+			<posY>455</posY>
 			<onleft>216</onleft>
 			<onright>225</onright>
 			<onup>223</onup>
 			<ondown>224</ondown>
 			<textXOff>20</textXOff>
-			<textYOff>6</textYOff>
+			<textYOff>12</textYOff>
 			<font>AvalonLight12</font>
 			<textalign>left</textalign>
-			<height>52</height>
-			<width>809</width>
+			<height>60</height>
+			<width>1171</width>
 			<textureFocus>SubCentral_list_long_focus.png</textureFocus>
 			<textureNoFocus>SubCentral_list_long_nofocus.png</textureNoFocus>
 			<visible>Control.IsVisible(103)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,MOVIE)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 
 		<control>
 			<type>label</type>
 			<id>0</id>
-			<posX>769</posX>
-			<posY>427</posY>
+			<posX>295</posX>
+			<posY>412</posY>
 			<label>#SubCentral.Translation.Season.Label:</label>
 			<font>font12</font>
-			<textcolor>ffa9d0f7</textcolor>
+			<textcolor>ff6aa5cb</textcolor>
 			<visible>Control.IsVisible(103)+Control.IsVisible(224)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 		<control>
 			<description>Season Button</description>
 			<type>button</type>
 			<id>224</id>
 			<label>#SubCentral.ManualSearch.Media.Season</label>
-			<posX>888</posX>
-			<posY>422</posY>
+			<posX>452</posX>
+			<posY>395</posY>
 			<onleft>224</onleft>
 			<onright>224</onright>
 			<onup>222</onup>
 			<ondown>225</ondown>
 			<textXOff>20</textXOff>
-			<textYOff>6</textYOff>
+			<textYOff>12</textYOff>
 			<font>AvalonLight12</font>
 			<textalign>left</textalign>
-			<height>52</height>
-			<width>809</width>
+			<height>60</height>
+			<width>1171</width>
 			<textureFocus>SubCentral_list_long_focus.png</textureFocus>
 			<textureNoFocus>SubCentral_list_long_nofocus.png</textureNoFocus>
 			<visible>Control.IsVisible(103)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,TVSHOW)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 
 		<control>
 			<type>label</type>
 			<id>0</id>
-			<posX>769</posX>
-			<posY>481</posY>
+			<posX>295</posX>
+			<posY>475</posY>
 			<label>#SubCentral.Translation.Episode.Label:</label>
-			<textcolor>ffa9d0f7</textcolor>
+			<textcolor>ff6aa5cb</textcolor>
 			<font>font12</font>
 			<visible>Control.IsVisible(103)+Control.IsVisible(225)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 		<control>
 			<description>Episode Button</description>
 			<type>button</type>
 			<id>225</id>
 			<label>#SubCentral.ManualSearch.Media.Episode</label>
-			<posX>889</posX>
-			<posY>474</posY>
+			<posX>452</posX>
+			<posY>455</posY>
 			<onleft>225</onleft>
 			<onright>226</onright>
 			<onup>224</onup>
 			<ondown>211</ondown>
 			<textXOff>20</textXOff>
-			<textYOff>6</textYOff>
+			<textYOff>12</textYOff>
 			<font>AvalonLight12</font>
 			<textalign>left</textalign>
-			<height>52</height>
-			<width>292</width>
+			<height>60</height>
+			<width>650</width>
 			<textureFocus>SubCentral_list_long_focus.png</textureFocus>
 			<textureNoFocus>SubCentral_list_long_nofocus.png</textureNoFocus>
 			<visible>Control.IsVisible(103)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,TVSHOW)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 
 	<!--            :: Absolute Numbering ::            -->
 		
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<type>image</type>
-		<id>1</id>
-			<posX>1184</posX>
-			<posY>482</posY>
-			<width>511</width>
-			<height>42</height>
-		<texture>settings_button_large_focus.png</texture>
-		<visible>Control.HasFocus(226)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,TVSHOW)</visible>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
+    		<type>image</type>
+    		<id>1</id>
+			<posX>1108</posX>
+			<posY>459</posY>
+			<width>514</width>
+			<height>60</height>
+    		<texture>settings_button_large_focus.png</texture>
+    		<visible>Control.HasFocus(226)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,TVSHOW)</visible>
 	</control>
 	
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<type>image</type>
-		<id>1</id>
-			<posX>1184</posX>
-			<posY>482</posY>
-			<width>511</width>
-			<height>42</height>
-		<texture>settings_button_large_nofocus.png</texture>
-		<visible>!Control.HasFocus(226)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,TVSHOW)</visible>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
+    		<type>image</type>
+    		<id>1</id>
+			<posX>1108</posX>
+			<posY>459</posY>
+			<width>514</width>
+			<height>60</height>
+    		<texture>settings_button_large_nofocus.png</texture>
+    		<visible>!Control.HasFocus(226)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,TVSHOW)</visible>
 	</control>
 		
 		<control>
@@ -276,32 +264,31 @@
 			<id>226</id>
 			<label>#SubCentral.Translation.AbsoluteNumbering.Label</label>
 			<font>AvalonLight12</font>
-			<posX>1195</posX>
-			<posY>489</posY>
-			<width>511</width>
-			<height>42</height>
+			<posX>1130</posX>
+			<posY>472</posY>
+			<width>514</width>
+			<height>60</height>
 			<onup>224</onup>
 			<ondown>214</ondown>
 			<onleft>225</onleft>
 			<onright>214</onright>
+            <align>left</align>
 			<visible>Control.isvisible(103)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,TVSHOW)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 
 		<control>
 			<type>label</type>
 			<id>0</id>
-			<posX>769</posX>
-			<posY>538</posY>
+			<posX>295</posX>
+			<posY>536</posY>
 			<label>#SubCentral.Translation.MediaFiles.Label:</label>
 			<font>font12</font>
-			<textcolor>ffa9d0f7</textcolor>
+			<textcolor>ff6aa5cb</textcolor>
 			<visible>Control.IsVisible(103)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 
 		<control>
@@ -310,27 +297,26 @@
 			<id>214</id>
 			<label>Clear files</label>
 			<font>AvalonLight12</font>
-			<posX>1184</posX>
-			<posY>530</posY>
-			<width>511</width>
-			<height>40</height>
+			<posX>1107</posX>
+			<posY>520</posY>
+			<width>514</width>
+			<height>55</height>
 			<onleft>226</onleft>
 			<onright>214</onright>
 			<onup>226</onup>
 			<ondown>211</ondown>
 			<textXOff>20</textXOff>
-			<textYOff>2</textYOff>
+			<textYOff>8</textYOff>
 			<visible>Control.IsVisible(103)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 
 		<control>
 			<description>Media Files</description>
 			<type>textboxscrollup</type>
 			<id>0</id>
-			<posX>799</posX>
+			<posX>310</posX>
 			<posY>590</posY>
 			<width>905</width>
 			<height>155</height>
@@ -339,9 +325,8 @@
 			<label>#SubCentral.ManualSearch.Files.AllNames</label>
 			<seperator>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</seperator>
 			<visible>Control.IsVisible(103)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 
 		<control>
@@ -349,8 +334,8 @@
 			<type>button</type>
 			<id>211</id>
 			<label>OK/Search</label>
-			<posX>920</posX>
-			<posY>808</posY>
+			<posX>848</posX>
+			<posY>890</posY>
 			<width>256</width>
 			<height>50</height>
 			<onleft>213</onleft>
@@ -358,13 +343,12 @@
 			<onup>214</onup>
 			<ondown>211</ondown>
 			<textXOff>0</textXOff>
-			<textYOff>0</textYOff>
+			<textYOff>2</textYOff>
 			<font>AvalonLight12</font>
 			<textalign>center</textalign>
 			<visible>Control.IsVisible(103)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 
 		<control>
@@ -372,8 +356,8 @@
 			<type>button</type>
 			<id>212</id>
 			<label>Cancel</label>
-			<posX>1180</posX>
-			<posY>808</posY>
+			<posX>1107</posX>
+			<posY>890</posY>
 			<width>256</width>
 			<height>50</height>
 			<onleft>211</onleft>
@@ -381,13 +365,12 @@
 			<onup>214</onup>
 			<ondown>212</ondown>
 			<textXOff>0</textXOff>
-			<textYOff>0</textYOff>
+			<textYOff>2</textYOff>
 			<font>AvalonLight12</font>
 			<textalign>center</textalign>
 			<visible>Control.IsVisible(103)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 
 		<control>
@@ -395,8 +378,8 @@
 			<type>button</type>
 			<id>213</id>
 			<label>Revert</label>
-			<posX>1440</posX>
-			<posY>808</posY>
+			<posX>1366</posX>
+			<posY>890</posY>
 			<width>256</width>
 			<height>50</height>
 			<onleft>212</onleft>
@@ -404,14 +387,13 @@
 			<onup>214</onup>
 			<ondown>213</ondown>
 			<textXOff>0</textXOff>
-			<textYOff>0</textYOff>
+			<textYOff>2</textYOff>
 			<textureFocus>SubCentral_button_revert.png</textureFocus>
 			<font>AvalonLight12</font>
 			<textalign>center</textalign>
 			<visible>Control.IsVisible(103)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 
 <!--

@@ -49,64 +49,46 @@
 			<width>1920</width>
 			<height>1080</height>
 		</control>
-		<control>
+	
+        <control>
+          <description>backdrop</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>0</posX>
+          <posY>0</posY>
+          <width>1920</width>
+          <height>1080</height>
+          <texture>#SubCentral.Search.Media.FanArt</texture>
+        </control>
+		
+ 		<control>
 			<description>viewport list</description>
 			<type>image</type>
 			<id>0</id>
-			<posX>0</posX>
-			<posY>92</posY>
-			<width>1893</width>
-			<height>795</height>
-			<texture>viewport_settings.png</texture>
-			<animation effect="fade" time="250">WindowOpen</animation>
-			<animation effect="fade" time="250">WindowClose</animation>
-			<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-			<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+    		<posX>202</posX>
+    		<posY>179</posY>
+    		<width>1518</width>
+    		<height>872</height>
+    		<texture>myfilms_details_bg.png</texture>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
-	
-    	<control>
-    		<description>RSS background</description>
-    		<type>image</type>
-    		<id>0</id>
-    		<posX>0</posX>
-    		<posY>829</posY>
-    		<width>1865</width>
-    		<height>96</height>
-    		<texture>basichome_rss_bg.png</texture>
-    		<animation effect="fade" time="250">WindowOpen</animation>
-    		<animation effect="fade" time="250">WindowClose</animation>
-    		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-    		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
-    	</control>
         
-		<control>
-			<type>label</type>
-			<description>Settings label</description>
-			<id>121</id>
-			<posX>185</posX>
-			<posY>38</posY>
-			<width>500</width>
-			<label>897</label>
-			<textcolor>6aa5cb</textcolor>
-			<font>font22</font>
-		</control>
-		
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<type>label</type>
-		<id>1</id>
-		<posX>766</posX>
-		<posY>158</posY>
-		<width>500</width>
-		<label>SubCentral</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB22</font>
-	</control>
+    	<control>
+    		<type>label</type>
+    		<id>1</id>
+    		<posX>298</posX>
+    		<posY>272</posY>
+    		<width>500</width>
+    		<label>SubCentral</label>
+    		<textcolor>ffffff</textcolor>
+    		<font>fontB20</font>
+        	<animation effect="fade" time="250">WindowOpen</animation>
+        	<animation effect="fade" time="0">WindowClose</animation>
+    	</control>
 
 		<!-- Controls common to all views of the GUI -->
 		<!--<import>common.window.xml</import>-->
-		<import>common.time.xml</import>
 
 
 		<!-- Imports for various views of the GUI -->
@@ -115,19 +97,79 @@
 		<import>SubCentral.ModifySearch.xml</import>
 
 	<control>
-		<description>buttons</description>
-		<type>group</type>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<posX>130</posX>
-		<posY>156</posY>
-		<layout>StackLayout</layout>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>3</defaultcontrol>
+		<onexit>50</onexit>
+		<dimColor>00ffffff</dimColor>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>521</buttonwidth>
+		<buttonheight>1080</buttonheight>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="400">hidden</animation>
+		</control>
+	
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+		<control>
+			<description>Menu label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>114</posY>
+			<label>924</label>
+			<font>fontB12</font>
+			<textcolor>ffffff</textcolor>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+        </control>
+          <control>
+            <type>group</type>
+            <description>group element</description>
+ 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+            <posX>69</posX>
+            <posY>155</posY>
+            <layout>StackLayout(0, Vertical, true)</layout>	
 					<control>
 						<description>Cancel Button</description>
 						<type>button</type>
 						<id>202</id>
 						<label>Cancel</label>
-						<onup>201</onup>
+        				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        				<textureNoFocus>-</textureNoFocus>
+        				<width>497</width>
+        				<height>64</height>
+        				<textXOff>58</textXOff>
+        				<textYOff>14</textYOff>
+						<onup>205</onup>
 						<ondown>203</ondown>
 						<onleft>202</onleft>
 						<onright>912</onright>
@@ -137,6 +179,12 @@
 						<type>button</type>
 						<id>203</id>
 						<label>Languages</label>
+        				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        				<textureNoFocus>-</textureNoFocus>
+        				<width>497</width>
+        				<height>64</height>
+        				<textXOff>58</textXOff>
+        				<textYOff>14</textYOff>
 						<onup>202</onup>
 						<ondown>204</ondown>
 						<onleft>203</onleft>
@@ -147,6 +195,12 @@
 						<type>button</type>
 						<id>204</id>
 						<label>Modify search</label>
+        				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        				<textureNoFocus>-</textureNoFocus>
+        				<width>497</width>
+        				<height>64</height>
+        				<textXOff>58</textXOff>
+        				<textYOff>14</textYOff>
 						<onup>203</onup>
 						<ondown>206</ondown>
 						<onleft>204</onleft>
@@ -157,6 +211,12 @@
 						<type>button</type>
 						<id>206</id>
 						<label>Delete subtitles</label>
+        				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        				<textureNoFocus>-</textureNoFocus>
+        				<width>497</width>
+        				<height>64</height>
+        				<textXOff>58</textXOff>
+        				<textYOff>14</textYOff>
 						<onup>204</onup>
 						<ondown>205</ondown>
 						<onleft>206</onleft>
@@ -167,11 +227,18 @@
 						<type>sortbutton</type>
 						<id>205</id>
 						<label>Sort</label>
+        				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        				<textureNoFocus>-</textureNoFocus>
+        				<width>497</width>
+        				<height>64</height>
+        				<textXOff>58</textXOff>
+        				<textYOff>14</textYOff>
 						<onup>206</onup>
 						<ondown>202</ondown>
 						<onleft>205</onleft>
 						<onright>912</onright>
 					</control>
-				</control>			
+				</control>	
+            </control>		
 	</controls>
 </window>
