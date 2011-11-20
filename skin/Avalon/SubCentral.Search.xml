@@ -12,12 +12,12 @@
 			<description>Number of Files Label</description>
 			<id>0</id>
 			<width>785</width>
-    		<posX>548</posX>
-    		<posY>848</posY>
+			<posX>590</posX>
+			<posY>920</posY>
 			<label>#itemcount</label>
 			<font>AvalonLight12</font>
 			<textcolor>6aa5cb</textcolor>
-            <align>right</align>
+            <align>left</align>
 			<visible>Control.IsVisible(102)</visible>
         	<animation effect="fade" time="250">WindowOpen</animation>
         	<animation effect="fade" time="0">WindowClose</animation>
