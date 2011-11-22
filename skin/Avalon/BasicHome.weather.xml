@@ -158,6 +158,8 @@
 		<id>0</id>
 		<posX>725</posX>
 		<posY>845</posY>
+		<height>150</height>
+		<width>150</width>
 		<texture>#WorldWeather.TodayIconImage</texture>
 	</control>
     </control>
