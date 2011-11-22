@@ -39,7 +39,7 @@
             <width>555</width>
             <font>AvalonLight16</font>
             <textcolor>6aa5cb</textcolor>
-            <label>/#infoservice.weather.today.temp</label>
+            <label>/#WorldWeather.TodayTemperature</label>
 			<align>left</align>
 			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742) + !window.isvisible(7111992)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)] + plugin.isenabled(InfoService)</visible>
         </control>
@@ -53,7 +53,7 @@
 			<posY>10</posY>
 			<height>100</height>
 			<width>100</width>
-			<texture>Weather/128x128/#infoservice.weather.today.img.small.filenamewithext</texture>
+			<texture>#WorldWeather.TodayIconImage</texture>
 			<visible>plugin.isenabled(InfoService)</visible>
 			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742) + !window.isvisible(7111992)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)] + plugin.isenabled(InfoService)</visible>
 		</control>
