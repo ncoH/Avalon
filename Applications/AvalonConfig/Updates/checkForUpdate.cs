@@ -68,7 +68,7 @@ namespace AvalonGUIConfig
                 if (System.IO.File.Exists("C:\\SkinUpdate.xml"))
                     xmlURL = "C:\\SkinUpdate.xml";
                 else
-                    xmlURL = "http://87.106.134.216/mepo/avalon/SkinUpdate.xml";
+                    xmlURL = "https://raw.github.com/ncoH/Avalon/master/skinUpdate/SkinUpdate.xml";
 
                 // Read the file
                 reader = new XmlTextReader(xmlURL);
