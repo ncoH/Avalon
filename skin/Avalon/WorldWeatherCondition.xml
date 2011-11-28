@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<allowoverlay>yes</allowoverlay>
+	
+	<controls>
+
+		<!-- *** Location *** -->
+		<control>
+			<description>Location label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>1832</posX>
+    		<posY>958</posY>
+    		<width>1170</width>
+    		<font>fontB16</font>
+    		<align>right</align>
+			<label>#WorldWeather.Location</label>
+		</control>
+
+		<!-- *** Weather Icon *** -->
+		<control>
+			<description>current weather icon</description>
+			<type>image</type>
+			<id>0</id>
+    		<posX>866</posX>
+    		<posY>156</posY>
+			<width>150</width>
+			<height>150</height>
+			<texture>#WorldWeather.TodayIconImage</texture>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+
+		<control>
+			<description>today value</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>860</posX>
+    		<posY>352</posY>
+    		<width>185</width>
+			<align>center</align>
+			<label>#WorldWeather.TodayTemperature</label>
+            <font>fontB26</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+
+		<control>
+			<description>today label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>1175</posX>
+    		<posY>155</posY>
+			<label>#(string.rtrim(L(143),':'))</label>
+    		<font>AvalonLight18</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+
+		<!-- *** Temperature label *** -->
+		<control>
+			<description>Current Temp static label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1175</posX>
+			<posY>217</posY>
+			<label>Temperature:</label>
+			<font>AvalonLight11</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>current temp label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1378</posX>
+			<posY>217</posY>
+			<width>420</width>
+			<label>#WorldWeather.TodayTemperature</label>
+			<font>AvalonLight11</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+        
+	   <control>
+    		<description>horizontal line</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>1175</posX>
+    		<posY>259</posY>
+    		<width>640</width>
+    		<height>2</height>
+    		<texture>weather_horizontal_bar_wide.png</texture>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+	   </control>
+
+		<!-- *** Current condition label *** -->
+		<control>
+			<description>current condition static label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1175</posX>
+			<posY>267</posY>
+			<label>Condition:</label>
+			<font>AvalonLight11</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+        
+		<control>
+			<description>current condition label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1378</posX>
+			<posY>267</posY>
+			<width>420</width>
+			<label>#WorldWeather.TodayCondition</label>
+			<font>AvalonLight11</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+
+		<!-- *** Current wind label *** -->
+		<control>
+			<description>current wind static label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1175</posX>
+			<posY>298</posY>
+			<label>Wind:</label>
+			<font>AvalonLight11</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>current wind label</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1378</posX>
+			<posY>298</posY>
+			<width>420</width>
+			<label>#WorldWeather.TodayWindCondition</label>
+			<font>AvalonLight11</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+
+		<!-- *** Current humidity label *** -->
+		<control>
+			<description>current humidity static label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1175</posX>
+			<posY>329</posY>
+			<label>Humidity:</label>
+			<font>AvalonLight11</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>current humidity label</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1378</posX>
+			<posY>329</posY>
+			<width>420</width>
+			<label>#WorldWeather.TodayHumidity</label>
+			<font>AvalonLight11</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+
+		<!-- *** Current sunset label *** -->
+		<control>
+			<description>current sunset static label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1175</posX>
+			<posY>360</posY>
+			<label>Sunset:</label>
+			<font>AvalonLight11</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>current sunset label</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1378</posX>
+			<posY>360</posY>
+			<width>420</width>
+			<label>#WorldWeather.LocationSunsetTime</label>
+			<font>AvalonLight11</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+
+		<!-- *** Current sunrise label *** -->
+		<control>
+			<description>current sunrise static label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1175</posX>
+			<posY>391</posY>
+			<label>Sunrise:</label>
+			<font>AvalonLight11</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>current sunrise label</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1378</posX>
+			<posY>391</posY>
+			<width>420</width>
+			<label>#WorldWeather.LocationSunriseTime</label>
+			<font>AvalonLight11</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+
+		<!-- *** Current moonphase label *** -->
+		<control>
+			<description>current moonphase static label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1175</posX>
+			<posY>422</posY>
+			<label>Moonphase:</label>
+			<font>AvalonLight11</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>current moonphase label</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1378</posX>
+			<posY>422</posY>
+			<width>420</width>
+			<label>#WorldWeather.LocationMoonPhase</label>
+			<font>AvalonLight11</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+
+		<!-- *** Daylight label *** 
+		<control>
+			<description>Daylight static label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>700</posX>
+			<posY>355</posY>
+			<label>Daylight</label>
+			<font>font12bold</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>Daylight label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>850</posX>
+			<posY>355</posY>
+			<label>#WorldWeather.LocationDaylightStart - #WorldWeather.LocationDaylightEnd</label>
+			<font>font12bold</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+
+		 *** Forecast (Today) *** -->
+		<control>
+			<description>day 0 label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>846</posX>
+    		<posY>520</posY>
+			<label>#WorldWeather.ForecastDay0Day #WorldWeather.ForecastDay0Date</label>
+    		<font>AvalonLight14</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>day 0 Hi label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>866</posX>
+    		<posY>736</posY>
+    		<width>185</width>
+			<label>#WorldWeather.ForecastDay0High/</label>
+            <font>fontB20</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+        
+		<control>
+			<description>day 0 low label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>970</posX>
+    		<posY>737</posY>
+    		<width>185</width>
+			<label>#WorldWeather.ForecastDay0Low</label>
+			<font>fontB20</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>day 0 icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>865</posX>
+			<posY>567</posY>
+			<width>150</width>
+			<height>150</height>
+			<texture>#WorldWeather.ForecastDay0IconImage</texture>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>day 0 condition label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>846</posX>
+			<posY>812</posY>
+			<width>150</width>
+			<label>#WorldWeather.ForecastDay0Condition</label>
+    		<font>AvalonLight12</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+
+	   <control>
+    		<description>horizontal line</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>846</posX>
+    		<posY>804</posY>
+    		<width>201</width>
+    		<height>2</height>
+    		<texture>weather_horizontal_bar.png</texture>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+	   </control>
+
+		<!-- *** Forecast (Today + 1) *** -->
+		<control>
+			<description>day 1 label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>1110</posX>
+    		<posY>520</posY>
+			<label>#WorldWeather.ForecastDay1Day #WorldWeather.ForecastDay1Date</label>
+    		<font>AvalonLight14</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>day 1 Hi label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>1130</posX>
+    		<posY>736</posY>
+    		<width>185</width>
+			<label>#WorldWeather.ForecastDay1High/</label>
+            <font>fontB20</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+        
+		<control>
+			<description>day 1 low label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>1234</posX>
+    		<posY>737</posY>
+    		<width>185</width>
+			<label>#WorldWeather.ForecastDay1Low</label>
+			<font>fontB20</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>day 1 icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1129</posX>
+			<posY>567</posY>
+			<width>150</width>
+			<height>150</height>
+			<texture>#WorldWeather.ForecastDay1IconImage</texture>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>day 1 condition label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1110</posX>
+			<posY>812</posY>
+			<width>150</width>
+			<label>#WorldWeather.ForecastDay1Condition</label>
+    		<font>AvalonLight12</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+        
+	   <control>
+    		<description>horizontal line</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>1110</posX>
+    		<posY>804</posY>
+    		<width>201</width>
+    		<height>2</height>
+    		<texture>weather_horizontal_bar.png</texture>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+	   </control>
+
+		<!-- *** Forecast (Today + 2) *** -->
+		<control>
+			<description>day 2 label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>1374</posX>
+    		<posY>520</posY>
+			<label>#WorldWeather.ForecastDay1Day #WorldWeather.ForecastDay2Date</label>
+    		<font>AvalonLight14</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>day 2 Hi label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>1394</posX>
+    		<posY>736</posY>
+    		<width>185</width>
+			<label>#WorldWeather.ForecastDay2High/</label>
+            <font>fontB20</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+        
+		<control>
+			<description>day 2 low label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>1498</posX>
+    		<posY>737</posY>
+    		<width>185</width>
+			<label>#WorldWeather.ForecastDay1Low</label>
+			<font>fontB20</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>day 2 icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1393</posX>
+			<posY>567</posY>
+			<width>150</width>
+			<height>150</height>
+			<texture>#WorldWeather.ForecastDay2IconImage</texture>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>day 2 condition label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1374</posX>
+			<posY>812</posY>
+			<width>150</width>
+			<label>#WorldWeather.ForecastDay2Condition</label>
+    		<font>AvalonLight12</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+
+	   <control>
+    		<description>horizontal line</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>1374</posX>
+    		<posY>804</posY>
+    		<width>201</width>
+    		<height>2</height>
+    		<texture>weather_horizontal_bar.png</texture>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+	   </control>
+
+		<!-- *** Forecast (Today + 3) *** -->
+		<control>
+			<description>day 2 label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>1638</posX>
+    		<posY>520</posY>
+			<label>#WorldWeather.ForecastDay1Day #WorldWeather.ForecastDay2Date</label>
+    		<font>AvalonLight14</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>day 2 Hi label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>1658</posX>
+    		<posY>736</posY>
+    		<width>185</width>
+			<label>#WorldWeather.ForecastDay2High/</label>
+            <font>fontB20</font>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+        
+		<control>
+			<description>day 2 low label</description>
+			<type>label</type>
+			<id>0</id>
+    		<posX>1762</posX>
+    		<posY>737</posY>
+    		<width>185</width>
+			<label>#WorldWeather.ForecastDay1Low</label>
+			<font>fontB20</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>day 2 icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1658</posX>
+			<posY>567</posY>
+			<width>150</width>
+			<height>150</height>
+			<texture>#WorldWeather.ForecastDay2IconImage</texture>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+		<control>
+			<description>day 2 condition label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1638</posX>
+			<posY>812</posY>
+			<width>150</width>
+			<label>#WorldWeather.ForecastDay2Condition</label>
+    		<font>AvalonLight12</font>
+            <textcolor>6aa5cb</textcolor>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+		</control>
+  
+	   <control>
+    		<description>horizontal line</description>
+    		<type>image</type>
+    		<id>0</id>
+    		<posX>1638</posX>
+    		<posY>804</posY>
+    		<width>201</width>
+    		<height>2</height>
+    		<texture>weather_horizontal_bar.png</texture>
+			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+	   </control>
+	</controls>
+</window>

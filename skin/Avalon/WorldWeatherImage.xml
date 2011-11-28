@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <allowoverlay>yes</allowoverlay>
+  <controls>
+	<control>
+		<type>image</type>
+		<posX>822</posX>
+		<posY>120</posY>
+		<width>1043</width>
+		<height>739</height>
+		<texture>weather_satellite_overlay.png</texture>
+        <visible>string.equals(#WorldWeather.View,Image)</visible>
+	</control>
+    <!-- *** Location *** -->
+    <control>
+      <description>Location label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>865</posX>
+      <posY>148</posY>
+      <width>600</width>
+      <label>#(L(716))</label>
+      <font>AvalonLight16</font>
+      <align>left</align>
+      <textcolor>white</textcolor>
+      <visible>string.equals(#WorldWeather.View,Image)</visible>
+    </control>
+    <control>
+      <description>Location label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>865</posX>
+      <posY>199</posY>
+      <width>600</width>
+      <label>#WorldWeather.ForecastDay0Day #WorldWeather.ForecastDay0Date #WorldWeather.TodayTemperature</label>
+      <font>AvalonLight11</font>
+      <align>left</align>
+      <textcolor>white</textcolor>
+      <visible>string.equals(#WorldWeather.View,Image)</visible>
+    </control>
+    <!-- *** Satellite Image *** -->
+    <control>
+      <description>Satellite image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>822</posX>
+      <posY>254</posY>
+      <width>822</width>
+	  <height>520</height>
+      <texture>#WorldWeather.ImageSatellite</texture>
+      <visible>string.equals(#WorldWeather.View,Image)</visible>
+    </control>
+    <!-- *** Satellite Precipitation Image *** -->
+    <control>
+      <description>Satellite image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1644</posX>
+      <posY>254</posY>
+      <width>220</width>
+	  <height>130</height>
+      <texture>#WorldWeather.ImagePrecipitation</texture>
+      <visible>string.equals(#WorldWeather.View,Image)</visible>
+    </control>
+    <!-- *** Satellite Temperature Image *** -->
+    <control>
+      <description>Satellite image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1644</posX>
+      <posY>384</posY>
+      <width>220</width>
+	  <height>130</height>
+      <texture>#WorldWeather.ImageTemperature</texture>
+      <visible>string.equals(#WorldWeather.View,Image)</visible>
+    </control>
+    <!-- *** Satellite Wind Image *** -->
+    <control>
+      <description>Satellite image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1644</posX>
+      <posY>514</posY>
+      <width>220</width>
+	  <height>130</height>
+      <texture>#WorldWeather.ImageWind</texture>
+      <visible>string.equals(#WorldWeather.View,Image)</visible>
+    </control>
+    <!-- *** Satellite UV Image *** -->
+    <control>
+      <description>Satellite image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1644</posX>
+      <posY>644</posY>
+      <width>220</width>
+	  <height>130</height>
+      <texture>#WorldWeather.ImageUVIndex</texture>
+      <visible>string.equals(#WorldWeather.View,Image)</visible>
+    </control>
+  </controls>
+</window>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<allowoverlay>yes</allowoverlay>
+	
+	<controls>
+
+    <!-- *** Location *** -->
+    <control>
+      <description>Location label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>865</posX>
+      <posY>148</posY>
+      <width>600</width>
+      <label>#(L(19100))</label>
+      <font>AvalonLight16</font>
+      <align>left</align>
+      <textcolor>white</textcolor>
+      <visible>string.equals(#WorldWeather.View,GeoClock)</visible>
+    </control>
+    <control>
+      <description>Location label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>865</posX>
+      <posY>199</posY>
+      <width>600</width>
+      <label>#WorldWeather.ForecastDay0Day #WorldWeather.ForecastDay0Date #WorldWeather.TodayTemperature</label>
+      <font>AvalonLight11</font>
+      <align>left</align>
+      <textcolor>white</textcolor>
+      <visible>string.equals(#WorldWeather.View,GeoClock)</visible>
+    </control>
+    <control>
+      <description>GeoClock image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>822</posX>
+      <posY>254</posY>
+      <width>1043</width>
+      <height>606</height>
+      <texture>#WorldWeather.ImageGeoClock</texture>
+      <visible>string.equals(#WorldWeather.View,GeoClock)</visible>
+    </control>
+
+	</controls>
+</window>

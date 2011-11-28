@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>7977</id>
+	<defaultcontrol>8787</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+        <shouldCache>true</shouldCache>
+	</control>
+
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>weather\backgrounds\#WorldWeather.TodayIconNumber.jpg</texture>
+        <shouldCache>true</shouldCache>
+	</control>
+    
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>weather_bg.png</texture>
+        <shouldCache>true</shouldCache>
+	</control>
+	
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1890</width>
+		<height>795</height>
+		<texture>weather_overlay.png</texture>
+        <shouldCache>true</shouldCache>
+	</control>
+	
+	<control>
+		<description>Bottom</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>774</posY>
+		<width>1865</width>
+		<height>151</height>
+		<texture>weather_bottom.png</texture>
+	</control>
+    
+	<import>common.time.xml</import>
+        
+	<control>
+		<description>weather label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>8</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+	</control>
+
+		<!-- *** Buttons *** -->
+		
+		<control>
+			<description>Dummy</description>
+			<type>button</type>
+			<id>8787</id>
+			<posX>-2000</posX>
+			<posY>-2000</posY>
+			<label>-</label>
+			<onup>8787</onup>
+			<ondown>8787</ondown>
+			<onleft>2</onleft>
+			<onright>2</onright>
+		</control>
+		
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>440</posY>
+		<width>64</width>
+		<height>199</height>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>Control.HasFocus(8787) + !string.contains(#Avalon.HiddenMenu, false)</visible>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+	</control>
+		
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>3</defaultcontrol>
+		<onexit>50</onexit>
+		<dimColor>00ffffff</dimColor>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>521</buttonwidth>
+		<buttonheight>1080</buttonheight>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<visible>Control.Hasfocus(2) | Control.Hasfocus(3) | Control.Hasfocus(4)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="400">hidden</animation>
+		</control>
+	
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+			<visible>Control.Hasfocus(2) | Control.Hasfocus(3) | Control.Hasfocus(4)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+		<control>
+			<description>Menu label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>114</posY>
+			<label>924</label>
+			<font>fontB12</font>
+			<textcolor>ffffff</textcolor>
+			<visible>Control.Hasfocus(2) | Control.Hasfocus(3) | Control.Hasfocus(4)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+    	</control>
+          <control>
+            <type>group</type>
+            <description>group element</description>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+			<layout>StackLayout(0, Vertical, true)</layout>
+			<visible>Control.Hasfocus(2) | Control.Hasfocus(3) | Control.Hasfocus(4)</visible>
+				<type>group</type>
+				<description>group element</description>
+				<layout>StackLayout(0, Vertical, true)</layout>
+				<posX>69</posX>
+				<posY>155</posY>
+				<control>
+					<description>Display</description>
+					<type>button</type>
+					<id>2</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<width>497</width>
+					<height>64</height>
+					<textXOff>58</textXOff>
+					<textYOff>14</textYOff>
+
+					<label>Switch View</label>
+					<onup>4</onup>
+					<ondown>3</ondown>
+					<onleft>8787</onleft>
+					<onright>8787</onright>
+				</control>
+				<control>
+					<description>Location</description>
+					<type>button</type>
+					<id>3</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<width>497</width>
+					<height>64</height>
+					<textXOff>58</textXOff>
+					<textYOff>14</textYOff>
+
+					<label>Location</label>
+					<onup>2</onup>
+					<ondown>4</ondown>
+					<onleft>8787</onleft>
+					<onright>8787</onright>
+				</control>
+				<control>
+					<description>Refresh</description>
+					<type>button</type>
+					<id>4</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<width>497</width>
+					<height>64</height>
+					<textXOff>58</textXOff>
+					<textYOff>14</textYOff>
+					<label>Refresh</label>
+					<onup>3</onup>
+					<ondown>2</ondown>
+					<onleft>8787</onleft>
+					<onright>8787</onright>
+				</control>
+			</control>
+		</control>
+		<!-- *** Imports *** -->
+		<import>WorldWeatherCondition.xml</import>
+		<import>WorldWeatherImage.xml</import>
+		<import>WorldWeatherGeoClock.xml</import>
+
+	</controls>
+</window>
