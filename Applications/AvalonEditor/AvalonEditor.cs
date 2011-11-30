@@ -754,9 +754,12 @@ namespace ProcessPlugins.AvalonEditor
             string IsUpdateAvailable = GUIPropertyManager.GetProperty("#Avalon.UpdateAvailable");
 
             bool bReturn6 = false;
+            bool bReturn7 = false;
+            bool bReturn8 = false;
             bool bReturn9 = false;
             bool bReturn10 = false;
             //bool bReturn17 = false;
+
 
             GUIWindow vWindow = GUIWindowManager.GetWindow(GUIWindowManager.ActiveWindow);
             if (vWindow != null)
@@ -764,7 +767,11 @@ namespace ProcessPlugins.AvalonEditor
                 GUIControl control9 = vWindow.GetControl(99999);
                 GUIControl control10 = vWindow.GetControl(3);
 
+                GUIControl control7 = vWindow.GetControl(501);
+                GUIControl control8 = vWindow.GetControl(601);
 
+                bReturn7 = control7.Visible;
+                bReturn8 = control8.Visible;
 
                 bReturn9 = control9.Focus;
                 bReturn10 = control10.Focus;
@@ -820,7 +827,7 @@ namespace ProcessPlugins.AvalonEditor
                 pauseMainMenu = false;
             }
 
-            if (latestMovies1 || latestSeries1 || latestMusic1)
+            if (latestMovies1 || latestSeries1 || latestMusic1 || bReturn7 || bReturn8)
             {
                 string selectedMenu = GUIPropertyManager.GetProperty("#mainmenu");
                 if (selectedMenu == "801") GUIControl.FocusControl(35, 801);
@@ -1137,7 +1144,6 @@ namespace ProcessPlugins.AvalonEditor
                         }
                         GUIGraphicsContext.OnNewAction += new OnActionHandler(AvalonAction);
                         GUIPropertyManager.OnPropertyChanged += new GUIPropertyManager.OnPropertyChangedHandler(GUIPropertyManager_OnPropertyChanged);
-
                     }
                 }
             }
