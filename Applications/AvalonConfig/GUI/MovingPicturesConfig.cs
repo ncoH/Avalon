@@ -194,7 +194,6 @@ namespace AvalonGUIConfig
             {
                 case (int)GUIControls.Style:
                     break;
-
                 case (int)GUIControls.ThumbViewMod:
                     ShowThumbnailContextMenu();
                    break;
