@@ -118,6 +118,9 @@
   <ItemGroup>
     <EmbeddedResource Include="EmbeddedPatches\MP-TVSeries.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedPatches\LatestMediaHandler.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>cd "$(ProjectDir)EmbeddedPatches"
