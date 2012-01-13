@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>2005</id>
-<defaultcontrol>995</defaultcontrol>
+<defaultcontrol>220</defaultcontrol>
 <allowoverlay>no</allowoverlay>
 <controls>
 

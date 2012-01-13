@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>2901</id>
-<defaultcontrol>995</defaultcontrol>
+<defaultcontrol>220</defaultcontrol>
 <allowoverlay>no</allowoverlay>
 <controls>
 	
@@ -254,7 +254,7 @@
 		<type>togglebutton</type>
 		<id>218</id>
 		<posY>963</posY>
-		<posX>1531</posX>
+		<posX>1620</posX>
 		<width>51</width>
 		<height>51</height>
 		<AltTextureFocus>osd_sub_button_focus.png</AltTextureFocus>
@@ -263,8 +263,8 @@
 		<textureNoFocus>osd_sub_button_nofocus.png</textureNoFocus>
 		<label>-</label>
 		<font>-</font>
-		<onleft>995</onleft>
-		<onright>221</onright>
+		<onleft>221</onleft>
+		<onright>220</onright>
 		<onup>218</onup>
 		<ondown>218</ondown>
     </control>
@@ -277,8 +277,8 @@
 		<posX>1578</posX>
 		<width>51</width>
 		<height>51</height>
-		<onleft>218</onleft>
-		<onright>220</onright>
+		<onleft>995</onleft>
+		<onright>218</onright>
 		<ondown>221</ondown>
 		<onup>221</onup>
 		<AltTextureFocus>osd_audio_button_focus.png</AltTextureFocus>
@@ -294,7 +294,7 @@
         <type>togglebutton</type>
         <id>220</id>
 		<posY>963</posY>
-		<posX>1620</posX>
+		<posX>1484</posX>
 		<width>51</width>
 		<height>51</height>
         <AltTextureFocus>osd_video_button_focus.png</AltTextureFocus>
@@ -303,7 +303,7 @@
         <textureNoFocus>osd_video_button_nofocus.png</textureNoFocus>
         <label>-</label>
         <font>-</font>
-        <onleft>221</onleft>
+        <onleft>218</onleft>
         <onright>995</onright>
         <onup>220</onup>
         <ondown>220</ondown>
@@ -312,7 +312,7 @@
 	<control>
 		<description>Info button</description>
 		<posY>963</posY>
-		<posX>1484</posX>
+		<posX>1531</posX>
 		<type>button</type>
 		<id>995</id>
 		<label>-</label>
@@ -320,8 +320,8 @@
 		<textureNoFocus>osd_info_button_nofocus.png</textureNoFocus>
 		<onup>995</onup>
 		<ondown>995</ondown>
-		<onright>218</onright>
-		<onleft>995</onleft>
+		<onright>221</onright>
+		<onleft>220</onleft>
 		<width>51</width>
 		<height>51</height>
 	</control>
