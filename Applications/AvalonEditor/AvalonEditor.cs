@@ -982,7 +982,8 @@ namespace ProcessPlugins.AvalonEditor
                 return;
             }
 
-            if (GUIWindowManager.ActiveWindow == 35) //BasicHome screen
+            if (GUIWindowManager.ActiveWindow == 35 && GUIWindowManager.RoutedWindow == -1) //BasicHome screen and no dialog
+
             {
 
                 numberofitems = ms_headings.Count - 1;
