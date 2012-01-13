@@ -43,7 +43,7 @@
     		<width>500</width>
     		<textcolor>6aa5cb</textcolor>
     		<font>font22</font>
-            <label>14001</label>
+            <label>1020</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
             <animation effect="Fade" time="250">WindowClose</animation>
         </control>
@@ -229,5 +229,6 @@
 			<visible>string.equals(#MPE.Selected.Popular,true)</visible>			
             <texture>status_popular.png</texture>
         </control>
+		<import>common.overlay.home.xml</import>
     </controls>
 </window>

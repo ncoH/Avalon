@@ -205,8 +205,9 @@
                     <description>Update all</description>
                     <type>button</type>
                     <onright>50</onright>
-                    <ondown>90</ondown>
+                    <ondown>9</ondown>
                     <label>#MPEI.Translation.UpdateAll.Label</label>
+					<visible>string.contains(#mpei.updates,.::.)</visible>
     				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
     				<textureNoFocus>-</textureNoFocus>
     				<width>497</width>
@@ -214,6 +215,21 @@
     				<textXOff>58</textXOff>
     				<textYOff>14</textYOff>
                 </control>
+				<control>
+          			<id>9</id>
+          			<description>Check for Updates</description>
+          			<type>button</type>
+          			<onright>50</onright>
+          			<label>#MPEI.Translation.DownloadUpdates.Label</label>
+          			<ondown>2</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+    				<textureNoFocus>-</textureNoFocus>
+    				<width>497</width>
+    				<height>64</height>
+    				<textXOff>58</textXOff>
+    				<textYOff>14</textYOff>
+        		</control>
+				<!--
                 <control>
                     <id>90</id>
                     <description>MPEIUPDATE:a6afa4d6-4fd8-4607-8878-5911db044fd7</description>
@@ -228,7 +244,7 @@
     				<height>64</height>
     				<textXOff>58</textXOff>
     				<textYOff>14</textYOff>
-                </control>
+                </control>-->
             </control>
         </control>
         <control>
@@ -236,7 +252,7 @@
             <type>label</type>
     		<posX>185</posX>
     		<posY>38</posY>
-    		<width>500</width>
+    		<width>600</width>
     		<textcolor>6aa5cb</textcolor>
     		<font>font22</font>
             <label>#MPE.View.Name</label>
@@ -275,7 +291,7 @@
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
         </control>
         
-        <control>
+    <control>
             <id>600</id>
             <description>music logo</description>
             <type>image</type>
@@ -287,7 +303,7 @@
             <overlay>yes</overlay>
             <keepaspectratio>yes</keepaspectratio>
             <centered>yes</centered>
-		    <visible>facadeview.list</visible>
+		    <visible>facadeview.list+Control.HasFocus(50)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
         </control>
@@ -342,7 +358,12 @@
     			<width>1152</width>
 				<textXOff>50</textXOff>
 				<textXOff2>1152</textXOff2>
-				<textureHeight>55</textureHeight>
+				<itemWidth>50</itemWidth>
+          		<itemHeight>50</itemHeight>
+				<IconXOff>12</IconXOff>
+          		<IconYOff>5</IconYOff>
+				<spaceBetweenItems>0</spaceBetweenItems>
+          		<textureHeight>60</textureHeight>
 				<spinCanFocus>no</spinCanFocus>
 				<textureFocus>listcontrol_item_selected_wide.png</textureFocus>
 				<dimColor>ffffffff</dimColor>
@@ -450,5 +471,6 @@
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
         </control>
+		<import>common.overlay.xml</import>
     </controls>
 </window>
