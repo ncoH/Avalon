@@ -105,7 +105,7 @@
 		<height>68</height>
 		<font>AvalonLight14</font>
 		<textalign>center</textalign>
-		<textureFocus>dialog_yesno_red_button_focus.png</textureFocus>
+		<textureFocus>dialog_yesno_black_button_focus.png</textureFocus>
 		<textureNoFocus>-</textureNoFocus>
 		<label>107</label>
 		<onleft>-</onleft>
@@ -129,7 +129,7 @@
 		<height>68</height>
 		<font>AvalonLight14</font>
 		<textalign>center</textalign>
-		<textureFocus>dialog_yesno_black_button_focus.png</textureFocus>
+		<textureFocus>dialog_yesno_red_button_focus.png</textureFocus>
 		<textureNoFocus>-</textureNoFocus>
 		<label>106</label>
 		<onleft>-</onleft>
