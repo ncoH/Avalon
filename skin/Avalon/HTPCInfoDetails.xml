@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+		<!-- *** Graphic Devices *** -->
+		<control>
+			<description>Devices Image</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>605</posX>
+			<posY>160</posY>
+			<width>64</width>
+			<height>64</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>htpcinfo_device.png</texture>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Devices Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>153</posY>
+			<label>#HTPCInfo.TranslationDevices</label>
+			<font>fontB11</font>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Graphic Device Name</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>186</posY>
+			<label>#HTPCInfo.TranslationDisplayDevice (#HTPCInfo.DisplayDeviceCount)</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Graphic Device Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>186</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.DisplayDevice1Description (#HTPCInfo.TranslationDriverVersion #HTPCInfo.DisplayDevice1DriverVersion)</label>
+			<visible>Control.IsVisible(51)  + string.contains(#HTPCInfo.DisplayDeviceCount,1)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Graphic Device nonValue</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>186</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.TranslationInactive</label>
+			<visible>Control.IsVisible(51) + string.contains(#HTPCInfo.DisplayDeviceCount,0)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>			
+
+		<!-- *** TV Devices *** -->
+		<control>
+			<description>TV Device Name</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>222</posY>
+			<label>#HTPCInfo.TranslationTVDevice (#HTPCInfo.TVDeviceCount)</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>TV device Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>222</posY>
+			<type>fadelabel</type>
+			<width>900</width>			
+			<font>font10</font>
+			<label>#HTPCInfo.TVDevice1Name - #HTPCInfo.TranslateTVDeviceType #HTPCInfo.TVDevice1Type - #HTPCInfo.TVDevice1Enabled - #HTPCInfo.TranslateTVDeviceSignalQuality #HTPCInfo.TVDevice1SignalQuality</label>
+			<visible>Control.IsVisible(51) + string.contains(#HTPCInfo.TVDeviceCount,1)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>TV device Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<type>fadelabel</type>
+			<width>900</width>			
+			<posY>250</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.TVDevice2Name - #HTPCInfo.TranslateTVDeviceType #HTPCInfo.TVDevice2Type -  #HTPCInfo.TVDevice2Enabled  - #HTPCInfo.TranslateTVDeviceSignalQuality #HTPCInfo.TVDevice2SignalQuality</label>
+			<visible>Control.IsVisible(51) + [string.contains(#HTPCInfo.TVDeviceCount,1)|string.contains(#HTPCInfo.TVDeviceCount,2)]</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>TV device nonValue</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>222</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.TranslationInactive</label>
+			<visible>Control.IsVisible(51) + string.contains(#HTPCInfo.TVDeviceCount,0)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>				
+
+		<!-- *** Keyboard Devices *** -->
+		<control>
+			<description>Keyboard Device Name</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>280</posY>
+			<label>#HTPCInfo.TranslationKeyboardDevice (#HTPCInfo.KeyboardDeviceCount)</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Keyboard Device Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>280</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.KeyboardDevice1Name</label>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<!-- *** Pointing Devices *** -->
+		<control>
+			<description>Pointing Device Name</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>320</posY>
+			<label>#HTPCInfo.TranslationPointingDevice (#HTPCInfo.PointingDeviceCount)</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Pointing Device Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>320</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.PointingDevice1Name (#HTPCInfo.PointingDevice1Manufacturer)</label>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Pointing Device Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>350</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.PointingDevice2Name (#HTPCInfo.PointingDevice2Manufacturer)</label>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<!-- *** Sound Devices *** -->
+		<control>
+			<description>Sound Device Name</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>390</posY>
+			<label>#HTPCInfo.TranslationSoundDevice (#HTPCInfo.SoundDeviceCount)</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Sound Device Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>390</posY>
+			<font>font10</font>
+			<width>900</width>
+			<label>#HTPCInfo.SoundDevice1Name (#HTPCInfo.SoundDevice1Manufacturer) - #HTPCInfo.SoundDevice2Name (#HTPCInfo.SoundDevice2Manufacturer)</label>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<!-- *** Network Devices *** -->
+		<control>
+			<description>Network Device Name</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>420</posY>
+			<label>#HTPCInfo.TranslationNetworkDevice (#HTPCInfo.NetworkDeviceCount)</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Network Device Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<width>900</width>
+			<posY>420</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.NetworkDevice1Description (#HTPCInfo.NetworkDevice1Manufacturer) #HTPCInfo.NetworkDevice1Type - #HTPCInfo.NetworkDevice2Description (#HTPCInfo.NetworkDevice2Manufacturer) #HTPCInfo.NetworkDevice2Type - #HTPCInfo.NetworkDevice3Description (#HTPCInfo.NetworkDevice3Manufacturer) #HTPCInfo.NetworkDevice3Type</label>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<!-- *** Drive Devices *** -->
+		<control>
+			<description>Netvork Device Name</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>450</posY>
+			<label>#HTPCInfo.TranslationNetwork#HTPCInfo.TranslationDrive</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Network Drive Device Value</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>450</posY>
+			<width>900</width>
+			<font>font10</font>
+			<label>#HTPCInfo.SharedDrive1Name - #HTPCInfo.SharedDrive1UsedSpace/#HTPCInfo.SharedDrive1Size - #HTPCInfo.SharedDrive1PercentFreeSpace% #HTPCInfo.TranslationFree</label>
+			<visible>Control.IsVisible(51) + !string.equals(#HTPCInfo.SharedDrive1Name, )</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Network Drive 2 Device Value</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>480</posY>
+			<width>900</width>
+			<font>font10</font>
+			<label>#HTPCInfo.SharedDrive2Name - #HTPCInfo.SharedDrive2UsedSpace/#HTPCInfo.SharedDrive1Size - #HTPCInfo.SharedDrive2PercentFreeSpace% #HTPCInfo.TranslationFree</label>
+			<visible>Control.IsVisible(51) + !string.equals(#HTPCInfo.SharedDrive2Name, )</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>NetworkDrive 3 Device Value</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>510</posY>
+			<width>900</width>
+			<font>font10</font>
+			<label>#HTPCInfo.SharedDrive3Name - #HTPCInfo.SharedDrive3UsedSpace/#HTPCInfo.SharedDrive3Size - #HTPCInfo.SharedDrive3PercentFreeSpace% #HTPCInfo.TranslationFree</label>
+			<visible>Control.IsVisible(51) + !string.equals(#HTPCInfo.SharedDrive3Name, )</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>NetworkDrive 4 Device Value</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>540</posY>
+			<width>900</width>
+			<font>font10</font>
+			<label>#HTPCInfo.SharedDrive4Name - #HTPCInfo.SharedDrive4UsedSpace/#HTPCInfo.SharedDrive4Size - #HTPCInfo.SharedDrive4PercentFreeSpace% #HTPCInfo.TranslationFree</label>
+			<visible>Control.IsVisible(51) + !string.equals(#HTPCInfo.SharedDrive4Name, )</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>		
+
+		<!-- *** Optical Drive *** -->
+		<control>
+			<description>Optical Drive Name</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>570</posY>
+			<label>#HTPCInfo.TranslationOpticalDriveDevice (#HTPCInfo.OpticalDriveCount)</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Optical Device Value</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>570</posY>
+			<width>900</width>
+			<font>font10</font>
+			<label>#HTPCInfo.OpticalDrive1Description (#HTPCInfo.OpticalDrive1Type) - #HTPCInfo.OpticalDrive2Description (#HTPCInfo.OpticalDrive2Type)</label>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<!-- *** Clients *** -->
+		<control>
+			<description>Clients Image</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>605</posX>
+			<posY>610</posY>
+			<width>64</width>
+			<height>64</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>htpcinfo_client.png</texture>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Clients</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>600</posY>
+			<label>#HTPCInfo.TranslationTVClient</label>
+			<font>fontB11</font>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Client Name</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>630</posY>
+			<label>#HTPCInfo.TranslationTVClient (#HTPCInfo.TVClientCount)</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Client Value</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>630</posY>
+			<width>900</width>
+			<font>font10</font>
+			<label>#HTPCInfo.TVClient1Name (#HTPCInfo.TVClient1IPAddress), #HTPCInfo.TVClient1Stream (#HTPCInfo.TranslationActive #HTPCInfo.TVClient1Active) - #HTPCInfo.TVClient2Name (#HTPCInfo.TVClient2IPAddress), #HTPCInfo.TVClient2Stream (#HTPCInfo.TranslationActive #HTPCInfo.TVClient2Active) - #HTPCInfo.TVClient3Name (#HTPCInfo.TVClient3IPAddress), #HTPCInfo.TVClient3Stream (#HTPCInfo.TranslationActive #HTPCInfo.TVClient3Active)</label>
+			<visible>Control.IsVisible(51) + !string.contains(#HTPCInfo.TVClientCount,0)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Client nonValue</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>630</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.TranslationInactive</label>
+			<visible>Control.IsVisible(51) + string.contains(#HTPCInfo.TVClientCount,0)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		
+		<!-- *** Server *** -->
+		<control>
+			<description>Server</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>660</posY>
+			<label>#HTPCInfo.TranslationTVServer</label>
+			<font>fontB11</font>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Server Name</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>690</posY>
+			<label>#HTPCInfo.TranslationTVServer (#HTPCInfo.TVDeviceCount)</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Server Value</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>690</posY>
+			<width>900</width>
+			<font>font10</font>
+			<label>#HTPCInfo.TVServerDescription, #HTPCInfo.TranslationTVServerIPAdresse #HTPCInfo.TVServerIPAdresse</label>
+			<visible>Control.IsVisible(51) + !string.contains(#HTPCInfo.TVClientCount,0)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Client nonValue</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>690</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.TranslationInactive</label>
+			<visible>Control.IsVisible(51) + string.contains(#HTPCInfo.TVClientCount,0)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		
+		
+		<!-- *** Codecs *** -->
+		<control>
+			<description>Codecs Image</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>605</posX>
+			<posY>730</posY>
+			<width>64</width>
+			<height>64</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>htpcinfo_codec.png</texture>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Codecs Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>720</posY>
+			<label>Codecs</label>
+			<font>fontB11</font>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Codec Name</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>750</posY>
+			<label>Codecs (#HTPCInfo.CodecCount)</label>
+			<font>font101</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Codec Value</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>930</posX>
+			<width>900</width>
+			<posY>750</posY>
+			<font>font101</font>
+			<label>#HTPCInfo.Codec1Description #HTPCInfo.TranslationVersion #HTPCInfo.Codec1Version - #HTPCInfo.Codec2Description #HTPCInfo.TranslationVersion #HTPCInfo.Codec2Version - #HTPCInfo.Codec3Description #HTPCInfo.TranslationVersion #HTPCInfo.Codec3Version</label>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+	</controls>
+</window>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>7972</id>
+<defaultcontrol>6</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<controls>
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+	<control>
+		<description>viewport list</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>795</height>
+		<texture>viewport_settings.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>		
+	</control>	
+	<control>
+		<type>label</type>
+		<description>HTPC label</description>
+		<id>121</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>HTPCInfo - #HTPCInfo.SectionName</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+		<animation effect="Fade" time="250">WindowOpen</animation>
+		<animation effect="Fade" time="250">WindowClose</animation>		
+	</control>
+	
+		<!-- *** Buttons *** -->
+		<control>
+			<type>group</type>
+			<description>group element</description>
+			<layout>StackLayout</layout>
+			<posX>130</posX>
+			<posY>156</posY>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+			<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+			<layout>StackLayout(0, Vertical, true)</layout>
+			<control>
+				<description>Section</description>
+				<type>button</type>
+				<id>6</id>
+				<onup>10</onup>
+				<ondown>2</ondown>
+				<width>375</width>
+			</control>
+			<control>
+				<description>Flush Memory</description>
+				<type>button</type>
+				<id>2</id>
+				<label>Flush Memory</label>
+				<onup>6</onup>
+				<ondown>8</ondown>
+				<width>375</width>
+			</control>
+			<control>
+				<description>Flush Caches</description>
+				<type>button</type>
+				<id>8</id>
+				<label>Flush Memory</label>
+				<onup>2</onup>
+				<ondown>3</ondown>
+				<width>375</width>
+			</control>
+			<control>
+				<description>Empty Recycle Bin</description>
+				<type>button</type>
+				<id>3</id>
+				<label>Empty Recycle Bin</label>
+				<onup>8</onup>
+				<ondown>4</ondown>
+				<width>375</width>
+			</control>
+			<control>
+				<description>Kill Not Responding Processes</description>
+				<type>button</type>
+				<id>4</id>
+				<label>Kill Not Responding Processes</label>
+				<onup>3</onup>
+				<ondown>5</ondown>
+				<width>375</width>
+			</control>
+			<control>
+				<description>Synchronize Time</description>
+				<type>button</type>
+				<id>5</id>
+				<label>Synchronize Time</label>
+				<onup>4</onup>
+				<ondown>7</ondown>
+				<width>375</width>
+			</control>
+			<control>
+				<description>Wake On LAN</description>
+				<type>button</type>
+				<id>7</id>
+				<label>Wake On LAN</label>
+				<onup>5</onup>
+				<ondown>9</ondown>
+				<width>375</width>
+			</control>
+			<control>
+				<description>Safely Remove USB</description>
+				<type>button</type>
+				<id>9</id>
+				<label>Safely Remove</label>
+				<onup>7</onup>
+				<ondown>10</ondown>
+				<width>375</width>
+			</control>
+			<control>
+				<description>Create Restore Point</description>
+				<type>button</type>
+				<id>10</id>
+				<label>Create Restore Point</label>
+				<onup>9</onup>
+				<ondown>6</ondown>
+				<width>375</width>
+			</control>
+		</control>
+
+
+		<!-- *** Sections Label*** -->
+
+		<control>
+			<description>Section Overview</description>
+			<type>label</type>
+			<id>50</id>
+			<posX>-185</posX>
+			<posY>95</posY>
+			<label>#HTPCInfo.SectionName</label>
+			<font>AvalonLight14</font>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" time="500">WindowOpen</animation>
+			<animation effect="fade" time="500">WindowClose</animation>
+		</control>
+		<control>
+			<description>Section Details</description>
+			<type>label</type>
+			<id>51</id>
+			<posX>-185</posX>
+			<posY>95</posY>
+			<label>#HTPCInfo.SectionName</label>
+			<font>AvalonLight14</font>
+			<visible>Control.IsVisible(51)</visible>
+			<animation effect="fade" time="500">WindowOpen</animation>
+			<animation effect="fade" time="500">WindowClose</animation>
+		</control>
+		<control>
+			<description>Section Gauges</description>
+			<type>label</type>
+			<id>52</id>
+			<posX>-185</posX>
+			<posY>95</posY>
+			<label>#HTPCInfo.SectionName</label>
+			<font>AvalonLight14</font>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" time="500">WindowOpen</animation>
+			<animation effect="fade" time="500">WindowClose</animation>
+		</control>
+		<control>
+			<description>Section Progressbars</description>
+			<type>label</type>
+			<id>53</id>
+			<posX>-185</posX>
+			<posY>95</posY>
+			<label>#HTPCInfo.SectionName</label>
+			<font>AvalonLight14</font>
+			<visible>Control.IsVisible(53)</visible>
+			<animation effect="fade" time="500">WindowOpen</animation>
+			<animation effect="fade" time="500">WindowClose</animation>
+		</control>
+		<control>
+			<description>Section Self designed</description>
+			<type>label</type>
+			<id>54</id>
+			<posX>-185</posX>
+			<posY>95</posY>
+			<label></label>
+			<font>AvalonLight14</font>
+			<visible>Control.IsVisible(54)</visible>
+			<animation effect="fade" time="500">WindowOpen</animation>
+			<animation effect="fade" time="500">WindowClose</animation>
+		</control>
+
+	<!-- *** Section Import *** -->
+	<import>HTPCInfoOverview.xml</import>
+	<import>HTPCInfoDetails.xml</import>
+	<import>HTPCInfoGauges.xml</import>
+	<import>HTPCInfoSummary.xml</import>
+	<import>common.overlay.home.xml</import>	
+	<import>common.time.xml</import>
+	</controls>
+</window>

@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+
+		<!-- *** HTPC Machine Info *** -->
+		<control>
+			<description>Machine Image</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>605</posX>
+			<posY>160</posY>
+			<width>64</width>
+			<height>64</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>htpcinfo_computer.png</texture>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Machine</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>153</posY>
+			<label>#HTPCInfo.TranslationMachine</label>
+			<font>fontB11</font>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Machine Name</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>188</posY>
+			<label>#HTPCInfo.TranslationMachineName</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Machine Name Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>188</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.MachineName</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Model</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>218</posY>
+			<label>Model</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Model Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>218</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.Model (#HTPCInfo.MotherboardManufacturer), #HTPCInfo.SystemType</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>BIOS</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>248</posY>
+			<label>#HTPCInfo.TranslationMachineBIOS</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>BIOS Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>248</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.BIOSManufacturer, #HTPCInfo.BIOSDescription</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Processor</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>278</posY>
+			<label>#HTPCInfo.TranslationProcessor</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Processor Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>278</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.ProcessorCount Processor(s) (#HTPCInfo.ProcessorManufacturer), #HTPCInfo.ProcessorDescription</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>User Name</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>308</posY>
+			<label>#HTPCInfo.TranslationUserName</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>User Name Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>308</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.UserName (#HTPCInfo.UserDomainName)</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		
+		<!-- *** System Information *** -->
+        <control>
+			<description>System Image</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>605</posX>
+			<posY>360</posY>
+			<width>64</width>
+			<height>64</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>#HTPCInfo.OSVersionImage</texture>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+        <control>
+			<description>System</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>350</posY>
+			<label>#HTPCInfo.TranslationSystem</label>
+			<font>fontB11</font>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>OS Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>385</posY>
+			<label>#HTPCInfo.TranslationOS</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>OS Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>385</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.OSDescription, #HTPCInfo.OSServicePack</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>CPU Usage</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>415</posY>
+			<label>#HTPCInfo.TranslationProcessorUsage</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>CPU Usage Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>415</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.ProcessorUsage %</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Memory Usage</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>445</posY>
+			<label>#HTPCInfo.TranslationMemory</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Memory Usage Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>445</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.MemoryAvailable / #HTPCInfo.MemoryPhysical (#HTPCInfo.PagefileUsed% #HTPCInfo.TranslationMemoryPagefileUsage)</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Disk Usage</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>475</posY>
+			<label>#HTPCInfo.TranslationDrive 00</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Disk Usage Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>475</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.TranslationDriveSize #HTPCInfo.Drive1Size / #HTPCInfo.TranslationFree #HTPCInfo.Drive1FreeSpace</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Disk Usage</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>505</posY>
+			<label>#HTPCInfo.TranslationDrive 01</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>>
+		</control>
+		<control>
+			<description>Disk Usage Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>505</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.TranslationDriveSize #HTPCInfo.Drive2Size / #HTPCInfo.TranslationFree #HTPCInfo.Drive2FreeSpace</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<!-- *** Sensor Informations *** -->
+		<control>
+			<description>Sensor Image</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>605</posX>
+			<posY>560</posY>
+			<width>64</width>
+			<height>64</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>htpcinfo_sensor.png</texture>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Sensor Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>555</posY>
+			<label>#HTPCInfo.TranslationSensor</label>
+			<font>fontB11</font>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Temperature Sensors</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>590</posY>
+			<label>#HTPCInfo.TranslationSensorTemperature</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Temperature Sensors Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>590</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.TranslationSensorTypeSystem #HTPCInfo.SensorTemperature0, #HTPCInfo.TranslationSensorTypeProcessor #HTPCInfo.SensorTemperature1, #HTPCInfo.TranslationSensorTypeAuxiliary #HTPCInfo.SensorTemperature2, #HTPCInfo.TranslationSensorTypeHarddisk0 #HTPCInfo.SensorTemperature3, #HTPCInfo.TranslationSensorTypeHarddisk1 #HTPCInfo.SensorTemperature4</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Fan Sensors</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>620</posY>
+			<label>#HTPCInfo.TranslationSensorFan</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Fan Sensors Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>620</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.TranslationSensorTypeSystem #HTPCInfo.SensorFan0, #HTPCInfo.TranslationSensorTypeProcessor #HTPCInfo.SensorFan1, #HTPCInfo.TranslationSensorTypeAuxiliary0 #HTPCInfo.SensorFan2</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Voltage Sensors</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>650</posY>
+			<label>#HTPCInfo.TranslationSensorVoltage</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Voltage Sensors Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>650</posY>
+			<font>font10</font>
+			<label>Vcore #HTPCInfo.SensorVoltage0, +12v #HTPCInfo.SensorVoltage1, AVcc #HTPCInfo.SensorVoltage2</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<!-- *** Network Information *** -->
+		<control>
+			<description>Network Image</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>605</posX>
+			<posY>710</posY>
+			<width>64</width>
+			<height>64</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>htpcinfo_networkcard.png</texture>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Network Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>695</posY>
+			<label>#HTPCInfo.TranslationNetwork</label>
+			<font>fontB11</font>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		
+		<control>
+			<description>Workgroup</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>730</posY>
+			<label>#HTPCInfo.TranslationNetworkGroup</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Workgroup Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>730</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.NetworkWorkgroup, Server Mode #HTPCInfo.NetworkServerModeIsEnabled</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Internal/External IP</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>760</posY>
+			<label>#HTPCInfo.TranslationNetworkIPAddress</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Internal/External Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>760</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.NetworkIPv4Address1 / #HTPCInfo.NetworkExternalIPAddress (IPv6 support #HTPCInfo.NetworkIPv6Enabled)</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Network Traffic</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>700</posX>
+			<posY>790</posY>
+			<label>#HTPCInfo.TranslationNetworkTraffic</label>
+			<font>font10</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Network Traffic Value</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>930</posX>
+			<posY>790</posY>
+			<font>font10</font>
+			<label>#HTPCInfo.NetworkSent KBytes #HTPCInfo.TranslationNetworkSent / #HTPCInfo.NetworkReceived KBytes #HTPCInfo.TranslationNetworkReceived</label>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+	</controls>
+</window>

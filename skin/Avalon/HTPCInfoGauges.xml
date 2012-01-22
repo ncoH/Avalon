@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<!-- *** Section Gauges *** -->
+		<!-- *** Processor Gauge *** -->
+		<control>
+			<description>Processor Gauge</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>630</posX>
+			<posY>150</posY>
+			<width>180</width>
+			<height>162</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>#HTPCInfo.ProcessorGauge</texture>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<!-- *** Processor Gauge Label *** -->
+		<control>
+			<description>Processor Gauge Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>610</posX>
+			<posY>325</posY>
+			<width>225</width>
+			<label>#HTPCInfo.TranslationProcessor</label>
+			<font>AvalonLight14</font>
+			<align>center</align>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<!-- *** Processor Usage *** -->
+		<control>
+			<description>Processor Usage Label</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>887</posX>
+			<posY>165</posY>
+			<width>285</width>
+			<label>#HTPCInfo.TranslationProcessorUsage</label>
+			<font>AvalonLight14</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Processor Usage</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1187</posX>
+			<posY>165</posY>
+			<width>750</width>
+			<label>#HTPCInfo.ProcessorUsage%</label>
+			<font>AvalonLight14</font>
+			<textcolor>FFffffff</textcolor>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<!-- *** Label Processor Core Count *** -->
+		<control>
+			<description>Processor Core Count Label</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>887</posX>
+			<posY>205</posY>
+			<width>285</width>
+			<label>#HTPCInfo.TranslationProcessorBrand</label>
+			<font>AvalonLight14</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Processor Core Count</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>1187</posX>
+			<posY>205</posY>
+			<width>650</width>
+			<label>#HTPCInfo.ProcessorCores x #HTPCInfo.ProcessorMaximumClock  #HTPCInfo.ProcessorManufacturer  @ #HTPCInfo.ProcessorCurrentClock</label>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<textcolor>FFffffff</textcolor>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<!-- *** Label Processor Version *** -->
+		<control>
+			<description>Processor Version</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>887</posX>
+			<posY>245</posY>
+			<width>285</width>
+			<label>#HTPCInfo.TranslationProcessorType</label>
+			<font>AvalonLight14</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Processor Version</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>1187</posX>
+			<posY>245</posY>
+			<width>650</width>
+			<label>#HTPCInfo.ProcessorVersion</label>
+			<font>AvalonLight14</font>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>		
+		<!-- *** Label Processor Info *** -->
+		<control>
+			<description>Processor Version</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>887</posX>
+			<posY>285</posY>
+			<width>285</width>
+			<label>#HTPCInfo.TranslationProcessorInfo</label>
+			<font>AvalonLight14</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Processor Version</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>1187</posX>
+			<posY>285</posY>
+			<width>650</width>
+			<label>#HTPCInfo.TranslationSensorTemperature : #HTPCInfo.SensorTemperature1 / +12v : #HTPCInfo.TranslationSensorVoltage1 / #HTPCInfo.TranslationSensorFan : #HTPCInfo.SensorFan1</label>
+			<font>AvalonLight14</font>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<!-- *** Memory Gauge *** -->
+		<control>
+			<description>Memory Gauge Image</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>630</posX>
+			<posY>350</posY>
+			<width>180</width>
+			<height>162</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>#HTPCInfo.MemoryGauge</texture>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<!-- *** Label Memory Gauge *** -->
+		<control>
+			<description>Memory Gauge Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>610</posX>
+			<posY>525</posY>
+			<width>225</width>
+			<label>#HTPCInfo.TranslationMemory</label>
+			<align>center</align>
+			<font>AvalonLight14</font>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<!-- *** Memory Size *** -->
+		<control>
+			<description>Memory Size Label</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>887</posX>
+			<posY>375</posY>
+			<width>285</width>
+			<label>#HTPCInfo.TranslationMemorySize</label>
+			<font>AvalonLight14</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Memory Size</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1187</posX>
+			<posY>375</posY>
+			<width>750</width>
+			<label>#HTPCInfo.MemoryPhysical</label>
+			<align>left</align>
+			<font>AvalonLight14</font>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<!-- *** Memory Usage *** -->
+		<control>
+			<description>Memory Usage Label</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>887</posX>
+			<posY>415</posY>
+			<width>285</width>
+			<label>#HTPCInfo.TranslationMemoryUsage</label>
+			<font>AvalonLight14</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Memory Usage</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>1187</posX>
+			<posY>415</posY>
+			<width>650</width>
+			<label>#HTPCInfo.MemoryPercentUsed % / #HTPCInfo.MemoryAvailable</label>
+			<font>AvalonLight14</font>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<!-- *** Pagefile Usage *** -->
+		<control>
+			<description>Pagefile Usage Label</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>887</posX>
+			<posY>455</posY>
+			<width>285</width>
+			<label>#HTPCInfo.TranslationMemoryPagefileUsage</label>
+			<font>AvalonLight14</font>
+			<textcolor>85CFFE</textcolor>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Pagefile Usage</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1187</posX>
+			<posY>455</posY>
+			<width>600</width>
+			<label>#HTPCInfo.PagefileUsed%</label>
+			<font>AvalonLight14</font>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<!-- *** Drive Gauges *** -->
+		<!-- *** Drive1 Gauge Label *** -->
+		<control>
+			<description>Drive1 Gauge Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>720</posX>
+			<posY>555</posY>
+			<width>450</width>
+			<label>C: #HTPCInfo.TranslationDrive</label>
+			<font>AvalonLight12</font>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Drive1 Gauge</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>685</posX>
+			<posY>590</posY>
+			<width>167</width>
+			<height>150</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>#HTPCInfo.Drive1Gauge</texture>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<!-- *** Drive2 Gauge Label *** -->
+		<control>
+			<description>Drive2 Gauge Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1020</posX>
+			<posY>555</posY>
+			<width>300</width>
+			<label>D: #HTPCInfo.TranslationDrive</label>
+			<font>AvalonLight12</font>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Drive2 Gauge</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>985</posX>
+			<posY>590</posY>
+			<width>167</width>
+			<height>150</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>#HTPCInfo.Drive2Gauge</texture>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<!-- *** Drive3 Gauge Label *** -->
+		<control>
+			<description>Drive3 Gauge Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1320</posX>
+			<posY>555</posY>
+			<width>300</width>
+			<label>E: #HTPCInfo.TranslationDrive</label>
+			<font>AvalonLight12</font>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Drive3 Gauge</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>1285</posX>
+			<posY>590</posY>
+			<width>167</width>
+			<height>150</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>#HTPCInfo.Drive3Gauge</texture>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<!-- *** Drive4 Gauge Label *** -->
+		<control>
+			<description>Drive4 Gauge Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1620</posX>
+			<posY>555</posY>
+			<width>300</width>
+			<label>F: #HTPCInfo.TranslationDrive</label>
+			<font>AvalonLight12</font>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Drive4 Gauge</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>1585</posX>
+			<posY>590</posY>
+			<width>167</width>
+			<height>150</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<texture>#HTPCInfo.Drive4Gauge</texture>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<!-- *** Drive Gauges Ends *** -->		
+
+		<!-- *** Drive Usage *** -->
+		<control>
+			<description>Drive C Usage Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>620</posX>
+			<posY>755</posY>
+			<width>300</width>
+			<label>#HTPCInfo.TranslationDriveSize #HTPCInfo.Drive1Size</label>
+			<font>font10</font>
+			<textcolor>FFffffff</textcolor>
+			<align>center</align>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Drive C Usage</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>620</posX>
+			<posY>785</posY>
+			<width>300</width>
+			<label>#HTPCInfo.TranslationFree #HTPCInfo.Drive1FreeSpace</label>
+			<font>font10</font>
+			<textcolor>FFffffff</textcolor>
+			<align>center</align>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Drive C Usage</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>620</posX>
+			<posY>815</posY>
+			<width>300</width>
+			<label>#HTPCInfo.TranslationDriveUsage #HTPCInfo.Drive1PercentUsedSpace%</label>
+			<font>font10</font>
+			<textcolor>FFffffff</textcolor>
+			<align>center</align>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Drive D Usage Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>920</posX>
+			<posY>755</posY>
+			<width>300</width>
+			<label>#HTPCInfo.TranslationDriveSize #HTPCInfo.Drive2Size</label>
+			<font>font10</font>
+			<textcolor>FFffffff</textcolor>
+			<align>center</align>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Drive D Usage</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>920</posX>
+			<posY>785</posY>
+			<width>300</width>
+			<label>#HTPCInfo.TranslationFree #HTPCInfo.Drive2FreeSpace</label>
+			<font>font10</font>
+			<textcolor>FFffffff</textcolor>
+			<align>center</align>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Drive D Usage</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>920</posX>
+			<posY>815</posY>
+			<width>300</width>
+			<label>#HTPCInfo.TranslationDriveUsage #HTPCInfo.Drive2PercentUsedSpace%</label>
+			<font>font10</font>
+			<textcolor>FFffffff</textcolor>
+			<align>center</align>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		
+		<control>
+			<description>Drive E Usage Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1220</posX>
+			<posY>755</posY>
+			<width>300</width>
+			<label>#HTPCInfo.TranslationDriveSize #HTPCInfo.Drive3Size</label>
+			<font>font10</font>
+			<textcolor>FFffffff</textcolor>
+			<align>center</align>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Drive E Usage</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1220</posX>
+			<posY>785</posY>
+			<width>300</width>
+			<label>#HTPCInfo.TranslationFree #HTPCInfo.Drive3FreeSpace</label>
+			<font>font10</font>
+			<textcolor>FFffffff</textcolor>
+			<align>center</align>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Drive E Usage</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1220</posX>
+			<posY>815</posY>
+			<width>300</width>
+			<label>#HTPCInfo.TranslationDriveUsage #HTPCInfo.Drive3PercentUsedSpace%</label>
+			<font>font10</font>
+			<textcolor>FFffffff</textcolor>
+			<align>center</align>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		
+		<control>
+			<description>Drive F Usage Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1520</posX>
+			<posY>755</posY>
+			<width>300</width>
+			<label>#HTPCInfo.TranslationDriveSize #HTPCInfo.Drive4Size</label>
+			<font>font10</font>
+			<textcolor>FFffffff</textcolor>
+			<align>center</align>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Drive F Usage</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1520</posX>
+			<posY>785</posY>
+			<width>300</width>
+			<label>#HTPCInfo.TranslationFree #HTPCInfo.Drive4FreeSpace</label>
+			<font>font10</font>
+			<textcolor>FFffffff</textcolor>
+			<align>center</align>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		<control>
+			<description>Drive F Usage</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1520</posX>
+			<posY>815</posY>
+			<width>300</width>
+			<label>#HTPCInfo.TranslationDriveUsage #HTPCInfo.Drive4PercentUsedSpace%</label>
+			<font>font10</font>
+			<textcolor>FFffffff</textcolor>
+			<align>center</align>
+			<visible>Control.IsVisible(52)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+	</controls>
+</window>
