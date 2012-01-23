@@ -47,7 +47,7 @@
 		<type>group</type>
 		<posX>130</posX>
 		<posY>156</posY>
-		<layout>StackLayout</layout>
+		<layout>StackLayout(0, Vertical, true)</layout>
 		
 		<control>
 			<description>General</description>
