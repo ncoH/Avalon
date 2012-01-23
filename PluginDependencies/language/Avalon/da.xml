@@ -72,6 +72,7 @@
   <string Field="ListColorInvalidLine2">gyldig HEX kode, f.eks. er farven rød FF0000.</string>
   <string Field="ListColorInvalidLine3">hvor '255' er rød, '0' grøn, og '0' blå.</string>
   <string Field="CustomColor">Bruger farver</string>
+  <string Field="UseWeatherInfoservice">Use Infoservice for Weather on BasicHome (BBC Weather plugin)</string>
   <!-- TV -->
   <string Field="Recording">Optager</string>
   <!-- TVSeries -->
@@ -125,4 +126,5 @@
   <string Field="Lastplayed">Sidst afspillet</string>
   <string Field="Filename">Filenavn</string>
   <string Field="Playcount">Antal gange afspillet</string>  
+  <string Field="Home">Home</string> 
 </strings>

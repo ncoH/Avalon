@@ -92,15 +92,27 @@
         <onleft>10011</onleft>
         <onright>4</onright>
         <onup>5</onup>
-        <ondown>6</ondown>
+        <ondown>10</ondown>
       </control>
       
+      <control Style="SettingsToggleLarge">
+        <description>Weather data Settings</description>
+        <type>togglebutton</type>
+        <id>10</id>
+		<posX>736</posX>
+		<posY>584</posY>
+        <onleft>10011</onleft>
+        <onright>4</onright>
+        <onup>7</onup>
+        <ondown>6</ondown>
+      </control>
+	  
       <control Style="SettingsButtonLarge">
         <description>Transparency/Opacity Settings</description>
         <type>button</type>
         <id>6</id>
 		<posX>736</posX>
-		<posY>584</posY>
+		<posY>636</posY>
         <onleft>10011</onleft>
         <onright>4</onright>
         <onup>7</onup>
@@ -112,7 +124,7 @@
         <type>button</type>
         <id>8</id>
 		<posX>736</posX>
-		<posY>636</posY>
+		<posY>688</posY>
         <onleft>10011</onleft>
         <onright>4</onright>
         <onup>6</onup>
@@ -124,13 +136,12 @@
         <type>button</type>
         <id>9</id>
 		<posX>736</posX>
-		<posY>688</posY>
+		<posY>740</posY>
         <onleft>10011</onleft>
         <onright>4</onright>
         <onup>8</onup>
         <ondown>2</ondown>
       </control>
-      
 <import>common.time.xml</import>
 <import>avalon.version.xml</import>
   </controls>

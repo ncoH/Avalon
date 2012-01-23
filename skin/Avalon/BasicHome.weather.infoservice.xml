@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+    <control>
+      <description>GROUP: BasicHome 5 Day Weather Forecast</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>plugin.isenabled(InfoService) + !string.contains(#Avalon.5DayWeather, false)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <control>
+        <description>Weather BG</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>678</posX>
+        <posY>916</posY>
+        <width>1186</width>
+        <height>137</height>
+        <texture>basichome_weather_bg.png</texture>
+      </control>
+
+      <control Style="InfoLabel">
+        <description>Weather 5th name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1715</posX>
+        <posY>960</posY>
+        <label>#infoservice.weather.forecast5.weekday</label>
+      </control>
+	  
+      <control>
+        <description>Weather 5th value</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1715</posX>
+        <posY>996</posY>
+		<align>left</align>
+        <label>#infoservice.weather.forecast5.maxtemp</label>
+        <font>fontB14</font>
+        <textcolor>6aa5cb</textcolor>
+      </control>
+	  
+     <control Style="InfoLabel">
+        <description>Weather 4th name</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1525</posX>
+        <posY>960</posY>
+        <label>#infoservice.weather.forecast4.weekday</label>
+      </control>
+	  
+      <control>
+        <description>Weather 4th value</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1525</posX>
+        <posY>996</posY>
+		<align>left</align>
+        <label>#infoservice.weather.forecast4.maxtemp</label>
+        <font>fontB14</font>
+        <textcolor>6aa5cb</textcolor>
+      </control>
+	  
+     <control Style="InfoLabel">
+        <description>Weather 3th name</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1339</posX>
+        <posY>960</posY>
+        <label>#infoservice.weather.forecast3.weekday</label>
+      </control>
+	  
+      <control>
+        <description>Weather 3th value</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1339</posX>
+        <posY>996</posY>
+		<align>left</align>
+        <label>#infoservice.weather.forecast3.maxtemp</label>
+        <font>fontB14</font>
+        <textcolor>6aa5cb</textcolor>
+      </control>
+	  
+     <control Style="InfoLabel">
+        <description>Weather 2th name</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1153</posX>
+        <posY>960</posY>
+        <label>#infoservice.weather.forecast2.weekday</label>
+      </control>
+	  
+      <control>
+        <description>Weather 2th value</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1153</posX>
+        <posY>996</posY>
+		<align>left</align>
+        <label>#infoservice.weather.forecast2.maxtemp</label>
+        <font>fontB14</font>
+        <textcolor>6aa5cb</textcolor>
+      </control>
+	  
+      <control>
+        <description>Weather today name</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>768</posX>
+        <posY>1020</posY>
+		<valign>middle</valign>
+        <label>6030</label>
+        <font>fontB14</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+	  
+      <control>
+        <description>Weather today condition</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>920</posX>
+        <posY>928</posY>
+		<width>185</width>
+		<align>left</align>
+        <label>#infoservice.weather.today.condition</label>
+        <font>AvalonLight12</font>
+        <textcolor>6aa5cb</textcolor>
+      </control>
+	  
+      <control>
+        <description>Weather today max value</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>920</posX>
+        <posY>996</posY>
+		<align>left</align>
+        <label>#infoservice.weather.today.temp</label>
+        <font>fontB14</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+	  
+     <control>
+        <description>Weather today min value</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1005</posX>
+        <posY>996</posY>
+		<align>left</align>
+        <label>/ #infoservice.weather.forecast1.mintemp</label>
+        <font>fontB14</font>
+        <textcolor>6aa5cb</textcolor>
+      </control>
+	  
+	<control>
+		<description>Weather image</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>725</posX>
+		<posY>845</posY>
+		<height>150</height>
+		<width>150</width>
+		<texture>Weather/128x128/#infoservice.weather.today.img.big.filenamewithext</texture>
+	</control>
+    </control>
+  </controls>
+</window>

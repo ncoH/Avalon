@@ -21,7 +21,8 @@ namespace AvalonGUIConfig
             UnfocusedAlpha = 6,
             showFiveDayWeather = 7,
             trailerSite = 8,
-            ListColors = 9
+            ListColors = 9,
+            WeatherInfoservice = 10
         }
 
         private enum TrailerSite
@@ -74,6 +75,9 @@ namespace AvalonGUIConfig
         [SkinControl((int)GUIControls.ListColors)]
         protected GUIButtonControl btnListColors = null;
 
+        [SkinControl((int)GUIControls.WeatherInfoservice)]
+        protected GUIToggleButtonControl btnWeatherInfoservice = null;
+
 
         #endregion
 
@@ -94,7 +98,8 @@ namespace AvalonGUIConfig
         public static int UnfocusedAlphaThumbs { get; set; }
         public static bool UseLargeFonts { get; set; }
         public static bool showFiveDayWeather { get; set; }
-        public static int siteUtil { get; set; } 
+        public static int siteUtil { get; set; }
+        public static bool UseWeatherInfoservice { get; set; }
         #endregion
 
         #region Public Methods
@@ -552,6 +557,9 @@ namespace AvalonGUIConfig
             btnLargeFontSize.Label = Translation.UseLargeFonts;
 
             btntrailerSite.Label = Translation.TrailerSite;
+
+            btnWeatherInfoservice.Selected = UseWeatherInfoservice;
+            btnWeatherInfoservice.Label = Translation.UseWeatherInfoservice;
         }
 
         private void GetControlStates()
@@ -606,6 +614,29 @@ namespace AvalonGUIConfig
                 catch (Exception ex)
                 {
                     Log.Error("Failed to copy fonts file: {0}", ex.Message);
+                }
+            }
+            #endregion
+
+            #region Weather Data
+            if (UseWeatherInfoservice != btnWeatherInfoservice.Selected)
+            {
+                UseWeatherInfoservice = btnWeatherInfoservice.Selected;
+                string sourceFile = Path.Combine(SkinInfo.mpPaths.AvalonPath, UseWeatherInfoservice ? "BasicHome.weather.infoservice.xml" : "BasicHome.weather.worldweather.xml");
+                string destinationFile = Path.Combine(SkinInfo.mpPaths.AvalonPath, "BasicHome.weather.xml");
+
+                string sourceFile2 = Path.Combine(SkinInfo.mpPaths.AvalonPath, UseWeatherInfoservice ? "common.time.infoservice.xml" : "common.time.worldweather.xml");
+                string destinationFile2 = Path.Combine(SkinInfo.mpPaths.AvalonPath, "common.time.xml");
+                
+                try
+                {
+                    Log.Info("Setting Weather Data to: {0}", UseWeatherInfoservice ? "Infoservice" : "WorldWeather");
+                    File.Copy(sourceFile, destinationFile, true);
+                    File.Copy(sourceFile2, destinationFile2, true);
+                }
+                catch (Exception ex)
+                {
+                    Log.Error("Failed to copy weather data file: {0}", ex.Message);
                 }
             }
             #endregion
@@ -686,6 +717,8 @@ namespace AvalonGUIConfig
                     break;
                 case (int)GUIControls.trailerSite:
                     ShowTrailersMenu();
+                    break;
+                case (int)GUIControls.WeatherInfoservice:
                     break;
             }
             base.OnClicked(controlId, control, actionType);

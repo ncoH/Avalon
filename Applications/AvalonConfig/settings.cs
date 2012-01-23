@@ -63,6 +63,8 @@ namespace AvalonGUIConfig
         public const string cXMLSettingVideoThumbMod = "VideoThumbMod";
         public const string cXMLSettingVideoView = "VideoInfo";
 
+        public const string cXMLSettingMiscUseWeatherInfoservice = "miscUseWeatherInfoservice";
+
         #endregion
 
         #region Public Properties
@@ -197,6 +199,7 @@ namespace AvalonGUIConfig
                         MiscConfigGUI.TextColor3 = xmlreader.GetValueAsString(section, settings.cXMLSettingMiscTextColor3, "FFFFFF");
                         MiscConfigGUI.WatchedColor = xmlreader.GetValueAsString(section, settings.cXMLSettingMiscWatchedColor, "85CFFF");
                         MiscConfigGUI.RemoteColor = xmlreader.GetValueAsString(section, settings.cXMLSettingMiscRemoteColor, "FC7B19");
+                        MiscConfigGUI.UseWeatherInfoservice = xmlreader.GetValueAsInt(section, settings.cXMLSettingMiscUseWeatherInfoservice, 0) == 1;
                         break;
                     #endregion
 
@@ -273,6 +276,7 @@ namespace AvalonGUIConfig
                         xmlwriter.SetValue(section, settings.cXMLSettingMiscTextColor3, MiscConfigGUI.TextColor3);
                         xmlwriter.SetValue(section, settings.cXMLSettingMiscRemoteColor, MiscConfigGUI.RemoteColor);
                         xmlwriter.SetValue(section, settings.cXMLSettingMiscWatchedColor, MiscConfigGUI.WatchedColor);
+                        xmlwriter.SetValue(section, settings.cXMLSettingMiscUseWeatherInfoservice, MiscConfigGUI.UseWeatherInfoservice ? 1 : 0);
                         break;
                     #endregion
 

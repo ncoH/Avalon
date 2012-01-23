@@ -50,7 +50,7 @@
 		<type>group</type>
 		<posX>130</posX>
 		<posY>156</posY>
-		<layout>StackLayout</layout>
+		<layout>StackLayout(0, Vertical, true)</layout>
 		
 		<control>
 			<description>General</description>
@@ -62,7 +62,7 @@
 			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
 			<label>128</label>
 			<hyperlink>705</hyperlink>
-            <onup>10008</onup>
+            <onup>10012</onup>
 		</control>
 
 		<control>
@@ -147,9 +147,9 @@
 			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
 			<label>2</label>
 			<hyperlink>14</hyperlink>
-            <ondown>10001</ondown>
+            <ondown>11</ondown>
 		</control>
-<!--
+
 		<control>
 			<description>MiniDisplay</description>
 			<type>button</type>
@@ -160,22 +160,36 @@
         	<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
 			<label>9100</label>
 			<hyperlink>9000</hyperlink>
-			<ondown>10001</ondown>
+			<ondown>10010</ondown>
+			<onup>10008</onup>
+            <visible>plugin.isenabled(MiniDisplay)</visible>
 		</control>
 	
-				<control>
+		<control>
 			<description>I.F.C</description>
 			<type>button</type>
 			<id>10010</id>
 			<width>385</width>
 			<height>64</height>
-	<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
 			<label>I.F.C.</label>
 			<hyperlink>240782</hyperlink>
-			<ondown>10011</ondown>
+			<ondown>10012</ondown>
+			<onup>11</onup>
+            <visible>plugin.isenabled(Intelligent Frame Correction)</visible>
 		</control>
--->	
+		
+		<control>
+            <description>Trakt Settings</description>
+            <type>button</type>
+            <id>10012</id>
+            <label>Trakt</label>
+            <hyperlink>87271</hyperlink>
+            <onup>10010</onup>
+            <ondown>10001</ondown>
+            <visible>plugin.isenabled(Trakt)</visible>
+        </control>
 		
 </control>
 <import>common.time.xml</import>

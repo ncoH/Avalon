@@ -72,6 +72,7 @@
   <string Field="ListColorInvalidLine2">geldige HEX code in, bijv. de kleur rood is FF0000.</string>
   <string Field="ListColorInvalidLine3">welke is '255' rood, '0' groen, en '0' blauw.</string>
   <string Field="CustomColor">Aangepaste kleur</string>
+  <string Field="UseWeatherInfoservice">Use Infoservice for Weather on BasicHome (BBC Weather plugin)</string>
   <!-- TV -->
   <string Field="Recording">Recording</string>
   <!-- TVSeries -->
@@ -125,4 +126,5 @@
   <string Field="Lastplayed">Lastplayed</string>
   <string Field="Filename">Filename</string>
   <string Field="Playcount">Playcount</string>
+  <string Field="Home">Home</string> 
 </strings>

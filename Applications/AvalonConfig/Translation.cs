@@ -242,6 +242,7 @@ namespace AvalonGUIConfig
         public static string ListColorInvalidLine2 = "valid HEX code e.g. the color red is FF0000.";
         public static string ListColorInvalidLine3 = "which is '255' red, '0' green, and '0' blue.";
         public static string CustomColor = "Custom Color";
+        public static string UseWeatherInfoservice = "Use Infoservice for Weather on BasicHome (BBC Weather plugin)";
 
 
         //Update
@@ -316,6 +317,7 @@ namespace AvalonGUIConfig
         public static string Lastplayed = "Lastplayed";
         public static string Filename = "Filename";
         public static string Playcount = "Playcount";
+        public static string Home = "Home";
 
 
         #endregion

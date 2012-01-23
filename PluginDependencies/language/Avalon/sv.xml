@@ -72,6 +72,7 @@
   <string Field="ListColorInvalidLine2">giltigt HEX-värde exempelvis. RÖD som blir FF0000.</string>
   <string Field="ListColorInvalidLine3">innehållande '255' av röd, '0'  av grön och '0' av blå.</string>
   <string Field="CustomColor">Egeninställd färg</string>
+  <string Field="UseWeatherInfoservice">Use Infoservice for Weather on BasicHome (BBC Weather plugin)</string>
   <!-- TV -->
   <string Field="Recording">Recording</string>
   <!-- TVSeries -->
@@ -124,5 +125,6 @@
   <string Field="CaseSensitive">Case Sensitive</string>
   <string Field="Lastplayed">Lastplayed</string>
   <string Field="Filename">Filename</string>
-  <string Field="Playcount">Playcount</string>  
+  <string Field="Playcount">Playcount</string>
+  <string Field="Home">Home</string>   
 </strings>

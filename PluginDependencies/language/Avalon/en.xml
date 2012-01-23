@@ -72,6 +72,7 @@
   <string Field="ListColorInvalidLine2">valid HEX code e.g. the color red is FF0000.</string>
   <string Field="ListColorInvalidLine3">which is '255' red, '0' green, and '0' blue.</string>
   <string Field="CustomColor">Custom Color</string>
+  <string Field="UseWeatherInfoservice">Use Infoservice for Weather on BasicHome (BBC Weather plugin)</string>
   <!-- TV -->
   <string Field="Recording">Recording</string>
   <!-- TVSeries -->
@@ -125,4 +126,5 @@
   <string Field="Lastplayed">Lastplayed</string>
   <string Field="Filename">Filename</string>
   <string Field="Playcount">Playcount</string> 
+  <string Field="Home">Home</string> 
 </strings>
