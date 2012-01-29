@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+
+  <id>80000</id>
+  <defaultcontrol>3000</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+
+  <controls>
+    <import>C3.MediaPortal.GoogleCalendar.Common.xml</import>
+	<import>common.time.xml</import>
+
+    <control>
+        <description>Page Title</description>
+        <type>label</type>
+    	<posX>185</posX>
+    	<posY>38</posY>
+    	<width>800</width>
+    	<textcolor>6aa5cb</textcolor>
+    	<font>font22</font>
+		<label>Google Calendar - Add Event</label>
+    </control>
+
+    <control>
+
+      <description>navigation and control group</description>
+      <type>group</type>
+		<posX>130</posX>
+		<posY>156</posY>
+      <layout>StackLayout(0, Vertical, true)</layout>
+
+      <control>
+        <id>3000</id>
+        <type>button</type>
+        <description>butOk</description>
+        <onright>3000</onright>
+        <onleft>3000</onleft>
+        <onup>17</onup>
+        <ondown>3001</ondown>
+        <label>Ok</label>
+      </control>
+
+      <control>
+        <description>butCancel</description>
+        <type>button</type>
+        <id>3001</id>
+        <onright>3000</onright>
+        <onleft>3000</onleft>
+        <ondown>3000</ondown>
+        <onup>3000</onup>
+        <label>Cancel</label>
+      </control>
+
+    </control>
+
+    <control>
+
+      <description>input field labels group</description>
+      <type>group</type>
+	  <posX>738</posX>
+      <posY>153</posY>
+      <layout>StackLayout(74, Vertical, true)</layout>
+
+      <control>
+        <description>lblTitle</description>
+        <type>label</type>
+        <id>3010</id>
+        <width>300</width>
+        <label>Title</label>
+        <align>left</align>
+      </control>
+
+      <control>
+        <description>lblLocation</description>
+        <type>label</type>
+        <id>3012</id>
+        <width>300</width>
+        <label>Location</label>
+        <align>left</align>
+      </control>
+
+      <control>
+        <description>lblStartTime</description>
+        <type>label</type>
+        <id>3016</id>
+        <width>300</width>
+        <label>Start Date &amp; Time</label>
+        <align>left</align>
+      </control>
+
+      <control>
+        <description>lblEndTime</description>
+        <type>label</type>
+        <id>3018</id>
+        <width>300</width>
+        <label>End Date &amp; Time</label>
+        <align>left</align>
+      </control>
+
+      <control>
+        <description>lblDescription</description>
+        <type>label</type>
+        <id>3020</id>
+        <width>300</width>
+        <label>Description</label>
+        <align>left</align>
+      </control>
+
+    </control>
+
+    <control>
+
+      <description>input fields group</description>
+      <type>group</type>
+	  <posX>1028</posX>
+      <posY>153</posY>
+      <layout>StackLayout(74, Vertical, true)</layout>
+
+      <control>
+        <description>txtTitle</description>
+        <type>fadelabel</type>
+        <id>3011</id>
+        <width>800</width>
+        <label>Select F9 Context Menu to set ...</label>
+        <align>left</align>
+        <textcolor>ff00ff00</textcolor>
+      </control>
+
+      <control>
+        <description>txtLocation</description>
+        <type>fadelabel</type>
+        <id>3013</id>
+        <width>800</width>
+        <label></label>
+        <align>left</align>
+        <textcolor>ff00ff00</textcolor>
+      </control>
+
+      <control>
+        <description>txtStartTime</description>
+        <type>fadelabel</type>
+        <id>3015</id>
+        <width>800</width>
+        <label></label>
+        <align>left</align>
+        <textcolor>ff00ff00</textcolor>
+      </control>
+
+      <control>
+        <description>txtEndTime</description>
+        <type>fadelabel</type>
+        <id>3017</id>
+        <width>800</width>
+        <label></label>
+        <align>left</align>
+        <textcolor>ff00ff00</textcolor>
+      </control>
+
+      <control>
+        <description>txtDescription</description>
+        <type>fadelabel</type>
+        <id>3019</id>
+        <width>800</width>
+        <height>400</height>
+        <label></label>
+        <align>left</align>
+        <textcolor>ff00ff00</textcolor>
+      </control>
+
+    </control>
+
+  </controls>
+
+</window>

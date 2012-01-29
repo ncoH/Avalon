@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  
+  <id>80000</id>
+  <defaultcontrol>3000</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  
+  <controls>
+    <import>C3.MediaPortal.GoogleCalendar.Common.xml</import>
+	<import>common.time.xml</import>
+   
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>3020</onexit>
+		<dimColor>00ffffff</dimColor>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>497</buttonwidth>
+		<buttonheight>1080</buttonheight>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<visible>!Control.HasFocus(3020)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="400">hidden</animation>
+		</control>
+	
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(3020)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+		<control>
+			<description>Menu label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>114</posY>
+			<label>924</label>
+			<font>fontB12</font>
+			<textcolor>ffffff</textcolor>
+			<visible>!Control.HasFocus(3020)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+    	</control>
+          <control>
+            <type>group</type>
+            <description>group element</description>
+ 			<visible>!Control.HasFocus(3020)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+            <posX>69</posX>
+            <posY>155</posY>
+            <layout>StackLayout(0, Vertical, true)</layout>	
+
+			  <control>
+				<id>3000</id>
+				<type>button</type>
+				<description>butSelectedCalendar</description>
+				<onleft>3020</onleft>
+				<onright>3020</onright>
+				<onup>17</onup>
+				<ondown>3001</ondown>
+    			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+    			<textureNoFocus>-</textureNoFocus>
+    			<width>497</width>
+    			<height>64</height>
+    			<textXOff>58</textXOff>
+    			<textYOff>14</textYOff>
+			  </control>
+
+			  <control>
+				<description>butRefreshCalendars</description>
+				<type>button</type>
+				<id>3001</id>
+				<label>Refresh Calendars</label>
+				<onleft>3020</onleft>
+				<onright>3020</onright>
+				<onup>3000</onup>
+				<ondown>3002</ondown>
+    			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+    			<textureNoFocus>-</textureNoFocus>
+    			<width>497</width>
+    			<height>64</height>
+    			<textXOff>58</textXOff>
+    			<textYOff>14</textYOff>
+			  </control>
+
+			  <control>
+				<description>butRefreshEvents</description>
+				<type>button</type>
+				<id>3002</id>
+				<label>Refresh Events</label>
+				<onleft>3020</onleft>
+				<onright>3020</onright>
+				<onup>3001</onup>
+				<ondown>3003</ondown>
+    			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+    			<textureNoFocus>-</textureNoFocus>
+    			<width>497</width>
+    			<height>64</height>
+    			<textXOff>58</textXOff>
+    			<textYOff>14</textYOff>
+			  </control>
+
+			  <control>
+				<description>butAddEvent</description>
+				<type>button</type>
+				<id>3003</id>
+				<label>Add Event</label>
+				<onleft>3020</onleft>
+				<onright>3020</onright>
+				<onup>3002</onup>
+				<ondown>3004</ondown>
+    			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+    			<textureNoFocus>-</textureNoFocus>
+    			<width>497</width>
+    			<height>64</height>
+    			<textXOff>58</textXOff>
+    			<textYOff>14</textYOff>
+			  </control>
+
+			  <control>
+				<description>butRange</description>
+				<type>button</type>
+				<id>3004</id>
+				<onleft>3020</onleft>
+				<onright>3020</onright>
+				<onup>3003</onup>
+				<ondown>3005</ondown>
+    			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+    			<textureNoFocus>-</textureNoFocus>
+    			<width>497</width>
+    			<height>64</height>
+    			<textXOff>58</textXOff>
+    			<textYOff>14</textYOff>
+			  </control>
+
+			  <control>
+				<description>butSort</description>
+				<type>sortbutton</type>
+				<id>3005</id>
+				<onleft>3020</onleft>
+				<onright>3020</onright>
+				<onup>3004</onup>
+				<ondown>3000</ondown>
+    			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+    			<textureNoFocus>-</textureNoFocus>
+    			<width>497</width>
+    			<height>64</height>
+    			<textXOff>58</textXOff>
+    			<textYOff>14</textYOff>
+			  </control>
+
+			</control>
+	</control>
+	
+			<control>
+			  <description>lstEvents</description>
+			  <type>listcontrol</type>
+			  <id>3020</id>
+			  <scrollOffset>1</scrollOffset>
+			  <posX>678</posX>
+    		  <posY>153</posY>
+    		  <height>750</height>
+    		  <width>1152</width>
+			  <textXOff>50</textXOff>
+			  <textXOff2>1152</textXOff2>
+			  <onleft>3030</onleft>
+			  <onright>3030</onright>
+			  <spaceBetweenItems>0</spaceBetweenItems>
+			  <spinCanFocus>no</spinCanFocus>
+			  <textureFocus>listcontrol_item_selected_wide.png</textureFocus>
+			  <dimColor>ffffffff</dimColor>
+			</control>
+
+			<control>
+			  <description>lstEventData</description>
+			  <type>listcontrol</type>
+			  <id>3030</id>
+    		  <posX>55</posX>
+    		  <posY>526</posY>
+              <width>570</width>
+			  <height>400</height>
+			  <textXOff>10</textXOff>
+			  <textXOff2>560</textXOff2>
+			  <unfocusedAlpha>255</unfocusedAlpha>
+			  <onleft>3004</onleft>
+			  <onright>3020</onright>
+			  <dimColor>ffffffff</dimColor>
+			  <textureHeight>52</textureHeight>
+			  <textureFocus>settings_button_focus.png</textureFocus>
+			  <textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+			</control>
+
+			<control>
+			  <description>txtEventData</description>
+			  <type>textboxscrollup</type>
+			  <id>3031</id>
+    		  <posX>55</posX>
+    		  <posY>156</posY>
+              <width>600</width>
+              <height>280</height>
+    		   <font>AvalonLight12</font>
+			  <textcolor>ffFFFFFF</textcolor>
+			  <seperator>-------------------------------</seperator>
+			</control>
+			
+  </controls>
+  
+</window>
