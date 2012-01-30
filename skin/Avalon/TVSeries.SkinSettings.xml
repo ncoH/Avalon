@@ -162,8 +162,9 @@
 <![CDATA[skin\Avalon\Media\TVSeries\Logos\video\720_h264_178.png;-;<Episode.VideoCodec>;-;contains;-;AVC;-;AND;-;<Episode.videoHeight>;-;=;-;720;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Avalon\Media\TVSeries\Logos\video\720_h264_133.png;-;<Episode.VideoCodec>;-;contains;-;AVC;-;AND;-;<Episode.videoHeight>;-;=;-;720;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;1.7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Avalon\Media\TVSeries\Logos\video\1080_h264_178.png;-;<Episode.VideoCodec>;-;contains;-;AVC;-;AND;-;<Episode.videoHeight>;-;=;-;1080;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Avalon\Media\TVSeries\Logos\video\480_xvid_178.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;AND;-;<Episode.videoHeight>;-;<;-;720;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Avalon\Media\TVSeries\Logos\video\480_xvid_133.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;AND;-;<Episode.videoHeight>;-;<;-;720;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;1.7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Media\TVSeries\Logos\video\SD_h264_178.png;-;<Episode.VideoCodec>;-;contains;-;AVC;-;AND;-;<Episode.videoHeight>;-;<;-;720;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Media\TVSeries\Logos\video\SD_xvid_178.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;AND;-;<Episode.videoHeight>;-;<;-;720;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Media\TVSeries\Logos\video\SD_xvid_133.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;AND;-;<Episode.videoHeight>;-;<;-;720;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;1.7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Avalon\Media\TVSeries\Logos\audio\ac3_20.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Avalon\Media\TVSeries\Logos\audio\ac3_51.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Avalon\Media\TVSeries\Logos\audio\dts_51.png;-;<Episode.AudioCodec>;-;=;-;DTS;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;<Restrict:Episode>
