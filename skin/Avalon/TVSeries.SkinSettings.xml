@@ -165,12 +165,15 @@ skin\Avalon\Media\TVSeries\Logos\video\1080_h264_178.png;-;<Episode.VideoCodec>;
 skin\Avalon\Media\TVSeries\Logos\video\SD_h264_178.png;-;<Episode.VideoCodec>;-;contains;-;AVC;-;AND;-;<Episode.videoHeight>;-;<;-;720;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Avalon\Media\TVSeries\Logos\video\SD_xvid_178.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;AND;-;<Episode.videoHeight>;-;<;-;720;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Avalon\Media\TVSeries\Logos\video\SD_xvid_133.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;AND;-;<Episode.videoHeight>;-;<;-;720;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;1.7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Media\TVSeries\Logos\video\SD_mpeg2_178.png;-;<Episode.VideoCodec>;-;contains;-;V_MPEG2;-;AND;-;<Episode.videoHeight>;-;<;-;720;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Media\TVSeries\Logos\video\SD_mpeg2_133.png;-;<Episode.VideoCodec>;-;contains;-;V_MPEG2;-;AND;-;<Episode.videoHeight>;-;<;-;720;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;1.7;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Avalon\Media\TVSeries\Logos\audio\ac3_20.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Avalon\Media\TVSeries\Logos\audio\ac3_51.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Avalon\Media\TVSeries\Logos\audio\dts_51.png;-;<Episode.AudioCodec>;-;=;-;DTS;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;<Restrict:Episode>
 skin\Avalon\Media\TVSeries\Logos\audio\dts_71.png;-;<Episode.AudioCodec>;-;=;-;DTS;-;AND;-;<Episode.AudioChannels>;-;=;-;7;-;<Restrict:Episode>
 skin\Avalon\Media\TVSeries\Logos\audio\mp3_20.png;-;<Episode.AudioCodec>;-;contains;-;MPA1L3;-;OR;-;<Episode.AudioCodec>;-;contains;-;MPA2L3;-;OR;-;<Episode.AudioFormat>;-;=;-;MPEG Audio;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;<Restrict:Episode>
 skin\Avalon\Media\TVSeries\Logos\audio\aac_51.png;-;<Episode.AudioCodec>;-;=;-;AAC;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Avalon\Media\TVSeries\Logos\audio\aac_20.png;-;<Episode.AudioCodec>;-;=;-;AAC;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Avalon\Media\TVSeries\Logos\subtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;1;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;subbed.;-;AND;-;;-;=;-;;-;
 skin\Avalon\Media\TVSeries\Logos\nosubtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;0;-;AND;-;;-;=;-;;-;
 ]]>
