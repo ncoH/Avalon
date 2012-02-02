@@ -15,6 +15,7 @@
 		<height>1080</height>
 	</control>
 	
+	
 		<!--            :: Overlays ::            -->	
 		
 	<control>
@@ -26,7 +27,7 @@
 		<width>1920</width>
 		<height>1080</height>
 		<texture>overlay.png</texture>
-		<visible>[facadeview.list | facadeview.album | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
+		<visible>Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>
@@ -38,7 +39,7 @@
 		<width>1893</width>
 		<height>795</height>
 		<texture>viewport_onlinevideos.png</texture>
-		<visible>[facadeview.list | facadeview.album] + Control.IsVisible(50)</visible>
+		<visible>Control.IsVisible(50)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
@@ -69,7 +70,7 @@
 		<label>#selecteditem</label>
 		<font>fontB16</font>
 		<align>right</align>
-		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+control.isvisible(50)</visible>
+		<visible>control.isvisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -85,11 +86,26 @@
 		<width>1865</width>
 		<height>96</height>
 		<texture>basichome_rss_bg.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
+		<visible>control.isvisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
-    
+	
+    <control>
+		<description>Feed Item Logo</description>
+		<id>101</id>
+		<type>image</type>
+		<posX>200</posX>
+		<posY>500</posY>
+		<width>300</width>
+		<height>300</height>
+		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#infoservice.feed.selected.itemimg</texture>	
+		<keepaspectratio>no</keepaspectratio>
+		<visible>Control.HasFocus(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>				  	  
+	</control>
+		
 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>
@@ -100,26 +116,50 @@
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<label>#currentmodule: #infoservice.feed.itemcount</label>
-		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<visible>Control.IsVisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 	
 	
 	<control>
-			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<description>Chosen selected item Description</description>
 		<type>textboxscrollup</type>
 		<id>506</id>
 		<posX>74</posX>
 		<posY>153</posY>
 		<width>600</width>
-		<height>600</height>
+		<height>320</height>
 		<label>-</label>
+		<visible>Control.HasFocus(50)</visible>    	 	   
 		<seperator>----------------------------------------------------------------------------------------------</seperator>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 	
+	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+		<id>1</id>
+		<type>image</type>
+		<posY>440</posY>
+		<width>64</width>
+		<height>199</height>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
+	</control>
+
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>858</posX>
+		<posY>0</posY>
+		<texture>hiddenmenu_tab_up.png</texture>
+		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
+		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+	</control>
+
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
@@ -142,13 +182,6 @@
 			<animation effect="fade" time="400">hidden</animation>
 		</control>
 	
-	<control>
-		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
-		<animation effect="fade" time="250">visible</animation>
-		<animation effect="fade" time="0">hidden</animation>
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -158,75 +191,89 @@
 			<height>1044</height>
 			<texture>menu_bg.png</texture>
 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    	<animation effect="fade" time="0">WindowClose</animation>
+    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="fade" time="50">visible</animation>
+    	<animation effect="fade" time="0">hidden</animation>
 		</control>
 	
 		<control>
-			<description>Heading text label</description>
+			<description>Menu label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>136</posX>
-			<posY>128</posY>
+			<posX>128</posX>
+			<posY>114</posY>
 			<label>924</label>
-			<font>font22</font>
+			<font>fontB12</font>
 			<textcolor>ffffff</textcolor>
-		</control>	
-			
+			<visible>!Control.HasFocus(50)</visible>
+    	<animation effect="fade" time="0">WindowClose</animation>
+    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="fade" time="50">visible</animation>
+    	<animation effect="fade" time="0">hidden</animation>
+    </control>
+		
 			<control>
-				<description>Refresh Button</description>
-				<type>button</type>
-				<id>2</id>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>215</posY>
-				<width>459</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
-				<label>184</label>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>5</onup>
-				<ondown>4</ondown>
-			</control>
+				<type>group</type>
+        <description>group element</description>
+				<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+        <posX>69</posX>
+        <posY>155</posY>
+        <layout>StackLayout(0, Vertical, true)</layout>	
 			
-			<control>
-				<description>RSS feed select</description>
-				<type>button</type>
-				<id>4</id>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>285</posY>
-				<width>459</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
-				<label>706</label>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>2</onup>
-				<ondown>5</ondown>
-			</control>
-			
-			<control>
-				<description>All feeds</description>
-				<type>button</type>
-				<id>5</id>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>355</posY>
-				<width>459</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
-				<label>Show all feeds on home</label>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>4</onup>
-				<ondown>2</ondown>
-			</control>
+					<control>
+						<description>Refresh Button</description>
+						<type>button</type>
+						<id>2</id>
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>497</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>
+						<label>184</label>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<onup>5</onup>
+						<ondown>4</ondown>
+					</control>
+					
+					<control>
+						<description>RSS feed select</description>
+						<type>button</type>
+						<id>4</id>
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>497</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>
+						<label>706</label>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<onup>2</onup>
+						<ondown>5</ondown>
+					</control>
+					
+					<control>
+						<description>All feeds</description>
+						<type>button</type>
+						<id>5</id>
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>497</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<onup>4</onup>
+						<ondown>2</ondown>
+					</control>
 		</control>
 	</control>
 	
@@ -263,7 +310,7 @@
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
 	</control>
-	
+
 	<import>common.overlay.xml</import>
 </controls>
 </window>
