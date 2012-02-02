@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>16002</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>true</disabletopbar>
+  <controls>
+    <control>
+      <description>background image</description>
+      <type>image</type>
+      <id>1</id>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>WebBrowser/background.png</texture>
+    </control>
+    <control>
+      <description>Back button</description>
+      <type>button</type>
+      <id>2</id>
+      <posX>27</posX>
+      <posY>27</posY>
+      <width>80</width>
+      <height>46</height>
+      <label>-</label>
+      <textureFocus>WebBrowser/back_focus.png</textureFocus>
+      <textureNoFocus>WebBrowser/back_nofocus.png</textureNoFocus>
+      <onright>3</onright>
+      <onleft>5</onleft>
+      <ondown>2</ondown>
+      <onup>2</onup>
+    </control>
+    <control>
+      <description>Forward button</description>
+      <type>button</type>
+      <id>3</id>
+      <posX>117</posX>
+      <posY>27</posY>
+      <width>80</width>
+      <height>46</height>
+      <label>-</label>
+      <textureFocus>WebBrowser/forward_focus.png</textureFocus>
+      <textureNoFocus>WebBrowser/forward_nofocus.png</textureNoFocus>
+      <onright>8</onright>
+      <onleft>2</onleft>
+      <ondown>3</ondown>
+      <onup>3</onup>
+    </control>
+    <control>
+      <description>Favicon</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>217</posX>
+      <posY>37</posY>
+      <width>26</width>
+      <height>26</height>
+      <texture>#webbrowser.icon</texture>
+    </control>
+    <control>
+      <description>URL label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>255</posX>
+      <posY>36</posY>
+      <width>1405</width>
+      <label>#webbrowser.link</label>
+      <textcolor>ffffffff</textcolor>
+      <shadowAngle>45</shadowAngle>
+      <shadowDistance>2</shadowDistance>
+      <shadowColor>ff000000</shadowColor>
+    </control>
+    <control>
+      <description>Open URL button</description>
+      <type>button</type>
+      <id>8</id>
+      <posX>1679</posX>
+      <posY>27</posY>
+      <width>46</width>
+      <height>46</height>
+      <label>-</label>
+      <textureFocus>WebBrowser/open_focus.png</textureFocus>
+      <textureNoFocus>WebBrowser/open_nofocus.png</textureNoFocus>
+      <onright>6</onright>
+      <onleft>3</onleft>
+      <ondown>8</ondown>
+      <onup>8</onup>
+    </control>
+    <control>
+      <description>Home button</description>
+      <type>button</type>
+      <id>6</id>
+      <posX>1735</posX>
+      <posY>27</posY>
+      <width>46</width>
+      <height>46</height>
+      <label>-</label>
+      <textureFocus>WebBrowser/home_focus.png</textureFocus>
+      <textureNoFocus>WebBrowser/home_nofocus.png</textureNoFocus>
+      <onright>4</onright>
+      <onleft>8</onleft>
+      <ondown>6</ondown>
+      <onup>6</onup>
+    </control>
+    <control>
+      <description>Refresh button</description>
+      <type>button</type>
+      <id>4</id>
+      <posX>1791</posX>
+      <posY>27</posY>
+      <width>46</width>
+      <height>46</height>
+      <label>-</label>
+      <textureFocus>WebBrowser/refresh_focus.png</textureFocus>
+      <textureNoFocus>WebBrowser/refresh_nofocus.png</textureNoFocus>
+      <onright>5</onright>
+      <onleft>6</onleft>
+      <ondown>4</ondown>
+      <onup>4</onup>
+    </control>
+    <control>
+      <description>Stop button</description>
+      <type>button</type>
+      <id>5</id>
+      <posX>1847</posX>
+      <posY>27</posY>
+      <width>46</width>
+      <height>46</height>
+      <label>-</label>
+      <textureFocus>WebBrowser/stop_focus.png</textureFocus>
+      <textureNoFocus>WebBrowser/stop_nofocus.png</textureNoFocus>
+      <onright>2</onright>
+      <onleft>4</onleft>
+      <ondown>5</ondown>
+      <onup>5</onup>
+    </control>
+    <control>
+      <description>Status label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>20</posX>
+      <posY>1040</posY>
+      <width>1600</width>
+      <align>left</align>
+      <label>#(L(126)) | #webbrowser.status</label>
+      <font>font2</font>
+      <textcolor>ff6b6b6b</textcolor>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor>00000000</shadowColor>
+    </control>
+    <control>
+      <description>Zoom Value label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1900</posX>
+      <posY>1040</posY>
+      <width>425</width>
+      <align>right</align>
+      <label>#(L(216)) | #webbrowser.zoom%</label>
+      <font>font2</font>
+      <textcolor>ff6b6b6b</textcolor>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor>00000000</shadowColor>
+      <visible>!string.equals(#webbrowser.zoom,)</visible>
+    </control>
+    <control>
+      <description>Zoom Value label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>1900</posX>
+      <posY>1040</posY>
+      <width>425</width>
+      <align>right</align>
+      <label>#(L(216)) | 100%</label>
+      <font>font2</font>
+      <textcolor>ff6b6b6b</textcolor>
+      <shadowAngle>0</shadowAngle>
+      <shadowDistance>0</shadowDistance>
+      <shadowColor>00000000</shadowColor>
+      <visible>string.equals(#webbrowser.zoom,)</visible>
+    </control>
+  </controls>
+</window>
+<!--Checksum:991c514945a323cee9d89f248d07cb98-->
