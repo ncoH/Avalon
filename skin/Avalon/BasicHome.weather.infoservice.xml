@@ -19,6 +19,17 @@
         <texture>basichome_weather_bg.png</texture>
       </control>
 
+			<control>
+				<description>Weather 5th image</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>1700</posX>
+				<posY>870</posY>
+				<height>100</height>
+				<width>100</width>
+				<texture>weather/128/#infoservice.weather.forecast5.day.img.big.filenamewithext</texture>
+			</control>
+			
       <control Style="InfoLabel">
         <description>Weather 5th name</description>
         <type>fadelabel</type>
@@ -34,12 +45,23 @@
         <id>0</id>
         <posX>1715</posX>
         <posY>996</posY>
-		<align>left</align>
+				<align>left</align>
         <label>#infoservice.weather.forecast5.maxtemp</label>
         <font>fontB14</font>
         <textcolor>6aa5cb</textcolor>
       </control>
 	  
+			<control>
+				<description>Weather 4th image</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>1510</posX>
+				<posY>870</posY>
+				<height>100</height>
+				<width>100</width>
+				<texture>weather/128/#infoservice.weather.forecast4.day.img.big.filenamewithext</texture>
+			</control>
+		
      <control Style="InfoLabel">
         <description>Weather 4th name</description>
         <type>label</type>
@@ -55,12 +77,23 @@
         <id>0</id>
         <posX>1525</posX>
         <posY>996</posY>
-		<align>left</align>
+				<align>left</align>
         <label>#infoservice.weather.forecast4.maxtemp</label>
         <font>fontB14</font>
         <textcolor>6aa5cb</textcolor>
       </control>
 	  
+			<control>
+				<description>Weather 3rd image</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>1320</posX>
+				<posY>870</posY>
+				<height>100</height>
+				<width>100</width>
+				<texture>weather/128/#infoservice.weather.forecast3.day.img.big.filenamewithext</texture>
+			</control>
+		
      <control Style="InfoLabel">
         <description>Weather 3th name</description>
         <type>label</type>
@@ -76,12 +109,23 @@
         <id>0</id>
         <posX>1339</posX>
         <posY>996</posY>
-		<align>left</align>
+				<align>left</align>
         <label>#infoservice.weather.forecast3.maxtemp</label>
         <font>fontB14</font>
         <textcolor>6aa5cb</textcolor>
       </control>
 	  
+			<control>
+				<description>Weather 2th image</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>1140</posX>
+				<posY>870</posY>
+				<height>100</height>
+				<width>100</width>
+				<texture>weather/128/#infoservice.weather.forecast2.day.img.big.filenamewithext</texture>
+			</control>
+		
      <control Style="InfoLabel">
         <description>Weather 2th name</description>
         <type>label</type>
@@ -97,7 +141,7 @@
         <id>0</id>
         <posX>1153</posX>
         <posY>996</posY>
-		<align>left</align>
+				<align>left</align>
         <label>#infoservice.weather.forecast2.maxtemp</label>
         <font>fontB14</font>
         <textcolor>6aa5cb</textcolor>
@@ -109,7 +153,7 @@
         <id>0</id>
         <posX>768</posX>
         <posY>1020</posY>
-		<valign>middle</valign>
+				<valign>middle</valign>
         <label>6030</label>
         <font>fontB14</font>
         <textcolor>ffffff</textcolor>
@@ -121,8 +165,8 @@
         <id>0</id>
         <posX>920</posX>
         <posY>928</posY>
-		<width>185</width>
-		<align>left</align>
+				<width>185</width>
+				<align>left</align>
         <label>#infoservice.weather.today.condition</label>
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
@@ -134,7 +178,7 @@
         <id>0</id>
         <posX>920</posX>
         <posY>996</posY>
-		<align>left</align>
+				<align>left</align>
         <label>#infoservice.weather.today.temp</label>
         <font>fontB14</font>
         <textcolor>ffffff</textcolor>
@@ -146,22 +190,22 @@
         <id>0</id>
         <posX>1005</posX>
         <posY>996</posY>
-		<align>left</align>
+				<align>left</align>
         <label>/ #infoservice.weather.forecast1.mintemp</label>
         <font>fontB14</font>
         <textcolor>6aa5cb</textcolor>
       </control>
 	  
-	<control>
-		<description>Weather image</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>725</posX>
-		<posY>845</posY>
-		<height>150</height>
-		<width>150</width>
-		<texture>Weather/128x128/#infoservice.weather.today.img.big.filenamewithext</texture>
-	</control>
+		<control>
+			<description>Weather image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>725</posX>
+			<posY>845</posY>
+			<height>150</height>
+			<width>150</width>
+			<texture>Weather/128x128/#infoservice.weather.today.img.big.filenamewithext</texture>
+		</control>
     </control>
   </controls>
 </window>
