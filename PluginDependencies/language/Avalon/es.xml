@@ -46,6 +46,9 @@
   <string Field="TVGuideSize">TV Guide Rows</string> 
   <string Field="TVGuideEightRows">TV Guide: 8 Rows</string>
   <string Field="TVGuideTenRows">TV Guide: 10 Rows</string>
+	<string Field="TVHomeLayout">TV Home Layout</string>
+	<string Field="TVHomeLayoutDefault">TV Home Layout: Default</string>
+	<string Field="TVHomeLayoutButtonsLeft">TV Home Layout: Buttons Left</string>
   <string Field="SkinSettingsMisc">Otros</string>
   <string Field="Widebanner">Banners grandes</string>
   <string Field="WidebannerDefault">Banners grandes: Por defecto</string>

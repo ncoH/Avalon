@@ -61,6 +61,7 @@
                 <spinPosY>924</spinPosY>
                 <textXOff>15</textXOff>
                 <textYOff>16</textYOff>
+								<selectedColor>FF85CFFF</selectedColor>
                 <textureFocus>context_item_selected.png</textureFocus>
                 <textureNoFocus>-</textureNoFocus>
                 <textureHeight>70</textureHeight>

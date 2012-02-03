@@ -31,6 +31,7 @@ namespace AvalonGUIConfig
 
         public const string cXMLSettingTVMiniGuideSize = "TVMiniGuideSize";
         public const string cXMLSettingTVGuideSize = "TVGuideSize";
+        public const string cXMLSettingTVHomeLayout = "TVHomeLayout";
 
         public const string cXMLSettingTVSeriesWidebannerMod = "TVSeriesWidebannerMod";
         public const string cXMLSettingTVSeriesView = "TVSeriesInfo";
@@ -131,6 +132,7 @@ namespace AvalonGUIConfig
                     case settings.cXMLSectionTV:
                         TVConfig.TVMiniGuideRowSize = (TVConfig.TVMiniGuideRows)xmlreader.GetValueAsInt(section, settings.cXMLSettingTVMiniGuideSize, 3);
                         TVConfig.TVGuideRowSize = (TVConfig.TVGuideRows)xmlreader.GetValueAsInt(section, settings.cXMLSettingTVGuideSize, 8);
+                        TVConfig.TVHomeLayoutType = (TVConfig.TVHomeLayout)xmlreader.GetValueAsInt(section, settings.cXMLSettingTVHomeLayout, 0);
                         break;
                     #endregion
 
@@ -231,6 +233,7 @@ namespace AvalonGUIConfig
                     case settings.cXMLSectionTV:
                         xmlwriter.SetValue(section, cXMLSettingTVMiniGuideSize, (int)TVConfig.TVMiniGuideRowSize);
                         xmlwriter.SetValue(section, cXMLSettingTVGuideSize, (int)TVConfig.TVGuideRowSize);
+                        xmlwriter.SetValue(section, cXMLSettingTVHomeLayout, (int)TVConfig.TVHomeLayoutType);
                         break;
                     #endregion
 

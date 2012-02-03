@@ -217,6 +217,9 @@ namespace AvalonGUIConfig
         public static string TVGuideSize = "TV Guide Rows";
         public static string TVGuideEightRows = "TV Guide: 8 Rows";
         public static string TVGuideTenRows = "TV Guide: 10 Rows";
+        public static string TVHomeLayout = "TV Home Layout";
+        public static string TVHomeLayoutDefault = "TV Home Layout: Default";
+        public static string TVHomeLayoutButtonsLeft = "TV Home Layout: Buttons Left";
         public static string Widebanner = "WideBanners";
         public static string WidebannerDefault = "WideBanners: Default";
         public static string WidebannerNoFanart = "WideBanners: Without Fanart";

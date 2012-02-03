@@ -24,11 +24,11 @@ namespace AvalonGUIConfig
         #endregion
 
         #region Skin Controls
-       [SkinControl((int)GUIControls.Style)]
-       protected GUIToggleButtonControl btnStyle = null;
+        [SkinControl((int)GUIControls.Style)]
+        protected GUIToggleButtonControl btnStyle = null;
 
-       [SkinControl((int)GUIControls.ThumbViewMod)]
-       protected GUIButtonControl btnThumbViewMod = null;
+        [SkinControl((int)GUIControls.ThumbViewMod)]
+        protected GUIButtonControl btnThumbViewMod = null;
 
         #endregion
 
@@ -89,6 +89,7 @@ namespace AvalonGUIConfig
             // Set new Selection
             ThumbViewMod = (Views)Enum.GetValues(typeof(Views)).GetValue(dlg.SelectedLabel);
             btnThumbViewMod.Label = dlg.SelectedLabelText;
+
         }
 
         /// <summary>
@@ -112,7 +113,7 @@ namespace AvalonGUIConfig
                 default:
                     return Translation.Thumbnails;
             }
-        } 
+        }
 
         /// <summary>
         /// Apply changes to MovingPictures.xml
@@ -196,7 +197,7 @@ namespace AvalonGUIConfig
                     break;
                 case (int)GUIControls.ThumbViewMod:
                     ShowThumbnailContextMenu();
-                   break;
+                    break;
             }
             base.OnClicked(controlId, control, actionType);
         }

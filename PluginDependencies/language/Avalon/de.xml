@@ -42,6 +42,9 @@
   <string Field="TVMiniGuideRows">TV Mini Guide Zeilen</string> 
   <string Field="TVMiniGuideThreeRows">TV Mini Guide: 3 Zeilen</string>
   <string Field="TVMiniGuideEightRows">TV Mini Guide: 8 Zeilen</string>
+	<string Field="TVHomeLayout">TV Home Layout</string>
+	<string Field="TVHomeLayoutDefault">TV Home Layout: Standard</string>
+	<string Field="TVHomeLayoutButtonsLeft">TV Home Layout: Buttons links</string>
   <string Field="TVGuideSize">TV Guide Größe</string> 
   <string Field="TVGuideEightRows">TV Guide: 8 Zeilen</string>
   <string Field="TVGuideTenRows">TV Guide: 10 Zeilen</string>

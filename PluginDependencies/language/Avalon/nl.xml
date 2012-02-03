@@ -43,6 +43,9 @@
   <string Field="TVMiniGuideRows">TV Mini Gids Rijen</string>
   <string Field="TVMiniGuideThreeRows">TV Mini Gids: 3 Rijen</string>
   <string Field="TVMiniGuideEightRows">TV Mini Gids: 8 Rijen</string>
+	<string Field="TVHomeLayout">TV Home Layout</string>
+	<string Field="TVHomeLayoutDefault">TV Home Layout: Default</string>
+	<string Field="TVHomeLayoutButtonsLeft">TV Home Layout: Buttons Left</string>
   <string Field="TVGuideSize">TV Guide Rows</string> 
   <string Field="TVGuideEightRows">TV Guide: 8 Rows</string>
   <string Field="TVGuideTenRows">TV Guide: 10 Rows</string>

@@ -12,7 +12,8 @@ namespace AvalonGUIConfig
         private enum GUIControls
         {
             TVMiniGuideSize = 2,
-            TVGuideSize = 3
+            TVGuideSize = 3,
+            TVHomeLayout = 4
         }
 
     public enum TVMiniGuideRows
@@ -27,6 +28,12 @@ namespace AvalonGUIConfig
         Ten = 10
     }
 
+    public enum TVHomeLayout
+    {
+        Default,
+        ButtonsLeft
+    }
+
         #endregion
 
         #region Skin Controls
@@ -35,6 +42,9 @@ namespace AvalonGUIConfig
 
     [SkinControl((int)GUIControls.TVGuideSize)]
     protected GUIButtonControl btnTVGuideSize = null;
+
+    [SkinControl((int)GUIControls.TVHomeLayout)]
+    protected GUIButtonControl btnTVHomeLayout = null;
 
         #endregion
 
@@ -45,6 +55,7 @@ namespace AvalonGUIConfig
         #region Public Properties
         public static TVMiniGuideRows TVMiniGuideRowSize { get; set; }
         public static TVGuideRows TVGuideRowSize { get; set; }
+        public static TVHomeLayout TVHomeLayoutType { get; set; }
         #endregion
 
         #region Private Methods
@@ -52,6 +63,7 @@ namespace AvalonGUIConfig
         {
             btnTVMiniGuideSize.Label = GetTVMiniGuideSizeName(TVMiniGuideRowSize);
             btnTVGuideSize.Label = GetTVGuideSizeName(TVGuideRowSize);
+            btnTVHomeLayout.Label = GetTVHomeLayoutName(TVHomeLayoutType);
         }
 
         private void GetControlStates() { }
@@ -120,6 +132,51 @@ namespace AvalonGUIConfig
             btnTVMiniGuideSize.Label = dlg.SelectedLabelText;
         }
 
+        private void ShowTVHomeMenu()
+        {
+            IDialogbox dlg = (IDialogbox)GUIWindowManager.GetWindow((int)GUIWindow.Window.WINDOW_DIALOG_MENU);
+            dlg.Reset();
+            dlg.SetHeading(Translation.TVHomeLayout);
+
+            foreach (int value in Enum.GetValues(typeof(TVHomeLayout)))
+            {
+                TVHomeLayout layout = (TVHomeLayout)Enum.Parse(typeof(TVMiniGuideRows), value.ToString());
+                string label = GetTVHomeLayoutName(layout);
+
+                // Create new item
+                GUIListItem listItem = new GUIListItem(label);
+                listItem.ItemId = value;
+
+                // Set selected if current
+                if (layout == TVHomeLayoutType) listItem.Selected = true;
+
+                dlg.Add(listItem);
+            }
+
+            dlg.DoModal(GUIWindowManager.ActiveWindow);
+
+            if (dlg.SelectedLabel >= 0)
+            {
+                //int layout = 0;
+
+                //switch (dlg.SelectedLabelText)
+                //{
+                //    case (Translation.TVHomeLayoutDefault):
+                //        layout = 0;
+                //        break;
+                //
+                //    case ("ButtonsLeft"):
+                //        layout = 1;
+                //        break;
+
+                TVHomeLayoutType = (TVHomeLayout)Enum.GetValues(typeof(TVHomeLayout)).GetValue(dlg.SelectedLabel);
+
+                //tvHomeLayout = layout;
+                btnTVHomeLayout.Label = dlg.SelectedLabelText;
+            }
+
+        }
+
         /// <summary>
         /// Returns a Translated name for selected TVGuide Size
         /// </summary>
@@ -155,6 +212,21 @@ namespace AvalonGUIConfig
             }
         }
 
+        private string GetTVHomeLayoutName(TVHomeLayout layout)
+        {
+            switch (layout)
+            {
+                case TVHomeLayout.Default:
+                    return Translation.TVHomeLayoutDefault;
+
+                case TVHomeLayout.ButtonsLeft:
+                    return Translation.TVHomeLayoutButtonsLeft;
+
+                default:
+                    return Translation.TVHomeLayoutDefault;
+            }
+        }
+
         /// <summary>
         /// Apply changes to MovingPictures.xml
         /// </summary>
@@ -175,6 +247,25 @@ namespace AvalonGUIConfig
             // 4TR TVGuide
             skinFile = GUIGraphicsContext.Skin + @"\4TR_TvGuide.xml";
             AvalonHelper.SetSkinImport(skinFile, "TVGuideChannels", string.Format("4TR_TvGuide.{0}rows.xml", (int)TVGuideRowSize));
+        }
+
+        public static void SetTVHomeLayout()
+        {
+            string param = string.Empty;
+            string skinFile = GUIGraphicsContext.Skin + @"\mytvhomeServer.xml";
+
+            if ((int)TVHomeLayoutType == 0)
+            {
+                param = "default";
+            }
+
+            if ((int)TVHomeLayoutType == 1)
+            {
+                param = "buttonsleft";
+            }
+
+            AvalonHelper.SetSkinImport(skinFile, "TVHomeLayout", string.Format("mytvhomeServer.{0}.xml", param));
+            //Log.Info(skinFile);
         }
         #endregion
 
@@ -209,6 +300,7 @@ namespace AvalonGUIConfig
             // Apply Configuration changes
             ApplyConfigurationChanges();
             SetTVGuideSize();
+            SetTVHomeLayout();
 
             // Save Settings
             settings.Save(settings.cXMLSectionTV);
@@ -223,6 +315,9 @@ namespace AvalonGUIConfig
                     break;
                 case (int)GUIControls.TVMiniGuideSize:
                     ShowTVMiniGuideContextMenu();
+                   break;
+                case (int)GUIControls.TVHomeLayout:
+                   ShowTVHomeMenu();
                    break;
             }
             base.OnClicked(controlId, control, actionType);

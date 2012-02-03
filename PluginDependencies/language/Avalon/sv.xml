@@ -43,6 +43,9 @@
   <string Field="TVMiniGuideRows">Antal rader, TV-miniguide</string> 
   <string Field="TVMiniGuideThreeRows">TV-miniguide: 3 rader</string>
   <string Field="TVMiniGuideEightRows">TV-miniguide: 8 rader</string>
+	<string Field="TVHomeLayout">TV Home Layout</string>
+	<string Field="TVHomeLayoutDefault">TV Home Layout: Default</string>
+	<string Field="TVHomeLayoutButtonsLeft">TV Home Layout: Buttons Left</string>
   <string Field="TVGuideSize">TV Guide Rows</string> 
   <string Field="TVGuideEightRows">TV Guide: 8 Rows</string>
   <string Field="TVGuideTenRows">TV Guide: 10 Rows</string>

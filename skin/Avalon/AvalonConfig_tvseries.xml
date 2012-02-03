@@ -43,6 +43,17 @@
 		<font>fontB14</font>
 	</control>
 	
+	<control>
+		<type>label</type>
+		<id>1</id>
+		<posX>766</posX>
+		<posY>382</posY>
+		<width>500</width>
+		<label>#Avalon.Widebanner</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>fontB14</font>
+	</control>
+	
       <control Style="SettingsToggleLarge">
         <description>TV Series Default/NoInfo Style</description>
         <type>togglebutton</type>
@@ -61,7 +72,7 @@
         <type>button</type>
         <id>3</id>
 		<posX>736</posX>
-		<posY>376</posY>
+		<posY>434</posY>
         <onleft>10011</onleft>
         <onright>3</onright>
         <onup>2</onup>
