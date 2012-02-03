@@ -350,7 +350,7 @@
 		<width>187</width>
 		<height>119</height>
 		<texture>tv_logo_bg.png</texture>
-		<visible>Control.HasThumb(60)+!string.equals(#selecteditem,..)</visible>
+		<visible>Control.HasThumb(60)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
