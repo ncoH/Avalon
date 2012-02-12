@@ -284,7 +284,7 @@
 				<textureNoFocus>-</textureNoFocus>
 				<label>#(L(5900))</label>
 				<hyperlink>4755</hyperlink>
-                <hyperlinkParameter>site:#Avalon.TrailerSite|search:#MovingPictures.SelectedMovie.title|return:Locked</hyperlinkParameter>
+                <hyperlinkParameter>site:#Avalon.TrailerSite|search:#myfilms.user.mastertitle.value|return:Locked</hyperlinkParameter>
 				<onleft>10000</onleft>					
 				<onright>10000</onright>
 				<onup>105</onup>
