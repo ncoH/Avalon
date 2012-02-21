@@ -43,6 +43,7 @@
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
 		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
 	</control>
+	
 	<import>common.time.xml</import>
 
     <control>
