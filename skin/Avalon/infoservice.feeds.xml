@@ -3,9 +3,7 @@
 <id>16001</id>
 <defaultcontrol>50</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
-
-	<controls>
-
+<controls>
 
 	<control>
 		<description>BG</description>
@@ -45,6 +43,7 @@
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
 		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
 	</control>
+	
 	<import>common.time.xml</import>
 
     <control>
@@ -137,29 +136,6 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 	
-	<control>
-		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
-		<id>1</id>
-		<type>image</type>
-		<posY>440</posY>
-		<width>64</width>
-		<height>199</height>
-		<texture>hiddenmenu_tab.png</texture>
-		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
-	</control>
-
-	<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>858</posX>
-		<posY>0</posY>
-		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
-		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
-	</control>
-
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
@@ -276,8 +252,7 @@
 					</control>
 		</control>
 	</control>
-	
-	
+		
 		<control>
 			<description>listcontrol</description>
 			<type>listcontrol</type>
@@ -298,7 +273,7 @@
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
-	
+
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
@@ -310,7 +285,7 @@
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
 	</control>
-
+	
 	<import>common.overlay.xml</import>
 </controls>
 </window>

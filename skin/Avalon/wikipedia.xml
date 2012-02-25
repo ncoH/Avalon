@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>4711</id>
+	<defaultcontrol>10</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:2516</define>
+	<define>#header.background:hover_wikipedia.png</define>
+	<controls>
+
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+	<control>
+		<description>viewport list</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>795</height>
+		<texture>viewport_settings.png</texture>
+	</control>
+	
+	<import>common.time.xml</import>
+	
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>829</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+	</control>
+	
+	<control>
+		<type>label</type>
+		<description>Settings label</description>
+		<id>121</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+	</control>
+
+	<control>
+		<description>buttons</description>
+		<type>group</type>
+		<posX>130</posX>
+		<posY>156</posY>
+		<layout>StackLayout</layout>		
+
+		<control>
+			<description>Search Button</description>
+			<type>button</type>
+			<id>10</id>
+			<onup>13</onup>
+			<onleft>20</onleft>
+			<onright>20</onright>
+			<label>137</label>
+			<width>385</width>
+			<height>64</height>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+		</control>
+
+		<control>
+			<description>Select local Wikipedia Button</description>
+			<type>button</type>
+			<id>11</id>
+			<onleft>20</onleft>
+			<onright>20</onright>
+			<label>200025</label>
+			<width>385</width>
+			<height>64</height>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+		</control>
+
+		<control>
+			<description>Links Button</description>
+			<type>button</type>
+			<id>12</id>
+			<onleft>20</onleft>
+			<onright>20</onright>
+			<label>2511</label>
+			<width>385</width>
+			<height>64</height>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+		</control>
+		<control>
+			<description>Images Button</description>
+			<type>button</type>
+			<id>13</id>
+			<ondown>10</ondown>
+			<onleft>20</onleft>
+			<onright>20</onright>
+			<label>2515</label>
+			<width>385</width>
+			<height>64</height>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+		</control>
+		<control>
+			<description>Back to the text (when viewing an image)</description>
+			<type>button</type>
+			<id>14</id>
+			<onleft>20</onleft>
+			<onright>20</onright>
+			<label>2514</label>
+			<width>385</width>
+			<height>64</height>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+		</control>
+	</control>
+
+
+		<control>
+			<description>Selected item Label</description>
+			<type>label</type>
+			<id>4</id>
+			<posX>1832</posX>
+			<posY>956</posY>
+			<width>1170</width>
+			<label>#selecteditem</label>
+			<font>fontB16</font>
+			<align>right</align>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		
+		<control>
+			<description>Image description</description>
+			<type>label</type>
+			<id>5</id>
+			<posX>469</posX>
+			<posY>87</posY>
+			<visible>no</visible>
+			<label>Image description</label>
+			<font>AvalonLight12</font>
+			<align>left</align>
+		</control>
+
+		<control>
+			<description>Here is the article text displayed</description>
+			<type>textbox</type>
+			<id>20</id>
+			<posX>630</posX>
+			<posY>150</posY>
+			<visible>no</visible>
+			<width>1180</width>
+			<height>750</height>
+			<spinPosX>1700</spinPosX>
+			<spinPosY>880</spinPosY>
+			<spinWidth>33</spinWidth>
+			<spinHeight>33</spinHeight>
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<font>AvalonLight12</font>
+			<visible allowhiddenfocus="true"></visible>
+		</control>
+
+		<control>
+			<description>Article Image</description>
+			<type>image</type>
+			<id>25</id>
+			<posX>469</posX>
+			<posY>90</posY>
+			<visible>no</visible>
+			<width>782</width>
+			<height>582</height>
+			<texture/>
+			<colorkey>0</colorkey>
+			<colordiffuse>White</colordiffuse>
+			<centered>yes</centered>
+			<keepaspectratio>yes</keepaspectratio>
+		</control>
+		<import>common.overlay.home.xml</import>
+	</controls>
+</window>

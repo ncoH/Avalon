@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <allowoverlay>yes</allowoverlay>
+  <controls>
+    <control>
+      <description>Holiday / Season Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>108</posY>
+      <width>520</width>
+      <label>#WorldWeather.TranslationHoliday / #WorldWeather.TranslationSeason</label>
+      <font>mediastream16tc</font>
+      <align>center</align>
+      <textcolor>white</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>NewYear label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>139</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationNewYear</label>
+      <font>mediastream11c</font>
+      <textcolor>ff909090</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>NewYear</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>139</posY>
+      <label>#WorldWeather.CalendarNewYear</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>divider horizontal</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>165</posY>
+      <width>520</width>
+      <height>0</height>
+      <texture>seperator.png</texture>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>Epiphany label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>170</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationEpiphany</label>
+      <font>mediastream11c</font>
+      <textcolor>ff909090</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>Epiphany</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>170</posY>
+      <label>#WorldWeather.CalendarEpiphany</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>divider horizontal</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>196</posY>
+      <width>520</width>
+      <height>0</height>
+      <texture>seperator.png</texture>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>HolyThursday label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>201</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationHolyThursday</label>HolyThursday
+      <font>mediastream11c</font><textcolor>ff909090</textcolor><visible>string.equals(#WorldWeather.View,Calendar)</visible><animation effect="fade" time="250">WindowClose</animation><animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation></control>
+    <control>
+      <description>HolyThursday</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>201</posY>
+      <label>#WorldWeather.CalendarHolyThursday</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>divider horizontal</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>226</posY>
+      <width>520</width>
+      <height>0</height>
+      <texture>seperator.png</texture>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>GoodFriday label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>232</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationGoodFriday</label>
+      <font>mediastream11c</font>
+      <textcolor>ff909090</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>GoodFriday</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>232</posY>
+      <label>#WorldWeather.CalendarGoodFriday</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>divider horizontal</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>257</posY>
+      <width>520</width>
+      <height>0</height>
+      <texture>seperator.png</texture>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>EasterSunday label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>263</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationEasterSunday</label>
+      <font>mediastream11c</font>
+      <textcolor>ff909090</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>EasterSunday</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>263</posY>
+      <label>#WorldWeather.CalendarEasterSunday</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>divider horizontal</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>288</posY>
+      <width>520</width>
+      <height>0</height>
+      <texture>seperator.png</texture>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>AscensionDay label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>294</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationAscensionDay</label>
+      <font>mediastream11c</font>
+      <textcolor>ff909090</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>AscensionDay</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>294</posY>
+      <label>#WorldWeather.CalendarAscensionDay</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>divider horizontal</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>319</posY>
+      <width>520</width>
+      <height>0</height>
+      <texture>seperator.png</texture>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>WhitSunday label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>324</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationWhitSunday</label>
+      <font>mediastream11c</font>
+      <textcolor>ff909090</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>WhitSunday</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>324</posY>
+      <label>#WorldWeather.CalendarWhitSunday</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>divider horizontal</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>349</posY>
+      <width>520</width>
+      <height>0</height>
+      <texture>seperator.png</texture>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>CorpusChristi label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>354</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationCorpusChristi</label>
+      <font>mediastream11c</font>
+      <textcolor>ff909090</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>CorpusChristi</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>354</posY>
+      <label>#WorldWeather.CalendarCorpusChristi</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>divider horizontal</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>379</posY>
+      <width>520</width>
+      <height>0</height>
+      <texture>seperator.png</texture>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>AssumptionDay label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>384</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationAssumptionDay</label>
+      <font>mediastream11c</font>
+      <textcolor>ff909090</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>AssumptionDay</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>384</posY>
+      <label>#WorldWeather.CalendarAssumptionDay</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>divider horizontal</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>410</posY>
+      <width>520</width>
+      <height>0</height>
+      <texture>seperator.png</texture>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>ReformationDay label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>414</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationReformationDay</label>
+      <font>mediastream11c</font>
+      <textcolor>ff909090</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>ReformationDay</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>414</posY>
+      <label>#WorldWeather.CalendarReformationDay</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>divider horizontal</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>440</posY>
+      <width>520</width>
+      <height>0</height>
+      <texture>seperator.png</texture>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>AllSaintsDay label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>444</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationAllSaintsDay</label>
+      <font>mediastream11c</font>
+      <textcolor>ff909090</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>AllSaintsDay</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>444</posY>
+      <label>#WorldWeather.CalendarAllSaintsDay</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>divider horizontal</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>470</posY>
+      <width>520</width>
+      <height>0</height>
+      <texture>seperator.png</texture>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>SpringSeason label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>485</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationSpringSeason</label>
+      <font>mediastream11c</font>
+      <textcolor>ff909090</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>SpringSeason</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>485</posY>
+      <label>#WorldWeather.CalendarSpringSeason</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>divider horizontal</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>510</posY>
+      <width>520</width>
+      <height>0</height>
+      <texture>seperator.png</texture>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>SummerSeason label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>515</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationSummerSeason</label>
+      <font>mediastream11c</font>
+      <textcolor>ff909090</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>SummerSeason</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>515</posY>
+      <label>#WorldWeather.CalendarSummerSeason</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>divider horizontal</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>540</posY>
+      <width>520</width>
+      <height>0</height>
+      <texture>seperator.png</texture>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>AutumnSeason label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>545</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationAutumnSeason</label>
+      <font>mediastream11c</font>
+      <textcolor>ff909090</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>AutumnSeason</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>545</posY>
+      <label>#WorldWeather.CalendarAutumnSeason</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>divider horizontal</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>660</posX>
+      <posY>570</posY>
+      <width>520</width>
+      <height>0</height>
+      <texture>seperator.png</texture>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>WinterSeason label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>720</posX>
+      <posY>575</posY>
+      <width>300</width>
+      <label>#WorldWeather.TranslationWinterSeason</label>
+      <font>mediastream11c</font>
+      <textcolor>ff909090</textcolor>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>WinterSeason</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1125</posX>
+      <posY>575</posY>
+      <label>#WorldWeather.CalendarWinterSeason</label>
+      <font>mediastream11c</font>
+      <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Calendar)</visible>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" delay="20" tween="back" easing="out" start="55,55" end="100,100" center="640,310" time="550">WindowOpen</animation>
+    </control>
+  </controls>
+</window>
+<!--Checksum:45f7390599310ff8e38ef2b336471e1c-->
