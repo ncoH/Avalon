@@ -51,7 +51,7 @@ namespace AvalonGUIConfig
         public static string PreviousSkin { get; set; }
 
         public static bool updateAvailable { get; set; }
-        public static bool checkOnStart = true;
+        public static bool checkOnStart { get; set; }
         public static bool checkForUpdateAt { get; set; }
         public static int checkInterval { get; set; }
         public static double hours { get; set; }
