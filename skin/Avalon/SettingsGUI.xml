@@ -47,7 +47,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>368</posY>
+		<posY>262</posY>
 		<label>1442</label>
 	</control>
 
@@ -56,12 +56,12 @@
 		<type>spincontrol</type>
 		<id>2</id>
 		<posX>1590</posX>
-		<posY>367</posY>
+		<posY>261</posY>
 		<align>right</align>
-		<onup>17</onup>
+		<onup>3</onup>
 		<ondown>4</ondown>
 		<onleft>#defaultcontrol.onleft</onleft>
-		<onright>2</onright>
+		<onright>10002</onright>
 		<reverse>yes</reverse>
 		<textXOff>54</textXOff>
 		<textYOff>5</textYOff>
@@ -73,7 +73,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>736</posX>
-		<posY>412</posY>
+		<posY>306</posY>
 		<width>836</width>
 		<height>52</height>
 		<texture>settings_button_large_focus.png</texture>
@@ -84,7 +84,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>736</posX>
-		<posY>412</posY>
+		<posY>306</posY>
 		<width>836</width>
 		<height>52</height>
 		<texture>settings_button_large_nofocus.png</texture>
@@ -96,7 +96,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>420</posY>
+		<posY>314</posY>
 		<label>1443</label>
 	</control>
 
@@ -105,12 +105,12 @@
 		<type>spincontrol</type>
 		<id>4</id>
 		<posX>1590</posX>
-		<posY>419</posY>
+		<posY>313</posY>
 		<align>right</align>
 		<onup>2</onup>
 		<ondown>3</ondown>
 		<onleft>#defaultcontrol.onleft</onleft>
-		<onright>4</onright>
+		<onright>10002</onright>
 		<textXOff>54</textXOff>
 		<textYOff>5</textYOff>
 		<reverse>yes</reverse>
@@ -122,7 +122,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>736</posX>
-		<posY>464</posY>
+		<posY>358</posY>
 		<width>836</width>
 		<height>52</height>
 		<texture>settings_button_large_focus.png</texture>
@@ -133,7 +133,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>736</posX>
-		<posY>464</posY>
+		<posY>358</posY>
 		<width>836</width>
 		<height>52</height>
 		<texture>settings_button_large_nofocus.png</texture>
@@ -145,7 +145,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>472</posY>
+		<posY>366</posY>
 		<label>973</label>
 	</control>
 
@@ -154,12 +154,12 @@
 		<type>spincontrol</type>
 		<id>3</id>
 		<posX>1590</posX>
-		<posY>471</posY>
+		<posY>365</posY>
 		<align>right</align>
 		<onup>4</onup>
-		<ondown>99</ondown>
+		<ondown>2</ondown>
 		<onleft>#defaultcontrol.onleft</onleft>
-		<onright>3</onright>
+		<onright>10002</onright>
 		<textXOff>54</textXOff>
 		<textYOff>5</textYOff>
 		<reverse>yes</reverse>
@@ -169,8 +169,8 @@
 		<description>currentFPS count</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>1070</posX>
-		<posY>565</posY>
+		<posX>1560</posX>
+		<posY>430</posY>
 		<align>right</align>
 		<label>#fps</label>
 	</control>
@@ -180,7 +180,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>736</posX>
-		<posY>565</posY>
+		<posY>430</posY>
 		<width>711</width>
 		<label>675</label>
 		<textcolor>ffffffff</textcolor>
@@ -192,7 +192,7 @@
 		<id>25</id>
 		<posX>736</posX>
 		<posY>565</posY>
-		<width>560</width>
+		<width>820</width>
 		<label>-</label>
 		<textcolor>ffffffff</textcolor>
 	</control>
@@ -203,12 +203,14 @@
 		<id>26</id>
 		<posX>736</posX>
 		<posY>618</posY>
-		<width>805</width>
+		<width>820</width>
 		<height>200</height>
 		<label>-</label>
 		<textcolor>ffffffff</textcolor>
 	</control>
+	
 <import>common.time.xml</import>
 <import>avalon.version.xml</import>
+
 </controls>
 </window>

@@ -59,7 +59,7 @@
 		<posX>1590</posX>
 		<posY>261</posY>
 		<align>right</align>
-		<onup>17</onup>
+		<onup>9</onup>
 		<ondown>3</ondown>
 		<onleft>#defaultcontrol.onleft</onleft>
 		<onright>10005</onright>
@@ -393,7 +393,7 @@
 		<onleft>10005</onleft>
 		<onright>10005</onright>
 		<onup>8</onup>
-		<ondown>99</ondown>
+		<ondown>2</ondown>
 		<align>right</align>
 	</control>
 		

@@ -50,7 +50,7 @@
 		<posY>266</posY>
 		<align>right</align>
 		<label>-</label>
-		<onup>2</onup>
+		<onup>10</onup>
 		<ondown>6</ondown>
 		<onleft>#defaultcontrol.onleft</onleft>
 		<onright>10008</onright>
@@ -168,7 +168,7 @@
 		<textureFocus>settings_button_large_focus.png</textureFocus>
 		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
 		<onup>13</onup>
-		<ondown>99</ondown>
+		<ondown>2</ondown>
 		<onleft>10008</onleft>
 		<onright>10008</onright>
 	</control>

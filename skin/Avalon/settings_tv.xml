@@ -37,7 +37,7 @@
 			<height>52</height>
 			<textXOff>28</textXOff>
 			<textYOff>8</textYOff>
-			<onup>37</onup>
+			<onup>29</onup>
 		</control>
 
 		<control>
@@ -113,6 +113,7 @@
 			<height>52</height>
 			<textXOff>28</textXOff>
 			<textYOff>8</textYOff>
+			<ondown>28</ondown>			
 		</control>
 
 		<control>
@@ -129,6 +130,7 @@
 			<textXOff>28</textXOff>
 			<textYOff>8</textYOff>
 			<ondown>31</ondown>
+			<onup>27</onup>			
 		</control>
 
 		<control>
@@ -178,6 +180,7 @@
 			<textYOff>8</textYOff>
 		</control>
 
+	<!-- last control needs ondown to itself, else it jumps to last button in first column -->		
 		<control>
 			<description>Timeshift Buffer</description>
 			<type>button</type>
@@ -192,61 +195,13 @@
 			<height>52</height>
 			<textXOff>28</textXOff>
 			<textYOff>8</textYOff>
-		</control>
-
-		<control>
-			<description>Channelsorting</description>
-			<type>button</type>
-			<id>32</id>
-			<label>6008</label>
-			<hyperlink>702</hyperlink>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-			<width>471</width>
-			<height>52</height>
-			<textXOff>28</textXOff>
-			<textYOff>8</textYOff>
-		</control>
-
-		<control>
-			<description>DVB Guide</description>
-			<type>button</type>
-			<id>34</id>
-			<label>6009</label>
-			<ondown>37</ondown>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-			<width>471</width>
-			<height>52</height>
-			<textXOff>28</textXOff>
-			<textYOff>8</textYOff>
-			<hyperlink>706</hyperlink>
-		</control>
-
-	<!-- last control needs ondown to itself, else it jumps to last button in first column -->
-		<control>
-			<description>XMLTV EPG Grabber</description>
-			<type>button</type>
-			<id>37</id>
-			<label>6010</label>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-			<width>471</width>
-			<height>52</height>
-			<textXOff>28</textXOff>
-			<textYOff>8</textYOff>
-			<hyperlink>707</hyperlink>
-			<ondown>24</ondown>
+			<ondown>24</ondown>			
 		</control>
 
 	</control>
+	
 <import>common.time.xml</import>
 <import>avalon.version.xml</import>
+
 </controls>
 </window>

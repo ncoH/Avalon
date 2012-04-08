@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>240782</id>
+  <defaultcontrol>18</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:I.F.C.</define>
+  <define>#header.background:hover_settings.png</define>
+  <controls>
+  
+	<import>settings.menu.xml</import>
+	
+	<control>
+		<type>label</type>
+		<id>1</id>
+		<posX>766</posX>
+		<posY>158</posY>
+		<width>500</width>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>fontB22</font>
+	</control>	
+	
+	<!--            :: Scan Interval ::            -->
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>254</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(18)</visible>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>254</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(18)</visible>
+	</control>
+	
+	<control>
+		<description>Scan Interval label</description>
+		<type>label</type>
+		<id>11</id>
+		<posX>766</posX>
+		<posY>262</posY>
+		<label>Scan Interval</label>
+	</control>
+
+	<control>
+		<description>Scan Interval select</description>
+		<type>spincontrol</type>
+		<id>18</id>
+		<posX>1590</posX>
+		<posY>261</posY>
+		<align>right</align>
+		<onup>8</onup>
+		<ondown>2</ondown>
+		<onleft>10010</onleft>
+		<textXOff>54</textXOff>
+		<textYOff>5</textYOff>
+        <digits>2</digits>
+        <spintype>INT</spintype>
+        <showrange>NO</showrange>	
+        <buddycontrolid>11</buddycontrolid>
+        <reverse>yes</reverse>
+	</control>
+
+	<!--            :: Detection Counter ::            -->
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>306</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(2)</visible>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>306</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(2)</visible>
+	</control>
+		
+	<control>		
+		<description>Detection Counter label</description>
+		<type>label</type>
+		<id>12</id>
+		<posX>766</posX>
+		<posY>314</posY>
+		<label>Detection Counter</label>
+	</control>
+
+	<control>
+		<description>Detection Counter select</description>
+		<type>spincontrol</type>
+		<id>2</id>
+		<posX>1590</posX>
+		<posY>313</posY>
+		<align>right</align>
+		<onup>18</onup>
+		<ondown>3</ondown>
+		<onleft>10010</onleft>
+		<textXOff>54</textXOff>
+		<textYOff>5</textYOff>
+        <digits>2</digits>
+        <spintype>INT</spintype>
+        <showrange>NO</showrange>		
+        <buddycontrolid>12</buddycontrolid>
+        <reverse>yes</reverse>
+	</control>
+
+	<!--            :: Min Brightness Threshold ::            -->
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>358</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(3)</visible>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>358</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(3)</visible>
+	</control>
+		
+	<control>
+		<description>Min Brightness Threshold label</description>
+		<type>label</type>
+		<id>13</id>
+		<posX>766</posX>
+		<posY>366</posY>
+		<label>Min Brightness Threshold</label>
+	</control>
+
+	<control>
+		<description>Min Brightness Threshold select</description>
+		<type>spincontrol</type>
+		<id>3</id>
+		<posX>1590</posX>
+		<posY>365</posY>
+		<align>right</align>
+		<onup>2</onup>
+		<ondown>4</ondown>
+		<onleft>10010</onleft>
+		<textXOff>54</textXOff>
+		<textYOff>5</textYOff>
+        <digits>2</digits>
+        <spintype>INT</spintype>
+        <showrange>NO</showrange>		
+        <buddycontrolid>13</buddycontrolid>
+        <reverse>yes</reverse>
+	</control>
+
+	<!--            :: Max Brightness Threshold ::            -->
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>410</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(4)</visible>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>410</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(4)</visible>
+	</control>
+
+	<control>
+		<description>Max Brightness Threshold label</description>
+		<type>label</type>
+		<id>14</id>
+		<posX>766</posX>
+		<posY>418</posY>
+		<label>Max Brightness Threshold</label>
+	</control>
+
+	<control>
+		<description>Max Brightness Threshold select</description>
+		<type>spincontrol</type>
+		<id>4</id>
+		<posX>1590</posX>
+		<posY>417</posY>
+		<align>right</align>
+		<onup>3</onup>
+		<ondown>5</ondown>
+		<onleft>10010</onleft>
+		<textXOff>54</textXOff>
+		<textYOff>5</textYOff>
+        <digits>2</digits>
+        <spintype>INT</spintype>
+        <showrange>NO</showrange>		
+        <buddycontrolid>14</buddycontrolid>
+        <reverse>yes</reverse>
+	</control>
+	
+	<!--            :: Stabilizer ::            -->
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>462</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(5)</visible>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>462</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(5)</visible>
+	</control>
+
+	<control>
+		<description>Stabilizer label</description>
+		<type>label</type>
+		<id>15</id>
+		<posX>766</posX>
+		<posY>470</posY>
+		<label>Stabilizer</label>
+	</control>	
+
+	<control>
+		<description>Stabilizer select</description>
+		<type>spincontrol</type>
+		<id>5</id>
+		<posX>1590</posX>
+		<posY>469</posY>
+		<align>right</align>
+		<onup>4</onup>
+		<ondown>6</ondown>
+		<onleft>10010</onleft>
+		<textXOff>54</textXOff>
+		<textYOff>5</textYOff>
+        <digits>2</digits>
+        <spintype>INT</spintype>
+        <showrange>NO</showrange>		
+        <buddycontrolid>15</buddycontrolid>
+        <reverse>yes</reverse>
+	</control>
+	
+	<!--            :: Single Black Bar Height ::            -->
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>514</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(6)</visible>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>514</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(6)</visible>
+	</control>
+
+	<control>
+		<description>Single Black Bar Height label</description>
+		<type>label</type>
+		<id>16</id>
+		<posX>766</posX>
+		<posY>522</posY>
+		<label>Single Black Bar Height</label>
+	</control>
+
+	<control>
+		<description>Single Black Bar Height select</description>
+		<type>spincontrol</type>
+		<id>6</id>
+		<posX>1590</posX>
+		<posY>521</posY>
+		<align>right</align>
+		<onup>5</onup>
+		<ondown>7</ondown>
+		<onleft>10010</onleft>
+		<textXOff>54</textXOff>
+		<textYOff>5</textYOff>
+        <digits>2</digits>
+        <spintype>INT</spintype>
+        <showrange>NO</showrange>		
+        <buddycontrolid>16</buddycontrolid>
+        <reverse>yes</reverse>
+	</control>
+	
+	<!--            :: Double Black Bar Height ::            -->
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>566</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(7)</visible>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>566</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(7)</visible>
+	</control>
+
+	<control>
+		<description>Double Black Bar Height label</description>
+		<type>label</type>
+		<id>17</id>
+		<posX>766</posX>
+		<posY>574</posY>
+		<label>Double Black Bar Height</label>
+	</control>
+
+	<control>
+		<description>Double Black Bar Height select</description>
+		<type>spincontrol</type>
+		<id>7</id>
+		<posX>1590</posX>
+		<posY>573</posY>
+		<align>right</align>
+		<onup>6</onup>
+		<ondown>8</ondown>
+		<onleft>10010</onleft>
+		<textXOff>54</textXOff>
+		<textYOff>5</textYOff>
+        <digits>2</digits>
+        <spintype>INT</spintype>
+        <showrange>NO</showrange>		
+        <buddycontrolid>17</buddycontrolid>
+        <reverse>yes</reverse>
+	</control>
+
+	<!--            :: Verbose Logging ::            -->
+	
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>768</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(8)</visible>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>736</posX>
+		<posY>768</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(8)</visible>
+	</control>
+		
+	<control>
+		<description>Shuffle Playlist on load</description>
+		<type>checkmark</type>
+		<id>8</id>
+		<posX>1480</posX>
+		<posY>780</posY>		
+		<onup>7</onup>
+		<ondown>18</ondown>
+		<align>right</align>
+		<label>-</label>
+		<onleft>10009</onleft>
+	</control>
+		
+	<control>
+		<description>Shuffle Playlist on load label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>766</posX>
+		<posY>776</posY>
+		<label>Verbose Logging</label>
+	</control>
+	
+<import>common.time.xml</import>
+<import>avalon.version.xml</import>
+
+</controls>
+</window>
