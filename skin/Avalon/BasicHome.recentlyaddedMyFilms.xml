@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+
+	<control>
+        <description>DUMMY</description>
+        <type>button</type>
+        <id>71717771</id>
+        <posX>-2000</posX>
+        <posY>-2000</posY>
+        <textureFocus>-</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>1001</onleft>
+        <onright>91919988</onright>
+    </control>
+  
+      <control>
+        <description>play</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1212</posX>
+        <posY>633</posY>
+        <width>48</width>
+        <height>48</height>
+        <texture>basichome_play.png</texture>
+		<visible>string.equals(#recentMedia,MyFilms) + control.isvisible(1021) + [control.hasfocus(91919988) | control.hasfocus(91919989) | control.hasfocus(91919990)]</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+	  
+      <control>
+        <description>Movie 1 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1266</posX>
+        <posY>639</posY>
+        <width>500</width>
+        <label>#latestMediaHandler.myfilms.latest1.title</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>control.hasfocus(91919988) + control.isvisible(1021)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Movie 1 runtime</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1266</posX>
+        <posY>680</posY>
+        <width>500</width>
+        <label>#latestMediaHandler.myfilms.latest1.runtime min - #latestMediaHandler.myfilms.latest1.year - #latestMediaHandler.myfilms.latest1.genre</label>
+        <font>AvalonLight12</font>
+        <textcolor>6aa5cb</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>control.hasfocus(91919988) + control.isvisible(1021)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+      <control>
+		<type>imagelist</type>
+		<id>0</id>
+		<posX>1265</posX>
+		<posY>725</posY>
+		<width>185</width>
+		<height>29</height>
+		<textureWidth>28</textureWidth>
+		<textureHeight>27</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#latestMediaHandler.myfilms.latest1.rating</percentage>
+		<visible>control.hasfocus(91919988) + control.isvisible(1021)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>  
+	  
+      <control>
+        <description>Movie 2 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1266</posX>
+        <posY>639</posY>
+        <width>500</width>
+        <label>#latestMediaHandler.myfilms.latest2.title</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>control.hasfocus(91919989)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Movie 2 runtime</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1266</posX>
+        <posY>680</posY>
+        <width>500</width>
+        <label>#latestMediaHandler.myfilms.latest2.runtime min - #latestMediaHandler.myfilms.latest2.year - #latestMediaHandler.myfilms.latest2.genre</label>
+        <font>AvalonLight12</font>
+        <textcolor>6aa5cb</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>control.hasfocus(91919989)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+      <control>
+		<type>imagelist</type>
+		<id>0</id>
+		<posX>1265</posX>
+		<posY>725</posY>
+		<width>185</width>
+		<height>29</height>
+		<textureWidth>28</textureWidth>
+		<textureHeight>27</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#latestMediaHandler.myfilms.latest2.rating</percentage>
+		<visible>control.hasfocus(91919989)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>  
+	  
+      <control>
+        <description>Movie 3 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1266</posX>
+        <posY>639</posY>
+        <width>500</width>
+        <label>#latestMediaHandler.myfilms.latest3.title</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>control.hasfocus(91919990)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+      <control>
+        <description>Movie 3 runtime</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1266</posX>
+        <posY>680</posY>
+        <width>500</width>
+        <label>#latestMediaHandler.myfilms.latest3.runtime min - #latestMediaHandler.myfilms.latest3.year - #latestMediaHandler.myfilms.latest3.genre</label>
+        <font>AvalonLight12</font>
+        <textcolor>6aa5cb</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>control.hasfocus(91919990)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>
+      <control>
+		<type>imagelist</type>
+		<id>0</id>
+		<posX>1265</posX>
+		<posY>725</posY>
+		<width>185</width>
+		<height>29</height>
+		<textureWidth>28</textureWidth>
+		<textureHeight>27</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#latestMediaHandler.myfilms.latest3.rating</percentage>
+		<visible>control.hasfocus(91919990)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+      </control>  
+	  
+    <control>
+      <description>GROUP: RecentlyAdded Movie (nofocus)</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia, MyFilms) + !control.hasfocus(91919988) + !control.hasfocus(91919989)  + !control.hasfocus(91919990) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <control>
+        <description>Movie 1 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1218</posX>
+        <posY>622</posY>
+        <width>435</width>
+        <label>#latestMediaHandler.myfilms.latest1.title</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+		<type>label</type>
+		<id>0</id>
+		<posX>1803</posX>
+		<posY>627</posY>
+		<width>185</width>
+		<height>29</height>
+        <label>#latestMediaHandler.myfilms.latest1.runtime min</label>
+        <textcolor>6aa5cb</textcolor>
+        <align>right</align>
+      </control> 
+      <control>
+        <description>Movie 2 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1218</posX>
+        <posY>662</posY>
+        <width>435</width>
+        <label>#latestMediaHandler.myfilms.latest2.title</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+       <control>
+		<type>label</type>
+		<id>0</id>
+		<posX>1803</posX>
+		<posY>666</posY>
+		<width>185</width>
+		<height>29</height>
+        <label>#latestMediaHandler.myfilms.latest2.runtime min</label>
+        <textcolor>6aa5cb</textcolor>
+        <align>right</align>
+      </control> 
+      <control>
+        <description>Movie 3 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1218</posX>
+        <posY>702</posY>
+        <width>435</width>
+        <label>#latestMediaHandler.myfilms.latest3.title</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+       <control>
+		<type>label</type>
+		<id>0</id>
+		<posX>1803</posX>
+		<posY>705</posY>
+		<width>185</width>
+		<height>29</height>
+        <label>#latestMediaHandler.myfilms.latest3.runtime min</label>
+        <textcolor>6aa5cb</textcolor>
+        <align>right</align>
+      </control> 	  
+</control>	  
+
+    <control>
+      <description>GROUP: RecentlyAdded Movie</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia, MyFilms) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <control>
+        <description>Header label</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1218</posX>
+        <posY>210</posY>
+        <width>590</width>
+        <label>#Avalon.LatestMovies</label>
+        <font>AvalonLight20</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+      <control>
+        <description>Movie 1 thumb/fanart</description>
+        <type>image</type>
+        <id>1021</id>
+        <posX>1218</posX>
+        <posY>290</posY>
+        <width>183</width>
+        <height>259</height>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest1.thumb</texture>
+	   <shouldCache>true</shouldCache>
+      </control>
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>91919988</id>
+        <posX>1212</posX>
+        <posY>284</posY>
+        <width>194</width>
+        <height>269</height>
+        <textureFocus>basichome_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>901</onleft>
+        <onright>91919989</onright>
+		<onup>91919988</onup>
+		<ondown>91919988</ondown>
+        <font>font12</font>
+    </control>
+ </control>
+	
+    <control>
+      <description>GROUP: RecentlyAdded Movie</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia, MyFilms) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <control>
+        <description>Movie 2 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1418</posX>
+        <posY>290</posY>
+        <width>183</width>
+        <height>259</height>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest2.thumb</texture>
+	   <shouldCache>true</shouldCache>
+      </control>
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>91919989</id>
+        <posX>1412</posX>
+        <posY>284</posY>
+        <width>194</width>
+        <height>269</height>
+        <textureFocus>basichome_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>91919988</onleft>
+        <onright>91919990</onright>
+		<onup>91919989</onup>
+		<ondown>91919989</ondown>
+        <font>font12</font>
+    </control>
+ </control>
+	
+    <control>
+      <description>GROUP: RecentlyAdded Movie</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia, MyFilms) + ![control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <control>
+        <description>Movie 3 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1620</posX>
+        <posY>290</posY>
+        <width>183</width>
+        <height>259</height>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest3.thumb</texture>
+	   <shouldCache>true</shouldCache>
+      </control>
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>91919990</id>
+        <posX>1615</posX>
+        <posY>284</posY>
+        <width>194</width>
+        <height>269</height>
+        <textureFocus>basichome_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>91919989</onleft>
+        <onright>91919988</onright>
+		<onup>91919990</onup>
+		<ondown>91919990</ondown>
+        <font>font12</font>
+    </control>
+ </control>
+	
+    <!--            :: RIGHT ::            -->
+	
+      <control>
+        <description>Movie 1 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1620</posX>
+        <posY>622</posY>
+        <width>180</width>
+        <label>#latestMediaHandler.myfilms.latest1.title</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<visible>string.equals(#recentMedia,MyFilms) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="slide" time="250" start="-350,0">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      </control>
+	
+    <control>
+        <description>Movie 1 thumb/fanart</description>
+        <type>image</type>
+        <id>445</id>
+        <posX>1620</posX>
+        <posY>290</posY>
+        <width>183</width>
+        <height>259</height>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest1.thumb</texture>
+	   <shouldCache>true</shouldCache>
+		<visible>string.equals(#recentMedia,MyFilms) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="slide" time="250" start="-350,0">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+		
+	<control>
+        <description>Sub Separator</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1581</posX>
+        <posY>212</posY>
+        <width>1</width>
+        <height>468</height>
+        <texture>basichome_sub_separator.png</texture>
+		<visible>string.equals(#recentMedia,MyFilms) + control.hasthumb(445) + [control.isvisible(601) | control.isvisible(501)]</visible>
+		<animation effect="slide" time="250" start="-350,0">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+  </controls>
+</window>

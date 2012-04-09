@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>7676</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<define>#header.background:hover_my daily comics.png</define>
+<controls>
+	
+    <control>
+      <description>DEFAULT BACKGROUND</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+      <shouldCache>true</shouldCache>
+    </control>
+		
+    <control>
+        <description>viewport list</description>
+        <animation effect="fade" time="250">WindowOpen</animation>
+        <animation effect="fade" time="250">WindowClose</animation>
+        <type>image</type>
+        <id>0</id>
+        <posX>1</posX>
+        <posY>92</posY>
+        <width>1893</width>
+        <height>795</height>
+        <texture>viewport_settings.png</texture>
+    </control>
+
+	<import>common.time.xml</import>
+	
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>MyDailyComics</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+	</control>
+	
+	<!--            :: Count Background ::            -->
+	
+        <control>
+            <description>RSS background</description>
+            <animation effect="fade" time="250">WindowOpen</animation>
+            <animation effect="fade" time="250">WindowClose</animation>
+            <type>image</type>
+            <id>0</id>
+            <posX>0</posX>
+            <posY>829</posY>
+            <width>1865</width>
+            <height>96</height>
+            <texture>basichome_rss_bg.png</texture>
+        </control>
+	
+        <control>
+            <type>group</type>
+            <description>group element</description>
+            <animation effect="fade" time="250">WindowOpen</animation>
+            <animation effect="fade" time="250">WindowClose</animation>
+            <description>group element</description>
+			<posX>130</posX>
+			<posY>156</posY>
+			<layout>StackLayout</layout>	
+            <control>
+                <description>Comic button</description>
+                <type>selectbutton</type>
+                <id>2</id>
+                <posX>15</posX>
+                <posY>135</posY>
+				<width>385</width>
+				<height>64</height>
+                <label>Comic</label>
+                <onup>1</onup>
+                <ondown>3</ondown>
+            </control>
+			
+            <control>
+                <description>Date button</description>
+                <type>selectbutton</type>
+                <id>3</id>
+                <posX>15</posX>
+                <posY>215</posY>
+				<width>385</width>
+				<height>64</height>
+                <label>636</label>
+                <onup>2</onup>
+                <ondown>4</ondown>
+            </control>			
+        </control>
+
+            <control>
+                <description>Comic Banner</description>
+                <animation effect="fade" time="250">WindowOpen</animation>
+                <animation effect="fade" time="250">WindowClose</animation>
+                <type>image</type>
+                <id>101</id>
+                <posX>97</posX>
+                <posY>755</posY>
+				<width>385</width>
+				<height>64</height>
+				<align>left</align>								
+                <keepaspectratio>yes</keepaspectratio>
+            </control>
+			
+        <control>
+            <description>Comic Image</description>
+            <animation effect="fade" time="250">WindowOpen</animation>
+            <animation effect="fade" time="250">WindowClose</animation>
+            <type>image</type>
+            <id>100</id>
+            <posX>590</posX>
+            <posY>135</posY>
+            <width>1260</width>
+            <height>710</height>
+            <centered>true</centered>
+            <keepaspectratio>yes</keepaspectratio>
+        </control>
+		
+        <control>
+            <description>Language Flag</description>
+            <animation effect="fade" time="250">WindowOpen</animation>
+            <animation effect="fade" time="250">WindowClose</animation>
+            <type>image</type>
+            <id>102</id>
+            <posX>1800</posX>
+            <posY>875</posY>
+            <width>36</width>
+            <height>36</height>
+            <texture></texture>
+            <keepaspectratio>yes</keepaspectratio>
+        </control>
+		
+        <control>
+            <description>Comic Title</description>
+            <animation effect="fade" time="250">WindowOpen</animation>
+            <animation effect="fade" time="250">WindowClose</animation>
+            <type>fadelabel</type>
+            <id>0</id>
+            <posX>1832</posX>
+            <posY>956</posY>
+            <width>1170</width>
+            <font>fontB16</font>
+            <align>right</align>
+            <label>#MyDailyComics.Selected.Title</label>
+        </control>
+		
+        <control>
+            <description>Date</description>
+            <animation effect="fade" time="250">WindowOpen</animation>
+            <animation effect="fade" time="250">WindowClose</animation>
+            <type>label</type>
+            <id>0</id>
+            <posX>1832</posX>
+            <posY>1005</posY>
+            <width>600</width>
+            <font>AvalonLight11</font>
+            <label>#MyDailyComics.Selected.Date</label>
+            <align>right</align>
+        </control>
+		
+        <import>common.overlay.xml</import>
+		
+    </controls>
+</window>
