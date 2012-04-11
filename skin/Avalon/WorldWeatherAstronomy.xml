@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <allowoverlay>yes</allowoverlay>
+  <controls>
+    <!-- *** Starry Sky *** -->
+    <!-- *** Location *** -->    
+	  <control>
+	    <description>Location label</description>
+	    <type>label</type>
+	    <id>0</id>
+	    <posX>185</posX>
+	    <posY>38</posY>
+	    <width>500</width>
+	    <label>#(L(8))</label>
+	    <textcolor>6aa5cb</textcolor>
+	    <font>font22</font>
+      <visible>string.equals(#WorldWeather.View,Astronomy)</visible>
+	  </control>
+	  <control>
+	    <description>Selected item Label</description>
+	    <type>fadelabel</type>
+	    <id>1</id>
+	    <posX>1832</posX>
+	    <posY>956</posY>
+	    <width>697</width>
+	    <label>#WorldWeather.TranslationStarrySky</label>
+	    <font>fontB16</font>
+	    <align>right</align>
+      <visible>string.equals(#WorldWeather.View,Astronomy)</visible>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	    <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+	  </control>
+    <control>
+      <description>Starry sky image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>695</posX>
+      <posY>182</posY>
+      <width>1050</width>
+      <height>625</height>
+      <texture>http://www.astronomie.de/Images/Himmelaktuell/obssky1.gif</texture>
+      <visible>string.equals(#WorldWeather.View,Astronomy)</visible>
+    </control>
+    <control>
+      <description>Starry sky image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>695</posX>
+      <posY>182</posY>
+      <width>1050</width>
+      <height>625</height>
+      <texture>http://www.astronomie.de/Images/Himmelaktuell/obssky1b.gif</texture>
+      <visible>string.equals(#WorldWeather.View,Astronomy)</visible>
+    </control>
+    <control>
+      <description>Zodiac image BG</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>695</posX>
+      <posY>182</posY>
+      <width>1050</width>
+      <height>625</height>
+      <animation effect="fade" time="700">visiblechange</animation>
+      <visible>string.equals(#WorldWeather.View,Astronomy)+string.equals(#WorldWeather.ImageZodiacEnabled,true)+control.hasfocus(21)</visible>
+    </control>
+    <control>
+      <description>Zodiac image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>725</posX>
+      <posY>182</posY>
+      <width>1050</width>
+      <height>625</height>
+      <texture>#WorldWeather.ImageZodiac</texture>
+      <colordiffuse>90ffffff</colordiffuse>
+      <animation effect="fade" time="700">visiblechange</animation>
+      <visible>string.equals(#WorldWeather.View,Astronomy)+string.equals(#WorldWeather.ImageZodiacEnabled,true)+control.hasfocus(21)</visible>
+    </control>
+    <control>
+      <description>Zodiac Today sky image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>725</posX>
+      <posY>182</posY>
+      <width>1050</width>
+      <height>625</height>
+      <texture>#WorldWeather.TodayZodiacImage</texture>
+      <animation effect="fade" time="700">visiblechange</animation>
+      <visible>string.equals(#WorldWeather.View,Astronomy)+string.equals(#WorldWeather.ImageZodiacEnabled,true)+control.hasfocus(21)</visible>
+    </control>
+    <control>
+      <description>Zodiac Today label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>670</posY>
+      <width>1280</width>
+      <align>center</align>
+      <label>#WorldWeather.TodayZodiac</label>
+      <font>font12</font>
+      <animation effect="fade" time="700">visiblechange</animation>
+      <visible>string.equals(#WorldWeather.View,Astronomy)+string.equals(#WorldWeather.ImageZodiacEnabled,true)+control.hasfocus(21)</visible>
+    </control>
+  </controls>
+</window>
