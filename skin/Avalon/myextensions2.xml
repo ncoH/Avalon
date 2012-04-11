@@ -4,18 +4,16 @@
     <defaultcontrol>50</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <define>#header.label:14001</define>
-    <define>#header.image:-</define>
-    <define>#header.hover:-</define>
     <controls>
 
-     <control>
-      <description>BackGround</description>
-      <type>image</type>
-      <id>1</id>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>background.png</texture>      
-    </control>
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>background.png</texture>
+	</control>
 	
 	<control>
 		<description>background listview</description>
@@ -247,6 +245,7 @@
                 </control>-->
             </control>
         </control>
+		
         <control>
             <id>1</id>
             <type>label</type>
@@ -259,6 +258,7 @@
             <animation effect="Fade" time="250">WindowOpen</animation>
             <animation effect="Fade" time="250">WindowClose</animation>
         </control>
+		
         <control>
             <id>0</id>
             <description>Summary</description>
