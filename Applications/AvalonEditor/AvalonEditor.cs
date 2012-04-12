@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -91,6 +91,15 @@ namespace ProcessPlugins.AvalonEditor
         int latestMoviesPlay2 = 91919992;
         int latestMoviesPlay3 = 91919993;
 
+        //latest MyFilms
+        bool latestMyFilms1 = false;
+        bool latestMyFilms2 = false;
+        bool latestMyFilms3 = false;
+
+        int latestMyFilmsPlay1 = 91919988;
+        int latestMyFilmsPlay2 = 91919989;
+        int latestMyFilmsPlay3 = 91919990;
+
         //latest Music
         bool latestMusic1 = false;
         bool latestMusic2 = false;
@@ -127,6 +136,7 @@ namespace ProcessPlugins.AvalonEditor
         int dummySeries = 71717772;
         int dummyMusic = 71717773;
         int dummyRecordings = 71717774;
+        int dummyMyFilms = 71717775;
 
         #endregion
 
@@ -476,13 +486,17 @@ namespace ProcessPlugins.AvalonEditor
                 latestMovies2 = vWindow.GetControl(latestMoviesPlay2).Focus;
                 latestMovies3 = vWindow.GetControl(latestMoviesPlay3).Focus;
 
+                latestMyFilms1 = vWindow.GetControl(latestMyFilmsPlay1).Focus;
+                latestMyFilms2 = vWindow.GetControl(latestMyFilmsPlay2).Focus;
+                latestMyFilms3 = vWindow.GetControl(latestMyFilmsPlay3).Focus;
+
                 latestSeries1 = vWindow.GetControl(latestSeriesPlay1).Focus;
                 latestSeries2 = vWindow.GetControl(latestSeriesPlay2).Focus;
                 latestSeries3 = vWindow.GetControl(latestSeriesPlay3).Focus;
 
                 bReturn10 = control10.Focus;
 
-                if (!bReturn1 && !bReturn2 && !bReturn3 && !latestMovies1 && !latestMovies2 && !latestMovies3 && !latestSeries1 && !latestSeries2 && !latestSeries3 && !bReturn10 && !latestMusic1 && !latestMusic2 && !latestMusic3 && !latestRecordings1 && !latestRecordings2 && !latestRecordings3 && !latestRecordings4)
+                if (!bReturn1 && !bReturn2 && !bReturn3 && !latestMovies1 && !latestMovies2 && !latestMovies3 && !latestMyFilms1 && !latestMyFilms2 && !latestMyFilms3 && !latestSeries1 && !latestSeries2 && !latestSeries3 && !bReturn10 && !latestMusic1 && !latestMusic2 && !latestMusic3 && !latestRecordings1 && !latestRecordings2 && !latestRecordings3 && !latestRecordings4)
                 {
                     SetProperty("#mainmenu", "");
 
@@ -578,11 +592,15 @@ namespace ProcessPlugins.AvalonEditor
                 latestMovies2 = vWindow.GetControl(latestMoviesPlay2).Focus;
                 latestMovies3 = vWindow.GetControl(latestMoviesPlay3).Focus;
 
+                latestMyFilms1 = vWindow.GetControl(latestMyFilmsPlay1).Focus;
+                latestMyFilms2 = vWindow.GetControl(latestMyFilmsPlay2).Focus;
+                latestMyFilms3 = vWindow.GetControl(latestMyFilmsPlay3).Focus;
+
                 latestSeries1 = vWindow.GetControl(latestSeriesPlay1).Focus;
                 latestSeries2 = vWindow.GetControl(latestSeriesPlay2).Focus;
                 latestSeries3 = vWindow.GetControl(latestSeriesPlay3).Focus;
 
-                if (!bReturn1 && !bReturn2 && !bReturn3 && !latestMovies1 && !latestMovies2 && !latestMovies3 && !bReturn10 && !latestMusic1 && !latestMusic2 && !latestMusic3 && !latestSeries1 && !latestSeries2 && !latestSeries3 && !latestRecordings1 && !latestRecordings2 && !latestRecordings3 && !latestRecordings4)
+                if (!bReturn1 && !bReturn2 && !bReturn3 && !latestMovies1 && !latestMovies2 && !latestMovies3 && !latestMyFilms1 && !latestMyFilms2 && !latestMyFilms3 && !bReturn10 && !latestMusic1 && !latestMusic2 && !latestMusic3 && !latestSeries1 && !latestSeries2 && !latestSeries3 && !latestRecordings1 && !latestRecordings2 && !latestRecordings3 && !latestRecordings4)
                 {
 
                     SetProperty("#mainmenu", "");
@@ -678,12 +696,16 @@ namespace ProcessPlugins.AvalonEditor
                 latestMovies2 = vWindow.GetControl(latestMoviesPlay2).Focus;
                 latestMovies3 = vWindow.GetControl(latestMoviesPlay3).Focus;
 
+                latestMyFilms1 = vWindow.GetControl(latestMyFilmsPlay1).Focus;
+                latestMyFilms2 = vWindow.GetControl(latestMyFilmsPlay2).Focus;
+                latestMyFilms3 = vWindow.GetControl(latestMyFilmsPlay3).Focus;
+
                 latestSeries1 = vWindow.GetControl(latestSeriesPlay1).Focus;
                 latestSeries2 = vWindow.GetControl(latestSeriesPlay2).Focus;
                 latestSeries3 = vWindow.GetControl(latestSeriesPlay3).Focus;
 
 
-                if (!latestMovies1 && !latestMovies2 && !latestMovies3 && !latestMusic1 && !latestMusic2 && !latestMusic3 && !latestSeries1 && !latestSeries2 && !latestSeries3 && !latestRecordings4)
+                if (!latestMovies1 && !latestMovies2 && !latestMovies3 && !latestMyFilms1 && !latestMyFilms2 && !latestMyFilms3 && !latestMusic1 && !latestMusic2 && !latestMusic3 && !latestSeries1 && !latestSeries2 && !latestSeries3 && !latestRecordings4)
                 {
 
 
@@ -720,6 +742,10 @@ namespace ProcessPlugins.AvalonEditor
                             {
                                 GUIControl.FocusControl(35, dummyRecordings);
                             }
+                            if (loc_recent == "MyFilms")
+                            {
+                                GUIControl.FocusControl(35, dummyMyFilms);
+                            }
                         }
                     }
 
@@ -740,6 +766,10 @@ namespace ProcessPlugins.AvalonEditor
                         if (loc_recent == "Recordings")
                         {
                             GUIControl.FocusControl(35, dummyRecordings);
+                        }
+                        if (loc_recent == "MyFilms")
+                        {
+                            GUIControl.FocusControl(35, dummyMyFilms);
                         }
                     }
                 }
@@ -793,13 +823,17 @@ namespace ProcessPlugins.AvalonEditor
                 latestMovies2 = vWindow.GetControl(latestMoviesPlay2).Focus;
                 latestMovies3 = vWindow.GetControl(latestMoviesPlay3).Focus;
 
+                latestMyFilms1 = vWindow.GetControl(latestMyFilmsPlay1).Focus;
+                latestMyFilms2 = vWindow.GetControl(latestMyFilmsPlay2).Focus;
+                latestMyFilms3 = vWindow.GetControl(latestMyFilmsPlay3).Focus;
+
                 latestSeries1 = vWindow.GetControl(latestSeriesPlay1).Focus;
                 latestSeries2 = vWindow.GetControl(latestSeriesPlay2).Focus;
                 latestSeries3 = vWindow.GetControl(latestSeriesPlay3).Focus;
                 // bReturn17 = control17.Focus;
 
 
-                if (!latestMovies1 && !latestMovies2 && !latestMovies3 && !bReturn6 && !bReturn9 && !bReturn10 && !latestMusic1 && !latestMusic2 && !latestMusic3 && !latestSeries1 && !latestSeries2 && !latestSeries3)
+                if (!latestMovies1 && !latestMovies2 && !latestMovies3 && !latestMyFilms1 && !latestMyFilms2 && !latestMyFilms3 && !bReturn6 && !bReturn9 && !bReturn10 && !latestMusic1 && !latestMusic2 && !latestMusic3 && !latestSeries1 && !latestSeries2 && !latestSeries3)
                 {
 
                     if (mainMenuDown1) SetProperty("#mainmenu", "801");
@@ -827,7 +861,7 @@ namespace ProcessPlugins.AvalonEditor
                 pauseMainMenu = false;
             }
 
-            if (latestMovies1 || latestSeries1 || latestMusic1 || bReturn7 || bReturn8)
+            if (latestMovies1 || latestMyFilms1 || latestSeries1 || latestMusic1 || bReturn7 || bReturn8)
             {
                 string selectedMenu = GUIPropertyManager.GetProperty("#mainmenu");
                 if (selectedMenu == "801") GUIControl.FocusControl(35, 801);
@@ -885,11 +919,15 @@ namespace ProcessPlugins.AvalonEditor
                 latestMovies2 = vWindow.GetControl(latestMoviesPlay2).Focus;
                 latestMovies3 = vWindow.GetControl(latestMoviesPlay3).Focus;
 
+                latestMyFilms1 = vWindow.GetControl(latestMyFilmsPlay1).Focus;
+                latestMyFilms2 = vWindow.GetControl(latestMyFilmsPlay2).Focus;
+                latestMyFilms3 = vWindow.GetControl(latestMyFilmsPlay3).Focus;
+
                 latestSeries1 = vWindow.GetControl(latestSeriesPlay1).Focus;
                 latestSeries2 = vWindow.GetControl(latestSeriesPlay2).Focus;
                 latestSeries3 = vWindow.GetControl(latestSeriesPlay3).Focus;
 
-                if (!aReturn1 && !aReturn2 && !aReturn3 && !latestMovies1 && !latestMovies2 && !latestMovies3 && !aReturn11 && !latestMusic1 && !latestMusic2 && !latestMusic3 && !latestSeries1 && !latestSeries2 && !latestSeries3 && !latestRecordings1 && !latestRecordings2 && !latestRecordings3 && !latestRecordings4)
+                if (!aReturn1 && !aReturn2 && !aReturn3 && !latestMovies1 && !latestMovies2 && !latestMovies3 && !latestMyFilms1 && !latestMyFilms2 && !latestMyFilms3 && !aReturn11 && !latestMusic1 && !latestMusic2 && !latestMusic3 && !latestSeries1 && !latestSeries2 && !latestSeries3 && !latestRecordings1 && !latestRecordings2 && !latestRecordings3 && !latestRecordings4)
                 {
 
                     //Do this if it was the main-menu that called the action

@@ -94,6 +94,7 @@ namespace ProcessPlugins.AvalonEditor
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.rB_MyFilms = new System.Windows.Forms.RadioButton();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -312,6 +313,7 @@ namespace ProcessPlugins.AvalonEditor
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.rB_MyFilms);
             this.groupBox4.Controls.Add(this.groupBox5);
             this.groupBox4.Controls.Add(this.lblMovieCategories);
             this.groupBox4.Controls.Add(this.movPicsCategoryCombo);
@@ -791,6 +793,17 @@ namespace ProcessPlugins.AvalonEditor
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "What is InfoService?";
             // 
+            // rB_MyFilms
+            // 
+            this.rB_MyFilms.AutoSize = true;
+            this.rB_MyFilms.Location = new System.Drawing.Point(186, 280);
+            this.rB_MyFilms.Name = "rB_MyFilms";
+            this.rB_MyFilms.Size = new System.Drawing.Size(62, 17);
+            this.rB_MyFilms.TabIndex = 43;
+            this.rB_MyFilms.TabStop = true;
+            this.rB_MyFilms.Text = "MyFilms";
+            this.rB_MyFilms.UseVisualStyleBackColor = true;
+            // 
             // AvalonConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -890,6 +903,7 @@ namespace ProcessPlugins.AvalonEditor
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbEditorStartParamsOutput;
         private System.Windows.Forms.Button button_test;
+        private System.Windows.Forms.RadioButton rB_MyFilms;
 
     }
 }
