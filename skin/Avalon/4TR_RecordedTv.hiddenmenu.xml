@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <controls>
+
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
@@ -58,8 +59,8 @@
 				<id>2</id>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>5</onup>
-				<ondown>3</ondown>
+				<onup>7</onup>
+				<ondown>5</ondown>
 				<label>100</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
@@ -74,11 +75,11 @@
 			<control>
 				<type>button</type>
 				<description>All,Genre,Channel button</description>
-				<id>3</id>
+				<id>5</id>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>2</onup>
-				<ondown>4</ondown>
+				<ondown>3</ondown>
 				<label>457</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
@@ -92,11 +93,11 @@
 			
 			<control>
 				<type>sortbutton</type>
-				<id>4</id>
+				<id>3</id>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>3</onup>
-				<ondown>5</ondown>
+				<onup>5</onup>
+				<ondown>7</ondown>
 				<label>620</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
@@ -106,24 +107,24 @@
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>
-				<offsetSortButtonX>260</offsetSortButtonX>
+				<offsetSortButtonX>360</offsetSortButtonX>
 				<offsetSortButtonY>27</offsetSortButtonY>
 			</control>
 
 			<control>
 				<type>button</type>
 				<description>tvguide button</description>
-				<id>5</id>
+				<id>7</id>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>4</onup>
+				<onup>3</onup>
 				<ondown>2</ondown>
 				<hyperlink>600</hyperlink>
 				<label>600</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<posX>69</posX>
-				<posY>425</posY>
+				<posY>495</posY>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
@@ -132,5 +133,6 @@
 		
 	</control>
 </control>
+
 </controls>
 </window>

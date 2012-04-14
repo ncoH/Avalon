@@ -312,8 +312,10 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     </control>
-    <import>4TR_RecordedTv.hiddenmenu.xml</import>
+	
+    <import>4TR_RecordedTv2.hiddenmenu.xml</import>
     <import>common.facade.recordings.xml</import>
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

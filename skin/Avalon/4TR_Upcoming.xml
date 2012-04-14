@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>49848</id>
-<defaultcontrol>10</defaultcontrol>
+<defaultcontrol>2</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <controls>
 
@@ -111,6 +111,82 @@
 		<description>group element</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
+        <dimColor>ffffffff</dimColor>
+		<posX>99</posX>
+		<posY>216</posY>
+		<layout>GridLayout(2, 0, 4, 0, 1)</layout>
+		
+		<control>
+			<description>Programm Type Button</description>		
+			<type>button</type>
+			<id>2</id>
+			<posX>72</posX>
+			<posY>156</posY>				
+			<label>Type:</label>		
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<onup>9</onup>
+			<ondown>9</ondown>
+			<textalign>left</textalign>	
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>	
+		</control>
+		
+		<control>
+			<description>Sort button</description>		
+			<type>sortbutton</type>
+			<id>9</id>
+			<posX>72</posX>
+			<posY>220</posY>				
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<onup>2</onup>
+			<ondown>2</ondown>
+			<label>sort</label>
+			<font>AvalonLight12</font>
+			<textalign>left</textalign>	
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>		
+		</control>
+
+		<control>
+			<description>empty button</description>
+			<type>button</type>
+			<posX>72</posX>
+			<posY>284</posY>			
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>	
+		</control>
+		
+		<control>
+			<type>button</type>
+			<description>empty button</description>
+			<posX>462</posX>
+			<posY>156</posY>			
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>		
+		</control>
+		
+		<control>
+			<description>empty button</description>		
+			<type>button</type>
+			<posX>462</posX>
+			<posY>220</posY>				
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>		
+		</control>
+		
+		<control>
+			<description>empty button</description>
+			<type>button</type>
+			<posX>462</posX>
+			<posY>284</posY>				
+			<font>AvalonLight12</font>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>	
+		</control>
+	
+	</control>	
+	
+	<control>
+		<type>group</type>
+		<description>group element</description>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
 		
 			<control>
 				<description>listcontrol</description>
@@ -209,6 +285,6 @@
 	</control>
 
 <import>common.overlay.xml</import>
-<import>4TR_Upcoming.hiddenmenu.xml</import>
+
 </controls>
 </window>

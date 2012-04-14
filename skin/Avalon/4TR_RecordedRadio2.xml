@@ -210,7 +210,7 @@
 		<visible>facadeview.filmstrip+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
 	</control>
 
-	<import>4TR_RecordedRadio.hiddenmenu.xml</import>
+	<import>4TR_RecordedRadio2.hiddenmenu.xml</import>
 	<import>common.facade.recordings.xml</import>
 </controls>
 </window>

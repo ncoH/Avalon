@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>49848</id>
-<defaultcontrol>10</defaultcontrol>
+<defaultcontrol>2</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <controls>
 
@@ -111,6 +111,101 @@
 		<description>group element</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
+        <dimColor>ffffffff</dimColor>
+		<posX>99</posX>
+		<posY>216</posY>
+		<layout>GridLayout(2, 0, 4, 0, 1)</layout>
+		
+		<control>
+			<description>Programm Type Button</description>		
+			<type>button</type>
+			<id>2</id>
+			<posX>72</posX>
+			<posY>156</posY>				
+			<label>Type:</label>		
+			<onleft>10</onleft>
+			<onright>12</onright>
+			<onup>11</onup>
+			<ondown>9</ondown>
+			<textalign>left</textalign>	
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>	
+		</control>
+		
+		<control>
+			<description>Sort button</description>		
+			<type>sortbutton</type>
+			<id>9</id>
+			<posX>72</posX>
+			<posY>220</posY>				
+			<onleft>10</onleft>
+			<onright>11</onright>
+			<onup>2</onup>
+			<ondown>12</ondown>
+			<label>sort</label>
+			<font>AvalonLight12</font>
+			<textalign>left</textalign>	
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>		
+		</control>
+
+		<control>
+			<description>empty button</description>
+			<type>button</type>
+			<posX>72</posX>
+			<posY>284</posY>			
+			<textalign>left</textalign>
+			<font>AvalonLight12</font>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>	
+		</control>
+		
+		<control>
+			<type>togglebutton</type>
+			<description>group by schedule</description>
+			<id>12</id>
+			<posX>462</posX>
+			<posY>156</posY>			
+			<onleft>2</onleft>
+			<onright>10</onright>
+			<onup>9</onup>
+			<ondown>11</ondown>
+			<label>group by schedule</label>
+			<font>AvalonLight12</font>
+			<textalign>left</textalign>	
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>		
+		</control>
+		
+		<control>
+			<description>New Programm Button</description>		
+			<type>button</type>
+			<id>11</id>
+			<posX>462</posX>
+			<posY>220</posY>				
+			<onleft>9</onleft>
+			<onright>10</onright>
+			<onup>12</onup>
+			<ondown>2</ondown>
+			<label>617</label>
+			<font>AvalonLight12</font>
+			<textalign>left</textalign>	
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>		
+		</control>
+		
+		<control>
+			<description>empty button</description>
+			<type>button</type>
+			<posX>462</posX>
+			<posY>284</posY>				
+			<font>AvalonLight12</font>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>	
+		</control>
+	
+	</control>	
+	
+	<control>
+		<type>group</type>
+		<description>group element</description>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+        <dimColor>ffffffff</dimColor>
 		
 			<control>
 				<description>listcontrol</description>
@@ -121,7 +216,7 @@
 				<height>700</height>
 				<width>919</width>
 				<onleft>2</onleft>
-				<onright>5</onright>
+				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
 				<PinIconHeight>46</PinIconHeight>
 				<PinIconWidth>45</PinIconWidth>
@@ -131,19 +226,19 @@
 				<itemHeight>53</itemHeight>
 				<textureFocus>listcontrol_item_selected_tv.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-        <IconXOff>45</IconXOff>
-        <IconYOff>0</IconYOff>
-        <textXOff>40</textXOff>
-        <keepaspectratio>yes</keepaspectratio>
-        <spinCanFocus>no</spinCanFocus>
-        <spinPosX>1832</spinPosX>
-        <spinPosY>950</spinPosY>
-        <dimColor>ffffffff</dimColor>
-        <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-        <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-      </control>
-	   
-</control>
+				<IconXOff>45</IconXOff>
+				<IconYOff>0</IconYOff>
+				<textXOff>40</textXOff>
+				<keepaspectratio>yes</keepaspectratio>
+				<spinCanFocus>no</spinCanFocus>
+				<spinPosX>1832</spinPosX>
+				<spinPosY>950</spinPosY>
+				<dimColor>ffffffff</dimColor>
+				<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+			</control>
+		</control>
+			
 		<control>
 			<description>scheduled recordings label</description>
 			<type>label</type>
@@ -209,8 +304,8 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
+	
+	<import>common.overlay.xml</import>
 
-<import>common.overlay.xml</import>
-<import>4TR_Upcoming.hiddenmenu.xml</import>
 </controls>
 </window>

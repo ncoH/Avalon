@@ -3,6 +3,7 @@
   <id>762</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
+  <define>#header.background:hover_my radio.png</define>
   <controls>
   
 	<control>
@@ -12,37 +13,39 @@
 		<width>1920</width>
 		<height>1080</height>
 		<texture>background.png</texture>
+        <shouldCache>true</shouldCache>
 	</control>
 
-    <control>
-    	<description>VIEWPORT</description>
-    	<type>image</type>
-    	<id>0</id>
-    	<posX>0</posX>
-    	<posY>162</posY>
-    	<width>1893</width>
-    	<height>649</height>
-    	<texture>viewport_tv_guide.pngg</texture>
-        <animation effect="fade" time="250">WindowOpen</animation>
-        <animation effect="fade" time="250">WindowClose</animation>
-    	<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-    	<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
-    	<shouldCache>true</shouldCache>
-    </control>
-    <control>
-    	<description>VIEWPORT</description>
-    	<type>image</type>
-    	<id>0</id>
-    	<posX>0</posX>
-    	<posY>120</posY>
-    	<width>1865</width>
-    	<height>101</height>
-    	<texture>tvguide_timeline_bg.png</texture>
-        <animation effect="fade" time="250">WindowOpen</animation>
-        <animation effect="fade" time="250">WindowClose</animation>
-    	<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-    	<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
-    </control>
+<control>
+	<description>VIEWPORT</description>
+	<type>image</type>
+	<id>0</id>
+	<posX>0</posX>
+	<posY>162</posY>
+	<width>1893</width>
+	<height>649</height>
+	<texture>viewport_tv_guide.png</texture>
+    <animation effect="fade" time="250">WindowOpen</animation>
+    <animation effect="fade" time="250">WindowClose</animation>
+	<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+	<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	<shouldCache>true</shouldCache>
+</control>
+
+<control>
+	<description>VIEWPORT</description>
+	<type>image</type>
+	<id>0</id>
+	<posX>0</posX>
+	<posY>120</posY>
+	<width>1865</width>
+	<height>101</height>
+	<texture>tvguide_timeline_bg.png</texture>
+    <animation effect="fade" time="250">WindowOpen</animation>
+    <animation effect="fade" time="250">WindowClose</animation>
+	<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+	<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+</control>
 	
 	<control>
 		<animation effect="fade" time="250">WindowOpen</animation>
