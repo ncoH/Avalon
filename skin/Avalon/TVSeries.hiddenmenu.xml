@@ -66,7 +66,7 @@
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<posY>424</posY>
+			<posY>487</posY>
 			<posX>128</posX>
 			<width>376</width>
 			<height>1</height>
@@ -80,7 +80,7 @@
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<posY>614</posY>
+			<posY>678</posY>
 			<posX>128</posX>
 			<width>376</width>
 			<height>1</height>
@@ -94,7 +94,7 @@
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<posY>808</posY>
+			<posY>868</posY>
 			<posX>128</posX>
 			<width>376</width>
 			<height>1</height>
@@ -125,7 +125,7 @@
 			<type>label</type>
 			<id>1</id>
 			<posX>128</posX>
-			<posY>434</posY>
+			<posY>497</posY>
 			<label>136</label>
 			<font>fontB12</font>
 			<textcolor>ffffff</textcolor>
@@ -140,7 +140,7 @@
 			<type>label</type>
 			<id>1</id>
 			<posX>128</posX>
-			<posY>624</posY>
+			<posY>688</posY>
 			<label>100004</label>
 			<font>fontB12</font>
 			<textcolor>ffffff</textcolor>
@@ -155,7 +155,7 @@
 			<type>label</type>
 			<id>1</id>
 			<posX>128</posX>
-			<posY>816</posY>
+			<posY>878</posY>
 			<label>1065</label>
 			<font>fontB12</font>
 			<textcolor>ffffff</textcolor>
@@ -190,25 +190,25 @@
 				<label>457</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
-                <ondown>5</ondown>
+                <ondown>10</ondown>
                 <onup>66614</onup>
 			</control>
-            
-            <control>
-				<description>Run Import</description>
+         
+ 			<control>
+				<description>Filters</description>
 				<type>button</type>
-				<id>5</id>
+				<id>10</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<width>497</width>
 				<height>64</height>
 				<textXOff>58</textXOff>
-				<textYOff>14</textYOff>
-				<label>Run Import</label>
+				<textYOff>14</textYOff>			
+				<label>Filters</label>
 				<onleft>50</onleft>
-				<onright>50</onright>
-            </control>
-             
+				<onright>50</onright>						
+			</control>
+			
             <control>
 				<description>Change Layout</description>
 				<type>button</type>
@@ -223,7 +223,22 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
             </control>
-          
+  
+            <control>
+				<description>Run Import</description>
+				<type>button</type>
+				<id>5</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+				<label>Run Import</label>
+				<onleft>50</onleft>
+				<onright>50</onright>
+            </control>
+			
             <control>
 				<description>Options</description>
 				<type>button</type>
