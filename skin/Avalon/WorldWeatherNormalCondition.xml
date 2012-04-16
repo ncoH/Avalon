@@ -7,10 +7,10 @@
 			<type>label</type>
 			<id>0</id>
 			<posX>1058</posX>
-			<posY>182</posY>
+			<posY>150</posY>
 			<label>#(string.rtrim(L(143),':'))</label>
 			<font>fontB16</font>
-			<visible>string.equals(#WorldWeather.View,Condition)</visible>
+      <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
@@ -32,8 +32,8 @@
       <description>current Moonphase image</description>
       <type>image</type>
       <id>0</id>
-      <posX>1500</posX>
-      <posY>410</posY>
+      <posX>1560</posX>
+      <posY>405</posY>
       <height>60</height>
       <width>60</width>
       <texture>#WorldWeather.LocationMoonPhaseImage</texture>
@@ -49,7 +49,7 @@
 		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
       <posX>1058</posX>
-      <posY>224</posY>
+      <posY>192</posY>
       <!-- *** Temperature label *** -->
       <control>
         <description>Current Temp static label</description>
@@ -132,7 +132,18 @@
         <description>current sunset static label</description>
         <type>label</type>
         <id>0</id>
-        <label>#WorldWeather.TranslationSunrise:    #WorldWeather.LocationSunriseTime</label>
+        <label>#WorldWeather.TranslationSunrise:</label>
+        <font>font12</font>
+        <height>32</height>
+        <textcolor>6aa5cb</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
+      </control>
+      <!-- *** Current sunset label *** -->
+      <control>
+        <description>current sunset static label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.TranslationSunset:</label>
         <font>font12</font>
         <height>32</height>
         <textcolor>6aa5cb</textcolor>
@@ -157,8 +168,8 @@
       <dimColor>0xffffffff</dimColor>
 		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-      <posX>1270</posX>
-      <posY>224</posY>
+      <posX>1320</posX>
+      <posY>192</posY>
       <control>
         <description>current temp label</description>
         <type>label</type>
@@ -261,10 +272,20 @@
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)+!string.equals(#WorldWeather.TodayDewPoint, )</visible>
       </control>
       <control>
+        <description>current sunset label</description>
+        <type>label</type>
+        <id>0</id>
+        <label>#WorldWeather.LocationSunriseTime</label>
+        <font>font12</font>
+        <height>32</height>
+        <textcolor>ffffff</textcolor>
+        <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)+!string.equals(#WorldWeather.TodayDewPoint, )</visible>
+      </control>
+      <control>
         <description>Current sunrise label</description>
         <type>label</type>
         <id>0</id>
-        <label>#WorldWeather.TranslationSunset:    #WorldWeather.LocationSunsetTime</label>
+        <label>#WorldWeather.LocationSunsetTime</label>
         <font>font12</font>
         <height>32</height>
         <textcolor>ffffff</textcolor>

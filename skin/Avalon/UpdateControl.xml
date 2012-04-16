@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>7984</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	
+	<define>#header.hover:header_updatecontrol.png</define>
+	<define>#header.text:Update Control</define>
+	
+	<controls>
+
+
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>1</id>
+			<width>1920</width>
+			<height>1080</height>
+		</control>
+		
+		
+			<!--            :: Overlays ::            -->	
+			
+		<control>
+			<description>background listview</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+	    <posY>0</posY>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>overlay.png</texture>
+			<visible>Control.IsVisible(50)</visible>
+		</control>
+		
+		<control>
+			<description>viewport list</description>
+			<type>image</type>
+			<id>2020</id>
+			<posX>1</posX>
+			<posY>92</posY>
+			<width>1893</width>
+			<height>795</height>
+			<texture>viewport_onlinevideos.png</texture>
+			<visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+			<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+		</control>
+		
+		<import>common.time.xml</import>
+		
+		<control>
+			<type>label</type>
+			<description>Settings label</description>
+			<id>121</id>
+			<posX>185</posX>
+			<posY>38</posY>
+			<width>500</width>
+			<label>#header.text</label>
+			<textcolor>6aa5cb</textcolor>
+			<font>font22</font>
+		</control>
+	
+		<control>
+			<description>Selected item Label</description>
+			<type>fadelabel</type>
+			<id>1</id>
+			<posX>1832</posX>
+			<posY>956</posY>
+			<width>1170</width>
+			<label>#selecteditem</label>
+			<font>fontB16</font>
+			<align>right</align>
+			<visible>control.isvisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+		
+		<!--            :: Count Background ::            -->
+	
+		<control>
+			<description>RSS background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>829</posY>
+			<width>1865</width>
+			<height>96</height>
+			<texture>basichome_rss_bg.png</texture>
+			<visible>control.isvisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+	
+		<control>
+			<description>buttons</description>
+			<type>group</type>
+			<posX>130</posX>
+			<posY>156</posY>
+			<layout>StackLayout(0, Vertical, true)</layout>
+			<control>
+				<description>Show Updates</description>
+				<type>button</type>
+				<id>2</id>
+				<label>Show installed updates</label>
+				<onup>7</onup>
+				<ondown>3</ondown>
+			</control>
+			<control>
+				<description>Search Update</description>
+				<type>button</type>
+				<id>3</id>
+				<label>Search for avilable updates</label>
+				<onup>2</onup>
+				<ondown>4</ondown>
+			</control>
+			<control>
+				<description>Install Update</description>
+				<type>button</type>
+				<id>4</id>
+				<label>Install update(s)</label>
+				<onup>3</onup>
+				<ondown>5</ondown>
+			</control>
+			<control>
+				<description>Restore Points</description>
+				<type>togglebutton</type>
+				<id>5</id>
+				<label>Restore Points</label>
+				<onup>4</onup>
+				<ondown>6</ondown>
+			</control>
+			<control>
+				<description>Reboot</description>
+				<type>button</type>
+				<id>6</id>
+				<label>Reboot</label>
+				<onup>5</onup>
+				<ondown>7</ondown>
+			</control>
+			<control>
+				<description>Clean</description>
+				<type>button</type>
+				<id>7</id>
+				<label>Clean distribution folder</label>
+				<onup>6</onup>
+				<ondown>2</ondown>
+			</control>
+		</control>
+
+		<!-- *** Progress *** -->
+		<control>
+      <type>label</type>
+      <id>0</id>
+      <posX>410</posX>
+			<posY>95</posY>
+      <label>Progress: #UpdateControl.DownloadOverallProgress%, #UpdateControl.InstallOverallProgress% done.</label>
+			<font>font10bold</font>
+			<visible>!string.equals(#UpdateControl.DownloadOverallProgress,0)</visible>
+    </control>
+
+		<!-- *** Action *** -->
+		<control>
+			<description>Action</description>
+			<type>fadelabel</type>
+			<id>0</id>
+			<posX>1275</posX>
+			<posY>95</posY>
+			<width>500</width>
+			<label>#UpdateControl.Action</label>
+			<font>font10bold</font>
+			<align>right</align>
+		</control>
+
+		<!-- *** Update list *** -->
+		<control>
+			<description>listcontrol</description>
+			<type>listcontrol</type>
+			<id>50</id>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<scrollOffset>1</scrollOffset>
+			<posX>679</posX>
+			<posY>153</posY>h
+			<width>1152</width>
+			<height>750</height>
+			<textXOff>50</textXOff>
+			<textXOff2>1152</textXOff2>
+			<textureHeight>55</textureHeight>
+			<spinCanFocus>no</spinCanFocus>
+			<textureFocus>listcontrol_item_selected_wide.png</textureFocus>
+			<dimColor>ffffffff</dimColor>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<!-- *** Item Selection Image *** -->
+		<control>
+      <type>image</type>
+      <id>0</id>
+      <posX>5</posX>
+      <posY>570</posY>
+      <width>30</width>
+      <height>30</height>
+      <texture>#UpdateControl.UpdateSeverityImage</texture>
+      <visible>!string.equals(#UpdateControl.UpdateTitle, )</visible>
+    </control>
+
+		<!-- *** Item Selection Text *** -->
+		<control>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>35</posX>
+      <posY>570</posY>
+      <width>630</width>
+      <label>#UpdateControl.UpdateTitle</label>
+    </control>
+
+		<!-- *** Item Selection Size *** -->
+		<control>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>1275</posX>
+      <posY>570</posY>
+      <width>180</width>
+      <align>right</align>
+      <label>#UpdateControl.AvailableUpdateSelectionSize selected</label>
+      <visible>!string.equals(#UpdateControl.AvailableUpdateCount,0)</visible>
+    </control>
+
+		<control>
+      <description>Update Info</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>15</posX>
+      <posY>605</posY>
+      <width>660</width>
+      <label>#UpdateControl.UpdateDate, #UpdateControl.UpdateSize, #UpdateControl.UpdateSeverity, #UpdateControl.UpdateType (#UpdateControl.UpdateInstallType)</label>
+      <visible>!string.equals(#UpdateControl.UpdateTitle, )</visible>
+    </control>
+
+		<control>
+      <description>Description</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>15</posX>
+      <posY>640</posY>
+      <width>660</width>
+			<height>200</height>
+      <label>#UpdateControl.UpdateDescription</label>
+    </control>
+
+	</controls>
+</window>

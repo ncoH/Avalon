@@ -9,66 +9,69 @@
       <type>group</type>
       <description>group element</description>
       <layout>StackLayout(20, Horizontal, true)</layout>
-      <posX>70</posX>
+			<dimColor>0xffffffff</dimColor>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <posX>590</posX>
       <posY>200</posY>
-      <control Style="NoShadow">
+      <control>
         <description>hour 0 start date</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour0StartDate #WorldWeather.ForecastHour0StartTime</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour0StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 1 start date</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour1StartDate #WorldWeather.ForecastHour1StartTime</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour1StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 2 start date</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour2StartDate #WorldWeather.ForecastHour2StartTime</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour2StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 3 start date</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour3StartDate #WorldWeather.ForecastHour3StartTime</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour3StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 4 start date</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour4StartDate #WorldWeather.ForecastHour4StartTime</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour4StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 5 start date</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour5StartDate #WorldWeather.ForecastHour5StartTime</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour5StartDay, )</visible>
       </control>
     </control>
@@ -79,66 +82,69 @@
       <type>group</type>
       <description>group element</description>
       <layout>StackLayout(20, Horizontal, true)</layout>
-      <posX>70</posX>
-      <posY>450</posY>
-      <control Style="NoShadow">
+			<dimColor>0xffffffff</dimColor>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <posX>590</posX>
+      <posY>550</posY>
+      <control>
         <description>hour 6 start date</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour6StartDate #WorldWeather.ForecastHour6StartTime</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour6StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 7 start date</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour7StartDate #WorldWeather.ForecastHour7StartTime</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour7StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 8 start date</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour8StartDate #WorldWeather.ForecastHour8StartTime</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour8StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 9 start date</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour9StartDate #WorldWeather.ForecastHour9StartTime</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour9StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 10 start date</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour10StartDate #WorldWeather.ForecastHour10StartTime</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour10StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 11 start date</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour11StartDate #WorldWeather.ForecastHour11StartTime</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour11StartDay, )</visible>
       </control>
     </control>
@@ -149,7 +155,10 @@
       <type>group</type>
       <description>group element</description>
       <layout>StackLayout(110, Horizontal, true)</layout>
-      <posX>120</posX>
+			<dimColor>0xffffffff</dimColor>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <posX>640</posX>
       <posY>210</posY>
       <control>
         <description>hour 0 icon</description>
@@ -213,8 +222,11 @@
       <type>group</type>
       <description>group element</description>
       <layout>StackLayout(110, Horizontal, true)</layout>
-      <posX>120</posX>
-      <posY>460</posY>
+			<dimColor>0xffffffff</dimColor>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <posX>640</posX>
+      <posY>560</posY>
       <control>
         <description>hour 6 icon</description>
         <type>image</type>
@@ -277,66 +289,69 @@
       <type>group</type>
       <description>group element</description>
       <layout>StackLayout(20, Horizontal, true)</layout>
-      <posX>70</posX>
-      <posY>300</posY>
-      <control Style="NoShadow">
+			<dimColor>0xffffffff</dimColor>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <posX>590</posX>
+      <posY>310</posY>
+      <control>
         <description>hour 0 condition</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour0Condition</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour0StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 1 condition</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour1Condition</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour1StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 2 condition</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour2Condition</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour2StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 3 condition</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour3Condition</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour3StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 4 condition</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour4Condition</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour4StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 5 condition</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour5Condition</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour5StartDay, )</visible>
       </control>
     </control>
@@ -347,66 +362,69 @@
       <type>group</type>
       <description>group element</description>
       <layout>StackLayout(20, Horizontal, true)</layout>
-      <posX>70</posX>
-      <posY>560</posY>
-      <control Style="NoShadow">
+			<dimColor>0xffffffff</dimColor>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <posX>590</posX>
+      <posY>670</posY>
+      <control>
         <description>hour 6 condition</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour6Condition</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour6StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 7 condition</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour7Condition</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour7StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 8 condition</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour8Condition</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour8StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 9 condition</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour9Condition</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour9StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 10 condition</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour10Condition</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour10StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 11 condition</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour11Condition</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour11StartDay, )</visible>
       </control>
     </control>
@@ -417,66 +435,69 @@
       <type>group</type>
       <description>group element</description>
       <layout>StackLayout(20, Horizontal, true)</layout>
-      <posX>70</posX>
-      <posY>325</posY>
-      <control Style="NoShadow">
+			<dimColor>0xffffffff</dimColor>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <posX>590</posX>
+      <posY>335</posY>
+      <control>
         <description>hour 0 Temperature</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour0Temperature</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour0StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 1 Temperature</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour1Temperature</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour1StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 2 Temperature</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour2Temperature</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour2StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 3 Temperature</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour3Temperature</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour3StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 4 Temperature</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour4Temperature</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour4StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 5 Temperature</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour5Temperature</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour5StartDay, )</visible>
       </control>
     </control>
@@ -487,66 +508,69 @@
       <type>group</type>
       <description>group element</description>
       <layout>StackLayout(20, Horizontal, true)</layout>
-      <posX>70</posX>
-      <posY>585</posY>
-      <control Style="NoShadow">
+			<dimColor>0xffffffff</dimColor>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <posX>590</posX>
+      <posY>695</posY>
+      <control>
         <description>hour 6 Temperature</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour6Temperature</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour6StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 7 Temperature</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour7Temperature</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour7StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 8 Temperature</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour8Temperature</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour8StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 9 Temperature</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour9Temperature</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour9StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 10 Temperature</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour10Temperature</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour10StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 11 Temperature</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour11Temperature</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour11StartDay, )</visible>
       </control>
     </control>
@@ -557,66 +581,69 @@
       <type>group</type>
       <description>group element</description>
       <layout>StackLayout(20, Horizontal, true)</layout>
-      <posX>70</posX>
-      <posY>350</posY>
-      <control Style="NoShadow">
+			<dimColor>0xffffffff</dimColor>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <posX>590</posX>
+      <posY>360</posY>
+      <control>
         <description>hour 0 wind</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour0WindSpeed (#WorldWeather.ForecastHour0WindDirection)</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour0StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 1 wind</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour1WindSpeed (#WorldWeather.ForecastHour1WindDirection)</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour1StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 2 wind</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour2WindSpeed (#WorldWeather.ForecastHour2WindDirection)</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour2StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 3 wind</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour3WindSpeed (#WorldWeather.ForecastHour3WindDirection)</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour3StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 4 wind</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour4WindSpeed (#WorldWeather.ForecastHour4WindDirection)</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour4StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 5 wind</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour5WindSpeed (#WorldWeather.ForecastHour5WindDirection)</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour5StartDay, )</visible>
       </control>
     </control>
@@ -627,66 +654,69 @@
       <type>group</type>
       <description>group element</description>
       <layout>StackLayout(20, Horizontal, true)</layout>
-      <posX>70</posX>
-      <posY>610</posY>
-      <control Style="NoShadow">
+			<dimColor>0xffffffff</dimColor>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <posX>590</posX>
+      <posY>720</posY>
+      <control>
         <description>hour 6 wind</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour6WindSpeed (#WorldWeather.ForecastHour6WindDirection)</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour6StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 7 wind</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour7WindSpeed (#WorldWeather.ForecastHour7WindDirection)</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour7StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 8 wind</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour8WindSpeed (#WorldWeather.ForecastHour8WindDirection)</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour8StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 9 wind</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour9WindSpeed (#WorldWeather.ForecastHour9WindDirection)</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour9StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 10 wind</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour10WindSpeed (#WorldWeather.ForecastHour10WindDirection)</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour10StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 11 wind</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour11WindSpeed (#WorldWeather.ForecastHour11WindDirection)</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour11StartDay, )</visible>
       </control>
     </control>
@@ -697,66 +727,69 @@
       <type>group</type>
       <description>group element</description>
       <layout>StackLayout(20, Horizontal, true)</layout>
-      <posX>70</posX>
-      <posY>375</posY>
-      <control Style="NoShadow">
+			<dimColor>0xffffffff</dimColor>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <posX>590</posX>
+      <posY>385</posY>
+      <control>
         <description>hour 0 athmosphere</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour0Humidity - #WorldWeather.ForecastHour0Pressure</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour0StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 1 athmosphere</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour1Humidity - #WorldWeather.ForecastHour1Pressure</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour1StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 2 athmosphere</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour2Humidity - #WorldWeather.ForecastHour2Pressure</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour2StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 3 athmosphere</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour3Humidity - #WorldWeather.ForecastHour3Pressure</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour3StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 4 athmosphere</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour4Humidity - #WorldWeather.ForecastHour4Pressure</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour4StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 5 athmosphere</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour5Humidity - #WorldWeather.ForecastHour5Pressure</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour5StartDay, )</visible>
       </control>
     </control>
@@ -767,70 +800,73 @@
       <type>group</type>
       <description>group element</description>
       <layout>StackLayout(20, Horizontal, true)</layout>
-      <posX>70</posX>
-      <posY>635</posY>
-      <control Style="NoShadow">
+			<dimColor>0xffffffff</dimColor>
+		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <posX>590</posX>
+      <posY>745</posY>
+      <control>
         <description>hour 6 athmosphere</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour6Humidity - #WorldWeather.ForecastHour6Pressure</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour6StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 7 athmosphere</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour7Humidity - #WorldWeather.ForecastHour7Pressure</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour7StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 8 athmosphere</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour8Humidity - #WorldWeather.ForecastHour8Pressure</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour8StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 9 athmosphere</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour9Humidity - #WorldWeather.ForecastHour9Pressure</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour9StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 10 athmosphere</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour10Humidity - #WorldWeather.ForecastHour10Pressure</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour10StartDay, )</visible>
       </control>
-      <control Style="NoShadow">
+      <control>
         <description>hour 11 athmosphere</description>
         <type>label</type>
         <id>0</id>
-        <width>175</width>
+        <width>185</width>
         <align>center</align>
         <label>#WorldWeather.ForecastHour11Humidity - #WorldWeather.ForecastHour11Pressure</label>
-        <font>font9</font>
+        <font>font11</font>
         <visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Hour)+!string.equals(#WorldWeather.ForecastHour11StartDay, )</visible>
       </control>
     </control>
-    <!-- **************************  Separator lines   ***************************-->>
+    <!-- **************************  Separator lines   ***************************-->
     <control>
       <description>divider</description>
       <type>image</type>
