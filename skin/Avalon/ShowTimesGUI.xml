@@ -78,9 +78,9 @@
 	<import>ShowTimesGUI.background.xml</import>
 	<import>common.time.xml</import>
 		<!-- Title Bar Controls -->
-		<control Style="wideTitle">
+		<control Style="smallTitle">
 			<description>Selected Item</description>
-			<type>label</type>
+			<type>fadelabel</type>
 			<id>0</id>
 			<posX>714</posX>
 			<posY>810</posY>
@@ -94,12 +94,14 @@
 			<type>fadelabel</type>
 			<description>Theater</description>
 			<id>44</id>
-			<posX>70</posX>
-			<posY>920</posY>
-			<width>1800</width>
+			<posX>875</posX>
+			<posY>725</posY>
 			<align>left</align>
-			<label>#st_theater | #st_moviedate @ #st_showtimes</label>
-			<visible>Control.HasText(46)</visible>
+			<font>AvalonLight12</font>
+			<textcolor>6aa5cb</textcolor>
+			<width>1800</width>
+			<label>| #st_theater, #st_moviedate @ #st_showtimes</label>
+			<visible>Control.HasText(46) + !Control.IsVisible(24)</visible>
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>

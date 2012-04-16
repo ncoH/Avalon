@@ -72,32 +72,25 @@
 			<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		-->
-		<control>
+		<control  Style="InfoLabelDetails">
 			<description>Release Date Label</description>
 			<type>label</type>
 			<label>#Avalon.ReleaseDate</label>
 			<id>0</id>
 			<posX>586</posX>
-			<posY>254</posY>
-			<width>240</width>
-			<align>left</align>
-			<font>AvalonLight12</font>
-			<textcolor>6aa5cb</textcolor>
+			<posY>364</posY>
 			<visible>Control.IsVisible(24)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="0">WindowClose</animation>
 			<animation effect="slide" start="0,450" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
 		</control>
-		<control>
+		
+		<control Style="InfoValueDetails">
 			<description>year</description>
 			<type>label</type>
 			<id>0</id>
 			<posX>838</posX>
-			<posY>254</posY>
-			<width>200</width>
-			<align>left</align>
-			<font>AvalonLight14</font>
-			<textcolor>ffffff</textcolor>
+			<posY>360</posY>
 			<label>#st_releasedate</label>
 			<visible>Control.IsVisible(24)</visible>
 			<animation effect="fade" time="250">Visible</animation>
