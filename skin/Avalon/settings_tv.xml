@@ -37,7 +37,7 @@
 			<height>52</height>
 			<textXOff>28</textXOff>
 			<textYOff>8</textYOff>
-			<onup>29</onup>
+			<onup>32</onup>
 		</control>
 
 		<control>
@@ -147,7 +147,8 @@
 			<textXOff>28</textXOff>
 			<textYOff>8</textYOff>
 			<hyperlink>701</hyperlink>
-			<onup>28</onup>
+			<ondown>30</ondown>
+			<onup>28</onup>		
 		</control>
 
 		<control>
@@ -162,14 +163,13 @@
 			<height>52</height>
 			<textXOff>28</textXOff>
 			<textYOff>8</textYOff>
-			<label>6006</label>
+			<label>6006</label>				
 		</control>
 
 		<control>
-			<description>Timeshift usage mode</description>
+			<description>ChannelManager</description>
 			<type>button</type>
-			<id>26</id>
-			<label>777</label>
+			<id>34</id>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
 			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
 			<textcolor>ffffffff</textcolor>
@@ -177,16 +177,16 @@
 			<width>471</width>
 			<height>52</height>
 			<textXOff>28</textXOff>
-			<textYOff>8</textYOff>
+			<textYOff>8</textYOff>		
+			<label>#TV.Settings.ChannelManagerName</label>
+			<hyperlink>49856</hyperlink>			
+			<visible>plugin.isenabled(For The Record TV)</visible>
 		</control>
-
-	<!-- last control needs ondown to itself, else it jumps to last button in first column -->		
+	  
 		<control>
-			<description>Timeshift Buffer</description>
+			<description>4TRClientSettings</description>
 			<type>button</type>
-			<width>334</width>
-			<id>29</id>
-			<label>6005</label>
+			<id>31</id>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
 			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
 			<textcolor>ffffffff</textcolor>
@@ -194,8 +194,28 @@
 			<width>471</width>
 			<height>52</height>
 			<textXOff>28</textXOff>
-			<textYOff>8</textYOff>
-			<ondown>24</ondown>			
+			<textYOff>8</textYOff>			
+			<label>#TV.Settings.4TRClientSettingsName</label>
+			<hyperlink>49857</hyperlink>		
+			<visible>plugin.isenabled(For The Record TV)</visible>
+		</control>
+	  
+		<control>
+			<description>4TRServerSettings</description>
+			<type>button</type>
+			<id>32</id>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>		
+			<label>#TV.Settings.4TRServerSettingsName</label>
+			<hyperlink>49855</hyperlink>
+			<ondown>24</ondown>		
+			<visible>plugin.isenabled(For The Record TV)</visible>
 		</control>
 
 	</control>

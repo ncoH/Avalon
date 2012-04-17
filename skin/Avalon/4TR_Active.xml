@@ -87,7 +87,7 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
-<import>common.time.xml</import>
+	<import>common.time.xml</import>
 	
 	<!--            :: Count Background ::            -->
 
@@ -251,7 +251,8 @@
 		<visible>Control.HasFocus(10) + !string.contains(#Avalon.HiddenMenu, false)</visible>
 	</control>
 
-<import>common.overlay.xml</import>
-<import>4TR_Active.hiddenmenu.xml</import>
+	<import>common.overlay.xml</import>
+	<import>4TR_Active.hiddenmenu.xml</import>
+
 </controls>
 </window>

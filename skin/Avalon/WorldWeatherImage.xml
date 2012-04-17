@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <allowoverlay>yes</allowoverlay>
-  <controls>
+  <controls
+  
     <!-- *** Location *** -->    
 	  <control>
 	    <description>Location label</description>
@@ -14,8 +14,9 @@
 	    <label>#(L(8))</label>
 	    <textcolor>6aa5cb</textcolor>
 	    <font>font22</font>
-      <visible>string.equals(#WorldWeather.View,Image)</visible>
+		<visible>string.equals(#WorldWeather.View,Image)</visible>
 	  </control>
+	  
 	  <control>
 	    <description>Selected item Label</description>
 	    <type>fadelabel</type>
@@ -45,6 +46,7 @@
       <visible>string.equals(#WorldWeather.View,Image)+string.equals(#WorldWeather.ImageView,Flat)+[control.hasfocus(10)|control.hasfocus(2)|control.hasfocus(3)|control.hasfocus(4)|control.hasfocus(5)|control.hasfocus(9)]</visible>
       <animation effect="fade" time="300">visiblechange</animation>
     </control>
+	
     <!-- *** Image 1 *** -->
     <control>
       <description>Image 1</description>

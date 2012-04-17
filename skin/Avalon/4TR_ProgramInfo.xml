@@ -134,7 +134,6 @@
 			<textalign>left</textalign>			
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 		</control>
-
 	</control>
 	
 
@@ -212,10 +211,10 @@
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
-				<PinIconHeight>53</PinIconHeight>
-				<PinIconWidth>34</PinIconWidth>
-				<PinIconXOff>0</PinIconXOff>
-				<PinIconYOff>0</PinIconYOff>
+				<PinIconHeight>56</PinIconHeight>
+				<PinIconWidth>35</PinIconWidth>
+				<PinIconXOff>5</PinIconXOff>
+				<PinIconYOff>5</PinIconYOff>
 				<itemWidth>64</itemWidth>
 				<itemHeight>53</itemHeight>
 				<textureFocus>listcontrol_item_selected_tv.png</textureFocus>
@@ -274,7 +273,8 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 	
-<import>common.overlay.xml</import>
+	<import>common.overlay.xml</import>
+
 </controls>
 </window>
 

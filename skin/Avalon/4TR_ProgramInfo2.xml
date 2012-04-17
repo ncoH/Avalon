@@ -3,7 +3,6 @@
 <id>748</id>
 <defaultcontrol>2</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
-<define>#header.label:#selecteditem:</define>
 <controls>
 
 	<control>
@@ -20,7 +19,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>0</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
 		<height>866</height>
 		<texture>viewport_tv_recordings.png</texture>
@@ -30,6 +29,21 @@
 		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
 	</control>
 
+	<!--            :: Count Background ::            -->
+
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>900</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
 	<control>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -42,6 +56,21 @@
 		<textcolor>6aa5cb</textcolor>
 		<font>font22</font>
 	</control>
+
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<label>#currentmodule: #itemcount</label>
+		<posX>948</posX>
+		<posY>944</posY>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>Control.IsVisible(10)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>	
 	
 	<import>common.time.xml</import>
 
@@ -64,17 +93,17 @@
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 		</control>
 
-    <control>
-      <description>Reminder</description>
-      <type>button</type>
-      <id>6</id>
-      <posX>462</posX>
-      <posY>228</posY>
-      <onup>9</onup>
-      <ondown>4</ondown>
-      <onleft>2</onleft>
-      <textcolorNoFocus>ffffffff</textcolorNoFocus>
-    </control>
+		<control>
+			<description>Reminder</description>
+			<type>button</type>
+			<id>6</id>
+			<posX>462</posX>
+			<posY>228</posY>
+			<onup>9</onup>
+			<ondown>4</ondown>
+			<onleft>2</onleft>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		</control>
 
 		<control>
 			<description>Priority</description>
@@ -144,7 +173,6 @@
 			<textalign>left</textalign>			
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>
 		</control>
-
 	</control>
 	
 
@@ -191,99 +219,94 @@
 			<posX>74</posX>
 			<posY>634</posY>
 			<width>780</width>
-			<height>350</height>
-			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		</control>
-		
-		<control>
-			<description>upcoming episodes label</description>
-			<type>label</type>
-			<id>11</id>
-			<posX>1030</posX>
-			<posY>240</posY>
-			<width>800</width>
-			<label>1041</label>
-			<textcolor>85cffe</textcolor>
-			<font>AvalonLight16</font>
+			<height>275</height>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
 
-			<control>
-				<description>listcontrol</description>
-				<type>listcontrol</type>
-				<id>10</id>
-				<posX>918</posX>
-				<posY>310</posY>
-				<height>700</height>
-				<width>919</width>
-				<onleft>2</onleft>
-				<onright>2</onright>
-				<scrollOffset>1</scrollOffset>
-				<PinIconHeight>53</PinIconHeight>
-				<PinIconWidth>34</PinIconWidth>
-				<PinIconXOff>0</PinIconXOff>
-				<PinIconYOff>0</PinIconYOff>
-				<itemWidth>64</itemWidth>
-				<itemHeight>53</itemHeight>
-				<textureFocus>listcontrol_item_selected_tv.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<IconXOff>45</IconXOff>
-				<IconYOff>0</IconYOff>				
-				<textXOff>40</textXOff>
-				<keepaspectratio>yes</keepaspectratio>
-				<dimColor>ffffffff</dimColor>
+    <control>
+		<description>upcoming episodes label</description>
+		<type>label</type>
+		<id>11</id>
+		<posX>1030</posX>
+		<posY>168</posY>
+		<width>800</width>
+		<label>1041</label>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight16</font>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+
+
+    <control>
+        <type>group</type>
+        <description>group element</description>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+
+    <control>
+        <description>listcontrol</description>
+        <type>listcontrol</type>
+        <id>10</id>
+        <posX>918</posX>
+        <posY>279</posY>
+        <height>700</height>
+        <width>919</width>
+        <onleft>2</onleft>
+        <onright>5</onright>
+        <scrollOffset>1</scrollOffset>
+        <PinIconHeight>56</PinIconHeight>
+        <PinIconWidth>35</PinIconWidth>
+        <PinIconXOff>5</PinIconXOff>
+        <PinIconYOff>5</PinIconYOff>
+        <itemWidth>64</itemWidth>
+        <itemHeight>53</itemHeight>
+        <textureFocus>listcontrol_item_selected_tv.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <IconXOff>45</IconXOff>
+        <IconYOff>0</IconYOff>
+        <textXOff>40</textXOff>
+        <keepaspectratio>yes</keepaspectratio>
+        <dimColor>ffffffff</dimColor>
         <spinPosX>1832</spinPosX>
         <spinPosY>950</spinPosY>
-			</control>
+      </control>
+    </control>
+
+		<control>
+			<description>genre</description>
+			<type>label</type>
+			<id>17</id>
+			<posX>-2000</posX>
+		</control>
 
 	<control>
-		<description>genre</description>
-		<type>label</type>
-		<id>17</id>
-		<posX>-2000</posX>
-	</control>
-
-  <control>
-    <description>Number of Files Label</description>
-    <type>label</type>
-    <id>1</id>
-    <label>#currentmodule: #itemcount</label>
-    <posX>948</posX>
-    <posY>944</posY>
-    <align>left</align>
-		<font>AvalonLight12</font>
-		<textcolor>ffffff</textcolor>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
-
-	<control>
-		<id>0</id>
-		<type>image</type>
-		<posX>70</posX>
-		<posY>500</posY>
-		<width>187</width>
-		<height>119</height>
-		<texture>tv_logo_bg.png</texture>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
+			<id>0</id>
+			<type>image</type>
+			<posX>70</posX>
+			<posY>500</posY>
+			<width>187</width>
+			<height>119</height>
+			<texture>tv_logo_bg.png</texture>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
 	
-	<control>
-		<id>0</id>
-		<type>image</type>
-		<posX>121</posX>
-		<posY>514</posY>
-		<width>90</width>
-		<height>90</height>
-		<texture>#selectedthumb</texture>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
+		<control>
+			<id>0</id>
+			<type>image</type>
+			<posX>121</posX>
+			<posY>514</posY>
+			<width>90</width>
+			<height>90</height>
+			<texture>#selectedthumb</texture>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
 	
-<import>common.overlay.xml</import>
+	<import>common.overlay.xml</import>
+
 </controls>
 </window>
 

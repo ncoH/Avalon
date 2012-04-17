@@ -14,20 +14,20 @@
 		<texture>background.png</texture>
 	</control>
 
-<control>
-	<description>VIEWPORT</description>
-	<type>image</type>
-	<id>0</id>
-	<posX>0</posX>
-	<posY>92</posY>
-	<width>1893</width>
-	<height>716</height>
-	<texture>tv_viewport.png</texture>
-    <animation effect="fade" time="250">WindowOpen</animation>
-    <animation effect="fade" time="250">WindowClose</animation>
-	<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-	<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
-</control>		
+	<control>
+		<description>VIEWPORT</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>716</height>
+		<texture>tv_viewport.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>		
 		
 	<control>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -408,7 +408,7 @@
 		<description>record pin</description>
 		<type>image</type>
 		<id>24</id>
-		<posX>462</posX>
+		<posX>-2000</posX>
 		<posY>526</posY>
 		<texture>tvguide_record_button.png</texture>
 		<visible>no</visible>

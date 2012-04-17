@@ -5,6 +5,7 @@
   <allowoverlay>no</allowoverlay>
   <disabletopbar>true</disabletopbar>
   <controls>
+  
     <control>
       <description>background image</description>
       <type>image</type>
@@ -13,6 +14,7 @@
       <height>1080</height>
       <texture>WebBrowser/background.png</texture>
     </control>
+	
     <control>
       <description>Back button</description>
       <type>button</type>
@@ -29,6 +31,7 @@
       <ondown>2</ondown>
       <onup>2</onup>
     </control>
+	
     <control>
       <description>Forward button</description>
       <type>button</type>
@@ -45,6 +48,7 @@
       <ondown>3</ondown>
       <onup>3</onup>
     </control>
+	
     <control>
       <description>Favicon</description>
       <type>image</type>
@@ -55,6 +59,7 @@
       <height>26</height>
       <texture>#webbrowser.icon</texture>
     </control>
+	
     <control>
       <description>URL label</description>
       <type>label</type>
@@ -68,6 +73,7 @@
       <shadowDistance>2</shadowDistance>
       <shadowColor>ff000000</shadowColor>
     </control>
+	
     <control>
       <description>Open URL button</description>
       <type>button</type>
@@ -84,6 +90,7 @@
       <ondown>8</ondown>
       <onup>8</onup>
     </control>
+	
     <control>
       <description>Home button</description>
       <type>button</type>
@@ -100,6 +107,7 @@
       <ondown>6</ondown>
       <onup>6</onup>
     </control>
+	
     <control>
       <description>Refresh button</description>
       <type>button</type>
@@ -116,6 +124,7 @@
       <ondown>4</ondown>
       <onup>4</onup>
     </control>
+	
     <control>
       <description>Stop button</description>
       <type>button</type>
@@ -132,6 +141,7 @@
       <ondown>5</ondown>
       <onup>5</onup>
     </control>
+	
     <control>
       <description>Status label</description>
       <type>label</type>
@@ -147,6 +157,7 @@
       <shadowDistance>0</shadowDistance>
       <shadowColor>00000000</shadowColor>
     </control>
+	
     <control>
       <description>Zoom Value label</description>
       <type>label</type>
@@ -163,6 +174,7 @@
       <shadowColor>00000000</shadowColor>
       <visible>!string.equals(#webbrowser.zoom,)</visible>
     </control>
+	
     <control>
       <description>Zoom Value label</description>
       <type>label</type>
@@ -179,6 +191,6 @@
       <shadowColor>00000000</shadowColor>
       <visible>string.equals(#webbrowser.zoom,)</visible>
     </control>
+	
   </controls>
 </window>
-<!--Checksum:991c514945a323cee9d89f248d07cb98-->

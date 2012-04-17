@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>54537689</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <disabletopbar>true</disabletopbar>
+  <controls>
+  
+    <control>
+      <description>DEFAULT BACKGROUND</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+      <shouldCache>true</shouldCache>
+    </control>  
+	
+    <control>
+      <description>Status label</description>
+      <id>9</id>
+      <type>label</type>
+      <posX>14</posX>
+      <posY>1012</posY>
+      <width>1686</width>
+      <font>AvalonLight16</font>
+      <label>#(L(126)) | #btWeb.status</label>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+      <valign>middle</valign>
+    </control>
+	
+    <control>
+      <description>Link id label</description>
+      <type>label</type>
+      <id>9</id>
+      <posX>1771</posX>
+      <posY>1012</posY>
+      <label>#btWeb.linkid</label>
+      <font>AvalonLight16</font>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+      <valign>middle</valign>
+    </control>
+	
+  </controls>
+</window>
