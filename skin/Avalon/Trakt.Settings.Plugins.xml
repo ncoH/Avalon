@@ -15,6 +15,7 @@
     		<posX>736</posX>
     		<posY>218</posY>
 			<layout>StackLayout(0, Vertical, true)</layout>
+			
 			<control Style="SettingsToggleLarge">
 				<description>MP-TVSeries</description>
 				<type>togglebutton</type>
@@ -22,8 +23,9 @@
 				<label>MP-TVSeries</label>
 				<onright>2</onright>
 				<onleft>#defaultcontrol.onright</onleft>
-				<onup>5</onup>
+				<onup>9</onup>
 			</control>
+			
 			<control Style="SettingsToggleLarge">
 				<description>MovingPictures</description>
 				<type>togglebutton</type>
@@ -32,6 +34,7 @@
 				<onleft>3</onleft>
 				<onleft>#defaultcontrol.onright</onleft>
 			</control>
+			
 			<control Style="SettingsToggleLarge">
 				<description>My Videos</description>
 				<type>togglebutton</type>
@@ -40,6 +43,7 @@
 				<onleft>4</onleft>
 				<onleft>#defaultcontrol.onright</onleft>
 			</control>
+			
 			<control Style="SettingsToggleLarge">
 				<description>My Films</description>
 				<type>togglebutton</type>
@@ -49,6 +53,7 @@
 				<onleft>#defaultcontrol.onright</onleft>
 				<ondown>6</ondown>
 			</control>
+			
 			<control Style="SettingsToggleLarge">
 				<description>Online Videos</description>
 				<type>togglebutton</type>
@@ -58,6 +63,7 @@
 				<onleft>#defaultcontrol.onright</onleft>
 				<ondown>7</ondown>
 			</control>
+			
 			<control Style="SettingsToggleLarge">
 				<description>My Anime</description>
 				<type>togglebutton</type>
@@ -65,9 +71,31 @@
 				<label>My Anime</label>
 				<onleft>7</onleft>
 				<onleft>#defaultcontrol.onright</onleft>
-				<ondown>2</ondown>
+				<ondown>8</ondown>
 			</control>
+			
+			<control Style="SettingsToggleLarge">
+				<description>My TV Recordings</description>
+				<type>togglebutton</type>
+				<id>8</id>
+				<label>My TV Recordings</label>
+				<onleft>8</onleft>
+				<onleft>#defaultcontrol.onright</onleft>
+				<ondown>9</ondown>
+			</control>
+			
+			<control Style="SettingsToggleLarge">
+				<description>4TR TV Recordings</description>
+				<type>togglebutton</type>
+				<id>9</id>
+				<label>4TR TV Recordings</label>
+				<onleft>9</onleft>
+				<onleft>#defaultcontrol.onright</onleft>
+				<ondown>2</ondown>
+			</control>			
 		</control>
+		
 		<import>common.overlay.xml</import>
+		
 	</controls>
 </window>
