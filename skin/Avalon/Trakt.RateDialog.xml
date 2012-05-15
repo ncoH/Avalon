@@ -5,7 +5,20 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<import>common.dialog.xml</import>
-		<!-- Rate Buttons -->
+	
+	
+		<control>
+      <description>UnRate (invisible)</description>
+      <type>button</type>
+      <id>99</id>
+      <posX>-1000</posX>
+      <posY>0</posY>
+      <onup>100</onup>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+    </control>
+	
+	<!-- Love / Hate Dialog -->
 		<control>
 			<description>Love</description>
 			<type>button</type>
@@ -14,7 +27,7 @@
 			<posY>745</posY>
 			<width>50</width>
 			<height>36</height>
-			<onup>101</onup>
+			<onup>1001</onup>
 			<textureFocus>rate.love.on.png</textureFocus>
 			<textureNoFocus>rate.love.off.png</textureNoFocus>
 			<animation effect="fade" time="250">WindowOpen</animation>
@@ -35,7 +48,8 @@
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 			<animation effect="fade" time="0">WindowClose</animation>
-			</control>
+		</control>
+			
 		<control>
 			<description>Rating Description</description>
 			<type>label</type>
@@ -46,6 +60,191 @@
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 			<animation effect="fade" time="0">WindowClose</animation>
-			</control>
+		</control>
+		
+		
+		<!-- 10 Heart Dialog -->
+		<control>
+      <description>1 Heart</description>
+      <type>togglebutton</type>
+      <id>1001</id>
+      <posX>760</posX>
+      <posY>745</posY>
+      <width>32</width>
+      <height>30</height>
+      <onup>1002</onup>
+      <textureFocus>heart-1.png</textureFocus>
+      <textureNoFocus>heart-1.png</textureNoFocus>
+      <AltTextureFocus>heart-off.png</AltTextureFocus>
+      <AltTextureNoFocus>heart-off.png</AltTextureNoFocus>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>2 Heart</description>
+      <type>togglebutton</type>
+      <id>1002</id>
+      <posX>800</posX>
+      <posY>745</posY>
+      <width>32</width>
+      <height>30</height>
+      <onup>1003</onup>
+      <textureFocus>heart-2.png</textureFocus>
+      <textureNoFocus>heart-2.png</textureNoFocus>
+      <AltTextureFocus>heart-off.png</AltTextureFocus>
+      <AltTextureNoFocus>heart-off.png</AltTextureNoFocus>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>3 Heart</description>
+      <type>togglebutton</type>
+      <id>1003</id>
+      <posX>840</posX>
+      <posY>745</posY>
+      <width>32</width>
+      <height>30</height>
+      <onup>1004</onup>
+      <textureFocus>heart-3.png</textureFocus>
+      <textureNoFocus>heart-3.png</textureNoFocus>
+      <AltTextureFocus>heart-off.png</AltTextureFocus>
+      <AltTextureNoFocus>heart-off.png</AltTextureNoFocus>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>4 Heart</description>
+      <type>togglebutton</type>
+      <id>1004</id>
+      <posX>880</posX>
+      <posY>745</posY>
+      <width>32</width>
+      <height>30</height>
+      <onup>1005</onup>
+      <textureFocus>heart-4.png</textureFocus>
+      <textureNoFocus>heart-4.png</textureNoFocus>
+      <AltTextureFocus>heart-off.png</AltTextureFocus>
+      <AltTextureNoFocus>heart-off.png</AltTextureNoFocus>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>5 Heart</description>
+      <type>togglebutton</type>
+      <id>1005</id>
+      <posX>920</posX>
+      <posY>745</posY>
+      <width>32</width>
+      <height>30</height>
+      <onup>1006</onup>
+      <textureFocus>heart-5.png</textureFocus>
+      <textureNoFocus>heart-5.png</textureNoFocus>
+      <AltTextureFocus>heart-off.png</AltTextureFocus>
+      <AltTextureNoFocus>heart-off.png</AltTextureNoFocus>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>6 Heart</description>
+      <type>togglebutton</type>
+      <id>1006</id>
+      <posX>960</posX>
+      <posY>745</posY>
+      <width>32</width>
+      <height>30</height>
+      <onup>1007</onup>
+      <textureFocus>heart-6.png</textureFocus>
+      <textureNoFocus>heart-6.png</textureNoFocus>
+      <AltTextureFocus>heart-off.png</AltTextureFocus>
+      <AltTextureNoFocus>heart-off.png</AltTextureNoFocus>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>7 Heart</description>
+      <type>togglebutton</type>
+      <id>1007</id>
+      <posX>1000</posX>
+      <posY>745</posY>
+      <width>32</width>
+      <height>30</height>
+      <onup>1008</onup>
+      <textureFocus>heart-7.png</textureFocus>
+      <textureNoFocus>heart-7.png</textureNoFocus>
+      <AltTextureFocus>heart-off.png</AltTextureFocus>
+      <AltTextureNoFocus>heart-off.png</AltTextureNoFocus>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>8 Heart</description>
+      <type>togglebutton</type>
+      <id>1008</id>
+      <posX>1040</posX>
+      <posY>745</posY>
+      <width>32</width>
+      <height>30</height>
+      <onup>1009</onup>
+      <textureFocus>heart-8.png</textureFocus>
+      <textureNoFocus>heart-8.png</textureNoFocus>
+      <AltTextureFocus>heart-off.png</AltTextureFocus>
+      <AltTextureNoFocus>heart-off.png</AltTextureNoFocus>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>9 Heart</description>
+      <type>togglebutton</type>
+      <id>1009</id>
+      <posX>1080</posX>
+      <posY>745</posY>
+      <width>32</width>
+      <height>30</height>
+      <onup>1010</onup>
+      <textureFocus>heart-9.png</textureFocus>
+      <textureNoFocus>heart-9.png</textureNoFocus>
+      <AltTextureFocus>heart-off.png</AltTextureFocus>
+      <AltTextureNoFocus>heart-off.png</AltTextureNoFocus>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>10 Heart</description>
+      <type>togglebutton</type>
+      <id>1010</id>
+      <posX>1120</posX>
+      <posY>745</posY>
+      <width>32</width>
+      <height>30</height>
+      <textureFocus>heart-10.png</textureFocus>
+      <textureNoFocus>heart-10.png</textureNoFocus>
+      <AltTextureFocus>heart-off.png</AltTextureFocus>
+      <AltTextureNoFocus>heart-off.png</AltTextureNoFocus>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>Rating Description</description>
+      <type>label</type>
+      <id>11</id>
+      <posX>575</posX>
+      <posY>811</posY>
+      <width>768</width>
+			<font>fontB12</font>
+      <align>center</align>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+    </control>
 	</controls>
 </window>
