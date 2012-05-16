@@ -1,11 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
-  <id>54537689</id>
-  <defaultcontrol>2</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>
-  <disabletopbar>true</disabletopbar>
-  <controls>
-  
+	<id>54537689</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>control.isvisible(13371337)</allowoverlay>
+	<disabletopbar>true</disabletopbar>
+	<define>#header.label:</define>
+	<define>#header.background:hover_BrowseTheWeb.png</define>
+	<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowClose</animation>
+	<controls>
     <control>
       <description>DEFAULT BACKGROUND</description>
       <type>image</type>
@@ -17,7 +21,6 @@
       <texture>background.png</texture>
       <shouldCache>true</shouldCache>
     </control>  
-	
     <control>
       <description>Status label</description>
       <id>9</id>
@@ -31,7 +34,6 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
-	
     <control>
       <description>Link id label</description>
       <type>label</type>
@@ -46,6 +48,5 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
-	
-  </controls>
+	</controls>
 </window>
