@@ -154,13 +154,13 @@
 		<description>Buffering Label</description>
 		<type>label</type>
 		<id>0</id>
-        <posX>914</posX>
+        <posX>185</posX>
         <posY>875</posY>
         <align>left</align>
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<label>#OnlineVideos.buffered % #OnlineVideos.Translation.Buffered.Label</label>
-		<visible>string.equals(#OnlineVideos.IsBuffering, true) [facadeview.list]</visible>
+		<visible>string.equals(#OnlineVideos.IsBuffering, true) + [facadeview.list]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     </control>
@@ -400,6 +400,7 @@
     <import>myonlinevideos.details.imdb.xml</import>
     <import>myonlinevideos.details.youtube.xml</import>
     <import>myonlinevideos.facade.xml</import>  
-	<import>myonlinevideos.listview.details.xml</import>	
+	<import>myonlinevideos.listview.details.xml</import>
+	<import>common.overlay.xml</import>	
   </controls>
 </window>
