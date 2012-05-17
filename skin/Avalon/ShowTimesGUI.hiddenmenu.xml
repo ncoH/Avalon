@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <window>
 	<controls>
-	<!--            :: HIDDEN MENU ::            -->
-	
+    <!--            :: HIDDEN MENU ::            -->
 	
 	<control>
 		<type>actiongroup</type>
@@ -21,18 +20,11 @@
 			<width>1920</width>
 			<height>1080</height>
 			<texture>semi_trans_back_hidden_menu.png</texture>
-			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)+!control.isvisible(24)</visible>
 			<animation effect="fade" time="450">visible</animation>
 			<animation effect="fade" time="400">hidden</animation>
 		</control>
 	
-	<control>
-		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
-		<animation effect="fade" time="250">visible</animation>
-		<animation effect="fade" time="0">hidden</animation>
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -41,71 +33,206 @@
 			<width>631</width>
 			<height>1044</height>
 			<texture>menu_bg.png</texture>
-			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)+!control.isvisible(24)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
 		</control>
 	
 		<control>
-			<description>Heading text label</description>
+			<type>image</type>
+			<id>0</id>
+			<posY>362</posY>
+			<posX>128</posX>
+			<width>376</width>
+			<height>1</height>
+			<texture>hiddenmenu_separator.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)+!control.isvisible(24)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+
+		<control>
+			<description>Menu label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>136</posX>
-			<posY>128</posY>
+			<posX>128</posX>
+			<posY>114</posY>
 			<label>924</label>
-			<font>font22</font>
+			<font>fontB12</font>
 			<textcolor>ffffff</textcolor>
-		</control>		
+			<visible>!Control.HasFocus(50)+control.isvisible(50)+!control.isvisible(24)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+    		</control>
+		<control>
+			<description>Jump to label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>372</posY>
+			<label>1065</label>
+			<font>fontB12</font>
+			<textcolor>ffffff</textcolor>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)+!control.isvisible(24)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+          <control>
+            <type>group</type>
+            <description>group element</description>
+ 			<visible>!Control.HasFocus(50)+control.isvisible(50)+!control.isvisible(24)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+            <posX>69</posX>
+            <posY>155</posY>
+            <layout>StackLayout(0, Vertical, true)</layout>	
+			
 			<control>
 				<type>button</type>
 				<description>Change View</description>
 				<id>2</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>215</posY>
 				<width>497</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>	
 				<label>417</label>
-				<onup>4</onup>
+				<onup>66605</onup>
 				<onright>50</onright>
 				<ondown>3</ondown>
 			</control>
+			
 			<control>
 				<type>button</type>
 				<description>Show Theaters</description>
 				<id>3</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>285</posY>
 				<width>497</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>	
 				<label></label>
 				<onright>50</onright>
 				<onup>2</onup>
 				<ondown>4</ondown>
 			</control>
+			
 			<control>
 				<type>button</type>
 				<description>Extra</description>
 				<id>4</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>355</posY>
 				<width>497</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>	
 				<label></label>
 				<onright>50</onright>
 				<onup>3</onup>
-				<ondown>2</ondown>
+				<ondown>66602</ondown>
 			</control>
+
+            <control>
+              <description>Empty button</description>
+              <type>button</type>
+              <id>0</id>
+			  <textureFocus>-</textureFocus>
+			  <textureNoFocus>-</textureNoFocus>
+			  <width>497</width>
+			  <height>64</height>
+              <label>-</label>
+              <visible>true</visible>
+            </control>
+			
+			<control>
+				<description>Moving Pictures</description>
+				<type>button</type>
+				<id>66602</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>		  
+				<label>Moving Pictures</label>
+				<hyperlink>96742</hyperlink>
+				<visible>plugin.isenabled(Moving Pictures)</visible>
+				<onleft>50</onleft>
+				<onup>4</onup>
+				<ondown>66603</ondown>
+			</control>
+		
+			<control>
+				<description>TV Shows</description>
+				<type>button</type>
+				<id>66603</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>				
+				<hyperlink>9811</hyperlink>
+				<label>1300</label>
+				<visible>plugin.isenabled(MP-TV Series)</visible>
+				<onleft>50</onleft>
+				<onup>66602</onup>
+				<ondown>66604</ondown>
+			</control>			
+
+			<control>
+				<description>Trailers (IMDb)</description>
+				<type>button</type>
+				<id>66604</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>			  
+				<onleft>50</onleft>
+				<onup>66603</onup>
+				<ondown>66605</ondown>
+				<label>#(L(5900)) IMDb</label>
+				<hyperlink>4755</hyperlink>
+				<hyperlinkParameter>site:IMDb Movie Trailers|return:Locked</hyperlinkParameter>
+				<visible>plugin.isenabled(OnlineVideos)</visible>
+			</control>
+			
+			<control>
+				<description>Trailers (iTunes)</description>
+				<type>button</type>
+				<id>66605</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>				
+				<onleft>50</onleft>
+				<onup>66604</onup>
+				<ondown>2</ondown>
+				<label>#(L(5900)) iTunes</label>
+				<hyperlink>4755</hyperlink>
+				<hyperlinkParameter>site:iTunes Movie Trailers|return:Locked</hyperlinkParameter>
+				<visible>plugin.isenabled(OnlineVideos)</visible>
+			</control>
+		
 		</control>
 	</control>
+	
 	</controls>
 </window>

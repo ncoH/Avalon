@@ -4,6 +4,7 @@
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
+	
 		<control>
 			<description>Default Background</description>
 			<type>image</type>
@@ -15,6 +16,7 @@
 			<texture>background.png</texture>
 			<shouldCache>true</shouldCache>
 		</control>
+		
 		<control>
 			<description>Default Background</description>
 			<type>image</type>
@@ -27,6 +29,7 @@
 			<visible>!Control.IsVisible(24)</visible>
 			<shouldCache>true</shouldCache>
 		</control>
+		
 		<control>
 			<description>Default Background</description>
 			<type>image</type>
@@ -39,6 +42,7 @@
 			<visible>Control.IsVisible(24)</visible>
 			<shouldCache>true</shouldCache>
 		</control>
+		
 		<control>
 			<description>Fan Art</description>
 			<type>image</type>
@@ -50,6 +54,7 @@
 			<texture>#st_backdrop</texture>
 			<visible>!Control.IsVisible(24)</visible>
 		</control>
+		
 		<control>
 			<description>Fan Art</description>
 			<type>image</type>
@@ -61,6 +66,7 @@
 			<texture>#st_backdrop</texture>
 			<visible>Control.IsVisible(24)</visible>
 		</control>
+		
 		<control>
 		  <animation effect="fade" time="250">WindowOpen</animation>
 		  <animation effect="fade" time="250">WindowClose</animation>
@@ -74,10 +80,14 @@
 		  <font>font22</font>
 		  <visible>!Control.IsVisible(24)</visible>
 		</control>
+		
 		<!-- Overlays -->
+		
 	<import>ShowTimesGUI.background.xml</import>
-	<import>common.time.xml</import>
+	<import>ShowTimesGUI.header.xml</import>
+	
 		<!-- Title Bar Controls -->
+		
 		<control Style="smallTitle">
 			<description>Selected Item</description>
 			<type>fadelabel</type>
@@ -90,6 +100,7 @@
 			<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 			<visible>control.hasfocus(50)+!player.hasmedia+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 		</control>
+		
 		<control>
 			<type>fadelabel</type>
 			<description>Theater</description>
@@ -105,6 +116,7 @@
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
+		
     	<import>ShowTimesGUI.hiddenmenu.xml</import>
     		
             <!-- Information in List View Only-->   
@@ -131,6 +143,7 @@
     		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#st_poster</texture>
     		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(24)</visible>
     	</control>
+		
 		<control>
 			<description>Director Label</description>
 			<type>label</type>
@@ -145,6 +158,7 @@
 			<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="0">WindowClose</animation>
 		</control>
+		
 		<control>
 			<description>Director Value</description>
 			<type>label</type>
@@ -159,6 +173,7 @@
 			<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="0">WindowClose</animation>
 		</control>
+		
 		<control>
 			<description>Genre Label</description>
 			<type>label</type>
@@ -173,6 +188,7 @@
 			<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="0">WindowClose</animation>
 		</control>
+		
 		<control>
 			<description>Genre Value</description>
 			<type>fadelabel</type>
@@ -187,6 +203,7 @@
 			<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="0">WindowClose</animation>
 		</control>
+		
 		<control>
 			<description>Year Label</description>
 			<type>label</type>
@@ -201,6 +218,7 @@
 			<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="0">WindowClose</animation>
 		</control>
+		
 		<control>
 			<description>Year Value</description>
 			<type>label</type>
@@ -215,6 +233,7 @@
 			<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="0">WindowClose</animation>
 		</control>
+		
 		<control>
 			<description>Runtime Label</description>
 			<type>label</type>
@@ -229,6 +248,7 @@
 			<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" time="0">WindowClose</animation>
 		</control>
+		
 		<control>
 			<description>Runtime Value</description>
 			<type>label</type>
@@ -244,6 +264,7 @@
 			<animation effect="fade" time="250">visiblechange</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
+		
 		<control>
 			<description>Summary</description>
 			<type>textboxscrollup</type>
@@ -257,8 +278,11 @@
 			<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+!Control.IsVisible(24)+string.equals(#itemcount)</visible>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		</control>
+		
 	<import>ShowTimesGUI.details.xml</import>
+	
 		<!-- Dummy Labels -->
+		
 		<control>
 			<description>showtimes label</description>
 			<type>fadelabel</type>
@@ -266,6 +290,7 @@
 			<posX>2000</posX>
 			<posY>10</posY>
 		</control>
+		
 		<control>
 			<description>theatre label</description>
 			<type>fadelabel</type>
@@ -273,6 +298,7 @@
 			<posX>2000</posX>
 			<posY>10</posY>
 		</control>
+		
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
@@ -296,7 +322,9 @@
 		<texture>hiddenmenu_tab_up.png</texture>
 		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
 	</control>	
+	
 	<import>ShowTimesGUI.facade.xml</import>
 	<import>common.overlay.xml</import>
+	
 	</controls>
 </window>
