@@ -50,6 +50,7 @@ namespace ProcessPlugins.AvalonEditor
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.add_button = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.rB_MyFilms = new System.Windows.Forms.RadioButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button_test = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -94,7 +95,7 @@ namespace ProcessPlugins.AvalonEditor
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.rB_MyFilms = new System.Windows.Forms.RadioButton();
+            this.rB_Pictures = new System.Windows.Forms.RadioButton();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -313,6 +314,7 @@ namespace ProcessPlugins.AvalonEditor
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.rB_Pictures);
             this.groupBox4.Controls.Add(this.rB_MyFilms);
             this.groupBox4.Controls.Add(this.groupBox5);
             this.groupBox4.Controls.Add(this.lblMovieCategories);
@@ -336,6 +338,17 @@ namespace ProcessPlugins.AvalonEditor
             this.groupBox4.TabIndex = 32;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Add selected module to Menu";
+            // 
+            // rB_MyFilms
+            // 
+            this.rB_MyFilms.AutoSize = true;
+            this.rB_MyFilms.Location = new System.Drawing.Point(186, 280);
+            this.rB_MyFilms.Name = "rB_MyFilms";
+            this.rB_MyFilms.Size = new System.Drawing.Size(62, 17);
+            this.rB_MyFilms.TabIndex = 43;
+            this.rB_MyFilms.TabStop = true;
+            this.rB_MyFilms.Text = "MyFilms";
+            this.rB_MyFilms.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -793,16 +806,16 @@ namespace ProcessPlugins.AvalonEditor
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "What is InfoService?";
             // 
-            // rB_MyFilms
+            // rB_Pictures
             // 
-            this.rB_MyFilms.AutoSize = true;
-            this.rB_MyFilms.Location = new System.Drawing.Point(186, 280);
-            this.rB_MyFilms.Name = "rB_MyFilms";
-            this.rB_MyFilms.Size = new System.Drawing.Size(62, 17);
-            this.rB_MyFilms.TabIndex = 43;
-            this.rB_MyFilms.TabStop = true;
-            this.rB_MyFilms.Text = "MyFilms";
-            this.rB_MyFilms.UseVisualStyleBackColor = true;
+            this.rB_Pictures.AutoSize = true;
+            this.rB_Pictures.Location = new System.Drawing.Point(186, 304);
+            this.rB_Pictures.Name = "rB_Pictures";
+            this.rB_Pictures.Size = new System.Drawing.Size(63, 17);
+            this.rB_Pictures.TabIndex = 44;
+            this.rB_Pictures.TabStop = true;
+            this.rB_Pictures.Text = "Pictures";
+            this.rB_Pictures.UseVisualStyleBackColor = true;
             // 
             // AvalonConfig
             // 
@@ -904,6 +917,7 @@ namespace ProcessPlugins.AvalonEditor
         private System.Windows.Forms.TextBox tbEditorStartParamsOutput;
         private System.Windows.Forms.Button button_test;
         private System.Windows.Forms.RadioButton rB_MyFilms;
+        private System.Windows.Forms.RadioButton rB_Pictures;
 
     }
 }

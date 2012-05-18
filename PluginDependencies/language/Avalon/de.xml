@@ -113,6 +113,7 @@
   <string Field="LatestEpisodes">Neueste Episoden</string> 
   <string Field="LatestMusic">Neueste Musik</string> 
   <string Field="LatestRecordings">Neueste Aufnahmen</string>
+  <string Field="LatestPictures">Neueste Bilder</string>
   <!-- Misc -->   
   <string Field="FanartScraping">Lade Fanart</string> 
   <string Field="ReturnListMovies">Press left to return to movie list</string> 

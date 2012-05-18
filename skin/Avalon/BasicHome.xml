@@ -1197,5 +1197,6 @@
 <import>BasicHome.recentlyaddedMyFilms.xml</import>
 <import>BasicHome.recentlyaddedMusic.xml</import>
 <import>BasicHome.recentlyaddedRecordings.xml</import>
+<import>BasicHome.recentlyaddedPictures.xml</import>
 </controls>
 </window>

@@ -304,6 +304,7 @@ namespace AvalonGUIConfig
         public static string LatestEpisodes = "Latest episodes";
         public static string LatestMusic = "Latest music";
         public static string LatestRecordings = "Latest recordings";
+        public static string LatestPictures = "Latest pictures";
         
         //Misc
         public static string FanartScraping = "Fanart scraping";

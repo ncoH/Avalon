@@ -114,6 +114,7 @@
   <string Field="LatestEpisodes">Últimos Capítulos</string>
   <string Field="LatestMusic">Últimos Álbumes</string>
   <string Field="LatestRecordings">Últimas Grabaciones</string>
+  <string Field="LatestPictures">Latest pictures</string>
   <!-- Misc -->   
   <string Field="FanartScraping">Descargando Fanart</string>
   <string Field="ReturnListMovies">Pulse "izquierda" para volver a la lista de películas</string> 

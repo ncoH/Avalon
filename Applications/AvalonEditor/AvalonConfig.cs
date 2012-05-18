@@ -751,10 +751,10 @@ namespace ProcessPlugins.AvalonEditor
                   {
                       item.media = "MyFilms";
                   }
-                  //else if (rB_Pictures.Checked)
-                  //{
-                  //    item.media = "Pictures";
-                  //}
+                  else if (rB_Pictures.Checked)
+                  {
+                      item.media = "Pictures";
+                  }
                 }
                 else
                 {
@@ -991,10 +991,10 @@ namespace ProcessPlugins.AvalonEditor
                   {
                       used_item.media = "MyFilms";
                   }
-                  //else if (rB_Pictures.Checked)
-                  //{
-                  //    used_item.media = "Pictures";
-                  //}
+                  else if (rB_Pictures.Checked)
+                  {
+                      used_item.media = "Pictures";
+                  }
                 }
                 else
                 {
@@ -1112,10 +1112,10 @@ namespace ProcessPlugins.AvalonEditor
                   {
                       actchild.media = "MyFilms";
                   }
-                  //else if (rB_Pictures.Checked)
-                  //{
-                  //    used_item.media = "Pictures";
-                  //}
+                  else if (rB_Pictures.Checked)
+                  {
+                      actchild.media = "Pictures";
+                  }
                 }
                 else
                 {
@@ -1760,7 +1760,7 @@ namespace ProcessPlugins.AvalonEditor
                 rB_MyFilms.Visible = false;
                 rB_Music.Visible = false;
                 rB_Recordings.Visible = false;
-                //rB_Pictures.Visible = false;
+                rB_Pictures.Visible = false;
                 rB_Series.Visible = false;
 
                 cB_FanartHandler.Location = new Point(12, 42);
@@ -1810,7 +1810,7 @@ namespace ProcessPlugins.AvalonEditor
                     rB_MyFilms.Checked = false;
                     rB_Music.Checked = false;
                     rB_Recordings.Checked = false;
-                    //rB_Pictures.Checked = false;
+                    rB_Pictures.Checked = false;
                     rB_Series.Checked = false;
                 if (radioButton1.Checked)
                 {
@@ -1872,6 +1872,7 @@ namespace ProcessPlugins.AvalonEditor
                             rB_Series.Location = new Point(109, 450);
                             rB_Recordings.Location = new Point(109, 474);
                             rB_MyFilms.Location = new Point(186, 450);
+                            rB_Pictures.Location = new Point(186, 474);
                             break;
                         default:
                             cboParameterViews.Visible = false;
@@ -1887,6 +1888,7 @@ namespace ProcessPlugins.AvalonEditor
                             rB_Series.Location = new Point(109, 280);
                             rB_Recordings.Location = new Point(109, 304);
                             rB_MyFilms.Location = new Point(186, 280);
+                            rB_Pictures.Location = new Point(186, 304);
                             break;
                     }
 
@@ -1951,6 +1953,7 @@ namespace ProcessPlugins.AvalonEditor
                             rB_Series.Location = new Point(109, 450);
                             rB_Recordings.Location = new Point(109, 474);
                             rB_MyFilms.Location = new Point(186, 450);
+                            rB_Pictures.Location = new Point(186, 474);
                             break;
                         default:
                             cboParameterViews.Visible = false;
@@ -1966,6 +1969,7 @@ namespace ProcessPlugins.AvalonEditor
                             rB_Series.Location = new Point(109, 280);
                             rB_Recordings.Location = new Point(109, 304);
                             rB_MyFilms.Location = new Point(186, 280);
+                            rB_Pictures.Location = new Point(186, 304);
                             break;
                     }
 
@@ -2029,6 +2033,7 @@ namespace ProcessPlugins.AvalonEditor
                             rB_Series.Location = new Point(109, 450);
                             rB_Recordings.Location = new Point(109, 474);
                             rB_MyFilms.Location = new Point(186, 450);
+                            rB_Pictures.Location = new Point(186, 474);
                             break;
                         default:
                             cboParameterViews.Visible = false;
@@ -2044,6 +2049,7 @@ namespace ProcessPlugins.AvalonEditor
                             rB_Series.Location = new Point(109, 280);
                             rB_Recordings.Location = new Point(109, 304);
                             rB_MyFilms.Location = new Point(186, 280);
+                            rB_Pictures.Location = new Point(186, 304);
                             break;
                     }
                 }
@@ -2148,10 +2154,10 @@ namespace ProcessPlugins.AvalonEditor
                         cB_RecentMedia.Checked = true;
                         rB_MyFilms.Checked = true;
                         break;
-                    //case "Pictures":
-                    //    cB_RecentMedia.Checked = true;
-                    //    rB_Pictures.Checked = true;
-                    //    break;
+                    case "Pictures":
+                        cB_RecentMedia.Checked = true;
+                        rB_Pictures.Checked = true;
+                        break;
                     default:
                         cB_RecentMedia.Checked = false;
                         rB_Movies.Checked = false;
@@ -2159,7 +2165,7 @@ namespace ProcessPlugins.AvalonEditor
                         rB_Recordings.Checked = false;
                         rB_Series.Checked = false;
                         rB_MyFilms.Checked = false;
-                        //    rB_Pictures.Checked = false;
+                        rB_Pictures.Checked = false;
                         break;
                 }
                 switch (menuItems[used_list.SelectedIndex].hyperlink)
@@ -2283,6 +2289,7 @@ namespace ProcessPlugins.AvalonEditor
                 rB_Music.Checked = false;
                 rB_Recordings.Checked = false;
                 rB_Series.Checked = false;
+                rB_Pictures.Checked = false;
 
             switch (actchild.Hyperlink)
             {
@@ -2410,7 +2417,7 @@ namespace ProcessPlugins.AvalonEditor
                 rB_Music.Visible = true;
                 rB_Recordings.Visible = true;
                 rB_Series.Visible = true;
-                //rB_Pictures.Visible = true;
+                rB_Pictures.Visible = true;
             }
             else
             {
@@ -2419,7 +2426,7 @@ namespace ProcessPlugins.AvalonEditor
                 rB_Music.Visible = false;
                 rB_Recordings.Visible = false;
                 rB_Series.Visible = false;
-                // rB_Pictures.Visible = false;
+                rB_Pictures.Visible = false;
             }
         }
 

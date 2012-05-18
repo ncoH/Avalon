@@ -114,6 +114,7 @@
   <string Field="LatestEpisodes">Senaste avsnitten</string>
   <string Field="LatestMusic">Senaste musiken</string>
   <string Field="LatestRecordings">Senaste inspelningarna</string>
+  <string Field="LatestPictures">Latest pictures</string>
   <!-- Misc -->   
   <string Field="FanartScraping">Letar ny FanArt</string>
   <string Field="ReturnListMovies">Steg åt vänster återvänder till filmlistan</string> 

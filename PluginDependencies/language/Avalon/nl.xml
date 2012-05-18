@@ -114,6 +114,7 @@
   <string Field="LatestEpisodes">Latest episodes</string>
   <string Field="LatestMusic">Latest music</string>
   <string Field="LatestRecordings">Latest recordings</string>
+  <string Field="LatestPictures">Latest pictures</string>
   <!-- Misc -->
   <string Field="FanartScraping">Fanart scraping</string>
   <string Field="ReturnListMovies">Press left to return to movie list</string> 
