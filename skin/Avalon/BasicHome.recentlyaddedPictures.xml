@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+		<!--            :: PICTURE 1 ::            -->
+
+		<control>
+			<description>GROUP: RecentlyAdded Picture</description>
+			<type>group</type>
+			<dimColor>0xffffffff</dimColor>
+			<visible>string.equals(#recentMedia,Pictures)+![control.isvisible(601) | control.isvisible(501)]+string.equals(#latestMediaHandler.picture.latest.enabled,true)</visible>
+			<animation effect="fade" start="100" end="0" time="200" reversible="false">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="150" time="400" reversible="false">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+			<control>		
+				<description>Header label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>1218</posX>
+				<posY>210</posY>
+				<width>590</width>
+				<label>#Avalon.LatestPictures</label>
+				<font>AvalonLight20</font>
+			</control>		
+
+			<control>
+				<description>Picture 1 thumb</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>1216</posX>
+				<posY>336</posY>
+				<width>288</width>
+				<height>165</height>
+				<shouldCache>true</shouldCache>
+				<keepaspectratio>yes</keepaspectratio>	  
+				<zoom>yes</zoom>
+				<zoomfromtop>yes</zoomfromtop>	  
+				<centered>yes</centered>				
+				<texture mask="recordings_thumb_mask.png">#latestMediaHandler.picture.latest1.thumb</texture>
+			</control>
+			<control>		
+				<description>Picture 1 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1532</posX>
+				<posY>545</posY>
+				<width>280</width>
+				<label>#latestMediaHandler.picture.latest1.title</label>
+				<font>AvalonLight12</font>
+			</control>
+			<control>
+				<description>Picture 2 thumb</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>1522</posX>
+				<posY>336</posY>
+				<width>288</width>
+				<height>165</height>
+				<shouldCache>true</shouldCache>
+				<keepaspectratio>yes</keepaspectratio>	  
+				<zoom>yes</zoom>
+				<zoomfromtop>yes</zoomfromtop>	  
+				<centered>yes</centered>				
+				<texture mask="recordings_thumb_mask.png">#latestMediaHandler.picture.latest2.thumb</texture>
+			</control>
+
+			<control>		
+				<description>Picture 2 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1532</posX>
+				<posY>585</posY>
+				<width>280</width>
+				<label>#latestMediaHandler.picture.latest2.title</label>
+				<font>AvalonLight12</font>
+			</control>
+
+			<control>
+				<description>Picture 3 thumb</description>
+				<type>image</type>
+				<id>0</id>
+				<posX>1216</posX>
+				<posY>518</posY>
+				<width>288</width>
+				<height>165</height>
+				<shouldCache>true</shouldCache>
+				<keepaspectratio>yes</keepaspectratio>	  
+				<zoom>yes</zoom>
+				<zoomfromtop>yes</zoomfromtop>	  
+				<centered>yes</centered>				
+				<texture mask="recordings_thumb_mask.png">#latestMediaHandler.picture.latest3.thumb</texture>
+			</control>
+
+			<control>		
+				<description>Picture 3 name</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1532</posX>
+				<posY>625</posY>
+				<width>280</width>
+				<label>#latestMediaHandler.picture.latest3.title</label>
+				<font>AvalonLight12</font>
+			</control>
+
+
+		</control>	  
+
+	</controls>
+</window>
