@@ -121,6 +121,9 @@
   <ItemGroup>
     <EmbeddedResource Include="EmbeddedPatches\LatestMediaHandler.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedPatches\FanartHandler.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>cd "$(ProjectDir)EmbeddedPatches"

@@ -1,12 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <patches>
   <!-- This defines the minium skin version this patch can run against -->
-  <minskinversion>0.9.7.0</minskinversion>
+  <minskinversion>1.0.0.0</minskinversion>
   <!-- There are 4 possible fields for each patch, 'version' is only needed for the zip file as versions are extracted from .dll and .exe -->
   <!-- Set <action> to mandatoryinstall if it must be installed even though it doesn't exist locally e.g. new core file -->
   <!-- Window Plugins -->
   <patch>
     <name>AvalonConfig.dll</name>
+    <action>install</action>
+    <location>windows</location>
+  </patch>
+  <patch>
+    <name>MP-TVSeries.dll</name>
     <action>install</action>
     <location>windows</location>
   </patch>
@@ -21,6 +26,11 @@
     <action>install</action>
     <location>process</location>
   </patch>
+  <patch>
+    <name>FanartHandler.dll</name>
+    <action>install</action>
+    <location>process</location>
+  </patch>
   <!-- MediaPortal Binaries (Base Dir) -->
   <patch>
     <name>AvalonMediaPortalRestart.exe</name>
@@ -32,6 +42,6 @@
     <name>SkinUpdate.zip</name>
     <action>unzip</action>
     <location>temp</location>
-    <version>1.0.0.0</version>
+    <version>1.1.0.0</version>
   </patch>
 </patches>
