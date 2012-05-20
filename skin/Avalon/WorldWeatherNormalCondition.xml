@@ -385,12 +385,12 @@
 		<id>0</id>
 		<width>110</width>
 		<posX>665</posX>
-		<posY>722</posY>
+		<posY>728</posY>
 		<label>#WorldWeather.ForecastDay0High</label>
 		<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<font>AvalonLight20</font>
+		<font>AvalonLight18</font>
 		<textcolor>FFffffff</textcolor>
     </control>
 	
@@ -399,11 +399,11 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>862</posX>
-		<posY>722</posY>
+		<posY>728</posY>
 		<align>right</align>
 		<width>110</width>
 		<label>/#WorldWeather.ForecastDay0Low</label>
-		<font>AvalonLight20</font>
+		<font>AvalonLight18</font>
 		<textcolor>6aa5cb</textcolor>
 		<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -476,9 +476,9 @@
 		<id>0</id>
 		<width>110</width>
 		<posX>965</posX>
-		<posY>722</posY>
+		<posY>728</posY>
 		<label>#WorldWeather.ForecastDay1High</label>
-		<font>AvalonLight20</font>
+		<font>AvalonLight18</font>
 		<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -489,11 +489,11 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>1162</posX>
-		<posY>722</posY>
+		<posY>728</posY>
 		<align>right</align>
 		<width>110</width>
 		<label>/#WorldWeather.ForecastDay1Low</label>
-		<font>AvalonLight20</font>
+		<font>AvalonLight18</font>
 		<textcolor>6aa5cb</textcolor>
 		<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -567,9 +567,9 @@
 		<id>0</id>
 		<width>110</width>
 		<posX>1266</posX>
-		<posY>722</posY>
+		<posY>728</posY>
 		<label>#WorldWeather.ForecastDay2High</label>
-		<font>AvalonLight20</font>
+		<font>AvalonLight18</font>
 		<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -580,11 +580,11 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>1463</posX>
-		<posY>722</posY>
+		<posY>728</posY>
 		<align>right</align>
 		<width>110</width>
 		<label>/#WorldWeather.ForecastDay2Low</label>
-		<font>AvalonLight20</font>
+		<font>AvalonLight18</font>
 		<textcolor>6aa5cb</textcolor>
 		<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -658,9 +658,9 @@
 		<id>0</id>
 		<width>110</width>
 		<posX>1570</posX>
-		<posY>722</posY>
+		<posY>728</posY>
 		<label>#WorldWeather.ForecastDay3High</label>
-		<font>AvalonLight20</font>
+		<font>AvalonLight18</font>
 		<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -671,11 +671,11 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>1767</posX>
-		<posY>722</posY>
+		<posY>728</posY>
 		<align>right</align>
 		<width>110</width>
 		<label>/#WorldWeather.ForecastDay3Low</label>
-		<font>AvalonLight20</font>
+		<font>AvalonLight18</font>
 		<textcolor>6aa5cb</textcolor>
 		<visible>string.equals(#WorldWeather.View,Condition)+string.equals(#WorldWeather.ConditionView,Normal)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
