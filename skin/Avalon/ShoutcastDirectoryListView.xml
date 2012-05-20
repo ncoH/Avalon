@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>2345</id>
+<defaultcontrol>50</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<define>#header.label:#selecteditem</define>
+<define>#usePlayFanart:Yes</define>
+<controls>
+	
+
+<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+	
+	
+	
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>Shoutcast</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+		<visible></visible>
+	</control>
+
+<control>
+		<description>BACKGROUND</description>
+		<id>0</id>
+		<type>image</type>
+        <posX>0</posX>
+        <posY>120</posY>
+        <width>1312</width>
+        <height>738</height>
+		<texture>hover_my radio.png</texture>
+		<visible></visible>
+		<animation effect="fade" time="300">visible</animation>
+		<animation effect="fade" time="300" delay="300">hidden</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	</control>
+
+
+<import>common.music.play.fanart.xml</import>
+		
+<control>
+		<description>background listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+        <posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>overlay_long.png</texture>
+		<visible></visible>
+	</control>
+	
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>829</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<visible></visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+		
+	<control>
+		<description>viewport list</description>
+		<type>image</type>
+		<id>2020</id>
+		<posX>1</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>797</height>
+		<texture>viewport_long.png</texture>
+		<visible></visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+	
+	<import>common.time.xml</import>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Poster shadow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>695</posX>
+		<posY>101</posY>
+		<width>486</width>
+		<height>487</height>
+		<texture>list_music_shadow.png</texture>
+		<visible></visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Poster glow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>695</posX>
+		<posY>101</posY>
+		<width>486</width>
+		<height>487</height>
+		<texture>list_music_glow.png</texture>
+		<visible></visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<id>0</id>
+		<type>image</type>
+		<posX>762</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<visible>[!control.hasthumb(500)|string.equals(#fanarthandler.music.artisthumb.play,defaultFolderBig.png)]</visible>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<description>Cover Art</description>
+		<type>image</type>
+		<id>500</id>
+		<posX>762</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#fanarthandler.music.artisthumb.play</texture>
+		<visible>[!string.equals(#fanarthandler.music.artisthumb.play,defaultFolderBig.png)]</visible>
+	</control>
+
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>1832</posX>
+		<posY>986</posY>
+		<width>1170</width>
+		<label>#listeners   #genre   #meta</label>
+		 <font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>  
+		<align>right</align>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>1832</posX>
+		<posY>942</posY>
+		<width>1170</width>
+		<label>#selecteditem</label>
+		<font>fontB16</font>
+		<align>right</align>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+			
+	<control>
+		<description>listcontrol</description>
+		<type>listcontrol</type>
+		<id>50</id>
+		<textXOff2>680</textXOff2>
+		<onleft>2</onleft>
+		<onright>50</onright>
+		<dimColor>ffffffff</dimColor>
+		<textXOff>10</textXOff>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>		
+</control>
+
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+        <posX>456</posX>
+        <posY>875</posY>
+        <align>left</align>
+        <font>AvalonLight12</font>
+        <textcolor>6aa5cb</textcolor>
+		<label>#currentmodule: #itemcount</label>
+		<visible></visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
+			
+<import>common.overlay.xml</import>
+<import>shoutcast.hiddenmenu.xml</import>		
+</controls>
+</window>
