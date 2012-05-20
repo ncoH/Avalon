@@ -71,8 +71,8 @@
   <string Field="FanArtUse" Original="Use Fanart">Benyt fanart</string>
   <string Field="FanArtDelete" Original="Delete Fanart">Slet fanart</string>
   <string Field="FanDownloadingStatus" Original="Downloading {0} Fanart...">Henter {0} fanart...</string>
-  <string Field="FanArtLocal" Original="Available locally">Tilgængelig lokalt</string>
-  <string Field="FanArtOnline" Original="Available for downloading">Tilgængelig til hentning</string>
+  <string Field="FanArtLocal" Original="Available locally">Lokal tilgængelig</string>
+  <string Field="FanArtOnline" Original="Available for downloading">Hentning tilgængelig</string>
   <string Field="FanArtOnlineLoading" Original="loading {0} of {1} Fanart...">indlæser {0} of {1} fanart...</string>
   <string Field="FanArtRandom" Original="Display random Fanart">Vis tilfældig fanart</string>
   <string Field="FanArtNoneFound" Original="No Fanart could be found">Ingen fanart kunne findes</string>
@@ -107,7 +107,7 @@
   <string Field="ChangeLayout" Original="Change Layout">Ændre layout</string>
   <string Field="UseOnlineFavourites" Original="Use Online Favourites">Brug online favoritter</string>
   <string Field="AddToPlaylist" Original="Add To Playlist">Tilføj til afspilningsliste</string>
-  <string Field="FanartDisableLabel" Original="Disabled">Ikke i brug</string>
+  <string Field="FanartDisableLabel" Original="Disabled">Ubenyttet</string>
   <string Field="FanartMenuEnable" Original="Enable Fanart">Benyt fanart</string>
   <string Field="FanartMenuDisable" Original="Disable Fanart">Benyt ikke fanart</string>
   <string Field="SortByStrings" Original="SortByStrings">the|a|an|en|et|den|det</string>
@@ -134,11 +134,14 @@
   <string Field="DeleteFromFileDatabase" Original="Delete from Disk and Database">Slet permanent og fjern fra databasen</string>
   <string Field="RateDialogLabel" Original="Select Your Rating for {0}">Vurder {0}</string>
   <string Field="Hide_thumbnail_on_unwatched" Original="Hide Spoiler Thumbnails">Gem spoiler miniatureportræter</string>
+  
+  <!-- Rate Descriptions - 5 Stars-->
   <string Field="RateFiveStarOne" Original="Terrible">Forfærdelig</string>
   <string Field="RateFiveStarTwo" Original="Mediocre">Middelmådig</string>
   <string Field="RateFiveStarThree" Original="Good">God</string>
   <string Field="RateFiveStarFour" Original="Superb">Fortrinlig</string>
   <string Field="RateFiveStarFive" Original="Perfect">Perfekt</string>
+  <!-- Rate Descriptions - 10 Stars-->
   <string Field="RateTenStarOne" Original="Abysmal">Rædselsfuld</string>
   <string Field="RateTenStarTwo" Original="Terrible">Forfærdelig</string>
   <string Field="RateTenStarThree" Original="Bad">Dårlig</string>
@@ -149,6 +152,7 @@
   <string Field="RateTenStarEight" Original="Great">Meget god</string>
   <string Field="RateTenStarNine" Original="Superb">Fortrinlig</string>
   <string Field="RateTenStarTen" Original="Perfect">Perfekt</string>
+  
   <string Field="ContentRating" Original="Content Rating">Censur</string>
   <string Field="ViewTags" Original="View Tags">Vis etiketter</string>
   <string Field="AddViewTag" Original="Add Series to View Tag">Tilføj serie til overblikket</string>
@@ -157,7 +161,7 @@
   <string Field="CycleSeriesBanner" Original="Cycle Series Banner">Roter Serie banner</string>
   <string Field="CycleSeasonBanner" Original="Cycle Season Banner">Roter sæson banner</string>
   <string Field="CycleSeriesPoster" Original="Cycle Series Poster">Roter serie plakat</string>
-  <string Field="FanartRandomInterval" Original="Fanart Timer Interval">Fanart Timer Interval</string>
+  <string Field="FanartRandomInterval" Original="Fanart Timer Interval">Fanart timer interval</string>
   <string Field="FanartIntervalFiveSeconds" Original="5 Seconds">5 sekunder</string>
   <string Field="FanartIntervalTenSeconds" Original="10 Seconds">10 sekunder</string>
   <string Field="FanartIntervalFifteenSeconds" Original="15 Seconds">15 sekunder</string>
@@ -176,7 +180,7 @@
   <string Field="Continuing" Original="Continuing Series">Fortsættende serie</string>
   <string Field="Ended" Original="Ended Series">Afsluttet serie</string>
   <string Field="HighDefinition" Original="High Definition">High Definition</string>
-  <string Field="StandardDefinition" Original="Standard Defintion">Standard Defintion</string>
+  <string Field="StandardDefinition" Original="Standard Defintion">Standard Definition</string>
   <string Field="Top10Online" Original="Top 10 (Online)">Top 10 (Online)</string>
   <string Field="Top10User" Original="Top 10 (User)">Top 10 (Bruger)</string>
   <string Field="Top25Online" Original="Top 25 (Online)">Top 25 (Online)</string>
@@ -189,12 +193,14 @@
   <string Field="LocalMedia" Original="Local Media">Lokalt medie</string>
   <string Field="AdultSeries" Original="Adult Series">Voksenserie</string>
   <string Field="KidsSeries" Original="Kids Series">Børneserie</string>
-  <string Field="ClearFanartCache" Original="Clear Fanart Cache">Tøm midlertidig fanart lagring</string>
+  <string Field="ClearFanartCache" Original="Clear Fanart Cache">Tøm fanart cache</string>
+  
   <string Field="DeleteThumbnailsHeading" Original="Delete Thumbnails">Slet miniatureportræter</string>
   <string Field="DeleteThumbnailsLine1" Original="Would you also like to Delete and Re-Download">Vil du også slette og hente igen</string>
   <string Field="DeleteThumbnailsLine2" Original="all episode thumbnails?">alle afsnit miniatureportræter?</string>
   <string Field="RateDialog" Original="Rate Dialog">Vurderings dialog</string>
   <string Field="PinCodeDialog" Original="Pin Code Dialog">Adgangskode dialog</string>
+  
   <string Field="Aired" Original="Aired">Sendt</string>
   <string Field="AiredStatusContinuing" Original="Continuing">Fortsættende</string>
   <string Field="AiredStatusEnded" Original="Ended">Afsluttet</string>
@@ -225,17 +231,22 @@
   <string Field="Watched" Original="Watched">Set</string>
   <string Field="Writer" Original="Writer">Manuskript</string>
   <string Field="Writers" Original="Writers">Manuskript</string>
+  
   <string Field="TVDB_ERROR_UNAVAILABLE_1" Original="TheTVDB.com is currently unavailable">TheTVDB.com er på nuværende tidspunkt ikke tilgængelig</string>
   <string Field="TVDB_ERROR_UNAVAILABLE_2" Original="Please try again later">Prøv igen senere</string>
   <string Field="NETWORK_ERROR_UNAVAILABLE_1" Original="Network connection is unavailable">Netværks forbindelse ikke tilgængelig</string>
   <string Field="NETWORK_ERROR_UNAVAILABLE_2" Original="Check your connection and try again">Kontroller forbindelsen og prøv igen</string>
+  
   <string Field="Playlist" Original="Playlist">Playliste</string>
   <string Field="LastOnlineUpdate" Original="LastOnlineUpdate">Sidste online opdatering</string>
+  
   <string Field="ResetIgnoredDownloadedFiles" Original="Reset Ignored Downloaded Files">Nulstil ignorerede hentede filer</string>
+  
   <string Field="GetSubtitlesFrom" Original="Get subtitles from?">Hent undertekster fra?</string>
   <string Field="EnabledSubtitleSites" Original="Enabled subtitle sites:">Aktiverede undertekstsider:</string>
   <string Field="PlayNow" Original="Play Now">Afspil nu</string>
-  <string Field="NoSubtitleDownload" Original="No Subtitle Download">Ingen undertekst hentning slået til</string>
+  <string Field="NoSubtitleDownload" Original="No Subtitle Download">Ingen underteksthentning slået til</string>
+  
   <string Field="DeleteSubtitles" Original="Delete Subtitles">Slet undertekster</string>
   <string Field="EpisodeFilenameEmpty" Original="Episode Filename is Empty in Database">Afsnits filenavnet er tomt i databasen</string>
   <string Field="UnableToDeleteSubtitleFile" Original="Unable to Delete Subtitle File: {0}">Sletning af undertekstfile fejlede: {0}</string>
@@ -243,9 +254,11 @@
   <string Field="UnableToDeleteSubtitles" Original="Unable to Delete Subtitles">Sletning af undertekster fejlede</string>
   <string Field="ErrorClear" Original="Error">Fejl</string>
   <string Field="UnableToRetrieveSubtitles" Original="Unable to retrieve subtitles">Hentning af undertekst mislykkedes</string>
-  <string Field="NoSubtitlesFoundOrRetrieved" Original="No subtitles found or retrieved">Ingen undertekst blev fundet</string>
+  <string Field="NoSubtitlesFoundOrRetrieved" Original="No subtitles found or retrieved">Ingen undertekster fundet</string>
+  
   <string Field="UnableToDelete" Original="Unable to Delete">Sletning mislykkedes</string>
   <string Field="UnableToDeleteFile" Original="Unable to Delete File: {0}">Sletning af filen mislykkedes: {0}</string>
+  
   <string Field="PlaySomething" Original="Play...">Afspil...</string>
   <string Field="PlayError" Original="Play error">Afspilningsfejl</string>
   <string Field="RandomEpisode" Original="random episode">tilfældigt afsnit</string>
@@ -254,32 +267,52 @@
   <string Field="LatestEpisode" Original="latest episode">sidste afsnit</string>
   <string Field="UnableToFindAny" Original="Unable to find any {0}">Ude af stand til at finde nogen {0}</string>
   <string Field="UnableToFindAnyEpisode" Original="Unable to find any episode">Ude af stand til at finde noget afsnit</string>
+  
   <string Field="SortBy" Original="Sort By">Sorter efter</string>
   <string Field="DVDOrder" Original="DVD Order">DVD visning</string>
   <string Field="AiredOrder" Original="Aired Order">Sendt visning</string>
   <string Field="AbsoluteOrder" Original="Absolute Order">Absolut visning</string>
   <string Field="Title" Original="Title">Title</string>
-  <string Field="ChangeOnlineMatchOrder" Original="Change Online Matching Method">Ændre online matching metode</string>
+  <string Field="ChangeOnlineMatchOrder" Original="Change Online Matching Method">Ændre onlinematching metode</string>
+  
   <string Field="InsertDiskMessageLine1" Original="The media for the episode you have selected">Det valgte medie for afsnittet</string>
   <string Field="InsertDiskMessageLine2" Original="is currently not available.">er på nuværende tidspunkt ikke tilgængelig.</string>
   <string Field="InsertDiskMessageLine3" Original="Please insert or connect media">Indsæt venligt eller forbind mediet</string>
   <string Field="InsertDiskMessageLine4" Original="labeled: {0}">mærket: {0}</string>
+  
   <string Field="ShowHiddenItems" Original="Show Hidden Items">Vis skjulte emner</string>
-  <string Field="UnHide" Original="UnHide">Synliggør</string>
+  <string Field="UnHide" Original="UnHide">Vis</string>
+  
   <string Field="CFS_Skip" Original="Skip">Spring over</string>
   <string Field="CFS_No_Match_Manual_Search" Original="No Match Found, Manual Search...">Ingen match fundet, manuel søgning...</string>
   <string Field="CFS_Local_Series" Original="Local Series:">Lokale serier:</string>
+  
   <string Field="AvailableMedia" Original="Available Media">Tilgængeligt medie</string>
+  
   <string Field="Votes" Original="votes">score</string>
-  <string Field="LayoutCoveflow" Original="Coveflow">Coveflow</string>  
+  
+  <string Field="LayoutCoveflow" Original="Coveflow">Coveflow</string>
+  
   <string Field="ResumeEpisode">Genoptag fra sidste afspilning?</string>
-  <string Field="SummaryNotAvailable">Ingen resume tilgængelig.</string>
-  <string Field="Timeout">Timeout.</string>
-  <string Field="NoActors">Der er ingen skuespillere til denne serie.</string>
+  
+  <string Field="SummaryNotAvailable">Ingen tilgængelig beskrivelse.</string>
+  
+  <string Field="Timeout">Timeout</string>
+  <string Field="NoActors">Der er ingen skuespillere tilknyttet denne serie.</string>
   <string Field="GettingActors">Henter skuespillere...</string>
+  
   <string Field="ShowAllEpisodes">Vis alle afsnit</string>
+
+  <string Field="DownloadAllEpisodeInfo" Original="Download All Episode Info">Hent information til alle afsnit</string>  
+  
   <string Field="Calendar" Original="Calendar">Kalender</string>
   <string Field="Recommendations" Original="Recommendations">Anbefalinger</string>
   <string Field="Trending" Original="Trending">Populære</string>
   <string Field="WatchList" Original="WatchList">Historie</string>
+  <string Field="Shouts" Original="Shouts">Debatindlæg</string>
+  <string Field="MainMenu" Original="Main Menu">Hovedmenu</string>
+  <string Field="AddToWatchList" Original="Add {0} to Watchlist">Tilføj {0} til setliste</string>
+  <string Field="TraktNotLoggedIn" Original="You can not do this operation without being\nlogged in. Would you like to Signup or Login\nto trakt.tv now?">Du kan ikke gøre dette uden, at\nvære logget ind. Ønsker du at logge ind eller oprette\nen bruger til trakt.tv nu?</string>
+  <string Field="RelatedSeries" Original="RelatedSeries">Relaterede serier</string>  
+  
 </strings>

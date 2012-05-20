@@ -315,5 +315,11 @@
   <string Field="AddToWatchList" Original="Add {0} to Watchlist">Add {0} to Watchlist</string>
   <string Field="TraktNotLoggedIn" Original="You can not do this operation without being\nlogged in. Would you like to Signup or Login\nto trakt.tv now?">You can not do this operation without being\nlogged in. Would you like to Signup or Login\nto trakt.tv now?</string>
   <string Field="RelatedSeries" Original="RelatedSeries">Related Series</string>
+
+  <string Field="SearchTorrent" Original="Torrent Search">Torrent Search</string>
+  <string Field="SearchNZB" Original="NZB Search">NZB Search</string>
+  <string Field="SearchActorInMovies" Original="Search for Actor in Movies">Search for Actor in Movies</string>
+
+  <string Field="AddToCustomList" Original="Add {0} to Custom List...">Add {0} to Custom List...</string>
   
 </strings>
