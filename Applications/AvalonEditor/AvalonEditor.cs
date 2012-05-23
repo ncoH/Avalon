@@ -883,6 +883,7 @@ namespace ProcessPlugins.AvalonEditor
             }
 
             GUIControl.HideControl(35, 566);
+            SetProperty("#mainmenu", "");
 
             bool aReturn1 = false;
             bool aReturn2 = false;
