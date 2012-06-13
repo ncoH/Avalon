@@ -150,7 +150,7 @@
 			
 				<control>
 					<description>View-As button</description>
-					<type>button</type>
+					<type>menubutton</type>
 					<id>2</id>
 					<label>100</label>
 					<onright>50</onright>

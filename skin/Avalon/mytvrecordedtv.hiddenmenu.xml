@@ -53,7 +53,7 @@
 		</control>	
 				
 			<control>
-				<type>button</type>
+				<type>menubutton</type>
 				<description>View-As button</description>
 				<id>2</id>
 				<onleft>50</onleft>
@@ -92,7 +92,7 @@
 			</control>
 
 			<control>
-				<type>button</type>
+				<type>menubutton</type>
 				<description>All,Genre,Channel button</description>
 				<id>5</id>
 				<onleft>50</onleft>

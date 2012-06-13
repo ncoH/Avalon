@@ -118,7 +118,7 @@
             <layout>StackLayout(0, Vertical, true)</layout>	
 				
 			<control>
-				<type>button</type>
+				<type>menubutton</type>
 				<description>View-As button</description>
 				<id>2</id>
 				<onleft>50</onleft>

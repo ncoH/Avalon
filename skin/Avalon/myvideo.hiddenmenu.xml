@@ -178,7 +178,7 @@
 			
 			<control>
 				<description>View-As</description>
-				<type>button</type>
+				<type>menubutton</type>
 				<id>2</id>
 				<label>100</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
@@ -211,7 +211,7 @@
 
 			<control>
 				<description>Switch View</description>
-				<type>button</type>
+				<type>menubutton</type>
 				<id>5</id>
 				<label>457</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
