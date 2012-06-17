@@ -13,7 +13,7 @@
 		<width>810</width>
 		<label>#selecteditem</label>
 		<font>fontB16</font>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+control.isvisible(50)</visible>
+		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+control.isvisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
@@ -32,24 +32,12 @@
 		<width>465</width>
 		<height>605</height>
 		<texture>list_poster_glow.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
-		<description>Default Cover Art</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>762</posX>
-		<posY>169</posY>
-		<width>330</width>
-		<height>470</height>
-		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">defaultdvdcover.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
-	</control>
+
+	<!-- FILMLIST COVER -->
+
 
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -64,8 +52,82 @@
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#myfilms.coverimage</texture>
-		<visible>facadeview.list+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50) + [Control.isvisible(36)|Control.isvisible(39)] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
+	
+	<!-- MENU COVER -->
+
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<description>Cover Art</description>
+		<type>image</type>
+		<id>60</id>
+		<posX>762</posX>
+		<posY>169</posY>
+		<width>330</width>
+		<height>470</height>
+		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#myfilms.menuimage</texture>
+		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)+ control.isvisible(40) + !string.equals(#Avalon.hidePoster,yes)</visible>
+	</control>
+	
+	<!-- VIEWS COVER -->
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<description>Cover Art</description>
+		<type>image</type>
+		<id>60</id>
+		<posX>762</posX>
+		<posY>169</posY>
+		<width>330</width>
+		<height>470</height>
+		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#myfilms.viewcoverimage</texture>
+		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)+ [Control.isvisible(37)|Control.isvisible(36)|string.equals(#myfilms.groupcoverimage)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+	</control>
+	
+	<!-- PERSON COVER -->
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<description>Cover Art</description>
+		<type>image</type>
+		<id>60</id>
+		<posX>762</posX>
+		<posY>169</posY>
+		<width>330</width>
+		<height>470</height>
+		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#myfilms.personcoverimage</texture>
+		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)+ [Control.isvisible(38)|Control.isvisible(36)|string.equals(#myfilms.groupcoverimage)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+	</control>
+	
+	<!-- FILMS COLLECTIONS COVER -->
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<description>Cover Art</description>
+		<type>image</type>
+		<id>60</id>
+		<posX>762</posX>
+		<posY>169</posY>
+		<width>330</width>
+		<height>470</height>
+		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#myfilms.groupcoverimage</texture>
+		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)+ Control.isvisible(39) + !string.equals(#Avalon.hidePoster,yes)</visible>
+	</control>
+	
 	<!--            :: INFO LABELS ::            -->
 	
 	<control>
@@ -82,7 +144,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.year.value)</visible>
+		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.year.value)</visible>
 	</control>
 
 	<control>
@@ -99,7 +161,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.year.value)</visible>
+		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.year.value)</visible>
 	</control>
 
 	<control>
@@ -116,7 +178,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.length.value)</visible>
+		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.length.value)</visible>
 	</control>
 	
 	<control>
@@ -133,7 +195,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.length.value)</visible>
+		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.length.value)</visible>
 	</control>
 	
 	<control>
@@ -150,7 +212,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.category.value)</visible>
+		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.category.value)</visible>
 	</control>
 	
 	<control>
@@ -167,7 +229,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.category.value)</visible>
+		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.category.value)</visible>
 	</control>
 	
 	<control>
@@ -184,7 +246,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.director.value)</visible>
+		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.director.value)</visible>
 	</control>
 	
 	<control>
@@ -201,7 +263,7 @@
 		<align>left</align>
 		<font>AvalonLight12</font>
 		<textcolor>ffffff</textcolor>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.director.value)</visible>
+		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.director.value)</visible>
 	</control>
 	
 	<control>
@@ -222,7 +284,7 @@
 		<onright>1026</onright>
 		<onup>1026</onup>
 		<ondown>1026</ondown>	
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.description.value)</visible>
+		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.description.value)</visible>
 	</control>
 	
 	<control>
@@ -262,7 +324,7 @@
 		<texture>#myfilms.logos_id2012</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<spaceBetweenItems>2</spaceBetweenItems>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
 		</control>	
 </controls>
 </window>

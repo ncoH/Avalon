@@ -265,7 +265,7 @@
 		<id>0</id>
 		<posX>674</posX>
 		<posY>271</posY>
-		<width>1005</width>
+		<width>970</width>
 		<font>fontB20</font>
 		<label>#myfilms.user.mastertitle.value</label>
 		<visible>!Control.HasFocus(10099)</visible>
@@ -619,16 +619,150 @@
 		</control> -->
 		
 		<control>
-			<description>Actors Infos</description>
-			<type>textboxscrollup</type>
-			<id>2050</id>
+			<description>Actors 1 Label</description>
+			<type>label</type>
+			<id>1</id>
 			<posX>585</posX>
-			<posY>354</posY>
+			<posY>587</posY>
 			<width>1039</width>
 			<height>422</height>
 			<textcolor>FFFFFFFF</textcolor>
-			<label>#myfilms.db.actors.value</label>
+			<label>#myfilms.db.actors.actor1.name</label>
 			<font>AvalonLight12</font>
+			<visible>Control.HasFocus(10003)+!Control.HasFocus(10099)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>			
+		</control>
+	
+		<control>
+			<description>Actors 1 image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>585</posX>
+			<posY>410</posY>
+			<width>117</width>
+			<height>166</height>
+			<texture mask="poster_mask.png">#myfilms.db.actors.actor1.image</texture>
+			<visible>Control.HasFocus(10003)+!Control.HasFocus(10099)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>			
+		</control>
+		
+		<control>
+			<description>Actors 2 Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>855</posX>
+			<posY>587</posY>
+			<width>1039</width>
+			<height>422</height>
+			<textcolor>FFFFFFFF</textcolor>
+			<label>#myfilms.db.actors.actor2.name</label>
+			<font>AvalonLight12</font>
+			<visible>Control.HasFocus(10003)+!Control.HasFocus(10099)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>			
+		</control>
+	
+		<control>
+			<description>Actors 2 image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>855</posX>
+			<posY>410</posY>
+			<width>117</width>
+			<height>166</height>
+			<texture mask="poster_mask.png">#myfilms.db.actors.actor2.image</texture>
+			<visible>Control.HasFocus(10003)+!Control.HasFocus(10099)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>			
+		</control>
+		
+		<control>
+			<description>Actors 3 Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1118</posX>
+			<posY>587</posY>
+			<width>1039</width>
+			<height>422</height>
+			<textcolor>FFFFFFFF</textcolor>
+			<label>#myfilms.db.actors.actor3.name</label>
+			<font>AvalonLight12</font>
+			<visible>Control.HasFocus(10003)+!Control.HasFocus(10099)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>			
+		</control>
+	
+		<control>
+			<description>Actors 3 image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1118</posX>
+			<posY>410</posY>
+			<width>117</width>
+			<height>166</height>
+			<texture mask="poster_mask.png">#myfilms.db.actors.actor3.image</texture>
+			<visible>Control.HasFocus(10003)+!Control.HasFocus(10099)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>			
+		</control>
+		
+		<control>
+			<description>Actors 4 Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>585</posX>
+			<posY>875</posY>
+			<width>1039</width>
+			<height>422</height>
+			<textcolor>FFFFFFFF</textcolor>
+			<label>#myfilms.db.actors.actor4.name</label>
+			<font>AvalonLight12</font>
+			<visible>Control.HasFocus(10003)+!Control.HasFocus(10099)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>			
+		</control>
+	
+		<control>
+			<description>Actors 4 image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>585</posX>
+			<posY>695</posY>
+			<width>117</width>
+			<height>166</height>
+			<texture mask="poster_mask.png">#myfilms.db.actors.actor4.image</texture>
+			<visible>Control.HasFocus(10003)+!Control.HasFocus(10099)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>			
+		</control>
+		
+		<control>
+			<description>Actors 5 Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>855</posX>
+			<posY>875</posY>
+			<width>1039</width>
+			<height>422</height>
+			<textcolor>FFFFFFFF</textcolor>
+			<label>#myfilms.db.actors.actor5.name</label>
+			<font>AvalonLight12</font>
+			<visible>Control.HasFocus(10003)+!Control.HasFocus(10099)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>			
+		</control>
+	
+		<control>
+			<description>Actors 5 image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>855</posX>
+			<posY>695</posY>
+			<width>117</width>
+			<height>166</height>
+			<texture mask="poster_mask.png">#myfilms.db.actors.actor5.image</texture>
 			<visible>Control.HasFocus(10003)+!Control.HasFocus(10099)</visible>
 			<animation effect="fade" time="250">WindowClose</animation>	
 			<animation effect="fade" time="0">WindowOpen</animation>			

@@ -3,23 +3,94 @@
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+    <!-- MyFilms Skin Version Check -->
+    <settings>
+      <skininterfaceversion>
+        <version>
+          <major>1</major>
+          <minor>0</minor>
+          <build>0</build>
+          <revision>0</revision>
+        </version>
+      </skininterfaceversion>
+    </settings>
+    <!-- DUMMY LABELS -->
     <control>
       <type>label</type>
-      <description>(Folder) - Visible when Folder or selection - Label use for Hide or unHide some items with Skin visible conditions</description>
+      <description>Dummy control Visible for Views</description>
       <id>34</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <visible>yes</visible>
-      <focusable>no</focusable>
+      <label>
+      </label>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control visible only when you are in a VIEW do this: <visible>control.isvisible(34)</visible> -->
+      <!-- to make a control invisible when you are in a VIEW do this: <visible>!control.isvisible(34)</visible> -->
+      <!-- Note: Dummy control 34 is maintained for backwards compatibility, but skins may use more specific View controls  -->
     </control>
     <control>
       <type>label</type>
-      <description>(Fanart) - Visible when Fanart found</description>
+      <description>Dummy control Visible when Fanart found</description>
       <id>35</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <visible>yes</visible>
-      <focusable>no</focusable>
+      <label>
+      </label>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control Visible only when FANART is found: <visible>control.isvisible(35)</visible> -->
+      <!-- to make a control Invisible only when FANART is found: <visible>!control.isvisible(35)</visible> -->
+    </control>
+    <control>
+      <description>Dummy control for Film Lists</description>
+      <type>label</type>
+      <id>36</id>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control Visible only in Film Lists do this: <visible>control.isvisible(36)</visible> -->
+      <!-- to make a control Invisible in Film Lists (Movies) do this: <visible>!control.isvisible(36)</visible> -->
+    </control>
+    <control>
+      <description>Dummy control for Views other than Person views(Category, Year, Country, etc.)</description>
+      <type>label</type>
+      <id>37</id>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control Visible only in non person VIEWS: <visible>control.isvisible(37)</visible> -->
+      <!-- to make a control Invisible in non person VIEWS: <visible>!control.isvisible(37)</visible> -->
+    </control>
+    <control>
+      <description>Dummy control for PERSONS VIEWS</description>
+      <type>label</type>
+      <id>38</id>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control Visible only in PERSONS VIEWS (Actors, Writer, etc.): <visible>control.isvisible(38)</visible> -->
+      <!-- to make a control Invisible in PERSONS VIEWS (Actors, Writer, etc.): <visible>!control.isvisible(38)</visible> -->
+    </control>
+    <control>
+      <description>Dummy control for Groups/Hierarchies like Box Sets</description>
+      <type>label</type>
+      <id>39</id>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control Visible only in GROUP HIERARCHY: <visible>control.isvisible(39)</visible> -->
+      <!-- to make a control Invisible in GROUP HIERARCHY: <visible>!control.isvisible(39)</visible> -->
+    </control>
+    <control>
+      <description>Dummy control for Views Menu</description>
+      <type>label</type>
+      <id>40</id>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control Visible only in VIEWS MENU: <visible>control.isvisible(40)</visible> -->
+      <!-- to make a control Invisible in VIEWS MENU: <visible>!control.isvisible(40)</visible> -->
+    </control>
+    <control>
+      <description>Dummy control for Indexed View Level</description>
+      <type>label</type>
+      <id>41</id>
+      <posX>-50</posX>
+      <posY>-50</posY>
+      <!-- to make a control Visible only in Index View level: <visible>control.isvisible(41)</visible> -->
+      <!-- to make a control Invisible in Index View level: <visible>!control.isvisible(41)</visible> -->
     </control>
     <control>
       <description>dummy backdrop control 1</description>
@@ -165,101 +236,6 @@
       <ondown>1026</ondown>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
-    <!-- Fanrt/Movie Available Info -->
-    <!-- 		<control>
-			<description>Movie available Info Label</description>
-			<type>fadelabel</type>
-			<id>1</id>
-			<posX>1220</posX>
-			<posY>30</posY>
-			<width>80</width>
-			<label>Film:</label>
-			<font>Segoe Light12</font>
-			<textcolor>6aa5cb</textcolor>	
-			<visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)</visible>
-		</control>
-		
-		<control>
-			<description>Movie unavailable Icon</description>
-			<type>image</type>
-			<id>1</id>
-			<posX>1280</posX>
-			<posY>22</posY>
-			<width>46</width>
-			<height>46</height>
-			<texture>tv_is_unavailable.png</texture>
-			<keepaspectratio>yes</keepaspectratio>
-			<centered>yes</centered>
-			<visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)+!string.equals(#myfilms.user.source.value)</visible>
-		</control>
-		
-		<control>
-			<description>Movie available Icon</description>
-			<type>image</type>
-			<id>1</id>
-			<posX>1280</posX>
-			<posY>22</posY>
-			<width>46</width>
-			<height>46</height>
-			<texture>tv_is_available.png</texture>
-			<keepaspectratio>yes</keepaspectratio>
-			<centered>yes</centered>
-			<visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)+string.equals(#myfilms.user.source.value)</visible>
-		</control> -->
-    <!-- Trailer Available Info -->
-    <!-- 		<control>
-			<description>Trailer available Info Label</description>
-			<type>fadelabel</type>
-			<id>1</id>
-			<posX>1220</posX>
-			<posY>50</posY>
-			<width>80</width>
-			<label>Trailer:</label>
-			<font>Segoe Light12</font>
-			<textcolor>6aa5cb</textcolor>
-			<visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)</visible>
-		</control>
-		
-		<control>
-			<description>Trailer Count</description>
-			<type>label</type>
-			<id>1</id>
-			<posX>1295</posX>
-			<posY>50</posY>
-			<width>80</width>
-			<label>#myfilms.user.sourcetrailer.count</label>
-			<font>Segoe Light12</font>
-			<textcolor>6aa5cb</textcolor>	
-			<visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)</visible>
-		</control>
-		
-		<control>
-			<description>Trailer unavailable Icon</description>
-			<type>image</type>
-			<id>1</id>
-			<posX>1280</posX>
-			<posY>45</posY>
-			<width>46</width>
-			<height>46</height>
-			<texture>tv_is_unavailable.png</texture>
-			<keepaspectratio>yes</keepaspectratio>
-			<centered>yes</centered>
-			<visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)+!string.equals(#myfilms.user.sourcetrailer.value)</visible>
-		</control>
-		
-		<control>
-			<description>Trailer available Icon</description>
-			<type>image</type>
-			<id>1</id>
-			<posX>1280</posX>
-			<posY>45</posY>
-			<width>46</width>
-			<height>46</height>
-			<texture>tv_is_available.png</texture>
-			<keepaspectratio>yes</keepaspectratio>
-			<centered>yes</centered>
-			<visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)+string.equals(#myfilms.user.sourcetrailer.value)</visible>
-		</control> -->
     <!-- Global Overlay Filter Info -->
     <control>
       <description>Filters group</description>
@@ -307,16 +283,6 @@
         <animation effect="fade" time="250">WindowClose</animation>
         <animation effect="fade" time="250">WindowOpen</animation>
       </control>
-      <!-- <control>
-			<type>label</type>
-			<description>Rating Global Filter Value</description>
-			<id>0</id>
-			<label>#myfilms.globalfilter.minratingvalue</label>
-			<visible>string.contains(#myfilms.globalfilter.minratingvalue)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-			<animation effect="fade" time="250">WindowClose</animation>	
-			<animation effect="fade" time="250">WindowOpen</animation>
-		</control> -->
     </control>
     <!--            :: IMPORT ::            -->
     <import tag="Background">MyFilms.background.default.xml</import>

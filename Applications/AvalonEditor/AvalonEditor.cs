@@ -954,6 +954,11 @@ namespace ProcessPlugins.AvalonEditor
                         }
                         else
                         {
+                            if (location == (int)504)
+                            {
+                                location = (int)501;
+                            }
+
                             GUIMessage msg = new GUIMessage(GUIMessage.MessageType.GUI_MSG_GOTO_WINDOW, 0, 0, 0, location, 0, null);
                             GUIWindowManager.SendThreadMessage(msg);
                         }
