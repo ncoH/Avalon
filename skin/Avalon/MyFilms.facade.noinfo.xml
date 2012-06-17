@@ -16,7 +16,7 @@ This file should contain the facade view
         <width>187</width>
         <height>202</height>
         <texture>listscroller_bg.png</texture>
-        <visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+        <visible>[facadeview.list|facadeview.album]+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
         <animation effect="fade" start="0" end="100" time="300" delay="0">Visible</animation>
         <animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
     </control>
@@ -31,7 +31,7 @@ This file should contain the facade view
         <font>AvalonLight32</font>
         <textcolor>ff6aa5cb</textcolor>
         <label>#selecteditem.scrolllabel</label>
-        <visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+        <visible>[facadeview.list|facadeview.album]+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
         <align>center</align>
         <valign>middle</valign>
         <animation effect="fade" start="0" end="100" time="300" delay="0">Visible</animation>
@@ -49,7 +49,7 @@ This file should contain the facade view
 		<width>1865</width>
 		<height>96</height>
 		<texture>basichome_rss_bg.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
+		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -69,7 +69,7 @@ This file should contain the facade view
       <align>left</align>
       <font>AvalonLight12</font>
       <textcolor>6aa5cb</textcolor>
-	  <visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
+	  <visible>[[facadeview.list|facadeview.album] | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
     </control>
 
 	<control>
@@ -99,6 +99,46 @@ This file should contain the facade view
 			<textureHeight>55</textureHeight>
 			<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
+			<dimColor>ffffffff</dimColor>
+ 			<spinPosX>1832</spinPosX>
+			<spinPosY>880</spinPosY>
+		</control>
+
+    <control>
+    	<description>album view listcontrol</description>
+      <type>listcontrol</type>
+      <subtype>album</subtype>
+      <id>50</id>
+			<posX>1166</posX>
+			<posY>164</posY>
+			<height>720</height>
+			<width>684</width>
+			<textXOff>70</textXOff>
+			<textYOff>5</textYOff>
+			<textXOff2>650</textXOff2>
+			<textYOff2>35</textYOff2>
+			<textXOff3>130</textXOff3>
+			<textYOff3>40</textYOff3>
+			<font>AvalonLight12</font>
+			<font2>font2</font2>
+			<font3>font2</font3>
+			<textcolor>ffffffff</textcolor>
+			<textcolor2>ff6aa5cb</textcolor2>
+      <itemHeight>70</itemHeight>
+      <IconXOff>20</IconXOff>
+      <IconYOff>0</IconYOff>
+			<PinIconHeight>19</PinIconHeight>
+			<PinIconWidth>40</PinIconWidth>
+      <PinIconXOff>80</PinIconXOff>
+      <PinIconYOff>45</PinIconYOff>
+      <spaceBetweenItems>3</spaceBetweenItems>
+      <textureHeight>70</textureHeight>
+      <scrollOffset>1</scrollOffset>
+			<textureFocus>listcontrol_item_selected_big.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <keepaspectratio>yes</keepaspectratio>
 			<dimColor>ffffffff</dimColor>
  			<spinPosX>1832</spinPosX>
 			<spinPosY>880</spinPosY>
