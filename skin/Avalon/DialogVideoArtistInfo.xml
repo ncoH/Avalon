@@ -9,103 +9,128 @@
 		<description>background image</description>
 		<type>image</type>
 		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
+		<width>1920</width>
+		<height>1080</height>
 	</control>
-	
-<import>common.time.xml</import>
 	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
+		<description>background listview</description>
+		<type>image</type>
 		<id>1</id>
-		<posX>552</posX>
-		<posY>30</posY>
-		<width>500</width>
-		<height>100</height>
-		<label>info</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<valign>middle</valign>
+		<posX>0</posX>
+        <posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>overlay.png</texture>
 	</control>
+	
+	<control>
+		<description>viewport list</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>795</height>
+		<texture>viewport_onlinevideos.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+    
+ <import>common.time.xml</import>
+	
+    <control>
+		<type>fadelabel</type>
+		<id>1</id>      
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>Actor Info</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
 	
 	<control>
 		<description>Actor Name value</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>555</posX>
-		<posY>142</posY>
-		<width>700</width>
-		<font>Segoe Light22</font>
+		<posX>745</posX>
+		<posY>154</posY>
+		<width>1170</width>
 		<label>#Actor.Name</label>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<font>fontB20</font>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
-
+	
 	<control>
 		<description>Born</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>177</posX>
-		<posY>150</posY>
+		<posX>744</posX>
+		<posY>248</posY>
+		<width>240</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
 		<label>686</label>
-		<font>font13</font>
-		<textcolor>FFB2D4F5</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 	<control>
 		<description>Date of Birth</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>391</posX>
-		<posY>150</posY>
-		<width>711</width>
+		<posX>878</posX>
+		<posY>248</posY>
+		<width>500</width>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>ffffff</textcolor>
 		<label>#Actor.DateOfBirth #Actor.PlaceOfBirth</label>
-		<font>font13</font>
-		<textcolor>FFFFFFFF</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
-	<control>
-		<type>group</type>
-		<layout>StackLayout(4)</layout>
-		<description>group element</description>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>200</posX>
-		<posY>180</posY>
+    <control>
+	  <description>Button group</description>
+      <type>group</type>
+	  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	  <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	  <posX>1398</posX>
+	  <posY>210</posY>
+	  <layout>StackLayout(0, Vertical, true)</layout>
 		
 		<control>
-		<description>Biography</description>
-		<type>togglebutton</type>
-		<id>3</id>
-		<label>1011</label>
-		<onleft>22</onleft>
-		<onright>22</onright>
-		<onup>2</onup>
-		<ondown>4</ondown>
-		<textalign>right</textalign>
-	</control>
+		  <description>Biography</description>
+		  <type>togglebutton</type>
+		  <id>3</id>
+		  <label>1011</label>
+		  <onleft>22</onleft>
+		  <onright>22</onright>
+		  <onup>4</onup>
+		  <ondown>4</ondown>
+	    </control>
 
-	<control>
-		<description>Movies</description>
-		<type>togglebutton</type>
-		<id>4</id>
-		<label>342</label>
-		<onleft>22</onleft>
-		<onright>22</onright>
-		<onup>3</onup>
-		<ondown>5</ondown>
-		<textalign>right</textalign>
-		<AltTextureFocus>togglebutton-off-focus.png</AltTextureFocus>
-			<AltTextureNoFocus>togglebutton-off-nofocus.png</AltTextureNoFocus>
-			<textureFocus>togglebutton-on-focus.png</textureFocus>
-			<textureNoFocus>togglebutton-on-nofocus.png</textureNoFocus>
-	</control>
+		<control>
+		  <description>Movies</description>
+		  <type>togglebutton</type>
+		  <id>4</id>
+		  <label>342</label>
+		  <onleft>22</onleft>
+		  <onright>22</onright>
+		  <onup>3</onup>
+		  <ondown>3</ondown>
+		  <AltTextureFocus>togglebutton-off-focus.png</AltTextureFocus>
+		  <AltTextureNoFocus>togglebutton-off-nofocus.png</AltTextureNoFocus>
+		  <textureFocus>togglebutton-on-focus.png</textureFocus>
+		  <textureNoFocus>togglebutton-on-nofocus.png</textureNoFocus>
+		</control>
 	
 </control>
 
@@ -113,39 +138,72 @@
 		<description>Biography value</description>
 		<type>textboxscrollup</type>
 		<id>20</id>
-		<posX>555</posX>
-		<posY>180</posY>
-		<width>750</width>
-		<height>500</height>
+		<posX>744</posX>
+		<posY>368</posY>
+		<width>1055</width>
+		<height>450</height>
 		<label>#Actor.Biography</label>
-		<font>font13</font>
+		<font>AvalonLight12</font>
 		<textcolor>FFFFFFFF</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 	<control>
-		<description>Image logo</description>
+		<description>Poster shadow</description>
 		<type>image</type>
-		<id>21</id>
-		<posX>177</posX>
-		<posY>187</posY>
-		<width>177</width>
-		<height>125</height>
-		<texture>#thumb</texture>
-		<colorkey>FFFF00FF</colorkey>
-		<colordiffuse>FFFFFFFF</colordiffuse>
-		<keepaspectratio>yes</keepaspectratio>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<id>1</id>
+		<posX>109</posX>
+		<posY>110</posY>
+		<width>465</width>
+		<height>605</height>
+		<texture>list_poster_glow.png</texture>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
+  
+    <control>
+		<type>image</type>
+		<description>movie poster</description>
+		<id>21</id>
+		<posX>176</posX>
+		<posY>178</posY>
+		<width>330</width>
+		<height>470</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#thumb</texture>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
 
+    <!--  **********  Actor Movie Info **********  -->
+    <control>
+      <description>Actors Movies List</description>
+      <type>listcontrol</type>
+      <id>24</id>
+      <onleft>4</onleft>
+      <onright>4</onright>
+	  <posX>678</posX>
+      <posY>368</posY>
+      <height>500</height>
+      <width>1152</width>
+	  <textXOff>50</textXOff>
+	  <textXOff2>1152</textXOff2>
+	  <textureHeight>55</textureHeight>
+	  <spinCanFocus>no</spinCanFocus>
+	  <textureFocus>listcontrol_item_selected_wide.png</textureFocus>
+	  <dimColor>ffffffff</dimColor>
+      <textvisible2>no</textvisible2>
+      <textvisible3>no</textvisible3>
+	  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	  <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+	
 	<control>
 		<description>textarea</description>
 		<type>textbox</type>
 		<id>22</id>
-		<posX>555</posX>
-		<posY>180</posY>
+		<posX>755</posX>
+		<posY>380</posY>
 		<width>750</width>
 		<height>500</height>
 		<onleft>4</onleft>
@@ -153,8 +211,8 @@
 		<onup>4</onup>
 		<ondown>4</ondown>
 		<label>#Actor.Movies</label>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+ 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<spinPosX>550</spinPosX>
 		<spinPosY>718</spinPosY>
 	</control>

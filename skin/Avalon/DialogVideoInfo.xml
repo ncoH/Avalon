@@ -28,9 +28,9 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>0</posX>
-		<posY>164</posY>
+		<posY>92</posY>
 		<width>1893</width>
-		<height>755</height>
+		<height>795</height>
 		<texture>viewport_onlinevideos.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -60,7 +60,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>109</posX>
-		<posY>182</posY>
+		<posY>102</posY>
 		<width>465</width>
 		<height>605</height>
 		<texture>list_poster_glow.png</texture>
@@ -73,7 +73,7 @@
 		<description>movie poster</description>
 		<id>21</id>
 		<posX>176</posX>
-		<posY>250</posY>
+		<posY>170</posY>
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#thumb</texture>
@@ -84,15 +84,15 @@
       <type>group</type>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-        
+		<posX>1398</posX>
+		<posY>210</posY>
+		<layout>StackLayout(0, Vertical, true)</layout>
 	<control>
 		<description>Play Button</description>
 		<type>button</type>
 		<id>2</id>
-		<posX>1398</posX>
-		<posY>314</posY>
 		<label>208</label>
-		<onleft>22</onleft>
+		<onleft>24</onleft>
 		<onright>22</onright>
 		<onup>7</onup>
 		<ondown>3</ondown>
@@ -103,10 +103,8 @@
 		<description>Plot</description>
 		<type>togglebutton</type>
 		<id>3</id>
-		<posX>1398</posX>
-		<posY>378</posY>
 		<label>207</label>
-		<onleft>22</onleft>
+		<onleft>24</onleft>
 		<onright>22</onright>
 		<onup>2</onup>
 		<ondown>4</ondown>
@@ -119,10 +117,8 @@
 		<description>Cast</description>
 		<type>togglebutton</type>
 		<id>4</id>
-		<posX>1398</posX>
-		<posY>442</posY>
 		<label>206</label>
-		<onleft>22</onleft>
+		<onleft>24</onleft>
 		<onright>22</onright>
 		<onup>3</onup>
 		<ondown>5</ondown>
@@ -135,26 +131,34 @@
 		<description>Refresh</description>
 		<type>button</type>
 		<id>5</id>
-		<posX>1398</posX>
-		<posY>506</posY>
 		<label>184</label>
-		<onleft>22</onleft>
+		<onleft>24</onleft>
 		<onright>22</onright>
 		<onup>4</onup>
-		<ondown>6</ondown>
+		<ondown>26</ondown>
 		<textalign>left</textalign>
 	</control>
 
 	<control>
+		<description>Refresh</description>
+		<type>button</type>
+		<id>26</id>
+		<label>118</label>
+		<onleft>24</onleft>
+		<onright>22</onright>
+		<onup>5</onup>
+		<ondown>6</ondown>
+		<textalign>left</textalign>
+	</control>
+	
+	<control>
 		<description>Watched</description>
 		<type>togglebutton</type>
 		<id>6</id>
-		<posX>1398</posX>
-		<posY>570</posY>
 		<label>1010</label>
-		<onleft>22</onleft>
+		<onleft>24</onleft>
 		<onright>22</onright>
-		<onup>5</onup>
+		<onup>26</onup>
 		<ondown>10</ondown>
  		<textcolor>white</textcolor>
 		<textcolorNoFocus>ff85cfff</textcolorNoFocus>
@@ -211,7 +215,7 @@
 		<type>label</type>
 		<id>30</id>
 		<posX>1402</posX>
-		<posY>650</posY>
+		<posY>610</posY>
 		<label>734</label>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -223,7 +227,7 @@
 		<type>spincontrol</type>
 		<id>10</id>
 		<posX>1658</posX>
-		<posY>650</posY>
+		<posY>610</posY>
 		<onup>6</onup>
 		<ondown>11</ondown>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -235,7 +239,7 @@
 		<type>label</type>
 		<id>100</id>
 		<posX>1402</posX>
-		<posY>690</posY>
+		<posY>650</posY>
 		<label>427</label>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -247,7 +251,7 @@
 		<type>spincontrol</type>
 		<id>11</id>
 		<posX>1658</posX>
-		<posY>690</posY>
+		<posY>650</posY>
 		<onup>10</onup>
 		<ondown>2</ondown>
 		<onleft>5</onleft>
@@ -263,7 +267,7 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>745</posX>
-		<posY>234</posY>
+		<posY>154</posY>
 		<width>1170</width>
 		<label>#title</label>
 		<font>fontB20</font>
@@ -277,7 +281,7 @@
 		<id>1</id>
 		<label>#Avalon.ReleaseDate</label>
 		<posX>744</posX>
-		<posY>328</posY>
+		<posY>248</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -292,7 +296,7 @@
 		<id>1</id>
 		<label>#year</label>
 		<posX>1058</posX>
-		<posY>328</posY>
+		<posY>248</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -307,7 +311,7 @@
 		<id>1</id>
 		<label>725</label>
 		<posX>744</posX>
-		<posY>368</posY>
+		<posY>288</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -322,7 +326,7 @@
 		<id>1</id>
 		<label>#genre</label>
 		<posX>1058</posX>
-		<posY>368</posY>
+		<posY>288</posY>
 		<width>330</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -337,7 +341,7 @@
 		<id>1</id>
 		<label>#Avalon.Runtime</label>
 		<posX>744</posX>
-		<posY>408</posY>
+		<posY>328</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -352,7 +356,7 @@
 		<id>1</id>
 		<label>#runtime min</label>
 		<posX>1058</posX>
-		<posY>408</posY>
+		<posY>328</posY>
 		<width>330</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -367,7 +371,7 @@
 		<id>1</id>
 		<label>Director</label>
 		<posX>744</posX>
-		<posY>448</posY>
+		<posY>368</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -381,7 +385,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>1058</posX>
-		<posY>448</posY>
+		<posY>368</posY>
 		<width>330</width>
 		<label>#director</label>
 		<font>AvalonLight12</font>
@@ -396,7 +400,7 @@
 		<id>1</id>
 		<label>931</label>
 		<posX>744</posX>
-		<posY>488</posY>
+		<posY>408</posY>
 		<width>240</width>
 		<align>left</align>
 		<font>AvalonLight12</font>
@@ -409,7 +413,7 @@
 		<type>imagelist</type>
 		<id>1</id>
 		<posX>1058</posX>
-		<posY>493</posY>
+		<posY>413</posY>
 		<width>185</width>
 		<height>29</height>
 		<textureWidth>32</textureWidth>
@@ -430,8 +434,8 @@
 		<type>textboxscrollup</type>
 		<id>20</id>
         <posX>745</posX>
-        <posY>535</posY>
-        <width>640</width>
+        <posY>455</posY>
+        <width>560</width>
         <height>320</height>
 		<onleft>2</onleft>
 		<onright>2</onright>
@@ -442,19 +446,64 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
-	<control>
-		<description>textarea</description>
-		<type>textbox</type>
-		<id>22</id>
-        <posX>745</posX>
-        <posY>535</posY>
-        <width>640</width>
-        <height>350</height>
-		<onleft>2</onleft>
-		<onright>2</onright>
-		<onup>2</onup>
-		<ondown>2</ondown>
-		<label>#cast</label>
+
+    <!--     *******************************************************************************************  -->
+    <!--     **************************************  ACTOR INFOS  **************************************  -->
+    <!--     *******************************************************************************************  -->
+    <control>
+      <description>Actors/Cast Image</description>
+      <type>image</type>
+      <id>25</id>
+      <posX>745</posX>
+      <posY>465</posY>
+      <width>120</width>
+      <height>180</height>
+      <keepaspectratio>no</keepaspectratio>
+      <texture mask="video_thumb_mask.png">#actorThumb</texture>
+	  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	  <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Actors/Cast List</description>
+      <type>listcontrol</type>
+      <id>24</id>
+      <scrollOffset>1</scrollOffset>
+      <posX>744</posX>
+      <posY>670</posY>
+      <width>1050</width>
+      <height>200</height>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <spinPosX>-2000</spinPosX>
+      <spinPosY>680</spinPosY>
+      <spinCanFocus>no</spinCanFocus>
+      <unfocusedAlpha>150</unfocusedAlpha>
+      <font>font12</font>
+      <textvisible2>no</textvisible2>
+      <textvisible3>no</textvisible3>
+      <keepaspectratio>yes</keepaspectratio>
+      <textureHeight>52</textureHeight>
+      <textureFocus>settings_button_focus.png</textureFocus>
+      <textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+	  <dimColor>ffffffff</dimColor>
+	  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	  <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+    <!-- ********** Actors list (Old style for Non EN Scrapers)  ********** -->
+    <control>
+      <description>textarea</description>
+      <type>textbox</type>
+      <id>22</id>
+      <posX>745</posX>
+      <posY>455</posY>
+      <width>640</width>
+      <height>350</height>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <onup>2</onup>
+      <ondown>2</ondown>
+	<label>#cast</label>
 		<spinPosX>1250</spinPosX>
 		<spinPosY>840</spinPosY>
 		<spinWidth>28</spinWidth>
@@ -462,7 +511,6 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
-
 <import>common.overlay.xml</import>
 </controls>
 </window>
