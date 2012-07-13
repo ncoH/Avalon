@@ -180,7 +180,11 @@
 				<description>View-As</description>
 				<type>menubutton</type>
 				<id>2</id>
-				<label>100</label>
+				<label></label>	
+				<mode>dialoglist</mode>				
+				<dialogTitle>792</dialogTitle> 					
+				<valueTextInButton>yes</valueTextInButton>
+				<valuePrefixText>95</valuePrefixText>	
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<width>497</width>
@@ -213,7 +217,11 @@
 				<description>Switch View</description>
 				<type>menubutton</type>
 				<id>5</id>
-				<label>457</label>
+				<label></label>
+				<mode>dialoglist</mode>
+				<dialogTitle>499</dialogTitle>
+				<valueTextInButton>yes</valueTextInButton>
+				<valuePrefixText>97</valuePrefixText>	
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<width>497</width>

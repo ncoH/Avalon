@@ -165,7 +165,75 @@
 			<textYOff>8</textYOff>
 			<label>6006</label>				
 		</control>
-
+		
+		<control>
+			<description>Use button colors for TVGuide</description>
+			<type>checkbutton</type>
+			<id>40</id>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>		
+			<label>1246</label>	
+			<selected>#(skin.hassetting('#skin.tvguide.usecolorsforbuttons'))</selected>
+			<onclick>#(skin.togglesetting('#skin.tvguide.usecolorsforbuttons'))</onclick>
+		</control>
+	  
+		<control>
+			<description>Use guide colors for genre</description>
+			<type>checkbutton</type>
+			<id>41</id>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>	
+			<label>1247</label>
+			<selected>#(skin.hassetting('#skin.tvguide.usecolorsforgenre'))</selected>
+			<onclick>#(skin.togglesetting('#skin.tvguide.usecolorsforgenre'))</onclick>
+		</control>
+	  
+		<control>
+			<description>Use highlight</description>
+			<type>checkbutton</type>
+			<id>42</id>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>	
+			<label>1248</label>
+			<selected>#(skin.hassetting('#skin.tvguide.useborderhighlight'))</selected>
+			<onclick>#(skin.togglesetting('#skin.tvguide.useborderhighlight'))</onclick>
+		</control>
+	  
+		<control>
+			<description>Show genre color key</description>
+			<type>checkbutton</type>
+			<id>43</id>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>	
+			<label>1249</label>			
+			<selected>#(skin.hassetting('#skin.tvguide.showgenrekey'))</selected>
+			<onclick>#(skin.togglesetting('#skin.tvguide.showgenrekey'))</onclick>
+		</control>
+	  
 		<control>
 			<description>ChannelManager</description>
 			<type>button</type>
