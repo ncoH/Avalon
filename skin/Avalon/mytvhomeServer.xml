@@ -4,7 +4,7 @@
   <defaultcontrol>8</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
-    <import tag="TVHomeLayout">mytvhomeServer.buttonsleft.xml</import>
+    <import tag="TVHomeLayout">mytvhomeServer.default.xml</import>
     <import>common.time.xml</import>
   </controls>
 </window>

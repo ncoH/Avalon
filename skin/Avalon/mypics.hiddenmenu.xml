@@ -57,6 +57,11 @@
 					<description>View-As</description>
 					<type>menubutton</type>
 					<id>2</id>
+					<label></label>	
+					<mode>dialoglist</mode>				
+					<dialogTitle>792</dialogTitle> 					
+					<valueTextInButton>yes</valueTextInButton>
+					<valuePrefixText>95</valuePrefixText>					
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>-</textureNoFocus>
 					<posX>69</posX>
@@ -65,7 +70,6 @@
 					<height>70</height>
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>
-					<label>100</label>
 					<onright>50</onright>
 					<onup>7</onup>
 					<ondown>3</ondown>
@@ -94,6 +98,11 @@
 					<description>Switch View</description>
 					<type>menubutton</type>
 					<id>5</id>
+					<label></label>
+					<mode>dialoglist</mode>
+					<dialogTitle>499</dialogTitle>
+					<valueTextInButton>yes</valueTextInButton>
+					<valuePrefixText>97</valuePrefixText>						
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>-</textureNoFocus>
 					<posX>69</posX>
@@ -102,7 +111,6 @@
 					<height>70</height>
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>
-					<label>457</label>
 					<onright>50</onright>
 					<ondown>6</ondown>
 					<onup>3</onup>

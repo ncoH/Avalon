@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profile>
+  <section name="theme">
+    <entry name="name">Skin default</entry>
+  </section>
+  <section name="booleansettings">
+    <entry name="#skin.tvguide.usecolorsforbuttons">True</entry>
+    <entry name="#skin.tvguide.usecolorsforgenre">True</entry>
+    <entry name="#skin.tvguide.useborderhighlight">False</entry>
+    <entry name="#skin.tvguide.showgenrekey">True</entry>
+  </section>
+  <section name="tvguidecolors">
+    <entry name="guidecolorchannelbutton">FF0E517B</entry>
+    <entry name="guidecolorchannelbuttonselected">FF008000</entry>
+    <entry name="guidecolorprogramselected">FF008000</entry>
+    <entry name="guidecolorprogramended">FF808080</entry>
+    <entry name="guidecolorborderhighlight">99FFFFFF</entry>
+    <entry name="defaultgenre">FF1D355B,FF0E517B</entry>
+    <entry name="0">FFD2691E,FFD2691E</entry>
+    <entry name="1">FF00FFFF,FF00FFFF</entry>
+    <entry name="2">FF800080,FF800080</entry>
+    <entry name="3">FF800000,FF800000</entry>
+    <entry name="4">FF90EE90,FF90EE90</entry>
+    <entry name="5">FFFFD700,FFFFD700</entry>
+    <entry name="6">FF006400,FF006400</entry>
+    <entry name="guidecolorgroupbutton">FF1D355B</entry>
+    <entry name="guidecolorgroupbuttonselected">FF1D355B</entry>
+  </section>
+</profile>
