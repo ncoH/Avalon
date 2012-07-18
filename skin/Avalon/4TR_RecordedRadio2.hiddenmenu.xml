@@ -53,14 +53,18 @@
 		</control>	
 				
 			<control>
-				<type>button</type>
+				<type>menubutton</type>
 				<description>View-As button</description>
 				<id>2</id>
+				<label></label>	
+				<mode>dialoglist</mode>				
+				<dialogTitle>792</dialogTitle> 					
+				<valueTextInButton>yes</valueTextInButton>
+				<valuePrefixText>95</valuePrefixText>						
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>7</onup>
 				<ondown>5</ondown>
-				<label>100</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<posX>69</posX>
@@ -72,14 +76,18 @@
 			</control>
 
 			<control>
-				<type>button</type>
+				<type>menubutton</type>
 				<description>All,Genre,Channel button</description>
 				<id>5</id>
+				<label></label>	
+				<mode>dialoglist</mode>				
+				<dialogTitle>792</dialogTitle> 					
+				<valueTextInButton>no</valueTextInButton>
+				<valuePrefixText>95</valuePrefixText>					
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>2</onup>
 				<ondown>3</ondown>
-				<label>457</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<posX>69</posX>

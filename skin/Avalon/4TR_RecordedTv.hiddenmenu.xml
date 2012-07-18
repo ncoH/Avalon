@@ -52,7 +52,7 @@
 			<font>font22</font>
 			<textcolor>ffffff</textcolor>
 		</control>	
-				
+
 			<control>
 				<type>button</type>
 				<description>View-As button</description>
