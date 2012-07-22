@@ -82,7 +82,7 @@
 				<label></label>
 				<mode>dialoglist</mode>
 				<dialogTitle>499</dialogTitle>
-				<valueTextInButton>yes</valueTextInButton>
+				<valueTextInButton>no</valueTextInButton>
 				<valuePrefixText>97</valuePrefixText>				
 				<onleft>50</onleft>
 				<onright>50</onright>
