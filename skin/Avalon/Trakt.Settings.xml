@@ -21,7 +21,7 @@
 			<type>button</type>
 			<description>Account Setup</description>
 			<id>2</id>
-			<onup>4</onup>
+			<onup>1000</onup>
 			<label>#Trakt.Translation.AccountSetup.Label</label>
 			<hyperlink>87272</hyperlink>
 			<onright>#defaultcontrol.onright</onright>
@@ -41,8 +41,16 @@
 			<label>#Trakt.Translation.General.Label</label>
 			<hyperlink>87274</hyperlink>
 			<onright>#defaultcontrol.onright</onright>
-            <ondown>2</ondown>
 		</control>
+		<control Style="SettingsButtonLarge">
+			<type>button</type>
+			<description>MPEICONFIGURE:a9c3845a_8718_4712_85cc_26f56520bb9a</description>
+			<id>1000</id>
+			<label>#Trakt.Translation.AdvancedSettings.Label</label>
+			<onright>#defaultcontrol.onright</onright>
+            <ondown>2</ondown>
+			<visible>string.equals(#mpei.a9c3845a_8718_4712_85cc_26f56520bb9a.isinstalled, true)</visible>				
+		</control>			
   </control>
 		<import>common.overlay.xml</import>
 	</controls>
