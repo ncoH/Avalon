@@ -7,14 +7,16 @@
 	<define>#defaultcontrol:2</define>
 	<define>#defaultcontrol.onright:9996</define>
 	<controls>
+	
 		<import>Trakt.Common.xml</import>
         <import>common.time.xml</import>
+		
 		<control>
 			<type>group</type>
 			<description>group element</description>
     		<posX>736</posX>
     		<posY>218</posY>
-			<layout>StackLayout(0, Vertical, true)</layout>
+			<layout>GridLayout(1, 0, 1, 0, 1)</layout>
 			
 			<control Style="SettingsToggleLarge">
 				<description>MP-TVSeries</description>
@@ -23,7 +25,7 @@
 				<label>MP-TVSeries</label>
 				<onright>2</onright>
 				<onleft>#defaultcontrol.onright</onleft>
-				<onup>9</onup>
+				<onup>11</onup>
 			</control>
 			
 			<control Style="SettingsToggleLarge">
@@ -91,8 +93,28 @@
 				<label>4TR TV Recordings</label>
 				<onleft>9</onleft>
 				<onleft>#defaultcontrol.onright</onleft>
-				<ondown>2</ondown>
-			</control>			
+			</control>	
+
+			<control Style="SettingsToggleLarge">
+				<description>My TV Live</description>
+				<type>togglebutton</type>
+				<id>10</id>
+				<label>My TV Live</label>
+				<onleft>10</onleft>
+				<onleft>#defaultcontrol.onright</onleft>
+				<ondown>11</ondown>   				
+			</control>
+			
+			<control Style="SettingsToggleLarge">
+				<description>4TR TV Live</description>
+				<type>togglebutton</type>
+				<id>11</id>
+				<label>4TR TV Live</label>
+				<onleft>11</onleft>
+				<onleft>#defaultcontrol.onright</onleft>
+				<ondown>2</ondown>   				
+			</control>	
+			
 		</control>
 		
 		<import>common.overlay.xml</import>
