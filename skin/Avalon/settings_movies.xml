@@ -22,46 +22,242 @@
 		<type>group</type>
 		<posX>736</posX>
 		<posY>254</posY>
-		<layout>GridLayout(1, 0, 1, 0, 1)</layout>
-        <control Style="SettingsButtonLarge">
+		<layout>GridLayout(2, 0, 1, 0, 1)</layout>
+		
+        <control>
 			<description>MPEG-2 Video Codecs</description>
 			<type>button</type>
 			<id>24</id>
 			<label>6000</label>
 			<onup>28</onup>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>	
 		</control>
 
-        <control Style="SettingsButtonLarge">
+        <control>
 			<description>H.264 Video Codecs</description>
 			<type>button</type>
 			<id>29</id>
-			<label>6036</label>
+			<label>6036</label>	
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>	
 		</control>
 
-        <control Style="SettingsButtonLarge">
+		<control>
+			<description>VC1 Video Codecs</description>
+			<type>button</type>
+			<id>34</id>
+			<label>VC1 Video Codecs</label>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
+		</control>
+	  
+		<control>
+			<description>VC1i Video Codecs</description>
+			<type>button</type>
+			<id>35</id>
+			<label>VC1i Video Codecs</label>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
+		</control>
+	  
+		<control>
+			<description>XVID Video Codecs</description>
+			<type>button</type>
+			<id>36</id>
+			<label>XVID Video Codecs</label>	
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
+		</control>
+	  
+		<control>
 			<description>Audio Codecs</description>
 			<type>button</type>
 			<id>25</id>
-			<label>6001</label>
+			<label>6001</label>		
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
 		</control>
 
-        <control Style="SettingsButtonLarge">
+		<control>
+			<description>AAC Audio Codecs</description>
+			<type>button</type>
+			<id>30</id>
+			<label>6039</label>		
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
+		</control>
+	  
+		<control>
 			<description>Audio Renderer</description>
 			<type>button</type>
 			<id>27</id>
-			<label>6002</label>
+			<label>6002</label>	
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
+			<ondown>39</ondown>			
 		</control>
 
-        <control Style="SettingsButtonLarge">
+		<control>
+			<description>Source Splitter Selection</description>
+			<type>togglebutton</type>
+			<id>39</id>
+			<label>Source Splitter Selection</label>
+			<width>471</width>		
+			<height>52</height>			
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<ondup>27</ondup>		
+		</control>
+	  
+		<control>
+			<description>Splitter Source</description>
+			<type>button</type>
+			<id>38</id>
+			<label>Splitter Source</label>
+			<disabledcolor>ff909090</disabledcolor>	
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
+		</control>
+	  
+		<control>
+			<description>Splitter Filesync</description>
+			<type>button</type>
+			<id>37</id>
+			<label>Splitter Filesync</label>		
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>	
+		</control>	  
+
+		<control>
+			<description>Subtitles On/Off</description>
+			<type>togglebutton</type>
+			<id>31</id>
+			<label>1196</label>	
+			<width>471</width>		
+			<height>52</height>			
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+		</control>
+	  
+		<control>
+			<description>Subtitle Language</description>
+			<type>button</type>
+			<id>32</id>
+			<label>1029</label>	
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
+		</control>
+	  
+		<control>
+			<description>Audio Language</description>
+			<type>button</type>
+			<id>33</id>
+			<label>492</label>	
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>
+		</control>
+
+        <control>
 			<description>Aspect Ratio</description>
 			<type>button</type>
 			<id>28</id>
 			<label>6004</label>
-			<ondown>24</ondown>
+			<ondown>24</ondown>	
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+			<textcolor>ffffffff</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+			<width>471</width>
+			<height>52</height>
+			<textXOff>28</textXOff>
+			<textYOff>8</textYOff>	
 		</control>
 
 	</control>
+	
 <import>common.time.xml</import>
 <import>avalon.version.xml</import>
+
 </controls>
 </window>
