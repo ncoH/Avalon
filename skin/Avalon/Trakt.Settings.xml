@@ -21,7 +21,7 @@
 			<type>button</type>
 			<description>Account Setup</description>
 			<id>2</id>
-			<onup>4</onup>
+			<onup>1000</onup>
 			<label>#Trakt.Translation.AccountSetup.Label</label>
 			<hyperlink>87272</hyperlink>
 			<onright>#defaultcontrol.onright</onright>
