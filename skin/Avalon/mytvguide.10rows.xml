@@ -391,7 +391,10 @@
 		<type>image</type>
 		<id>31</id>
 		<posX>615</posX>
-		<posY>826</posY>
+		<posY>953</posY>
+        <width>44</width>
+        <height>45</height>
+        <align>left</align>	
 		<texture>tv_is_recording.gif</texture>
 		<visible>no</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>

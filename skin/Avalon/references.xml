@@ -615,7 +615,6 @@
     <disabledcolor>60ffffff</disabledcolor>
     <spintype>text</spintype>
   </control>
-  
   <control>
     <description>default checkmark</description>
     <type>checkmark</type>
@@ -634,7 +633,6 @@
     <align>right</align>
     <shadow>no</shadow>
   </control>
-  
   <control>
     <description>default select button</description>
     <type>selectbutton</type>
@@ -664,7 +662,6 @@
     <!--<animation effect="zoom" start="100,100" end="105,105" time="100">focus</animation>
 		<animation effect="zoom" start="105,105" end="100,100" time="300">unfocus</animation>-->
   </control>
-  
   <control>
     <description>default check button</description>
     <type>checkbutton</type>
@@ -681,7 +678,7 @@
     <markXOff>15</markXOff>
     <markYOff>10</markYOff>
     <markalign>right</markalign>
-    <markvalign>middle</markvalign>	
+    <markvalign>middle</markvalign>
     <textureCheckmark>check-box.png</textureCheckmark>
     <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
     <textcolor>white</textcolor>
@@ -690,5 +687,4 @@
     <textcolorNoFocus>ffffffff</textcolorNoFocus>
     <dimColor>ff000000</dimColor>
   </control>
-  
 </controls>

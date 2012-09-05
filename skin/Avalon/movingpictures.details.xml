@@ -183,8 +183,6 @@ This file should contain the details view
 	<!-- Summary labels -->
     
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Cover</description>
 		<type>image</type>
 		<id>2024</id>

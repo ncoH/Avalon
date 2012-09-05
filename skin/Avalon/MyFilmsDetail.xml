@@ -768,7 +768,36 @@
 			<animation effect="fade" time="0">WindowOpen</animation>			
 		</control>
 	
+		<control>
+			<description>Actors 6 Label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1125</posX>
+			<posY>875</posY>
+			<width>1039</width>
+			<height>422</height>
+			<textcolor>FFFFFFFF</textcolor>
+			<label>#myfilms.db.actors.actor6.name</label>
+			<font>AvalonLight12</font>
+			<visible>Control.HasFocus(10003)+!Control.HasFocus(10099)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>			
+		</control>
 	
+		<control>
+			<description>Actors 6 image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1125</posX>
+			<posY>695</posY>
+			<width>117</width>
+			<height>166</height>
+			<texture mask="poster_mask.png">#myfilms.db.actors.actor6.image</texture>
+			<visible>Control.HasFocus(10003)+!Control.HasFocus(10099)</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>			
+		</control>
+		
 <!--   Detailmenu for Technical Details  -->
 
 		<control>

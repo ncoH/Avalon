@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-  <controls>
-  
+<controls>
+    
 	<control>
 		<description>BG</description>
 		<type>image</type>
@@ -47,20 +47,6 @@
 		<textcolor>6aa5cb</textcolor>
 		<font>font22</font>
 	</control>
-	
-    <control>
-      <description>TVGUIDE Panel</description>
-      <type>image</type>
-      <id>2</id>
-      <posX>460</posX>
-      <posY>219</posY>
-      <width>1410</width>
-      <height>566</height>
-      <colordiffuse>ffffffff</colordiffuse>
-      <texture>-</texture>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    </control>
 	
 	<control>
 		<description>Single Channel Label</description>
@@ -159,6 +145,20 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
+
+    <control>
+      <description>TVGUIDE Panel</description>
+      <type>image</type>
+      <id>2</id>
+      <posX>460</posX>
+      <posY>219</posY>
+      <width>1410</width>
+      <height>566</height>
+      <colordiffuse>ffffffff</colordiffuse>
+      <texture>-</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
 	
     <control>
 		<description>Channel template</description>
@@ -199,49 +199,7 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     </control>
-	
-	<control>
-		<description>Current program title</description>
-		<type>fadelabel</type>
-		<id>13</id>
-		<posX>681</posX>
-		<posY>816</posY>
-		<width>1175</width>
-		<label>#TV.Guide.CompositeTitle</label>
-		<font>fontB16</font>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
-	
-	<control>
-		<description>Current program time</description>
-		<type>label</type>
-		<id>14</id>
-		<posX>681</posX>
-		<posY>868</posY>
-		<width>850</width>
-		<label>#TV.Guide.Time #TV.Guide.ChannelName  |  #TV.Guide.DurationMins  |  #TV.Guide.Genre</label>
-		<font>AvalonLight12</font>
-		<textcolor>85cfff</textcolor>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
-	
-	<control>
-		<description>Description1</description>
-		<type>textboxscrollup</type>
-		<id>15</id>
-		<posX>681</posX>
-		<posY>908</posY>
-		<width>1185</width>
-		<height>165</height>
-		<font>AvalonLight12</font>
-		<lineSpacing>0.85</lineSpacing>
-		<label>#TV.Guide.Description</label>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
-	
+
 	<control>
       <description>template for program title dark area</description>
       <type>label</type>
@@ -269,16 +227,44 @@
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
+
 	
 	<control>
 		<description>vertical timeline</description>
 		<type>image</type>
 		<id>25</id>
 		<posX>55</posX>
-		<posY>180</posY>
-		<height>602</height>
+		<posY>187</posY>
+		<height>574</height>
 		<colordiffuse>c0ffffff</colordiffuse>
 		<texture>tvguide_slider.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Current program title</description>
+		<type>fadelabel</type>
+		<id>13</id>
+		<posX>681</posX>
+		<posY>816</posY>
+		<width>1175</width>
+		<label>#TV.Guide.CompositeTitle</label>
+		<font>fontB16</font>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Current program time</description>
+		<type>label</type>
+		<id>14</id>
+		<posX>681</posX>
+		<posY>868</posY>
+		<width>850</width>
+		<label>#TV.Guide.Time #TV.Guide.ChannelName  |  #TV.Guide.DurationMins  |  #TV.Guide.Genre</label>
+		<font>AvalonLight12</font>
+		<textcolor>85cfff</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -305,6 +291,21 @@
 		<width>26</width>
 		<height>338</height>
 		<visible>no</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Description1</description>
+		<type>textboxscrollup</type>
+		<id>15</id>
+		<posX>681</posX>
+		<posY>908</posY>
+		<width>1185</width>
+		<height>165</height>
+		<font>AvalonLight12</font>
+		<lineSpacing>0.85</lineSpacing>
+		<label>#TV.Guide.Description</label>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
@@ -406,7 +407,10 @@
 		<type>image</type>
 		<id>31</id>
 		<posX>615</posX>
-		<posY>826</posY>
+		<posY>820</posY>
+        <width>44</width>
+        <height>45</height>
+        <align>left</align>	
 		<texture>tv_is_recording.gif</texture>
 		<visible>no</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -459,7 +463,7 @@
           <width>32</width>
           <height>18</height>
           <texture overlay="tvguide_button_middle_colorize_overlay.png">tvguide_button_middle_colorize.png</texture>
-          <visible>skin.hassetting(#skin.tvguide.showgenrekey)</visible>
+          <visible>skin.hassetting(#skin.tvguide.showgenrekey) + skin.hassetting(#skin.tvguide.usecolorsforgenre)</visible>
         </control>
 
         <control>
@@ -469,7 +473,7 @@
           <posY>745</posY>
           <textcolor>FF6aa5cb</textcolor>
           <font>AvalonLight10</font>
-          <visible>skin.hassetting(#skin.tvguide.showgenrekey)</visible>
+		  <visible>skin.hassetting(#skin.tvguide.showgenrekey) + skin.hassetting(#skin.tvguide.usecolorsforgenre)</visible>
         </control>
 		
   </controls>
