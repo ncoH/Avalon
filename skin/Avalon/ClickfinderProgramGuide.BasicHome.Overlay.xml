@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<controls>
+	    
+		<control>
+			<description>Overlay Background</description>
+			<posX>0</posX>
+			<posY>0</posY>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>ClickfinderPG_Overlay-slide.png</texture>
+			<visible>string.equals(#homeitem,TV) + string.equals(#Avalon.basichomeHide,no) + plugin.isenabled(Clickfinder ProgramGuide) + [!string.equals(#ClickfinderPG.Movie1.Title,) | !string.equals(#ClickfinderPG.Series1.Title,)]</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+			<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+			<animation effect="slide" start="600" end="0" time="350" delay="350" reversible="false">visible</animation>
+			<animation effect="slide" start="0" end="600" time="150" reversible="false">hidden</animation>		
+			<animation effect="fade" time="350" delay="250" reversible="false">visible</animation>
+			<animation effect="fade" time="150" reversible="false">hidden</animation>
+		</control>
+		
+		<control>
+			<description>GROUP: Clickfinder ProgramGuide: Movie 1</description>
+			<type>group</type>
+			<dimColor>0xffffffff</dimColor>
+			<visible>string.equals(#homeitem,TV) + !string.equals(#ClickfinderPG.Movie1.Title,) + string.equals(#Avalon.basichomeHide,no) + plugin.isenabled(Clickfinder ProgramGuide)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+			<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+			<animation effect="slide" start="600" end="0" time="350" delay="350" reversible="false">visible</animation>
+			<animation effect="slide" start="0" end="600" time="150" reversible="false">hidden</animation>		
+			<animation effect="fade" time="350" delay="250" reversible="false">visible</animation>
+			<animation effect="fade" time="150" reversible="false">hidden</animation>
+			<control>
+				<description>Movie 1 Frame</description>
+				<posX>672</posX>
+				<posY>220</posY>
+				<type>image</type>
+				<id>0</id>
+				<width>90</width>
+				<height>64</height>
+				<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">recordings_thumb_frame.png</texture>
+			</control>
+			
+			<control>
+				<description>MovieImage 1</description>
+				<type>image</type>
+				<id>1</id>
+				<posX>672</posX>
+				<posY>220</posY>
+				<width>90</width>
+				<height>64</height>
+				<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#ClickfinderPG.Movie1.Image</texture>
+			</control>
+			
+			<control>
+				<description>MovieRatingStar Image 1</description>
+				<type>imagelist</type>
+				<id>1</id>
+				<posX>780</posX>
+				<posY>253</posY>
+				<width>120</width>
+				<height>10</height>
+				<textureWidth>16</textureWidth>
+				<textureHeight>16</textureHeight>
+				<subitems>
+				  <subitem>starblue.png</subitem>
+				  <subitem>starwhite.png</subitem>
+				</subitems>
+				<orientation>horizontal</orientation>
+				<align>left</align>
+				<imagesToDraw>10</imagesToDraw>
+				<percentage>#ClickfinderPG.Movie1.RatingStar</percentage>
+			</control>
+			
+			<control>
+				<description>MovieTvMovieStar1</description>
+				<type>image</type>
+				<id>1</id>
+				<posX>666</posX>
+				<posY>266</posY>
+				<width>32</width>
+				<height>32</height>
+				<texture>#ClickfinderPG.Movie1.TvMovieStar</texture>
+				<centered>no</centered>
+				<keepaspectratio>no</keepaspectratio>
+			</control>
+			
+			<control>
+				<description>MovieTitle 1</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>780</posX>
+				<posY>218</posY>
+				<width>348</width>
+				<label>#ClickfinderPG.Movie1.Title</label>
+				<font>fontB11</font>
+				<wrapString> | </wrapString>
+			</control>
+			
+			<control>
+				<description>MovieGenre 1</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>780</posX>
+				<posY>272</posY>
+				<width>170</width>
+				<label>#ClickfinderPG.Movie1.Genre</label>
+				<font>AvalonLight9</font>
+			</control>
+			
+			<control>
+				<description>MovieTime 1</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1127</posX>
+				<posY>245</posY>
+				<align>right</align>
+				<width>175</width>
+				<label>#ClickfinderPG.Movie1.Time</label>
+				<font>fontB11</font>
+			</control>
+			
+			<control>
+				<description>MovieChannel 1</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1125</posX>
+				<posY>272</posY>
+				<align>right</align>
+				<width>170</width>
+				<label>#ClickfinderPG.Movie1.Channel</label>
+				<font>AvalonLight9</font>
+				</control>
+		</control>
+		
+		<control>
+			<description>GROUP: Clickfinder ProgramGuide: Movie 2</description>
+			<type>group</type>
+			<dimColor>0xffffffff</dimColor>
+			<visible>string.equals(#homeitem,TV) + !string.equals(#ClickfinderPG.Movie2.Title,) + string.equals(#Avalon.basichomeHide,no) + plugin.isenabled(Clickfinder ProgramGuide)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+			<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+			<animation effect="slide" start="600" end="0" time="350" delay="350" reversible="false">visible</animation>
+			<animation effect="slide" start="0" end="600" time="150" reversible="false">hidden</animation>		
+			<animation effect="fade" time="350" delay="250" reversible="false">visible</animation>
+			<animation effect="fade" time="150" reversible="false">hidden</animation>
+			<control>
+				<description>Movie 2 Frame</description>
+				<posX>672</posX>
+				<posY>305</posY>
+				<type>image</type>
+				<id>0</id>
+				<width>90</width>
+				<height>64</height>
+				<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">recordings_thumb_frame.png</texture>
+			</control>
+			
+			<control>
+				<description>MovieImage 2</description>
+				<type>image</type>
+				<id>1</id>
+				<posX>672</posX>
+				<posY>305</posY>
+				<width>90</width>
+				<height>64</height>
+				<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#ClickfinderPG.Movie2.Image</texture>
+			</control>
+			
+			<control>
+				<description>MovieRatingStar Image 2</description>
+				<type>imagelist</type>
+				<id>1</id>
+				<posX>780</posX>
+				<posY>338</posY>
+				<width>120</width>
+				<height>10</height>
+				<textureWidth>16</textureWidth>
+				<textureHeight>16</textureHeight>
+				<subitems>
+				  <subitem>starblue.png</subitem>
+				  <subitem>starwhite.png</subitem>
+				</subitems>
+				<orientation>horizontal</orientation>
+				<align>left</align>
+				<imagesToDraw>10</imagesToDraw>
+				<percentage>#ClickfinderPG.Movie2.RatingStar</percentage>
+			</control>
+			
+			<control>
+				<description>MovieTvMovieStar2</description>
+				<type>image</type>
+				<id>1</id>
+				<posX>666</posX>
+				<posY>351</posY>
+				<width>32</width>
+				<height>32</height>
+				<texture>#ClickfinderPG.Movie2.TvMovieStar</texture>
+				<centered>no</centered>
+				<keepaspectratio>no</keepaspectratio>
+			</control>
+			
+			<control>
+				<description>MovieTitle 2</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>780</posX>
+				<posY>303</posY>
+				<width>348</width>
+				<label>#ClickfinderPG.Movie2.Title</label>
+				<font>fontB11</font>
+				<wrapString> | </wrapString>
+			</control>
+			
+			<control>
+				<description>MovieGenre 2</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>780</posX>
+				<posY>357</posY>
+				<width>170</width>
+				<label>#ClickfinderPG.Movie2.Genre</label>
+				<font>AvalonLight9</font>
+			</control>
+			
+			<control>
+				<description>MovieTime 2</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1127</posX>
+				<posY>330</posY>
+				<align>right</align>
+				<width>175</width>
+				<label>#ClickfinderPG.Movie2.Time</label>
+				<font>fontB11</font>
+			</control>
+			
+			<control>
+				<description>MovieChannel 2</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1125</posX>
+				<posY>357</posY>
+				<align>right</align>
+				<width>170</width>
+				<label>#ClickfinderPG.Movie2.Channel</label>
+				<font>AvalonLight9</font>
+				</control>
+		</control>
+		
+		<control>
+			<description>GROUP: Clickfinder ProgramGuide: Movie 3</description>
+			<type>group</type>
+			<dimColor>0xffffffff</dimColor>
+			<visible>string.equals(#homeitem,TV) + !string.equals(#ClickfinderPG.Movie3.Title,) + string.equals(#Avalon.basichomeHide,no) + plugin.isenabled(Clickfinder ProgramGuide)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+			<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+			<animation effect="slide" start="600" end="0" time="350" delay="350" reversible="false">visible</animation>
+			<animation effect="slide" start="0" end="600" time="150" reversible="false">hidden</animation>		
+			<animation effect="fade" time="350" delay="250" reversible="false">visible</animation>
+			<animation effect="fade" time="150" reversible="false">hidden</animation>
+			<control>
+				<description>Movie 3 Frame</description>
+				<posX>672</posX>
+				<posY>390</posY>
+				<type>image</type>
+				<id>0</id>
+				<width>90</width>
+				<height>64</height>
+				<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">recordings_thumb_frame.png</texture>
+			</control>
+			
+			<control>
+				<description>MovieImage 3</description>
+				<type>image</type>
+				<id>1</id>
+				<posX>672</posX>
+				<posY>390</posY>
+				<width>90</width>
+				<height>64</height>
+				<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#ClickfinderPG.Movie3.Image</texture>
+			</control>
+			
+			<control>
+				<description>MovieRatingStar Image 3</description>
+				<type>imagelist</type>
+				<id>1</id>
+				<posX>780</posX>
+				<posY>423</posY>
+				<width>120</width>
+				<height>10</height>
+				<textureWidth>16</textureWidth>
+				<textureHeight>16</textureHeight>
+				<subitems>
+				  <subitem>starblue.png</subitem>
+				  <subitem>starwhite.png</subitem>
+				</subitems>
+				<orientation>horizontal</orientation>
+				<align>left</align>
+				<imagesToDraw>10</imagesToDraw>
+				<percentage>#ClickfinderPG.Movie3.RatingStar</percentage>
+			</control>
+			
+			<control>
+				<description>MovieTvMovieStar3</description>
+				<type>image</type>
+				<id>1</id>
+				<posX>666</posX>
+				<posY>436</posY>
+				<width>32</width>
+				<height>32</height>
+				<texture>#ClickfinderPG.Movie3.TvMovieStar</texture>
+				<centered>no</centered>
+				<keepaspectratio>no</keepaspectratio>
+			</control>
+			
+			<control>
+				<description>MovieTitle 3</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>780</posX>
+				<posY>388</posY>
+				<width>348</width>
+				<label>#ClickfinderPG.Movie3.Title</label>
+				<font>fontB11</font>
+				<wrapString> | </wrapString>
+			</control>
+			
+			<control>
+				<description>MovieGenre 3</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>780</posX>
+				<posY>442</posY>
+				<width>170</width>
+				<label>#ClickfinderPG.Movie3.Genre</label>
+				<font>AvalonLight9</font>
+			</control>
+			
+			<control>
+				<description>MovieTime 3</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1127</posX>
+				<posY>415</posY>
+				<align>right</align>
+				<width>175</width>
+				<label>#ClickfinderPG.Movie3.Time</label>
+				<font>fontB11</font>
+			</control>
+			
+			<control>
+				<description>MovieChannel 3</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1125</posX>
+				<posY>442</posY>
+				<align>right</align>
+				<width>170</width>
+				<label>#ClickfinderPG.Movie3.Channel</label>
+				<font>AvalonLight9</font>
+				</control>
+		</control>
+    
+		<control>
+			<description>GROUP: Clickfinder ProgramGuide: Movie 4</description>
+			<type>group</type>
+			<dimColor>0xffffffff</dimColor>
+			<visible>string.equals(#homeitem,TV) + !string.equals(#ClickfinderPG.Movie4.Title,) + string.equals(#Avalon.basichomeHide,no) + plugin.isenabled(Clickfinder ProgramGuide)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+			<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+			<animation effect="slide" start="600" end="0" time="350" delay="350" reversible="false">visible</animation>
+			<animation effect="slide" start="0" end="600" time="150" reversible="false">hidden</animation>		
+			<animation effect="fade" time="350" delay="250" reversible="false">visible</animation>
+			<animation effect="fade" time="150" reversible="false">hidden</animation>
+			<control>
+				<description>Movie 4 Frame</description>
+				<posX>672</posX>
+				<posY>475</posY>
+				<type>image</type>
+				<id>0</id>
+				<width>90</width>
+				<height>64</height>
+				<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">recordings_thumb_frame.png</texture>
+			</control>
+			
+			<control>
+				<description>MovieImage 4</description>
+				<type>image</type>
+				<id>1</id>
+				<posX>672</posX>
+				<posY>475</posY>
+				<width>90</width>
+				<height>64</height>
+				<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#ClickfinderPG.Movie4.Image</texture>
+			</control>
+			
+			<control>
+				<description>MovieRatingStar Image 4</description>
+				<type>imagelist</type>
+				<id>1</id>
+				<posX>780</posX>
+				<posY>508</posY>
+				<width>120</width>
+				<height>10</height>
+				<textureWidth>16</textureWidth>
+				<textureHeight>16</textureHeight>
+				<subitems>
+				  <subitem>starblue.png</subitem>
+				  <subitem>starwhite.png</subitem>
+				</subitems>
+				<orientation>horizontal</orientation>
+				<align>left</align>
+				<imagesToDraw>10</imagesToDraw>
+				<percentage>#ClickfinderPG.Movie4.RatingStar</percentage>
+			</control>
+			
+			<control>
+				<description>MovieTvMovieStar4</description>
+				<type>image</type>
+				<id>1</id>
+				<posX>666</posX>
+				<posY>521</posY>
+				<width>32</width>
+				<height>32</height>
+				<texture>#ClickfinderPG.Movie4.TvMovieStar</texture>
+				<centered>no</centered>
+				<keepaspectratio>no</keepaspectratio>
+			</control>
+			
+			<control>
+				<description>MovieTitle 4</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>780</posX>
+				<posY>473</posY>
+				<width>348</width>
+				<label>#ClickfinderPG.Movie4.Title</label>
+				<font>fontB11</font>
+				<wrapString> | </wrapString>
+			</control>
+			
+			<control>
+				<description>MovieGenre 4</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>780</posX>
+				<posY>527</posY>
+				<width>170</width>
+				<label>#ClickfinderPG.Movie4.Genre</label>
+				<font>AvalonLight9</font>
+			</control>
+			
+			<control>
+				<description>MovieTime 4</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1127</posX>
+				<posY>500</posY>
+				<align>right</align>
+				<width>175</width>
+				<label>#ClickfinderPG.Movie4.Time</label>
+				<font>fontB11</font>
+			</control>
+			
+			<control>
+				<description>MovieChannel 4</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>1125</posX>
+				<posY>527</posY>
+				<align>right</align>
+				<width>170</width>
+				<label>#ClickfinderPG.Movie4.Channel</label>
+				<font>AvalonLight9</font>
+				</control>
+		</control>
+
+
+		<!-- Series Overlay-->
+
+		<control>
+			<description>Seperator Image</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>665</posX>
+			<posY>565</posY>
+			<width>480</width>
+			<height>2</height>
+			<texture></texture>
+			<colorkey>0</colorkey>
+			<keepaspectratio>no</keepaspectratio>
+			<texture>ClickfinderPG_Sep.png</texture>
+			<visible>string.equals(#homeitem,TV) + !string.equals(#ClickfinderPG.Series1.Title,) + string.equals(#Avalon.basichomeHide,no) + plugin.isenabled(Clickfinder ProgramGuide)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+			<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+			<animation effect="slide" start="600" end="0" time="350" delay="350" reversible="false">visible</animation>
+			<animation effect="slide" start="0" end="600" time="150" reversible="false">hidden</animation>		
+			<animation effect="fade" time="350" delay="250" reversible="false">visible</animation>
+			<animation effect="fade" time="150" reversible="false">hidden</animation>
+		</control>
+		
+		<control>
+			<description>GROUP: Clickfinder ProgramGuide: Series 1</description>
+			<type>group</type>
+			<dimColor>0xffffffff</dimColor>
+			<visible>string.equals(#homeitem,TV) + !string.equals(#ClickfinderPG.Series1.Title,) + string.equals(#Avalon.basichomeHide,no) + plugin.isenabled(Clickfinder ProgramGuide)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+			<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+			<animation effect="slide" start="600" end="0" time="350" delay="350" reversible="false">visible</animation>
+			<animation effect="slide" start="0" end="600" time="150" reversible="false">hidden</animation>		
+			<animation effect="fade" time="350" delay="250" reversible="false">visible</animation>
+			<animation effect="fade" time="150" reversible="false">hidden</animation>
+			<control>
+				<description>Series 1 Frame</description>
+				<posX>687</posX>
+				<posY>580</posY>
+				<type>image</type>
+				<id>0</id>
+				<width>60</width>
+				<height>78</height>
+				<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">recordings_thumb_frame.png</texture>
+			</control>
+			
+			<control>
+				<description>SeriesImage 1</description>
+				<type>image</type>
+				<id>1</id>
+				<posX>687</posX>
+				<posY>580</posY>
+				<width>60</width>
+				<height>78</height>
+				<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#ClickfinderPG.Series1.Image</texture>
+			</control>
+			
+			<control>
+				<description>SeriesRatingStar Image 1</description>
+				<type>imagelist</type>
+				<id>1</id>
+				<posX>780</posX>
+				<posY>608</posY>
+				<width>120</width>
+				<height>10</height>
+				<textureWidth>16</textureWidth>
+				<textureHeight>16</textureHeight>
+				<subitems>
+				  <subitem>starblue.png</subitem>
+				  <subitem>starwhite.png</subitem>
+				</subitems>
+				<orientation>horizontal</orientation>
+				<align>left</align>
+				<imagesToDraw>10</imagesToDraw>
+				<percentage>#ClickfinderPG.Series1.RatingStar</percentage>
+			</control>
+			
+			<control>
+				<description>SeriesTitle 1</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>780</posX>
+				<posY>575</posY>
+				<width>348</width>
+				<label>#ClickfinderPG.Series1.Title</label>
+				<font>fontB11</font>
+				<wrapString> | </wrapString>
+			</control>
+			
+			<control>
+				<description>CountNewEpisodes 1</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>780</posX>
+				<posY>628</posY>
+				<width>348</width>
+				<label>#ClickfinderPG.Series1.CountNewEpisodes</label>
+				<font>AvalonLight9</font>
+			</control>
+			
+			<control>
+				<description>NewEpisodesNumbers 1</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>780</posX>
+				<posY>650</posY>
+				<width>348</width>
+				<label>#ClickfinderPG.Series1.NewEpisodesNumbers</label>
+				<font>AvalonLight9</font>
+			</control>
+		</control>
+		
+		<control>
+			<description>GROUP: Clickfinder ProgramGuide: Series 2</description>
+			<type>group</type>
+			<dimColor>0xffffffff</dimColor>
+			<visible>string.equals(#homeitem,TV) + !string.equals(#ClickfinderPG.Series2.Title,) + string.equals(#Avalon.basichomeHide,no) + plugin.isenabled(Clickfinder ProgramGuide)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+			<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+			<animation effect="slide" start="600" end="0" time="350" delay="350" reversible="false">visible</animation>
+			<animation effect="slide" start="0" end="600" time="150" reversible="false">hidden</animation>		
+			<animation effect="fade" time="350" delay="250" reversible="false">visible</animation>
+			<animation effect="fade" time="150" reversible="false">hidden</animation>
+			<control>
+				<description>Series 2 Frame</description>
+				<posX>687</posX>
+				<posY>690</posY>
+				<type>image</type>
+				<id>0</id>
+				<width>60</width>
+				<height>78</height>
+				<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">recordings_thumb_frame.png</texture>
+			</control>
+			
+			<control>
+				<description>SeriesImage 2</description>
+				<type>image</type>
+				<id>1</id>
+				<posX>687</posX>
+				<posY>690</posY>
+				<width>60</width>
+				<height>78</height>
+				<texture flipY="true" diffuse="Thumb_Mask.png" mask="recordings_thumb_mask.png">#ClickfinderPG.Series2.Image</texture>
+			</control>
+			
+			<control>
+				<description>SeriesRatingStar Image 2</description>
+				<type>imagelist</type>
+				<id>1</id>
+				<posX>780</posX>
+				<posY>718</posY>
+				<width>120</width>
+				<height>10</height>
+				<textureWidth>16</textureWidth>
+				<textureHeight>16</textureHeight>
+				<subitems>
+				  <subitem>starblue.png</subitem>
+				  <subitem>starwhite.png</subitem>
+				</subitems>
+				<orientation>horizontal</orientation>
+				<align>left</align>
+				<imagesToDraw>10</imagesToDraw>
+				<percentage>#ClickfinderPG.Series2.RatingStar</percentage>
+			</control>
+			
+			<control>
+				<description>SeriesTitle 2</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>780</posX>
+				<posY>685</posY>
+				<width>348</width>
+				<label>#ClickfinderPG.Series2.Title</label>
+				<font>fontB11</font>
+				<wrapString> | </wrapString>
+			</control>
+			
+			<control>
+				<description>CountNewEpisodes 2</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>780</posX>
+				<posY>738</posY>
+				<width>348</width>
+				<label>#ClickfinderPG.Series2.CountNewEpisodes</label>
+				<font>AvalonLight9</font>
+			</control>
+			
+			<control>
+				<description>NewEpisodesNumbers 2</description>
+				<type>fadelabel</type>
+				<id>0</id>
+				<posX>780</posX>
+				<posY>760</posY>
+				<width>348</width>
+				<label>#ClickfinderPG.Series2.NewEpisodesNumbers</label>
+				<font>AvalonLight9</font>
+			</control>
+		</control>
+		
+	</controls>
+</window>

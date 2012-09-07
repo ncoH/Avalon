@@ -7,8 +7,10 @@
 	<define>#defaultcontrol:2</define>
 	<define>#defaultcontrol.onright:9996</define>
 	<controls>
+	
 		<import>Trakt.Common.xml</import>
         <import>common.time.xml</import>
+		
 	<control>
 		<description>buttons</description>
 		<type>group</type>
@@ -26,6 +28,7 @@
 			<onright>#defaultcontrol.onright</onright>
 			<visible>!string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
 		</control>
+		
       <control Style="SettingsButtonLarge">
 			<description>Login to Existing Account</description>
 			<type>button</type>
@@ -34,6 +37,7 @@
 			<onright>#defaultcontrol.onright</onright>
 			<visible>!string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
 		</control>
+		
       <control Style="SettingsButtonLarge">
 			<description>Disconnect Current Account</description>
 			<type>button</type>
@@ -43,7 +47,9 @@
 			<visible>!string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
 		</control>
  </control>
+ 
 		<import>common.overlay.xml</import>
 		<import>Trakt.AccountDialog.xml</import>
+		
 	</controls>
 </window>

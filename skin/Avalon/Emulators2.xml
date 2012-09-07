@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<window>
+  <id>7942</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+  
+    <import>Emulators2.dummy.xml</import>
+
+    <control>
+      <description>DEFAULT BACKGROUND</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+      <shouldCache>true</shouldCache>
+    </control>
+	
+    <control>
+      <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#Emulators2.CurrentItem.fanartpath</texture>
+      <animation effect="fade" time="300">visible</animation>
+      <animation effect="fade" time="300" delay="300">hidden</animation>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>[facadeview.filmstrip|facadeview.coverflow|!control.isvisible(50)]+control.isvisible(1230)</visible>
+    </control>
+	
+    <control>
+      <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#Emulators2.CurrentItem.fanartpath2</texture>
+      <animation effect="fade" time="300">visible</animation>
+      <animation effect="fade" time="300" delay="300">hidden</animation>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>[facadeview.filmstrip|facadeview.coverflow|!control.isvisible(50)]+control.isvisible(1231)</visible>
+    </control>
+	
+      <control>
+        <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>0</posX>
+        <posY>120</posY>
+        <width>1312</width>
+        <height>739</height>
+        <texture>#Emulators2.CurrentItem.fanartpath</texture>
+        <animation effect="fade" time="300">visible</animation>
+        <animation effect="fade" time="200" delay="0">hidden</animation>
+        <animation effect="fade" time="0">WindowClose</animation>
+        <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+        <visible>!facadeview.filmstrip+!facadeview.coverflow+control.isvisible(50)+control.isvisible(1230)+string.contains(#Emulators2.PreviewVideo.playing,no)</visible>
+      </control>
+	  
+    <control>
+      <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>120</posY>
+      <width>1312</width>
+      <height>739</height>
+      <texture>#Emulators2.CurrentItem.fanartpath2</texture>
+      <animation effect="fade" time="300">visible</animation>
+      <animation effect="fade" time="200" delay="0">hidden</animation>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <visible>!facadeview.filmstrip+!facadeview.coverflow+control.isvisible(50)+control.isvisible(1231)+string.contains(#Emulators2.PreviewVideo.playing,no)</visible>
+    </control>
+ 
+    <import>Emulators2.overlays.xml</import>
+    <import>common.time.xml</import> 	
+	
+    <!--            :: HEADER ::            -->
+	
+    <control>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <type>label</type>
+      <id>1</id>
+      <posX>185</posX>
+      <posY>38</posY>
+      <width>500</width>
+      <label>#Emulators2.plugintitle</label>
+      <textcolor>6aa5cb</textcolor>
+      <font>font22</font>
+      <visible>control.isvisible(50)</visible>
+    </control>	
+
+    <!--            :: LIST / THUMBVIEW ::            -->
+
+    <control Style="smallTitle">
+      <description>Selected item Label</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>714</posX>
+      <posY>780</posY>
+      <width>1035</width>
+      <label>#Emulators2.CurrentItem.title</label>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+    
+    <control>
+      <description>Goodmerge</description>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="slide" time="150" start="1200,0">visible</animation>
+      <animation effect="fade" time="250">visible</animation>
+      <animation effect="slide" time="0" end="1500,0">hidden</animation>
+      <type>image</type>
+      <id>0</id>
+      <posX>1800</posX>
+      <posY>785</posY>
+      <height>41</height>
+      <width>41</width>
+      <texture>Emulators2_goodmerge.png</texture>
+      <visible>string.contains(#Emulators2.CurrentItem.goodmerge,yes)+!string.contains(#Emulators2.CurrentItem.favourite,yes)+control.isvisible(50)</visible>
+    </control>
+	
+    <control>
+      <description>Favourite</description>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="slide" time="150" start="1200,0">visible</animation>
+      <animation effect="fade" time="250">visible</animation>
+      <animation effect="slide" time="0" end="1500,0">hidden</animation>
+      <type>image</type>
+      <id>0</id>
+      <posX>1800</posX>
+      <posY>720</posY>
+      <height>41</height>
+      <width>41</width>
+      <texture>Emulators2_favourite.png</texture>
+      <visible>string.contains(#Emulators2.CurrentItem.favourite,yes)+control.isvisible(50)</visible>
+    </control>
+	
+    <control>
+      <description>Goodmerge/Favourite</description>
+      <animation effect="fade" time="0">WindowClose</animation>
+      <animation effect="slide" time="150" start="1200,0">visible</animation>
+      <animation effect="fade" time="250">visible</animation>
+      <animation effect="slide" time="0" end="1500,0">hidden</animation>
+      <type>image</type>
+      <id>0</id>
+      <posX>1754</posX>
+      <posY>785</posY>
+      <height>41</height>
+      <width>41</width>
+      <texture>Emulators2_goodmerge.png</texture>
+      <visible>string.contains(#Emulators2.CurrentItem.goodmerge,yes)+string.contains(#Emulators2.CurrentItem.favourite,yes)+control.isvisible(50)</visible>
+    </control>
+    
+    <control>
+      <description>Poster shadow</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>695</posX>
+      <posY>102</posY>
+      <width>465</width>
+      <height>605</height>
+      <texture>list_poster_glow.png</texture>
+      <visible>facadeview.list+control.isvisible(50)+control.isvisible(1233)+string.contains(#Emulators2.PreviewVideo.playing,no)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+    </control>
+
+    <control>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>60</id>
+      <keepaspectratio>yes</keepaspectratio>
+      <valign>middle</valign>
+      <align>center</align>
+      <posX>762</posX>
+      <posY>169</posY>
+      <width>330</width>
+      <height>470</height>
+      <texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#Emulators2.CurrentItem.coverpath</texture>
+      <visible>facadeview.list+control.isvisible(50)+control.isvisible(1233)+string.contains(#Emulators2.PreviewVideo.playing,no)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+    </control>
+
+	
+    <!--            :: INFO LABELS ::            -->
+
+    <control Style="InfoLabel">
+      <description>Release Date Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>714</posX>
+      <posY>842</posY>
+      <label>#Emulators2.Label.releasedate</label>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)+[string.contains(#Emulators2.CurrentItem.isgame,yes)|string.contains(#Emulators2.CurrentItem.isemulator,yes]</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+
+    <control Style="InfoValueSmall">
+      <description>Release Date Value</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>882</posX>
+      <posY>842</posY>
+      <label>#Emulators2.CurrentItem.year</label>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+
+    <control Style="InfoLabel">
+      <description>Developer Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>714</posX>
+      <posY>882</posY>
+      <label>#Emulators2.Label.developer</label>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)+[string.contains(#Emulators2.CurrentItem.isgame,yes)|string.contains(#Emulators2.CurrentItem.isemulator,yes]</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+
+    <control Style="InfoValueSmall">
+      <description>Developer Value</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>882</posX>
+      <posY>882</posY>
+      <label>#Emulators2.CurrentItem.company</label>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+
+    <control Style="InfoLabel">
+      <description>Genre Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>714</posX>
+      <posY>922</posY>
+      <label>#Emulators2.Label.genre</label>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)+string.contains(#Emulators2.CurrentItem.isgame,yes)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+
+    <control Style="InfoValueSmall">
+      <description>Genre Value</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>882</posX>
+      <posY>922</posY>
+      <label>#Emulators2.CurrentItem.genre</label>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+
+    <control Style="InfoLabel">
+      <description>Last played Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>714</posX>
+      <posY>962</posY>
+      <label>#Emulators2.Label.lastplayed</label>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)+string.contains(#Emulators2.CurrentItem.isgame,yes)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+
+    <control Style="InfoValueSmall">
+      <description>Last Played Value</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>882</posX>
+      <posY>962</posY>
+      <label>#Emulators2.CurrentItem.latestplaydate</label>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+
+    <control Style="InfoLabel">
+      <description>Disc Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>714</posX>
+      <posY>1002</posY>
+      <label>#Emulators2.Label.disc</label>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)+!string.equals(#Emulators2.CurrentItem.totaldiscs,0)+!string.equals(#Emulators2.CurrentItem.totaldiscs,1)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+
+    <control Style="InfoValueSmall">
+      <description>Disc</description>
+      <type>fadelabel</type>
+      <id>0</id>
+      <posX>882</posX>
+      <posY>1002</posY>
+      <label>#Emulators2.CurrentItem.currentdisc / #Emulators2.CurrentItem.totaldiscs</label>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)+!string.equals(#Emulators2.CurrentItem.totaldiscs,0)+!string.equals(#Emulators2.CurrentItem.totaldiscs,1)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+    
+    <control>
+      <description>Summary (list)</description>
+      <type>textboxscrollup</type>
+      <id>1025</id>
+      <posX>1175</posX>
+      <posY>842</posY>
+      <width>725</width>
+      <height>200</height>
+      <label>#Emulators2.CurrentItem.description</label>
+      <seperator>---------------------------------------------------------------------------------------------------------</seperator>
+      <onleft>1026</onleft>
+      <onright>1026</onright>
+      <onup>1026</onup>
+      <ondown>1026</ondown>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+
+    <control>
+      <type>imagelist</type>
+      <id>101</id>
+      <posX>710</posX>
+      <posY>726</posY>
+      <width>185</width>
+      <height>29</height>
+      <textureWidth>32</textureWidth>
+      <textureHeight>27</textureHeight>
+      <subitems>
+        <subitem>starblue.png</subitem>
+        <subitem>starwhite.png</subitem>
+      </subitems>
+      <orientation>horizontal</orientation>
+      <align>left</align>
+      <imagesToDraw>5</imagesToDraw>
+      <percentage>#Emulators2.CurrentItem.grade</percentage>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    </control>
+
+    <!--            :: List Scrolling Popup ::            -->
+
+    <control>
+      <description>listscroller bg</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>980</posX>
+      <posY>320</posY>
+      <width>187</width>
+      <height>202</height>
+      <texture>listscroller_bg.png</texture>
+      <visible>control.isvisible(50)+facadeview.list+[string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)]</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="0">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+    </control>
+
+    <control>
+      <type>label</type>
+      <id>1</id>
+      <posX>1035</posX>
+      <posY>374</posY>
+      <width>96</width>
+      <height>96</height>
+      <font>AvalonLight32</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <label>#selecteditem.scrolllabel</label>
+      <visible>control.isvisible(50)+facadeview.list+[string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)]</visible>
+      <align>center</align>
+      <valign>middle</valign>
+      <animation effect="fade" start="0" end="100" time="300" delay="0">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+    </control>
+
+    <!--            :: Count Background ::            -->
+
+    <control>
+      <description>RSS background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>680</posY>
+      <width>1865</width>
+      <height>96</height>
+      <texture>basichome_rss_bg.png</texture>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)</visible>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    </control>
+
+
+
+    <!--            :: Count ::            -->
+
+    <control>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+      <description>Moviecount</description>
+      <type>label</type>
+      <label>#Emulators2.CurrentItem.emulatortitle</label>
+      <id>0</id>
+      <posX>1230</posX>
+      <posY>725</posY>
+      <align>left</align>
+      <font>AvalonLight12</font>
+      <textcolor>6aa5cb</textcolor>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)</visible>
+    </control>
+	
+     <import>Emulators2.facade.xml</import>   
+
+    <control>
+      <description>Import Animation</description>
+      <type>animation</type>
+      <id>80</id>
+      <posX>878</posX>
+      <posY>548</posY>
+      <width>207</width>
+      <height>207</height>
+      <textures>common.waiting.1.png;common.waiting.2.png;common.waiting.3.png;common.waiting.4.png;common.waiting.5.png;common.waiting.6.png;common.waiting.7.png;common.waiting.8.png</textures>
+      <Duration>0:0:01.5</Duration>
+      <keepaspectratio>yes</keepaspectratio>
+      <visible>string.contains(#Emulators2.Importer.working,yes)</visible>
+    </control>
+ 
+     <import>Emulators2.details.xml</import>
+     <import>Emulators2.hiddenmenu.xml</import>
+	 
+  </controls>
+</window>

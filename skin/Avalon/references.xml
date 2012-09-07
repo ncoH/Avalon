@@ -671,7 +671,7 @@
     <textXOff>25</textXOff>
     <textYOff>14</textYOff>
     <textureFocus>button_focus.png</textureFocus>
-    <textureNoFocus>button_nofocus.png</textureNoFocus>
+    <textureNoFocus>-</textureNoFocus>
     <font>font12</font>
     <markWidth>29</markWidth>
     <markHeight>28</markHeight>
@@ -681,10 +681,10 @@
     <markvalign>middle</markvalign>
     <textureCheckmark>check-box.png</textureCheckmark>
     <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
-    <textcolor>white</textcolor>
+	<textcolor>white</textcolor>
+	<textcolorNoFocus>ff85cfff</textcolorNoFocus>
     <colordiffuse>white</colordiffuse>
     <disabledcolor>60ffffff</disabledcolor>
-    <textcolorNoFocus>ffffffff</textcolorNoFocus>
     <dimColor>ff000000</dimColor>
   </control>
 </controls>

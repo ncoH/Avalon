@@ -303,7 +303,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest1.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest1.poster</texture>
 	   <shouldCache>true</shouldCache>
       </control>
 	<control>
@@ -342,7 +342,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest2.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest2.poster</texture>
 	   <shouldCache>true</shouldCache>
       </control>
 	<control>
@@ -381,7 +381,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest3.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest3.poster</texture>
 	   <shouldCache>true</shouldCache>
       </control>
 	<control>
@@ -430,7 +430,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest1.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest1.poster</texture>
 	   <shouldCache>true</shouldCache>
 		<visible>string.equals(#recentMedia,MyFilms) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>

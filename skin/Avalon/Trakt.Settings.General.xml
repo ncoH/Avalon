@@ -7,8 +7,10 @@
 	<define>#defaultcontrol:2</define>
 	<define>#defaultcontrol.onright:9996</define>
 	<controls>
+	
 		<import>Trakt.Common.xml</import>
         <import>common.time.xml</import>
+		
 	<control>
 		<description>buttons</description>
 		<type>group</type>
@@ -26,6 +28,7 @@
 				<onup>17</onup>
                 <onup>6</onup>
 			</control>
+			
 			<control Style="SettingsToggleLarge">
 				<description>Download Original Size Fanart</description>
 				<type>togglebutton</type>
@@ -33,6 +36,7 @@
 				<label>#Trakt.Translation.DownloadFullSizeFanart.Label</label>
 				<onleft>#defaultcontrol.onright</onleft>
     		</control>
+			
 			<control Style="SettingsToggleLarge">
 				<description>Create Moving Pictures Categories</description>
 				<type>togglebutton</type>
@@ -40,6 +44,7 @@
 				<label>#Trakt.Translation.CreateMovingPicturesCategories.Label</label>
 				<onleft>#defaultcontrol.onright</onleft>
     		</control>
+			
 			<control Style="SettingsToggleLarge">
 				<description>Create Moving Pictures Filters</description>
 				<type>togglebutton</type>
@@ -49,6 +54,8 @@
                 <ondown>2</ondown>
     		</control>
 		</control>
+		
 		<import>common.overlay.xml</import>
+		
 	</controls>
 </window>

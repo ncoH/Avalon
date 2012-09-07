@@ -1,0 +1,297 @@
+<window>
+  <id>7969</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+	
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+	
+	<control>
+		<type>label</type>
+		<description>label</description>
+		<id>121</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>Sleep Control</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+      	<animation effect="fade" time="250">WindowOpen</animation>
+    	<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+		
+	<control>
+		<description>FANART IMAGE 1</description>
+		<id>897688</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>118</posY>
+		<width>1185</width>
+		<height>664</height>
+		<keepaspectratio>no</keepaspectratio>
+		<centered>yes</centered>
+		<zoom>yes</zoom>
+		<texture>hover_sleepcontrol.png</texture>
+		<animation effect="fade" time="300">visible</animation>
+		<animation effect="fade" time="300" delay="300">hidden</animation>
+    </control>
+	
+	<control>
+		<description>viewport list</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>716</height>
+		<texture>viewport_long.png</texture>
+	</control>	
+		
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>754</posY>
+		<width>1865</width>
+		<height>90</height>
+		<texture>basichome_rss_bg.png</texture>
+	</control>
+	
+
+		<!--MENU **********************************************-->
+
+		<control>
+			<type>group</type>
+			<description>group element</description>
+			<layout>StackLayout(Vertical, true)</layout>
+			<posX>680</posX>
+			<posY>150</posY>
+			
+		<control>
+			<description>Sleep Mode</description>
+			<type>button</type>
+			<id>2</id>
+			<width>485</width>
+			<height>64</height>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>			
+  			<label>Sleep Mode</label>
+			<textcolorNoFocus>ff7F9EB2</textcolorNoFocus>
+			<onup>9</onup>
+			<ondown>3</ondown>
+		</control>
+			
+		<control>
+			<description>Set Timer manually</description>
+			<type>button</type>
+			<id>3</id>
+			<width>485</width>
+			<height>64</height>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+  			<label>Set Timer manually</label>
+			<textcolorNoFocus>ff7F9EB2</textcolorNoFocus>
+			<onup>2</onup>
+			<ondown>4</ondown>
+		</control>
+			
+		<control>
+			<description>Set Timer by recording selection</description>
+			<type>button</type>
+			<id>4</id>
+			<width>485</width>
+			<height>64</height>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+  			<label>Set Timer by recording selection</label>
+			<textcolorNoFocus>ff7F9EB2</textcolorNoFocus>
+			<onup>3</onup>
+			<ondown>5</ondown>
+		</control>
+			
+		<control>
+			<description>Start/Stop Timer</description>
+			<type>button</type>
+			<id>5</id>
+			<width>485</width>
+			<height>64</height>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+  			<label>Start Timer</label>
+			<textcolorNoFocus>ff7F9EB2</textcolorNoFocus>
+			<onup>4</onup>
+			<ondown>6</ondown>
+		</control>
+			
+		<control>
+			<description>Pause Timer</description>
+			<type>button</type>
+			<id>6</id>
+			<width>485</width>
+			<height>64</height>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+  			<label>Pause Timer</label>
+			<textcolorNoFocus>ff7F9EB2</textcolorNoFocus>
+			<onup>5</onup>
+			<ondown>7</ondown>
+		</control>
+			
+		<control>
+			<description>Increment Timer</description>
+			<type>button</type>
+			<id>7</id>
+			<width>600</width>
+			<width>485</width>
+			<height>64</height>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+  			<label>Increment Timer</label>
+			<textcolorNoFocus>ff7F9EB2</textcolorNoFocus>
+			<onup>6</onup>
+			<ondown>8</ondown>
+		</control>
+			
+		<control>
+			<description>Wait until tasks finished</description>
+			<type>button</type>
+			<id>8</id>
+			<width>500</width>
+			<width>485</width>
+			<height>64</height>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+  			<label>Decrement Timer</label>
+			<textcolorNoFocus>ff7F9EB2</textcolorNoFocus>
+			<onup>7</onup>
+			<ondown>9</ondown>
+		</control>
+			
+		<control>
+			<description>Volume Control</description>
+			<type>togglebutton</type>
+			<id>9</id>
+			<width>485</width>
+			<height>64</height>				
+			<label>Volume Control</label>
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+			<textcolorNoFocus>ff7F9EB2</textcolorNoFocus>
+			<onup>8</onup>
+			<ondown>10</ondown>
+		</control>
+						
+	</control>
+
+
+<!-- *** Sleep Activity Status *** -->
+
+		<control>
+			<description>Sleep Activity</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1265</posX>
+			<posY>300</posY>
+			<width>500</width>
+			<height>30</height>
+			<label>#SleepControl.Activity</label>
+			<align>center</align>
+			<font>font22</font>
+			<textcolor>ff7F9EB2</textcolor>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Sleep Method</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1265</posX>
+			<posY>380</posY>
+			<width>500</width>
+			<height>30</height>
+			<label>#SleepControl.Method</label>
+			<align>center</align>
+			<font>AvalonLight16</font>
+			<textcolor>ffffffff</textcolor>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Sleep Counter</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1265</posX>
+			<posY>480</posY>
+			<width>500</width>
+			<label>#SleepControl.Counter</label>
+			<align>center</align>
+			<font>AvalonLight32</font>
+			<textcolor>ff808080</textcolor>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Sleep Method</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1265</posX>
+			<posY>540</posY>
+			<width>500</width>
+			<height>30</height>
+			<label>#SleepControl.Start</label>
+			<align>center</align>
+			<font>AvalonLight18</font>
+			<textcolor>ff7F9EB2</textcolor>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control>
+			<description>Sleep Method</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1265</posX>
+			<posY>595</posY>
+			<width>500</width>
+			<height>30</height>
+			<label>#SleepControl.End</label>
+			<align>center</align>
+			<font>AvalonLight18</font>
+			<textcolor>ff7F9EB2</textcolor>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Sleep Status</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1265</posX>
+			<posY>540</posY>
+			<width>500</width>
+			<height>30</height>
+			<label>#SleepControl.Status</label>
+			<align>center</align>
+			<font>AvalonLight18</font>
+			<textcolor>ff7F9EB2</textcolor>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+   
+	<import>common.overlay.home.xml</import>
+	<import>common.time.xml</import>
+	
+</controls>
+</window>

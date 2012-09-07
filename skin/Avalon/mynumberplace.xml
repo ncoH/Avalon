@@ -24,7 +24,7 @@
 		<posY>92</posY>
 		<width>1893</width>
 		<height>866</height>
-		<texture>viewport_tv_recordings.png</texture>
+		<texture>viewport_settings.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>

@@ -23,6 +23,7 @@
       </label>
       <posX>-50</posX>
       <posY>-50</posY>
+      <visible>false</visible>
       <!-- to make a control visible only when you are in a VIEW do this: <visible>control.isvisible(34)</visible> -->
       <!-- to make a control invisible when you are in a VIEW do this: <visible>!control.isvisible(34)</visible> -->
       <!-- Note: Dummy control 34 is maintained for backwards compatibility, but skins may use more specific View controls  -->
@@ -35,6 +36,7 @@
       </label>
       <posX>-50</posX>
       <posY>-50</posY>
+      <visible>false</visible>
       <!-- to make a control Visible only when FANART is found: <visible>control.isvisible(35)</visible> -->
       <!-- to make a control Invisible only when FANART is found: <visible>!control.isvisible(35)</visible> -->
     </control>
@@ -46,13 +48,15 @@
       <posY>-50</posY>
       <!-- to make a control Visible only in Film Lists do this: <visible>control.isvisible(36)</visible> -->
       <!-- to make a control Invisible in Film Lists (Movies) do this: <visible>!control.isvisible(36)</visible> -->
+      <visible>false</visible>
     </control>
     <control>
-      <description>Dummy control for Views other than Person views(Category, Year, Country, etc.)</description>
+      <description>Dummy control for VIEWS other than Person views(Category, Year, Country, etc.)</description>
       <type>label</type>
       <id>37</id>
       <posX>-50</posX>
       <posY>-50</posY>
+      <visible>false</visible>
       <!-- to make a control Visible only in non person VIEWS: <visible>control.isvisible(37)</visible> -->
       <!-- to make a control Invisible in non person VIEWS: <visible>!control.isvisible(37)</visible> -->
     </control>
@@ -62,6 +66,7 @@
       <id>38</id>
       <posX>-50</posX>
       <posY>-50</posY>
+      <visible>false</visible>
       <!-- to make a control Visible only in PERSONS VIEWS (Actors, Writer, etc.): <visible>control.isvisible(38)</visible> -->
       <!-- to make a control Invisible in PERSONS VIEWS (Actors, Writer, etc.): <visible>!control.isvisible(38)</visible> -->
     </control>
@@ -73,6 +78,7 @@
       <posY>-50</posY>
       <!-- to make a control Visible only in GROUP HIERARCHY: <visible>control.isvisible(39)</visible> -->
       <!-- to make a control Invisible in GROUP HIERARCHY: <visible>!control.isvisible(39)</visible> -->
+      <visible>false</visible>
     </control>
     <control>
       <description>Dummy control for Views Menu</description>
@@ -82,6 +88,7 @@
       <posY>-50</posY>
       <!-- to make a control Visible only in VIEWS MENU: <visible>control.isvisible(40)</visible> -->
       <!-- to make a control Invisible in VIEWS MENU: <visible>!control.isvisible(40)</visible> -->
+      <visible>false</visible>
     </control>
     <control>
       <description>Dummy control for Indexed View Level</description>
@@ -89,6 +96,7 @@
       <id>41</id>
       <posX>-50</posX>
       <posY>-50</posY>
+      <visible>false</visible>
       <!-- to make a control Visible only in Index View level: <visible>control.isvisible(41)</visible> -->
       <!-- to make a control Invisible in Index View level: <visible>!control.isvisible(41)</visible> -->
     </control>

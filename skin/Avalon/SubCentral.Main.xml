@@ -1,50 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<controls>
-		<!-- 
-		This skin file is meant for all controls that should be visible for the user
-		when in the main view of the plugin. All controls should be tagged at a minimum
-		with "<visible>Control.IsVisible(101)</visible>". 
-		-->
 
 		<control>
 			<type>textbox</type>
 			<id>912</id>
-			<posX>766</posX>
-			<posY>340</posY>
-			<width>1025</width>
-			<height>470</height>
+			<posX>297</posX>
+			<posY>360</posY>
+			<width>1250</width>
+			<height>580</height>
 			<label>#SubCentral.About</label>
-			<font>font10</font>
-			<!--<textcolor>90ffffff</textcolor>-->
-			<onup>912</onup>
-			<ondown>912</ondown>
+			<font>AvalonLight12</font>
 			<onleft>202</onleft>
 			<onright>50</onright>
+			<onup>912</onup>
+			<ondown>912</ondown>
 			<spinWidth>30</spinWidth>
 			<spinHeight>30</spinHeight>
-			<spinPosX>1684</spinPosX>
-			<spinPosY>790</spinPosY>
+			<spinPosX>1460</spinPosX>
+			<spinPosY>910</spinPosY>
 			<spinAlign>right</spinAlign>
 			<spinCanFocus>yes</spinCanFocus>
 			<visible>Control.IsVisible(101)</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		</control>
-
-		<control>
-			<description>Dummy Button</description>
-			<type>button</type>
-			<id>500</id>
-			<label>-</label>
-			<onup>500</onup>
-			<ondown>500</ondown>
-			<onleft>202</onleft>
-			<onright>50</onright>
-			<textureFocus>-</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<!--<visible>Control.IsVisible(101)</visible>-->
-			<visible>no</visible>
+			<animation effect="fade" time="250">WindowClose</animation>	
+			<animation effect="fade" time="0">WindowOpen</animation>	
 		</control>
 		
 	</controls>

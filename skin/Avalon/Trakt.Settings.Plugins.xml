@@ -113,8 +113,7 @@
 				<onleft>11</onleft>
 				<onleft>#defaultcontrol.onright</onleft>
 				<ondown>2</ondown>   				
-			</control>	
-			
+			</control>				
 		</control>
 		
 		<import>common.overlay.xml</import>
