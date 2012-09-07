@@ -4,11 +4,13 @@
   <defaultcontrol>1</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
       <control>
         <description>hidden</description>
         <type>button</type>
         <visible>false</visible>
         <id>1</id>
       </control>
+	  
   </controls>
 </window>
