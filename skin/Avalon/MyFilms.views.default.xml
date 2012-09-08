@@ -301,6 +301,31 @@
 		<ondown>1026</ondown>	
 		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)+string.equals(#myfilms.db.description.value)</visible>
 	</control>
+
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>850</posX>
+		<posY>660</posY>
+		<width>185</width>
+		<height>29</height>
+		<textureWidth>32</textureWidth>
+		<textureHeight>27</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#myfilms.db.rating.value</percentage>
+		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
+	</control>
+
 	
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -340,6 +365,7 @@
 		<keepaspectratio>yes</keepaspectratio>
 		<spaceBetweenItems>2</spaceBetweenItems>
 		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
-		</control>	
+	</control>	
+		
 </controls>
 </window>

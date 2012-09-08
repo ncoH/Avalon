@@ -210,7 +210,8 @@
       <label>#myfilms.config.pluginname</label>
       <textcolor>6aa5cb</textcolor>
       <font>font22</font>
-      <visible>Control.IsVisible(50)</visible>
+      <visible>Contro
+	  l.IsVisible(50)</visible>
     </control>
     <control>
       <description>Selection display</description>

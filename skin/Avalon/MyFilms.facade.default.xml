@@ -102,12 +102,12 @@ This file should contain the facade view
 	  <visible>[facadeview.list|facadeview.album] + control.isvisible(50)</visible>
     </control>
 
-	<control>
+		<control>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<type>facadeview</type>
-		<id>50</id>
-		<control>
+			<type>facadeview</type>
+			<id>50</id>
+			<control>
 			<description>Movie List</description>
 			<type>listcontrol</type>
 			<id>50</id>
@@ -134,11 +134,11 @@ This file should contain the facade view
             <spinPosY>730</spinPosY>
 		</control>
 
-    <control>
-    	<description>album view listcontrol</description>
-      <type>listcontrol</type>
-      <subtype>album</subtype>
-      <id>50</id>
+		<control>
+			<description>album view listcontrol</description>
+			<type>listcontrol</type>
+			<subtype>album</subtype>
+			<id>50</id>
 			<posX>1166</posX>
 			<posY>164</posY>
 			<height>550</height>
@@ -154,31 +154,31 @@ This file should contain the facade view
 			<font3>font2</font3>
 			<textcolor>ffffffff</textcolor>
 			<textcolor2>ff6aa5cb</textcolor2>
-      <itemHeight>70</itemHeight>
-      <IconXOff>10</IconXOff>
-      <IconYOff>0</IconYOff>
+			<itemHeight>70</itemHeight>
+			<IconXOff>10</IconXOff>
+			<IconYOff>0</IconYOff>
 			<PinIconHeight>19</PinIconHeight>
 			<PinIconWidth>40</PinIconWidth>
-      <PinIconXOff>80</PinIconXOff>
-      <PinIconYOff>45</PinIconYOff>
-      <spaceBetweenItems>1</spaceBetweenItems>
-      <textureHeight>70</textureHeight>
-      <scrollOffset>1</scrollOffset>
+			<PinIconXOff>80</PinIconXOff>
+			<PinIconYOff>45</PinIconYOff>
+			<spaceBetweenItems>1</spaceBetweenItems>
+			<textureHeight>70</textureHeight>
+			<scrollOffset>1</scrollOffset>
 			<textureFocus>listcontrol_item_selected_big.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-      <onleft>2</onleft>
-      <onright>2</onright>
-      <keepaspectratio>yes</keepaspectratio>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<keepaspectratio>yes</keepaspectratio>
 			<dimColor>ffffffff</dimColor>
-      <spinPosX>1832</spinPosX>
-      <spinPosY>730</spinPosY>
+			<spinPosX>1832</spinPosX>
+			<spinPosY>730</spinPosY>
 		</control>
 
-		<control>
-			<description>Filmstrip view</description>
-			<type>filmstrip</type>
-			<dimColor>90ffffff</dimColor>
-			<id>50</id>
+			<control>
+				<description>Filmstrip view</description>
+				<type>filmstrip</type>
+				<dimColor>90ffffff</dimColor>
+				<id>50</id>
 				<scrollOffset>3</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
@@ -216,7 +216,7 @@ This file should contain the facade view
                 <scrollbarYOff>522</scrollbarYOff>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="108,108" center="0,500" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="108,108" reversible="false" end="100,100" center="0,500" time="100">unfocus</thumbAnimation>
-		</control>
+			</control>
 
 			<control>
 				<description>Thumbnail Panel</description>
@@ -262,64 +262,65 @@ This file should contain the facade view
                 <spinPosY>730</spinPosY>
 			</control>
 
-				<control>
-				  <description>Cover Flow view</description>
-				  <type>coverflow</type>
-				  <colordiffuse>90ffffff</colordiffuse>
-				  <dimColor>90ffffff</dimColor>
-				  <id>50</id>
-				  <onup>2</onup>
-				  <ondown>2</ondown>
-				  <onleft>50</onleft>
-				  <onright>50</onright>	  
-				  <posX>-10</posX>
-				  <posY>186</posY>
-				  <width>1920</width>
-				  <height>1080</height>	  
-				  <selectedCard>0</selectedCard>
-				  <cardWidth>337</cardWidth>
-				  <cardHeight>477</cardHeight>
-				  <angle>45</angle>
-				  <sideShift>310</sideShift>
-				  <sideGap>100</sideGap>
-				  <sideDepth>270</sideDepth>
-				  <offsetY>0</offsetY>
-				  <selectedOffsetY>0</selectedOffsetY>
-				  <speed>8</speed>
-				  <showFrame>yes</showFrame>
-				  <frame>-</frame>
-				  <frameFocus>-</frameFocus>
-				  <keepaspectratio>no</keepaspectratio>		  
-				  <frameWidth>327</frameWidth>
-				  <frameHeight>463</frameHeight>
-				  <spinSpeed>8</spinSpeed>
-				  <unfocusedAlpha>FF</unfocusedAlpha>
-				  <folderPrefix></folderPrefix>
-				  <folderSuffix></folderSuffix>
-				  <font1>font13</font1>
-				  <font2>font11</font2>
-				  <label1>#title</label1>
-				  <label2>#genre</label2>
-				  <textColor>FFFFFFFF</textColor>
-				  <remoteColor>FFFF0000</remoteColor>
-				  <playedColor>FFA0D0FF</playedColor>
-				  <downloadColor>FF00FF00</downloadColor>
-				  <selectedColor>FFFFFFFF</selectedColor>
-				  <shadowAngle>45</shadowAngle>
-				  <shadowDistance>1</shadowDistance>
-				  <shadowColor>FF000000</shadowColor>
-				  <label1YOff>1430</label1YOff>
-				  <label2YOff>1390</label2YOff>
-				  <pageSize>5</pageSize>
-                <scrollbarBackground>-</scrollbarBackground>
-                <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
-                <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
-                <scrollbarWidth>689</scrollbarWidth>
+			<control>
+				<description>Cover Flow view</description>
+				<type>coverflow</type>
+				<colordiffuse>90ffffff</colordiffuse>
+				<dimColor>90ffffff</dimColor>
+				<id>50</id>
+				<onup>2</onup>
+				<ondown>2</ondown>
+				<onleft>50</onleft>
+				<onright>50</onright>	  
+				<posX>-10</posX>
+				<posY>186</posY>
+				<width>1920</width>
+				<height>1080</height>	  
+				<selectedCard>0</selectedCard>
+				<cardWidth>337</cardWidth>
+				<cardHeight>477</cardHeight>
+				<angle>45</angle>
+				<sideShift>310</sideShift>
+				<sideGap>100</sideGap>
+				<sideDepth>270</sideDepth>
+				<offsetY>0</offsetY>
+				<selectedOffsetY>0</selectedOffsetY>
+				<speed>8</speed>
+				<showFrame>yes</showFrame>
+				<frame>-</frame>
+				<frameFocus>-</frameFocus>
+				<keepaspectratio>no</keepaspectratio>		  
+				<frameWidth>327</frameWidth>
+				<frameHeight>463</frameHeight>
+				<spinSpeed>8</spinSpeed>
+				<unfocusedAlpha>FF</unfocusedAlpha>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>
+				<font1>font13</font1>
+				<font2>font11</font2>
+				<label1>#title</label1>
+				<label2>#genre</label2>
+				<textColor>FFFFFFFF</textColor>
+				<remoteColor>FFFF0000</remoteColor>
+				<playedColor>FFA0D0FF</playedColor>
+				<downloadColor>FF00FF00</downloadColor>
+				<selectedColor>FFFFFFFF</selectedColor>
+				<shadowAngle>45</shadowAngle>
+				<shadowDistance>1</shadowDistance>
+				<shadowColor>FF000000</shadowColor>
+				<label1YOff>1430</label1YOff>
+				<label2YOff>1390</label2YOff>
+				<pageSize>5</pageSize>
+				<scrollbarBackground>-</scrollbarBackground>
+				<scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+				<scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+				<scrollbarWidth>689</scrollbarWidth>
 				<scrollbarHeight>4</scrollbarHeight>
-                <scrollbarYOff>522</scrollbarYOff>
-					<keepaspectratio>no</keepaspectratio>
-					<cards flipY="true" diffuse="Thumb_Mask_test.png" mask="video_filmstrip_fanart_mask.png"></cards>
-				</control>
-	</control>
+				<scrollbarYOff>522</scrollbarYOff>
+				<keepaspectratio>no</keepaspectratio>
+				<cards flipY="true" diffuse="Thumb_Mask_test.png" mask="video_filmstrip_fanart_mask.png"></cards>
+			</control>
+		</control>
+	
 </controls>
 </window>

@@ -69,7 +69,7 @@ This file should contain the facade view
       <align>left</align>
       <font>AvalonLight12</font>
       <textcolor>6aa5cb</textcolor>
-	  <visible>[[facadeview.list|facadeview.album] | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
+	  <visible>[facadeview.list | facadeview.album | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
     </control>
 
 	<control>
@@ -104,11 +104,11 @@ This file should contain the facade view
 			<spinPosY>880</spinPosY>
 		</control>
 
-    <control>
-    	<description>album view listcontrol</description>
-      <type>listcontrol</type>
-      <subtype>album</subtype>
-      <id>50</id>
+		<control>
+			<description>album view listcontrol</description>
+			<type>listcontrol</type>
+			<subtype>album</subtype>
+			<id>50</id>
 			<posX>1166</posX>
 			<posY>164</posY>
 			<height>720</height>
@@ -124,21 +124,21 @@ This file should contain the facade view
 			<font3>font2</font3>
 			<textcolor>ffffffff</textcolor>
 			<textcolor2>ff6aa5cb</textcolor2>
-      <itemHeight>70</itemHeight>
-      <IconXOff>20</IconXOff>
-      <IconYOff>0</IconYOff>
+			<itemHeight>70</itemHeight>
+			<IconXOff>20</IconXOff>
+			<IconYOff>0</IconYOff>
 			<PinIconHeight>19</PinIconHeight>
 			<PinIconWidth>40</PinIconWidth>
-      <PinIconXOff>80</PinIconXOff>
-      <PinIconYOff>45</PinIconYOff>
-      <spaceBetweenItems>3</spaceBetweenItems>
-      <textureHeight>70</textureHeight>
-      <scrollOffset>1</scrollOffset>
+			<PinIconXOff>80</PinIconXOff>
+			<PinIconYOff>45</PinIconYOff>
+			<spaceBetweenItems>3</spaceBetweenItems>
+			<textureHeight>70</textureHeight>
+			<scrollOffset>1</scrollOffset>
 			<textureFocus>listcontrol_item_selected_big.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-      <onleft>2</onleft>
-      <onright>2</onright>
-      <keepaspectratio>yes</keepaspectratio>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<keepaspectratio>yes</keepaspectratio>
 			<dimColor>ffffffff</dimColor>
  			<spinPosX>1832</spinPosX>
 			<spinPosY>880</spinPosY>
@@ -231,6 +231,13 @@ This file should contain the facade view
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>yes</thumbZoom>
 				<keepaspectratio>no</keepaspectratio>
+				<spinColor>FF6aa5cb</spinColor>
+				<spinWidth>46</spinWidth>
+				<spinHeight>33</spinHeight>
+                <spinPosX>1832</spinPosX>
+				<spinPosY>879</spinPosY>
+				<spinAlign>right</spinAlign>
+				<spinCanFocus>no</spinCanFocus>					
 			</control>
 			
 				<control>
