@@ -4,7 +4,9 @@
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <controls>
+  
     <!-- Import Dummy Controls to handle visibility -->
+	
     <import>TVSeries.dummy.xml</import>
     <control>
       <description>dummy poster control</description>
@@ -14,7 +16,9 @@
       <posY>-2000</posY>
       <label>#Avalon.EnablePosterHide</label>
     </control>
+	
     <!-- ********************** BACKGROUNDS************************************** -->
+	
     <control>
       <description>dummy backdrop control 1</description>
       <type>image</type>
@@ -44,6 +48,7 @@
       <texture>background.png</texture>
       <shouldCache>true</shouldCache>
     </control>
+	
     <control>
       <description>Fanart Background #1</description>
       <type>image</type>
@@ -59,6 +64,7 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>[facadeview.filmstrip|facadeview.coverflow]+control.isvisible(524)</visible>
     </control>
+	
     <control>
       <description>Fanart Background #2</description>
       <type>image</type>
@@ -74,6 +80,7 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>[facadeview.filmstrip|facadeview.coverflow]+control.isvisible(525)</visible>
     </control>
+	
     <control>
       <description>Fanart Background #1</description>
       <type>image</type>
@@ -89,6 +96,7 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>[!facadeview.filmstrip+!facadeview.coverflow]+control.isvisible(524)</visible>
     </control>
+	
     <control>
       <description>Fanart Background #2</description>
       <type>image</type>
@@ -104,8 +112,10 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>[!facadeview.filmstrip+!facadeview.coverflow]+control.isvisible(525)</visible>
     </control>
+	
     <import tag="Background">TVSeries.background.default.xml</import>
     <import>common.time.xml</import>
+	
     <!--            :: HEADER ::            -->
     <control>
       <animation effect="fade" time="250">WindowOpen</animation>
@@ -119,10 +129,12 @@
       <textcolor>6aa5cb</textcolor>
       <font>font22</font>
     </control>
+	
     <import tag="Views">TVSeries.views.default.xml</import>
     <import>TVSeries.hiddenmenu.xml</import>
     <import>common.overlay.xml</import>
     <import tag="Facade">TVSeries.facade.default.xml</import>
     <import>TVSeries.Info.xml</import>
+	
   </controls>
 </window>

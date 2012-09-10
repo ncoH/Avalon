@@ -4,7 +4,6 @@
   <allowoverlay>no</allowoverlay>
   <controls>
 
-    <!-- Background & StreamedMP Layout -->
     <control>
       <id>1</id>
       <description>Background Image</description>
@@ -115,85 +114,6 @@
       <textureFocus border="1" position="insideimage" colorKey="66FFFFFF">list-focus.png</textureFocus>
       <textureNoFocus>list-nofocus.png</textureNoFocus>
     </control>
-
-
-    
-    
-    <!-- ActionGroup ->
-    <control>
-      <type>actiongroup</type>
-      <description>action menu</description>
-      <defaultcontrol>2</defaultcontrol>
-      <onexit>10</onexit>
-      <buttonX>1232</buttonX>
-      <buttonY>50</buttonY>
-      <buttonwidth>48</buttonwidth>
-      <buttonheight>144</buttonheight>
-      <textureFocus>#StreamedMP.ActionMenu.Image</textureFocus>
-      <textureNoFocus>#StreamedMP.ActionMenu.Image</textureNoFocus>
-      <dimColor>00ffffff</dimColor>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-      <control>
-        <type>image</type>
-        <posX>0</posX>
-        <posY>150</posY>
-        <width>263</width>
-        <height>473</height>
-        <texture>Backslide.png</texture>
-        <visible>!control.hasfocus(10)+!control.isvisible(9)+!control.isvisible(11)+!control.isvisible(30)</visible>
-        <animation effect="slide" time="100" start="-300,0">visible</animation>
-        <animation effect="slide" time="0" end="-300,0">hidden</animation>
-      </control>
-      <control>
-        <type>group</type>
-        <description>group element</description>
-        <posX>0</posX>
-        <posY>160</posY>
-        <layout>Stacklayout(Vertical,50,false)</layout>
-        <visible>!control.hasfocus(10)+!control.isvisible(9)+!control.isvisible(11)+!control.isvisible(30)</visible>
-        <animation effect="slide" time="100" start="-300,0">visible</animation>
-        <animation effect="slide" time="0" end="-300,0">hidden</animation>
-        <control>
-          <description>Now</description>
-          <type>button</type>
-          <id>2</id>
-          <width>263</width>
-          <textalign>center</textalign>
-          <label>Jetzt</label>
-          <font>font10</font>
-          <onup>5</onup>
-          <ondown>3</ondown>
-          <onright>10</onright>
-        </control>
-        <control>
-          <description>20:15</description>
-          <type>button</type>
-          <id>3</id>
-          <width>263</width>
-          <textalign>center</textalign>
-          <label>PrimeTime</label>
-          <font>font10</font>
-          <onup>2</onup>
-          <ondown>4</ondown>
-          <onright>10</onright>
-        </control>
-        <control>
-          <description>22:00 Movies</description>
-          <type>button</type>
-          <id>4</id>
-          <width>263</width>
-          <textalign>center</textalign>
-          <label>LateTime</label>
-          <font>font10</font>
-          <onup>3</onup>
-          <ondown>5</ondown>
-          <onright>10</onright>
-        </control>
-      </control>
-    </control-->
-
-
     
   </controls>
 </window>

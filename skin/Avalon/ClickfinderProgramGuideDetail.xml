@@ -1,9 +1,10 @@
 <window>
   <id>1656544652</id>
-  <defaultcontrol>12</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
+  <defaultcontrol>11</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
 	<controls>
-   
+  
+  
     <!-- Background -->  
   
 		<control>
@@ -25,7 +26,14 @@
 			<posX>0</posX>
 			<width>1920</width>
 			<height>1080</height>
+			<keepaspectratio>yes</keepaspectratio>
+			<zoom>yes</zoom>
+			<zoomfromtop>yes</zoomfromtop>
 			<texture>hover_ClickfinderProgramGuide.png</texture>
+			<animation effect="fade" time="300">visible</animation>
+			<animation effect="fade" time="10">hidden</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<visible>!control.isvisible(45)</visible>
 		</control>
 
@@ -37,8 +45,27 @@
 			<posX>0</posX>
 			<width>1920</width>
 			<height>1080</height>
+			<keepaspectratio>yes</keepaspectratio>	  
+			<zoom>yes</zoom>
+			<zoomfromtop>yes</zoomfromtop>	  
 			<texture>#DetailFanArt</texture>		
 			<visible>!string.equals(#DetailFanArt,)</visible>
+			<animation effect="fade" time="300">visible</animation>
+			<animation effect="fade" time="10">hidden</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		</control>
+    
+		<control>
+			<description>Overlay Image</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>black.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
 		</control>
 	
 		<control>
@@ -153,6 +180,8 @@
 			<posY>588</posY>
 			<align>left</align>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
+			<visible>!string.contains(#DetailTime,%)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -163,7 +192,7 @@
 			<id>0</id>
 			<posX>545</posX>
 			<posY>588</posY>
-			<width>160</width>
+			<width>150</width>
 			<align>right</align>
 			<font>font11</font>
 			<label>#DetailTime</label>
@@ -177,7 +206,7 @@
 			<description>Detail time onAir</description>
 			<type>fadelabel</type>
 			<id>0</id>
-			<posX>545</posX>
+			<posX>538</posX>
 			<posY>588</posY>
 			<width>235</width>
 			<align>right</align>
@@ -198,6 +227,7 @@
 			<posY>618</posY>
 			<align>left</align>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
 			<visible>yes</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -209,7 +239,7 @@
 			<id>1</id>
 			<posX>545</posX>
 			<posY>618</posY>
-			<width>250</width>
+			<width>240</width>
 			<align>right</align>
 			<font>font11</font>
 			<label>#DetailDuration</label>
@@ -228,6 +258,7 @@
 			<posY>648</posY>
 			<align>left</align>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
 			<visible>yes</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -239,7 +270,7 @@
 			<id>33</id>
 			<posX>545</posX>
 			<posY>648</posY>
-			<width>155</width>
+			<width>150</width>
 			<align>right</align>
 			<font>font11</font>
 			<label>#DetailChannel</label>
@@ -271,21 +302,6 @@
 	<!-- Details, right side, upper half -->
 	
 		<control>
-			<description>Channel Logo</description>
-			<id>1</id>
-			<type>image</type>
-			<posX>1500</posX>
-			<posY>175</posY>
-			<width>124</width>
-			<height>124</height>
-			<keepaspectratio>yes</keepaspectratio>
-			<texture>..\..\..\Thumbs\tv\logos\#DetailChannel.png</texture>
-			<visible>!string.contains(#DetailChannel,DetailChannel)</visible>
-			<animation effect="fade" time="250">Visible</animation>
-			<animation effect="fade" time="250">WindowClose</animation>
-		</control>
-		
-		<control>
 			<description>Detail Titel</description>
 			<type>fadelabel</type>
 			<id>0</id>
@@ -300,7 +316,7 @@
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>	
 		
-		<!--control>
+		<control>
 			<description>Detail RecordingState</description>
 			<type>image</type>
 			<id>34</id>
@@ -313,10 +329,10 @@
 			<filtered>yes</filtered>
 			<keepaspectratio>yes</keepaspectratio>
 			<texture>#DetailRecordingState</texture>
-			<visible></visible>
+			<visible>yes</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
-		</control-->
+		</control>
 	
 		<control>
 			<description>Detail originalTitel</description>
@@ -328,6 +344,7 @@
 			<width>900</width>
 			<align>left</align>
 			<font>font11</font>
+			<!--textcolor>ff707070</textcolor-->
 			<wrapString> | </wrapString>
 			<visible>!string.equals(#DetailorgTitle,)+!string.starts(#DetailRatingStar,0)+string.equals(#DetailSeriesID,0)</visible>
 			<animation effect="fade" time="250">Visible</animation>
@@ -344,6 +361,7 @@
 			<width>900</width>
 			<align>left</align>
 			<font>font11</font>
+			<!--textcolor>ffffffff</textcolor-->
 			<wrapString> | </wrapString>
 			<visible>!string.equals(#DetailorgTitle,)+string.starts(#DetailRatingStar,0)+string.equals(#DetailSeriesID,0)</visible>
 			<animation effect="fade" time="250">Visible</animation>
@@ -360,6 +378,7 @@
 			<width>900</width>
 			<align>left</align>
 			<font>font11</font>
+			<!--textcolor>ffffffff</textcolor-->
 			<wrapString> | </wrapString>
 			<visible>!string.equals(#DetailorgTitle,)+!string.equals(#DetailSeriesID,0)</visible>
 			<animation effect="fade" time="250">Visible</animation>
@@ -398,6 +417,7 @@
 			<posY>295</posY>
 			<width>920</width>
 			<font>font12</font>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -412,6 +432,8 @@
 			<posY>350</posY>
 			<align>left</align>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -422,10 +444,11 @@
 			<type>label</type>
 			<label>#DetailCountry #DetailYear</label>
 			<id>0</id>
-			<posX>740</posX>
+			<posX>730</posX>
 			<posY>350</posY>
 			<align>left</align>
 			<font>font11</font>
+			<!--textcolor>ff707070</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -440,6 +463,8 @@
 			<posY>300</posY>
 			<align>left</align>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -450,10 +475,11 @@
 			<type>label</type>
 			<label>#DetailCountry #DetailYear</label>
 			<id>0</id>
-			<posX>740</posX>
+			<posX>730</posX>
 			<posY>300</posY>
 			<align>left</align>
 			<font>font11</font>
+			<!--textcolor>ff707070</textcolor-->
 			<visible>string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -467,6 +493,8 @@
 			<posX>586</posX>
 			<posY>380</posY>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -477,10 +505,11 @@
 			<type>fadelabel</type>
 			<label>#DetailGenre</label>
 			<id>0</id>
-			<posX>740</posX>
+			<posX>730</posX>
 			<posY>380</posY>
-			<width>870</width>
+			<width>920</width>
 			<font>font11</font>
+			<!--textcolor>ff707070</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -494,6 +523,8 @@
 			<posX>586</posX>
 			<posY>330</posY>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -504,10 +535,11 @@
 			<type>fadelabel</type>
 			<label>#DetailGenre</label>
 			<id>0</id>
-			<posX>740</posX>
+			<posX>730</posX>
 			<posY>330</posY>
-			<width>870</width>
+			<width>920</width>
 			<font>font11</font>
+			<!--textcolor>ff707070</textcolor-->
 			<visible>string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -521,6 +553,8 @@
 			<posX>586</posX>
 			<posY>410</posY>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -531,16 +565,17 @@
 			<type>fadelabel</type>
 			<label>#DetailRegie</label>
 			<id>0</id>
-			<posX>740</posX>
+			<posX>730</posX>
 			<posY>410</posY>
-			<width>870</width>
+			<width>920</width>
 			<font>font11</font>
+			<!--textcolor>ff707070</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
 		
-			<control>
+		<control>
 			<description>Director Label - no critic</description>
 			<type>label</type>
 			<label>#ClickfinderPG.Translation.RegieLabel</label>
@@ -548,6 +583,8 @@
 			<posX>586</posX>
 			<posY>360</posY>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -558,10 +595,11 @@
 			<type>fadelabel</type>
 			<label>#DetailRegie</label>
 			<id>0</id>
-			<posX>740</posX>
+			<posX>730</posX>
 			<posY>360</posY>
-			<width>870</width>
+			<width>920</width>
 			<font>font11</font>
+			<!--textcolor>ff707070</textcolor-->
 			<visible>string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -575,6 +613,8 @@
 			<posX>586</posX>
 			<posY>440</posY>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -585,10 +625,11 @@
 			<type>fadelabel</type>
 			<label>#DetailActors</label>
 			<id>0</id>
-			<posX>740</posX>
+			<posX>730</posX>
 			<posY>440</posY>
-			<width>870</width>
+			<width>880</width>
 			<font>font11</font>
+			<!--textcolor>ff707070</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -602,6 +643,8 @@
 			<posX>586</posX>
 			<posY>390</posY>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -612,10 +655,11 @@
 			<type>fadelabel</type>
 			<label>#DetailActors</label>
 			<id>0</id>
-			<posX>740</posX>
+			<posX>730</posX>
 			<posY>390</posY>
-			<width>870</width>
+			<width>880</width>
 			<font>font11</font>
+			<!--textcolor>ff707070</textcolor-->
 			<visible>string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -636,6 +680,7 @@
 			<onup>1026</onup>
 			<ondown>1026</ondown>
 			<font>font12</font>
+			<!--textcolor>ff505050</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -656,6 +701,7 @@
 			<onup>1026</onup>
 			<ondown>1026</ondown>
 			<font>font12</font>
+			<!--textcolor>ff505050</textcolor-->
 			<visible>string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">Visible</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -687,8 +733,8 @@
 			<id>101</id>
 			<posX>586</posX>
 			<posY>776</posY>
-			<width>70</width>
-			<height>70</height>
+			<width>60</width>
+			<height>60</height>
 			<filtered>yes</filtered>
 			<keepaspectratio>yes</keepaspectratio>
 			<texture>#DetailFSK</texture>
@@ -702,12 +748,13 @@
 			<type>image</type>
 			<id>1</id>
 			<posX>667</posX>
-			<posY>777</posY>
-			<width>74</width>
-			<height>32</height>
+			<posY>787</posY>
+			<width>61</width>
+			<height>37</height>
 			<texture>#DetailProgramFormat</texture>
 			<colorkey>0</colorkey>
 			<filtered>yes</filtered>
+			<keepaspectratio>yes</keepaspectratio>
 			<visible></visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -717,14 +764,14 @@
 			<description>Program Audio Image</description>
 			<type>image</type>
 			<id>1</id>
-			<posX>667</posX>
-			<posY>814</posY>
-			<width>74</width>
-			<height>32</height>
-			<!--keepaspectratio>yes</keepaspectratio-->
+			<posX>748</posX>
+			<posY>787</posY>
+			<width>82</width>
+			<height>37</height>
 			<texture>#DetailAudioImage</texture>
 			<colorkey>0</colorkey>
 			<filtered>yes</filtered>
+			<keepaspectratio>yes</keepaspectratio>
 			<visible></visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -734,12 +781,14 @@
 			<description>Fun</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>770</posX>
-			<posY>793</posY>
-			<width>130</width>
+			<posX>860</posX>
+			<posY>790</posY>
+			<width>110</width>
 			<label>#ClickfinderPG.Translation.FunLabel</label>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
 			<align>center</align>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -749,8 +798,8 @@
 			<description>FunStars</description>
 			<type>imagelist</type>
 			<id>1</id>
-			<posX>790</posX>
-			<posY>815</posY>
+			<posX>870</posX>
+			<posY>810</posY>
 			<width>110</width>
 			<height>10</height>
 			<textureWidth>30</textureWidth>
@@ -772,12 +821,14 @@
 			<description>Action</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>910</posX>
-			<posY>793</posY>
-			<width>130</width>
+			<posX>980</posX>
+			<posY>790</posY>
+			<width>110</width>
 			<label>#ClickfinderPG.Translation.ActionLabel</label>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
 			<align>center</align>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -787,8 +838,8 @@
 			<description>ActionStars</description>
 			<type>imagelist</type>
 			<id>1</id>
-			<posX>930</posX>
-			<posY>815</posY>
+			<posX>990</posX>
+			<posY>810</posY>
 			<width>110</width>
 			<height>10</height>
 			<textureWidth>30</textureWidth>
@@ -810,12 +861,14 @@
 			<description>Gefühl</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>1050</posX>
-			<posY>793</posY>
-			<width>130</width>
+			<posX>1100</posX>
+			<posY>790</posY>
+			<width>110</width>
 			<label>#ClickfinderPG.Translation.EmotionsLabel</label>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
 			<align>center</align>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -825,8 +878,8 @@
 			<description>GefühlStars</description>
 			<type>imagelist</type>
 			<id>1</id>
-			<posX>1070</posX>
-			<posY>815</posY>
+			<posX>1110</posX>
+			<posY>810</posY>
 			<width>110</width>
 			<height>10</height>
 			<textureWidth>30</textureWidth>
@@ -848,12 +901,14 @@
 			<description>Erotik</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>1190</posX>
-			<posY>793</posY>
-			<width>130</width>
+			<posX>1220</posX>
+			<posY>790</posY>
+			<width>110</width>
 			<label>#ClickfinderPG.Translation.EroticLabel</label>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
 			<align>center</align>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -863,8 +918,8 @@
 			<description>ErotikStars</description>
 			<type>imagelist</type>
 			<id>1</id>
-			<posX>1210</posX>
-			<posY>815</posY>
+			<posX>1230</posX>
+			<posY>810</posY>
 			<width>110</width>
 			<height>10</height>
 			<textureWidth>30</textureWidth>
@@ -886,12 +941,14 @@
 			<description>Spannung</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>1330</posX>
-			<posY>793</posY>
-			<width>130</width>
+			<posX>1340</posX>
+			<posY>790</posY>
+			<width>110</width>
 			<label>#ClickfinderPG.Translation.SuspenseLabel</label>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
 			<align>center</align>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -902,7 +959,7 @@
 			<type>imagelist</type>
 			<id>1</id>
 			<posX>1350</posX>
-			<posY>815</posY>
+			<posY>810</posY>
 			<width>110</width>
 			<height>10</height>
 			<textureWidth>30</textureWidth>
@@ -924,12 +981,14 @@
 			<description>Anspruch</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>1473</posX>
-			<posY>793</posY>
-			<width>130</width>
+			<posX>1463</posX>
+			<posY>790</posY>
+			<width>110</width>
 			<label>#ClickfinderPG.Translation.LevelLabel</label>
 			<font>font11</font>
+			<textcolor>FF6aa5cb</textcolor>
 			<align>center</align>
+			<!--textcolor>ffffffff</textcolor-->
 			<visible>!string.equals(#DetailKritik,)</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -939,8 +998,8 @@
 			<description>AnspruchStars</description>
 			<type>imagelist</type>
 			<id>1</id>
-			<posX>1493</posX>
-			<posY>815</posY>
+			<posX>1473</posX>
+			<posY>810</posY>
 			<width>110</width>
 			<height>10</height>
 			<textureWidth>30</textureWidth>
@@ -968,14 +1027,14 @@
 			<posX>388</posX>
 			<posY>707</posY>
 			<width>58</width>
-			<height>58</height>
+			<height>59</height>
 			<label>-</label>
 			<onleft>130</onleft>
 			<onright>14</onright>
 			<onup>14</onup>
 			<ondown>12</ondown>
-			<textureFocus>Clickfinder_MP_focus.png</textureFocus>
-			<textureNoFocus>Clickfinder_MP_nofocus.png</textureNoFocus>
+			<textureFocus>button_movpic_focus.png</textureFocus>
+			<textureNoFocus>button_movpic_nofocus.png</textureNoFocus>
 			<visible>!string.equals(#DetailSeriesID,0)+plugin.isenabled(MP-TV Series)|!string.equals(#DetailMovPicID,0)+plugin.isenabled(Moving Pictures)</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -990,14 +1049,14 @@
 			<posX>318</posX>
 			<posY>707</posY>
 			<width>58</width>
-			<height>58</height>
+			<height>59</height>
 			<label>-</label>
 			<onup>130</onup>
 			<ondown>13</ondown>
 			<onleft>130</onleft>
 			<onright>14</onright>
-			<textureFocus>Clickfinder_Trailer_focus.png</textureFocus>
-			<textureNoFocus>Clickfinder_Trailer_nofocus.png</textureNoFocus>
+			<textureFocus>movie_details_trailer_focus.png</textureFocus>
+			<textureNoFocus>movie_details_trailer_nofocus.png</textureNoFocus>
 			<visible>plugin.isenabled(OnlineVideos)</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -1008,7 +1067,7 @@
 			<type>button</type>
 			<id>13</id>
 			<width>58</width>
-			<height>58</height>
+			<height>59</height>
 			<posX>318</posX>
 			<posY>777</posY>
 			<label>-</label>
@@ -1016,47 +1075,19 @@
 			<onright>12</onright>
 			<onup>130</onup>
 			<ondown>13</ondown>
-			<textureFocus>Clickfinder_reminder_focus.png</textureFocus>
-			<textureNoFocus>Clickfinder_reminder_nofocus.png</textureNoFocus>
+			<textureFocus>button_reminder_focus.png</textureFocus>
+			<textureNoFocus>button_reminder_nofocus.png</textureNoFocus>
 			<visible></visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		 </control>
 
 		 <control>
-			<description>Record indicator off</description>
-			<type>image</type>
-			<id>0</id>
-			<width>58</width>
-			<height>58</height>
-			<posX>388</posX>
-			<posY>777</posY>
-			<texture>Clickfinder_record_down_grey.png</texture>
-			<visible>!string.contains(#DetailRecordingState,png)</visible>
-			<animation effect="fade" time="250">WindowOpen</animation>
-			<animation effect="fade" time="250">WindowClose</animation>
-		 </control>
-		 
-		 <control>
-			<description>Record indicator on</description>
-			<type>image</type>
-			<id>0</id>
-			<width>58</width>
-			<height>58</height>
-			<posX>388</posX>
-			<posY>777</posY>
-			<texture>Clickfinder_record_down_red.png</texture>
-			<visible>string.contains(#DetailRecordingState,png)</visible>
-			<animation effect="fade" time="250">WindowOpen</animation>
-			<animation effect="fade" time="250">WindowClose</animation>
-		 </control>
-		 
-		 <control>
 			<description>Record</description>
 			<type>button</type>
 			<id>12</id>
 			<width>58</width>
-			<height>58</height>
+			<height>59</height>
 			<posX>388</posX>
 			<posY>777</posY>
 			<label>-</label>
@@ -1064,8 +1095,8 @@
 			<onright>11</onright>
 			<onup>14</onup>
 			<ondown>12</ondown>
-			<textureFocus>Clickfinder_record_top_focus.png</textureFocus>
-			<textureNoFocus>Clickfinder_record_top_nofocus.png</textureNoFocus>
+			<textureFocus>button_record_focus.png</textureFocus>
+			<textureNoFocus>button_record_nofocus.png</textureNoFocus>
 			<visible></visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -1076,7 +1107,7 @@
 			<type>button</type>
 			<id>11</id>
 			<width>58</width>
-			<height>58</height>
+			<height>59</height>
 			<posX>458</posX>
 			<posY>777</posY>
 			<label>-</label>
@@ -1084,14 +1115,18 @@
 			<onright>11</onright>
 			<onup>11</onup>
 			<ondown>11</ondown>
-			<textureFocus>Clickfinder_play_focus.png</textureFocus>
-			<textureNoFocus>Clickfinder_play_nofocus.png</textureNoFocus>
+			<textureFocus>movie_details_play_focus.png</textureFocus>
+			<textureNoFocus>movie_details_play_nofocus.png</textureNoFocus>
 			<visible></visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		  </control>
+
+
+	<!-- Imports -->	
 		
 		<import>common.overlay.xml</import>
+		<import>ClickfinderProgramGuide.hiddenmenu.xml</import>
 
 	</controls>
 </window>

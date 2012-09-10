@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>7977</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <define>#header.label:</define>
-  <define>#selecteditem:</define>
   <define>#header.hover:hover_my weather.png</define>
-  <define>#itemcount:</define>
   <controls>
+  
     <control>
       <description>background image</description>
       <type>image</type>
@@ -17,6 +14,7 @@
       <height>1080</height>
       <texture>background.png</texture>
     </control>
+	
 		<control>
 			<description>BG</description>
 			<type>image</type>
@@ -55,7 +53,7 @@
 			<width>1893</width>
 			<height>833</height>
 			<texture>WorldWeather_viewport.png</texture>
-	    <shouldCache>true</shouldCache>
+			<shouldCache>true</shouldCache>
 			<visible>string.equals(#WorldWeather.View,Condition)|string.equals(#WorldWeather.View,GeoClock)|string.equals(#WorldWeather.ImageView,Thumbnail)|string.equals(#WorldWeather.ImageView,Flat)</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -72,7 +70,7 @@
 			<width>1893</width>
 			<height>795</height>
 			<texture>viewport_thumbs2.png</texture>
-      <visible>string.equals(#WorldWeather.View,Image)+[string.equals(#WorldWeather.ImageView,Filmstrip)|string.equals(#WorldWeather.ImageView,Coverflow)]+!string.equals(#WorldWeather.ImageSatellite, )</visible>
+			<visible>string.equals(#WorldWeather.View,Image)+[string.equals(#WorldWeather.ImageView,Filmstrip)|string.equals(#WorldWeather.ImageView,Coverflow)]+!string.equals(#WorldWeather.ImageSatellite, )</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 			<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
@@ -87,23 +85,26 @@
     <import>WorldWeatherImage.xml</import>
     <import>WorldWeatherAstronomy.xml</import>
     <import>common.time.xml</import>
+	
     <!-- *** Provider Info *** -->  
+	
 		<control>
 			<description>Provider</description>
 			<type>fadelabel</type>
 			<id>0</id>
-    	<posX>1832</posX>
-    	<posY>1010</posY>
-    	<width>1000</width>
+			<posX>1832</posX>
+			<posY>1010</posY>
+			<width>1000</width>
 			<align>right</align>
 			<font>AvalonLight12</font>
 			<textcolor>6aa5cb</textcolor>
-      <label>#WorldWeather.TranslationProvider #WorldWeather.Provider (#WorldWeather.TranslationCurrentCondition) + #WorldWeather.ForecastProvider (#WorldWeather.TranslationForecastCondition)</label>
-      <visible>string.equals(#WorldWeather.View,Condition)+!control.hasfocus(20)</visible>
+			<label>#WorldWeather.TranslationProvider #WorldWeather.Provider (#WorldWeather.TranslationCurrentCondition) + #WorldWeather.ForecastProvider (#WorldWeather.TranslationForecastCondition)</label>
+			<visible>string.equals(#WorldWeather.View,Condition)+!control.hasfocus(20)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 			<animation effect="fade" start="0" end="100" time="300" delay="250" reversible="false">visible</animation>
 		</control>
+		
     <!--control>
     <description>Provider Logo</description>
     <type>image</type>
@@ -115,15 +116,17 @@
     <texture>#WorldWeather.ProviderImage</texture>
     <visible>string.equals(#WorldWeather.View,Condition)+!control.hasfocus(20)</visible>
   </control-->
+  
   <!-- *** Buttons *** -->
+  
   <control>
     <type>group</type>
     <description>group element</description>
 		<posX>130</posX>
 		<posY>148</posY>
 		<layout>StackLayout(0, Vertical, true)</layout>
-	  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <control>
         <description>Display</description>
         <type>button</type>
@@ -279,7 +282,9 @@
         <visible>string.equals(#WorldWeather.View,Astronomy)+string.equals(#WorldWeather.ImageZodiacEnabled,true)</visible>
       </control>
   </control>
+  
   <!-- *** Location *** -->
+  
   <control>
     <description>Location label</description>
     <type>label</type>
@@ -292,6 +297,7 @@
     <font>font22</font>
     <visible>string.equals(#WorldWeather.View,Condition)+!control.hasfocus(20)</visible>
   </control>
+  
   <control>
     <description>Selected item Label</description>
     <type>fadelabel</type>
@@ -306,5 +312,6 @@
     <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
   </control>
+  
 </controls>
 </window>

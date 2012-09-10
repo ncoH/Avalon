@@ -3,6 +3,7 @@
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <!-- MyFilms Skin Version Check -->
     <settings>
       <skininterfaceversion>
@@ -126,7 +127,9 @@
       <posY>-2000</posY>
       <label>#Avalon.EnablePosterHideFilms</label>
     </control>
+	
     <!--            :: MOVIE BACKDROP ::            -->
+	
     <control>
       <description>DEFAULT BACKGROUND</description>
       <type>image</type>
@@ -138,6 +141,7 @@
       <texture>background.png</texture>
       <shouldCache>true</shouldCache>
     </control>
+	
     <control>
       <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
       <type>image</type>
@@ -153,6 +157,7 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>[[facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)]+control.isvisible(11)</visible>
     </control>
+	
     <control>
       <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
       <type>image</type>
@@ -168,6 +173,7 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>[[facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)]+control.isvisible(21)</visible>
     </control>
+	
     <control>
       <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
       <type>image</type>
@@ -183,6 +189,7 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>!facadeview.filmstrip+!facadeview.coverflow+control.isvisible(11)</visible>
     </control>
+	
     <control>
       <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
       <type>image</type>
@@ -198,6 +205,7 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>!facadeview.filmstrip+!facadeview.coverflow+control.isvisible(21)</visible>
     </control>
+	
     <!--            :: HEADER ::            -->
     <control>
       <animation effect="fade" time="250">WindowOpen</animation>
@@ -210,9 +218,9 @@
       <label>#myfilms.config.pluginname</label>
       <textcolor>6aa5cb</textcolor>
       <font>font22</font>
-      <visible>Contro
-	  l.IsVisible(50)</visible>
+      <visible>Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <description>Selection display</description>
       <type>fadelabel</type>
@@ -226,7 +234,9 @@
       <animation effect="fade" time="250">WindowClose</animation>
       <animation effect="fade" time="250">WindowOpen</animation>
     </control>
+	
     <!--            :: LIST VIEW Dummy ::            -->
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -245,6 +255,7 @@
       <ondown>1026</ondown>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <!-- Global Overlay Filter Info -->
     <control>
       <description>Filters group</description>
@@ -293,6 +304,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
       </control>
     </control>
+	
     <!--            :: IMPORT ::            -->
     <import tag="Background">MyFilms.background.default.xml</import>
     <import>common.time.xml</import>
@@ -301,5 +313,6 @@
     <import tag="Facade">MyFilms.facade.default.xml</import>
     <import>MyFilms.Info.xml</import>
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

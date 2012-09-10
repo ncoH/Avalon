@@ -41,11 +41,11 @@
       <visible>facadeview.list | facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
     </control>
     <!--            :: IMPORT ::            -->
-    <import tag="Background">myvideo.background.default.xml</import>
+    <import tag="Background">myvideo.background.noinfo.xml</import>
     <import>common.time.xml</import>
     <import>myvideo.hiddenmenu.xml</import>
-    <import tag="Views">myvideo.views.default.xml</import>
-    <import tag="Facade">common.facade.video.default.xml</import>
+    <import tag="Views">myvideo.views.noinfo.xml</import>
+    <import tag="Facade">common.facade.video.noinfo.xml</import>
     <import>myvideoTitle.Info.xml</import>
     <import>common.overlay.xml</import>
   </controls>

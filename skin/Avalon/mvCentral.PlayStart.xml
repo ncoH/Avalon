@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+	
+        <control>
+            <description>Movie/File Status Icons group</description>
+            <type>group</type>
+            <visible>!window.isosdvisible+!window.ispauseosdvisible+string.equals(#mvCentral.Play.Started,true)</visible>
+            <dimColor>ffffffff</dimColor>
+            <animation delay="300" effect="Fade" end="100" start="0" time="700">Visible</animation>
+            <animation delay="300" effect="Fade" end="0" start="100" time="700">Hidden</animation>
+            <control>
+				<description>background</description>
+                <id>0</id>
+                <type>image</type>
+                <posX>214</posX>
+                <posY>814</posY>
+                <width>1518</width>
+                <height>267</height>
+                <texture>MyFilms_fanart info_panel.png</texture>
+            </control>
+			
+			<control>
+				<description>Artist Thumb</description>
+				<id>0</id>
+				<type>image</type>
+				<posX>290</posX>
+				<posY>872</posY>
+				<width>150</width>
+				<height>150</height>
+				<visible>!Control.HasFocus(6106)</visible>
+				<texture mask="music_thumb_mask.png">#Play.Current.Thumb</texture>
+			</control>
+			
+            <control>
+				<description>Runtime</description>
+                <id>0</id>
+                <type>fadelabel</type>
+                <posX>584</posX>
+                <posY>988</posY>
+                <width>210</width>
+                <font>AvalonLight12</font>
+                <align>left</align>
+                <label>Runtime: #Play.Current.Runtime</label>
+            </control>
+			
+            <control>
+                <description>Rating</description>
+				<id>0</id>
+				<type>fadelabel</type>
+                <posX>1153</posX>
+                <posY>988</posY>
+                <width>175</width>
+                <font>AvalonLight12</font>
+                <align>left</align>
+                <label>Rating: #Play.Current.Rating/10</label>
+            </control>
+			
+            <control>
+                <description>Next Track</description>
+				<id>0</id>
+                <type>fadelabel</type>
+                <posX>276</posX>
+                <posY>954</posY>
+                <width>1390</width>
+                <font>fontB16</font>
+                <textcolor>ff808080</textcolor>
+                <align>center</align>
+                <label>Next: #Play.Next.mvArtist - #Play.Next.mvVideo</label>
+            </control>
+			
+            <control>
+                <description>Current Track</description>
+				<id>0</id>                
+                <type>fadelabel</type>
+                <posX>270</posX>
+                <posY>902</posY>
+                <width>1390</width>
+                <font>fontB20</font>
+                <align>center</align>
+                <label>#Play.Current.mvArtist - #Play.Current.mvVideo</label>
+            </control>
+			
+            <control>
+                <description>Audio Codecs / Channels</description>
+				<id>0</id>
+                <type>image</type>
+                <visible>yes</visible>
+                <posX>1008</posX>
+                <posY>987</posY>
+                <width>177</width>
+                <height>38</height>
+                <texture>Logos\Audio\#mvCentral.LocalMedia.audio.png</texture>
+                <keepaspectratio>yes</keepaspectratio>
+            </control>
+			
+            <control>
+                <description>SD/HD Codec Fullscreen/Widescreen</description>
+				<id>0</id>                
+                <type>image</type>
+                <visible>yes</visible>
+                <posX>810</posX>
+                <posY>988</posY>
+                <width>177</width>
+                <height>38</height>
+                <texture>Logos\Video\#mvCentral.LocalMedia.videoresolution #mvCentral.LocalMedia.videocodec #mvCentral.LocalMedia.videoaspectratio.png</texture>
+                <keepaspectratio>yes</keepaspectratio>
+            </control>
+        </control>
+		
+    </controls>
+</window>

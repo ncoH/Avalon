@@ -87,7 +87,7 @@
 		
 		<import>common.time.xml</import>
 
-		<control>
+		<control Style="HeaderLabels">
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 			<type>label</type>
@@ -166,7 +166,7 @@
 			<label>#SettingLastUpdate</label>
 			<font>font10</font>
 			<align>right</align>
-			<!--textcolor>ffbbbbbb</textcolor-->
+			<textcolor>FF6aa5cb</textcolor>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -182,7 +182,7 @@
 			<posY>125</posY>
 			<label>#EpisodePreviewLabel</label>
 			<font>font12</font>
-			<!--textcolor>FFFFFFFF</textcolor-->
+			<textcolor>FF6aa5cb</textcolor>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -263,6 +263,7 @@
 			<posY>125</posY>
 			<label>#EpisodesPreviewSeriesHeaderLabel</label>
 			<font>font12</font>
+			<textcolor>FF6aa5cb</textcolor>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -300,7 +301,7 @@
 			<textureDown>page_down_nofocus.png</textureDown>
 			<textureUpFocus>page_up_focus.png</textureUpFocus>
 			<textureDownFocus>page_down_focus.png</textureDownFocus-->
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus> <!--list_sub_focus.png-->
 			<textureNoFocus>-</textureNoFocus>
 			<textureHeight>78</textureHeight>
 			<PinIconXOff>806</PinIconXOff>
@@ -323,6 +324,7 @@
 			<scrollOffset>2</scrollOffset>
 			<scrollbarXOff>0</scrollbarXOff>
 			<scrollbarwidth>15</scrollbarwidth>
+			<!--dimColor>dd2d2a2a</dimColor-->
 			<dimColor>ddffffff</dimColor>
 			<unfocusedAlpha>dd</unfocusedAlpha>
 			<visible></visible>
@@ -481,7 +483,7 @@
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
 		
-		<control Style="BlueColor">
+		<control>
 			<description>label</description>
 			<type>label</type>
 			<id>1</id>
@@ -489,6 +491,7 @@
 			<posY>710</posY>
 			<label>#EpisodesPreviewSeriesHeaderLabel:</label>
 			<font>fontB12</font>
+			<textcolor>FF6aa5cb</textcolor>
 			<visible>!string.equals(#EpisodesPreviewLabel3,)</visible>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -523,7 +526,9 @@
 			</textures>
 			<Duration>0:0:01.5</Duration>
 		</control>
-	
+
+		
+	<!-- Imports -->		
 		
     <import>common.overlay.xml</import>
     <import>ClickfinderProgramGuide.hiddenmenu.xml</import>

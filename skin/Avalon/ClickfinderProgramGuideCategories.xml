@@ -4,8 +4,6 @@
   <defaultcontrol>10</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
 	<controls>
-
-	<!-- Background -->
 	
 		<control>
 			<description>default background</description>
@@ -35,6 +33,20 @@
 			<animation effect="fade" time="10">hidden</animation>
 			<animation effect="fade" time="0">WindowClose</animation>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<visible>yes</visible>
+			<!--visible>!control.isvisible(45)</visible-->
+		</control>
+
+		<control>
+			<description>Overlay Image</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>black.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
 		</control>
 
 		<control>
@@ -49,9 +61,10 @@
 			<visible>yes</visible>
 		</control>
 
+	<!-- Common Layout -->	
 		
-    <!--            :: HEADER ::            -->
-	
+		<import>common.time.xml</import>
+    
 		<control>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -62,6 +75,7 @@
 			<width>1000</width>
 			<label>#CategorieView</label>
 			<font>font22</font>
+			<textcolor>FF6aa5cb</textcolor>
 			<visible>yes</visible>
 		</control>
 
@@ -112,30 +126,20 @@
 			<description>TvMovie++ LastUpdate</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>893</posX>
-			<posY>137</posY>
-			<label>#SettingLastUpdate</label>
-			<font>font10</font>
+			<posX>1832</posX>
+			<posY>1010</posY>
+			<width>1000</width>
 			<align>right</align>
-			<!--textcolor>ffbbbbbb</textcolor-->
+			<label>#SettingLastUpdate</label>
+			<font>AvalonLight12</font>
+			<textcolor>FF6aa5cb</textcolor>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
     
 
     <!-- Left List (Categories) -->
-    
-		<!--control>
-			<description>Background Image</description>
-			<id>1</id>
-			<type>image</type>
-			<posX>50</posX>
-			<posY>120</posY>
-			<width>886</width>
-			<height>737</height>
-			<texture>ClickfinderPG_ListBG.png</texture>
-		</control-->
-			
+
 		<control>
 			<description>Category label</description>
 			<type>label</type>
@@ -144,6 +148,7 @@
 			<posY>125</posY>
 			<label>#CategorieView</label>
 			<font>font12</font>
+			<textcolor>FF6aa5cb</textcolor>
 			<!--textcolor>ffffffff</textcolor-->
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -167,14 +172,14 @@
 			<id>10</id>
 			<onleft>2</onleft>
 			<onright>30</onright>
-			<posX>60</posX>
-			<posY>168</posY>
-			<width>866</width>
-			<height>702</height>
+			<posX>46</posX>
+			<posY>161</posY>
+			<width>756</width>
+			<height>740</height>
 			<spinWidth>30</spinWidth>
 			<spinHeight>30</spinHeight>
 			<spinPosX>80</spinPosX>
-			<spinPosY>874</spinPosY>
+			<spinPosY>879</spinPosY>
 			<spinAlign>Left</spinAlign>
 			<spinCanFocus>no</spinCanFocus>
 			<textureUp>page_up_nofocus.png</textureUp>
@@ -184,17 +189,17 @@
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
 			<textureHeight>108</textureHeight>
-			<IconXOff>4</IconXOff>
+			<IconXOff>10</IconXOff>
 			<IconYOff>4</IconYOff>
 			<textXOff>17</textXOff>
 			<textYOff>35</textYOff>
-			<font>AvalonLightB12</font>
 			<textXOff2>840</textXOff2>
 			<textYOff2>36</textYOff2>
-			<font2>font11</font2>
 			<textXOff3>124</textXOff3>
 			<textYOff3>38</textYOff3>
-			<font3>font10</font3>
+			<font>AvalonLight12</font>			
+			<font2>AvalonLight12</font2>			
+			<font3>AvalonLight10</font3>			
 			<itemWidth>89</itemWidth>
 			<itemHeight>89</itemHeight>
 			<scrollOffset>2</scrollOffset>
@@ -209,17 +214,6 @@
 
 
     <!-- Right List (Items) -->
-    
-		<!--control>
-			<description>Background Image</description>
-			<id>1</id>
-			<type>image</type>
-			<posX>958</posX>
-			<posY>120</posY>
-			<width>886</width>
-			<height>737</height>
-			<texture>ClickfinderPG_ListBG.png</texture>
-		</control-->
 		
 		<control>
 			<description>Next label</description>
@@ -229,7 +223,7 @@
 			<posY>125</posY>
 			<label>#ClickfinderPG.Translation.NextLabel</label>
 			<font>font12</font>
-			<!--textcolor>ffffffff</textcolor-->
+			<textcolor>FF6aa5cb</textcolor>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -242,8 +236,8 @@
 			<posY>125</posY>
 			<label>#CategorieGroup</label>
 			<font>font12</font>
+			<textcolor>FF6aa5cb</textcolor>
 			<align>right</align>
-			<!--textcolor>ffffffff</textcolor-->
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -266,14 +260,14 @@
 			<id>30</id>
 			<onright>2</onright>
 			<onleft>10</onleft>
-			<posX>968</posX>
-			<posY>168</posY>
+			<posX>955</posX>
+			<posY>161</posY>
 			<width>756</width>
 			<height>740</height>
 			<spinWidth>30</spinWidth>
 			<spinHeight>30</spinHeight>
 			<spinPosX>1750</spinPosX>
-			<spinPosY>874</spinPosY>
+			<spinPosY>879</spinPosY>
 			<spinAlign>right</spinAlign>
 			<spinCanFocus>no</spinCanFocus>
 			<textureUp>page_up_nofocus.png</textureUp>
@@ -287,23 +281,22 @@
 			<PinIconYOff>55</PinIconYOff>
 			<PinIconHeight>28</PinIconHeight>
 			<PinIconWidth>28</PinIconWidth>
-			<IconXOff>4</IconXOff>
+			<IconXOff>10</IconXOff>
 			<IconYOff>4</IconYOff>
-			<textXOff>20</textXOff>
+			<textXOff>50</textXOff>
 			<textYOff>-4</textYOff>
-			<font>fontB12</font>
-			<textXOff2>840</textXOff2>
+			<textXOff2>860</textXOff2>
 			<textYOff2>-4</textYOff2>
-			<font2>fontB12</font2>
-			<textXOff3>134</textXOff3>
-			<textYOff3>29</textYOff3>
+			<textXOff3>160</textXOff3>
+			<textYOff3>30</textYOff3>
+			<font>fontB12</font>			
+			<font2>fontB12</font2>			
 			<font3>AvalonLight10</font3>
 			<itemWidth>89</itemWidth>
 			<itemHeight>89</itemHeight>
 			<scrollOffset>2</scrollOffset>
 			<scrollbarXOff>0</scrollbarXOff>
 			<scrollbarwidth>15</scrollbarwidth>
-			<!--dimColor>dd2d2a2a</dimColor-->
 			<dimColor>ddffffff</dimColor>
 			<unfocusedAlpha>dd</unfocusedAlpha>
 			<visible></visible>
@@ -645,9 +638,6 @@
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
-
-		
-	<!-- Animations -->		
 		
 		<control>
 			<id>9</id>
@@ -662,7 +652,7 @@
 			</textures>
 			<Duration>0:0:01.5</Duration>
 		</control>
-	
+
 		<import>common.overlay.xml</import>
 		<import>ClickfinderProgramGuide.hiddenmenu.xml</import>
 

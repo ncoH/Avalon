@@ -31,12 +31,17 @@
 				<posY>472</posY>
 				<width>580</width>
 				<font>AvalonLight20</font>
+				<textcolor>FF6aa5cb</textcolor>
 				<label>181</label>
 			</control>
 
 			<control>
 				<type>listcontrol</type>
 				<id>3</id>
+				<!--onleft>3</onleft>
+				<onright>3</onright>
+				<onup>3</onup>
+				<ondown>3</ondown-->
 				<posX>620</posX>
 				<posY>540</posY>
 				<width>678</width>
@@ -46,6 +51,7 @@
 				<spinPosX>729</spinPosX>
 				<spinPosY>930</spinPosY>
 				<spinAlign>Left</spinAlign>
+				<!--spinColor>ff505050</spinColor-->
 				<spinCanFocus>no</spinCanFocus>
 				<textureFocus>context_item_selected.png</textureFocus>
 				<textureHeight>70</textureHeight>
@@ -59,17 +65,21 @@
 				<textXOff>2</textXOff>
 				<textYOff>2</textYOff>
 				<font>font12</font>
+				<!--textcolor>ff000000</textcolor-->
 				<textXOff2>650</textXOff2>
 				<textYOff2>35</textYOff2>
 				<font2>AvalonLight10</font2>
+				<!--textcolor2>ff000000</textcolor2-->
 				<textXOff3>84</textXOff3>
 				<textYOff3>40</textYOff3>
 				<font3>AvalonLight10</font3>
+				<!--textcolor3>ff000000</textcolor3-->
 				<itemWidth>60</itemWidth>
 				<itemHeight>60</itemHeight>
 				<scrollOffset>2</scrollOffset>
 				<scrollbarXOff>0</scrollbarXOff>
 				<scrollbarwidth>15</scrollbarwidth>
+				<!--unfocusedAlpha>100</unfocusedAlpha-->
 				<visible></visible>
 			</control>
 
