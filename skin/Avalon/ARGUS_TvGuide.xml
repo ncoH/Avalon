@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>600</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+    <import tag="TVGuideChannels">ARGUS_TvGuide.8rows.xml</import>
+    <import>common.time.xml</import>
+    <import>common.overlay.xml</import>
+  </controls>
+</window>
