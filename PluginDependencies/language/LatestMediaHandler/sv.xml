@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Swedish -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<!-- Last Updated: 12th October 2011 -->
+<strings>
+ 
+ <!-- EPISODES-->
+  <string Field="EpisodeDetails">Episod Detaljer</string>
+  <string Field="DisplayNextEpisodes">Visa Nästa Episod För Senast Sedd Serie</string>
+  <string Field="DisplayLatestEpisodes">Visa Senaste Episoder</string>
+  <string Field="ShowUnwatchedEpisodes">Visa Endast Osedda Episoder</string>
+  <string Field="ShowAllEpisodes">Visa Alla Episoder</string>
+  
+ <!-- MOVIES-->
+  <string Field="MovieDetails">Film Detaljer</string>
+  <string Field="ShowUnwatchedMovies">Visa Endast Osedda Filmer</string>
+  <string Field="ShowAllMovies">Visa Alla Filmer</string>
+  
+ <!-- RECORDINGS-->
+  <string Field="ShowUnwatchedRecordings">Visa Endast Osedda Inspelningar</string>
+  <string Field="ShowAllRecordings">Visa Alla Inspelningar</string>    
+  
+ <!-- MUSIC-->
+  <string Field="ArtistDetails">Artist Detaljer</string>  
+  <string Field="AlbumDetails">Album Detaljer</string>  
+  
+  <!-- ALL-->
+  <string Field="Play">Play</string>    
+  
+</strings>

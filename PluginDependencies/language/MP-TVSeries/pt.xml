@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- MP-TV-Series translation file -->
+<!-- Portuguese -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+
+<strings>
+	<string Field="Series" Original="Series">Série</string>
+	<string Field="Series_Plural" Original="Series (Plr)">Séries</string> <!-- plural -->
+	<string Field="Season" Original="Season">Temporada</string>
+	<string Field="Seasons" Original="Seasons">Temporadas</string>
+	<string Field="Episode" Original="Episode">Episódio</string>
+	<string Field="Episodes" Original="Episodes">Episódios</string>
+	<string Field="Toggle_watched_flag" Original="Toggle watched flag">Definir visto/não-visto</string>
+	<string Field="Retrieve_Subtitle" Original="Retrieve Subtitle">Procurar legendas</string>
+	<string Field="Load_via_Torrent" Original="Load via Torrent">Carregar via torrent</string>
+	<string Field="Mark_all_as_watched" Original="Mark all as watched">Definir todos como visto</string>
+	<string Field="Mark_all_as_unwatched" Original="Mark all as unwatched">Definir todos como não-visto</string>
+	<string Field="Hide" Original="Hide">Ocultar</string>
+	<string Field="Delete" Original="Delete">Apagar</string>
+	<string Field="Remove_series_from_Favourites" Original="Remove series from Favourites">Remover dos favoritos</string>
+	<string Field="Add_series_to_Favourites" Original="Add series to Favourites">Adicionar aos favoritos</string>
+	<string Field="Force_Local_Scan" Original="Force Local Scan ">Forçar actualização local </string>
+	<string Field="Force_Online_Refresh" Original="Force Online Refresh ">Forçar actualização online</string>
+	<string Field="In_Progress_with_Barracks" Original="(In Progress)">(Em curso)</string>
+	<string Field="Only_show_episodes_with_a_local_file" Original="Only show episodes with a local file">Mostrar apenas episódios com ficheiros locais</string>
+	<string Field="Hide_summary_on_unwatched" Original="Hide the episode's summary on unwatched episodes">Ocultar o sumário dos episódios não-vistos</string>
+	<string Field="on" Original="on">Ligado</string>
+	<string Field="off" Original="off">Desligado</string>
+	<string Field="Play_Random_Episode" Original="Play Random Episode">Reproduzir episódio aleatório</string>
+	<string Field="Play_Random_First_Unwatched_Episode" Original="Play Random First Unwatched Episode">Reproduzir primeiro episódio não-visto aleatoriamente</string>
+	<string Field="Delete_that_series" Original="Delete that series?">Apagar esta série?</string>
+	<string Field="Delete_that_season" Original="Delete that season?">Apagar esta temporada?</string>
+	<string Field="Delete_that_episode" Original="Delete that episode?">Apagar este episódio?</string>
+	<string Field="Confirm" Original="Confirm">Confirmar</string>
+	<string Field="Completed" Original="Completed">Concluído</string>
+	<string Field="No_subtitles_found" Original="No subtitles found">Legendas não encontradas</string>
+	<string Field="CFS_Skip_Never_Ask_Again" Original="skip / Never ask again">Saltar / Não perguntar novamente</string>
+	<string Field="CFS_No_Results_Found" Original="no results found!">Nenhum resultado encontrado!</string>
+	<string Field="_Hidden_to_prevent_spoilers_" Original=" * Hidden to prevent spoilers *"> * Escondido até ver o episódio *</string>
+	<string Field="Yes" Original="Yes">Sim</string>
+	<string Field="No" Original="No">Não</string>
+	<string Field="Error" Original="#Error">#Erro</string>
+	<string Field="No_items" Original="No items!">Sem itens!</string>
+	<string Field="Unknown" Original="Unknown">Desconhecido</string>
+	<string Field="wrongSkin" Original="Wrong Skin file">Ficheiro de skin errado</string>
+	<string Field="special" Original="Special">Especial</string>
+	<string Field="specials" Original="Specials">Especiais</string>
+	<string Field="delPhyiscalWarning" Original="You are about to permanently delete {0} physical file(s).\nWould you like to proceed?">"Vai apagar {0} ficheiro(s) físico(s).\ Continuar?"</string>
+	<string Field="Force_Online_Match" Original="Forcer Online Match">Forçar actualização online</string>
+	<string Field="Load_via_NewsLeecher" Original="Load via NewsLeecher">Carregar via NewsLeecher</string>
+	<string Field="Download" Original="Download">Download</string>
+	<string Field="Actions" Original="Actions">Acções</string>
+	<string Field="Options" Original="Options">Opções</string>
+	<string Field="Genres" Original="Genres">Géneros</string>
+	<string Field="All" Original="All">Todos</string>
+	<string Field="Latest" Original="Latest Aired">Recentes</string>
+	<string Field="Channels" Original="Channels">Canais</string>
+	<string Field="Unwatched" Original="Unwatched">Não-vistos</string>
+	<string Field="Favourites" Original="Favourites">Favoritos</string>
+	<string Field="updateMI" Original="Update Mediainfo of local file">Actualização do Mediainfo do ficheiro local</string>
+</strings>

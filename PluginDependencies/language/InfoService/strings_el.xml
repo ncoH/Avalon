@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language name="Greek" characters="255">
+  <Section name="unmapped">
+  <!--19/07/10-->
+    <String id="0">Ανανέωση</String>
+    <String id="1">Επιλέξτε τροφοδοσία</String>
+    <String id="2">Προβολή όλων των τροφοδοσιών</String>
+    <String id="3">Επιλέξτε χρονοδιάγραμμα</String>
+    <String id="4">Ενημέρωση κατάστασης</String>
+    <String id="5">Αποτυχία μεταφόρτωσης χρονοδιαγράμματος. Θα προβληθεί η τελευταία επιτυχής μεταφόρτωσή της.</String>
+    <String id="6">Αποτυχία μεταφόρτωσης χρονοδιαγράμματος. Δείτε το log για λεπτομέρειες!</String>
+    <String id="7">Το Twitter ανανεώνεται. Παρακαλώ περιμένετε.</String>
+    <String id="8">Ενημέρωση σε εξέλιξη</String>
+    <String id="9">Ενημέρωση κατάστασης επιτυχής. Παρακαλώ ανανεώστε το Twitter για να δείτε το ενημερωμένο χρονοδιάγραμμα!</String>
+    <String id="10">Ενημέρωση επιτυχής</String>
+    <String id="11">Ενημέρωση ανεπιτυχής</String>
+    <String id="12">Αποτυχία ενημέρωσης κατάστασης. Δείτε το log για λεπτομέρειες!</String>
+    <String id="13">Μεταφόρτωση τροφοδοσιών και εικόνων...</String>
+    <String id="14">Ανεπιτυχής ενημέρωση τροφοδοσίας. Δείτε το log για λεπτομέρειες!</String>
+    <String id="15">Μεταφόρτωση χρονοδιαγραμμάτων του Twitter...</String>
+    <String id="16">Ανεπιτυχής ενημέρωση του Twitter. Δείτε το log για λεπτομέρειες!</String>
+    <String id="17">Οι τροφοδοσίες ανανεώνονται. Παρακαλώ περιμένετε.</String>
+    <String id="18">Αποτυχία μεταφόρτωσης τροφοδοσίας. However, the last successfully downloaded feed items will be displayed.</String>
+    <String id="19">Αποτυχία μεταφόρτωσης τροφοδοσίας. Δείτε το log για λεπτομέρειες!</String>
+    <String id="20">Πριν {0} δευτερόλεπτα</String>
+    <String id="21">Πριν {0} λεπτά</String>
+    <String id="22">Πριν {0}ώ και {1} λεπτά</String>
+    <String id="23">Πριν {0}η {1}ώ και {2} λεπτά</String>
+    <String id="24">Περιμένετε μέχρι να τελειώσουν οι άλλες υπηρεσίες...</String>
+    <String id="25">Όλες οι τροφοδοσίες</String>
+    <String id="26">Μια τροφοδοσία που συνδυάζει όλα τα στοιχεία της</String>
+    <String id="27">Μεταφορά στην ιστοσελίδα</String>
+    <String id="28">Μεταφορά σε...</String>
+    <String id="29">Τελευταία ενημέρωση: {0}</String>
+    <String id="30">Τελευταία ενημέρωση: {0}</String>
+    <String id="31">Τελευταία ενημέρωση: {0}</String>
+    <String id="32">Η υπηρεσία τροφοδοσιών είναι απενεργοποιημένη...</String>
+    <String id="33">Η υπηρεσία Twitter είναι απενεργοποιημένη...</String>
+    <String id="34">Feed items</String>
+    <String id="35">Twitter items</String>
+    <String id="36">Waiting for FeedService update...</String>
+    <String id="37">Waiting for TwitterService update...</String>
+    <String id="38">{0} new Item(s) - {1}</String>
+    <String id="39">New messages on {0}!</String>
+  </Section>
+</Language>

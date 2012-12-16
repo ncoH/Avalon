@@ -11,10 +11,13 @@
   <string Field="BadCategory">An external plugin or skin tried\nto open a nonexistent Moving\nPictures category!</string>
   <string Field="BadMovie">An external plugin or skin tried\nto open a nonexistent movie in\nMoving Pictures!</string>
   <string Field="BadParam">An external plugin or skin passed\nMoving Pictures an invalid paramater!</string>
+  <string Field="Backdrop">Backdrop</string>
+  <string Field="BeginsWith">Begins With</string>
   <!-- C -->
   <string Field="Cancel">Cancel</string>
   <string Field="CannotDeleteOffline">Not able to delete {0}\n because the file is offline</string>
   <string Field="CannotDeleteReadOnly">Cannot delete a read-only movie.\nWould you like Moving Pictures to ignore this movie?</string>
+  <string Field="CastAndCrew">Cast and Crew</string>
   <string Field="CategoryEmptyDescription">There are currently no movies\nlisted in this category.</string>
   <string Field="CategoryEmptyHeader">Category is empty</string>
   <string Field="Certification">Certification</string>
@@ -22,6 +25,7 @@
   <string Field="CheckForMissingArtwork">Check for Missing Artwork Online</string>
   <string Field="ContinueToNextPartBody">Do you wish to continue with part {0}?</string>
   <string Field="ContinueToNextPartHeader">Continue to next part?</string>
+  <string Field="Cover">Cover</string>
   <string Field="CoverFlowView">Coverflow View</string>
   <string Field="CycleCoverArt">Cycle Cover-Art</string>
   <string Field="CycleView">Cycle View</string>
@@ -74,9 +78,11 @@
   <!-- M -->
   <string Field="MarkAsUnwatched">Mark as Unwatched</string>
   <string Field="MarkAsWatched">Mark as Watched</string>
+  <string Field="MediaInfo">MediaInfo</string>
   <string Field="MediaIsMissing">The media for the Movie you have selected is missing!\nVery sorry but something has gone wrong...</string>
   <string Field="MediaNotAvailableBody">The media for the movie you have selected is not\ncurrently available. Please insert or connect media\nlabeled: {0}</string>
   <string Field="MediaNotAvailableHeader">Media Not Available</string>
+  <string Field="Missing">Missing</string>
   <string Field="MissingExternalPlayerExe">The executable for HD playback is missing.\nPlease correct the path to the executable.</string>
   <string Field="Monday">Monday</string>
   <string Field="Movie">Movie</string>
@@ -135,6 +141,9 @@
   <string Field="Saturday">Saturday</string>
   <string Field="ScanForNewMovies">Scan for New Movies</string>
   <string Field="Score">Score</string>
+  <string Field="Search">Search</string>
+  <string Field="SearchBy">Search By</string>
+  <string Field="SearchNoResults">There are no search results.</string>
   <string Field="SelectYourRating">Select your rating for {0}</string>
   <string Field="ShowOnlyUnwatchedMovies">Show Only Unwatched Movies</string>
   <string Field="ShowWatchedAndUnwatchedMovies">Show Watched and Unwatched Movies</string>
@@ -146,6 +155,7 @@
   <string Field="StarRating">Star Rating</string>
   <string Field="Sunday">Sunday</string>
   <!-- T -->
+  <string Field="Theme">Theme</string>
   <string Field="ThisMonth">This Month</string>
   <string Field="ThisWeek">This Week</string>
   <string Field="ThisYear">This Year</string>
@@ -171,6 +181,7 @@
   <string Field="VirtualDriveHeader">Virtual drive not ready</string>
   <string Field="VirtualDriveMessage">The virtual drive wasn't ready in time.\nPlease try again or cancel playback.</string>
   <string Field="Votes">votes</string>
+  <string Field="ViewMovieDetails">View Movie Details</string>
   <!-- W -->
   <string Field="Wednesday">Wednesday</string>
   <string Field="Writer">Writer</string>
