@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Language name="French" characters="255">
+  <Section name="unmapped">
+    <String id="0">Actualiser</String>
+    <String id="1">Choisir le flux</String>
+    <String id="2">Voir tous les flux</String>
+    <String id="3">Choisir chronologie</String>
+    <String id="4">Mise à jour du statut</String>
+    <String id="5">Le téléchargement de la chronologie a échoué. Toutefois, la dernière chronologie sera affichée</String>
+    <String id="6">Le téléchargement de la chronologie a échoué. Vérifiez les logs!</String>
+    <String id="7">Twitter est actualisé. Attendez la fin du téléchargement.</String>
+    <String id="8">Mise à jour en cours</String>
+    <String id="9">Mise à jour du statut réussi. Actualisez Twitter pour voir la chronologie mise à jour!</String>
+    <String id="10">Mise à jour réussie</String>
+    <String id="11">La mise à jour a échoué</String>
+    <String id="12">La mise à jour du statut a échoué. Vérifiez les logs!</String>
+    <String id="13">Téléchargement des flux et des images...</String>
+    <String id="14">Le téléchargement des flux a échoué. Vérifiez les logs!</String>
+    <String id="15">Téléchargement de la chronologie de Twitter...</String>
+    <String id="16">La mise à jour de Twitter a échoué. Vérifiez les logs!</String>
+    <String id="17">Les flux sont en cours d'actualisation.Attendez la fin du téléchargement.</String>
+    <String id="18">Le téléchargement du flux a échoué. Toutefois, les derniers flux téléchargés seront affichés.</String>
+    <String id="19">Le téléchargement du flux a échoué. Vérifiez les logs!</String>
+    <String id="20">Depuis {0} secondes</String>
+    <String id="21">Depuis {0} minutes</String>
+    <String id="22">Depuis {0}h et {1} minutes</String>
+    <String id="23">Depuis {0}j {1}h et {2} minutes</String>
+    <String id="24">Attendez la fin des autres services...</String>
+    <String id="25">Tous les flux</String>
+    <String id="26">Un flux combinant tous les flux</String>
+    <String id="27">Aller au site Web</String>
+    <String id="28">Aller à...</String>
+    <String id="29">Dernière mise à jour des flux à {0}</String>
+    <String id="30">Dernière mise à jour de Twitter à {0}</String>
+    <String id="31">Dernière mise à jour de la météo à {0}</String>
+    <String id="32">Service des flux désactivé...</String>
+    <String id="33">Service Twitter désactivé...</String>
+    <String id="34">Feed items</String>
+    <String id="35">Twitter items</String>
+    <String id="36">Waiting for FeedService update...</String>
+    <String id="37">Waiting for TwitterService update...</String>
+    <String id="38">{0} new Item(s) - {1}</String>
+    <String id="39">New messages on {0}!</String>
+  </Section>
+</Language>

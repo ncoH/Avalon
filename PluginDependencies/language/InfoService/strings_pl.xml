@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Language name="Polish" characters="380">
+  <Section name="unmapped">
+    <String id="0">Aktualizuj</String>
+    <String id="1">Wybierz źródło</String>
+    <String id="2">Pokaż wszystkie źródła</String>
+    <String id="3">Wybierz timeline</String>
+    <String id="4">Aktualizacja zakończona powodzeniem</String>
+    <String id="5">Aktualizacja timeline nie powiodła się. Mimo tego poprzednio zaktualizowane elementy timeline będą użyte.</String>
+    <String id="6">Aktualizacja timeline nie powiodła się. Sprawdź zapisy dziennika aby zapoznać się ze szczegółami!</String>
+    <String id="7">Twitter jest właśnie aktualizowany. Poczekaj na zakończenie aktualizacji.</String>
+    <String id="8">Aktualizacja trwa</String>
+    <String id="9">Aktualizacja statusu powiodła się. Odśwież Twittera aby zobaczyć zaktualizowany timeline!</String>
+    <String id="10">Aktualizacja powiodła się</String>
+    <String id="11">Aktualizacja nie powiodła się</String>
+    <String id="12">Aktualizacja statusu nie powiodła się. Sprawdź zapisy dziennika aby zapoznać się ze szczegółami!</String>
+    <String id="13">Aktualizacja źródeł i obrazów...</String>
+    <String id="14">Aktualizacja źródła nie powiodła się. Sprawdź zapisy dziennika aby zapoznać się ze szczegółami!</String>
+    <String id="15">Aktualizacja timeline z Twittera...</String>
+    <String id="16">Aktualizacja Twittera nie powiodła się. Sprawdź zapisy dziennika aby zapoznać się ze szczegółami!</String>
+    <String id="17">Źródła są właśnie aktualizowane. Poczekaj na zakończenie aktualizacji.</String>
+    <String id="18">Aktualizacja źródła nie powiodła się. Mimo tego poprzednio zaktualizowane elementy źródła będą użyte.</String>
+    <String id="19">Aktualizacja źródła nie powiodła się. Sprawdź zapisy dziennika aby zapoznać się ze szczegółami!</String>
+    <String id="20">{0} sekund temu</String>
+    <String id="21">{0} minut temu</String>
+    <String id="22">{0}g i {1} minut temu</String>
+    <String id="23">{0}d {1}g i {2} minut temu</String>
+    <String id="24">Zaczekaj na zakończenie pozostałych usług...</String>
+    <String id="25">Wszystkie źródła</String>
+    <String id="26">Źródło łączące wszystkie elementy źródeł</String>
+    <String id="27">Przejdź do strony</String>
+    <String id="28">Przejdź...</String>
+    <String id="29">Ostatnia aktualizacja źródeł {0}</String>
+    <String id="30">Ostatnia aktualizacja Twittera {0}</String>
+    <String id="31">Ostatnia aktualizacja pogody {0}</String>
+    <String id="32">Usługa źródeł jest wyłączona...</String>
+    <String id="33">Usługa Twitter jest wyłączona...</String>
+    <String id="34">Elementów żródła</String>
+    <String id="35">Elementów Twittera</String>
+    <String id="36">Oczekiwanie na aktualizację źródeł...</String>
+    <String id="37">Oczekiwanie na aktualizację Twittera...</String>
+    <String id="38">{0} nowych elementów - {1}</String>
+    <String id="39">Źródła zostały zaktualizowane nowymi elementami!</String>
+  </Section>
+</Language>

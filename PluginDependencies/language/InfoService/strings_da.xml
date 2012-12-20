@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Language name="Danish" characters="255">
+  <Section name="unmapped">
+    <String id="0">Opdater</String>
+    <String id="1">Vælg feed</String>
+    <String id="2">Vis alle feeds</String>
+    <String id="3">Vælg tidsramme</String>
+    <String id="4">Opdater status</String>
+    <String id="5">Hentning af statusser mislykkedes. I stedet vises sidste succesfulde opdatering.</String>
+    <String id="6">Opdatering af opdateringer mislykkedes. Se loggen for alle detaljer!</String>
+    <String id="7">Twitter opdaterer. Vent venligst indtil hentningen er fuldført.</String>
+    <String id="8">Opdatering i gang</String>
+    <String id="9">Status opdatering lykkedes. Opdater venligst Twitter for at se opdateret statusser.</String>
+    <String id="10">Opdatering lykkedes</String>
+    <String id="11">Opdatering mislykkedes</String>
+    <String id="12">Opdatering af status mislykkedes. Se loggen for alle detaljer!</String>
+    <String id="13">Henter feeds og billeder...</String>
+    <String id="14">Opdatering af feed mislykkedes. Se loggen for alle detaljer!</String>
+    <String id="15">Henter Twitter opdateringer...</String>
+    <String id="16">Opdatering af Twitter mislykkedes. Se loggen for alle detaljer!</String>
+    <String id="17">Feedsene opdateres. Vent venligst indtil disse er hentet.</String>
+    <String id="18">Hentning af feeds mislykkedes. I stedet vises seneste opdatering.</String>
+    <String id="19">Hentning af feedet mislykkedes. Se loggen for alle detaljer!</String>
+    <String id="20">{0} sekunder siden</String>
+    <String id="21">{0} minutter siden</String>
+    <String id="22">{0}t og {1} minutter siden</String>
+    <String id="23">{0}d {1}t og {2} minutter siden</String>
+    <String id="24">Vent indtil andre service er afsluttet...</String>
+    <String id="25">Alle feeds</String>
+    <String id="26">Et feed som kombinerer alle feed nyheder</String>
+    <String id="27">Gå til hjemmeside</String>
+    <String id="28">Gå til...</String>
+    <String id="29">Sidste opdatering af feeds skete {0}</String>
+    <String id="30">Sidste opdatering af Twitter skete {0}</String>
+    <String id="31">Sidste opdatering af vejret skete {0}</String>
+    <String id="32">Feedservicen er slået fra...</String>
+    <String id="33">Twitterservicen er slået fra...</String>
+    <String id="34">Feed items</String>
+    <String id="35">Twitter items</String>
+    <String id="36">Waiting for FeedService update...</String>
+    <String id="37">Waiting for TwitterService update...</String>
+    <String id="38">{0} new Item(s) - {1}</String>
+    <String id="39">New messages on {0}!</String>
+  </Section>
+</Language>

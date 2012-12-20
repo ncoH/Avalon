@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language name="Portuguese (Brazilian)" characters="255">
+  <Section name="unmapped">
+    <String id="0">Atualizar</String>
+    <String id="1">Selecionar feed</String>
+    <String id="2">Mostrar todas os feeds</String>
+    <String id="3">Selecione cronograma</String>
+    <String id="4">estado da atualização</String>
+    <String id="5">Download do cronograma falhou. No entanto, o ultimo cronograma baixado com êxito será exibido.</String>
+    <String id="6">Download do cronograma falhou. Veja o log para obter mais detalhes!</String>
+    <String id="7">Atualizando Twitter. Por favor, aguarde até o download terminar.</String>
+    <String id="8">Atualização em andamento</String>
+    <String id="9">Atualização de Status bem-sucedida. Atualize o Twitter para ver o calendário atualizado!</String>
+    <String id="10">Atualizado com êxito</String>
+    <String id="11">Atualização falhou</String>
+    <String id="12">Atualização de Status falhou. Veja o log para obter mais detalhes!</String>
+    <String id="13">Baixando feeds e imagens ...</String>
+    <String id="14">Atualização do feed falhou. Veja o log para obter mais detalhes!</String>
+    <String id="15">Baixando cronograma do Twitter...</String>
+    <String id="16">Atualização do Twitter falhou. Veja o log para obter mais detalhes!</String>
+    <String id="17">Atualizado feeds. Por favor, aguarde até que o download tenha terminado.</String>
+    <String id="18">Download do feed falhou. No entanto, o ultimo feed baixado com êxito será exibido.</String>
+    <String id="19">">Download do feed falhou. Veja o log para obter mais detalhes!</String>
+    <String id="20">{0} Segundos atrás</String>
+    <String id="21">{0} Minutos atrás</String>
+    <String id="22">{0}h e {1} Minutos atrás</String>
+    <String id="23">{0}d {1}h e {2} Minutos atrás</String>
+    <String id="24">Espere até que os Serviços tenham terminado...</String>
+    <String id="25">Todos os feeds</String>
+    <String id="26">Um feed que combina todos os outros feeds</String>
+    <String id="27">Abrir pagina</String>
+    <String id="28">Ir para...</String>
+    <String id="29">Última atualização dos feeds em {0}</String>
+    <String id="30">Última atualização do Twitter em {0}</String>
+    <String id="31">Última atualização do tempo em {0}</String>
+    <String id="32">FeedService está desabilitado...</String>
+    <String id="33">TwitterService está desabilitado...</String>
+    <String id="34">Feed items</String>
+    <String id="35">Twitter items</String>
+    <String id="36">Waiting for FeedService update...</String>
+    <String id="37">Waiting for TwitterService update...</String>
+    <String id="38">{0} new Item(s) - {1}</String>
+    <String id="39">New messages on {0}!</String>
+  </Section>
+</Language>

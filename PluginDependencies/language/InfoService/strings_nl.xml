@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language name="Dutch" characters="255">
+  <Section name="unmapped">
+    <String id="0">Verversen</String>
+    <String id="1">Feed selecteren</String>
+    <String id="2">Toon alle feeds</String>
+    <String id="3">Selecteer tijdsspan</String>
+    <String id="4">Status bijwerken</String>
+    <String id="5">Downloaden van tijdsspan mislukt. De laatste tijdsspan zal weergegeven worden.</String>
+    <String id="6">Downloaden van tijdsspan mislukt. Zie log voor verdere details.</String>
+    <String id="7">Twitter is bezig met bijwerken. Een ogenblik geduld alstublieft.</String>
+    <String id="8">Bezig met bijwerken</String>
+    <String id="9">Bijwerken status voltooid. Werk Twitter bij om de bijgewerkte tijdsspan te zien.</String>
+    <String id="10">Bijwerken status voltooid</String>
+    <String id="11">Bijwerken status niet voltooid</String>
+    <String id="12">Bijwerken status mislukt. Zie log voor verdere details.</String>
+    <String id="13">Bezig met het downloaden van feeds en afbeeldingen...</String>
+    <String id="14">Bijwerken van feed mislukt. Zie log voor verdere details.</String>
+    <String id="15">Bezig met downloaden van Twitter tijdsspan.</String>
+    <String id="16">Bijwerken van Twitter mislukt. Zie log voor verdere details.</String>
+    <String id="17">De feeds zijn bezig met bijwerken. Een ogenblik geduld alstublieft.</String>
+    <String id="18">Download van feed mislukt. De laatste tijdsspan zal weergegeven worden.</String>
+    <String id="19">Download van feed mislukt. Zie log voor verdere details.</String>
+    <String id="20">{0} seconden geleden</String>
+    <String id="21">{0} minuten geleden</String>
+    <String id="22">{0} uur en {1} minuten geleden</String>
+    <String id="23">{0} dag {1} uur en {2} minuten geleden</String>
+    <String id="24">Wachten tot andere services zijn voltooid...</String>
+    <String id="25">Alle feeds</String>
+    <String id="26">Een feed die alle feed regels combineert</String>
+    <String id="27">Ga naar website</String>
+    <String id="28">Ga naar...</String>
+    <String id="29">Laatste update van feeds op {0}</String>
+    <String id="30">Laatste update van Twitter op {0}</String>
+    <String id="31">Laaste update van weer op {0}</String>
+    <String id="32">Feed dienst is uitgeschakeld...</String>
+    <String id="33">Twitter dienst is uitgeschakeld...</String>
+    <String id="34">Feed items</String>
+    <String id="35">Twitter items</String>
+    <String id="36">Waiting for FeedService update...</String>
+    <String id="37">Waiting for TwitterService update...</String>
+    <String id="38">{0} new Item(s) - {1}</String>
+    <String id="39">New messages on {0}!</String>
+  </Section>
+</Language>
