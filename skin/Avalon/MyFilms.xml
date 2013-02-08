@@ -3,7 +3,6 @@
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
-  
     <!-- MyFilms Skin Version Check -->
     <settings>
       <skininterfaceversion>
@@ -24,7 +23,6 @@
       </label>
       <posX>-50</posX>
       <posY>-50</posY>
-      <visible>false</visible>
       <!-- to make a control visible only when you are in a VIEW do this: <visible>control.isvisible(34)</visible> -->
       <!-- to make a control invisible when you are in a VIEW do this: <visible>!control.isvisible(34)</visible> -->
       <!-- Note: Dummy control 34 is maintained for backwards compatibility, but skins may use more specific View controls  -->
@@ -37,7 +35,6 @@
       </label>
       <posX>-50</posX>
       <posY>-50</posY>
-      <visible>false</visible>
       <!-- to make a control Visible only when FANART is found: <visible>control.isvisible(35)</visible> -->
       <!-- to make a control Invisible only when FANART is found: <visible>!control.isvisible(35)</visible> -->
     </control>
@@ -49,15 +46,13 @@
       <posY>-50</posY>
       <!-- to make a control Visible only in Film Lists do this: <visible>control.isvisible(36)</visible> -->
       <!-- to make a control Invisible in Film Lists (Movies) do this: <visible>!control.isvisible(36)</visible> -->
-      <visible>false</visible>
     </control>
     <control>
-      <description>Dummy control for VIEWS other than Person views(Category, Year, Country, etc.)</description>
+      <description>Dummy control for Views other than Person views(Category, Year, Country, etc.)</description>
       <type>label</type>
       <id>37</id>
       <posX>-50</posX>
       <posY>-50</posY>
-      <visible>false</visible>
       <!-- to make a control Visible only in non person VIEWS: <visible>control.isvisible(37)</visible> -->
       <!-- to make a control Invisible in non person VIEWS: <visible>!control.isvisible(37)</visible> -->
     </control>
@@ -67,7 +62,6 @@
       <id>38</id>
       <posX>-50</posX>
       <posY>-50</posY>
-      <visible>false</visible>
       <!-- to make a control Visible only in PERSONS VIEWS (Actors, Writer, etc.): <visible>control.isvisible(38)</visible> -->
       <!-- to make a control Invisible in PERSONS VIEWS (Actors, Writer, etc.): <visible>!control.isvisible(38)</visible> -->
     </control>
@@ -79,7 +73,6 @@
       <posY>-50</posY>
       <!-- to make a control Visible only in GROUP HIERARCHY: <visible>control.isvisible(39)</visible> -->
       <!-- to make a control Invisible in GROUP HIERARCHY: <visible>!control.isvisible(39)</visible> -->
-      <visible>false</visible>
     </control>
     <control>
       <description>Dummy control for Views Menu</description>
@@ -89,7 +82,6 @@
       <posY>-50</posY>
       <!-- to make a control Visible only in VIEWS MENU: <visible>control.isvisible(40)</visible> -->
       <!-- to make a control Invisible in VIEWS MENU: <visible>!control.isvisible(40)</visible> -->
-      <visible>false</visible>
     </control>
     <control>
       <description>Dummy control for Indexed View Level</description>
@@ -97,10 +89,10 @@
       <id>41</id>
       <posX>-50</posX>
       <posY>-50</posY>
-      <visible>false</visible>
       <!-- to make a control Visible only in Index View level: <visible>control.isvisible(41)</visible> -->
       <!-- to make a control Invisible in Index View level: <visible>!control.isvisible(41)</visible> -->
     </control>
+		
     <control>
       <description>dummy backdrop control 1</description>
       <type>image</type>
@@ -127,9 +119,7 @@
       <posY>-2000</posY>
       <label>#Avalon.EnablePosterHideFilms</label>
     </control>
-	
     <!--            :: MOVIE BACKDROP ::            -->
-	
     <control>
       <description>DEFAULT BACKGROUND</description>
       <type>image</type>
@@ -141,7 +131,6 @@
       <texture>background.png</texture>
       <shouldCache>true</shouldCache>
     </control>
-	
     <control>
       <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
       <type>image</type>
@@ -157,7 +146,6 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>[[facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)]+control.isvisible(11)</visible>
     </control>
-	
     <control>
       <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
       <type>image</type>
@@ -173,7 +161,6 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>[[facadeview.filmstrip|facadeview.coverflow]+control.isvisible(50)]+control.isvisible(21)</visible>
     </control>
-	
     <control>
       <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
       <type>image</type>
@@ -189,7 +176,6 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>!facadeview.filmstrip+!facadeview.coverflow+control.isvisible(11)</visible>
     </control>
-	
     <control>
       <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
       <type>image</type>
@@ -205,7 +191,6 @@
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>!facadeview.filmstrip+!facadeview.coverflow+control.isvisible(21)</visible>
     </control>
-	
     <!--            :: HEADER ::            -->
     <control>
       <animation effect="fade" time="250">WindowOpen</animation>
@@ -218,9 +203,9 @@
       <label>#myfilms.config.pluginname</label>
       <textcolor>6aa5cb</textcolor>
       <font>font22</font>
-      <visible>Control.IsVisible(50)</visible>
+      <visible>Contro
+	  l.IsVisible(50)</visible>
     </control>
-	
     <control>
       <description>Selection display</description>
       <type>fadelabel</type>
@@ -234,9 +219,7 @@
       <animation effect="fade" time="250">WindowClose</animation>
       <animation effect="fade" time="250">WindowOpen</animation>
     </control>
-	
     <!--            :: LIST VIEW Dummy ::            -->
-	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -255,7 +238,6 @@
       <ondown>1026</ondown>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
-	
     <!-- Global Overlay Filter Info -->
     <control>
       <description>Filters group</description>
@@ -304,7 +286,6 @@
         <animation effect="fade" time="250">WindowOpen</animation>
       </control>
     </control>
-	
     <!--            :: IMPORT ::            -->
     <import tag="Background">MyFilms.background.default.xml</import>
     <import>common.time.xml</import>
@@ -313,6 +294,5 @@
     <import tag="Facade">MyFilms.facade.default.xml</import>
     <import>MyFilms.Info.xml</import>
     <import>common.overlay.xml</import>
-	
   </controls>
 </window>
