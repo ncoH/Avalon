@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language name="Dutch" characters="255">
+  <Section name="unmapped">
+    <String id="0">Bekijk %1</String>
+    <String id="1">Locatie...</String>
+    <String id="2">Kaart via browser...</String>
+    <String id="3">Weergave...</String>
+    <String id="9">Verversen</String>
+
+    <String id="10">Conditie</String>
+    <String id="11">Afbeeldingen</String>
+    <String id="12">GeoKlok</String>
+    <String id="13">Astronomie</String>
+    <String id="14">Kalender</String>
+
+    <String id="20">Menu</String>
+    <String id="21">Voeg locatie toe...</String>
+    <String id="22">Provider actuele weer...</String>
+    <String id="23">Provider weersverwachting...</String>
+    <String id="24">Provider weersverwachting per uur...</String>
+		<String id="25">Provider historische weerinformatie...</String>
+		<String id="26">Kaart provider...</String>
+    <String id="27"></String>
+    <String id="28">Weer icoon collectie...</String>
+
+    <String id="30">Provider</String>
+    <String id="31">Locatie</String>
+    <String id="32">Afbeeldings weergave</String>
+    <String id="33">Conditie weergave</String>
+    <String id="34">Icoon collectie</String>
+    <String id="35">Kaart via browser</String>
+    <String id="36"></String>
+
+    <String id="40">Open kaart in browser...</String>
+    <String id="41">leeg</String>
+
+    <String id="45">Er is geen vrije weer locatie beschikbaar.</String>
+		<String id="46">Ongeldige of geen providersleutel ingevoerd.</String>
+		<String id="47"></String>
+		<String id="48"></String>
+    <String id="49">Er is geen internetverbinding.</String>
+
+    <String id="50">Wilt u een nieuwe weer locatie toevoegen?</String>
+    <String id="51">Wilt u de laatste locatie overschrijven?</String>
+    <String id="52">Weet je zeker dat je van provider wilt veranderen</String>
+		<String id="53">Weet je zeker dat je van kaartprovider wilt veranderen?</String>
+    <String id="54">Weet je zeker dat je van icoon collectie wilt veranderen?</String>
+    <String id="55"></String>
+
+		<String id="60"></String>
+    <String id="61">Fout tijdens het laden van de weergegevens van %1.</String>
+    <String id="62">Fout tijdens het laden van de weerafbeelding van %1.</String>
+    <String id="63">Fout tijdens het laden van de Geoklok afbeelding.</String>
+    <String id="64">Fout tijdens het laden van de sterrenhemel afbeelding van %1.</String>
+    <String id="65">Fout tijdens het laden van de sterrenbeeld afbeelding.</String>
+    <String id="66">Fout tijdens het laden van de weerkaart van %1.</String>
+    <String id="67">Ongeldige of geen plaatsnaam ingevoerd.</String>
+    <String id="68">Ongeldige of geen plaatscode ingevoerd.</String>
+    <String id="69">Ongeldige of geen coördinaten ingevoerd.</String>
+
+    <String id="70">Zonnig</String>
+    <String id="71">Overwegend zonnig</String>
+    <String id="72">Bewolkt</String>
+    <String id="73">Overwegend bewolkt</String>
+    <String id="74">Gedeeltelijk bewolkt</String>
+    <String id="75">Regen</String>
+    <String id="76">Kans op regen</String>
+    <String id="77">Buien</String>
+    <String id="78">Sneeuw</String>
+    <String id="79">Kans op sneeuw</String>
+    <String id="80">Buien</String>
+    <String id="81">Kans op een bui</String>
+    <String id="82">Onweer</String>
+    <String id="83">Kans op onweer</String>
+    <String id="84">Sneeuw/Hagel Buien</String>
+    <String id="85">Natte sneeuw</String>
+    <String id="86">IJzig</String>
+    <String id="87">Mist</String>
+    <String id="88">Damp</String>
+    <String id="89">Nevel</String>
+    <String id="90">Motregen</String>
+    <String id="91">Stof</String>
+    <String id="92">Licht bewolkt</String>
+    <String id="93">Hagel</String>
+    <String id="94">Onstuimig</String>
+    <String id="95">Winderig</String>
+    <String id="96">Heet</String>
+    <String id="97">Koud</String>
+    <String id="98">Tornado</String>
+    <String id="99">Tropische storm</String>
+    <String id="100">Zware onweersbuien</String>
+    <String id="101">Geïsoleerde onweersbuien</String>
+    <String id="102">Verspreide onweersbuien</String>
+    <String id="103">Onweersbuien</String>
+    <String id="104">Mix van sneeuw en regen</String>
+    <String id="105">Mix van regen en natte sneeuw</String>
+    <String id="106">Mix van regen en hagel</String>
+    <String id="107">Mix van sneeuw en natte sneeuw</String>
+    <String id="108">Motregen</String>
+    <String id="109">IJzel</String>
+    <String id="110">Aanvriezende regen</String>
+    <String id="111">Verspreid buien</String>
+    <String id="112">Sneeuwbuien</String>
+    <String id="113">Stuifsneeuw</String>
+    <String id="114">Zware sneeuwval</String>
+    <String id="115">Sneeuwbuitjes</String>
+    <String id="116">Geïsoleerde onweersbuien</String>
+    <String id="117">Sneeuwbuien</String>
+    <String id="118">Helder</String>
+    <String id="119">Helder</String>
+    <String id="120">Zwaar Bewolkt</String>
+    <String id="121">Onweersachtig</String>
+    <String id="122">Sneeuwstorm</String>
+    <String id="123">Aanvriezende mist</String>
+    <String id="124">Lichte motregen</String>
+    <String id="125">Lichte regen</String>
+    <String id="126">Zware regen</String>
+    <String id="127">Lichte aanvriezende regen</String>
+    <String id="128">Lichte natte sneeuw</String>
+    <String id="129">Lichte sneeuw</String>
+    <String id="130">Hagel</String>
+    <String id="131">Lichte hagelbuien</String>
+    <String id="132">Hagelbuien</String>
+    <String id="133">Lichte natte sneeuwbuien</String>
+    <String id="134">Natte sneeuwbuien</String>
+    <String id="135">Stortbuien</String>
+    <String id="136">Regen in gebied met onweer</String>
+    <String id="137">Sneeuw in gebied met onweer</String>
+    <String id="138">Zware sneeuw buien</String>
+    <String id="139">Lichte buien</String>
+    <String id="140">Zware buien</String>
+    <String id="141">Lichte bui</String>
+    <String id="142">Zware bui</String>
+    <String id="143">Zware motregen</String>
+		<String id="144">Kans op motregen</String>
+		<String id="145">Kans op sneeuwbuitjes</String>
+		<String id="146">Kans op sneeuwbuien</String>
+		<String id="147">Kans op lichte sneeuw</String>
+		<String id="148">Kans op natte sneeuw</String>
+		<String id="149">Kans op aanvriezende regen</String>
+		<String id="150">Kans op een mix van regen en sneeuw</String>
+		<String id="151">Kans op ijzel</String>
+		<String id="152">Verspreid sneeuwbuien</String>
+		<String id="153">Gedeeltelijk zonnig</String>
+		<String id="154">Mix van regen en motregen</String>
+		<String id="155">Mix van regen en onweersbuien</String>
+		<String id="156">Kans op sneeuwbuitjes</String>
+		<String id="157">Mix van sneeuw en motregen</String>
+		<String id="158">Mix van sneeuw en onweersbuien</String>
+		<String id="159">Hagelbuien</String>
+		<String id="160">Mix van hagel en onweersbuien</String>
+		<String id="161">Hagelbuien</String>
+		<String id="162">Mix van hagel en onweersbuien</String>
+		<String id="163">Zand</String>
+		<String id="164">Zandstorm</String>
+		<String id="165">Vulkanische as</String>
+
+    <String id="170">Maandag</String>
+    <String id="171">Dinsdag</String>
+    <String id="172">Woensdag</String>
+    <String id="173">Donderdag</String>
+    <String id="174">Vrijdag</String>
+    <String id="175">Zaterdag</String>
+    <String id="176">Zondag</String>
+
+    <String id="180">N</String>
+    <String id="181">NNO</String>
+    <String id="182">NO</String>
+    <String id="183">ONO</String>
+    <String id="184">O</String>
+    <String id="185">OZO</String>
+    <String id="186">ZO</String>
+    <String id="187">ZZO</String>
+    <String id="188">Z</String>
+    <String id="189">ZZW</String>
+    <String id="190">ZW</String>
+    <String id="191">WZW</String>
+    <String id="192">W</String>
+    <String id="193">WNW</String>
+    <String id="194">NW</String>
+    <String id="195">NNW</String>
+
+    <String id="200">Windstil</String>
+    <String id="201">Zwak</String>
+    <String id="202">Zwak</String>
+    <String id="203">Matig</String>
+    <String id="204">Matig</String>
+    <String id="205">Vrij krachtig</String>
+    <String id="206">Krachtig</String>
+    <String id="207">Hard</String>
+    <String id="208">Stormachtige wind</String>
+    <String id="209">Storm</String>
+    <String id="210">Zware storm</String>
+    <String id="211">Zeer zware storm</String>
+    <String id="212">Orkaan</String>
+
+		<String id="220">Laag</String>
+		<String id="221">Gemiddeld</String>
+		<String id="222">Hoog</String>
+		<String id="223">Erg hoog</String>
+
+    <String id="230">Nieuwe maan</String>
+    <String id="231">Jonge maan</String>
+    <String id="232">Eerste kwartier</String>
+    <String id="233">Wassende maan</String>
+    <String id="234">Volle maan</String>
+    <String id="235">Afnemende maan</String>
+    <String id="236">Laatste kwartier</String>
+    <String id="237">Oude maan</String>
+
+    <String id="240">Week</String>
+    <String id="241">Dag</String>
+		<String id="242">Jaar</String>
+		<String id="243"></String>
+
+    <String id="250">Vlak</String>
+    <String id="251">Filmstrip</String>
+    <String id="252">Coverflow</String>
+    <String id="253">Pictogrammen</String>
+
+    <String id="260">Normale weergave</String>
+    <String id="261">Uur weergave</String>
+    <String id="262">Grafische weergave</String>
+		<String id="263">Historische weergave</String>
+
+    <String id="300">°C</String>
+    <String id="301">°F</String>
+    <String id="302">K</String>
+    <String id="303">°R</String>
+
+    <String id="310">km/u</String>
+    <String id="311">m/s</String>
+    <String id="312">mph</String>
+    <String id="313">kts</String>
+    <String id="314">bft</String>
+
+    <String id="320">km</String>
+    <String id="321">mi</String>
+    <String id="322">onbeperkt</String>
+
+    <String id="330">mbar</String>
+    <String id="331">hPa</String>
+    <String id="332">psi</String>
+    <String id="333">torr</String>
+		<String id="334">inch</String>
+
+    <String id="340">stijgend</String>
+    <String id="341">stabiel</String>
+    <String id="342">dalend</String>
+    <String id="343">stijgend of stabiel, daarna dalend</String>
+    <String id="344">stijgend, daarna dalend</String>
+    <String id="345">stijgend, daarna stabiel</String>
+    <String id="346">dalend of stabiel, daarna stijgend</String>
+    <String id="347">dalend, daarna stijgend</String>
+    <String id="348">dalend, daarna stabiel</String>
+
+    <String id="350">°</String>
+    <String id="351">%</String>
+
+    <String id="360">mm</String>
+
+    <String id="370">SI metrisch</String>
+    <String id="371">VS metrisch</String>
+
+    <String id="380"></String>
+    <String id="381"></String>
+    <String id="382"></String>
+    <String id="383"></String>
+    <String id="384"></String>
+
+    <String id="400">Locatie naam</String>
+    <String id="401">Locatie code</String>
+    <String id="402">Locatie postcode</String>
+		<String id="403">Locatie land</String>
+    <String id="404">Tijdzones</String>
+    <String id="405">Metrisch</String>
+
+    <String id="500">Temperatuur</String>
+    <String id="501">Conditie</String>
+    <String id="502">Wind</String>
+    <String id="503">Luchtvochtigheid</String>
+    <String id="504">Maanstand</String>
+    <String id="505">Zomertijd</String>
+    <String id="506">Volgende zomertijd</String>
+    <String id="507">Zonsopgang</String>
+    <String id="508">Zonsondergang</String>
+    <String id="509">Locatie</String>
+    <String id="510">Actueel</String>
+    <String id="511">Verwachting</String>
+		<String id="512">Geschiedenis</String>
+    <String id="513">Neerslag</String>
+    <String id="514">Zonuren</String>
+    <String id="515">Luchtdruk</String>
+    <String id="516">Barometerstand</String>
+    <String id="517">Zicht</String>
+    <String id="518">Dauwpunt</String>
+    <String id="519">Laag</String>
+    <String id="520">Hoog</String>
+    <String id="521">Bewolking</String>
+    <String id="522">Mistig</String>
+		<String id="523">voelt als</String>
+    <String id="524">UV-Index</String>
+
+    <String id="525">Satelliet</String>
+    <String id="526">Temperatuur</String>
+    <String id="527">UV-Index</String>
+    <String id="528">Wind</String>
+    <String id="529">Neerslag</String>
+    <String id="530">Zontijden</String>
+    <String id="531">Pollen score</String>
+    <String id="532">Wereld</String>
+    <String id="533">Webcam</String>
+    <String id="534">Luchtvochtigheid</String>
+    <String id="535">Zelf gedefinïeerd</String>
+
+    <String id="540">Geografische klok</String>
+
+    <String id="550">Sterrenhemel</String>
+    <String id="551">Sterrenbeeld</String>
+
+    <String id="560">Feed</String>
+
+		<String id="565">Grafiek</String>
+
+    <String id="570">Feestdag</String>
+    <String id="571">Nieuwjaar</String>
+    <String id="572">Driekoningen</String>
+    <String id="573">Maria Hemelvaart</String>
+    <String id="574">Hervormingsdag</String>
+    <String id="575">Allerheiligen</String>
+    <String id="576">Paaszondag</String>
+    <String id="577">Witte Donderdag</String>
+    <String id="578">Goede Vrijdag</String>
+    <String id="579">Hemelvaartsdag</String>
+    <String id="580">Pinksterzondag</String>
+    <String id="581">Sacramentsdag</String>
+    <String id="582">Kerstfeest</String>
+
+    <String id="590">Seizoenen</String>
+    <String id="591">Begin van de lente</String>
+    <String id="592">Begin van de zomer</String>
+    <String id="593">Begin van de herfst</String>
+    <String id="594">Begin van de winter</String>
+
+    <String id="600">Steenbok</String>
+    <String id="601">Waterman</String>
+    <String id="602">Vissen</String>
+    <String id="603">Ram</String>
+    <String id="604">Stier</String>
+    <String id="605">Tweelingen</String>
+    <String id="606">Kreeft</String>
+    <String id="607">Leeuw</String>
+    <String id="608">Maagd</String>
+    <String id="609">Weegschaal</String>
+    <String id="610">Schorpioen</String>
+    <String id="611">Boogschutter</String>
+
+    <String id="700">Weergegevens geleverd door</String>
+    <String id="701">Geen provider</String>
+  </Section>
+</Language>

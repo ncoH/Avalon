@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Trakt translation file -->
+<!-- English (US) -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<strings>
+  <!-- A -->
+  <string Field="Account">Account</string>
+  <string Field="AccountSetup">Account Setup</string>
+  <string Field="AccountDialog">Account Dialog</string>
+  <string Field="Activity">Activity</string>
+  <string Field="ActivityFriendsDesc">See what your friends are up to...</string>
+  <string Field="ActivityCommunityDesc">See what the community is up to...</string>
+  <string Field="ActivityWatching">{0} is watching {1}</string>
+  <string Field="ActivityWatched">{0} watched {1}</string>
+  <string Field="ActivityCheckedIn">{0} checked into {1}</string>
+  <string Field="ActivityCollected">{0} collected {1}</string>
+  <string Field="ActivityCollectedEpisodes">{0} collected {1} episodes of {2}</string>
+  <string Field="ActivitySeen">{0} seen {1}</string>
+  <string Field="ActivitySeenEpisodes">{0} seen {1} episodes of {2}</string>
+  <string Field="ActivityRating">{0} rated {1}</string>
+  <string Field="ActivityRatingAdvanced">{0} rated {1} [{2}/10]</string>
+  <string Field="ActivityWatchlist">{0} added {1} to their watchlist</string>
+  <string Field="ActivityAddToList">{0} added {1} to {2}</string>
+  <string Field="ActivityCreatedList">{0} created {1}</string>
+  <string Field="ActivityShouts">{0} shouted on {1}</string>  
+  <string Field="Activities">Activities</string>
+  <string Field="AddFriend">Add Friend...</string>
+  <string Field="AddToLibrary">Add to Library</string>
+  <string Field="AddToList">Add to List...</string>
+  <string Field="AddToWatchList">Add to Watch List</string>
+  <string Field="AddShowToWatchList">Add Show to Watch List</string>
+  <string Field="AddEpisodeToWatchList">Add Episode to Watch List</string>
+  <string Field="AddShowToList">Add Show to List</string>
+  <string Field="AddEpisodeToList">Add Episode to List</string>
+  <string Field="AddThisItemToWatchList">Add this item to your watch list?</string>
+  <string Field="Age">Age</string>
+  <string Field="AirDate">Air Date</string>
+  <string Field="AirDay">Air Day</string>
+  <string Field="AirTime">Air Time</string>
+  <string Field="Approve">Approve</string>
+  <string Field="ApprovedDate">Approved Date</string>
+  <string Field="ApproveFriendMessage">Would you like to add user {0}\nas a friend?</string>
+  <string Field="AdvancedSettings">Advanced Settings</string>
+  
+  <!-- B -->
+  <string Field="BufferingTrailer">Buffering Trailer</string>
+  
+  <!-- C -->
+  <string Field="Cancel">Cancel</string>
+  <string Field="Calendar">Calendar</string>
+  <string Field="CalendarMyShows">My Shows</string>
+  <string Field="CalendarPremieres">Premieres</string>
+  <string Field="CalendarAllShows">All Shows</string>
+  <string Field="Certification">Certification</string>
+  <string Field="ChangeView">Change View...</string>
+  <string Field="ChangeLayout">Change Layout...</string>
+  <string Field="Create">Create</string>
+  <string Field="CreateAccount">Create Account</string>
+  <string Field="CreateNewAccount">Create New Account...</string>
+  <string Field="CreatingAccount">Creating Account...</string>
+  <string Field="CreateMovingPicturesCategories">Create Moving Pictures Categories</string>
+  <string Field="CreateMovingPicturesFilters">Create Moving Pictures Filters</string>
+  <string Field="CreateMyFilmsCategories">Create My Films Categories</string>
+  <string Field="CreatingCategories">Creating Categories</string>
+  <string Field="CreatingFilters">Creating Filters</string>
+  <string Field="CreatingList">Creating List</string>
+  <string Field="CreateList">Create a new List...</string>
+  <string Field="Community">Community</string>
+  <string Field="CommunityActivity">Community Activity</string>
+  <string Field="ConfirmDeleteList">Are you sure you want to delete\nthis list?</string>
+  <string Field="ConfirmDeleteListItem">Are you sure you want to delete\nthis item from the list?</string>
+  <string Field="CopyList">Copy List...</string>
+  
+  <!-- D -->
+  <string Field="DateToday">Today</string>
+  <string Field="DateYesterday">Yesterday</string>
+  <string Field="DateOneWeekAgo">1 Week Ago</string>
+  <string Field="DateTwoWeeksAgo">2 Weeks Ago</string>
+  <string Field="DateOneMonthAgo">1 Month Ago</string>
+  <string Field="Deny">Deny</string>
+  <string Field="DeleteList">Delete List</string>
+  <string Field="DeleteListItem">Delete List Item</string>
+  <string Field="DeletingList">Deleting List</string>
+  <string Field="DeleteFriend">Delete Friend</string>
+  <string Field="DeleteFriendMessage">Are you sure you want to delete\n{0} as a friend?</string>
+  <string Field="DisconnectAccount">Disconnect Account: {0}</string>
+  <string Field="DismissRecommendation">Dismiss this Recommendation</string>
+  <string Field="DontIncludeMeInFriendsActivity">Don't Include Me in Friends Activity</string>
+  <string Field="DownloadFanart">Download Fanart</string>
+  <string Field="DownloadFullSizeFanart">Download Original Size Fanart</string>
+  
+  <!-- E -->
+  <string Field="EditList">Edit List...</string>
+  <string Field="EditingList">Editing List</string>
+  <string Field="Email">Email</string>
+  <string Field="EndYear">End: {0}</string>
+  <string Field="Episode">Episode</string>
+  <string Field="Episodes">Episodes</string>
+  <string Field="Error">Trakt Error</string>
+  <string Field="ErrorCalendar">Error getting calendar.</string>
+  
+  <!-- F -->
+  <string Field="FirstAired">First Aired</string>
+  <string Field="Friend">Friend</string>
+  <string Field="Friends">Friends</string>
+  <string Field="FriendActivity">Friend Activity</string>
+  <string Field="FriendRequest">Friend Request</string>
+  <string Field="FriendRequestMessage">You have {0} friend requests, approve or deny from friends window</string>
+  <string Field="FullName">Full Name</string>
+  
+  <!-- G -->
+  <string Field="Gender">Gender</string>
+  <string Field="General">General</string>
+  <string Field="GeneralSettings">GeneralSettings</string>
+  <string Field="Genre">Genre</string>
+  <string Field="GenreItem">Genre: {0}</string>
+  <string Field="GenreAction">Action</string>
+  <string Field="GenreAdventure">Adventure</string>
+  <string Field="GenreAll">All</string>
+  <string Field="GenreAnimation">Animation</string>
+  <string Field="GenreChildren">Children</string>
+  <string Field="GenreComedy">Comedy</string>
+  <string Field="GenreCrime">Crime</string>
+  <string Field="GenreDocumentary">Documentary</string>
+  <string Field="GenreDrama">Drama</string>
+  <string Field="GenreFamily">Family</string>
+  <string Field="GenreFantasy">Fantasy</string>
+  <string Field="GenreGameShow">Game Show</string>
+  <string Field="GenreFilmNoir">Film Noir</string>
+  <string Field="GenreHistory">History</string>
+  <string Field="GenreHomeAndGarden">Home And Garden</string>
+  <string Field="GenreHorror">Horror</string>
+  <string Field="GenreIndie">Indie</string>
+  <string Field="GenreMiniSeries">Mini Series</string>
+  <string Field="GenreMusic">Music</string>
+  <string Field="GenreMusical">Musical</string>
+  <string Field="GenreMystery">Mystery</string>
+  <string Field="GenreNews">News</string>
+  <string Field="GenreNone">None</string>
+  <string Field="GenreReality">Reality</string>
+  <string Field="GenreRomance">Romance</string>
+  <string Field="GenreScienceFiction">Science Fiction</string>
+  <string Field="GenreSoap">Soap</string>
+  <string Field="GenreSpecialInterest">Special Interest</string>
+  <string Field="GenreSport">Sport</string>
+  <string Field="GenreSuspense">Suspense</string>
+  <string Field="GenreTalkShow">Talk Show</string>
+  <string Field="GenreThriller">Thriller</string>
+  <string Field="GenreWar">War</string>
+  <string Field="GenreWestern">Western</string>
+  <string Field="GetFriendRequestsOnStartup">Get Friend Requests on Startup</string>
+  <string Field="GettingActivity">GettingActivity</string>
+  <string Field="GettingCalendar">Getting Calendar</string>
+  <string Field="GettingFriendsList">Getting Friends List</string>
+  <string Field="GettingFriendsRequests">Getting Friend Requests</string>
+  <string Field="GettingFriendsWatchedHistory">Getting Friends Watched History</string>  
+  <string Field="GettingLists">Getting Lists</string>
+  <string Field="GettingListItems">Getting List Items</string>
+  <string Field="GettingSearchResults">Getting Search Results</string>
+  <string Field="GettingShouts">Getting Shouts</string>
+  <string Field="GettingShowSeasons">Getting Show Seasons</string>
+  <string Field="GettingTrendingMovies">Getting Trending Movies</string>
+  <string Field="GettingTrendingShows">Getting Trending Shows</string>
+  <string Field="GettingRecommendedMovies">Getting Recommended Movies</string>
+  <string Field="GettingRecommendedShows">Getting Recommended Shows</string>
+  <string Field="GettingWatchListMovies">Getting Watch List Movies</string>
+  <string Field="GettingWatchListShows">Getting Watch List Shows</string>
+  <string Field="GettingWatchListEpisodes">Getting Watch List Episodes</string>
+  <string Field="GettingRelatedMovies">Getting Related Movies</string>
+  <string Field="GettingRelatedShows">Getting Related Shows</string>
+  <string Field="GettingTrailerUrls">Getting Trailer Urls</string>  
+  
+  <!-- H -->
+  <string Field="Hate">Hate</string>
+  <string Field="Hated">Hated</string>
+  <string Field="HideTVShowsInWatchlist">Hide TV Shows in Watch List</string>
+  <string Field="HideCollected">Hide Collected</string>
+  <string Field="HideWatched">Hide Watched</string>
+  <string Field="HideWatchlisted">Hide Watchlisted</string>
+  <string Field="HideSpoilers">Hide Spoilers</string>
+  <string Field="HiddenToPreventSpoilers">This shout has been hidden to prevent spoilers, you can change this option from menu.</string>
+
+  <!-- I -->
+  <string Field="IncludeMeInFriendsActivity">Include Me in Friends Activity</string>
+  <string Field="Inserted">Inserted</string>
+  <string Field="Item">Item</string>
+  <string Field="Items">Items</string>
+  
+  <!-- J -->
+  <string Field="JoinDate">Join Date</string>
+  <string Field="Joined">Joined</string>
+
+  <!-- K -->
+  
+  <!-- L -->
+  <string Field="Location">Location</string>
+  <string Field="Layout">Layout</string>
+  <string Field="List">List</string>
+  <string Field="Lists">Lists</string>
+  <string Field="Love">Love</string>
+  <string Field="Loved">Loved</string>
+  <string Field="LoginExistingAccount">Login to Existing Account...</string>
+  <string Field="LoggedIn">Logged In</string>
+  <string Field="Login">Login</string>
+  <string Field="ListNameAlreadyExists">List with this name already exists!</string>
+  
+  <!-- M -->
+  <string Field="MarkAsWatched">Mark as Watched</string>
+  <string Field="MarkAsUnWatched">Mark as UnWatched</string>
+  <string Field="Movie">Movie</string>
+  <string Field="Movies">Movies</string>
+  <string Field="MultiSelectDialog">Multi-Select Dialog</string>
+  
+  <!-- N -->
+  <string Field="Name">Name</string>
+  <string Field="Network">Network</string>
+  <string Field="NextWeek">Next Week</string>
+  <string Field="NoActivities">No Activity Found.</string>
+  <string Field="NoEpisodesInSeason">No Episodes are available in Season.</string>
+  <string Field="NoEpisodeSummary">Episode summary is currently not available.</string>
+  <string Field="NoEpisodesThisWeek">No episodes on this week</string>
+  <string Field="NoMovieSummary">Movie summary is currently not available.</string>
+  <string Field="NoShowSummary">Show summary is currently not available.</string>
+  <string Field="NoFriends">No Friends!</string>
+  <string Field="NoFriendsTaunt">You have no Friends!</string>
+  <string Field="NoTrendingMovies">No Movies current being watched!</string>
+  <string Field="NoTrendingShows">No Shows current being watched!</string>
+  <string Field="NoMovieRecommendations">No Movie Recommendations Found!</string>
+  <string Field="NoShowRecommendations">No Show Recommendations Found!</string>
+  <string Field="NoShowWatchList">{0} has no shows in Watch List!</string>
+  <string Field="NoMovieWatchList">{0} has no movies in Watch List!</string>
+  <string Field="NoEpisodeWatchList">{0} has no episodes in Watch List!</string>
+  <string Field="NoShoutsForItem">No Shouts for {0}!</string>
+  <string Field="NoPluginsEnabled">You have defined no plugins in configuration.\nWould you like to configure plugins now?</string>
+  <string Field="NotLoggedIn">You can not access this area without being\nlogged in. Would you like to Signup or Login\nto trakt.tv now?</string>
+  <string Field="NoSearchResultsFound">No Search Results Found</string>
+  <string Field="NoSeasonsForShow">No Seasons found for show!</string>
+  <string Field="NoMovingPictures">Moving Pictures is Not Installed or Enabled</string>
+  <string Field="NoListsFound">No lists found, would you like to\ncreate a list now?</string>
+  <string Field="NoUserLists">{0} has not created any lists!</string>
+  <string Field="NoListItemsFound">No items found in this list!</string>
+  <string Field="NoRelatedMovies">No Related movies found for {0}!</string>
+  <string Field="NoRelatedShows">No Related shows found for {0}!</string>
+  <string Field="No">No</string>
+  
+  <!-- O -->
+  <string Field="OK">OK</string>
+  <string Field="Overview">Overview</string>
+  
+  <!-- P -->
+  <string Field="Password">Password</string>
+  <string Field="People">People</string>
+  <string Field="Percentage">Percentage</string>
+  <string Field="Protected">Protected</string>
+  <string Field="PersonWatching">1 Person Watching</string>
+  <string Field="PeopleWatching">{0} People Watching</string>
+  <string Field="PlayTrailer">Play Trailer</string>
+  <string Field="Plugin">Plugin</string>
+  <string Field="Plugins">Plugins</string>
+  <string Field="Public">Public</string>
+  <string Field="Private">Private</string>
+  <string Field="Privacy">Privacy</string>
+  <string Field="PrivacyPublic">Anyone can view this list</string>
+  <string Field="PrivacyFriends">Only friends can view this list</string>
+  <string Field="PrivacyPrivate">Only you can view this list</string>
+  
+  <!-- R -->
+  <string Field="Rate">Rate</string>
+  <string Field="Rated">Rated</string>
+  <string Field="Rating">Rating</string>
+  <string Field="RateMovie">Rate Movie...</string>
+  <string Field="RateShow">Rate Show...</string>
+  <string Field="RateEpisode">Rate Episode...</string>
+  <string Field="RateDialog">Trakt Rate Dialog</string>
+  <string Field="RateHate">Weak Sauce :(</string>
+  <string Field="RateLove">Totally Ninja!</string>
+  <string Field="RateHeading">What do you think?</string>
+  <string Field="RateTwo">Terrible</string>
+  <string Field="RateThree">Bad</string>
+  <string Field="RateFour">Poor</string>
+  <string Field="RateFive">Meh</string>
+  <string Field="RateSix">Fair</string>
+  <string Field="RateSeven">Good</string>
+  <string Field="RateEight">Great</string>
+  <string Field="RateNine">Superb</string>
+  <string Field="Recommendations">Recommendations</string>
+  <string Field="RecommendedMovies">Recommended Movies</string>
+  <string Field="RecommendedShows">Recommended Shows</string>
+  <string Field="RelatedMovies">Related Movies</string>
+  <string Field="RelatedShows">Related Shows</string>
+  <string Field="Released">Released</string>
+  <string Field="ReleaseDate">Release Date</string>
+  <string Field="RemoveFromLibrary">Remove from Library</string>
+  <string Field="RemoveFromWatchList">Remove from Watch List</string>
+  <string Field="RemoveShowFromWatchList">Remove Show from Watch List</string>
+  <string Field="RemoveEpisodeFromWatchList">Remove Episode from Watch List</string>
+  <string Field="RemoveFromList">Remove from List...</string>
+  <string Field="Runtime">Runtime</string>
+  
+  <!-- S -->
+  <string Field="Score">Score</string>
+  <string Field="Scrobble">Scrobble</string>
+  <string Field="SearchWithMpNZB">Search NZB</string>
+  <string Field="SearchTorrent">Search Torrent</string>
+  <string Field="Season">Season</string>
+  <string Field="Seasons">Seasons</string>
+  <string Field="SearchForFriend">Search for Friend...</string>
+  <string Field="SendFriendRequest">Send friend request to {0}?</string>
+  <string Field="SelectLists">Select Lists</string>
+  <string Field="SelectUser">Select User</string>
+  <string Field="Series">Series</string>
+  <string Field="SeriesPlural">Series</string>
+  <string Field="Settings">Settings</string>
+  <string Field="Shout">Shout</string>
+  <string Field="Shouts">Shouts</string>
+  <string Field="ShowTVShowsInWatchlist">Show TV Shows in Watch List</string>
+  <string Field="ShowSpoilers">Show Spoilers</string>
+  <string Field="ShowFriendActivity">Show Friend Activity</string>
+  <string Field="ShowCommunityActivity">Show Community Activity</string>
+  <string Field="SigningIntoAccount">Signing Into Account...</string>
+  <string Field="SkinPluginsOutOfDate">Error loading window, skin is out of date!\nExit MediaPortal and enter Configuration to\nenable plugins handlers.</string>
+  <string Field="SkinOutOfDate">This feature is not available for your\nskin. See if update is Available.</string>
+  <string Field="StartDate">Start Date</string>
+  <string Field="Synchronize">Synchronize</string>
+  <string Field="SynchronizeNow">New Plugin Handlers have been added.\nWould you like to Synchronize your\nlibraries now?</string>
+  <string Field="ShowRateDialogOnWatched">Show Rate Dialog On Item Watched</string>
+  <string Field="ShowSeasonInfo">Season Information...</string>
+  <string Field="ShowWatched">Show Watched</string>
+  <string Field="SettingPluginEnabledName">Plugin Enabled</string>
+  <string Field="SettingPluginEnabledDescription">Enable / Disable this setting to control if the Trakt plugin is loaded with MediaPortal.</string>
+  <string Field="SettingListedHomeName">Listed in Home</string>
+  <string Field="SettingListedHomeDescription">Enable this setting for the Trakt plugin to appear in the main Home screen menu items.</string>
+  <string Field="SettingListedPluginsName">Listed in My Plugins</string>
+  <string Field="SettingListedPluginsDescription">Enable this setting for the Trakt plugin to appear in the My Plugins screen menu items.</string>
+  <string Field="SettingSyncTimerName">Library Synchronization Period</string>
+  <string Field="SettingSyncTimerDescription">Set the period of time (in hours) between each Library Synchronization. Default is every 24 hours.</string>
+  <string Field="SettingSyncStartDelayName">Library Synchronization Start Delay</string>
+  <string Field="SettingSyncStartDelayDescription">Delay (in seconds) before Library Synchronization starts on MediaPortal Startup. Default is 0 seconds.</string>
+  <string Field="SettingWebRequestCacheName">Web Request Cache Time</string>
+  <string Field="SettingWebRequestCacheDescription">Set the period of time (in minutes) that web data is cached in gui windows such as Calendar, Trending and Recommendations. Default is 15 minutes.</string>
+  <string Field="SettingWebRequestTimeoutName">Web Request Timeout</string>
+  <string Field="SettingWebRequestTimeoutDescription">Set the period of time (in seconds) before cancelling any web requests. Default is 30 seconds.</string>
+  <string Field="SettingSyncRatingsName">Synchronize Ratings</string>
+  <string Field="SettingSyncRatingsDescription">Enable this setting for 2-way synchronization of ratings during library sync. If an item has been rated locally or remotely then it wont be overwritten to avoid any rounding issues. It's recommended that items online are rated using advanced ratings before enabling this setting.</string>
+  <string Field="SettingShowRateDialogOnWatchedName">Show Rate Dialog on Watched</string>
+  <string Field="SettingShowRateDialogOnWatchedDescription">Enable this setting to show the Trakt rate dialog after a movie or episode has finished and considered watched. The Trakt rate dialog will not be shown if the item has already being rated.</string>
+  <string Field="SettingActivityPollIntervalName">Dashboard Activity Poll Interval</string>
+  <string Field="SettingActivityPollIntervalDescription">Set the interval (in seconds) that the trakt community/friends activity is updated on the dashboard.</string>
+  <string Field="SettingTrendingPollIntervalName">Dashboard Trending Poll Interval</string>
+  <string Field="SettingTrendingPollIntervalDescription">Set the interval (in minutes) that the trakt trending shows and movies are updated on the dashboard.</string>
+  <string Field="SettingDashboardLoadDelayName">Dashboard Loading Delay</string>
+  <string Field="SettingDashboardLoadDelayDescription">This setting is to control how long in milliseconds until the dashboard starts to load data after the GUI window has opened. Changing this value too low can cause errors and fail to load window.</string>
+  <string Field="SettingEnableJumpToForTVShowsName">Enable TVShow Jump To Feature</string>
+  <string Field="SettingEnableJumpToForTVShowsDescription">Enable this setting to allow user to Jump directly to the TVSeries plugin when pressing Enter or OK on a Trakt TV Show. When disabled it will display Season Information from trakt.tv.</string>
+  <string Field="StartYear">Start: {0}</string>
+  <string Field="SortBy">Sort By: {0}</string>
+  <string Field="SortSeasonsAscending">Sort Seasons in Ascending order</string>
+  <string Field="SortSeasonsDescending">Sort Seasons in Descending order</string>
+  <string Field="Specials">Specials</string>
+  
+  <!-- T -->
+  <string Field="Timeout">Timeout</string>
+  <string Field="Trending">Trending</string>
+  <string Field="TrendingShows">Trending Shows</string>
+  <string Field="TrendingShowsAndMovies">Trending Shows and Movies</string>
+  <string Field="TrendingMovies">Trending Movies</string>
+  <string Field="TrendingMoviePeople">There are {0} people watching {1} movies right now!</string>
+  <string Field="TrendingTVShowsPeople">There are {0} people watching {1} tv shows right now!</string>
+  <string Field="TVShow">TV Show</string>
+  <string Field="TVShows">TV Shows</string>
+  <string Field="Tagline">Tagline</string>
+  <string Field="Title">Title</string>
+  <string Field="Trailer">Trailer</string>
+  <string Field="Trailers">Trailers...</string>
+  
+  <!-- U -->
+  <string Field="UserHasNotWatchedEpisodes">User has not watched any episodes!</string>
+  <string Field="UserHasNotWatchedMovies">User has not watched any movies!</string>
+  <string Field="User">User</string>
+  <string Field="Users">Users</string>
+  <string Field="Username">Username</string>
+  <string Field="UnAuthorized">Authentication failed, please check username and password in settings.</string>
+  <string Field="UnRate">UnRate</string>
+  <string Field="UpdatingCategories">Updating Categories</string>
+  <string Field="UpdatingFilters">Updating Filters</string>
+  <string Field="UnableToPlayTrailer">Unable to play trailer.</string>
+  
+  <!-- V -->
+  <string Field="View">View</string>
+  <string Field="Votes">Votes</string>
+  <string Field="ValidUsername">You must enter a valid username!</string>
+  <string Field="ValidPassword">You must enter a valid password!</string>
+  <string Field="ValidEmail">You must enter a valid email!</string>
+
+  <!-- W -->
+  <string Field="WatchList">Watch List</string>
+  <string Field="Watched">Watched</string>
+  <string Field="WatchedMovies">Watched Movies</string>
+  <string Field="WatchedEpisodes">Watched Episodes</string>
+  <string Field="WatchedShows">Watched Shows</string>
+  <string Field="Watchers">Watchers</string>
+  <string Field="Watching">Watching</string>
+  <string Field="WatchListMovies">Movie Watch List</string>
+  <string Field="WatchListShows">Show Watch List</string>
+  <string Field="WatchListEpisodes">Episode Watch List</string>  
+
+  <!-- Y -->
+  <string Field="Year">Year</string>
+  <string Field="Yes">Yes</string>
+  
+</strings>

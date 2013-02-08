@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language name="Swedish" characters="255">
+	<Section name="unmapped">
+		<String id="0">Visa %1...</String>
+		<String id="1">Plats...</String>
+		<String id="2">Karta i webläsare...</String>
+		<String id="3">Visa...</String>
+		<String id="9">Uppdatera</String>
+
+		<String id="10">Prognos</String>
+		<String id="11">Väderbilder</String>
+		<String id="12">GeoClock</String>
+		<String id="13">Astronomi</String>
+		<String id="14">Kalender</String>
+
+		<String id="20">Meny</String>
+		<String id="21">Lägg till plats...</String>
+		<String id="22">Byt vädertjänst för aktuellt väder...</String>
+		<String id="23">Byt vädertjänst för prognosvisning...</String>
+		<String id="24">Byt vädertjänst för prognosvisning som uppdateras varje hel timme</String>
+		<String id="25"></String>
+		<String id="26"></String>
+    <String id="27"></String>
+		<String id="28">Ändra väder ikonen samling...</String>
+
+		<String id="30">Tjänst</String>
+		<String id="31">Plats</String>
+		<String id="32">Bildvy</String>
+		<String id="33">Tillståndsvy</String>
+		<String id="34">Ikonsamling</String>
+		<String id="35">Sökningskarta</String>
+    <String id="36"></String>
+
+		<String id="40">Öppna karta i webläsare...</String>
+		<String id="41">tom</String>
+
+		<String id="45">Det finns ingen ledig plats att använda.</String>
+		<String id="46"></String>
+		<String id="47"></String>
+		<String id="48"></String>
+		<String id="49">En Internetuppkoppling krävs men går ej att finna.</String>
+
+		<String id="50">Vill du lägga till en ny plats?</String>
+		<String id="51">Vill du skriva över den senaste platsen?</String>
+		<String id="52">Vill du verkligen välja en annan vädertjänst?</String>
+		<String id="53"></String>
+		<String id="54">Vill du verkligen ändra ikon samling?</String>
+    <String id="55"></String>
+
+		<String id="60"></String>
+		<String id="61">Fel vid hämtning av prognos från %1.</String>
+		<String id="62">Fel vid hämtning av väderbilder från %1.</String>
+		<String id="63">Fel vid hämtning av Geoclock bilder.</String>
+		<String id="64">Fel vid hämtning av stjärnhimmel-bilder.</String>
+		<String id="65">Fel vid hämtning av stjärntecken.</String>
+		<String id="66">Fel vid hämtning av väderkarta från %1.</String>
+		<String id="67">Ogiltig eller saknad ort inmatad.</String>
+		<String id="68">Ogiltig eller saknad orts-kod inmatad.</String>
+		<String id="69">Saknat eller ogiltigt postnummer inlagt.</String>
+
+		<String id="70">Soligt</String>
+		<String id="71">Mestadels soligt</String>
+		<String id="72">Molnigt</String>
+		<String id="73">Mestadels molnigt</String>
+		<String id="74">Delvis molnigt</String>
+		<String id="75">Regn</String>
+		<String id="76">Chans för regn</String>
+		<String id="77">Skurar</String>
+		<String id="78">Snö</String>
+		<String id="79">Chans för snö</String>
+		<String id="80">Storm</String>
+		<String id="81">Chans för oväder</String>
+		<String id="82">Åska</String>
+		<String id="83">Chans för åska</String>
+		<String id="84">Regnbyar</String>
+		<String id="85">Snöblandat regn</String>
+		<String id="86">Isigt</String>
+		<String id="87">Dimma</String>
+		<String id="88">Tät dimma</String>
+		<String id="89">Lätt dimma</String>
+		<String id="90">Markdimma</String>
+		<String id="91">Pudersnö</String>
+		<String id="92">Klart</String>
+		<String id="93">Hagel</String>
+		<String id="94">Kraftig blåst</String>
+		<String id="95">Blåsig</String>
+		<String id="96">Varmt</String>
+		<String id="97">Kallt</String>
+		<String id="98">Virvelstorm</String>
+		<String id="99">Tropisk storm</String>
+		<String id="100">Kraftigt åskväder</String>
+		<String id="101">Enskilda åskskurar</String>
+		<String id="102">Spridda åskskurar</String>
+		<String id="103">Åskregn</String>
+		<String id="104">Snöblandat regn</String>
+		<String id="105">Regnslask</String>
+		<String id="106">Regn och hagel</String>
+		<String id="107">Snö och slask</String>
+		<String id="108">Duggregn</String>
+		<String id="109">Underkylt duggregn</String>
+		<String id="110">Underkylt regn</String>
+		<String id="111">Spridda skurar</String>
+		<String id="112">Snöbyar</String>
+		<String id="113">Snöblåst</String>
+		<String id="114">Kraftiga snöbyar</String>
+		<String id="115">Snöstorm</String>
+		<String id="116">Enskilda åskskurar</String>
+		<String id="117">Snöbyar</String>
+		<String id="118">Klart</String>
+		<String id="119">Klart/Soligt</String>
+		<String id="120">Överhängande moln</String>
+		<String id="121">Åskutbrott</String>
+		<String id="122">Häftig snöstorm</String>
+		<String id="123">Isig dimma</String>
+		<String id="124">Duggregn</String>
+		<String id="125">Regn</String>
+		<String id="126">Kraftigt regn</String>
+		<String id="127">Iskylt regn</String>
+		<String id="128">Snöblandat regn</String>
+		<String id="129">Lätt snö</String>
+		<String id="130">Hagel</String>
+		<String id="131">Lätt hagel</String>
+		<String id="132">Hagelskurar</String>
+		<String id="133">Lätt snöblandat regn</String>
+		<String id="134">Skurar av snöblandat regn</String>
+		<String id="135">Hällregn</String>
+		<String id="136">Lokala åskskurar</String>
+		<String id="137">Lokala snöskurar med åska</String>
+		<String id="138"></String>
+		<String id="139"></String>
+		<String id="140"></String>
+		<String id="141"></String>
+		<String id="142"></String>
+		<String id="143"></String>
+		<String id="144"></String>
+		<String id="145"></String>
+		<String id="146"></String>
+		<String id="147"></String>
+		<String id="148"></String>
+		<String id="149"></String>
+		<String id="150"></String>
+		<String id="151"></String>
+		<String id="152"></String>
+		<String id="153"></String>
+		<String id="154"></String>
+		<String id="155"></String>
+		<String id="156"></String>
+		<String id="157"></String>
+		<String id="158"></String>
+		<String id="159"></String>
+		<String id="160"></String>
+		<String id="161"></String>
+		<String id="162"></String>
+		<String id="163"></String>
+		<String id="164"></String>
+		<String id="165"></String>
+
+		<String id="170">Måndag</String>
+		<String id="171">Tisdag</String>
+		<String id="172">Onsdag</String>
+		<String id="173">Torsdag</String>
+		<String id="174">Fredag</String>
+		<String id="175">Lördag</String>
+		<String id="176">Söndag</String>
+
+		<String id="180">N</String>
+		<String id="181">NNE</String>
+		<String id="182">NE</String>
+		<String id="183">ENE</String>
+		<String id="184">E</String>
+		<String id="185">ESE</String>
+		<String id="186">SE</String>
+		<String id="187">SSE</String>
+		<String id="188">S</String>
+		<String id="189">SSW</String>
+		<String id="190">SW</String>
+		<String id="191">WSW</String>
+		<String id="192">W</String>
+		<String id="193">WNW</String>
+		<String id="194">NW</String>
+		<String id="195">NNW</String>
+
+		<String id="200">Lugnt</String>
+		<String id="201">Svag vind</String>
+		<String id="202">Svag vind</String>
+		<String id="203">Måttlig vind</String>
+		<String id="204">Måttlig vind</String>
+		<String id="205">Frisk vind</String>
+		<String id="206">Hård vind</String>
+		<String id="207">Hård bris</String>
+		<String id="208">Styv kuling</String>
+		<String id="209">Halv storm</String>
+		<String id="210">Storm</String>
+		<String id="211">Svår storm</String>
+		<String id="212">Orkan</String>
+
+		<String id="220"></String>
+		<String id="221"></String>
+		<String id="222"></String>
+		<String id="223"></String>
+
+		<String id="230">Nymåne</String>
+		<String id="231">Begynnande månskära</String>
+		<String id="232">Från mörk måne till halvmåne</String>
+		<String id="233">Från halvmåne till fullmåne</String>
+		<String id="234">Fullmåne</String>
+		<String id="235">Från fullmåne till halvmåne</String>
+		<String id="236">Från halvmåne till mörk måne</String>
+		<String id="237">Avtagande månskära</String>
+
+		<String id="240">Vecka</String>
+		<String id="241">Dag</String>
+		<String id="242"></String>
+		<String id="243"></String>
+
+		<String id="250">Platt vy</String>
+		<String id="251">Filmstrip-vy</String>
+		<String id="252">Coverflow-vy</String>
+		<String id="253">Thumbnail-vy</String>
+
+		<String id="260">Normal vy</String>
+		<String id="261">Tim-vy</String>
+		<String id="262">Grafisk vy</String>
+		<String id="263"></String>
+
+		<String id="300">°C</String>
+		<String id="301">°F</String>
+		<String id="302">K</String>
+		<String id="303">°R</String>
+
+		<String id="310">km/h</String>
+		<String id="311">m/s</String>
+		<String id="312">mph</String>
+		<String id="313">kts</String>
+		<String id="314">bft</String>
+
+		<String id="320">km</String>
+		<String id="321">mi</String>
+		<String id="322">obegränsad</String>
+
+		<String id="330">mbar</String>
+		<String id="331">hPa</String>
+		<String id="332">psi</String>
+		<String id="333">torr</String>
+		<String id="334">inch</String>
+
+		<String id="340">stigande</String>
+		<String id="341">stadigt</String>
+		<String id="342">fallande</String>
+		<String id="343">stigande eller stadigt sedan dalande</String>
+		<String id="344">stigande sedan dalande</String>
+		<String id="345">stigande sedan stadigt</String>
+		<String id="346">dalande eller stadigt sedan stigande</String>
+		<String id="347">dalande sedan stigande</String>
+		<String id="348">dalande sedan stadigt</String>
+
+		<String id="350">°</String>
+		<String id="351">%</String>
+
+		<String id="360">mm</String>
+
+		<String id="370">SI metrisk</String>
+		<String id="371">US metrisk</String>
+
+    <String id="380"></String>
+    <String id="381"></String>
+    <String id="382"></String>
+    <String id="383"></String>
+    <String id="384"></String>
+
+		<String id="400">Ortnamn</String>
+		<String id="401">Ort-kod</String>
+		<String id="402">Lokal postkod</String>
+		<String id="403"></String>
+		<String id="404">Tidszoner</String>
+		<String id="405">Metrisk</String>
+
+		<String id="500">Temperatur</String>
+		<String id="501">Vädertillstånd</String>
+		<String id="502">Vind</String>
+		<String id="503">Fuktighet</String>
+		<String id="504">Månfas</String>
+		<String id="505">Dagsljus</String>
+		<String id="506">Närmaste dagsljus</String>
+		<String id="507">Soluppgång</String>
+		<String id="508">Solnedgång</String>
+		<String id="509">Plats</String>
+		<String id="510">Just nu</String>
+		<String id="511">Prognos</String>
+		<String id="512"></String>
+		<String id="513">Nederbörd</String>
+		<String id="514">Soltid</String>
+		<String id="515">Tryck</String>
+		<String id="516">Barometiskt tryck</String>
+		<String id="517">Synlighet</String>
+		<String id="518">Daggpunkt</String>
+		<String id="519">låg</String>
+		<String id="520">hög</String>
+		<String id="521">Molntäcke</String>
+		<String id="522">Dimtäcke</String>
+		<String id="523"></String>
+		<String id="524">UV Index</String>
+
+		<String id="525">Satellit</String>
+		<String id="526">Temperatur</String>
+		<String id="527">UV Index</String>
+		<String id="528">Vind</String>
+		<String id="529">Nederbörd</String>
+		<String id="530">Soltid</String>
+		<String id="531">Pollen-mängd</String>
+		<String id="532">Värld</String>
+		<String id="533">Webcam</String>
+		<String id="534">Fuktighet</String>
+		<String id="535">Egen</String>
+
+		<String id="540">Geografisk klocka</String>
+
+		<String id="550">Stjärnhimmel</String>
+		<String id="551">Stjärntecken</String>
+
+		<String id="560">Flöde</String>
+
+		<String id="565"></String>
+
+		<String id="570">Helgdagar</String>
+		<String id="571">Nyår</String>
+		<String id="572">Trettondagen</String>
+		<String id="573">Vårfrudag</String>
+		<String id="574">Alla helgons afton</String>
+		<String id="575">Alla helgons dag</String>
+		<String id="576">Påsksöndagen</String>
+		<String id="577">Skärtorsdag</String>
+		<String id="578">Långfredag</String>
+		<String id="579">Påskafton</String>
+		<String id="580">Palmsöndagen</String>
+		<String id="581">Corpus Christi</String>
+		<String id="582">Jul</String>
+
+		<String id="590">Säsong</String>
+		<String id="591">Början av våren</String>
+		<String id="592">Början av sommmaren</String>
+		<String id="593">Början av hösten</String>
+		<String id="594">Början av vintern</String>
+
+		<String id="600">Stenbocken</String>
+		<String id="601">Vattumannen</String>
+		<String id="602">Fiskarna</String>
+		<String id="603">Väduren</String>
+		<String id="604">Oxen</String>
+		<String id="605">Tvillingarna</String>
+		<String id="606">Kräftan</String>
+		<String id="607">Lejonet</String>
+		<String id="608">Jungfrun</String>
+		<String id="609">Vågen</String>
+		<String id="610">Skorpionen</String>
+		<String id="611">Skytten</String>
+
+		<String id="700">Väderdata från</String>
+		<String id="701">Ingen vädertjänst tillgänglig</String>
+	</Section>
+</Language>

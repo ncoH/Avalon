@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Language name="Czech" characters="512">
+  <Section name="unmapped">
+    <String id="0">Zobrazit %1...</String>
+    <String id="1">Lokalita ...</String>
+    <String id="2">Prohlížeč map ...</String>
+    <String id="3">Zobrazit ...</String>
+    <String id="9">Obnovit</String>
+
+    <String id="10">Počasí</String>
+    <String id="11">Meteorologické snímky</String>
+    <String id="12">Osvětlení země</String>
+    <String id="13">Astronomie</String>
+    <String id="14">Kalendář</String>
+
+    <String id="20">Menu</String>
+    <String id="21">Průvodce přidáním nového místa...</String>
+    <String id="22">Změna aktuálního poskytovatele předpovědi počasí ...</String>
+    <String id="23">Změna poskytovatele předpovědi počasí ...</String>
+    <String id="24">Změna poskytovatele hodinové předpovědi počasí ...</String>
+    <String id="25"></String>
+    <String id="26">Změna poskytovatele map...</String>
+    <String id="27"></String>
+    <String id="28">Změna sady ikon předpovědi počasí...</String>
+
+    <String id="30">Poskytovatel předpovědi počasí</String>
+    <String id="31">Lokalita</String>
+    <String id="32">Zobrazení map</String>
+    <String id="33">Sada ikon</String>
+    <String id="34">Kolekce ikon</String>
+    <String id="35">Prohlížeč map</String>
+    <String id="36"></String>
+
+    <String id="40">Otevřít prohlížeč map ...</String>
+    <String id="41">prázdné</String>
+
+    <String id="45">Už žádné volné místo.</String>
+    <String id="46">Neplatný nebo prázdný specifický klíč poskytovatele.</String>
+		<String id="47"></String>
+		<String id="48"></String>
+    <String id="49">Nutné internetové připojení není k dispozici.</String>
+
+    <String id="50">Chcete přidat nové místo?</String>
+    <String id="51">Chcete přepsat poslední místo?</String>
+    <String id="52">Opravdu změnit poskytovatele předpovědi počasí?</String>
+    <String id="53">Opravdu změnit poskytovatele map?</String>
+    <String id="54">Opravdu změnit vaší sadu ikon?</String>
+    <String id="55"></String>
+
+		<String id="60"></String>
+    <String id="61">Nepodařilo se načíst údaje o počasí z %1.</String>
+    <String id="62">Chyba při načítání grafiky z %1.</String>
+    <String id="63">Nepodařilo se získat mapu osvětlení země.</String>
+    <String id="64">Nepodařilo se získat mapu hvězdné oblohy z %1.</String>
+    <String id="65">Nepodařilo se získat mapu znamení.</String>
+    <String id="66">Chyba při stahování povětrnostní mapy z 1%</String>
+    <String id="67">Neplatné nebo prázdné jméno města.</String>
+    <String id="68">Neplatný nebo prázdný kód města.</String>
+    <String id="69">Neplatná nebo prázdná zeměpisná délka / šířka </String>
+
+    <String id="70">Slunečno</String>
+    <String id="71">Převážně jasno</String>
+    <String id="72">Zataženo</String>
+    <String id="73">Převážně zataženo</String>
+    <String id="74">Polojasno</String>
+    <String id="75">Déšť</String>
+    <String id="76">Možnost deště</String>
+    <String id="77">Liják</String>
+    <String id="78">Sněžení</String>
+    <String id="79">Možnost sněžení</String>
+    <String id="80">Bouře</String>
+    <String id="81">Možnost bouře</String>
+    <String id="82">Silná bouře</String>
+    <String id="83">Možnost silné bouře</String>
+    <String id="84">Přeháňky</String>
+    <String id="85">Déšť se sněhem</String>
+    <String id="86">Námraza</String>
+    <String id="87">Mlha</String>
+    <String id="88">Kouřmo</String>
+    <String id="89">Opar</String>
+    <String id="90">Mlha</String>
+    <String id="91">Pyl</String>
+    <String id="92">Krásně</String>
+    <String id="93">Krupobití</String>
+    <String id="94">Bouřlivý</String>
+    <String id="95">Větrný</String>
+    <String id="96">Horký</String>
+    <String id="97">Studený</String>
+    <String id="98">Tornádo</String>
+    <String id="99">Tropická bouře</String>
+    <String id="100">Ničivé bouře</String>
+    <String id="101">Ojedinělé bouře</String>
+    <String id="102">Rozptýlené bouřky</String>
+    <String id="103">Bouřky</String>
+    <String id="104">Déšť se sněhem</String>
+    <String id="105">Déšť se sněhem</String>
+    <String id="106">Déšť a kroupami</String>
+    <String id="107">Déšť se sněhem</String>
+    <String id="108">Mrholení</String>
+    <String id="109">Mrznoucí mrholení</String>
+    <String id="110">Mrznoucí déšť</String>
+    <String id="111">Ojedinělé přeháňky</String>
+    <String id="112">Sněhové přeháňky</String>
+    <String id="113">Zvířený sníh</String>
+    <String id="114">Husté sněžení</String>
+    <String id="115">Sněhové přeháňky</String>
+    <String id="116">Ojedinělé bouřky</String>
+    <String id="117">Sněhové přeháňky</String>
+    <String id="118">Jasno</String>
+    <String id="119">Jasno</String>
+    <String id="120">Zataženo</String>
+    <String id="121">Blesky</String>
+    <String id="122">Blizard</String>
+    <String id="123">Mrznoucí mlha</String>
+    <String id="124">Slabé mrholení</String>
+    <String id="125">Slabý déšť</String>
+    <String id="126">Silný déšť</String>
+    <String id="127">Slabý mrznoucí déšť</String>
+    <String id="128">Slabý déšť se sněhem</String>
+    <String id="129">Slabé sněžení</String>
+    <String id="130">Krupobití</String>
+    <String id="131">Slabé přeháňky s kroupami</String>
+    <String id="132">přeháňky s kroupami</String>
+    <String id="133">Slabý déšť se sněhem</String>
+    <String id="134">Déšť se sněhem</String>
+    <String id="135">Přívalové dešťové přeháňky</String>
+    <String id="136">Bouřka</String>
+    <String id="137">Sněhová bouřka</String>
+    <String id="138">Silné sněhové přeháňky</String>
+    <String id="139">Slabé přeháňky</String>
+    <String id="140">Silné přeháňky</String>
+    <String id="141">Slabá bouřka</String>
+    <String id="142">silná bouře</String>
+    <String id="143">Silné mrholení</String>
+    <String id="144">Možnost mrholení</String>
+    <String id="145">Možnost sněhových přeháněk</String>
+    <String id="146">Možnost sněhových přeháněk</String>
+    <String id="147">Možnost slabého sněžení</String>
+    <String id="148">Možnost plískanice</String>
+    <String id="149">Možnost mrznoucího deště</String>
+    <String id="150">Možnost deště se sněhem</String>
+    <String id="151">Možnost mrznoucího mrholení</String>
+    <String id="152">Rozptýlené sněhové přeháňky</String>
+    <String id="153">Jasno</String>
+    <String id="154">Mlha s deštěm</String>
+    <String id="155">Bouřka</String>
+    <String id="156">Možnost přeháněk</String>
+    <String id="157">Mlha se sněhem</String>
+    <String id="158">Sněhová bouřka</String>
+    <String id="159">Mrznoucí déšť</String>
+    <String id="160">Ledová bouře</String>
+    <String id="161">Kroupy</String>
+    <String id="162">Bouřka s kroupami</String>
+    <String id="163">Písek</String>
+    <String id="164">Písečná bouře</String>
+    <String id="165">Sopečný popel</String>
+
+    <String id="170">Pondělí</String>
+    <String id="171">Úterý</String>
+    <String id="172">Středa</String>
+    <String id="173">Čtvrtek</String>
+    <String id="174">Pátek</String>
+    <String id="175">Sobota</String>
+    <String id="176">Neděle</String>
+
+    <String id="180">S</String>
+    <String id="181">SSV</String>
+    <String id="182">S</String>
+    <String id="183">VSV</String>
+    <String id="184">V</String>
+    <String id="185">VJV</String>
+    <String id="186">JV</String>
+    <String id="187">JJV</String>
+    <String id="188">J</String>
+    <String id="189">JJZ</String>
+    <String id="190">JZ</String>
+    <String id="191">ZJZ</String>
+    <String id="192">Z</String>
+    <String id="193">ZSZ</String>
+    <String id="194">SZ</String>
+    <String id="195">SSZ</String>
+
+    <String id="200">Bezvětří</String>
+    <String id="201">Vánek</String>
+    <String id="202">Velmi slabý vítr</String>
+    <String id="203">Slabý vítr</String>
+    <String id="204">Mírný vítr</String>
+    <String id="205">Čerstvý vítr</String>
+    <String id="206">Silný vítr</String>
+    <String id="207">Slabá vichřice</String>
+    <String id="208">Vichřice</String>
+    <String id="209">Silná vichřice</String>
+    <String id="210">Bouře</String>
+    <String id="211">Prudká bouře</String>
+    <String id="212">Hurikán</String>
+
+    <String id="220">Slabý</String>
+    <String id="221">Střední</String>
+    <String id="222">Vysoký</String>
+    <String id="223">Velmi vysoký</String>
+
+    <String id="230">Nov</String>
+    <String id="231">Dorůstající srpek</String>
+    <String id="232">První čtvrt</String>
+    <String id="233">Dorůstající měsíc</String>
+    <String id="234">Úplněk</String>
+    <String id="235">Ubývající měsíc</String>
+    <String id="236">Poslední čtvrt</String>
+    <String id="237">Ubývající srpek</String>
+
+    <String id="240">Týden</String>
+    <String id="241">Den</String>
+    <String id="242"></String>
+    <String id="243"></String>
+
+    <String id="250">Ploché zobrazení</String>
+    <String id="251">Zobrazení filmový pás</String>
+    <String id="252">Animované zobrazení</String>
+    <String id="253">Zobrazení náhledů</String>
+
+    <String id="260">Normální zobrazení</String>
+    <String id="261">Hodinové zobrazení</String>
+    <String id="262">Grafické zobrazení</String>
+    <String id="263"></String>
+
+    <String id="300">°C</String>
+    <String id="301">°F</String>
+    <String id="302">K</String>
+    <String id="303">°R</String>
+
+    <String id="310">km/h</String>
+    <String id="311">m/s</String>
+    <String id="312">kts</String>
+    <String id="313">mph</String>
+    <String id="314">bft</String>
+
+    <String id="320">km</String>
+    <String id="321">mi</String>
+    <String id="322">neomezený</String>
+
+    <String id="330">mbar</String>
+    <String id="331">hPa</String>
+    <String id="332">psi</String>
+    <String id="333">torr</String>
+    <String id="334">inch</String>
+
+    <String id="340">stoupající</String>
+    <String id="341">stabilní</String>
+    <String id="342">klesající</String>
+    <String id="343">rostoucí nebo stabilní, pak klesající</String>
+    <String id="344">rostoucí, pak klesající</String>
+    <String id="345">rostoucí, pak stabilní</String>
+    <String id="346">klesající nebo stabilní, pak rostoucí</String>
+    <String id="347">klesající, pak rostoucí</String>
+    <String id="348">klesající, pak stabilní</String>
+
+    <String id="350">°</String>
+    <String id="351">%</String>
+
+    <String id="360">mm</String>
+
+    <String id="370">jednotky SI</String>
+    <String id="371">jednotky US</String>
+
+    <String id="380"></String>
+    <String id="381"></String>
+    <String id="382"></String>
+    <String id="383"></String>
+    <String id="384"></String>
+
+    <String id="400">Název lokality</String>
+    <String id="401">Kód lokality</String>
+    <String id="402">PSČ lokality</String>
+    <String id="403">Země lokality</String>
+    <String id="404">Časová pásma</String>
+    <String id="405">Metrický</String>
+
+    <String id="500">Teplota</String>
+    <String id="501">Podmínky</String>
+    <String id="502">Vítr</String>
+    <String id="503">Vlhkost</String>
+    <String id="504">Měsíční fáze</String>
+    <String id="505">Letní čas</String>
+    <String id="506">Zimní čas</String>
+    <String id="507">Východ slunce</String>
+    <String id="508">Západ slunce</String>
+    <String id="509">Umístění</String>
+    <String id="510">Nyní</String>
+    <String id="511">Předpověď</String>
+    <String id="512"></String>
+    <String id="513">Srážky</String>
+    <String id="514">Délka dne</String>
+    <String id="515">Tlak</String>
+    <String id="516">Barometrický tlak</String>
+    <String id="517">Viditelnost</String>
+    <String id="518">Rosný bod</String>
+    <String id="519">Nízký</String>
+    <String id="520">Vysoký</String>
+    <String id="521">Rozsah oblačnosti</String>
+    <String id="522">Rozsah mlhy</String>
+    <String id="523">cítí se jako</String>
+    <String id="524">UV Index</String>
+
+    <String id="525">Satelit</String>
+    <String id="526">Teplota</String>
+    <String id="527">UV Index</String>
+    <String id="528">Vítr</String>
+    <String id="529">Srážky</String>
+    <String id="530">Sluneční svit</String>
+    <String id="531">Koncentrace pylu</String>
+    <String id="532">Svět</String>
+    <String id="533">Webová kamera</String>
+    <String id="534">Vlhkost</String>
+    <String id="535">Vlastní definice</String>
+
+    <String id="540">Osvětlení země</String>
+
+    <String id="550">Hvězdná obloha</String>
+    <String id="551">Znamení zvěrokruhu</String>
+
+    <String id="560">Zdroj</String>
+
+    <String id="565"></String>
+
+    <String id="570">Dovolená</String>
+    <String id="571">Nový rok</String>
+    <String id="572">Tři králové</String>
+    <String id="573">Nanebevzetí Panny Marie</String>
+    <String id="574">Den reformace</String>
+    <String id="575">Svátek Všech svatých</String>
+    <String id="576">Boží hod velikonoční</String>
+    <String id="577">Zelený čtvrtek</String>
+    <String id="578">Velký pátek</String>
+    <String id="579">Nanebevstoupení Páně</String>
+    <String id="580">Svatodušní neděle</String>
+    <String id="581">Boží tělo</String>
+    <String id="582">Vánoce</String>
+
+    <String id="590">Roční období</String>
+    <String id="591">Začátek jara</String>
+    <String id="592">Začátek léta</String>
+    <String id="593">Začátek podzimu</String>
+    <String id="594">Začátek zimy</String>
+
+    <String id="600">Kozoroh</String>
+    <String id="601">Vodnář</String>
+    <String id="602">Ryby</String>
+    <String id="603">Skopec</String>
+    <String id="604">Býk</String>
+    <String id="605">Blíženci</String>
+    <String id="606">Rak</String>
+    <String id="607">Lev</String>
+    <String id="608">Panna</String>
+    <String id="609">Váhy</String>
+    <String id="610">Štír</String>
+    <String id="611">Střelec</String>
+
+    <String id="700">Poskytovatel předpovědi počasí</String>
+    <String id="701">Žádný poskytovatel.</String>
+  </Section>
+</Language>
