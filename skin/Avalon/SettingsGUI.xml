@@ -4,6 +4,7 @@
 <defaultcontrol>2</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <define>#defaultcontrol.onleft:10002</define>
+<define>#header.label:897</define>
 <controls>
 	<import>settings.menu.xml</import>
 	
@@ -11,11 +12,11 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>158</posY>
+		<posY>252</posY>
 		<width>1000</width>
 		<label>673</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB22</font>
+		<textcolor>85cffe</textcolor>
+		<font>TitanLight20</font>
 	</control>
 	
 	<!--            :: Horizontal Speed ::            -->
@@ -23,8 +24,8 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>736</posX>
-		<posY>254</posY>
+		<posX>740</posX>
+		<posY>353</posY>
 		<width>836</width>
 		<height>52</height>
 		<texture>settings_button_large_focus.png</texture>
@@ -34,8 +35,8 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>736</posX>
-		<posY>254</posY>
+		<posX>740</posX>
+		<posY>353</posY>
 		<width>836</width>
 		<height>52</height>
 		<texture>settings_button_large_nofocus.png</texture>
@@ -47,7 +48,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>262</posY>
+		<posY>360</posY>
 		<label>1442</label>
 	</control>
 
@@ -56,15 +57,15 @@
 		<type>spincontrol</type>
 		<id>2</id>
 		<posX>1590</posX>
-		<posY>261</posY>
+		<posY>367</posY>
 		<align>right</align>
-		<onup>3</onup>
+		<onup>17</onup>
 		<ondown>4</ondown>
 		<onleft>#defaultcontrol.onleft</onleft>
-		<onright>10002</onright>
+		<onright>2</onright>
 		<reverse>yes</reverse>
 		<textXOff>54</textXOff>
-		<textYOff>5</textYOff>
+		<textYOff>4</textYOff>
 	</control>
 		
 	<!--            :: Vertical Speed ::            -->
@@ -72,8 +73,8 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>736</posX>
-		<posY>306</posY>
+		<posX>740</posX>
+		<posY>405</posY>
 		<width>836</width>
 		<height>52</height>
 		<texture>settings_button_large_focus.png</texture>
@@ -83,8 +84,8 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>736</posX>
-		<posY>306</posY>
+		<posX>740</posX>
+		<posY>405</posY>
 		<width>836</width>
 		<height>52</height>
 		<texture>settings_button_large_nofocus.png</texture>
@@ -96,7 +97,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>314</posY>
+		<posY>415</posY>
 		<label>1443</label>
 	</control>
 
@@ -105,14 +106,14 @@
 		<type>spincontrol</type>
 		<id>4</id>
 		<posX>1590</posX>
-		<posY>313</posY>
+		<posY>419</posY>
 		<align>right</align>
 		<onup>2</onup>
 		<ondown>3</ondown>
 		<onleft>#defaultcontrol.onleft</onleft>
-		<onright>10002</onright>
+		<onright>4</onright>
 		<textXOff>54</textXOff>
-		<textYOff>5</textYOff>
+		<textYOff>4</textYOff>
 		<reverse>yes</reverse>
 	</control>
 		
@@ -121,8 +122,8 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>736</posX>
-		<posY>358</posY>
+		<posX>740</posX>
+		<posY>457</posY>
 		<width>836</width>
 		<height>52</height>
 		<texture>settings_button_large_focus.png</texture>
@@ -132,8 +133,8 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>736</posX>
-		<posY>358</posY>
+		<posX>740</posX>
+		<posY>457</posY>
 		<width>836</width>
 		<height>52</height>
 		<texture>settings_button_large_nofocus.png</texture>
@@ -145,7 +146,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>366</posY>
+		<posY>466</posY>
 		<label>973</label>
 	</control>
 
@@ -154,14 +155,14 @@
 		<type>spincontrol</type>
 		<id>3</id>
 		<posX>1590</posX>
-		<posY>365</posY>
+		<posY>471</posY>
 		<align>right</align>
 		<onup>4</onup>
-		<ondown>2</ondown>
+		<ondown>99</ondown>
 		<onleft>#defaultcontrol.onleft</onleft>
-		<onright>10002</onright>
+		<onright>3</onright>
 		<textXOff>54</textXOff>
-		<textYOff>5</textYOff>
+		<textYOff>4</textYOff>
 		<reverse>yes</reverse>
 	</control>
 
@@ -169,8 +170,8 @@
 		<description>currentFPS count</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>1560</posX>
-		<posY>430</posY>
+		<posX>1550</posX>
+		<posY>565</posY>
 		<align>right</align>
 		<label>#fps</label>
 	</control>
@@ -179,8 +180,8 @@
 		<description>Example label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>736</posX>
-		<posY>430</posY>
+		<posX>1316</posX>
+		<posY>565</posY>
 		<width>711</width>
 		<label>675</label>
 		<textcolor>ffffffff</textcolor>
@@ -192,7 +193,7 @@
 		<id>25</id>
 		<posX>736</posX>
 		<posY>565</posY>
-		<width>820</width>
+		<width>560</width>
 		<label>-</label>
 		<textcolor>ffffffff</textcolor>
 	</control>
@@ -203,14 +204,12 @@
 		<id>26</id>
 		<posX>736</posX>
 		<posY>618</posY>
-		<width>820</width>
+		<width>805</width>
 		<height>200</height>
 		<label>-</label>
 		<textcolor>ffffffff</textcolor>
 	</control>
-	
 <import>common.time.xml</import>
-<import>avalon.version.xml</import>
-
+<import>titan.version.xml</import>
 </controls>
 </window>

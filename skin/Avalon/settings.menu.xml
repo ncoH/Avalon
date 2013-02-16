@@ -1,193 +1,111 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <controls>
-	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1920</width>
-		<height>1080</height>
-	</control>
-	<control>
-		<description>viewport list</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>0</posX>
-		<posY>92</posY>
-		<width>1893</width>
-		<height>795</height>
-		<texture>viewport_settings.png</texture>
-	</control>
-	
-	<control>
-		<description>RSS background</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>0</posX>
-		<posY>829</posY>
-		<width>1865</width>
-		<height>96</height>
-		<texture>basichome_rss_bg.png</texture>
-	</control>
-	
+
 	<control>
 		<type>label</type>
-		<description>Settings label</description>
-		<id>121</id>
-		<posX>185</posX>
-		<posY>38</posY>
+		<id>1</id>
+		<posX>152</posX>
+		<posY>225</posY>
 		<width>500</width>
-		<label>897</label>
+		<label>924</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>font22</font>
+		<font>fontB20</font>
 	</control>
-
+	
 	<control>
 		<description>buttons</description>
 		<type>group</type>
-		<posX>130</posX>
-		<posY>156</posY>
-		<layout>StackLayout(0, Vertical, true)</layout>
+		<posX>122</posX>
+		<posY>321</posY>
+		<dimColor>ffffffff</dimColor>
+		<layout>StackLayout(7, Vertical, true)</layout>
 		
-		<control>
-			<description>General</description>
-			<type>button</type>
-			<id>10001</id>
-			<width>385</width>
-			<height>64</height>
-			<textureFocus>settings_button_focus.png</textureFocus>
-			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
-			<label>128</label>
-			<hyperlink>705</hyperlink>
-            <onup>10012</onup>
-		</control>
-
-		<control>
-			<description>Skin Settings</description>
-			<type>button</type>
-			<id>10011</id>
-			<width>385</width>
-			<height>64</height>
-			<textureFocus>settings_button_focus.png</textureFocus>
-			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
-			<label>#Avalon.SkinSettings</label>
-			<hyperlink>155100</hyperlink>
-		</control>
-		
-		<control>
-			<description>Screen</description>
-			<type>button</type>
-			<id>10002</id>
-			<width>385</width>
-			<height>64</height>
-			<textureFocus>settings_button_focus.png</textureFocus>
-			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
-			<label>6023</label>
-			<hyperlink>9</hyperlink>
-		</control>
-
-		<control>
-			<description>TV</description>
-			<type>button</type>
-			<id>10004</id>
-			<width>385</width>
-			<height>64</height>
-			<textureFocus>settings_button_focus.png</textureFocus>
-			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
-			<label>605</label>
-			<hyperlink>700</hyperlink>
-		</control>
-
-		<control>
-			<description>My Pictures</description>
-			<type>button</type>
-			<id>10005</id>
-			<width>385</width>
-			<height>64</height>
-			<textureFocus>settings_button_focus.png</textureFocus>
-			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
-			<label>1</label>
-			<hyperlink>12</hyperlink>
-		</control>
-
-		<control>
-			<description>Movies</description>
-			<type>button</type>
-			<id>10006</id>
-			<width>385</width>
-			<height>64</height>
-			<textureFocus>settings_button_focus.png</textureFocus>
-			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
-			<label>3</label>
-			<hyperlink>703</hyperlink>
-		</control>
-
-		<control>
-			<description>My DVD</description>
-			<type>button</type>
-			<id>10007</id>
-			<width>385</width>
-			<height>64</height>
-			<textureFocus>settings_button_focus.png</textureFocus>
-			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
-			<label>1027</label>
-			<hyperlink>704</hyperlink>
-		</control>
-
-		<control>
-			<description>My Music</description>
-			<type>button</type>
-			<id>10008</id>
-			<width>385</width>
-			<height>64</height>
-			<textureFocus>settings_button_focus.png</textureFocus>
-			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
-			<label>2</label>
-			<hyperlink>14</hyperlink>
-            <ondown>11</ondown>
-		</control>
-
-		<control>
-			<description>MiniDisplay</description>
-			<type>button</type>
-			<id>11</id>
-			<width>385</width>
-			<height>64</height>
-        	<textureFocus>settings_button_focus.png</textureFocus>
-        	<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
-			<label>9100</label>
-			<hyperlink>9000</hyperlink>
-			<ondown>10010</ondown>
-			<onup>10008</onup>
-            <visible>plugin.isenabled(MiniDisplay)</visible>
-		</control>
+			<control Style="SettingsButton">
+        <description>General Main setttings</description>
+        <type>button</type>
+        <id>9991</id>
+        <label>128</label>
+				<onup>99910</onup>
+        <hyperlink>1016</hyperlink>
+      </control>
+			
+			<control Style="SettingsButton">
+				<description>General Skin settings</description>
+				<type>button</type>
+				<id>9992</id>
+				<label>101021</label>
+				<hyperlink>1021</hyperlink>
+			</control>
+			
+			<control Style="SettingsButton">
+				<description>Screen</description>
+				<type>button</type>
+				<id>9993</id>
+				<label>6023</label>
+				<hyperlink>9</hyperlink>
+			</control>
 	
-		<control>
-			<description>I.F.C</description>
-			<type>button</type>
-			<id>10010</id>
-			<width>385</width>
-			<height>64</height>
-			<textureFocus>settings_button_focus.png</textureFocus>
-			<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
-			<label>I.F.C.</label>
-			<hyperlink>240782</hyperlink>
-			<ondown>10012</ondown>
-			<onup>11</onup>
-            <visible>plugin.isenabled(Intelligent Frame Correction)</visible>
+			<control Style="SettingsButton">
+				<description>TV</description>
+				<type>button</type>
+				<id>9994</id>
+				<label>605</label>
+				<hyperlink>700</hyperlink>
+			</control>
+	
+			<control Style="SettingsButton">
+				<description>My Pictures</description>
+				<type>button</type>
+				<id>9995</id>
+				<label>1</label>
+				<hyperlink>12</hyperlink>
+			</control>
+	
+			<control Style="SettingsButton">
+				<description>Movies</description>
+				<type>button</type>
+				<id>9996</id>
+				<label>3</label>
+				<hyperlink>703</hyperlink>
+			</control>
+	
+			<control Style="SettingsButton">
+				<description>My DVD</description>
+				<type>button</type>
+				<id>9997</id>
+				<label>1027</label>
+				<hyperlink>704</hyperlink>
+			</control>
+	
+			<control Style="SettingsButton">
+        <description>BluRay</description>
+        <type>button</type>
+        <id>9998</id>
+        <label>300217</label>
+        <hyperlink>1024</hyperlink>
+      </control>
+	
+			<control Style="SettingsButton">
+				<description>My Music</description>
+				<type>button</type>
+				<id>9999</id>
+				<label>2</label>
+				<hyperlink>14</hyperlink>
+	      <ondown>99910</ondown>
+			</control>
+				
+			<control Style="SettingsButton">
+        <description>MiniDisplay</description>
+        <type>button</type>
+        <id>99910</id>
+        <label>9100</label>
+        <hyperlink>9000</hyperlink>
+				<ondown>9991</ondown>
+	      <visible>plugin.isenabled(MiniDisplay)</visible>
+      </control>
+		
 		</control>
 		
-		<control>
-            <description>Trakt Settings</description>
-            <type>button</type>
-            <id>10012</id>
-            <label>Trakt</label>
-            <hyperlink>87271</hyperlink>
-            <onup>10010</onup>
-            <ondown>10001</ondown>
-            <visible>plugin.isenabled(Trakt)</visible>
-        </control>
-		
-</control>
 </controls>
 </window>

@@ -1,95 +1,83 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>704</id>
-<defaultcontrol>21</defaultcontrol>
+<defaultcontrol>22</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
+<define>#defaultcontrol.onleft:9997</define>
+<define>#header.label:897</define>
 <controls>
+
+  <import>common.settings.xml</import>	
+	<import>common.time.xml</import>
 	<import>settings.menu.xml</import>
-	
+
 	<control>
 		<type>label</type>
 		<id>1</id>
-		<posX>766</posX>
-		<posY>158</posY>
+		<posX>685</posX>
+		<posY>225</posY>
 		<width>500</width>
-		<label>446</label>
+		<label>605</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>fontB22</font>
+		<font>fontB20</font>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
 	</control>
-	
-	<control>
-		<description>buttons</description>
-		<type>group</type>
-		<posX>736</posX>
-		<posY>254</posY>
-		<layout>GridLayout(1, 0, 1, 0, 1)</layout>
-      <control Style="SettingsButtonLarge">
-			<description>DVD Navigators</description>
-			<type>button</type>
-			<id>21</id>
-			<label>1198</label>
-			<onup>23</onup>
-		</control>
 
-      <control Style="SettingsButtonLarge">
-			<description>Video Codecs</description>
-			<type>button</type>
-			<id>24</id>
-			<label>6000</label>
-		</control>
+		<control>
+			<description>buttons</description>
+			<type>group</type>
+			<posX>655</posX>
+			<posY>321</posY>
+			<dimColor>ffffffff</dimColor>
+			<layout>StackLayout(7, Vertical, true)</layout>
+	  	<animation effect="fade" time="150">WindowOpen</animation>
+	  	<animation effect="fade" time="150">WindowClose</animation>
 
-      <control Style="SettingsButtonLarge">
-			<description>Audio Codecs</description>
-			<type>button</type>
-			<id>25</id>
-			<label>6001</label>
-		</control>
+				<control Style="SettingsCheckButtonLarge">
+					<description>Enable Subtitles</description>
+					<type>checkbutton</type>
+					<id>22</id>
+					<label>1196</label>
+					<onup>25</onup>
+					<onleft>#defaultcontrol.onleft</onleft>
+				</control>
+				
+				<control Style="SettingsCheckButtonLarge">
+					<description>Enable Closed Caption</description>
+					<type>checkbutton</type>
+					<id>31</id>
+					<label>300079</label>
+					<onleft>#defaultcontrol.onleft</onleft>
+				</control>
+				
+				<control Style="SettingsCheckButtonLarge">
+					<description>Turn Off DXVA</description>
+					<type>checkbutton</type>
+					<id>23</id>
+					<label>1197</label>
+					<onleft>#defaultcontrol.onleft</onleft>
+				</control>
+			 
+				<control Style="SettingsButtonLarge">
+					<description>Video</description>
+					<type>button</type>
+					<id>24</id>
+					<label>291</label>
+					<onleft>#defaultcontrol.onleft</onleft>
+				</control>
+				
+				<control Style="SettingsButtonLarge">
+					<description>Audio</description>
+					<type>button</type>
+					<id>25</id>
+					<label>292</label>
+					<ondown>22</ondown>
+					<onleft>#defaultcontrol.onleft</onleft>
+				</control>
 
-      <control Style="SettingsButtonLarge">
-			<description>Audio Renderer</description>
-			<type>button</type>
-			<id>27</id>
-			<label>6002</label>
 		</control>
-
-      <control Style="SettingsButtonLarge">
-			<description>Apect Ratio</description>
-			<type>button</type>
-			<id>28</id>
-			<label>6004</label>
-		</control>
-
-      <control Style="SettingsToggleLarge">
-			<description>Enable Subtitles</description>
-			<type>togglebutton</type>
-			<id>22</id>
-			<label>1196</label>
-		</control>
-
-      <control Style="SettingsButtonLarge">
-			<description>Subtitle Language</description>
-			<type>button</type>
-			<id>29</id>
-			<label>1029</label>
-		</control>
-
-      <control Style="SettingsButtonLarge">
-			<description>Audio Language</description>
-			<type>button</type>
-			<id>30</id>
-			<label>492</label>
-		</control>
-
-      <control Style="SettingsToggleLarge">
-			<description>Turn Off DXVA</description>
-			<type>togglebutton</type>
-			<id>23</id>
-			<label>1197</label>
-			<ondown>21</ondown>
-		</control>
-
-	</control>
 <import>common.time.xml</import>
-<import>avalon.version.xml</import>
+<import>titan.version.xml</import>
 </controls>
 </window>

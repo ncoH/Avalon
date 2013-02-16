@@ -4,27 +4,19 @@
 <defaultcontrol>2</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <define>#defaultcontrol.onleft:10002</define>
+<define>#header.label:897</define>
 <controls>
-	<import>settings.menu.xml</import>
-	
-	<control>
-		<type>label</type>
-		<id>1</id>
-		<posX>766</posX>
-		<posY>158</posY>
-		<width>1000</width>
-		<label>6023</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB22</font>
-	</control>
+
+
 	
 	<control>
 		<description>buttons</description>
 		<type>group</type>
-		<posX>736</posX>
-		<posY>254</posY>
+		<posX>740</posX>
+		<posY>353</posY>
 		<layout>StackLayout</layout>
-        <control Style="SettingsButtonLarge">
+
+	   <control Style="SettingsButtonLarge">
 			<description>UI Calibration button</description>
 			<type>button</type>
 			<id>2</id>
@@ -34,7 +26,7 @@
 			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
-        <control Style="SettingsButtonLarge">
+	   <control Style="SettingsButtonLarge">
 			<description>Screen Calibration button</description>
 			<type>button</type>
 			<id>3</id>
@@ -43,7 +35,7 @@
 			<onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
-        <control Style="SettingsButtonLarge">
+	   <control Style="SettingsButtonLarge">
 			<description>Scroll speed button</description>
 			<type>button</type>
 			<id>4</id>
@@ -54,7 +46,6 @@
 		</control>
 
 	</control>
-<import>common.time.xml</import>
-<import>avalon.version.xml</import>
+
 </controls>
 </window>

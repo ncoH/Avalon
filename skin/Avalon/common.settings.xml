@@ -19,10 +19,10 @@
 		<width>1893</width>
 		<height>795</height>
 		<texture>viewport_settings.png</texture>
-        <animation effect="fade" time="250">WindowOpen</animation>
-        <animation effect="fade" time="250">WindowClose</animation>
-    	<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-    	<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+    <animation effect="fade" time="250">WindowOpen</animation>
+    <animation effect="fade" time="250">WindowClose</animation>
+    <animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+    <animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
 	</control>
 
 	<control>
@@ -36,20 +36,6 @@
 		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>font22</font>
-	</control>
-	
-	<control>
-		<type>label</type>
-		<description>Settings label</description>
-		<id>121</id>
-		<posX>766</posX>
-		<posY>158</posY>
-		<width>500</width>
-		<label>5</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB22</font>
- 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 	<control>

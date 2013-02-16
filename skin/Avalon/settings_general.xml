@@ -1,136 +1,77 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>705</id>
-	<defaultcontrol>10</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<define>#defaultcontrol.onleft:10001</define>
-<controls>
-	<import>settings.menu.xml</import>
+  <id>1016</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:897</define>
+  <rememberLastFocusedControl>yes</rememberLastFocusedControl>
+  <controls>
+
+  <import>common.settings.xml</import>	
+	<import>common.time.xml</import>
 	
 	<control>
 		<type>label</type>
 		<id>1</id>
-		<posX>766</posX>
-		<posY>158</posY>
+		<posX>152</posX>
+		<posY>225</posY>
 		<width>500</width>
 		<label>128</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB22</font>
+		<textcolor>00b7ff</textcolor>
+		<font>AvalonLight20</font>
 	</control>
 	
 	<control>
 		<description>buttons</description>
 		<type>group</type>
-		<posX>736</posX>
-		<posY>254</posY>
-		<layout>StackLayout</layout>
-		
-		<control>
-			<description>Skin</description>
-			<type>button</type>
-			<id>10</id>
-			<label>166</label>
-			<onup>17</onup>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-			<width>471</width>
-			<height>52</height>
-			<textXOff>28</textXOff>
-			<textYOff>8</textYOff>
-			<onleft>#defaultcontrol.onleft</onleft>
-		</control>
-		
-		<control>
-			<description>Language</description>
-			<type>button</type>
-			<id>11</id>
-			<label>248</label>
-			<width>471</width>
-			<height>52</height>
-			<textXOff>28</textXOff>
-			<textYOff>8</textYOff>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-			<textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-			<onleft>#defaultcontrol.onleft</onleft>
-		</control>
-		
-		<control>
-			<description>Start in fullscreen mode</description>
-			<type>togglebutton</type>
-			<id>12</id>
-			<label>1047</label>
-			<width>471</width>
-			<height>52</height>
-			<textXOff>28</textXOff>
-			<textYOff>8</textYOff>
-			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
-			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
-			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
-			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-			<onleft>#defaultcontrol.onleft</onleft>
-		</control>
-		
-		<control>
-			<description>Screensaver</description>
-			<type>togglebutton</type>
-			<id>13</id>
-			<label>360</label>
-			<width>471</width>
-			<height>52</height>
-			<textXOff>28</textXOff>
-			<textYOff>8</textYOff>
-			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
-			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
-			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
-			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-			<onleft>#defaultcontrol.onleft</onleft>
-		</control>
-		
-		<control>
-			<description>Skip steps screen button</description>
-			<type>button</type>
-			<id>21</id>
-			<label>6024</label>
-			<width>471</width>
-			<height>52</height>
-			<textXOff>28</textXOff>
-			<textYOff>8</textYOff>
-			<textureFocus>settings_button_medium_focus.png</textureFocus>
-			<hyperlink>708</hyperlink>
-			<ondown>99</ondown>
-			<textcolor>ffffffff</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>
-			<onleft>#defaultcontrol.onleft</onleft>
-		</control>
-		
-	</control>
-	
-	<control>
-		<description>Skin Preview</description>
-		<type>image</type>
-		<id>20</id>
-		<posX>-2000</posX>
-	</control>
-	
-	<control>
-		<description>Skin preview image</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>1278</posX>
-		<posY>264</posY>
-		<width>311</width>
-		<height>175</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">settings_preview.png</texture>
-	</control>
-<import>common.time.xml</import>
-<import>avalon.version.xml</import>
-</controls>
+		<posX>122</posX>
+		<posY>321</posY>
+		<dimColor>ffffffff</dimColor>
+		<layout>StackLayout(7, Vertical, true)</layout>
+     
+			<control Style="SettingsButton">
+        <description>General MP Settings</description>
+        <type>button</type>
+        <id>2</id>
+        <label>300080</label>
+        <onup>7</onup>
+      </control>
+			
+			<control Style="SettingsButton">
+        <description>Startup settings</description>
+        <type>button</type>
+        <id>3</id>
+        <label>300081</label>
+      </control>
+			
+			<control Style="SettingsButton">
+        <description>Resume settings</description>
+        <type>button</type>
+        <id>4</id>
+        <label>300082</label>
+      </control>
+			
+			<control Style="SettingsButton">
+        <description>Volume settings</description>
+        <type>button</type>
+        <id>5</id>
+        <label>101007</label>
+      </control>
+			
+			<control Style="SettingsButton">
+        <description>RefreshRate settings</description>
+        <type>button</type>
+        <id>6</id>
+        <label>300083</label>
+      </control>
+			
+			<control Style="SettingsButton">
+        <description>AUtoplay</description>
+        <type>button</type>
+        <id>7</id>
+        <label>713</label>
+				<ondown>2</ondown>
+      </control>
+    </control>
+  </controls>
 </window>
