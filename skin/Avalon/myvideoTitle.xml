@@ -5,6 +5,7 @@
   <allowoverlay>no</allowoverlay>
   <define>#useSelectedFanart:Yes</define>
   <controls>
+  
     <control>
       <description>dummy poster control</description>
       <type>label</type>
@@ -13,6 +14,7 @@
       <posY>-2000</posY>
       <label>#Avalon.EnablePosterHide</label>
     </control>
+	
     <!--            :: DEFAULT BACKGROUND ::            -->
     <control>
       <description>DEFAULT BACKGROUND</description>
@@ -25,8 +27,11 @@
       <texture>background.png</texture>
       <shouldCache>true</shouldCache>
     </control>
+	
     <import>common.fanart.selected.xml</import>
+	
     <!--            :: HEADER ::            -->
+	
     <control>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
@@ -40,13 +45,16 @@
       <font>font22</font>
       <visible>facadeview.list | facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
     </control>
+	
     <!--            :: IMPORT ::            -->
-    <import tag="Background">myvideo.background.noinfo.xml</import>
+	
+    <import tag="Background">myvideo.background.default.xml</import>
     <import>common.time.xml</import>
     <import>myvideo.hiddenmenu.xml</import>
-    <import tag="Views">myvideo.views.noinfo.xml</import>
-    <import tag="Facade">common.facade.video.noinfo.xml</import>
+    <import tag="Views">myvideo.views.default.xml</import>
+    <import tag="Facade">common.facade.video.default.xml</import>
     <import>myvideoTitle.Info.xml</import>
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

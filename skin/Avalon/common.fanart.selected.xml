@@ -42,7 +42,7 @@
         <width>1312</width>
         <height>738</height>
 		<texture>#fanarthandler.movie.backdrop1.selected</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + [control.isvisible(91919291)+control.isvisible(91919293)]</visible>
+		<visible>[facadeview.playlist | facadeview.list | facadeview.smallicons | facadeview.largeicons] + [control.isvisible(91919291)+control.isvisible(91919293)]</visible>
         <animation effect="fade" time="300">visible</animation>
         <animation effect="fade" time="300" delay="300">hidden</animation>
         <animation effect="fade" time="0">WindowClose</animation>
@@ -58,7 +58,7 @@
         <width>1312</width>
         <height>738</height>
 		<texture>#fanarthandler.movie.backdrop2.selected</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + [control.isvisible(91919292)+control.isvisible(91919293)]</visible>
+		<visible>[facadeview.playlist | facadeview.list | facadeview.smallicons | facadeview.largeicons] + [control.isvisible(91919292)+control.isvisible(91919293)]</visible>
         <animation effect="fade" time="300">visible</animation>
         <animation effect="fade" time="300" delay="300">hidden</animation>
         <animation effect="fade" time="0">WindowClose</animation>
@@ -77,7 +77,7 @@
 		<centered>yes</centered>
 		<zoom>yes</zoom>
 		<texture>#fanarthandler.movie.backdrop1.selected</texture>  
-		<visible>[facadeview.filmstrip|facadeview.coverflow] + [control.isvisible(91919291)+control.isvisible(91919293)]</visible>	
+		<visible>[facadeview.filmstrip | facadeview.coverflow] + [control.isvisible(91919291)+control.isvisible(91919293)]</visible>	
 		  <animation effect="fade" time="300">visible</animation>
 		  <animation effect="fade" time="300" delay="300">hidden</animation>
 		  <animation effect="fade" time="0">WindowClose</animation>
@@ -96,7 +96,7 @@
 		<centered>yes</centered>
 		<zoom>yes</zoom>
 		<texture>#fanarthandler.movie.backdrop2.selected</texture>  
-		<visible>[facadeview.filmstrip|facadeview.coverflow] + [control.isvisible(91919292)+control.isvisible(91919293)]</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow] + [control.isvisible(91919292)+control.isvisible(91919293)]</visible>
     	  <animation effect="fade" time="300">visible</animation>
 		  <animation effect="fade" time="300" delay="300">hidden</animation>
 		  <animation effect="fade" time="0">WindowClose</animation>
@@ -112,7 +112,7 @@
         <width>1312</width>
         <height>738</height>
 		<texture>hover_my videos.png</texture>
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + !control.isvisible(91919293)</visible>
+		<visible>[facadeview.playlist | facadeview.list | facadeview.smallicons | facadeview.largeicons] + !control.isvisible(91919293)</visible>
         <animation effect="fade" time="300">visible</animation>
         <animation effect="fade" time="300" delay="300">hidden</animation>
         <animation effect="fade" time="0">WindowClose</animation>
@@ -131,7 +131,7 @@
 		<centered>yes</centered>
 		<zoom>yes</zoom>
 		<texture>hover_my videos.png</texture>
-		<visible>[facadeview.filmstrip|facadeview.coverflow] + !control.isvisible(91919293)</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow] + !control.isvisible(91919293)</visible>
         <animation effect="fade" time="300">visible</animation>
         <animation effect="fade" time="300" delay="300">hidden</animation>
         <animation effect="fade" time="0">WindowClose</animation>
