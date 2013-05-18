@@ -105,17 +105,30 @@
 
 		<control>
 			<description>Progress Bar</description>
-			<type>progress</type>
+			<type>tvprogress</type>
 			<id>1</id>
-    		<posX>578</posX>
+    		<posX>590</posX>
     		<posY>966</posY>
-    		<width>758</width>
+    		<width>730</width>
     		<height>15</height>
-    		<label>#percentage</label>
-    		<texturebg>-</texturebg>
-    		<lefttexture>osd_progress_left.png</lefttexture>
-    		<midtexture>osd_progress_mid.png</midtexture>
-    		<righttexture>osd_progress_right.png</righttexture>
+			<toptexture>osd_progress_indicator.png</toptexture>
+			<TextureOffsetY>23</TextureOffsetY>
+			<bottomtexture>-</bottomtexture>
+			<texturetick>-</texturetick>
+			<lefttexture>osd_progress_left.png</lefttexture>
+			<midtexture>-</midtexture>
+			<righttexture>-</righttexture>
+			<logotexture>-</logotexture>
+			<fillbackgroundtexture>-</fillbackgroundtexture>
+			<fillbgxoff>-3</fillbgxoff>
+			<fillbgyoff>0</fillbgyoff>
+			<filltexture1>osd_progress_mid.png</filltexture1>
+			<filltexture2>osd_progress_mid.png</filltexture2>
+			<filltexture3>osd_progress_mid_orange.png</filltexture3>
+			<markertexture>osd_progress_mid_orange.png</markertexture>
+			<fillheight>15</fillheight>
+			<labelmarkerstarts>#jumppoints</labelmarkerstarts>
+			<labelmarkerends>#chapters</labelmarkerends>			
 			<label>#percentage</label>
 			<visible>control.isVisible(111)|control.isVisible(10)|control.isVisible(11)|control.isVisible(12)</visible>
 		</control>
