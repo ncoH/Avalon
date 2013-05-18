@@ -29,8 +29,7 @@
 		<height>872</height>
 		<texture>myfilms_details_bg.png</texture>
 	</control>
-	
-	
+		
 	<control>
 		<type>label</type>
 		<id>1</id>
@@ -47,12 +46,12 @@
 	<control>
 		<description>Artist value</description>
 		<type>fadelabel</type>
-		<id>21</id>
+		<id>0</id>
 		<posX>843</posX>
 		<posY>396</posY>
 		<width>800</width>
 		<font>AvalonLight14</font>
-		<label>-</label>
+		<label>#AlbumInfo.Artist</label>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
@@ -74,11 +73,11 @@
 	<control>
 		<description>Album value</description>
 		<type>fadelabel</type>
-		<id>20</id>
+		<id>0</id>
 		<posX>843</posX>
 		<posY>352</posY>
 		<width>800</width>
-		<label>-</label>
+		<label>#AlbumInfo.Title</label>
 		<font>AvalonLight14</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
@@ -88,7 +87,7 @@
 	<control>
 		<description>Genre</description>
 		<type>label</type>
-		<id>1</id>
+		<id>0</id>
 		<posX>587</posX>
 		<posY>475</posY>
 		<label>174</label>
@@ -102,7 +101,7 @@
 	<control>
 		<description>Year</description>
 		<type>label</type>
-		<id>1</id>
+		<id>0</id>
 		<posX>587</posX>
 		<posY>438</posY>
 		<label>201</label>
@@ -116,7 +115,7 @@
 	<control>
 		<description>Rating</description>
 		<type>label</type>
-		<id>1</id>
+		<id>0</id>
 		<posX>587</posX>
 		<posY>519</posY>
 		<label>173</label>
@@ -127,15 +126,14 @@
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 	</control>
 
-
 	<control>
 		<description>Genre value</description>
 		<type>label</type>
-		<id>24</id>
+		<id>0</id>
 		<posX>843</posX>
 		<posY>475</posY>
 		<width>560</width>
-		<label>-</label>
+		<label>#AlbumInfo.Genre</label>
 		<font>AvalonLight14</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
@@ -145,10 +143,10 @@
 	<control>
 		<description>Year value</description>
 		<type>label</type>
-		<id>22</id>
+		<id>0</id>
 		<posX>843</posX>
 		<posY>438</posY>
-		<label>-</label>
+		<label>#AlbumInfo.Year</label>
 		<font>AvalonLight14</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
@@ -158,11 +156,11 @@
 	<control>
 		<description>Tones value</description>
 		<type>fadelabel</type>
-		<id>25</id>
+		<id>0</id>
 		<posX>-2000</posX>
 		<posY>313</posY>
 		<width>560</width>
-		<label>-</label>
+		<label>#AlbumInfo.Tones</label>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
@@ -171,11 +169,11 @@
 	<control>
 		<description>Styles value</description>
 		<type>fadelabel</type>
-		<id>26</id>
+		<id>0</id>
 		<posX>-2000</posX>
 		<posY>337</posY>
 		<width>560</width>
-		<label>-</label>
+		<label>#AlbumInfo.Styles</label>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
@@ -184,23 +182,23 @@
 	<control>
 		<description>Rating value</description>
 		<type>label</type>
-		<id>23</id>
+		<id>0</id>
 		<posX>843</posX>
 		<posY>519</posY>
-		<label>-</label>
+		<label>#AlbumInfo.Rating</label>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 	</control>
 
 	<control>
-		<id>3</id>
+		<id>0</id>
 		<type>image</type>
 		<posX>297</posX>
 		<posY>347</posY>
 		<width>250</width>
 		<height>250</height>
-		<texture>-</texture>
+		<texture>#AlbumInfo.Thumb</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
 		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
