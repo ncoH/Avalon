@@ -108,7 +108,7 @@
 		
 		<control>
 		  <description>Biography</description>
-		  <type>togglebutton</type>
+		  <type>checkbutton</type>
 		  <id>3</id>
 		  <label>1011</label>
 		  <onleft>22</onleft>
@@ -119,7 +119,7 @@
 
 		<control>
 		  <description>Movies</description>
-		  <type>togglebutton</type>
+		  <type>checkbutton</type>
 		  <id>4</id>
 		  <label>342</label>
 		  <onleft>22</onleft>

@@ -6,21 +6,21 @@
 <define>#header.label:200041</define>
 <controls>
 
-     <control>
-      <description>BackGround</description>
-      <type>image</type>
-      <id>1</id>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>background.png</texture>      
-    </control>
+  <control>
+    <description>BackGround</description>
+    <type>image</type>
+    <id>1</id>
+    <width>1920</width>
+    <height>1080</height>
+    <texture>background.png</texture>      
+  </control>
 	
 	<control>
 		<description>background listview</description>
 		<type>image</type>
 		<id>1</id>
 		<posX>0</posX>
-        <posY>0</posY>
+    <posY>0</posY>
 		<width>1920</width>
 		<height>1080</height>
 		<texture>overlay.png</texture>
@@ -37,7 +37,7 @@
 		<texture>viewport_onlinevideos.png</texture>
 	</control>
     
-    <import>common.time.xml</import>
+  <import>common.time.xml</import>
     
 	<control>
 		<type>label</type>
@@ -79,7 +79,7 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 	
-	 	<control>
+	<control>
 		<description></description>
 		<type>label</type>
 		<id>0</id>
@@ -124,7 +124,7 @@
 		<posY>354</posY>
 		<label>#TV.TuningDetails.SignalLevel.label</label>
 		<font>AvalonLight16</font>
-        <textcolor>6aa5cb</textcolor>
+    <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -137,7 +137,7 @@
 		<posY>338</posY>
 		<label> 0</label>
 		<font>font11</font>
-        <textcolor>6aa5cb</textcolor>
+    <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -151,7 +151,7 @@
 		<label> 100</label>
 		<font>font11</font>
 		<align>right</align>
-        <textcolor>6aa5cb</textcolor>
+    <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -160,10 +160,10 @@
 		<description>Progress background</description>
 		<type>image</type>
 		<id>0</id>
-    	<posX>1092</posX>
-    	<posY>372</posY>
-    	<width>677</width>
-    	<height>18</height>
+    <posX>1092</posX>
+    <posY>372</posY>
+    <width>677</width>
+    <height>18</height>
 		<texture>osd_progress_bg.png</texture>
 	</control>
 
@@ -193,7 +193,7 @@
 		<posY>406</posY>
 		<label>#TV.TuningDetails.SignalQuality.label</label>
 		<font>AvalonLight16</font>
-        <textcolor>6aa5cb</textcolor>
+    <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -202,10 +202,10 @@
 		<description>Progress background</description>
 		<type>image</type>
 		<id>0</id>
-    	<posX>1092</posX>
-    	<posY>425</posY>
-    	<width>677</width>
-    	<height>18</height>
+    <posX>1092</posX>
+    <posY>425</posY>
+    <width>677</width>
+    <height>18</height>
 		<texture>osd_progress_bg.png</texture>
 	</control>
 
@@ -235,7 +235,7 @@
 		<posY>500</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.Detail1.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -247,7 +247,7 @@
 		<posX>1640</posX>
 		<posY>500</posY>
 		<label>#TV.TuningDetails.Detail1.value</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -260,7 +260,7 @@
 		<posY>500</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.ChannelType.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -272,7 +272,7 @@
 		<posX>992</posX>
 		<posY>500</posY>
 		<label>#TV.TuningDetails.ChannelType.value</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -285,7 +285,7 @@
 		<posY>534</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.Detail2.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -297,7 +297,7 @@
 		<posX>1640</posX>
 		<posY>534</posY>
 		<label>#TV.TuningDetails.Detail2.value</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -310,7 +310,7 @@
 		<posY>534</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.Frequency.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -322,7 +322,7 @@
 		<posX>992</posX>
 		<posY>534</posY>
 		<label>#TV.TuningDetails.Frequency.value</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -335,7 +335,7 @@
 		<posY>568</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.StreamingMode.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -347,7 +347,7 @@
 		<posX>992</posX>
 		<posY>568</posY>
 		<label>#TV.TuningDetails.StreamingMode.value</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -360,7 +360,7 @@
 		<posY>568</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.Detail3.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -372,7 +372,7 @@
 		<posX>1640</posX>
 		<posY>568</posY>
 		<label>#TV.TuningDetails.Detail3.value</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -385,7 +385,7 @@
 		<posY>602</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.RTSPURL.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -398,7 +398,7 @@
 		<posY>602</posY>
     <width>400</width>
 		<label>#TV.TuningDetails.RTSPURL.value</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -411,7 +411,7 @@
 		<posY>602</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.Detail4.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -423,7 +423,7 @@
 		<posX>1640</posX>
 		<posY>602</posY>
 		<label>#TV.TuningDetails.Detail4.value</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -436,7 +436,7 @@
 		<posY>636</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.VideoResolution.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -448,7 +448,7 @@
 		<posX>992</posX>
 		<posY>636</posY>
 		<label>#TV.TuningDetails.VideoResolution.value</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -461,7 +461,7 @@
 		<posY>636</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.Detail5.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -486,7 +486,7 @@
 		<posY>670</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.AudioType.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -498,7 +498,7 @@
 		<posX>992</posX>
 		<posY>670</posY>
 		<label>#TV.TuningDetails.AudioType.value</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -511,7 +511,7 @@
 		<posY>670</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.Detail6.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -536,7 +536,7 @@
 		<posY>704</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.AudioLanguage.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -548,7 +548,7 @@
 		<posX>992</posX>
 		<posY>704</posY>
 		<label>#TV.TuningDetails.AudioLanguage.value</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -561,7 +561,7 @@
 		<posY>704</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.Detail7.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -573,7 +573,7 @@
 		<posX>1640</posX>
 		<posY>704</posY>
 		<label>#TV.TuningDetails.Detail7.value</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -587,7 +587,7 @@
     <width>200</width>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.SubtitleStream.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -599,7 +599,7 @@
 		<posX>992</posX>
 		<posY>738</posY>
 		<label>#TV.TuningDetails.SubtitleStream.value</label>
-        <font>AvalonLight11</font>
+		<font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -612,7 +612,7 @@
 		<posY>738</posY>
 		<textcolor>6aa5cb</textcolor>
 		<label>#TV.TuningDetails.Detail8.label</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -624,7 +624,7 @@
 		<posX>1640</posX>
 		<posY>738</posY>
 		<label>#TV.TuningDetails.Detail8.value</label>
-        <font>AvalonLight11</font>
+    <font>AvalonLight11</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>

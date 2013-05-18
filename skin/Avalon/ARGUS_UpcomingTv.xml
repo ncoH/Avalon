@@ -10,7 +10,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>0</posX>
-        <posY>0</posY>
+    <posY>0</posY>
 		<width>1920</width>
 		<height>1080</height>
 		<texture>background.png</texture>
@@ -156,7 +156,7 @@
 		</control>
 		
 		<control>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<description>group by schedule</description>
 			<id>12</id>
 			<posX>462</posX>

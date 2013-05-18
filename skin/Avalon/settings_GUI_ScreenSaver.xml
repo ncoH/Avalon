@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-  <id>1020</id>
-  <defaultcontrol>2</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
+	<id>1020</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
 	<define>#header.label:897</define>
-  <rememberLastFocusedControl>no</rememberLastFocusedControl>
+	<rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
+  
+	<import>common.settings.xml</import>
 	<import>settings.menu.xml</import>	
-	<import>common.settings.xml</import>	
-	<import>common.time.settings.xml</import>  
+	<import>common.time.xml</import>  
 	
 	<control>
 		<type>label</type>
@@ -17,35 +18,38 @@
 		<posY>225</posY>
 		<width>800</width>
 		<label>#(L(101021))/#(L(102900))</label>
-		<textcolor>00b7ff</textcolor>
-		<font>TitanLight20</font>
+		<textcolor>6aa5cb</textcolor>
+		<font>fontB20</font>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 	</control>
-		<control Style="SettingsCheckButtonLarge">
-      <description>Enable screen saver</description>
-      <type>checkbutton</type>
-      <id>2</id>
-      <label>300133</label>
+	
+	<control Style="SettingsCheckButtonLarge">
+		<description>Enable screen saver</description>
+		<type>checkbutton</type>
+		<id>2</id>
+		<label>300133</label>
   		<posX>655</posX>
   		<posY>321</posY>
-      <ondown>3</ondown>
-      <onup>5</onup>
+		<ondown>3</ondown>
+		<onup>5</onup>
    		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+	
     <control>
-      <description>Delay label</description>
-      <type>label</type>
-      <id>1</id>
+		<description>Delay label</description>
+		<type>label</type>
+		<id>1</id>
   		<posX>683</posX>
   		<posY>396</posY>
-      <label>355</label>
-			<font>TitanLight12</font>
-     	<textcolor>ff00b7ff</textcolor>
+		<label>355</label>
+		<font>font12</font>
+     	<textcolor>6aa5cb</textcolor>
     	<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+	
     <control>
       <description>Delay</description>
       <type>spincontrol</type>
@@ -59,6 +63,7 @@
     	<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+	
 		<control Style="SettingsCheckButtonLarge">
       <description>BurnIn</description>
       <type>checkbutton</type>
@@ -71,6 +76,7 @@
    		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+	
 		<control Style="SettingsCheckButtonLarge">
       <description>Reduce framerate</description>
       <type>checkbutton</type>
@@ -82,5 +88,6 @@
    		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

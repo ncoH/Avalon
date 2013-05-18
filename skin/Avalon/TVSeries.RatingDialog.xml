@@ -8,7 +8,7 @@
         <control>
             <id>100</id>
             <description>1 Star</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <posX>700</posX>
             <posY>766</posY>
             <width>53</width>
@@ -24,7 +24,7 @@
         <control>
             <id>101</id>
             <description>2 Star</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <posX>750</posX>
             <posY>766</posY>
             <width>53</width>
@@ -40,7 +40,7 @@
         <control>
             <id>102</id>
             <description>3 Star</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <posX>800</posX>
             <posY>766</posY>
             <width>53</width>
@@ -56,7 +56,7 @@
         <control>
             <id>103</id>
             <description>4 Star</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <posX>850</posX>
             <posY>766</posY>
             <width>53</width>
@@ -72,7 +72,7 @@
         <control>
             <id>104</id>
             <description>5 Star</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <posX>900</posX>
             <posY>766</posY>
             <width>53</width>
@@ -88,7 +88,7 @@
         <control>
             <id>105</id>
             <description>6 Star</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <posX>950</posX>
             <posY>766</posY>
             <width>53</width>
@@ -104,7 +104,7 @@
         <control>
             <id>106</id>
             <description>7 Star</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <posX>1000</posX>
             <posY>766</posY>
             <width>53</width>
@@ -120,7 +120,7 @@
         <control>
             <id>107</id>
             <description>8 Star</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <posX>1050</posX>
             <posY>766</posY>
             <width>53</width>
@@ -136,7 +136,7 @@
         <control>
             <id>108</id>
             <description>9 Star</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <posX>1100</posX>
             <posY>766</posY>
             <width>53</width>
@@ -152,7 +152,7 @@
         <control>
             <id>109</id>
             <description>10 Star</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <posX>1150</posX>
             <posY>766</posY>
             <width>53</width>

@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-  <id>9</id>
-  <defaultcontrol>2</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
+	<id>9</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
 	<define>#header.label:897</define>
-  <rememberLastFocusedControl>yes</rememberLastFocusedControl>
+	<rememberLastFocusedControl>yes</rememberLastFocusedControl>
   <controls>
+  
+ 	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+
+	<control>
+		<description>viewport</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>795</height>
+		<texture>viewport_settings.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
 	
-  <import>common.settings.xml</import>	
 	<import>common.time.xml</import>
+
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight20</font>
+	</control>
 	
 	<control>
 		<type>label</type>
@@ -27,7 +62,7 @@
 		<posX>122</posX>
 		<posY>321</posY>
 		<dimColor>ffffffff</dimColor>
-		<layout>StackLayout(7, Vertical, true)</layout>
+		<layout>StackLayout(0, Vertical, true)</layout>
 				
 					<control Style="SettingsButton">
 						<description>UI Calibration button</description>
@@ -55,5 +90,6 @@
 						<ondown>2</ondown>
 					</control>
 			</control>
+			
   </controls>
 </window>

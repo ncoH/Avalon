@@ -71,13 +71,13 @@
       </control>
       <control>
         <description>art</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>10</id>
         <label>Get Cover Art</label>
       </control>
       <control>
         <description>eject</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>19</id>
         <label>Eject Disc</label>
       </control>      

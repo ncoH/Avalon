@@ -158,7 +158,7 @@
 		</control>
 		
 		<control>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<description>group by schedule</description>
 			<id>12</id>
 			<posX>462</posX>

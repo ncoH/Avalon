@@ -57,7 +57,7 @@
 	
 		<control>
 			<description>TV On/Off button</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>8</id>
 			<label>707</label>
 			<onup>13</onup>

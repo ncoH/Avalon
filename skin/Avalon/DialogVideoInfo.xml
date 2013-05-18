@@ -101,7 +101,7 @@
 
 	<control>
 		<description>Plot</description>
-		<type>togglebutton</type>
+		<type>checkbutton</type>
 		<id>3</id>
 		<label>207</label>
 		<onleft>24</onleft>
@@ -115,7 +115,7 @@
 
 	<control>
 		<description>Cast</description>
-		<type>togglebutton</type>
+		<type>checkbutton</type>
 		<id>4</id>
 		<label>206</label>
 		<onleft>24</onleft>
@@ -153,7 +153,7 @@
 	
 	<control>
 		<description>Watched</description>
-		<type>togglebutton</type>
+		<type>checkbutton</type>
 		<id>6</id>
 		<label>1010</label>
 		<onleft>24</onleft>

@@ -235,7 +235,7 @@
 			</control>		
 			<control>
 				<description>Random Fanart</description>
-				<type>togglebutton</type>
+				<type>checkbutton</type>
 				<id>13</id>
 				<textureFocus>hiddenmenu_toggle-on-focus.png</textureFocus>
 				<textureNoFocus>hiddenmenu_toggle-on-nofocus.png</textureNoFocus>

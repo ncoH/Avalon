@@ -7,9 +7,9 @@
 	<rememberLastFocusedControl>yes</rememberLastFocusedControl>
   <controls>
   
-  <import>common.settings.xml</import>	
-	<import>common.time.xml</import>
-	<import>settings.menu.xml</import>
+	<import>common.settings.xml</import>
+	<import>settings.menu.xml</import>	
+	<import>common.time.xml</import>  
 
 	<control>
 		<type>label</type>
@@ -33,49 +33,49 @@
 		<width>600</width>		
 		<label>300138</label>
 		<font>fontB14</font>
-    <textcolor>ff00b7ff</textcolor>
+		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>		
 	</control>
 	
 	  
 	<control Style="SettingsButtonMedium">
-    <description>add button</description>
-    <type>button</type>
-    <id>19</id>
+		<description>add button</description>
+		<type>button</type>
+		<id>19</id>
 		<posX>655</posX>
 		<posY>386</posY>
 		<textalign>left</textalign>		
-    <label>200039</label>
-    <onup>99</onup>
-    <onright>2</onright>
+		<label>200039</label>
+		<onup>99</onup>
+		<onright>2</onright>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>		
   </control>
 	  
   <control Style="SettingsButtonMedium">
 		<description>remove button</description>
-    <type>button</type>
-    <id>20</id>
+		<type>button</type>
+		<id>20</id>
 		<posX>655</posX>
 		<posY>452</posY>
 		<textalign>left</textalign>		
-    <label>200040</label>
-    <onright>3</onright>
+		<label>200040</label>
+		<onright>3</onright>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>		
   </control>
 	  
-	<control Style="SettingsButtonMedium">
-    <description>reset button</description>
-    <type>button</type>
-    <id>18</id>
+		<control Style="SettingsButtonMedium">
+		<description>reset button</description>
+		<type>button</type>
+		<id>18</id>
 		<posX>655</posX>
 		<posY>518</posY>
 		<textalign>left</textalign>		
-    <label>886</label>
-    <ondown>22</ondown>
-    <onright>5</onright>
+		<label>886</label>
+		<ondown>22</ondown>
+		<onright>5</onright>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>		
   </control>
@@ -92,7 +92,7 @@
 		<width>600</width>		
 		<label>300139</label>
 		<font>fontB14</font>
-		<textcolor>ff00b7ff</textcolor>
+		<textcolor>fontB20</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>		
 	</control>		
@@ -103,7 +103,7 @@
 		<id>22</id>
 		<posX>655</posX>
 		<posY>646</posY>
-    <textureNoFocus>settings_button_background_medium_black.png</textureNoFocus>
+		<textureNoFocus>settings_button_background_medium_black.png</textureNoFocus>
 		<textalign>left</textalign>			
 		<label>300140</label>
 		<ondown>23</ondown>
@@ -136,7 +136,7 @@
 		<width>600</width>		
 		<label>300141</label>
 		<font>fontB14</font>
-    <textcolor>ff00b7ff</textcolor>
+		<textcolor>fontB20</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>		
 	</control>	
@@ -176,7 +176,7 @@
 		<id>25</id>
 		<posX>655</posX>
 		<posY>908</posY>
-    <textureNoFocus>settings_button_background_medium_black.png</textureNoFocus>
+		<textureNoFocus>settings_button_background_medium_black.png</textureNoFocus>
 		<textalign>left</textalign>			
 		<label>300144</label>
 		<ondown>19</ondown>
@@ -214,8 +214,8 @@
 	</control>
 		
 	<control>
-    <description>skip steps seconds</description>
-    <type>group</type>           
+		<description>skip steps seconds</description>
+		<type>group</type>           
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 		<posX>1256</posX>
@@ -227,10 +227,10 @@
         <description>skip steps seconds</description>
         <id>1</id>
         <label>9997</label>
-		    <font>fontB12</font>
-    	  <textcolor>ff00b7ff</textcolor>	
-		    <animation effect="fade" time="150">WindowOpen</animation>
-		    <animation effect="fade" time="150">WindowClose</animation>	
+		<font>fontB12</font>
+    	<textcolor>fontB20</textcolor>	
+		<animation effect="fade" time="150">WindowOpen</animation>
+		<animation effect="fade" time="150">WindowClose</animation>	
       </control>
 	  
       <control>
@@ -299,8 +299,8 @@
     </control>
 	
     <control>
-      <description>skip steps minutes</description>
-      <type>group</type>     
+		<description>skip steps minutes</description>
+		<type>group</type>     
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 		<posX>1456</posX>
@@ -308,14 +308,14 @@
       <layout>StackLayout(60)</layout>
 	  
     <control>
-      <description>skip steps minutes</description>
-      <type>label</type>
-      <id>1</id>
-      <label>9998</label>
-			<font>fontB12</font>
-    	<textcolor>ff00b7ff</textcolor>
-			<animation effect="fade" time="150">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>			
+		<description>skip steps minutes</description>
+		<type>label</type>
+		<id>1</id>
+		<label>9998</label>
+		<font>fontB12</font>
+    	<textcolor>fontB20</textcolor>
+		<animation effect="fade" time="150">WindowOpen</animation>
+		<animation effect="fade" time="150">WindowClose</animation>			
     </control>
 	  
       <control>
@@ -457,14 +457,14 @@
 		<layout>StackLayout(60)</layout>
 	  
     <control>
-      <description>skip steps hours</description>
-      <type>label</type>
-      <id>1</id>
-      <label>9999</label>
-			<font>fontB12</font>
-    	<textcolor>ff00b7ff</textcolor>
-			<animation effect="fade" time="150">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>			
+		<description>skip steps hours</description>
+		<type>label</type>
+		<id>1</id>
+		<label>9999</label>
+		<font>fontB12</font>
+    	<textcolor>fontB20</textcolor>
+		<animation effect="fade" time="150">WindowOpen</animation>
+		<animation effect="fade" time="150">WindowClose</animation>			
     </control>
 	  
       <control>

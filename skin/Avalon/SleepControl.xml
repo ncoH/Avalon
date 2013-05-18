@@ -176,7 +176,7 @@
 			
 		<control>
 			<description>Volume Control</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>9</id>
 			<width>485</width>
 			<height>64</height>				

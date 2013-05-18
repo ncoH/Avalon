@@ -254,25 +254,9 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
                 <onup>6</onup>
-                <ondown>8</ondown>
+                <ondown>66610</ondown>
 			</control>
-  
-			<control>
-                <description>Global Updates</description>
-				<type>button</type>					
-				<id>8</id>			
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<width>497</width>
-				<height>64</height>
-				<textXOff>58</textXOff>
-				<textYOff>14</textYOff>				
-				<onup>7</onup>
-				<ondown>66610</ondown>
-				<onleft>50</onleft>
-                <onright>50</onright>				
-			</control>
-		
+            
 			<control>
 				<description>Video Settings</description>
 				<type>button</type>
@@ -287,7 +271,7 @@
 				<hyperlink>703</hyperlink>
 				<onleft>50</onleft>
                 <onright>50</onright>
-                <onup>8</onup>
+                <onup>7</onup>
                 <ondown>66612</ondown>
 			</control>
 			

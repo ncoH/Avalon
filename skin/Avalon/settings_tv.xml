@@ -7,9 +7,9 @@
 <define>#header.label:897</define>
 <controls>
 
-  <import>common.settings.xml</import>	
-	<import>common.time.xml</import>
-	<import>settings.menu.xml</import>
+	<import>common.settings.xml</import>
+	<import>settings.menu.xml</import>	
+	<import>common.time.xml</import>  
 
 	<control>
 		<type>label</type>
@@ -18,7 +18,7 @@
 		<posY>225</posY>
 		<width>500</width>
 		<label>605</label>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>00b7ff</textcolor>
 		<font>fontB20</font>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
@@ -31,8 +31,8 @@
 		<posY>321</posY>
 		<dimColor>ffffffff</dimColor>
 		<layout>GridLayout(2, 0, 7, 7, 1)</layout>
-	  <animation effect="fade" time="150">WindowOpen</animation>
-	  <animation effect="fade" time="150">WindowClose</animation>
+		<animation effect="fade" time="150">WindowOpen</animation>
+		<animation effect="fade" time="150">WindowClose</animation>
 		
 		  <control Style="SettingsButtonMedium">
 				<description>MPEG-2 Video Codecs</description>
@@ -88,11 +88,11 @@
 				<type>button</type>
 				<id>28</id>
 				<label>6004</label>
-				<ondown>31</ondown>
+				<ondown>30</ondown>
 	      <onleft>#defaultcontrol.onleft</onleft>
 			</control>
 	
-		  <control Style="SettingsButtonMedium">
+		  <!--<control Style="SettingsButtonMedium">
 				<description>Recording options</description>
 				<type>button</type>
 				<id>31</id>
@@ -100,15 +100,24 @@
 				<hyperlink>701</hyperlink>
 				<ondown>30</ondown>
 	      <onleft>#defaultcontrol.onleft</onleft>
-			</control>
-	
+			</control>-->
+
 		  <control Style="SettingsButtonMedium">
 				<description>Automatically turn TV on</description>
 				<type>button</type>
 				<id>30</id>
 				<label>6006</label>
+				<ondown>29</ondown>
+				<onup>28</onup>
+			</control>
+	
+		  <control Style="SettingsCheckButtonMedium">
+				<description>Ask for stopping timeshift</description>
+				<type>checkbutton</type>
+				<id>29</id>		
+				<label>300228</label>
 				<ondown>40</ondown>
-				<onup>31</onup>
+				<onup>30</onup>
 			</control>
 	
 		  <control Style="SettingsCheckButtonMedium">
@@ -116,7 +125,7 @@
 				<type>checkbutton</type>
 				<id>40</id>		
 				<label>1246</label>
-				<onup>30</onup>
+				<onup>29</onup>
 				<selected>#(skin.hassetting('#skin.tvguide.usecolorsforbuttons'))</selected>
 				<onclick>#(skin.togglesetting('#skin.tvguide.usecolorsforbuttons'))</onclick>
 			</control>
@@ -153,31 +162,32 @@
         <description>ChannelManager</description>
         <type>button</type>
         <id>44</id>
-        <label>4TR #TV.Settings.ChannelManagerName</label>
+        <label>ARGUS #TV.Settings.ChannelManagerName</label>
         <hyperlink>49856</hyperlink>
-        <visible>plugin.isenabled(For The Record TV)</visible>
-				<ondown>45</ondown>
+        <visible>plugin.isenabled(ARGUS TV)</visible>
+		<ondown>45</ondown>	
       </control>
 			
 		  <control Style="SettingsButtonMedium">
-        <description>4TRClientSettings</description>
+        <description>ARGUSClientSettings</description>
         <type>button</type>
         <id>45</id>
-        <label>#TV.Settings.4TRClientSettingsName</label>
+        <label>#TV.Settings.ArgusClientSettingsName</label>
         <hyperlink>49857</hyperlink>
-        <visible>plugin.isenabled(For The Record TV)</visible>
-				<ondown>46</ondown>
+        <visible>plugin.isenabled(ARGUS TV)</visible>
+		<ondown>46</ondown>
       </control>
 			
 		  <control Style="SettingsButtonMedium">
-        <description>4TRServerSettings</description>
+        <description>ARGUSServerSettings</description>
         <type>button</type>
         <id>46</id>
-        <label>#TV.Settings.4TRServerSettingsName</label>
+        <label>#TV.Settings.ArgusServerSettingsName</label>
         <hyperlink>49855</hyperlink>
-        <visible>plugin.isenabled(For The Record TV)</visible>
-				<ondown>24</ondown>
+        <visible>plugin.isenabled(ARGUS TV)</visible>
+		<ondown>24</ondown>
       </control>
+
 	</control>
 	
 </controls>

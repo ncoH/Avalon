@@ -7,18 +7,42 @@
   <rememberLastFocusedControl>yes</rememberLastFocusedControl>
   <controls>
 
-  <import>common.settings.xml</import>	
-	<import>common.time.xml</import>
-	
+ 	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+
 	<control>
+		<description>viewport</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>795</height>
+		<texture>viewport_settings.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+	
+	<import>common.time.xml</import>
+
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>152</posX>
-		<posY>225</posY>
+		<posX>185</posX>
+		<posY>38</posY>
 		<width>500</width>
-		<label>128</label>
-		<textcolor>00b7ff</textcolor>
-		<font>AvalonLight20</font>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
 	</control>
 	
 	<control>
@@ -27,51 +51,52 @@
 		<posX>122</posX>
 		<posY>321</posY>
 		<dimColor>ffffffff</dimColor>
-		<layout>StackLayout(7, Vertical, true)</layout>
+		<layout>StackLayout(0, Vertical, true)</layout>
      
-			<control Style="SettingsButton">
+	<control Style="SettingsButton">
         <description>General MP Settings</description>
         <type>button</type>
         <id>2</id>
         <label>300080</label>
         <onup>7</onup>
-      </control>
+    </control>
 			
-			<control Style="SettingsButton">
+	<control Style="SettingsButton">
         <description>Startup settings</description>
         <type>button</type>
         <id>3</id>
         <label>300081</label>
-      </control>
+    </control>
 			
-			<control Style="SettingsButton">
+	<control Style="SettingsButton">
         <description>Resume settings</description>
         <type>button</type>
         <id>4</id>
         <label>300082</label>
-      </control>
+    </control>
 			
-			<control Style="SettingsButton">
+	<control Style="SettingsButton">
         <description>Volume settings</description>
         <type>button</type>
         <id>5</id>
         <label>101007</label>
-      </control>
+    </control>
 			
-			<control Style="SettingsButton">
+	<control Style="SettingsButton">
         <description>RefreshRate settings</description>
         <type>button</type>
         <id>6</id>
         <label>300083</label>
-      </control>
+    </control>
 			
-			<control Style="SettingsButton">
+	<control Style="SettingsButton">
         <description>AUtoplay</description>
         <type>button</type>
         <id>7</id>
         <label>713</label>
-				<ondown>2</ondown>
-      </control>
+		<ondown>2</ondown>
     </control>
+  </control>
+	
   </controls>
 </window>

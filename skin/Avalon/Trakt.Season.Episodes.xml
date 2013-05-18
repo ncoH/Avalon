@@ -3,8 +3,8 @@
   <id>87282</id>
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
-	<define>#Fanart.1:#Trakt.WatchListEpisodes.Fanart.1</define>
-	<define>#Fanart.2:#Trakt.WatchListEpisodes.Fanart.2</define>	
+	<define>#Fanart.1:#Trakt.Show.Fanart</define>
+	<define>#Fanart.2:#Trakt.Show.Fanart</define>	
   <controls>    
 		
     <control>

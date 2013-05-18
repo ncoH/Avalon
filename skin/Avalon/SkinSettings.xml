@@ -10,20 +10,23 @@
     <entry name="#skin.tvguide.showgenrekey">True</entry>
   </section>
   <section name="tvguidecolors">
-    <entry name="guidecolorchannelbutton">FF0E517B</entry>
-    <entry name="guidecolorchannelbuttonselected">FF008000</entry>
-    <entry name="guidecolorprogramselected">FF008000</entry>
-    <entry name="guidecolorprogramended">FF808080</entry>
+    <entry name="guidecolorchannelbutton">FF122F3F</entry>
+    <entry name="guidecolorchannelbuttonselected">FF00B7FF</entry>
+    <entry name="guidecolorprogramselected">FF00B7FF</entry>
+    <entry name="guidecolorprogramended">FF122F3F</entry>
     <entry name="guidecolorborderhighlight">99FFFFFF</entry>
-    <entry name="defaultgenre">FF1D355B,FF0E517B</entry>
-    <entry name="0">FFD2691E,FFD2691E</entry>
-    <entry name="1">FF00FFFF,FF00FFFF</entry>
-    <entry name="2">FF800080,FF800080</entry>
-    <entry name="3">FF800000,FF800000</entry>
-    <entry name="4">FF90EE90,FF90EE90</entry>
-    <entry name="5">FFFFD700,FFFFD700</entry>
-    <entry name="6">FF006400,FF006400</entry>
-    <entry name="guidecolorgroupbutton">FF1D355B</entry>
-    <entry name="guidecolorgroupbuttonselected">FF1D355B</entry>
+    <entry name="defaultgenre">FF276688,FF122F3F</entry>
+    <entry name="genre0">FF8A8965,FF8A8965</entry>
+    <entry name="genre1">F00A2A2F,FF00A2A2</entry>
+    <entry name="genre2">FF552C84,FF552C84</entry>
+    <entry name="genre3">FFAD004D,FFAD004D</entry>
+    <entry name="genre4">FF747474,FF747474</entry>
+    <entry name="genre5">FFFFAB0F,FFFFAB0F</entry>
+    <entry name="genre6">FF00A313,FF00A313</entry>
+    <entry name="guidecolorgroupbutton">FFFFFFFF</entry>
+    <entry name="guidecolorgroupbuttonselected">FFFFFFFF</entry>
+  </section>
+  <section name="stringsettings">
+    <entry name="#skin.basichome.background">none</entry>
   </section>
 </profile>

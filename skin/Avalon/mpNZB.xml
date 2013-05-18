@@ -141,7 +141,7 @@
     
         <control>
             <description>Pause Queue</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <id>6</id>
     	    <posX>130</posX>
     		<posY>540</posY>

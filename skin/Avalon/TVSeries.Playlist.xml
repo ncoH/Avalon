@@ -360,7 +360,7 @@
           
           <control>
                 <description>Repeat on/off button</description>
-                <type>togglebutton</type>
+                <type>checkbutton</type>
                 <id>30</id>
                 <label>486</label>
 				<width>497</width>
@@ -377,7 +377,7 @@
 		  
           <control>
                 <description>Autoplay on/off button</description>
-                <type>togglebutton</type>
+                <type>checkbutton</type>
                 <id>40</id>
                 <label>713</label>
 				<width>497</width>

@@ -134,7 +134,7 @@
 
 		<control>
 			<description>Only new episodes</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>5</id>
 			<posX>72</posX>
 			<posY>420</posY>	

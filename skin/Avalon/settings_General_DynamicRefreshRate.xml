@@ -7,22 +7,22 @@
 	<rememberLastFocusedControl>yes</rememberLastFocusedControl>
   <controls>
   
-  <import>common.settings.xml</import>	
-	<import>common.time.xml</import>
-	<import>settings.menu.xml</import>
-
+	<import>settings.menu.xml</import>	
+	<import>common.settings.xml</import>	
+	<import>common.time.settings.xml</import>  
+	
 	<control>
 		<type>label</type>
 		<id>1</id>
 		<posX>685</posX>
 		<posY>225</posY>
-		<width>500</width>
+		<width>800</width>
 		<label>#(L(128))/#(L(300083))</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB20</font>
-	  <animation effect="fade" time="150">WindowOpen</animation>
-	  <animation effect="fade" time="150">WindowClose</animation>
-	</control>	
+		<textcolor>00b7ff</textcolor>
+		<font>TitanLight20</font>
+		<animation effect="fade" time="150">WindowOpen</animation>
+		<animation effect="fade" time="150">WindowClose</animation>
+	</control>
 	
     <!--Options-->
   
@@ -207,7 +207,7 @@
     <id>1</id>
     <width>150</width>
     <label>#name</label>
-    <font>font13</font>
+    <font>font12</font>
 		<textcolor>ffffffff</textcolor>
   </control> -->
 	  
@@ -227,7 +227,7 @@
       <id>1</id>
       <width>150</width>
       <label>#action</label>
-      <font>font13</font>
+      <font>font12</font>
       <textcolor>ffffffff</textcolor>
 		</control> -->
   </control>

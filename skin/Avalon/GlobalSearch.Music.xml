@@ -78,7 +78,7 @@
 				</control>
 				<control>
 					<description>Case sensitivity</description>
-					<type>togglebutton</type>
+					<type>checkbutton</type>
 					<id>3</id>
 					<label>#Avalon.CaseSensitive</label>
 					<ondown>10</ondown>

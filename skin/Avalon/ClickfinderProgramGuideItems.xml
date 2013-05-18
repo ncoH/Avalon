@@ -3,6 +3,8 @@
   <defaultcontrol>10</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
 	<controls>
+
+    <!-- Background -->
 	
 		<control>
 			<description>default background</description>
@@ -72,7 +74,6 @@
 			<width>1000</width>
 			<label>#ItemsLeftListLabel</label>
 			<font>font22</font>
-			<textcolor>FF6aa5cb</textcolor>
 			<visible>yes</visible>
 		</control>
     
@@ -89,6 +90,20 @@
 			<visible>yes</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Hidden menu</description>
+			<id>1</id>
+			<type>image</type>
+			<posX>0</posX>
+			<posY>440</posY>
+			<width>64</width>
+			<height>199</height>
+			<texture>hiddenmenu_tab.png</texture>
+			<visible>yes</visible>
+			<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
 		</control>
 
 		<control>
@@ -116,20 +131,18 @@
 			<height>1080</height>
 			<texture>ClickfinderPG_ListBGlong.png</texture>
 		</control>
- 
-     <!-- Tv Movie++ Last UpdateLabel-->
-	 
+		
+    <!-- Tv Movie++ Last UpdateLabel-->
+    
 		<control>
 			<description>TvMovie++ LastUpdate</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>1832</posX>
-			<posY>1010</posY>
-			<width>1000</width>
-			<align>right</align>
+			<posX>893</posX>
+			<posY>137</posY>
 			<label>#SettingLastUpdate</label>
-			<font>AvalonLight12</font>
-			<textcolor>FF6aa5cb</textcolor>
+			<font>font10</font>
+			<align>right</align>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -145,7 +158,6 @@
 			<posY>125</posY>
 			<label>#ItemsRightListLabel</label>
 			<font>font12</font>
-			<textcolor>FF6aa5cb</textcolor>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -169,14 +181,14 @@
 			<onleft>2</onleft>
 			<onright>30</onright>
 			<ondown>133</ondown>
-			<posX>46</posX>
-			<posY>161</posY>
-			<width>765</width>
+			<posX>60</posX>
+			<posY>168</posY>
+			<width>756</width>
 			<height>740</height>
 			<spinWidth>30</spinWidth>
 			<spinHeight>30</spinHeight>
 			<spinPosX>80</spinPosX>
-			<spinPosY>879</spinPosY>
+			<spinPosY>874</spinPosY>
 			<spinAlign>Left</spinAlign>
 			<spinCanFocus>no</spinCanFocus>
 			<textureUp>page_up_nofocus.png</textureUp>
@@ -190,16 +202,16 @@
 			<PinIconYOff>55</PinIconYOff>
 			<PinIconHeight>28</PinIconHeight>
 			<PinIconWidth>28</PinIconWidth>
-			<IconXOff>10</IconXOff>
+			<IconXOff>4</IconXOff>
 			<IconYOff>4</IconYOff>
-			<textXOff>50</textXOff>
+			<textXOff>20</textXOff>
 			<textYOff>-4</textYOff>
-			<textXOff2>860</textXOff2>
+			<font>fontB12</font>
+			<textXOff2>840</textXOff2>
 			<textYOff2>-4</textYOff2>
-			<textXOff3>160</textXOff3>
-			<textYOff3>30</textYOff3>
-			<font>fontB12</font>			
-			<font2>fontB12</font2>			
+			<font2>fontB12</font2>
+			<textXOff3>134</textXOff3>
+			<textYOff3>29</textYOff3>
 			<font3>AvalonLight10</font3>
 			<itemWidth>89</itemWidth>
 			<itemHeight>89</itemHeight>
@@ -560,7 +572,6 @@
 			<posY>125</posY>
 			<label>#ItemsGroup</label>
 			<font>font12</font>
-			<textcolor>FF6aa5cb</textcolor>
 			<align>right</align>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -584,14 +595,15 @@
 			<id>30</id>
 			<onright>2</onright>
 			<onleft>10</onleft>
-			<posX>955</posX>
-			<posY>161</posY>
+			<ondown>132</ondown>
+			<posX>968</posX>
+			<posY>168</posY>
 			<width>756</width>
 			<height>740</height>
 			<spinWidth>30</spinWidth>
 			<spinHeight>30</spinHeight>
 			<spinPosX>1750</spinPosX>
-			<spinPosY>879</spinPosY>
+			<spinPosY>874</spinPosY>
 			<spinAlign>right</spinAlign>
 			<spinCanFocus>no</spinCanFocus>
 			<textureUp>page_up_nofocus.png</textureUp>
@@ -605,16 +617,16 @@
 			<PinIconYOff>55</PinIconYOff>
 			<PinIconHeight>28</PinIconHeight>
 			<PinIconWidth>28</PinIconWidth>
-			<IconXOff>10</IconXOff>
+			<IconXOff>4</IconXOff>
 			<IconYOff>4</IconYOff>
-			<textXOff>50</textXOff>
+			<textXOff>20</textXOff>
 			<textYOff>-4</textYOff>
-			<textXOff2>860</textXOff2>
+			<font>fontB12</font>
+			<textXOff2>840</textXOff2>
 			<textYOff2>-4</textYOff2>
-			<textXOff3>160</textXOff3>
-			<textYOff3>30</textYOff3>
-			<font>fontB12</font>			
-			<font2>fontB12</font2>			
+			<font2>fontB12</font2>
+			<textXOff3>134</textXOff3>
+			<textYOff3>29</textYOff3>
 			<font3>AvalonLight10</font3>
 			<itemWidth>89</itemWidth>
 			<itemHeight>89</itemHeight>
@@ -1053,6 +1065,9 @@
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
 	
+	
+		<!-- Animations -->
+	
 		<control>
 			<type>animation</type>
 			<id>8</id>
@@ -1079,8 +1094,8 @@
 			  common.waiting.6.png;common.waiting.7.png;common.waiting.8.png
 			</textures>
 			<Duration>0:0:01.5</Duration>
-		</control>	
-		
+		</control>
+
     <import>common.overlay.xml</import>
     <import>ClickfinderProgramGuide.hiddenmenu.xml</import>
 

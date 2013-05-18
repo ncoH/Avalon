@@ -288,7 +288,7 @@
                   
                   <control>
                     <description>Record</description>
-                    <type>togglebutton</type>
+                    <type>checkbutton</type>
                     <id>9</id>
 					<textureFocus>hiddenmenu_toggle-on-focus.png</textureFocus>
 					<textureNoFocus>hiddenmenu_toggle-on-nofocus.png</textureNoFocus>

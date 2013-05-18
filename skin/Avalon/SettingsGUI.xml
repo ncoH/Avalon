@@ -6,6 +6,7 @@
 <define>#defaultcontrol.onleft:10002</define>
 <define>#header.label:897</define>
 <controls>
+
 	<import>settings.menu.xml</import>
 	
 	<control>
@@ -16,7 +17,7 @@
 		<width>1000</width>
 		<label>673</label>
 		<textcolor>85cffe</textcolor>
-		<font>TitanLight20</font>
+		<font>AvalonLight20</font>
 	</control>
 	
 	<!--            :: Horizontal Speed ::            -->
@@ -209,7 +210,9 @@
 		<label>-</label>
 		<textcolor>ffffffff</textcolor>
 	</control>
+	
 <import>common.time.xml</import>
 <import>titan.version.xml</import>
+
 </controls>
 </window>

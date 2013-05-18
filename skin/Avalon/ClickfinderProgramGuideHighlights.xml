@@ -16,6 +16,7 @@
 			<width>1920</width>
 			<height>1080</height>
 			<texture>background.png</texture>
+			<shouldCache>true</shouldCache>			
 		</control>
 
 		<control>
@@ -26,29 +27,9 @@
 			<posX>0</posX>
 			<width>1920</width>
 			<height>1080</height>
-			<keepaspectratio>yes</keepaspectratio>	  
-			<zoom>yes</zoom>
-			<zoomfromtop>yes</zoomfromtop>	  
-			<align>center</align>
 			<texture>hover_ClickfinderProgramGuide.png</texture>
-			<animation effect="fade" time="300">visible</animation>
-			<animation effect="fade" time="10">hidden</animation>
-			<animation effect="fade" time="0">WindowClose</animation>
-			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-			<visible>yes</visible>
+			<shouldCache>true</shouldCache>			
 		</control>				
-
-		<control>
-			<description>Overlay Image</description>
-			<type>image</type>
-			<id>1</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1920</width>
-			<height>1080</height>
-			<texture>black.png</texture>
-			<colordiffuse>90ffffff</colordiffuse>
-		</control>
 
 		<control>
 			<description>background listview</description>
@@ -61,12 +42,11 @@
 			<texture>overlay_long.png</texture>
 			<visible>yes</visible>
 		</control>
-
-		
-	<!-- Common Layout -->	
 		
 		<import>common.time.xml</import>
 		
+    <!--            :: HEADER ::            -->
+	
 		<control>
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
@@ -74,11 +54,10 @@
 			<id>1</id>
 			<posX>185</posX>
 			<posY>38</posY>
-			<width>800</width>
+			<width>1000</width>
 			<label>Highlights: #CurrentDate</label>
+			<textcolor>6aa5cb</textcolor>
 			<font>font22</font>
-			<textcolor>FF6aa5cb</textcolor>
-			<visible>yes</visible>
 		</control>
 	
 		<control>
@@ -128,13 +107,12 @@
 			<description>TvMovie++ LastUpdate</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>1832</posX>
-			<posY>1010</posY>
-			<width>1000</width>
-			<align>right</align>
+			<posX>893</posX>
+			<posY>137</posY>
 			<label>#SettingLastUpdate</label>
-			<font>AvalonLight12</font>
-			<textcolor>FF6aa5cb</textcolor>
+			<font>font10</font>
+			<align>right</align>
+			<!--textcolor>ffbbbbbb</textcolor-->
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -150,7 +128,7 @@
 			<posY>125</posY>
 			<label>#ClickfinderPG.Translation.MovieListTitle</label>
 			<font>font12</font>
-			<textcolor>FF6aa5cb</textcolor>
+			<!--textcolor>FFFFFFFF</textcolor-->
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
@@ -173,15 +151,14 @@
 			<id>10</id>
 			<onleft>2</onleft>
 			<onright>30</onright>
-			<ondown>133</ondown>
-			<posX>46</posX>
-			<posY>161</posY>
-			<width>765</width>
+			<posX>60</posX>
+			<posY>168</posY>
+			<width>756</width>
 			<height>740</height>
 			<spinWidth>30</spinWidth>
 			<spinHeight>30</spinHeight>
 			<spinPosX>80</spinPosX>
-			<spinPosY>879</spinPosY>
+			<spinPosY>874</spinPosY>
 			<spinAlign>Left</spinAlign>
 			<spinCanFocus>no</spinCanFocus>
 			<textureUp>page_up_nofocus.png</textureUp>
@@ -195,22 +172,23 @@
 			<PinIconYOff>55</PinIconYOff>
 			<PinIconHeight>28</PinIconHeight>
 			<PinIconWidth>28</PinIconWidth>
-			<IconXOff>10</IconXOff>
+			<IconXOff>4</IconXOff>
 			<IconYOff>4</IconYOff>
-			<textXOff>50</textXOff>
+			<textXOff>20</textXOff>
 			<textYOff>-4</textYOff>
-			<textXOff2>860</textXOff2>
+			<font>fontB12</font>
+			<textXOff2>840</textXOff2>
 			<textYOff2>-4</textYOff2>
-			<textXOff3>160</textXOff3>
-			<textYOff3>30</textYOff3>
-			<font>fontB12</font>			
-			<font2>fontB12</font2>			
+			<font2>fontB12</font2>
+			<textXOff3>134</textXOff3>
+			<textYOff3>29</textYOff3>
 			<font3>AvalonLight10</font3>
 			<itemWidth>89</itemWidth>
 			<itemHeight>89</itemHeight>
 			<scrollOffset>2</scrollOffset>
 			<scrollbarXOff>0</scrollbarXOff>
 			<scrollbarwidth>15</scrollbarwidth>
+			<!--dimColor>dd2d2a2a</dimColor-->
 			<dimColor>ddffffff</dimColor>
 			<unfocusedAlpha>dd</unfocusedAlpha>
 			<visible></visible>
@@ -557,6 +535,17 @@
 	
     <!-- Right List (Highlights) & Controls -->
     
+		<!--control>
+			<description>Background Image</description>
+			<id>1</id>
+			<type>image</type>
+			<posX>958</posX>
+			<posY>120</posY>
+			<width>886</width>
+			<height>737</height>
+			<texture>ClickfinderPG_ListBG.png</texture>
+		</control-->
+			
 		<control>
 			<description>List label</description>
 			<type>label</type>
@@ -565,11 +554,25 @@
 			<posY>125</posY>
 			<label>#ClickfinderPG.Translation.HighlightsListTitle</label>
 			<font>font12</font>
-			<textcolor>FF6aa5cb</textcolor>
 			<!--textcolor>ffffffff</textcolor-->
 			<animation effect="fade" time="250">WindowOpen</animation>
 			<animation effect="fade" time="250">WindowClose</animation>
 		</control>
+		
+		<!--		
+		<control>
+			<description>Channel group label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>1801</posX>
+			<posY>125</posY>
+			<label>#CategorieGroup</label>
+			<font>font12</font>
+			<align>right</align>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		-->
 			
 		<control>
 			<description>Separator Image</description>
@@ -587,17 +590,17 @@
 		<control>
 			<type>listcontrol</type>
 			<id>30</id>
-			<posX>954</posX>
-			<posY>161</posY>			
-			<onright>132</onright>
+			<onright>2</onright>
 			<onleft>10</onleft>
-			<ondown>132</ondown>
-			<width>871</width>
+			<onup>30</onup>
+			<posX>968</posX>
+			<posY>168</posY>
+			<width>866</width>
 			<height>702</height>
 			<spinWidth>30</spinWidth>
 			<spinHeight>30</spinHeight>
 			<spinPosX>1750</spinPosX>
-			<spinPosY>879</spinPosY>
+			<spinPosY>874</spinPosY>
 			<spinAlign>Right</spinAlign>
 			<spinCanFocus>no</spinCanFocus>
 			<textureUp>page_up_nofocus.png</textureUp>
@@ -611,22 +614,23 @@
 			<PinIconYOff>35</PinIconYOff>
 			<PinIconHeight>20</PinIconHeight>
 			<PinIconWidth>20</PinIconWidth>
-			<IconXOff>10</IconXOff>
-			<IconYOff>6</IconYOff>
-			<textXOff>10</textXOff>
+			<IconXOff>4</IconXOff>
+			<IconYOff>4</IconYOff>
+			<textXOff>2</textXOff>
 			<textYOff>0</textYOff>
-			<textXOff2>860</textXOff2>
+			<font>AvalonLightB12</font>
+			<textXOff2>840</textXOff2>
 			<textYOff2>0</textYOff2>
-			<textXOff3>85</textXOff3>
+			<font2>font12</font2>
+			<textXOff3>78</textXOff3>
 			<textYOff3>33</textYOff3>
-			<font>AvalonLight12</font>			
-			<font2>font12</font2>			
 			<font3>AvalonLight10</font3>
 			<itemWidth>52</itemWidth>
 			<itemHeight>52</itemHeight>
 			<scrollOffset>2</scrollOffset>
 			<scrollbarXOff>630</scrollbarXOff>
 			<scrollbarwidth>15</scrollbarwidth>
+			<!--dimColor>dd2d2a2a</dimColor-->
 			<dimColor>ddffffff</dimColor>
 			<unfocusedAlpha>dd</unfocusedAlpha>
 			<visible></visible>
@@ -752,7 +756,7 @@
 			</textures>
 			<Duration>0:0:01.5</Duration>
 		</control>
-    
+			
 		<import>common.overlay.xml</import>
 		<import>ClickfinderProgramGuide.hiddenmenu.xml</import>
     

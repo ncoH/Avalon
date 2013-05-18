@@ -6,8 +6,18 @@
 <define>#defaultcontrol.onleft:10002</define>
 <define>#header.label:897</define>
 <controls>
-
-
+	<import>settings.menu.xml</import>
+	
+	<control>
+		<type>label</type>
+		<id>1</id>
+		<posX>766</posX>
+		<posY>252</posY>
+		<width>1000</width>
+		<label>6023</label>
+		<textcolor>85cffe</textcolor>
+		<font>TitanLight20</font>
+	</control>
 	
 	<control>
 		<description>buttons</description>
@@ -46,6 +56,7 @@
 		</control>
 
 	</control>
-
+<import>common.time.xml</import>
+<import>titan.version.xml</import>
 </controls>
 </window>

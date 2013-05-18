@@ -53,7 +53,7 @@
 <!-- left Buttons		 -->
 		<control>
 			<description>TV On/Off button</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>6</id>
 			<posX>160</posX>
 			<posY>204</posY>

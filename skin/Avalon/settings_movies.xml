@@ -7,18 +7,53 @@
 <define>#header.label:897</define>
 <controls>
 
-  <import>common.settings.xml</import>	
+ 	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+
+	<control>
+		<description>viewport</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>795</height>
+		<texture>viewport_settings.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+	
 	<import>common.time.xml</import>
+
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight20</font>
+	</control>
 	
 	<control>
 		<type>label</type>
 		<id>1</id>
-		<posX>152</posX>
-		<posY>225</posY>
+		<posX>766</posX>
+		<posY>252</posY>
 		<width>500</width>
-		<label>128</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB20</font>
+		<label>3</label>
+		<textcolor>85cffe</textcolor>
+		<font>TitanLight20</font>
 	</control>
 	
 	<control>
@@ -34,7 +69,7 @@
 			<id>24</id>
 			<label>6000</label>
 			<onup>28</onup>
-      <onleft>#defaultcontrol.onleft</onleft>
+            <onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
 	   <control Style="SettingsButtonLarge">
@@ -42,7 +77,7 @@
 			<type>button</type>
 			<id>29</id>
 			<label>6036</label>
-      <onleft>#defaultcontrol.onleft</onleft>
+            <onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
 	   <control Style="SettingsButtonLarge">
@@ -50,7 +85,7 @@
 			<type>button</type>
 			<id>25</id>
 			<label>6001</label>
-      <onleft>#defaultcontrol.onleft</onleft>
+            <onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
 	   <control Style="SettingsButtonLarge">
@@ -58,7 +93,7 @@
 			<type>button</type>
 			<id>27</id>
 			<label>6002</label>
-      <onleft>#defaultcontrol.onleft</onleft>
+            <onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
 	   <control Style="SettingsButtonLarge">
@@ -67,9 +102,12 @@
 			<id>28</id>
 			<label>6004</label>
 			<ondown>24</ondown>
-      <onleft>#defaultcontrol.onleft</onleft>
+            <onleft>#defaultcontrol.onleft</onleft>
 		</control>
+
 	</control>
+	
+	<import>common.time.xml</import>
 
 </controls>
 </window>
