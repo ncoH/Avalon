@@ -16,9 +16,10 @@
 		<type>group</type>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<posX>736</posX>
-		<posY>254</posY>
+		<posX>655</posX>
+		<posY>156</posY>
 		<layout>StackLayout</layout>
+		
 		<control Style="SettingsButtonLarge">
 			<type>button</type>
 			<description>Account Setup</description>

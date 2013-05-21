@@ -15,7 +15,7 @@
 				<posY>155</posY>
 				<width>380</width>
 				<label>#Trakt.Activity.Description</label>
-				<textcolor>FF00b7ff</textcolor>
+				<textcolor>6aa5cb</textcolor>
 				<font>AvalonLight16</font>
 			</control>
 			
@@ -69,7 +69,7 @@
 				<posX>98</posX>
 				<posY>450</posY>
 				<width>360</width>
-				<textcolor>FF00b7ff</textcolor>
+				<textcolor>6aa5cb</textcolor>
 				<font>AvalonLight16</font>
 				<label>#Trakt.Translation.TrendingShows.Label</label>
 			</control>
@@ -81,7 +81,7 @@
 				<posX>98</posX>
 				<posY>700</posY>
 				<width>360</width>
-				<textcolor>FF00b7ff</textcolor>
+				<textcolor>6aa5cb</textcolor>
 				<font>AvalonLight16</font>
 				<label>#Trakt.Translation.TrendingMovies.Label</label>
 			</control>

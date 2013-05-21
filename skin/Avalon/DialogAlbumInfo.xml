@@ -29,243 +29,247 @@
 		<height>872</height>
 		<texture>myfilms_details_bg.png</texture>
 	</control>
-		
+	
 	<control>
+		<description>Album art</description>
+		<type>image</type>
+		<id>500</id>
+		<posX>287</posX>
+		<posY>265</posY>
+		<width>409</width>
+		<height>409</height>
+		<texture>#AlbumInfo.Thumb</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+	</control>
+   
+ 	<control>
+		<description>Album value</description>	
 		<type>label</type>
 		<id>1</id>
-		<posX>587</posX>
-		<posY>396</posY>
+		<posX>750</posX>
+		<posY>253</posY>
 		<textcolor>6aa5cb</textcolor>
-		<font>AvalonLight12</font>
-		<label>Albumartist</label>
+		<font>font22</font>
+		<label>#selecteditem</label>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 	</control>
-	
-	<control>
-		<description>Artist value</description>
-		<type>fadelabel</type>
-		<id>0</id>
-		<posX>843</posX>
-		<posY>396</posY>
-		<width>800</width>
-		<font>AvalonLight14</font>
-		<label>#AlbumInfo.Artist</label>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
-	</control>
-	
-	<control>
+ 
+ 	<control>
+		<description>Album label</description>	
 		<type>label</type>
-		<id>1</id>
-		<posX>587</posX>
-		<posY>352</posY>
+		<id>0</id>
+		<posX>750</posX>
+		<posY>340</posY>
 		<textcolor>6aa5cb</textcolor>
 		<font>AvalonLight12</font>
 		<label>Album</label>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 	</control>
 	
 	<control>
 		<description>Album value</description>
-		<type>fadelabel</type>
-		<id>0</id>
-		<posX>843</posX>
-		<posY>352</posY>
-		<width>800</width>
-		<label>#AlbumInfo.Title</label>
-		<font>AvalonLight14</font>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
-	</control>
-
-	<control>
-		<description>Genre</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>587</posX>
-		<posY>475</posY>
-		<label>174</label>
+		<posX>951</posX>
+		<posY>340</posY>
+		<width>800</width>
+		<label>#AlbumInfo.Title</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>AvalonLight12</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+	</control>
+	
+	<control>
+		<description>Artist label</description>	
+		<type>label</type>
+		<id>0</id>
+		<posX>750</posX>
+		<posY>378</posY>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight12</font>
+		<label>Albumartist</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+	</control>
+	
+	<control>
+		<description>Artist value</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>951</posX>
+		<posY>378</posY>
+		<width>800</width>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight12</font>
+		<label>#AlbumInfo.Artist</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+	</control>
+	
+	<control>
+		<description>Genre</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>750</posX>
+		<posY>450</posY>
+		<label>#(string.rtrim(L(174),' :'))</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight12</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 	</control>
 	
 	<control>
 		<description>Year</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>587</posX>
-		<posY>438</posY>
-		<label>201</label>
+		<posX>750</posX>
+		<posY>414</posY>
+		<label>#(string.rtrim(L(201),' :'))</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>AvalonLight12</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 	</control>
 
 	<control>
 		<description>Rating</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>587</posX>
-		<posY>519</posY>
-		<label>173</label>
+		<posX>750</posX>
+		<posY>486</posY>
+		<label>#(string.rtrim(L(173),' :'))</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>AvalonLight12</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 	</control>
+
 
 	<control>
 		<description>Genre value</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>843</posX>
-		<posY>475</posY>
+		<posX>951</posX>
+		<posY>450</posY>
 		<width>560</width>
 		<label>#AlbumInfo.Genre</label>
-		<font>AvalonLight14</font>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight12</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 	</control>
 
 	<control>
 		<description>Year value</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>843</posX>
-		<posY>438</posY>
+		<posX>951</posX>
+		<posY>414</posY>
 		<label>#AlbumInfo.Year</label>
-		<font>AvalonLight14</font>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight12</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
-	</control>
-
-	<control>
-		<description>Tones value</description>
-		<type>fadelabel</type>
-		<id>0</id>
-		<posX>-2000</posX>
-		<posY>313</posY>
-		<width>560</width>
-		<label>#AlbumInfo.Tones</label>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
-	</control>
-
-	<control>
-		<description>Styles value</description>
-		<type>fadelabel</type>
-		<id>0</id>
-		<posX>-2000</posX>
-		<posY>337</posY>
-		<width>560</width>
-		<label>#AlbumInfo.Styles</label>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 	</control>
 	
 	<control>
 		<description>Rating value</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>843</posX>
-		<posY>519</posY>
+		<posX>951</posX>
+		<posY>486</posY>
 		<label>#AlbumInfo.Rating</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight12</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
-	</control>
-
-	<control>
-		<id>0</id>
-		<type>image</type>
-		<posX>297</posX>
-		<posY>347</posY>
-		<width>250</width>
-		<height>250</height>
-		<texture>#AlbumInfo.Thumb</texture>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 	</control>
 
 	<control>
 		<description>textarea</description>
-		<type>textbox</type>
-		<id>4</id>
-		<posX>590</posX>
-		<posY>630</posY>
-		<width>900</width>
-		<height>290</height>
-		<onleft>5</onleft>
-		<onright>5</onright>
-		<onup>5</onup>
-		<ondown>5</ondown>
-		<spinWidth>28</spinWidth>
-		<spinHeight>28</spinHeight>
-		<spinPosX>595</spinPosX>
-		<spinPosY>888</spinPosY>
-		<spinAlign>left</spinAlign>
-		<spinColor>FF6aa5cb</spinColor>
-		<textXOff2>100</textXOff2>
+		<type>textboxscrollup</type>
+		<id>0</id>
+		<posX>750</posX>
+		<posY>528</posY>
+		<width>860</width>
+		<height>350</height>
+		<font>AvalonLight12</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<label>#AlbumInfo.Review</label>
+		<visible>skin.hassetting(#AlbumInfo.ShowTracks)</visible>
 	</control>
+	
+	<control>
+		<description>textarea</description>
+		<type>textboxscrollup</type>
+		<id>40</id>
+		<posX>750</posX>
+		<posY>528</posY>
+		<width>860</width>
+		<height>350</height>
+		<font>AvalonLight12</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<label>#AlbumInfo.Tracks</label>
+		<visible>!skin.hassetting(#AlbumInfo.ShowTracks)</visible>
+	</control>	
 
 	<control>
 		<description>Tracks/Review</description>
 		<type>button</type>
 		<id>5</id>
-		<posX>565</posX>
-		<posY>561</posY>
+		<posX>435</posX>
+		<posY>753</posY>
+		<width>261</width>
+		<height>58</height>
 		<label>182</label>
-		<onleft>4</onleft>
-		<onright>6</onright>
-		<onup>4</onup>
-		<ondown>4</ondown>
-		<textcolor>FFFFFFFF</textcolor>
-		<textcolorNoFocus>FF6aa5cb</textcolorNoFocus>
-		<textureFocus>-</textureFocus>
-		<textureNoFocus>-</textureNoFocus>
+		<onleft>5</onleft>
+		<onright>4</onright>
+		<onup>6</onup>
+		<ondown>6</ondown>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<onclick>#(skin.togglesetting('#AlbumInfo.ShowTracks'))</onclick>
+		<label>#(L(183)) /#(L(182))</label>
 	</control>
 	
 	<control>
 		<description>Refresh</description>
 		<type>button</type>
 		<id>6</id>
-		<posX>820</posX>
-		<posY>561</posY>
+		<posX>435</posX>
+		<posY>812</posY>
+		<width>261</width>
+		<height>58</height>
 		<label>184</label>
-		<onleft>5</onleft>
+		<onleft>6</onleft>
 		<onright>4</onright>
 		<onup>5</onup>
 		<ondown>5</ondown>
-		<textcolor>FFFFFFFF</textcolor>
-		<textcolorNoFocus>FF6aa5cb</textcolorNoFocus>
-		<textureFocus>-</textureFocus>
-		<textureNoFocus>-</textureNoFocus>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+		<animation effect="slide" start="0,250" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
 	</control>
 
 </controls>

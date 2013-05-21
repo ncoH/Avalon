@@ -16,6 +16,7 @@
     		<font>fontB14</font>
 			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
 		</control>
+		
 		<control>
 			<description>Username Label</description>
 			<type>label</type>
@@ -25,6 +26,7 @@
 			<label>#Trakt.Translation.Username.Label</label>
 			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
 		</control>
+		
       <control Style="SettingsButtonLarge">
 			<description>Username Button</description>
 			<type>button</type>
@@ -34,6 +36,7 @@
     		<posY>324</posY>
 			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
 		</control>
+		
 		<control>
 			<description>Password Label</description>
 			<type>label</type>
@@ -43,6 +46,7 @@
 			<label>#Trakt.Translation.Password.Label</label>
 			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
 		</control>
+		
       <control Style="SettingsButtonLarge">
 			<description>Password Button</description>
 			<type>button</type>
@@ -52,6 +56,7 @@
     		<posY>482</posY>
 			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
 		</control>
+		
 		<!-- Only Visible for Create New User -->
 		<control>
 			<description>Email Label</description>
@@ -62,6 +67,7 @@
 			<label>#Trakt.Translation.Email.Label</label>
 			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)+string.equals(#Trakt.Settings.Account.Dialog.NewUser,true)</visible>
 		</control>
+		
       <control Style="SettingsButtonLarge">
 			<description>Email Button</description>
 			<type>button</type>
@@ -71,6 +77,7 @@
     		<posY>534</posY>
 			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)+string.equals(#Trakt.Settings.Account.Dialog.NewUser,true)</visible>
 		</control>
+		
 		<control>
 			<description>Create\Login Button</description>
 			<type>button</type>
@@ -86,6 +93,7 @@
     		<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
 			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
 		</control>
+		
 		<control>
 			<description>Cancel Button</description>
 			<type>button</type>
@@ -101,6 +109,7 @@
     		<textureNoFocus>settings_button_nofocus.png</textureNoFocus>
 			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
 		</control>
+		
 		<control>
 			<description>Test Connection</description>
 			<type>label</type>
@@ -110,5 +119,6 @@
 			<label></label>
 			<visible>string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
 		</control>
+		
 	</controls>
 </window>
