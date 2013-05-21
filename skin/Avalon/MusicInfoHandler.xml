@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>1599</id>
+<defaultcontrol>50</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<define>#header.label:2</define>
+<define>#useSelectedFanart:Yes</define>
+<controls>
+
+	<import>common.window.music.xml</import>
+    <import>common.time.xml</import>
+
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+	</control>
+	
+	<!--            :: LISTVIEW ::            -->
+
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<description>Poster glow</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>423</posX>
+		<posY>101</posY>
+		<width>485</width>
+		<height>486</height>
+		<texture>list_music_glow.png</texture>
+		<visible>[facadeview.list | facadeview.album + Control.IsVisible(50)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+	</control>
+
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<id>0</id>
+		<type>image</type>
+		<posX>490</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<visible>[facadeview.list | facadeview.album]+!control.hasthumb(500)+!string.contains(#selecteditem, ..) + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<id>0</id>
+		<type>image</type>
+		<posX>490</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">DefaultMyradioBackBig.png</texture>
+		<visible>[facadeview.list | facadeview.album]+string.contains(#selecteditem, ..)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+	</control>
+
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<description>Cover Art</description>
+		<type>image</type>
+		<id>500</id>
+		<posX>490</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#selectedthumb</texture>
+		<visible>[facadeview.list | facadeview.album + Control.IsVisible(50)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+	</control>
+    
+<import>common.facade.music.xml</import>	
+<import>common.overlay.xml</import>
+	
+</controls>
+</window>
+				

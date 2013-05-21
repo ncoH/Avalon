@@ -6,37 +6,104 @@
 <controls>
 
 	<control>
-		<type>image</type>
-		<description>background image</description>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<type>label</type>
 		<id>1</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>2</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+		<visible>facadeview.list | facadeview.filmstrip | facadeview.coverflow | facadeview.smallicons | facadeview.largeicons</visible>
 	</control>
+	
+	<import>common.window.music.xml</import>
+	<import>common.time.xml</import>
 
+		<!--            :: Overlays ::            -->	
+	
 	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<description>Poster glow</description>
 		<type>image</type>
-		<description>Title image</description>
 		<id>1</id>
-		<posX>106</posX>
-		<posY>25</posY>
-		<texture>coverart_logo.png</texture>
+		<posX>423</posX>
+		<posY>101</posY>
+		<width>485</width>
+		<height>486</height>
+		<texture>list_music_glow.png</texture>
+		<visible>[facadeview.list+Control.IsVisible(50)] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
-
+	
 	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<id>0</id>
 		<type>image</type>
-		<description>Album Art image</description>
+		<posX>490</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<visible>[facadeview.list+!control.hasthumb(10)+!string.contains(#selecteditem, ..)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">DefaultMyradioBig.png</texture>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<id>0</id>
+		<type>image</type>
+		<posX>490</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">DefaultMyradioBackBig.png</texture>
+		<visible>[facadeview.list+string.contains(#selecteditem, ..)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<description>Album Art</description>
+		<type>image</type>
 		<id>10</id>
-		<posX>113</posX>
-		<posY>130</posY>
-		<width>224</width>
-		<height>157</height>
-		<texture>-</texture>
-		<keepaspectratio>yes</keepaspectratio>
+		<posX>490</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#selectedthumb</texture>
+		<visible>[facadeview.list+Control.IsVisible(50)] + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 
-	<control>
+<!-- 	<control>
+		<id>10</id>
+		<type>Album Art image</type>
+		<posX>121</posX>
+		<posY>362</posY>
+		<width>556</width>
+		<height>556</height>
+		<texture>-</texture>
+ 		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control> -->
+
+
+<!-- 	<control>
 		<type>image</type>
 		<description>Amazon Logo image</description>
 		<id>30</id>
-		<posX>113</posX>
+		<posX>-2000</posX>
 		<posY>620</posY>
 		<width>167</width>
 		<height>56</height>
@@ -100,38 +167,113 @@
 		<label>4516</label>
 		<font>font18</font>
 		<textcolor>ffffffff</textcolor>
-	</control>
+	</control> -->
+
+	<!--            :: List Scrolling Popup ::            -->
+    
+    <control>
+        <description>listscroller bg</description>
+        <type>image</type>
+        <id>1</id>
+        <posX>719</posX>
+        <posY>395</posY>
+        <width>187</width>
+        <height>202</height>
+        <texture>listscroller_bg.png</texture>
+        <visible>[facadeview.list | facadeview.album] + string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+        <animation effect="fade" start="0" end="100" time="300" delay="0">Visible</animation>
+        <animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+    </control>
+    
+    <control>
+        <type>label</type>
+        <id>1</id>
+        <posX>774</posX>
+        <posY>449</posY>
+        <width>96</width>
+        <height>96</height>
+        <font>AvalonLight32</font>
+        <textcolor>ff6aa5cb</textcolor>
+        <label>#selecteditem.scrolllabel</label>
+        <visible>[facadeview.list | facadeview.album] + string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+        <align>center</align>
+        <valign>middle</valign>
+        <animation effect="fade" start="0" end="100" time="300" delay="0">Visible</animation>
+        <animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+    </control>
+	
+	<!--            :: Count Background ::            -->
 
 	<control>
-		<type>listcontrol</type>
-		<description>album view listcontrol</description>
-		<id>25</id>
-		<posX>512</posX>
-		<posY>290</posY>
-		<height>423</height>
-		<onleft>20</onleft>
-		<onright>25</onright>
-		<onup>25</onup>
-		<ondown>25</ondown>
-		<textcolor>FFFFFFFF</textcolor>
-		<subtype>album</subtype>
-		<selectedColor2>FFFF6600</selectedColor2>
-		<font2>font13</font2>
-		<textXOff2>728</textXOff2>
-		<font>font13</font>
-		<textXOff>10</textXOff>
-		<itemHeight>88</itemHeight>
-		<textureHeight>112</textureHeight>
-		<selectedColor>FFFF6600</selectedColor>
-		<itemWidth>126</itemWidth>
-		<IconXOff>17</IconXOff>
-		<spaceBetweenItems>17</spaceBetweenItems>
-		<suffix>|</suffix>
-		<textcolor2>FFFFFFFF</textcolor2>
-		<textYOff2>75</textYOff2>
-		<unfocusedAlpha>170</unfocusedAlpha>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>829</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<visible>[facadeview.list | facadeview.album] + control.isvisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
+	<!--            :: Count ::            -->
+
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+        <posX>456</posX>
+        <posY>875</posY>
+        <align>left</align>
+        <font>AvalonLight12</font>
+        <textcolor>6aa5cb</textcolor>
+		<label>#currentmodule: #itemcount</label>
+		<visible>[facadeview.list|facadeview.album | facadeview.playlist]+Control.IsVisible(50)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
+    <control>
+        <description>album view listcontrol</description>
+        <type>listcontrol</type>
+        <subtype>album</subtype>
+		<id>25</id>
+		<posX>905</posX>
+		<posY>153</posY>
+		<height>710</height>
+		<width>939</width>
+		<textXOff>246</textXOff>
+		<textYOff>35</textYOff>
+		<textXOff2>930</textXOff2>
+		<textYOff2>35</textYOff2>
+		<font>AvalonLight16</font>
+		<font2>AvalonLight16</font2>
+		<textcolor>ffffffff</textcolor>
+		<textcolor2>ff6aa5cb</textcolor2>
+        <itemHeight>129</itemHeight>
+        <itemWidth>129</itemWidth>		
+        <IconXOff>88</IconXOff>
+        <IconYOff>0</IconYOff>
+        <PinIconWidth>20</PinIconWidth>
+        <PinIconHeight>20</PinIconHeight>
+        <PinIconXOff>72</PinIconXOff>
+        <PinIconYOff>22</PinIconYOff>
+        <spaceBetweenItems>28</spaceBetweenItems>
+        <textureHeight>129</textureHeight>
+        <scrollOffset>1</scrollOffset>
+		<textureFocus>listcontrol_item_selected_big.png</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+        <onleft>2</onleft>
+        <onright>50</onright>
+        <keepaspectratio>yes</keepaspectratio>
+		<spinPosX>1832</spinPosX>
+		<spinPosY>880</spinPosY>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>				
+	</control>
+	
 	<control>
 		<type>button</type>
 		<description>Skip button</description>
@@ -160,5 +302,7 @@
 		<width>224</width>
 	</control>
 
+<import>common.overlay.xml</import>
+	
 </controls>
 </window>
