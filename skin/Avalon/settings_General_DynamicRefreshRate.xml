@@ -7,9 +7,9 @@
 	<rememberLastFocusedControl>yes</rememberLastFocusedControl>
   <controls>
   
+	<import>common.settings.xml</import>
 	<import>settings.menu.xml</import>	
-	<import>common.settings.xml</import>	
-	<import>common.time.settings.xml</import>  
+	<import>common.time.xml</import>
 	
 	<control>
 		<type>label</type>
@@ -18,8 +18,8 @@
 		<posY>225</posY>
 		<width>800</width>
 		<label>#(L(128))/#(L(300083))</label>
-		<textcolor>00b7ff</textcolor>
-		<font>TitanLight20</font>
+		<textcolor>6aa5cb</textcolor>
+		<font>fontB20</font>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 	</control>
@@ -47,7 +47,7 @@
 		<type>checkbutton</type>
 		<id>3</id>
 		<posX>655</posX>
-		<posY>387</posY>
+		<posY>379</posY>
 		<onleft>3</onleft>
 		<onright>5</onright>
 		<onup>2</onup>
@@ -78,7 +78,7 @@
 		<type>checkbutton</type>
 		<id>5</id>
 		<posX>1240</posX>
-		<posY>387</posY>
+		<posY>379</posY>
 		<onleft>3</onleft>
 		<onright>5</onright>
 		<onup>4</onup>
@@ -122,7 +122,7 @@
 		<width>500</width>
 		<label>Name</label>
 		<font>fontB14</font>
-    <textcolor>ff00b7ff</textcolor>
+    <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>		
   </control>
@@ -150,8 +150,8 @@
     <textcolor>ffffffff</textcolor>
     <textcolor2>ffffffff</textcolor2>
     <textcolor3>ffffffff</textcolor3>
-    <selectedColor>ff00b7ff</selectedColor>
-    <selectedColor2>ff00b7ff</selectedColor2>
+    <selectedColor>6aa5cb</selectedColor>
+    <selectedColor2>6aa5cb</selectedColor2>
 		<dimColor>ffffffff</dimColor>		
 		<spinPosX>-2000</spinPosX>
 		<spinPosY>500</spinPosY>
@@ -171,7 +171,7 @@
 		<width>200</width>
 		<label>Frame rate(s)</label>
 		<font>fontB14</font>
-    <textcolor>ff00b7ff</textcolor>
+    <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>		
   </control>
@@ -185,7 +185,7 @@
 		<width>200</width>
 		<label>Refresh rate</label>
 		<font>fontB14</font>
-    <textcolor>ff00b7ff</textcolor>
+    <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>		
   </control>
@@ -273,7 +273,7 @@
 		<type>button</type>
 		<id>8</id>
 		<posX>655</posX>
-		<posY>646</posY>
+		<posY>639</posY>
 		<onright>6</onright>
 		<onup>7</onup>
 		<ondown>12</ondown>
@@ -287,7 +287,7 @@
 		<type>button</type>
 		<id>12</id>
 		<posX>655</posX>
-		<posY>711</posY>
+		<posY>697</posY>
 		<onright>6</onright>
 		<onup>8</onup>
 		<ondown>9</ondown>
@@ -301,7 +301,7 @@
 		<type>button</type>
 		<id>9</id>
 		<posX>655</posX>
-		<posY>776</posY>
+		<posY>755</posY>
 		<onright>6</onright>
 		<onup>12</onup>
 		<ondown>10</ondown>

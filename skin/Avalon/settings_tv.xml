@@ -18,7 +18,7 @@
 		<posY>225</posY>
 		<width>500</width>
 		<label>605</label>
-		<textcolor>00b7ff</textcolor>
+		<textcolor>6aa5cb</textcolor>
 		<font>fontB20</font>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
@@ -30,7 +30,7 @@
 		<posX>655</posX>
 		<posY>321</posY>
 		<dimColor>ffffffff</dimColor>
-		<layout>GridLayout(2, 0, 7, 7, 1)</layout>
+		<layout>GridLayout(2, 0, 0, 0, 1)</layout>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 		

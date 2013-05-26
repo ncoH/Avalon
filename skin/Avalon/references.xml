@@ -3,7 +3,7 @@
   <skin>
     <width>1920</width>
     <height>1080</height>
-    <version>1.3.0.1</version>
+    <version>1.4.0.0</version>
   </skin>
   <style Name="InfoLabel">
     <width>155</width>
@@ -58,8 +58,8 @@
     <textXOff>0</textXOff>
     <textYOff>3</textYOff>
 		<textalign>center</textalign>
-    <textureFocus>settings_button_small_focus.png</textureFocus>
-    <textureNoFocus>settings_button_small_nofocus.png</textureNoFocus>
+    <textureFocus>settings_button_focus.png</textureFocus>
+    <textureNoFocus>settings_button_nofocus.png</textureNoFocus>
     <scrollStartDelaySec>0</scrollStartDelaySec>
     <textcolor>ff000000</textcolor>
     <textcolorNoFocus>ffffffff</textcolorNoFocus>

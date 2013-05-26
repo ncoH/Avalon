@@ -19,7 +19,7 @@
 		<width>500</width>
 		<label>#(L(128))/#(L(300082))</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>fontB20</font>
+		<font>font22</font>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 	</control>
@@ -88,16 +88,16 @@
 		<description>Delay button</description>
 		<type>button</type>
 		<id>30</id>
-		 <posX>655</posX>
+		<posX>655</posX>
 		<posY>710</posY>
 		<onup>24</onup>
 		<ondown>31</ondown>
 		<label>300102</label>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
-    </control>
+  </control>
 	
-    <control>
+  <control>
 		<type>label</type>
 		<id>1</id>
 		<posX>1770</posX>
@@ -107,27 +107,27 @@
 		<font>font12</font>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
-    </control>
+  </control>
 	
 	<control Style="SettingsCheckButtonLarge">
 		<description>Delay on MP start</description>
 		<type>checkbutton</type>
 		<id>31</id>
 		<posX>655</posX>
-		<posY>775</posY>
+		<posY>768</posY>
 		<label>300103</label>
 		<onup>30</onup>
 		<ondown>32</ondown>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
-    </control>
+  </control>
 	
 	<control Style="SettingsCheckButtonLarge">
 		<description>Delay on MP resume</description>
 		<type>checkbutton</type>
 		<id>32</id>
 		<posX>655</posX>
-		<posY>840</posY>
+		<posY>826</posY>
 		<label>300104</label>
 		<onup>31</onup>
 		<ondown>20</ondown>

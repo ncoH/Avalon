@@ -6,9 +6,10 @@
 	<define>#header.label:897</define>
   <rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
-	<import>common.time.settings.xml</import>
-	<import>settings.menu.xml</import>
-  <import>common.settings.xml</import>
+	
+	<import>common.settings.xml</import>
+	<import>settings.menu.xml</import>	
+	<import>common.time.xml</import>
 	
   	<control>
   		<type>label</type>
@@ -17,11 +18,12 @@
   		<posY>225</posY>
   		<width>900</width>
   		<label>#playlisttype</label>
-  		<textcolor>00b7ff</textcolor>
-  		<font>TitanLight20</font>
+  		<textcolor>6aa5cb</textcolor>
+  		<font>fontB20</font>
   	  <animation effect="fade" time="150">WindowOpen</animation>
   	  <animation effect="fade" time="150">WindowClose</animation>
   	</control>
+		
     <!--Videos-->
     <control Style="SettingsButtonMedium">
       <description>Playlist folder btn</description>
@@ -34,6 +36,7 @@
   	  <animation effect="fade" time="150">WindowOpen</animation>
   	  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Videos playlist folder label</description>
       <type>fadelabel</type>
@@ -46,17 +49,19 @@
   	  <animation effect="fade" time="150">WindowOpen</animation>
   	  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control Style="SettingsCheckButtonLarge">
       <description>Repeat/loop playlist</description>
       <type>checkbutton</type>
       <id>9</id>
       <label>300066</label>
   		<posX>655</posX>
-  		<posY>386</posY>
+  		<posY>379</posY>
       <ondown>8</ondown>
   	  <animation effect="fade" time="150">WindowOpen</animation>
   	  <animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <!--Music-->
     <control Style="SettingsButtonMedium">
     <description>Playlist folder btn</description>
@@ -69,6 +74,7 @@
   	<animation effect="fade" time="150">WindowOpen</animation>
   	<animation effect="fade" time="150">WindowClose</animation>
   </control>
+	
   <control>
     <description>Music playlist folder label</description>
     <type>fadelabel</type>
@@ -81,13 +87,14 @@
   	<animation effect="fade" time="150">WindowOpen</animation>
   	<animation effect="fade" time="150">WindowClose</animation>
   </control>
+	
 	<control>
 		<description>buttons</description>
 		<type>group</type>
 		<posX>655</posX>
-		<posY>386</posY>
+		<posY>379</posY>
 		<dimColor>ffffffff</dimColor>
-    <layout>StackLayout(7, Vertical, true)</layout>
+    <layout>StackLayout(0, Vertical, true)</layout>
   	<animation effect="fade" time="150">WindowOpen</animation>
   	<animation effect="fade" time="150">WindowClose</animation>
         
@@ -101,6 +108,7 @@
       <onup>2</onup>
       <ondown>4</ondown>
     </control>
+		
     <control Style="SettingsCheckButtonLarge">
       <description>Autoshuffle</description>
       <type>checkbutton</type>
@@ -111,6 +119,7 @@
       <onup>3</onup>
       <ondown>5</ondown>
     </control>
+		
     <control Style="SettingsCheckButtonLarge">
       <description>Save current</description>
       <type>checkbutton</type>
@@ -121,6 +130,7 @@
       <onup>4</onup>
       <ondown>6</ondown>
     </control>
+		
      <control Style="SettingsCheckButtonLarge">
       <description>Load default</description>
       <type>checkbutton</type>
@@ -131,6 +141,7 @@
       <onup>5</onup>
       <ondown>7</ondown>
     </control>
+		
     <control Style="SettingsCheckButtonLarge">
       <description>Playlist screen</description>
       <type>checkbutton</type>
@@ -141,5 +152,6 @@
       <ondown>2</ondown>
     </control>
   </control>  
+	
 </controls>
 </window>

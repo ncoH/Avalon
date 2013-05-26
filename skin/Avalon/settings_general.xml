@@ -22,7 +22,7 @@
 		<posX>0</posX>
 		<posY>92</posY>
 		<width>1893</width>
-		<height>795</height>
+		<height>895</height>
 		<texture>viewport_settings.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -94,8 +94,9 @@
         <type>button</type>
         <id>7</id>
         <label>713</label>
-		<ondown>2</ondown>
+				<ondown>2</ondown>
     </control>
+		
   </control>
 	
   </controls>

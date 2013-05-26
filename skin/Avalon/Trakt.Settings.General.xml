@@ -10,7 +10,7 @@
   <controls>
   
 		<import>Trakt.Common.xml</import>
-        <import>common.time.xml</import>
+    <import>common.time.xml</import>
 	
 	<control>
 		<description>buttons</description>

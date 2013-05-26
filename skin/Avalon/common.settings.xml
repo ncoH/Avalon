@@ -17,7 +17,7 @@
 		<posX>0</posX>
 		<posY>92</posY>
 		<width>1893</width>
-		<height>795</height>
+		<height>972</height>
 		<texture>viewport_settings.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>

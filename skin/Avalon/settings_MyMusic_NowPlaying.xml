@@ -7,9 +7,9 @@
 	<rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
   
-	<import>common.time.settings.xml</import>
-	<import>settings.menu.xml</import>
-  <import>common.settings.xml</import>
+	<import>common.settings.xml</import>
+	<import>settings.menu.xml</import>	
+	<import>common.time.xml</import>  
 	
 	<control>
 		<type>label</type>
@@ -18,8 +18,8 @@
 		<posY>225</posY>
 		<width>500</width>
 		<label>#(L(2))/#(L(4540))</label>
-		<textcolor>00b7ff</textcolor>
-		<font>TitanLight20</font>
+		<textcolor>6aa5cb</textcolor>
+		<font>fontB20</font>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
 	</control>
@@ -31,7 +31,7 @@
     <posX>686</posX>
   	<posY>321</posY>
     <label>300175</label>
-		<textcolor>00b7ff</textcolor>
+		<textcolor>6aa5cb</textcolor>
 		<font>fontB14</font>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
@@ -43,9 +43,10 @@
 		<posX>655</posX>
 		<posY>386</posY>
 		<dimColor>ffffffff</dimColor>
-    <layout>StackLayout(7, Vertical, true)</layout>
+    <layout>StackLayout(0, Vertical, true)</layout>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
+		
 		<control Style="SettingsCheckButtonLarge">
       <description>Disable internet lookup for coverart</description>
       <type>checkbutton</type>
@@ -83,7 +84,7 @@
     <posX>686</posX>
   	<posY>701</posY>
       <label>300180</label>
-		<textcolor>00b7ff</textcolor>
+		<textcolor>6aa5cb</textcolor>
 		<font>fontB14</font>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>

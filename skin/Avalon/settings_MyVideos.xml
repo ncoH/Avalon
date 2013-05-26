@@ -7,45 +7,24 @@
 	<rememberLastFocusedControl>yes</rememberLastFocusedControl>
   <controls>
   
- 	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1920</width>
-		<height>1080</height>
-	</control>
-
-	<control>
-		<description>viewport</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>0</posX>
-		<posY>92</posY>
-		<width>1893</width>
-		<height>795</height>
-		<texture>viewport_settings.png</texture>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
-	</control>
-	
-	<import>common.time.xml</import>
+	<import>common.settings.xml</import>
+	<import>settings.menu.xml</import>	
+	<import>common.time.xml</import>  
  
 	<control>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>185</posX>
-		<posY>38</posY>
+		<posX>685</posX>
+		<posY>225</posY>
 		<width>500</width>
-		<label>#header.label</label>
+		<label>3</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>AvalonLight20</font>
-	</control>
+		<font>fontB20</font>
+		<animation effect="fade" time="150">WindowOpen</animation>
+		<animation effect="fade" time="150">WindowClose</animation>
+	</control> 
 	
-  	<control>
+<!--   	<control>
   		<type>label</type>
   		<id>1</id>
   		<posX>152</posX>
@@ -54,17 +33,19 @@
   		<label>3</label>
   		<textcolor>6aa5cb</textcolor>
   		<font>fontB20</font>
-  	</control>
+  	</control> -->
   	
-  	<control>
-  		<description>buttons</description>
-  		<type>group</type>
-  		<posX>122</posX>
-  		<posY>321</posY>
-  		<dimColor>ffffffff</dimColor>
-  		<layout>StackLayout(0, Vertical, true)</layout>
+	<control>
+		<description>buttons</description>
+		<type>group</type>
+		<posX>655</posX>
+		<posY>321</posY>
+		<dimColor>ffffffff</dimColor>
+		<layout>GridLayout(2, 0, 0, 0, 1)</layout>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
 		
-      <control Style="SettingsButton">
+      <control Style="SettingsButtonMedium">
         <description>Playlist</description>
         <type>button</type>
         <id>42</id>
@@ -72,70 +53,70 @@
         <onup>46</onup>
       </control>
 	  
-      <control Style="SettingsCheckButton">
+      <control Style="SettingsCheckButtonMedium">
         <description>Subtitles On/Off</description>
         <type>checkbutton</type>
         <id>31</id>
         <label>1196</label>
       </control>
 	  
-      <control Style="SettingsButton">
+      <control Style="SettingsButtonMedium">
         <description>Play all</description>
         <type>button</type>
         <id>34</id>
         <label>300192</label>
       </control>
 	  
-      <control Style="SettingsButton">
+      <control Style="SettingsButtonMedium">
         <description>Share folders</description>
         <type>button</type>
         <id>40</id>
         <label>300071</label>
       </control>
 	  
-      <control Style="SettingsButton">
+      <control Style="SettingsButtonMedium">
         <description>Database</description>
         <type>button</type>
         <id>41</id>
         <label>300161</label>
       </control>
 	  
-      <control Style="SettingsButton">
+      <control Style="SettingsButtonMedium">
         <description>Extensions</description>
         <type>button</type>
         <id>35</id>
         <label>300162</label>
       </control>
 	  
-      <control Style="SettingsButton">
+      <control Style="SettingsButtonMedium">
         <description>Video</description>
         <type>button</type>
         <id>24</id>
         <label>2134</label>
       </control>
 	  
-      <control Style="SettingsButton">
+      <control Style="SettingsButtonMedium">
         <description>Audio</description>
         <type>button</type>
         <id>25</id>
         <label>2135</label>
       </control>
 	  
-      <control Style="SettingsCheckButton">
+      <control Style="SettingsCheckButtonMedium">
         <description>Auto Decoder Settings On/Off</description>
         <type>checkbutton</type>
         <id>44</id>
         <label>1321</label>
       </control>
 	  
-      <control Style="SettingsCheckButton">
+      <control Style="SettingsCheckButtonMedium">
         <description>Force Source Splitter On/Off</description>
         <type>checkbutton</type>
         <id>45</id>
         <label>1322</label>
       </control>
 	  
-      <control Style="SettingsCheckButton">
+      <control Style="SettingsCheckButtonMedium">
         <description>Use Movie Codec TS On/Off</description>
         <type>checkbutton</type>
         <id>46</id>

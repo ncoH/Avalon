@@ -7,9 +7,9 @@
 	<rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
   
+	<import>common.settings.xml</import>
 	<import>settings.menu.xml</import>	
-	<import>common.settings.xml</import>	
-	<import>common.time.settings.xml</import>  
+	<import>common.time.xml</import>  
 
 	<control>
 		<type>label</type>
@@ -18,8 +18,8 @@
 		<posY>225</posY>
 		<width>550</width>
 		<label>#(L(101011))</label>
-		<textcolor>00b7ff</textcolor>
-		<font>TitanLight20</font>
+		<textcolor>6aa5cb</textcolor>
+		<font>fontB20</font>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 	</control>
@@ -33,7 +33,7 @@
 		<width>600</width>			
     <label>300163</label>
 		<font>fontB14</font>
-    <textcolor>ff00b7ff</textcolor>
+    <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>					
   </control>
@@ -47,7 +47,7 @@
 		<width>600</width>	
     <label>300071</label>
 		<font>fontB14</font>
-    <textcolor>ff00b7ff</textcolor>
+    <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>					
   </control>
@@ -63,8 +63,6 @@
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
-			<textureFocus>settings_button_database_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>
@@ -87,8 +85,6 @@
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
-			<textureFocus>settings_button_database_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>
@@ -112,8 +108,6 @@
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
-			<textureFocus>settings_button_database_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>
@@ -137,8 +131,6 @@
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
-			<textureFocus>settings_button_database_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>
@@ -162,8 +154,6 @@
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
-			<textureFocus>settings_button_database_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>
@@ -235,15 +225,15 @@
       <textureHeight>25</textureHeight>
       <textureFocus>settings_listcontrol_wide_focus.png</textureFocus>
       <textureNoFocus>-</textureNoFocus>
-			<font>TitanLight12</font>
-			<font2>TitanLight12</font2>
-			<font3>TitanLight12</font3>
-			<textcolor>FF00b7ff</textcolor>
-			<textcolor2>FF00b7ff</textcolor2>
-			<textcolor3>FF00b7ff</textcolor3>	
-      <selectedColor>FF00b7ff</selectedColor>
-      <selectedColor2>FF00b7ff</selectedColor2>
-      <selectedColor3>FF00b7ff</selectedColor3>		
+			<font>AvalonLight12</font>
+			<font2>AvalonLight12</font2>
+			<font3>AvalonLight12</font3>
+			<textcolor>6aa5cb</textcolor>
+			<textcolor2>6aa5cb</textcolor2>
+			<textcolor3>6aa5cb</textcolor3>	
+      <selectedColor>6aa5cb</selectedColor>
+      <selectedColor2>6aa5cb</selectedColor2>
+      <selectedColor3>6aa5cb</selectedColor3>		
 			<spinPosX>-2000</spinPosX>
 			<spinPosY>500</spinPosY>
       <dimColor>ffffffff</dimColor>
@@ -264,8 +254,6 @@
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
-			<textureFocus>settings_button_database_focus.png</textureFocus>
-			<textureNoFocus>settings_button_database_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>	
@@ -285,7 +273,7 @@
       <posY>743</posY>
       <label>300168</label>
 			<font>fontB14</font>
-			<textcolor>ff00b7ff</textcolor>
+			<textcolor>6aa5cb</textcolor>
 			<animation effect="fade" time="150">WindowOpen</animation>
 			<animation effect="fade" time="150">WindowClose</animation>						
     </control>

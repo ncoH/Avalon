@@ -9,18 +9,16 @@
 	<controls>
 	
 		<import>Trakt.Common.xml</import>
-        <import>common.time.xml</import>
+    <import>common.time.xml</import>
 		
 	<control>
 		<description>buttons</description>
 		<type>group</type>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<posX>655</posX>
 		<posY>156</posY>
-		<layout>StackLayout</layout>
+		<layout>StackLayout(0, Vertical, true)</layout>
 		
-      <control Style="SettingsButtonLarge">
+    <control Style="SettingsButtonLarge">
 			<type>button</type>
 			<description>Create New Account</description>
 			<id>2</id>
@@ -30,7 +28,7 @@
 			<visible>!string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
 		</control>
 		
-      <control Style="SettingsButtonLarge">
+    <control Style="SettingsButtonLarge">
 			<description>Login to Existing Account</description>
 			<type>button</type>
 			<id>3</id>
@@ -39,7 +37,7 @@
 			<visible>!string.equals(#Trakt.Settings.Account.Dialog.Visible,true)</visible>
 		</control>
 		
-      <control Style="SettingsButtonLarge">
+    <control Style="SettingsButtonLarge">
 			<description>Disconnect Current Account</description>
 			<type>button</type>
 			<id>4</id>

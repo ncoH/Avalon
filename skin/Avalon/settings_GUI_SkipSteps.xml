@@ -19,7 +19,7 @@
 		<width>500</width>
 		<label>#(L(101021))/Skipsteps</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>fontB20</font>
+		<font>font22</font>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 	</control>
@@ -58,7 +58,7 @@
 		<type>button</type>
 		<id>20</id>
 		<posX>655</posX>
-		<posY>452</posY>
+		<posY>444</posY>
 		<textalign>left</textalign>		
 		<label>200040</label>
 		<onright>3</onright>
@@ -71,7 +71,7 @@
 		<type>button</type>
 		<id>18</id>
 		<posX>655</posX>
-		<posY>518</posY>
+		<posY>502</posY>
 		<textalign>left</textalign>		
 		<label>886</label>
 		<ondown>22</ondown>
@@ -92,7 +92,7 @@
 		<width>600</width>		
 		<label>300139</label>
 		<font>fontB14</font>
-		<textcolor>fontB20</textcolor>
+		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>		
 	</control>		
@@ -136,7 +136,7 @@
 		<width>600</width>		
 		<label>300141</label>
 		<font>fontB14</font>
-		<textcolor>fontB20</textcolor>
+		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>		
 	</control>	
@@ -161,7 +161,7 @@
 		<type>checkbutton</type>
 		<id>24</id>
 		<posX>655</posX>
-		<posY>842</posY>		
+		<posY>834</posY>		
 		<textalign>left</textalign>			
 		<label>300143</label>
 		<ondown>25</ondown>
@@ -175,7 +175,7 @@
 		<type>button</type>
 		<id>25</id>
 		<posX>655</posX>
-		<posY>908</posY>
+		<posY>892</posY>
 		<textureNoFocus>settings_button_background_medium_black.png</textureNoFocus>
 		<textalign>left</textalign>			
 		<label>300144</label>
@@ -190,7 +190,7 @@
 		<description>Skip value label</description>
 		<id>1</id>
 		<posX>1150</posX>
-		<posY>940</posY>		
+		<posY>924</posY>		
 		<font>font12</font>		
 		<label>#skipValue</label>
 		<align>center</align>			
@@ -220,17 +220,17 @@
 		<animation effect="fade" time="150">WindowClose</animation>
 		<posX>1256</posX>
 		<posY>340</posY>
-      <layout>StackLayout(60)</layout>
+     <layout>StackLayout(60)</layout>
 	  
       <control>
         <type>label</type>
         <description>skip steps seconds</description>
         <id>1</id>
         <label>9997</label>
-		<font>fontB12</font>
-    	<textcolor>fontB20</textcolor>	
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>	
+				<font>fontB12</font>
+				<textcolor>6aa5cb</textcolor>	
+				<animation effect="fade" time="150">WindowOpen</animation>
+				<animation effect="fade" time="150">WindowClose</animation>	
       </control>
 	  
       <control>
@@ -313,7 +313,7 @@
 		<id>1</id>
 		<label>9998</label>
 		<font>fontB12</font>
-    	<textcolor>fontB20</textcolor>
+    <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>			
     </control>
@@ -462,7 +462,7 @@
 		<id>1</id>
 		<label>9999</label>
 		<font>fontB12</font>
-    	<textcolor>fontB20</textcolor>
+    <textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>			
     </control>

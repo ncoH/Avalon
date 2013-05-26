@@ -29,32 +29,32 @@
 		<type>checkbutton</type>
 		<id>2</id>
 		<label>300133</label>
-  		<posX>655</posX>
-  		<posY>321</posY>
+  	<posX>655</posX>
+  	<posY>321</posY>
 		<ondown>3</ondown>
 		<onup>5</onup>
-   		<animation effect="fade" time="150">WindowOpen</animation>
-  		<animation effect="fade" time="150">WindowClose</animation>
-    </control>
+   	<animation effect="fade" time="150">WindowOpen</animation>
+  	<animation effect="fade" time="150">WindowClose</animation>
+   </control>
 	
-    <control>
+  <control>
 		<description>Delay label</description>
 		<type>label</type>
 		<id>1</id>
-  		<posX>683</posX>
-  		<posY>396</posY>
+  	<posX>683</posX>
+  	<posY>396</posY>
 		<label>355</label>
 		<font>font12</font>
-     	<textcolor>6aa5cb</textcolor>
-    	<animation effect="fade" time="150">WindowOpen</animation>
-  		<animation effect="fade" time="150">WindowClose</animation>
-    </control>
+    <textcolor>ffffffff</textcolor>
+    <animation effect="fade" time="150">WindowOpen</animation>
+  	<animation effect="fade" time="150">WindowClose</animation>
+  </control>
 	
     <control>
       <description>Delay</description>
       <type>spincontrol</type>
       <id>3</id>
-  		<posX>1588</posX>
+  		<posX>1720</posX>
   		<posY>396</posY>
       <align>right</align>
       <onup>2</onup>
@@ -83,7 +83,7 @@
       <id>5</id>
       <label>300135</label>
   		<posX>655</posX>
-  		<posY>516</posY>
+  		<posY>509</posY>
       <ondown>2</ondown>
    		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>

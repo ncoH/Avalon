@@ -52,7 +52,7 @@
 		<posX>122</posX>
 		<posY>228</posY>
 		<dimColor>ffffffff</dimColor>
-		<layout>StackLayout(7, Vertical, true)</layout>
+		<layout>StackLayout(0, Vertical, true)</layout>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		

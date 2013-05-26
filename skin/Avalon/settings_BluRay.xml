@@ -105,7 +105,7 @@
 		<posX>686</posX>
 		<posY>706</posY>
 		<label>300220</label>
-		<textcolor>00b7ff</textcolor>
+		<textcolor>6aa5cb</textcolor>
 		<font>fontB14</font>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>

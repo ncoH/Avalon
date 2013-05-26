@@ -22,7 +22,7 @@
 		<posX>0</posX>
 		<posY>92</posY>
 		<width>1893</width>
-		<height>795</height>
+		<height>972</height>
 		<texture>viewport_settings.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -42,7 +42,7 @@
 		<width>500</width>
 		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
-		<font>AvalonLight20</font>
+		<font>font22</font>
 	</control>
 	
 	<control>
@@ -58,7 +58,7 @@
         <type>button</type>
         <id>3</id>
         <label>128</label>
-		<onup>20</onup>
+				<onup>20</onup>
         <hyperlink>1016</hyperlink>
       </control>
 			
