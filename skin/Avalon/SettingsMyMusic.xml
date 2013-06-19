@@ -3,7 +3,8 @@
 <id>14</id>
 <defaultcontrol>2</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
-<define>#defaultcontrol.onleft:10008</define>
+<define>#defaultcontrol.onleft:9998</define>
+<define>#header.label:897</define>
 <controls>
 	<import>settings.menu.xml</import>
 	
@@ -11,11 +12,11 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>158</posY>
+		<posY>252</posY>
 		<width>500</width>
 		<label>2</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB22</font>
+		<textcolor>85cffe</textcolor>
+		<font>TitanLight20</font>
 	</control>
 	
 	<!--            :: Shuffle Playlist ::            -->
@@ -23,8 +24,8 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>736</posX>
-		<posY>254</posY>
+		<posX>740</posX>
+		<posY>353</posY>
 		<width>956</width>
 		<height>52</height>
 		<texture>settings_button_large_focus.png</texture>
@@ -34,8 +35,8 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>736</posX>
-		<posY>254</posY>
+		<posX>740</posX>
+		<posY>353</posY>
 		<width>956</width>
 		<height>52</height>
 		<texture>settings_button_large_nofocus.png</texture>
@@ -47,13 +48,13 @@
 		<type>checkmark</type>
 		<id>2</id>
 		<posX>1590</posX>
-		<posY>266</posY>
+		<posY>365</posY>
 		<align>right</align>
 		<label>-</label>
 		<onup>10</onup>
 		<ondown>6</ondown>
 		<onleft>#defaultcontrol.onleft</onleft>
-		<onright>10008</onright>
+		<onright>2</onright>
 	</control>
 		
 	<control>
@@ -61,7 +62,7 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>766</posX>
-		<posY>260</posY>
+		<posY>361</posY>
 		<label>228</label>
 	</control>
 		
@@ -70,8 +71,8 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>736</posX>
-		<posY>306</posY>
+		<posX>740</posX>
+		<posY>405</posY>
 		<width>956</width>
 		<height>52</height>
 		<texture>settings_button_large_focus.png</texture>
@@ -81,8 +82,8 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>736</posX>
-		<posY>306</posY>
+		<posX>740</posX>
+		<posY>403</posY>
 		<width>956</width>
 		<height>52</height>
 		<texture>settings_button_large_nofocus.png</texture>
@@ -94,13 +95,13 @@
 		<type>checkmark</type>
 		<id>6</id>
 		<posX>1590</posX>
-		<posY>318</posY>
+		<posY>417</posY>
 		<align>right</align>
 		<label>-</label>
 		<onup>2</onup>
 		<ondown>8</ondown>
 		<onleft>#defaultcontrol.onleft</onleft>
-		<onright>10008</onright>
+		<onright>6</onright>
 	</control>
 		
 	<control>
@@ -108,7 +109,7 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>766</posX>
-		<posY>312</posY>
+		<posY>413</posY>
 		<textcolor>ffffffff</textcolor>
 		<label>258</label>
 	</control>
@@ -116,64 +117,46 @@
 	<!--            :: Buttons ::            -->
 	
 
-	<control>
+    <control Style="SettingsButtonLarge">
 		<description>Reorganize My Music Database button</description>
 		<type>button</type>
 		<id>8</id>
 		<label>334</label>
-		<posX>736</posX>
-		<posY>420</posY>
-		<width>956</width>
-		<height>52</height>
-		<textXOff>30</textXOff>
-		<textYOff>8</textYOff>
-		<textureFocus>settings_button_large_focus.png</textureFocus>
-		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+		<posX>740</posX>
+		<posY>570</posY>
 		<onup>6</onup>
 		<ondown>13</ondown>
-		<onleft>10008</onleft>
-		<onright>10008</onright>
+		<onleft>#defaultcontrol.onleft</onleft>
+		<onright>8</onright>
 	</control>
 
-	<control>
+    <control Style="SettingsButtonLarge">
 		<description>delete album button</description>
 		<type>button</type>
 		<id>13</id>
 		<label>485</label>
-		<posX>736</posX>
-		<posY>472</posY>
-		<width>956</width>
-		<height>52</height>
-		<textXOff>30</textXOff>
-		<textYOff>8</textYOff>
-		<textureFocus>settings_button_large_focus.png</textureFocus>
-		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+		<posX>740</posX>
+		<posY>622</posY>
 		<onup>8</onup>
 		<ondown>10</ondown>
-		<onleft>10008</onleft>
-		<onright>10008</onright>
+		<onleft>#defaultcontrol.onleft</onleft>
+		<onright>13</onright>
 	</control>
 
-	<control>
+    <control Style="SettingsButtonLarge">
 		<description>Delete Album Info</description>
 		<type>button</type>
 		<id>10</id>
 		<label>422</label>
-		<posX>736</posX>
-		<posY>524</posY>
-		<width>956</width>
-		<height>52</height>
-		<textXOff>30</textXOff>
-		<textYOff>8</textYOff>
-		<textureFocus>settings_button_large_focus.png</textureFocus>
-		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+		<posX>740</posX>
+		<posY>674</posY>
 		<onup>13</onup>
 		<ondown>2</ondown>
-		<onleft>10008</onleft>
-		<onright>10008</onright>
+		<onleft>#defaultcontrol.onleft</onleft>
+		<onright>10</onright>
 	</control>
 
 <import>common.time.xml</import>
-<import>avalon.version.xml</import>
+<import>titan.version.xml</import>
 </controls>
 </window>

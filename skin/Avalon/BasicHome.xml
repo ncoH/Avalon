@@ -8,6 +8,7 @@
 <define>#menuitemNoFocus:6aa5cb</define>
 <define>#useRandomGamesUserFanart:Yes</define>
 <define>#useRandomMovingPicturesFanart:Yes</define>
+<define>#useRandomMoviesFanart:Yes</define>
 <define>#useRandomMusicScraperFanart:Yes</define>
 <define>#useRandomPicturesUserFanart:Yes</define>
 <define>#useRandomPluginsUserFanart:Yes</define>
@@ -243,6 +244,48 @@
 	<shouldCache>true</shouldCache>
 </control> 
 
+<control>
+    <description>MyFilms Selected Fanart</description>
+    <type>image</type>
+    <id>0</id>
+    <posX>0</posX>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
+	<visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(91919988)</visible>
+    <animation effect="fade" start="30" end="100" time="450" reversible="false">Visible</animation>
+    <animation effect="fade" start="100" end="0" time="450" delay="250" reversible="false">Hidden</animation>
+    <texture>#latestMediaHandler.myfilms.selected.fanart1</texture>
+</control>
+
+<control>
+    <description>MyFilms Selected Fanart</description>
+    <type>image</type>
+    <id>0</id>
+    <posX>0</posX>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
+    <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(91919989)</visible>
+    <animation effect="fade" start="30" end="100" time="450" reversible="false">Visible</animation>
+    <animation effect="fade" start="100" end="0" time="450" delay="250" reversible="false">Hidden</animation>
+    <texture>#latestMediaHandler.myfilms.selected.fanart2</texture>
+</control>
+	
+<control>
+    <description>MyFilms Selected Fanart</description>
+    <type>image</type>
+    <id>0</id>
+    <posX>0</posX>
+    <posY>120</posY>
+    <width>1173</width>
+    <height>660</height>
+    <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(91919990)</visible>
+    <animation effect="fade" start="30" end="100" time="450" reversible="false">Visible</animation>
+    <animation effect="fade" start="100" end="0" time="450" delay="250" reversible="false">Hidden</animation>
+    <texture>#latestMediaHandler.myfilms.selected.fanart3</texture>
+</control>	
+	
 <control>
 	<description>VIEWPORT</description>
 	<type>image</type>

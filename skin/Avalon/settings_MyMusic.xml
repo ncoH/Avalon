@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>14</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:897</define>
+	<rememberLastFocusedControl>yes</rememberLastFocusedControl>
+  <controls>
+  
+ 	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+
+	<control>
+		<description>viewport</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>795</height>
+		<texture>viewport_settings.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+	
+	<import>common.time.xml</import>
+
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+	</control>
+	
+  	<control>
+  		<type>label</type>
+  		<id>1</id>
+  		<posX>152</posX>
+  		<posY>225</posY>
+  		<width>500</width>
+  		<label>2</label>
+  		<textcolor>6aa5cb</textcolor>
+  		<font>fontB20</font>
+  	</control>
+  	
+  	<control>
+  		<description>buttons</description>
+  		<type>group</type>
+  		<posX>122</posX>
+  		<posY>321</posY>
+  		<dimColor>ffffffff</dimColor>
+  		<layout>StackLayout(0, Vertical, true)</layout>
+		
+      <control Style="SettingsButton">
+        <description>Now playing</description>
+        <type>button</type>
+        <id>2</id>
+        <label>4540</label>
+        <onup>35</onup>
+      </control>
+	  
+      <control Style="SettingsButton">
+        <description>Playlist button</description>
+        <type>button</type>
+        <id>8</id>
+        <label>851</label>
+      </control>
+	  
+      <control Style="SettingsButton">
+        <description>delete album button</description>
+        <type>button</type>
+        <id>13</id>
+        <label>485</label>
+      </control>
+	  
+      <control Style="SettingsButton">
+        <description>Delete Album Info</description>
+        <type>button</type>
+        <id>10</id>
+        <label>422</label>
+      </control>
+	  
+      <control Style="SettingsButton">
+        <description>Share folders</description>
+        <type>button</type>
+        <id>40</id>
+        <label>300071</label>
+      </control>
+	  
+      <control Style="SettingsButton">
+        <description>Database</description>
+        <type>button</type>
+        <id>41</id>
+        <label>300161</label>
+      </control>
+	  
+      <control Style="SettingsButton">
+        <description>Extensions</description>
+        <type>button</type>
+        <id>35</id>
+        <label>300162</label>
+        <ondown>2</ondown>
+      </control>
+    </control>
+	
+  </controls>
+</window>

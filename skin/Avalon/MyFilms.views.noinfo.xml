@@ -35,9 +35,27 @@
 		<texture>list_poster_glow.png</texture>
 		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
-	
-	<!-- FILMLIST COVER -->
 
+	
+    <!-- DEFAULT COVER LIST VIEW -->
+	
+    <control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
+		<description>Default Cover Art</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>762</posX>
+		<posY>169</posY>
+		<width>330</width>
+		<height>470</height>
+		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">defaultdvdcover.png</texture>
+		<visible>[facadeview.list | facadeview.album] + Control.IsVisible(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
+    </control>
+
+	<!-- FILMLIST COVER -->
 
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -52,11 +70,10 @@
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#myfilms.coverimage</texture>
-		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50) + [Control.isvisible(36)|Control.isvisible(39)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<visible>[facadeview.list | facadeview.album] + [Control.isvisible(36) | Control.isvisible(39)] + !Control.isvisible(34) + control.isvisible(50) + Control.HasFocus(50) + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
 	<!-- MENU COVER -->
-
 	
 	<control>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -71,7 +88,7 @@
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#myfilms.menuimage</texture>
-		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)+ control.isvisible(40) + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<visible>[facadeview.list | facadeview.album] + control.isvisible(50)+Control.HasFocus(50) + control.isvisible(40) + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
 	<!-- VIEWS COVER -->
@@ -89,7 +106,7 @@
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#myfilms.viewcoverimage</texture>
-		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)+ [Control.isvisible(37)|Control.isvisible(36)|string.equals(#myfilms.groupcoverimage)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<visible>[facadeview.list | facadeview.album] + [Control.isvisible(37)|Control.isvisible(36)] + control.isvisible(50)+Control.HasFocus(50) + Control.isvisible(34) + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
 	<!-- PERSON COVER -->
@@ -107,7 +124,7 @@
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#myfilms.personcoverimage</texture>
-		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)+ [Control.isvisible(38)|Control.isvisible(36)|string.equals(#myfilms.groupcoverimage)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<visible>[facadeview.list | facadeview.album] + [Control.isvisible(38)|Control.isvisible(36)] + control.isvisible(50)+Control.HasFocus(50) + Control.isvisible(34) + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
 	<!-- FILMS COLLECTIONS COVER -->
@@ -125,23 +142,7 @@
 		<width>330</width>
 		<height>470</height>
 		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#myfilms.groupcoverimage</texture>
-		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)+ Control.isvisible(39) + !string.equals(#Avalon.hidePoster,yes)</visible>
-	</control>
-
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<animation effect="fade" start="0" end="100" time="350" delay="550" reversible="false">visible</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">hidden</animation>
-		<description>Cover Art</description>
-		<type>image</type>
-		<id>1020</id>
-		<posX>762</posX>
-		<posY>169</posY>
-		<width>330</width>
-		<height>470</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#myfilms.coverimage</texture>
-		<visible>[facadeview.list|facadeview.album+Control.IsVisible(50)] + !string.equals(#Avalon.hidePoster,yes)</visible>
+		<visible>[facadeview.list|facadeview.album] + Control.isvisible(39) + control.isvisible(50)+Control.HasFocus(50) + Control.isvisible(34) + !string.equals(#Avalon.hidePoster,yes)</visible>
 	</control>
 	
 
@@ -157,7 +158,7 @@
 		<id>0</id>
 		<posX>1832</posX>
 		<posY>1006</posY>
-		<width>475</width>
+		<width>385</width>
 		<align>right</align>
 		<font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>

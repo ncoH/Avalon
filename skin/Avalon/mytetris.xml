@@ -84,7 +84,7 @@
 	  
       <control>
         <description>Sounds</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>4</id>
 		<width>385</width>
 		<height>64</height>		

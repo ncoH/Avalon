@@ -24,7 +24,7 @@
         <width>48</width>
         <height>48</height>
         <texture>basichome_play.png</texture>
-		<visible>string.equals(#recentMedia,MyFilms) + control.isvisible(1021) + [control.hasfocus(91919988) | control.hasfocus(91919989) | control.hasfocus(91919990)]</visible>
+		<visible>string.equals(#recentMedia,MyFilms) + [control.hasfocus(91919988) | control.hasfocus(91919989) | control.hasfocus(91919990)]</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -41,7 +41,7 @@
         <font>fontB12</font>
         <textcolor>ffffff</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(91919988) + control.isvisible(1021)</visible>
+		<visible>control.hasfocus(91919988)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -57,7 +57,7 @@
         <font>AvalonLight12</font>
         <textcolor>6aa5cb</textcolor>
 		<scrollStartDelaySec>10</scrollStartDelaySec>
-		<visible>control.hasfocus(91919988) + control.isvisible(1021)</visible>
+		<visible>control.hasfocus(91919988)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -79,7 +79,7 @@
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#latestMediaHandler.myfilms.latest1.rating</percentage>
-		<visible>control.hasfocus(91919988) + control.isvisible(1021)</visible>
+		<visible>control.hasfocus(91919988)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -303,7 +303,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest1.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest1.poster</texture>
 	   <shouldCache>true</shouldCache>
       </control>
 	<control>
@@ -342,7 +342,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest2.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest2.poster</texture>
 	   <shouldCache>true</shouldCache>
       </control>
 	<control>
@@ -381,7 +381,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest3.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest3.poster</texture>
 	   <shouldCache>true</shouldCache>
       </control>
 	<control>
@@ -430,7 +430,7 @@
         <posY>290</posY>
         <width>183</width>
         <height>259</height>
-        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest1.thumb</texture>
+        <texture flipY="true" diffuse="Thumb_Mask.png" mask="basichome_poster_mask.png">#latestMediaHandler.myfilms.latest1.poster</texture>
 	   <shouldCache>true</shouldCache>
 		<visible>string.equals(#recentMedia,MyFilms) + [control.isvisible(601) | control.isvisible(501)]</visible>
 		<animation effect="slide" time="250" start="-350,0">Visible</animation>

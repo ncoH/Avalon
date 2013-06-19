@@ -92,6 +92,7 @@
       <!-- to make a control Visible only in Index View level: <visible>control.isvisible(41)</visible> -->
       <!-- to make a control Invisible in Index View level: <visible>!control.isvisible(41)</visible> -->
     </control>
+		
     <control>
       <description>dummy backdrop control 1</description>
       <type>image</type>
@@ -202,7 +203,8 @@
       <label>#myfilms.config.pluginname</label>
       <textcolor>6aa5cb</textcolor>
       <font>font22</font>
-      <visible>Control.IsVisible(50)</visible>
+      <visible>Contro
+	  l.IsVisible(50)</visible>
     </control>
     <control>
       <description>Selection display</description>

@@ -7,7 +7,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>0</posX>
-        <posY>0</posY>
+    <posY>0</posY>
 		<width>1920</width>
 		<height>1080</height>
 		<texture>background.png</texture>
@@ -47,38 +47,38 @@
 		<description>FANART BACKGROUND 1 (list/tumbs)</description>
 		<id>897686</id>
 		<type>image</type>
-        <posX>0</posX>
-        <posY>120</posY>
-        <width>1312</width>
-        <height>738</height>
+    <posX>0</posX>
+    <posY>120</posY>
+    <width>1312</width>
+    <height>738</height>
 		<keepaspectratio>no</keepaspectratio>
 		<centered>yes</centered>
 		<zoom>yes</zoom>
 		<texture>#fanarthandler.music.backdrop1.selected</texture>  
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + [control.isvisible(91919291)+control.isvisible(91919293)]</visible>	
-		  <animation effect="fade" time="300">visible</animation>
-		  <animation effect="fade" time="300" delay="300">hidden</animation>
-		  <animation effect="fade" time="0">WindowClose</animation>
-		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.album] + [control.isvisible(91919291)+control.isvisible(91919293)]</visible>	
+		<animation effect="fade" time="300">visible</animation>
+		<animation effect="fade" time="300" delay="300">hidden</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	</control>
 
 	<control>
 		<description>FANART BACKGROUND 2 (list/thumnbs)</description>
 		<id>897687</id>
 		<type>image</type>
-        <posX>0</posX>
-        <posY>120</posY>
-        <width>1312</width>
-        <height>738</height>
+    <posX>0</posX>
+    <posY>120</posY>
+    <width>1312</width>
+    <height>738</height>
 		<keepaspectratio>no</keepaspectratio>
 		<centered>yes</centered>
 		<zoom>yes</zoom>
 		<texture>#fanarthandler.music.backdrop2.selected</texture>  
-		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + [control.isvisible(91919292)+control.isvisible(91919293)]</visible>
-    	  <animation effect="fade" time="300">visible</animation>
-		  <animation effect="fade" time="300" delay="300">hidden</animation>
-		  <animation effect="fade" time="0">WindowClose</animation>
-		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.album] + [control.isvisible(91919292)+control.isvisible(91919293)]</visible>
+		<animation effect="fade" time="300">visible</animation>
+		<animation effect="fade" time="300" delay="300">hidden</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	</control>	
 	
 	<control>
@@ -94,10 +94,10 @@
 		<zoom>yes</zoom>
 		<texture>#fanarthandler.music.backdrop1.selected</texture>  
 		<visible>[facadeview.filmstrip|facadeview.coverflow] + [control.isvisible(91919291)+control.isvisible(91919293)]</visible>	
-		  <animation effect="fade" time="300">visible</animation>
-		  <animation effect="fade" time="300" delay="300">hidden</animation>
-		  <animation effect="fade" time="0">WindowClose</animation>
-		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" time="300">visible</animation>
+		<animation effect="fade" time="300" delay="300">hidden</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	</control>
 
 	<control>
@@ -113,10 +113,10 @@
 		<zoom>yes</zoom>
 		<texture>#fanarthandler.music.backdrop2.selected</texture>  
 		<visible>[facadeview.filmstrip|facadeview.coverflow] + [control.isvisible(91919292)+control.isvisible(91919293)]</visible>
-    	  <animation effect="fade" time="300">visible</animation>
-		  <animation effect="fade" time="300" delay="300">hidden</animation>
-		  <animation effect="fade" time="0">WindowClose</animation>
-		  <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" time="300">visible</animation>
+		<animation effect="fade" time="300" delay="300">hidden</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 	</control>	
 	
 	
@@ -127,7 +127,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>0</posX>
-        <posY>0</posY>
+    <posY>0</posY>
 		<width>1920</width>
 		<height>1080</height>
 		<texture>overlay_long.png</texture>
@@ -207,7 +207,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>0</posX>
-        <posY>0</posY>
+    <posY>0</posY>
 		<width>1920</width>
 		<height>1080</height>
 		<texture>filmstrip_fanart_overlay.png</texture>

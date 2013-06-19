@@ -55,6 +55,22 @@ This file should contain the facade view
 	</control>
 
 	<!--            :: Count ::            -->
+
+    <control>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		<description>Moviecount</description>
+		<type>label</type>
+		<label>#(L(507)): #itemcount  |  Filter: #myfilms.view #myfilms.select</label>
+		<id>0</id>
+		<posX>1282</posX>
+		<posY>875</posY>
+		<align>left</align>
+		<font>AvalonLight12</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>[facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
+    </control>
 	
     <control>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -102,11 +118,11 @@ This file should contain the facade view
 				<dimColor>ffffffff</dimColor>
 			</control>
 
-		<control>
-			<description>Filmstrip view</description>
-			<type>filmstrip</type>
-			<dimColor>90ffffff</dimColor>
-			<id>50</id>
+			<control>
+				<description>Filmstrip view</description>
+				<type>filmstrip</type>
+				<dimColor>90ffffff</dimColor>
+				<id>50</id>
 				<scrollOffset>3</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
@@ -142,9 +158,10 @@ This file should contain the facade view
                 <scrollbarWidth>689</scrollbarWidth>
 				<scrollbarHeight>4</scrollbarHeight>
                 <scrollbarYOff>538</scrollbarYOff>
+				<spinPosX>-2000</spinPosX>			
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,780" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,780" time="100">unfocus</thumbAnimation>
-		</control>
+			</control>
 
 			<control>
 				<description>Thumbnail Panel</description>
@@ -187,6 +204,13 @@ This file should contain the facade view
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>yes</thumbZoom>
+				<spinColor>FF6aa5cb</spinColor>
+				<spinWidth>46</spinWidth>
+				<spinHeight>33</spinHeight>
+				<spinPosX>1765</spinPosX>
+				<spinPosY>879</spinPosY>
+				<spinAlign>right</spinAlign>
+				<spinCanFocus>no</spinCanFocus>				
 			</control>
 			
 				<control>
@@ -238,15 +262,16 @@ This file should contain the facade view
 				  <label1YOff>1430</label1YOff>
 				  <label2YOff>1390</label2YOff>
 				  <pageSize>5</pageSize>
-                <scrollbarBackground>scrollbar_bg.png</scrollbarBackground>
-                <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
-                <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
-                <scrollbarWidth>689</scrollbarWidth>
-				<scrollbarHeight>4</scrollbarHeight>
-                <scrollbarYOff>538</scrollbarYOff>
+					<scrollbarBackground>scrollbar_bg.png</scrollbarBackground>
+					<scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+					<scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+					<scrollbarWidth>689</scrollbarWidth>
+					<scrollbarHeight>4</scrollbarHeight>
+					<scrollbarYOff>538</scrollbarYOff>
 					<keepaspectratio>no</keepaspectratio>
 					<cards flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_fanart_mask.png"></cards>
 				</control>
-	</control>
+			</control>
+	
 </controls>
 </window>

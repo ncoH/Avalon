@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>1</id>
+<defaultcontrol>6</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<controls>
+	
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>background.png</texture>
+	</control>
+
+	<control>
+		<description>Viewport listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>866</height>
+		<texture>viewport_tv_recordings.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+	
+	
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>100001</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>font22</font>
+	</control>
+
+	<import>common.time.xml</import>
+	
+	
+	<control>
+		<description>group element</description>
+		<type>group</type>
+		<posX>72</posX>
+		<posY>216</posY>
+		<layout>GridLayout(2, 0, 5, 7, 1)</layout>
+ 		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	
+		<control>
+			<description>TV On/Off button</description>
+			<type>checkbutton</type>
+			<id>6</id>
+			<label>707</label>
+			<textalign>left</textalign>
+			<font>AvalonLight12</font>
+    	<textcolor>FF000000</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
+      <onup>7</onup>
+      <ondown>2</ondown>
+      <onleft>99</onleft>
+      <onright>3</onright>	
+		</control>
+
+		<control>
+			<description>TVGuide</description>
+			<type>button</type>
+			<id>2</id>
+			<label>600</label>
+			<hyperlink>600</hyperlink>
+			<textalign>left</textalign>
+			<font>AvalonLight12</font>
+    	<textcolor>FF000000</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+      <onup>6</onup>
+      <ondown>5</ondown>
+      <onleft>99</onleft>
+      <onright>4</onright>
+		</control>
+
+		<control>
+			<description>Channel button</description>
+			<type>button</type>
+			<id>5</id>
+			<label>602</label>
+			<textalign>left</textalign>
+			<font>AvalonLight12</font>
+    	<textcolor>FF000000</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+      <onup>2</onup>
+      <ondown>8</ondown>
+      <onleft>99</onleft>
+      <onright>7</onright>
+		</control>
+
+		<control>
+			<description>Active Recordings</description>
+			<type>button</type>
+			<id>8</id>
+			<label>200052</label>
+			<textalign>left</textalign>
+			<font>AvalonLight12</font>
+    	<textcolor>FF000000</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+      <onup>5</onup>
+      <ondown>3</ondown>
+      <onleft>99</onleft>
+      <onright>99</onright>
+		</control>
+
+		<control>
+			<description></description>
+			<type>button</type>
+			<id>1</id>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		</control>
+		
+		<control>
+			<description>Search</description>
+			<type>button</type>
+			<id>3</id>
+			<label>137</label>
+			<textalign>left</textalign>
+			<font>AvalonLight12</font>
+    	<textcolor>FF000000</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+      <onup>8</onup>
+      <ondown>4</ondown>
+      <onleft>6</onleft>
+      <onright>99</onright>
+		</control>
+
+		<control>
+			<description>Recordings</description>
+			<type>button</type>
+			<id>4</id>
+			<label>604</label>
+			<hyperlink>603</hyperlink>
+			<textalign>left</textalign>
+			<font>AvalonLight12</font>
+    	<textcolor>FF000000</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+      <onup>3</onup>
+      <ondown>7</ondown>
+      <onleft>2</onleft>
+      <onright>99</onright>
+		</control>
+		
+		<control>
+			<description>Upcoming Programs</description>
+			<type>button</type>
+			<id>7</id>
+			<label>603</label>
+			<textalign>left</textalign>
+			<font>AvalonLight12</font>
+    	<textcolor>FF000000</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+      <onup>4</onup>
+      <ondown>9</ondown>
+      <onleft>5</onleft>
+      <onright>99</onright>
+		</control>
+
+ 		<control>
+			<description>Teletext</description>
+			<type>button</type>
+			<id>9</id>
+			<label>1441</label>
+			<textalign>left</textalign>
+			<font>AvalonLight12</font>
+    	<textcolor>FF000000</textcolor>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+      <onup>7</onup>
+      <ondown>6</ondown>
+      <onleft>8</onleft>
+      <onright>99</onright>
+		</control>
+
+		<control>
+			<description></description>
+			<type>button</type>
+			<id>1</id>
+			<textcolorNoFocus>ffffffff</textcolorNoFocus>
+		</control>
+		
+	</control>
+
+	<control>
+		<description>video window</description>
+		<type>videowindow</type>
+		<id>99</id>
+		<posX>968</posX>
+		<posY>216</posY>
+		<width>850</width>
+		<height>480</height>
+		<onleft>3</onleft>
+		<onright>8</onright>
+    <onup>99</onup>
+    <ondown>99</ondown>
+		<action>18</action>
+		<textureFocus>tv_green_border.png</textureFocus>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Playing Channel</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>-2000</posX>
+		<posY>418</posY>
+		<width>50</width>
+		<height>50</height>
+		<texture>#TV.View.thumb</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Play info label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>270</posX>
+		<posY>623</posY>
+		<width>850</width>
+		<label>#TV.View.channel | #TV.Guide.Genre</label>
+		<font>AvalonLight12</font>
+		<textcolor>ff6aa5cb</textcolor>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Current program title</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>270</posX>
+		<posY>573</posY>
+		<width>570</width>
+		<label>#TV.View.title</label>
+		<font>fontB16</font>
+		<textcolor>ffffff</textcolor>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Description1</description>
+		<type>textboxscrollup</type>
+		<id>15</id>
+    <posX>72</posX>
+    <posY>694</posY>
+    <width>780</width>
+    <height>200</height>
+		<seperator>----------------------------------------------------------------------------------------------</seperator>
+		<label>#TV.View.description</label>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Progress background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>1040</posX>
+		<posY>761</posY>
+		<width>707</width>
+		<height>18</height>
+		<texture>osd_progress_bg.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>progress bar</description>
+		<type>progress</type>
+		<id>20</id>
+		<posX>1030</posX>
+		<posY>763</posY>
+		<width>728</width>
+		<height>15</height>
+		<label>#TV.View.Percentage</label>
+		<visible>yes</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Start Time Info</description>
+		<type>label</type>
+		<id>997</id>
+    <posX>972</posX>
+    <posY>753</posY>
+    <label>#TV.View.start</label>
+    <align>left</align>
+    <font>font11</font>
+    <textcolor>ff6aa5cb</textcolor>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>End Time Info</description>
+		<type>label</type>
+		<id>998</id>
+    <posX>1815</posX>
+    <posY>753</posY>
+    <label>#TV.View.stop</label>
+    <align>right</align>
+    <font>font11</font>
+    <textcolor>ff6aa5cb</textcolor>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
+	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>70</posX>
+		<posY>558</posY>
+		<width>187</width>
+		<height>119</height>
+		<texture>tv_logo_bg.png</texture>
+		<visible>Control.HasThumb(60)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+	<control>
+		<id>60</id>
+		<type>image</type>
+		<posX>121</posX>
+		<posY>572</posY>
+		<width>90</width>
+		<height>90</height>
+		<texture>#TV.View.thumb</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>	
+	
+	<control>
+		<description>record pin</description>
+		<type>image</type>
+		<id>24</id>
+		<posX>462</posX>
+		<posY>526</posY>
+		<texture>tvguide_record_button.png</texture>
+		<visible>no</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+</controls>
+</window>

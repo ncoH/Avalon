@@ -286,5 +286,5 @@
 
 	<string Field="AvailableMedia" Original="Available Media">Verfügbare Medien</string>
 
-	<string Field="Votes" Original="votes">Stimmen</string>
+	<string Field="Votes" Original="votes">Abstimmungen</string>
 </strings>

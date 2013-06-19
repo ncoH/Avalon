@@ -160,17 +160,32 @@
 
 		<control>
 			<description>Progress Bar</description>
-			<type>progress</type>
+			<type>tvprogress</type>
 			<id>105</id>
-    		<posX>578</posX>
+    		<posX>590</posX>
     		<posY>906</posY>
-    		<width>758</width>
+    		<width>730</width>
     		<height>15</height>
-    		<label>#percentage</label>
-    		<lefttexture>osd_progress_left.png</lefttexture>
-    		<midtexture>osd_progress_mid.png</midtexture>
-    		<righttexture>osd_progress_right.png</righttexture>
+			<toptexture>osd_progress_indicator.png</toptexture>
+			<TextureOffsetY>23</TextureOffsetY>
+			<bottomtexture>-</bottomtexture>
+			<texturetick>-</texturetick>
+			<lefttexture>osd_progress_left.png</lefttexture>
+			<midtexture>-</midtexture>
+			<righttexture>-</righttexture>
+			<logotexture>-</logotexture>
+			<fillbackgroundtexture>-</fillbackgroundtexture>
+			<fillbgxoff>-3</fillbgxoff>
+			<fillbgyoff>0</fillbgyoff>
+			<filltexture1>osd_progress_mid.png</filltexture1>
+			<filltexture2>osd_progress_mid.png</filltexture2>
+			<filltexture3>osd_progress_mid_orange.png</filltexture3>
+			<markertexture>osd_progress_mid_orange.png</markertexture>
+			<fillheight>15</fillheight>
+			<labelmarkerstarts>#jumppoints</labelmarkerstarts>
+			<labelmarkerends>#chapters</labelmarkerends>			
 			<label>#percentage</label>
+			<visible>!control.hasfocus(1237)</visible>			
 		</control>
 
 		<control>
@@ -251,14 +266,12 @@
 	
     <control>
 		<description>Subtitles Menu</description>
-		<type>togglebutton</type>
+		<type>button</type>
 		<id>218</id>
 		<posY>963</posY>
 		<posX>1620</posX>
 		<width>51</width>
 		<height>51</height>
-		<AltTextureFocus>osd_sub_button_focus.png</AltTextureFocus>
-		<AltTextureNoFocus>osd_sub_button_nofocus.png</AltTextureNoFocus>
 		<textureFocus>osd_sub_button_focus.png</textureFocus>
 		<textureNoFocus>osd_sub_button_nofocus.png</textureNoFocus>
 		<label>-</label>
@@ -271,7 +284,7 @@
 	
 	<control>
 		<description>Audio Menu</description>
-		<type>togglebutton</type>
+		<type>button</type>
 		<id>221</id>
 		<posY>963</posY>
 		<posX>1578</posX>
@@ -281,8 +294,6 @@
 		<onright>218</onright>
 		<ondown>221</ondown>
 		<onup>221</onup>
-		<AltTextureFocus>osd_audio_button_focus.png</AltTextureFocus>
-		<AltTextureNoFocus>osd_audio_button_nofocus.png</AltTextureNoFocus>
 		<textureFocus>osd_audio_button_focus.png</textureFocus>
 		<textureNoFocus>osd_audio_button_nofocus.png</textureNoFocus>
 		<label>-</label>
@@ -291,14 +302,12 @@
    
 	<control>
         <description>Video Menu</description>
-        <type>togglebutton</type>
+        <type>button</type>
         <id>220</id>
 		<posY>963</posY>
 		<posX>1484</posX>
 		<width>51</width>
 		<height>51</height>
-        <AltTextureFocus>osd_video_button_focus.png</AltTextureFocus>
-        <AltTextureNoFocus>osd_video_button_nofocus.png</AltTextureNoFocus>
         <textureFocus>osd_video_button_focus.png</textureFocus>
         <textureNoFocus>osd_video_button_nofocus.png</textureNoFocus>
         <label>-</label>
@@ -413,16 +422,14 @@
 
     <control>
       <description>Bookmarks Menu</description>
-      <type>togglebutton</type>
+      <type>button</type>
       <id>219</id>
       <posX>256</posX>
       <posY>537</posY>
       <width>62</width>
       <height>43</height>
-      <AltTextureFocus>osd_settings_bookmark_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>osd_settings_bookmark_nofocus.png</AltTextureNoFocus>
-      <textureFocus>-</textureFocus>
-      <textureNoFocus>osd_settings_bookmark_focus.png</textureNoFocus>
+      <textureFocus>osd_settings_bookmark_focus.png</textureFocus>
+      <textureNoFocus>osd_settings_bookmark_nofocus.png</textureNoFocus>
       <label>-</label>
       <font>-</font>
       <onleft>213</onleft>

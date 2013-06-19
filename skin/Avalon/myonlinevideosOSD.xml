@@ -159,18 +159,34 @@
     	</control>
 
 		<control>
-			<description>Progress Bar</description>
-			<type>progress</type>
+			<description>TV Progress Bar</description>
+			<type>tvprogress</type>
 			<id>105</id>
-    		<posX>578</posX>
+    		<posX>590</posX>
     		<posY>906</posY>
     		<width>758</width>
     		<height>15</height>
-    		<label>#percentage</label>
-    		<lefttexture>osd_progress_left.png</lefttexture>
-    		<midtexture>osd_progress_mid.png</midtexture>
-    		<righttexture>osd_progress_right.png</righttexture>
+			<toptexture>-</toptexture>
+			<TextureOffsetY>22</TextureOffsetY>
+			<bottomtexture>-</bottomtexture>
+			<texturetick>-</texturetick>
+			<lefttexture>osd_progress_left.png</lefttexture>
+			<midtexture>-</midtexture>
+			<righttexture>-</righttexture>
+			<logotexture>-</logotexture>
+			<fillbackgroundtexture>-</fillbackgroundtexture>
+			<fillbgxoff>-3</fillbgxoff>
+			<fillbgyoff>0</fillbgyoff>
+			<filltexture1>osd_progress_mid.png</filltexture1>
+			<filltexture2>osd_progress_mid_red.png</filltexture2>
+			<filltexture3>osd_progress_mid_orange.png</filltexture3>
+			<fillheight>15</fillheight>
 			<label>#percentage</label>
+			<label1>#percentage</label1>
+			<label2>#TV.Record.percent3</label2>
+			<font>font10</font>
+			<textcolor>FF000000</textcolor>
+			<visible>!control.hasfocus(1237)</visible>
 		</control>
 
 		<control>
@@ -251,7 +267,7 @@
 	
     <control>
 		<description>Subtitles Menu</description>
-		<type>togglebutton</type>
+		<type>checkbutton</type>
 		<id>218</id>
 		<posY>963</posY>
 		<posX>1531</posX>
@@ -271,7 +287,7 @@
 	
 	<control>
 		<description>Audio Menu</description>
-		<type>togglebutton</type>
+		<type>checkbutton</type>
 		<id>221</id>
 		<posY>963</posY>
 		<posX>1578</posX>
@@ -291,7 +307,7 @@
    
 	<control>
         <description>Video Menu</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>220</id>
 		<posY>963</posY>
 		<posX>1620</posX>
@@ -413,7 +429,7 @@
 
     <control>
       <description>Bookmarks Menu</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>219</id>
       <posX>256</posX>
       <posY>537</posY>

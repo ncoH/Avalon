@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<controls>
-		<!-- 
-		This skin file is meant for all controls that should be visible for the user
-		when in the modify search view of the plugin. All controls should be tagged at a minimum
-		with "<visible>Control.IsVisible(103)</visible>". 
-		-->
 
 		<control>
 			<description>Movie Search Button</description>
@@ -62,6 +57,7 @@
         	<animation effect="fade" time="250">WindowOpen</animation>
         	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
+		
 		<control>
 			<description>Title Button</description>
 			<type>button</type>
@@ -98,6 +94,7 @@
         	<animation effect="fade" time="250">WindowOpen</animation>
         	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
+		
 		<control>
 			<description>Year Button</description>
 			<type>button</type>
@@ -134,6 +131,7 @@
         	<animation effect="fade" time="250">WindowOpen</animation>
         	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
+		
 		<control>
 			<description>IMDb Button</description>
 			<type>button</type>
@@ -170,6 +168,7 @@
         	<animation effect="fade" time="250">WindowOpen</animation>
         	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
+		
 		<control>
 			<description>Season Button</description>
 			<type>button</type>
@@ -206,6 +205,7 @@
         	<animation effect="fade" time="250">WindowOpen</animation>
         	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
+		
 		<control>
 			<description>Episode Button</description>
 			<type>button</type>
@@ -396,19 +396,5 @@
         	<animation effect="fade" time="0">WindowClose</animation>
 		</control>
 
-<!--
-		<control>
-			<description>Select Download Folder Button</description>
-			<type>button</type>
-			<id>215</id>
-			<label>Select download folder</label>
-			<posX>100</posX>
-			<posY>670</posY>
-			<onup>214</onup>
-			<ondown>211</ondown>
-			<visible>Control.IsVisible(103)</visible>
-			<animation effect="fade" time="250">visiblechange</animation>
-		</control>
--->
 	</controls>
 </window>

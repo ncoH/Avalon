@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- MP-TV-Series translation file -->
-<!-- English (US) r1887 vs francais-->
-<!-- Last Updated: 08 janvier 2012 -->
+<!-- English (US) r1936 vs francais-->
+<!-- Last Updated: 18 decembre 2012 -->
 <!-- Note: English is the fallback for any strings not found in other languages  -->
 <strings>
   <string Field="Series" Original="Series">Séries</string>
@@ -27,9 +27,9 @@
   <string Field="off" Original="off">Off</string>
   <string Field="Play_Random_Episode" Original="Play Random Episode">Lecture d'un épisode au hasard</string>
   <string Field="Play_Random_First_Unwatched_Episode" Original="Play Random First Unwatched Episode">Lecture d'un épisode non vu au hasard</string>
-  <string Field="Delete_that_series" Original="Delete that series?">Effacer cette série ?</string>
-  <string Field="Delete_that_season" Original="Delete that season?">Effacer cette saison ?</string>
-  <string Field="Delete_that_episode" Original="Delete that episode?">Effacer cet épisode ?</string>
+  <string Field="Delete_that_series" Original="Delete that series?">Effacer cette série?</string>
+  <string Field="Delete_that_season" Original="Delete that season?">Effacer cette saison?</string>
+  <string Field="Delete_that_episode" Original="Delete that episode?">Effacer cet épisode?</string>
   <string Field="Confirm" Original="Confirm">Confirmer</string>
   <string Field="Completed" Original="Completed">Terminé</string>
   <string Field="No_subtitles_found" Original="No subtitles found">Aucun sous-titre trouvé</string>
@@ -40,10 +40,10 @@
   <string Field="Error" Original="#Error">Erreur</string>
   <string Field="No_items" Original="No items!">Pas d'objet !</string>
   <string Field="Unknown" Original="Unknown">Inconnu</string>
-  <string Field="wrongSkin" Original="Wrong Skin file">Erreur de fichier pour le skin</string>
+  <string Field="wrongSkin" Original="Wrong Skin file">Erreur de fichier pour le Thème</string>
   <string Field="special" Original="Special">Spécial</string>
   <string Field="specials" Original="Specials">Spéciaux</string>
-  <string Field="delPhyiscalWarning" Original="You are about to permanently delete {0} physical file(s).\nWould you like to proceed?">"Suppression de {0} fichier(s) physique(s).\nEtes-vous sur ?"</string>
+  <string Field="delPhyiscalWarning" Original="You are about to permanently delete {0} physical file(s).\nWould you like to proceed?">"Suppression de {0} fichier(s) physique(s).\nContinuer?"</string>
   <string Field="Force_Online_Match" Original="Force New Online Lookup For Series">Nouvelle recherche via le Web pour les séries</string>
   <string Field="Load_via_NewsLeecher" Original="Load via NewsLeecher">Télécharger via NewsLeecher</string>
   <string Field="Download" Original="Download">Télécharger</string>
@@ -53,7 +53,7 @@
   <string Field="All" Original="All">Tous les épisodes</string>
   <string Field="Latest" Original="Latest Aired">Les derniers épisodes</string>
   <string Field="Channels" Original="Channels">Par chaines</string>
-  <string Field="Unwatched" Original="Unwatched">Episodes non vus</string>
+  <string Field="Unwatched" Original="Unwatched">Episodes non visionnés</string>
   <string Field="Favourites" Original="Favourites">Favoris</string>
   <string Field="updateMI" Original="Update Mediainfo of local file">Mise à jour des infos média</string>
   <string Field="RateSeries" Original="Rate this Series">Noter cette série</string>
@@ -99,7 +99,7 @@
   <string Field="CFS_Available_Seasons" Original="Available Seasons list:">Liste des saisons disponibles: </string>
   <string Field="CFS_Skip_Never_Ask_Again" Original="Skip / Never Ask Again">Passer / Ne plus demander</string>
   <string Field="CYN_Subtitle_File_Replace" Original="Subtitle File Replace">Remplacer le sous-titre</string>
-  <string Field="CYN_Old_Subtitle_Replace" Original="Old subtitle File present: overwrite?">Un sous-titre est déjà présent; le remplacer ?</string>
+  <string Field="CYN_Old_Subtitle_Replace" Original="Old subtitle File present: overwrite?">Un sous-titre est déjà présent; le remplacer?</string>
   <string Field="RecentlyAdded" Original="Recently Added">Ajouté récemment</string>
   <string Field="TVDB_ERROR_TITLE" Original="theTVDB Error">Erreur de TVDB</string>
   <string Field="TVDB_INFO_TITLE" Original="theTVDB">TVDB</string>
@@ -173,10 +173,10 @@
   <string Field="PinCode" Original="Pin Code">Code PIN</string>
   <string Field="PinCodeIncorrectLine1" Original="The entered pin code is incorrect">Le code PIN est incorrect</string>
   <string Field="PinCodeIncorrectLine2" Original="Press OK to try again">OK pour recommencer</string>
-  <string Field="ParentalControlLocked" Original="Lock Views">Bloquer les vues</string>
-  <string Field="ViewIsLocked" Original="View Locked">Vue bloquée</string>
-  <string Field="PinCodeDlgLabel1" Original="The view {0} is locked">L'affichage "{0}" est bloquée</string>
-  <string Field="PinCodeDlgLabel2" Original="Enter in 4 Digit Pin Code to proceed:">Entrer le code PIN pour débloquer:</string>
+  <string Field="ParentalControlLocked" Original="Lock Views">Verrouiller les affichages</string>
+  <string Field="ViewIsLocked" Original="View Locked">Affichage verrouillé</string>
+  <string Field="PinCodeDlgLabel1" Original="The view {0} is locked">L'affichage "{0}" est verrouillé</string>
+  <string Field="PinCodeDlgLabel2" Original="Enter in 4 Digit Pin Code to proceed:">Entrer le code PIN pour déverrouiller:</string>
   <string Field="PinCodeMessageIncorrect" Original="Pin Incorrect">Code PIN incorrect</string>
   <string Field="Continuing" Original="Continuing Series">Séries en cours</string>
   <string Field="Ended" Original="Ended Series">Séries terminées</string>
@@ -229,7 +229,7 @@
   <string Field="SeriesDetails" Original="Series Details">Détails des séries</string>
   <string Field="SeriesStatus" Original="Series Status">Status des séries</string>
   <string Field="Starring" Original="Starring">Mettant en vedette</string>
-  <string Field="Watched" Original="Watched">Vu</string>
+  <string Field="Watched" Original="Watched">Visionné</string>
   <string Field="Writer" Original="Writer">Scénariste</string>
   <string Field="Writers" Original="Writers">Scénaristes</string>
 
@@ -295,29 +295,51 @@
   <string Field="LayoutCoveflow" Original="Coveflow">Coverflow</string>
   
   <string Field="ResumeEpisode" Original="Resume episode from last time?">Reprendre la lecture?</string>
-	
+        
   <string Field="SummaryNotAvailable" Original="No summary is currently available.">Aucun résumé n'est actuellement disponible.</string>
-	
+        
   <string Field="Timeout" Original="Timeout">Temps expiré</string>
   <string Field="NoActors" Original="There are no Actors for this series.">Il n'existe pas d'info concernant les acteurs pour cette série.</string>
-  <string Field="GettingActors" Original="Getting Actors from Online">Chercher des infos concernant les acteurs via le Web</string>
-	
-  <string Field="ShowAllEpisodes" Original="Show all Episodes">Afficher épisodes non vus et à venir</string>
-	
+  <string Field="GettingActors" Original="Getting Actors from Online">Rechercher des infos concernant les acteurs via le Web</string>
+        
+  <string Field="ShowAllEpisodes" Original="Show all Episodes">Afficher les épisodes non visionnés et à venir</string>
+        
   <string Field="DownloadAllEpisodeInfo" Original="Download All Episode Info">Télécharger toutes les infos concernant l'épisode</string>
-	
+        
   <string Field="Calendar" Original="Calendar">Calendrier</string>
   <string Field="Recommendations" Original="Recommendations">Recommandations</string>
   <string Field="Trending" Original="Trending">Tendances</string>
-  <string Field="WatchList" Original="WatchList">Regarder la liste</string>
+  <string Field="WatchList" Original="WatchList">Afficher la liste</string>
   <string Field="Shouts" Original="Shouts">Messages</string>
   <string Field="MainMenu" Original="Main Menu">Menu Principal</string>
   <string Field="AddToWatchList" Original="Add {0} to Watchlist">Ajouter {0} à la liste</string>
-   <string Field="TraktNotLoggedIn" Original="You can not do this operation without being\nlogged in. Would you like to Signup or Login\nto trakt.tv now?">Impossible à réaliser sans être\nconnecté. Voulez vous vous connecter\nà trakt.tv maintenant?</string>
-   <string Field="RelatedSeries" Original="RelatedSeries">Related Series</string>
+  <string Field="TraktNotLoggedIn" Original="You can not do this operation without being\nlogged in. Would you like to Signup or Login\nto trakt.tv now?">Impossible à réaliser sans être\nconnecté. Voulez vous vous connecter\nà trakt.tv maintenant?</string>
+  <string Field="RelatedSeries" Original="RelatedSeries">Séries similaires</string>
    
   <string Field="SearchTorrent" Original="Torrent Search">Recherche de Torrents</string>
   <string Field="SearchNZB" Original="NZB Search">Recherche de NZB</string>
-  <string Field="SearchActorInMovies" Original="Search for Actor in Movies">Rechercher Acteur dans les films</string>
+  <string Field="SearchActorInMovies" Original="Search for Actor in Movies">Recherche de films avec le même acteur</string>
    
-   </strings>
+  <string Field="AddToCustomList" Original="Add {0} to Custom List...">Ajouter {0} à votre liste personnalisée...</string>	
+		
+  <string Field="insertDisk" Original="Please insert Disk">Insérer le disque</string>
+  <string Field="InsertDiskMessage1" Original="The media for the episode you have selected">Le support contenant l'épisode que vous avez selectionné</string>
+  <string Field="InsertDiskMessage2" Original="is currently not available.">n'est pas disponible.</string>
+  <string Field="InsertDiskMessage3" Original="Please insert or connect media">Insérer ou connecter votre support de médias</string>
+  <string Field="InsertDiskMessage4" Original="labeled: {0}">Etiquetés: {0}</string>
+  <string Field="OK" Original="OK">OK</string>
+  <string Field="Cancel" Original="Cancel">Annuler</string>
+  <string Field="Ignore" Original="Ignore">Ignorer</string>
+	  <string Field="CycleSeriesThumb" Original="Cycle Series Panel">Cycle Series Panel</string>
+  <string Field="Update" Original="Update">Mise à jour</string>
+  <string Field="ViewTagExistsMessage" Original="The view '{0}' already exists">L'affichage '{0}' existe déjà</string>
+	  <string Field="LayoutListThumbs" Original="List Panels">Liste</string>
+  <string Field="LayoutCoverflow" Original="Coverflow">Coverflow</string>
+  
+  <string Field="Warning" Original="Warning">Attention</string>
+  <string Field="PlaybackOutOfOrderLine1" Original="The next unwatched episode is:">Vous ne l'avez pas encore visionné et/ou récupéré</string>
+  <string Field="PlaybackOutOfOrderLine2" Original="Are you sure you want to continue?">Voulez vous continuer?</string>
+  <string Field="Filters" Original="Filters">Filtres</string>
+  <string Field="UnwatchedEpisodes" Original="Unwatched Episodes">Episodes non visionnés</string>
+  <string Field="AllEpisodes" Original="All Episodes">La totalité des épisodes</string>
+     </strings>

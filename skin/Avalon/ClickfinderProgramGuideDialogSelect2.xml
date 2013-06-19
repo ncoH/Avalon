@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>1656544655</id>
+  <defaultcontrol>3</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+	<controls>
+
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="0,150" end="0,0" tween="quadratic" easing="in" time="200" delay="0">WindowOpen</animation>
+			<dimColor>ffffffff</dimColor>
+			
+			<control>
+				<id>0</id>
+				<type>image</type>
+				<posX>575</posX>
+				<posY>395</posY>
+				<width>768</width>
+				<height>651</height>
+				<texture>context_background.png</texture>
+			</control>
+
+			<control>
+				<id>4</id>
+				<description>Heading text label</description>
+				<type>label</type>
+				<posX>679</posX>
+				<posY>472</posY>
+				<width>580</width>
+				<font>AvalonLight20</font>
+				<label>181</label>
+			</control>
+
+			<control>
+				<type>listcontrol</type>
+				<id>3</id>
+				<posX>620</posX>
+				<posY>540</posY>
+				<width>678</width>
+				<height>450</height>
+				<spinWidth>30</spinWidth>
+				<spinHeight>30</spinHeight>
+				<spinPosX>729</spinPosX>
+				<spinPosY>930</spinPosY>
+				<spinAlign>Left</spinAlign>
+				<spinCanFocus>no</spinCanFocus>
+				<textureFocus>context_item_selected.png</textureFocus>
+				<textureHeight>70</textureHeight>
+				<keepaspectratio>yes</keepaspectratio>
+				<PinIconXOff>623</PinIconXOff>
+				<PinIconYOff>8</PinIconYOff>
+				<PinIconWidth>24</PinIconWidth>
+				<PinIconHeight>24</PinIconHeight>
+				<IconXOff>4</IconXOff>
+				<IconYOff>4</IconYOff>
+				<textXOff>2</textXOff>
+				<textYOff>2</textYOff>
+				<font>font12</font>
+				<textXOff2>650</textXOff2>
+				<textYOff2>35</textYOff2>
+				<font2>AvalonLight10</font2>
+				<textXOff3>84</textXOff3>
+				<textYOff3>40</textYOff3>
+				<font3>AvalonLight10</font3>
+				<itemWidth>60</itemWidth>
+				<itemHeight>60</itemHeight>
+				<scrollOffset>2</scrollOffset>
+				<scrollbarXOff>0</scrollbarXOff>
+				<scrollbarwidth>15</scrollbarwidth>
+				<visible></visible>
+			</control>
+
+		</control>
+	</controls>
+</window>

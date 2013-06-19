@@ -1,0 +1,325 @@
+<window>
+  <id>8765</id>
+  <defaultcontrol>3</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:913</define>
+  <controls>
+  
+    <import>common.window.xml</import>
+	
+    <control>
+      <description>viewport</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>1</posX>
+      <posY>92</posY>
+      <width>1893</width>
+      <height>795</height>
+      <texture>viewport_noposter.png</texture>
+      <visible>yes</visible>
+      <animation time="250" effect="fade">WindowOpen</animation>
+      <animation time="250" effect="fade">WindowClose</animation>
+      <animation time="250" effect="slide" start="-1890,0">WindowOpen</animation>
+      <animation time="250" effect="slide" end="-1890,0">WindowClose</animation>
+    </control>  
+
+    <import>common.time.xml</import>
+	
+    <control>
+      <description>Heading</description>
+      <type>label</type>
+      <id>2</id>
+      <posX>185</posX>
+      <posY>38</posY>
+      <width>500</width>
+      <textcolor>6aa5cb</textcolor>
+      <font>font22</font>
+      <visible>no</visible>
+      <animation time="250" effect="fade">WindowOpen</animation>
+      <animation time="250" effect="fade">WindowClose</animation>
+    </control>
+	
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <animation time="250" effect="fade">WindowOpen</animation>
+      <animation time="250" effect="fade">WindowClose</animation>
+      <animation time="250" effect="slide" start="-1890,0">WindowOpen</animation>
+      <animation time="250" effect="slide" end="-1890,0">WindowClose</animation>
+      <layout>StackLayout</layout>
+      <posX>55</posX>
+      <posY>150</posY>      
+      <control>
+        <description>Rip Disc</description>
+        <type>button</type>
+        <id>3</id>
+        <label>Rip Disc</label>
+        <onup>17</onup>
+      </control>
+      <control>
+        <description>About</description>
+        <type>button</type>
+        <id>4</id>
+        <label>About</label>        
+      </control>
+      <control>
+        <description>hidden</description>
+        <type>button</type>
+        <id>100</id>
+        <label></label>
+        <visible>no</visible>
+      </control>
+      <control>
+        <description>art</description>
+        <type>checkbutton</type>
+        <id>10</id>
+        <label>Get Cover Art</label>
+      </control>
+      <control>
+        <description>eject</description>
+        <type>checkbutton</type>
+        <id>19</id>
+        <label>Eject Disc</label>
+      </control>      
+      <control>
+        <description>target</description>
+        <type>button</type>
+        <id>9</id>
+        <label>Music</label>
+      </control>
+      <control>
+        <description>format</description>
+        <type>button</type>
+        <id>14</id>
+        <label>Ogg Vorbis</label>
+      </control>
+      <control>
+        <description>target</description>
+        <type>button</type>
+        <id>24</id>
+        <label>Video</label>
+      </control>
+      <control>
+        <description>DVD mode</description>
+        <type>button</type>
+        <id>18</id>
+        <label>Full Disc</label>
+        <ondown>3</ondown>
+      </control>
+    </control>
+	
+    <control>
+      <type>image</type>
+      <id>1</id>
+      <posX>515</posX>
+      <posY>937</posY>
+      <width>737</width>
+      <height>18</height>
+      <texture>osd_progress_bg.png</texture>
+      <visible>Control.IsVisible(8)</visible>
+    </control>
+	
+    <control>
+      <type>progress</type>
+      <description>track progress</description>
+      <id>8</id>
+      <posX>505</posX>
+      <posY>939</posY>
+      <width>758</width>
+      <height>15</height>
+      <texturebg>-</texturebg>
+      <lefttexture>osd_progress_left.png</lefttexture>
+      <midtexture>osd_progress_mid.png</midtexture>
+      <righttexture>osd_progress_right.png</righttexture>
+    </control>
+	
+    <control>
+      <type>image</type>
+      <id>1</id>
+      <posX>515</posX>
+      <posY>1022</posY>
+      <width>737</width>
+      <height>18</height>
+      <texture>osd_progress_bg.png</texture>
+      <visible>Control.IsVisible(12)</visible>
+    </control>
+	
+    <control>
+      <type>progress</type>
+      <description>tot progress</description>
+      <id>12</id>
+      <posX>505</posX>
+      <posY>1024</posY>
+      <width>758</width>
+      <height>15</height>
+      <texturebg>-</texturebg>
+      <lefttexture>osd_progress_left.png</lefttexture>
+      <midtexture>osd_progress_mid.png</midtexture>
+      <righttexture>osd_progress_right.png</righttexture>
+    </control>
+	
+    <control>
+      <description>text label - STATUS</description>
+      <type>label</type>
+      <id>5</id>
+      <posX>521</posX>
+      <posY>894</posY>
+      <label></label>
+    </control>
+	
+    <control>
+      <description>text label - TOTAL STATUS</description>
+      <type>label</type>
+      <id>13</id>
+      <posX>521</posX>
+      <posY>978</posY>
+      <label></label>
+    </control>
+	
+    <control>
+      <description>Artist header</description>
+      <type>label</type>
+      <id>15</id>
+      <posX>515</posX>
+      <posY>150</posY>
+      <label>171</label>
+      <textcolor>99ffffff</textcolor>
+      <animation time="250" effect="fade">WindowOpen</animation>
+      <animation time="250" effect="fade">WindowClose</animation>
+      <animation time="250" effect="slide" start="-1890,0">WindowOpen</animation>
+      <animation time="250" effect="slide" end="-1890,0">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Artist name</description>
+      <type>label</type>
+      <id>6</id>
+      <posX>650</posX>
+      <posY>150</posY>
+      <label>
+      </label>
+      <animation time="250" effect="fade">WindowOpen</animation>
+      <animation time="250" effect="fade">WindowClose</animation>
+      <animation time="250" effect="slide" start="-1890,0">WindowOpen</animation>
+      <animation time="250" effect="slide" end="-1890,0">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Album header</description>
+      <type>label</type>
+      <id>16</id>
+      <posX>515</posX>
+      <posY>192</posY>
+      <label>170</label>
+      <textcolor>99ffffff</textcolor>
+      <animation time="250" effect="fade">WindowOpen</animation>
+      <animation time="250" effect="fade">WindowClose</animation>
+      <animation time="250" effect="slide" start="-1890,0">WindowOpen</animation>
+      <animation time="250" effect="slide" end="-1890,0">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Album name</description>
+      <type>label</type>
+      <id>7</id>
+      <posX>650</posX>
+      <posY>192</posY>
+      <label></label>
+      <animation time="250" effect="fade">WindowOpen</animation>
+      <animation time="250" effect="fade">WindowClose</animation>
+      <animation time="250" effect="slide" start="-1890,0">WindowOpen</animation>
+      <animation time="250" effect="slide" end="-1890,0">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Movie image background - not needed in Avalon</description>
+      <type>image</type>
+      <id>23</id>
+      <posX>1200</posX>
+      <posY>150</posY>
+      <width>320</width>
+      <height>450</height>
+      <texture>-</texture>
+    </control>
+	
+    <control>
+      <description>Movie image</description>
+      <type>image</type>
+      <id>22</id>
+      <posX>1215</posX>
+      <posY>161</posY>
+      <width>600</width>
+      <height>600</height>
+      <align>center</align>
+      <valign>middle</valign>
+      <keepaspectratio>yes</keepaspectratio>
+      <texture>-</texture>
+      <animation time="250" effect="fade">WindowOpen</animation>
+      <animation time="250" effect="fade">WindowClose</animation>
+      <animation time="250" effect="slide" start="-1890,0">WindowOpen</animation>
+      <animation time="250" effect="slide" end="-1890,0">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Album Art</description>
+      <type>image</type>
+      <id>20</id>
+      <posX>1215</posX>
+      <posY>161</posY>
+      <width>600</width>
+      <height>600</height>
+      <texture mask="music_listview_mask.png">-</texture>
+      <animation time="250" effect="fade">WindowOpen</animation>
+      <animation time="250" effect="fade">WindowClose</animation>
+      <animation time="250" effect="slide" start="-1890,0">WindowOpen</animation>
+      <animation time="250" effect="slide" end="-1890,0">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Album Art Background - not needed in Avalon</description>
+      <type>image</type>
+      <id>21</id>
+      <posX>1215</posX>
+      <posY>161</posY>
+      <width>600</width>
+      <height>600</height>
+      <texture>-</texture>
+    </control>
+	
+    <control>
+      <description>spin control</description>
+      <type>spincontrol</type>
+      <id>26</id>
+      <posX>1220</posX>
+      <posY>800</posY>
+      <onup>26</onup>
+      <ondown>26</ondown>
+      <onleft>3</onleft>
+      <onright>25</onright>
+      <align>left</align>
+      <animation time="250" effect="fade">WindowOpen</animation>
+      <animation time="250" effect="fade">WindowClose</animation>
+      <animation time="250" effect="slide" start="-1890,0">WindowOpen</animation>
+      <animation time="250" effect="slide" end="-1890,0">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>textarea</description> 
+      <type>textbox</type> 
+      <id>25</id> 
+      <posX>515</posX>
+      <posY>275</posY>
+      <width>820</width>
+      <height>533</height>
+      <spinPosX>520</spinPosX>
+      <spinPosY>800</spinPosY>
+      <animation time="250" effect="fade">WindowOpen</animation>
+      <animation time="250" effect="fade">WindowClose</animation>
+      <animation time="250" effect="slide" start="-1890,0">WindowOpen</animation>
+      <animation time="250" effect="slide" end="-1890,0">WindowClose</animation>
+    </control>
+
+    <import>common.overlay.xml</import>
+	
+  </controls>
+</window>

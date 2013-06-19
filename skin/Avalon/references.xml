@@ -3,7 +3,7 @@
   <skin>
     <width>1920</width>
     <height>1080</height>
-    <version>1.3.0.0</version>
+    <version>1.4.0.0</version>
   </skin>
   <style Name="InfoLabel">
     <width>155</width>
@@ -41,29 +41,90 @@
     <textcolor>FFffffff</textcolor>
     <align>right</align>
   </style>
-  <style Name="SettingsButtonLarge">
-    <width>956</width>
-    <height>52</height>
-    <textXOff>30</textXOff>
-    <textYOff>8</textYOff>
-    <textureFocus>settings_button_large_focus.png</textureFocus>
-    <textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-    <textcolor>ffffffff</textcolor>
+  <style Name="SettingsButton">
+    <width>385</width>
+    <height>58</height>
+    <textXOff>33</textXOff>
+    <textYOff>11</textYOff>
+    <textureFocus>settings_button_focus.png</textureFocus>
+    <textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+    <scrollStartDelaySec>0</scrollStartDelaySec>
+    <textcolor>ff000000</textcolor>
     <textcolorNoFocus>ffffffff</textcolorNoFocus>
   </style>
-  <style Name="SettingsToggleLarge">
-    <width>956</width>
-    <height>52</height>
-    <textXOff>30</textXOff>
-    <textYOff>8</textYOff>
-    <font>font12</font>
-    <textcolor>ffffffff</textcolor>
-    <colordiffuse>ffffffff</colordiffuse>
-    <disabledcolor>ffffffff</disabledcolor>
-    <textureFocus>settings_button_large_focus_toggleon.png</textureFocus>
-    <textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
-    <AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
-    <AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
+  <style Name="SettingsButtonSmall">
+    <width>239</width>
+    <height>58</height>
+    <textXOff>0</textXOff>
+    <textYOff>3</textYOff>
+		<textalign>center</textalign>
+    <textureFocus>settings_button_focus.png</textureFocus>
+    <textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+    <scrollStartDelaySec>0</scrollStartDelaySec>
+    <textcolor>ff000000</textcolor>
+    <textcolorNoFocus>ffffffff</textcolorNoFocus>
+  </style>
+  <style Name="SettingsButtonMedium">
+    <width>552</width>
+    <height>58</height>
+    <textXOff>33</textXOff>
+    <textYOff>11</textYOff>
+    <textureFocus>settings_button_medium_focus.png</textureFocus>
+    <textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+    <scrollStartDelaySec>0</scrollStartDelaySec>
+    <textcolor>ff000000</textcolor>
+    <textcolorNoFocus>ffffffff</textcolorNoFocus>
+  </style>
+  <style Name="SettingsButtonLarge">
+    <width>1137</width>
+    <height>58</height>
+    <textXOff>33</textXOff>
+    <textYOff>11</textYOff>
+    <textureFocus>settings_button_large_focus.png</textureFocus>
+    <textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+    <scrollStartDelaySec>0</scrollStartDelaySec>
+    <textcolor>ff000000</textcolor>
+    <textcolorNoFocus>ffffffff</textcolorNoFocus>
+  </style>
+  <style Name="SettingsCheckButton">
+    <width>385</width>
+    <height>58</height>
+    <textXOff>33</textXOff>
+    <textYOff>11</textYOff>
+    <textpadding>46</textpadding>
+    <textureFocus>settings_button_focus.png</textureFocus>
+    <textureNoFocus>settings_button_nofocus.png</textureNoFocus>
+    <scrollStartDelaySec>0</scrollStartDelaySec>
+    <textcolor>ff000000</textcolor>
+    <textcolorNoFocus>ffffffff</textcolorNoFocus>
+    <markXOff>23</markXOff>
+    <markYOff>10</markYOff>
+  </style>
+  <style Name="SettingsCheckButtonMedium">
+    <width>552</width>
+    <height>58</height>
+    <textXOff>33</textXOff>
+    <textYOff>11</textYOff>
+    <textpadding>43</textpadding>
+    <textureFocus>settings_button_medium_focus.png</textureFocus>
+    <textureNoFocus>settings_button_medium_nofocus.png</textureNoFocus>
+    <scrollStartDelaySec>0</scrollStartDelaySec>
+    <textcolor>ff000000</textcolor>
+    <textcolorNoFocus>ffffffff</textcolorNoFocus>
+    <markXOff>23</markXOff>
+    <markYOff>10</markYOff>
+  </style>
+  <style Name="SettingsCheckButtonLarge">
+    <width>1137</width>
+    <height>58</height>
+    <textXOff>33</textXOff>
+    <textYOff>11</textYOff>
+    <textpadding>50</textpadding>
+    <textureFocus>settings_button_large_focus.png</textureFocus>
+    <textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
+    <scrollStartDelaySec>0</scrollStartDelaySec>
+    <textcolor>ff000000</textcolor>
+    <textcolorNoFocus>ffffffff</textcolorNoFocus>
   </style>
   <control>
     <description>default image</description>
@@ -173,26 +234,6 @@
     <disabledcolor>60ffffff</disabledcolor>
     <animation effect="zoom" start="100,100" end="105,105" time="100">focus</animation>
     <animation effect="zoom" start="105,105" end="100,100" time="300">unfocus</animation>
-  </control>
-  <control>
-    <description>default togglebutton</description>
-    <type>togglebutton</type>
-    <id>4</id>
-    <posX>533</posX>
-    <posY>250</posY>
-    <width>385</width>
-    <height>64</height>
-    <textXOff>25</textXOff>
-    <textYOff>14</textYOff>
-    <textureFocus>togglebutton-on-focus.png</textureFocus>
-    <textureNoFocus>togglebutton-on-nofocus.png</textureNoFocus>
-    <AltTextureFocus>togglebutton-off-focus.png</AltTextureFocus>
-    <AltTextureNoFocus>togglebutton-off-nofocus.png</AltTextureNoFocus>
-    <label>-</label>
-    <font>font12</font>
-    <textcolor>white</textcolor>
-    <colordiffuse>white</colordiffuse>
-    <disabledcolor>60ffffff</disabledcolor>
   </control>
   <control>
     <description>sort button</description>
@@ -649,8 +690,6 @@
     <textureFocus>button-focus.png</textureFocus>
     <textureNoFocus>button-nofocus.png</textureNoFocus>
     <texturebg>button-focus.png</texturebg>
-    <!--<textureNoFocus>menu_list_nofocus1.png</textureNoFocus>
-		<texturebg>menu_list_nofocus1.png</texturebg>-->
     <textureLeft>arrow_round_left_nofocus.png</textureLeft>
     <textureLeftFocus>arrow_round_left_focus.png</textureLeftFocus>
     <textureRight>arrow_round_right_nofocus.png</textureRight>
@@ -659,7 +698,30 @@
     <textcolor>white</textcolor>
     <colordiffuse>white</colordiffuse>
     <disabledcolor>60ffffff</disabledcolor>
-    <!--<animation effect="zoom" start="100,100" end="105,105" time="100">focus</animation>
-		<animation effect="zoom" start="105,105" end="100,100" time="300">unfocus</animation>-->
+  </control>
+  <control>
+    <description>default check button</description>
+    <type>checkbutton</type>
+    <id>0</id>
+    <width>385</width>
+    <height>64</height>
+    <textXOff>25</textXOff>
+    <textYOff>14</textYOff>
+    <textureFocus>button-focus.png</textureFocus>
+    <textureNoFocus>button-nofocus.png</textureNoFocus>
+    <font>font12</font>
+    <markWidth>29</markWidth>
+    <markHeight>28</markHeight>
+    <markXOff>15</markXOff>
+    <markYOff>10</markYOff>
+    <markalign>right</markalign>
+    <markvalign>middle</markvalign>
+    <textureCheckmark>settings_checkmark_checked.png</textureCheckmark>
+    <textureCheckmarkNoFocus>settings_checkmark_unchecked.png</textureCheckmarkNoFocus>
+    <textcolor>white</textcolor>
+    <textcolorNoFocus>ff85cfff</textcolorNoFocus>
+    <colordiffuse>white</colordiffuse>
+    <disabledcolor>60ffffff</disabledcolor>
+    <dimColor>ff000000</dimColor>
   </control>
 </controls>

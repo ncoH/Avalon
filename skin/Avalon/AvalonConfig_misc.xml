@@ -34,7 +34,7 @@
 
       <control Style="SettingsToggleLarge">
         <description>Hide Poster</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>2</id>
 		<label>#Avalon.SkinSettingsPosterHide</label>
 		<posX>736</posX>
@@ -47,7 +47,7 @@
 	  
       <control Style="SettingsToggleLarge">
         <description>Show RSS on Basichome/Home</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>3</id>
 		<label>#Avalon.SkinSettingsShowRSS</label>
 		<posX>736</posX>
@@ -60,7 +60,7 @@
 	  
       <control Style="SettingsToggleLarge">
         <description>Show Hidden Menu Image</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>4</id>
 		<label>#Avalon.SkinSettingsShowHiddenMenu</label>
 		<posX>736</posX>
@@ -73,7 +73,7 @@
       
       <control Style="SettingsToggleLarge">
         <description>larger fonts</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>5</id>
 		<posX>736</posX>
 		<posY>480</posY>
@@ -85,7 +85,7 @@
       
       <control Style="SettingsToggleLarge">
         <description>5 Day Weather</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>7</id>
 		<posX>736</posX>
 		<posY>532</posY>
@@ -97,7 +97,7 @@
       
       <control Style="SettingsToggleLarge">
         <description>Weather data Settings</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>10</id>
 		<posX>736</posX>
 		<posY>584</posY>

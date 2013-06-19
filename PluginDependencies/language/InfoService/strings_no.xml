@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language name="Norwegian" characters="255">
+  <Section name="unmapped">
+    <String id="0">Oppdater</String>
+    <String id="1">Velg feed</String>
+    <String id="2">Vis alle feeder</String>
+    <String id="3">Velg tidsramme</String>
+    <String id="4">Oppdater status</String>
+    <String id="5">Nedlasting av tidsramme feilet. Siste vellykkede oppdatering vil bli vist i stedet.</String>
+    <String id="6">Nedlasting av tidsramme feilet. Se loggen for detaljer!</String>
+    <String id="7">Twitter oppdateres. Vennligst vent til nedlasting er ferdig.</String>
+    <String id="8">Oppdatering pågår</String>
+    <String id="9">Status oppdaterin fullført. Vennligst oppdater Twitter for å se!</String>
+    <String id="10">Oppdatering fullført</String>
+    <String id="11">Oppdatering feilet</String>
+    <String id="12">Status oppdatering feilet. Se loggen for detaljer!</String>
+    <String id="13">Laster ned feeder og bilder...</String>
+    <String id="14">Oppdatering av Feed feilet. Se loggen for detaljer!</String>
+    <String id="15">Laster ned Twitter tidsramme...</String>
+    <String id="16">Oppdatering av Twitter feilet. Se loggen for detaljer!</String>
+    <String id="17">Feeder oppdateres. Vennligst vent til nedlastingen er ferdig.</String>
+    <String id="18">Nedlasting av feed feilet. Siste vellykkede oppdatering vil bli vist i stedet.</String>
+    <String id="19">Nedlasting av feed feilet. Se loggen for detaljer!</String>
+    <String id="20">{0} Sekunder siden</String>
+    <String id="21">{0} Minutter siden</String>
+    <String id="22">{0}t og {1} Minutter siden</String>
+    <String id="23">{0}d {1}t og {2} Minutter siden</String>
+    <String id="24">Venter på at andre servicer skal bli ferdig...</String>
+    <String id="25">Alle feeder</String>
+    <String id="26">En feed somkombinerer alle feedene</String>
+    <String id="27">Gå til webside</String>
+    <String id="28">Gå til...</String>
+    <String id="29">Siste oppdatering av for {0}</String>
+    <String id="30">Siste oppdatering av Twitter for {0}</String>
+    <String id="31">Siste oppdatering av været for {0}</String>
+    <String id="32">Feed Service er avslått...</String>
+    <String id="33">Twitter Service er avslått...</String>
+    <String id="34">Feed elementer</String>
+    <String id="35">Twitter elementer</String>
+    <String id="36">Venter på at Feed Service skal oppdateres...</String>
+    <String id="37">Venter på at Twitter Service skal oppdateres...</String>
+    <String id="38">{0} new Item(s) - {1}</String>
+    <String id="39">New messages on {0}!</String>
+  </Section>
+</Language>

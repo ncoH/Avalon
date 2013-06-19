@@ -146,7 +146,7 @@ namespace ProcessPlugins.AvalonEditor
             cbEditorViews.Text = "";
             cbEditorViewValues.Text = "";
 
-            foreach (BaseMesFilms.MFConfig config in MyFilmsEditor)
+            foreach (BaseMesFilms.MfConfig config in MyFilmsEditor)
             {
                 if (config.Name == cbEditorConfigs.Text)
                 {
@@ -166,7 +166,7 @@ namespace ProcessPlugins.AvalonEditor
             cbEditorViewValues.Items.Clear();
             cbEditorViewValues.Text = "";
             ArrayList MyFilmsEditor = BaseMesFilms.GetConfigViewLists();
-            foreach (BaseMesFilms.MFConfig config in MyFilmsEditor)
+            foreach (BaseMesFilms.MfConfig config in MyFilmsEditor)
             {
                 if (config.Name == cbEditorConfigs.Text)
                 {
@@ -183,7 +183,7 @@ namespace ProcessPlugins.AvalonEditor
 
             if (!string.IsNullOrEmpty(cbEditorConfigs.Text) && !string.IsNullOrEmpty(viewCallName))
             {
-                List<string> ViewValues = BaseMesFilms.GetViewListValues(cbEditorConfigs.Text, viewCallName);
+                IEnumerable<string> ViewValues = BaseMesFilms.GetViewListValues(cbEditorConfigs.Text, viewCallName);
                 if (ViewValues != null)
                     foreach (string value in ViewValues)
                     {
@@ -211,7 +211,7 @@ namespace ProcessPlugins.AvalonEditor
             {
                 string viewCallName = "";
                 if (!string.IsNullOrEmpty(startParamOutput)) startParamOutput += "|";
-                foreach (BaseMesFilms.MFConfig config in myFilmsEditor)
+                foreach (BaseMesFilms.MfConfig config in myFilmsEditor)
                 {
                     if (config.Name == cbEditorConfigs.Text)
                     {
@@ -698,7 +698,7 @@ namespace ProcessPlugins.AvalonEditor
             cbEditorViewValues.Text = "";
 
             ArrayList MyFilmsEditor = BaseMesFilms.GetConfigViewLists();
-            foreach (BaseMesFilms.MFConfig config in MyFilmsEditor)
+            foreach (BaseMesFilms.MfConfig config in MyFilmsEditor)
             {
                 cbEditorConfigs.Items.Add(config.Name);
             }

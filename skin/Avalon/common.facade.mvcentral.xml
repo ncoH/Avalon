@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<controls>
+		<control>
+			<description>Listscroller BG</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>980</posX>
+			<posY>320</posY>
+			<width>187</width>
+			<height>202</height>
+			<texture>listscroller_bg.png</texture>
+			<visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="0">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+		</control>
+
+		<control>
+			<type>label</type>
+			<id>1</id>
+			<posX>1035</posX>
+			<posY>374</posY>
+			<width>96</width>
+			<height>96</height>
+			<font>AvalonLight32</font>
+			<label>#selecteditem.scrolllabel</label>
+			<visible>facadeview.list+string.contains(#scrolling.up,yes)|string.contains(#scrolling.down,yes)</visible>
+			<align>center</align>
+			<valign>middle</valign>
+			<animation effect="fade" start="0" end="100" time="300" delay="0">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">Hidden</animation>
+		</control>
+
+		<control>
+			<description>RSS background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>825</posY>
+			<width>1865</width>
+			<height>96</height>
+			<texture>basichome_rss_bg.png</texture>
+			<visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+	
+    <!--                 Listview - View and Count Labels                     -->
+
+		<control>
+			<description>Current View Label (Listview - Artist Level)</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>55</posX>
+			<posY>875</posY>
+			<font>AvalonLight12</font>
+			<align>left</align>
+			<label>Ansicht: #(L(133))</label>
+			<visible>string.equals(#mvCentral.ArtistView,true)+![facadeview.filmstrip | facadeview.coverflow]</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Current View Label (Listview - Album Level)</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>55</posX>
+			<posY>875</posY>
+			<font>AvalonLight12</font>
+			<align>left</align>
+			<label>Ansicht: #(L(132))</label>
+			<visible>string.equals(#mvCentral.AlbumView,true)+![facadeview.filmstrip | facadeview.coverflow]</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control>
+			<description>Current View Label (Listview - Videos Level)</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>55</posX>
+			<posY>875</posY>
+			<font>AvalonLight12</font>
+			<align>left</align>
+			<label>Ansicht: #mvCentral.Translation.Videos.Label</label>
+			<visible>string.equals(#mvCentral.TrackView,true)+!Player.Recording+![facadeview.filmstrip | facadeview.coverflow]</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>			
+		
+		<control>
+			<description>Total Artist and Videos Label (Level: Artist Screen)</description>			
+			<type>label</type>
+			<label>#mvCentral.TotalArtists / #mvCentral.TotalVideos</label>
+			<id>0</id>
+			<posX>614</posX>
+			<posY>875</posY>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<visible>[facadeview.list|facadeview.smallicons | facadeview.largeicons] + control.isvisible(50) + string.equals(#mvCentral.ArtistView,true)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		
+		<control>
+			<description>Total Artist amd Videos Label (Level: Album and Videos Screen)</description>
+			<type>label</type>
+			<label>#mvCentral.TotalArtists / #mvCentral.TotalVideos</label>
+			<id>0</id>
+			<posX>614</posX>
+			<posY>875</posY>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<visible>[facadeview.list|facadeview.smallicons | facadeview.largeicons] + control.isvisible(50) + string.equals(#mvCentral.ArtistView,false)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+			<control>
+				<description>composite control consisting of a list control and a thumbnail panel</description>
+				<type>facadeview</type>
+				<id>50</id>
+
+				<control>
+					<description>listcontrol</description>
+					<type>listcontrol</type>
+					<id>50</id>
+					<onleft>2</onleft>
+					<onright>80</onright>
+					<scrollOffset>1</scrollOffset>
+					<posX>1166</posX>
+					<posY>164</posY>
+					<height>750</height>
+					<width>684</width>
+					<textXOff>50</textXOff>
+					<textXOff2>650</textXOff2>
+					<textureHeight>55</textureHeight>
+					<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
+					<textureNoFocus>-</textureNoFocus>
+					<dimColor>ffffffff</dimColor>
+					<spinPosX>1832</spinPosX>
+					<spinPosY>880</spinPosY>
+				</control>	
+
+				<control>
+					<description>Thumbnail Panel</description>
+					<type>thumbnailpanel</type>
+					<id>50</id>
+					<posX>90</posX>
+					<posY>155</posY>
+					<width>920</width>
+					<height>720</height>
+					<textureUp>page_up_nofocus.png</textureUp>
+					<textureDown>page_down_nofocus.png</textureDown>
+					<textureUpFocus>page_up_focus.png</textureUpFocus>
+					<textureDownFocus>page_down_focus.png</textureDownFocus>
+					<onleft>2</onleft>
+					<onright>50</onright>
+					<itemWidth>145</itemWidth>
+					<itemHeight>145</itemHeight>
+					<textureWidth>135</textureWidth>
+					<textureHeight>135</textureHeight>
+					<thumbWidth>135</thumbWidth>
+					<thumbHeight>135</thumbHeight>
+					<thumbPosX>0</thumbPosX>
+					<thumbPosY>0</thumbPosY>
+					<imageFolder>-</imageFolder>
+					<imageFolderFocus>-</imageFolderFocus>
+					<suffix>|</suffix>
+					<itemWidthBig>208</itemWidthBig>
+					<itemHeightBig>208</itemHeightBig>
+					<textureWidthBig>198</textureWidthBig>
+					<textureHeightBig>198</textureHeightBig>
+					<thumbWidthBig>198</thumbWidthBig>
+					<thumbHeightBig>198</thumbHeightBig>
+					<thumbPosXBig>0</thumbPosXBig>
+					<thumbPosYBig>0</thumbPosYBig>
+					<thumbZoom>no</thumbZoom>
+					<enableFocusZoom>no</enableFocusZoom>
+					<zoomXPixels>80</zoomXPixels>
+					<zoomYPixels>80</zoomYPixels>
+					<hideUnfocusTexture>no</hideUnfocusTexture>
+					<renderFocusText>no</renderFocusText>
+					<renderUnfocusText>no</renderUnfocusText>
+					<folderPrefix/>
+					<folderSuffix/>
+					<textureUp>-</textureUp>
+					<textureDown>-</textureDown>
+					<textureUpFocus>-</textureUpFocus>
+					<textureDownFocus>-</textureDownFocus>
+					<frameNoFocus>basichome_music_frame.png</frameNoFocus>
+					<frameFocus>basichome_music_frame.png</frameFocus>
+					<textureMask>basichome_music_mask.png</textureMask>
+					<keepaspectratio>no</keepaspectratio>
+					<spinPosX>1832</spinPosX>
+					<spinPosY>880</spinPosY>
+				</control>
+
+				<control>
+					<description>Filmstrip view</description>
+					<type>filmstrip</type>
+					<dimColor>90ffffff</dimColor>
+					<id>50</id>
+					<scrollOffset>3</scrollOffset>
+					<folderPrefix/>
+					<folderSuffix/>
+					<posX>118</posX>
+					<posY>618</posY>
+					<width>1690</width>
+					<height>768</height>
+					<onup>2</onup>
+					<onleft>50</onleft>
+					<thumbWidth>230</thumbWidth>
+					<thumbHeight>229</thumbHeight>
+					<thumbPosX>0</thumbPosX>
+					<thumbPosY>0</thumbPosY>
+					<itemWidth>240</itemWidth>
+					<itemHeight>239</itemHeight>
+					<textureWidth>230</textureWidth>
+					<textureHeight>229</textureHeight>
+					<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png"/>
+					<InfoImage flipY="true" diffuse="Thumb_Mask.png"/>
+					<showFrame>yes</showFrame>
+					<textYOff>-2000</textYOff>
+					<showFolder>no</showFolder>
+					<showBackGround>no</showBackGround>
+					<showInfoImage>no</showInfoImage>
+					<keepaspectratio>no</keepaspectratio>
+					<scrollbarBackground>scrollbar_bg.png</scrollbarBackground>
+					<scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+					<scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+					<scrollbarWidth>689</scrollbarWidth>
+					<scrollbarHeight>4</scrollbarHeight>
+					<scrollbarYOff>538</scrollbarYOff>
+					<spinPosX>-2000</spinPosX>
+					<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="128,128" center="0,700" time="200">focus</thumbAnimation>
+					<thumbAnimation effect="zoom" start="128,128" reversible="false" end="100,100" center="0,700" time="100">unfocus</thumbAnimation>
+				</control>
+
+
+				<control>
+					<description>Cover Flow view</description>
+					<type>coverflow</type>
+					<colordiffuse>90ffffff</colordiffuse>
+					<dimColor>90ffffff</dimColor>
+					<id>50</id>
+					<onup>2</onup>
+					<ondown>2</ondown>		  
+					<onleft>50</onleft>
+					<onright>50</onright>	
+					<posX>0</posX>
+					<posY>540</posY>
+					<width>1920</width>
+					<height>1080</height>
+					<selectedCard>0</selectedCard>
+					<cardWidth>340</cardWidth>
+					<cardHeight>339</cardHeight>
+					<angle>65</angle>
+					<sideShift>350</sideShift>
+					<sideGap>210</sideGap>
+					<sideDepth>280</sideDepth>
+					<offsetY>0</offsetY>
+					<selectedOffsetY>-35</selectedOffsetY>
+					<speed>8</speed>
+					<showFrame>yes</showFrame>
+					<frameWidth>340</frameWidth>
+					<frameHeight>339</frameHeight>
+					<spinSpeed>8</spinSpeed>
+					<unfocusedAlpha>FF</unfocusedAlpha>
+					<folderPrefix/>
+					<folderSuffix/>
+					<font1>font13</font1>
+					<font2>font11</font2>
+					<label1>#selecteditem</label1>
+					<label2>#selecteditem2</label2>
+					<shadowAngle>50</shadowAngle>
+					<shadowDistance>0</shadowDistance>
+					<shadowColor>FF000000</shadowColor>
+					<label1YOff>2405</label1YOff>
+					<label2YOff>2430</label2YOff>
+					<pageSize>5</pageSize>
+					<scrollbarBackground>scrollbar_bg.png</scrollbarBackground>
+					<scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+					<scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+					<scrollbarWidth>689</scrollbarWidth>
+					<scrollbarHeight>4</scrollbarHeight>
+					<scrollbarYOff>538</scrollbarYOff>
+					<keepaspectratio>no</keepaspectratio>
+					<cards flipY="yes" diffuse="Thumb_Mask.png" mask="basichome_music_mask.png"/>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

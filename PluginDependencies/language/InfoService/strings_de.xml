@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language name="German" characters="255">
+  <Section name="unmapped">
+    <String id="0">Aktualisieren</String>
+    <String id="1">Nachrichtenseite wählen</String>
+    <String id="2">Alle Feeds anzeigen</String>
+    <String id="3">Timeline wählen</String>
+    <String id="4">Status aktualisieren</String>
+    <String id="5">Beim letzten herunterladen der Timeline ist ein Fehler aufgetreten. Es wird aber die letzte erfolgreich heruntergeladenene Timeline angezeigt.</String>
+    <String id="6">Beim letzten herunterladen der Timeline ist ein Fehler aufgetreten. Siehe Log für eine genaue Fehlerbeschreibung!</String>
+    <String id="7">Twitter wird gerade aktualisiert. Bitte warten sie bis die Aktualisierung abgeschlossen ist.</String>
+    <String id="8">Aktualisierung läuft gerade</String>
+    <String id="9">Status erfolgreich aktualisiert. Bitte aktualisieren sie Twitter um die Änderungen zu sehen.</String>
+    <String id="10">Status erfolgreich aktualisiert</String>
+    <String id="11">Status nicht erfolgreich aktualisiert</String>
+    <String id="12">Es ist ein Fehler beim aktualisieren des Status aufgetreten. Siehe Log für eine genaue Fehlerbeschreibung.</String>
+    <String id="13">Feeds und Bilder werden heruntergeladen...</String>
+    <String id="14">Aktualisierung der Feeds nicht erfolgreich. Siehe Log für eine genaue Fehlerbeschreibung!</String>
+    <String id="15">Twitter Timelines werden heruntergeladen...</String>
+    <String id="16">Aktualisierung der Twitter Timelines nicht erfolgreich. Siehe Log für eine genaue Fehlerbeschreibung!</String>
+    <String id="17">Feeds werden gerade aktualisiert. Bitte warten sie bis die Aktualisierung abgeschlossen ist.</String>
+    <String id="18">Beim letzten herunterladen des Feeds ist ein Fehler aufgetreten. Es werden aber die letzte erfolgreich heruntergeladenene Feed Einträge angezeigt.</String>
+    <String id="19">Beim letzten herunterladen des Feeds ist ein Fehler aufgetreten. Siehe Log für eine genaue Fehlerbeschreibung!</String>
+    <String id="20">vor {0} Sekunden</String>
+    <String id="21">vor {0} Minuten</String>
+    <String id="22">vor {0}h und {1} Minuten</String>
+    <String id="23">vor {0}d {1}h und {2} Minuten</String>
+    <String id="24">Warte bis die anderen Services abgeschlossenen sind...</String>
+    <String id="25">Alle Feeds</String>
+    <String id="26">Ein Feed das alle anderen zu einem kombiniert</String>
+    <String id="27">Öffne Webseite</String>
+    <String id="28">Gehe zu...</String>
+    <String id="29">Letzte Aktualisierung der Feeds am/um {0}</String>
+    <String id="30">Letzte Aktualisierung von Twitter am/um {0}</String>
+    <String id="31">Letzte Aktualisierung des Wetters am/um {0}</String>
+    <String id="32">FeedService ist deaktiviert...</String>
+    <String id="33">TwitterService ist deaktiviert...</String>
+    <String id="34">Feed Nachrichten</String>
+    <String id="35">Twitter Nachrichten</String>
+    <String id="36">Warte bis die Feeds aktualisiert werden können...</String>
+    <String id="37">Warte bis Twitter aktualisiert werden kann...</String>
+    <String id="38">{0} neue Nachricht(en) - {1}</String>
+    <String id="39">Neue Nachrichten auf {0}!</String>
+  </Section>
+</Language>

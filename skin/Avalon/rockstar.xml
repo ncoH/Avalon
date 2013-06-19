@@ -310,7 +310,7 @@
               <control>
                 <id>32</id>
                 <description>Shuffle on/off button</description>
-                <type>togglebutton</type>
+                <type>checkbutton</type>
                 <onright>200</onright>
                 <onup>20</onup>
                 <ondown>30</ondown>
@@ -319,7 +319,7 @@
               <control>
                 <id>30</id>
                 <description>Repeat on/off button</description>
-                <type>togglebutton</type>
+                <type>checkbutton</type>
                 <onright>200</onright>
                 <onup>32</onup>
                 <ondown>2</ondown>

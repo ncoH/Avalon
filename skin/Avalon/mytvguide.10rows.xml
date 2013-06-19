@@ -299,42 +299,76 @@
 		<type>image</type>
 		<id>31</id>
 		<posX>615</posX>
-		<posY>826</posY>
+		<posY>953</posY>
+        <width>44</width>
+        <height>45</height>
+        <align>left</align>	
 		<texture>tv_is_recording.gif</texture>
 		<visible>no</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 	
-     <control>
-      <description>TvGroup button</description>
-      <type>button</type>
-      <id>100</id>
-      <posX>27</posX>
-      <posY>216</posY>
-      <width>65</width>
-      <height>665</height>
-      <textureFocus>tvgroup_button_selected.png</textureFocus>
-      <textureNoFocus>tvgroup_button.png</textureNoFocus>
-      <label></label>
-      <onleft>60</onleft>
-      <onright>6</onright>
-      <onup>6</onup>
-      <ondown>6</ondown>
-    </control>
-	
-    <control>
-      <description>TvGroup button label</description>
-      <type>label</type>
-      <id>0</id>
-      <posX>62</posX>
-      <posY>860</posY>
-	  <valign>middle</valign>
-      <label>#TV.Guide.ChangeGroup</label>
-      <font>AvalonLight16</font>
+	<control>
+		<description>TvGroup button</description>
+		<type>button3part</type>
+		<id>100</id>
+		<posX>27</posX>
+		<posY>216</posY>
+		<width>65</width>
+		<height>665</height>
+		<label></label>
+		<onleft>60</onleft>
+		<onright>6</onright>
+		<onup>6</onup>
+		<ondown>6</ondown>
+		<textureFocusedLeft>small_vbutton_lr_colorize.png</textureFocusedLeft>
+		<textureNonFocusedLeft>small_vbutton_lr_colorize.png</textureNonFocusedLeft>
+		<textureFocusedMid>tvgroup_button_selected.png</textureFocusedMid>
+		<textureNonFocusedMid>tvgroup_button.png</textureNonFocusedMid>
+		<textureFocusedRight>small_vbutton_lr_colorize.png</textureFocusedRight>
+		<textureNonFocusedRight>small_vbutton_lr_colorize.png</textureNonFocusedRight>
+		<textureIcon>-</textureIcon>
+		<textureIcon2>-</textureIcon2>
+	</control>
+
+	<control>
+		<description>TvGroup button label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>62</posX>
+		<posY>860</posY>
+		<valign>middle</valign>
+		<label>#TV.Guide.ChangeGroup</label>
+		<font>AvalonLight16</font>
 		<textcolor>ffffff</textcolor>
-      <animation effect="rotate" end="90" time="0">WindowOpen</animation>
-	  <animation effect="rotate" end="90" time="0">WindowClose</animation>
-      </control>
+		<animation effect="rotate" end="90" time="0">WindowOpen</animation>
+		<animation effect="rotate" end="90" time="0">WindowClose</animation>
+	</control>
+
+  <control>
+    <description>Template for genre key color</description>
+    <type>image</type>
+    <id>110</id>
+    <posX>464</posX>
+    <posY>890</posY>
+    <width>32</width>
+    <height>18</height>
+    <texture overlay="tvguide_button_middle_colorize_overlay.png">tvguide_button_middle_colorize.png</texture>
+    <visible>skin.hassetting(#skin.tvguide.showgenrekey)</visible>
+  </control>
+
+  <control>
+    <description>Template for genre key name</description>
+    <type>fadelabel</type>
+    <id>111</id>
+    <posY>885</posY>
+    <textcolor>FF6aa5cb</textcolor>
+    <font>AvalonLight10</font>
+    <visible>skin.hassetting(#skin.tvguide.showgenrekey)</visible>
+  </control>
+
+		<include condition="#(skin.hassetting('#skin.tvguide.usecolorsforbuttons'))">mytvguide.colors.xml</include>		
+		
   </controls>
 </window>

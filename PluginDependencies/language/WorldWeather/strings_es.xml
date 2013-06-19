@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Language name="Spanish" characters="255">
+  <Section name="unmapped">
+    <String id="0">Mostrar %1...</String>
+    <String id="1">Ubicación...</String>
+    <String id="2">Explorar mapa</String>
+    <String id="3">Ver...</String>
+    <String id="9">Actualizar</String>
+
+    <String id="10">Condiciones</String>
+    <String id="11">Imágenes Climatológicas</String>
+    <String id="12">GeoClock</String>
+    <String id="13">Astronomía</String>
+    <String id="14">Calendario</String>
+
+    <String id="20">Menú</String>
+    <String id="21">Asistente para añadir una ubicación...</String>
+    <String id="22">Cambiar proveedor del tiempo actual...</String>
+    <String id="23">Cambiar proveedor del pronóstico del tiempo...</String>
+    <String id="24">Cambiar proveedor del pronóstico del tiempo por horas...</String>
+		<String id="25"></String>
+		<String id="26"></String>
+		<String id="27"></String>
+    <String id="28">Cambiar colección de iconos del tiempo...</String>
+    
+    <String id="30">Proveedor</String>
+    <String id="31">Ubicación</String>
+    <String id="32">Vista de Imágenes</String>
+    <String id="33">Vista de Condiciones</String>
+    <String id="34">Colección de iconos</String>
+    <String id="35">Explorar mapas</String>
+		<String id="36"></String>
+
+    <String id="40">Abrir explorador de mapa...</String>
+    <String id="41">vacío</String>
+
+    <String id="45">No hay disponible una ubicación del tiempo libre.</String>
+		<String id="46"></String>
+		<String id="47"></String>
+		<String id="48"></String>
+    <String id="49">No se ha establecido una conexión a Internet.</String>
+
+    <String id="50">¿Quiere añadir una nueva ubicación del tiempo?</String>
+    <String id="51">¿Desea sobrescribir la última Ubicación?</String>
+    <String id="52">¿Quiere realmente cambiar su proveedor del Tiempo?</String>
+		<String id="53"></String>
+    <String id="54">¿Quiere realmente cambiar su colección de iconos?</String>
+		<String id="55"></String>
+
+		<String id="60"></String>
+    <String id="61">Error al cargar los datos de condiciones climáticas desde %1.</String>
+    <String id="62">Error al cargar la imagen de Tiempo desde %1.</String>
+    <String id="63">Error al cargar la imagen Geoclock.</String>
+    <String id="64">Error al cargar la imagen del Cielo estrellado desde %1.</String>
+    <String id="65">Error al cargar la imagen del zodiaco.</String>
+    <String id="66">Error al cargar el mapa del Tiempo desde %1.</String>
+    <String id="67">Nombre de ciudad inválido o vacío</String>
+    <String id="68">Código de ciudad inválido o vacío</String>
+    <String id="69">Latitud/Longitud inválida o vacío</String>
+
+    <String id="70">Soleado</String>
+    <String id="71">Mayormente soleado</String>
+    <String id="72">Nublado</String>
+    <String id="73">Mayormente nublado</String>
+    <String id="74">Parcialmente nublado</String>
+    <String id="75">Lluvia</String>
+    <String id="76">Posibilidad de lluvia</String>
+    <String id="77">Chubascos</String>
+    <String id="78">Nieve</String>
+    <String id="79">Posibilidad de nieve</String>
+    <String id="80">Tormentas</String>
+    <String id="81">Posibilidad de tormentas</String>
+    <String id="82">Tormentas eléctricas</String>
+    <String id="83">Posibilidad de tormentas eléctricas</String>
+    <String id="84">Nevadas</String>
+    <String id="85">Aguanieve</String>
+    <String id="86">Ráfagas</String>
+    <String id="87">Niebla</String>
+    <String id="88">Humo</String>
+    <String id="89">Neblina</String>
+    <String id="90">Bruma</String>
+    <String id="91">Polvo</String>
+    <String id="92">Claro</String>
+    <String id="93">Granizo</String>
+    <String id="94">Borrascoso</String>
+    <String id="95">Ventoso</String>
+    <String id="96">Cálido</String>
+    <String id="97">Frío</String>
+    <String id="98">Tornado</String>
+    <String id="99">Tormenta tropical</String>
+    <String id="100">Tormentas fuertes</String>
+    <String id="101">Tormentas aisladas</String>
+    <String id="102">Tormentas dipersas</String>
+    <String id="103">Chubascos tormentosos</String>
+    <String id="104">Mezcla de lluvia y nieve</String>
+    <String id="105">Mezcla de lluvia y aguanieve</String>
+    <String id="106">Mezcla de lluvia y granizo</String>
+    <String id="107">Mezcla de nieve y aguanieve</String>
+    <String id="108">Llovizna</String>
+    <String id="109">Llovizna helada</String>
+    <String id="110">Lluvia helada</String>
+    <String id="111">Lluvias dispersas</String>
+    <String id="112">Nevadas</String>
+    <String id="113">Ventiscas</String>
+    <String id="114">Nevadas fuertes</String>
+    <String id="115">Ráfagas de nieve</String>
+    <String id="116">Tormentas aisladas</String>
+    <String id="117">Nevadas</String>
+    <String id="118">Claro</String>
+    <String id="119">Claro/Soleado</String>
+    <String id="120">Encapotado</String>
+    <String id="121">Brotes tormentosos</String>
+    <String id="122">Tormentas de nieve</String>
+    <String id="123">Niebla helada/cencellada</String>
+    <String id="124">Lloviznas débiles</String>
+    <String id="125">Lluvias débiles</String>
+    <String id="126">Lluvias fuertes</String>
+    <String id="127">Ligera lluvia helada</String>
+    <String id="128">Aguanieve</String>
+    <String id="129">Nevadas débiles</String>
+    <String id="130">Gránulos de nieve</String>
+    <String id="131">Llovizna de gránulos de nieve</String>
+    <String id="132">Lluvia de gránulos de nieve</String>
+    <String id="133">Chubascos débiles de aguanieve</String>
+    <String id="134">Chubascos de aguanieve</String>
+    <String id="135">Lluvias torrenciales</String>
+    <String id="136">Lluvias localizadas con truenos</String>
+    <String id="137">Nieve localizada con truenos</String>
+    <String id="138">Chubascos fuertes de nieve</String>
+    <String id="139">Chubascos ligeros</String>
+    <String id="140">Chubascos fuertes</String>
+    <String id="141">Tormenta ligera</String>
+    <String id="142">Tormenta fuerte</String>
+    <String id="143">Llovizna fuerte</String>
+		<String id="144"></String>
+		<String id="145"></String>
+		<String id="146"></String>
+		<String id="147"></String>
+		<String id="148"></String>
+		<String id="149"></String>
+		<String id="150"></String>
+		<String id="151"></String>
+		<String id="152"></String>
+		<String id="153"></String>
+		<String id="154"></String>
+		<String id="155"></String>
+		<String id="156"></String>
+		<String id="157"></String>
+		<String id="158"></String>
+		<String id="159"></String>
+		<String id="160"></String>
+		<String id="161"></String>
+		<String id="162"></String>
+		<String id="163"></String>
+		<String id="164"></String>
+		<String id="165"></String>
+    
+    <String id="170">Lunes</String>
+    <String id="171">Martes</String>
+    <String id="172">Miércoles</String>
+    <String id="173">Jueves</String>
+    <String id="174">Viernes</String>
+    <String id="175">Sábado</String>
+    <String id="176">Domingo</String>
+
+    <String id="180">N</String>
+    <String id="181">NNE</String>
+    <String id="182">NE</String>
+    <String id="183">ENE</String>
+    <String id="184">E</String>
+    <String id="185">ESE</String>
+    <String id="186">SE</String>
+    <String id="187">SSE</String>
+    <String id="188">S</String>
+    <String id="189">SSO</String>
+    <String id="190">SO</String>
+    <String id="191">OSO</String>
+    <String id="192">O</String>
+    <String id="193">ONO</String>
+    <String id="194">NO</String>
+    <String id="195">NNO</String>
+
+    <String id="200">Calma</String>
+    <String id="201">Ligero aire</String>
+    <String id="202">Ligera brisa</String>
+    <String id="203">Suave brisa</String>
+    <String id="204">Brisa moderada</String>
+    <String id="205">Brisa fresca</String>
+    <String id="206">Brisa fuerte</String>
+    <String id="207">Viento</String>
+    <String id="208">Vendaval</String>
+    <String id="209">Fuerte vendaval</String>
+    <String id="210">Tormenta</String>
+    <String id="211">Tormenta fuerte</String>
+    <String id="212">Huracán</String>
+
+		<String id="220"></String>
+		<String id="221"></String>
+		<String id="222"></String>
+		<String id="223"></String>
+    
+    <String id="230">Luna nueva</String>
+    <String id="231">Luna creciente</String>
+    <String id="232">cuarto creciente</String>
+    <String id="233">Luna gibosa creciente</String>
+    <String id="234">Luna llena</String>
+    <String id="235">Luna gibosa menguante</String>
+    <String id="236">Cuarto menguante</String>
+    <String id="237">Luna menguante</String>
+
+    <String id="240">Semana</String>
+    <String id="241"></String>
+		<String id="242"></String>
+		<String id="243"></String>
+
+    <String id="250">Vista plana</String>
+    <String id="251">Vista de película</String>
+    <String id="252">Vista Coverflow</String>
+    <String id="253">Vista de miniaturas</String>
+
+    <String id="260">Vista Normal</String>
+    <String id="261">Vista horaria</String>
+    <String id="262">Vista gráfica</String>
+		<String id="263"></String>
+
+    <String id="300">°C</String>
+    <String id="301">°F</String>
+    <String id="302">K</String>
+    <String id="303">°R</String>
+
+    <String id="310">km/h</String>
+    <String id="311">mph</String>
+    <String id="312">kts</String>
+    <String id="313">bft</String>
+
+    <String id="320">km</String>
+    <String id="321">mi</String>
+    <String id="322">ilimitado</String>
+
+    <String id="330">mbar</String>
+    <String id="331">hPa</String>
+    <String id="332">psi</String>
+    <String id="333">torr</String>
+		<String id="334">inch</String>
+
+    <String id="340">aumentando</String>
+    <String id="341">estable</String>
+    <String id="342">descendiendo</String>
+    <String id="343">aumentando o manteniéndose,luego desdenciendo</String>
+    <String id="344">aumentando, luego descenciendo</String>
+    <String id="345">aumentando, luego manteniéndose</String>
+    <String id="346">descendiendo o manteniéndose, luego aumentando</String>
+    <String id="347">descendiendo, luego aumentando</String>
+    <String id="348">descendiendo, luego manteniéndose</String>
+
+    <String id="350">°</String>
+    <String id="351">%</String>
+
+    <String id="360">mm</String>
+
+    <String id="370">Sistema Métrico Internacional</String>
+    <String id="371">Sistema Métrico Norteamericano</String>
+
+    <String id="380"></String>
+    <String id="381"></String>
+    <String id="382"></String>
+    <String id="383"></String>
+    <String id="384"></String>
+
+    <String id="400">Nombre de la ubicación</String>
+    <String id="401">Código de la ubicación</String>
+    <String id="402">Código postal de la ubicación</String>
+		<String id="403"></String>
+    <String id="404">Zona horaria</String>
+    <String id="405">Métrica</String>
+   
+    <String id="500">Temperatura</String>
+    <String id="501">Condiciones</String>
+    <String id="502">Viento</String>
+    <String id="503">Humedad</String>
+    <String id="504">Fase lunar</String>
+    <String id="505">Cambio de horario</String>
+    <String id="506">Siguiente cambio de horario</String>
+    <String id="507">Amanecer</String>
+    <String id="508">Ocaso</String>
+    <String id="509">Ubicación</String>
+    <String id="510">Actual</String>
+    <String id="511">Pronóstico</String>
+		<String id="512"></String>
+    <String id="513">Precipitación</String>
+    <String id="514">Duración del día</String>
+    <String id="515">Presión</String>
+    <String id="516">Presión barométrica</String>
+    <String id="517">Visibilidad</String>
+    <String id="518">Punto de rocío</String>
+    <String id="519">mínima</String>
+    <String id="520">máxima</String>
+    <String id="521">Nubosidad</String>
+    <String id="522">Porcentaje de niebla</String>
+		<String id="523"></String>
+    <String id="524">Índice UV</String>
+
+    <String id="525">Satélite</String>
+    <String id="526">Temperatura</String>
+    <String id="527">Índice UV</String>
+    <String id="528">Viento</String>
+    <String id="529">Precipitación</String>
+    <String id="530">Brillo del sol</String>
+    <String id="531">Nivel de Polen</String>
+    <String id="532">Mundo</String>
+    <String id="533">Cámara web</String>
+    <String id="534">Humedad</String>
+    <String id="535">Autodefinido</String>
+
+    <String id="540">Reloj Geográfico</String>
+
+    <String id="550">Cielo estrellado</String>
+    <String id="551">Signo de Zodiaco</String>
+
+    <String id="560">Feed</String>
+
+		<String id="565"></String>
+
+    <String id="570">Vacaciones</String>
+    <String id="571">Año Nuevo</String>
+    <String id="572">Epifanía</String>
+    <String id="573">Día de la Asunción</String>
+    <String id="574">Día de la Reforma</String>
+    <String id="575">Día de Todos Los Santos</String>
+    <String id="576">Domingo de Resurreción</String>
+    <String id="577">Jueves Santo</String>
+    <String id="578">Viernes Santo</String>
+    <String id="579">Día de la Ascensión</String>
+    <String id="580">Domingo de Pentecostés</String>
+    <String id="581">Corpus Christi</String>
+    <String id="582">Navidad</String>
+
+    <String id="590">Estación</String>
+    <String id="591">Comienzo de la Primavera</String>
+    <String id="592">Comienzo del Verano</String>
+    <String id="593">Comienzo del Otoño</String>
+    <String id="594">Comienzo del Invierno</String>
+
+    <String id="600">Capricornio</String>
+    <String id="601">Acuario</String>
+    <String id="602">Piscis</String>
+    <String id="603">Aries</String>
+    <String id="604">Tauro</String>
+    <String id="605">Géminis</String>
+    <String id="606">Cáncer</String>
+    <String id="607">Leo</String>
+    <String id="608">Virgo</String>
+    <String id="609">Libra</String>
+    <String id="610">Escorpio</String>
+    <String id="611">Sagitario</String>
+
+    <String id="700">Información del clima proporcionada por</String>
+    <String id="701">Sin proveedor</String>
+  </Section>
+</Language>

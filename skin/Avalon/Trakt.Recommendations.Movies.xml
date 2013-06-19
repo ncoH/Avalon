@@ -352,7 +352,7 @@
 		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
 	</control>	
-	
+
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
@@ -393,7 +393,7 @@
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<posY>232</posY>
+			<posY>553</posY>
 			<posX>128</posX>
 			<width>376</width>
 			<height>1</height>
@@ -424,7 +424,7 @@
 			<type>label</type>
 			<id>1</id>
 			<posX>128</posX>
-			<posY>240</posY>
+			<posY>563</posY>
 			<label>1065</label>
 			<font>fontB12</font>
 			<textcolor>ffffff</textcolor>
@@ -458,10 +458,102 @@
         		<textureNoFocus>-</textureNoFocus>
 				<label>-</label>
 				<onup>66612</onup>
-                <ondown>66610</ondown>
+                <ondown>3</ondown>
 				<onright>50</onright>
 			</control>
-			
+
+			<control>
+				<description>Genres</description>
+				<type>button</type>
+				<id>3</id>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+        		<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>				
+				<label>-</label>
+				<onup>2</onup>
+				<onright>50</onright>
+			</control>	
+
+			<control>
+				<description>Toggle Hide Collected</description>
+				<type>checkbutton</type>
+				<id>4</id>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>				
+				<label>#Trakt.Translation.HideCollected.Label</label>
+        		<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>	
+				<textureCheckmark>check-box.png</textureCheckmark>
+				<textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>	
+				<textcolor>white</textcolor>
+				<textcolorNoFocus>ff85cfff</textcolorNoFocus>				
+				<markWidth>28</markWidth>
+				<markHeight>28</markHeight>
+				<markXOff>50</markXOff>
+				<markYOff>0</markYOff>				
+				<onleft>50</onleft>
+				<onright>50</onright>
+			</control>
+					
+			<control>
+				<description>Toggle Hide Watchlisted</description>
+				<type>checkbutton</type>
+				<id>5</id>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>				
+				<label>#Trakt.Translation.HideWatchlisted.Label</label>
+        		<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>	
+				<textureCheckmark>check-box.png</textureCheckmark>
+				<textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>	
+				<textcolor>white</textcolor>
+				<textcolorNoFocus>ff85cfff</textcolorNoFocus>				
+				<markWidth>28</markWidth>
+				<markHeight>28</markHeight>
+				<markXOff>50</markXOff>
+				<markYOff>0</markYOff>				
+				<onleft>50</onleft>
+				<onright>50</onright>
+			</control>
+					
+			<control>
+				<description>Start Year</description>
+				<type>button</type>
+				<id>6</id>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+        		<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>				
+				<label>-</label>
+				<onleft>50</onleft>
+				<onright>50</onright>
+			</control>
+					
+			<control>
+				<description>End Year</description>
+				<type>button</type>
+				<id>7</id>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+        		<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>				
+				<label>-</label>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<ondown>66610</ondown>
+			</control>
+					
             <control>
               <description>Empty button</description>
               <type>button</type>
@@ -487,7 +579,7 @@
 				<label>Moving Pictures</label>
 				<hyperlink>96742</hyperlink>
 				<onright>50</onright>
-                <onup>2</onup>
+                <onup>7</onup>
                 <ondown>66611</ondown>
 			</control>
 			
@@ -525,7 +617,7 @@
 				<onright>50</onright>
 			</control>
 		</control>
-    </control>
+    </control>	
 
 
 	   <control Style="InfoLabel">

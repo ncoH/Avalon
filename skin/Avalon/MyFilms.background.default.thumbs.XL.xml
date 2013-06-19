@@ -92,5 +92,6 @@
 		<visible>[facadeview.filmstrip | facadeview.coverflow] + Control.IsVisible(50)</visible>
 		<animation effect="fade" time="0">WindowClose</animation>
 	</control>
+	
   </controls>
 </window>

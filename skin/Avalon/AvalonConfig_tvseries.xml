@@ -56,7 +56,7 @@
 	
       <control Style="SettingsToggleLarge">
         <description>TV Series Default/NoInfo Style</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>2</id>
 		<label>#Avalon.SkinSettingsInfo</label>
 		<posX>736</posX>

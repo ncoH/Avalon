@@ -3,65 +3,111 @@
 <id>703</id>
 <defaultcontrol>24</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
+<define>#defaultcontrol.onleft:9996</define>
+<define>#header.label:897</define>
 <controls>
-	<import>settings.menu.xml</import>
-		
+
+ 	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+
+	<control>
+		<description>viewport</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>795</height>
+		<texture>viewport_settings.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+	
+	<import>common.time.xml</import>
+
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight20</font>
+	</control>
+	
 	<control>
 		<type>label</type>
 		<id>1</id>
 		<posX>766</posX>
-		<posY>158</posY>
+		<posY>252</posY>
 		<width>500</width>
 		<label>3</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB22</font>
+		<textcolor>85cffe</textcolor>
+		<font>TitanLight20</font>
 	</control>
 	
 	<control>
 		<description>buttons</description>
 		<type>group</type>
-		<posX>736</posX>
-		<posY>254</posY>
+		<posX>740</posX>
+		<posY>353</posY>
 		<layout>GridLayout(1, 0, 1, 0, 1)</layout>
-        <control Style="SettingsButtonLarge">
+        
+	   <control Style="SettingsButtonLarge">
 			<description>MPEG-2 Video Codecs</description>
 			<type>button</type>
 			<id>24</id>
 			<label>6000</label>
 			<onup>28</onup>
+            <onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
-        <control Style="SettingsButtonLarge">
+	   <control Style="SettingsButtonLarge">
 			<description>H.264 Video Codecs</description>
 			<type>button</type>
 			<id>29</id>
 			<label>6036</label>
+            <onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
-        <control Style="SettingsButtonLarge">
+	   <control Style="SettingsButtonLarge">
 			<description>Audio Codecs</description>
 			<type>button</type>
 			<id>25</id>
 			<label>6001</label>
+            <onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
-        <control Style="SettingsButtonLarge">
+	   <control Style="SettingsButtonLarge">
 			<description>Audio Renderer</description>
 			<type>button</type>
 			<id>27</id>
 			<label>6002</label>
+            <onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
-        <control Style="SettingsButtonLarge">
+	   <control Style="SettingsButtonLarge">
 			<description>Aspect Ratio</description>
 			<type>button</type>
 			<id>28</id>
 			<label>6004</label>
 			<ondown>24</ondown>
+            <onleft>#defaultcontrol.onleft</onleft>
 		</control>
 
 	</control>
-<import>common.time.xml</import>
-<import>avalon.version.xml</import>
+	
+	<import>common.time.xml</import>
+
 </controls>
 </window>

@@ -11,7 +11,7 @@
 		<width>1920</width>
 		<height>1080</height>
 	</control>
- 
+
     <control>
         <description>default backdrop</description>
         <type>image</type>
@@ -44,5 +44,6 @@
         <height>795</height>
         <texture>viewport_categories.png</texture>
     </control>
+	
 	</controls>
 </window>

@@ -87,7 +87,7 @@
 			<width>176</width>
 			<height>250</height>
 			<visible>true</visible>
-      <keepaspectratio>yes</keepaspectratio>
+			<keepaspectratio>yes</keepaspectratio>
 			<centered>yes</centered>
 			<zoom>yes</zoom>
 			<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#myfilms.picture</texture>
@@ -115,6 +115,7 @@
 				<textcolor>6aa5cb</textcolor>	
 				<animation effect="fade" time="250">visiblechange</animation>
 			</control>
+			
 			<control>
 				<type>label</type>
 				<description>resolution</description>
@@ -142,6 +143,7 @@
 				<textcolor>6aa5cb</textcolor>
 				<animation effect="fade" time="250">visiblechange</animation>
 			</control>
+			
 			<control>
 				<description>Default Value</description>
 				<type>label</type>
@@ -155,6 +157,7 @@
 				<textcolor>ffffff</textcolor>	
 				<animation effect="fade" time="250">visiblechange</animation>
 			</control>
+			
 			<control>
 				<description>Default Label</description>
 				<type>label</type>
@@ -168,6 +171,7 @@
 				<textcolor>6aa5cb</textcolor>	
 				<animation effect="fade" time="250">visiblechange</animation>
 			</control>
+			
 			<control>
 				<description>Default Value</description>
 				<type>label</type>
@@ -181,6 +185,7 @@
 				<textcolor>ffffff</textcolor>	
 				<animation effect="fade" time="250">visiblechange</animation>
 			</control>
+			
 			<control>
 				<description>Default Label</description>
 				<type>label</type>
@@ -194,6 +199,7 @@
 				<textcolor>6aa5cb</textcolor>
 				<animation effect="fade" time="250">visiblechange</animation>
 			</control>
+			
 			<control>
 				<description>Default Value</description>
 				<type>label</type>
@@ -298,16 +304,17 @@
 				<frameFocus>video_thumb_focus.png</frameFocus>
 				<textureMask>video_thumb_mask.png</textureMask>
 				<shadowAngle>90</shadowAngle>
-    		<shadowDistance>50</shadowDistance>
+				<shadowDistance>50</shadowDistance>
 				<thumbZoom>yes</thumbZoom>
-        <spinPosX>1832</spinPosX>
-        <spinPosY>730</spinPosY>
+				<spinPosX>1832</spinPosX>
+				<spinPosY>730</spinPosY>
 			</control>
-		<control>
-			<description>Filmstrip view</description>
-			<type>filmstrip</type>
-			<dimColor>90ffffff</dimColor>
-			<id>50</id>
+			
+			<control>
+				<description>Filmstrip view</description>
+				<type>filmstrip</type>
+				<dimColor>90ffffff</dimColor>
+				<id>50</id>
 				<scrollOffset>3</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
@@ -337,17 +344,17 @@
 				<showFolder>no</showFolder>
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
-        <scrollbarBackground>-</scrollbarBackground>
-        <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
-        <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
-        <scrollbarWidth>689</scrollbarWidth>
+				<scrollbarBackground>-</scrollbarBackground>
+				<scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+				<scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+				<scrollbarWidth>689</scrollbarWidth>
 				<scrollbarHeight>4</scrollbarHeight>
-        <scrollbarYOff>522</scrollbarYOff>
+				<scrollbarYOff>522</scrollbarYOff>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="108,108" center="0,500" time="200">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="108,108" reversible="false" end="100,100" center="0,500" time="100">unfocus</thumbAnimation>
-		</control>
 			</control>
 		</control>
+	</control>
 
 		<!--  ************** HIDDEN MENU *****************  -->  
 		
@@ -363,6 +370,7 @@
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
 	</control>  
+	
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
@@ -411,17 +419,17 @@
     	<animation effect="slide" start="-150,0" time="100">visible</animation>
     	<animation effect="fade" time="50">visible</animation>
     	<animation effect="fade" time="0">hidden</animation>
-    </control>
+	</control>
        	<control>
-        <type>group</type>
-        <description>group element</description>
+			<type>group</type>
+			<description>group element</description>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
     		<animation effect="fade" time="50">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
-        <posX>69</posX>
-        <posY>155</posY>
-        <layout>StackLayout(0, Vertical, true)</layout>	
+			<posX>69</posX>
+			<posY>155</posY>
+			<layout>StackLayout(0, Vertical, true)</layout>	
 				
 				<control>
 					<description>Change Layout</description>

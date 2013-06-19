@@ -130,10 +130,10 @@ namespace AvalonGUIConfig
             if (GUIGraphicsContext.Skin.Contains("Avalon"))
             {
                 InitAvalon();
+                GUIWindowManager.OnNewAction += new OnActionHandler(GUIWindowManager_OnNewAction); 
             }
             settings.PreviousSkin = settings.CurrentSkin;
             GUIWindowManager.OnDeActivateWindow += new GUIWindowManager.WindowActivationHandler(GUIWindowManager_OnDeActivateWindow);
-            GUIWindowManager.OnNewAction += new OnActionHandler(GUIWindowManager_OnNewAction); 
             return Load(GUIGraphicsContext.Skin + @"\AvalonConfig.xml");
         }
 

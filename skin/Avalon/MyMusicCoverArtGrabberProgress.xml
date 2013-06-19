@@ -5,26 +5,76 @@
 <allowoverlay>no</allowoverlay>
 <controls>
 
-	<control>
+ 	<control>
+		<description>BG</description>
 		<type>image</type>
-		<description>background image</description>
 		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
 	</control>
 
 	<control>
+		<description>viewport</description>
 		<type>image</type>
-		<description>Title image</description>
-		<id>2</id>
-		<posX>106</posX>
-		<posY>25</posY>
-		<texture>coverart_logo.png</texture>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>92</posY>
+		<width>1893</width>
+		<height>795</height>
+		<texture>viewport_settings.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
+		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+	</control>
+	
+	<import>common.time.xml</import>
+
+	<control>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>185</posX>
+		<posY>38</posY>
+		<width>500</width>
+		<label>2</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>AvalonLight20</font>
 	</control>
 
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>829</posY>
+		<width>1865</width>
+		<height>96</height>
+		<texture>basichome_rss_bg.png</texture>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+	<control>
+		<type>label</type>
+		<description>Folder value</description>
+		<id>12</id>
+		<posX>1832</posX>
+		<posY>956</posY>
+		<width>1170</width>
+		<label>-</label>
+		<font>fontB16</font>
+		<align>right</align>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+	
 	<control>
 		<type>image</type>
 		<description>Amazon Logo image</description>
 		<id>3</id>
-		<posX>113</posX>
+		<posX>-2500</posX>
 		<posY>620</posY>
 		<width>167</width>
 		<height>56</height>
@@ -59,7 +109,9 @@
 		<posY>600</posY>
 		<width>773</width>
 		<label>-</label>
-		<textcolor>BFffffff</textcolor>
+		<font>font11</font>		
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 	<control>
@@ -70,19 +122,9 @@
 		<posY>516</posY>
 		<width>773</width>
 		<label>-</label>
-		<textcolor>BFffffff</textcolor>
-	</control>
-
-	<control>
-		<type>label</type>
-		<description>Folder value</description>
-		<id>12</id>
-		<posX>1121</posX>
-		<posY>87</posY>
-		<label>-</label>
-		<font>font18</font>
-		<align>right</align>
-		<textcolor>BFffffff</textcolor>
+		<font>font11</font>		
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 	<control>
@@ -93,8 +135,9 @@
 		<posY>453</posY>
 		<width>773</width>
 		<label>-</label>
-		<font>font13</font>
-		<textcolor>BFffffff</textcolor>
+		<font>font11</font>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 	<control>
@@ -105,8 +148,9 @@
 		<posY>428</posY>
 		<width>773</width>
 		<label>-</label>
-		<font>font13</font>
-		<textcolor>BFffffff</textcolor>
+		<font>font11</font>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 
 	<control>
@@ -128,31 +172,11 @@
 	</control>
 
 	<control>
-		<type>button</type>
-		<description>Start button</description>
-		<id>30</id>
-		<posX>113</posX>
-		<posY>520</posY>
-		<label>335</label>
-		<width>224</width>
-	</control>
-
-	<control>
-		<type>button</type>
-		<description>Cancel button</description>
-		<id>31</id>
-		<posX>113</posX>
-		<posY>560</posY>
-		<label>4517</label>
-		<width>224</width>
-	</control>
-
-	<control>
 		<type>checkmark</type>
 		<description>Skip existing checkmark</description>
 		<id>40</id>
-		<posX>113</posX>
-		<posY>175</posY>
+		<posX>655</posX>
+		<posY>156</posY>
 		<onleft>31</onleft>
 		<onright>31</onright>
 		<onup>40</onup>
@@ -168,8 +192,8 @@
 		<type>checkmark</type>
 		<description>Save to album folder checkmark</description>
 		<id>41</id>
-		<posX>113</posX>
-		<posY>212</posY>
+		<posX>655</posX>
+		<posY>196</posY>
 		<onleft>31</onleft>
 		<onright>31</onright>
 		<onup>40</onup>
@@ -185,8 +209,8 @@
 		<type>checkmark</type>
 		<description>Save to thumbs folder</description>
 		<id>42</id>
-		<posX>113</posX>
-		<posY>250</posY>
+		<posX>655</posX>
+		<posY>236</posY>
 		<onleft>31</onleft>
 		<onright>31</onright>
 		<onup>41</onup>
@@ -197,6 +221,26 @@
 		<textureNoFocus>check-boxNF.png</textureNoFocus>
 		<label>4502</label>
 	</control>
+	
+	<control>
+		<type>button</type>
+		<description>Start button</description>
+		<id>30</id>
+		<posX>122</posX>
+		<posY>321</posY>
+		<label>335</label>
+		<width>350</width>
+	</control>
 
+	<control>
+		<type>button</type>
+		<description>Cancel button</description>
+		<id>31</id>
+		<posX>122</posX>
+		<posY>386</posY>
+		<label>4517</label>
+		<width>350</width>
+	</control>
+	
 </controls>
 </window>

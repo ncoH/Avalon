@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>112013</id>
+	<defaultcontrol>14</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#useSelectedFanart:Yes</define>
+	<controls>
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>1</id>
+			<width>1920</width>
+			<height>1080</height>
+		</control>
+
+		<import>common.fanart.MvCentral.xml</import>	
+		<import>common.time.xml</import>  		
+		
+		<control>
+			<type>fadelabel</type>
+			<description>mvCentral Title</description>
+			<id>0</id>
+			<posX>185</posX>
+			<posY>38</posY>
+			<width>800</width>
+			<font>font22</font>
+			<visible>yes</visible>
+			<label>mvCentral  -  #mvCentral.Hierachy</label>
+		</control>      
+
+		<control>
+			<description>Video/Artist Count</description>
+			<type>label</type>
+			<id>16</id>
+			<posX>714</posX>
+			<posY>875</posY>
+			<align>left</align>
+			<font>AvalonLight12</font>
+			<label>-</label>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control>     
+
+
+		<!-- TOP BAR :: TIME :: LOCATION -->
+
+		<control>
+			<description>Most Played Video Label</description>
+			<type>fadelabel</type>
+			<label>#mvCentral.Translation.MostPlayedVideo.Label - #mvCentral.MostPlayed</label>
+			<id>0</id>
+			<font>font11</font>
+			<textcolor>ffd3d3d3</textcolor>
+			<posX>1265</posX>
+			<posY>140</posY>
+			<width>500</width>
+			<height>20</height>
+			<align>center</align>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control>
+
+		<control>
+			<description>Favorite Vid Image</description>
+			<type>image</type>
+			<id>18</id>
+			<posX>1380</posX>
+			<posY>180</posY>
+			<width>280</width>
+			<height>280</height>
+			<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">-</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+		</control>
+
+		<control>
+			<description>Favorite Artist Label</description>
+			<type>fadelabel</type>
+			<label>#mvCentral.Translation.MostPlayedArtist.Label - #mvCentral.FavArtist</label>
+			<font>font11</font>
+			<textcolor>ffd3d3d3</textcolor>
+			<posX>1265</posX>
+			<posY>500</posY>
+			<width>500</width>
+			<height>20</height>
+			<align>center</align>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control> 
+
+		<control>
+			<description>Favorite Artist Image</description>
+			<type>image</type>
+			<id>20</id>
+			<posX>1380</posX>
+			<posY>550</posY>
+			<width>280</width>
+			<height>280</height>
+			<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">-</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control>
+
+
+
+		<control>
+			<description>Top 10 Videos</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>710</posX>
+			<posY>140</posY>
+			<width>460</width>
+			<font>fontB16</font>
+			<textcolor>ffd3d3d3</textcolor>
+			<label>#mvCentral.Translation.TopTenVideos.Label</label>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control>   
+		
+		<control>
+			<description>Top 10 Video - 1</description>
+			<type>fadelabel</type>
+			<id>30</id>
+			<posX>700</posX>
+			<posY>200</posY>
+			<width>460</width>
+			<font>font11</font>
+			<label>-</label>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control>   
+		
+		<control>
+			<description>Top 10 Video - 2</description>
+			<type>fadelabel</type>
+			<id>31</id>
+			<posX>700</posX>
+			<posY>240</posY>
+			<width>460</width>
+			<font>font11</font>
+			<label>-</label>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control>    
+		
+		<control>
+			<description>Top 10 Video - 3</description>
+			<type>fadelabel</type>
+			<id>32</id>
+			<posX>700</posX>
+			<posY>280</posY>
+			<width>460</width>
+			<font>font11</font>
+			<label>-</label>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control>  
+		
+		<control>
+			<description>Top 10 Video - 4</description>
+			<type>fadelabel</type>
+			<id>33</id>
+			<posX>700</posX>
+			<posY>320</posY>
+			<width>460</width>
+			<font>font11</font>
+			<label>-</label>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control>    
+		
+		<control>
+			<description>Top 10 Video - 5</description>
+			<type>fadelabel</type>
+			<id>34</id>
+			<posX>700</posX>
+			<posY>360</posY>
+			<width>460</width>
+			<font>font11</font>
+			<label>-</label>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control>   
+		
+		<control>
+			<description>Top 10 Video - 6</description>
+			<type>fadelabel</type>
+			<id>35</id>
+			<posX>700</posX>
+			<posY>400</posY>
+			<width>460</width>
+			<font>font11</font>
+			<label>-</label>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control>     
+		
+		<control>
+			<description>Top 10 Video - 7</description>
+			<type>fadelabel</type>
+			<id>36</id>
+			<posX>700</posX>
+			<posY>440</posY>
+			<width>460</width>
+			<font>font11</font>
+			<label>-</label>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control>      
+		
+		<control>
+			<description>Top 10 Video - 8</description>
+			<type>fadelabel</type>
+			<id>37</id>
+			<posX>700</posX>
+			<posY>480</posY>
+			<width>460</width>
+			<font>font11</font>
+			<label>-</label>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control>     
+		
+		<control>
+			<description>Top 10 Video - 9</description>
+			<type>fadelabel</type>
+			<id>38</id>
+			<posX>700</posX>
+			<posY>520</posY>
+			<width>460</width>
+			<font>font11</font>
+			<label>-</label>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control>   
+
+		<control>
+			<description>Top 10 Video - 10</description>
+			<type>fadelabel</type>
+			<id>39</id>
+			<posX>700</posX>
+			<posY>560</posY>
+			<width>460</width>
+			<font>font11</font>
+			<label>-</label>
+			<animation effect="slide" time="100" start="300,0">visible</animation>
+			<animation effect="slide" time="0" end="300,0">hidden</animation>
+		</control>      
+
+		<import>common.overlay.home.xml</import>
+		
+	</controls>
+</window>

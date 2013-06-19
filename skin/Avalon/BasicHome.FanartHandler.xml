@@ -69,7 +69,7 @@
 	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     <texture>#fanarthandler.movingpicture.backdrop2.any</texture>
 </control> 
-
+	
 	<!--            :: Music ::            -->
 
 <control>

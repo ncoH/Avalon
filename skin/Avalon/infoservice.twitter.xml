@@ -255,27 +255,29 @@
 		</control>
 	</control>
 
-
-		<control>
-			<description>listcontrol</description>
-			<type>listcontrol</type>
-			<id>50</id>
-			<onleft>2</onleft>
-			<onright>80</onright>
-			<scrollOffset>1</scrollOffset>
-			<posX>679</posX>
-			<posY>153</posY>
-			<width>1152</width>
-			<height>750</height>
-			<textXOff>50</textXOff>
-			<textXOff2>1152</textXOff2>
-			<textureHeight>55</textureHeight>
-			<spinCanFocus>no</spinCanFocus>
-			<textureFocus>listcontrol_item_selected_wide.png</textureFocus>
-			<dimColor>ffffffff</dimColor>
-			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		</control>	
+			<control>
+				<description>listcontrol</description>
+				<type>listcontrol</type>
+				<id>50</id>
+				<onleft>2</onleft>
+				<onright>80</onright>
+				<scrollOffset>1</scrollOffset>
+				<posX>678</posX>
+    			<posY>153</posY>
+    			<height>750</height>
+    			<width>1152</width>
+				<textXOff>50</textXOff>
+				<textXOff2>1152</textXOff2>
+				<itemWidth>50</itemWidth>
+          		<itemHeight>50</itemHeight>
+				<IconXOff>12</IconXOff>
+          		<IconYOff>5</IconYOff>
+				<spaceBetweenItems>0</spaceBetweenItems>
+          		<textureHeight>60</textureHeight>
+				<spinCanFocus>no</spinCanFocus>
+				<textureFocus>listcontrol_item_selected_wide.png</textureFocus>
+				<dimColor>ffffffff</dimColor>
+			</control>
 
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
@@ -290,5 +292,6 @@
 	</control>
 	
 <import>common.overlay.xml</import>
+
 </controls>
 </window>

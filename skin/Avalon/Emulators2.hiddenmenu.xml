@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<window>
+  <controls>
+
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>440</posY>
+      <width>64</width>
+      <height>199</height>
+      <texture>hiddenmenu_tab.png</texture>
+      <visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
+      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+    </control>
+
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <posX>858</posX>
+      <posY>0</posY>
+      <texture>hiddenmenu_tab_up.png</texture>
+      <visible>[facadeview.filmstrip | facadeview.coverflow] + Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
+      <animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
+    </control>
+
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <defaultcontrol>10</defaultcontrol>
+      <onexit>50</onexit>
+      <dimColor>00ffffff</dimColor>
+      <buttonX>0</buttonX>
+      <buttonY>0</buttonY>
+      <buttonwidth>521</buttonwidth>
+      <buttonheight>1080</buttonheight>
+
+      <control>
+        <type>image</type>
+        <id>0</id>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>semi_trans_back_hidden_menu.png</texture>
+        <visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+        <animation effect="fade" time="450">visible</animation>
+        <animation effect="fade" time="400">hidden</animation>
+      </control>
+
+      <control>
+        <type>image</type>
+        <id>0</id>
+        <posY>15</posY>
+        <posX>0</posX>
+        <width>631</width>
+        <height>1044</height>
+        <texture>menu_bg.png</texture>
+        <visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+        <animation effect="fade" time="0">WindowClose</animation>
+        <animation effect="slide" start="-150,0" time="100">visible</animation>
+        <animation effect="fade" time="50">visible</animation>
+        <animation effect="fade" time="0">hidden</animation>
+      </control>
+      <control>
+        <description>Menu label</description>
+        <type>label</type>
+        <id>1</id>
+        <posX>128</posX>
+        <posY>114</posY>
+        <label>924</label>
+        <font>fontB12</font>
+        <textcolor>ffffff</textcolor>
+        <visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+        <animation effect="fade" time="0">WindowClose</animation>
+        <animation effect="slide" start="-150,0" time="100">visible</animation>
+        <animation effect="fade" time="50">visible</animation>
+        <animation effect="fade" time="0">hidden</animation>
+      </control>
+      <control>
+        <type>group</type>
+        <description>group element</description>
+        <visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+        <animation effect="fade" time="0">WindowClose</animation>
+        <animation effect="slide" start="-150,0" time="100">visible</animation>
+        <animation effect="fade" time="50">visible</animation>
+        <animation effect="fade" time="0">hidden</animation>
+        <posX>69</posX>
+        <posY>155</posY>
+        <layout>StackLayout(0, Vertical, true)</layout>
+        <control>
+          <description>Layout button</description>
+          <type>button</type>
+          <id>10</id>
+          <label>#Emulators2.Label.currentlayout</label>
+          <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+          <textureNoFocus>-</textureNoFocus>
+          <width>497</width>
+          <height>64</height>
+          <textXOff>58</textXOff>
+          <textYOff>14</textYOff>
+          <onup>13</onup>
+          <onright>50</onright>
+          <ondown>12</ondown>
+        </control>
+        <control>
+          <description>Views button</description>
+          <type>button</type>
+          <id>12</id>
+          <label>#Emulators2.Label.switchview</label>
+          <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+          <textureNoFocus>-</textureNoFocus>
+          <width>497</width>
+          <height>64</height>
+          <textXOff>58</textXOff>
+          <textYOff>14</textYOff>
+          <onright>50</onright>
+          <onup>10</onup>
+          <ondown>11</ondown>
+        </control>
+        <control>
+          <description>Sort button</description>
+          <type>sortbutton</type>
+          <id>11</id>
+          <label>#Emulators2.sortlabel</label>
+          <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+          <textureNoFocus>-</textureNoFocus>
+          <width>497</width>
+          <height>64</height>
+          <textXOff>58</textXOff>
+          <textYOff>14</textYOff>
+          <onright>50</onright>
+          <onup>12</onup>
+          <ondown>13</ondown>
+        </control>
+        <control>
+          <description>Import button</description>
+          <type>button</type>
+          <id>13</id>
+          <label>#Emulators2.Label.runimport</label>
+          <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+          <textureNoFocus>-</textureNoFocus>
+          <width>497</width>
+          <height>64</height>
+          <textXOff>58</textXOff>
+          <textYOff>14</textYOff>
+          <onright>50</onright>
+          <onup>11</onup>
+          <ondown>10</ondown>
+        </control>
+      </control>      
+    </control>
+  </controls>
+</window>

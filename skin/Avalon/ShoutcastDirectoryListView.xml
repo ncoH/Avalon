@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>2345</id>
+   <id>2345</id>
 <defaultcontrol>50</defaultcontrol>
 <allowoverlay>no</allowoverlay>
 <define>#header.label:#selecteditem</define>
-<define>#usePlayFanart:Yes</define>
+  <define>#usePlayFanart:Yes</define>
 <controls>
 	
 
@@ -62,7 +62,6 @@
 		<texture>overlay_long.png</texture>
 		<visible></visible>
 	</control>
-	
 	<control>
 		<description>RSS background</description>
 		<type>image</type>
@@ -75,8 +74,7 @@
 		<visible></visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
-		
+		</control>
 	<control>
 		<description>viewport list</description>
 		<type>image</type>
@@ -92,7 +90,6 @@
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
 		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
 	</control>
-	
 	<import>common.time.xml</import>
 	
 	<control>
@@ -149,8 +146,10 @@
 		<texture flipY="true" diffuse="Thumb_Mask.png" mask="music_listview_mask.png">#fanarthandler.music.artisthumb.play</texture>
 		<visible>[!string.equals(#fanarthandler.music.artisthumb.play,defaultFolderBig.png)]</visible>
 	</control>
+<label>#listeners   #genre   #meta</label>
 
-	<control>
+
+<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
@@ -160,12 +159,11 @@
 		<label>#listeners   #genre   #meta</label>
 		 <font>AvalonLight12</font>
 		<textcolor>6aa5cb</textcolor>  
-		<align>right</align>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+<align>right</align>
+				<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
-	
-	<control>
+<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
@@ -175,25 +173,24 @@
 		<label>#selecteditem</label>
 		<font>fontB16</font>
 		<align>right</align>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+				<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 			
-	<control>
-		<description>listcontrol</description>
-		<type>listcontrol</type>
-		<id>50</id>
-		<textXOff2>680</textXOff2>
-		<onleft>2</onleft>
-		<onright>50</onright>
-		<dimColor>ffffffff</dimColor>
-		<textXOff>10</textXOff>
-		<animation effect="fade" time="250">WindowOpen</animation>
+			<control>
+				<description>listcontrol</description>
+				<type>listcontrol</type>
+				<id>50</id>
+			    <textXOff2>680</textXOff2>
+				<onleft>2</onleft>
+				<onright>50</onright>
+				<dimColor>ffffffff</dimColor>
+<textXOff>10</textXOff>
+	<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
 		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>		
 </control>
-
 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>
@@ -209,8 +206,9 @@
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 	</control>
 	
+	
 			
 <import>common.overlay.xml</import>
-<import>shoutcast.hiddenmenu.xml</import>		
+<import>shout.hiddenmenu.xml</import>		
 </controls>
 </window>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language name="English (US)" characters="255">
+  <Section name="unmapped">
+    <String id="0">Refresh</String>
+    <String id="1">Select feed</String>
+    <String id="2">Show all feeds</String>
+    <String id="3">Select timeline</String>
+    <String id="4">Update status</String>
+    <String id="5">Download of timeline has failed. However, the last successfully downloaded timeline will be displayed.</String>
+    <String id="6">Download of timeline has failed. See log for full details!</String>
+    <String id="7">Twitter is refreshing. Please wait until download has finished.</String>
+    <String id="8">Update in progress</String>
+    <String id="9">Status update successful. Please refresh Twitter to see the updated timeline!</String>
+    <String id="10">Update successful</String>
+    <String id="11">Update unsuccessful</String>
+    <String id="12">Update of status failed. See log for full details!</String>
+    <String id="13">Downloading feeds and images...</String>
+    <String id="14">Update of Feed unsuccessful. See log for full details!</String>
+    <String id="15">Downloading Twitter timelines...</String>
+    <String id="16">Update of Twitter unsuccessful. See log for full details!</String>
+    <String id="17">Feeds are refreshing. Please wait until the download has finished.</String>
+    <String id="18">Download of feed has failed. However, the last successfully downloaded feed items will be displayed.</String>
+    <String id="19">Download of feed has failed. See log for full details!</String>
+    <String id="20">{0} Seconds ago</String>
+    <String id="21">{0} Minutes ago</String>
+    <String id="22">{0}h and {1} Minutes ago</String>
+    <String id="23">{0}d {1}h and {2} Minutes ago</String>
+    <String id="24">Waiting until the other services are finished...</String>
+    <String id="25">All feeds</String>
+    <String id="26">A feed that combines all feed items</String>
+    <String id="27">Goto website</String>
+    <String id="28">Goto...</String>
+    <String id="29">Last update of feeds on {0}</String>
+    <String id="30">Last update of Twitter on {0}</String>
+    <String id="31">Last update of weather on {0}</String>
+    <String id="32">FeedService is disabled...</String>
+    <String id="33">TwitterService is disabled...</String>
+    <String id="34">Feed items</String>
+    <String id="35">Twitter items</String>
+    <String id="36">Waiting for FeedService update...</String>
+    <String id="37">Waiting for TwitterService update...</String>
+    <String id="38">{0} new Item(s) - {1}</String>
+    <String id="39">New messages on {0}!</String>
+  </Section>
+</Language>
