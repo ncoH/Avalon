@@ -70,7 +70,7 @@
 			<description>Search by genre</description>
 			<type>button</type>
 			<id>9</id>
-			<font>font13</font>
+			<font>font12</font>
 			<label>6034</label>
 			<onup>8</onup>
 			<ondown>10</ondown>

@@ -30,7 +30,7 @@
             <type>label</type>
             <posX>106</posX>
             <posY>125</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffb2d4f5</textcolor>
             <label>9000</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -42,7 +42,7 @@
             <type>label</type>
             <posX>106</posX>
             <posY>150</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffb2d4f5</textcolor>
             <label>9001</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -54,7 +54,7 @@
             <type>label</type>
             <posX>106</posX>
             <posY>175</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffb2d4f5</textcolor>
             <label>9002</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -66,7 +66,7 @@
             <type>label</type>
             <posX>106</posX>
             <posY>200</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffb2d4f5</textcolor>
             <label>9003</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -78,7 +78,7 @@
             <type>label</type>
             <posX>106</posX>
             <posY>225</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffb2d4f5</textcolor>
             <label>9004</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -90,7 +90,7 @@
             <type>label</type>
             <posX>106</posX>
             <posY>250</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffb2d4f5</textcolor>
             <label>9005</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -102,7 +102,7 @@
             <type>label</type>
             <posX>604</posX>
             <posY>225</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffb2d4f5</textcolor>
             <label>9006</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -114,7 +114,7 @@
             <type>label</type>
             <posX>604</posX>
             <posY>250</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffb2d4f5</textcolor>
             <label>9007</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -126,7 +126,7 @@
             <type>label</type>
             <posX>604</posX>
             <posY>125</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffb2d4f5</textcolor>
             <align>LEFT</align>
             <label>9008</label>
@@ -139,7 +139,7 @@
             <type>label</type>
             <posX>604</posX>
             <posY>150</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffb2d4f5</textcolor>
             <label>9009</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -151,7 +151,7 @@
             <type>label</type>
             <posX>604</posX>
             <posY>175</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffb2d4f5</textcolor>
             <label>9010</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -163,7 +163,7 @@
             <type>label</type>
             <posX>604</posX>
             <posY>200</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffb2d4f5</textcolor>
             <label>9011</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -175,7 +175,7 @@
             <type>label</type>
             <posX>355</posX>
             <posY>125</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffffffff</textcolor>
             <label>-</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -187,7 +187,7 @@
             <type>label</type>
             <posX>355</posX>
             <posY>150</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffffffff</textcolor>
             <label>-</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -200,7 +200,7 @@
             <posX>355</posX>
             <posY>175</posY>
             <width>231</width>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffffffff</textcolor>
             <label>-</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -213,7 +213,7 @@
             <posX>355</posX>
             <posY>200</posY>
             <width>231</width>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffffffff</textcolor>
             <label>-</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -226,7 +226,7 @@
             <posX>355</posX>
             <posY>225</posY>
             <width>711</width>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffffffff</textcolor>
             <label>-</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -239,7 +239,7 @@
             <posX>355</posX>
             <posY>250</posY>
             <width>711</width>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffffffff</textcolor>
             <label>-</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -251,7 +251,7 @@
             <type>label</type>
             <posX>853</posX>
             <posY>225</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffffffff</textcolor>
             <label>-</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -263,7 +263,7 @@
             <type>label</type>
             <posX>853</posX>
             <posY>250</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffffffff</textcolor>
             <label>-</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -275,7 +275,7 @@
             <type>label</type>
             <posX>853</posX>
             <posY>125</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffffffff</textcolor>
             <label>-</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -288,7 +288,7 @@
             <posX>853</posX>
             <posY>150</posY>
             <width>355</width>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffffffff</textcolor>
             <label>-</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -301,7 +301,7 @@
             <posX>853</posX>
             <posY>175</posY>
             <width>355</width>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffffffff</textcolor>
             <label>-</label>
             <animation effect="Fade" time="250">WindowOpen</animation>
@@ -313,7 +313,7 @@
             <type>label</type>
             <posX>853</posX>
             <posY>200</posY>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ffffffff</textcolor>
             <label>-</label>
             <animation effect="Fade" time="250">WindowOpen</animation>

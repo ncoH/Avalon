@@ -98,7 +98,7 @@
 		<posX>1260</posX>
 		<posY>185</posY>
 		<align>right</align>
-		<font>font13</font>
+		<font>font12</font>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -138,7 +138,7 @@
 		<width>764</width>
 		<height>81</height>
 		<colordiffuse>ffffffff</colordiffuse>
-		<font>font13</font>
+		<font>font12</font>
 		<label>-</label>
 		<textcolor>FFFFFFFF</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>

@@ -10,7 +10,7 @@
             <posX>335</posX>
             <posY>521</posY>
             <width>670</width>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ff333333</textcolor>
             <align>CENTER</align>
             <label>line -2</label>
@@ -23,7 +23,7 @@
             <posX>335</posX>
             <posY>553</posY>
             <width>670</width>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ff808080</textcolor>
             <align>CENTER</align>
             <label>line -1</label>
@@ -36,7 +36,7 @@
             <posX>335</posX>
             <posY>585</posY>
             <width>670</width>
-            <font>font13</font>
+            <font>font12</font>
             <align>CENTER</align>
             <label>line 0</label>
         </control>
@@ -48,7 +48,7 @@
             <posX>335</posX>
             <posY>617</posY>
             <width>670</width>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ff808080</textcolor>
             <align>CENTER</align>
             <label>line +1</label>
@@ -61,7 +61,7 @@
             <posX>336</posX>
             <posY>649</posY>
             <width>670</width>
-            <font>font13</font>
+            <font>font12</font>
             <textcolor>ff333333</textcolor>
             <align>CENTER</align>
             <label>line +2</label>

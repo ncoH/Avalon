@@ -759,7 +759,7 @@
       <textureFocus>button_green_focus_165x32.png</textureFocus>
       <textureNoFocus>button_green_nofocus_165x32.png</textureNoFocus>
       <label>294</label>
-      <font>font13</font>
+      <font>font12</font>
       <colordiffuse>ffffffff</colordiffuse>
       <onleft>600</onleft>
       <onright>602</onright>
@@ -778,7 +778,7 @@
       <textureFocus>button_green_focus_165x32.png</textureFocus>
       <textureNoFocus>button_green_nofocus_165x32.png</textureNoFocus>
       <label>296</label>
-      <font>font13</font>
+      <font>font12</font>
       <colordiffuse>ffffffff</colordiffuse>
       <onleft>600</onleft>
       <onright>601</onright>
