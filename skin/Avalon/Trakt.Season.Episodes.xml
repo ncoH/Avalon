@@ -355,7 +355,7 @@
       <posX>400</posX>
       <posY>247</posY>
       <width>295</width>
-      <font>font13</font>
+      <font>font12</font>
       <textcolor>ffa9d0f7</textcolor>      
       <animation effect="fade" time="250" delay="0">WindowClose</animation>
       <animation effect="fade" time="250" delay="0">WindowOpen</animation>

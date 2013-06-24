@@ -41,7 +41,7 @@
         <!-- Textures -->
         <imageFolder>-</imageFolder> 			
         <!-- Text -->
-        <font>font13</font>
+        <font>font12</font>
         <selectedColor>00ffffff</selectedColor>
         <textcolor>ffffffff</textcolor>
         <colordiffuse>ffffffff</colordiffuse>          
