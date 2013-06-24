@@ -24,7 +24,7 @@ namespace AvalonGUIConfig
 
         #region Skin Controls
        [SkinControl((int)GUIControls.Style)]
-       protected GUIToggleButtonControl btnStyle = null;
+       protected GUICheckButton btnStyle = null;
 
        [SkinControl((int)GUIControls.widebannerMod)]
        protected GUIButtonControl btnwidebannerMod = null;

@@ -52,22 +52,22 @@ namespace AvalonGUIConfig
         #region Skin Controls
 
         [SkinControl((int)GUIControls.hidePoster)]
-        protected GUIToggleButtonControl btnHidePoster = null;
+        protected GUICheckButton btnHidePoster = null;
 
         [SkinControl((int)GUIControls.showRSS)]
-        protected GUIToggleButtonControl btnshowRSS = null;
+        protected GUICheckButton btnshowRSS = null;
 
         [SkinControl((int)GUIControls.showHiddenMenu)]
-        protected GUIToggleButtonControl btnshowHiddenMenu = null;
+        protected GUICheckButton btnshowHiddenMenu = null;
 
         [SkinControl((int)GUIControls.UnfocusedAlpha)]
         protected GUIButtonControl btnUnfocusedAlpha = null;
 
         [SkinControl((int)GUIControls.LargeFontSize)]
-        protected GUIToggleButtonControl btnLargeFontSize = null;
+        protected GUICheckButton btnLargeFontSize = null;
 
         [SkinControl((int)GUIControls.showFiveDayWeather)]
-        protected GUIToggleButtonControl btnshowFiveDayWeather = null;
+        protected GUICheckButton btnshowFiveDayWeather = null;
 
         [SkinControl((int)GUIControls.trailerSite)]
         protected GUIButtonControl btntrailerSite = null;
@@ -76,7 +76,7 @@ namespace AvalonGUIConfig
         protected GUIButtonControl btnListColors = null;
 
         [SkinControl((int)GUIControls.WeatherInfoservice)]
-        protected GUIToggleButtonControl btnWeatherInfoservice = null;
+        protected GUICheckButton btnWeatherInfoservice = null;
 
 
         #endregion

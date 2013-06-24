@@ -22,7 +22,7 @@ using MediaPortal.Common.Utils;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("ff9b065f-1010-4ccc-aaf7-f6a76797d4b8")]
-[assembly: CompatibleVersion("1.2.200.0", "1.1.6.27644")]
+[assembly: CompatibleVersion("1.3.100.0", "1.3.100.0")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -35,5 +35,5 @@ using MediaPortal.Common.Utils;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 //[assembly: AssemblyVersion("0.7.509")]
-[assembly: AssemblyFileVersion("1.2.0.0")]
-[assembly: AssemblyVersionAttribute("1.2.0.0")]
+[assembly: AssemblyFileVersion("1.3.0.0")]
+[assembly: AssemblyVersionAttribute("1.3.0.0")]
