@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+        <control>
+            <id>0</id>
+            <description>Maya logo</description>
+            <type>image</type>
+            <posX>55</posX>
+            <posY>31</posY>
+            <texture>mp_logo.png</texture>
+        </control>
+        <control>
+            <id>0</id>
+            <description>top seperator</description>
+            <type>image</type>
+            <posX>160</posX>
+            <posY>33</posY>
+            <texture>top_separator.png</texture>
+        </control>
+        <control>
+            <id>0</id>
+            <type>label</type>
+            <posX>1644</posX>
+            <posY>37</posY>
+            <width>555</width>
+            <font>font22</font>
+            <textcolor>ffffff</textcolor>
+            <label>#time</label>
+			<align>right</align>
+			<visible>!plugin.isenabled(World Weather)</visible>
+        </control>
+        <control>
+            <id>0</id>
+            <type>label</type>
+            <posX>1845</posX>
+            <posY>37</posY>
+            <width>555</width>
+            <font>font22</font>
+            <textcolor>ffffff</textcolor>
+            <label>#time</label>
+			<align>right</align>
+			<visible>plugin.isenabled(World Weather)</visible>
+        </control>
+        <control>
+            <id>0</id>
+            <type>label</type>
+            <posX>1644</posX>
+            <posY>50</posY>
+            <width>555</width>
+            <font>AvalonLight16</font>
+            <textcolor>6aa5cb</textcolor>
+            <label>/#WorldWeather.TodayTemperature</label>
+			<align>left</align>
+			<visible>plugin.isenabled(World Weather)</visible>
+        </control>
+<!--Weather-->
+
+		<control>
+			<description>Weather image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1752</posX>
+			<posY>10</posY>
+			<height>100</height>
+			<width>100</width>
+			<texture>#WorldWeather.TodayIconImage</texture>
+			<visible>plugin.isenabled(World Weather)</visible>
+		</control>
+    </controls>
+</window>
