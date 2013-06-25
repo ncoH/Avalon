@@ -7,9 +7,9 @@
 	<rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
   
-	<import>common.settings.xml</import>
 	<import>settings.menu.xml</import>	
-	<import>common.time.xml</import>  
+	<import>common.settings.xml</import>	
+	<import>common.time.settings.xml</import>  
 
 	<control>
 		<type>label</type>
@@ -18,8 +18,8 @@
 		<posY>225</posY>
 		<width>550</width>
 		<label>#(L(101011))</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB20</font>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 	</control>
@@ -33,7 +33,7 @@
 		<width>600</width>			
     <label>300163</label>
 		<font>fontB14</font>
-    <textcolor>6aa5cb</textcolor>
+    <textcolor>ff85cffe</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>					
   </control>
@@ -47,7 +47,7 @@
 		<width>600</width>	
     <label>300071</label>
 		<font>fontB14</font>
-    <textcolor>6aa5cb</textcolor>
+    <textcolor>ff85cffe</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>					
   </control>
@@ -63,6 +63,8 @@
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
+			<textureFocus>settings_button_database_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>
@@ -85,6 +87,8 @@
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
+			<textureFocus>settings_button_database_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>
@@ -108,6 +112,8 @@
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
+			<textureFocus>settings_button_database_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>
@@ -131,6 +137,8 @@
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
+			<textureFocus>settings_button_database_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>
@@ -154,6 +162,8 @@
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
+			<textureFocus>settings_button_database_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>
@@ -228,12 +238,12 @@
 			<font>AvalonLight12</font>
 			<font2>AvalonLight12</font2>
 			<font3>AvalonLight12</font3>
-			<textcolor>6aa5cb</textcolor>
-			<textcolor2>6aa5cb</textcolor2>
-			<textcolor3>6aa5cb</textcolor3>	
-      <selectedColor>6aa5cb</selectedColor>
-      <selectedColor2>6aa5cb</selectedColor2>
-      <selectedColor3>6aa5cb</selectedColor3>		
+			<textcolor>FF85cffe</textcolor>
+			<textcolor2>FF85cffe</textcolor2>
+			<textcolor3>FF85cffe</textcolor3>	
+      <selectedColor>FF85cffe</selectedColor>
+      <selectedColor2>FF85cffe</selectedColor2>
+      <selectedColor3>FF85cffe</selectedColor3>		
 			<spinPosX>-2000</spinPosX>
 			<spinPosY>500</spinPosY>
       <dimColor>ffffffff</dimColor>
@@ -254,6 +264,8 @@
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
+			<textureFocus>settings_button_database_focus.png</textureFocus>
+			<textureNoFocus>settings_button_database_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>	
@@ -273,7 +285,7 @@
       <posY>743</posY>
       <label>300168</label>
 			<font>fontB14</font>
-			<textcolor>6aa5cb</textcolor>
+			<textcolor>ff85cffe</textcolor>
 			<animation effect="fade" time="150">WindowOpen</animation>
 			<animation effect="fade" time="150">WindowClose</animation>						
     </control>

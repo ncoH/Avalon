@@ -7,9 +7,9 @@
 	<rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
   
-	<import>common.settings.xml</import>
 	<import>settings.menu.xml</import>	
-	<import>common.time.xml</import>
+	<import>common.settings.xml</import>	
+	<import>common.time.settings.xml</import>  
 
 	<control>
 		<type>label</type>
@@ -18,8 +18,8 @@
 		<posY>225</posY>
 		<width>800</width>
 		<label>#(L(1))/#(L(129))</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB20</font>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 	</control>
@@ -33,7 +33,7 @@
 		<width>600</width>			
     <label>300183</label>
 		<font>fontB14</font>
-    <textcolor>6aa5cb</textcolor>
+    <textcolor>ff85cffe</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>					
   </control>
@@ -44,10 +44,9 @@
 		<posX>655</posX>
 		<posY>386</posY>
 		<dimColor>ffffffff</dimColor>
-    <layout>StackLayout(0, Vertical, true)</layout>
+    <layout>StackLayout(7, Vertical, true)</layout>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
-		
 		<control Style="SettingsCheckButtonMedium">
       <description>Ken Buns transitions</description>
       <type>checkbutton</type>
@@ -57,7 +56,6 @@
       <label>13008</label>
       <onup>123</onup>
     </control>
-		
 		<control Style="SettingsCheckButtonMedium">
       <description>X-fade transitions</description>
       <type>checkbutton</type>
@@ -66,7 +64,6 @@
       <onright>3</onright>
       <label>13010</label>
     </control>
-		
 		<control Style="SettingsCheckButtonMedium">
       <description>Random transitions</description>
       <type>checkbutton</type>
@@ -87,7 +84,7 @@
 	  <posY>646</posY>
     <label>300184</label>
 		<font>fontB14</font>
-    <textcolor>6aa5cb</textcolor>
+    <textcolor>ff85cffe</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
   </control>
@@ -98,7 +95,7 @@
 		<posX>655</posX>
 		<posY>711</posY>
 		<dimColor>ffffffff</dimColor>
-    <layout>StackLayout(0, Vertical, true)</layout>
+    <layout>StackLayout(7, Vertical, true)</layout>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
     
@@ -110,7 +107,6 @@
       <onleft>9995</onleft>
       <onright>43</onright>
     </control>
-		
 		<control Style="SettingsCheckButtonMedium">
       <description>Picasa.ini rotation</description>
       <type>checkbutton</type>
@@ -132,11 +128,10 @@
   		<width>600</width>			
       <label>300187</label>
   		<font>fontB14</font>
-      <textcolor>6aa5cb</textcolor>
+      <textcolor>ff85cffe</textcolor>
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
-		
     <control>
       <description>Speed label</description>
       <type>label</type>
@@ -147,7 +142,6 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
-		
     <control>
       <description>Speed select</description>
       <type>spincontrol</type>
@@ -163,7 +157,6 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
-		
     <control>
       <description>Transition time label</description>
       <type>label</type>
@@ -174,7 +167,6 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
-		
     <control>
       <description>Transition time select</description>
       <type>spincontrol</type>
@@ -190,7 +182,6 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
-		
     <control>
       <description>ken burns speed label</description>
       <type>label</type>
@@ -201,7 +192,6 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
-		
     <control>
       <description>ken burns speed select</description>
       <type>spincontrol</type>
@@ -224,7 +214,7 @@
   	<posX>1268</posX>
     <posY>563</posY>
 		<dimColor>ffffffff</dimColor>
-    <layout>StackLayout(0, Vertical, true)</layout>
+    <layout>StackLayout(7, Vertical, true)</layout>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
     
@@ -236,7 +226,6 @@
       <ondown>9</ondown>
       <label>6020</label>
     </control>
-		
 		<control Style="SettingsCheckButtonMedium">
       <description>Auto shuffle slideshow</description>
       <type>checkbutton</type>
@@ -245,7 +234,6 @@
       <label>6021</label>
     </control>
  </control>
- 
     <!--View settings group-->
     <!--Slideshow Settings group-->
 
@@ -258,7 +246,7 @@
   		<width>600</width>			
       <label>300188</label>
   		<font>fontB14</font>
-      <textcolor>6aa5cb</textcolor>
+      <textcolor>ff85cffe</textcolor>
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
@@ -269,7 +257,7 @@
   	<posX>1268</posX>
     <posY>818</posY>
 		<dimColor>ffffffff</dimColor>
-    <layout>StackLayout(0, Vertical, true)</layout>
+    <layout>StackLayout(7, Vertical, true)</layout>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
     
@@ -293,7 +281,6 @@
 			<onup>43</onup>
 			<ondown>45</ondown>
     </control>
-		
 		<control Style="SettingsCheckButtonMedium">
       <description>Play videos in slideshow</description>
       <type>checkbutton</type>
@@ -305,6 +292,5 @@
       <onup>44</onup>
     </control>
   </control>
-	
   </controls>
 </window>

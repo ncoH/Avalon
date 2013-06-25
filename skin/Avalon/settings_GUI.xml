@@ -1,48 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>1021</id>
-	<defaultcontrol>100</defaultcontrol>
+  <id>1021</id>
+  <defaultcontrol>100</defaultcontrol>
 	<define>#header.label:897</define>
-	<rememberLastFocusedControl>yes</rememberLastFocusedControl>
+  <rememberLastFocusedControl>yes</rememberLastFocusedControl>
   <controls>
-
- 	<control>
+	
+	<control>
 		<description>BG</description>
 		<type>image</type>
 		<id>1</id>
 		<width>1920</width>
 		<height>1080</height>
+		<texture>background_settings.png</texture>
 	</control>
 
+	<import>common.time.settings.xml</import>
+	
 	<control>
-		<description>viewport</description>
+		<description>panel</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>0</posX>
-		<posY>92</posY>
-		<width>1893</width>
-		<height>795</height>
-		<texture>viewport_settings.png</texture>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+		<posX>5</posX>
+		<posY>140</posY>
+		<width>618</width>
+		<height>940</height>
+		<texture>panel_settings_left.png</texture>
 	</control>
 	
-	<import>common.time.xml</import>
-
-	<control>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<type>label</type>
-		<id>1</id>
-		<posX>185</posX>
-		<posY>38</posY>
-		<width>500</width>
-		<label>#header.label</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>font22</font>
-	</control>
+  <control>
+    <id>0</id>
+    <type>image</type>
+    <posX>68</posX>
+    <posY>36</posY>
+    <width>58</width>
+    <height>58</height>
+    <texture>icon_settings.png</texture>
+  </control>
 	
 	<control>
 		<type>label</type>
@@ -51,8 +45,8 @@
 		<posY>225</posY>
 		<width>500</width>
 		<label>101021</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB14</font>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
 	</control>
 	
 	<control>
@@ -61,7 +55,7 @@
 		<posX>122</posX>
 		<posY>321</posY>
 		<dimColor>ffffffff</dimColor>
-		<layout>StackLayout(0, Vertical, true)</layout>
+		<layout>StackLayout(7, Vertical, true)</layout>
 				
 			<control Style="SettingsButton">
 				<description>Skin</description>
@@ -70,6 +64,15 @@
 				<label>300120</label>
 				<onup>18</onup>
 				<hyperlink>705</hyperlink>
+			</control>
+				
+			<control Style="SettingsButton">
+				<description>Skin</description>
+				<type>button</type>
+				<id>101</id>
+				<label>#Avalon.SkinSettings</label>
+				<onup>100</onup>
+				<hyperlink>155100</hyperlink>
 			</control>
 				
 			<control Style="SettingsButton">

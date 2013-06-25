@@ -6,43 +6,47 @@
   <define>#header.label:897</define>
   <rememberLastFocusedControl>yes</rememberLastFocusedControl>
   <controls>
-
- 	<control>
+	<import>common.time.settings.xml</import>
+	
+	<control>
 		<description>BG</description>
 		<type>image</type>
 		<id>1</id>
 		<width>1920</width>
 		<height>1080</height>
+		<texture>background_settings.png</texture>
 	</control>
 
 	<control>
-		<description>viewport</description>
+		<description>panel</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>0</posX>
-		<posY>92</posY>
-		<width>1893</width>
-		<height>895</height>
-		<texture>viewport_settings.png</texture>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+		<posX>5</posX>
+		<posY>140</posY>
+		<width>618</width>
+		<height>940</height>
+		<texture>panel_settings_left.png</texture>
 	</control>
 	
-	<import>common.time.xml</import>
-
+  <control>
+    <id>0</id>
+    <type>image</type>
+    <posX>68</posX>
+    <posY>36</posY>
+    <width>58</width>
+    <height>58</height>
+    <texture>icon_settings.png</texture>
+  </control>
+	
 	<control>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>185</posX>
-		<posY>38</posY>
+		<posX>152</posX>
+		<posY>225</posY>
 		<width>500</width>
-		<label>#header.label</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>font22</font>
+		<label>128</label>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
 	</control>
 	
 	<control>
@@ -51,53 +55,51 @@
 		<posX>122</posX>
 		<posY>321</posY>
 		<dimColor>ffffffff</dimColor>
-		<layout>StackLayout(0, Vertical, true)</layout>
+		<layout>StackLayout(7, Vertical, true)</layout>
      
-	<control Style="SettingsButton">
+			<control Style="SettingsButton">
         <description>General MP Settings</description>
         <type>button</type>
         <id>2</id>
         <label>300080</label>
         <onup>7</onup>
-    </control>
+      </control>
 			
-	<control Style="SettingsButton">
+			<control Style="SettingsButton">
         <description>Startup settings</description>
         <type>button</type>
         <id>3</id>
         <label>300081</label>
-    </control>
+      </control>
 			
-	<control Style="SettingsButton">
+			<control Style="SettingsButton">
         <description>Resume settings</description>
         <type>button</type>
         <id>4</id>
         <label>300082</label>
-    </control>
+      </control>
 			
-	<control Style="SettingsButton">
+			<control Style="SettingsButton">
         <description>Volume settings</description>
         <type>button</type>
         <id>5</id>
         <label>101007</label>
-    </control>
+      </control>
 			
-	<control Style="SettingsButton">
+			<control Style="SettingsButton">
         <description>RefreshRate settings</description>
         <type>button</type>
         <id>6</id>
         <label>300083</label>
-    </control>
+      </control>
 			
-	<control Style="SettingsButton">
+			<control Style="SettingsButton">
         <description>AUtoplay</description>
         <type>button</type>
         <id>7</id>
         <label>713</label>
 				<ondown>2</ondown>
+      </control>
     </control>
-		
-  </control>
-	
   </controls>
 </window>

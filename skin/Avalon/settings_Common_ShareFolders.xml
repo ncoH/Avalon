@@ -6,10 +6,9 @@
 	<define>#header.label:897</define>		
 	<rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
-	
-	<import>common.settings.xml</import>
-	<import>settings.menu.xml</import>	
-	<import>common.time.xml</import>
+	<import>settings.menu.xml</import>
+  <import>common.settings.xml</import>
+	<import>common.time.settings.xml</import>
 	
 	<control>
 		<type>label</type>
@@ -18,8 +17,8 @@
 		<posY>225</posY>
 		<width>500</width>
 		<label>#(L(134))</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB20</font>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
 	</control>
@@ -30,7 +29,7 @@
 		  <posX>658</posX>
   		<posY>386</posY>
   		<dimColor>ffffffff</dimColor>
-  		<layout>StackLayout(0, Vertical, true)</layout>
+  		<layout>StackLayout(7, Vertical, true)</layout>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
     
@@ -42,7 +41,6 @@
         <onright>43</onright>
         <onup>6</onup>
       </control>
-			
 	   <control Style="SettingsButtonSmall">
         <description>Remove</description>
         <type>button</type>
@@ -50,7 +48,6 @@
         <label>Remove</label>
         <onright>43</onright>
       </control>
-			
 	   <control Style="SettingsButtonSmall">
         <description>Edit</description>
         <type>button</type>
@@ -58,7 +55,6 @@
         <label>2076</label>
         <onright>43</onright>
       </control>
-			
 	   <control Style="SettingsButtonSmall">
         <description>Default</description>
         <type>button</type>
@@ -82,7 +78,6 @@
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 	</control>
-	
     <control>
       <description>Options group label</description>
       <type>label</type>
@@ -91,12 +86,11 @@
       <posY>334</posY>
       <width>500</width>
       <label>300071</label>
-		  <textcolor>6aa5cb</textcolor>
+		  <textcolor>85cffe</textcolor>
 		  <font>fontB14</font>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-		
     <control>
       <description>Share folders listcontrol</description>
       <type>listcontrol</type>
@@ -123,8 +117,8 @@
       <spaceBetweenItems>16</spaceBetweenItems>
       <unfocusedAlpha>255</unfocusedAlpha>
       <dimColor>ffffffff</dimColor>
-			<animation effect="fade" time="150">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
     </control>
     
     <!--     SHARE FOLDER PROPERTIES  -->
@@ -140,7 +134,6 @@
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 	</control>
-	
     <control>
       <description>Options group label</description>
       <type>label</type>
@@ -149,10 +142,10 @@
       <posY>334</posY>
       <width>500</width>
       <label>300072</label>
-		  <textcolor>6aa5cb</textcolor>
+		  <textcolor>85cffe</textcolor>
 		  <font>fontB14</font>
-			<animation effect="fade" time="150">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
     </control>
 
     <!--Labels for values-->
@@ -165,7 +158,6 @@
       <layout>StackLayout(35, Vertical, true)</layout>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
-		
       <control>
         <description>Share Name label</description>
         <type>label</type>
@@ -173,7 +165,7 @@
         <width>245</width>
         <label>853</label>
         <font>AvalonLight12</font>
-        <textcolor>FFFFFFFF</textcolor>
+        <textcolor>ff85cffe</textcolor>
       </control>
       <control>
         <description>Share folder label</description>
@@ -182,7 +174,7 @@
         <width>245</width>
         <label>300073</label>
         <font>AvalonLight12</font>
-        <textcolor>FFFFFFFF</textcolor>
+        <textcolor>ff85cffe</textcolor>
       </control>
       <control>
         <description>Default layout label</description>
@@ -191,7 +183,7 @@
         <width>245</width>
         <label>300074</label>
         <font>AvalonLight12</font>
-        <textcolor>FFFFFFFF</textcolor>
+        <textcolor>ff85cffe</textcolor>
       </control>
       <control>
         <description>Pincode label</description>
@@ -200,7 +192,7 @@
         <width>245</width>
         <label>300075</label>
         <font>AvalonLight12</font>
-        <textcolor>FFFFFFFF</textcolor>
+        <textcolor>ff85cffe</textcolor>
       </control>
 			<control>
         <description>Thumbs</description>
@@ -209,7 +201,7 @@
         <width>245</width>
         <label>300222</label>
         <font>AvalonLight12</font>
-        <textcolor>FFFFFFFF</textcolor>
+        <textcolor>ff85cffe</textcolor>
       </control>
 			<control>
         <description>Each folder is movie</description>
@@ -218,10 +210,9 @@
         <width>245</width>
         <label>300223</label>
         <font>AvalonLight12</font>
-        <textcolor>FFFFFFFF</textcolor>
+        <textcolor>ff85cffe</textcolor>
       </control>
     </control>
-		
     <!-- Values-->
     <control>
       <description>Folder Properties values</description>
@@ -232,7 +223,6 @@
       <layout>StackLayout(35, Vertical, true)</layout>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
-		
       <control>
         <description>Share Name label</description>
         <type>label</type>
@@ -240,7 +230,7 @@
         <width>250</width>
         <label>#folderName</label>
         <font>AvalonLight12</font>
-        <textcolor>6aa5cb</textcolor>
+        <textcolor>ff85cffe</textcolor>
       </control>
       <control>
         <description>Share folder label</description>
@@ -249,7 +239,7 @@
         <width>250</width>
         <label>#folder</label>
         <font>AvalonLight12</font>
-        <textcolor>6aa5cb</textcolor>
+        <textcolor>ff85cffe</textcolor>
       </control>
       <control>
         <description>Default layout label</description>
@@ -258,7 +248,7 @@
         <width>250</width>
         <label>#layout</label>
         <font>AvalonLight12</font>
-        <textcolor>6aa5cb</textcolor>
+        <textcolor>ff85cffe</textcolor>
       </control>
       <control>
         <description>Pincode label</description>
@@ -267,7 +257,7 @@
         <width>250</width>
         <label>#pinCode</label>
         <font>AvalonLight12</font>
-        <textcolor>6aa5cb</textcolor>
+        <textcolor>ff85cffe</textcolor>
       </control>
 			<control>
         <description>Thumbs</description>
@@ -276,7 +266,7 @@
         <width>250</width>
         <label>#createThumb</label>
         <font>AvalonLight12</font>
-        <textcolor>6aa5cb</textcolor>
+        <textcolor>ff85cffe</textcolor>
       </control>
 			<control>
         <description>Movie folder</description>
@@ -285,10 +275,9 @@
         <width>250</width>
         <label>#eachFolderIsMovie</label>
         <font>AvalonLight12</font>
-        <textcolor>6aa5cb</textcolor>
+        <textcolor>ff85cffe</textcolor>
       </control>
     </control>
-		
     <!--     FOLDER OPTIONS  -->
 
     <control>
@@ -299,7 +288,7 @@
       <posY>724</posY>
       <width>500</width>
       <label>496</label>
-		  <textcolor>6aa5cb</textcolor>
+		  <textcolor>85cffe</textcolor>
 		  <font>fontB14</font>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
@@ -311,7 +300,7 @@
 		<posX>655</posX>
 		<posY>776</posY>
 		<dimColor>ffffffff</dimColor>
-		<layout>StackLayout(0, Vertical, true)</layout>
+		<layout>StackLayout(7, Vertical, true)</layout>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
     
@@ -338,6 +327,5 @@
       <ondown>40</ondown>
     </control>
   </control>
-	
   </controls>
 </window>

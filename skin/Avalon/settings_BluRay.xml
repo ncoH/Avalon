@@ -6,10 +6,9 @@
 	<define>#defaultcontrol.onleft:9998</define>
 	<define>#header.label:897</define>
   <controls>
-  
-	<import>common.settings.xml</import>
-	<import>settings.menu.xml</import>	
-	<import>common.time.xml</import>
+	<import>settings.menu.xml</import>
+  <import>common.settings.xml</import>
+	<import>common.time.settings.xml</import>
 
 	<control>
 		<type>label</type>
@@ -18,23 +17,23 @@
 		<posY>225</posY>
 		<width>500</width>
 		<label>300217</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB20</font>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
 	</control>
 	
 	<control>
-		<description>Bluray regions</description>
-		<type>image</type>
-		<id>1</id>
+    <description>Bluray regions</description>
+    <type>image</type>
+    <id>1</id>
 		<posX>1036</posX>
 		<posY>715</posY>
-		<height>325</height>
-		<width>650</width>
-		<texture>BluRay_regions.png</texture>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
+    <height>325</height>
+    <width>650</width>
+    <texture>BluRay_regions.png</texture>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
   </control>
 		
 		<control>
@@ -43,9 +42,9 @@
 			<posX>655</posX>
 			<posY>321</posY>
 			<dimColor>ffffffff</dimColor>
-			<layout>StackLayout(0, Vertical, true)</layout>
-			<animation effect="fade" time="150">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>
+			<layout>StackLayout(7, Vertical, true)</layout>
+	  	<animation effect="fade" time="150">WindowOpen</animation>
+	  	<animation effect="fade" time="150">WindowClose</animation>
 			
 				<control Style="SettingsButtonLarge">
 					<description>Region</description>
@@ -98,32 +97,31 @@
 				</control>
 			</control>
 			
-	<control>
-		<description>Dynamic content label</description>
-		<type>label</type>
-		<id>1</id>
-		<posX>686</posX>
-		<posY>706</posY>
+  <control>
+    <description>Dynamic content label</description>
+    <type>label</type>
+    <id>1</id>
+    <posX>686</posX>
+  	<posY>706</posY>
 		<label>300220</label>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 		<font>fontB14</font>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
-	</control>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
+  </control>
 			
-	<control>
-		<description>Age limit value</description>
-		<type>spincontrol</type>
-		<id>7</id>
-		<posX>820</posX>
-		<posY>766</posY>
+  <control>
+	  <description>Age limit value</description>
+	  <type>spincontrol</type>
+	  <id>7</id>
+    <posX>820</posX>
+  	<posY>766</posY>
 		<onleft>7</onleft>
 		<onup>8</onup>
 		<ondown>2</ondown>
 		<align>right</align>
-		<textcolor>ffffff</textcolor>
+    <textcolor>ffffff</textcolor>
 		<buddycontrolid>102</buddycontrolid>
-	</control>
-  
+  </control>
   </controls>
 </window>

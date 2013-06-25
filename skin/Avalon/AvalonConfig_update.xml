@@ -4,62 +4,60 @@
   <defaultcontrol>3</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
-   <import>settings.menu.xml</import>
-   
-  	<control>
+	<import>common.time.settings.xml</import>
+	<import>settings.menu.xml</import>	
+  <import>common.settings.xml</import>
+	
+	<control>
 		<type>label</type>
-		<description>Settings label</description>
-		<id>0</id>
-        <posX>600</posX>
-        <posY>875</posY>
+		<id>1</id>
+		<posX>685</posX>
+		<posY>225</posY>
 		<width>500</width>
-		<label>#Avalon.SkinSettings | #Avalon.SkinSettingsUpdate</label>
-		<align>left</align>
-		<font>AvalonLight12</font>
-        <textcolor>6aa5cb</textcolor>
+		<label>#(L(101021))/#Avalon.SkinSettingsUpdate</label>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
 	</control>
    
 	<control>
 		<type>label</type>
 		<id>1</id>
-		<posX>645</posX>
-		<posY>158</posY>
+		<posX>685</posX>
+		<posY>275</posY>
 		<width>500</width>
 		<label>#Avalon.Revisions</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB22</font>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
 		<visible>control.isvisible(3)</visible>
 	</control>
     <control>
 		<description>textarea</description>
 		<type>textbox</type>
 		<id>2</id>
-		<posY>228</posY>
-		<posX>645</posX>
+		<posY>358</posY>
+		<posX>685</posX>
 		<width>1100</width>
-		<height>570</height>
+		<height>620</height>
 		<onup>3</onup>
 		<ondown>3</ondown>
 		<onleft>3</onleft>
 		<font>font12</font>
 		<onright>2</onright>
-		<spinWidth>46</spinWidth>
-		<spinHeight>33</spinHeight>
+		<spinWidth>35</spinWidth>
+		<spinHeight>34</spinHeight>
 		<spinPosX>1684</spinPosX>
-		<spinPosY>790</spinPosY>
+		<spinPosY>890</spinPosY>
 		<spinAlign>right</spinAlign>
-		<textureFocus>settings_button_large_focus_toggleon.png</textureFocus>
-		<textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
-		<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
-		<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
     </control>
     <control>
 		<description>Do Update and Install</description>
 		<type>button</type>
 		<id>3</id>
 		<label>-</label>
-		<posX>645</posX>
-		<posY>780</posY>
+		<posX>685</posX>
+		<posY>960</posY>
 		<width>956</width>
 		<height>52</height>
 		<onup>2</onup>
@@ -74,7 +72,5 @@
 		<textureFocus>settings_button_large_focus.png</textureFocus>
 		<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
     </control>
-<import>common.time.xml</import>
-<import>avalon.version.xml</import>
   </controls>
 </window>

@@ -7,9 +7,9 @@
 	<rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
   
-	<import>common.settings.xml</import>
-	<import>settings.menu.xml</import>	
-	<import>common.time.xml</import>  
+	<import>settings.menu.xml</import>
+  <import>common.settings.xml</import>
+	<import>common.time.settings.xml</import>
 	
 	<control>
 		<type>label</type>
@@ -18,8 +18,8 @@
 		<posY>225</posY>
 		<width>800</width>
 		<label>300162</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB20</font>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
 	</control>
@@ -42,11 +42,10 @@
 		<posX>655</posX>
 		<posY>321</posY>
 		<dimColor>ffffffff</dimColor>
-    <layout>StackLayout(0, Vertical, true)</layout>
+    <layout>StackLayout(7, Vertical, true)</layout>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
   	 <control Style="SettingsButton">
-		 
         <description>Add</description>
         <type>button</type>
         <id>3</id>
@@ -70,7 +69,6 @@
         <label>886</label>
       </control>
     </control>
-		
     <control>
       <description>Extensions listcontrol</description>
       <type>listcontrol</type>
@@ -82,9 +80,9 @@
       <textXOff>15</textXOff>
       <textYOff>-6</textYOff>
       <textcolor>FFFFFFFF</textcolor>
-      <selectedColor>FF6aa5cb</selectedColor>
-      <selectedColor2>FF6aa5cb</selectedColor2>
-      <selectedColor3>FF6aa5cb</selectedColor3>	
+      <selectedColor>FF85cffe</selectedColor>
+      <selectedColor2>FF85cffe</selectedColor2>
+      <selectedColor3>FF85cffe</selectedColor3>	
       <spinPosX>1750</spinPosX>
       <spinPosY>760</spinPosY>
       <spinColor>ffffffff</spinColor>
@@ -99,6 +97,5 @@
    	  <animation effect="fade" time="150">WindowOpen</animation>
   	  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-		
   </controls>
 </window>

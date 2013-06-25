@@ -6,10 +6,9 @@
 	<define>#header.label:897</define>
   <rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
-  
-	<import>common.settings.xml</import>
 	<import>settings.menu.xml</import>	
-	<import>common.time.xml</import>  
+	<import>common.settings.xml</import>	
+	<import>common.time.settings.xml</import>  
 
 	<control>
 		<type>label</type>
@@ -18,19 +17,17 @@
 		<posY>225</posY>
 		<width>800</width>
 		<label>#(L(131))/#(L(673))</label>
-			<textcolor>6aa5cb</textcolor>
-			<font>fontB20</font>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 	</control>
-	
     <control>
       <description>group element</description>
       <type>group</type>
 		<dimColor>ffffffff</dimColor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
-		
       <control>
         <description>Horizontal Speed label</description>
         <type>label</type>
@@ -39,7 +36,6 @@
         <posY>321</posY>
         <label>1442</label>
       </control>
-	  
       <control>
         <description>Horizontal Speed select</description>
         <type>spincontrol</type>
@@ -51,7 +47,6 @@
         <ondown>4</ondown>
         <textcolor>FFFFFFFF</textcolor>
       </control>
-	  
       <control>
         <description>Vertical Speed label</description>
         <type>label</type>
@@ -60,7 +55,6 @@
         <posY>355</posY>
         <label>1443</label>
       </control>
-	  
       <control>
         <description>Vertical Speed select</description>
         <type>spincontrol</type>
@@ -72,7 +66,6 @@
         <ondown>5</ondown>
         <textcolor>FFFFFFFF</textcolor>
       </control>
-	  
       <!--List loop delay-->
       <control>
         <description>List loop delay label</description>
@@ -82,7 +75,6 @@
         <posY>389</posY>
         <label>300136</label>
       </control>
-	  
       <control>
         <description>List loop delay</description>
         <type>spincontrol</type>
@@ -94,7 +86,6 @@
         <ondown>3</ondown>
         <textcolor>FFFFFFFF</textcolor>
       </control>
-	  
       <control>
         <description>FPS label</description>
         <type>label</type>
@@ -103,7 +94,6 @@
         <posY>422</posY>
         <label>973</label>
       </control>
-	  
       <control>
         <description>FPS select</description>
         <type>spincontrol</type>
@@ -115,7 +105,6 @@
         <ondown>2</ondown>
         <textcolor>FFFFFFFF</textcolor>
       </control>
-	  
       <control>
         <description>currentFPS count</description>
         <type>label</type>
@@ -124,7 +113,6 @@
         <posY>422</posY>
         <label>#fps</label>
       </control>
-	  
       <control>
         <description>Example label</description>
         <type>label</type>
@@ -134,7 +122,6 @@
         <width>711</width>
         <label>675</label>
       </control>
-	  
       <control>
         <description>TagLine value</description>
         <type>fadelabel</type>
@@ -146,7 +133,6 @@
         <font>font12</font>
         <textcolor>FFFFFFFF</textcolor>
       </control>
-	  
       <control>
         <description>Description1</description>
         <type>textboxscrollup</type>
@@ -160,6 +146,5 @@
         <textcolor>FFFFFFFF</textcolor>
       </control>
     </control>
-	
   </controls>
 </window>

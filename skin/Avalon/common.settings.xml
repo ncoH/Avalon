@@ -1,56 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <controls>
-
+	
 	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1920</width>
-		<height>1080</height>
-	</control>
-
-	<control>
-		<description>viewport</description>
+		<description>panel</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>0</posX>
-		<posY>92</posY>
-		<width>1893</width>
-		<height>972</height>
-		<texture>viewport_settings.png</texture>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
+		<posX>546</posX>
+		<posY>140</posY>
+		<width>1372</width>
+		<height>940</height>
+		<texture>panel_settings_main.png</texture>
+  	<animation effect="fade" time="150">WindowOpen</animation>
+  	<animation effect="fade" time="150">WindowClose</animation>
 	</control>
 
-	<control>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<type>label</type>
-		<id>1</id>
-		<posX>185</posX>
-		<posY>38</posY>
-		<width>500</width>
-		<label>#header.label</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>font22</font>
-	</control>
-
-	<control>
-		<description>Hover image</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>130</posX>
-		<posY>500</posY>
-		<width>385</width>
-		<height>217</height>
-		<texture>#header.hover</texture>
-		<visible>!videoplayer.usingoverlays</visible>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	</control>
-
+  <control>
+    <id>0</id>
+    <type>image</type>
+    <posX>68</posX>
+    <posY>36</posY>
+    <width>58</width>
+    <height>58</height>
+    <texture>icon_settings.png</texture>
+  </control>
 </controls>
 </window>

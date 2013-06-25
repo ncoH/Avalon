@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>1022</id>
-	<defaultcontrol>30</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+  <id>1022</id>
+  <defaultcontrol>30</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
 	<define>#header.label:897</define>
-	<rememberLastFocusedControl>no</rememberLastFocusedControl>
+  <rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
-  
-	<import>common.settings.xml</import>
 	<import>settings.menu.xml</import>	
-	<import>common.time.xml</import>
+  <import>common.settings.xml</import>
+	<import>common.time.settings.xml</import>
 	
 	<control>
 		<type>label</type>
@@ -18,10 +17,10 @@
 		<posY>225</posY>
 		<width>500</width>
 		<label>#(L(101021))/#(L(101016))</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB20</font>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
 	</control>
 	
 	<control>
@@ -30,9 +29,9 @@
 		<posX>655</posX>
 		<posY>321</posY>
 		<dimColor>ffffffff</dimColor>
-		<layout>StackLayout(0, Vertical, true)</layout>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
+    <layout>StackLayout(7, Vertical, true)</layout>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
 			
 			<control Style="SettingsCheckButtonLarge">
 				<description>last focus item</description>
@@ -77,7 +76,6 @@
 			</control>
 				
 	</control>
-	
 			<!--Home screen selector-->
 	<control>
 		<type>label</type>
@@ -85,7 +83,7 @@
 		<posX>685</posX>
 		<posY>730</posY>
 		<label>300128</label>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 		<align>left</align>
 		<font>fontB14</font>
 	 	<animation effect="fade" time="150">WindowOpen</animation>

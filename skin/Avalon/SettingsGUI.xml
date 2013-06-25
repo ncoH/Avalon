@@ -6,7 +6,6 @@
 <define>#defaultcontrol.onleft:10002</define>
 <define>#header.label:897</define>
 <controls>
-
 	<import>settings.menu.xml</import>
 	
 	<control>
@@ -210,9 +209,7 @@
 		<label>-</label>
 		<textcolor>ffffffff</textcolor>
 	</control>
-	
 <import>common.time.xml</import>
 <import>titan.version.xml</import>
-
 </controls>
 </window>

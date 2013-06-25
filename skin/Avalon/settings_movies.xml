@@ -6,45 +6,8 @@
 <define>#defaultcontrol.onleft:9996</define>
 <define>#header.label:897</define>
 <controls>
-
- 	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1920</width>
-		<height>1080</height>
-	</control>
-
-	<control>
-		<description>viewport</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>0</posX>
-		<posY>92</posY>
-		<width>1893</width>
-		<height>795</height>
-		<texture>viewport_settings.png</texture>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="250" start="-1890,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="-1890,0">WindowClose</animation>
-	</control>
-	
-	<import>common.time.xml</import>
-
-	<control>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<type>label</type>
-		<id>1</id>
-		<posX>185</posX>
-		<posY>38</posY>
-		<width>500</width>
-		<label>#header.label</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>AvalonLight20</font>
-	</control>
-	
+	<import>settings.menu.xml</import>
+		
 	<control>
 		<type>label</type>
 		<id>1</id>
@@ -53,7 +16,7 @@
 		<width>500</width>
 		<label>3</label>
 		<textcolor>85cffe</textcolor>
-		<font>TitanLight20</font>
+		<font>AvalonLight20</font>
 	</control>
 	
 	<control>
@@ -106,8 +69,7 @@
 		</control>
 
 	</control>
-	
-	<import>common.time.xml</import>
-
+<import>common.time.xml</import>
+<import>titan.version.xml</import>
 </controls>
 </window>

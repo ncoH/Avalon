@@ -10,138 +10,120 @@
 		<id>1</id>
 		<width>1920</width>
 		<height>1080</height>
+		<texture>background_settings.png</texture>
 	</control>
+
+	<import>common.time.settings.xml</import>
+	
 	<control>
-		<description>viewport list</description>
+		<description>panel</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>0</posX>
-		<posY>92</posY>
-		<width>1893</width>
-		<height>795</height>
-		<texture>viewport_settings.png</texture>
+		<posX>5</posX>
+		<posY>140</posY>
+		<width>618</width>
+		<height>940</height>
+		<texture>panel_settings_left.png</texture>
 	</control>
 	
+  <control>
+    <id>0</id>
+    <type>image</type>
+    <posX>68</posX>
+    <posY>36</posY>
+    <width>58</width>
+    <height>58</height>
+    <texture>icon_settings.png</texture>
+  </control>
+	
 	<control>
-		<description>RSS background</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>0</posX>
-		<posY>829</posY>
-		<width>1865</width>
-		<height>96</height>
-		<texture>basichome_rss_bg.png</texture>
-	</control>
-    
-	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
 		<type>label</type>
-		<description>Settings label</description>
-		<id>121</id>
-		<posX>185</posX>
-		<posY>38</posY>
+		<id>1</id>
+		<posX>152</posX>
+		<posY>225</posY>
 		<width>500</width>
-		<label>897</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>font22</font>
+		<label>924</label>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
 	</control>
 	
 	<control>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-		<type>label</type>
-		<description>Settings label</description>
-		<id>0</id>
-        <posX>600</posX>
-        <posY>875</posY>
-		<width>500</width>
-		<label>#Avalon.SkinSettings</label>
-		<align>left</align>
-		<font>AvalonLight12</font>
-        <textcolor>6aa5cb</textcolor>
-	</control>
-	
-    <control>
-      <type>group</type>
-      <description>group element</description>
-		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-	  <posX>130</posX>
-	  <posY>156</posY>
-      <layout>StackLayout</layout>
-      <control>
+		<description>buttons</description>
+		<type>group</type>
+		<posX>122</posX>
+		<posY>321</posY>
+		<dimColor>ffffffff</dimColor>
+		<layout>StackLayout(7, Vertical, true)</layout>
+			<control Style="SettingsButton">
         <description>MovingPictures Settings</description>
         <type>button</type>
         <id>50</id>
-	    <label>-</label>
+				<label>-</label>
         <onleft>50</onleft>
         <onright>50</onright>
         <onup>53</onup>
         <ondown>54</ondown>
       </control>
-      <control>
+			<control Style="SettingsButton">
         <description>MovingPictures Settings</description>
         <type>button</type>
         <id>54</id>
-	    <label>-</label>
+				<label>-</label>
         <onleft>54</onleft>
         <onright>54</onright>
         <onup>50</onup>
         <ondown>51</ondown>
       </control>
-      <control>
+			<control Style="SettingsButton">
         <description>TV Settings</description>
         <type>button</type>
         <id>51</id>
-	    <label>-</label>
+				<label>-</label>
         <onleft>51</onleft>
         <onright>51</onright>
         <onup>54</onup>
         <ondown>52</ondown>
       </control>
-      <control>
+			<control Style="SettingsButton">
         <description>TVSeries Settings</description>
         <type>button</type>
         <id>52</id>
-	    <label>-</label>
+				<label>-</label>
         <onleft>52</onleft>
         <onright>52</onright>
         <onup>51</onup>
         <ondown>56</ondown>
       </control>
-      <control>
+			<control Style="SettingsButton">
         <description>Video Settings</description>
         <type>button</type>
         <id>56</id>
-	    <label>-</label>
+				<label>-</label>
         <onleft>53</onleft>
         <onright>53</onright>
         <onup>52</onup>
         <ondown>55</ondown>
       </control>
-      <control>
+			<control Style="SettingsButton">
         <description>Misc Settings</description>
         <type>button</type>
         <id>55</id>
-	    <label>-</label>
+				<label>-</label>
         <onleft>55</onleft>
         <onright>55</onright>
         <onup>56</onup>
         <ondown>53</ondown>
       </control>
-      <control>
+			<control Style="SettingsButton">
         <description>Skin Update</description>
         <type>button</type>
         <id>53</id>
-	    <label>-</label>
+				<label>-</label>
         <onleft>53</onleft>
         <onright>53</onright>
         <onup>55</onup>
         <ondown>50</ondown>
       </control>
     </control>
-    <import>common.time.xml</import>
-	<import>avalon.version.xml</import>
   </controls>
 </window>

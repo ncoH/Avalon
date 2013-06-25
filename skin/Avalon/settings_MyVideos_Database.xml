@@ -7,9 +7,9 @@
 	<rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
   
-	<import>common.settings.xml</import>
 	<import>settings.menu.xml</import>	
-	<import>common.time.xml</import>
+	<import>common.settings.xml</import>	
+	<import>common.time.settings.xml</import>  
 
 	<control>
 		<type>label</type>
@@ -18,8 +18,8 @@
 		<posY>225</posY>
 		<width>500</width>
 		<label>#(L(101010))</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB20</font>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 	</control>
@@ -33,7 +33,7 @@
 		<width>600</width>			
     <label>300193</label>
 		<font>fontB14</font>
-    <textcolor>6aa5cb</textcolor>
+    <textcolor>ff85cffe</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>					
   </control>
@@ -47,7 +47,7 @@
 		<width>600</width>	
     <label>300071</label>
 		<font>fontB14</font>
-    <textcolor>6aa5cb</textcolor>
+    <textcolor>ff85cffe</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>					
   </control>
@@ -64,6 +64,8 @@
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
+			<textureFocus>settings_button_database_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>	
@@ -79,11 +81,13 @@
       <id>15</id>
       <label>300182</label>
       <posX>655</posX>
-      <posY>444</posY>
+      <posY>451</posY>
 			<width>616</width>
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
+			<textureFocus>settings_button_database_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>		
@@ -100,11 +104,13 @@
       <id>2</id>
       <label>300036</label>
       <posX>655</posX>
-      <posY>502</posY>
+      <posY>516</posY>
 			<width>616</width>
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
+			<textureFocus>settings_button_database_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>		
@@ -121,9 +127,11 @@
       <id>16</id>
       <label>300225</label>
       <posX>655</posX>
-      <posY>560</posY>
+      <posY>580</posY>
 			<width>616</width>
 			<height>58</height>
+			<textureFocus>settings_button_database_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
       <onleft></onleft>
       <onup>2</onup>
       <ondown>5</ondown>
@@ -149,11 +157,13 @@
       <id>14</id>
       <label>300164</label>
       <posX>1304</posX>
-      <posY>560</posY>
+      <posY>581</posY>
 			<width>488</width>
 			<height>58</height>
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
+			<textureFocus>settings_button_database_focus.png</textureFocus>
+			<textureNoFocus>settings_button_database_nofocus.png</textureNoFocus>
 			<textcolor>ff000000</textcolor>
 			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
 			<textalign>left</textalign>	
@@ -202,12 +212,12 @@
 			<font>AvalonLight12</font>
 			<font2>AvalonLight12</font2>
 			<font3>AvalonLight12</font3>
-			<textcolor>FFFFFFFF</textcolor>
-			<textcolor2>FFFFFFFF</textcolor2>
-			<textcolor3>FFFFFFFF</textcolor3>	
-      <selectedColor>6aa5cb</selectedColor>
-      <selectedColor2>6aa5cb</selectedColor2>
-      <selectedColor3>6aa5cb</selectedColor3>		
+			<textcolor>FF85cffe</textcolor>
+			<textcolor2>FF85cffe</textcolor2>
+			<textcolor3>FF85cffe</textcolor3>	
+      <selectedColor>FF85cffe</selectedColor>
+      <selectedColor2>FF85cffe</selectedColor2>
+      <selectedColor3>FF85cffe</selectedColor3>		
 			<spinPosX>-2000</spinPosX>
 			<spinPosY>500</spinPosY>
       <dimColor>ffffffff</dimColor>
@@ -228,7 +238,7 @@
       <posY>658</posY>
       <label>300194</label>
 			<font>fontB14</font>
-			<textcolor>6aa5cb</textcolor>
+			<textcolor>ff85cffe</textcolor>
 			<animation effect="fade" time="150">WindowOpen</animation>
 			<animation effect="fade" time="150">WindowClose</animation>						
     </control>		
@@ -281,7 +291,7 @@
       <id>4</id>
       <label>300195</label>
       <posX>655</posX>
-      <posY>768</posY>
+      <posY>775</posY>
       <onleft></onleft>
       <onup>5</onup>
       <ondown>7</ondown>
@@ -296,7 +306,7 @@
       <id>7</id>
       <label>300211</label>
       <posX>655</posX>
-      <posY>826</posY>
+      <posY>840</posY>
       <onleft></onleft>
       <onup>4</onup>
       <ondown>8</ondown>
@@ -311,7 +321,7 @@
       <id>8</id>
       <label>300198</label>
       <posX>655</posX>
-      <posY>884</posY>
+      <posY>905</posY>
       <onleft></onleft>
       <onup>7</onup>
       <ondown>9</ondown>
@@ -326,7 +336,7 @@
       <id>9</id>
       <label>300199</label>
       <posX>655</posX>
-      <posY>942</posY>
+      <posY>970</posY>
       <onleft></onleft>
       <onup>8</onup>
       <ondown>11</ondown>
@@ -341,7 +351,7 @@
       <id>11</id>
       <label>300200</label>
       <posX>1240</posX>
-      <posY>768</posY>
+      <posY>775</posY>
       <onleft></onleft>
       <onup>9</onup>
       <ondown>12</ondown>
@@ -356,7 +366,7 @@
       <id>12</id>
       <label>300201</label>
       <posX>1240</posX>
-      <posY>826</posY>
+      <posY>840</posY>
       <onleft></onleft>
       <onup>11</onup>
       <ondown>13</ondown>
@@ -371,7 +381,7 @@
       <id>13</id>
       <label>300202</label>
       <posX>1240</posX>
-      <posY>884</posY>
+      <posY>905</posY>
       <ondown>18</ondown>
 			<onup>12</onup>
       <onright>10</onright>
@@ -385,7 +395,7 @@
       <id>18</id>
       <label>300226</label>
       <posX>1240</posX>
-      <posY>942</posY>
+      <posY>970</posY>
       <onleft>9</onleft>
       <onup>13</onup>
       <ondown>3</ondown>

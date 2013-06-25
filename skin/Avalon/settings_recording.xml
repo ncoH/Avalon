@@ -16,8 +16,8 @@
   		<posY>225</posY>
   		<width>500</width>
   		<label>6007</label>
-  		<textcolor>00b7ff</textcolor>
-  		<font>TitanLight20</font>
+  		<textcolor>85cffe</textcolor>
+  		<font>AvalonLight20</font>
   	  <animation effect="fade" time="150">WindowOpen</animation>
   	  <animation effect="fade" time="150">WindowClose</animation>
   	</control>	

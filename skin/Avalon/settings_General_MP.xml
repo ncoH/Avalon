@@ -6,10 +6,9 @@
 	<define>#header.label:897</define>
 	<rememberLastFocusedControl>yes</rememberLastFocusedControl>
 	<controls>
-	
-	<import>common.settings.xml</import>
-	<import>settings.menu.xml</import>	
-	<import>common.time.xml</import>  
+	<import>common.time.settings.xml</import>
+	<import>settings.menu.xml</import>
+  <import>common.settings.xml</import>
 	
 	<control>
 		<type>label</type>
@@ -18,10 +17,10 @@
 		<posY>225</posY>
 		<width>500</width>
 		<label>#(L(128))/#(L(300080))</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>fontB20</font>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
 	</control>
 	
 	<control>
@@ -30,11 +29,11 @@
 		<posX>655</posX>
 		<posY>321</posY>
 		<dimColor>ffffffff</dimColor>
-		<layout>StackLayout(0, Vertical, true)</layout>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
+    <layout>StackLayout(7, Vertical, true)</layout>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
 		
-	<control Style="SettingsButtonLarge">
+		  <control Style="SettingsButtonLarge">
         <description>Log</description>
         <type>button</type>
         <id>2</id>
@@ -42,14 +41,14 @@
         <onup>17</onup>
       </control>
 			
-	<control Style="SettingsButtonLarge">
+		  <control Style="SettingsButtonLarge">
         <description>Process priority</description>
         <type>button</type>
         <id>3</id>
         <label>300091</label>
       </control>
 			
-	<control Style="SettingsCheckButtonLarge">
+			<control Style="SettingsCheckButtonLarge">
         <description>Watchdog</description>
         <type>checkbutton</type>
         <id>4</id>
@@ -57,7 +56,7 @@
         <align>right</align>
       </control>
 			
-	<control Style="SettingsCheckButtonLarge">
+			<control Style="SettingsCheckButtonLarge">
         <description>Autorestart</description>
         <type>checkbutton</type>
         <id>5</id>
@@ -69,34 +68,33 @@
       </control>
     </control>
 		
-	<control>
-		<description>Seconds label</description>
-		<type>label</type>
-		<id>100</id>
+  <control>
+    <description>Seconds label</description>
+    <type>label</type>
+    <id>100</id>
 		<posX>688</posX>
 		<posY>603</posY>
-		<width>600</width>
-		<label>300094</label>
-		<visible>control.isvisible(6)</visible>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
-	</control>
+    <width>600</width>
+    <label>300094</label>
+    <visible>control.isvisible(6)</visible>
+ 	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
+  </control>
   
 	<control>
-		<description>Seconds</description>
-		<type>spincontrol</type>
-		<id>6</id>
+    <description>Seconds</description>
+    <type>spincontrol</type>
+    <id>6</id>
 		<posX>688</posX>
 		<posY>653</posY>
-		<onup>5</onup>
-		<onleft>5</onleft>
-		<ondown>99</ondown>
-		<align>left</align>
+    <onup>5</onup>
+    <onleft>5</onleft>
+    <ondown>99</ondown>
+    <align>left</align>
 		<textcolor>ffFFFFFF</textcolor>
-		<buddycontrolid>100</buddycontrolid>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
-	</control>
-  
+    <buddycontrolid>100</buddycontrolid>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
+  </control>
   </controls>
 </window>
