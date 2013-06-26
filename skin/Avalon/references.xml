@@ -710,8 +710,8 @@
     <textureFocus>button-focus.png</textureFocus>
     <textureNoFocus>button-nofocus.png</textureNoFocus>
     <font>font12</font>
-    <markWidth>29</markWidth>
-    <markHeight>28</markHeight>
+    <markWidth>43</markWidth>
+    <markHeight>26</markHeight>
     <markXOff>15</markXOff>
     <markYOff>10</markYOff>
     <markalign>right</markalign>
