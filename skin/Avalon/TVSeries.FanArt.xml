@@ -161,7 +161,7 @@
 		<dimColor>00ffffff</dimColor>
 		<buttonX>0</buttonX>
 		<buttonY>0</buttonY>
-		<buttonwidth>521</buttonwidth>
+		<buttonwidth>497</buttonwidth>
 		<buttonheight>1080</buttonheight>
 		
 		<control>
@@ -170,18 +170,11 @@
 			<width>1920</width>
 			<height>1080</height>
 			<texture>semi_trans_back_hidden_menu.png</texture>
-			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+			<visible>!Control.HasFocus(50)</visible>
 			<animation effect="fade" time="450">visible</animation>
 			<animation effect="fade" time="400">hidden</animation>
 		</control>
 	
-	<control>
-		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
-		<animation effect="fade" time="250">visible</animation>
-		<animation effect="fade" time="0">hidden</animation>
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -190,31 +183,48 @@
 			<width>631</width>
 			<height>1044</height>
 			<texture>menu_bg.png</texture>
-			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+			<visible>!Control.HasFocus(50)</visible>
+    	<animation effect="fade" time="0">WindowClose</animation>
+    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="fade" time="50">visible</animation>
+    	<animation effect="fade" time="0">hidden</animation>
 		</control>
-	
 		<control>
-			<description>Heading text label</description>
+			<description>Menu label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>136</posX>
-			<posY>128</posY>
+			<posX>128</posX>
+			<posY>114</posY>
 			<label>924</label>
-			<font>font22</font>
+			<font>fontB12</font>
 			<textcolor>ffffff</textcolor>
-		</control>
+			<visible>!Control.HasFocus(50)</visible>
+    	<animation effect="fade" time="0">WindowClose</animation>
+    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="fade" time="50">visible</animation>
+    	<animation effect="fade" time="0">hidden</animation>
+    	</control>
+    <control>
+      <type>group</type>
+      <description>group element</description>
+ 			<visible>!Control.HasFocus(50)</visible>
+    	<animation effect="fade" time="0">WindowClose</animation>
+    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="fade" time="50">visible</animation>
+    	<animation effect="fade" time="0">hidden</animation>
+      <posX>69</posX>
+      <posY>155</posY>
+      <layout>StackLayout(0, Vertical, true)</layout>	
 			<control>
 				<description>Change Layout</description>
 				<type>button</type>
 				<id>2</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>215</posY>
-				<width>459</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
 				<label>Change Layout</label>
 				<onright>50</onright>
 			</control>
@@ -224,12 +234,10 @@
 				<id>12</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>285</posY>
-				<width>459</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
 				<label>Filter</label>
 				<onright>50</onright>
 			</control>		
@@ -237,21 +245,19 @@
 				<description>Random Fanart</description>
 				<type>checkbutton</type>
 				<id>13</id>
-				<textureFocus>hiddenmenu_toggle-on-focus.png</textureFocus>
-				<textureNoFocus>hiddenmenu_toggle-on-nofocus.png</textureNoFocus>
-				<AltTextureFocus>hiddenmenu_toggle-off-focus.png</AltTextureFocus>
-				<AltTextureNoFocus>hiddenmenu_toggle-off-nofocus.png</AltTextureNoFocus>
-				<posX>69</posX>
-				<posY>355</posY>
-				<width>459</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+			  <textureCheckmark>settings_checkmark_checked.png</textureCheckmark>
+			  <textureCheckmarkNoFocus>settings_checkmark_unchecked.png</textureCheckmarkNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
 				<label>Random Fanart</label>
 				<onright>50</onright>
-			</control>		  
-        </control>
-      </control>
+			</control>
+		</control>
+  </control>
 	
     <control>
       <type>group</type>

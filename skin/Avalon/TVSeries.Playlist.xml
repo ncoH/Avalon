@@ -225,7 +225,7 @@
 			<texture>menu_bg.png</texture>
 			<visible>!Control.HasFocus(50)</visible>
     	<animation effect="fade" time="0">WindowClose</animation>
-    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="slide" start="-631,0" time="250">visible</animation>
     	<animation effect="fade" time="250">visible</animation>
     	<animation effect="fade" time="0">hidden</animation>
 		</control>
@@ -240,7 +240,7 @@
 			<texture>hiddenmenu_separator.png</texture>
 			<visible>!Control.HasFocus(50)</visible>
     	<animation effect="fade" time="0">WindowClose</animation>
-    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="slide" start="-631,0" time="250">visible</animation>
     	<animation effect="fade" time="250">visible</animation>
     	<animation effect="fade" time="0">hidden</animation>
 		</control>
@@ -254,7 +254,7 @@
 			<texture>hiddenmenu_separator.png</texture>
 			<visible>!Control.HasFocus(50)</visible>
     	<animation effect="fade" time="0">WindowClose</animation>
-    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="slide" start="-631,0" time="250">visible</animation>
     	<animation effect="fade" time="250">visible</animation>
     	<animation effect="fade" time="0">hidden</animation>
 		</control>
@@ -269,7 +269,7 @@
 			<textcolor>ffffff</textcolor>
 			<visible>!Control.HasFocus(50)</visible>
     	<animation effect="fade" time="0">WindowClose</animation>
-    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="slide" start="-631,0" time="250">visible</animation>
     	<animation effect="fade" time="250">visible</animation>
     	<animation effect="fade" time="0">hidden</animation>
     </control>
@@ -284,7 +284,7 @@
 			<textcolor>ffffff</textcolor>
  			<visible>!Control.HasFocus(50)</visible>
     	<animation effect="fade" time="0">WindowClose</animation>
-    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="slide" start="-631,0" time="250">visible</animation>
     	<animation effect="fade" time="250">visible</animation>
     	<animation effect="fade" time="0">hidden</animation>
 		</control>
@@ -299,7 +299,7 @@
 			<textcolor>ffffff</textcolor>
  			<visible>!Control.HasFocus(50)</visible>
     	<animation effect="fade" time="0">WindowClose</animation>
-    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="slide" start="-631,0" time="250">visible</animation>
     	<animation effect="fade" time="250">visible</animation>
     	<animation effect="fade" time="0">hidden</animation>
 		</control>
@@ -308,7 +308,7 @@
         <description>group element</description>
 				<visible>!Control.HasFocus(50)</visible>
     		<animation effect="fade" time="0">WindowClose</animation>
-    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="slide" start="-631,0" time="250">visible</animation>
     		<animation effect="fade" time="250">visible</animation>
     		<animation effect="fade" time="0">hidden</animation>
         <posX>69</posX>
