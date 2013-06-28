@@ -88,13 +88,15 @@ This file should contain the facade view
 			<posY>153</posY>
 			<height>750</height>
 			<width>684</width>
-			<spinAlign>right</spinAlign>
-			<textXOff>70</textXOff>
-			<textXOff2>645</textXOff2>	
-			<font2>AvalonLight11</font2>
+			<textXOff>50</textXOff>
+			<textXOff2>650</textXOff2>
+			<textYOff2>13</textYOff2>
+			<textXOff3>-2000</textXOff3>
+			<textpadding>110</textpadding>
+			<font2>font2</font2>
 			<PinIconHeight>19</PinIconHeight>
-			<PinIconWidth>40</PinIconWidth>
-			<PinIconXOff>20</PinIconXOff>
+			<PinIconWidth>10</PinIconWidth>
+			<PinIconXOff>30</PinIconXOff>
 			<PinIconYOff>18</PinIconYOff>				
 			<textureHeight>55</textureHeight>
 			<textureFocus>listcontrol_item_selected_small_info.png</textureFocus>
