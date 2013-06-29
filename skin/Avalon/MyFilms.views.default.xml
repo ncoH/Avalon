@@ -4,16 +4,13 @@
 
 	<!--            :: LIST ::            -->
 	
-	<control>
+	<control Style="smallTitle">
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>1832</posX>
-		<posY>956</posY>
-		<width>1170</width>
+		<posX>714</posX>
+		<posY>810</posY>
 		<label>#selecteditem</label>
-		<font>fontB16</font>
-		<align>right</align>
 		<visible>[facadeview.list|facadeview.album | facadeview.smallicons | facadeview.largeicons] + control.isvisible(50)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
