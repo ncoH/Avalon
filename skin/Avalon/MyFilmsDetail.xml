@@ -223,6 +223,70 @@
 			<animation effect="fade" time="0">WindowOpen</animation>		
 		</control>
 		
+	<!-- Buttons -->
+	
+	<control>
+		<description>PLAY Button</description>
+		<type>button</type>
+		<posX>463</posX>
+		<posY>838</posY>
+		<id>6</id>
+		<label>-</label>
+		<onup>6</onup>
+		<ondown>6</ondown>
+		<onleft>700</onleft>
+		<onright>10001</onright>
+		<width>58</width>
+		<height>59</height>
+		<textureFocus>movie_details_play_focus.png</textureFocus>
+		<textureNoFocus>movie_details_play_nofocus.png</textureNoFocus>
+		<visible>!Control.HasFocus(10099)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Subtitle Button</description>
+		<type>button</type>
+		<posX>391</posX>
+		<posY>838</posY>
+		<id>700</id>
+		<label>-</label>
+		<onup>700</onup>
+		<ondown>700</ondown>
+		<onleft>800</onleft>
+		<onright>6</onright>
+		<width>58</width>
+		<height>59</height>
+		<hyperlink>84623</hyperlink>
+		<textureFocus>movie_details_sub_focus.png</textureFocus>
+		<textureNoFocus>movie_details_sub_nofocus.png</textureNoFocus>
+		<visible>!Control.HasFocus(10099)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Trailer Button</description>
+		<type>button</type>
+		<posX>320</posX>
+		<posY>838</posY>
+		<id>109</id>
+		<label>-</label>
+		<onup>800</onup>
+		<ondown>800</ondown>
+		<onleft>6</onleft>
+		<onright>700</onright>
+		<width>58</width>
+		<height>59</height>
+		<hyperlink>4755</hyperlink>
+		<textureFocus>movie_details_trailer_focus.png</textureFocus>
+		<textureNoFocus>movie_details_trailer_nofocus.png</textureNoFocus>
+		<visible>!Control.HasFocus(10099)</visible>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+	</control>
+		
 	
     <!--            :: HEADER ::            -->
     <control>
@@ -243,29 +307,14 @@
 
 		
 <!-- Description and MoviePlay -->
-
-	<control>
-		<description>PLAY Button</description>
-		<type>image</type>
-		<id>0</id>		
-		<posX>584</posX>
-		<posY>268</posY>
-		<label>-</label>
-		<width>58</width>
-		<height>59</height>
-		<texture>movingpictures_details_play.png</texture>
-		<visible>!Control.HasFocus(10099)</visible>
-		<animation effect="fade" time="250">WindowClose</animation>	
-		<animation effect="fade" time="0">WindowOpen</animation>		
-	</control>
 	
 	<control>
 		<description>Movie Title</description>
 		<type>fadelabel</type>
 		<id>0</id>
-		<posX>674</posX>
-		<posY>271</posY>
-		<width>970</width>
+		<posX>586</posX>
+		<posY>270</posY>
+		<width>1005</width>
 		<font>fontB20</font>
 		<label>#myfilms.user.mastertitle.value</label>
 		<visible>!Control.HasFocus(10099)</visible>
@@ -532,11 +581,11 @@
 			<animation effect="fade" time="100">WindowClose</animation>
 			<type>imagelist</type>
 			<id>1028</id>
-			<posX>683</posX>
+			<posX>682</posX>
 			<posY>855</posY>
 			<width>310</width>
 			<height>29</height>
-			<textureWidth>28</textureWidth>
+			<textureWidth>32</textureWidth>
 			<textureHeight>27</textureHeight>
 			<subitems>
 			<subitem>starblue.png</subitem>
@@ -553,7 +602,7 @@
 			<description>Rating Value</description>
 			<type>label</type>
 			<id>2061</id>
-			<posX>1018</posX>
+			<posX>1019</posX>
 			<posY>850</posY>
 			<label>#myfilms.db.rating.value</label>
 			<textcolor>ffffffff</textcolor>
@@ -1363,7 +1412,7 @@
 		<posY>355</posY>
 		<width>250</width>
 		<height>354</height>
-		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">defaultdvdcover.png</texture>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">defaultdvdcover.png</texture>
 		<visible>!Control.HasFocus(10099)</visible>
 	</control>
 
@@ -1377,7 +1426,7 @@
 		<posY>354</posY>
 		<width>250</width>
 		<height>354</height>
-		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#myfilms.picture</texture>		
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#myfilms.picture</texture>		
 		<visible>!Control.HasFocus(10099)+!player.hasmedia</visible>
 	</control>
 
@@ -1391,7 +1440,7 @@
 		<posY>354</posY>
 		<width>250</width>
 		<height>354</height>
-		<texture flipY="true" diffuse="Thumb_Mask_test.png" mask="poster_mask.png">#myfilms.picture</texture>
+		<texture flipY="true" diffuse="Thumb_Mask.png" mask="poster_mask.png">#myfilms.picture</texture>
 		<visible>!Control.HasFocus(10099)+player.hasmedia</visible>
 	</control>
 
@@ -1402,7 +1451,7 @@
 			<type>image</type>
 			<description>Info Frame</description>			
 			<id>1</id>
-			<posX>587</posX>
+			<posX>586</posX>
 			<posY>834</posY>
 			<width>1041</width>
 			<height>119</height>
