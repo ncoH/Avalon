@@ -57,7 +57,7 @@
     <height>58</height>
     <textXOff>0</textXOff>
     <textYOff>3</textYOff>
-		<textalign>center</textalign>
+    <textalign>center</textalign>
     <textureFocus>settings_button_focus.png</textureFocus>
     <textureNoFocus>settings_button_nofocus.png</textureNoFocus>
     <scrollStartDelaySec>0</scrollStartDelaySec>
@@ -569,6 +569,7 @@
     <align>left</align>
     <font>font12</font>
     <scrollStartDelaySec>5</scrollStartDelaySec>
+		<allowFadeIn>no</allowFadeIn>
     <textcolor>white</textcolor>
   </control>
   <control>
