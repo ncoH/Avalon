@@ -39,7 +39,7 @@
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<posY>296</posY>
+			<posY>232</posY>
 			<posX>128</posX>
 			<width>376</width>
 			<height>1</height>
@@ -52,7 +52,7 @@
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<posY>488</posY>
+			<posY>424</posY>
 			<posX>128</posX>
 			<width>376</width>
 			<height>1</height>
@@ -81,7 +81,7 @@
 			<type>label</type>
 			<id>1</id>
 			<posX>128</posX>
-			<posY>310</posY>
+			<posY>246</posY>
 			<label>100004</label>
 			<font>fontB12</font>
 			<textcolor>ffffff</textcolor>
@@ -95,7 +95,7 @@
 			<type>label</type>
 			<id>1</id>
 			<posX>128</posX>
-			<posY>496</posY>
+			<posY>432</posY>
 			<label>1065</label>
 			<font>fontB12</font>
 			<textcolor>ffffff</textcolor>
@@ -114,22 +114,6 @@
             <posX>69</posX>
             <posY>155</posY>
             <layout>StackLayout(0, Vertical, true)</layout>	
-			
-			<control>
-				<type>button</type>
-				<description>Play Trailer</description>
-				<id>109</id>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<width>497</width>
-				<height>64</height>
-				<textXOff>58</textXOff>
-				<textYOff>14</textYOff>			
-				<onleft>10000</onleft>				
-				<onright>10000</onright>
-				<label>Play Trailer</label>
-                <onup>66613</onup>				
-			</control>
 
 			<control>
 				<type>button</type>
@@ -143,6 +127,7 @@
 				<textYOff>14</textYOff>
 				<onleft>10000</onleft>					
 				<onright>10000</onright>
+				<onup>66613</onup>
 				<label>496</label>
                 <ondown>66610</ondown>				
 			</control>
@@ -288,7 +273,7 @@
 				<onleft>10000</onleft>					
 				<onright>10000</onright>
 				<onup>105</onup>
-				<ondown>109</ondown>    
+				<ondown>107</ondown>    
 			</control>	
         </control>
 </control>

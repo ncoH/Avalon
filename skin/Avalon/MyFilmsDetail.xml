@@ -87,7 +87,7 @@
 			<width>302</width>
 			<height>99</height>		
 			<onup>10099</onup>
-			<ondown>107</ondown>
+			<ondown>109</ondown>
 			<onleft>109</onleft>
 			<onright>10001</onright>
 			<label>#Avalon.Overview</label>
@@ -112,7 +112,7 @@
 			<width>302</width>
 			<height>70</height>
 			<onup>10099</onup>
-			<ondown>107</ondown>
+			<ondown>109</ondown>
 			<onleft>10000</onleft>
 			<onright>10002</onright>
 			<label>#Avalon.Description</label>
@@ -137,7 +137,7 @@
 			<width>302</width>
 			<height>70</height>
 			<onup>10099</onup>
-			<ondown>107</ondown>
+			<ondown>109</ondown>
 			<onleft>10001</onleft>
 			<onright>10003</onright>
 			<label>#Avalon.Comments</label>
@@ -162,7 +162,7 @@
 			<width>302</width>
 			<height>70</height>
 			<onup>10099</onup>
-			<ondown>107</ondown>
+			<ondown>109</ondown>
 			<onleft>10002</onleft>
 			<onright>10004</onright>
 			<label>#Avalon.Actors</label>
@@ -187,7 +187,7 @@
 			<width>285</width>
 			<height>99</height>
 			<onup>10099</onup>
-			<ondown>107</ondown>
+			<ondown>109</ondown>
 			<onleft>10003</onleft>
 			<onright>10099</onright>
 			<label>#Avalon.Techinfo</label>
@@ -254,7 +254,7 @@
 		<label>-</label>
 		<onup>700</onup>
 		<ondown>700</ondown>
-		<onleft>800</onleft>
+		<onleft>109</onleft>
 		<onright>6</onright>
 		<width>58</width>
 		<height>59</height>
@@ -275,7 +275,7 @@
 		<label>-</label>
 		<onup>800</onup>
 		<ondown>800</ondown>
-		<onleft>6</onleft>
+		<onleft>107</onleft>
 		<onright>700</onright>
 		<width>58</width>
 		<height>59</height>
