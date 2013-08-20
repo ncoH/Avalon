@@ -42,6 +42,6 @@
     <name>SkinUpdate.zip</name>
     <action>unzip</action>
     <location>temp</location>
-    <version>1.3.0.1</version>
+    <version>1.3.1.0</version>
   </patch>
 </patches>
