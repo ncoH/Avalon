@@ -108,20 +108,8 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="EmbeddedPatches\AvalonConfig.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="EmbeddedPatches\AvalonEditor.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="EmbeddedPatches\AvalonMediaPortalRestart.exe" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="EmbeddedPatches\MP-TVSeries.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="EmbeddedPatches\LatestMediaHandler.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="EmbeddedPatches\FanartHandler.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

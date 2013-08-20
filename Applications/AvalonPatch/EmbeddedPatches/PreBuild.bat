@@ -6,6 +6,6 @@ copy ..\..\AvalonMediaPortalRestart\bin\Release\AvalonMediaPortalRestart.exe .\ 
 rem copy ..\..\..\plugins\Windows\Cornerstone.MP.dll .\ /Y
 rem copy ..\..\..\plugins\Windows\Cornerstone.dll .\ /Y
 rem copy ..\..\..\plugins\Windows\MovingPictures.dll .\ /Y
-copy ..\..\..\plugins\Windows\MP-TVSeries.dll .\ /Y
+rem copy ..\..\..\plugins\Windows\MP-TVSeries.dll .\ /Y
 copy ..\..\..\plugins\process\FanartHandler.dll .\ /Y
-copy ..\..\..\plugins\process\LatestMediaHandler.dll .\ /Y
+rem copy ..\..\..\plugins\process\LatestMediaHandler.dll .\ /Y
