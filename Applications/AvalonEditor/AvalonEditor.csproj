@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AvalonEditor</RootNamespace>
     <AssemblyName>AvalonEditor</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -53,6 +53,9 @@
     <Reference Include="DirectShowLib">
       <HintPath>..\Externals\DirectShowLib.dll</HintPath>
     </Reference>
+    <Reference Include="GUIMusic">
+      <HintPath>..\Externals\GUIMusic.dll</HintPath>
+    </Reference>
     <Reference Include="MediaPortal.Support">
       <HintPath>..\Externals\MediaPortal.Support.dll</HintPath>
     </Reference>
@@ -85,9 +88,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="Utils">
       <HintPath>..\Externals\Utils.dll</HintPath>
-    </Reference>
-    <Reference Include="WindowPlugins">
-      <HintPath>..\Externals\WindowPlugins.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
